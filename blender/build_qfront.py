@@ -137,7 +137,7 @@ MAT = {
  'rail': principled('rail_alu', (.84, .85, .86), metal=.4, rough=.28, streaks=.12),
  'mullion': principled('mullion', (.55, .57, .59), metal=.8, rough=.3),
  'dark_glass': glass('glass_dark', (.45, .55, .62), .04, ior=1.6),
- 'crown_glass': glass('glass_crown', (.40, .48, .55), .30, rough=.04),
+ 'crown_glass': glass('glass_crown', (.40, .46, .50), .35, rough=.04, ior=1.7),
  'q_bar': principled('q_bar', (.75, .05, .07), rough=.35, emit=(1, .1, .1), estr=(5 if NIGHT else 0)),
  'clear_glass': glass('glass_clear', (.85, .93, .92), .78),
  'shop_glass': glass('glass_shop', (.95, .97, .96), .88, rough=.01),
@@ -150,7 +150,7 @@ MAT = {
  'books': books('shop_books'),
  'shelf': principled('shelf', (.12, .12, .13), rough=.6),
  'goods': principled('goods', (.22, .19, .17), rough=.6, emit=(1, .85, .7), estr=(.6 if NIGHT else .25)),
- 'steel': principled('truss_steel', (.16, .165, .17), metal=.5, rough=.4),
+ 'steel': principled('truss_steel', (.42, .43, .44), metal=.5, rough=.4),
  'plant': principled('plant', (.72, .73, .72) if not NIGHT else (.08, .085, .09), metal=.2, rough=.5),
  'concrete': principled('concrete', (.55, .54, .52), rough=.85),
  'blind': principled('blind_wood', (.80, .58, .38), rough=.7, emit=(.95, .65, .4), estr=(.5 if NIGHT else .45)),
@@ -379,8 +379,9 @@ for i in range(len(br)-1):
     B.beam('06_GROUND_FLOOR', 'brace', (p1.x, p1.y, F2), (p0.x, p0.y, F3), .45)
 # 2F wood blinds, part lowered
 for p, t, d in arc_stations(MULL, inset=CAVITY+.25)[:-1]:
-    if random.random() < .35: continue                 # Q031/Q107: about a third of the bays have the blind up
-    drop = .5 + random.random()*1.8
+    # Q032 (day): the wood blinds are down across the whole 2F; Q031 (dusk): about a third are up
+    if NIGHT and random.random() < .35: continue
+    drop = (.5 + random.random()*1.8) if NIGHT else (3.4 + random.random()*.6)
     B.box('06_GROUND_FLOOR', 'blind', (p.x, p.y, F3-.5-drop/2), (MULL-.12, .03, drop), math.atan2(t.y, t.x))
 # dark sign band at the 2F slab, canopy over the entrance, shop interior volume
 for i in range(len(ARC)-1):
@@ -496,33 +497,51 @@ if NIGHT:
     sc.view_settings.exposure = .3
 else:
     # Q032: 2018-10-30 10:25 JST -> sun azimuth ~152 deg (from north, clockwise), elevation ~38 deg
-    sky.sun_elevation = math.radians(38); sky.sun_rotation = math.radians(90 - 152 + 180); bg.inputs['Strength'].default_value = .32; sc.view_settings.exposure = -.2
+    sky.sun_elevation = math.radians(38); sky.sun_rotation = math.radians(90 - 152 + 180); bg.inputs['Strength'].default_value = .24; sc.view_settings.exposure = -.2
     sky.air_density = .7; sky.dust_density = .15; sky.ozone_density = 4.0; sky.sun_disc = False
     # Q032 was shot with a deep, near-polarised blue sky. Only camera rays see the deeper tint; the scene is still lit by the plain sky.
     lp_ = nt.nodes.new('ShaderNodeLightPath'); deep = nt.nodes.new('ShaderNodeMix'); deep.data_type = 'RGBA'; deep.blend_type = 'MULTIPLY'
-    deep.inputs['B'].default_value = (.26, .40, .78, 1)
+    deep.inputs['B'].default_value = (.50, .42, .60, 1)
     nt.links.new(lp_.outputs['Is Camera Ray'], deep.inputs['Factor']); nt.links.new(sky.outputs['Color'], deep.inputs['A']); nt.links.new(deep.outputs['Result'], bg.inputs['Color'])
-    sun = bpy.data.lights.new('sun', 'SUN'); sun.energy = 5.5; sun.angle = math.radians(.6)
+    sun = bpy.data.lights.new('sun', 'SUN'); sun.energy = 6.0; sun.angle = math.radians(.6)
     so = bpy.data.objects.new('sun', sun); sc.collection.objects.link(so)
     az = math.radians(152); el = math.radians(38)
     dirv = Vector((math.sin(az)*math.cos(el), math.cos(az)*math.cos(el), math.sin(el)))   # towards the sun
     so.rotation_euler = (-dirv).to_track_quat('-Z', 'Y').to_euler()
 
-def camera_q032(name, D=90., lateral=1.0, res=(640, 875)):
+# Q032 camera: least-squares fit to front-face landmarks read off the photo (data/camera_q032_fit.json, 13 px RMS
+# at 1280x1749). Level camera (the photo is perspective-corrected) with an off-centre principal point.
+def camera_q032(name, res=(640, 875)):
+    F = json.load(open(os.path.join(ROOT, 'data', 'camera_q032_fit.json')))
     cam = bpy.data.cameras.new(name); co = bpy.data.objects.new(name, cam); sc.collection.objects.link(co)
     tang = Vector((-ARC_N.y, ARC_N.x))
-    pos = ARC_MID + ARC_N*D + tang*lateral
-    co.location = (pos.x, pos.y, 1.6)
-    look = Vector((-ARC_N.x, -ARC_N.y, 0))
+    pos = ARC_MID + ARC_N*F['D'] + tang*F['lat']; co.location = (pos.x, pos.y, 1.6)
+    yw = math.radians(F['yaw']); look = -(ARC_N*math.cos(yw) + tang*math.sin(yw)); look = Vector((look.x, look.y, 0))
     co.rotation_euler = look.to_track_quat('-Z', 'Y').to_euler()
-    W_, H_ = res; sc.render.resolution_x, sc.render.resolution_y = W_, H_
-    # Q032 is perspective-corrected: level camera, lens shift. 25.4 px/m at the front face, ground at row 1565/1749.
-    fpx = 25.4*D*(H_/1749); cam.sensor_fit = 'VERTICAL'; cam.angle_y = 2*math.atan((H_/2)/fpx)
-    y_ground = 1565*(H_/1749); y_pp = y_ground - 25.4*(H_/1749)*1.6
-    cam.shift_y = (y_pp - H_/2)/H_ * (H_/max(W_, H_)) * (max(W_, H_)/H_) if H_ >= W_ else (y_pp - H_/2)/W_
+    W_, H_ = res; sc.render.resolution_x, sc.render.resolution_y = W_, H_; k = H_/1749
+    cam.sensor_fit = 'VERTICAL'; cam.angle_y = 2*math.atan((H_/2)/(F['fpx']*k))
+    cam.shift_x = (W_/2 - F['cx']*k)/max(W_, H_); cam.shift_y = (F['cy']*k - H_/2)/max(W_, H_)
     cam.clip_end = 2000; sc.camera = co; return co
 
 VIEW = next((a for a in argv[3:] if a.startswith('view=')), 'view=q032')[5:]
+if 'dumpplan' in argv:
+    json.dump({'outline': [[v.x, v.y] for v in OUTLINE], 'arc': [[v.x, v.y] for v in ARC], 'arc_mid': [ARC_MID.x, ARC_MID.y], 'arc_n': [ARC_N.x, ARC_N.y]},
+              open(os.path.join(ROOT, 'data', 'plan_xy.json'), 'w'), indent=0)
+if 'fitcam' in argv:
+    # Fit the Q032 camera (distance, lateral offset, horizontal shift) to edges read off the photo at z = 30 m
+    # (row 800 of 1749): silhouette left/right 295/1008 px, front-arc ends 428/905 px (1280 px wide).
+    from bpy_extras.object_utils import world_to_camera_view
+    target = (295, 1008, 428, 905); best = None
+    for D in (70, 80, 90, 100, 115, 130):
+        for lat in range(-30, 31, 2):
+            co = camera_q032('fit', D=D, lateral=lat, res=(1280, 1749)); bpy.context.view_layer.update()
+            px = lambda v: world_to_camera_view(sc, co, Vector((v.x, v.y, 30.0))).x*1280
+            xs = [px(v) for v in OUTLINE]; got = (min(xs), max(xs), *sorted((px(ARC[0]), px(ARC[-1]))))
+            for sx in range(-120, 121, 4):        # horizontal lens shift in px
+                e = [g+sx-t for g, t in zip(got, target)]; err = (sum(x*x for x in e)/4)**.5
+                if best is None or err < best[0]: best = (err, D, lat, sx, [round(g+sx) for g in got])
+            bpy.data.objects.remove(co)
+    print('FITCAM', best)
 def camera_look(name, pos, target, lens, res):
     cam = bpy.data.cameras.new(name); co = bpy.data.objects.new(name, cam); sc.collection.objects.link(co)
     co.location = pos; co.rotation_euler = (Vector(target)-Vector(pos)).to_track_quat('-Z', 'Y').to_euler(); cam.lens = lens; cam.clip_end = 2000
@@ -541,6 +560,20 @@ elif VIEW == 'crown':  # crown and lettering, long lens from across the crossing
     p = ARC_MID + ARC_N*95 + TANG*8
     camera_look('cam_crown', (p.x, p.y, 20), (ARC_MID.x, ARC_MID.y, 45), 135, (800*scale, 533*scale))
 os.makedirs(OUT, exist_ok=True)
+if 'mask' in argv:   # silhouette matte for the shape check: QFRONT white, everything else and the sky black
+    white = bpy.data.materials.new('mask_white'); white.use_nodes = True; wn = white.node_tree
+    for n in list(wn.nodes): wn.nodes.remove(n)
+    e = wn.nodes.new('ShaderNodeEmission'); o_ = wn.nodes.new('ShaderNodeOutputMaterial'); wn.links.new(e.outputs[0], o_.inputs[0])
+    black = bpy.data.materials.new('mask_black'); black.diffuse_color = (0, 0, 0, 1); black.use_nodes = True
+    black.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value = (0, 0, 0, 1)
+    for ob in sc.objects:
+        if ob.type in ('MESH', 'FONT'):
+            m_ = black if ob.users_collection[0].name == '09_CONTEXT' else white
+            ob.data.materials.clear(); ob.data.materials.append(m_)
+        if ob.type == 'LIGHT': ob.hide_render = True
+    sc.world.node_tree.nodes['Background'].inputs['Strength'].default_value = 0
+    sc.cycles.samples = 4; sc.cycles.use_denoising = False; sc.view_settings.view_transform = 'Standard'; sc.view_settings.exposure = 0
+    QUALITY = 'mask'
 sc.render.filepath = os.path.join(OUT, f'{MODE}_{VIEW}_{QUALITY}.png')
 if SAVE: bpy.ops.wm.save_as_mainfile(filepath=os.path.join(OUT, 'qfront.blend'))
 if 'norender' not in argv: bpy.ops.render.render(write_still=True)
