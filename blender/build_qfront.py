@@ -94,7 +94,7 @@ def glass(name, tint, transmit, rough=.02, ior=1.9):
     """Thin architectural glazing: fresnel mix of a sharp reflection and a tinted see-through."""
     m, nt, out = node_mat(name)
     tr = nt.nodes.new('ShaderNodeBsdfTransparent'); tr.inputs['Color'].default_value = (tint[0]*transmit, tint[1]*transmit, tint[2]*transmit, 1)
-    gl = nt.nodes.new('ShaderNodeBsdfGlossy'); gl.inputs['Roughness'].default_value = rough; gl.inputs['Color'].default_value = (.9, .95, .97, 1)
+    gl = nt.nodes.new('ShaderNodeBsdfGlossy'); gl.inputs['Roughness'].default_value = rough; gl.inputs['Color'].default_value = (.9, .9, .9, 1)
     fr = nt.nodes.new('ShaderNodeFresnel'); fr.inputs['IOR'].default_value = ior    # coated panes reflect more than plain glass
     mx = nt.nodes.new('ShaderNodeMixShader')
     nt.links.new(fr.outputs['Fac'], mx.inputs['Fac']); nt.links.new(tr.outputs['BSDF'], mx.inputs[1]); nt.links.new(gl.outputs['BSDF'], mx.inputs[2])
@@ -118,6 +118,27 @@ def emissive_image(name, path, strength, sat=1.0):
     nt.links.new(add.outputs['Shader'], out.inputs['Surface']); return m
 
 NIGHT = MODE == 'night'
+
+def printed(name, path, night_emit=1.5):
+    """Printed/backlit billboard: image as albedo, lit from inside at night."""
+    m, nt, out = node_mat(name); b = nt.nodes.new('ShaderNodeBsdfPrincipled'); b.inputs['Roughness'].default_value = .45
+    tx = nt.nodes.new('ShaderNodeTexImage'); tx.image = bpy.data.images.load(path); tc = nt.nodes.new('ShaderNodeTexCoord')
+    nt.links.new(tc.outputs['UV'], tx.inputs['Vector']); nt.links.new(tx.outputs['Color'], b.inputs['Base Color'])
+    if NIGHT: nt.links.new(tx.outputs['Color'], b.inputs['Emission Color']); b.inputs['Emission Strength'].default_value = night_emit
+    nt.links.new(b.outputs['BSDF'], out.inputs['Surface']); return m
+
+def tiles(name):
+    """Pavement: 0.3 x 0.6 m concrete flags with slight per-flag tone changes and dark joints."""
+    m, nt, out = node_mat(name); b = nt.nodes.new('ShaderNodeBsdfPrincipled'); b.inputs['Roughness'].default_value = .85
+    tc = nt.nodes.new('ShaderNodeTexCoord'); br = nt.nodes.new('ShaderNodeTexBrick'); br.offset = .5
+    br.inputs['Scale'].default_value = 1.0; br.inputs['Brick Width'].default_value = .6; br.inputs['Row Height'].default_value = .3
+    br.inputs['Mortar Size'].default_value = .006; br.inputs['Mortar'].default_value = (.16, .155, .15, 1)
+    br.inputs['Color1'].default_value = (.47, .45, .42, 1); br.inputs['Color2'].default_value = (.40, .385, .36, 1)
+    nz = nt.nodes.new('ShaderNodeTexNoise'); nz.inputs['Scale'].default_value = .4
+    mx = nt.nodes.new('ShaderNodeMix'); mx.data_type = 'RGBA'; mx.blend_type = 'MULTIPLY'; mx.inputs['Factor'].default_value = .35
+    nt.links.new(tc.outputs['Object'], br.inputs['Vector']); nt.links.new(tc.outputs['Object'], nz.inputs['Vector'])
+    nt.links.new(br.outputs['Color'], mx.inputs['A']); nt.links.new(nz.outputs['Color'], mx.inputs['B']); nt.links.new(mx.outputs['Result'], b.inputs['Base Color'])
+    nt.links.new(b.outputs['BSDF'], out.inputs['Surface']); return m
 
 def ctx_windows(name):
     """Neighbour glazing: dark reflective glass; at night a brick pattern lights a random half of the bays, warm or cool."""
@@ -151,7 +172,7 @@ MAT = {
  'front_rail': principled('front_rail', (.52, .53, .55), metal=.6, rough=.3),
  'rail': principled('rail_alu', (.84, .85, .86), metal=.4, rough=.28, streaks=.12),
  'mullion': principled('mullion', (.55, .57, .59), metal=.8, rough=.3),
- 'dark_glass': glass('glass_dark', (.45, .55, .62), .04, ior=1.6),
+ 'dark_glass': glass('glass_dark', (.45, .55, .62), .04, ior=1.6 if NIGHT else 2.4),   # coated low-e glazing: a stronger mirror than plain glass
  'crown_glass': glass('glass_crown', (.40, .46, .50), .35, rough=.04, ior=1.7),
  'q_bar': principled('q_bar', (.75, .05, .07), rough=.35, emit=(1, .1, .1), estr=(5 if NIGHT else 0)),
  'clear_glass': glass('glass_clear', (.85, .93, .92), .78),
@@ -165,23 +186,25 @@ MAT = {
  'books': books('shop_books'),
  'shelf': principled('shelf', (.12, .12, .13), rough=.6),
  'goods': principled('goods', (.22, .19, .17), rough=.6, emit=(1, .85, .7), estr=(.6 if NIGHT else .25)),
- 'steel': principled('truss_steel', (.42, .43, .44) if not NIGHT else (.05, .05, .055), metal=.3 if NIGHT else .5, rough=.75 if NIGHT else .4),
+ 'steel': principled('truss_steel', (.55, .56, .57) if not NIGHT else (.05, .05, .055), metal=.3 if NIGHT else .5, rough=.75 if NIGHT else .4),
  'plant': principled('plant', (.72, .73, .72) if not NIGHT else (.08, .085, .09), metal=.2, rough=.5),
  'concrete': principled('concrete', (.55, .54, .52), rough=.85),
  'blind': principled('blind_wood', (.45, .28, .16), rough=.7, emit=(.95, .65, .4), estr=(.5 if NIGHT else .45)),
  'brace': principled('brace_white', (.88, .88, .88), metal=.1, rough=.35),
  'letters': principled('letters', (.95, .95, .95), rough=.3, emit=(1, 1, 1), estr=(4 if NIGHT else 0)),
  'sb_letters': principled('sb_letters', (.93, .93, .9), rough=.3, emit=(.15, 1, .45), estr=(5 if NIGHT else 0)),
- 'dark_band': principled('dark_band', (.07, .07, .08), metal=.4, rough=.35),
+ 'dark_band': principled('dark_band', (.30, .31, .33), metal=.6, rough=.3),
  'tsutaya_side': principled('tsutaya_side', (.12, .12, .13), metal=.3, rough=.4),
  'lamp': principled('lamp_head', (.75, .76, .77), metal=.8, rough=.25, emit=(1, .97, .9), estr=(25 if NIGHT else 0)),
- 'asphalt': principled('asphalt', (.17, .17, .175), rough=.85, streaks=.15),
- 'paving': principled('paving', (.42, .40, .38), rough=.8),
+ 'asphalt': principled('asphalt', (.19, .18, .17), rough=.85, streaks=.15),
+ 'paving': tiles('paving'),
+ 'rib': principled('rib_alu', (.74, .75, .77), metal=.5, rough=.3, streaks=.15),
+ 'kerb': principled('kerb', (.55, .54, .52), rough=.8),
  'zebra': principled('zebra', (.82, .82, .80), rough=.6),
  'shop_in': principled('shop_interior', (.05, .045, .04), rough=.6, emit=(1, .82, .6), estr=(.35 if NIGHT else .15)),
  'context': principled('context', (.42, .42, .44), rough=.7, streaks=.2),
  'ctx_win': ctx_windows('context_windows'),
- 'led': emissive_image('qs_eye_main', os.path.join(TEX, 'led_main.png'), 7 if NIGHT else 1.2, sat=1.0 if NIGHT else .6),
+ 'led': emissive_image('qs_eye_main', os.path.join(TEX, 'led_main.png'), 7 if NIGHT else .8, sat=1.0 if NIGHT else .6),
 }
 COL = {}
 def collection(name):
@@ -307,7 +330,7 @@ for p, t, d in arc_stations(MULL):
     q = CEN + d*(R-CAVITY+.12)
     B.box('03_OUTER_SKIN', 'mullion', (q.x, q.y, (F2+TOP)/2), (.08, .28, TOP-F2), math.atan2(t.y, t.x))
     q2 = CEN + d*(R+.05)                           # outer vertical (thin rib of the outer skin)
-    B.box('03_OUTER_SKIN', 'mullion', (q2.x, q2.y, (F3+TOP)/2), (.06, .30, TOP-F3), math.atan2(t.y, t.x))
+    B.box('03_OUTER_SKIN', 'rib', (q2.x, q2.y, (F3+TOP)/2), (.05, .24, TOP-F3), math.atan2(t.y, t.x))
 z = F3
 while z <= TOP + .01:
     ring = [CEN + (p-CEN).normalized()*(R+.02) for p in ARC]
@@ -388,6 +411,22 @@ for i in range(len(posts)):
     if (b-a).length > 8: continue
     if i % 2: B.beam('05_CROWN', 'steel', (a.x, a.y, TOP+.4), (b.x, b.y, TOP+5.6), .2); B.beam('05_CROWN', 'steel', (b.x, b.y, TOP+5.6), (a.x, a.y, CROWN-.7), .2)
     else: B.beam('05_CROWN', 'steel', (b.x, b.y, TOP+.4), (a.x, a.y, TOP+5.6), .2); B.beam('05_CROWN', 'steel', (a.x, a.y, TOP+5.6), (b.x, b.y, CROWN-.7), .2)
+ring2 = offset(OUTLINE, 5.0); posts2 = []
+for a, b, L, t, n, k in segments(ring2):
+    cnt = max(1, round(L/3.0))
+    for j in range(cnt): posts2.append(a + t*(L*j/cnt))
+for p in posts2: B.beam('05_CROWN', 'steel', (p.x, p.y, TOP), (p.x, p.y, DECK), .22)
+for zz in (TOP+.3, TOP+2.9, TOP+5.6, DECK-.2):
+    for i in range(len(posts2)):
+        a, b = posts2[i], posts2[(i+1) % len(posts2)]
+        if (b-a).length < 5: B.beam('05_CROWN', 'steel', (a.x, a.y, zz), (b.x, b.y, zz), .16)
+for i in range(len(posts2)):
+    a, b = posts2[i], posts2[(i+1) % len(posts2)]
+    if (b-a).length > 5: continue
+    B.beam('05_CROWN', 'steel', (a.x, a.y, TOP+.3), (b.x, b.y, TOP+2.9), .1); B.beam('05_CROWN', 'steel', (b.x, b.y, TOP+.3), (a.x, a.y, TOP+2.9), .1)
+for p in posts[::2]:   # radial ties between the two rings
+    q = min(posts2, key=lambda r: (r-p).length)
+    for zz in (TOP+2.9, DECK-.2): B.beam('05_CROWN', 'steel', (p.x, p.y, zz), (q.x, q.y, zz), .16)
 # a few big diagonal members seen through the front (Q031)
 for k in range(5):
     g0 = a0 + SWEEP*(.1+.2*k); g1 = g0 + SWEEP*.12
@@ -451,7 +490,7 @@ for inset in (4.6, 5.8, 7.0):
         B.box('06_GROUND_FLOOR', 'books', (p.x+d.x*.24, p.y+d.y*.24, h*.5), (1.65, .02, h*.85), math.atan2(t.y, t.x))
 # signage: STARBUCKS COFFEE (2F, left of centre) and TSUTAYA (band, right of centre) - text in a stock font
 tang = Vector((-ARC_N.y, ARC_N.x))
-sb = ARC_MID + ARC_N*.25 - tang*1.0
+sb = CEN + ARC_N*(R-CAVITY+.05) - tang*1.0   # mounted on the 2F glass, so its reflection sits under it
 text_object('STARBUCKS COFFEE', 1.3, .05, '06_GROUND_FLOOR', 'sb_letters', (sb.x, sb.y, M['podium']['starbucks_sign_m']), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
 ts = ARC_MID + ARC_N*.4 + tang*5.8
 text_object('TSUTAYA', 1.7, .08, '06_GROUND_FLOOR', 'letters', (ts.x, ts.y, M['podium']['tsutaya_band_m']-.1), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
@@ -486,6 +525,16 @@ for end, (z0, z1) in ((ARC[0], M['floodlights']['right_m']), (ARC[-1], M['floodl
 # ================================================================ 09 CONTEXT: pavement, crossing, neighbours
 B.prism('09_CONTEXT', 'asphalt', [Vector((-160, -120)), Vector((160, -120)), Vector((160, 160)), Vector((-160, 160))], -.3, -.02)
 B.prism('09_CONTEXT', 'paving', offset(OUTLINE, -6.0), -.3, .15)
+B.ribbon('09_CONTEXT', 'kerb', offset(OUTLINE, -6.0), -.02, .16)
+_fw = ARC_N; _sd = Vector((-_fw.y, _fw.x))
+for u in range(-60, 61, 6):          # dashed centre line and lane edges on the road along the front
+    for f_, ln in ((24.5, 3.0), (19.2, 6.0), (29.8, 6.0)):
+        c = ARC_MID + _fw*f_ + _sd*u
+        if abs(u) < 10 and f_ == 24.5: continue
+        B.box('09_CONTEXT', 'zebra', (c.x, c.y, -.012), (ln, .15, .02), math.atan2(_sd.y, _sd.x))
+for f_ in (31.5, 41.5):              # stop lines before the crossings
+    c = ARC_MID + _fw*f_ - _sd*5
+    B.box('09_CONTEXT', 'zebra', (c.x, c.y, -.012), (22, .45, .02), math.atan2(_sd.y, _sd.x))
 # zebra stripes across the front of QFRONT (approx. OSM crossing way/1157451161 and neighbours)
 fwd = ARC_N; side = Vector((-fwd.y, fwd.x))
 # Q032: the stripes are long bars parallel to the facade, stacked towards the camera (people cross towards it)
@@ -503,7 +552,7 @@ random.seed(11)
 far = ARC_MID + ARC_N*135; ftan = Vector((-ARC_N.y, ARC_N.x)); fyaw = math.atan2(ftan.y, ftan.x)
 for k, (off, w_, h_) in enumerate([(-50, 40, 28), (-8, 36, 42), (32, 44, 34), (75, 40, 60)]):
     c = far + ftan*off
-    B.box('09_CONTEXT', 'context', (c.x, c.y, h_/2), (w_, 20, h_), fyaw)
+    B.box('09_CONTEXT', 'ctx3', (c.x, c.y, h_/2), (w_, 20, h_), fyaw)   # light station-side blocks: what the front glass mirrors
     for zz in range(3, int(h_)-2, 4): B.box('09_CONTEXT', 'ctx_win', (c.x, c.y, zz+1), (w_+.06, 20.06, 1.7), fyaw)
 CTX_COLS = [(.55, .53, .5), (.68, .66, .62), (.38, .4, .42), (.72, .7, .66), (.47, .45, .43)]
 CTX_BOXES = [(-45, 30, 16, 24, 26, .1), (-48, 55, 18, 18, 38, .1), (22, 55, 20, 24, 30, -.2), (30, 82, 26, 22, 22, -.2),
@@ -554,6 +603,27 @@ for (cx, cy, w_, d_, h_, yaw_) in CTX_BOXES:
             if vertical:
                 tob_.data.body = '\n'.join(word); tob_.data.align_y = 'CENTER'; tob_.data.space_line = .9
             tob_.matrix_world = Matrix.Translation(c + nrm*.17) @ Matrix.Rotation(fyaw, 4, 'Z') @ Matrix.Rotation(math.pi/2, 4, 'X')
+MAT['poster_a'] = printed('poster_a', os.path.join(TEX, 'poster_a.png'), 2.0)
+MAT['poster_b'] = printed('poster_b', os.path.join(TEX, 'poster_b.png'), 2.0)
+MAT['poster_c'] = emissive_image('poster_c', os.path.join(TEX, 'poster_c.png'), 5 if NIGHT else 1.6, sat=1.0 if NIGHT else .8)
+def panel(mat, c, nrm, w, h):
+    tg = Vector((-nrm.y, nrm.x, 0)); hw, hh = tg*(w/2), Vector((0, 0, h/2))
+    B.quad('09_CONTEXT', mat, [c-hw-hh, c+hw-hh, c+hw+hh, c-hw+hh], uv=[(0, 0), (1, 0), (1, 1), (0, 1)])
+for bi, (cx, cy, w_, d_, h_, yaw_) in enumerate(CTX_BOXES[:3]):
+    R2 = Matrix.Rotation(yaw_, 3, 'Z')
+    best = max((((R2 @ Vector(nl)), (w_ if nl[0] else d_)/2, (d_ if nl[0] else w_)) for nl in ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0))),
+               key=lambda e: e[0].dot((Vector((CAMP.x, CAMP.y, 0)) - Vector((cx, cy, 0))).normalized()))
+    nrm, half, ext = best; ctr = Vector((cx, cy, 0)) + nrm*half
+    # rooftop billboard on a steel frame
+    bw, bh = min(ext*.9, 16), 6.0; top_c = ctr - nrm*1.5 + Vector((0, 0, h_ + 1.2 + bh/2))
+    panel(['poster_a', 'poster_b', 'poster_a'][bi], top_c + nrm*.05, nrm, bw, bh)
+    B.box('09_CONTEXT', 'signal', top_c - nrm*.15, (bw, .2, bh), math.atan2(-nrm.x, nrm.y))
+    for u in (-bw/2+.5, 0, bw/2-.5):
+        tg = Vector((-nrm.y, nrm.x, 0)); b0 = ctr - nrm*1.8 + tg*u
+        B.beam('09_CONTEXT', 'pole', (b0.x, b0.y, h_), (b0.x, b0.y, h_ + 1.2 + bh), .18)
+        B.beam('09_CONTEXT', 'pole', (b0.x, b0.y, h_), (b0.x - nrm.x*3, b0.y - nrm.y*3, h_ + 1.2 + bh*.7), .12)
+    if bi == 0:   # street-facing LED vision mid-height (Q032 left edge)
+        panel('poster_c', ctr + nrm*.35 + Vector((0, 0, 13)), nrm, min(ext*.7, 11), 6.5)
 # ---- street furniture: lamp posts, signal poles (grey steel) at the kerbs
 fwd = ARC_N; side = Vector((-fwd.y, fwd.x))     # (the context loop above reuses the name 'side')
 MAT['pole'] = principled('pole', (.42, .43, .44), metal=.6, rough=.4)
@@ -575,7 +645,7 @@ for u, f in ((-17, 9.5), (-5.5, 9.5), (10, 9.5), (19, 9.5), (-20, 41), (-3, 41),
 random.seed(23)
 CLOTH = [(.03, .03, .035), (.05, .05, .06), (.12, .12, .13), (.22, .21, .2), (.06, .08, .14), (.42, .38, .32), (.62, .6, .57), (.75, .74, .72), (.3, .08, .07), (.16, .2, .14)]
 for i, c in enumerate(CLOTH): MAT[f'cloth{i}'] = principled(f'cloth{i}', c, rough=.8)
-MAT['skin'] = principled('skin', (.62, .45, .35), rough=.5); MAT['hair'] = principled('hair', (.02, .018, .016), rough=.45)
+MAT['skin'] = principled('skin', (.62, .45, .35), rough=.5); MAT['hair'] = principled('hair', (.02, .018, .016), rough=.45); MAT['hair2'] = principled('hair2', (.09, .05, .03), rough=.45)
 MAT['denim'] = principled('denim', (.06, .09, .16), rough=.85)
 def person(p, heading):
     h = random.gauss(1.66, .08); f = Vector((math.cos(heading), math.sin(heading), 0)); sd = Vector((-f.y, f.x, 0))
@@ -588,14 +658,15 @@ def person(p, heading):
         B.cyl('10_LIFE', legs, foot, hip + sd*sgn*.09, .065, 6)
         B.box('10_LIFE', 'cloth0', foot + f*.05 + Vector((0, 0, .03)), (.24, .09, .06), heading)
     coat = random.random() < .45
-    B.cyl('10_LIFE', top, hip - Vector((0, 0, .18 if coat else 0)), base + Vector((0, 0, .82*h)), .17 if coat else .15, 8, .15)
+    B.cyl('10_LIFE', top, hip - Vector((0, 0, .18 if coat else 0)), base + Vector((0, 0, .78*h)), .17 if coat else .14, 8, .17)
+    B.sphere('10_LIFE', top, base + Vector((0, 0, .79*h)), .18, .45)   # shoulders
     sh = base + Vector((0, 0, .8*h))
     for sgn in (-1, 1):
         hand = base + sd*sgn*.22 - f*stride*sgn*.7 + Vector((0, 0, .47*h))
         B.cyl('10_LIFE', top, sh + sd*sgn*.19, hand, .045, 5)
     B.cyl('10_LIFE', 'skin', base + Vector((0, 0, .82*h)), base + Vector((0, 0, .87*h)), .05, 6)
     B.sphere('10_LIFE', 'skin', base + Vector((0, 0, .925*h)), .1, 1.15)
-    B.sphere('10_LIFE', 'hair', base + Vector((0, 0, .94*h)) - f*.02, .105, 1.05)
+    B.sphere('10_LIFE', 'hair' if random.random() < .7 else 'hair2', base + Vector((0, 0, .94*h)) - f*.02, .105, 1.05)
     if random.random() < .3: B.box('10_LIFE', random.choice(['cloth0', 'cloth3', 'cloth7']), sh + sd*.2 - Vector((0, 0, .3)), (.08, .3, .35), heading)
 fwd = ARC_N; side = Vector((-fwd.y, fwd.x))
 cross_dir = math.atan2(fwd.y, fwd.x)
@@ -647,13 +718,13 @@ if NIGHT:
     sc.view_settings.exposure = .3
 else:
     # Q032: 2018-10-30 10:25 JST -> sun azimuth ~152 deg (from north, clockwise), elevation ~38 deg
-    sky.sun_elevation = math.radians(38); sky.sun_rotation = math.radians(90 - 152 + 180); bg.inputs['Strength'].default_value = .24; sc.view_settings.exposure = -.2
+    sky.sun_elevation = math.radians(38); sky.sun_rotation = math.radians(90 - 152 + 180); bg.inputs['Strength'].default_value = .2; sc.view_settings.exposure = 0.05
     sky.air_density = .7; sky.dust_density = .15; sky.ozone_density = 4.0; sky.sun_disc = False
     # Q032 was shot with a deep, near-polarised blue sky. Only camera rays see the deeper tint; the scene is still lit by the plain sky.
     lp_ = nt.nodes.new('ShaderNodeLightPath'); deep = nt.nodes.new('ShaderNodeMix'); deep.data_type = 'RGBA'; deep.blend_type = 'MULTIPLY'
-    deep.inputs['B'].default_value = (.50, .42, .60, 1)
+    deep.inputs['B'].default_value = (.62, .52, .70, 1)
     nt.links.new(lp_.outputs['Is Camera Ray'], deep.inputs['Factor']); nt.links.new(sky.outputs['Color'], deep.inputs['A']); nt.links.new(deep.outputs['Result'], bg.inputs['Color'])
-    sun = bpy.data.lights.new('sun', 'SUN'); sun.energy = 6.0; sun.angle = math.radians(.6)
+    sun = bpy.data.lights.new('sun', 'SUN'); sun.energy = 6.0; sun.color = (1.0, .95, .88); sun.angle = math.radians(.6)
     so = bpy.data.objects.new('sun', sun); sc.collection.objects.link(so)
     az = math.radians(152); el = math.radians(38)
     dirv = Vector((math.sin(az)*math.cos(el), math.cos(az)*math.cos(el), math.sin(el)))   # towards the sun
@@ -666,8 +737,9 @@ if os.path.exists(HDRI) and 'nohdri' not in argv:
     env = nt.nodes.new('ShaderNodeTexEnvironment'); env.image = bpy.data.images.load(HDRI)
     tco = nt.nodes.new('ShaderNodeTexCoord'); mp_ = nt.nodes.new('ShaderNodeMapping'); mp_.inputs['Rotation'].default_value = (0, 0, math.radians(float(next((a_[5:] for a_ in argv if a_.startswith('hrot=')), '0'))))
     nt.links.new(tco.outputs['Generated'], mp_.inputs['Vector']); nt.links.new(mp_.outputs['Vector'], env.inputs['Vector'])
-    bg2 = nt.nodes.new('ShaderNodeBackground'); bg2.inputs['Strength'].default_value = .025 if NIGHT else .35
-    nt.links.new(env.outputs['Color'], bg2.inputs['Color'])
+    bg2 = nt.nodes.new('ShaderNodeBackground'); bg2.inputs['Strength'].default_value = .025 if NIGHT else .42
+    hsv_ = nt.nodes.new('ShaderNodeHueSaturation'); hsv_.inputs['Saturation'].default_value = .45   # Q032's glazing mirrors a grey, not blue, street
+    nt.links.new(env.outputs['Color'], hsv_.inputs['Color']); nt.links.new(hsv_.outputs['Color'], bg2.inputs['Color'])
     lpg = nt.nodes.new('ShaderNodeLightPath'); mxs = nt.nodes.new('ShaderNodeMixShader'); wout = nt.nodes['World Output']
     nt.links.new(lpg.outputs['Is Glossy Ray'], mxs.inputs['Fac']); nt.links.new(bg.outputs['Background'], mxs.inputs[1]); nt.links.new(bg2.outputs['Background'], mxs.inputs[2])
     nt.links.new(mxs.outputs['Shader'], wout.inputs['Surface'])
@@ -731,9 +803,10 @@ def lens_finish():
     gl_ = ct.nodes.new('CompositorNodeGlare'); gl_.glare_type = 'FOG_GLOW'; gl_.threshold = 1.0 if NIGHT else 4.0; gl_.mix = -.75 if NIGHT else -.95; gl_.size = 7
     em_ = ct.nodes.new('CompositorNodeEllipseMask'); em_.width = 1.15; em_.height = 1.15
     bl = ct.nodes.new('CompositorNodeBlur'); bl.filter_type = 'FAST_GAUSS'; bl.use_relative = True; bl.factor_x = bl.factor_y = 30
-    mr = ct.nodes.new('CompositorNodeMapRange'); mr.inputs['To Min'].default_value = .78; mr.inputs['To Max'].default_value = 1.0
+    mr = ct.nodes.new('CompositorNodeMapRange'); mr.inputs['To Min'].default_value = .88; mr.inputs['To Max'].default_value = 1.0
     mx_ = ct.nodes.new('CompositorNodeMixRGB'); mx_.blend_type = 'MULTIPLY'; mx_.inputs['Fac'].default_value = 1
-    ct.links.new(rl.outputs['Image'], ld.inputs['Image']); ct.links.new(ld.outputs['Image'], gl_.inputs['Image'])
+    sh_ = ct.nodes.new('CompositorNodeFilter'); sh_.filter_type = 'SHARPEN'; sh_.inputs['Fac'].default_value = .12
+    ct.links.new(rl.outputs['Image'], ld.inputs['Image']); ct.links.new(ld.outputs['Image'], sh_.inputs['Image']); ct.links.new(sh_.outputs['Image'], gl_.inputs['Image'])
     ct.links.new(em_.outputs['Mask'], bl.inputs['Image']); ct.links.new(bl.outputs['Image'], mr.inputs['Value'])
     ct.links.new(gl_.outputs['Image'], mx_.inputs[1]); ct.links.new(mr.outputs['Value'], mx_.inputs[2]); ct.links.new(mx_.outputs['Image'], comp.inputs['Image'])
 if 'mask' not in argv and 'nolens' not in argv: lens_finish()
