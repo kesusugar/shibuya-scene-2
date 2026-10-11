@@ -47,7 +47,7 @@
    41.0
   ]
  },
- "side_fins_pitch_m": "dense, ~0.5-0.6 (foreshortened; to confirm on Q118/Q096)",
+ "side_fins_pitch_m": 0.97,
  "floors_assumed": {
   "1F": [
    0,
@@ -60,5 +60,6 @@
   "3F-8F": "10.2 + 5.0 k, k=0..6 -> 40.2"
  },
  "checks": "main vision area from photo 96 m2 vs published 99.5 m2 (-4%); arc chord photo vs OSM within 0.3%.",
- "_mullion_note": "Brightness peaks along row 1150-1190 px, x 450-690: 22-25 px spacing = 0.96 m at the arc centre (earlier 1.78 m was every other rib)."
+ "_mullion_note": "Brightness peaks along row 1150-1190 px, x 450-690: 22-25 px spacing = 0.96 m at the arc centre (earlier 1.78 m was every other rib).",
+ "_side_fin_note": "Counted on Q032 (left face, rows 900-1060 px): ~17 fins where a 0.55 m pitch model shows ~30 -> 0.97 m, the same module as the front mullions."
 }
