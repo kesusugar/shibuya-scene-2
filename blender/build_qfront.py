@@ -24,7 +24,7 @@ F2, F3 = M['podium']['f2_bottom_m'], M['podium']['f2_top_m']
 TOP = M['glass_storeys_top_m']; CROWN = M['crown']['top_m']; DECK = M['plateau_inner_roof_m']
 LEVELS = [F2] + [F3 + 5.0 * k for k in range(7)]          # slab tops: 2F, 3F..8F, roof (40.2)
 MULL = M['front_face']['mullion_pitch_m']; RAIL = M['front_face']['transom_pitch_m']
-SIDE_FIN = .55; CROWN_FIN = M['crown']['fin_pitch_m']
+SIDE_FIN = .97; CROWN_FIN = M['crown']['fin_pitch_m']
 CAVITY = .9
 
 # ---------------------------------------------------------------- plan
@@ -102,7 +102,7 @@ def glass(name, tint, transmit, rough=.02, ior=1.9):
     m.blend_method = 'BLEND' if hasattr(m, 'blend_method') else None
     return m
 
-def emissive_image(name, path, strength):
+def emissive_image(name, path, strength, sat=1.0):
     m, nt, out = node_mat(name)
     tx = nt.nodes.new('ShaderNodeTexImage'); tx.image = bpy.data.images.load(path); tx.extension = 'CLIP'
     # LED pixel grid: a fine dot mask modulates the image.
@@ -113,10 +113,24 @@ def emissive_image(name, path, strength):
     nt.links.new(tc.outputs['UV'], wv.inputs['Vector'])
     gl = nt.nodes.new('ShaderNodeBsdfGlossy'); gl.inputs['Roughness'].default_value = .25; gl.inputs['Color'].default_value = (.04, .04, .045, 1)
     add = nt.nodes.new('ShaderNodeAddShader')
-    nt.links.new(mul.outputs['Result'], em.inputs['Color']); nt.links.new(em.outputs['Emission'], add.inputs[0]); nt.links.new(gl.outputs['BSDF'], add.inputs[1])
+    hs = nt.nodes.new('ShaderNodeHueSaturation'); hs.inputs['Saturation'].default_value = sat   # daylight washes the LED out (Q032)
+    nt.links.new(mul.outputs['Result'], hs.inputs['Color']); nt.links.new(hs.outputs['Color'], em.inputs['Color']); nt.links.new(em.outputs['Emission'], add.inputs[0]); nt.links.new(gl.outputs['BSDF'], add.inputs[1])
     nt.links.new(add.outputs['Shader'], out.inputs['Surface']); return m
 
 NIGHT = MODE == 'night'
+
+def ctx_windows(name):
+    """Neighbour glazing: dark reflective glass; at night a brick pattern lights a random half of the bays, warm or cool."""
+    m, nt, out = node_mat(name); b = nt.nodes.new('ShaderNodeBsdfPrincipled')
+    b.inputs['Base Color'].default_value = (.08, .09, .1, 1); b.inputs['Metallic'].default_value = .6; b.inputs['Roughness'].default_value = .12
+    if NIGHT:
+        tc = nt.nodes.new('ShaderNodeTexCoord'); br = nt.nodes.new('ShaderNodeTexBrick'); br.offset = 0
+        br.inputs['Scale'].default_value = 1.0; br.inputs['Brick Width'].default_value = 1.6; br.inputs['Row Height'].default_value = 4.0
+        br.inputs['Mortar Size'].default_value = .05; br.inputs['Mortar'].default_value = (0, 0, 0, 1)
+        br.inputs['Color1'].default_value = (1, .78, .5, 1); br.inputs['Color2'].default_value = (0, 0, 0, 1); br.inputs['Bias'].default_value = .55
+        nt.links.new(tc.outputs['Object'], br.inputs['Vector']); nt.links.new(br.outputs['Color'], b.inputs['Emission Color'])
+        b.inputs['Emission Strength'].default_value = .7
+    nt.links.new(b.outputs['BSDF'], out.inputs['Surface']); return m
 
 def books(name):
     """Book/goods spines on shop shelving: a brick pattern of narrow, randomly tinted cells under warm light."""
@@ -130,6 +144,7 @@ def books(name):
     nt.links.new(tc.outputs['Object'], br.inputs['Vector']); nt.links.new(tc.outputs['Object'], vn.inputs['Vector'])
     nt.links.new(br.outputs['Color'], mx.inputs['A']); nt.links.new(vn.outputs['Color'], mx.inputs['B'])
     nt.links.new(mx.outputs['Result'], b.inputs['Base Color'])
+    if NIGHT: nt.links.new(mx.outputs['Result'], b.inputs['Emission Color']); b.inputs['Emission Strength'].default_value = .6
     nt.links.new(b.outputs['BSDF'], out.inputs['Surface']); return m
 MAT = {
  'fin': principled('fin_alu', (.74, .75, .77), metal=.45, rough=.3, streaks=.25),
@@ -143,30 +158,30 @@ MAT = {
  'shop_glass': glass('glass_shop', (.95, .97, .96), .88, rough=.01),
  'slab': principled('slab_edge', (.30, .30, .31), rough=.8),
  'ceiling': principled('ceiling', (.78, .77, .74), rough=.85),
- 'ceil_light': principled('ceil_light', (.95, .95, .92), rough=.4, emit=(1, .93, .82), estr=(12 if NIGHT else 1.0)),
- 'shop_light': principled('shop_light', (.95, .9, .8), rough=.4, emit=(1, .78, .5), estr=(14 if NIGHT else 1.0)),
+ 'ceil_light': principled('ceil_light', (.95, .95, .92), rough=.4, emit=(1, .86, .66), estr=(20 if NIGHT else 2.0)),
+ 'shop_light': principled('shop_light', (.95, .9, .8), rough=.4, emit=(1, .78, .5), estr=(30 if NIGHT else 6.0)),
  'floor': principled('floor', (.36, .34, .31), rough=.55),
  'core': principled('core_wall', (.22, .21, .2), rough=.8),
  'books': books('shop_books'),
  'shelf': principled('shelf', (.12, .12, .13), rough=.6),
  'goods': principled('goods', (.22, .19, .17), rough=.6, emit=(1, .85, .7), estr=(.6 if NIGHT else .25)),
- 'steel': principled('truss_steel', (.42, .43, .44), metal=.5, rough=.4),
+ 'steel': principled('truss_steel', (.42, .43, .44) if not NIGHT else (.05, .05, .055), metal=.3 if NIGHT else .5, rough=.75 if NIGHT else .4),
  'plant': principled('plant', (.72, .73, .72) if not NIGHT else (.08, .085, .09), metal=.2, rough=.5),
  'concrete': principled('concrete', (.55, .54, .52), rough=.85),
- 'blind': principled('blind_wood', (.80, .58, .38), rough=.7, emit=(.95, .65, .4), estr=(.5 if NIGHT else .45)),
+ 'blind': principled('blind_wood', (.45, .28, .16), rough=.7, emit=(.95, .65, .4), estr=(.5 if NIGHT else .45)),
  'brace': principled('brace_white', (.88, .88, .88), metal=.1, rough=.35),
- 'letters': principled('letters', (.95, .95, .95), rough=.3, emit=(1, 1, 1), estr=(6 if NIGHT else 0)),
+ 'letters': principled('letters', (.95, .95, .95), rough=.3, emit=(1, 1, 1), estr=(4 if NIGHT else 0)),
  'sb_letters': principled('sb_letters', (.93, .93, .9), rough=.3, emit=(.15, 1, .45), estr=(5 if NIGHT else 0)),
  'dark_band': principled('dark_band', (.07, .07, .08), metal=.4, rough=.35),
  'tsutaya_side': principled('tsutaya_side', (.12, .12, .13), metal=.3, rough=.4),
  'lamp': principled('lamp_head', (.75, .76, .77), metal=.8, rough=.25, emit=(1, .97, .9), estr=(25 if NIGHT else 0)),
- 'asphalt': principled('asphalt', (.10, .10, .105), rough=.85),
+ 'asphalt': principled('asphalt', (.17, .17, .175), rough=.85, streaks=.15),
  'paving': principled('paving', (.42, .40, .38), rough=.8),
  'zebra': principled('zebra', (.82, .82, .80), rough=.6),
- 'shop_in': principled('shop_interior', (.05, .045, .04), rough=.6, emit=(1, .82, .6), estr=(.03 if NIGHT else .02)),
+ 'shop_in': principled('shop_interior', (.05, .045, .04), rough=.6, emit=(1, .82, .6), estr=(.35 if NIGHT else .15)),
  'context': principled('context', (.42, .42, .44), rough=.7, streaks=.2),
- 'ctx_win': principled('context_windows', (.18, .2, .23), metal=.5, rough=.15, emit=(1, .85, .6), estr=(.05 if NIGHT else 0)),
- 'led': emissive_image('qs_eye_main', os.path.join(TEX, 'led_main.png'), 7 if NIGHT else 2.2),
+ 'ctx_win': ctx_windows('context_windows'),
+ 'led': emissive_image('qs_eye_main', os.path.join(TEX, 'led_main.png'), 7 if NIGHT else 1.2, sat=1.0 if NIGHT else .6),
 }
 COL = {}
 def collection(name):
@@ -209,6 +224,17 @@ class Builder:
         bm = s.bm(coll, mat); v0 = [bm.verts.new((p.x, p.y, z0)) for p in poly]; v1 = [bm.verts.new((p.x, p.y, z1)) for p in poly]
         bm.faces.new(v0[::-1]); bm.faces.new(v1)
         for i in range(len(poly)): j = (i+1) % len(poly); bm.faces.new((v0[i], v0[j], v1[j], v1[i]))
+    def cyl(s, coll, mat, p0, p1, r, segs=8, r2=None):
+        d = Vector(p1)-Vector(p0); L = d.length
+        if L < 1e-4: return
+        bm = s.bm(coll, mat)
+        v = bmesh.ops.create_cone(bm, cap_ends=True, segments=segs, radius1=r, radius2=r if r2 is None else r2, depth=L)['verts']
+        bmesh.ops.rotate(bm, verts=v, cent=(0, 0, 0), matrix=Vector((0, 0, 1)).rotation_difference(d.normalized()).to_matrix())
+        bmesh.ops.translate(bm, verts=v, vec=Vector(p0)+d/2)
+    def sphere(s, coll, mat, c, r, sq=1.0):
+        bm = s.bm(coll, mat); v = bmesh.ops.create_uvsphere(bm, u_segments=10, v_segments=6, radius=r)['verts']
+        for q in v: q.co.z *= sq
+        bmesh.ops.translate(bm, verts=v, vec=Vector(c))
     def finish(s):
         for (coll, mat), bm in s.parts.items():
             me = bpy.data.meshes.new(f'{coll}_{mat}'); bm.to_mesh(me); bm.free()
@@ -247,11 +273,11 @@ for i, z in enumerate(LEVELS[:-1]):
     B.prism('08_INTERIOR', 'floor', offset(OUTLINE, CAVITY+.3), z, z+.02)
     # ceiling with linear light rows parallel to the front
     B.prism('08_INTERIOR', 'ceiling', offset(OUTLINE, CAVITY+.3), ceil-.12, ceil)
-    for row in range(1, 9):
-        ring = offset(OUTLINE, CAVITY+.3+row*1.15)
-        for a, b, L, t, n, k in segments(ring):
-            if L < 1.5: continue
-            m = (a+b)/2; B.box('08_INTERIOR', 'ceil_light', (m.x, m.y, ceil-.14), (L*.85, .18, .04), math.atan2(t.y, t.x))
+    # office/retail ceiling: square recessed panels on a 2.4 m grid behind the curved front (Q031 shows warm rows of points)
+    for inset in (2.2, 4.6, 7.0, 9.4):
+        for p, t, d in arc_stations(2.4, inset=CAVITY+inset)[1:-1]:
+            if random.random() < .12: continue
+            B.box('08_INTERIOR', 'ceil_light', (p.x, p.y, ceil-.13), (.6, .6, .03), math.atan2(t.y, t.x))
     # shelving / furniture rows a few metres inside the glass
     for st in arc_stations(2.4, inset=CAVITY+3.0)[1:-1]:
         p, t, d = st
@@ -291,16 +317,29 @@ while z <= TOP + .01:
     z += RAIL
 
 # ================================================================ 03 OUTER SKIN: dense side fins to the crown top
+def skin_top(p):
+    # PLATEAU 2025 LOD2: the fin screen is 52.1 m all round except the north-east corner,
+    # which steps down to a 44.0 m roof and a 39.8 m roof (WallSurface / RoofSurface).
+    if p.x > -4.6 and p.y > 43.3: return 44.0 if p.y < 46.4 else 39.8
+    return CROWN
 for a, b, L, t, n, k in segments(OUTLINE, KIND):
     if k != 'side': continue
     cnt = max(1, round(L/SIDE_FIN))
-    for j in range(cnt+1):
-        p = a + t*(L*j/cnt) + n*.18
-        B.box('03_OUTER_SKIN', 'fin', (p.x, p.y, (F2+CROWN)/2), (.05, .40, CROWN-F2), math.atan2(t.y, t.x))
-    for zz in [F2, F3] + [F3 + RAIL*k for k in range(1, 9)] + [CROWN-.15]:
-        if zz > CROWN: continue
-        m = (a+b)/2 + n*.2
-        B.box('03_OUTER_SKIN', 'rail', (m.x, m.y, zz), (L+.05, .5, .14), math.atan2(t.y, t.x))
+    pts = [a + t*(L*j/cnt) + n*.18 for j in range(cnt+1)]; tops = [skin_top(q) for q in pts]
+    for q, tp in zip(pts, tops):
+        B.box('03_OUTER_SKIN', 'fin', (q.x, q.y, (F2+tp)/2), (.10, .35, tp-F2), math.atan2(t.y, t.x))
+    for zz in [F2, F3] + [F3 + RAIL*k for k in range(1, 9)] + [None]:
+        # rails run between fins tall enough to carry them; the top rail follows the stepped skin
+        for j in range(cnt):
+            z_ = (min(tops[j], tops[j+1]) - .15) if zz is None else zz
+            if z_ > min(tops[j], tops[j+1]): continue
+            m = (pts[j]+pts[j+1])/2 - n*.1
+            B.box('03_OUTER_SKIN', 'mullion', (m.x, m.y, z_), (L/cnt+.02, .12, .07), math.atan2(t.y, t.x))
+    # Q032 close-up of the side faces: short white brackets between neighbouring fins, staggered, give a ladder rhythm
+    for j in range(cnt):
+        m = (pts[j]+pts[j+1])/2; top_ = min(tops[j], tops[j+1]) - .3; z_ = F2 + .6 + (j % 2)*.62
+        while z_ < top_:
+            B.box('03_OUTER_SKIN', 'fin', (m.x, m.y, z_), (L/cnt-.04, .06, .06), math.atan2(t.y, t.x)); z_ += 1.24
 
 # ================================================================ 04 Q's EYE (main vision)
 mv = M['main_vision']; w, h, zc = mv['width_m'], mv['height_m'], mv['centre_m']
@@ -327,7 +366,7 @@ for zz in (TOP+.1, TOP+3.8, DECK+.2, CROWN-.2):
         B.box('05_CROWN', 'rail', (m.x, m.y, zz), ((b-a).length+.02, .6, .3 if zz > CROWN-1 else .18), math.atan2(t.y, t.x))
 B.prism('05_CROWN', 'slab', offset(OUTLINE, 1.0), TOP-.4, TOP)
 # Q032: a glazed screen sits behind the crown fins; the truss shows through it dark, the sky reflects in it
-B.ribbon('05_CROWN', 'crown_glass', INNER_ARC, TOP, CROWN-.3, closed=False)
+B.ribbon('05_CROWN', 'crown_glass', INNER_ARC, TOP, M['crown']['letters']['bottom_m']-1.6, closed=False)   # stops below the letters: no mirrored QFRONT in it
 # plant enclosure (PLATEAU inner roof 48.4 m), set back
 B.prism('05_CROWN', 'plant', offset(OUTLINE, 11.0), TOP, TOP+2.6)
 for k in range(6):   # rooftop plant units (PLATEAU's 48.4 m returns), set well back
@@ -395,7 +434,7 @@ for s in (-1, 1):
 # 1F shop interior: floor, back wall 6 m in, ceiling with downlights, display tables and shelving
 B.prism('06_GROUND_FLOOR', 'floor', offset(OUTLINE, 1.7), .0, .03)
 B.ribbon('06_GROUND_FLOOR', 'shop_in', offset(OUTLINE, 7.5), 0, F2-.5)
-B.prism('06_GROUND_FLOOR', 'shelf', offset(OUTLINE, 1.7), F2-.75, F2-.6)   # dark ceiling: the light comes from the downlights
+B.prism('06_GROUND_FLOOR', 'shelf' if NIGHT else 'ceiling', offset(OUTLINE, 1.7), F2-.75, F2-.6)   # dark ceiling: the light comes from the downlights
 for row in range(1, 5):
     for p, t, d in arc_stations(1.8, inset=1.7+row*1.3):
         B.box('06_GROUND_FLOOR', 'shop_light', (p.x, p.y, F2-.78), (.18, .18, .03), math.atan2(t.y, t.x))
@@ -413,9 +452,9 @@ for inset in (4.6, 5.8, 7.0):
 # signage: STARBUCKS COFFEE (2F, left of centre) and TSUTAYA (band, right of centre) - text in a stock font
 tang = Vector((-ARC_N.y, ARC_N.x))
 sb = ARC_MID + ARC_N*.25 - tang*1.0
-text_object('STARBUCKS COFFEE', 1.0, .05, '06_GROUND_FLOOR', 'sb_letters', (sb.x, sb.y, M['podium']['starbucks_sign_m']), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
+text_object('STARBUCKS COFFEE', 1.3, .05, '06_GROUND_FLOOR', 'sb_letters', (sb.x, sb.y, M['podium']['starbucks_sign_m']), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
 ts = ARC_MID + ARC_N*.4 + tang*5.8
-text_object('TSUTAYA', 1.0, .08, '06_GROUND_FLOOR', 'letters', (ts.x, ts.y, M['podium']['tsutaya_band_m']-.1), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
+text_object('TSUTAYA', 1.7, .08, '06_GROUND_FLOOR', 'letters', (ts.x, ts.y, M['podium']['tsutaya_band_m']-.1), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
 # east face: tall vertical TSUTAYA letters (dark), on the side segment nearest the arc start
 for a, b, L, t, n, k in segments(OUTLINE, KIND):
     if k == 'side' and (a - Vector(P(4.44, -45.32))).length < .1 or (b - Vector(P(4.44, -45.32))).length < .1 and k == 'side':
@@ -438,10 +477,10 @@ for end, (z0, z1) in ((ARC[0], M['floodlights']['right_m']), (ARC[-1], M['floodl
         B.box('07_FIXTURES', 'lamp', (tip.x, tip.y, zz+.3), (.45, .45, .35))
     if NIGHT:
         for k in range(3):
-            zz = z0 + (z1-z0)*k/2; tip = end + d*1.6 + side*1.8
-            L = bpy.data.lights.new(f'flood{k}', 'SPOT'); L.energy = 3000; L.spot_size = math.radians(45); L.spot_blend = .6; L.color = (1, .95, .88)
+            zz = z0 + (z1-z0)*k/2; tip = end + d*2.5 + side*.5
+            L = bpy.data.lights.new(f'flood{k}', 'SPOT'); L.energy = 9000; L.spot_size = math.radians(60); L.spot_blend = .6; L.color = (1, .95, .88)
             o = bpy.data.objects.new(f'flood{k}', L); collection('07_FIXTURES').objects.link(o)
-            o.location = (tip.x, tip.y, zz); aim = Vector((end.x - side.x*12, end.y - side.y*12, zz-22)) - o.location
+            o.location = (tip.x, tip.y, zz); aim = Vector((end.x + side.x*8 - d.x*.5, end.y + side.y*8 - d.y*.5, zz-16)) - o.location   # wash down the side face (Q031)
             o.rotation_euler = aim.to_track_quat('-Z', 'Y').to_euler()
 
 # ================================================================ 09 CONTEXT: pavement, crossing, neighbours
@@ -449,12 +488,16 @@ B.prism('09_CONTEXT', 'asphalt', [Vector((-160, -120)), Vector((160, -120)), Vec
 B.prism('09_CONTEXT', 'paving', offset(OUTLINE, -6.0), -.3, .15)
 # zebra stripes across the front of QFRONT (approx. OSM crossing way/1157451161 and neighbours)
 fwd = ARC_N; side = Vector((-fwd.y, fwd.x))
-for j in range(-14, 15):
-    c = ARC_MID + fwd*14 + side*(j*.9)
-    B.box('09_CONTEXT', 'zebra', (c.x, c.y, -.015), (.45, 4.0, .02), math.atan2(side.y, side.x))
-for j in range(-10, 11):
-    c = ARC_MID + fwd*34 + side*(j*.9 + 6)
-    B.box('09_CONTEXT', 'zebra', (c.x, c.y, -.015), (.45, 4.0, .02), math.atan2(side.y, side.x))
+# Q032: the stripes are long bars parallel to the facade, stacked towards the camera (people cross towards it)
+def crossing(u0, u1, f0, f1):
+    f = f0
+    while f < f1:
+        c = ARC_MID + fwd*f + side*((u0+u1)/2)
+        B.box('09_CONTEXT', 'zebra', (c.x, c.y, -.015), (u1-u0, .45, .02), math.atan2(side.y, side.x)); f += .9
+crossing(2, 9, 10.5, 30)       # crossing from the QFRONT corner towards the station (right of centre)
+crossing(-14, -6, 10.5, 30)    # second arm (left)
+crossing(-18, 6, 44, 58)       # the crossing in the foreground of Q032
+
 random.seed(11)
 # Across the crossing, behind the camera: the station-side blocks the front glass reflects (Q032 shows them dark in it).
 far = ARC_MID + ARC_N*135; ftan = Vector((-ARC_N.y, ARC_N.x)); fyaw = math.atan2(ftan.y, ftan.x)
@@ -463,10 +506,11 @@ for k, (off, w_, h_) in enumerate([(-50, 40, 28), (-8, 36, 42), (32, 44, 34), (7
     B.box('09_CONTEXT', 'context', (c.x, c.y, h_/2), (w_, 20, h_), fyaw)
     for zz in range(3, int(h_)-2, 4): B.box('09_CONTEXT', 'ctx_win', (c.x, c.y, zz+1), (w_+.06, 20.06, 1.7), fyaw)
 CTX_COLS = [(.55, .53, .5), (.68, .66, .62), (.38, .4, .42), (.72, .7, .66), (.47, .45, .43)]
-for k, (cx, cy, w_, d_, h_, yaw_) in enumerate([(-45, 30, 16, 24, 26, .1), (-48, 55, 18, 18, 38, .1), (22, 55, 20, 24, 30, -.2), (30, 82, 26, 22, 22, -.2),
-                                  (-15, 80, 40, 18, 32, 0), (-80, 10, 30, 30, 35, .2), (60, 20, 30, 40, 34, -.3), (-30, -40, 22, 18, 30, .3), (35, -35, 30, 25, 35, -.4)]):
+CTX_BOXES = [(-45, 30, 16, 24, 26, .1), (-48, 55, 18, 18, 38, .1), (22, 55, 20, 24, 30, -.2), (30, 82, 26, 22, 22, -.2),
+             (-15, 80, 40, 18, 32, 0), (-80, 10, 30, 30, 35, .2), (60, 20, 30, 40, 34, -.3), (-30, -40, 22, 18, 30, .3), (35, -35, 30, 25, 35, -.4)]
+for k, (cx, cy, w_, d_, h_, yaw_) in enumerate(CTX_BOXES):
     mname = f'ctx{k%5}'
-    if mname not in MAT: MAT[mname] = principled(mname, CTX_COLS[k % 5], rough=.75, streaks=.25)
+    if mname not in MAT: MAT[mname] = principled(mname, tuple(c_*(.45 if NIGHT else 1) for c_ in CTX_COLS[k % 5]), rough=.75, streaks=.25)
     B.box('09_CONTEXT', mname, (cx, cy, h_/2), (w_, d_, h_), yaw_)
     R2 = Matrix.Rotation(yaw_, 3, 'Z')
     for zz in range(4, int(h_)-1, 4):                    # ribbon windows with mullions on all four faces
@@ -479,6 +523,112 @@ for k, (cx, cy, w_, d_, h_, yaw_) in enumerate([(-45, 30, 16, 24, 26, .1), (-48,
                     B.box('09_CONTEXT', 'mullion', p, (.08, .08, 1.9), yaw_)
     for r in range(random.randint(1, 3)):               # roof plant
         B.box('09_CONTEXT', 'plant', (cx+random.uniform(-w_/4, w_/4), cy+random.uniform(-d_/4, d_/4), h_+1), (random.uniform(2, 5), random.uniform(2, 5), 2), yaw_)
+
+# ---- neighbour signage: original generic shop signs (no brands) on the faces that look at the Q032 camera
+_F = json.load(open(os.path.join(ROOT, 'data', 'camera_q032_fit.json')))
+CAMP = ARC_MID + ARC_N*_F['D'] + Vector((-ARC_N.y, ARC_N.x))*_F['lat']
+JP = '/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf'
+WORDS = ['カラオケ', 'ドラッグ', '居酒屋', '書店', 'カフェ', 'ラーメン', '眼鏡', '靴', 'ゲーム', '歯科', 'BAR', 'CAFE', 'SALE', '24H', '英会話', '焼肉']
+SIGN_COLS = [(.85, .1, .08), (.95, .78, .05), (.92, .92, .9), (.05, .45, .2), (.05, .2, .6), (.95, .4, .05), (.1, .1, .1), (.8, .1, .45)]
+for i, c in enumerate(SIGN_COLS): MAT[f'sign{i}'] = principled(f'sign{i}', c, rough=.4, emit=c, estr=(2.5 if NIGHT else 0))
+MAT['sign_txt_w'] = principled('sign_txt_w', (.95, .95, .95), rough=.4, emit=(1, 1, 1), estr=(4 if NIGHT else 0))
+MAT['sign_txt_k'] = principled('sign_txt_k', (.03, .03, .03), rough=.4)
+random.seed(5)
+for (cx, cy, w_, d_, h_, yaw_) in CTX_BOXES:
+    R2 = Matrix.Rotation(yaw_, 3, 'Z')
+    for nrm_l, ext in (((1, 0, 0), d_), ((-1, 0, 0), d_), ((0, 1, 0), w_), ((0, -1, 0), w_)):
+        nrm = R2 @ Vector(nrm_l); half = (w_ if nrm_l[0] else d_)/2
+        ctr = Vector((cx, cy, 0)) + nrm*half
+        if nrm.dot(Vector((CAMP.x, CAMP.y, 0)) - ctr) <= 0: continue
+        tng = Vector((-nrm.y, nrm.x, 0)); fyaw = math.atan2(tng.y, tng.x)
+        for k in range(random.randint(2, 5)):
+            vertical = random.random() < .4
+            sw, sh_ = (random.uniform(1.0, 1.6), random.uniform(5, 9)) if vertical else (random.uniform(4, min(12, ext*.8)), random.uniform(1.6, 3.2))
+            u = random.uniform(-ext/2 + sw/2 + .5, ext/2 - sw/2 - .5) if ext > sw + 1 else 0
+            z = random.uniform(3, max(3.5, h_ - sh_ - 2)) + sh_/2
+            c = ctr + nrm*.25 + tng*u + Vector((0, 0, z)); ci = random.randrange(len(SIGN_COLS))
+            B.box('09_CONTEXT', f'sign{ci}', c, (sw, .3, sh_), fyaw)
+            word = random.choice(WORDS); tm = 'sign_txt_k' if ci in (1, 2) else 'sign_txt_w'
+            if vertical: word = word[:4]
+            tob_ = text_object(word, min(sh_*.55, sw*.8) if not vertical else sw*.7, .02, '09_CONTEXT', tm, (0, 0, 0), 0, font=JP)
+            if vertical:
+                tob_.data.body = '\n'.join(word); tob_.data.align_y = 'CENTER'; tob_.data.space_line = .9
+            tob_.matrix_world = Matrix.Translation(c + nrm*.17) @ Matrix.Rotation(fyaw, 4, 'Z') @ Matrix.Rotation(math.pi/2, 4, 'X')
+# ---- street furniture: lamp posts, signal poles (grey steel) at the kerbs
+fwd = ARC_N; side = Vector((-fwd.y, fwd.x))     # (the context loop above reuses the name 'side')
+MAT['pole'] = principled('pole', (.42, .43, .44), metal=.6, rough=.4)
+MAT['signal'] = principled('signal', (.08, .08, .09), rough=.5)
+MAT['sig_lamp'] = principled('sig_lamp', (.1, .3, .2), rough=.3, emit=(.1, 1, .6), estr=3)
+for u, f in ((-17, 9.5), (-5.5, 9.5), (10, 9.5), (19, 9.5), (-20, 41), (-3, 41), (12, 41)):
+    b0 = ARC_MID + fwd*f + side*u
+    B.cyl('09_CONTEXT', 'pole', (b0.x, b0.y, 0), (b0.x, b0.y, 7.5), .09, 8)
+    tip = b0 + side*1.8
+    B.cyl('09_CONTEXT', 'pole', (b0.x, b0.y, 7.3), (tip.x, tip.y, 7.6), .05, 6)
+    B.box('09_CONTEXT', 'signal', (tip.x, tip.y, 7.45), (.6, .25, .14), math.atan2(side.y, side.x))
+    if random.random() < .6:
+        sp = b0 + side*1.0
+        B.box('09_CONTEXT', 'signal', (sp.x, sp.y, 5.3), (1.1, .3, .38), math.atan2(side.y, side.x))
+        B.box('09_CONTEXT', 'sig_lamp', (sp.x+fwd.x*.16, sp.y+fwd.y*.16, 5.3), (.25, .02, .25), math.atan2(side.y, side.x))
+
+# ================================================================ 10 STREET LIFE: pedestrians and vehicles (procedural, low detail)
+# Q032 / Q107 show a dense crowd at the building foot and on the crossings; the palette is the dark, muted Tokyo street mix.
+random.seed(23)
+CLOTH = [(.03, .03, .035), (.05, .05, .06), (.12, .12, .13), (.22, .21, .2), (.06, .08, .14), (.42, .38, .32), (.62, .6, .57), (.75, .74, .72), (.3, .08, .07), (.16, .2, .14)]
+for i, c in enumerate(CLOTH): MAT[f'cloth{i}'] = principled(f'cloth{i}', c, rough=.8)
+MAT['skin'] = principled('skin', (.62, .45, .35), rough=.5); MAT['hair'] = principled('hair', (.02, .018, .016), rough=.45)
+MAT['denim'] = principled('denim', (.06, .09, .16), rough=.85)
+def person(p, heading):
+    h = random.gauss(1.66, .08); f = Vector((math.cos(heading), math.sin(heading), 0)); sd = Vector((-f.y, f.x, 0))
+    base = Vector((p.x, p.y, 0)); stride = random.uniform(-.28, .28)
+    top = f'cloth{random.choices(range(len(CLOTH)), weights=[5, 5, 3, 2, 3, 1.5, 1.5, 2, .6, .8])[0]}'
+    legs = random.choice(['denim', 'cloth0', 'cloth1', 'cloth2', 'cloth5', 'cloth3'])
+    hip = base + Vector((0, 0, .48*h))
+    for sgn in (-1, 1):
+        foot = base + sd*sgn*.09 + f*stride*sgn
+        B.cyl('10_LIFE', legs, foot, hip + sd*sgn*.09, .065, 6)
+        B.box('10_LIFE', 'cloth0', foot + f*.05 + Vector((0, 0, .03)), (.24, .09, .06), heading)
+    coat = random.random() < .45
+    B.cyl('10_LIFE', top, hip - Vector((0, 0, .18 if coat else 0)), base + Vector((0, 0, .82*h)), .17 if coat else .15, 8, .15)
+    sh = base + Vector((0, 0, .8*h))
+    for sgn in (-1, 1):
+        hand = base + sd*sgn*.22 - f*stride*sgn*.7 + Vector((0, 0, .47*h))
+        B.cyl('10_LIFE', top, sh + sd*sgn*.19, hand, .045, 5)
+    B.cyl('10_LIFE', 'skin', base + Vector((0, 0, .82*h)), base + Vector((0, 0, .87*h)), .05, 6)
+    B.sphere('10_LIFE', 'skin', base + Vector((0, 0, .925*h)), .1, 1.15)
+    B.sphere('10_LIFE', 'hair', base + Vector((0, 0, .94*h)) - f*.02, .105, 1.05)
+    if random.random() < .3: B.box('10_LIFE', random.choice(['cloth0', 'cloth3', 'cloth7']), sh + sd*.2 - Vector((0, 0, .3)), (.08, .3, .35), heading)
+fwd = ARC_N; side = Vector((-fwd.y, fwd.x))
+cross_dir = math.atan2(fwd.y, fwd.x)
+groups = [ARC_MID + fwd*random.uniform(3, 9) + side*random.uniform(-17, 17) for _ in range(14)]
+for k in range(80):                                    # pavement at the building foot: small clusters plus loners (Q032 ~60-80 people)
+    g = random.choice(groups) if random.random() < .65 else ARC_MID + fwd*random.uniform(2.5, 10) + side*random.uniform(-18, 18)
+    q = g + Vector((random.gauss(0, .9), random.gauss(0, .9)))
+    person(q, random.choice([cross_dir, cross_dir+math.pi, cross_dir+math.pi/2, cross_dir-math.pi/2]) + random.gauss(0, .4))
+for k in range(28):                                    # on the zebra crossing (stripes 12-16 m out)
+    q = ARC_MID + fwd*random.uniform(11.5, 16.5) + side*random.uniform(-12, 12)
+    person(q, cross_dir + (0 if random.random() < .5 else math.pi) + random.gauss(0, .2))
+for k in range(30):                                    # far pavements to the sides
+    q = ARC_MID + fwd*random.uniform(3, 30) + side*random.choice([-1, 1])*random.uniform(20, 32)
+    person(q, random.uniform(0, 2*math.pi))
+MAT['car_glass'] = glass('car_glass', (.1, .12, .14), .15, rough=.05)
+MAT['tyre'] = principled('tyre', (.02, .02, .02), rough=.7)
+for nm, c in (('car_white', (.8, .8, .79)), ('car_black', (.02, .02, .025)), ('car_silver', (.45, .46, .47)), ('car_taxi', (.06, .07, .09))):
+    MAT[nm] = principled(nm, c, metal=.6, rough=.25)
+def vehicle(p, heading, kind):
+    f = Vector((math.cos(heading), math.sin(heading), 0)); sd = Vector((-f.y, f.x, 0)); b = Vector((p.x, p.y, 0))
+    L, W, H, cab = {'car': (4.6, 1.75, .72, (2.4, .62)), 'van': (4.9, 1.85, 1.15, (3.6, .85)), 'taxi': (4.7, 1.7, .72, (2.3, .62))}[kind]
+    paint = {'car': random.choice(['car_white', 'car_black', 'car_silver']), 'van': 'car_white', 'taxi': 'car_taxi'}[kind]
+    B.box('10_LIFE', paint, b + Vector((0, 0, .3+H/2)), (L, W, H), heading)
+    B.box('10_LIFE', 'car_glass', b - f*.2 + Vector((0, 0, .3+H+cab[1]/2)), (cab[0], W-.12, cab[1]), heading)
+    B.box('10_LIFE', paint, b - f*.2 + Vector((0, 0, .3+H+cab[1]+.03)), (cab[0]-.2, W-.2, .06), heading)
+    for u in (-1, 1):
+        for v in (-1, 1):
+            w = b + f*u*(L/2-.8) + sd*v*(W/2-.12) + Vector((0, 0, .32))
+            B.cyl('10_LIFE', 'tyre', w - sd*v*.1, w + sd*v*.1, .32, 10)
+    if kind == 'taxi': B.box('10_LIFE', 'zebra', b - f*.2 + Vector((0, 0, .3+H+cab[1]+.15)), (.4, .15, .14), heading)
+for u, lane, kind in ((-26, 21, 'car'), (-19.5, 21, 'taxi'), (-33, 24.5, 'van'), (19, 24.5, 'car'), (26, 21, 'van'), (33, 24.5, 'taxi'), (40, 21, 'car')):
+    q = ARC_MID + fwd*lane + side*u
+    vehicle(q, math.atan2(side.y, side.x) + (0 if lane < 23 else math.pi), kind)
 
 B.finish()
 
@@ -493,7 +643,7 @@ sky = nt.nodes.new('ShaderNodeTexSky'); sky.sky_type = 'NISHITA'
 bg = nt.nodes['Background']; nt.links.new(sky.outputs['Color'], bg.inputs['Color'])
 if NIGHT:
     # blue hour (Q031 dusk): a plain deep-blue dome; the city supplies the rest of the light
-    nt.links.remove(bg.inputs['Color'].links[0]); bg.inputs['Color'].default_value = (.012, .035, .16, 1); bg.inputs['Strength'].default_value = 1.0
+    nt.links.remove(bg.inputs['Color'].links[0]); bg.inputs['Color'].default_value = (.016, .055, .27, 1); bg.inputs['Strength'].default_value = 1.0
     sc.view_settings.exposure = .3
 else:
     # Q032: 2018-10-30 10:25 JST -> sun azimuth ~152 deg (from north, clockwise), elevation ~38 deg
@@ -508,6 +658,19 @@ else:
     az = math.radians(152); el = math.radians(38)
     dirv = Vector((math.sin(az)*math.cos(el), math.cos(az)*math.cos(el), math.sin(el)))   # towards the sun
     so.rotation_euler = (-dirv).to_track_quat('-Z', 'Y').to_euler()
+
+# Reflections: glossy rays see a CC0 street/city HDRI (Poly Haven: wide_street_01 by day, shanghai_bund at night),
+# so the glazing mirrors a built-up street instead of empty sky. Diffuse lighting and the visible sky stay as above.
+HDRI = os.path.join(ROOT, 'hdri', 'shanghai_bund.hdr' if NIGHT else 'wide_street_01.hdr')
+if os.path.exists(HDRI) and 'nohdri' not in argv:
+    env = nt.nodes.new('ShaderNodeTexEnvironment'); env.image = bpy.data.images.load(HDRI)
+    tco = nt.nodes.new('ShaderNodeTexCoord'); mp_ = nt.nodes.new('ShaderNodeMapping'); mp_.inputs['Rotation'].default_value = (0, 0, math.radians(float(next((a_[5:] for a_ in argv if a_.startswith('hrot=')), '0'))))
+    nt.links.new(tco.outputs['Generated'], mp_.inputs['Vector']); nt.links.new(mp_.outputs['Vector'], env.inputs['Vector'])
+    bg2 = nt.nodes.new('ShaderNodeBackground'); bg2.inputs['Strength'].default_value = .025 if NIGHT else .35
+    nt.links.new(env.outputs['Color'], bg2.inputs['Color'])
+    lpg = nt.nodes.new('ShaderNodeLightPath'); mxs = nt.nodes.new('ShaderNodeMixShader'); wout = nt.nodes['World Output']
+    nt.links.new(lpg.outputs['Is Glossy Ray'], mxs.inputs['Fac']); nt.links.new(bg.outputs['Background'], mxs.inputs[1]); nt.links.new(bg2.outputs['Background'], mxs.inputs[2])
+    nt.links.new(mxs.outputs['Shader'], wout.inputs['Surface'])
 
 # Q032 camera: least-squares fit to front-face landmarks read off the photo (data/camera_q032_fit.json, 13 px RMS
 # at 1280x1749). Level camera (the photo is perspective-corrected) with an off-centre principal point.
@@ -559,6 +722,21 @@ elif VIEW == 'close':  # podium and lower screen from the kerb (Q016-like)
 elif VIEW == 'crown':  # crown and lettering, long lens from across the crossing
     p = ARC_MID + ARC_N*95 + TANG*8
     camera_look('cam_crown', (p.x, p.y, 20), (ARC_MID.x, ARC_MID.y, 45), 135, (800*scale, 533*scale))
+def lens_finish():
+    """Photographic finish in the compositor: slight lateral dispersion, vignette, and bloom on bright night sources."""
+    sc.use_nodes = True; ct = sc.node_tree
+    for n in list(ct.nodes): ct.nodes.remove(n)
+    rl = ct.nodes.new('CompositorNodeRLayers'); comp = ct.nodes.new('CompositorNodeComposite')
+    ld = ct.nodes.new('CompositorNodeLensdist'); ld.inputs['Distortion'].default_value = 0; ld.inputs['Dispersion'].default_value = .002
+    gl_ = ct.nodes.new('CompositorNodeGlare'); gl_.glare_type = 'FOG_GLOW'; gl_.threshold = 1.0 if NIGHT else 4.0; gl_.mix = -.75 if NIGHT else -.95; gl_.size = 7
+    em_ = ct.nodes.new('CompositorNodeEllipseMask'); em_.width = 1.15; em_.height = 1.15
+    bl = ct.nodes.new('CompositorNodeBlur'); bl.filter_type = 'FAST_GAUSS'; bl.use_relative = True; bl.factor_x = bl.factor_y = 30
+    mr = ct.nodes.new('CompositorNodeMapRange'); mr.inputs['To Min'].default_value = .78; mr.inputs['To Max'].default_value = 1.0
+    mx_ = ct.nodes.new('CompositorNodeMixRGB'); mx_.blend_type = 'MULTIPLY'; mx_.inputs['Fac'].default_value = 1
+    ct.links.new(rl.outputs['Image'], ld.inputs['Image']); ct.links.new(ld.outputs['Image'], gl_.inputs['Image'])
+    ct.links.new(em_.outputs['Mask'], bl.inputs['Image']); ct.links.new(bl.outputs['Image'], mr.inputs['Value'])
+    ct.links.new(gl_.outputs['Image'], mx_.inputs[1]); ct.links.new(mr.outputs['Value'], mx_.inputs[2]); ct.links.new(mx_.outputs['Image'], comp.inputs['Image'])
+if 'mask' not in argv and 'nolens' not in argv: lens_finish()
 os.makedirs(OUT, exist_ok=True)
 if 'mask' in argv:   # silhouette matte for the shape check: QFRONT white, everything else and the sky black
     white = bpy.data.materials.new('mask_white'); white.use_nodes = True; wn = white.node_tree
