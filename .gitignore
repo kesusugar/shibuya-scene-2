@@ -1,0 +1,9 @@
+refs/raw/
+refs/*.html
+refs/*.log
+refs/list.txt
+refs/sheet_*.jpg
+renders/
+work/
+*.blend
+*.blend1
