@@ -1,0 +1,47 @@
+[
+ {
+  "camera_id": "C01_CROSSING_CENTER",
+  "label": "スクランブル交差点中心",
+  "x_m": 6.5,
+  "y_m": -2.0,
+  "z_m": 1.6,
+  "derivation": "OSM node/291758776 (crossing:scramble=yes, 渋谷駅前), old data point",
+  "verified": "map-derived, not photo-fitted"
+ },
+ {
+  "camera_id": "C02_HACHIKO_EXIT",
+  "label": "ハチ公口（ハチ公像前）",
+  "x_m": 11.6,
+  "y_m": -47.0,
+  "z_m": 1.6,
+  "derivation": "OSM node/597685675 忠犬ハチ公像 moved 2 m north (towards the crossing) so the camera is not inside the statue",
+  "verified": "map-derived"
+ },
+ {
+  "camera_id": "C03_QFRONT_FRONT",
+  "label": "QFRONT前の歩道",
+  "x_m": -14.0,
+  "y_m": 25.5,
+  "z_m": 1.6,
+  "derivation": "QFRONT front-arc midpoint (-7.67, 29.08) from assets/buildings/qfront/web/viewer.json, 6 m out along the arc normal (0.088, -0.996); v2: moved to (-14.0, 25.5), 3.5 m in front of the arc west of the subway entrance way/155807211 (x -8..1, y 19..23) - the first position stood 0.1 m from that entrance and it filled the view",
+  "verified": "map-derived"
+ },
+ {
+  "camera_id": "C04_MAGNET_FRONT",
+  "label": "MAGNET前の歩道",
+  "x_m": 34.0,
+  "y_m": 7.5,
+  "z_m": 1.6,
+  "derivation": "midpoint of MAGNET's PLATEAU south ground edge (49.2,9.9)-(33.6,11.3) moved 4 m south onto the pavement; v2: moved to (34.0, 7.5), 3.9 m from the subway entrance way/142438894 (x 37..46, y 2..5) - the first position stood 1.5 m from it",
+  "verified": "map-derived"
+ },
+ {
+  "camera_id": "C05_CENTER_GAI_GATE",
+  "label": "センター街入口",
+  "x_m": -25.0,
+  "y_m": 29.2,
+  "z_m": 1.6,
+  "derivation": "OSM way/542478931 (渋谷センター街, pedestrian) vertex 6, the first bend west of the crosswalk end node/5244745709",
+  "verified": "map-derived"
+ }
+]

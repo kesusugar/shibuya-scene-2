@@ -1,0 +1,313 @@
+{
+ "MAGNET": {
+  "gml_id": "bldg_d47d8aa9-e4f5-4599-9d9a-bc129a12d6a8",
+  "ground_min_tp": 14.561,
+  "ground_max_tp": 15.167,
+  "corners": [
+   {
+    "x": 51.668,
+    "y": 62.089,
+    "building_ground_tp": 14.887,
+    "pavement_tp": 16.043,
+    "pavement_kind": "車道部",
+    "lod": "lod3",
+    "search_radius_m": 2.0,
+    "pavement_minus_building": 1.156
+   },
+   {
+    "x": 49.239,
+    "y": 9.827,
+    "building_ground_tp": 14.561,
+    "pavement_tp": 14.785,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.224
+   },
+   {
+    "x": 33.596,
+    "y": 11.259,
+    "building_ground_tp": 14.821,
+    "pavement_tp": 15.015,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.194
+   },
+   {
+    "x": 27.064,
+    "y": 17.649,
+    "building_ground_tp": 14.97,
+    "pavement_tp": 15.187,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.217
+   },
+   {
+    "x": 25.703,
+    "y": 19.242,
+    "building_ground_tp": 15.002,
+    "pavement_tp": 15.219,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.217
+   },
+   {
+    "x": 35.339,
+    "y": 64.984,
+    "building_ground_tp": 15.167,
+    "pavement_tp": 16.02,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.853
+   },
+   {
+    "x": 39.946,
+    "y": 64.063,
+    "building_ground_tp": 15.089,
+    "pavement_tp": 16.028,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 6.0,
+    "pavement_minus_building": 0.939
+   },
+   {
+    "x": 39.698,
+    "y": 62.69,
+    "building_ground_tp": 15.082,
+    "pavement_tp": 16.002,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 6.0,
+    "pavement_minus_building": 0.92
+   },
+   {
+    "x": 41.83,
+    "y": 62.157,
+    "building_ground_tp": 15.045,
+    "pavement_tp": null,
+    "pavement_kind": null,
+    "lod": null,
+    "search_radius_m": null,
+    "pavement_minus_building": null
+   },
+   {
+    "x": 42.285,
+    "y": 64.072,
+    "building_ground_tp": 15.051,
+    "pavement_tp": null,
+    "pavement_kind": null,
+    "lod": null,
+    "search_radius_m": null,
+    "pavement_minus_building": null
+   }
+  ]
+ },
+ "SEIBU_A": {
+  "gml_id": "bldg_46f3cd1c-4dc8-4e7e-b30f-db8c8c31f776",
+  "ground_min_tp": 15.62,
+  "ground_max_tp": 15.62,
+  "corners": [
+   {
+    "x": 14.136,
+    "y": 93.17,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 16.6,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.98
+   },
+   {
+    "x": 5.144,
+    "y": 49.364,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 15.594,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 2.0,
+    "pavement_minus_building": -0.026
+   },
+   {
+    "x": -24.23,
+    "y": 58.434,
+    "building_ground_tp": 15.62,
+    "pavement_tp": null,
+    "pavement_kind": null,
+    "lod": null,
+    "search_radius_m": null,
+    "pavement_minus_building": null
+   },
+   {
+    "x": -23.365,
+    "y": 61.15,
+    "building_ground_tp": 15.62,
+    "pavement_tp": null,
+    "pavement_kind": null,
+    "lod": null,
+    "search_radius_m": null,
+    "pavement_minus_building": null
+   },
+   {
+    "x": -34.685,
+    "y": 64.709,
+    "building_ground_tp": 15.62,
+    "pavement_tp": null,
+    "pavement_kind": null,
+    "lod": null,
+    "search_radius_m": null,
+    "pavement_minus_building": null
+   },
+   {
+    "x": -32.597,
+    "y": 71.21,
+    "building_ground_tp": 15.62,
+    "pavement_tp": null,
+    "pavement_kind": null,
+    "lod": null,
+    "search_radius_m": null,
+    "pavement_minus_building": null
+   },
+   {
+    "x": -55.213,
+    "y": 78.216,
+    "building_ground_tp": 15.62,
+    "pavement_tp": null,
+    "pavement_kind": null,
+    "lod": null,
+    "search_radius_m": null,
+    "pavement_minus_building": null
+   },
+   {
+    "x": -44.34,
+    "y": 105.191,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 18.124,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 4.0,
+    "pavement_minus_building": 2.504
+   },
+   {
+    "x": -41.256,
+    "y": 107.159,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 18.121,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 2.501
+   },
+   {
+    "x": -18.713,
+    "y": 102.734,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 17.378,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 1.758
+   },
+   {
+    "x": -19.071,
+    "y": 100.601,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 17.394,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 3.0,
+    "pavement_minus_building": 1.774
+   },
+   {
+    "x": -10.247,
+    "y": 98.749,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 17.02,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 4.0,
+    "pavement_minus_building": 1.4
+   },
+   {
+    "x": -9.701,
+    "y": 101.72,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 17.047,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 1.427
+   },
+   {
+    "x": 11.263,
+    "y": 97.452,
+    "building_ground_tp": 15.62,
+    "pavement_tp": 16.624,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 1.004
+   }
+  ]
+ },
+ "QFRONT": {
+  "gml_id": "bldg_5f7ff4f3-a620-4fd0-a380-3ec46435cd27",
+  "ground_min_tp": 15.099,
+  "ground_max_tp": 15.099,
+  "corners": [
+   {
+    "x": -23.758,
+    "y": 57.906,
+    "building_ground_tp": 15.099,
+    "pavement_tp": null,
+    "pavement_kind": null,
+    "lod": null,
+    "search_radius_m": null,
+    "pavement_minus_building": null
+   },
+   {
+    "x": 5.255,
+    "y": 48.926,
+    "building_ground_tp": 15.099,
+    "pavement_tp": 15.615,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.516
+   },
+   {
+    "x": 1.314,
+    "y": 30.212,
+    "building_ground_tp": 15.099,
+    "pavement_tp": 15.287,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.188
+   },
+   {
+    "x": -15.585,
+    "y": 28.186,
+    "building_ground_tp": 15.099,
+    "pavement_tp": 15.126,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 1.0,
+    "pavement_minus_building": 0.027
+   },
+   {
+    "x": -29.939,
+    "y": 42.031,
+    "building_ground_tp": 15.099,
+    "pavement_tp": 15.329,
+    "pavement_kind": "歩道部",
+    "lod": "lod3",
+    "search_radius_m": 2.0,
+    "pavement_minus_building": 0.23
+   }
+  ]
+ }
+}

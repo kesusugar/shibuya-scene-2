@@ -1,0 +1,6 @@
+[
+ {"camera_id": "X01_REF_A_WALKWAY", "label": "駅の連絡通路の窓（旧 REF-A）", "x_m": -12.6, "y_m": -68.2, "z_m": 10.2, "view_bearing_deg": 7.7,
+  "derivation": "old project camera ref-a (src/app/foundation.mjs), solved from File:In_Front_of_Shibuya_Station.jpg (Dick Johnson, 2010, CC BY 2.0) with 7 ground and corner anchors; web [-12.6, 10.2, 68.2] -> plan (x, -z, y); height above the old flat ground. 0.4 m north of the PLATEAU/OSM north wall of the station corridor block way/355250634, i.e. at its window"},
+ {"camera_id": "X02_REF_B_STREAM", "label": "渋谷ストリーム高層部（旧 REF-B）", "x_m": 161.9, "y_m": -201.8, "z_m": 159.6, "view_bearing_deg": -42.3,
+  "derivation": "old project camera ref-b, solved from File:Shibuya_scramble_av_night_from_Stream.jpg (Syced, 2024, CC0) with 7 crosswalk and corner anchors, residual 7-28 px; web [161.9, 159.6, 201.8] -> plan (x, -z, y)"}
+]
