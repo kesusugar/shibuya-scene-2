@@ -197,7 +197,7 @@
   "blender -b -P source/blender/build_ground.py -- source/data/ground_input.json web/ground_core.glb source/data/ground_stats.json",
   "blender -b -P source/blender/ground_anchor.py -- web/ground_core.glb <plateau_core.json> source/data/ground_anchors.json"
  ],
- "generatorRevision": "80fedf49e3bc5a52f3259807a8401ba650c05495",
+ "generatorRevision": "934e48ab6565a840057a124a1299da4b424b3d95",
  "files": {
   "web/ground_core.glb": {
    "sha256": "2b9d3add1172a2418d4befaffbea66b44121fcf6e31b6aedca3cc83267e61661",
