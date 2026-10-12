@@ -227,7 +227,7 @@ MAT = {
  'rail': principled('rail_alu', (.84, .85, .86), metal=.4, rough=.28, streaks=.12),
  'mullion': principled('mullion', (.55, .57, .59), metal=.8, rough=.3),
  'dark_glass': panel_glass('glass_dark', (.45, .55, .62), .04, 1.6 if NIGHT else 1.45, MULL, RAIL, base=None if NIGHT else .42),   # coated low-e glazing: a stronger mirror than plain glass
- 'crown_glass': glass('glass_crown', (.40, .46, .50), .35, rough=.04, ior=1.7),
+ 'crown_glass': glass('glass_crown', (.40, .46, .50), .08, rough=.03, ior=3.0),   # v5: the glazed crown bays flash white with the sky in Q032
  'q_bar': principled('q_bar', (.75, .05, .07), rough=.35, emit=(1, .1, .1), estr=(5 if NIGHT else 0)),
  'clear_glass': panel_glass('glass_clear', (.85, .93, .92), .78, 1.6, MULL, 4.9, wobble=.02, streak=.3),
  'shop_glass': panel_glass('glass_shop', (.95, .97, .96), .88, 1.5, MULL, 3.4, rough=.006, wobble=.012, streak=.2),
@@ -240,7 +240,7 @@ MAT = {
  'books': books('shop_books'),
  'shelf': principled('shelf', (.12, .12, .13), rough=.6),
  'goods': principled('goods', (.22, .19, .17), rough=.6, emit=(1, .85, .7), estr=(.6 if NIGHT else .25)),
- 'steel': principled('truss_steel', (.3, .31, .32) if not NIGHT else (.05, .05, .055), metal=.3 if NIGHT else .5, rough=.75 if NIGHT else .4),
+ 'steel': principled('truss_steel', (.12, .125, .13) if not NIGHT else (.05, .05, .055), metal=.3 if NIGHT else .5, rough=.75 if NIGHT else .4),
  'plant': principled('plant', (.72, .73, .72) if not NIGHT else (.08, .085, .09), metal=.2, rough=.5),
  'concrete': principled('concrete', (.55, .54, .52), rough=.85),
  'blind': principled('blind_wood', (.20, .085, .035), rough=.65, emit=(.95, .65, .4), estr=(.5 if NIGHT else 0)),
@@ -470,6 +470,57 @@ for k in range(20):   # white plant units in the lower crown, seen between the f
     h_ = random.uniform(1.6, 3.0)
     B.box('05_CROWN', 'plant_white', (q.x, q.y, TOP+1.0+h_/2), (random.uniform(1.0, 2.2), random.uniform(1.0, 1.8), h_), math.atan2(t.y, t.x))
     B.box('05_CROWN', 'steel', (q.x, q.y, TOP+.5), (1.0, 1.0, 1.0), math.atan2(t.y, t.x))   # stand
+# ---- v5 (V-02): the crown's inner layer, placed from the Q032 crown crop (photo x -> u via the fitted camera)
+CROWN_V5 = 'v4crown' not in argv
+if CROWN_V5:
+    # (a) glazed bays that flash white in Q032 (photo x 764-843 px -> u +4.0..+7.3 m, 41.7-47.6 m), with the dark
+    #     vertical slot between them (photo x 792-813 px -> u +5.2..+6.0 m)
+    for u0_, u1_ in ((4.0, 5.2), (6.0, 7.3)):
+        n_ = 4
+        for k in range(n_):
+            ua, ub = u0_ + (u1_-u0_)*k/n_, u0_ + (u1_-u0_)*(k+1)/n_
+            a_, _, _ = arc_at(ua, R-.9); b_, _, _ = arc_at(ub, R-.9)
+            B.quad('05_CROWN', 'crown_glass', [(a_.x, a_.y, 41.7), (b_.x, b_.y, 41.7), (b_.x, b_.y, 47.6), (a_.x, a_.y, 47.6)], uv=[(ua, 41.7), (ub, 41.7), (ub, 47.6), (ua, 47.6)])
+    # the sky seen in the Q032 crown is greyed (90,106,132 against 61,92,140 open sky): it is seen through a light inner screen.
+    def screen_mat(name, open_frac, grey):
+        """Dusty, partly translucent screen: open_frac of the light passes straight through, the rest is a matte grey
+        surface. Seen against the sky it gives the greyed blue of the Q032 crown."""
+        m, nt, out = node_mat(name)
+        tr = nt.nodes.new('ShaderNodeBsdfTransparent'); df = nt.nodes.new('ShaderNodeBsdfDiffuse'); df.inputs['Color'].default_value = (grey, grey, grey*1.03, 1)
+        mx = nt.nodes.new('ShaderNodeMixShader'); mx.inputs['Fac'].default_value = 1 - open_frac
+        nt.links.new(tr.outputs['BSDF'], mx.inputs[1]); nt.links.new(df.outputs['BSDF'], mx.inputs[2]); nt.links.new(mx.outputs['Shader'], out.inputs['Surface'])
+        return m
+    MAT['crown_screen'] = screen_mat('crown_screen', float(next((a_[7:] for a_ in argv if a_.startswith('scrnop=')), '.55')), .5 if not NIGHT else .05)
+    # matte (not glossy), so it cannot mirror the letters; it runs up behind them as in Q032 (greyed sky at 46-51 m)
+    if 'crownscreen' in argv:   # tried in v5: numbers matched but it read as a milky veil, so it is off by default
+        B.ribbon('05_CROWN', 'crown_screen', [arc_at(-U_END + 2*U_END*k/48, R-2.0)[0] for k in range(49)], TOP, CROWN-.8, closed=False)
+    q_, t_, d_ = arc_at(5.6, R-1.6)
+    B.box('05_CROWN', 'stone_dark', (q_.x, q_.y, 44.6), (.8, .2, 6.0), math.atan2(t_.y, t_.x))
+    # (b) dark horizontal girders just behind the fins at the ring levels, with intermediate posts every 3 m
+    for zz in (TOP+1.0, TOP+2.95, TOP+5.0, TOP+6.9, TOP+8.9, CROWN-1.3):
+        for k in range(24):
+            ua, ub = -U_END + 2*U_END*k/24, -U_END + 2*U_END*(k+1)/24
+            a_, _, _ = arc_at(ua, R-1.4); b_, _, _ = arc_at(ub, R-1.4)
+            B.beam('05_CROWN', 'steel', (a_.x, a_.y, zz), (b_.x, b_.y, zz), .3)
+    u_ = -U_END + 1.5
+    while u_ < U_END - 1:
+        q_, t_, d_ = arc_at(u_, R-1.4); B.beam('05_CROWN', 'steel', (q_.x, q_.y, TOP), (q_.x, q_.y, CROWN-1.0), .22)
+        q2_, _, _ = arc_at(u_+3.0, R-1.4)
+        if u_ + 3.0 < U_END - 1:   # X-bracing in each 3 m bay between 43.1 and 47.1 m (Q032: dark diagonals behind the fins)
+            B.beam('05_CROWN', 'steel', (q_.x, q_.y, TOP+2.95), (q2_.x, q2_.y, TOP+6.9), .18); B.beam('05_CROWN', 'steel', (q2_.x, q2_.y, TOP+2.95), (q_.x, q_.y, TOP+6.9), .18)
+            B.beam('05_CROWN', 'steel', (q_.x, q_.y, TOP+6.9), (q2_.x, q2_.y, CROWN-1.3), .16)   # upper diagonal behind the letters
+        u_ += 3.0
+    # (c) a row of white plant units along the lower crown (41-43 m), with gaps (Q032 lower crown)
+    random.seed(41)
+    u_ = -U_END + .8
+    while u_ < U_END - .8:
+        if random.random() < .95:
+            q_, t_, d_ = arc_at(u_, R - random.uniform(2.6, 3.4)); h_ = random.uniform(2.6, 4.2)
+            B.box('05_CROWN', 'plant_white', (q_.x, q_.y, TOP+.9+h_/2), (random.uniform(1.2, 1.8), 1.0, h_), math.atan2(t_.y, t_.x))
+        if random.random() < .9:   # a second, deeper rank of plant (ducts, tanks) up to ~45 m
+            q_, t_, d_ = arc_at(u_ + 1.0, R - random.uniform(4.5, 6.0)); h_ = random.uniform(3.0, 4.6)
+            B.box('05_CROWN', 'plant_white', (q_.x, q_.y, TOP+.9+h_/2), (random.uniform(1.5, 2.5), 1.4, h_), math.atan2(t_.y, t_.x))
+        u_ += random.uniform(1.5, 2.1)
 # space truss between the skin and the enclosure: two chords rings, posts and diagonals
 def stations_along(poly, step):
     """Points every `step` metres along a closed polyline (by arc length, so the many short segments of the curve
@@ -1010,6 +1061,11 @@ if _bd and VIEW == 'q032':
     sc.render.border_min_y, sc.render.border_max_y = 1 - y1/1749, 1 - y0/1749
     VIEW = 'q032crop_' + next((a_[4:] for a_ in argv if a_.startswith('tag=')), 'crop')
 os.makedirs(OUT, exist_ok=True)
+if 'clay' in argv:   # geometry check: one neutral grey for every surface, glass kept as glass (V-02 occlusion test)
+    clay = principled('clay', (.6, .6, .6), rough=.6)
+    for ob in sc.objects:
+        if ob.type in ('MESH', 'FONT') and not any(k_ in (ob.data.materials[0].name if ob.data.materials else '') for k_ in ('glass',)):
+            ob.data.materials.clear(); ob.data.materials.append(clay)
 if 'mask' in argv:   # silhouette matte for the shape check: QFRONT white, everything else and the sky black
     white = bpy.data.materials.new('mask_white'); white.use_nodes = True; wn = white.node_tree
     for n in list(wn.nodes): wn.nodes.remove(n)
