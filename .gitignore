@@ -1,4 +1,5 @@
 node_modules/
 dist/
 public/buildings/
+public/ground/
 test-results/

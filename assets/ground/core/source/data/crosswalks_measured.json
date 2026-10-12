@@ -1,0 +1,1197 @@
+{
+ "source": "GSI seamless aerial photo (国土地理院 シームレス空中写真) zoom 18; capture year not stated per tile",
+ "licence": "国土地理院コンテンツ利用規約 (CC BY 4.0 compatible); measurement only, not redistributed as texture",
+ "osm": "old project data, OSM fetched 2026-09-08",
+ "crosswalks": [
+  {
+   "id": "way/215956002",
+   "osm_markings": "ladder",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     -110.915,
+     -15.908
+    ],
+    [
+     -103.399,
+     -2.939
+    ],
+    [
+     -98.822,
+     5.31
+    ],
+    [
+     -93.341,
+     14.995
+    ]
+   ],
+   "length_m": 35.55,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": true,
+   "width_m": 4.25,
+   "centre_offset_m": 0.5,
+   "contrast": 23.0,
+   "profile_base": 109.4,
+   "profile_peak": 132.3
+  },
+  {
+   "id": "way/215956003",
+   "osm_markings": "ladder",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     -115.166,
+     2.605
+    ],
+    [
+     -103.399,
+     -2.939
+    ],
+    [
+     -88.755,
+     -9.562
+    ]
+   ],
+   "length_m": 29.08,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": true,
+   "width_m": 4.25,
+   "centre_offset_m": 0.25,
+   "contrast": 18.6,
+   "profile_base": 107.1,
+   "profile_peak": 125.7
+  },
+  {
+   "id": "way/355248078",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     -23.236,
+     11.477
+    ],
+    [
+     -24.972,
+     2.783
+    ],
+    [
+     -26.718,
+     -5.967
+    ]
+   ],
+   "length_m": 17.79,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 6.25,
+   "centre_offset_m": -0.25,
+   "contrast": 57.6,
+   "profile_base": 142.5,
+   "profile_peak": 200.1,
+   "points_measured": [
+    [
+     -23.481,
+     11.526
+    ],
+    [
+     -25.217,
+     2.832
+    ],
+    [
+     -26.963,
+     -5.918
+    ]
+   ]
+  },
+  {
+   "id": "way/355248080",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     4.739,
+     19.125
+    ],
+    [
+     12.02,
+     17.644
+    ],
+    [
+     19.419,
+     16.152
+    ]
+   ],
+   "length_m": 14.98,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 9.5,
+   "centre_offset_m": 0.38,
+   "contrast": 50.0,
+   "profile_base": 179.4,
+   "profile_peak": 229.4,
+   "points_measured": [
+    [
+     4.814,
+     19.492
+    ],
+    [
+     12.095,
+     18.012
+    ],
+    [
+     19.493,
+     16.52
+    ]
+   ]
+  },
+  {
+   "id": "way/355248081",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     22.955,
+     -12.535
+    ],
+    [
+     24.222,
+     -3.696
+    ],
+    [
+     25.298,
+     3.796
+    ]
+   ],
+   "length_m": 16.5,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 6.75,
+   "centre_offset_m": 1.75,
+   "contrast": 74.8,
+   "profile_base": 140.2,
+   "profile_peak": 214.9,
+   "points_measured": [
+    [
+     21.223,
+     -12.286
+    ],
+    [
+     22.489,
+     -3.447
+    ],
+    [
+     23.566,
+     4.045
+    ]
+   ]
+  },
+  {
+   "id": "way/355248083",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     -18.415,
+     -15.139
+    ],
+    [
+     -14.951,
+     -15.807
+    ]
+   ],
+   "length_m": 3.53,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": true,
+   "width_m": 1.75,
+   "centre_offset_m": 2.5,
+   "contrast": 38.8,
+   "profile_base": 107.5,
+   "profile_peak": 146.3
+  },
+  {
+   "id": "way/355248423",
+   "osm_markings": "yes",
+   "osm_crossing": "marked",
+   "points": [
+    [
+     -38.992,
+     -53.422
+    ],
+    [
+     -39.905,
+     -57.519
+    ],
+    [
+     -40.484,
+     -61.326
+    ]
+   ],
+   "length_m": 8.05,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 3.5,
+   "centre_offset_m": -5.88,
+   "contrast": 43.1,
+   "profile_base": 91.8,
+   "profile_peak": 134.9,
+   "points_measured": [
+    [
+     -44.726,
+     -52.144
+    ],
+    [
+     -45.676,
+     -56.438
+    ],
+    [
+     -46.292,
+     -60.443
+    ]
+   ]
+  },
+  {
+   "id": "way/355252210",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     149.002,
+     8.071
+    ],
+    [
+     149.345,
+     1.314
+    ],
+    [
+     149.834,
+     -5.844
+    ]
+   ],
+   "length_m": 13.94,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 5.75,
+   "centre_offset_m": -3.0,
+   "contrast": 25.3,
+   "profile_base": 87.4,
+   "profile_peak": 112.7,
+   "points_measured": [
+    [
+     146.006,
+     7.918
+    ],
+    [
+     146.351,
+     1.135
+    ],
+    [
+     146.841,
+     -6.049
+    ]
+   ]
+  },
+  {
+   "id": "way/372165785",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     -89.958,
+     17.032
+    ],
+    [
+     -89.687,
+     13.292
+    ],
+    [
+     -88.556,
+     2.961
+    ],
+    [
+     -87.471,
+     -6.457
+    ]
+   ],
+   "length_m": 23.62,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 11.0,
+   "centre_offset_m": -4.12,
+   "contrast": 41.5,
+   "profile_base": 85.9,
+   "profile_peak": 127.4,
+   "points_measured": [
+    [
+     -94.072,
+     16.733
+    ],
+    [
+     -93.794,
+     12.918
+    ],
+    [
+     -92.655,
+     2.501
+    ],
+    [
+     -91.569,
+     -6.929
+    ]
+   ]
+  },
+  {
+   "id": "way/372165786",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     -116.776,
+     1.358
+    ],
+    [
+     -113.927,
+     -7.035
+    ],
+    [
+     -110.915,
+     -15.908
+    ]
+   ],
+   "length_m": 18.23,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": true,
+   "width_m": 5.75,
+   "centre_offset_m": 7.0,
+   "contrast": 13.7,
+   "profile_base": 109.4,
+   "profile_peak": 123.1
+  },
+  {
+   "id": "way/372165787",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     -114.144,
+     4.33
+    ],
+    [
+     -104.041,
+     11.655
+    ],
+    [
+     -96.715,
+     16.52
+    ],
+    [
+     -94.11,
+     18.201
+    ]
+   ],
+   "length_m": 24.37,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": true,
+   "width_m": 4.0,
+   "centre_offset_m": -0.12,
+   "contrast": 15.8,
+   "profile_base": 124.6,
+   "profile_peak": 140.4
+  },
+  {
+   "id": "way/664532506",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     18.713,
+     93.219
+    ],
+    [
+     28.518,
+     91.36
+    ],
+    [
+     37.879,
+     89.49
+    ]
+   ],
+   "length_m": 19.53,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": true,
+   "width_m": 4.5,
+   "centre_offset_m": 2.38,
+   "contrast": 21.0,
+   "profile_base": 144.6,
+   "profile_peak": 165.6
+  },
+  {
+   "id": "way/664532507",
+   "osm_markings": null,
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     20.242,
+     121.995
+    ],
+    [
+     29.884,
+     121.973
+    ],
+    [
+     39.01,
+     121.795
+    ]
+   ],
+   "length_m": 18.77,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 7.25,
+   "centre_offset_m": -3.75,
+   "contrast": 25.9,
+   "profile_base": 157.7,
+   "profile_peak": 183.7,
+   "points_measured": [
+    [
+     20.233,
+     118.245
+    ],
+    [
+     29.843,
+     118.223
+    ],
+    [
+     38.936,
+     118.045
+    ]
+   ]
+  },
+  {
+   "id": "way/664532526",
+   "osm_markings": null,
+   "osm_crossing": null,
+   "points": [
+    [
+     -32.208,
+     17.165
+    ],
+    [
+     -34.252,
+     16.932
+    ],
+    [
+     -34.478,
+     23.121
+    ],
+    [
+     -24.475,
+     25.013
+    ]
+   ],
+   "length_m": 18.43,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 2.5,
+   "centre_offset_m": 0.62,
+   "contrast": 41.4,
+   "profile_base": 159.7,
+   "profile_peak": 201.1,
+   "points_measured": [
+    [
+     -32.137,
+     16.545
+    ],
+    [
+     -34.529,
+     16.61
+    ],
+    [
+     -34.849,
+     23.417
+    ],
+    [
+     -24.591,
+     25.628
+    ]
+   ]
+  },
+  {
+   "id": "way/664877555",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     12.427,
+     99.52
+    ],
+    [
+     13.133,
+     105.72
+    ],
+    [
+     13.757,
+     110.986
+    ]
+   ],
+   "length_m": 11.54,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 10.0,
+   "centre_offset_m": -4.88,
+   "contrast": 107.5,
+   "profile_base": 91.7,
+   "profile_peak": 199.2,
+   "points_measured": [
+    [
+     17.271,
+     98.969
+    ],
+    [
+     17.975,
+     105.158
+    ],
+    [
+     18.598,
+     110.412
+    ]
+   ]
+  },
+  {
+   "id": "way/754454447",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     20.025,
+     114.091
+    ],
+    [
+     29.16,
+     104.151
+    ],
+    [
+     38.223,
+     92.061
+    ]
+   ],
+   "length_m": 28.61,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 10.25,
+   "centre_offset_m": -4.5,
+   "contrast": 28.6,
+   "profile_base": 147.5,
+   "profile_peak": 176.1,
+   "points_measured": [
+    [
+     16.711,
+     111.046
+    ],
+    [
+     25.703,
+     101.278
+    ],
+    [
+     34.622,
+     89.362
+    ]
+   ]
+  },
+  {
+   "id": "way/754454448",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     18.397,
+     94.421
+    ],
+    [
+     29.16,
+     104.151
+    ],
+    [
+     39.064,
+     116.607
+    ]
+   ],
+   "length_m": 30.42,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 10.5,
+   "centre_offset_m": 4.62,
+   "contrast": 44.4,
+   "profile_base": 144.1,
+   "profile_peak": 188.5,
+   "points_measured": [
+    [
+     15.295,
+     97.852
+    ],
+    [
+     25.799,
+     107.305
+    ],
+    [
+     35.444,
+     119.485
+    ]
+   ]
+  },
+  {
+   "id": "way/754454449",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     14.128,
+     -13.726
+    ],
+    [
+     6.539,
+     -1.993
+    ],
+    [
+     -3.374,
+     13.125
+    ]
+   ],
+   "length_m": 32.05,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 10.0,
+   "centre_offset_m": 0.62,
+   "contrast": 46.9,
+   "profile_base": 159.0,
+   "profile_peak": 205.9,
+   "points_measured": [
+    [
+     13.603,
+     -14.065
+    ],
+    [
+     6.016,
+     -2.334
+    ],
+    [
+     -3.896,
+     12.782
+    ]
+   ]
+  },
+  {
+   "id": "way/906194284",
+   "osm_markings": "zebra",
+   "osm_crossing": "pedestrian_signals",
+   "points": [
+    [
+     -0.136,
+     -81.185
+    ],
+    [
+     -8.204,
+     -82.276
+    ],
+    [
+     -19.139,
+     -83.835
+    ],
+    [
+     -25.859,
+     -84.625
+    ],
+    [
+     -31.946,
+     -85.482
+    ]
+   ],
+   "length_m": 32.1,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 7.5,
+   "centre_offset_m": 0.62,
+   "contrast": 54.8,
+   "profile_base": 176.4,
+   "profile_peak": 231.1,
+   "points_measured": [
+    [
+     -0.052,
+     -81.805
+    ],
+    [
+     -8.118,
+     -82.895
+    ],
+    [
+     -19.058,
+     -84.454
+    ],
+    [
+     -25.779,
+     -85.245
+    ],
+    [
+     -31.859,
+     -86.101
+    ]
+   ]
+  },
+  {
+   "id": "way/977916824",
+   "osm_markings": "no",
+   "osm_crossing": "unmarked",
+   "points": [
+    [
+     -10.655,
+     11.477
+    ],
+    [
+     -14.634,
+     11.455
+    ],
+    [
+     -23.236,
+     11.477
+    ]
+   ],
+   "length_m": 12.58,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": false,
+   "width_m": 8.5,
+   "centre_offset_m": -4.62,
+   "contrast": 9.8,
+   "profile_base": 163.1,
+   "profile_peak": 172.9
+  },
+  {
+   "id": "way/1033129756",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     6.666,
+     -20.416
+    ],
+    [
+     9.56,
+     -20.973
+    ]
+   ],
+   "length_m": 2.95,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 2.5,
+   "centre_offset_m": 0.62,
+   "contrast": 50.3,
+   "profile_base": 109.9,
+   "profile_peak": 160.2,
+   "points_measured": [
+    [
+     6.784,
+     -19.802
+    ],
+    [
+     9.678,
+     -20.359
+    ]
+   ]
+  },
+  {
+   "id": "way/1083468022",
+   "osm_markings": null,
+   "osm_crossing": null,
+   "points": [
+    [
+     4.739,
+     19.125
+    ],
+    [
+     3.708,
+     19.737
+    ],
+    [
+     3.482,
+     22.242
+    ],
+    [
+     0.597,
+     21.73
+    ]
+   ],
+   "length_m": 6.64,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": true,
+   "width_m": 5.75,
+   "centre_offset_m": 1.5,
+   "contrast": 14.3,
+   "profile_base": 193.6,
+   "profile_peak": 207.9
+  },
+  {
+   "id": "way/1157451161",
+   "osm_markings": "zebra",
+   "osm_crossing": "traffic_signals",
+   "points": [
+    [
+     -14.951,
+     -15.807
+    ],
+    [
+     6.666,
+     -20.416
+    ]
+   ],
+   "length_m": 22.1,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 6.0,
+   "centre_offset_m": 0.88,
+   "contrast": 63.9,
+   "profile_base": 139.9,
+   "profile_peak": 203.8,
+   "points_measured": [
+    [
+     -14.768,
+     -14.952
+    ],
+    [
+     6.848,
+     -19.56
+    ]
+   ]
+  },
+  {
+   "id": "way/1335178868",
+   "osm_markings": "no",
+   "osm_crossing": "unmarked",
+   "points": [
+    [
+     -24.475,
+     25.013
+    ],
+    [
+     -21.228,
+     25.281
+    ],
+    [
+     -18.225,
+     25.526
+    ]
+   ],
+   "length_m": 6.27,
+   "status": "measured",
+   "marked_osm": false,
+   "width_m": 5.25,
+   "centre_offset_m": 3.75,
+   "contrast": 41.3,
+   "profile_base": 135.5,
+   "profile_peak": 176.8,
+   "points_measured": [
+    [
+     -24.782,
+     28.751
+    ],
+    [
+     -21.534,
+     29.018
+    ],
+    [
+     -18.53,
+     29.263
+    ]
+   ]
+  },
+  {
+   "id": "way/1335178870",
+   "osm_markings": null,
+   "osm_crossing": null,
+   "points": [
+    [
+     -34.478,
+     23.121
+    ],
+    [
+     -41.036,
+     21.908
+    ],
+    [
+     -40.276,
+     17.299
+    ],
+    [
+     -39.842,
+     14.661
+    ],
+    [
+     -38.123,
+     14.95
+    ]
+   ],
+   "length_m": 15.76,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 13.75,
+   "centre_offset_m": 3.0,
+   "contrast": 74.0,
+   "profile_base": 126.1,
+   "profile_peak": 200.1,
+   "points_measured": [
+    [
+     -33.932,
+     20.171
+    ],
+    [
+     -39.283,
+     20.677
+    ],
+    [
+     -37.316,
+     17.787
+    ],
+    [
+     -38.611,
+     16.384
+    ],
+    [
+     -38.621,
+     17.909
+    ]
+   ]
+  },
+  {
+   "id": "way/1335178872",
+   "osm_markings": null,
+   "osm_crossing": null,
+   "points": [
+    [
+     3.482,
+     22.242
+    ],
+    [
+     4.83,
+     22.442
+    ]
+   ],
+   "length_m": 1.36,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 4.0,
+   "centre_offset_m": -5.88,
+   "contrast": 41.9,
+   "profile_base": 181.0,
+   "profile_peak": 222.8,
+   "points_measured": [
+    [
+     4.346,
+     16.431
+    ],
+    [
+     5.694,
+     16.631
+    ]
+   ]
+  },
+  {
+   "id": "way/1335178873",
+   "osm_markings": null,
+   "osm_crossing": null,
+   "points": [
+    [
+     -3.374,
+     13.125
+    ],
+    [
+     -3.654,
+     13.559
+    ],
+    [
+     3.708,
+     19.737
+    ]
+   ],
+   "length_m": 10.13,
+   "status": "measured",
+   "marked_osm": true,
+   "width_m": 6.25,
+   "centre_offset_m": 4.0,
+   "contrast": 33.7,
+   "profile_base": 169.9,
+   "profile_peak": 203.5,
+   "points_measured": [
+    [
+     -6.734,
+     10.954
+    ],
+    [
+     -6.62,
+     14.006
+    ],
+    [
+     1.137,
+     22.801
+    ]
+   ]
+  },
+  {
+   "id": "way/1335178883",
+   "osm_markings": "no",
+   "osm_crossing": "unmarked",
+   "points": [
+    [
+     -20.757,
+     21.128
+    ],
+    [
+     -18.587,
+     22.409
+    ],
+    [
+     -16.362,
+     23.722
+    ]
+   ],
+   "length_m": 5.1,
+   "status": "measured",
+   "marked_osm": false,
+   "width_m": 8.0,
+   "centre_offset_m": -5.62,
+   "contrast": 50.5,
+   "profile_base": 130.0,
+   "profile_peak": 180.4,
+   "points_measured": [
+    [
+     -17.9,
+     16.283
+    ],
+    [
+     -15.728,
+     17.564
+    ],
+    [
+     -13.502,
+     18.878
+    ]
+   ]
+  },
+  {
+   "id": "way/1462471075",
+   "osm_markings": "zebra",
+   "osm_crossing": "uncontrolled",
+   "points": [
+    [
+     -66.813,
+     129.565
+    ],
+    [
+     -68.296,
+     124.533
+    ],
+    [
+     -69.861,
+     119.223
+    ]
+   ],
+   "length_m": 10.78,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": true,
+   "width_m": 6.5,
+   "centre_offset_m": -0.12,
+   "contrast": 20.2,
+   "profile_base": 97.1,
+   "profile_peak": 117.3
+  },
+  {
+   "id": "way/1507031457",
+   "osm_markings": "yes",
+   "osm_crossing": "unmarked",
+   "points": [
+    [
+     -43.532,
+     111.542
+    ],
+    [
+     -46.462,
+     112.277
+    ],
+    [
+     -48.715,
+     112.945
+    ]
+   ],
+   "length_m": 5.37,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": false,
+   "width_m": 12.25,
+   "centre_offset_m": 2.5,
+   "contrast": 13.8,
+   "profile_base": 99.6,
+   "profile_peak": 113.4
+  },
+  {
+   "id": "way/1507031459",
+   "osm_markings": "yes",
+   "osm_crossing": "unmarked",
+   "points": [
+    [
+     -71.489,
+     16.52
+    ],
+    [
+     -69.888,
+     16.653
+    ],
+    [
+     -68.378,
+     16.776
+    ]
+   ],
+   "length_m": 3.12,
+   "status": "not measured (low contrast or open band)",
+   "marked_osm": false,
+   "width_m": 6.25,
+   "centre_offset_m": 1.75,
+   "contrast": 14.1,
+   "profile_base": 92.6,
+   "profile_peak": 106.7
+  },
+  {
+   "id": "way/1507031466",
+   "osm_markings": "yes",
+   "osm_crossing": "unmarked",
+   "points": [
+    [
+     -128.0,
+     32.205
+    ],
+    [
+     -126.318,
+     31.425
+    ],
+    [
+     -124.554,
+     30.624
+    ]
+   ],
+   "length_m": 3.79,
+   "status": "measured",
+   "marked_osm": false,
+   "width_m": 5.75,
+   "centre_offset_m": 0.5,
+   "contrast": 81.1,
+   "profile_base": 132.7,
+   "profile_peak": 213.8,
+   "points_measured": [
+    [
+     -127.79,
+     32.658
+    ],
+    [
+     -126.109,
+     31.88
+    ],
+    [
+     -124.347,
+     31.079
+    ]
+   ]
+  }
+ ]
+}

@@ -98,7 +98,7 @@
   0
  ],
  "rotationY": 0,
- "groundDatum": "0 m = pavement at the south-west corner, elevation 14.561 m (PLATEAU). QFRONT's 0 m is 15.099 m; the 0.54 m step is left for the terrain gate (G4).",
+ "groundDatum": "0 m = pavement at the south-west corner, elevation 14.561 m (PLATEAU). QFRONT's 0 m is 15.099 m; the 0.54 m step is left for the terrain gate (G4). | C2a: placed by viewer.json groundElevationTP = T.P. 14.907 (lowest finished ground along the footprint), world Y = T.P. - 15.000.",
  "renderSettings": "Blender 4.2.3 Cycles CPU, AgX Medium High Contrast; day: sun az 207 / el 57 (M027, 2025-09-01 13:18 JST), camera-ray sky tint; night: deep-blue dome, street area lights; glossy rays see CC0 Poly Haven HDRIs (QFRONT copy)",
  "generator": "assets/buildings/magnet/source/blender/build_magnet.py (Blender 4.2.3 LTS): blender -b -P build_magnet.py -- <out> day|night preview|final view=m027|sw|south|west|roof [era=2025|none] [save] [clay]",
  "exporter": "assets/buildings/magnet/source/blender/export_web.py",
@@ -113,8 +113,8 @@
    "bytes": 1112464
   },
   "web/viewer.json": {
-   "sha256": "1fef38a4b92117736a006231dc8d902dbbfe1970c11ceed6382080ca1a1671bf",
-   "bytes": 578
+   "sha256": "880916e62da178a0f37a0cc9b5ce6612717e9a2c1cb831267b10923f8f1a4d83",
+   "bytes": 924
   },
   "web/emissive_day.json": {
    "sha256": "7362f6c22c15c681e13429b67bbb0c27deea7d97749bfec83bfbaee20edf8bf4",

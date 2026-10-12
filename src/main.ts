@@ -1,6 +1,7 @@
 import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, Mesh, MeshStandardMaterial, PCFSoftShadowMap, PerspectiveCamera, Scene, SRGBColorSpace, WebGLRenderer } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { applyEmissive, hasArc, loadBuilding, type BuildingIO, type BuildingResult, type LoadedBuilding } from './world/buildings';
+import { applyEmissive, groundOffset, hasArc, loadBuilding, type BuildingIO, type BuildingResult, type LoadedBuilding } from './world/buildings';
+import { loadGround, type GroundResult } from './world/ground';
 import { Lighting, type TimeOfDay } from './world/lighting';
 import { ViewerControls } from './controls/viewer-controls';
 import { FrameStats } from './perf/frame-stats';
@@ -44,10 +45,13 @@ const bloom = new UnrealBloomPass(new Vector2(innerWidth, innerHeight), Number(p
 composer.addPass(bloom);
 composer.addPass(new OutputPass());
 
-// a neutral ground disc so the buildings do not float; streets come in a later gate
-const ground = new Mesh(new CircleGeometry(400, 64), new MeshStandardMaterial({ color: 0x5b5a57, roughness: 0.9 }));
-ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; ground.name = 'ground';
+// a neutral disc beyond the Core ground (and the only ground if the Core ground fails or ?ground=off); it sits just
+// under the lowest Core road surface (T.P. 14.4 = -0.6 m in the common datum)
+const useGround = params.get('ground') !== 'off';
+const ground = new Mesh(new CircleGeometry(1500, 96), new MeshStandardMaterial({ color: 0x5b5a57, roughness: 0.9 }));
+ground.rotation.x = -Math.PI / 2; ground.position.y = useGround ? -0.62 : 0; ground.receiveShadow = true; ground.name = 'ground';
 scene.add(ground);
+let coreGround: GroundResult | undefined;
 
 const gltf = new GLTFLoader();
 const io: BuildingIO = {
@@ -73,10 +77,18 @@ function setTime(t: TimeOfDay) {
 
 async function start() {
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
-  const [envState, results] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io)))]);
+  const [envState, results, groundRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
+    useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined)]);
   results.forEach((r: BuildingResult) => scene.add(r.root));
+  coreGround = groundRes;
+  if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
+  else if (coreGround) ground.position.y = 0;   // no Core ground: the disc goes back to y = 0
   loaded = results.filter((r): r is LoadedBuilding => r.ok);
+  // QA only: ?datum=off reproduces the scene before the common datum (every model at its own 0 m = Y 0)
+  if (params.get('datum') === 'off') for (const b of loaded) { b.hints.groundElevationTP = undefined; b.root.position.y = 0; }
   const problems = [
+    ...(coreGround && !coreGround.ok ? [`地面の読み込みに失敗: ${coreGround.error}（灰色の円盤を表示）`] : []),
+    ...(coreGround?.ok && coreGround.missing.length ? [`地面の一部がない: ${coreGround.missing.join(', ')}`] : []),
     ...results.filter((r) => !r.ok).map((r) => `${NAMES[r.id] ?? r.id} の読み込みに失敗: ${'error' in r ? r.error : ''}（仮の箱を表示）`),
     ...loaded.flatMap((b) => b.layerErrors.map((e) => `${NAMES[b.id] ?? b.id} の看板レイヤーを読み込めず: ${e}`)),
   ];
@@ -95,10 +107,17 @@ async function start() {
   if (view === 'q032') controls.q032View(building.hints);
   else if (view === 'm027' && fit?.hints.cameraFit) showFit(fit);
   else if (view === 'walk') setControl('walk');
+  const pose = params.get('pose');   // QA: pose=x,y,z,tx,ty,tz[,vfov] in plan metres, heights in the common datum
+  if (pose) { const v = pose.split(',').map(Number); controls.poseView([v[0], v[1], v[2]], [v[3], v[4], v[5]], v[6] || 55, building.hints); }
   (window as unknown as Record<string, unknown>).__viewer = {
     ready: true,
     stats: Object.fromEntries(loaded.map((b) => [b.id, { ...b.stats, layers: b.layers, layerErrors: b.layerErrors }])),
     failed: results.filter((r) => !r.ok).map((r) => r.id),
+    ground: coreGround ? { ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
+    offsets: Object.fromEntries(loaded.map((b) => [b.id, b.root.position.y])),
+    // QA: camera position and the Core ground height under it (walk mode keeps the eye 1.6 m above it)
+    cameraPos: () => camera.position.toArray(),
+    groundUnderCamera: () => controls.groundY(camera.position.x, camera.position.z),
   };
 }
 
@@ -121,7 +140,7 @@ $('btn-m027').onclick = () => {
 /** The photo-fitted view also takes that photo's sun (M027: 2025-09-01 13:18, az 207 / el 57); other views keep QFRONT's. */
 function showFit(fit: LoadedBuilding) {
   if (!fit.hints.cameraFit || !building) return;
-  controls.fitView(fit.hints.cameraFit, building.hints);
+  controls.fitView(fit.hints.cameraFit, building.hints, groundOffset(fit.hints));
   lighting.placeSun(fit.hints);
 }
 function restoreSun() { if (building) lighting.placeSun(building.hints); }

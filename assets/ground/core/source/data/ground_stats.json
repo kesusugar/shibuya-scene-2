@@ -1,0 +1,55 @@
+{
+ "params": {
+  "radius_m": 150.0,
+  "kerb_height_m": 0.15,
+  "kerb_low_m": 0.02,
+  "landing_flat_m": 1.0,
+  "landing_ramp_m": 1.5,
+  "zebra_bar_m": 0.45,
+  "zebra_gap_m": 0.45,
+  "default_crosswalk_width_m": 4.0,
+  "fill_grid_m": 3.0
+ },
+ "datum_tp_m": 15.0,
+ "objects": {
+  "ground_road": {
+   "triangles": 443,
+   "vertices": 475,
+   "z_min": -0.594,
+   "z_max": 3.089
+  },
+  "ground_intersection": {
+   "triangles": 426,
+   "vertices": 449,
+   "z_min": -0.594,
+   "z_max": 3.332
+  },
+  "ground_sidewalk": {
+   "triangles": 46775,
+   "vertices": 23645,
+   "z_min": -0.487,
+   "z_max": 3.29
+  },
+  "ground_kerb": {
+   "triangles": 13950,
+   "vertices": 27900,
+   "z_min": -0.894,
+   "z_max": 3.332
+  },
+  "ground_marking": {
+   "triangles": 4459,
+   "vertices": 4683,
+   "z_min": -0.137,
+   "z_max": 1.894
+  },
+  "ground_fill": {
+   "triangles": 7669,
+   "vertices": 5421,
+   "z_min": -0.497,
+   "z_max": 3.28
+  }
+ },
+ "kerb_length_m": 1266.2,
+ "skirt_length_m": 1363.3,
+ "triangles_total": 73722
+}

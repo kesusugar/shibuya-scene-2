@@ -1,0 +1,542 @@
+{
+ "c01_to_qfront_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=6.5,-2.0,1.516,-8,29,12,55",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 0.8  (30フレーム平均)\nframe p50 176.1 ms / p95 4951.8 ms\ndraw calls 183  tris 264k\ngeometries 116  textures 22\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c01_to_qfront_after": {
+  "query": "?time=day&capture&pose=6.5,-2.0,1.516,-8,29,12,55",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 0.7  (34フレーム平均)\nframe p50 199.2 ms / p95 5403.6 ms\ndraw calls 190  tris 348k\ngeometries 122  textures 22\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c02_to_crossing_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=11.6,-47.0,1.871,6,10,6,55",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 0.9  (28フレーム平均)\nframe p50 146.5 ms / p95 4037.0 ms\ndraw calls 241  tris 284k\ngeometries 123  textures 26\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c02_to_crossing_after": {
+  "query": "?time=day&capture&pose=11.6,-47.0,1.871,6,10,6,55",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 0.7  (27フレーム平均)\nframe p50 133.3 ms / p95 5428.8 ms\ndraw calls 249  tris 369k\ngeometries 130  textures 26\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c03_to_station_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=-14.0,25.5,1.719,15,-40,4,55",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 2.6  (31フレーム平均)\nframe p50 143.6 ms / p95 1653.3 ms\ndraw calls 146  tris 207k\ngeometries 115  textures 22\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c03_to_station_after": {
+  "query": "?time=day&capture&pose=-14.0,25.5,1.719,15,-40,4,55",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.6  (37フレーム平均)\nframe p50 201.3 ms / p95 2033.4 ms\ndraw calls 154  tris 292k\ngeometries 122  textures 22\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c04_to_crossing_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=34.0,7.5,1.617,-10,-15,4,55",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 2.9  (30フレーム平均)\nframe p50 132.4 ms / p95 1218.0 ms\ndraw calls 137  tris 202k\ngeometries 113  textures 21\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c04_to_crossing_after": {
+  "query": "?time=day&capture&pose=34.0,7.5,1.617,-10,-15,4,55",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.8  (30フレーム平均)\nframe p50 155.5 ms / p95 1847.3 ms\ndraw calls 145  tris 287k\ngeometries 120  textures 21\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c05_to_crossing_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=-25.0,29.2,1.725,20,-10,4,55",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 1.4  (30フレーム平均)\nframe p50 129.0 ms / p95 2474.8 ms\ndraw calls 221  tris 263k\ngeometries 122  textures 25\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "c05_to_crossing_after": {
+  "query": "?time=day&capture&pose=-25.0,29.2,1.725,20,-10,4,55",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.0  (28フレーム平均)\nframe p50 106.0 ms / p95 3133.3 ms\ndraw calls 229  tris 348k\ngeometries 129  textures 25\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "x01_ref_a_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=-12.6,-68.2,10.2,0.8,30.7,16.2,52.2",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 0.9  (29フレーム平均)\nframe p50 146.4 ms / p95 4251.8 ms\ndraw calls 243  tris 284k\ngeometries 123  textures 26\n解像度 1280x960  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "x01_ref_a_after": {
+  "query": "?time=day&capture&pose=-12.6,-68.2,10.2,0.8,30.7,16.2,52.2",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 0.7  (28フレーム平均)\nframe p50 145.8 ms / p95 5354.9 ms\ndraw calls 251  tris 369k\ngeometries 130  textures 26\n解像度 1280x960  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "x02_ref_b_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 0.8  (29フレーム平均)\nframe p50 173.1 ms / p95 4796.7 ms\ndraw calls 218  tris 279k\ngeometries 120  textures 25\n解像度 1280x964  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "x02_ref_b_after": {
+  "query": "?time=day&capture&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 0.6  (29フレーム平均)\nframe p50 154.8 ms / p95 6727.7 ms\ndraw calls 226  tris 365k\ngeometries 127  textures 25\n解像度 1280x964  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "top_down_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=6.5,-30,190,6.5,-1.9,0,48",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 1.0  (28フレーム平均)\nframe p50 118.6 ms / p95 3578.8 ms\ndraw calls 243  tris 284k\ngeometries 123  textures 26\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "top_down_after": {
+  "query": "?time=day&capture&pose=6.5,-30,190,6.5,-1.9,0,48",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 0.8  (28フレーム平均)\nframe p50 148.3 ms / p95 4439.2 ms\ndraw calls 251  tris 369k\ngeometries 130  textures 26\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "base_qfront_front_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=-15.0,21.0,1.2,-6,30,0.6,50",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 0.6  (29フレーム平均)\nframe p50 107.7 ms / p95 5709.1 ms\ndraw calls 181  tris 249k\ngeometries 119  textures 22\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "base_qfront_front_after": {
+  "query": "?time=day&capture&pose=-15.0,21.0,1.2,-6,30,0.6,50",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 0.6  (29フレーム平均)\nframe p50 146.1 ms / p95 6479.2 ms\ndraw calls 188  tris 333k\ngeometries 125  textures 22\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "base_magnet_sw_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=25.5,6.0,1.2,33.6,11.3,0.4,50",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 1.6  (28フレーム平均)\nframe p50 129.1 ms / p95 2180.0 ms\ndraw calls 142  tris 152k\ngeometries 115  textures 21\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "base_magnet_sw_after": {
+  "query": "?time=day&capture&pose=25.5,6.0,1.2,33.6,11.3,0.4,50",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.3  (27フレーム平均)\nframe p50 186.9 ms / p95 3035.3 ms\ndraw calls 149  tris 236k\ngeometries 121  textures 21\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "base_magnet_se_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=44.0,4.0,1.2,49.2,9.9,0.3,50",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 1.9  (34フレーム平均)\nframe p50 129.3 ms / p95 2204.2 ms\ndraw calls 133  tris 151k\ngeometries 115  textures 20\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "base_magnet_se_after": {
+  "query": "?time=day&capture&pose=44.0,4.0,1.2,49.2,9.9,0.3,50",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.6  (27フレーム平均)\nframe p50 121.5 ms / p95 2286.9 ms\ndraw calls 140  tris 235k\ngeometries 121  textures 20\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "kerb_ne_corner_before": {
+  "query": "?time=day&capture&ground=off&datum=off&pose=22.0,8.0,1.3,30,14,0,45",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 1.3  (36フレーム平均)\nframe p50 176.9 ms / p95 2785.2 ms\ndraw calls 140  tris 151k\ngeometries 115  textures 21\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "kerb_ne_corner_after": {
+  "query": "?time=day&capture&pose=22.0,8.0,1.3,30,14,0,45",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.0  (30フレーム平均)\nframe p50 191.7 ms / p95 3468.0 ms\ndraw calls 147  tris 235k\ngeometries 121  textures 21\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "m027_day_before": {
+  "query": "?time=day&view=m027&capture&ground=off&datum=off",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 1.2  (39フレーム平均)\nframe p50 145.7 ms / p95 2530.7 ms\ndraw calls 185  tris 209k\ngeometries 118  textures 25\n解像度 640x853  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "m027_day_after": {
+  "query": "?time=day&view=m027&capture",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.3  (26フレーム平均)\nframe p50 132.5 ms / p95 2911.4 ms\ndraw calls 192  tris 293k\ngeometries 124  textures 25\n解像度 640x853  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "q032_day_before": {
+  "query": "?time=day&view=q032&capture&ground=off&datum=off",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 0.9  (37フレーム平均)\nframe p50 129.3 ms / p95 3799.9 ms\ndraw calls 185  tris 266k\ngeometries 117  textures 21\n解像度 640x875  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "q032_day_after": {
+  "query": "?time=day&view=q032&capture",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.1  (26フレーム平均)\nframe p50 142.5 ms / p95 3847.7 ms\ndraw calls 193  tris 351k\ngeometries 124  textures 21\n解像度 640x875  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "m027_night_before": {
+  "query": "?time=night&view=m027&capture&ground=off&datum=off",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 1.7  (44フレーム平均)\nframe p50 142.8 ms / p95 1782.2 ms\ndraw calls 78  tris 68k\ngeometries 70  textures 25\n解像度 640x853  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "m027_night_after": {
+  "query": "?time=night&view=m027&capture",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.4  (44フレーム平均)\nframe p50 123.0 ms / p95 2269.0 ms\ndraw calls 84  tris 138k\ngeometries 76  textures 25\n解像度 640x853  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "q032_night_before": {
+  "query": "?time=night&view=q032&capture&ground=off&datum=off",
+  "ground": "off",
+  "offsets": {
+   "qfront": 0,
+   "magnet": 0,
+   "eiraku": 0
+  },
+  "failed": [],
+  "perf": "FPS 1.5  (33フレーム平均)\nframe p50 67.4 ms / p95 3081.2 ms\ndraw calls 78  tris 125k\ngeometries 71  textures 21\n解像度 640x875  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "q032_night_after": {
+  "query": "?time=night&view=q032&capture",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.4  (34フレーム平均)\nframe p50 83.0 ms / p95 2164.5 ms\ndraw calls 85  tris 196k\ngeometries 78  textures 21\n解像度 640x875  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "night_c01_after": {
+  "query": "?time=night&capture&pose=6.5,-2.0,1.516,-8,29,12,55",
+  "ground": {
+   "ok": true,
+   "missing": [],
+   "meshes": 7,
+   "triangles": 71323
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 0.7  (44フレーム平均)\nframe p50 178.9 ms / p95 3168.4 ms\ndraw calls 82  tris 193k\ngeometries 76  textures 22\n解像度 1280x720  DPR 1.00",
+  "status": "",
+  "errors": []
+ },
+ "isolation_ground_missing": {
+  "query": "?time=day&capture&pose=6.5,-30,190,6.5,-1.9,0,48&groundurl=missing",
+  "ground": {
+   "ok": false,
+   "error": "Unexpected token '<', \"<!doctype \"... is not valid JSON",
+   "missing": [
+    "ground_road",
+    "ground_intersection",
+    "ground_sidewalk",
+    "ground_kerb",
+    "ground_marking",
+    "ground_fill"
+   ],
+   "meshes": 0,
+   "triangles": 0
+  },
+  "offsets": {
+   "qfront": 0.20199999999999996,
+   "magnet": -0.09299999999999997,
+   "eiraku": -0.09299999999999997
+  },
+  "failed": [],
+  "perf": "FPS 1.1  (28フレーム平均)\nframe p50 150.0 ms / p95 3190.6 ms\ndraw calls 243  tris 284k\ngeometries 123  textures 26\n解像度 1280x720  DPR 1.00",
+  "status": "地面の読み込みに失敗: Unexpected token '<', \"<!doctype \"... is not valid JSON（灰色の円盤を表示）",
+  "errors": []
+ }
+}
