@@ -1,4 +1,4 @@
 photo_id,photo_path,date,author,license,source_url,use
-WB01,assets/street/core/source/refs/stream_2025.jpg,2025-01-31,Syced,CC0,"https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg",sign texture extraction and facade type reference
-WB02,docs/core/building_refs/crossing_12214.jpg,2025-02-07,Syced,CC0,https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg,independent reference only; no texture extraction
-WB03,docs/core/building_refs/crossing_joli_2025.jpg,2025-11-01,Joli Rumi,CC BY-SA 4.0,"https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_Tokyo,_Japan.jpg",independent reference only; no texture extraction
+WB01,assets/street/core/source/refs/stream_2025.jpg,2025-01-31,Syced,CC0,"https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg","January sign texture extraction (9 textures), rooftop/corner/window/awning reference; same-camera comparison, dimensions estimated"
+WB02,docs/core/building_refs/crossing_12214.jpg,2025-02-07,Syced,CC0,https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg,"Independent type check: four window bands, left recess, sloping awning, flat red flank/curved screen, blank rooftop panel; no texture extraction"
+WB03,docs/core/building_refs/crossing_joli_2025.jpg,2025-11-01,Joli Rumi,CC BY-SA 4.0,"https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_Tokyo,_Japan.jpg",Independent broad rooftop sign and red-corner type check only; openings obscured; no texture extraction

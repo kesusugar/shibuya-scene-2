@@ -200,6 +200,30 @@
         192,
         640
       ]
+    },
+    "asbi_flank": {
+      "quad": [
+        [
+          405,
+          504
+        ],
+        [
+          437,
+          508
+        ],
+        [
+          437,
+          641
+        ],
+        [
+          406,
+          633
+        ]
+      ],
+      "size": [
+        160,
+        640
+      ]
     }
   },
   "sections": [
@@ -237,5 +261,72 @@
     }
   ],
   "monja_center_height_m": 25.4,
-  "height_revision_basis": "Stream 2025-01 photo: vertical restaurant sign extends above the middle roof; moved from 15.4m to 25.4m as one sign-height correction, still approximate"
+  "height_revision_basis": "Stream 2025-01 photo: vertical restaurant sign extends above the middle roof; moved from 15.4m to 25.4m as one sign-height correction, still approximate",
+  "rooftop_sign": {
+    "center_m": [
+      -36.455,
+      28.842,
+      34.145
+    ],
+    "width_m": 8.851,
+    "height_m": 11.288,
+    "yaw_rad": 0.561,
+    "support_base_height_m": 27.6,
+    "basis": "Stream 2025-01 four corners using unchanged provisional camera, constrained to the corner roof; placement and dimensions estimated. February and November confirm blue/green rooftop sign type."
+  },
+  "corner": {
+    "center_m": [
+      -39.718,
+      29.972
+    ],
+    "radius_m": 4.8,
+    "center_angle_rad": -0.615,
+    "width_scale": 1.1,
+    "height_scale": 1.2,
+    "screen_centers_m": {
+      "rakuten": 18.778,
+      "dmm": 8.0,
+      "taiseido": 3.0
+    },
+    "body_height_m": 23.778,
+    "basis": "Stream 2025-01 curved screen endpoints, unchanged camera, restricted corner footprint; Jan/Feb/Nov photos confirm a flat red flank and curved screen face; estimated dimensions. East extent constrained to original PLATEAU boundary; photo residual retained rather than expanding footprint.",
+    "flat_flank": {
+      "x_m": -40.16,
+      "center_height_m": 10.11,
+      "width_m": 3.764,
+      "height_m": 14.612,
+      "texture": "asbi_flank"
+    }
+  },
+  "fruit_frontage": {
+    "window_center_x_m": -52.6,
+    "window_width_m": 10.1,
+    "window_center_heights_m": [
+      4.0,
+      7.7,
+      11.4,
+      15.1
+    ],
+    "window_height_m": 2.6,
+    "recess_center_x_m": -59.35,
+    "recess_width_m": 2.2,
+    "header": {
+      "x_m": -53.782,
+      "center_height_m": 19.918,
+      "width_m": 14.784,
+      "height_m": 2.808
+    },
+    "roof_back_panel": {
+      "x_m": -52.975,
+      "center_height_m": 28.174,
+      "width_m": 14.913,
+      "height_m": 8.809
+    },
+    "basis": "Jan and Feb both show four horizontal window bands, narrow left dark recess, light tile piers, green projecting ledges, sloping awning and large blank rooftop panel. November has obstructions and confirms only broad facade/sign types. Floor heights use a regular 3.7m B-stage approximation, not pixel fit of every floor."
+  },
+  "middle_frontage": {
+    "bay_center_x_m": -43.7,
+    "bay_width_m": 1.15,
+    "basis": "Jan/Feb narrow dark vertical opening below restaurant sign, rather than fruit-store window grid; individual entrances and tenants not fully verified."
+  }
 }
