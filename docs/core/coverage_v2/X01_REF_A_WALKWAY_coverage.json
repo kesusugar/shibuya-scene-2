@@ -1,0 +1,681 @@
+{
+"camera": {
+"camera_id": "X01_REF_A_WALKWAY",
+"label": "\u99c5\u306e\u9023\u7d61\u901a\u8def\u306e\u7a93\uff08\u65e7 REF-A\uff09",
+"x_m": -12.6,
+"y_m": -68.2,
+"z_m": 10.2,
+"view_bearing_deg": 7.7,
+"derivation": "old project camera ref-a (src/app/foundation.mjs), solved from File:In_Front_of_Shibuya_Station.jpg (Dick Johnson, 2010, CC BY 2.0) with 7 ground and corner anchors; web [-12.6, 10.2, 68.2] -> plan (x, -z, y); height above the old flat ground. 0.4 m north of the PLATEAU/OSM north wall of the station corridor block way/355250634, i.e. at its window",
+"z_datum_m": 10.2,
+"half_hfov_deg": 33,
+"height_basis": "old-project height above its flat ground, which the solve anchored on crossing-level points (about T.P. 15.0); taken as datum metres, +-0.3 m",
+"host_excluded": [
+"brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
+"way/355250634"
+],
+"host_note": "camera stands 2.5 m inside the PLATEAU north face of the station corridor block (photo taken through its windows); the host and the overlapping PLATEAU bridge are treated as glazing for this view"
+},
+"width": 1440,
+"burial_check": {
+"rays": 200,
+"hits_city": 71,
+"nearest_m": 20.95,
+"backface_share": 0.07
+},
+"sky_share": 0.25026699017269133,
+"ground_share": 0.39059625033101675,
+"buildings": {
+"way/54500467": {
+"share_of_sphere": 0.049027460212000835,
+"sectors": {
+"180-240": 0.013043949296052702,
+"240-300": 0.03598351091594815
+},
+"share_of_photo_field": 0.0
+},
+"way/55588118": {
+"share_of_sphere": 0.013876710836162919,
+"sectors": {
+"120-180": 0.004228785109124746,
+"180-240": 0.009647925727038171
+},
+"share_of_photo_field": 0.0
+},
+"way/55896465": {
+"share_of_sphere": 0.00040888264882235696,
+"sectors": {
+"000-060": 0.00022659100044608214,
+"300-360": 0.0001822916483762748
+},
+"share_of_photo_field": 0.002230268993576492
+},
+"way/60739620": {
+"share_of_sphere": 0.004487282994333905,
+"sectors": {
+"180-240": 0.004487282994333905
+},
+"share_of_photo_field": 0.0
+},
+"way/60739635": {
+"share_of_sphere": 0.043375233143775706,
+"sectors": {
+"240-300": 0.01354331960187937,
+"300-360": 0.029831913541896328
+},
+"share_of_photo_field": 0.0
+},
+"way/87250190": {
+"share_of_sphere": 0.05013812301754675,
+"sectors": {
+"180-240": 0.021506946587053474,
+"240-300": 0.02863117643049327
+},
+"share_of_photo_field": 0.0
+},
+"way/114755219": {
+"share_of_sphere": 9.28673816819524e-05,
+"sectors": {
+"300-360": 9.28673816819524e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/116806279": {
+"share_of_sphere": 0.0006585505798802704,
+"sectors": {
+"000-060": 0.0003911493401548084,
+"060-120": 0.000267401239725462
+},
+"share_of_photo_field": 0.0
+},
+"way/116806280": {
+"share_of_sphere": 0.0008997302963216268,
+"sectors": {
+"000-060": 0.0008725249091828144,
+"060-120": 2.720538713881261e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/116806281": {
+"share_of_sphere": 0.009677855645466577,
+"sectors": {
+"000-060": 0.009677855645466575
+},
+"share_of_photo_field": 0.052788303520726776
+},
+"way/120105789": {
+"share_of_sphere": 0.0003959386580586005,
+"sectors": {
+"060-120": 0.00039593865805860037
+},
+"share_of_photo_field": 0.0
+},
+"way/120105795": {
+"share_of_sphere": 5.440861526177582e-05,
+"sectors": {
+"060-120": 5.440861526177582e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/120105796": {
+"share_of_sphere": 0.00012980600389744267,
+"sectors": {
+"000-060": 0.00012980600389744267
+},
+"share_of_photo_field": 0.0007080327485315055
+},
+"way/120105800": {
+"share_of_sphere": 7.83769832241005e-05,
+"sectors": {
+"060-120": 7.83769832241005e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/120105803": {
+"share_of_sphere": 1.0531971370197361e-05,
+"sectors": {
+"060-120": 1.0531971370197361e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/120105804": {
+"share_of_sphere": 0.0006755439896023772,
+"sectors": {
+"000-060": 0.0006755439896023768
+},
+"share_of_photo_field": 0.0
+},
+"way/120105810": {
+"share_of_sphere": 0.0016784517494506004,
+"sectors": {
+"000-060": 0.0016784517494506004
+},
+"share_of_photo_field": 0.002166619234576759
+},
+"way/123592018": {
+"share_of_sphere": 2.1200638459164837e-05,
+"sectors": {
+"060-120": 2.120063845916484e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/129061813": {
+"share_of_sphere": 0.0005518351379840983,
+"sectors": {
+"300-360": 0.0005518351379840984
+},
+"share_of_photo_field": 0.0024798002953784768
+},
+"way/136398534": {
+"share_of_sphere": 0.001962916417547611,
+"sectors": {
+"180-240": 0.001962916417547611
+},
+"share_of_photo_field": 0.0
+},
+"way/136398535": {
+"share_of_sphere": 0.008248160094631106,
+"sectors": {
+"180-240": 0.008248160094631106
+},
+"share_of_photo_field": 0.0
+},
+"way/136587775": {
+"share_of_sphere": 6.19809003942903e-05,
+"sectors": {
+"240-300": 6.19809003942903e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/136587820": {
+"share_of_sphere": 0.0009242210260634202,
+"sectors": {
+"240-300": 0.0009242210260634202
+},
+"share_of_photo_field": 0.0
+},
+"way/136587831": {
+"share_of_sphere": 3.024539599491862e-05,
+"sectors": {
+"240-300": 3.024539599491862e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/136587834": {
+"share_of_sphere": 0.002507799128799201,
+"sectors": {
+"240-300": 0.0025077991287992007
+},
+"share_of_photo_field": 0.0
+},
+"way/136690966": {
+"share_of_sphere": 0.005252635049507955,
+"sectors": {
+"300-360": 0.005252635049507955
+},
+"share_of_photo_field": 0.023489538124227764
+},
+"way/136691379": {
+"share_of_sphere": 9.152592311053902e-05,
+"sectors": {
+"300-360": 9.152592311053902e-05
+},
+"share_of_photo_field": 0.0004992323078756675
+},
+"way/136691386": {
+"share_of_sphere": 0.011961851253733391,
+"sectors": {
+"000-060": 0.005964295782919545,
+"300-360": 0.005997555470813844
+},
+"share_of_photo_field": 0.06524646138400031
+},
+"way/136691389": {
+"share_of_sphere": 0.000546224015777101,
+"sectors": {
+"300-360": 0.000546224015777101
+},
+"share_of_photo_field": 0.002979403722420551
+},
+"way/136730012": {
+"share_of_sphere": 0.00026317337349685807,
+"sectors": {
+"000-060": 0.00026317337349685807
+},
+"share_of_photo_field": 0.0014354911281646806
+},
+"way/136730030": {
+"share_of_sphere": 0.0004042457876644938,
+"sectors": {
+"000-060": 0.0004042457876644939
+},
+"share_of_photo_field": 0.002204977023624512
+},
+"way/136730031": {
+"share_of_sphere": 0.00010447394474369578,
+"sectors": {
+"000-060": 0.00010447394474369578
+},
+"share_of_photo_field": 0.000569857880420159
+},
+"way/136730032": {
+"share_of_sphere": 0.0001058470383433954,
+"sectors": {
+"000-060": 0.0001058470383433954
+},
+"share_of_photo_field": 0.0005773474818730658
+},
+"way/136730035": {
+"share_of_sphere": 8.324110688566176e-05,
+"sectors": {
+"000-060": 8.324110688566176e-05
+},
+"share_of_photo_field": 0.00045404240119451873
+},
+"way/136730040": {
+"share_of_sphere": 0.0001980110259803954,
+"sectors": {
+"000-060": 0.0001980110259803954
+},
+"share_of_photo_field": 0.001080060141711248
+},
+"way/136730046": {
+"share_of_sphere": 0.00026142831514758594,
+"sectors": {
+"000-060": 0.000261428315147586
+},
+"share_of_photo_field": 0.0014259726280777417
+},
+"way/136730049": {
+"share_of_sphere": 0.0001450402435169913,
+"sectors": {
+"000-060": 0.0001450402435169913
+},
+"share_of_photo_field": 0.0007911286010017709
+},
+"way/138589857": {
+"share_of_sphere": 4.523209932031626e-06,
+"sectors": {
+"060-120": 4.523209932031626e-06
+},
+"share_of_photo_field": 0.0
+},
+"way/138589860": {
+"share_of_sphere": 0.0013817305032690112,
+"sectors": {
+"060-120": 0.0013817305032690112
+},
+"share_of_photo_field": 0.0
+},
+"way/138594019": {
+"share_of_sphere": 1.0595777519272345e-05,
+"sectors": {
+"060-120": 1.0595777519272345e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/138594035": {
+"share_of_sphere": 4.542662309442867e-06,
+"sectors": {
+"060-120": 4.542662309442867e-06
+},
+"share_of_photo_field": 0.0
+},
+"way/138594053": {
+"share_of_sphere": 0.00016312442053527135,
+"sectors": {
+"060-120": 0.00016312442053527135
+},
+"share_of_photo_field": 0.0
+},
+"way/138594066": {
+"share_of_sphere": 4.536435441356196e-05,
+"sectors": {
+"060-120": 4.536435441356196e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/138594099": {
+"share_of_sphere": 1.508797482716955e-05,
+"sectors": {
+"060-120": 1.5087974827169553e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/138594105": {
+"share_of_sphere": 2.8695639181322138e-05,
+"sectors": {
+"060-120": 2.8695639181322138e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/138594130": {
+"share_of_sphere": 6.799092829358476e-05,
+"sectors": {
+"060-120": 6.799092829358476e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/138594138": {
+"share_of_sphere": 0.0005738714834398688,
+"sectors": {
+"060-120": 0.0005738714834398688
+},
+"share_of_photo_field": 0.0
+},
+"way/138594145": {
+"share_of_sphere": 9.216839799079225e-05,
+"sectors": {
+"060-120": 9.216839799079225e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/138670889": {
+"share_of_sphere": 0.0030813034195030474,
+"sectors": {
+"000-060": 0.003081303419503048
+},
+"share_of_photo_field": 0.0
+},
+"way/140493156": {
+"share_of_sphere": 5.452267609538461e-05,
+"sectors": {
+"120-180": 5.452267609538461e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/140501118": {
+"share_of_sphere": 5.14938115801419e-05,
+"sectors": {
+"120-180": 5.14938115801419e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/140501130": {
+"share_of_sphere": 1.2116842425866753e-05,
+"sectors": {
+"120-180": 1.2116842425866755e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/140501131": {
+"share_of_sphere": 2.1203262925982906e-05,
+"sectors": {
+"120-180": 2.1203262925982906e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/142438894": {
+"share_of_sphere": 0.00014302506332593672,
+"sectors": {
+"000-060": 0.00014302506332593672
+},
+"share_of_photo_field": 0.000780136709050564
+},
+"way/142438895": {
+"share_of_sphere": 0.00017007134972439914,
+"sectors": {
+"000-060": 0.00017007134972439914
+},
+"share_of_photo_field": 0.0009276619075876318
+},
+"way/155538676": {
+"share_of_sphere": 0.0022574771598961748,
+"sectors": {
+"000-060": 0.0007001350103073735,
+"060-120": 0.0015573421495888012
+},
+"share_of_photo_field": 0.0
+},
+"way/155797253": {
+"share_of_sphere": 0.0002886131402996442,
+"sectors": {
+"060-120": 0.0002886131402996442
+},
+"share_of_photo_field": 0.0
+},
+"way/155807205": {
+"share_of_sphere": 0.0014861507058800542,
+"sectors": {
+"060-120": 0.0014861507058800542
+},
+"share_of_photo_field": 0.0
+},
+"way/155807209": {
+"share_of_sphere": 0.0005599336844648922,
+"sectors": {
+"300-360": 0.0005599336844648922
+},
+"share_of_photo_field": 0.002431406184247071
+},
+"way/155807210": {
+"share_of_sphere": 0.00015651076302118742,
+"sectors": {
+"300-360": 0.00015651076302118742
+},
+"share_of_photo_field": 0.0008536950710246585
+},
+"way/155807211": {
+"share_of_sphere": 0.00016562090258596048,
+"sectors": {
+"000-060": 0.00016562090258596048
+},
+"share_of_photo_field": 0.0009033867413779662
+},
+"way/155807215": {
+"share_of_sphere": 0.001406776335649188,
+"sectors": {
+"300-360": 0.001406776335649188
+},
+"share_of_photo_field": 0.0
+},
+"way/155807221": {
+"share_of_sphere": 0.0021904011038736976,
+"sectors": {
+"240-300": 0.0021904011038736976
+},
+"share_of_photo_field": 0.0
+},
+"way/204091879": {
+"share_of_sphere": 0.009344040102309416,
+"sectors": {
+"060-120": 0.009344040102309416
+},
+"share_of_photo_field": 0.0
+},
+"way/327328276": {
+"share_of_sphere": 3.9356500250703824e-05,
+"sectors": {
+"000-060": 3.9356500250703824e-05
+},
+"share_of_photo_field": 0.00021467181954929357
+},
+"way/451564412": {
+"share_of_sphere": 0.0011721515534833837,
+"sectors": {
+"300-360": 0.0011721515534833837
+},
+"share_of_photo_field": 0.004244097649768195
+},
+"way/491722174": {
+"share_of_sphere": 0.00012983484147084572,
+"sectors": {
+"060-120": 0.00012983484147084572
+},
+"share_of_photo_field": 0.0
+},
+"way/521438304": {
+"share_of_sphere": 0.003768885494961675,
+"sectors": {
+"120-180": 0.0037688854949616745
+},
+"share_of_photo_field": 0.0
+},
+"way/617560918": {
+"share_of_sphere": 0.02546689567723728,
+"sectors": {
+"060-120": 0.02406176102223059,
+"120-180": 0.0014051346550066864
+},
+"share_of_photo_field": 0.0
+},
+"way/749184350": {
+"share_of_sphere": 4.0903428616504835e-05,
+"sectors": {
+"000-060": 4.090342861650483e-05
+},
+"share_of_photo_field": 0.0
+},
+"way/810356690": {
+"share_of_sphere": 0.00034928140775544877,
+"sectors": {
+"060-120": 0.00034928140775544877
+},
+"share_of_photo_field": 0.0
+},
+"way/858994297": {
+"share_of_sphere": 0.0009598441277929314,
+"sectors": {
+"060-120": 0.0009598441277929315
+},
+"share_of_photo_field": 0.0
+},
+"way/904652357": {
+"share_of_sphere": 0.00474042224709284,
+"sectors": {
+"000-060": 0.0013524102511547225,
+"060-120": 0.0033880119959381174
+},
+"share_of_photo_field": 0.0
+},
+"way/904734439": {
+"share_of_sphere": 0.0002176893027058502,
+"sectors": {
+"240-300": 0.00021768930270585024
+},
+"share_of_photo_field": 0.0
+},
+"way/1200029947": {
+"share_of_sphere": 0.01179176022928898,
+"sectors": {
+"120-180": 0.01179176022928898
+},
+"share_of_photo_field": 0.0
+},
+"way/1233446447": {
+"share_of_sphere": 0.00019983910027606417,
+"sectors": {
+"300-360": 0.00019983910027606417
+},
+"share_of_photo_field": 0.0010900314560512588
+},
+"way/1233446448": {
+"share_of_sphere": 0.0003026732564460488,
+"sectors": {
+"300-360": 0.00030267325644604874
+},
+"share_of_photo_field": 0.0016509450351602658
+},
+"way/1333409445": {
+"share_of_sphere": 0.01137975715129417,
+"sectors": {
+"120-180": 0.01137975715129417
+},
+"share_of_photo_field": 0.0
+},
+"way/1335178869": {
+"share_of_sphere": 0.00014925740244094428,
+"sectors": {
+"300-360": 0.0001492574024409443
+},
+"share_of_photo_field": 0.0008141312860415144
+},
+"plateau/bldg_3fde5d0f-72c7-48cd-b65b-66714d0d1e57": {
+"share_of_sphere": 0.0001740370456927129,
+"sectors": {
+"120-180": 0.00017403704569271287
+},
+"share_of_photo_field": 0.0
+},
+"plateau/bldg_9eb9d082-8768-4bbb-9142-b115e2c8a445": {
+"share_of_sphere": 6.327610575569151e-05,
+"sectors": {
+"060-120": 6.327610575569151e-05
+},
+"share_of_photo_field": 0.0
+},
+"plateau/bldg_a4e27670-5674-4902-bbd5-51c0f5084ee9": {
+"share_of_sphere": 0.001981607778310535,
+"sectors": {
+"060-120": 0.001981607778310535
+},
+"share_of_photo_field": 0.0
+},
+"plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b": {
+"share_of_sphere": 0.0026352999965672,
+"sectors": {
+"000-060": 0.0004907896600861255,
+"060-120": 0.002144510336481074
+},
+"share_of_photo_field": 0.0
+},
+"plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324": {
+"share_of_sphere": 0.029217582274750426,
+"sectors": {
+"060-120": 0.009746967444140484,
+"120-180": 0.019470614830609936
+},
+"share_of_photo_field": 0.0
+},
+"plateau/bldg_3fe07249-7d28-4974-8d06-d4604f159890": {
+"share_of_sphere": 3.0293548161769585e-06,
+"sectors": {
+"000-060": 3.0293548161769585e-06
+},
+"share_of_photo_field": 1.652375354278341e-05
+},
+"plateau/bldg_95464060-e1db-4530-9f61-8f3c54b74164": {
+"share_of_sphere": 0.0008658082176566654,
+"sectors": {
+"000-060": 0.0008658082176566655
+},
+"share_of_photo_field": 0.004722590278127266
+},
+"plateau/bldg_5369333e-5975-493a-b05d-b341800715c2": {
+"share_of_sphere": 0.0047624974878926135,
+"sectors": {
+"060-120": 0.004762497487892612
+},
+"share_of_photo_field": 0.0
+},
+"plateau/bldg_cee7364f-1d8a-413d-a6db-ff974581f16d": {
+"share_of_sphere": 7.876997463480846e-05,
+"sectors": {
+"000-060": 7.876997463480846e-05
+},
+"share_of_photo_field": 0.0
+},
+"plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0": {
+"share_of_sphere": 0.000542064082822642,
+"sectors": {
+"060-120": 0.0005420640828226418
+},
+"share_of_photo_field": 0.0
+},
+"brid/brid_95680199-7365-41de-a5b7-9275321fe8bf": {
+"share_of_sphere": 0.001103892511509175,
+"sectors": {
+"000-060": 0.001103892511509175
+},
+"share_of_photo_field": 0.0012947860676863162
+},
+"brid/brid_a4d3aa47-8095-4c24-99e2-80202b230bc1": {
+"share_of_sphere": 0.023831576724857355,
+"sectors": {
+"120-180": 0.006911998731658567,
+"180-240": 0.016919577993198785
+},
+"share_of_photo_field": 0.0
+}
+}
+}

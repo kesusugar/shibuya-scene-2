@@ -1,0 +1,161 @@
+{
+ "C01_CROSSING_CENTER": {
+  "camera": {
+   "camera_id": "C01_CROSSING_CENTER",
+   "label": "スクランブル交差点中心",
+   "x_m": 6.5,
+   "y_m": -2.0,
+   "z_m": 1.6,
+   "derivation": "OSM node/291758776 (crossing:scramble=yes, 渋谷駅前), old data point",
+   "verified": "map-derived, not photo-fitted",
+   "road_tp": 14.916,
+   "z_datum_m": 1.516,
+   "height_basis": "eye 1.6 m above the PLATEAU road surface; datum T.P. 15.000"
+  },
+  "burial_check": {
+   "rays": 200,
+   "hits_city": 55,
+   "nearest_m": 20.77,
+   "backface_share": 0.04
+  },
+  "sky_share": 0.23648305873428196,
+  "ground_share": 0.48275934076484484
+ },
+ "C02_HACHIKO_EXIT": {
+  "camera": {
+   "camera_id": "C02_HACHIKO_EXIT",
+   "label": "ハチ公口（ハチ公像前）",
+   "x_m": 11.6,
+   "y_m": -47.0,
+   "z_m": 1.6,
+   "derivation": "OSM node/597685675 忠犬ハチ公像 moved 2 m north (towards the crossing) so the camera is not inside the statue",
+   "verified": "map-derived",
+   "road_tp": 15.271,
+   "z_datum_m": 1.871,
+   "height_basis": "eye 1.6 m above the PLATEAU road surface; datum T.P. 15.000"
+  },
+  "burial_check": {
+   "rays": 200,
+   "hits_city": 54,
+   "nearest_m": 12.51,
+   "backface_share": 0.015
+  },
+  "sky_share": 0.25168669414362344,
+  "ground_share": 0.47317652858810877
+ },
+ "C03_QFRONT_FRONT": {
+  "camera": {
+   "camera_id": "C03_QFRONT_FRONT",
+   "label": "QFRONT前の歩道",
+   "x_m": -14.0,
+   "y_m": 25.5,
+   "z_m": 1.6,
+   "derivation": "QFRONT front-arc midpoint (-7.67, 29.08) from assets/buildings/qfront/web/viewer.json, 6 m out along the arc normal (0.088, -0.996); v2: moved to (-14.0, 25.5), 3.5 m in front of the arc west of the subway entrance way/155807211 (x -8..1, y 19..23) - the first position stood 0.1 m from that entrance and it filled the view",
+   "verified": "map-derived",
+   "road_tp": 15.119,
+   "z_datum_m": 1.719,
+   "height_basis": "eye 1.6 m above the PLATEAU road surface; datum T.P. 15.000"
+  },
+  "burial_check": {
+   "rays": 200,
+   "hits_city": 83,
+   "nearest_m": 2.88,
+   "backface_share": 0.025
+  },
+  "sky_share": 0.16651837646450063,
+  "ground_share": 0.4146555638397807
+ },
+ "C04_MAGNET_FRONT": {
+  "camera": {
+   "camera_id": "C04_MAGNET_FRONT",
+   "label": "MAGNET前の歩道",
+   "x_m": 34.0,
+   "y_m": 7.5,
+   "z_m": 1.6,
+   "derivation": "midpoint of MAGNET's PLATEAU south ground edge (49.2,9.9)-(33.6,11.3) moved 4 m south onto the pavement; v2: moved to (34.0, 7.5), 3.9 m from the subway entrance way/142438894 (x 37..46, y 2..5) - the first position stood 1.5 m from it",
+   "verified": "map-derived",
+   "road_tp": 15.017,
+   "z_datum_m": 1.617,
+   "height_basis": "eye 1.6 m above the PLATEAU road surface; datum T.P. 15.000"
+  },
+  "burial_check": {
+   "rays": 200,
+   "hits_city": 86,
+   "nearest_m": 3.74,
+   "backface_share": 0.04
+  },
+  "sky_share": 0.17239967769297823,
+  "ground_share": 0.3978571986918777
+ },
+ "C05_CENTER_GAI_GATE": {
+  "camera": {
+   "camera_id": "C05_CENTER_GAI_GATE",
+   "label": "センター街入口",
+   "x_m": -25.0,
+   "y_m": 29.2,
+   "z_m": 1.6,
+   "derivation": "OSM way/542478931 (渋谷センター街, pedestrian) vertex 6, the first bend west of the crosswalk end node/5244745709",
+   "verified": "map-derived",
+   "road_tp": 15.125,
+   "z_datum_m": 1.725,
+   "height_basis": "eye 1.6 m above the PLATEAU road surface; datum T.P. 15.000"
+  },
+  "burial_check": {
+   "rays": 200,
+   "hits_city": 82,
+   "nearest_m": 5.84,
+   "backface_share": 0.03
+  },
+  "sky_share": 0.14602358110321925,
+  "ground_share": 0.43660921870077857
+ },
+ "X01_REF_A_WALKWAY": {
+  "camera": {
+   "camera_id": "X01_REF_A_WALKWAY",
+   "label": "駅の連絡通路の窓（旧 REF-A）",
+   "x_m": -12.6,
+   "y_m": -68.2,
+   "z_m": 10.2,
+   "view_bearing_deg": 7.7,
+   "derivation": "old project camera ref-a (src/app/foundation.mjs), solved from File:In_Front_of_Shibuya_Station.jpg (Dick Johnson, 2010, CC BY 2.0) with 7 ground and corner anchors; web [-12.6, 10.2, 68.2] -> plan (x, -z, y); height above the old flat ground. 0.4 m north of the PLATEAU/OSM north wall of the station corridor block way/355250634, i.e. at its window",
+   "z_datum_m": 10.2,
+   "half_hfov_deg": 33,
+   "height_basis": "old-project height above its flat ground, which the solve anchored on crossing-level points (about T.P. 15.0); taken as datum metres, +-0.3 m",
+   "host_excluded": [
+    "brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
+    "way/355250634"
+   ],
+   "host_note": "camera stands 2.5 m inside the PLATEAU north face of the station corridor block (photo taken through its windows); the host and the overlapping PLATEAU bridge are treated as glazing for this view"
+  },
+  "burial_check": {
+   "rays": 200,
+   "hits_city": 71,
+   "nearest_m": 20.95,
+   "backface_share": 0.07
+  },
+  "sky_share": 0.25026699017269133,
+  "ground_share": 0.39059625033101675
+ },
+ "X02_REF_B_STREAM": {
+  "camera": {
+   "camera_id": "X02_REF_B_STREAM",
+   "label": "渋谷ストリーム高層部（旧 REF-B）",
+   "x_m": 161.9,
+   "y_m": -201.8,
+   "z_m": 159.6,
+   "view_bearing_deg": -42.3,
+   "derivation": "old project camera ref-b, solved from File:Shibuya_scramble_av_night_from_Stream.jpg (Syced, 2024, CC0) with 7 crosswalk and corner anchors, residual 7-28 px; web [161.9, 159.6, 201.8] -> plan (x, -z, y)",
+   "z_datum_m": 159.6,
+   "half_hfov_deg": 12,
+   "height_basis": "old-project height above its flat ground, which the solve anchored on crossing-level points (about T.P. 15.0); taken as datum metres, +-0.3 m"
+  },
+  "burial_check": {
+   "rays": 200,
+   "hits_city": 94,
+   "nearest_m": 42.27,
+   "backface_share": 0.02
+  },
+  "sky_share": 0.4236585746458268,
+  "ground_share": 0.10685531854239623
+ }
+}
