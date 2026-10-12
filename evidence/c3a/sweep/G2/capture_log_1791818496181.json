@@ -1,0 +1,17 @@
+{
+ "m027_beauty": {
+  "query": "/?time=day&view=m027&capture&look=glassEnv:1.6",
+  "errors": [],
+  "perf": "FPS 1.2  (36フレーム平均)\nframe p50 231.9 ms / p95 2519.9 ms\ndraw calls 192  tris 293k\ngeometries 124  textures 25\n解像度 640x853  DPR 1.00"
+ },
+ "q032_beauty": {
+  "query": "/?time=day&view=q032&capture&look=glassEnv:1.6",
+  "errors": [],
+  "perf": "FPS 0.9  (35フレーム平均)\nframe p50 123.8 ms / p95 4942.7 ms\ndraw calls 193  tris 351k\ngeometries 124  textures 21\n解像度 640x875  DPR 1.00"
+ },
+ "refa_beauty": {
+  "query": "/?time=day&pose=-12.6,-68.2,10.2,0.8,30.7,16.2,52.2&capture&look=glassEnv:1.6",
+  "errors": [],
+  "perf": "FPS 1.5  (26フレーム平均)\nframe p50 108.0 ms / p95 2516.5 ms\ndraw calls 251  tris 369k\ngeometries 130  textures 26\n解像度 640x480  DPR 1.00"
+ }
+}

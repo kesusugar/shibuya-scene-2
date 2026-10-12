@@ -1,0 +1,7 @@
+{
+ "refb_beauty": {
+  "query": "/?time=night&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8&capture&look=nightGround:4",
+  "errors": [],
+  "perf": "FPS 1.7  (30フレーム平均)\nframe p50 100.0 ms / p95 2364.7 ms\ndraw calls 118  tris 210k\ngeometries 108  textures 25\n解像度 640x482  DPR 1.00"
+ }
+}
