@@ -4,7 +4,7 @@ import {
 } from 'three';
 import { HDRLoader } from 'three/examples/jsm/loaders/HDRLoader.js';
 import { planToWorld } from './coords';
-import type { ViewerHints } from './buildings';
+import { hasArc, planCentre, type ViewerHints } from './buildings';
 
 export type TimeOfDay = 'day' | 'night';
 
@@ -38,13 +38,14 @@ export class Lighting {
   placeSun(hints: ViewerHints) {
     const az = (hints.sun.azimuth_deg * Math.PI) / 180, el = (hints.sun.elevation_deg * Math.PI) / 180;
     const toSun = new Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), -Math.cos(az) * Math.cos(el)); // east, up, south
-    const target = planToWorld(hints.arcMid, 20).add(new Vector3(-6, 0, -12));
+    const target = hints.arcMid ? planToWorld(hints.arcMid, 20).add(new Vector3(-6, 0, -12)) : planToWorld(planCentre(hints), 20);
     this.sun.target.position.copy(target);
     this.sun.position.copy(target).addScaledVector(toSun, 200);
   }
 
   /** Floodlight washes from the arm tips at the arc ends, down the side faces (as in the Q031 dusk photo). */
   placeFloods(hints: ViewerHints) {
+    if (!hasArc(hints)) return;
     const mid = planToWorld(hints.arcMid);
     const front = planToWorld(hints.arcNormal).normalize();          // outward normal of the curved front
     const pairs: [typeof hints.arcEnds[number], [number, number]][] = [[hints.arcEnds[0], hints.floodlights.arcStart_m], [hints.arcEnds[1], hints.floodlights.arcEnd_m]];
@@ -78,7 +79,7 @@ export class Lighting {
     return { day: day.status, night: night.status };
   }
 
-  apply(mode: TimeOfDay, building?: Object3D) {
+  apply(mode: TimeOfDay, buildings: Object3D[] = []) {
     this.mode = mode;
     const day = mode === 'day';
     const set = this.sets[mode];
@@ -92,7 +93,7 @@ export class Lighting {
     this.hemi.color.set(day ? 0xb8c8e8 : 0x3050a0);
     for (const f of this.floods) f.intensity = day ? 0 : this.floodIntensity;
     this.renderer.toneMappingExposure = day ? 1.0 : 1.35;
-    building?.traverse((o) => {
+    for (const building of buildings) building.traverse((o) => {
       const mesh = o as Mesh;
       if (!mesh.isMesh) return;
       mesh.castShadow = mesh.receiveShadow = true;

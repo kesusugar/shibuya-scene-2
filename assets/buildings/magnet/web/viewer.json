@@ -1,0 +1,31 @@
+{
+ "_note": "Viewer hints in Blender plan coordinates (x=east, y=north, metres); the viewer maps them to three.js as (x, z, -y).",
+ "planBounds": [
+  25.7,
+  9.9,
+  51.7,
+  71.2
+ ],
+ "sun": {
+  "azimuth_deg": 207,
+  "elevation_deg": 57
+ },
+ "cameraFit": {
+  "photo": "M027 (2025-09-01, Taufik, CC0)",
+  "pos": [
+   -11.327218845311421,
+   -3.346415728417041,
+   1.5
+  ],
+  "yaw": 71.2404627706144,
+  "pitch": 5.848231368370223,
+  "roll": -3.5227875421076997,
+  "fpx": 1134,
+  "W": 1280,
+  "H": 1707,
+  "rms_px": 11.4
+ },
+ "layers": {
+  "signs_2025": "magnet_signs_2025.glb"
+ }
+}

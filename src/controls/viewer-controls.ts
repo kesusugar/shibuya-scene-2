@@ -2,7 +2,7 @@ import { Object3D, PerspectiveCamera, Raycaster, Vector3 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls.js';
 import { planToWorld } from '../world/coords';
-import type { ViewerHints } from '../world/buildings';
+import { hasArc, planCentre, type CameraFit, type ViewerHints } from '../world/buildings';
 
 export type ControlMode = 'orbit' | 'walk';
 const EYE = 1.6;
@@ -16,6 +16,8 @@ export class ViewerControls {
   private ray = new Raycaster();
   private obstacles: Object3D[] = [];
   private projectionOverride = false;
+  /** True while the photo-fitted view (fitView) owns the camera; resize keeps it instead of reapplying Q032. */
+  fitActive = false;
 
   constructor(private camera: PerspectiveCamera, dom: HTMLElement) {
     this.orbit = new OrbitControls(camera, dom);
@@ -32,9 +34,16 @@ export class ViewerControls {
   setObstacles(objs: Object3D[]) { this.obstacles = objs; }
 
   frameBuilding(h: ViewerHints) {
+    this.clearProjectionOverride();
+    if (!hasArc(h)) {   // generic building: look at the plan centre from the south-west
+      const c = planToWorld(planCentre(h));
+      this.orbit.target.copy(c).setY(18);
+      this.camera.position.copy(c).add(new Vector3(-55, 30, 60));
+      this.orbit.update();
+      return;
+    }
     const mid = planToWorld(h.arcMid);
     const n = planToWorld(h.arcNormal).normalize();
-    this.clearProjectionOverride();
     this.orbit.target.copy(mid).addScaledVector(n, -12).setY(24);
     this.camera.position.copy(mid).addScaledVector(n, 62).add(new Vector3(22, 12, 0));
     this.orbit.update();
@@ -45,8 +54,8 @@ export class ViewerControls {
     this.orbit.enabled = mode === 'orbit';
     if (mode === 'walk') {
       this.clearProjectionOverride();
-      const mid = planToWorld(h.arcMid);
-      const n = planToWorld(h.arcNormal).normalize();
+      const mid = planToWorld(h.arcMid ?? planCentre(h));
+      const n = h.arcNormal ? planToWorld(h.arcNormal).normalize() : new Vector3(-0.6, 0, 0.8);
       this.camera.position.copy(mid).addScaledVector(n, 18).setY(EYE);
       this.camera.lookAt(mid.clone().setY(12));
     } else {
@@ -60,6 +69,7 @@ export class ViewerControls {
    * Uses a shifted projection so the view matches the Cycles render and the photo.
    */
   q032View(h: ViewerHints) {
+    if (!hasArc(h)) return;
     const c = h.cameraQ032;
     const mid = h.arcMid, n = h.arcNormal, t: [number, number] = [-n[1], n[0]];
     const pos: [number, number] = [mid[0] + n[0] * c.D + t[0] * c.lat, mid[1] + n[1] * c.D + t[1] * c.lat];
@@ -79,9 +89,34 @@ export class ViewerControls {
     this.projectionOverride = true;
   }
 
+  /**
+   * A camera fitted to a reference photo (tools/camfit.py; e.g. MAGNET's M027): position in Blender plan axes, compass
+   * yaw, pitch and roll, principal point at the image centre. The vertical field of view matches the photo.
+   */
+  fitView(c: CameraFit, h: ViewerHints) {
+    this.setMode('orbit', h);
+    this.orbit.enabled = false;
+    const [yaw, pitch, roll] = [c.yaw, c.pitch, c.roll].map((d) => (d * Math.PI) / 180);
+    // Blender axes (east, north, up) -> world (east, up, south)
+    const w = (x: number, y: number, z: number) => new Vector3(x, z, -y);
+    const f = w(Math.sin(yaw) * Math.cos(pitch), Math.cos(yaw) * Math.cos(pitch), Math.sin(pitch));
+    const rt = w(Math.cos(yaw), -Math.sin(yaw), 0);
+    const up = new Vector3().crossVectors(rt, f);
+    const up2 = up.clone().multiplyScalar(Math.cos(roll)).addScaledVector(rt, Math.sin(roll));
+    this.camera.position.copy(w(...c.pos));
+    this.camera.up.copy(up2);
+    this.camera.lookAt(this.camera.position.clone().add(f));
+    this.camera.fov = (2 * Math.atan(c.H / 2 / c.fpx) * 180) / Math.PI;
+    this.camera.updateProjectionMatrix();
+    this.projectionOverride = true;
+    this.fitActive = true;
+  }
+
   clearProjectionOverride() {
     if (!this.projectionOverride) return;
     this.projectionOverride = false;
+    this.fitActive = false;
+    this.camera.up.set(0, 1, 0);
     this.camera.fov = 55;
     this.camera.updateProjectionMatrix();
   }

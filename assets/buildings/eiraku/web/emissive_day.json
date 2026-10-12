@@ -1,0 +1,353 @@
+{
+ "amaguri": {
+  "kind": "opaque",
+  "emit": [
+   0.7200000286102295,
+   0.05000000074505806,
+   0.05999999865889549
+  ],
+  "estr": 0.0
+ },
+ "amaguri_t": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   0.949999988079071,
+   0.8500000238418579
+  ],
+  "estr": 0.0
+ },
+ "asphalt": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "box_grey": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "box_screen": {
+  "kind": "led",
+  "emit": [
+   1,
+   1,
+   1
+  ],
+  "estr": 2.200000047683716
+ },
+ "canopy": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "deck_wood": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "drum_panel": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "drum_wrap": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "eiraku_acom": {
+  "kind": "opaque",
+  "emit": [
+   0.8500000238418579,
+   0.05999999865889549,
+   0.11999999731779099
+  ],
+  "estr": 0.0
+ },
+ "eiraku_acom_t": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "eiraku_aiful": {
+  "kind": "opaque",
+  "emit": [
+   0.9599999785423279,
+   0.9599999785423279,
+   0.9599999785423279
+  ],
+  "estr": 0.0
+ },
+ "eiraku_aiful_t": {
+  "kind": "opaque",
+  "emit": [
+   0.8500000238418579,
+   0.07999999821186066,
+   0.11999999731779099
+  ],
+  "estr": 0.0
+ },
+ "eiraku_lake": {
+  "kind": "opaque",
+  "emit": [
+   0.15000000596046448,
+   0.6800000071525574,
+   0.2199999988079071
+  ],
+  "estr": 0.0
+ },
+ "eiraku_lake_t": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "eiraku_wall": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "interior": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   0.7799999713897705,
+   0.5
+  ],
+  "estr": 0.11999999731779099
+ },
+ "lookout_glass": {
+  "kind": "glass",
+  "emit": [
+   0,
+   0,
+   0
+  ],
+  "estr": 0.0
+ },
+ "lookout_led": {
+  "kind": "opaque",
+  "emit": [
+   0.550000011920929,
+   0.30000001192092896,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "magnet_1f": {
+  "kind": "opaque",
+  "emit": [
+   0.800000011920929,
+   0.07000000029802322,
+   0.10000000149011612
+  ],
+  "estr": 0.0
+ },
+ "magnet_logo": {
+  "kind": "opaque",
+  "emit": [
+   0.7799999713897705,
+   0.05000000074505806,
+   0.07999999821186066
+  ],
+  "estr": 0.0
+ },
+ "magnet_logo_sub": {
+  "kind": "opaque",
+  "emit": [
+   0.949999988079071,
+   0.949999988079071,
+   0.949999988079071
+  ],
+  "estr": 0.0
+ },
+ "magnet_mark": {
+  "kind": "cutout",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "mullion": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "pavement": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "plant": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "ribbon_glass": {
+  "kind": "glass",
+  "emit": [
+   0,
+   0,
+   0
+  ],
+  "estr": 0.0
+ },
+ "roof": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "shop_glass": {
+  "kind": "glass",
+  "emit": [
+   0,
+   0,
+   0
+  ],
+  "estr": 0.0
+ },
+ "soffit": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   0.8999999761581421,
+   0.75
+  ],
+  "estr": 0.6000000238418579
+ },
+ "starts_led": {
+  "kind": "led",
+  "emit": [
+   1,
+   1,
+   1
+  ],
+  "estr": 2.200000047683716
+ },
+ "starts_led_frame": {
+  "kind": "opaque",
+  "emit": [
+   0.10000000149011612,
+   0.44999998807907104,
+   0.8500000238418579
+  ],
+  "estr": 0.0
+ },
+ "starts_led_label": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.5
+ },
+ "steel": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "steel_dark": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "tower_glass": {
+  "kind": "glass",
+  "emit": [
+   0,
+   0,
+   0
+  ],
+  "estr": 0.0
+ },
+ "tower_mullion": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "west_banner": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ },
+ "white_panel": {
+  "kind": "opaque",
+  "emit": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "estr": 0.0
+ }
+}

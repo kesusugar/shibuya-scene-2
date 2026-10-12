@@ -46,4 +46,35 @@ describe('loadBuilding isolation', () => {
     applyEmissive(r.root, r.emissive.night); expect(mat.emissiveIntensity).toBe(4);
     applyEmissive(r.root, r.emissive.day); expect(mat.emissiveIntensity).toBe(0);
   });
+  it('era layers load on top of the building; a broken layer is reported but never fails the building', async () => {
+    const withLayers = { ...hints, layers: { signs_2025: 'x_signs_2025.glb', broken: 'x_broken.glb' } };
+    const lio: BuildingIO = {
+      loadGlb: async (url) => {
+        if (url.endsWith('x_broken.glb')) throw new Error('404');
+        return okBuilding();
+      },
+      loadJson: async (url) => (url.endsWith('viewer.json') ? withLayers : {}) as never,
+    };
+    const r = await loadBuilding('x', lio);
+    expect(r.ok).toBe(true);
+    if (!r.ok) return;
+    expect(r.layers).toEqual(['signs_2025']);
+    expect(r.layerErrors.length).toBe(1);
+    expect(r.layerErrors[0]).toContain('broken');
+    expect(r.root.children.map((c) => c.name)).toContain('x:signs_2025');
+  });
+  it('an empty layer is rejected like an empty building', async () => {
+    const lio: BuildingIO = {
+      loadGlb: async (url) => (url.endsWith('y_signs.glb') ? new Group() : okBuilding()),
+      loadJson: async (url) => (url.endsWith('viewer.json') ? { ...hints, layers: { signs: 'y_signs.glb' } } : {}) as never,
+    };
+    const r = await loadBuilding('y', lio);
+    expect(r.ok).toBe(true);
+    if (r.ok) { expect(r.layers).toEqual([]); expect(r.layerErrors[0]).toContain('no meshes'); }
+  });
+  it('a building without QFRONT hints (no curved front) still loads', async () => {
+    const plain = { planBounds: [25, 9, 52, 71], sun: { azimuth_deg: 207, elevation_deg: 57 } };
+    const r = await loadBuilding('z', { loadGlb: async () => okBuilding(), loadJson: async (url) => (url.endsWith('viewer.json') ? plain : {}) as never });
+    expect(r.ok).toBe(true);
+  });
 });

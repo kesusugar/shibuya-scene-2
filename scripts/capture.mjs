@@ -11,6 +11,11 @@ const shots = [
   ['day_orbit', '?time=day&capture', 1280, 720],
   ['night_orbit', '?time=night&capture', 1280, 720],
   ['day_walk', '?time=day&view=walk&capture', 1280, 720],
+  // G3: MAGNET in the camera fitted to photo M027 (1280 x 1707 -> half size), and the three-building orbit
+  ['day_m027', '?time=day&view=m027&capture', 640, 853],
+  ['night_m027', '?time=night&view=m027&capture', 640, 853],
+  // isolation: a building id with no asset must show a placeholder while the others draw
+  ['isolation_missing', '?time=day&buildings=qfront,magnet,eiraku,nosuch&capture', 1280, 720],
 ];
 const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
 for (const [name, q, w, h] of shots.filter(([n]) => !only || only.split(',').includes(n))) {
@@ -23,7 +28,7 @@ for (const [name, q, w, h] of shots.filter(([n]) => !only || only.split(',').inc
   await page.waitForTimeout(4000);
   await page.screenshot({ path: `${out}/${name}.png`, timeout: 180000 });
   const hud = await page.textContent('#perf');
-  console.log(name, JSON.stringify(await page.evaluate(() => window.__viewer.stats)), errors.length ? 'ERRORS ' + errors.join(' | ') : 'no errors', '\n' + hud);
+  console.log(name, JSON.stringify(await page.evaluate(() => ({ stats: window.__viewer.stats, failed: window.__viewer.failed }))), JSON.stringify(await page.textContent('#status')), errors.length ? 'ERRORS ' + errors.join(' | ') : 'no errors', '\n' + hud);
   await page.close();
 }
 await browser.close();

@@ -1,0 +1,193 @@
+{
+ "photo": "M027.jpg",
+ "W": 1280,
+ "H": 1707,
+ "note": "Shibuya Crossing 20250901 131850 (Taufik, CC0), Galaxy S25 Ultra 23 mm-equiv -> 1134 px at 1280 wide. Hand-read pixels on the 1280 px copy. v2: + roof-truss and tower-top edges (points on projected 3D lines); shadow-side drum edge dropped.",
+ "fix": {
+  "z": 1.5,
+  "fpx": 1134
+ },
+ "init": {
+  "pos": [
+   -12,
+   -4,
+   1.5
+  ],
+  "yaw": 70,
+  "pitch": 6,
+  "roll": 0,
+  "fpx": 1134
+ },
+ "points": [
+  {
+   "id": "tower_sw_top",
+   "xyz": [
+    32.6,
+    12.4,
+    40.33
+   ],
+   "px": [
+    678,
+    78
+   ]
+  },
+  {
+   "id": "tower_se_top",
+   "xyz": [
+    45.6,
+    10.2,
+    42.42
+   ],
+   "px": [
+    800,
+    245
+   ],
+   "skip": true,
+   "why": "which corner shows at (800,245) is uncertain; the same edge is now an edges3d constraint (tower_south_top) that needs no point correspondence"
+  },
+  {
+   "id": "corner_base_chamfer_s",
+   "xyz": [
+    33.6,
+    11.3,
+    0
+   ],
+   "px": [
+    640,
+    1008
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "drum_left_edge",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "p1": [
+    457,
+    340
+   ],
+   "p2": [
+    430,
+    730
+   ]
+  },
+  {
+   "id": "drum_right_edge",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "p1": [
+    566,
+    330
+   ],
+   "p2": [
+    556,
+    700
+   ],
+   "skip": true,
+   "why": "shadow side: the white edge merges with the dark glass behind, so it is not the silhouette"
+  },
+  {
+   "id": "tower_corner",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "p1": [
+    678,
+    82
+   ],
+   "p2": [
+    675,
+    300
+   ]
+  },
+  {
+   "id": "west_ribbon",
+   "dir": [
+    0.206,
+    0.979,
+    0
+   ],
+   "p1": [
+    20,
+    405
+   ],
+   "p2": [
+    215,
+    358
+   ]
+  }
+ ],
+ "horizon_y": 970,
+ "horizon_weight": 2.0,
+ "edges3d": [
+  {
+   "id": "truss_top_west",
+   "a": [
+    25.7,
+    19.4,
+    34.2
+   ],
+   "b": [
+    35.3,
+    65.4,
+    34.2
+   ],
+   "px": [
+    [
+     10,
+     304
+    ],
+    [
+     60,
+     293
+    ],
+    [
+     110,
+     281
+    ],
+    [
+     160,
+     269
+    ]
+   ],
+   "note": "upper chord of the roof-edge truss on the west face = PLATEAU parapetTop 34.2 m"
+  },
+  {
+   "id": "tower_south_top",
+   "a": [
+    37.6,
+    11.0,
+    42.42
+   ],
+   "b": [
+    45.6,
+    10.2,
+    42.42
+   ],
+   "px": [
+    [
+     700,
+     104
+    ],
+    [
+     750,
+     170
+    ],
+    [
+     795,
+     236
+    ]
+   ],
+   "note": "tower south-face top edge = PLATEAU parapet strip 42.42 m"
+  }
+ ]
+}
