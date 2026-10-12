@@ -1,0 +1,20 @@
+{
+ "_note": "Era layer 2025 for MAGNET (and the Eiraku column beside it). Swapping this file swaps every sign, ad and LED face; the building itself does not change. Lettering is rebuilt from fonts and brand colours read off the photos; ad and screen artwork is original placeholder art (tools/make_signs.py), never cut from a photo.",
+ "era": "2025",
+ "sources": ["M027 (2025-09-01)", "M001 (2026-02-27)", "M002/M003 (2026-03-11)", "M004 (2025-11-01)"],
+ "signs": [
+  {"id": "magnet_logo", "kind": "letters", "text": "MAGNET", "sub": "by SHIBUYA109", "colour": [0.78, 0.05, 0.08], "edge": [0.95, 0.95, 0.95],
+   "on": "sign_box_front", "z": [26.6, 29.4], "x": [37.0, 42.6], "src": "M002, M014"},
+  {"id": "magnet_mark", "kind": "image", "image": "magnet_mark.png", "on": "sign_box_front", "z": [29.4, 31.4], "x": [38.8, 40.8], "emit_night": 2.0, "src": "M002"},
+  {"id": "box_screen", "kind": "led", "image": "led_box.png", "on": "sign_box_front", "z": [14.0, 23.0], "x": [36.0, 43.6], "strength_day": 2.2, "strength_night": 3.0, "src": "M014, M027 (screen in the grey box)"},
+  {"id": "drum_wrap", "kind": "wrap", "image": "drum_wrap.png", "on": "drum", "z": [12.0, 30.0], "arc_deg": [150, 330], "emit_night": 1.2, "src": "M027 (white wrap ad, black band at the foot)"},
+  {"id": "west_banner", "kind": "printed", "image": "west_banner.png", "on": "west_face", "u": [2.5, 7.0], "z": [12.5, 30.5], "proud": 0.45, "emit_night": 1.4, "src": "M027, M001 (vertical idol banner on a frame)"},
+  {"id": "magnet_1f", "kind": "letters", "text": "MAGNET", "sub": "by SHIBUYA109", "colour": [0.8, 0.07, 0.1], "edge": [0.95, 0.9, 0.85],
+   "on": "west_face", "u": [1.0, 7.0], "z": [8.4, 10.2], "src": "M001, M027 (red channel letters above the corner entrance)"},
+  {"id": "starts_led", "kind": "framed_led", "image": "led_starts.png", "frame": [0.1, 0.45, 0.85], "label": "STARTS", "on": "corner", "z": [3.2, 8.0], "w": 7.2, "src": "M027 (blue-framed screen at the corner)"},
+  {"id": "amaguri", "kind": "vertical", "text": "天津甘栗", "pre": "名物", "colour": [0.72, 0.05, 0.06], "text_colour": [1.0, 0.95, 0.85], "on": "corner_west", "z": [3.5, 9.5], "w": 1.3, "src": "M001, M027"},
+  {"id": "eiraku_acom", "kind": "panel_text", "text": "アコム", "colour": [0.85, 0.06, 0.12], "text_colour": [1, 1, 1], "on": "eiraku_south", "z": [33.6, 38.6], "src": "M002 (2026), M027"},
+  {"id": "eiraku_lake", "kind": "panel_text", "text": "レイク", "colour": [0.15, 0.68, 0.22], "text_colour": [1, 1, 1], "on": "eiraku_south", "z": [28.4, 33.4], "src": "M002"},
+  {"id": "eiraku_aiful", "kind": "panel_text", "text": "アイフル", "colour": [0.96, 0.96, 0.96], "text_colour": [0.85, 0.08, 0.12], "on": "eiraku_south", "z": [24.0, 28.2], "src": "M002"}
+ ]
+}

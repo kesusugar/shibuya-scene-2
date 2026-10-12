@@ -1,0 +1,32 @@
+{
+ "pos": [
+  -11.390250482709089,
+  -1.8972305568413363,
+  1.5
+ ],
+ "yaw": 72.7134805698616,
+ "pitch": 5.912115381632544,
+ "roll": -4.025547959074512,
+ "fpx": 1134,
+ "W": 1280,
+ "H": 1707,
+ "photo": "M027.jpg",
+ "rms_px": 16.279372955960216,
+ "n_points": 3,
+ "residuals_px": {
+  "tower_sw_top": 9.1,
+  "tower_se_top": 25.5,
+  "corner_base_chamfer_s": 7.9
+ },
+ "fixed": {
+  "z": 1.5,
+  "fpx": 1134
+ },
+ "note": "Shibuya Crossing 20250901 131850 (Taufik, CC0), Galaxy S25 Ultra 23 mm-equiv -> 1134 px at 1280 wide. Hand-read pixels on the 1280 px copy.",
+ "line_residuals_px": {
+  "drum_left_edge": 8.6,
+  "drum_right_edge": 19.9,
+  "tower_corner": 12.7,
+  "west_ribbon": -10.3
+ }
+}

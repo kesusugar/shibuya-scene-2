@@ -1,0 +1,127 @@
+{
+ "photo": "M027.jpg",
+ "W": 1280,
+ "H": 1707,
+ "note": "Shibuya Crossing 20250901 131850 (Taufik, CC0), Galaxy S25 Ultra 23 mm-equiv -> 1134 px at 1280 wide. Hand-read pixels on the 1280 px copy.",
+ "fix": {
+  "z": 1.5,
+  "fpx": 1134
+ },
+ "init": {
+  "pos": [
+   -12,
+   -4,
+   1.5
+  ],
+  "yaw": 70,
+  "pitch": 6,
+  "roll": 0,
+  "fpx": 1134
+ },
+ "points": [
+  {
+   "id": "tower_sw_top",
+   "xyz": [
+    32.6,
+    12.4,
+    40.33
+   ],
+   "px": [
+    678,
+    78
+   ]
+  },
+  {
+   "id": "tower_se_top",
+   "xyz": [
+    45.6,
+    10.2,
+    42.42
+   ],
+   "px": [
+    800,
+    245
+   ]
+  },
+  {
+   "id": "corner_base_chamfer_s",
+   "xyz": [
+    33.6,
+    11.3,
+    0
+   ],
+   "px": [
+    640,
+    1008
+   ]
+  }
+ ],
+ "lines": [
+  {
+   "id": "drum_left_edge",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "p1": [
+    457,
+    340
+   ],
+   "p2": [
+    430,
+    730
+   ]
+  },
+  {
+   "id": "drum_right_edge",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "p1": [
+    566,
+    330
+   ],
+   "p2": [
+    556,
+    700
+   ]
+  },
+  {
+   "id": "tower_corner",
+   "dir": [
+    0,
+    0,
+    1
+   ],
+   "p1": [
+    678,
+    82
+   ],
+   "p2": [
+    675,
+    300
+   ]
+  },
+  {
+   "id": "west_ribbon",
+   "dir": [
+    0.206,
+    0.979,
+    0
+   ],
+   "p1": [
+    20,
+    405
+   ],
+   "p2": [
+    215,
+    358
+   ]
+  }
+ ],
+ "horizon_y": 970,
+ "horizon_weight": 2.0
+}
