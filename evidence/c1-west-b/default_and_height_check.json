@@ -1,0 +1,84 @@
+{
+  "stats": {
+    "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+    },
+    "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+        "signs_2025"
+      ],
+      "layerErrors": []
+    },
+    "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+    },
+    "west-block": {
+      "meshes": 19,
+      "triangles": 1215,
+      "materials": 19,
+      "layers": [
+        "signs"
+      ],
+      "layerErrors": []
+    }
+  },
+  "context": {
+    "ok": true,
+    "meshes": 10,
+    "triangles": 30662
+  },
+  "street": {
+    "ok": true,
+    "mode": "all",
+    "meshes": 16,
+    "triangles": 38656
+  },
+  "failed": [],
+  "status": "",
+  "notice": "街路設備は仮：出入口・樹木は2025年OSMの位置、信号・柵は規則による配置、形は標準寸法の汎用品\n西側街区の外観は試作、看板は2025年1月の写真を参照",
+  "projection": [
+    [
+      312.8351941203488,
+      414.6149300755178
+    ],
+    [
+      307.3092039436921,
+      341.5568971713132
+    ]
+  ],
+  "signCenterComparison": [
+    {
+      "pixel": [
+        312.8351941203488,
+        414.6149300755178
+      ],
+      "reference": [
+        309.8,
+        340.8
+      ],
+      "error_px": 73.8773057535383
+    },
+    {
+      "pixel": [
+        307.3092039436921,
+        341.5568971713132
+      ],
+      "reference": [
+        309.8,
+        340.8
+      ],
+      "error_px": 2.6032591730484382
+    }
+  ]
+}

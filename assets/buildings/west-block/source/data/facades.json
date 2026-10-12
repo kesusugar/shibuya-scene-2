@@ -1,0 +1,241 @@
+{
+  "source_photo": "assets/street/core/source/refs/stream_2025.jpg",
+  "measurement_size": [
+    900,
+    1195
+  ],
+  "photo_date": "2025-01-31",
+  "license": "CC0",
+  "author": "Syced",
+  "status": "B-stage approximation; texture corners hand-read, placement follows PLATEAU faces; dimensions and shop boundaries estimated",
+  "textures": {
+    "hisamitsu": {
+      "quad": [
+        [
+          418,
+          287
+        ],
+        [
+          510,
+          289
+        ],
+        [
+          511,
+          394
+        ],
+        [
+          423,
+          397
+        ]
+      ],
+      "size": [
+        384,
+        448
+      ]
+    },
+    "rakuten": {
+      "quad": [
+        [
+          436,
+          447
+        ],
+        [
+          522,
+          446
+        ],
+        [
+          523,
+          519
+        ],
+        [
+          439,
+          531
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    "dmm": {
+      "quad": [
+        [
+          438,
+          552
+        ],
+        [
+          502,
+          557
+        ],
+        [
+          502,
+          625
+        ],
+        [
+          438,
+          631
+        ]
+      ],
+      "size": [
+        384,
+        448
+      ]
+    },
+    "taiseido": {
+      "quad": [
+        [
+          438,
+          634
+        ],
+        [
+          509,
+          626
+        ],
+        [
+          509,
+          648
+        ],
+        [
+          438,
+          659
+        ]
+      ],
+      "size": [
+        512,
+        160
+      ]
+    },
+    "nishimura": {
+      "quad": [
+        [
+          243,
+          434
+        ],
+        [
+          363,
+          458
+        ],
+        [
+          363,
+          481
+        ],
+        [
+          243,
+          462
+        ]
+      ],
+      "size": [
+        640,
+        160
+      ]
+    },
+    "fruit_band": {
+      "quad": [
+        [
+          270,
+          568
+        ],
+        [
+          350,
+          576
+        ],
+        [
+          350,
+          588
+        ],
+        [
+          270,
+          580
+        ]
+      ],
+      "size": [
+        512,
+        100
+      ]
+    },
+    "matsukiyo": {
+      "quad": [
+        [
+          230,
+          476
+        ],
+        [
+          253,
+          480
+        ],
+        [
+          252,
+          588
+        ],
+        [
+          227,
+          581
+        ]
+      ],
+      "size": [
+        160,
+        640
+      ]
+    },
+    "monja": {
+      "quad": [
+        [
+          368,
+          359
+        ],
+        [
+          402,
+          368
+        ],
+        [
+          408,
+          491
+        ],
+        [
+          371,
+          486
+        ]
+      ],
+      "size": [
+        192,
+        640
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "pharmacy",
+      "x_interval": [
+        -67.253,
+        -61.911
+      ],
+      "basis": "yellow vertical pharmacy sign at western facade; PLATEAU step at x=-61.911"
+    },
+    {
+      "id": "fruit",
+      "x_interval": [
+        -61.911,
+        -47.347
+      ],
+      "basis": "cream facade and horizontal green windows; shop split approximate"
+    },
+    {
+      "id": "middle",
+      "x_interval": [
+        -47.347,
+        -40.561
+      ],
+      "basis": "narrow beige vertical restaurant-sign section; name not asserted"
+    },
+    {
+      "id": "corner",
+      "x_interval": [
+        -40.561,
+        -34.818
+      ],
+      "basis": "red corner tower, DMM/Rakuten displays and Taiseido band"
+    }
+  ],
+  "monja_center_height_m": 25.4,
+  "height_revision_basis": "Stream 2025-01 photo: vertical restaurant sign extends above the middle roof; moved from 15.4m to 25.4m as one sign-height correction, still approximate"
+}

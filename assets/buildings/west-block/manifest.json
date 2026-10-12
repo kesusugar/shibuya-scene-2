@@ -1,0 +1,94 @@
+{
+  "id": "west-block",
+  "source_id": "way/136690966",
+  "level": "B",
+  "status": "prototype; storefront split and dimensions approximate",
+  "sign_era": "2025-01-31",
+  "sources": [
+    "source/data/plateau.json",
+    "source/refs/REFERENCE_REGISTER.csv"
+  ],
+  "stats": {
+    "triangles": 1215,
+    "primitives": 19,
+    "bytes": 1632600
+  },
+  "files": {
+    "README.md": {
+      "bytes": 3007,
+      "sha256": "3ddd4dd36ea48f5f6c343f9d95c3630ffc7fa514eea599877bdf0fc5c1c34aaa"
+    },
+    "source/blender/build_west.py": {
+      "bytes": 9319,
+      "sha256": "6106cc25f24defad224a79541314fb874f7f277c4beb48ab2cb3dca879358114"
+    },
+    "source/data/facades.json": {
+      "bytes": 3692,
+      "sha256": "8366ff3d338258b9821eafa481bdbe8fbb2221d3bef6bece1b24fbf7bf2c5189"
+    },
+    "source/data/plateau.json": {
+      "bytes": 83361,
+      "sha256": "9a0d6514b692e6c2a14357397c68e6522e2357708762d8e06aa0fa446b84a50d"
+    },
+    "source/data/stats.json": {
+      "bytes": 6298,
+      "sha256": "650046f5c65ae693bacdda16bf08c908681f8d46e3dbccbd368618fec499b515"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 668,
+      "sha256": "e8faf71e61e0662c543e3a942a2b8c1751c3f1bf8b9f3217670b3d41e1d489a2"
+    },
+    "source/textures/dmm.png": {
+      "bytes": 219373,
+      "sha256": "7cdc5500731a96de54f2e4bcbc89a5bc237d19eaad0fe910bacfac1b36b1c308"
+    },
+    "source/textures/fruit_band.png": {
+      "bytes": 66432,
+      "sha256": "856bf821b50cc3bc79b06fc9ac1ff811109d7a8d15efe1c8295d155d45566b09"
+    },
+    "source/textures/hisamitsu.png": {
+      "bytes": 198299,
+      "sha256": "3cc30689ded7a1b7180cf1c0d5d5766d1729ae9a73f2404217cf15a8a46fda7e"
+    },
+    "source/textures/matsukiyo.png": {
+      "bytes": 134028,
+      "sha256": "295c1f1dfa6e815081ef0feb51f81fd41ebdcbf55972999126cc9bc2f3e778a8"
+    },
+    "source/textures/monja.png": {
+      "bytes": 219978,
+      "sha256": "8d8fbccc08138936c9fa8d5b9f4e14f2789afe658a2406195164673ceca1390b"
+    },
+    "source/textures/nishimura.png": {
+      "bytes": 155105,
+      "sha256": "64078c32f0d7b069b8f6673487842682cee440c04181aefaa39c330e3db6d144"
+    },
+    "source/textures/rakuten.png": {
+      "bytes": 401089,
+      "sha256": "57beca91c30ae03f31e4e82445a8c6c501aba1b9d57176b785987d632c2804bf"
+    },
+    "source/textures/taiseido.png": {
+      "bytes": 138867,
+      "sha256": "815f30102b1c311823fa2f54232c35d9a5ce6cc2b993773a6462a57603188af6"
+    },
+    "web/emissive_day.json": {
+      "bytes": 1173,
+      "sha256": "9fc23cafe8bdf66a813a2562a9c95a332e623b204a39a447b95a511bb85c54a7"
+    },
+    "web/emissive_night.json": {
+      "bytes": 1199,
+      "sha256": "ba465ced172f6f195e2592348c31386ce60655f16f5bab3de371f516381c8f2d"
+    },
+    "web/signs-2025-01.glb": {
+      "bytes": 1553744,
+      "sha256": "7a407b845cd1f1f24a5bc4c61771a535e1c249cc26732637f8f0af688bdd2d14"
+    },
+    "web/viewer.json": {
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+    },
+    "web/west-block.glb": {
+      "bytes": 78856,
+      "sha256": "621ab2b9b5d55c0bb2862a77fd4711213a62e72e7fcf5ed2d87277c0ccbfd6a0"
+    }
+  }
+}
