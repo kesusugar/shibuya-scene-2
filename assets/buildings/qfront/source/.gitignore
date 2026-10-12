@@ -1,10 +1,8 @@
-refs/raw/
+# Archived in shibuya-scene-2: hdri/, refs/raw/ (licence-cleared only) and blend/ ARE tracked.
+renders/
+work/
+*.blend1
 refs/*.html
 refs/*.log
 refs/list.txt
 refs/sheet_*.jpg
-renders/
-work/
-*.blend
-*.blend1
-hdri/
