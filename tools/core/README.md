@@ -13,3 +13,4 @@ Run in this order. Inputs come from the old repository (`kesusugar/shibuya-scene
 5. `python3 -I tools/core/terrain_probe.py <53393596_tran.gml> docs/core/coverage/terrain_probe.json`
 
 `identity_notes.json` holds the inferred identities of unnamed buildings ("推定" = not verified).
+6. `python3 tools/core/sensitivity.py <vis_dir>` - re-scores the ranking under other weights, a walker view band and leave-one-view-out (self-review).
