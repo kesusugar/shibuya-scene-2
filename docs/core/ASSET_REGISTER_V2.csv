@@ -5,7 +5,7 @@
 4,way/904652357,building,渋谷,渋谷駅（OSM building=train_station、駅舎の一部）,osm_prism,,,10.2,levels_x3.4,129.8,not_started,6,0.00845,0.0055,0.00362,0.01464,0.00287,0.0,0.00972,6,0.01464,0.8,0.5038
 5,way/617560918,building,渋谷スクランブルスクエア,,plateau_lod2,14.61,243.637,229.03,plateau_lod2_surfaces,179.6,not_started,4,0.02033,0.02013,0.01749,0.02019,0.01661,0.0,0.0,5,0.02033,0.8,0.4796
 6,way/87250190,building,渋谷マークシティEAST,,osm_prism,,,112.43,plateau_top,125.8,not_started,5,0.01698,0.01874,0.01139,0.01358,0.00941,0.0,0.0,5,0.01874,0.8,0.4764
-7,way/60739635,building,渋谷駅前ビル,,plateau_lod2,15.24,46.6,31.36,plateau_lod2_surfaces,65.0,not_started,7,0.02652,0.02757,0.02307,0.01331,0.0213,0.0,0.01609,6,0.02757,0.4,0.4499
+7,way/60739635,building,渋谷駅前ビル,,plateau_lod2,15.24,46.6,31.36,plateau_lod2_surfaces,65.0,B_prototype,7,0.02652,0.02757,0.02307,0.01331,0.0213,0.0,0.01609,6,0.02757,0.4,0.4499
 8,way/54500467,building,Ishi-usubiki Nihachi Soba Sobashiki Shibuya Mark City,渋谷マークシティ WEST（OSM の名前は入居店舗名）,plateau_lod2,15.578,128.009,112.43,plateau_lod2_surfaces,286.7,not_started,29,0.00345,0.00492,0.00137,0.00236,0.00113,0.0,0.0,5,0.00492,0.8,0.4485
 9,way/355250634,building,(名称なし),推定：駅側の高架歩行者デッキ／コンコース（layer 1、2〜3階、POI「渋谷駅の歩道橋から見た渋谷交差点」）,plateau_lod2,15.41,35.686,20.28,plateau_lod2_surfaces,79.6,not_started,8,0.01266,0.0362,0.00792,0.00733,0.00739,0.0,0.00716,6,0.0362,0.2,0.4273
 10,plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0,building,(名称なし),推定：駅南東側の駅関連建物（PLATEAU のみ。高所 X02 の手前で大きく写る）,plateau_lod2,14.62,38.069,23.45,plateau_lod2_surfaces,146.4,not_started,,1e-05,0.0,8e-05,0.0,0.00014,0.0,0.12071,1,0.12071,0.2,0.4194

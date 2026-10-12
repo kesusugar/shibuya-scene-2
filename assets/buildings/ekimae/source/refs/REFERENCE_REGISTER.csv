@@ -1,0 +1,4 @@
+id,path,date,author,license,url,use,sha256
+EK01,docs/core/building_refs/crossing_joli_2025.jpg,2025-11-01,Joli Rumi,CC BY-SA 4.0,"https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_Tokyo,_Japan.jpg",November textures and facade types; partial/obstructed crops documented,e338994724e2a3996f57d59963df5797c3e6109ce16dff6093a91c490994e987
+EK02,docs/core/building_refs/crossing_12214.jpg,2025-02-07,Syced,CC0,https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg,"Independent facade/cafe/window/roof-screen type check, no texture",012b30ec23de9d4f92430f295aea6302cfa2cd56db66f20e10772ac284dd23f0
+EK03,assets/street/core/source/refs/stream_2025.jpg,2025-01-31,Syced,CC0,"https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg",Object identification and same-camera shape comparison; roof campaign differs,76e319107f5ef44a4a7c41af1553aac8257c56be7b8747962f311ce136cab075

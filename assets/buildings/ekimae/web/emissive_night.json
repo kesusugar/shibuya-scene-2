@@ -1,0 +1,83 @@
+{
+  "ek_shop_glass": {
+    "kind": "interior",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 0.4
+  },
+  "ek_shop_light": {
+    "kind": "interior",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 0.4
+  },
+  "ek_sign_samsung": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 1.2
+  },
+  "ek_sign_hit_sky": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 1.2
+  },
+  "ek_sign_shabu": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 0.5
+  },
+  "ek_sign_francais": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 0.5
+  },
+  "ek_sign_gusto": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 0.5
+  },
+  "ek_sign_eyecity": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 0.5
+  },
+  "ek_sign_loccitane": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.9,
+      0.75
+    ],
+    "estr": 0.5
+  }
+}

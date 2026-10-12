@@ -1,0 +1,96 @@
+{
+  "id": "ekimae",
+  "source_id": "way/60739635",
+  "level": "B",
+  "status": "prototype; dimensions, partial cropped signs and storefront assignments approximate",
+  "sign_era": "2025-11-01",
+  "sign_license": "CC BY-SA 4.0",
+  "attribution": "Joli Rumi; see source/textures/LICENSE.md",
+  "stats": {
+    "triangles": 6640,
+    "primitives": 18,
+    "bytes": 1736204
+  },
+  "files": {
+    "README.md": {
+      "bytes": 2350,
+      "sha256": "376845164c1099510d791be5a8078d15a855c5e76b9005ba10341897c4047dd9"
+    },
+    "source/blender/build_ekimae.py": {
+      "bytes": 10210,
+      "sha256": "d8b0ae73aa05d6fb6f94d75e2a9b3b816116a3d72c13540ec530c01ad51ae2d9"
+    },
+    "source/data/facades.json": {
+      "bytes": 3247,
+      "sha256": "6f7af822fb0748d1f6e7d1eb90159afea17dda9cf17a18a3da3a1e46cafecdb1"
+    },
+    "source/data/plateau.json": {
+      "bytes": 8102,
+      "sha256": "b3a9a323838f4f26f29607ff8dce0b33b236dc329b64e8f68282a370ad8c4661"
+    },
+    "source/data/stats.json": {
+      "bytes": 6331,
+      "sha256": "d99819ec1334e7a1afa36ed7949f4547624049548453a58f63739a34949c8f51"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 919,
+      "sha256": "a7d15c3337c1b91b34fed3b6cc670a753c8ebe6cc76c0035568a9c8e091138ca"
+    },
+    "source/refs/SOURCES.json": {
+      "bytes": 1603,
+      "sha256": "cb61e97d992b6496e1bd52970b94cf0ef0acd3c4ff482b3e93b7f90502fdfacd"
+    },
+    "source/textures/LICENSE.md": {
+      "bytes": 1019,
+      "sha256": "6a434f2a59e21db3d8113961a820d2cf063005883e691eeeee72f65d20aa9d0a"
+    },
+    "source/textures/eyecity.png": {
+      "bytes": 177075,
+      "sha256": "f1c612a4d9289a3dca2e019df001949eddd3b7f768d7cb03aeae09a5e89630f3"
+    },
+    "source/textures/francais.png": {
+      "bytes": 156546,
+      "sha256": "908456106b84346f76ffdb697369a606a47e08363dfe7103f49bff64eb9f3012"
+    },
+    "source/textures/gusto.png": {
+      "bytes": 161518,
+      "sha256": "87684149eba0692ce4a15631d2db182b98a8417dd56445d035daf22c40791401"
+    },
+    "source/textures/hit_sky.png": {
+      "bytes": 235643,
+      "sha256": "fb55006480df220c7dde3fe25836b7b320cc70b3e7e4be9a03be6b5c89270c9b"
+    },
+    "source/textures/loccitane.png": {
+      "bytes": 36769,
+      "sha256": "aacfcee0cc811d6a653a8b0fa6d032d9c028305606b56fbc541b1824e8d7da8e"
+    },
+    "source/textures/samsung.png": {
+      "bytes": 235708,
+      "sha256": "959d09f8a4670f2ff88cc0c4604dcdaf3b8d220a377b13002a98abb9497b5edf"
+    },
+    "source/textures/shabu.png": {
+      "bytes": 161634,
+      "sha256": "d8d57887d8d8c31255a392cc2804a509dfd927f6b3c2f1112b8d476be15ae42d"
+    },
+    "web/ekimae.glb": {
+      "bytes": 542116,
+      "sha256": "5deef737ec1ecf4cafcfc4186318398944a3f4ee3265d8915158d79b5dea3d64"
+    },
+    "web/emissive_day.json": {
+      "bytes": 1025,
+      "sha256": "b41a094628c76bc5603f8d706d1c8bae4e31b436a2f83dfe2a291854217a19e3"
+    },
+    "web/emissive_night.json": {
+      "bytes": 1043,
+      "sha256": "192d990f1d2a42151da913bc698b5968ae841051e11b51339aeb5fb487cab336"
+    },
+    "web/signs-2025-11.glb": {
+      "bytes": 1194088,
+      "sha256": "4b2297c627cc1382078e6a671cc0865b44fd7e1fa9a0033e058b4322b7b94d96"
+    },
+    "web/viewer.json": {
+      "bytes": 158,
+      "sha256": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57"
+    }
+  }
+}
