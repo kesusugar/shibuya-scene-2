@@ -1,0 +1,32 @@
+id,kind,x_m,y_m,anchor_tp_m,position_basis,shape_status
+way/142438894,entrance,42.47,3.455,14.762,OSM 2025-10-31 (position),"provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured"
+way/142438895,entrance,25.267,10.553,15.029,OSM 2025-10-31 (position),"provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured"
+way/155807209,entrance,-31.969,-20.928,15.366,OSM 2025-10-31 (position),"provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured"
+way/155807210,entrance,-29.136,17.459,15.177,OSM 2025-10-31 (position),"provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured"
+way/155807211,entrance,-2.581,21.302,15.231,OSM 2025-10-31 (position),"provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured"
+way/1335178869,entrance,-36.926,15.117,15.33,OSM 2025-10-31 (position),"provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured"
+node/8007279073,tree,29.902,-16.086,14.921,OSM 2025-10-31 (position),"provisional generic broad-leaved tree; species, height and crown not measured"
+node/8007279074,tree,41.859,-17.755,14.811,OSM 2025-10-31 (position),"provisional generic broad-leaved tree; species, height and crown not measured"
+node/8363183939,tree,10.691,42.646,15.531,OSM 2025-10-31 (position),"provisional generic broad-leaved tree; species, height and crown not measured"
+node/8363183943,tree,26.465,40.821,15.708,OSM 2025-10-31 (position),"provisional generic broad-leaved tree; species, height and crown not measured"
+node/8363183944,tree,24.764,32.939,15.574,OSM 2025-10-31 (position),"provisional generic broad-leaved tree; species, height and crown not measured"
+node/8363183945,tree,23.191,26.394,15.462,OSM 2025-10-31 (position),"provisional generic broad-leaved tree; species, height and crown not measured"
+PED_754454449_a,ped_signal,14.143,-14.817,14.926,rule R1,generic standard-size model; not photo-measured
+PED_754454449_b,ped_signal,0.534,15.966,15.233,rule R1,generic standard-size model; not photo-measured
+PED_1157451161_a,ped_signal,10.369,-20.311,14.917,rule R1,generic standard-size model; not photo-measured
+PED_1157451161_b,ped_signal,-20.001,-13.836,15.317,rule R1,generic standard-size model; not photo-measured
+PED_355248080_a,ped_signal,3.828,19.689,15.23,rule R1,generic standard-size model; not photo-measured
+PED_355248080_b,ped_signal,19.009,11.259,15.192,rule R1,generic standard-size model; not photo-measured
+PED_355248081_a,ped_signal,23.588,4.206,15.047,rule R1,generic standard-size model; not photo-measured
+PED_355248081_b,ped_signal,21.105,-13.102,14.89,rule R1,generic standard-size model; not photo-measured
+PED_355248078_a,ped_signal,-23.413,11.868,15.176,rule R1,generic standard-size model; not photo-measured
+PED_355248078_b,ped_signal,-23.547,-7.322,15.259,rule R1,generic standard-size model; not photo-measured
+VEH_6219685050,vehicle_signal,-20.001,-13.836,15.317,rule R2,generic standard-size model; not photo-measured
+VEH_6219685051,vehicle_signal,-23.413,11.868,15.176,rule R2,generic standard-size model; not photo-measured
+VEH_6219685052,vehicle_signal,19.009,11.259,15.192,rule R2,generic standard-size model; not photo-measured
+VEH_6219685053,vehicle_signal,21.105,-13.102,14.89,rule R2,generic standard-size model; not photo-measured
+P01,lamp,-10.315,14.324,15.312,"photo projection (Stream 2025, Codex C2b)",generic standard-size model; not photo-measured
+P02,lamp,-0.238,20.308,15.325,"photo projection (Stream 2025, Codex C2b)",generic standard-size model; not photo-measured
+P03,lamp,-26.242,-10.08,15.269,"photo projection (Stream 2025, Codex C2b)",generic standard-size model; not photo-measured
+P04,sign_pair,-29.637,-11.29,15.384,"photo projection (Stream 2025, Codex C2b)",generic standard-size model; not photo-measured
+RAIL,kerb_railing,,,,rule R3 (220.0 m),generic 横断防止柵 H0.8; alignment not surveyed

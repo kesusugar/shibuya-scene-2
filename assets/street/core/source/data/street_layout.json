@@ -1,0 +1,472 @@
+{
+ "rules": "(Japanese practice; see docs/core/CODEX_C2B_REVIEW.md for the reasoning and the gaps):\n  R1 pedestrian signal  — one pole at each end of every Core crosswalk, 0.6 m behind the kerb, 0.5 m outside the\n                          crosswalk edge on the side nearer the crossing centre; the head faces the far end.\n  R2 vehicle signal     — one mast-arm pole per OSM approach node, at the crosswalk end on the driver's left\n                          (Japan drives on the left); the arm reaches over the approach lanes and the head faces\n                          the oncoming driver.  The pedestrian head of R1 at that corner shares the mast pole.\n  R3 kerb railing       — 横断防止柵 (H 0.8 m) along PLATEAU kerb lines inside the Core, 0.35 m behind the kerb,\n                          with openings of 1.5 m beyond each crosswalk edge, 1 m around entrances and trees.\n  R4 lamps / signs      — only the photo-projected points P01–P04 (Codex C2b, Stream 2025); not invented.",
+ "centre": [
+  6.5,
+  -2.0
+ ],
+ "core_radius_m": 52.0,
+ "items": [
+  {
+   "id": "PED_754454449_a",
+   "kind": "ped_signal",
+   "xy": [
+    14.143,
+    -14.817
+   ],
+   "facing": [
+    -0.5483746210092885,
+    0.8362327875854423
+   ],
+   "crosswalk": "way/754454449",
+   "placement": "rule R1"
+  },
+  {
+   "id": "PED_754454449_b",
+   "kind": "ped_signal",
+   "xy": [
+    0.534,
+    15.966
+   ],
+   "facing": [
+    0.40718563699910276,
+    -0.9133454204306467
+   ],
+   "crosswalk": "way/754454449",
+   "placement": "rule R1"
+  },
+  {
+   "id": "PED_1157451161_a",
+   "kind": "ped_signal",
+   "xy": [
+    10.369,
+    -20.311
+   ],
+   "facing": [
+    -0.9780245578400912,
+    0.20848972219678835
+   ],
+   "crosswalk": "way/1157451161",
+   "placement": "rule R1"
+  },
+  {
+   "id": "PED_1157451161_b",
+   "kind": "ped_signal",
+   "xy": [
+    -20.001,
+    -13.836
+   ],
+   "facing": [
+    0.9780245578400912,
+    -0.2084897221967884
+   ],
+   "crosswalk": "way/1157451161",
+   "placement": "rule R1",
+   "shared_with": "VEH_6219685050"
+  },
+  {
+   "id": "PED_355248080_a",
+   "kind": "ped_signal",
+   "xy": [
+    3.828,
+    19.689
+   ],
+   "facing": [
+    0.9801166836589915,
+    -0.19842199075027045
+   ],
+   "crosswalk": "way/355248080",
+   "placement": "rule R1"
+  },
+  {
+   "id": "PED_355248080_b",
+   "kind": "ped_signal",
+   "xy": [
+    19.009,
+    11.259
+   ],
+   "facing": [
+    -0.8850227552729378,
+    0.46554776623789906
+   ],
+   "crosswalk": "way/355248080",
+   "placement": "rule R1",
+   "shared_with": "VEH_6219685052"
+  },
+  {
+   "id": "PED_355248081_a",
+   "kind": "ped_signal",
+   "xy": [
+    23.588,
+    4.206
+   ],
+   "facing": [
+    -0.14203002963018452,
+    -0.9898623493613892
+   ],
+   "crosswalk": "way/355248081",
+   "placement": "rule R1"
+  },
+  {
+   "id": "PED_355248081_b",
+   "kind": "ped_signal",
+   "xy": [
+    21.105,
+    -13.102
+   ],
+   "facing": [
+    0.1420300296301846,
+    0.9898623493613891
+   ],
+   "crosswalk": "way/355248081",
+   "placement": "rule R1",
+   "shared_with": "VEH_6219685053"
+  },
+  {
+   "id": "PED_355248078_a",
+   "kind": "ped_signal",
+   "xy": [
+    -23.413,
+    11.868
+   ],
+   "facing": [
+    -0.19573559610154978,
+    -0.9806567067117682
+   ],
+   "crosswalk": "way/355248078",
+   "placement": "rule R1",
+   "shared_with": "VEH_6219685051"
+  },
+  {
+   "id": "PED_355248078_b",
+   "kind": "ped_signal",
+   "xy": [
+    -23.547,
+    -7.322
+   ],
+   "facing": [
+    0.008442340359120962,
+    0.9999643628096256
+   ],
+   "crosswalk": "way/355248078",
+   "placement": "rule R1"
+  },
+  {
+   "id": "VEH_6219685050",
+   "kind": "vehicle_signal",
+   "xy": [
+    -20.001,
+    -13.836
+   ],
+   "arm_dir": [
+    0.6121,
+    -0.7908
+   ],
+   "arm_m": 9.0,
+   "facing": [
+    -0.7908,
+    -0.6121
+   ],
+   "osm_node": "node/6219685050",
+   "crosswalk": "way/1157451161",
+   "placement": "rule R2"
+  },
+  {
+   "id": "VEH_6219685051",
+   "kind": "vehicle_signal",
+   "xy": [
+    -23.413,
+    11.868
+   ],
+   "arm_dir": [
+    -0.1555,
+    -0.9878
+   ],
+   "arm_m": 6.99,
+   "facing": [
+    -0.9878,
+    0.1555
+   ],
+   "osm_node": "node/6219685051",
+   "crosswalk": "way/355248078",
+   "placement": "rule R2"
+  },
+  {
+   "id": "VEH_6219685052",
+   "kind": "vehicle_signal",
+   "xy": [
+    19.009,
+    11.259
+   ],
+   "arm_dir": [
+    -0.9655,
+    0.2604
+   ],
+   "arm_m": 6.6,
+   "facing": [
+    0.2604,
+    0.9655
+   ],
+   "osm_node": "node/6219685052",
+   "crosswalk": "way/355248080",
+   "placement": "rule R2"
+  },
+  {
+   "id": "VEH_6219685053",
+   "kind": "vehicle_signal",
+   "xy": [
+    21.105,
+    -13.102
+   ],
+   "arm_dir": [
+    0.0933,
+    0.9956
+   ],
+   "arm_m": 7.14,
+   "facing": [
+    0.9956,
+    -0.0933
+   ],
+   "osm_node": "node/6219685053",
+   "crosswalk": "way/355248081",
+   "placement": "rule R2"
+  },
+  {
+   "id": "P01",
+   "kind": "lamp",
+   "xy": [
+    -10.315,
+    14.324
+   ],
+   "placement": "photo projection (Stream 2025, Codex C2b)",
+   "uncertainty_m": 0.424
+  },
+  {
+   "id": "P02",
+   "kind": "lamp",
+   "xy": [
+    -0.238,
+    20.308
+   ],
+   "placement": "photo projection (Stream 2025, Codex C2b)",
+   "uncertainty_m": 0.059
+  },
+  {
+   "id": "P03",
+   "kind": "lamp",
+   "xy": [
+    -26.242,
+    -10.08
+   ],
+   "placement": "photo projection (Stream 2025, Codex C2b)",
+   "uncertainty_m": 2.475
+  },
+  {
+   "id": "P04",
+   "kind": "sign_pair",
+   "xy": [
+    -29.637,
+    -11.29
+   ],
+   "placement": "photo projection (Stream 2025, Codex C2b)",
+   "uncertainty_m": 2.724
+  }
+ ],
+ "rail_runs": [
+  [
+   [
+    -31.049,
+    30.968
+   ],
+   [
+    -20.593,
+    20.182
+   ],
+   [
+    -19.137,
+    16.821
+   ],
+   [
+    -18.711,
+    14.965
+   ],
+   [
+    -18.777,
+    14.426
+   ]
+  ],
+  [
+   [
+    -28.128,
+    12.052
+   ],
+   [
+    -36.862,
+    12.909
+   ]
+  ],
+  [
+   [
+    11.153,
+    47.827
+   ],
+   [
+    10.222,
+    43.92
+   ]
+  ],
+  [
+   [
+    9.697,
+    41.722
+   ],
+   [
+    5.869,
+    25.667
+   ]
+  ],
+  [
+   [
+    -10.473,
+    11.528
+   ],
+   [
+    -11.464,
+    12.093
+   ],
+   [
+    -11.894,
+    12.559
+   ],
+   [
+    -15.503,
+    21.792
+   ],
+   [
+    -16.684,
+    23.729
+   ],
+   [
+    -27.711,
+    34.423
+   ]
+  ],
+  [
+   [
+    -43.547,
+    -2.817
+   ],
+   [
+    -31.551,
+    -5.267
+   ]
+  ],
+  [
+   [
+    -22.784,
+    -7.863
+   ],
+   [
+    -21.048,
+    -9.117
+   ],
+   [
+    -20.064,
+    -10.652
+   ],
+   [
+    -19.676,
+    -12.35
+   ],
+   [
+    -19.578,
+    -14.306
+   ]
+  ],
+  [
+   [
+    -19.85,
+    -17.646
+   ],
+   [
+    -25.216,
+    -21.069
+   ],
+   [
+    -29.189,
+    -37.278
+   ]
+  ],
+  [
+   [
+    0.448,
+    -51.639
+   ],
+   [
+    8.566,
+    -24.557
+   ]
+  ],
+  [
+   [
+    26.027,
+    -13.273
+   ],
+   [
+    43.102,
+    -14.742
+   ],
+   [
+    54.864,
+    -14.793
+   ]
+  ],
+  [
+   [
+    49.965,
+    8.624
+   ],
+   [
+    49.953,
+    8.94
+   ],
+   [
+    49.643,
+    3.366
+   ],
+   [
+    49.272,
+    2.536
+   ],
+   [
+    48.548,
+    1.714
+   ],
+   [
+    46.586,
+    1.447
+   ]
+  ],
+  [
+   [
+    36.385,
+    2.127
+   ],
+   [
+    28.288,
+    2.783
+   ]
+  ],
+  [
+   [
+    21.25,
+    22.535
+   ],
+   [
+    26.021,
+    44.097
+   ]
+  ]
+ ],
+ "rail_length_m": 220.0,
+ "kerb_length_in_core_m": 336.3
+}
