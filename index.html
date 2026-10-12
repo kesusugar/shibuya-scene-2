@@ -13,7 +13,7 @@
       button { background: #1c2230; color: #e8eaf0; border: 1px solid #3a4560; border-radius: 4px; padding: 4px 9px; cursor: pointer; font: inherit; }
       button.on { background: #3b5bdb; border-color: #5c7cfa; }
       #perf { font-family: ui-monospace, monospace; white-space: pre; }
-      #status:empty, #bench-out:empty { display: none; }
+      #provisional:empty, #status:empty, #bench-out:empty { display: none; }
       #status { color: #ffb4a8; }
       #help { color: #a9b1c6; }
     </style>
@@ -26,6 +26,7 @@
         <button id="btn-q032">Q032視点</button><button id="btn-m027">M027視点</button><button id="btn-bench">30秒計測</button>
       </div>
       <div class="panel" id="perf">計測中…</div>
+      <div class="panel" id="provisional" style="color:#ffcf8a"></div>
       <div class="panel" id="status"></div>
       <div class="panel" id="bench-out" style="white-space:pre;font-family:ui-monospace,monospace;font-size:11px;max-height:40vh;overflow:auto"></div>
       <div class="panel" id="help">360°: ドラッグで回転・ホイールで拡大<br />歩行: クリックで開始、WASD移動・マウスで視点・Shiftで走る・Escで解除</div>

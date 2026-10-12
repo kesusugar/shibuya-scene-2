@@ -31,7 +31,8 @@ shots.push(['isolation_ground_missing', `?time=day&capture&pose=${P.top_down}&gr
 const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
 const logPath = `${out}/capture_log.json`;
 const log = existsSync(logPath) ? JSON.parse(readFileSync(logPath, 'utf8')) : {};
-for (const [name, q, w, h] of shots.filter(([n]) => !only || only.split(',').some((o) => n.startsWith(o)))) {
+for (const [name, rawQuery, w, h] of shots.filter(([n]) => !only || only.split(',').some((o) => n.startsWith(o)))) {
+  const q = rawQuery + '&street=off'; // Historical C2a comparison: keep later C2b assets out of both stages.
   if (!process.env.FORCE && existsSync(`${out}/${name}.png`) && log[name]) continue;   // resumable
   const page = await browser.newPage({ viewport: { width: w, height: h } });
   const errors = [];

@@ -26,4 +26,14 @@ if (existsSync('assets/ground')) for (const id of readdirSync('assets/ground')) 
   if (existsSync(join('assets/ground', id, 'manifest.json'))) cpSync(join('assets/ground', id, 'manifest.json'), join('public/ground', id, 'manifest.json'));
   gids.push(id);
 }
-console.log(`sync-assets: ${ids.join(', ') || '(none)'}; ground: ${gids.join(', ') || '(none)'}`);
+const sids = [];
+rmSync('public/street', { recursive: true, force: true });
+if (existsSync('assets/street')) for (const id of readdirSync('assets/street')) {
+  const web = join('assets/street', id, 'web');
+  if (!existsSync(web)) continue;
+  mkdirSync(join('public/street', id), { recursive: true });
+  cpSync(web, join('public/street', id), { recursive: true });
+  if (existsSync(join('assets/street', id, 'manifest.json'))) cpSync(join('assets/street', id, 'manifest.json'), join('public/street', id, 'manifest.json'));
+  sids.push(id);
+}
+console.log(`sync-assets: ${ids.join(', ') || '(none)'}; ground: ${gids.join(', ') || '(none)'}; street: ${sids.join(', ') || '(none)'}`);

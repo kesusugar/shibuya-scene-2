@@ -2,4 +2,7 @@ node_modules/
 dist/
 public/buildings/
 public/ground/
+public/street/
 test-results/
+
+__pycache__/
