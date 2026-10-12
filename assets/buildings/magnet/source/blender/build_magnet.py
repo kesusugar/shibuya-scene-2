@@ -174,7 +174,7 @@ for a, b, L, t, n in edges(WING):
     for k in range(int(L // 1.8) + 1):
         p = a + t*min(L, k*1.8) - n*.55; B.box('01_WEST_WING', 'mullion', (p.x, p.y, (zbot-.9)/2), (.08, .08, zbot-.9), yaw=math.atan2(t.y, t.x))
     # roof-edge truss (M027/M001: a steel lattice frame standing on the wall top, 3.3 m)
-    if not chamfer or True:
+    if not chamfer:   # M027: the truss runs along the west face only, not over the chamfer
         zt0, zt1 = WALL_TOP, WALL_TOP + M['rooftop']['truss_h']; k = max(1, int(L // 2.4))
         for zz in (zt0 + .1, zt1): B.beam('06_ROOFTOP', 'steel', (a.x, a.y, zz), (b.x, b.y, zz), .14)
         for i in range(k + 1):
@@ -331,8 +331,9 @@ if ERA != 'none':
                 u0 = a0 + (a1-a0)*i/NS; u1 = a0 + (a1-a0)*(i+1)/NS; r = DRUM_R + .06
                 p0 = DRUM_C + Vector((math.cos(math.radians(u0)), math.sin(math.radians(u0))))*r
                 p1 = DRUM_C + Vector((math.cos(math.radians(u1)), math.sin(math.radians(u1))))*r
+                # outward-facing ring 6 cm proud; u grows with the angle, which reads left-to-right from outside
                 B.quad(CS, sid, [(p1.x, p1.y, z0), (p0.x, p0.y, z0), (p0.x, p0.y, z1), (p1.x, p1.y, z1)],
-                       uv=[((i)/NS, 0), ((i+1)/NS, 0), ((i+1)/NS, 1), (i/NS, 1)])
+                       uv=[((i+1)/NS, 0), (i/NS, 0), (i/NS, 1), ((i+1)/NS, 1)])
         elif s['on'] == 'west_face':
             u0, u1 = s['u']; z0, z1 = s['z']; t3 = WEST_T.to_3d(); n3 = WEST_N.to_3d()
             # the west face runs south -> north from WEST_A; u is measured from its south end
