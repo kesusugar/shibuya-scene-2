@@ -1,0 +1,338 @@
+{
+ "method": "tools/core/commons_survey.py: geosearch (radius 250 m, max 500 results per call) + keyword searches (first 100 hits each) + metadata (EXIF DateTimeOriginal)",
+ "lower_bounds": "counts are lower bounds: geosearch is capped at 500, keyword searches read 100 hits of 1347 / 760 / ..., and one metadata batch (files 600-677) failed with HTTP 414/429 and is unverified",
+ "status": {
+  "geosearch_primary": "ok",
+  "geosearch_all": "ok",
+  "search:渋谷センター街 入口": "ok total 6",
+  "search:Center Gai entrance Shibuya": "ok total 6",
+  "search:大盛堂 渋谷": "ok total 4",
+  "search:Taiseido Shibuya": "ok total 2",
+  "search:渋谷駅前ビル": "ok total 7",
+  "search:Shibuya Ekimae Building": "ok total 6",
+  "search:Shibuya Crossing": "ok total 1347",
+  "search:渋谷スクランブル交差点": "ok total 760",
+  "search:Shibuya Station Hachiko exit": "ok total 17",
+  "search:渋谷駅 ハチ公口": "ok total 18",
+  "search:Shibuya Mark City walkway": "ok total 0",
+  "meta_batch_600": "unverified"
+ },
+ "failures": {
+  "429": 23,
+  "414": 1
+ },
+ "files_seen": 678,
+ "files_with_year": 625,
+ "by_year": {
+  "1970": 1,
+  "2003": 1,
+  "2005": 3,
+  "2006": 4,
+  "2007": 6,
+  "2008": 16,
+  "2009": 26,
+  "2010": 27,
+  "2011": 22,
+  "2012": 4,
+  "2013": 17,
+  "2014": 21,
+  "2015": 33,
+  "2016": 36,
+  "2017": 22,
+  "2018": 26,
+  "2019": 28,
+  "2020": 13,
+  "2021": 9,
+  "2022": 41,
+  "2023": 81,
+  "2024": 57,
+  "2025": 23,
+  "2026": 108
+ },
+ "by_query_2025": {
+  "geo": 15,
+  "crossing": 3,
+  "west_block": 1,
+  "ekimae_bldg": 4,
+  "station_side": 1
+ },
+ "files_2025": [
+  {
+   "title": "File:20250716 MichelCasteloBranco.png",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    1536,
+    2048
+   ]
+  },
+  {
+   "title": "File:Demolition of Tokyu Toyoko (Hachiko square) 2025-03-23.jpg",
+   "licence": "CC0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    3904,
+    2928
+   ]
+  },
+  {
+   "title": "File:Hip-hop street performer in Shibuya.jpg",
+   "licence": "CC BY-SA 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4000,
+    6000
+   ]
+  },
+  {
+   "title": "File:Hochhaus Shibuya Scramble Square.jpg",
+   "licence": "CC0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    2124,
+    3177
+   ]
+  },
+  {
+   "title": "File:In and around Shibuya Station 2025 June 15 various 08.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    7324,
+    3806
+   ]
+  },
+  {
+   "title": "File:In and around Shibuya Station 2025 June 15 various 09.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4032,
+    3024
+   ]
+  },
+  {
+   "title": "File:JR東日本渋谷駅ハチ公口改札 2025年2月2日の渋谷 202502021826 IMG 4735.jpg",
+   "licence": "CC BY-SA 4.0",
+   "reusable": true,
+   "via": [
+    "station_side"
+   ],
+   "size": [
+    4032,
+    3024
+   ]
+  },
+  {
+   "title": "File:Miyashita Park 2025 May 26 various 03.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4032,
+    3024
+   ]
+  },
+  {
+   "title": "File:Miyashita Park 2025 May 26 various 04.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4032,
+    3024
+   ]
+  },
+  {
+   "title": "File:SHIBUYA TOKYO JAPAN (54546556344).jpg",
+   "licence": "CC BY-SA 2.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    3264,
+    2176
+   ]
+  },
+  {
+   "title": "File:SHIBUYA TOKYO JAPAN (54546712170).jpg",
+   "licence": "CC BY-SA 2.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4496,
+    3000
+   ]
+  },
+  {
+   "title": "File:Shibuya Crossing 2025-06-12.jpg",
+   "licence": "CC0",
+   "reusable": true,
+   "via": [
+    "geo",
+    "west_block"
+   ],
+   "size": [
+    4032,
+    3024
+   ]
+  },
+  {
+   "title": "File:Shibuya Crossing in 2025.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "crossing"
+   ],
+   "size": [
+    3558,
+    1994
+   ]
+  },
+  {
+   "title": "File:Shibuya crossing (12214).jpg",
+   "licence": "CC0",
+   "reusable": true,
+   "via": [
+    "crossing"
+   ],
+   "size": [
+    4080,
+    3072
+   ]
+  },
+  {
+   "title": "File:Shibuya crossing at night, Tokyo, Japan.jpg",
+   "licence": "CC BY-SA 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4032,
+    2268
+   ]
+  },
+  {
+   "title": "File:Shibuya crossing, Tokyo, Japan.jpg",
+   "licence": "CC BY-SA 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4032,
+    2268
+   ]
+  },
+  {
+   "title": "File:Shibuya crossing, seen from Shibuya Stream.jpg",
+   "licence": "CC0",
+   "reusable": true,
+   "via": [
+    "crossing"
+   ],
+   "size": [
+    3072,
+    4080
+   ]
+  },
+  {
+   "title": "File:The Hachiko statue at Shibuya, Tokyo, Japan.jpg",
+   "licence": "CC BY-SA 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4032,
+    2268
+   ]
+  },
+  {
+   "title": "File:Tokyo-Shibuya-and-Shinbashi---2025-07-13 160.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "ekimae_bldg"
+   ],
+   "size": [
+    4096,
+    3072
+   ]
+  },
+  {
+   "title": "File:Tokyo-Shibuya-and-Shinbashi---2025-07-13 161.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "ekimae_bldg"
+   ],
+   "size": [
+    4096,
+    3072
+   ]
+  },
+  {
+   "title": "File:Tokyo-Shibuya-and-Shinbashi---2025-07-13 164.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "ekimae_bldg"
+   ],
+   "size": [
+    4096,
+    3072
+   ]
+  },
+  {
+   "title": "File:Tokyo-Shibuya-and-Shinbashi---2025-07-13 209.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "ekimae_bldg"
+   ],
+   "size": [
+    4096,
+    3072
+   ]
+  },
+  {
+   "title": "File:渋谷区 渋谷駅 東急東横デパート撤去後 20251011.jpg",
+   "licence": "CC BY 4.0",
+   "reusable": true,
+   "via": [
+    "geo"
+   ],
+   "size": [
+    4624,
+    3472
+   ]
+  }
+ ]
+}
