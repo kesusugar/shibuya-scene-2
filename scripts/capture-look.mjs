@@ -17,7 +17,7 @@ function validateFrame(name, row) {
   assert.ok(row?.state?.viewer, `${name}: no validated capture log; use FORCE=1 or a new output directory`);
   assert.deepEqual(row.errors, [], `${name}: browser/network errors`);
   assert.deepEqual(row.state.viewer.failed, [], `${name}: failed buildings`);
-  assert.deepEqual(Object.keys(row.state.viewer.stats).sort(), ['eiraku', 'magnet', 'qfront']);
+  assert.deepEqual(Object.keys(row.state.viewer.stats).sort(), [...(row.expectedBuildings ?? ['qfront', 'magnet', 'eiraku'])].sort());
   assert.equal(row.state.viewer.ground.ok, true, `${name}: ground failed`);
   assert.deepEqual(row.state.viewer.ground.missing, []);
   for (const s of Object.values(row.state.viewer.stats)) assert.deepEqual(s.layerErrors, []);
@@ -51,7 +51,7 @@ for (const [name, v] of Object.entries(VIEWS).filter(([n]) => !only.length || on
     await page.waitForTimeout(2500);
     await page.screenshot({ path: file, timeout: 240000 });
     const state = await page.evaluate(() => ({ viewer: window.__viewer, status: document.querySelector('#status')?.textContent }));
-    log[`${name}_${pass}`] = { query: q, errors, state,
+    log[`${name}_${pass}`] = { query: q, errors, state, expectedBuildings: (new URLSearchParams(q.split('?')[1]).get('buildings') ?? 'qfront,magnet,eiraku,west-block').split(','),
       browser: browser.version(), executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || 'playwright bundled',
       perf: await page.evaluate(() => document.querySelector('#perf')?.textContent) };
     // Persist each completed frame even if a later frame fails.
