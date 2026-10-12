@@ -1,0 +1,82 @@
+{
+ "C01_crossing_centre": {
+  "x": 6.5,
+  "y": -2.0,
+  "road_elev_m": 14.916,
+  "nearest_k_radius_m": 14.2
+ },
+ "C02_Hachiko": {
+  "x": 11.6,
+  "y": -47.0,
+  "road_elev_m": 15.271,
+  "nearest_k_radius_m": 0.4
+ },
+ "C03_QFRONT_front": {
+  "x": -14.0,
+  "y": 25.5,
+  "road_elev_m": 15.119,
+  "nearest_k_radius_m": 2.1
+ },
+ "C04_MAGNET_front": {
+  "x": 34.0,
+  "y": 7.5,
+  "road_elev_m": 15.017,
+  "nearest_k_radius_m": 3.3
+ },
+ "C05_Center_gai": {
+  "x": -25.0,
+  "y": 29.2,
+  "road_elev_m": 15.125,
+  "nearest_k_radius_m": 2.2
+ },
+ "QFRONT_front_kerb": {
+  "x": -7.7,
+  "y": 22.0,
+  "road_elev_m": 15.213,
+  "nearest_k_radius_m": 7.2
+ },
+ "QFRONT_arc_mid": {
+  "x": -7.67,
+  "y": 29.08,
+  "road_elev_m": 15.213,
+  "nearest_k_radius_m": 2.1
+ },
+ "MAGNET_south_kerb": {
+  "x": 41.0,
+  "y": 6.0,
+  "road_elev_m": 14.824,
+  "nearest_k_radius_m": 4.8
+ },
+ "MAGNET_SW_corner": {
+  "x": 30.0,
+  "y": 12.0,
+  "road_elev_m": 15.017,
+  "nearest_k_radius_m": 3.7
+ },
+ "MAGNET_ground_SE_vertex_(49.2,9.9)": {
+  "x": 49.2,
+  "y": 9.9,
+  "road_elev_m": 14.79,
+  "nearest_k_radius_m": 1.5
+ },
+ "MAGNET_ground_SW_vertex_(33.6,11.3)": {
+  "x": 33.6,
+  "y": 11.3,
+  "road_elev_m": 15.017,
+  "nearest_k_radius_m": 0.5
+ },
+ "_core_50m_grid": {
+  "n": 181,
+  "min": 14.496,
+  "max": 15.617,
+  "median": 15.179
+ },
+ "_source": {
+  "file": "53393596_tran.gml",
+  "vertices_within_120m": 15182,
+  "elev_range": [
+   14.363,
+   18.14
+  ]
+ }
+}
