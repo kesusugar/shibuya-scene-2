@@ -1,8 +1,7 @@
 import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, Mesh, MeshStandardMaterial, PCFSoftShadowMap, PerspectiveCamera, Scene, SRGBColorSpace, WebGLRenderer } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { applyEmissive, loadBuilding, type BuildingIO, type LoadedBuilding } from './world/buildings';
+import { applyEmissive, hasArc, loadBuilding, type BuildingIO, type BuildingResult, type LoadedBuilding } from './world/buildings';
 import { Lighting, type TimeOfDay } from './world/lighting';
-import { planToWorld } from './world/coords';
 import { ViewerControls } from './controls/viewer-controls';
 import { FrameStats } from './perf/frame-stats';
 import { pickQuality } from './core/quality';
@@ -45,7 +44,7 @@ const bloom = new UnrealBloomPass(new Vector2(innerWidth, innerHeight), Number(p
 composer.addPass(bloom);
 composer.addPass(new OutputPass());
 
-// a neutral ground disc so the building does not float; streets come in a later gate
+// a neutral ground disc so the buildings do not float; streets come in a later gate
 const ground = new Mesh(new CircleGeometry(400, 64), new MeshStandardMaterial({ color: 0x5b5a57, roughness: 0.9 }));
 ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; ground.name = 'ground';
 scene.add(ground);
@@ -56,36 +55,51 @@ const io: BuildingIO = {
   loadJson: async (url) => { const r = await fetch(url); if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`); return r.json(); },
 };
 
-let building: LoadedBuilding | undefined;
+// Buildings load side by side and independently: one broken asset shows a red placeholder, the rest still draw.
+const ids = (params.get('buildings') ?? 'qfront,magnet,eiraku').split(',').map((s) => s.trim()).filter(Boolean);
+const NAMES: Record<string, string> = { qfront: 'QFRONT', magnet: 'MAGNET', eiraku: '栄楽ビル' };
+let loaded: LoadedBuilding[] = [];
+let building: LoadedBuilding | undefined;   // the building the camera presets frame (QFRONT when present)
 let mode: TimeOfDay = params.get('time') === 'night' ? 'night' : 'day';
 
 function setTime(t: TimeOfDay) {
   mode = t;
   $('btn-day').classList.toggle('on', t === 'day'); $('btn-night').classList.toggle('on', t === 'night');
   if (!building) return;
-  applyEmissive(building.root, building.emissive[t]);
-  lighting.apply(t, building.root);
+  for (const b of loaded) applyEmissive(b.root, b.emissive[t]);
+  lighting.apply(t, loaded.map((b) => b.root));
   bloom.enabled = bloomWanted && quality.bloom && t === 'night';
 }
 
 async function start() {
-  status('QFRONT を読み込み中…');
-  const [envState, result] = await Promise.all([lighting.loadEnvironments(), loadBuilding('qfront', io)]);
-  scene.add(result.root);
-  if (!result.ok) { status(`QFRONT の読み込みに失敗: ${result.error}（仮の箱を表示）`); return; }
-  building = result;
-  ground.position.copy(planToWorld(result.hints.arcMid)).setY(0);
-  lighting.placeSun(result.hints);
-  lighting.placeFloods(result.hints);
-  controls.setObstacles([result.root]);
-  controls.frameBuilding(result.hints);
+  status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
+  const [envState, results] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io)))]);
+  results.forEach((r: BuildingResult) => scene.add(r.root));
+  loaded = results.filter((r): r is LoadedBuilding => r.ok);
+  const problems = [
+    ...results.filter((r) => !r.ok).map((r) => `${NAMES[r.id] ?? r.id} の読み込みに失敗: ${'error' in r ? r.error : ''}（仮の箱を表示）`),
+    ...loaded.flatMap((b) => b.layerErrors.map((e) => `${NAMES[b.id] ?? b.id} の看板レイヤーを読み込めず: ${e}`)),
+  ];
+  building = loaded.find((b) => b.id === 'qfront') ?? loaded[0];
+  if (!building) { status(problems.join('\n')); return; }
+  lighting.placeSun(building.hints);
+  for (const b of loaded) lighting.placeFloods(b.hints);
+  controls.setObstacles(loaded.map((b) => b.root));
+  controls.frameBuilding(building.hints);
   setTime(mode);
   const envNote = envState.day === 'fulfilled' && envState.night === 'fulfilled' ? '' : '（環境マップの一部を読み込めず、反射は簡易表示）';
-  status(envNote);
+  status([...problems, envNote].filter(Boolean).join('\n'));
+  const fit = loaded.find((b) => b.hints.cameraFit);
+  ($('btn-m027') as HTMLButtonElement).disabled = !fit;
   const view = params.get('view');
-  if (view === 'q032') controls.q032View(result.hints);
+  if (view === 'q032') controls.q032View(building.hints);
+  else if (view === 'm027' && fit?.hints.cameraFit) controls.fitView(fit.hints.cameraFit, building.hints);
   else if (view === 'walk') setControl('walk');
-  (window as unknown as Record<string, unknown>).__viewer = { ready: true, stats: result.stats };
+  (window as unknown as Record<string, unknown>).__viewer = {
+    ready: true,
+    stats: Object.fromEntries(loaded.map((b) => [b.id, { ...b.stats, layers: b.layers, layerErrors: b.layerErrors }])),
+    failed: results.filter((r) => !r.ok).map((r) => r.id),
+  };
 }
 
 function setControl(m: 'orbit' | 'walk') {
@@ -99,6 +113,10 @@ $('btn-night').onclick = () => setTime('night');
 $('btn-orbit').onclick = () => setControl('orbit');
 $('btn-walk').onclick = () => setControl('walk');
 $('btn-q032').onclick = () => building && controls.q032View(building.hints);
+$('btn-m027').onclick = () => {
+  const fit = loaded.find((b) => b.hints.cameraFit);
+  if (fit?.hints.cameraFit && building) controls.fitView(fit.hints.cameraFit, building.hints);
+};
 $('btn-bench').onclick = async () => {
   const btn = $('btn-bench') as HTMLButtonElement; btn.disabled = true; btn.textContent = '計測中（30秒）…';
   const r = await runBenchmark(stats, renderer, { quality: quality.name, time: mode, view: controls.mode + (controls.hasProjectionOverride() ? ':q032' : '') });
@@ -110,7 +128,7 @@ addEventListener('resize', () => {
   renderer.setSize(innerWidth, innerHeight);
   composer.setSize(innerWidth, innerHeight);
   camera.aspect = innerWidth / innerHeight;
-  if (controls.hasProjectionOverride() && building) controls.q032View(building.hints); else camera.updateProjectionMatrix();
+  if (controls.hasProjectionOverride() && building && hasArc(building.hints) && !controls.fitActive) controls.q032View(building.hints); else camera.updateProjectionMatrix();
 });
 
 let lastHud = 0;

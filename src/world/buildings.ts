@@ -2,15 +2,37 @@ import { Box3, BoxGeometry, Group, Mesh, MeshBasicMaterial, Object3D, Vector3 } 
 import type { Material, MeshStandardMaterial } from 'three';
 import type { PlanXY } from './coords';
 
+/** A pinhole camera fitted to a reference photo (tools/camfit.py): Blender plan axes, compass yaw, pitch/roll in degrees. */
+export interface CameraFit {
+  photo: string;
+  pos: [number, number, number];
+  yaw: number; pitch: number; roll: number;
+  fpx: number; W: number; H: number;
+}
+
+/** QFRONT-specific fields (curved front, floodlights, Q032 camera) are optional; other buildings only need bounds and sun. */
 export interface ViewerHints {
-  arcMid: PlanXY;
-  arcNormal: PlanXY;
-  arcEnds: [PlanXY, PlanXY];
-  floodlights: { arcStart_m: [number, number]; arcEnd_m: [number, number] };
   planBounds: [number, number, number, number];
-  crownTop_m: number;
-  cameraQ032: { D: number; lat: number; yaw: number; fpx: number; cx: number; cy: number; W: number; H: number; height_m: number };
   sun: { azimuth_deg: number; elevation_deg: number };
+  arcMid?: PlanXY;
+  arcNormal?: PlanXY;
+  arcEnds?: [PlanXY, PlanXY];
+  floodlights?: { arcStart_m: [number, number]; arcEnd_m: [number, number] };
+  crownTop_m?: number;
+  cameraQ032?: { D: number; lat: number; yaw: number; fpx: number; cx: number; cy: number; W: number; H: number; height_m: number };
+  cameraFit?: CameraFit;
+  /** Era layers (signs, ads, screens) as extra GLBs in the building folder: name -> file. */
+  layers?: Record<string, string>;
+}
+
+/** Hints of a building with QFRONT's curved front: everything the floodlights and the Q032 view need. */
+export type ArcHints = ViewerHints & Required<Pick<ViewerHints, 'arcMid' | 'arcNormal' | 'arcEnds' | 'floodlights' | 'cameraQ032'>>;
+export function hasArc(h: ViewerHints): h is ArcHints {
+  return !!(h.arcMid && h.arcNormal && h.arcEnds && h.floodlights && h.cameraQ032);
+}
+export function planCentre(h: ViewerHints): PlanXY {
+  const [x0, y0, x1, y1] = h.planBounds;
+  return [(x0 + x1) / 2, (y0 + y1) / 2];
 }
 
 export type EmissiveTable = Record<string, { kind: string; emit: number[]; estr: number }>;
@@ -22,6 +44,9 @@ export interface LoadedBuilding {
   hints: ViewerHints;
   emissive: { day: EmissiveTable; night: EmissiveTable };
   stats: { meshes: number; triangles: number; materials: number };
+  /** Era layers that loaded, and the ones that failed (a failed layer never fails the building). */
+  layers: string[];
+  layerErrors: string[];
 }
 
 export interface FailedBuilding {
@@ -101,7 +126,20 @@ export async function loadBuilding(id: string, io: BuildingIO, base = '/building
     const group = new Group();
     group.name = id;
     group.add(root);
-    return { id, ok: true, root: group, hints, emissive: { day, night }, stats: countStats(root) };
+    const layers: string[] = [], layerErrors: string[] = [];
+    await Promise.all(Object.entries(hints.layers ?? {}).map(async ([name, file]) => {
+      try {
+        const layer = await io.loadGlb(`${base}/${id}/${file}`);
+        const bad = validateBuilding(layer);
+        if (bad.length) throw new Error(bad.slice(0, 2).join('; '));
+        layer.name = `${id}:${name}`;
+        group.add(layer);
+        layers.push(name);
+      } catch (e) {
+        layerErrors.push(`${name}: ${e instanceof Error ? e.message : String(e)}`);
+      }
+    }));
+    return { id, ok: true, root: group, hints, emissive: { day, night }, stats: countStats(group), layers, layerErrors };
   } catch (e) {
     return { id, ok: false, root: placeholder(id), error: e instanceof Error ? e.message : String(e) };
   }
