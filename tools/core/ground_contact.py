@@ -41,7 +41,7 @@ for b in P['buildings']:
         nx = ny = 0.0
         for (x1, y1), (x2, y2) in (((a[0], a[1]), (p[0], p[1])), ((p[0], p[1]), (c[0], c[1]))):
             ex, ey = x2 - x1, y2 - y1; L = math.hypot(ex, ey) or 1
-            s = 1 if area2 > 0 else -1
+            s = -1 if area2 > 0 else 1   # area2 > 0 means clockwise; (dy, -dx) is outward for counter-clockwise
             nx += s * ey / L; ny += -s * ex / L
         # nearest pavement around the corner: rings of 16 directions at 1, 2, 3, 4, 6 m (outward first)
         L = math.hypot(nx, ny) or 1; z = fn = lod = None; dist = None
