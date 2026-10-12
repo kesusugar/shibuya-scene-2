@@ -93,7 +93,7 @@ async function start() {
   ($('btn-m027') as HTMLButtonElement).disabled = !fit;
   const view = params.get('view');
   if (view === 'q032') controls.q032View(building.hints);
-  else if (view === 'm027' && fit?.hints.cameraFit) controls.fitView(fit.hints.cameraFit, building.hints);
+  else if (view === 'm027' && fit?.hints.cameraFit) showFit(fit);
   else if (view === 'walk') setControl('walk');
   (window as unknown as Record<string, unknown>).__viewer = {
     ready: true,
@@ -110,13 +110,21 @@ function setControl(m: 'orbit' | 'walk') {
 
 $('btn-day').onclick = () => setTime('day');
 $('btn-night').onclick = () => setTime('night');
-$('btn-orbit').onclick = () => setControl('orbit');
-$('btn-walk').onclick = () => setControl('walk');
-$('btn-q032').onclick = () => building && controls.q032View(building.hints);
+$('btn-orbit').onclick = () => { setControl('orbit'); restoreSun(); };
+$('btn-walk').onclick = () => { setControl('walk'); restoreSun(); };
+$('btn-q032').onclick = () => { if (building) { controls.q032View(building.hints); restoreSun(); } };
 $('btn-m027').onclick = () => {
   const fit = loaded.find((b) => b.hints.cameraFit);
-  if (fit?.hints.cameraFit && building) controls.fitView(fit.hints.cameraFit, building.hints);
+  if (fit) showFit(fit);
 };
+
+/** The photo-fitted view also takes that photo's sun (M027: 2025-09-01 13:18, az 207 / el 57); other views keep QFRONT's. */
+function showFit(fit: LoadedBuilding) {
+  if (!fit.hints.cameraFit || !building) return;
+  controls.fitView(fit.hints.cameraFit, building.hints);
+  lighting.placeSun(fit.hints);
+}
+function restoreSun() { if (building) lighting.placeSun(building.hints); }
 $('btn-bench').onclick = async () => {
   const btn = $('btn-bench') as HTMLButtonElement; btn.disabled = true; btn.textContent = '計測中（30秒）…';
   const r = await runBenchmark(stats, renderer, { quality: quality.name, time: mode, view: controls.mode + (controls.hasProjectionOverride() ? ':q032' : '') });
