@@ -5,26 +5,45 @@ import { Lighting, type TimeOfDay } from './world/lighting';
 import { planToWorld } from './world/coords';
 import { ViewerControls } from './controls/viewer-controls';
 import { FrameStats } from './perf/frame-stats';
+import { pickQuality } from './core/quality';
+import { runBenchmark } from './perf/benchmark';
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
+import { Vector2 } from 'three';
 
 const params = new URLSearchParams(location.search);
 const $ = (id: string) => document.getElementById(id)!;
 const status = (msg: string) => { $('status').textContent = msg; };
 if (params.has('capture')) $('hud').style.visibility = 'hidden';   // clean stills; the numbers stay readable via #perf
 
-const renderer = new WebGLRenderer({ antialias: true, powerPreference: 'high-performance', preserveDrawingBuffer: params.has('capture') });
-renderer.setPixelRatio(Math.min(devicePixelRatio, Number(params.get('dpr') ?? 1.5)));
+const quality = pickQuality(params.get('q'));
+const renderer = new WebGLRenderer({ antialias: quality.antialias, powerPreference: 'high-performance', preserveDrawingBuffer: params.has('capture') });
+renderer.setPixelRatio(Math.min(devicePixelRatio, Number(params.get('dpr') ?? quality.maxDpr)));
 renderer.setSize(innerWidth, innerHeight);
 renderer.outputColorSpace = SRGBColorSpace;
 renderer.toneMapping = params.get('tone') === 'aces' ? ACESFilmicToneMapping : AgXToneMapping;   // AgX: same as the Cycles renders
-renderer.shadowMap.enabled = true;
+renderer.shadowMap.enabled = quality.shadows;
 renderer.shadowMap.type = PCFSoftShadowMap;
 document.body.appendChild(renderer.domElement);
 
 const scene = new Scene();
 const camera = new PerspectiveCamera(55, innerWidth / innerHeight, 0.3, 3000);
-const lighting = new Lighting(renderer, scene);
+const lighting = new Lighting(renderer, scene, quality.shadowMapSize);
+if (params.has('flood')) lighting.floodIntensity = Number(params.get('flood'));
 const controls = new ViewerControls(camera, renderer.domElement);
 const stats = new FrameStats();
+
+// bloom only at night (lit letters, LED screen, shop windows), and only from the medium preset up
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+// the composer works on linear radiance before tone mapping: only the lit letters, LED and lamps (>~8) should bloom
+// Off by default: under headless SwiftShader the pass hazes the whole frame (cause not isolated yet). ?bloom=on to try on a real GPU.
+const bloomWanted = params.get('bloom') === 'on';
+const bloom = new UnrealBloomPass(new Vector2(innerWidth, innerHeight), Number(params.get('bs') ?? 0.35), 0.35, Number(params.get('bt') ?? 3));
+composer.addPass(bloom);
+composer.addPass(new OutputPass());
 
 // a neutral ground disc so the building does not float; streets come in a later gate
 const ground = new Mesh(new CircleGeometry(400, 64), new MeshStandardMaterial({ color: 0x5b5a57, roughness: 0.9 }));
@@ -46,6 +65,7 @@ function setTime(t: TimeOfDay) {
   if (!building) return;
   applyEmissive(building.root, building.emissive[t]);
   lighting.apply(t, building.root);
+  bloom.enabled = bloomWanted && quality.bloom && t === 'night';
 }
 
 async function start() {
@@ -79,9 +99,16 @@ $('btn-night').onclick = () => setTime('night');
 $('btn-orbit').onclick = () => setControl('orbit');
 $('btn-walk').onclick = () => setControl('walk');
 $('btn-q032').onclick = () => building && controls.q032View(building.hints);
+$('btn-bench').onclick = async () => {
+  const btn = $('btn-bench') as HTMLButtonElement; btn.disabled = true; btn.textContent = '計測中（30秒）…';
+  const r = await runBenchmark(stats, renderer, { quality: quality.name, time: mode, view: controls.mode + (controls.hasProjectionOverride() ? ':q032' : '') });
+  $('bench-out').textContent = JSON.stringify(r, null, 1); btn.disabled = false; btn.textContent = '30秒計測';
+  console.log('BENCHMARK', JSON.stringify(r));
+};
 
 addEventListener('resize', () => {
   renderer.setSize(innerWidth, innerHeight);
+  composer.setSize(innerWidth, innerHeight);
   camera.aspect = innerWidth / innerHeight;
   if (controls.hasProjectionOverride() && building) controls.q032View(building.hints); else camera.updateProjectionMatrix();
 });
@@ -90,7 +117,7 @@ let lastHud = 0;
 renderer.setAnimationLoop(() => {
   const dt = Math.min(0.1, stats.tick());
   controls.update(dt);
-  renderer.render(scene, camera);
+  if (bloom.enabled) composer.render(); else renderer.render(scene, camera);
   const now = performance.now();
   if (now - lastHud > 500) { $('perf').textContent = stats.report(renderer); lastHud = now; }
 });
