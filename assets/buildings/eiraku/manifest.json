@@ -1,0 +1,58 @@
+{
+ "id": "eiraku",
+ "name": "栄楽ビル（MAGNET 東隣）",
+ "version": "v1",
+ "status": "G3 v1 - context building",
+ "referenceYear": 2025,
+ "footprintSource": "PLATEAU 2025 LOD2: the 37.34 m roof inside MAGNET's bldg_d47d8aa9 footprint (a separate building on the ground)",
+ "heightSources": {
+  "buildingHeight": {
+   "value": 37.34,
+   "source": "PLATEAU LOD2 roof"
+  },
+  "signTopHeight": {
+   "value": 38.6,
+   "source": "photo M002/M014 (sign frame above the roof, estimated)"
+  }
+ },
+ "geometryConfidence": "outline and height from PLATEAU; windows estimated from photos",
+ "sourceBlend": [
+  "../magnet/source/blend/magnet_day.blend (collection 07_EIRAKU)"
+ ],
+ "units": "metres",
+ "pivot": "OSM origin lat 35.6595, lon 139.7005; placed in world coordinates, no local offset",
+ "axesTransform": {
+  "blender": "X=east, Y=north, Z=up",
+  "gltf_export": "Y-up: (x, y, z)_blender -> (x, z, -y)_gltf = X=east, Y=up, Z=south",
+  "webWorld": "X=east, Y=up, Z=south (as Shibuya Scene 1.0 and QFRONT)"
+ },
+ "worldPosition": [
+  0,
+  0,
+  0
+ ],
+ "rotationY": 0,
+ "groundDatum": "0 m = pavement at the south-west corner, elevation 14.561 m (PLATEAU). QFRONT's 0 m is 15.099 m; the 0.54 m step is left for the terrain gate (G4).",
+ "renderSettings": "Blender 4.2.3 Cycles CPU, AgX Medium High Contrast; day: sun az 207 / el 57 (M027, 2025-09-01 13:18 JST), camera-ray sky tint; night: deep-blue dome, street area lights; glossy rays see CC0 Poly Haven HDRIs (QFRONT copy)",
+ "generator": "assets/buildings/magnet/source/blender/build_magnet.py (Blender 4.2.3 LTS): blender -b -P build_magnet.py -- <out> day|night preview|final view=m027|sw|south|west|roof [era=2025|none] [save] [clay]",
+ "exporter": "assets/buildings/magnet/source/blender/export_web.py",
+ "generatorRevision": "4d7fa8cc5c3621dead166aa178b7479e91e7107d",
+ "files": {
+  "web/eiraku.glb": {
+   "sha256": "07b535d3334f0f9afeb8bc4753c55ed29e82d53a35b8f79b23f9666d0882f3e5",
+   "bytes": 32840
+  },
+  "web/viewer.json": {
+   "sha256": "72e4d23d29df1e1486564839cced412ceb2983fbb303132deaaac0a3c922e511",
+   "bytes": 221
+  },
+  "web/emissive_day.json": {
+   "sha256": "7362f6c22c15c681e13429b67bbb0c27deea7d97749bfec83bfbaee20edf8bf4",
+   "bytes": 4227
+  },
+  "web/emissive_night.json": {
+   "sha256": "29b5ff5abf0a350bc5544b4c5197da74922d4664ab62b7e19a818be5eb722df1",
+   "bytes": 4180
+  }
+ }
+}

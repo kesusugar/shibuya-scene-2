@@ -1,0 +1,160 @@
+{
+ "id": "magnet",
+ "name": "MAGNET by SHIBUYA109（渋谷区神南1-23-10）",
+ "version": "v1",
+ "status": "G3 v1 - for owner review",
+ "referenceYear": 2025,
+ "referenceYearNote": "Form from 2019-2026 photos and PLATEAU 2025; signs, ads and screens are the 2025 era layer (source/data/signage_2025.json -> web/magnet_signs_2025.glb). 2026-02/03 photos (M001-M003) were used only to confirm signs still in place.",
+ "footprintSource": "PLATEAU 2025 LOD2, Shibuya ward, tile 53393596, bldg_d47d8aa9-e4f5-4599-9d9a-bc129a12d6a8 (OSM way/116806281 'MAGNET SHIBUYA' agrees, PLATEAU share 0.93)",
+ "heightSources": {
+  "buildingHeight": {
+   "value": 34.2,
+   "source": "PLATEAU measuredHeight",
+   "note": "body height; not the tower"
+  },
+  "roofDeckHeight": {
+   "value": 33.1,
+   "source": "PLATEAU LOD2 west-wing roof",
+   "note": "photo M027 puts the wall top at 30.9 m with a 3.3 m truss above; the model follows the photo at the edge (open item)"
+  },
+  "parapetTopHeight": {
+   "value": 42.42,
+   "source": "PLATEAU LOD2 tower parapet strips (tower roof 40.37 m)"
+  },
+  "steppedRoofs": {
+   "values": [
+    40.33,
+    36.06,
+    36.73,
+    31.44
+   ],
+   "source": "PLATEAU LOD2"
+  },
+  "signTopHeight": {
+   "value": 32.0,
+   "source": "sign box top, photos M014/M027 (estimated)",
+   "geometryConfidence": "photo-estimated"
+  }
+ },
+ "geometryConfidence": "high for footprint and roof heights (PLATEAU); medium for west face, drum and tower corner (photo M027, camera fit 16.3 px RMS, PARTIAL vs the 15 px target); estimated: north and east faces, rooftop plant, sign box depth",
+ "cameras": {
+  "m027": "source/data/camera_m027_fit.json (16.3 px RMS over 3 points + 4 vanishing lines + eye-level horizon; PARTIAL)"
+ },
+ "layers": {
+  "signs_2025": {
+   "file": "web/magnet_signs_2025.glb",
+   "source": "source/data/signage_2025.json",
+   "content": "lettering rebuilt from fonts; ad and screen artwork is original placeholder art (source/tools/make_signs.py); no photo pixels"
+  }
+ },
+ "relatedBuildings": {
+  "eiraku": "assets/buildings/eiraku (inside the PLATEAU MAGNET footprint, modelled separately; its finance signs are in this era layer)"
+ },
+ "sourceBlend": [
+  "source/blend/magnet_day.blend",
+  "source/blend/magnet_night.blend"
+ ],
+ "attribution": [
+  "M001: MAGNET by SHIBUYA 109 2026年2月27日の渋谷 202602272115 IMG 2369.jpg — ウィ貴公子 — cc-by-sa-4.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA_109_2026%E5%B9%B42%E6%9C%8827%E6%97%A5%E3%81%AE%E6%B8%8B%E8%B0%B7_202602272115_IMG_2369.jpg",
+  "M002: Tokyo---Ebisu-and-Shibuya---2026-03-11 021.jpg — RuinDig/Yuki Uchida — cc-by-4.0 — https://commons.wikimedia.org/wiki/File%3ATokyo---Ebisu-and-Shibuya---2026-03-11_021.jpg",
+  "M003: Tokyo---Ebisu-and-Shibuya---2026-03-11 020.jpg — RuinDig/Yuki Uchida — cc-by-4.0 — https://commons.wikimedia.org/wiki/File%3ATokyo---Ebisu-and-Shibuya---2026-03-11_020.jpg",
+  "M004: 銀座コージーコーナーMAGNET by SHIBUYA109店 2025年11月1日の渋谷 202511011706 IMG 0569.jpg — ウィ貴公子 — cc-by-sa-4.0 — https://commons.wikimedia.org/wiki/File%3A%E9%8A%80%E5%BA%A7%E3%82%B3%E3%83%BC%E3%82%B8%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%8A%E3%83%BCMAGNET_by_SHIBUYA109%E5%BA%97_2025%E5%B9%B411%E6%9C%881%E6%97%A5%E3%81%AE%E6%B8%8B%E8%B0%B7_202511011706_IMG_0569.jpg",
+  "M005: City view at Shibuya Crossing up from the Magnet building in Shibuya, Tokyo, Japan, 2024 May.jpg — Ximonic (Simo Räsänen) — cc-by-sa-4.0 — https://commons.wikimedia.org/wiki/File%3ACity_view_at_Shibuya_Crossing_up_from_the_Magnet_building_in_Shibuya%2C_Tokyo%2C_Japan%2C_2024_May.jpg",
+  "M006: Ground level at Shibuya Crossing in Shibuya, Tokyo, Japan, 2024 May.jpg — Ximonic (Simo Räsänen) — cc-by-sa-4.0 — https://commons.wikimedia.org/wiki/File%3AGround_level_at_Shibuya_Crossing_in_Shibuya%2C_Tokyo%2C_Japan%2C_2024_May.jpg",
+  "M007: MAGNET by SHIBUYA109 Shibuya Crossing (49997701212).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_Shibuya_Crossing_%2849997701212%29.jpg",
+  "M008: MAGNET by SHIBUYA109 Shibuya Crossing (49996927363).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_Shibuya_Crossing_%2849996927363%29.jpg",
+  "M009: MAGNET by SHIBUYA109 Shibuya Crossing (49997446966).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_Shibuya_Crossing_%2849997446966%29.jpg",
+  "M011: MAGNET by SHIBUYA109 Shibuya Crossing (49997700282).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_Shibuya_Crossing_%2849997700282%29.jpg",
+  "M012: MAGNET by SHIBUYA109 Shibuya Crossing (49997446076).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_Shibuya_Crossing_%2849997446076%29.jpg",
+  "M013: MAGNET by SHIBUYA109 Shibuya Crossing (49997446546).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_Shibuya_Crossing_%2849997446546%29.jpg",
+  "M014: Magnet by Shibuya 109 in Shibuya Crossing in Tokyo, 2019 - 784.jpg — Another Believer — cc-by-sa-4.0 — https://commons.wikimedia.org/wiki/File%3AMagnet_by_Shibuya_109_in_Shibuya_Crossing_in_Tokyo%2C_2019_-_784.jpg",
+  "M015: MAGNET by SHIBUYA109 (49996929368).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_%2849996929368%29.jpg",
+  "M016: MAGNET by SHIBUYA109 (49997450386).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_%2849997450386%29.jpg",
+  "M017: MAGNET by SHIBUYA109 (49997445596).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_%2849997445596%29.jpg",
+  "M018: MAGNET by SHIBUYA109 (49997445316).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_%2849997445316%29.jpg",
+  "M019: MAGNET by SHIBUYA109 (49996924528).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AMAGNET_by_SHIBUYA109_%2849996924528%29.jpg",
+  "M020: Shibuya Scramble Square SHIBUYA SKY (53086010229).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AShibuya_Scramble_Square_SHIBUYA_SKY_%2853086010229%29.jpg",
+  "M021: Shibuya Crossing (53333919285).jpg — [https://www.flickr.com/people/31029865@N06 Dick Thomas Johnson] from Tokyo, Jap — cc-by-2.0 — https://commons.wikimedia.org/wiki/File%3AShibuya_Crossing_%2853333919285%29.jpg",
+  "M022: 2019-09-05 Shibuya Crossing.jpg — [https://www.flickr.com/people/22974618@N00 Sergiy Galyonkin] — cc-by-sa-2.0 — https://commons.wikimedia.org/wiki/File%3A2019-09-05_Shibuya_Crossing.jpg",
+  "M026: Shibuya Crossing 20250901 131836.jpg — Taufik — cc-zero — https://commons.wikimedia.org/wiki/File%3AShibuya_Crossing_20250901_131836.jpg",
+  "M027: Shibuya Crossing 20250901 131850.jpg — Taufik — cc-zero — https://commons.wikimedia.org/wiki/File%3AShibuya_Crossing_20250901_131850.jpg",
+  "M028: Shibuya Crossing 20250901 131843.jpg — Taufik — cc-zero — https://commons.wikimedia.org/wiki/File%3AShibuya_Crossing_20250901_131843.jpg",
+  "M029: Shibuya Crossing 20250901 131839.jpg — Taufik — cc-zero — https://commons.wikimedia.org/wiki/File%3AShibuya_Crossing_20250901_131839.jpg"
+ ],
+ "dataLicences": {
+  "PLATEAU": "国土交通省 Project PLATEAU, CC BY 4.0 compatible terms",
+  "HDRI": "Poly Haven CC0 (wide_street_01, shanghai_bund)"
+ },
+ "units": "metres",
+ "pivot": "OSM origin lat 35.6595, lon 139.7005; placed in world coordinates, no local offset",
+ "axesTransform": {
+  "blender": "X=east, Y=north, Z=up",
+  "gltf_export": "Y-up: (x, y, z)_blender -> (x, z, -y)_gltf = X=east, Y=up, Z=south",
+  "webWorld": "X=east, Y=up, Z=south (as Shibuya Scene 1.0 and QFRONT)"
+ },
+ "worldPosition": [
+  0,
+  0,
+  0
+ ],
+ "rotationY": 0,
+ "groundDatum": "0 m = pavement at the south-west corner, elevation 14.561 m (PLATEAU). QFRONT's 0 m is 15.099 m; the 0.54 m step is left for the terrain gate (G4).",
+ "renderSettings": "Blender 4.2.3 Cycles CPU, AgX Medium High Contrast; day: sun az 207 / el 57 (M027, 2025-09-01 13:18 JST), camera-ray sky tint; night: deep-blue dome, street area lights; glossy rays see CC0 Poly Haven HDRIs (QFRONT copy)",
+ "generator": "assets/buildings/magnet/source/blender/build_magnet.py (Blender 4.2.3 LTS): blender -b -P build_magnet.py -- <out> day|night preview|final view=m027|sw|south|west|roof [era=2025|none] [save] [clay]",
+ "exporter": "assets/buildings/magnet/source/blender/export_web.py",
+ "generatorRevision": "4d7fa8cc5c3621dead166aa178b7479e91e7107d",
+ "files": {
+  "web/magnet.glb": {
+   "sha256": "ddfc5a4da3dfd4509c550ea0809f86732c69062de746891ed6cf857a3fca4646",
+   "bytes": 573924
+  },
+  "web/magnet_signs_2025.glb": {
+   "sha256": "3f2aa5ddc63c29e64f32e4e70840a3ca163c9e93de0893eede636454d06bb2bd",
+   "bytes": 1112464
+  },
+  "web/viewer.json": {
+   "sha256": "3fb77fbcad364efe4906999980f533fe64bf70f82996139f533d57ffc8f6c085",
+   "bytes": 578
+  },
+  "web/emissive_day.json": {
+   "sha256": "7362f6c22c15c681e13429b67bbb0c27deea7d97749bfec83bfbaee20edf8bf4",
+   "bytes": 4227
+  },
+  "web/emissive_night.json": {
+   "sha256": "29b5ff5abf0a350bc5544b4c5197da74922d4664ab62b7e19a818be5eb722df1",
+   "bytes": 4180
+  },
+  "source/blend/magnet_day.blend": {
+   "sha256": "fd1e1708c14f63fe73f7b3b12f592dfebd755900a5970a5613e11960b3ed73a6",
+   "bytes": 10155984
+  },
+  "source/blend/magnet_night.blend": {
+   "sha256": "059b95200985b1c0b06326eb77fd586fbec1cf76a3e44ccb8d721ca33897c12c",
+   "bytes": 10142652
+  },
+  "source/blender/build_magnet.py": {
+   "sha256": "fb9695455c835d941e5b2a761b48a44f734a80a0b85ba5ead210cccb1f05c539",
+   "bytes": 35914
+  },
+  "source/blender/export_web.py": {
+   "sha256": "63290b8a3289945fa9a863b7a8549e297638fc4413a47c7cc2287c8efdee3d87",
+   "bytes": 6504
+  },
+  "source/data/measurements.json": {
+   "sha256": "88ef758521da105e1d1a93bf223b1a85d4400d9e9547be480b8b848e84ba691f",
+   "bytes": 2827
+  },
+  "source/data/signage_2025.json": {
+   "sha256": "24884bb097532515d3462474f83c8736ea044d336658e585988548b191378c1c",
+   "bytes": 2751
+  },
+  "source/data/camera_m027_fit.json": {
+   "sha256": "14b1a6f868f1b56bd7078b1ee6ffb1a1dd8072102b34fff0315b807ef452687b",
+   "bytes": 681
+  },
+  "source/data/magnet_plateau_lod2.json": {
+   "sha256": "9bfd1c6558dfa4f5d5d20c71d54c300c1f2d1f414c30b27c55d9777cf02e0434",
+   "bytes": 16155
+  }
+ }
+}
