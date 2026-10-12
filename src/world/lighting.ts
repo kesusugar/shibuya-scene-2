@@ -22,10 +22,11 @@ export class Lighting {
   private floods: SpotLight[] = [];
   private sets: Partial<Record<TimeOfDay, EnvSet>> = {};
   mode: TimeOfDay = 'day';
+  floodIntensity = 3000;
 
-  constructor(private renderer: WebGLRenderer, private scene: Scene) {
+  constructor(private renderer: WebGLRenderer, private scene: Scene, shadowMapSize = 2048) {
     this.sun.castShadow = true;
-    this.sun.shadow.mapSize.set(2048, 2048);
+    this.sun.shadow.mapSize.set(shadowMapSize, shadowMapSize);
     const cam = this.sun.shadow.camera;
     cam.left = -60; cam.right = 60; cam.top = 60; cam.bottom = -60; cam.near = 1; cam.far = 400;
     this.sun.shadow.bias = -0.0004; this.sun.shadow.normalBias = 0.03;
@@ -89,7 +90,7 @@ export class Lighting {
     this.sun.castShadow = day;
     this.hemi.intensity = day ? 0.6 : 0.08;
     this.hemi.color.set(day ? 0xb8c8e8 : 0x3050a0);
-    for (const f of this.floods) f.intensity = day ? 0 : 14000;
+    for (const f of this.floods) f.intensity = day ? 0 : this.floodIntensity;
     this.renderer.toneMappingExposure = day ? 1.0 : 1.35;
     building?.traverse((o) => {
       const mesh = o as Mesh;

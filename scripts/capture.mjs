@@ -18,7 +18,7 @@ for (const [name, q, w, h] of shots.filter(([n]) => !only || only.split(',').inc
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
   page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
-  await page.goto(base + '/' + q);
+  await page.goto(base + '/' + q + (process.env.EXTRA_QUERY ? '&' + process.env.EXTRA_QUERY : ''));
   await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 180000 });
   await page.waitForTimeout(4000);
   await page.screenshot({ path: `${out}/${name}.png`, timeout: 180000 });

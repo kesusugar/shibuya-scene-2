@@ -6,6 +6,9 @@ export class FrameStats {
   private last = performance.now();
   constructor(private size = 240) {}
 
+
+  reset(size = this.size) { this.samples = []; this.size = size; this.last = performance.now(); }
+
   tick(): number {
     const now = performance.now();
     const dt = now - this.last;
