@@ -66,7 +66,9 @@ export interface LookParams {
   nightSign: number;                           // night: multiplier on the baked emissive strength of signs and screens
 }
 export const LOOK_DEFAULT: LookParams = {
-  dayExposure: 1.0, nightExposure: 1.35, glassEnv: 1.0, wallEnv: 1.0, road: 0.045, sidewalk: 0.30, nightGround: 0, nightSign: 1.0,
+  dayExposure: 0.85, nightExposure: 1.35, glassEnv: 1.6, wallEnv: 0.5, road: 0.045, sidewalk: 0.30,
+  // Provisional REF-B fit only: restore 0 when C2b adds actual street lights (see C3A_REPORT.md).
+  nightGround: 0.5, nightSign: 1.0,
 };
 export function parseLook(q: string | null, base: LookParams = LOOK_DEFAULT): LookParams {
   const out = { ...base };
