@@ -1247,15 +1247,6 @@
    "faces": 13
   },
   {
-   "id": "way/60739635",
-   "plateau_id": "bldg_6abf2261-478c-437a-93f4-8ba23d7b1cad",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_punched_a",
-   "height_m": 31.36,
-   "faces": 25
-  },
-  {
    "id": "way/116806276",
    "plateau_id": "bldg_163dfd85-7807-4d53-b7aa-ba69b325727a",
    "group": "core",
@@ -2851,12 +2842,16 @@
    "id": "way/136690966",
    "plateau_id": "bldg_e6e4de58-1a37-4345-8795-6b759771ade6",
    "reason": "own asset: west-block"
+  },
+  {
+   "id": "way/60739635",
+   "reason": "own asset: ekimae"
   }
  ],
  "objects": {
   "core__ctx_roof": {
-   "triangles": 11441,
-   "vertices": 19789
+   "triangles": 11419,
+   "vertices": 19749
   },
   "core__ctx_wall_punched_b": {
    "triangles": 3874,
@@ -2867,8 +2862,8 @@
    "vertices": 9683
   },
   "core__ctx_wall_punched_a": {
-   "triangles": 3560,
-   "vertices": 6508
+   "triangles": 3528,
+   "vertices": 6444
   },
   "core__ctx_wall_ribbon_b": {
    "triangles": 4252,
@@ -2895,5 +2890,5 @@
    "vertices": 4404
   }
  },
- "triangles": 30662
+ "triangles": 30608
 }

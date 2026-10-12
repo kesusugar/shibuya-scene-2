@@ -16,7 +16,7 @@ for (const [name, query] of Object.entries({ street_missing: 'streeturl=missing'
   const result = await page.evaluate(() => ({ viewer: window.__viewer, status: document.querySelector('#status').textContent,
     notice: document.querySelector('#provisional').textContent, camera: window.__viewer.cameraPos(), ground: window.__viewer.groundUnderCamera() }));
   assert.deepEqual(errors, []); assert.deepEqual(result.viewer.failed, []);
-  assert.equal(Object.keys(result.viewer.stats).length, 4); assert.equal(result.viewer.ground.ok, true);
+  assert.equal(Object.keys(result.viewer.stats).length, 5); assert.equal(result.viewer.ground.ok, true);
   if (name === 'street_missing') { assert.equal(result.viewer.street.ok, false); assert.ok(result.status.includes('街路設備')); assert.ok(result.viewer.street.error || result.viewer.projected.error); assert.equal(missingResponses.length, 1); assert.ok(missingResponses[0].status >= 400 || missingResponses[0].type.includes('text/html')); }
   if (name === 'projected_missing') { assert.equal(result.viewer.projected.ok, false); assert.equal(result.viewer.street.ok, true); assert.ok(result.status.includes('仮配置')); assert.ok(result.viewer.street.error || result.viewer.projected.error); assert.equal(missingResponses.length, 1); assert.ok(missingResponses[0].status >= 400 || missingResponses[0].type.includes('text/html')); }
   if (name === 'walk') {

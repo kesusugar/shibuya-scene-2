@@ -10,7 +10,7 @@ describe('C-level context asset', async () => {
 
   it('never duplicates a building that has its own asset or the street entrances', () => {
     const ids = new Set(stats.buildings.map((b: { id: string }) => b.id));
-    for (const own of ['way/136691386', 'way/116806281', 'way/136690966']) expect(ids.has(own)).toBe(false);   // QFRONT, MAGNET (+ Eiraku)
+    for (const own of ['way/136691386', 'way/116806281', 'way/136690966', 'way/60739635']) expect(ids.has(own)).toBe(false);   // QFRONT, MAGNET (+ Eiraku)
     expect(stats.excluded.map((e: { id: string }) => e.id).sort()).toEqual(expect.arrayContaining(['way/116806281', 'way/136691386']));
     const plateau = stats.buildings.map((b: { plateau_id: string }) => b.plateau_id);
     expect(new Set(plateau).size).toBe(plateau.length);

@@ -1,0 +1,37 @@
+{
+  "photos": [
+    {
+      "id": "EK01",
+      "path": "docs/core/building_refs/crossing_joli_2025.jpg",
+      "date": "2025-11-01",
+      "author": "Joli Rumi",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_Tokyo,_Japan.jpg",
+      "use": "November textures and facade types; partial/obstructed crops documented",
+      "sha256": "e338994724e2a3996f57d59963df5797c3e6109ce16dff6093a91c490994e987"
+    },
+    {
+      "id": "EK02",
+      "path": "docs/core/building_refs/crossing_12214.jpg",
+      "date": "2025-02-07",
+      "author": "Syced",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg",
+      "use": "Independent facade/cafe/window/roof-screen type check, no texture",
+      "sha256": "012b30ec23de9d4f92430f295aea6302cfa2cd56db66f20e10772ac284dd23f0"
+    },
+    {
+      "id": "EK03",
+      "path": "assets/street/core/source/refs/stream_2025.jpg",
+      "date": "2025-01-31",
+      "author": "Syced",
+      "license": "CC0",
+      "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg",
+      "use": "Object identification and same-camera shape comparison; roof campaign differs",
+      "sha256": "76e319107f5ef44a4a7c41af1553aac8257c56be7b8747962f311ce136cab075"
+    }
+  ],
+  "metadata_register": "docs/core/building_refs/REFERENCE_REGISTER.csv",
+  "commons_metadata": "docs/core/building_refs/commons_crossing_metadata.json",
+  "plateau_source": "assets/context/core/source/data/context_input.json from PR9 PLATEAU 2025 selection"
+}

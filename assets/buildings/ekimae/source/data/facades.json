@@ -1,0 +1,195 @@
+{
+  "source_photo": "docs/core/building_refs/crossing_joli_2025.jpg",
+  "photo_date": "2025-11-01",
+  "author": "Joli Rumi",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_Tokyo,_Japan.jpg",
+  "status": "B prototype: hand-read image quads and estimated dimensions; HiT north image left edge cropped in source; eyeCity/Loccitane partly obstructed; no fabricated missing ad content",
+  "rooftop": {
+    "center_height_m": 41.5,
+    "height_m": 16,
+    "basis": "large roof billboard above nine floors in Feb/Nov; dimensional estimate for first comparison"
+  },
+  "textures": {
+    "samsung": {
+      "quad": [
+        [
+          183,
+          81
+        ],
+        [
+          363,
+          171
+        ],
+        [
+          343,
+          270
+        ],
+        [
+          139,
+          197
+        ]
+      ],
+      "size": [
+        640,
+        512
+      ]
+    },
+    "hit_sky": {
+      "quad": [
+        [
+          0,
+          8
+        ],
+        [
+          180,
+          63
+        ],
+        [
+          142,
+          192
+        ],
+        [
+          0,
+          156
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    "shabu": {
+      "quad": [
+        [
+          133,
+          218
+        ],
+        [
+          319,
+          267
+        ],
+        [
+          314,
+          294
+        ],
+        [
+          127,
+          243
+        ]
+      ],
+      "size": [
+        640,
+        160
+      ]
+    },
+    "francais": {
+      "quad": [
+        [
+          126,
+          242
+        ],
+        [
+          313,
+          293
+        ],
+        [
+          308,
+          316
+        ],
+        [
+          120,
+          268
+        ]
+      ],
+      "size": [
+        640,
+        160
+      ]
+    },
+    "gusto": {
+      "quad": [
+        [
+          118,
+          269
+        ],
+        [
+          307,
+          317
+        ],
+        [
+          303,
+          341
+        ],
+        [
+          112,
+          295
+        ]
+      ],
+      "size": [
+        640,
+        160
+      ]
+    },
+    "eyecity": {
+      "quad": [
+        [
+          48,
+          205
+        ],
+        [
+          98,
+          219
+        ],
+        [
+          59,
+          363
+        ],
+        [
+          10,
+          344
+        ]
+      ],
+      "size": [
+        192,
+        640
+      ]
+    },
+    "loccitane": {
+      "quad": [
+        [
+          209,
+          403
+        ],
+        [
+          256,
+          408
+        ],
+        [
+          254,
+          424
+        ],
+        [
+          206,
+          419
+        ]
+      ],
+      "size": [
+        256,
+        128
+      ]
+    }
+  },
+  "east_frontage_revision": {
+    "basis": "first Stream comparison showed a missing long east facade. Added north-to-south east-wall windows/red frames, restaurant/cafe/ground frontage and billboard continuation as one facade correction. Same November crops continue around the rounded corner; repeated lettering and perspective baked into crops remain approximate.",
+    "start_m": [
+      -38.316,
+      -20.562
+    ],
+    "end_m": [
+      -45.003,
+      -54.21
+    ]
+  }
+}
