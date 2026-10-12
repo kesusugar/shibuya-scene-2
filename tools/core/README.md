@@ -14,3 +14,12 @@ Run in this order. Inputs come from the old repository (`kesusugar/shibuya-scene
 
 `identity_notes.json` holds the inferred identities of unnamed buildings ("推定" = not verified).
 6. `python3 tools/core/sensitivity.py <vis_dir>` - re-scores the ranking under other weights, a walker view band and leave-one-view-out (self-review).
+
+## C0 supplement (PLATEAU LOD2, structures, elevated views)
+7. `python3 -I tools/core/plateau_core.py <plateau_dir> <plateau_core.json> 320` - PLATEAU 2025 bldg/brid/frn/veg/tran within 320 m (tile 53393596 + neighbouring bldg tiles, codelists/).
+8. `python3 -I tools/core/build_records_v2.py docs/core/coverage/buildings_c0.json <plateau_core.json> <records_v2.json>` - LOD2 surfaces, PLATEAU-only buildings, bridges; datum T.P. 15.000.
+9. `blender -b -P tools/core/visibility_pano_v2.py -- <records_v2.json> tools/core/cameras_v2.json <vis_v2> 1440` - 7 views with a 200-ray burial check. X01 is re-run with its host (way/355250634 and brid_bd5e7fe1) removed, because the photo was taken through that corridor's windows.
+10. `python3 tools/core/build_register_v2.py <records_v2.json> docs/core <cam>=<vis>[:<records>] ...` - `ASSET_REGISTER_V2.csv`, `coverage_v2/`.
+11. `python3 tools/core/structure_register.py <old data json> <plateau_core.json> docs/core` - `STRUCTURE_REGISTER.csv`.
+12. `python3 -I tools/core/ground_contact.py <plateau_core.json> docs/core/terrain/ground_contact.json` - building ground vs pavement at each corner.
+13. `python3 -I tools/core/commons_survey.py <out.json> 250` - polite Commons count by year/licence; HTTP 429 = "unverified", never "none".
