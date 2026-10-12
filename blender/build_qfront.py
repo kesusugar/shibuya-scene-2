@@ -24,7 +24,7 @@ F2, F3 = M['podium']['f2_bottom_m'], M['podium']['f2_top_m']
 TOP = M['glass_storeys_top_m']; CROWN = M['crown']['top_m']; DECK = M['plateau_inner_roof_m']
 LEVELS = [F2] + [F3 + 5.0 * k for k in range(7)]          # slab tops: 2F, 3F..8F, roof (40.2)
 MULL = M['front_face']['mullion_pitch_m']; RAIL = M['front_face']['transom_pitch_m']
-SIDE_FIN = .97; CROWN_FIN = M['crown']['fin_pitch_m']
+SIDE_FIN = .97; CROWN_FIN = M['crown']['fin_pitch_m']   # 0.97 m: on the mullion module (v4, counted on the Q032 crown crop)
 CAVITY = .9
 
 # ---------------------------------------------------------------- plan
@@ -102,6 +102,47 @@ def glass(name, tint, transmit, rough=.02, ior=1.9):
     m.blend_method = 'BLEND' if hasattr(m, 'blend_method') else None
     return m
 
+def panel_glass(name, tint, transmit, ior, pw, ph, rough=.012, wobble=.035, streak=.5, base=None):
+    """Curtain-wall glazing that is not one perfect mirror: every pane (pw x ph m, from the ribbon UVs in metres) gets its
+    own slight tilt, roughness, reflectance and see-through; faint vertical rain streaks roughen and dull it."""
+    m, nt, out = node_mat(name); L = nt.links.new
+    tc = nt.nodes.new('ShaderNodeTexCoord'); geo = nt.nodes.new('ShaderNodeNewGeometry')
+    dv = nt.nodes.new('ShaderNodeVectorMath'); dv.operation = 'DIVIDE'; dv.inputs[1].default_value = (pw, ph, 1)
+    fl = nt.nodes.new('ShaderNodeVectorMath'); fl.operation = 'FLOOR'
+    wn = nt.nodes.new('ShaderNodeTexWhiteNoise'); wn.noise_dimensions = '3D'
+    L(tc.outputs['UV'], dv.inputs[0]); L(dv.outputs['Vector'], fl.inputs[0]); L(fl.outputs['Vector'], wn.inputs['Vector'])
+    sep = nt.nodes.new('ShaderNodeSeparateColor'); L(wn.outputs['Color'], sep.inputs['Color'])
+    # per-pane normal wobble: N + (rand - .5) * wobble
+    sub = nt.nodes.new('ShaderNodeVectorMath'); sub.operation = 'SUBTRACT'; sub.inputs[1].default_value = (.5, .5, .5)
+    L(wn.outputs['Color'], sub.inputs[0])
+    sc_ = nt.nodes.new('ShaderNodeVectorMath'); sc_.operation = 'SCALE'; sc_.inputs['Scale'].default_value = wobble; L(sub.outputs['Vector'], sc_.inputs[0])
+    ad = nt.nodes.new('ShaderNodeVectorMath'); ad.operation = 'ADD'; L(geo.outputs['Normal'], ad.inputs[0]); L(sc_.outputs['Vector'], ad.inputs[1])
+    nm = nt.nodes.new('ShaderNodeVectorMath'); nm.operation = 'NORMALIZE'; L(ad.outputs['Vector'], nm.inputs[0])
+    # vertical streaks (UV stretched in v)
+    mp = nt.nodes.new('ShaderNodeMapping'); mp.inputs['Scale'].default_value = (7, .25, 1); L(tc.outputs['UV'], mp.inputs['Vector'])
+    nz = nt.nodes.new('ShaderNodeTexNoise'); nz.inputs['Scale'].default_value = 2.5; nz.inputs['Detail'].default_value = 5; L(mp.outputs['Vector'], nz.inputs['Vector'])
+    cr = nt.nodes.new('ShaderNodeMapRange'); cr.inputs['From Min'].default_value = .5; cr.inputs['From Max'].default_value = .75; L(nz.outputs['Fac'], cr.inputs['Value'])
+    # roughness = rough + .03*r + .05*streak
+    r1 = nt.nodes.new('ShaderNodeMath'); r1.operation = 'MULTIPLY_ADD'; r1.inputs[1].default_value = .03; r1.inputs[2].default_value = rough; L(sep.outputs['Red'], r1.inputs[0])
+    r2 = nt.nodes.new('ShaderNodeMath'); r2.operation = 'MULTIPLY_ADD'; r2.inputs[1].default_value = .05*streak; L(cr.outputs['Result'], r2.inputs[0]); L(r1.outputs['Value'], r2.inputs[2])
+    # reflectance tint = .72 + .25*g - .12*streak
+    g1 = nt.nodes.new('ShaderNodeMath'); g1.operation = 'MULTIPLY_ADD'; g1.inputs[1].default_value = .25; g1.inputs[2].default_value = .72; L(sep.outputs['Green'], g1.inputs[0])
+    g2 = nt.nodes.new('ShaderNodeMath'); g2.operation = 'MULTIPLY_ADD'; g2.inputs[1].default_value = -.12*streak; L(cr.outputs['Result'], g2.inputs[0]); L(g1.outputs['Value'], g2.inputs[2])
+    gc = nt.nodes.new('ShaderNodeCombineColor'); [L(g2.outputs['Value'], gc.inputs[i]) for i in range(3)]
+    # see-through = transmit * (.45 + 1.1*b)
+    b1 = nt.nodes.new('ShaderNodeMath'); b1.operation = 'MULTIPLY_ADD'; b1.inputs[1].default_value = 1.1; b1.inputs[2].default_value = .45; L(sep.outputs['Blue'], b1.inputs[0])
+    tcol = nt.nodes.new('ShaderNodeMix'); tcol.data_type = 'RGBA'; tcol.blend_type = 'MULTIPLY'; tcol.inputs['Factor'].default_value = 1
+    tcol.inputs['A'].default_value = (tint[0]*transmit, tint[1]*transmit, tint[2]*transmit, 1); L(b1.outputs['Value'], tcol.inputs['B'])
+    tr = nt.nodes.new('ShaderNodeBsdfTransparent'); L(tcol.outputs['Result'], tr.inputs['Color'])
+    gl = nt.nodes.new('ShaderNodeBsdfGlossy'); L(r2.outputs['Value'], gl.inputs['Roughness']); L(gc.outputs['Color'], gl.inputs['Color']); L(nm.outputs['Vector'], gl.inputs['Normal'])
+    fr = nt.nodes.new('ShaderNodeFresnel'); fr.inputs['IOR'].default_value = ior; L(nm.outputs['Vector'], fr.inputs['Normal'])
+    mx = nt.nodes.new('ShaderNodeMixShader'); L(tr.outputs['BSDF'], mx.inputs[1]); L(gl.outputs['BSDF'], mx.inputs[2])
+    if base is None: L(fr.outputs['Fac'], mx.inputs['Fac'])
+    else:   # coated glazing: a near-constant reflectance with only a little fresnel rise (Q032 reads one tone top to bottom)
+        fm = nt.nodes.new('ShaderNodeMath'); fm.operation = 'MULTIPLY_ADD'; fm.inputs[1].default_value = .35; fm.inputs[2].default_value = base
+        L(fr.outputs['Fac'], fm.inputs[0]); L(fm.outputs['Value'], mx.inputs['Fac'])
+    L(mx.outputs['Shader'], out.inputs['Surface']); return m
+
 def emissive_image(name, path, strength, sat=1.0):
     m, nt, out = node_mat(name)
     tx = nt.nodes.new('ShaderNodeTexImage'); tx.image = bpy.data.images.load(path); tx.extension = 'CLIP'
@@ -125,6 +166,19 @@ def printed(name, path, night_emit=1.5):
     tx = nt.nodes.new('ShaderNodeTexImage'); tx.image = bpy.data.images.load(path); tc = nt.nodes.new('ShaderNodeTexCoord')
     nt.links.new(tc.outputs['UV'], tx.inputs['Vector']); nt.links.new(tx.outputs['Color'], b.inputs['Base Color'])
     if NIGHT: nt.links.new(tx.outputs['Color'], b.inputs['Emission Color']); b.inputs['Emission Strength'].default_value = night_emit
+    nt.links.new(b.outputs['BSDF'], out.inputs['Surface']); return m
+
+def tiles_white(name):
+    """Glazed 0.15 m white wall tiles with grey grout (subway parapets)."""
+    m, nt, out = node_mat(name); b = nt.nodes.new('ShaderNodeBsdfPrincipled'); b.inputs['Roughness'].default_value = .2
+    tc = nt.nodes.new('ShaderNodeTexCoord'); br = nt.nodes.new('ShaderNodeTexBrick'); br.offset = 0
+    br.inputs['Scale'].default_value = 1.0; br.inputs['Brick Width'].default_value = .15; br.inputs['Row Height'].default_value = .15
+    br.inputs['Mortar Size'].default_value = .006; br.inputs['Mortar'].default_value = (.35, .35, .35, 1)
+    br.inputs['Color1'].default_value = (.85, .85, .84, 1); br.inputs['Color2'].default_value = (.8, .8, .79, 1)
+    sxyz = nt.nodes.new('ShaderNodeSeparateXYZ'); cxyz = nt.nodes.new('ShaderNodeCombineXYZ'); add_ = nt.nodes.new('ShaderNodeMath')
+    nt.links.new(tc.outputs['Object'], sxyz.inputs[0]); nt.links.new(sxyz.outputs['X'], add_.inputs[0]); nt.links.new(sxyz.outputs['Y'], add_.inputs[1])
+    nt.links.new(add_.outputs['Value'], cxyz.inputs['X']); nt.links.new(sxyz.outputs['Z'], cxyz.inputs['Y'])
+    nt.links.new(cxyz.outputs['Vector'], br.inputs['Vector']); nt.links.new(br.outputs['Color'], b.inputs['Base Color'])
     nt.links.new(b.outputs['BSDF'], out.inputs['Surface']); return m
 
 def tiles(name):
@@ -172,24 +226,24 @@ MAT = {
  'front_rail': principled('front_rail', (.52, .53, .55), metal=.6, rough=.3),
  'rail': principled('rail_alu', (.84, .85, .86), metal=.4, rough=.28, streaks=.12),
  'mullion': principled('mullion', (.55, .57, .59), metal=.8, rough=.3),
- 'dark_glass': glass('glass_dark', (.45, .55, .62), .04, ior=1.6 if NIGHT else 2.4),   # coated low-e glazing: a stronger mirror than plain glass
+ 'dark_glass': panel_glass('glass_dark', (.45, .55, .62), .04, 1.6 if NIGHT else 1.45, MULL, RAIL, base=None if NIGHT else .42),   # coated low-e glazing: a stronger mirror than plain glass
  'crown_glass': glass('glass_crown', (.40, .46, .50), .35, rough=.04, ior=1.7),
  'q_bar': principled('q_bar', (.75, .05, .07), rough=.35, emit=(1, .1, .1), estr=(5 if NIGHT else 0)),
- 'clear_glass': glass('glass_clear', (.85, .93, .92), .78),
- 'shop_glass': glass('glass_shop', (.95, .97, .96), .88, rough=.01),
+ 'clear_glass': panel_glass('glass_clear', (.85, .93, .92), .78, 1.6, MULL, 4.9, wobble=.02, streak=.3),
+ 'shop_glass': panel_glass('glass_shop', (.95, .97, .96), .88, 1.5, MULL, 3.4, rough=.006, wobble=.012, streak=.2),
  'slab': principled('slab_edge', (.30, .30, .31), rough=.8),
  'ceiling': principled('ceiling', (.78, .77, .74), rough=.85),
  'ceil_light': principled('ceil_light', (.95, .95, .92), rough=.4, emit=(1, .86, .66), estr=(20 if NIGHT else 2.0)),
- 'shop_light': principled('shop_light', (.95, .9, .8), rough=.4, emit=(1, .78, .5), estr=(30 if NIGHT else 6.0)),
+ 'shop_light': principled('shop_light', (.95, .9, .8), rough=.4, emit=(1, .78, .5), estr=(30 if NIGHT else 2.0)),
  'floor': principled('floor', (.36, .34, .31), rough=.55),
  'core': principled('core_wall', (.22, .21, .2), rough=.8),
  'books': books('shop_books'),
  'shelf': principled('shelf', (.12, .12, .13), rough=.6),
  'goods': principled('goods', (.22, .19, .17), rough=.6, emit=(1, .85, .7), estr=(.6 if NIGHT else .25)),
- 'steel': principled('truss_steel', (.55, .56, .57) if not NIGHT else (.05, .05, .055), metal=.3 if NIGHT else .5, rough=.75 if NIGHT else .4),
+ 'steel': principled('truss_steel', (.3, .31, .32) if not NIGHT else (.05, .05, .055), metal=.3 if NIGHT else .5, rough=.75 if NIGHT else .4),
  'plant': principled('plant', (.72, .73, .72) if not NIGHT else (.08, .085, .09), metal=.2, rough=.5),
  'concrete': principled('concrete', (.55, .54, .52), rough=.85),
- 'blind': principled('blind_wood', (.45, .28, .16), rough=.7, emit=(.95, .65, .4), estr=(.5 if NIGHT else .45)),
+ 'blind': principled('blind_wood', (.20, .085, .035), rough=.65, emit=(.95, .65, .4), estr=(.5 if NIGHT else 0)),
  'brace': principled('brace_white', (.88, .88, .88), metal=.1, rough=.35),
  'letters': principled('letters', (.95, .95, .95), rough=.3, emit=(1, 1, 1), estr=(4 if NIGHT else 0)),
  'sb_letters': principled('sb_letters', (.93, .93, .9), rough=.3, emit=(.15, 1, .45), estr=(5 if NIGHT else 0)),
@@ -201,7 +255,7 @@ MAT = {
  'rib': principled('rib_alu', (.74, .75, .77), metal=.5, rough=.3, streaks=.15),
  'kerb': principled('kerb', (.55, .54, .52), rough=.8),
  'zebra': principled('zebra', (.82, .82, .80), rough=.6),
- 'shop_in': principled('shop_interior', (.05, .045, .04), rough=.6, emit=(1, .82, .6), estr=(.35 if NIGHT else .15)),
+ 'shop_in': principled('shop_interior', (.05, .045, .04), rough=.6, emit=(1, .82, .6), estr=(.35 if NIGHT else .02)),
  'context': principled('context', (.42, .42, .44), rough=.7, streaks=.2),
  'ctx_win': ctx_windows('context_windows'),
  'led': emissive_image('qs_eye_main', os.path.join(TEX, 'led_main.png'), 7 if NIGHT else .8, sat=1.0 if NIGHT else .6),
@@ -238,11 +292,11 @@ class Builder:
             lay = bm.loops.layers.uv.verify()
             for loop, u in zip(f.loops, uv): loop[lay].uv = u
     def ribbon(s, coll, mat, poly, z0, z1, closed=True):
-        n = len(poly); rng = range(n if closed else n-1)
+        n = len(poly); rng = range(n if closed else n-1); u = 0.
         for i in rng:
-            a, b = poly[i], poly[(i+1) % n]
-            if (b-a).length < 1e-4: continue
-            s.quad(coll, mat, [(a.x, a.y, z0), (b.x, b.y, z0), (b.x, b.y, z1), (a.x, a.y, z1)])
+            a, b = poly[i], poly[(i+1) % n]; L = (b-a).length
+            if L < 1e-4: continue
+            s.quad(coll, mat, [(a.x, a.y, z0), (b.x, b.y, z0), (b.x, b.y, z1), (a.x, a.y, z1)], uv=[(u, z0), (u+L, z0), (u+L, z1), (u, z1)]); u += L
     def prism(s, coll, mat, poly, z0, z1):
         bm = s.bm(coll, mat); v0 = [bm.verts.new((p.x, p.y, z0)) for p in poly]; v1 = [bm.verts.new((p.x, p.y, z1)) for p in poly]
         bm.faces.new(v0[::-1]); bm.faces.new(v1)
@@ -284,6 +338,16 @@ def arc_stations(step, inset=0.):
         out.append((p, t, d))
     return out
 
+# helpers on the front curve (u = metres along the face from the centre line, + = image right in Q032)
+tang = Vector((-ARC_N.y, ARC_N.x)); MID_ANG = math.atan2(ARC_N.y, ARC_N.x)
+_s = 1 if (Vector((math.cos(MID_ANG+.01), math.sin(MID_ANG+.01))) - ARC_N).dot(tang) > 0 else -1
+def arc_at(u, rad):
+    """Point on the front curve u metres (along the face, + = image right) from the centre line, at radius rad."""
+    g = MID_ANG + _s*u/R; d = Vector((math.cos(g), math.sin(g))); t = Vector((-d.y, d.x))*_s
+    return CEN + d*rad, t, d
+def yaw_t(t): return math.atan2(t.y, t.x)
+U_END = ARC_LEN/2                        # the curve runs u = -U_END .. +U_END (about +-9.3 m)
+
 # ================================================================ 01 STRUCTURE / INTERIOR
 INNER2 = offset(OUTLINE, CAVITY+.25)
 for z in LEVELS:
@@ -293,6 +357,8 @@ CORE = offset(OUTLINE, 10.5)
 B.prism('01_STRUCTURE', 'core', CORE, 0, TOP)
 for i, z in enumerate(LEVELS[:-1]):
     ztop = LEVELS[i+1]-.45; ceil = ztop - .05
+    if i == 0:   # 2F is the Starbucks floor, fitted out in section 06
+        B.prism('08_INTERIOR', 'ceiling', offset(OUTLINE, CAVITY+.3), ceil-.12, ceil); continue
     B.prism('08_INTERIOR', 'floor', offset(OUTLINE, CAVITY+.3), z, z+.02)
     # ceiling with linear light rows parallel to the front
     B.prism('08_INTERIOR', 'ceiling', offset(OUTLINE, CAVITY+.3), ceil-.12, ceil)
@@ -315,7 +381,6 @@ INNER_ARC = [CEN + (p-CEN).normalized()*(R-CAVITY) for p in ARC]
 B.ribbon('02_INNER_GLASS', 'dark_glass', INNER_ARC, F3, TOP, closed=False)
 B.ribbon('02_INNER_GLASS', 'clear_glass', INNER_ARC, F2, F3, closed=False)
 SHOP_ARC = [CEN + (p-CEN).normalized()*(R-1.6) for p in ARC]
-B.ribbon('06_GROUND_FLOOR', 'shop_glass', SHOP_ARC, 0, F2-.3, closed=False)
 # side faces: glass behind the dense fins
 side_inner = []
 for a, b, L, t, n, k in segments(INNER):
@@ -323,8 +388,9 @@ for a, b, L, t, n, k in segments(INNER):
 for i, (a, b, L, t, n, k) in enumerate(segments(OUTLINE, KIND)):
     if k != 'side': continue
     ia, ib = a - n*CAVITY, b - n*CAVITY
-    B.quad('02_INNER_GLASS', 'dark_glass', [(ia.x, ia.y, F2), (ib.x, ib.y, F2), (ib.x, ib.y, TOP), (ia.x, ia.y, TOP)])
-    B.quad('06_GROUND_FLOOR', 'shop_glass', [(ia.x, ia.y, 0), (ib.x, ib.y, 0), (ib.x, ib.y, F2-.3), (ia.x, ia.y, F2-.3)])
+    Ls = (ib-ia).length
+    B.quad('02_INNER_GLASS', 'dark_glass', [(ia.x, ia.y, F2), (ib.x, ib.y, F2), (ib.x, ib.y, TOP), (ia.x, ia.y, TOP)], uv=[(0, F2), (Ls, F2), (Ls, TOP), (0, TOP)])
+    B.quad('06_GROUND_FLOOR', 'shop_glass', [(ia.x, ia.y, 0), (ib.x, ib.y, 0), (ib.x, ib.y, F2-.3), (ia.x, ia.y, F2-.3)], uv=[(0, 0), (Ls, 0), (Ls, F2-.3), (0, F2-.3)])
 # front mullions (1.78 m) and transom rails (3.95 m): the visible grid on the dark front
 for p, t, d in arc_stations(MULL):
     q = CEN + d*(R-CAVITY+.12)
@@ -360,7 +426,7 @@ for a, b, L, t, n, k in segments(OUTLINE, KIND):
             B.box('03_OUTER_SKIN', 'mullion', (m.x, m.y, z_), (L/cnt+.02, .12, .07), math.atan2(t.y, t.x))
     # Q032 close-up of the side faces: short white brackets between neighbouring fins, staggered, give a ladder rhythm
     for j in range(cnt):
-        m = (pts[j]+pts[j+1])/2; top_ = min(tops[j], tops[j+1]) - .3; z_ = F2 + .6 + (j % 2)*.62
+        m = (pts[j]+pts[j+1])/2; top_ = min(tops[j], tops[j+1], TOP) - .3; z_ = F2 + .6 + (j % 2)*.62   # the crown screen above 40.2 m is open fins only
         while z_ < top_:
             B.box('03_OUTER_SKIN', 'fin', (m.x, m.y, z_), (L/cnt-.04, .06, .06), math.atan2(t.y, t.x)); z_ += 1.24
 
@@ -381,57 +447,64 @@ for i in range(N):
 # ================================================================ 05 CROWN
 for p, t, d in arc_stations(CROWN_FIN):
     q = CEN + d*(R+.15)
-    B.box('05_CROWN', 'fin', (q.x, q.y, (TOP+CROWN)/2), (.07, .45, CROWN-TOP), math.atan2(t.y, t.x))
-for zz in (TOP+.1, TOP+3.8, DECK+.2, CROWN-.2):
+    B.box('05_CROWN', 'fin', (q.x, q.y, (TOP+CROWN)/2), (.20, .30, CROWN-TOP), math.atan2(t.y, t.x))   # 0.2 m tubes: about a quarter of the bay in Q032
+LT_BOT = M['crown']['letters']['bottom_m']
+for zz in (TOP+.1, TOP+1.0, TOP+2.95, TOP+5.0, LT_BOT-.8, CROWN-.2):     # rings read off the Q032 crown crop: 41.2 / 43.1 / 45.2 / 47.4 / 52 m
     ring = [CEN + (p-CEN).normalized()*(R+.2) for p in ARC]
     for i in range(len(ring)-1):
         a, b = ring[i], ring[i+1]; m = (a+b)/2; t = (b-a).normalized()
-        B.box('05_CROWN', 'rail', (m.x, m.y, zz), ((b-a).length+.02, .6, .3 if zz > CROWN-1 else .18), math.atan2(t.y, t.x))
+        B.box('05_CROWN', 'rail', (m.x, m.y, zz), ((b-a).length+.02, .4 if zz > CROWN-1 else .22, .3 if zz > CROWN-1 else .1), math.atan2(t.y, t.x))
 B.prism('05_CROWN', 'slab', offset(OUTLINE, 1.0), TOP-.4, TOP)
 # Q032: a glazed screen sits behind the crown fins; the truss shows through it dark, the sky reflects in it
-B.ribbon('05_CROWN', 'crown_glass', INNER_ARC, TOP, M['crown']['letters']['bottom_m']-1.6, closed=False)   # stops below the letters: no mirrored QFRONT in it
+# v4: no glazing in the crown. Q032 shows sky through it: the screen is fins + an open steel frame.
 # plant enclosure (PLATEAU inner roof 48.4 m), set back
 B.prism('05_CROWN', 'plant', offset(OUTLINE, 11.0), TOP, TOP+2.6)
 for k in range(6):   # rooftop plant units (PLATEAU's 48.4 m returns), set well back
     c = CEN + (ARC_MID-CEN)*.35 + Vector((random.uniform(-6, 6), random.uniform(-6, 6)))
     B.box('05_CROWN', 'plant', (c.x, c.y, TOP+2.6+1.2), (random.uniform(2, 4), random.uniform(2, 4), 2.4), random.random())
+MAT['plant_white'] = principled('plant_white', (.82, .82, .8) if not NIGHT else (.1, .1, .1), rough=.5)
+c = CEN + (ARC_MID-CEN)*.55
+B.box('05_CROWN', 'plant_white', (c.x, c.y, (TOP+DECK+1.2)/2), (2.6, 3.2, DECK+1.2-TOP), MID_ANG if 'MID_ANG' in globals() else 0)
+for k in range(20):   # white plant units in the lower crown, seen between the fins (Q032)
+    q, t, d = arc_at(random.uniform(-U_END+1, U_END-1), R - random.uniform(3.5, 7.5))
+    h_ = random.uniform(1.6, 3.0)
+    B.box('05_CROWN', 'plant_white', (q.x, q.y, TOP+1.0+h_/2), (random.uniform(1.0, 2.2), random.uniform(1.0, 1.8), h_), math.atan2(t.y, t.x))
+    B.box('05_CROWN', 'steel', (q.x, q.y, TOP+.5), (1.0, 1.0, 1.0), math.atan2(t.y, t.x))   # stand
 # space truss between the skin and the enclosure: two chords rings, posts and diagonals
+def stations_along(poly, step):
+    """Points every `step` metres along a closed polyline (by arc length, so the many short segments of the curve
+    do not each get a post)."""
+    out = []; acc = 0.
+    for a, b, L, t, n, k in segments(poly):
+        d = (step - acc) % step if out else 0.
+        while d <= L: out.append(a + t*d); d += step
+        acc = (acc + L) % step
+    return out
 ring = offset(OUTLINE, 2.2)
-posts = []
-for a, b, L, t, n, k in segments(ring):
-    cnt = max(1, round(L/6.0))
-    for j in range(cnt): posts.append(a + t*(L*j/cnt))
-for p in posts: B.beam('05_CROWN', 'steel', (p.x, p.y, TOP), (p.x, p.y, CROWN-.6), .32)
-for zz in (TOP+.4, TOP+5.6, CROWN-.7):
+posts = stations_along(ring, 6.0)
+for p in posts: B.beam('05_CROWN', 'steel', (p.x, p.y, TOP), (p.x, p.y, CROWN-.6), .3)
+CROWN_GIRTS = [TOP+.4, TOP+2.1, TOP+4.2, CROWN-.7]     # Q032: a sparse frame; the sky shows between the members
+for zz in CROWN_GIRTS:
     for i in range(len(posts)):
         a, b = posts[i], posts[(i+1) % len(posts)]
-        if (b-a).length < 8: B.beam('05_CROWN', 'steel', (a.x, a.y, zz), (b.x, b.y, zz), .28)
+        if (b-a).length < 8: B.beam('05_CROWN', 'steel', (a.x, a.y, zz), (b.x, b.y, zz), .24)
 for i in range(len(posts)):
     a, b = posts[i], posts[(i+1) % len(posts)]
     if (b-a).length > 8: continue
-    if i % 2: B.beam('05_CROWN', 'steel', (a.x, a.y, TOP+.4), (b.x, b.y, TOP+5.6), .2); B.beam('05_CROWN', 'steel', (b.x, b.y, TOP+5.6), (a.x, a.y, CROWN-.7), .2)
-    else: B.beam('05_CROWN', 'steel', (b.x, b.y, TOP+.4), (a.x, a.y, TOP+5.6), .2); B.beam('05_CROWN', 'steel', (a.x, a.y, TOP+5.6), (b.x, b.y, CROWN-.7), .2)
-ring2 = offset(OUTLINE, 5.0); posts2 = []
-for a, b, L, t, n, k in segments(ring2):
-    cnt = max(1, round(L/3.0))
-    for j in range(cnt): posts2.append(a + t*(L*j/cnt))
+    B.beam('05_CROWN', 'steel', (a.x, a.y, TOP+.4), (b.x, b.y, TOP+4.2), .16); B.beam('05_CROWN', 'steel', (b.x, b.y, TOP+.4), (a.x, a.y, TOP+4.2), .16)   # X in every other bay
+ring2 = offset(OUTLINE, 5.0); posts2 = stations_along(ring2, 6.0)
 for p in posts2: B.beam('05_CROWN', 'steel', (p.x, p.y, TOP), (p.x, p.y, DECK), .22)
-for zz in (TOP+.3, TOP+2.9, TOP+5.6, DECK-.2):
+for zz in (TOP+.3, DECK-.2):
     for i in range(len(posts2)):
         a, b = posts2[i], posts2[(i+1) % len(posts2)]
         if (b-a).length < 5: B.beam('05_CROWN', 'steel', (a.x, a.y, zz), (b.x, b.y, zz), .16)
 for i in range(len(posts2)):
     a, b = posts2[i], posts2[(i+1) % len(posts2)]
-    if (b-a).length > 5: continue
-    B.beam('05_CROWN', 'steel', (a.x, a.y, TOP+.3), (b.x, b.y, TOP+2.9), .1); B.beam('05_CROWN', 'steel', (b.x, b.y, TOP+.3), (a.x, a.y, TOP+2.9), .1)
+    pass
 for p in posts[::2]:   # radial ties between the two rings
     q = min(posts2, key=lambda r: (r-p).length)
-    for zz in (TOP+2.9, DECK-.2): B.beam('05_CROWN', 'steel', (p.x, p.y, zz), (q.x, q.y, zz), .16)
-# a few big diagonal members seen through the front (Q031)
-for k in range(5):
-    g0 = a0 + SWEEP*(.1+.2*k); g1 = g0 + SWEEP*.12
-    p0 = CEN + Vector((math.cos(g0), math.sin(g0)))*(R-2.2); p1 = CEN + Vector((math.cos(g1), math.sin(g1)))*(R-4.5)
-    B.beam('05_CROWN', 'steel', (p0.x, p0.y, TOP+.5), (p1.x, p1.y, CROWN-1.0), .35)
+    B.beam('05_CROWN', 'steel', (p.x, p.y, DECK-.2), (q.x, q.y, DECK-.2), .16)
+# (v4: the five big diagonals were removed - with the denser rings they formed a solid-looking wall)
 
 # QFRONT lettering (Blender built-in font, DejaVu): white channel letters behind the crown fins
 def text_object(body, size, extrude, coll, mat, loc, yaw, align='CENTER', rot_x=math.pi/2, font=None):
@@ -448,52 +521,168 @@ bpy.context.view_layer.update(); qob.scale.x = lt['width_m']/max(qob.dimensions.
 qx = lp - Vector((-ARC_N.y, ARC_N.x))*(lt['width_m']*.41) + ARC_N*.2
 B.box('05_CROWN', 'q_bar', (qx.x, qx.y, lt['bottom_m']+lt['height_m']*.55), (1.0, .1, .2), math.atan2(ARC_N.y, ARC_N.x)+math.pi/2)
 
-# ================================================================ 06 GROUND FLOOR + 2F
-# 2F X-braces behind the glass (Q107 / Q128): white tubes, two X per ~6 m
-br = arc_stations(5.6, inset=CAVITY+.6)
-for i in range(len(br)-1):
-    p0, p1 = br[i][0], br[i+1][0]
-    B.beam('06_GROUND_FLOOR', 'brace', (p0.x, p0.y, F2), (p1.x, p1.y, F3), .45)
-    B.beam('06_GROUND_FLOOR', 'brace', (p1.x, p1.y, F2), (p0.x, p0.y, F3), .45)
-# 2F wood blinds, part lowered
-for p, t, d in arc_stations(MULL, inset=CAVITY+.25)[:-1]:
-    # Q032 (day): the wood blinds are down across the whole 2F; Q031 (dusk): about a third are up
+# ================================================================ 06 GROUND FLOOR + 2F  (v4, read off Q032 at 25.4 px/m)
+# Q032 podium, bottom to top: 1F glazing with white mullions and a recessed central entrance; a white Y column at the
+# east end of the curve with the Starbucks street door recessed behind it; a light 2F slab band (4.3-5.5 m) carrying
+# dark TSUTAYA letters; 2F Starbucks behind brown slatted blinds lowered about two thirds, with window-bar seating.
+ENT0, ENT1 = -3.2, 3.6                   # recessed entrance (behind the subway canopy)
+BAND0, BAND1 = 4.3, 5.5
+
+MAT['band_white'] = principled('band_white', (.80, .80, .78), metal=.35, rough=.3, streaks=.12)
+MAT['tsutaya_dark'] = principled('tsutaya_dark', (.025, .025, .03), rough=.35)
+MAT['mull_white'] = principled('mull_white', (.86, .86, .85), metal=.3, rough=.3)
+MAT['stone_dark'] = principled('stone_dark', (.06, .06, .065), rough=.35)
+MAT['wood'] = principled('wood', (.33, .19, .09), rough=.55)
+MAT['tile_white'] = tiles_white('tile_white')
+MAT['pendant'] = principled('pendant', (.9, .8, .6), rough=.4, emit=(1, .72, .42), estr=(18 if NIGHT else 3))
+MAT['menu'] = principled('menu', (.05, .05, .05), rough=.4, emit=(1, .95, .85), estr=(1.5 if NIGHT else .6))
+MAT['sb_green'] = principled('sb_green', (.0, .25, .15), rough=.4, emit=(0, .35, .2), estr=(2 if NIGHT else 0))
+
+# --- 2F slab band (light, panelled) and the dark TSUTAYA letters on it
+for k in range(48):
+    u0 = -U_END + 2*U_END*k/48; u1 = u0 + 2*U_END/48
+    a, t, d = arc_at(u0, R+.25); b, _, _ = arc_at(u1, R+.25); m = (a+b)/2
+    B.box('06_GROUND_FLOOR', 'band_white', (m.x, m.y, (BAND0+BAND1)/2), ((b-a).length+.02, .55, BAND1-BAND0), yaw_t((b-a).normalized()))
+for u in [x*1.2 - U_END for x in range(int(2*U_END/1.2)+1)]:      # panel joints
+    q, t, d = arc_at(u, R+.53); B.box('06_GROUND_FLOOR', 'mullion', (q.x, q.y, (BAND0+BAND1)/2), (.015, .02, BAND1-BAND0), yaw_t(t))
+for k in range(48):
+    a, t, d = arc_at(-U_END + 2*U_END*k/48, R+.53); b, _, _ = arc_at(-U_END + 2*U_END*(k+1)/48, R+.53); m = (a+b)/2
+    B.box('06_GROUND_FLOOR', 'mullion', (m.x, m.y, (BAND0+BAND1)/2), ((b-a).length+.01, .02, .015), yaw_t((b-a).normalized()))
+q, t, d = arc_at(5.5, R+.78)        # flat letters clear the curved band at both ends (sagitta ~0.16 m)
+_tdk = text_object('TSUTAYA', 1.25, .08, '06_GROUND_FLOOR', 'tsutaya_dark', (q.x, q.y, (BAND0+BAND1)/2), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
+_tdk.data.bevel_depth = .035     # fattens the dark returns so they show as an outline around the white faces
+# Q032: white faces on dark returns - a second, white skin a few cm proud of the dark letters
+q2 = q + d*.13
+text_object('TSUTAYA', 1.25, .01, '06_GROUND_FLOOR', 'mull_white', (q2.x, q2.y, (BAND0+BAND1)/2), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
+
+# --- 1F glazing near the face, white mullions (0.97 m) and transom; recessed entrance in the middle
+G1 = R-.6
+for k in range(48):
+    u0 = -U_END + 2*U_END*k/48; u1 = u0 + 2*U_END/48
+    if ENT0 < (u0+u1)/2 < ENT1: continue
+    a, _, _ = arc_at(u0, G1); b, _, _ = arc_at(u1, G1)
+    B.quad('06_GROUND_FLOOR', 'shop_glass', [(a.x, a.y, 0), (b.x, b.y, 0), (b.x, b.y, BAND0), (a.x, a.y, BAND0)], uv=[(u0, 0), (u1, 0), (u1, BAND0), (u0, BAND0)])
+u = -U_END
+while u <= U_END + .01:
+    q, t, d = arc_at(u, G1+.06)
+    if not (ENT0 < u < ENT1): B.box('06_GROUND_FLOOR', 'mull_white', (q.x, q.y, BAND0/2), (.07, .14, BAND0), yaw_t(t))
+    u += MULL
+for k in range(48):
+    u0 = -U_END + 2*U_END*k/48; u1 = u0 + 2*U_END/48
+    if ENT0 < (u0+u1)/2 < ENT1: continue
+    a, _, _ = arc_at(u0, G1+.06); b, _, _ = arc_at(u1, G1+.06); m = (a+b)/2
+    B.box('06_GROUND_FLOOR', 'mull_white', (m.x, m.y, 3.4), ((b-a).length+.02, .14, .1), yaw_t((b-a).normalized()))
+# brown screens lowered on the upper 1F glazing west of the entrance (Q032)
+u = -U_END + .1
+while u < ENT0 - .3:
+    q, t, d = arc_at(u + MULL/2, G1-.12); drop = random.uniform(2.1, 2.6)
+    B.box('06_GROUND_FLOOR', 'blind', (q.x, q.y, 3.35-drop/2), (MULL-.1, .02, drop), yaw_t(t)); u += MULL
+# entrance recess: glass doors 4 m in, dark stone floor, side walls, lit soffit
+REC = R-4.6
+for k in range(12):
+    u0 = ENT0 + (ENT1-ENT0)*k/12; u1 = u0 + (ENT1-ENT0)/12
+    a, _, _ = arc_at(u0, REC); b, _, _ = arc_at(u1, REC)
+    B.quad('06_GROUND_FLOOR', 'shop_glass', [(a.x, a.y, 0), (b.x, b.y, 0), (b.x, b.y, 3.2), (a.x, a.y, 3.2)], uv=[(u0, 0), (u1, 0), (u1, 3.2), (u0, 3.2)])
+for u in [ENT0 + x*(ENT1-ENT0)/6 for x in range(7)]:
+    q, t, d = arc_at(u, REC+.05); B.box('06_GROUND_FLOOR', 'mullion', (q.x, q.y, 1.6), (.06, .1, 3.2), yaw_t(t))
+for uu in (ENT0, ENT1):
+    a, t, d = arc_at(uu, G1); b, _, _ = arc_at(uu, REC); m = (a+b)/2
+    B.box('06_GROUND_FLOOR', 'band_white', (m.x, m.y, BAND0/2), (.3, (a-b).length, BAND0), yaw_t(t))
+for k in range(8):
+    u0 = ENT0 + (ENT1-ENT0)*k/8; u1 = u0 + (ENT1-ENT0)/8; rr = (G1+REC)/2
+    a, _, _ = arc_at(u0, rr); b, _, _ = arc_at(u1, rr); m = (a+b)/2
+    B.box('06_GROUND_FLOOR', 'stone_dark', (m.x, m.y, .01), ((b-a).length+.02, G1-REC, .02), yaw_t((b-a).normalized()))
+    B.box('06_GROUND_FLOOR', 'band_white', (m.x, m.y, 3.3), ((b-a).length+.02, G1-REC, .2), yaw_t((b-a).normalized()))
+for u in (ENT0+1, (ENT0+ENT1)/2, ENT1-1):
+    for rr in (G1-1.2, G1-2.8):
+        q, t, d = arc_at(u, rr); B.box('06_GROUND_FLOOR', 'shop_light', (q.x, q.y, 3.18), (.25, .25, .03), yaw_t(t))
+
+# --- white Y column at the east end of the curve (Q032): trunk to 2.8 m, a vertical and a raking branch to the band
+for uc in (U_END - 1.2,):
+    c0, t, d = arc_at(uc, R-.25); c1, _, _ = arc_at(uc - 2.1, R-.25)
+    B.cyl('06_GROUND_FLOOR', 'mull_white', (c0.x, c0.y, 0), (c0.x, c0.y, 2.8), .6, 8)
+    B.cyl('06_GROUND_FLOOR', 'mull_white', (c0.x, c0.y, 2.5), (c0.x, c0.y, BAND0+.1), .5, 8)
+    B.cyl('06_GROUND_FLOOR', 'mull_white', (c0.x, c0.y, 2.5), (c1.x, c1.y, BAND0+.1), .45, 8)
+    B.sphere('06_GROUND_FLOOR', 'mull_white', (c0.x, c0.y, 2.7), .6, .8)
+# Starbucks street door: a dark recess beyond the column, small sign and a plain green roundel (no logo artwork)
+q, t, d = arc_at(U_END - .2, R-2.2)
+B.box('06_GROUND_FLOOR', 'stone_dark', (q.x, q.y, 1.6), (1.8, .2, 3.2), yaw_t(t))
+q, t, d = arc_at(U_END - .3, R-.4)
+text_object('STARBUCKS COFFEE', .28, .02, '06_GROUND_FLOOR', 'sb_letters', (q.x, q.y, 3.65), yaw_t(t)+0, font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
+B.cyl('06_GROUND_FLOOR', 'sb_green', (q.x - d.x*.05, q.y - d.y*.05, 2.7), (q.x + d.x*.05, q.y + d.y*.05, 2.7), .32, 20)
+
+# --- subway entrance in front of the doors (Q032): white-tiled parapets, white canopy on posts, stair void
+SW_U0, SW_U1, SW_F0, SW_F1 = -3.0, 6.6, 3.0, 6.2
+def front_pt(u, f): return ARC_MID + tang*u + ARC_N*f
+for f_ in (SW_F0, SW_F1):
+    a = front_pt(SW_U0, f_); b = front_pt(SW_U1, f_); m = (a+b)/2
+    B.box('06_GROUND_FLOOR', 'tile_white', (m.x, m.y, .55), (SW_U1-SW_U0, .25, 1.1), yaw_t(tang))
+c = front_pt(SW_U1, (SW_F0+SW_F1)/2); B.box('06_GROUND_FLOOR', 'tile_white', (c.x, c.y, .55), (.25, SW_F1-SW_F0, 1.1), yaw_t(tang))
+c = front_pt((SW_U0+SW_U1)/2, (SW_F0+SW_F1)/2); B.box('06_GROUND_FLOOR', 'stone_dark', (c.x, c.y, .16), (SW_U1-SW_U0-.3, SW_F1-SW_F0-.3, .02), yaw_t(tang))
+for k in range(10):          # steps going down towards the building
+    c = front_pt(SW_U0 + .3 + k*.32, (SW_F0+SW_F1)/2); B.box('06_GROUND_FLOOR', 'concrete', (c.x, c.y, .12 - k*.17), (.32, SW_F1-SW_F0-.4, .17), yaw_t(tang))
+c = front_pt((SW_U0+SW_U1)/2, (SW_F0+SW_F1)/2)
+B.box('06_GROUND_FLOOR', 'mull_white', (c.x, c.y, 2.55), (SW_U1-SW_U0+.6, SW_F1-SW_F0+.4, .35), yaw_t(tang))
+for u_ in (SW_U0, (SW_U0+SW_U1)/2, SW_U1):
+    for f_ in (SW_F0+.1, SW_F1-.1):
+        c = front_pt(u_, f_); B.cyl('06_GROUND_FLOOR', 'pole', (c.x, c.y, 1.1), (c.x, c.y, 2.4), .06, 8)
+for u_, w_ in ((-1.2, 1.6), (4.6, 1.4)):    # hanging station signs under the canopy edge
+    c = front_pt(u_, SW_F1+.25); B.box('06_GROUND_FLOOR', 'band_white', (c.x, c.y, 2.15), (w_, .12, .45), yaw_t(tang))
+    text_object('駅 Station', .2, .01, '06_GROUND_FLOOR', 'tsutaya_dark', (c.x + ARC_N.x*.07, c.y + ARC_N.y*.07, 2.15), yaw, font='/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf')
+
+# --- 2F: slatted brown blinds (venetian), window-bar seating, tables, pendants, coffee bar and menu boards
+for p, t, d in arc_stations(MULL, inset=CAVITY+.22)[:-1]:
     if NIGHT and random.random() < .35: continue
-    drop = (.5 + random.random()*1.8) if NIGHT else (3.4 + random.random()*.6)
-    B.box('06_GROUND_FLOOR', 'blind', (p.x, p.y, F3-.5-drop/2), (MULL-.12, .03, drop), math.atan2(t.y, t.x))
-# dark sign band at the 2F slab, canopy over the entrance, shop interior volume
-for i in range(len(ARC)-1):
-    a, b = ARC[i]+(ARC[i]-CEN).normalized()*.1, ARC[i+1]+(ARC[i+1]-CEN).normalized()*.1; m = (a+b)/2; t = (b-a).normalized()
-    B.box('06_GROUND_FLOOR', 'dark_band', (m.x, m.y, F2-.15), ((b-a).length+.02, .5, .9), math.atan2(t.y, t.x))
-cs = ARC_MID + ARC_N*1.2
-B.box('06_GROUND_FLOOR', 'rail', (cs.x, cs.y, M['podium']['canopy_m']+.6), (15.0, 2.6, .35), math.atan2(ARC_N.y, ARC_N.x)+math.pi/2)
-for s in (-1, 1):
-    tv = Vector((-ARC_N.y, ARC_N.x))*s*7.0; q = ARC_MID + ARC_N*2.3 + tv
-    B.box('06_GROUND_FLOOR', 'rail', (q.x, q.y, (M['podium']['canopy_m']+.6)/2), (.18, .18, M['podium']['canopy_m']+.6), 0)
-# 1F shop interior: floor, back wall 6 m in, ceiling with downlights, display tables and shelving
-B.prism('06_GROUND_FLOOR', 'floor', offset(OUTLINE, 1.7), .0, .03)
-B.ribbon('06_GROUND_FLOOR', 'shop_in', offset(OUTLINE, 7.5), 0, F2-.5)
-B.prism('06_GROUND_FLOOR', 'shelf' if NIGHT else 'ceiling', offset(OUTLINE, 1.7), F2-.75, F2-.6)   # dark ceiling: the light comes from the downlights
-for row in range(1, 5):
-    for p, t, d in arc_stations(1.8, inset=1.7+row*1.3):
-        B.box('06_GROUND_FLOOR', 'shop_light', (p.x, p.y, F2-.78), (.18, .18, .03), math.atan2(t.y, t.x))
-# TSUTAYA 1F (Q016 / Q107): low display tables near the glass, rows of tall book and media shelving behind
-for p, t, d in arc_stations(2.6, inset=3.2)[1:-1]:
+    drop = random.uniform(.5, 2.0) if NIGHT else random.uniform(2.6, 3.4)
+    top_ = F3 - .55; z = top_
+    B.box('06_GROUND_FLOOR', 'mullion', (p.x, p.y, top_ + .05), (MULL-.08, .08, .1), yaw_t(t))          # head rail
+    tilt = Matrix.Rotation(math.radians(72), 3, 'X')    # slats nearly closed: from the street they read as a brown screen with fine lines
+    while z > top_ - drop:
+        B.box('06_GROUND_FLOOR', 'blind', (p.x, p.y, z), (MULL-.12, .05, .012), yaw_t(t), tilt=tilt); z -= .045
+    B.box('06_GROUND_FLOOR', 'wood', (p.x, p.y, z), (MULL-.12, .05, .03), yaw_t(t))                     # bottom rail
+B.prism('06_GROUND_FLOOR', 'wood', offset(OUTLINE, CAVITY+.3), F2+.02, F2+.05)                          # wood floor
+for p, t, d in arc_stations(.6, inset=CAVITY+.75)[1:-1]:                                                 # window bar
+    B.box('06_GROUND_FLOOR', 'wood', (p.x, p.y, F2+1.05), (.62, .55, .05), yaw_t(t))
+for p, t, d in arc_stations(.75, inset=CAVITY+1.4)[1:-1]:                                                 # stools + guests
+    B.cyl('06_GROUND_FLOOR', 'mullion', (p.x, p.y, F2), (p.x, p.y, F2+.75), .03, 6); B.cyl('06_GROUND_FLOOR', 'wood', (p.x, p.y, F2+.72), (p.x, p.y, F2+.78), .18, 10)
+    if random.random() < .55:
+        top = f'cloth{random.randrange(len(CLOTH))}' if 'CLOTH' in globals() else 'shelf'
+        B.cyl('06_GROUND_FLOOR', 'shelf', (p.x, p.y, F2+.78), (p.x + d.x*.05, p.y + d.y*.05, F2+1.35), .17, 8, .15)
+        B.sphere('06_GROUND_FLOOR', 'skin', (p.x + d.x*.06, p.y + d.y*.06, F2+1.5), .1, 1.15)
+        B.sphere('06_GROUND_FLOOR', 'hair', (p.x + d.x*.04, p.y + d.y*.04, F2+1.53), .105, 1.05)
+for p, t, d in arc_stations(2.2, inset=CAVITY+3.2)[1:-1]:                                                 # tables and chairs
+    B.cyl('06_GROUND_FLOOR', 'mullion', (p.x, p.y, F2), (p.x, p.y, F2+.72), .04, 6); B.cyl('06_GROUND_FLOOR', 'wood', (p.x, p.y, F2+.72), (p.x, p.y, F2+.76), .4, 14)
+    for sgn in (-1, 1):
+        c = p + t*sgn*.65; B.box('06_GROUND_FLOOR', 'wood', (c.x, c.y, F2+.45), (.42, .42, .05), yaw_t(t)); B.box('06_GROUND_FLOOR', 'wood', (c.x+t.x*sgn*.2, c.y+t.y*sgn*.2, F2+.7), (.05, .42, .5), yaw_t(t))
+for p, t, d in arc_stations(1.2, inset=CAVITY+1.0)[1:-1]:                                                 # pendants over the bar
+    B.cyl('06_GROUND_FLOOR', 'mullion', (p.x, p.y, F2+2.4), (p.x, p.y, F3-.55), .006, 4)
+    B.cyl('06_GROUND_FLOOR', 'pendant', (p.x, p.y, F2+2.2), (p.x, p.y, F2+2.45), .12, 12, .05)
+bar = offset(OUTLINE, CAVITY+7.0)
+B.ribbon('06_GROUND_FLOOR', 'wood', bar, F2, F2+1.1)
+B.ribbon('06_GROUND_FLOOR', 'shop_in', offset(OUTLINE, CAVITY+8.2), F2, F3-.6)
+for p, t, d in arc_stations(1.6, inset=CAVITY+8.1)[2:-2]:
+    B.box('06_GROUND_FLOOR', 'menu', (p.x, p.y, F2+2.5), (1.2, .03, .7), yaw_t(t))
+
+# --- 1F TSUTAYA interior behind the glazing: display tables, then rows of shelving, ceiling with downlights
+B.prism('06_GROUND_FLOOR', 'floor', offset(OUTLINE, .65), .0, .03)
+B.ribbon('06_GROUND_FLOOR', 'shop_in', offset(OUTLINE, 9.0), 0, BAND0)
+B.prism('06_GROUND_FLOOR', 'shelf', offset(OUTLINE, .65), BAND0-.15, BAND0)
+for row in range(1, 6):
+    for p, t, d in arc_stations(1.8, inset=.6+row*1.4):
+        B.box('06_GROUND_FLOOR', 'shop_light', (p.x, p.y, BAND0-.17), (.18, .18, .03), yaw_t(t))
+for p, t, d in arc_stations(2.6, inset=2.4)[1:-1]:
     if random.random() < .6:
-        B.box('06_GROUND_FLOOR', 'shelf', (p.x, p.y, .45), (1.6, .9, .9), math.atan2(t.y, t.x))
-        B.box('06_GROUND_FLOOR', 'books', (p.x, p.y, .93), (1.5, .8, .06), math.atan2(t.y, t.x))
-for inset in (4.6, 5.8, 7.0):
+        B.box('06_GROUND_FLOOR', 'shelf', (p.x, p.y, .45), (1.6, .9, .9), yaw_t(t))
+        B.box('06_GROUND_FLOOR', 'books', (p.x, p.y, .93), (1.5, .8, .06), yaw_t(t))
+for inset in (5.6, 6.8, 8.0):
     for p, t, d in arc_stations(1.9, inset=inset)[1:-1]:
         if random.random() < .15: continue
         h = 1.6 + random.random()*.6
-        B.box('06_GROUND_FLOOR', 'shelf', (p.x, p.y, h/2), (1.75, .45, h), math.atan2(t.y, t.x))
-        B.box('06_GROUND_FLOOR', 'books', (p.x+d.x*.24, p.y+d.y*.24, h*.5), (1.65, .02, h*.85), math.atan2(t.y, t.x))
-# signage: STARBUCKS COFFEE (2F, left of centre) and TSUTAYA (band, right of centre) - text in a stock font
-tang = Vector((-ARC_N.y, ARC_N.x))
-sb = CEN + ARC_N*(R-CAVITY+.05) - tang*1.0   # mounted on the 2F glass, so its reflection sits under it
+        B.box('06_GROUND_FLOOR', 'shelf', (p.x, p.y, h/2), (1.75, .45, h), yaw_t(t))
+        B.box('06_GROUND_FLOOR', 'books', (p.x+d.x*.24, p.y+d.y*.24, h*.5), (1.65, .02, h*.85), yaw_t(t))
+# STARBUCKS COFFEE lettering mounted on the 2F glass (left of centre)
+sb, _, _ = arc_at(-1.0, R-CAVITY+.05)
 text_object('STARBUCKS COFFEE', 1.3, .05, '06_GROUND_FLOOR', 'sb_letters', (sb.x, sb.y, M['podium']['starbucks_sign_m']), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf')
-ts = ARC_MID + ARC_N*.4 + tang*5.8
-text_object('TSUTAYA', 1.7, .08, '06_GROUND_FLOOR', 'letters', (ts.x, ts.y, M['podium']['tsutaya_band_m']-.1), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
 # east face: tall vertical TSUTAYA letters (dark), on the side segment nearest the arc start
 for a, b, L, t, n, k in segments(OUTLINE, KIND):
     if k == 'side' and (a - Vector(P(4.44, -45.32))).length < .1 or (b - Vector(P(4.44, -45.32))).length < .1 and k == 'side':
@@ -810,6 +999,16 @@ def lens_finish():
     ct.links.new(em_.outputs['Mask'], bl.inputs['Image']); ct.links.new(bl.outputs['Image'], mr.inputs['Value'])
     ct.links.new(gl_.outputs['Image'], mx_.inputs[1]); ct.links.new(mr.outputs['Value'], mx_.inputs[2]); ct.links.new(mx_.outputs['Image'], comp.inputs['Image'])
 if 'mask' not in argv and 'nolens' not in argv: lens_finish()
+_bd = next((a_[7:] for a_ in argv if a_.startswith('border=')), None)
+if _bd and VIEW == 'q032':
+    # crop of the Q032 frame, in photo pixels (1280 x 1749): x0,y0,x1,y1; zoom=N renders it at N x the photo resolution
+    x0, y0, x1, y1 = [float(v) for v in _bd.split(',')]
+    sc.render.resolution_x, sc.render.resolution_y = 1280, 1749
+    sc.render.resolution_percentage = int(100*float(next((a_[5:] for a_ in argv if a_.startswith('zoom=')), '2')))
+    sc.render.use_border = True; sc.render.use_crop_to_border = True
+    sc.render.border_min_x, sc.render.border_max_x = x0/1280, x1/1280
+    sc.render.border_min_y, sc.render.border_max_y = 1 - y1/1749, 1 - y0/1749
+    VIEW = 'q032crop_' + next((a_[4:] for a_ in argv if a_.startswith('tag=')), 'crop')
 os.makedirs(OUT, exist_ok=True)
 if 'mask' in argv:   # silhouette matte for the shape check: QFRONT white, everything else and the sky black
     white = bpy.data.materials.new('mask_white'); white.use_nodes = True; wn = white.node_tree
