@@ -4,6 +4,7 @@ import { applyEmissive, groundOffset, hasArc, loadBuilding, type BuildingIO, typ
 import { loadGround, type GroundResult } from './world/ground';
 import { loadProjectedStreet, type ProjectedStreet, type ProjectedMetadata } from './world/projected-street';
 import { loadStreet, type StreetResult } from './world/street';
+import { loadContext, type ContextResult } from './world/context';
 import { applyClassPass, applyLook, parseLook } from './world/look';
 import { Color } from 'three';
 import { Lighting, type TimeOfDay } from './world/lighting';
@@ -58,6 +59,7 @@ ground.rotation.x = -Math.PI / 2; ground.position.y = useGround ? -0.62 : 0; gro
 scene.add(ground);
 let coreGround: GroundResult | undefined;
 let coreStreet: StreetResult | undefined;
+let coreContext: ContextResult | undefined;
 let projectedStreet: ProjectedStreet | undefined;
 
 const gltf = new GLTFLoader();
@@ -84,19 +86,23 @@ function setTime(t: TimeOfDay) {
   if (coreGround?.ok) applyLook(coreGround.root, t, groundLook);
   projectedStreet?.setTime(t, params.get('lamps') !== 'off');
   if (coreStreet?.ok) { applyLook(coreStreet.root, t, look, undefined, env); coreStreet.setTime(t); }
+  coreContext?.setTime(t);
   renderer.toneMappingExposure = t === 'day' ? look.dayExposure : look.nightExposure;
   bloom.enabled = bloomWanted && quality.bloom && t === 'night';
 }
 
 async function start() {
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
-  const [envState, results, groundRes, streetRes, projectedRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
+  const [envState, results, groundRes, streetRes, projectedRes, contextRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
     useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined),
     params.get('street') !== 'off' ? loadStreet(io.loadGlb, params.get('streeturl') === 'missing' ? '/street/core/missing.glb' : undefined, params.get('street') !== 'entrances') : Promise.resolve(undefined),
-    params.get('street') === 'projected' ? loadProjectedStreet(io, params.get('projectedurl') === 'missing' ? '/street/core/missing.glb' : undefined) : Promise.resolve(undefined)]);
+    params.get('street') === 'projected' ? loadProjectedStreet(io, params.get('projectedurl') === 'missing' ? '/street/core/missing.glb' : undefined) : Promise.resolve(undefined),
+    params.get('context') !== 'off' ? loadContext(io.loadGlb, params.get('contexturl') === 'missing' ? '/context/core/missing.glb' : undefined, params.get('context') !== 'nostation') : Promise.resolve(undefined)]);
   results.forEach((r: BuildingResult) => scene.add(r.root));
   coreGround = groundRes;
   coreStreet = streetRes;
+  coreContext = contextRes;
+  if (coreContext?.ok) scene.add(coreContext.root);
   projectedStreet = projectedRes;
   if (projectedStreet?.ok) scene.add(projectedStreet.root);
   $('provisional').textContent = projectedStreet?.ok ? '仮配置：支柱の位置・寸法・光量は確認待ち（橙色）' : coreStreet?.ok ? '街路設備は仮：出入口・樹木は2025年OSMの位置、信号・柵は規則による配置、形は標準寸法の汎用品' : '';
@@ -109,6 +115,7 @@ async function start() {
   if (params.get('datum') === 'off') for (const b of loaded) { b.hints.groundElevationTP = undefined; b.root.position.y = 0; }
   const problems = [
     ...(projectedStreet && !projectedStreet.ok ? [`写真からの仮配置を読み込めず: ${projectedStreet.error}（通常表示を継続）`] : []),
+    ...(coreContext && !coreContext.ok ? [`周辺の建物（C段階）の読み込みに失敗: ${coreContext.error}（他は表示を継続）`] : []),
     ...(coreStreet && !coreStreet.ok ? [`街路設備の読み込みに失敗: ${coreStreet.error}（建物と地面は表示を継続）`] : []),
     ...(coreGround && !coreGround.ok ? [`地面の読み込みに失敗: ${coreGround.error}（灰色の円盤を表示）`] : []),
     ...(coreGround?.ok && coreGround.missing.length ? [`地面の一部がない: ${coreGround.missing.join(', ')}`] : []),
@@ -119,7 +126,7 @@ async function start() {
   if (!building) { status(problems.join('\n')); return; }
   lighting.placeSun(building.hints);
   for (const b of loaded) lighting.placeFloods(b.hints);
-  controls.setObstacles([...loaded.map((b) => b.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
+  controls.setObstacles([...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
   controls.frameBuilding(building.hints);
   setTime(mode);
   const envNote = envState.day === 'fulfilled' && envState.night === 'fulfilled' ? '' : '（環境マップの一部を読み込めず、反射は簡易表示）';
@@ -135,6 +142,7 @@ async function start() {
     for (const b of loaded) applyClassPass(b.root, { ...b.emissive.day });
     if (coreGround?.ok) applyClassPass(coreGround.root);
     if (coreStreet?.ok) applyClassPass(coreStreet.root);
+    if (coreContext?.ok) applyClassPass(coreContext.root);
     if (projectedStreet?.ok) applyClassPass(projectedStreet.root);
     ground.material = new MeshStandardMaterial({ color: 0x000000 }); ground.visible = false;
     scene.background = new Color(0x000000); scene.environment = null; bloom.enabled = false;
@@ -150,6 +158,7 @@ async function start() {
     stats: Object.fromEntries(loaded.map((b) => [b.id, { ...b.stats, layers: b.layers, layerErrors: b.layerErrors }])),
     failed: results.filter((r) => !r.ok).map((r) => r.id),
     ground: coreGround ? { ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
+    context: coreContext ? { ok: coreContext.ok, error: coreContext.error, ...coreContext.stats } : 'off',
     street: coreStreet ? { ok: coreStreet.ok, error: coreStreet.error, mode: params.get('street') === 'entrances' ? 'entrances' : 'all', ...coreStreet.stats } : 'off',
     projected: projectedStreet ? { ok: projectedStreet.ok, error: projectedStreet.error, status: projectedStreet.metadata?.status, cameraStatus: projectedStreet.metadata?.camera_status, lamps: projectedStreet.lights.map((l) => ({ id: l.name, intensity: l.intensity, position: l.position.toArray() })), groundEmissive: projectedStreet.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? 0 : look.nightGround } : 'off',
     offsets: Object.fromEntries(loaded.map((b) => [b.id, b.root.position.y])),
