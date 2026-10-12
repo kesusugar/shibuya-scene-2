@@ -23,6 +23,15 @@ export interface ViewerHints {
   cameraFit?: CameraFit;
   /** Era layers (signs, ads, screens) as extra GLBs in the building folder: name -> file. */
   layers?: Record<string, string>;
+  /** T.P. elevation of the model's 0 m (PLATEAU). The viewer places it at Y = groundElevationTP - DATUM_TP. */
+  groundElevationTP?: number;
+}
+
+/** Common height datum of the Core (docs/core/C2A_PLAN.md): world Y = T.P. elevation - 15.000 m. */
+export const DATUM_TP = 15.0;
+/** Vertical offset of a building whose 0 m sits at hints.groundElevationTP; 0 for assets that do not say. */
+export function groundOffset(h: Pick<ViewerHints, 'groundElevationTP'>): number {
+  return h.groundElevationTP === undefined ? 0 : h.groundElevationTP - DATUM_TP;
 }
 
 /** Hints of a building with QFRONT's curved front: everything the floodlights and the Q032 view need. */
@@ -125,6 +134,7 @@ export async function loadBuilding(id: string, io: BuildingIO, base = '/building
     if (problems.length) throw new Error(`asset check failed: ${problems.slice(0, 4).join('; ')}`);
     const group = new Group();
     group.name = id;
+    group.position.y = groundOffset(hints);   // era layers share the model's 0 m, so they ride on the same group
     group.add(root);
     const layers: string[] = [], layerErrors: string[] = [];
     await Promise.all(Object.entries(hints.layers ?? {}).map(async ([name, file]) => {

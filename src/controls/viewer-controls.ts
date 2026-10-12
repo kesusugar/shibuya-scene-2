@@ -2,7 +2,7 @@ import { Object3D, PerspectiveCamera, Raycaster, Vector3 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls.js';
 import { planToWorld } from '../world/coords';
-import { hasArc, planCentre, type CameraFit, type ViewerHints } from '../world/buildings';
+import { groundOffset, hasArc, planCentre, type CameraFit, type ViewerHints } from '../world/buildings';
 
 export type ControlMode = 'orbit' | 'walk';
 const EYE = 1.6;
@@ -15,6 +15,7 @@ export class ViewerControls {
   private keys = new Set<string>();
   private ray = new Raycaster();
   private obstacles: Object3D[] = [];
+  private ground: Object3D[] = [];
   private projectionOverride = false;
   /** True while the photo-fitted view (fitView) owns the camera; resize keeps it instead of reapplying Q032. */
   fitActive = false;
@@ -32,6 +33,14 @@ export class ViewerControls {
   }
 
   setObstacles(objs: Object3D[]) { this.obstacles = objs; }
+  /** Walking keeps the eye 1.6 m above whatever these surfaces are under the camera (Core ground, else y = 0). */
+  setGround(objs: Object3D[]) { this.ground = objs; }
+  groundY(x: number, z: number): number {
+    if (!this.ground.length) return 0;
+    this.ray.set(new Vector3(x, 80, z), new Vector3(0, -1, 0)); this.ray.far = 200;
+    const hit = this.ray.intersectObjects(this.ground, true)[0];
+    return hit ? hit.point.y : 0;
+  }
 
   frameBuilding(h: ViewerHints) {
     this.clearProjectionOverride();
@@ -56,7 +65,8 @@ export class ViewerControls {
       this.clearProjectionOverride();
       const mid = planToWorld(h.arcMid ?? planCentre(h));
       const n = h.arcNormal ? planToWorld(h.arcNormal).normalize() : new Vector3(-0.6, 0, 0.8);
-      this.camera.position.copy(mid).addScaledVector(n, 18).setY(EYE);
+      this.camera.position.copy(mid).addScaledVector(n, 18);
+      this.camera.position.setY(this.groundY(this.camera.position.x, this.camera.position.z) + EYE);
       this.camera.lookAt(mid.clone().setY(12));
     } else {
       if (this.walk.isLocked) this.walk.unlock();
@@ -77,9 +87,10 @@ export class ViewerControls {
     const look: [number, number] = [-(n[0] * Math.cos(yw) + t[0] * Math.sin(yw)), -(n[1] * Math.cos(yw) + t[1] * Math.sin(yw))];
     this.setMode('orbit', h);
     this.orbit.enabled = false;
-    this.camera.position.copy(planToWorld(pos, c.height_m));
+    const dy = groundOffset(h);   // the Q032 fit is in QFRONT's own 0 m
+    this.camera.position.copy(planToWorld(pos, c.height_m + dy));
     this.camera.fov = (2 * Math.atan(c.H / 2 / c.fpx) * 180) / Math.PI;
-    this.camera.lookAt(planToWorld([pos[0] + look[0] * 100, pos[1] + look[1] * 100], c.height_m));
+    this.camera.lookAt(planToWorld([pos[0] + look[0] * 100, pos[1] + look[1] * 100], c.height_m + dy));
     this.camera.updateProjectionMatrix();
     const e = this.camera.projectionMatrix.elements;
     // three.js: ndc = (P * v).xy / -z, so the shift terms enter with a minus sign
@@ -92,8 +103,9 @@ export class ViewerControls {
   /**
    * A camera fitted to a reference photo (tools/camfit.py; e.g. MAGNET's M027): position in Blender plan axes, compass
    * yaw, pitch and roll, principal point at the image centre. The vertical field of view matches the photo.
+   * dy: the fitted building's ground offset (groundOffset), since the fit is in that building's own 0 m.
    */
-  fitView(c: CameraFit, h: ViewerHints) {
+  fitView(c: CameraFit, h: ViewerHints, dy = 0) {
     this.setMode('orbit', h);
     this.orbit.enabled = false;
     const [yaw, pitch, roll] = [c.yaw, c.pitch, c.roll].map((d) => (d * Math.PI) / 180);
@@ -103,11 +115,25 @@ export class ViewerControls {
     const rt = w(Math.cos(yaw), -Math.sin(yaw), 0);
     const up = new Vector3().crossVectors(rt, f);
     const up2 = up.clone().multiplyScalar(Math.cos(roll)).addScaledVector(rt, Math.sin(roll));
-    this.camera.position.copy(w(...c.pos));
+    this.camera.position.copy(w(...c.pos)).add(new Vector3(0, dy, 0));
     this.camera.up.copy(up2);
     this.camera.lookAt(this.camera.position.clone().add(f));
     this.camera.fov = (2 * Math.atan(c.H / 2 / c.fpx) * 180) / Math.PI;
     this.camera.updateProjectionMatrix();
+    this.projectionOverride = true;
+    this.fitActive = true;
+  }
+
+  /**
+   * A fixed look-from / look-at view in Blender plan axes with heights in the common datum (QA stills of the Core
+   * viewpoints and the photo-solved REF cameras). vfov in degrees.
+   */
+  poseView(pos: [number, number, number], target: [number, number, number], vfov: number, h: ViewerHints) {
+    this.setMode('orbit', h);
+    this.orbit.enabled = false;
+    this.camera.position.set(pos[0], pos[2], -pos[1]);
+    this.camera.fov = vfov; this.camera.updateProjectionMatrix();
+    this.camera.lookAt(target[0], target[2], -target[1]);
     this.projectionOverride = true;
     this.fitActive = true;
   }
@@ -135,12 +161,14 @@ export class ViewerControls {
     if (this.keys.has('KeyA') || this.keys.has('ArrowLeft')) move.sub(right);
     if (move.lengthSq() === 0) return;
     move.normalize();
-    // stop 0.4 m short of any wall, glass or column at knee and chest height
+    // stop 0.4 m short of any wall, glass or column at knee and chest height (above the ground under the eye)
+    const base = this.camera.position.y - EYE;
     for (const y of [0.5, 1.3]) {
-      this.ray.set(this.camera.position.clone().setY(y), move);
+      this.ray.set(this.camera.position.clone().setY(base + y), move);
       this.ray.far = speed + 0.4;
       if (this.ray.intersectObjects(this.obstacles, true).length) return;
     }
-    this.camera.position.addScaledVector(move, speed).setY(EYE);
+    this.camera.position.addScaledVector(move, speed);
+    this.camera.position.setY(this.groundY(this.camera.position.x, this.camera.position.z) + EYE);
   }
 }
