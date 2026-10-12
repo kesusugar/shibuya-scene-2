@@ -5,7 +5,7 @@ Shibuya Scene 2.0 の最初の建物資産であり、**今後の建物の品質
 ## 構成
 | パス | 中身 |
 |---|---|
-| `source/` | 制作プロジェクト `qfront-photoreal` 一式。**全履歴を含めて取り込み済み**（`git log -- assets/buildings/qfront/source` で確認できる） |
+| `source/` | 制作プロジェクト `qfront-photoreal` 一式。**全履歴を含めて取り込み済み**（subtree で統合。元の 25 コミットは `git log 0da0383^2` で、元のパスのまま確認できる） |
 | `source/blender/build_qfront.py` | 生成スクリプト（原本）。形状・材質・照明・カメラ・描画設定をすべてここで生成する |
 | `source/blend/qfront_v5_{day,night}.blend` | スクリプトから書き出した Blender ファイル。フォントは内部に埋め込み済み。テクスチャと HDRI は相対パスで参照 |
 | `source/data/` | 実測データ：寸法、写真に合わせたカメラ、PLATEAU LOD2、平面形状 |
