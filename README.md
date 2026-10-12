@@ -12,7 +12,19 @@
 ## 現在のゲート
 - G0：監査完了
 - QFRONT v5：保全完了
-- 次は G1：Three.js の新しいビューアを作り、QFRONT を 1 棟表示する
+- G1／G2：Three.js の新しいビューアで QFRONT を表示（オーナーの PC で問題なしを確認）
+- **G3：2 棟目の MAGNET（2025 年）**。v1 を作成し、オーナーの確認待ち（`docs/G3_REPORT.md`）
 
 ## 資産
 - `assets/buildings/qfront/`：QFRONT v5（品質基準）
+- `assets/buildings/magnet/`：MAGNET by SHIBUYA109 v1。看板は 2025 年の年代レイヤー（`magnet_signs_2025.glb`）として分離
+- `assets/buildings/eiraku/`：栄楽ビル（MAGNET の東隣。PLATEAU では MAGNET に含まれるが、別の建物として分離）
+
+## ビューア
+```
+npm ci
+npm run dev        # http://127.0.0.1:5180/
+```
+- `?buildings=qfront,magnet,eiraku`（既定）：建物を 1 棟ずつ独立に読み込みます。1 棟が失敗すると、その場所に赤い仮の箱が出て、他の建物は表示を続けます。
+- `?view=q032`：QFRONT の写真 Q032 と同じ視点。`?view=m027`：MAGNET の写真 M027 と同じ視点。
+- `?time=night`、`?q=low|medium|high`、30 秒計測ボタン。
