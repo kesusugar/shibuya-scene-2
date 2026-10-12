@@ -1,0 +1,117 @@
+{
+  "base_source_commit": "5d016c3d1ce758f64a3c81279e74a176a431692e",
+  "base_look": {
+    "dayExposure": 1,
+    "nightExposure": 1.35,
+    "glassEnv": 1,
+    "wallEnv": 1,
+    "road": 0.045,
+    "sidewalk": 0.3,
+    "nightGround": 0,
+    "nightSign": 1
+  },
+  "adopted_look": {
+    "dayExposure": 0.85,
+    "nightExposure": 1.35,
+    "glassEnv": 1.6,
+    "wallEnv": 0.5,
+    "road": 0.045,
+    "sidewalk": 0.3,
+    "nightGround": 0.5,
+    "nightSign": 1
+  },
+  "workflow": "base -> E1 -> E1_W1 -> E1_W1_G2 -> final (adds N3)",
+  "base_scores": {
+    "scored_classes": [
+      "glass",
+      "wall",
+      "road",
+      "sidewalk"
+    ],
+    "weights": "aligned views 1.0, REF-A/REF-B 0.5",
+    "all": {
+      "n": 11,
+      "mean_abs_dL": 10.88,
+      "mean_dE": 14.97
+    },
+    "day": {
+      "n": 9,
+      "mean_abs_dL": 9.73,
+      "mean_dE": 14.29
+    },
+    "night": {
+      "n": 2,
+      "mean_abs_dL": 19.5,
+      "mean_dE": 20.05
+    },
+    "aligned_only": {
+      "n": 6,
+      "mean_abs_dL": 3.07,
+      "mean_dE": 8.35
+    }
+  },
+  "final_scores": {
+    "scored_classes": [
+      "glass",
+      "wall",
+      "road",
+      "sidewalk"
+    ],
+    "weights": "aligned views 1.0, REF-A/REF-B 0.5",
+    "all": {
+      "n": 11,
+      "mean_abs_dL": 9.64,
+      "mean_dE": 13.87
+    },
+    "day": {
+      "n": 9,
+      "mean_abs_dL": 8.44,
+      "mean_dE": 13.21
+    },
+    "night": {
+      "n": 2,
+      "mean_abs_dL": 18.65,
+      "mean_dE": 18.85
+    },
+    "aligned_only": {
+      "n": 6,
+      "mean_abs_dL": 2.43,
+      "mean_dE": 7.9
+    }
+  },
+  "class_masks": {
+    "m027": {
+      "identical_pixels": true,
+      "base_sha256": "e928c099557ae52b0acb95d98bcf3e4320861fac87ff1bd71ceef6e940641c3f",
+      "final_sha256": "e928c099557ae52b0acb95d98bcf3e4320861fac87ff1bd71ceef6e940641c3f"
+    },
+    "q032": {
+      "identical_pixels": true,
+      "base_sha256": "dbd5b2a3895303a9b44b696055cb1224cabedec12d0feb6a6fac109896122fe9",
+      "final_sha256": "dbd5b2a3895303a9b44b696055cb1224cabedec12d0feb6a6fac109896122fe9"
+    },
+    "refa": {
+      "identical_pixels": true,
+      "base_sha256": "24ae9a80aa63e81d525cec5730e368eae932345ddbcbf38d5d204b256e61a3a4",
+      "final_sha256": "24ae9a80aa63e81d525cec5730e368eae932345ddbcbf38d5d204b256e61a3a4"
+    },
+    "refb": {
+      "identical_pixels": true,
+      "base_sha256": "a21b11ce40dd106d2d5b13744fd966fd43fb9a11d8071f96ab0d04cad4482bad",
+      "final_sha256": "a21b11ce40dd106d2d5b13744fd966fd43fb9a11d8071f96ab0d04cad4482bad"
+    }
+  },
+  "final_captured_frames": 8,
+  "final_errors": 0,
+  "initial_capture_note": "Original initial baseline log is retained and contains one console resource 404 on m027 beauty. /favicon.ico returns 404. The corrected m027 beauty was recaptured with original look overrides and favicon intercepted, passing all network/asset/ground/layer assertions. The consolidated base capture_log.json has 8 entries and zero errors.",
+  "fps_valid": false,
+  "capture_failure_check": {
+    "query": "groundurl=missing",
+    "exit_code": 1,
+    "reason": "ground failed",
+    "rerun_with_saved_failed_frame_exit_code": 1,
+    "expected_failure": true
+  },
+  "baseline_capture_log": "validation/base/capture_log.json",
+  "initial_baseline_capture_log": "validation/base/capture_log_1791820332794.json"
+}
