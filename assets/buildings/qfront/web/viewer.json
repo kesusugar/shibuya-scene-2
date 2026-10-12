@@ -1,0 +1,53 @@
+{
+ "_note": "Viewer hints in Blender plan coordinates (x=east, y=north, metres). The viewer maps them to three.js as (x, z, -y). Generated from source/data by hand-run script; keep in sync with the GLB export.",
+ "arcMid": [
+  -7.672935485839844,
+  29.0841064453125
+ ],
+ "arcNormal": [
+  0.08845283836126328,
+  -0.9960804581642151
+ ],
+ "arcEnds": [
+  [
+   1.040000557899475,
+   31.299999237060547
+  ],
+  [
+   -16.639999389648438,
+   29.729997634887695
+  ]
+ ],
+ "floodlights": {
+  "arcStart_m": [
+   37.0,
+   41.0
+  ],
+  "arcEnd_m": [
+   33.0,
+   39.0
+  ]
+ },
+ "planBounds": [
+  -30.190000534057617,
+  28.97419548034668,
+  5.079999923706055,
+  56.4900016784668
+ ],
+ "crownTop_m": 52.13,
+ "cameraQ032": {
+  "D": 63.250461928199925,
+  "lat": 7.867738063376983,
+  "yaw": 10.813040991708577,
+  "fpx": 1622.5804894579765,
+  "cx": 556.2005003470273,
+  "cy": 1535.9538555041368,
+  "W": 1280,
+  "H": 1749,
+  "height_m": 1.6
+ },
+ "sun": {
+  "azimuth_deg": 152,
+  "elevation_deg": 38
+ }
+}

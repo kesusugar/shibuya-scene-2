@@ -1,0 +1,15 @@
+{
+ "D": 66.23,
+ "lat": 11.66,
+ "yaw": 6.07,
+ "fpx": 2535.34,
+ "cx": 820.81,
+ "cy": 1967.08,
+ "h": 1.6,
+ "roll_deg": 0.0,
+ "rms_px": 27.9,
+ "W": 1280,
+ "H": 1887,
+ "status": "PARTIAL - above the 15 px gate; podium sits ~260 px low (sign heights left out of the fit)",
+ "note": "Q031 (Kakidai 2012 dusk, CC BY-SA 3.0). Level camera at 1.6 m. Landmarks: plan width at 30 m, crown top, both crown ends and the far left corner at 52.1 m. A 14-point refit including STARBUCKS/TSUTAYA/ground matched the podium but distorted the silhouette (30 px RMS, worse overlay), so this fit is kept. A level pinhole cannot reconcile the crown-end heights in Q031 (+-60 px): the photo is probably cropped from a perspective-corrected (warped) image."
+}

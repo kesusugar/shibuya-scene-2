@@ -1,0 +1,159 @@
+{
+ "id": "qfront",
+ "name": "QFRONT (渋谷)",
+ "version": "v5",
+ "status": "approved by owner 2026-10-12 as the current final",
+ "source_repo": "qfront-photoreal (local, never pushed) -> imported with full history into kesusugar/shibuya-scene-2 at assets/buildings/qfront/source",
+ "source_sha": "d22047ec22463ad02f4eea63c441cc8a236b1a81",
+ "render_sha": "979512227171a345caf7372032057cf6e8e60c7f",
+ "referenceYear": 2018,
+ "referenceYearNote": "Built to Q032 (Kakidai, 2018-10-30). Shibuya Scene 2.0 targets 2025: signage, adverts and shopfronts are to be swapped as a separate layer (see README \"Era layers\").",
+ "footprintSource": "OSM way/136691386 front arc (circle fit R=28.13 m) + OSM outline; PLATEAU 2025 LOD2 (13113 Shibuya, bldg) roofs",
+ "heightSources": {
+  "buildingHeight": {
+   "value": 45.9,
+   "source": "PLATEAU measuredHeight",
+   "note": "body height; not the crown"
+  },
+  "roofDeckHeight": {
+   "value": 48.4,
+   "source": "PLATEAU LOD2 inner roof"
+  },
+  "parapetTopHeight": {
+   "value": 52.13,
+   "source": "PLATEAU LOD2 crown top; matches Q032 photogrammetry 52.1 m"
+  },
+  "steppedRoofs": {
+   "values": [
+    44.0,
+    39.8
+   ],
+   "source": "PLATEAU LOD2 north-east corner"
+  },
+  "signTopHeight": {
+   "value": 50.400000000000006,
+   "source": "Q032 photo, QFRONT letters 48.2-50.4 m",
+   "geometryConfidence": "photo"
+  }
+ },
+ "geometryConfidence": "high for outline/heights/fin rhythm (Q032 camera fit 13 px RMS); estimated: interiors, crown plant layout, rear faces",
+ "units": "metres",
+ "pivot": "OSM origin lat 35.6595, lon 139.7005 (same origin as Shibuya Scene 1.0); Blender model is placed in world coordinates, no local offset",
+ "axesTransform": {
+  "blender": "X=east, Y=north, Z=up",
+  "gltf_export": "Y-up: (x, y, z)_blender -> (x, z, -y)_gltf = X=east, Y=up, Z=south",
+  "webWorld": "X=east, Y=up, Z=south (as Shibuya Scene 1.0)"
+ },
+ "worldPosition": [
+  0,
+  0,
+  0
+ ],
+ "rotationY": 0,
+ "sourceBlend": [
+  "source/blend/qfront_v5_day.blend",
+  "source/blend/qfront_v5_night.blend"
+ ],
+ "generator": "source/blender/build_qfront.py (Blender 4.2.3 LTS): blender -b -P source/blender/build_qfront.py -- <out> day|night preview|final view=q032|q031|q107|close|crown [save] [border=x0,y0,x1,y1 zoom=N tag=..]",
+ "cameras": {
+  "q032": "source/data/camera_q032_fit.json (13 px RMS)",
+  "q031": "source/data/camera_q031_fit.json (27.9 px RMS, PARTIAL)"
+ },
+ "renderSettings": {
+  "engine": "Cycles CPU",
+  "samples_final": 256,
+  "denoise": "OpenImageDenoise",
+  "view_transform": "AgX, Medium High Contrast",
+  "exposure": {
+   "day": 0.05,
+   "night": 0.3
+  },
+  "sun": {
+   "azimuth_deg": 152,
+   "elevation_deg": 38,
+   "energy": 6.0
+  },
+  "sky": "Nishita (day) / flat (.016,.055,.27)*2.2 (night)",
+  "reflection_hdri": {
+   "day": "source/hdri/wide_street_01.hdr",
+   "night": "source/hdri/shanghai_bund.hdr"
+  },
+  "compositor": "dispersion .002, sharpen .12, vignette .88-1.0, fog glow"
+ },
+ "exportGlb": null,
+ "lodVariants": [],
+ "materialMap": "see source/blender/build_qfront.py MAT dict; WebGL versions to be authored in G2",
+ "licenseStatus": "all shipped textures original or CC0; reference photos CC (see references register); fonts DejaVu (Bitstream Vera licence) and IPAGothic (IPA Font Licence v1.0) packed in the .blend files",
+ "attribution": [
+  "Q032: Kakidai, CC BY-SA 4.0",
+  "Q031: Kakidai, CC BY-SA 3.0",
+  "HDRI: Poly Haven (Sergej Majboroda, Greg Zaal), CC0",
+  "PLATEAU: MLIT Project PLATEAU",
+  "OpenStreetMap contributors (ODbL)"
+ ],
+ "unresolvedReferences": [
+  "6 Commons photos with unknown licence were not imported (Q024, Q041, Q042, Q071, Q103, Q128)"
+ ],
+ "files": {
+  "source/blend/qfront_v5_day.blend": {
+   "bytes": 18671742,
+   "sha256": "60dfed390d87e900c128b04412712a0fdd668a3c7fd46ebfc957def39c5532f9"
+  },
+  "source/blend/qfront_v5_night.blend": {
+   "bytes": 18233554,
+   "sha256": "854d5531316c53dcf4f97394cd526460bf783f339d50b3ecad917187b1a302cf"
+  },
+  "source/hdri/shanghai_bund.hdr": {
+   "bytes": 25500375,
+   "sha256": "2e72825fd2502ae649f59035ecc9887c7d217dfe1a32e7915146d587fa2816e3"
+  },
+  "source/hdri/wide_street_01.hdr": {
+   "bytes": 23774400,
+   "sha256": "f1588af2830c794690fdb49bbf593e9d75596ff6f3baa150852738fde58d07f9"
+  },
+  "source/textures/art_text.png": {
+   "bytes": 14040,
+   "sha256": "4392edd8b1fdccc8138ef118919f270fbbf3b8fadf1542046dbdc679bc6e5e61"
+  },
+  "source/textures/led_main.png": {
+   "bytes": 331651,
+   "sha256": "11032a6b55baca2f5e8930fcbcdf9553a482644715fa0b6ef2c48b79ababf305"
+  },
+  "source/textures/poster_a.png": {
+   "bytes": 117775,
+   "sha256": "588d8d1e46c7e8c17a0e91272922af825a63bae479b065a5c6463a4e6da587c1"
+  },
+  "source/textures/poster_b.png": {
+   "bytes": 96930,
+   "sha256": "af919db14253946ae6001779679f65a27d70972744486b8bde79989d550d9ea7"
+  },
+  "source/textures/poster_c.png": {
+   "bytes": 73750,
+   "sha256": "bcdeaedae6ef037f30cace4109e19ce987adaf5f0b9f478cc8c2f4825239df0e"
+  },
+  "renders/v5/day_q032_final.png": {
+   "bytes": 3421188,
+   "sha256": "fee81c5953b11cc6e6ed57c48f4520b8310853c23cf8b7fc870859e962321d01"
+  },
+  "renders/v5/day_q032crop_crown_final.png": {
+   "bytes": 1203622,
+   "sha256": "7e5f83235f3e864a450eca4aeefe4ec69d6c3ae2f0569d994f2204236975320f"
+  },
+  "renders/v5/day_q032crop_podium_final.png": {
+   "bytes": 1023879,
+   "sha256": "b31d5c58d32c19dc7badc615db905f8dad2d20c070f43b7dd58f3cfec1ce2f0e"
+  },
+  "renders/v5/night_q031_final.png": {
+   "bytes": 3695097,
+   "sha256": "cbaba7a7d8d02bceb2177be6fc313a6315b38bb24cf990d7fcc74a883961ac11"
+  },
+  "renders/v5/night_q032_final.png": {
+   "bytes": 3308685,
+   "sha256": "c2576b84ee2cdc001d9cc26341c7f372b6021a1288d884e7f7c4f1795213dc4d"
+  },
+  "renders/v5/night_q032crop_podium_final.png": {
+   "bytes": 1028185,
+   "sha256": "75fd81e301379978b2265101f8f6a6f8a023ff89f492aa59afe490a57a8e72ec"
+  }
+ }
+}

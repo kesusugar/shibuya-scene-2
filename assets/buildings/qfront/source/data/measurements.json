@@ -1,0 +1,66 @@
+{
+ "_note": "P2-0 measurements from Q032 (Kakidai 2018-10, CC BY-SA 4.0, 1280x1749 thumbnail). The photo is perspective-corrected (verticals parallel), so heights and widths on the front face scale linearly. Scale fixed by the front arc chord: 450 px in the photo = 17.75 m chord of the OSM arc (way/136691386) -> 25.4 px/m at the front face. Ground at y=1565 px. Values are metres above the crossing-side pavement.",
+ "scale_px_per_m": 25.4,
+ "front_arc_chord_m": {
+  "photo": 17.7,
+  "osm": 17.75
+ },
+ "glass_storeys_top_m": 40.2,
+ "crown": {
+  "bottom_m": 40.2,
+  "top_m": 52.1,
+  "fin_pitch_m": 0.97,
+  "letters": {
+   "bottom_m": 48.2,
+   "height_m": 2.2,
+   "width_m": 10.0
+  },
+  "_fin_note": "v4: re-counted on the Q032 crown crop (~20 fins across the 17.7 m chord); the earlier 1.5 m read every other fin."
+ },
+ "plateau_inner_roof_m": 48.4,
+ "front_face": {
+  "mullion_pitch_m": 0.97,
+  "bays": 18,
+  "transom_pitch_m": 3.95,
+  "dark_glass_from_m": 10.2
+ },
+ "main_vision": {
+  "centre_m": 22.8,
+  "width_m": 12.2,
+  "height_m": 7.9,
+  "area_m2": 96,
+  "published_area_m2": 99.5
+ },
+ "podium": {
+  "canopy_m": 2.4,
+  "tsutaya_band_m": 4.9,
+  "f2_bottom_m": 5.3,
+  "f2_top_m": 10.2,
+  "starbucks_sign_m": 8.5
+ },
+ "floodlights": {
+  "left_m": [
+   33.0,
+   39.0
+  ],
+  "right_m": [
+   37.0,
+   41.0
+  ]
+ },
+ "side_fins_pitch_m": 0.97,
+ "floors_assumed": {
+  "1F": [
+   0,
+   5.3
+  ],
+  "2F": [
+   5.3,
+   10.2
+  ],
+  "3F-8F": "10.2 + 5.0 k, k=0..6 -> 40.2"
+ },
+ "checks": "main vision area from photo 96 m2 vs published 99.5 m2 (-4%); arc chord photo vs OSM within 0.3%.",
+ "_mullion_note": "Brightness peaks along row 1150-1190 px, x 450-690: 22-25 px spacing = 0.96 m at the arc centre (earlier 1.78 m was every other rib).",
+ "_side_fin_note": "Counted on Q032 (left face, rows 900-1060 px): ~17 fins where a 0.55 m pitch model shows ~30 -> 0.97 m, the same module as the front mullions."
+}
