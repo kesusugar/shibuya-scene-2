@@ -75,3 +75,46 @@ $BLENDER -b -P assets/ground/core/source/blender/build_ground.py -- \
 - 撮影中に `src/` を変更すると、vite が再読み込みして撮影が壊れる。
 - 環境に GPU がないと FPS は測れない。FPS はオーナーの PC で `?bench=auto` を使って測る。
 - three.js では、材質ごとの反射の強さは、その材質に環境マップが付いているときだけ効く（`look.ts` で対応済み）。
+
+## 7. Codex クラウドで再現・動作確認した構成（2026-10-12）
+
+この環境に上の版を導入し、地面の既存生成スクリプト・Cycles CPU・標準glTF書き出し・ビューアーの撮影を実行した。Blender MCPは利用できるツール一覧にないが、Claudeも使用していないので、同じBlender CLIの手順を再現できる。GitHubの読み書きはgit/gh、写真取得はCommonsの公式APIとHTTPSで実行できた。Claude_Code_Remote・Claude_Docsと同じMCP接続はこの環境にはない。
+
+```bash
+# 導入済みの道具を使う。ターミナルを開くたびに実行する。
+source /workspace/setup-tools/core-env.sh
+node --version        # v22.22.2
+npm --version         # 10.9.7
+python --version      # 3.11.15
+blender -b --version  # 4.2.3 LTS
+npx playwright --version  # 1.56.1、撮影はChromium build 1194
+```
+
+- Blender本体：`/workspace/toolchains/blender-4.2.3-linux-x64/blender`。PATHのラッパーが書き込み可能なユーザー設定を指定する。Node/Blenderは公式SHA256を確認して展開した。
+- Python仮想環境：`/workspace/toolchains/core-python311`。numpy 2.4.6、Pillow 12.3.0、shapely 2.0.6、scipy 1.17.1。
+- Playwrightのブラウザ：`/workspace/.cache/ms-playwright`。システムChromiumへ差し替えず、ロックファイルの版を使う。
+- `scripts/setup-core-environment.sh` に実際に動作確認したインストーラーを保存した。Codexの `/workspace` と `uv` を前提にし、既存の `/workspace/shibuya-scene-2` へnpm依存を導入する。他のOSは元の手順を使う。
+- クラウド環境の設定ドラフトにも同じ導入スクリプトと起動手順を保存した。保存とUIでの公開は別の操作。新しいタスクへの復元はこのセッションでは検証していない。
+
+### Blender Pythonエラーを必ず失敗として扱う
+
+```bash
+blender -b --python-exit-code 1 -t 4 -P <script.py> -- <arguments>
+```
+
+`--python-exit-code 1` がないとPythonの例外が起きても終了コード0になる。Blenderには内蔵Pythonがあるので、外側のPython仮想環境を `PYTHONPATH` で混ぜない。既存の `build_ground.py` は別の出力先へ生成し、地面の元の記録とすべての統計が一致した。既存GLBの上書きは環境確認には使っていない。
+
+### 長い撮影ではビルド済みの表示を固定する
+
+```bash
+npm test
+npm run build
+npx vite preview --port 5184 --strictPort
+# 別のターミナルでもactivateしてから撮影する
+node scripts/capture-street.mjs http://127.0.0.1:5184 evidence/c2b/<run>
+node scripts/check-street-browser.mjs http://127.0.0.1:5184 evidence/c2b/<checks>
+```
+
+Vite開発サーバーのHMR中にコードや資産を変えると撮影のブラウザが再読み込みされる。撮影完了までビルド・資産同期をしない。また、存在しないGLBがSPAのHTMLとしてHTTP 200を返すことがあるので、通信の成功だけで資産の成功にしない。読み込んだ建物・地面・街路の状態と画面の警告まで確認する。
+
+C2bの作者データと再生成コマンドは `assets/street/core/README.md`。試作の未達と写真比較は `C2B_REPORT.md`。
