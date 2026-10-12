@@ -2,6 +2,8 @@ import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, Mesh, MeshStanda
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { applyEmissive, groundOffset, hasArc, loadBuilding, type BuildingIO, type BuildingResult, type LoadedBuilding } from './world/buildings';
 import { loadGround, type GroundResult } from './world/ground';
+import { applyClassPass, applyLook, parseLook } from './world/look';
+import { Color } from 'three';
 import { Lighting, type TimeOfDay } from './world/lighting';
 import { ViewerControls } from './controls/viewer-controls';
 import { FrameStats } from './perf/frame-stats';
@@ -19,6 +21,7 @@ const status = (msg: string) => { $('status').textContent = msg; };
 if (params.has('capture')) $('hud').style.visibility = 'hidden';   // clean stills; the numbers stay readable via #perf
 
 const quality = pickQuality(params.get('q'));
+const look = parseLook(params.get('look'));
 const renderer = new WebGLRenderer({ antialias: quality.antialias, powerPreference: 'high-performance', preserveDrawingBuffer: params.has('capture') });
 renderer.setPixelRatio(Math.min(devicePixelRatio, Number(params.get('dpr') ?? quality.maxDpr)));
 renderer.setSize(innerWidth, innerHeight);
@@ -70,8 +73,11 @@ function setTime(t: TimeOfDay) {
   mode = t;
   $('btn-day').classList.toggle('on', t === 'day'); $('btn-night').classList.toggle('on', t === 'night');
   if (!building) return;
-  for (const b of loaded) applyEmissive(b.root, b.emissive[t]);
   lighting.apply(t, loaded.map((b) => b.root));
+  const env = { map: scene.environment, intensity: scene.environmentIntensity };
+  for (const b of loaded) { applyEmissive(b.root, b.emissive[t]); applyLook(b.root, t, look, b.emissive.day, env); }
+  if (coreGround?.ok) applyLook(coreGround.root, t, look);
+  renderer.toneMappingExposure = t === 'day' ? look.dayExposure : look.nightExposure;
   bloom.enabled = bloomWanted && quality.bloom && t === 'night';
 }
 
@@ -107,6 +113,13 @@ async function start() {
   if (view === 'q032') controls.q032View(building.hints);
   else if (view === 'm027' && fit?.hints.cameraFit) showFit(fit);
   else if (view === 'walk') setControl('walk');
+  // QA: ?pass=class paints every surface by material class (look-metrics.py compares it with the photograph)
+  if (params.get('pass') === 'class') {
+    for (const b of loaded) applyClassPass(b.root, { ...b.emissive.day });
+    if (coreGround?.ok) applyClassPass(coreGround.root);
+    ground.material = new MeshStandardMaterial({ color: 0x000000 }); ground.visible = false;
+    scene.background = new Color(0x000000); scene.environment = null; bloom.enabled = false;
+  }
   const pose = params.get('pose');   // QA: pose=x,y,z,tx,ty,tz[,vfov] in plan metres, heights in the common datum
   if (pose) { const v = pose.split(',').map(Number); controls.poseView([v[0], v[1], v[2]], [v[3], v[4], v[5]], v[6] || 55, building.hints); }
   (window as unknown as Record<string, unknown>).__viewer = {
@@ -117,6 +130,7 @@ async function start() {
     offsets: Object.fromEntries(loaded.map((b) => [b.id, b.root.position.y])),
     // QA: camera position and the Core ground height under it (walk mode keeps the eye 1.6 m above it)
     cameraPos: () => camera.position.toArray(),
+    bench: null as unknown,
     groundUnderCamera: () => controls.groundY(camera.position.x, camera.position.z),
   };
 }
@@ -167,4 +181,32 @@ renderer.setAnimationLoop(() => {
   if (now - lastHud > 500) { $('perf').textContent = stats.report(renderer); lastHud = now; }
 });
 
-start().catch((e) => status(`起動エラー: ${e instanceof Error ? e.message : e}`));
+start().then(() => { if (params.get('bench') === 'auto') autoBench(); }).catch((e) => status(`起動エラー: ${e instanceof Error ? e.message : e}`));
+
+/**
+ * ?bench=auto: the owner's one-URL measurement. Visits the fixed Core views (day and night), records 10 s each after a
+ * 2 s settle, then shows one JSON block to copy back. Same counters as the 30 s button (frame times, draw calls, tris).
+ */
+const BENCH_VIEWS: [string, TimeOfDay, string][] = [
+  ['c01_qfront', 'day', '6.5,-2.0,1.516,-8,29,12,55'], ['c01_qfront', 'night', '6.5,-2.0,1.516,-8,29,12,55'],
+  ['c02_hachiko', 'day', '11.6,-47.0,1.871,6,10,6,55'], ['x01_walkway', 'day', '-12.6,-68.2,10.2,0.8,30.7,16.2,52.2'],
+  ['top_down', 'day', '6.5,-30,190,6.5,-1.9,0,48'], ['m027', 'day', 'm027'], ['q032', 'night', 'q032'],
+];
+async function autoBench() {
+  if (!building) return;
+  const out: unknown[] = [];
+  for (const [name, t, pose] of BENCH_VIEWS) {
+    status(`自動計測中: ${name}（${t}）… ${out.length + 1}/${BENCH_VIEWS.length}`);
+    setTime(t);
+    if (pose === 'm027') { const fit = loaded.find((b) => b.hints.cameraFit); if (fit) showFit(fit); }
+    else if (pose === 'q032') controls.q032View(building.hints);
+    else { const v = pose.split(',').map(Number); controls.poseView([v[0], v[1], v[2]], [v[3], v[4], v[5]], v[6], building.hints); }
+    await new Promise((r) => setTimeout(r, 2000));
+    out.push({ name, ...(await runBenchmark(stats, renderer, { quality: quality.name, time: t, view: name }, 10)) });
+  }
+  const text = JSON.stringify({ kind: 'shibuya-core-bench', version: 1, ground: coreGround?.ok ?? false, results: out });
+  $('bench-out').textContent = text; console.log('BENCHMARK_AUTO', text);
+  (window as unknown as { __viewer: { bench: unknown } }).__viewer.bench = out;
+  status('自動計測が終わりました。下の結果（JSON）をすべてコピーして送ってください。');
+  navigator.clipboard?.writeText(text).catch(() => undefined);
+}

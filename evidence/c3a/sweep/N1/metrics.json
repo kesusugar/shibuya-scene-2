@@ -1,0 +1,161 @@
+{
+ "views": {
+  "refb": {
+   "time": "night",
+   "year": 2024,
+   "aligned": false,
+   "size": [
+    640,
+    482
+   ],
+   "classes": {
+    "road": {
+     "px": 26678,
+     "photo_rgb": [
+      70,
+      66,
+      68
+     ],
+     "render_rgb": [
+      98,
+      97,
+      99
+     ],
+     "photo_lab": [
+      28.4,
+      2.1,
+      -0.5
+     ],
+     "render_lab": [
+      41.3,
+      0.9,
+      -1.2
+     ],
+     "dL": 12.9,
+     "dE": 12.9
+    },
+    "sidewalk": {
+     "px": 36608,
+     "photo_rgb": [
+      58,
+      55,
+      57
+     ],
+     "render_rgb": [
+      181,
+      178,
+      174
+     ],
+     "photo_lab": [
+      23.5,
+      1.6,
+      -0.8
+     ],
+     "render_lab": [
+      72.6,
+      0.4,
+      2.4
+     ],
+     "dL": 49.2,
+     "dE": 49.3
+    },
+    "fill": {
+     "px": 19282,
+     "photo_rgb": [
+      83,
+      80,
+      82
+     ],
+     "render_rgb": [
+      28,
+      18,
+      26
+     ],
+     "photo_lab": [
+      34.3,
+      1.6,
+      -0.7
+     ],
+     "render_lab": [
+      6.8,
+      6.7,
+      -3.3
+     ],
+     "dL": -27.4,
+     "dE": 28.0
+    }
+   }
+  }
+ },
+ "summary": {
+  "road": {
+   "views": 1,
+   "mean_abs_dL": 12.9,
+   "mean_dE": 12.9,
+   "mean_dL": 12.9
+  },
+  "sidewalk": {
+   "views": 1,
+   "mean_abs_dL": 49.2,
+   "mean_dE": 49.3,
+   "mean_dL": 49.2
+  },
+  "fill": {
+   "views": 1,
+   "mean_abs_dL": 27.4,
+   "mean_dE": 28.0,
+   "mean_dL": -27.4
+  },
+  "_score": {
+   "scored_classes": [
+    "glass",
+    "wall",
+    "road",
+    "sidewalk"
+   ],
+   "weights": "aligned views 1.0, REF-A/REF-B 0.5",
+   "all": {
+    "n": 2,
+    "mean_abs_dL": 31.05,
+    "mean_dE": 31.1
+   },
+   "day": null,
+   "night": {
+    "n": 2,
+    "mean_abs_dL": 31.05,
+    "mean_dE": 31.1
+   },
+   "aligned_only": null
+  }
+ },
+ "refs": {
+  "m027": {
+   "photo": "assets/buildings/magnet/source/refs/raw/M027.jpg",
+   "time": "day",
+   "year": 2025,
+   "licence": "CC0 (Taufik)",
+   "aligned": true
+  },
+  "q032": {
+   "photo": "assets/buildings/qfront/source/refs/raw/Q032.jpg",
+   "time": "day",
+   "year": 2018,
+   "licence": "CC BY-SA 4.0 (Kakidai)",
+   "aligned": true
+  },
+  "refa": {
+   "photo": "evidence/c3a/refs/In_Front_of_Shibuya_Station.jpg",
+   "time": "day",
+   "year": 2010,
+   "licence": "CC BY 2.0 (Dick Johnson)",
+   "aligned": false
+  },
+  "refb": {
+   "photo": "evidence/c3a/refs/Shibuya_scramble_av_night_from_Stream.jpg",
+   "time": "night",
+   "year": 2024,
+   "licence": "CC0 (Syced)",
+   "aligned": false
+  }
+ }
+}

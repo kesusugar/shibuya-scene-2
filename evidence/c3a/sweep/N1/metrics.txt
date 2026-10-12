@@ -1,0 +1,2 @@
+refb night road:dL+13/dE13 sidewalk:dL+49/dE49 fill:dL-27/dE28
+SUMMARY {"road": {"views": 1, "mean_abs_dL": 12.9, "mean_dE": 12.9, "mean_dL": 12.9}, "sidewalk": {"views": 1, "mean_abs_dL": 49.2, "mean_dE": 49.3, "mean_dL": 49.2}, "fill": {"views": 1, "mean_abs_dL": 27.4, "mean_dE": 28.0, "mean_dL": -27.4}, "_score": {"scored_classes": ["glass", "wall", "road", "sidewalk"], "weights": "aligned views 1.0, REF-A/REF-B 0.5", "all": {"n": 2, "mean_abs_dL": 31.05, "mean_dE": 31.1}, "day": null, "night": {"n": 2, "mean_abs_dL": 31.05, "mean_dE": 31.1}, "aligned_only": null}}
