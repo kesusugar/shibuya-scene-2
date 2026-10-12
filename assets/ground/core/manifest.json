@@ -1,0 +1,239 @@
+{
+ "id": "ground_core",
+ "name": "Core ground (Shibuya Scramble Crossing, radius 150 m)",
+ "version": "C2a v1",
+ "status": "foundation: positions and heights; flat colours, no surface detail",
+ "datum": {
+  "definition": "world Y = T.P. elevation - 15.000 m",
+  "doc": "docs/core/C2A_PLAN.md"
+ },
+ "axes": "Blender X east, Y north, Z up (datum metres) -> glTF/web X east, Y up, Z south",
+ "sources": {
+  "road_surfaces": "PLATEAU 2025 Shibuya-ku tran (53393596), TrafficArea LOD3 (road 1000, intersection 1020, sidewalk 2000) and AuxiliaryTrafficArea LOD3 (island 3000); LOD2 only where no LOD3 covers the spot (none needed within 150 m)",
+  "building_footprints_for_fill": "PLATEAU 2025 bldg GroundSurface (tiles 53393585/86/95/96)",
+  "crosswalks": "OSM footway=crossing ways (old project data, fetched 2026-09-08), widths and centre lines measured on the GSI seamless aerial photo (国土地理院 シームレス空中写真, zoom 18, 0.485 m/px; measurement only, not used as texture; capture year not stated per tile)",
+  "licences": {
+   "PLATEAU": "CC BY 4.0 compatible (国土交通省 Project PLATEAU)",
+   "OSM": "ODbL (© OpenStreetMap contributors)",
+   "GSI": "国土地理院コンテンツ利用規約 (CC BY 4.0 compatible) - 出典：国土地理院"
+  },
+  "external_inputs": {
+   "plateau_tran_gml": {
+    "file": "53393596_tran.gml",
+    "sha256": "ad04f9b05a29140988178b84987e9ff7aae0fac36279fc79640db9e45a6cc317",
+    "bytes": 21792533
+   },
+   "plateau_core_json": {
+    "file": "plateau_core.json",
+    "sha256": "4e524b236265eccdf5768d2ac75376ab465b437788b5c7827ed8c2af60308bcc",
+    "bytes": 6077106
+   },
+   "old_scene_data_json": {
+    "file": "shibuya-scene-data.json",
+    "sha256": "0df9136ac10aaeb538ef25e75524caa5e9ab4d15551bcfe30f2c53da55bb6fe5",
+    "bytes": 1778090
+   }
+  }
+ },
+ "parameters_not_measured": {
+  "kerb_height_m": 0.15,
+  "kerb_low_m": 0.02,
+  "landing_flat_m": 1.0,
+  "landing_ramp_m": 1.5,
+  "zebra_bar_m": 0.45,
+  "zebra_gap_m": 0.45,
+  "default_crosswalk_width_m": 4.0
+ },
+ "parameter_notes": {
+  "kerb_height_m": "道路構造令 standard; PLATEAU LOD3 has no kerb step (2,125 shared vertices, max 0.008 m)",
+  "kerb_low_m": "barrier-free landing value",
+  "zebra": "Japanese road-marking standard 45 cm / 45 cm; check on photos in C3"
+ },
+ "prepare_stats": {
+  "surfaces": {
+   "road": 443,
+   "intersection": 426,
+   "sidewalk": 3304,
+   "island": 42
+  },
+  "lod3_surfaces": 4215,
+  "lod2_surfaces_kept": 0,
+  "lod2_surfaces_dropped_overlap": 57,
+  "paved_area_m2": 22189,
+  "fill_area_m2": 21144,
+  "focus_area_m2": 70679,
+  "core50_fill_share": 0.0173,
+  "crosswalks_kept": 17,
+  "crosswalks_dropped": [
+   {
+    "id": "way/664877555",
+    "why": "duplicate of way/754454448"
+   },
+   {
+    "id": "way/664532506",
+    "why": "duplicate of way/754454447"
+   },
+   {
+    "id": "way/355248083",
+    "why": "duplicate of way/1157451161"
+   },
+   {
+    "id": "way/1033129756",
+    "why": "duplicate of way/1157451161"
+   }
+  ],
+  "zebra_bars": 136
+ },
+ "build_stats": {
+  "params": {
+   "radius_m": 150.0,
+   "kerb_height_m": 0.15,
+   "kerb_low_m": 0.02,
+   "landing_flat_m": 1.0,
+   "landing_ramp_m": 1.5,
+   "zebra_bar_m": 0.45,
+   "zebra_gap_m": 0.45,
+   "default_crosswalk_width_m": 4.0,
+   "fill_grid_m": 3.0
+  },
+  "datum_tp_m": 15.0,
+  "objects": {
+   "ground_road": {
+    "triangles": 443,
+    "vertices": 475,
+    "z_min": -0.594,
+    "z_max": 3.089
+   },
+   "ground_intersection": {
+    "triangles": 426,
+    "vertices": 449,
+    "z_min": -0.594,
+    "z_max": 3.332
+   },
+   "ground_sidewalk": {
+    "triangles": 46775,
+    "vertices": 23645,
+    "z_min": -0.487,
+    "z_max": 3.29
+   },
+   "ground_kerb": {
+    "triangles": 13950,
+    "vertices": 27900,
+    "z_min": -0.894,
+    "z_max": 3.332
+   },
+   "ground_marking": {
+    "triangles": 4459,
+    "vertices": 4683,
+    "z_min": -0.137,
+    "z_max": 1.894
+   },
+   "ground_fill": {
+    "triangles": 7669,
+    "vertices": 5421,
+    "z_min": -0.497,
+    "z_max": 3.28
+   }
+  },
+  "kerb_length_m": 1266.2,
+  "skirt_length_m": 1363.3,
+  "triangles_total": 73722
+ },
+ "building_anchors": {
+  "magnet": {
+   "plateau_ground_tp": 14.561,
+   "frontage_samples": 267,
+   "pavement_min_tp": 14.907,
+   "pavement_p05_tp": 14.915,
+   "pavement_median_tp": 15.663,
+   "pavement_max_tp": 16.167,
+   "anchor_tp": 14.907,
+   "roof_deviation_vs_plateau_m": 0.346,
+   "max_burial_m": 1.26,
+   "lowest_at": {
+    "x": 49.75,
+    "y": 12.12,
+    "z_tp": 14.907,
+    "kind": "ground_fill",
+    "edge": 1
+   },
+   "samples_by_kind": {
+    "ground_sidewalk": 19,
+    "ground_road": 13,
+    "ground_intersection": 0,
+    "ground_fill": 235
+   },
+   "min_on_measured_pavement_tp": 15.19
+  },
+  "qfront": {
+   "plateau_ground_tp": 15.099,
+   "frontage_samples": 141,
+   "pavement_min_tp": 15.202,
+   "pavement_p05_tp": 15.223,
+   "pavement_median_tp": 15.436,
+   "pavement_max_tp": 15.745,
+   "anchor_tp": 15.202,
+   "roof_deviation_vs_plateau_m": 0.103,
+   "max_burial_m": 0.543,
+   "lowest_at": {
+    "x": -17.66,
+    "y": 29.63,
+    "z_tp": 15.202,
+    "kind": "ground_fill",
+    "edge": 4
+   },
+   "samples_by_kind": {
+    "ground_sidewalk": 4,
+    "ground_road": 0,
+    "ground_intersection": 0,
+    "ground_fill": 137
+   },
+   "min_on_measured_pavement_tp": 15.459
+  }
+ },
+ "generator": [
+  "python3 source/tools/measure_crosswalks.py <old data json> <gsi tiles> source/data/crosswalks_measured.json",
+  "python3 source/tools/prepare_ground.py <plateau_core.json> source/data/crosswalks_measured.json source/data/ground_input.json 150",
+  "blender -b -P source/blender/build_ground.py -- source/data/ground_input.json web/ground_core.glb source/data/ground_stats.json",
+  "blender -b -P source/blender/ground_anchor.py -- web/ground_core.glb <plateau_core.json> source/data/ground_anchors.json"
+ ],
+ "generatorRevision": "80fedf49e3bc5a52f3259807a8401ba650c05495",
+ "files": {
+  "web/ground_core.glb": {
+   "sha256": "2b9d3add1172a2418d4befaffbea66b44121fcf6e31b6aedca3cc83267e61661",
+   "bytes": 2619060
+  },
+  "source/data/ground_input.json": {
+   "sha256": "b2b21f5f80fb7b2cebfc04f886ab228f3605f5ff30a760699f1d583de1bfb1f7",
+   "bytes": 1098622
+  },
+  "source/data/ground_stats.json": {
+   "sha256": "74d03f42f65a7bb08543981fbe28e4d030ff14423c1115c49cf10c7f5a572dad",
+   "bytes": 1001
+  },
+  "source/data/crosswalks_measured.json": {
+   "sha256": "dbaa6719fcca798114ce4aa0d958ddaeae9bf93c3c8b96c7c76316ce05f084e0",
+   "bytes": 17538
+  },
+  "source/blender/build_ground.py": {
+   "sha256": "7ba72ccdd79c329e962c241b811d0f9b45dc4db356561b72852db06b54b1f071",
+   "bytes": 8654
+  },
+  "source/tools/prepare_ground.py": {
+   "sha256": "aca0f2dd230068aa2023da99746a2cc6c356f54795b2367188c4c7ad950f2975",
+   "bytes": 8263
+  },
+  "source/tools/measure_crosswalks.py": {
+   "sha256": "5cf54af1bed6e0da514904b79384d7a3780a30e7165c233b3d3a91422f530326",
+   "bytes": 6371
+  },
+  "source/data/ground_anchors.json": {
+   "sha256": "414961675bd0c763370fcb68babf72de96c1ecfe79d7398a3fefb2fac1512374",
+   "bytes": 1117
+  },
+  "source/blender/ground_anchor.py": {
+   "sha256": "51c30faf4db73bdb4acf947c2f77409c2588ae2448b9e142a80ce75d255762af",
+   "bytes": 3978
+  }
+ }
+}

@@ -155,5 +155,6 @@
    "bytes": 1028185,
    "sha256": "75fd81e301379978b2265101f8f6a6f8a023ff89f492aa59afe490a57a8e72ec"
   }
- }
+ },
+ "groundDatum": " | C2a: placed by viewer.json groundElevationTP = T.P. 15.202 (lowest finished ground along the footprint), world Y = T.P. - 15.000."
 }

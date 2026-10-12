@@ -1,0 +1,52 @@
+{
+ "magnet": {
+  "plateau_ground_tp": 14.561,
+  "frontage_samples": 267,
+  "pavement_min_tp": 14.907,
+  "pavement_p05_tp": 14.915,
+  "pavement_median_tp": 15.663,
+  "pavement_max_tp": 16.167,
+  "anchor_tp": 14.907,
+  "roof_deviation_vs_plateau_m": 0.346,
+  "max_burial_m": 1.26,
+  "lowest_at": {
+   "x": 49.75,
+   "y": 12.12,
+   "z_tp": 14.907,
+   "kind": "ground_fill",
+   "edge": 1
+  },
+  "samples_by_kind": {
+   "ground_sidewalk": 19,
+   "ground_road": 13,
+   "ground_intersection": 0,
+   "ground_fill": 235
+  },
+  "min_on_measured_pavement_tp": 15.19
+ },
+ "qfront": {
+  "plateau_ground_tp": 15.099,
+  "frontage_samples": 141,
+  "pavement_min_tp": 15.202,
+  "pavement_p05_tp": 15.223,
+  "pavement_median_tp": 15.436,
+  "pavement_max_tp": 15.745,
+  "anchor_tp": 15.202,
+  "roof_deviation_vs_plateau_m": 0.103,
+  "max_burial_m": 0.543,
+  "lowest_at": {
+   "x": -17.66,
+   "y": 29.63,
+   "z_tp": 15.202,
+   "kind": "ground_fill",
+   "edge": 4
+  },
+  "samples_by_kind": {
+   "ground_sidewalk": 4,
+   "ground_road": 0,
+   "ground_intersection": 0,
+   "ground_fill": 137
+  },
+  "min_on_measured_pavement_tp": 15.459
+ }
+}

@@ -49,5 +49,7 @@
  "sun": {
   "azimuth_deg": 152,
   "elevation_deg": 38
- }
+ },
+ "groundElevationTP": 15.202,
+ "_groundNote": "C2a: this model's 0 m is placed on the lowest finished ground along its PLATEAU footprint (T.P. 15.202, from assets/ground/core/source/data/ground_anchors.json) so the base never floats; PLATEAU's own ground for it is T.P. 15.099, so roofs sit +0.103 m from PLATEAU; viewer Y = elevation - 15.000"
 }

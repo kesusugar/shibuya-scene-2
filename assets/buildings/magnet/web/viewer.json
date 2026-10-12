@@ -27,5 +27,7 @@
  },
  "layers": {
   "signs_2025": "magnet_signs_2025.glb"
- }
+ },
+ "groundElevationTP": 14.907,
+ "_groundNote": "C2a: this model's 0 m is placed on the lowest finished ground along its PLATEAU footprint (T.P. 14.907, from assets/ground/core/source/data/ground_anchors.json) so the base never floats; PLATEAU's own ground for it is T.P. 14.561, so roofs sit +0.346 m from PLATEAU; viewer Y = elevation - 15.000"
 }
