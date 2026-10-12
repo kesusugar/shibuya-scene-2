@@ -1,0 +1,57 @@
+{
+  "stream": {
+    "q": "time=day&streetref=stream2025",
+    "w": 720,
+    "h": 956,
+    "state": {
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 10,
+        "triangles": 30662
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 19,
+          "triangles": 1203,
+          "materials": 19,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": []
+  }
+}

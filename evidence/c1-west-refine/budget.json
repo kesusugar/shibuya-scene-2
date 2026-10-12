@@ -1,0 +1,44 @@
+{
+  "assets": {
+    "buildings/eiraku": {
+      "triangles": 394,
+      "primitives": 5,
+      "bytes": 32840
+    },
+    "buildings/magnet": {
+      "triangles": 26473,
+      "primitives": 60,
+      "bytes": 1716472
+    },
+    "buildings/qfront": {
+      "triangles": 115196,
+      "primitives": 56,
+      "bytes": 5808996
+    },
+    "buildings/west-block": {
+      "triangles": 1257,
+      "primitives": 25,
+      "bytes": 1751748
+    },
+    "ground/core": {
+      "triangles": 71323,
+      "primitives": 7,
+      "bytes": 2619060
+    },
+    "street/core": {
+      "triangles": 41296,
+      "primitives": 22,
+      "bytes": 1932568
+    },
+    "context/core": {
+      "triangles": 30662,
+      "primitives": 10,
+      "bytes": 2308228
+    }
+  },
+  "total": {
+    "triangles": 286601,
+    "primitives": 185,
+    "bytes": 16169912
+  }
+}

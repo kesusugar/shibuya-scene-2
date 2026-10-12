@@ -2,29 +2,29 @@
   "id": "west-block",
   "source_id": "way/136690966",
   "level": "B",
-  "status": "prototype; storefront split and dimensions approximate",
+  "status": "B prototype refined: rooftop/corner/window/entrance types compared, dimensions and occupancy approximate",
   "sign_era": "2025-01-31",
   "sources": [
     "source/data/plateau.json",
     "source/refs/REFERENCE_REGISTER.csv"
   ],
   "stats": {
-    "triangles": 1215,
-    "primitives": 19,
-    "bytes": 1632600
+    "triangles": 1257,
+    "primitives": 25,
+    "bytes": 1751748
   },
   "files": {
     "README.md": {
-      "bytes": 3007,
-      "sha256": "3ddd4dd36ea48f5f6c343f9d95c3630ffc7fa514eea599877bdf0fc5c1c34aaa"
+      "bytes": 4161,
+      "sha256": "209bae455b7f305d8a35a5b2e8a52da315a1516164a2795c69196f1c9fcdbbfc"
     },
     "source/blender/build_west.py": {
-      "bytes": 9319,
-      "sha256": "6106cc25f24defad224a79541314fb874f7f277c4beb48ab2cb3dca879358114"
+      "bytes": 12206,
+      "sha256": "886518469235cbc3c37a79b2ca61a9257c4b3908475543f6b58b6ec870c53221"
     },
     "source/data/facades.json": {
-      "bytes": 3692,
-      "sha256": "8366ff3d338258b9821eafa481bdbe8fbb2221d3bef6bece1b24fbf7bf2c5189"
+      "bytes": 6264,
+      "sha256": "453e6ba19ad8d322d84abc057743343cc27b331dec20b0e159236de10bf2016c"
     },
     "source/data/plateau.json": {
       "bytes": 83361,
@@ -32,11 +32,15 @@
     },
     "source/data/stats.json": {
       "bytes": 6298,
-      "sha256": "650046f5c65ae693bacdda16bf08c908681f8d46e3dbccbd368618fec499b515"
+      "sha256": "b6aa8f06e098151187792b7823509852460d8e6fe542bd0d90862d0713f67423"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
-      "bytes": 668,
-      "sha256": "e8faf71e61e0662c543e3a942a2b8c1751c3f1bf8b9f3217670b3d41e1d489a2"
+      "bytes": 902,
+      "sha256": "c64daf688378dd38d6859db5fac341b496f0f46c9ba270c42532796ad6471f6d"
+    },
+    "source/textures/asbi_flank.png": {
+      "bytes": 105481,
+      "sha256": "7f33fc933e92b1af726187f0edc404156dfd0cb9a048b189e22b8ca797118c1d"
     },
     "source/textures/dmm.png": {
       "bytes": 219373,
@@ -71,24 +75,24 @@
       "sha256": "815f30102b1c311823fa2f54232c35d9a5ce6cc2b993773a6462a57603188af6"
     },
     "web/emissive_day.json": {
-      "bytes": 1173,
-      "sha256": "9fc23cafe8bdf66a813a2562a9c95a332e623b204a39a447b95a511bb85c54a7"
+      "bytes": 1292,
+      "sha256": "99eca18cf5bb4f2b3efc187cee40b0bcf04cd63c2e9faf5b253343c53eecb54b"
     },
     "web/emissive_night.json": {
-      "bytes": 1199,
-      "sha256": "ba465ced172f6f195e2592348c31386ce60655f16f5bab3de371f516381c8f2d"
+      "bytes": 1321,
+      "sha256": "c8d177689f8413bdb46ddc3c72687d733a44a7197fcf078f515d1c4519d00d22"
     },
     "web/signs-2025-01.glb": {
-      "bytes": 1553744,
-      "sha256": "7a407b845cd1f1f24a5bc4c61771a535e1c249cc26732637f8f0af688bdd2d14"
+      "bytes": 1660576,
+      "sha256": "d7e0af7785794b835cc03d766b715998518d065e02b7dd1c736ff39122067f68"
     },
     "web/viewer.json": {
       "bytes": 222,
       "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
     },
     "web/west-block.glb": {
-      "bytes": 78856,
-      "sha256": "621ab2b9b5d55c0bb2862a77fd4711213a62e72e7fcf5ed2d87277c0ccbfd6a0"
+      "bytes": 91172,
+      "sha256": "d4bd7222906dcbdcd34853740a21ef4a17d0387d87fe3951e3f6d9f48037e3c2"
     }
   }
 }
