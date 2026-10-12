@@ -241,7 +241,7 @@ MAT = {
  'slab': principled('slab_edge', (.30, .30, .31), rough=.8),
  'ceiling': principled('ceiling', (.78, .77, .74), rough=.85),
  'ceil_light': principled('ceil_light', (.95, .95, .92), rough=.4, emit=(1, .86, .66), estr=(20 if NIGHT else 2.0)),
- 'shop_light': principled('shop_light', (.95, .9, .8), rough=.4, emit=(1, .78, .5), estr=(30 if NIGHT else 2.0)),
+ 'shop_light': principled('shop_light', (.95, .9, .8), rough=.4, emit=(1, .62, .3), estr=(30 if NIGHT else 2.0)),   # v5-3: Q031 podium is a warm 2700 K
  'floor': principled('floor', (.36, .34, .31), rough=.55),
  'core': principled('core_wall', (.22, .21, .2), rough=.8),
  'books': books('shop_books'),
@@ -262,7 +262,7 @@ MAT = {
  'rib': principled('rib_alu', (.74, .75, .77), metal=.5, rough=.3, streaks=.15),
  'kerb': principled('kerb', (.55, .54, .52), rough=.8),
  'zebra': principled('zebra', (.82, .82, .80), rough=.6),
- 'shop_in': principled('shop_interior', (.05, .045, .04), rough=.6, emit=(1, .82, .6), estr=(.35 if NIGHT else .02)),
+ 'shop_in': principled('shop_interior', (.05, .045, .04), rough=.6, emit=(1, .6, .3), estr=(.15 if NIGHT else .02)),
  'context': principled('context', (.42, .42, .44), rough=.7, streaks=.2),
  'ctx_win': ctx_windows('context_windows'),
  'led': emissive_image('qs_eye_main', os.path.join(TEX, 'led_main.png'), 7 if NIGHT else .8, sat=1.0 if NIGHT else .6),
@@ -595,13 +595,14 @@ MAT['mull_white'] = principled('mull_white', (.86, .86, .85), metal=.3, rough=.3
 MAT['stone_dark'] = principled('stone_dark', (.06, .06, .065), rough=.35)
 MAT['wood'] = principled('wood', (.33, .19, .09), rough=.55)
 MAT['tile_white'] = tiles_white('tile_white')
-MAT['pendant'] = principled('pendant', (.9, .8, .6), rough=.4, emit=(1, .72, .42), estr=(18 if NIGHT else 3))
+MAT['pendant'] = principled('pendant', (.9, .8, .6), rough=.4, emit=(1, .6, .3), estr=(24 if NIGHT else 3))
 MAT['menu'] = principled('menu', (.05, .05, .05), rough=.4, emit=(1, .95, .85), estr=(1.5 if NIGHT else .6))
 MAT['sb_green'] = principled('sb_green', (.0, .25, .15), rough=.4, emit=(0, .35, .2), estr=(2 if NIGHT else 0))
 
 # --- 2F slab band. v5-2 (V-09): in Q032 this strip is glazing in a white frame (mullions on the 0.97 m module, a white
 #     rail top and bottom); only the TSUTAYA sign is a solid white panel. A dark slab edge sits behind the glass.
 SIGN_U0, SIGN_U1 = 3.0, 8.4
+SIGN_E = float(next((a_[5:] for a_ in argv if a_.startswith('sign=')), '8'))
 for k in range(48):
     u0 = -U_END + 2*U_END*k/48; u1 = u0 + 2*U_END/48; um = (u0+u1)/2
     a, t, d = arc_at(u0, R+.1); b, _, _ = arc_at(u1, R+.1); m = (a+b)/2; L_ = (b-a).length; yw_ = yaw_t((b-a).normalized())
@@ -624,7 +625,8 @@ _tdk = text_object('TSUTAYA', 1.25, .08, '06_GROUND_FLOOR', 'tsutaya_dark', (q.x
 _tdk.data.bevel_depth = .035     # fattens the dark returns so they show as an outline around the white faces
 # Q032: white faces on dark returns - a second, white skin a few cm proud of the dark letters
 q2 = q + d*.13
-text_object('TSUTAYA', 1.25, .01, '06_GROUND_FLOOR', 'mull_white', (q2.x, q2.y, (BAND0+BAND1)/2), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
+MAT['tsutaya_face'] = principled('tsutaya_face', (.9, .9, .9), rough=.3, emit=(1, 1, 1), estr=(SIGN_E if NIGHT else 0))   # v5-3: lit at night (Q031)
+text_object('TSUTAYA', 1.25, .01, '06_GROUND_FLOOR', 'tsutaya_face', (q2.x, q2.y, (BAND0+BAND1)/2), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
 
 # --- 1F glazing near the face, white mullions (0.97 m) and transom; recessed entrance in the middle
 G1 = R-.6
@@ -778,10 +780,22 @@ for end, (z0, z1) in ((ARC[0], M['floodlights']['right_m']), (ARC[-1], M['floodl
     if NIGHT:
         for k in range(3):
             zz = z0 + (z1-z0)*k/2; tip = end + d*2.5 + side*.5
-            L = bpy.data.lights.new(f'flood{k}', 'SPOT'); L.energy = 9000; L.spot_size = math.radians(60); L.spot_blend = .6; L.color = (1, .95, .88)
+            L = bpy.data.lights.new(f'flood{k}', 'SPOT'); L.energy = float(next((a_[6:] for a_ in argv if a_.startswith('flood=')), '40000')); L.spot_size = math.radians(80); L.spot_blend = .7; L.color = (1, .95, .88)   # v5-3: Q031 side faces read ~190
             o = bpy.data.objects.new(f'flood{k}', L); collection('07_FIXTURES').objects.link(o)
-            o.location = (tip.x, tip.y, zz); aim = Vector((end.x + side.x*8 - d.x*.5, end.y + side.y*8 - d.y*.5, zz-16)) - o.location   # wash down the side face (Q031)
+            o.location = (tip.x, tip.y, zz); aim = Vector((end.x + side.x*6 - d.x*3.5, end.y + side.y*6 - d.y*3.5, zz-22)) - o.location   # wash down the side face (Q031)
             o.rotation_euler = aim.to_track_quat('-Z', 'Y').to_euler()
+
+if NIGHT:
+    # v5-3: in Q031 both side faces glow evenly from the floodlight arms down to the podium. Seven narrow lamps per arm
+    # cannot be modelled one by one here, so each side face gets one soft wash from a few metres out, aimed at the face.
+    WASH = float(next((a_[5:] for a_ in argv if a_.startswith('wash=')), '40000'))
+    for a, b, L, t, n, k in segments(OUTLINE, KIND):
+        if k != 'side' or L < 6: continue
+        c = (a+b)/2 + n*5.0
+        A_ = bpy.data.lights.new('wash', 'AREA'); A_.shape = 'RECTANGLE'; A_.size = L*.9; A_.size_y = 30; A_.energy = WASH*L/20; A_.color = (1, .88, .74)
+        A_.spread = math.radians(70)
+        o = bpy.data.objects.new('wash', A_); collection('07_FIXTURES').objects.link(o); o.location = (c.x, c.y, 24)
+        o.rotation_euler = Vector((-n.x, -n.y, -.25)).to_track_quat('-Z', 'Y').to_euler()
 
 # ================================================================ 09 CONTEXT: pavement, crossing, neighbours
 B.prism('09_CONTEXT', 'asphalt', [Vector((-160, -120)), Vector((160, -120)), Vector((160, 160)), Vector((-160, 160))], -.3, -.02)
@@ -975,7 +989,7 @@ sky = nt.nodes.new('ShaderNodeTexSky'); sky.sky_type = 'NISHITA'
 bg = nt.nodes['Background']; nt.links.new(sky.outputs['Color'], bg.inputs['Color'])
 if NIGHT:
     # blue hour (Q031 dusk): a plain deep-blue dome; the city supplies the rest of the light
-    nt.links.remove(bg.inputs['Color'].links[0]); bg.inputs['Color'].default_value = (.016, .055, .27, 1); bg.inputs['Strength'].default_value = 1.0
+    nt.links.remove(bg.inputs['Color'].links[0]); bg.inputs['Color'].default_value = (.016, .055, .27, 1); bg.inputs['Strength'].default_value = float(next((a_[4:] for a_ in argv if a_.startswith('sky=')), '2.2'))   # v5-3: Q031 sky reads 43,101,211
     sc.view_settings.exposure = .3
 else:
     # Q032: 2018-10-30 10:25 JST -> sun azimuth ~152 deg (from north, clockwise), elevation ~38 deg
@@ -1007,14 +1021,15 @@ if os.path.exists(HDRI) and 'nohdri' not in argv:
 
 # Q032 camera: least-squares fit to front-face landmarks read off the photo (data/camera_q032_fit.json, 13 px RMS
 # at 1280x1749). Level camera (the photo is perspective-corrected) with an off-centre principal point.
-def camera_q032(name, res=(640, 875)):
-    F = json.load(open(os.path.join(ROOT, 'data', 'camera_q032_fit.json')))
+def camera_q032(name, res=(640, 875), fit='camera_q032_fit.json', H0=1749):
+    F = json.load(open(os.path.join(ROOT, 'data', fit)))
     cam = bpy.data.cameras.new(name); co = bpy.data.objects.new(name, cam); sc.collection.objects.link(co)
     tang = Vector((-ARC_N.y, ARC_N.x))
-    pos = ARC_MID + ARC_N*F['D'] + tang*F['lat']; co.location = (pos.x, pos.y, 1.6)
+    pos = ARC_MID + ARC_N*F['D'] + tang*F['lat']; co.location = (pos.x, pos.y, F.get('h', 1.6))
     yw = math.radians(F['yaw']); look = -(ARC_N*math.cos(yw) + tang*math.sin(yw)); look = Vector((look.x, look.y, 0))
     co.rotation_euler = look.to_track_quat('-Z', 'Y').to_euler()
-    W_, H_ = res; sc.render.resolution_x, sc.render.resolution_y = W_, H_; k = H_/1749
+    if F.get('roll_deg'): co.rotation_euler.rotate_axis('Z', math.radians(-F['roll_deg']))
+    W_, H_ = res; sc.render.resolution_x, sc.render.resolution_y = W_, H_; k = H_/H0
     cam.sensor_fit = 'VERTICAL'; cam.angle_y = 2*math.atan((H_/2)/(F['fpx']*k))
     cam.shift_x = (W_/2 - F['cx']*k)/max(W_, H_); cam.shift_y = (F['cy']*k - H_/2)/max(W_, H_)
     cam.clip_end = 2000; sc.camera = co; return co
@@ -1044,7 +1059,9 @@ def camera_look(name, pos, target, lens, res):
     sc.render.resolution_x, sc.render.resolution_y = res; sc.camera = co
 scale = 1 if prev else 2
 TANG = Vector((-ARC_N.y, ARC_N.x))
-if VIEW == 'q032':
+if VIEW == 'q031':     # Q031 dusk photo (2012), fitted on era-stable landmarks (data/camera_q031_fit.json)
+    camera_q032('cam_q031', res=(640, 944) if prev else (1280, 1887), fit='camera_q031_fit.json', H0=1887)
+elif VIEW == 'q032':
     camera_q032('cam_q032', res=(640, 875) if prev else (1280, 1749))
 elif VIEW == 'q107':   # three-quarter street view from the south-west corner of the crossing (Q107-like)
     d = (ARC_N*math.cos(math.radians(-28)) + TANG*math.sin(math.radians(-28))); p = ARC_MID + d*62
