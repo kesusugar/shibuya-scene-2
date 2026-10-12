@@ -1,0 +1,44 @@
+{
+ "m027_beauty": {
+  "query": "/?time=day&view=m027&capture",
+  "errors": [
+   "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "perf": "FPS 1.1  (13フレーム平均)\nframe p50 486.4 ms / p95 2404.7 ms\ndraw calls 192  tris 293k\ngeometries 124  textures 25\n解像度 640x853  DPR 1.00"
+ },
+ "m027_class": {
+  "query": "/?time=day&view=m027&capture&pass=class",
+  "errors": [],
+  "perf": "FPS 8.0  (56フレーム平均)\nframe p50 60.3 ms / p95 331.1 ms\ndraw calls 74  tris 138k\ngeometries 76  textures 20\n解像度 640x853  DPR 1.00"
+ },
+ "q032_beauty": {
+  "query": "/?time=day&view=q032&capture",
+  "errors": [],
+  "perf": "FPS 1.0  (13フレーム平均)\nframe p50 360.9 ms / p95 3105.0 ms\ndraw calls 193  tris 351k\ngeometries 124  textures 21\n解像度 640x875  DPR 1.00"
+ },
+ "q032_class": {
+  "query": "/?time=day&view=q032&capture&pass=class",
+  "errors": [],
+  "perf": "FPS 5.7  (39フレーム平均)\nframe p50 94.8 ms / p95 1531.7 ms\ndraw calls 76  tris 196k\ngeometries 78  textures 20\n解像度 640x875  DPR 1.00"
+ },
+ "refa_beauty": {
+  "query": "/?time=day&pose=-12.6,-68.2,10.2,0.8,30.7,16.2,52.2&capture",
+  "errors": [],
+  "perf": "FPS 1.3  (13フレーム平均)\nframe p50 338.0 ms / p95 2698.7 ms\ndraw calls 251  tris 369k\ngeometries 130  textures 26\n解像度 640x480  DPR 1.00"
+ },
+ "refa_class": {
+  "query": "/?time=day&pose=-12.6,-68.2,10.2,0.8,30.7,16.2,52.2&capture&pass=class",
+  "errors": [],
+  "perf": "FPS 5.7  (38フレーム平均)\nframe p50 86.8 ms / p95 1634.7 ms\ndraw calls 128  tris 213k\ngeometries 130  textures 20\n解像度 640x480  DPR 1.00"
+ },
+ "refb_beauty": {
+  "query": "/?time=night&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8&capture",
+  "errors": [],
+  "perf": "FPS 1.4  (13フレーム平均)\nframe p50 684.8 ms / p95 1964.7 ms\ndraw calls 118  tris 210k\ngeometries 108  textures 25\n解像度 640x482  DPR 1.00"
+ },
+ "refb_class": {
+  "query": "/?time=night&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8&capture&pass=class",
+  "errors": [],
+  "perf": "FPS 6.1  (40フレーム平均)\nframe p50 79.0 ms / p95 1054.5 ms\ndraw calls 106  tris 209k\ngeometries 108  textures 20\n解像度 640x482  DPR 1.00"
+ }
+}

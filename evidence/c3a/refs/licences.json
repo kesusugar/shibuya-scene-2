@@ -1,0 +1,42 @@
+{
+  "verified_on": "2026-10-13",
+  "source": "https://commons.wikimedia.org/w/api.php (imageinfo.extmetadata)",
+  "photos": {
+    "File:In Front of Shibuya Station.jpg": {
+      "Artist": "Dick Johnson",
+      "Credit": "Flickr: In Front of Shibuya Station",
+      "LicenseShortName": "CC BY 2.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "UsageTerms": "Creative Commons Attribution 2.0",
+      "DateTimeOriginal": "2010-12-29 15:44:01",
+      "AttributionRequired": "true"
+    },
+    "File:Shibuya scramble av night from Stream.jpg": {
+      "Artist": "Syced",
+      "Credit": "Own work",
+      "LicenseShortName": "CC0",
+      "LicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "UsageTerms": "Creative Commons Zero, Public Domain Dedication",
+      "DateTimeOriginal": "22 January 2024, 20:34",
+      "AttributionRequired": "false"
+    },
+    "File:Q-Front 2018.jpg": {
+      "Artist": "Kakidai",
+      "Credit": "Own work",
+      "LicenseShortName": "CC BY-SA 4.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "UsageTerms": "Creative Commons Attribution-Share Alike 4.0",
+      "DateTimeOriginal": "2018-10-30 10:25:07",
+      "AttributionRequired": "true"
+    },
+    "File:Shibuya Crossing 20250901 131850.jpg": {
+      "Artist": "Taufik",
+      "Credit": "Own work",
+      "LicenseShortName": "CC0",
+      "LicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "UsageTerms": "Creative Commons Zero, Public Domain Dedication",
+      "DateTimeOriginal": "2025-09-01 13:18:50",
+      "AttributionRequired": "false"
+    }
+  }
+}
