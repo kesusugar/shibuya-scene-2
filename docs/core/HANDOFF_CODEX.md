@@ -1,5 +1,7 @@
 # 引き継ぎ（Claude Code → Codex）：Shibuya Scene 2.0 Core v1
 
+> **Codex追記：PR #9の申し送りに従い、西側街区 way/136690966 を通常表示のB段階へ置き換えた。** 写真から種類を確認して外壁・店舗・2025年1月の看板を作り、Cとの重複を除去。同じ3視点で比較し、白い縦看板の高さを一項目だけ修正。結果と未達は `C1_WEST_BLOCK_B_REPORT.md`、画像は `evidence/c1-west-b/boards/`。次の作業では `AGENTS.md` も読む。
+
 > **最新（2026-10-12 夜、Claude Code）：C2b を作り直し、建物の C 段階を一括で入れた（ブランチ `claude/core-c2b-fix`）。**
 > 1. **最初に `CODEX_C2B_REVIEW.md` を読むこと。** PR #8 の何がダメだったか（信号・柵が通常表示に 0 件、出入口がバス停形、校正に時間を使い切った）と、次の進め方（規則で置く → 同じカメラで見る → 1 つずつ直す）を書いた。
 > 2. 結果：`C2B_FIX_REPORT.md`（街路設備 v2）、`C1_CONTEXT_REPORT.md`（周辺 308 棟の C 段階）。
