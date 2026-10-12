@@ -1,0 +1,19 @@
+{
+ "_note": "Inferred identities for unnamed or ambiguous OSM buildings. Evidence: OSM tags and the POIs that fall inside each footprint (old project data). 推定 = not confirmed on site or by an official source.",
+ "way/136690966": "推定：センター街入口西側の雑居ビル（JTB・マツモトキヨシ・西村フルーツパーラー等が入居）。旧プロジェクトで屋上の看板フレーム（久光・サロンパス）の親。大盛堂書店ビルかどうかは未確認",
+ "way/355250634": "推定：駅側の高架歩行者デッキ／コンコース（layer 1、2〜3階、POI「渋谷駅の歩道橋から見た渋谷交差点」）",
+ "way/155807211": "推定：地下鉄出入口の上屋（QFRONT前、POIなし、1階）",
+ "way/155807210": "推定：地下鉄出入口の上屋（センター街側、POI「渋谷駅」）",
+ "way/142438894": "推定：地下鉄出入口の上屋（MAGNET前、POI「渋谷駅」）",
+ "way/142438895": "推定：地下鉄出入口の上屋（交差点北東の角、POI「渋谷駅」）",
+ "way/155807209": "推定：地下鉄出入口の上屋（交差点南西、POI「渋谷駅」）",
+ "way/1335178869": "推定：地下鉄出入口の上屋（センター街側、POI「渋谷駅」）",
+ "way/155538676": "推定：ハチ公広場の売店（POI「シュマンケル」）",
+ "way/155807205": "推定：ハチ公広場の喫煙所（amenity=smoking_area）",
+ "way/858994297": "推定：ハチ公広場の小構造物（高さ3.0 m、名称なし）",
+ "way/138670889": "推定：東側の11階建て金属外装の雑居ビル（肉屋の台所・DJ Bar Bridge等が入居）",
+ "way/904652357": "渋谷駅（OSM building=train_station、駅舎の一部）",
+ "way/810356690": "推定：渋谷駅の高架部（中央改札付近、layer 1）",
+ "way/904652318": "渋谷駅の改札内（Central Paid Area、indoor）",
+ "way/904734439": "京王井の頭線 渋谷駅（西口）"
+}
