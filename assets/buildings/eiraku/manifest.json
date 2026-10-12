@@ -36,7 +36,7 @@
  "renderSettings": "Blender 4.2.3 Cycles CPU, AgX Medium High Contrast; day: sun az 207 / el 57 (M027, 2025-09-01 13:18 JST), camera-ray sky tint; night: deep-blue dome, street area lights; glossy rays see CC0 Poly Haven HDRIs (QFRONT copy)",
  "generator": "assets/buildings/magnet/source/blender/build_magnet.py (Blender 4.2.3 LTS): blender -b -P build_magnet.py -- <out> day|night preview|final view=m027|sw|south|west|roof [era=2025|none] [save] [clay]",
  "exporter": "assets/buildings/magnet/source/blender/export_web.py",
- "generatorRevision": "4d7fa8cc5c3621dead166aa178b7479e91e7107d",
+ "generatorRevision": "d6ca861a6656c1d2097ed54fb179b287b8cb3f05",
  "files": {
   "web/eiraku.glb": {
    "sha256": "07b535d3334f0f9afeb8bc4753c55ed29e82d53a35b8f79b23f9666d0882f3e5",

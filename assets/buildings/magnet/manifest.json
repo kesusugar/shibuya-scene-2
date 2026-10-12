@@ -102,14 +102,14 @@
  "renderSettings": "Blender 4.2.3 Cycles CPU, AgX Medium High Contrast; day: sun az 207 / el 57 (M027, 2025-09-01 13:18 JST), camera-ray sky tint; night: deep-blue dome, street area lights; glossy rays see CC0 Poly Haven HDRIs (QFRONT copy)",
  "generator": "assets/buildings/magnet/source/blender/build_magnet.py (Blender 4.2.3 LTS): blender -b -P build_magnet.py -- <out> day|night preview|final view=m027|sw|south|west|roof [era=2025|none] [save] [clay]",
  "exporter": "assets/buildings/magnet/source/blender/export_web.py",
- "generatorRevision": "4d7fa8cc5c3621dead166aa178b7479e91e7107d",
+ "generatorRevision": "d6ca861a6656c1d2097ed54fb179b287b8cb3f05",
  "files": {
   "web/magnet.glb": {
-   "sha256": "ddfc5a4da3dfd4509c550ea0809f86732c69062de746891ed6cf857a3fca4646",
-   "bytes": 573924
+   "sha256": "7fd1a161fced80151adc60519a88d68046aed51cb7264de503931fcd1c9fdbea",
+   "bytes": 570684
   },
   "web/magnet_signs_2025.glb": {
-   "sha256": "3f2aa5ddc63c29e64f32e4e70840a3ca163c9e93de0893eede636454d06bb2bd",
+   "sha256": "24fc640944a076cc5eb468d0e9375894ef85fe0e8548caa74b93f515366b6163",
    "bytes": 1112464
   },
   "web/viewer.json": {
@@ -125,16 +125,16 @@
    "bytes": 4180
   },
   "source/blend/magnet_day.blend": {
-   "sha256": "fd1e1708c14f63fe73f7b3b12f592dfebd755900a5970a5613e11960b3ed73a6",
-   "bytes": 10155984
+   "sha256": "8bcd221ed27d406e6936ccae65348c62feaec7685cac9826c1890ed244e1b03e",
+   "bytes": 10153912
   },
   "source/blend/magnet_night.blend": {
-   "sha256": "059b95200985b1c0b06326eb77fd586fbec1cf76a3e44ccb8d721ca33897c12c",
-   "bytes": 10142652
+   "sha256": "231fed8ae7be63599a6fe3e77fb51dacd0d5cccfc8a6f4cf164ab7b21e12e11a",
+   "bytes": 10140580
   },
   "source/blender/build_magnet.py": {
-   "sha256": "fb9695455c835d941e5b2a761b48a44f734a80a0b85ba5ead210cccb1f05c539",
-   "bytes": 35914
+   "sha256": "417fdfcf738d5fe11bbafe4fa65ee14f9a2f077ac9bff5e91e4c3ee9d3300d5b",
+   "bytes": 36089
   },
   "source/blender/export_web.py": {
    "sha256": "63290b8a3289945fa9a863b7a8549e297638fc4413a47c7cc2287c8efdee3d87",
@@ -145,7 +145,7 @@
    "bytes": 2827
   },
   "source/data/signage_2025.json": {
-   "sha256": "24884bb097532515d3462474f83c8736ea044d336658e585988548b191378c1c",
+   "sha256": "b446d6892ae473e87bff2815114032b620a053212112dea2211019b8bb2fb2e2",
    "bytes": 2751
   },
   "source/data/camera_m027_fit.json": {
