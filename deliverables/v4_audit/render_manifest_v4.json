@@ -1,0 +1,197 @@
+[
+ {
+  "file": "renders/final4/day_q032_final.png",
+  "sha256": "9305f84ad141c5a8d956982627eba1f4fa35c524bffdd2f3dde990da5ec6e154",
+  "source_commit": "a4784ffea8b27c8ab2cb8618b31ff139ef60653e",
+  "working_tree": "clean (no uncommitted changes during the renders)",
+  "scene_file": "blender/build_qfront.py (procedural; no .blend is loaded)",
+  "blender_version": "4.2.3 LTS",
+  "camera": "cam_q032 (data/camera_q032_fit.json)",
+  "camera_pose": {
+   "D_m": 63.25,
+   "lateral_m": 7.87,
+   "yaw_deg": 10.81,
+   "height_m": 1.6,
+   "pitch": "level (photo is perspective-corrected)"
+  },
+  "fov_deg": {
+   "vertical": 56.65,
+   "horizontal": 43.05
+  },
+  "principal_point_px": [
+   556.2,
+   1536.0
+  ],
+  "mode": "day",
+  "view": "full Q032 frame",
+  "crop_border_photo_px": null,
+  "resolution": [
+   1280,
+   1749
+  ],
+  "engine": "Cycles CPU",
+  "samples": 256,
+  "denoise": "OpenImageDenoise",
+  "color_management": "AgX, look \"AgX - Medium High Contrast\", exposure 0.05",
+  "post": "compositor: dispersion 0.002, sharpen 0.12, vignette (0.88-1.0), fog glow (night strong / day almost off)",
+  "render_timestamp_file_mtime": "2026-10-12T01:51:05Z",
+  "reference_image": "refs/raw/Q032.jpg (Kakidai 2018-10-30, CC BY-SA 4.0)",
+  "comparability": "MATCHED"
+ },
+ {
+  "file": "renders/final4/night_q032_final.png",
+  "sha256": "058085e9cd9ae0de2b263912908ce39dbe7f89e42dae68180af8c1e818b9c0be",
+  "source_commit": "a4784ffea8b27c8ab2cb8618b31ff139ef60653e",
+  "working_tree": "clean (no uncommitted changes during the renders)",
+  "scene_file": "blender/build_qfront.py (procedural; no .blend is loaded)",
+  "blender_version": "4.2.3 LTS",
+  "camera": "cam_q032 (data/camera_q032_fit.json)",
+  "camera_pose": {
+   "D_m": 63.25,
+   "lateral_m": 7.87,
+   "yaw_deg": 10.81,
+   "height_m": 1.6,
+   "pitch": "level (photo is perspective-corrected)"
+  },
+  "fov_deg": {
+   "vertical": 56.65,
+   "horizontal": 43.05
+  },
+  "principal_point_px": [
+   556.2,
+   1536.0
+  ],
+  "mode": "night",
+  "view": "full Q032 frame",
+  "crop_border_photo_px": null,
+  "resolution": [
+   1280,
+   1749
+  ],
+  "engine": "Cycles CPU",
+  "samples": 256,
+  "denoise": "OpenImageDenoise",
+  "color_management": "AgX, look \"AgX - Medium High Contrast\", exposure 0.3",
+  "post": "compositor: dispersion 0.002, sharpen 0.12, vignette (0.88-1.0), fog glow (night strong / day almost off)",
+  "render_timestamp_file_mtime": "2026-10-12T02:12:33Z",
+  "reference_image": "refs/raw/Q031.jpg (Kakidai 2012, CC BY-SA 3.0) - different camera",
+  "comparability": "NOT_COMPARABLE (Q031 is another viewpoint and a different year)"
+ },
+ {
+  "file": "renders/final4/day_q032crop_podium_final.png",
+  "sha256": "abdbb76877f79603d856b59dc3c457c3e754529acef3715cc2092aa5ff0a591d",
+  "source_commit": "a4784ffea8b27c8ab2cb8618b31ff139ef60653e",
+  "working_tree": "clean (no uncommitted changes during the renders)",
+  "scene_file": "blender/build_qfront.py (procedural; no .blend is loaded)",
+  "blender_version": "4.2.3 LTS",
+  "camera": "cam_q032 (data/camera_q032_fit.json)",
+  "camera_pose": {
+   "D_m": 63.25,
+   "lateral_m": 7.87,
+   "yaw_deg": 10.81,
+   "height_m": 1.6,
+   "pitch": "level (photo is perspective-corrected)"
+  },
+  "fov_deg": {
+   "vertical": 56.65,
+   "horizontal": 43.05
+  },
+  "principal_point_px": [
+   556.2,
+   1536.0
+  ],
+  "mode": "day",
+  "view": "Q032 crop 1F-2F",
+  "crop_border_photo_px": "420,1380,1000,1640 @2x",
+  "resolution": [
+   1160,
+   520
+  ],
+  "engine": "Cycles CPU",
+  "samples": 256,
+  "denoise": "OpenImageDenoise",
+  "color_management": "AgX, look \"AgX - Medium High Contrast\", exposure 0.05",
+  "post": "compositor: dispersion 0.002, sharpen 0.12, vignette (0.88-1.0), fog glow (night strong / day almost off)",
+  "render_timestamp_file_mtime": "2026-10-12T02:21:02Z",
+  "reference_image": "refs/raw/Q032.jpg (Kakidai 2018-10-30, CC BY-SA 4.0)",
+  "comparability": "MATCHED"
+ },
+ {
+  "file": "renders/final4/day_q032crop_crown_final.png",
+  "sha256": "8c35ac21c7efb50c6b4e01f2be26e0c14128127b5e1461ed5f9a8bcb506bf6eb",
+  "source_commit": "a4784ffea8b27c8ab2cb8618b31ff139ef60653e",
+  "working_tree": "clean (no uncommitted changes during the renders)",
+  "scene_file": "blender/build_qfront.py (procedural; no .blend is loaded)",
+  "blender_version": "4.2.3 LTS",
+  "camera": "cam_q032 (data/camera_q032_fit.json)",
+  "camera_pose": {
+   "D_m": 63.25,
+   "lateral_m": 7.87,
+   "yaw_deg": 10.81,
+   "height_m": 1.6,
+   "pitch": "level (photo is perspective-corrected)"
+  },
+  "fov_deg": {
+   "vertical": 56.65,
+   "horizontal": 43.05
+  },
+  "principal_point_px": [
+   556.2,
+   1536.0
+  ],
+  "mode": "day",
+  "view": "Q032 crop crown",
+  "crop_border_photo_px": "400,220,960,560 @2x",
+  "resolution": [
+   1120,
+   680
+  ],
+  "engine": "Cycles CPU",
+  "samples": 256,
+  "denoise": "OpenImageDenoise",
+  "color_management": "AgX, look \"AgX - Medium High Contrast\", exposure 0.05",
+  "post": "compositor: dispersion 0.002, sharpen 0.12, vignette (0.88-1.0), fog glow (night strong / day almost off)",
+  "render_timestamp_file_mtime": "2026-10-12T02:27:01Z",
+  "reference_image": "refs/raw/Q032.jpg (Kakidai 2018-10-30, CC BY-SA 4.0)",
+  "comparability": "MATCHED"
+ },
+ {
+  "file": "renders/final4/night_q032crop_podium_final.png",
+  "sha256": "801c99863692d70feabad405bad83507622fb70f8d99e7c619f8b4f47d1311c4",
+  "source_commit": "a4784ffea8b27c8ab2cb8618b31ff139ef60653e",
+  "working_tree": "clean (no uncommitted changes during the renders)",
+  "scene_file": "blender/build_qfront.py (procedural; no .blend is loaded)",
+  "blender_version": "4.2.3 LTS",
+  "camera": "cam_q032 (data/camera_q032_fit.json)",
+  "camera_pose": {
+   "D_m": 63.25,
+   "lateral_m": 7.87,
+   "yaw_deg": 10.81,
+   "height_m": 1.6,
+   "pitch": "level (photo is perspective-corrected)"
+  },
+  "fov_deg": {
+   "vertical": 56.65,
+   "horizontal": 43.05
+  },
+  "principal_point_px": [
+   556.2,
+   1536.0
+  ],
+  "mode": "night",
+  "view": "Q032 crop 1F-2F",
+  "crop_border_photo_px": "420,1380,1000,1640 @2x",
+  "resolution": [
+   1160,
+   520
+  ],
+  "engine": "Cycles CPU",
+  "samples": 256,
+  "denoise": "OpenImageDenoise",
+  "color_management": "AgX, look \"AgX - Medium High Contrast\", exposure 0.3",
+  "post": "compositor: dispersion 0.002, sharpen 0.12, vignette (0.88-1.0), fog glow (night strong / day almost off)",
+  "render_timestamp_file_mtime": "2026-10-12T02:37:27Z",
+  "reference_image": "refs/raw/Q031.jpg (Kakidai 2012, CC BY-SA 3.0) - different camera",
+  "comparability": "NOT_COMPARABLE (Q031 is another viewpoint and a different year)"
+ }
+]

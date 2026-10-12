@@ -1,0 +1,13 @@
+﻿issue_id,region,observation_to_verify,status,provisional_priority,evidence_and_test,category,required_render,verified_final,planned_change,acceptance_result
+V-01,crown,王冠の外輪郭・角丸の差,OPEN,MEDIUM,E2：v4 の外形を写真に重ねた図。王冠の上辺が全幅で 8〜10 px（約 0.35 m）高い。左右の角は、写真では上部の横桟が丸く回り込んでいるが、v4 は直角,Camera（上辺は当てはめ誤差 13 px 以内）／Geometry（角の形）,v4 final day full,"A, E2",v5 では対象外（次点）。角の丸みは王冠の作り直しと一緒に扱う,
+V-02,crown,空の抜けとトラス奥の遮蔽量,OPEN,HIGH,B、roi_metrics：王冠 ROI（行 300-500、x 470-860）の空の割合は写真 0.117、v3 0.05、v4 0.44。v4 は約 4 倍抜けすぎ。写真ではフィンの奥に白いパネルや設備が多く、中央右に光るガラス区画がある,Geometry / occlusion,v4 final day crown crop,B,v5-1：王冠の奥の層を、写真の区画に合わせて部分的に埋める,
+V-03,crown,QFRONT文字と横桟の重なり,CLOSED,—,B：文字の下端が 47.4 m のリングの上に載り、横桟と重ならない。二重の影も消えた,Geometry,v4 final crown crop,B,—,v4 で解決
+V-04,crown,縦フィンの間隔・厚み・側面の過密感,CLOSED,—,B：前面の本数は写真とほぼ一致（0.97 m 間隔）。フィンの断面形状（写真は丸みのあるパイプ状）は未一致だが影響は小,Geometry,v4 final crown crop,B,—,間隔は v4 で解決
+V-05,facade,昼のガラスが均一・反射像の方向が違う,PARTIAL,MEDIUM,roi_metrics：前面上部 写真 86-98 → v4 95-105、中部 87-97 → 86-95（v3 は 130-145）。反射像の構造は、パネルごとの揺らぎで均一感が減った,Material / environment,v4 final day full,A,v5 では対象外。明るさは一致したので保留,
+V-06,podium,Y柱の形状・入口前後関係,PARTIAL,MEDIUM,C：位置と分岐の向きは一致。写真の柱は角張った白い外装（面のある形）で、v4 は丸い管,Geometry,v4 final 1F-2F crop,C,次点（v5-2 の後）,
+V-07,podium,2Fブラインドが平板に見える,PARTIAL,HIGH,"C、roi_metrics：2F の明るさ 写真 117,100,87 に対して v4 81,65,51（暗すぎ）。羽根は形状としてはあるが、ほぼ閉じた角度で影面が見えている",Material / geometry（羽根の角度）,v4 final 1F-2F crop,C,v5-2：羽根の角度と色の調整,
+V-08,podium,TSUTAYA文字の切れ・位置,CLOSED,—,C：文字全体が見え、白い面に黒い縁取りで写真に近い,Geometry / placement,v4 final 1F-2F crop,C,—,v4 で解決
+V-09,podium,1Fの白飛びと室内の奥行き,OPEN,HIGH,"roi_metrics：2F の床の帯 写真 138,133,127 に対して v4 184,185,186（明るすぎ）。1F 写真 130,114,101 に対して v4 86,84,83（暗すぎ）。v3 とは逆向きにずれた",Material（帯の反射率）／Lighting（1F の室内）,v4 final 1F-2F crop,C,v5-2：帯の反射率と 1F の明るさの調整,
+V-10,night,空色・外壁側面ライト・店舗の輝度,N/A→OPEN,HIGH,D：Q031 は別の視点・別の年（2012 年）の写真で、Q032 のカメラとは比較できない。夜の TSUTAYA の文字は v4 で光らなくなった,Camera / lighting,v4 final night full,D,v5-3：Q031 のカメラを当てはめ、照明を 1 系統ずつ調整,
+V-11,context,左右ビルが単純で中心だけCG感,DEFERRED,LOW,A：QFRONT の反射や遮蔽にはほぼ関与しない,Context,v4 final day full,A,範囲外,
+V-12,camera,同視点と思われる写真とパースが違う可能性,CLOSED,—,E2：外形線の残差は中央値 12 px（目標 15 px 以内）。目印の残差は 13 px RMS（data/camera_q032_fit.json）,Camera,v4 final full,E2,—,許容範囲
