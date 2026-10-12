@@ -6,12 +6,13 @@ import type { EmissiveTable } from './buildings';
  * per photo or per building, and the class pass (?pass=class) paints them flat so a render can be compared with a
  * photograph class by class (scripts/look-metrics.py).
  */
-export type LookClass = 'glass' | 'sign' | 'interior' | 'wall' | 'road' | 'sidewalk' | 'kerb' | 'marking' | 'fill';
+export type LookClass = 'glass' | 'sign' | 'interior' | 'wall' | 'road' | 'sidewalk' | 'kerb' | 'marking' | 'fill' | 'vegetation' | 'furniture';
 
 /** Flat colours for the class pass (sRGB, exact values are what look-metrics.py reads back). */
 export const CLASS_COLORS: Record<LookClass, number> = {
   glass: 0x0000ff, sign: 0xffff00, interior: 0xff00ff, wall: 0xff0000,
   road: 0x00ff00, sidewalk: 0x00ffff, kerb: 0x808000, marking: 0xffffff, fill: 0x008080,
+  vegetation: 0x008000, furniture: 0x800080,
 };
 
 const SIGN = /(letters|logo|screen|led|banner|wrap|sign|poster|q_bar|tsutaya_face|sb_green|menu|amaguri|acom|lake|aiful|_t$|mark|label|qs_eye)/;
@@ -20,6 +21,8 @@ const INTERIOR = /(interior|shop_light|ceil_light|ceiling|goods|shelf|books|pend
 /** Class of one material. Ground parts are named by the ground generator; buildings use their emissive table kinds. */
 export function classify(material: Material, meshName: string, table?: EmissiveTable, inSignLayer = false): LookClass {
   const n = material.name || '';
+  if (n.startsWith('street_tree_')) return 'vegetation';
+  if (n.startsWith('street_')) return 'furniture';
   if (meshName.startsWith('ground_') || n.startsWith('ground_')) {
     if (n.includes('marking') || meshName.startsWith('ground_marking')) return 'marking';
     if (n.includes('kerb') || meshName.startsWith('ground_kerb')) return 'kerb';

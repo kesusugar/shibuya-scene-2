@@ -1,0 +1,182 @@
+{
+  "W": 900,
+  "H": 1195,
+  "photo": "assets/street/core/source/refs/stream_2025.jpg",
+  "init": {
+    "pos": [
+      161.9,
+      -201.8,
+      159.6
+    ],
+    "yaw": -41,
+    "pitch": -26,
+    "roll": 0.0,
+    "vfov": 32,
+    "W": 900,
+    "H": 1195
+  },
+  "fix": {
+    "x": 161.9,
+    "y": -201.8,
+    "z": 159.6
+  },
+  "points": [
+    {
+      "id": "way/155807210_roof_0",
+      "xyz": [
+        -32.08141585860122,
+        15.707180150980905,
+        3.1679999999999993
+      ],
+      "px": [
+        432.5,
+        692
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/155807210_roof_2",
+      "xyz": [
+        -32.35275571575404,
+        18.657146656673458,
+        3.1679999999999993
+      ],
+      "px": [
+        443,
+        677.5
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/155807210_roof_3",
+      "xyz": [
+        -24.655748417038563,
+        19.358459448956964,
+        3.1679999999999993
+      ],
+      "px": [
+        516,
+        694
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/155807210_roof_4",
+      "xyz": [
+        -24.38440855731509,
+        16.40849294247344,
+        3.1679999999999993
+      ],
+      "px": [
+        506,
+        708.5
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/155807211_roof_0",
+      "xyz": [
+        -7.091014952102434,
+        18.9020495369077,
+        3.231
+      ],
+      "px": [
+        658,
+        744
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/155807211_roof_1",
+      "xyz": [
+        -7.588471356882607,
+        22.319557903858936,
+        3.231
+      ],
+      "px": [
+        674,
+        729
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/155807211_roof_2",
+      "xyz": [
+        0.33465249203087005,
+        23.488412557401123,
+        3.231
+      ],
+      "px": [
+        750,
+        748
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/155807211_roof_4",
+      "xyz": [
+        0.8411535582020099,
+        20.07090418965892,
+        3.231
+      ],
+      "px": [
+        736,
+        764
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/1335178869_roof_0",
+      "xyz": [
+        -38.322232588540025,
+        16.486416586148383,
+        3.1980000000000004
+      ],
+      "px": [
+        384.5,
+        670
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/1335178869_roof_2",
+      "xyz": [
+        -37.91522280281079,
+        13.436262538362055,
+        3.1980000000000004
+      ],
+      "px": [
+        376,
+        681
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/1335178869_roof_3",
+      "xyz": [
+        -34.9304843664178,
+        13.825880756736765,
+        3.1980000000000004
+      ],
+      "px": [
+        407.5,
+        690.5
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    },
+    {
+      "id": "way/1335178869_roof_4",
+      "xyz": [
+        -35.33749415214704,
+        16.887166752941535,
+        3.1980000000000004
+      ],
+      "px": [
+        416,
+        680
+      ],
+      "uncertainty": "roof height assumed 3.0m; these are provisional controls, not an independently measured height"
+    }
+  ],
+  "note": "Exploratory fit only: measured image corners paired with OSM footprints, provisional roof height. Do not treat this as a verified camera."
+}

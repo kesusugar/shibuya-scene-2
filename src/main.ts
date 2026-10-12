@@ -2,6 +2,8 @@ import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, Mesh, MeshStanda
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { applyEmissive, groundOffset, hasArc, loadBuilding, type BuildingIO, type BuildingResult, type LoadedBuilding } from './world/buildings';
 import { loadGround, type GroundResult } from './world/ground';
+import { loadProjectedStreet, type ProjectedStreet, type ProjectedMetadata } from './world/projected-street';
+import { loadStreet, type StreetResult } from './world/street';
 import { applyClassPass, applyLook, parseLook } from './world/look';
 import { Color } from 'three';
 import { Lighting, type TimeOfDay } from './world/lighting';
@@ -13,7 +15,7 @@ import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
-import { Vector2 } from 'three';
+import { Vector2, Vector3 } from 'three';
 
 const params = new URLSearchParams(location.search);
 const $ = (id: string) => document.getElementById(id)!;
@@ -55,6 +57,8 @@ const ground = new Mesh(new CircleGeometry(1500, 96), new MeshStandardMaterial({
 ground.rotation.x = -Math.PI / 2; ground.position.y = useGround ? -0.62 : 0; ground.receiveShadow = true; ground.name = 'ground';
 scene.add(ground);
 let coreGround: GroundResult | undefined;
+let coreStreet: StreetResult | undefined;
+let projectedStreet: ProjectedStreet | undefined;
 
 const gltf = new GLTFLoader();
 const io: BuildingIO = {
@@ -76,23 +80,36 @@ function setTime(t: TimeOfDay) {
   lighting.apply(t, loaded.map((b) => b.root));
   const env = { map: scene.environment, intensity: scene.environmentIntensity };
   for (const b of loaded) { applyEmissive(b.root, b.emissive[t]); applyLook(b.root, t, look, b.emissive.day, env); }
-  if (coreGround?.ok) applyLook(coreGround.root, t, look);
+  const groundLook = projectedStreet?.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? { ...look, nightGround: 0 } : look;
+  if (coreGround?.ok) applyLook(coreGround.root, t, groundLook);
+  projectedStreet?.setTime(t, params.get('lamps') !== 'off');
+  if (coreStreet?.ok) applyLook(coreStreet.root, t, look, undefined, env);
   renderer.toneMappingExposure = t === 'day' ? look.dayExposure : look.nightExposure;
   bloom.enabled = bloomWanted && quality.bloom && t === 'night';
 }
 
 async function start() {
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
-  const [envState, results, groundRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
-    useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined)]);
+  const [envState, results, groundRes, streetRes, projectedRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
+    useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined),
+    params.get('street') !== 'off' ? loadStreet(io.loadGlb, params.get('streeturl') === 'missing' ? '/street/core/missing.glb' : undefined, params.get('street') !== 'entrances') : Promise.resolve(undefined),
+    params.get('street') === 'projected' ? loadProjectedStreet(io, params.get('projectedurl') === 'missing' ? '/street/core/missing.glb' : undefined) : Promise.resolve(undefined)]);
   results.forEach((r: BuildingResult) => scene.add(r.root));
   coreGround = groundRes;
+  coreStreet = streetRes;
+  projectedStreet = projectedRes;
+  if (projectedStreet?.ok) scene.add(projectedStreet.root);
+  $('provisional').textContent = projectedStreet?.ok ? '仮配置：支柱の位置・寸法・光量は確認待ち（橙色）' : coreStreet?.ok ? '街路形状は試作：出入口候補・樹木の座標は2025年OSMを参照' : '';
+  if (coreStreet?.ok) scene.add(coreStreet.root);
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
   else if (coreGround) ground.position.y = 0;   // no Core ground: the disc goes back to y = 0
+  controls.setGround([...(coreGround?.ok ? [coreGround.root] : []), ...(coreStreet?.ok ? coreStreet.walkSurfaces : [])]);
   loaded = results.filter((r): r is LoadedBuilding => r.ok);
   // QA only: ?datum=off reproduces the scene before the common datum (every model at its own 0 m = Y 0)
   if (params.get('datum') === 'off') for (const b of loaded) { b.hints.groundElevationTP = undefined; b.root.position.y = 0; }
   const problems = [
+    ...(projectedStreet && !projectedStreet.ok ? [`写真からの仮配置を読み込めず: ${projectedStreet.error}（通常表示を継続）`] : []),
+    ...(coreStreet && !coreStreet.ok ? [`街路設備の読み込みに失敗: ${coreStreet.error}（建物と地面は表示を継続）`] : []),
     ...(coreGround && !coreGround.ok ? [`地面の読み込みに失敗: ${coreGround.error}（灰色の円盤を表示）`] : []),
     ...(coreGround?.ok && coreGround.missing.length ? [`地面の一部がない: ${coreGround.missing.join(', ')}`] : []),
     ...results.filter((r) => !r.ok).map((r) => `${NAMES[r.id] ?? r.id} の読み込みに失敗: ${'error' in r ? r.error : ''}（仮の箱を表示）`),
@@ -102,7 +119,7 @@ async function start() {
   if (!building) { status(problems.join('\n')); return; }
   lighting.placeSun(building.hints);
   for (const b of loaded) lighting.placeFloods(b.hints);
-  controls.setObstacles(loaded.map((b) => b.root));
+  controls.setObstacles([...loaded.map((b) => b.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
   controls.frameBuilding(building.hints);
   setTime(mode);
   const envNote = envState.day === 'fulfilled' && envState.night === 'fulfilled' ? '' : '（環境マップの一部を読み込めず、反射は簡易表示）';
@@ -117,19 +134,28 @@ async function start() {
   if (params.get('pass') === 'class') {
     for (const b of loaded) applyClassPass(b.root, { ...b.emissive.day });
     if (coreGround?.ok) applyClassPass(coreGround.root);
+    if (coreStreet?.ok) applyClassPass(coreStreet.root);
+    if (projectedStreet?.ok) applyClassPass(projectedStreet.root);
     ground.material = new MeshStandardMaterial({ color: 0x000000 }); ground.visible = false;
     scene.background = new Color(0x000000); scene.environment = null; bloom.enabled = false;
   }
   const pose = params.get('pose');   // QA: pose=x,y,z,tx,ty,tz[,vfov] in plan metres, heights in the common datum
   if (pose) { const v = pose.split(',').map(Number); controls.poseView([v[0], v[1], v[2]], [v[3], v[4], v[5]], v[6] || 55, building.hints); }
+  if (params.get('streetref') === 'stream2025') {
+    const metadata = projectedStreet?.metadata ?? await io.loadJson<ProjectedMetadata>('/street/core/projected.json');
+    controls.fitView(metadata.camera, building.hints, 0);
+  }
   (window as unknown as Record<string, unknown>).__viewer = {
     ready: true,
     stats: Object.fromEntries(loaded.map((b) => [b.id, { ...b.stats, layers: b.layers, layerErrors: b.layerErrors }])),
     failed: results.filter((r) => !r.ok).map((r) => r.id),
     ground: coreGround ? { ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
+    street: coreStreet ? { ok: coreStreet.ok, error: coreStreet.error, mode: params.get('street') === 'entrances' ? 'entrances' : 'all', ...coreStreet.stats } : 'off',
+    projected: projectedStreet ? { ok: projectedStreet.ok, error: projectedStreet.error, status: projectedStreet.metadata?.status, cameraStatus: projectedStreet.metadata?.camera_status, lamps: projectedStreet.lights.map((l) => ({ id: l.name, intensity: l.intensity, position: l.position.toArray() })), groundEmissive: projectedStreet.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? 0 : look.nightGround } : 'off',
     offsets: Object.fromEntries(loaded.map((b) => [b.id, b.root.position.y])),
     // QA: camera position and the Core ground height under it (walk mode keeps the eye 1.6 m above it)
     cameraPos: () => camera.position.toArray(),
+    projectPlan: (p: [number, number, number]) => { const v = new Vector3(p[0], p[2], -p[1]).project(camera); return [(v.x * 0.5 + 0.5) * innerWidth, (-v.y * 0.5 + 0.5) * innerHeight]; },
     bench: null as unknown,
     groundUnderCamera: () => controls.groundY(camera.position.x, camera.position.z),
   };

@@ -1,0 +1,466 @@
+{
+  "selected": "coarse",
+  "reason": "Fine leaves add cost with little or negative photo-mask improvement; all shapes remain provisional.",
+  "variants": [
+    {
+      "mode": "coarse",
+      "stage": "trees",
+      "parameter_changes": {},
+      "triangles": 6984,
+      "metrics": {
+        "photo": "M027",
+        "resolution": [
+          640,
+          853
+        ],
+        "mask_method": "manual regions plus HSV filter; approximate, not hand-segmented ground truth",
+        "reference_regions_original_px": [
+          [
+            [
+              0,
+              750
+            ],
+            [
+              64,
+              737
+            ],
+            [
+              130,
+              782
+            ],
+            [
+              202,
+              736
+            ],
+            [
+              279,
+              776
+            ],
+            [
+              273,
+              885
+            ],
+            [
+              233,
+              939
+            ],
+            [
+              62,
+              980
+            ],
+            [
+              0,
+              962
+            ]
+          ],
+          [
+            [
+              760,
+              840
+            ],
+            [
+              822,
+              810
+            ],
+            [
+              974,
+              812
+            ],
+            [
+              1048,
+              896
+            ],
+            [
+              1026,
+              999
+            ],
+            [
+              900,
+              1050
+            ],
+            [
+              812,
+              1014
+            ],
+            [
+              770,
+              958
+            ]
+          ]
+        ],
+        "render_mask_method": "vegetation class intersected with the same HSV leaf-colour filter; bark excluded",
+        "reference_pixels": 9694,
+        "render_pixels": 4776,
+        "intersection_pixels": 2245,
+        "iou": 0.1836,
+        "reference_recall": 0.2316,
+        "render_precision": 0.4701,
+        "photo_leaf_mean_Lab": [
+          25.63,
+          -6.86,
+          11.89
+        ],
+        "render_leaf_mean_Lab": [
+          35.58,
+          -16.45,
+          18.71
+        ],
+        "leaf_mean_delta_Lab": [
+          9.95,
+          -9.59,
+          6.82
+        ],
+        "class_vs_photo_leaf_iou": 0.2389,
+        "unmodelled_right_tree_included": true,
+        "camera_rms_original_px": 11.38869
+      },
+      "reproduce": "build_street.py input.json ground.glb out.glb stats.json coarse"
+    },
+    {
+      "mode": "leaves",
+      "stage": "leaves",
+      "parameter_changes": {},
+      "triangles": 34584,
+      "metrics": {
+        "photo": "M027",
+        "resolution": [
+          640,
+          853
+        ],
+        "mask_method": "manual regions plus HSV filter; approximate, not hand-segmented ground truth",
+        "reference_regions_original_px": [
+          [
+            [
+              0,
+              750
+            ],
+            [
+              64,
+              737
+            ],
+            [
+              130,
+              782
+            ],
+            [
+              202,
+              736
+            ],
+            [
+              279,
+              776
+            ],
+            [
+              273,
+              885
+            ],
+            [
+              233,
+              939
+            ],
+            [
+              62,
+              980
+            ],
+            [
+              0,
+              962
+            ]
+          ],
+          [
+            [
+              760,
+              840
+            ],
+            [
+              822,
+              810
+            ],
+            [
+              974,
+              812
+            ],
+            [
+              1048,
+              896
+            ],
+            [
+              1026,
+              999
+            ],
+            [
+              900,
+              1050
+            ],
+            [
+              812,
+              1014
+            ],
+            [
+              770,
+              958
+            ]
+          ]
+        ],
+        "render_mask_method": "vegetation class intersected with the same HSV leaf-colour filter; bark excluded",
+        "reference_pixels": 9694,
+        "render_pixels": 2790,
+        "intersection_pixels": 1566,
+        "iou": 0.1434,
+        "reference_recall": 0.1615,
+        "render_precision": 0.5613,
+        "photo_leaf_mean_Lab": [
+          25.63,
+          -6.86,
+          11.89
+        ],
+        "render_leaf_mean_Lab": [
+          23.15,
+          -14.22,
+          14.35
+        ],
+        "leaf_mean_delta_Lab": [
+          -2.48,
+          -7.35,
+          2.46
+        ],
+        "class_vs_photo_leaf_iou": 0.1753,
+        "unmodelled_right_tree_included": true,
+        "camera_rms_original_px": 11.38869
+      },
+      "reproduce": "build_street.py input.json ground.glb out.glb stats.json leaves"
+    },
+    {
+      "mode": "leaves",
+      "stage": "crown",
+      "parameter_changes": {
+        "tree_crown_depth_m": 6.5
+      },
+      "triangles": 34584,
+      "metrics": {
+        "photo": "M027",
+        "resolution": [
+          640,
+          853
+        ],
+        "mask_method": "manual regions plus HSV filter; approximate, not hand-segmented ground truth",
+        "reference_regions_original_px": [
+          [
+            [
+              0,
+              750
+            ],
+            [
+              64,
+              737
+            ],
+            [
+              130,
+              782
+            ],
+            [
+              202,
+              736
+            ],
+            [
+              279,
+              776
+            ],
+            [
+              273,
+              885
+            ],
+            [
+              233,
+              939
+            ],
+            [
+              62,
+              980
+            ],
+            [
+              0,
+              962
+            ]
+          ],
+          [
+            [
+              760,
+              840
+            ],
+            [
+              822,
+              810
+            ],
+            [
+              974,
+              812
+            ],
+            [
+              1048,
+              896
+            ],
+            [
+              1026,
+              999
+            ],
+            [
+              900,
+              1050
+            ],
+            [
+              812,
+              1014
+            ],
+            [
+              770,
+              958
+            ]
+          ]
+        ],
+        "render_mask_method": "vegetation class intersected with the same HSV leaf-colour filter; bark excluded",
+        "reference_pixels": 9694,
+        "render_pixels": 3133,
+        "intersection_pixels": 1646,
+        "iou": 0.1472,
+        "reference_recall": 0.1698,
+        "render_precision": 0.5254,
+        "photo_leaf_mean_Lab": [
+          25.63,
+          -6.86,
+          11.89
+        ],
+        "render_leaf_mean_Lab": [
+          24.18,
+          -14.32,
+          14.73
+        ],
+        "leaf_mean_delta_Lab": [
+          -1.45,
+          -7.46,
+          2.84
+        ],
+        "class_vs_photo_leaf_iou": 0.1724,
+        "unmodelled_right_tree_included": true,
+        "camera_rms_original_px": 11.38869
+      },
+      "reproduce": "build_street.py input.json ground.glb out.glb stats.json leaves"
+    },
+    {
+      "mode": "leaves",
+      "stage": "corefill",
+      "parameter_changes": {
+        "tree_crown_core_scale": 1
+      },
+      "triangles": 36984,
+      "metrics": {
+        "photo": "M027",
+        "resolution": [
+          640,
+          853
+        ],
+        "mask_method": "manual regions plus HSV filter; approximate, not hand-segmented ground truth",
+        "reference_regions_original_px": [
+          [
+            [
+              0,
+              750
+            ],
+            [
+              64,
+              737
+            ],
+            [
+              130,
+              782
+            ],
+            [
+              202,
+              736
+            ],
+            [
+              279,
+              776
+            ],
+            [
+              273,
+              885
+            ],
+            [
+              233,
+              939
+            ],
+            [
+              62,
+              980
+            ],
+            [
+              0,
+              962
+            ]
+          ],
+          [
+            [
+              760,
+              840
+            ],
+            [
+              822,
+              810
+            ],
+            [
+              974,
+              812
+            ],
+            [
+              1048,
+              896
+            ],
+            [
+              1026,
+              999
+            ],
+            [
+              900,
+              1050
+            ],
+            [
+              812,
+              1014
+            ],
+            [
+              770,
+              958
+            ]
+          ]
+        ],
+        "render_mask_method": "vegetation class intersected with the same HSV leaf-colour filter; bark excluded",
+        "reference_pixels": 9694,
+        "render_pixels": 4951,
+        "intersection_pixels": 2349,
+        "iou": 0.191,
+        "reference_recall": 0.2423,
+        "render_precision": 0.4744,
+        "photo_leaf_mean_Lab": [
+          25.63,
+          -6.86,
+          11.89
+        ],
+        "render_leaf_mean_Lab": [
+          33.18,
+          -16.22,
+          18.06
+        ],
+        "leaf_mean_delta_Lab": [
+          7.55,
+          -9.35,
+          6.17
+        ],
+        "class_vs_photo_leaf_iou": 0.2396,
+        "unmodelled_right_tree_included": true,
+        "camera_rms_original_px": 11.38869
+      },
+      "reproduce": "build_street.py input.json ground.glb out.glb stats.json leaves"
+    }
+  ]
+}

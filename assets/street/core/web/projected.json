@@ -1,0 +1,114 @@
+{
+  "status": "experimental_only",
+  "source": "assets/street/core/source/data/photo_projections.json",
+  "photo": "assets/street/core/source/refs/stream_2025.jpg",
+  "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+  "camera": {
+    "pos": [
+      161.9,
+      -201.8,
+      159.6
+    ],
+    "yaw": -41.295363697504456,
+    "pitch": -26.666043710761528,
+    "roll": 3.8741631094037783,
+    "vfov": 20.126677634578236,
+    "W": 900,
+    "H": 1195,
+    "rms_px": 4.57,
+    "max_px": 8.12,
+    "n": 12,
+    "photo": "assets/street/core/source/refs/stream_2025.jpg",
+    "per_point": {
+      "way/155807210_roof_0": 2.0,
+      "way/155807210_roof_2": 7.8,
+      "way/155807210_roof_3": 1.4,
+      "way/155807210_roof_4": 6.7,
+      "way/155807211_roof_0": 1.4,
+      "way/155807211_roof_1": 1.4,
+      "way/155807211_roof_2": 1.5,
+      "way/155807211_roof_4": 1.9,
+      "way/1335178869_roof_0": 6.3,
+      "way/1335178869_roof_2": 3.7,
+      "way/1335178869_roof_3": 8.1,
+      "way/1335178869_roof_4": 3.2
+    },
+    "target": [
+      102.93,
+      -134.66,
+      114.72
+    ],
+    "fpx": 3366.8222791453436
+  },
+  "light_points": [
+    {
+      "id": "P01",
+      "position": [
+        -10.315,
+        6.361999999999999,
+        -14.324
+      ],
+      "intensity_cd": 1800,
+      "status": "provisional",
+      "basis": "photo-projection; estimated height and intensity",
+      "pixel_error_ground_radius_m": 1.334
+    },
+    {
+      "id": "P02",
+      "position": [
+        -0.238,
+        8.875,
+        -20.308
+      ],
+      "intensity_cd": 1800,
+      "status": "provisional",
+      "basis": "photo-projection; estimated height and intensity",
+      "pixel_error_ground_radius_m": 1.337
+    },
+    {
+      "id": "P03",
+      "position": [
+        -26.242,
+        6.819,
+        10.08
+      ],
+      "intensity_cd": 1800,
+      "status": "provisional",
+      "basis": "photo-projection; estimated height and intensity",
+      "pixel_error_ground_radius_m": 1.434
+    }
+  ],
+  "rendered_ids": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "R01"
+  ],
+  "geometry_notes": "P01 bell silhouette, two different regulation signs, pedestrian pictogram and fan railing read from the photo; P02 lamp head/type, P03 shared cap, dimensions and light output remain provisional",
+  "not_rendered": [
+    {
+      "id": "P05",
+      "kind": "signal",
+      "px": [
+        815,
+        768
+      ],
+      "ground_base_visible": false,
+      "description": "Other QFRONT-side support: base hidden by pedestrians; do not invent a ground point",
+      "source": "photo-projection",
+      "photo": "assets/street/core/source/refs/stream_2025.jpg",
+      "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+      "status": "unresolved",
+      "reason": "Base occluded: no projection of an invented foot point"
+    }
+  ],
+  "camera_validation": {
+    "status": "not independently validated",
+    "alternative": "Commons GPS XY constrained fit; roof heights still assumed",
+    "alternative_rms_px": 4.893462836679811,
+    "camera_xy_difference_m": 68.848,
+    "max_projected_position_difference_m": 2.861,
+    "evidence": "evidence/c2b/camera_sensitivity.json"
+  }
+}

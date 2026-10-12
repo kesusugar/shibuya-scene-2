@@ -1,5 +1,7 @@
 # 引き継ぎ（Claude Code → Codex）：Shibuya Scene 2.0 Core v1
 
+> **Codex追記：C2bは試作・検証中。** 上屋候補6件（番号確認は5件）・樹木6件、写真投影の仮支柱・信号・標識・柵、昼夜比較を実装。位置は別カメラで最大2.861 m変わるためGate完了ではない。通常表示に仮支柱を採用しない。`C2B_REPORT.md` と `evidence/c2b/boards/`、次の建物の準備は `NEXT_BUILDING_AUDIT.md`。Cloudでは `DEV_ENVIRONMENT.md` のCodex追記と `source /workspace/setup-tools/core-env.sh` を使う。
+
 > **2026-10-13 追記：C3a の比較・既定値反映・昼夜の比較画像・検証を完了。** 結果と未達は `C3A_REPORT.md`、画像は `evidence/c3a/boards/`。採用値は昼露出0.85、ガラス反射1.6、外壁反射0.5、夜の路面0.5（C2bで街灯を入れたら0に戻す）。次の実装対象はC2b。以下は2026-10-12の引き継ぎ時点の記録として残す。
 
 - 2026-10-12 時点の状態と、次にやること。

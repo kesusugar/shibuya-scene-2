@@ -1,0 +1,142 @@
+{
+  "id": "street/core",
+  "status": "C2b prototype; photo placements experimental only",
+  "fidelity": "B",
+  "datum_tp_m": 15,
+  "tools": {
+    "Blender": "4.2.3 LTS",
+    "glTF": "bundled exporter",
+    "addons": []
+  },
+  "stats": {
+    "triangles": 9624,
+    "primitives": 11,
+    "bytes": 675824,
+    "files": {
+      "street_core.glb": {
+        "triangles": 6984,
+        "primitives": 5,
+        "bytes": 519920
+      },
+      "street_projected.glb": {
+        "triangles": 2640,
+        "primitives": 6,
+        "bytes": 155904
+      }
+    }
+  },
+  "files": {
+    "README.md": {
+      "bytes": 4079,
+      "sha256": "c4181882d15c07f7f2329dc6df3c5494b03e821fd8f04ec48dea5490d879758c"
+    },
+    "source/blender/build_projected.py": {
+      "bytes": 7571,
+      "sha256": "f1204ab37f65f5ded8bbd5717e2e03b6876dd884a82317b3e94e34517f9b940e"
+    },
+    "source/blender/build_street.py": {
+      "bytes": 11112,
+      "sha256": "c75d6d302dbb318bd708e2dbc90bb634c4da9bd37d1e71d2c9c9f7f8881dd884"
+    },
+    "source/blender/project_furniture.py": {
+      "bytes": 3597,
+      "sha256": "4ca85c31499e6496940a19f016f3ac0341353bc08d6f38e58d0d1c1305e808a9"
+    },
+    "source/data/calibration/gps_trial_observations.json": {
+      "bytes": 2882,
+      "sha256": "304b1b74026c930c0b1ee43bb4d136975629bd295fbdbcab2a68f337a7b47ebc"
+    },
+    "source/data/calibration/rejected_gps_camera.json": {
+      "bytes": 556,
+      "sha256": "cf5a4b25e02a36f439cf1ad10ddc42c0aaf9fad483afa09fca3dfe0bf2e14296"
+    },
+    "source/data/calibration/stream-fixed-camera.json": {
+      "bytes": 730,
+      "sha256": "b1eac49355affb0ed7c2048d4668e094f2a2367cc80006b13f3d63dfdb19aa00"
+    },
+    "source/data/calibration/stream-fixed-landmarks.json": {
+      "bytes": 4318,
+      "sha256": "8c6e66ec2c444fef1b6aa3576365908b31325c167bdf14063c84222143f17e08"
+    },
+    "source/data/calibration/stream-provisional-camera.json": {
+      "bytes": 768,
+      "sha256": "5dc949b6d5ef96c6a921bd430bbbb991a738efb83e4dad7da5dbca4677cc41b3"
+    },
+    "source/data/calibration/stream-provisional-landmarks.json": {
+      "bytes": 4267,
+      "sha256": "94bd557a8c86677a8b81fcbe929af327783ae7a7c44e2b88fc4486ef0777e563"
+    },
+    "source/data/furniture_register.csv": {
+      "bytes": 3985,
+      "sha256": "ef93c56d976f52e67c97128f2012e062b7051a80de33aaf66745545e90851268"
+    },
+    "source/data/osm_2025.json": {
+      "bytes": 10228,
+      "sha256": "21b815625b26e47792c983e704376fe5314a8b4a0253c7e1995596c33ef1bee9"
+    },
+    "source/data/photo_observations.json": {
+      "bytes": 3553,
+      "sha256": "96a5da94a864f3ed5edf9464749b1733a540bf2c4739e7151adfb3c496a538af"
+    },
+    "source/data/photo_projections.json": {
+      "bytes": 7881,
+      "sha256": "63c31b833cfc54b031dad9543ec75ab6adc5a163e927beeeff2bf92640855cc0"
+    },
+    "source/data/street_input.json": {
+      "bytes": 8625,
+      "sha256": "a962769658a1e3a63ad3792a2a0959cbe4d09a2fb0fc5527fe2caea68fd95bb5"
+    },
+    "source/data/street_stats.json": {
+      "bytes": 10666,
+      "sha256": "5f71cc8c50931cec970317ce08a6dedbd458f689daca201ff9ac83b930c57f1d"
+    },
+    "source/refs/commons_metadata.json": {
+      "bytes": 16354,
+      "sha256": "79498602c0df2f5e9a4b3ee350881d07f509a74edff6ba13d7c627a49310dfa0"
+    },
+    "source/refs/crossing_2025.jpg": {
+      "bytes": 954172,
+      "sha256": "0e682811b2fa1c7c39e2bce1af75daa2c41fbf8bf152cf3df7d2711750469658"
+    },
+    "source/refs/night_2025.jpg": {
+      "bytes": 648710,
+      "sha256": "43d79d1cbc9af34f26d4a33a1c448d346f3a58c52d0ca0c1ee022bae968edaea"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 1318,
+      "sha256": "3490ca0869a76e883fa73aea6ce82b61c1ef8a4d96f738cde5e3758842b18daf"
+    },
+    "source/refs/stream_2025.jpg": {
+      "bytes": 1935709,
+      "sha256": "76e319107f5ef44a4a7c41af1553aac8257c56be7b8747962f311ce136cab075"
+    },
+    "web/projected.json": {
+      "bytes": 3394,
+      "sha256": "783219d97f39b65800896ce14b2bb3591047320659c65e8ca4919075d0895e3d"
+    },
+    "web/street_core.glb": {
+      "bytes": 519920,
+      "sha256": "898319e3ab5206eaeddab747eab48601e510b8f2b58550a426d0de8880b6abf1"
+    },
+    "web/street_projected.glb": {
+      "bytes": 155904,
+      "sha256": "5106f6b4c013e00e5cfa84f2dbb9b477c413aae6708454a9ece8b4ea6a575a7f"
+    }
+  },
+  "sources": {
+    "osm": {
+      "query_date": "2025-10-31T23:59:59Z",
+      "license": "ODbL-1.0",
+      "attribution": "© OpenStreetMap contributors",
+      "file": "source/data/osm_2025.json"
+    },
+    "photos": "source/refs/REFERENCE_REGISTER.csv"
+  },
+  "limitations": [
+    "Five named entrance POIs plus one unidentified candidate; shape and height remain provisional.",
+    "Mapped tree nodes are not a complete vegetation inventory.",
+    "Photo-projected equipment is opt-in amber: calibration variants differ by up to 2.861m.",
+    "No vehicle-signal support is inferred from a logical OSM road-signal node.",
+    "Light head type, height and 1800cd output remain unverified."
+  ]
+}

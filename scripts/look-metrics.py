@@ -17,7 +17,8 @@ REFS = {
     'refb': {'photo': 'evidence/c3a/refs/Shibuya_scramble_av_night_from_Stream.jpg', 'time': 'night', 'year': 2024, 'licence': 'CC0 (Syced)', 'aligned': False},
 }
 CLASSES = {'glass': (0, 0, 255), 'sign': (255, 255, 0), 'interior': (255, 0, 255), 'wall': (255, 0, 0), 'road': (0, 255, 0),
-           'sidewalk': (0, 255, 255), 'kerb': (128, 128, 0), 'marking': (255, 255, 255), 'fill': (0, 128, 128)}
+           'sidewalk': (0, 255, 255), 'kerb': (128, 128, 0), 'marking': (255, 255, 255), 'fill': (0, 128, 128),
+           'vegetation': (0, 128, 0), 'furniture': (128, 0, 128)}
 # classes the photo can stand for: signs/screens change with the era and are reported but not used for the score
 SCORED = ['glass', 'wall', 'road', 'sidewalk']
 

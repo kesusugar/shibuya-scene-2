@@ -1,0 +1,15 @@
+{
+  "tests": {
+    "files": 9,
+    "passed": 50
+  },
+  "typecheck": "passed",
+  "vite_build": "passed",
+  "normal_glb_repeat_sha256_equal": true,
+  "projected_glb_repeat": "all attributes/materials/transforms/oriented triangle sets equal; triangle order differs",
+  "normal_m027_beauty_and_class_pixel_identical_to_coarse_stage": true,
+  "browser_checks_file": "browser/checks.json",
+  "budget_file": "budget.json",
+  "position_gate": "not passed: maximum calibration-variant difference 2.861m",
+  "cloud_fps": "not evaluated"
+}

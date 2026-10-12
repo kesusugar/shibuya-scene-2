@@ -1,0 +1,484 @@
+{
+  "query_date": "2025-10-31T23:59:59Z",
+  "endpoint": "https://overpass.kumi.systems/api/interpreter",
+  "bbox": [
+    35.6588,
+    139.6995,
+    35.6604,
+    139.7015
+  ],
+  "query": "[out:json][timeout:60][date:\"2025-10-31T23:59:59Z\"];nwr(35.6588,139.6995,35.6604,139.7015);out geom;",
+  "response_osm3s": {
+    "timestamp_osm_base": "2026-06-01T08:52:28Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "license_url": "https://www.openstreetmap.org/copyright",
+  "selection": "six registered entrance footprints, trees and signal nodes within 50 m; not a complete furniture survey; five entrance identity POIs within their mapped footprint",
+  "elements": [
+    {
+      "type": "node",
+      "id": 6219685050,
+      "lat": 35.6593167,
+      "lon": 139.700309,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6219685051,
+      "lat": 35.6595354,
+      "lon": 139.7001546,
+      "tags": {
+        "highway": "traffic_signals",
+        "note": "8時から22時右折禁止(路線バスを除く)",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6219685052,
+      "lat": 35.659731,
+      "lon": 139.7006545,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "forward"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6219685053,
+      "lat": 35.659464,
+      "lon": 139.7008086,
+      "tags": {
+        "highway": "traffic_signals",
+        "traffic_signals": "signal",
+        "traffic_signals:direction": "backward"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8007279073,
+      "lat": 35.6593555,
+      "lon": 139.7008306,
+      "tags": {
+        "natural": "tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8007279074,
+      "lat": 35.6593405,
+      "lon": 139.7009628,
+      "tags": {
+        "natural": "tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8363183939,
+      "lat": 35.6598831,
+      "lon": 139.7006182,
+      "tags": {
+        "natural": "tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8363183943,
+      "lat": 35.6598667,
+      "lon": 139.7007926,
+      "tags": {
+        "natural": "tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8363183944,
+      "lat": 35.6597959,
+      "lon": 139.7007738,
+      "tags": {
+        "natural": "tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8363183945,
+      "lat": 35.6597371,
+      "lon": 139.7007564,
+      "tags": {
+        "natural": "tree"
+      }
+    },
+    {
+      "type": "way",
+      "id": 142438894,
+      "bounds": {
+        "minlat": 35.6595143,
+        "minlon": 139.7009112,
+        "maxlat": 35.6595484,
+        "maxlon": 139.7010089
+      },
+      "nodes": [
+        1558819047,
+        1558819045,
+        1558819044,
+        9928534502,
+        1558819046,
+        1558819047
+      ],
+      "geometry": [
+        {
+          "lat": 35.6595484,
+          "lon": 139.7009141
+        },
+        {
+          "lat": 35.6595209,
+          "lon": 139.7009112
+        },
+        {
+          "lat": 35.6595143,
+          "lon": 139.701006
+        },
+        {
+          "lat": 35.6595298,
+          "lon": 139.7010076
+        },
+        {
+          "lat": 35.6595418,
+          "lon": 139.7010089
+        },
+        {
+          "lat": 35.6595484,
+          "lon": 139.7009141
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 142438895,
+      "bounds": {
+        "minlat": 35.6595533,
+        "minlon": 139.7007424,
+        "maxlat": 35.6596256,
+        "maxlon": 139.7008278
+      },
+      "nodes": [
+        1558819052,
+        1558819049,
+        1558819048,
+        1558819051,
+        12352271630,
+        1558819052
+      ],
+      "geometry": [
+        {
+          "lat": 35.6596256,
+          "lon": 139.7007692
+        },
+        {
+          "lat": 35.659573,
+          "lon": 139.7008278
+        },
+        {
+          "lat": 35.6595533,
+          "lon": 139.700801
+        },
+        {
+          "lat": 35.6596059,
+          "lon": 139.7007424
+        },
+        {
+          "lat": 35.6596162,
+          "lon": 139.7007564
+        },
+        {
+          "lat": 35.6596256,
+          "lon": 139.7007692
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 155807209,
+      "bounds": {
+        "minlat": 35.6592617,
+        "minlon": 139.7001232,
+        "maxlat": 35.6593459,
+        "maxlon": 139.7001684
+      },
+      "nodes": [
+        1681663790,
+        12352271632,
+        1681663789,
+        1681663764,
+        1681663765,
+        1681663790
+      ],
+      "geometry": [
+        {
+          "lat": 35.6593459,
+          "lon": 139.7001301
+        },
+        {
+          "lat": 35.6593448,
+          "lon": 139.7001495
+        },
+        {
+          "lat": 35.6593438,
+          "lon": 139.7001684
+        },
+        {
+          "lat": 35.6592617,
+          "lon": 139.7001615
+        },
+        {
+          "lat": 35.6592638,
+          "lon": 139.7001232
+        },
+        {
+          "lat": 35.6593459,
+          "lon": 139.7001301
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 155807210,
+      "bounds": {
+        "minlat": 35.6596411,
+        "minlon": 139.7001423,
+        "maxlat": 35.6596739,
+        "maxlon": 139.7002304
+      },
+      "nodes": [
+        1681663847,
+        6219729373,
+        1681663852,
+        1681663855,
+        1681663851,
+        1681663847
+      ],
+      "geometry": [
+        {
+          "lat": 35.6596411,
+          "lon": 139.7001453
+        },
+        {
+          "lat": 35.6596542,
+          "lon": 139.7001439
+        },
+        {
+          "lat": 35.6596676,
+          "lon": 139.7001423
+        },
+        {
+          "lat": 35.6596739,
+          "lon": 139.7002274
+        },
+        {
+          "lat": 35.6596474,
+          "lon": 139.7002304
+        },
+        {
+          "lat": 35.6596411,
+          "lon": 139.7001453
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 155807211,
+      "bounds": {
+        "minlat": 35.6596698,
+        "minlon": 139.7004161,
+        "maxlat": 35.659711,
+        "maxlon": 139.7005093
+      },
+      "nodes": [
+        1681663853,
+        1681663857,
+        1681663858,
+        12352271629,
+        1681663856,
+        1681663853
+      ],
+      "geometry": [
+        {
+          "lat": 35.6596698,
+          "lon": 139.7004216
+        },
+        {
+          "lat": 35.6597005,
+          "lon": 139.7004161
+        },
+        {
+          "lat": 35.659711,
+          "lon": 139.7005037
+        },
+        {
+          "lat": 35.6596952,
+          "lon": 139.7005066
+        },
+        {
+          "lat": 35.6596803,
+          "lon": 139.7005093
+        },
+        {
+          "lat": 35.6596698,
+          "lon": 139.7004216
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1335178869,
+      "bounds": {
+        "minlat": 35.6596207,
+        "minlon": 139.7000763,
+        "maxlat": 35.6596517,
+        "maxlon": 139.7001138
+      },
+      "nodes": [
+        12352271637,
+        12352271643,
+        12352271638,
+        12352271639,
+        12352271640,
+        12352271637
+      ],
+      "geometry": [
+        {
+          "lat": 35.6596481,
+          "lon": 139.7000763
+        },
+        {
+          "lat": 35.6596343,
+          "lon": 139.7000785
+        },
+        {
+          "lat": 35.6596207,
+          "lon": 139.7000808
+        },
+        {
+          "lat": 35.6596242,
+          "lon": 139.7001138
+        },
+        {
+          "lat": 35.6596517,
+          "lon": 139.7001093
+        },
+        {
+          "lat": 35.6596481,
+          "lon": 139.7000763
+        }
+      ],
+      "tags": {
+        "building": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1558819055,
+      "lat": 35.6595331,
+      "lon": 139.7009491,
+      "tags": {
+        "name": "渋谷駅",
+        "name:en": "Shibuya Station",
+        "name:es": "Estación Shibuya",
+        "railway": "subway_entrance",
+        "ref": "A7b",
+        "source": "survey",
+        "was:ref": "7-2",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1558819056,
+      "lat": 35.6595943,
+      "lon": 139.7007817,
+      "tags": {
+        "name": "渋谷駅",
+        "name:en": "Shibuya Station",
+        "railway": "subway_entrance",
+        "ref": "A7a",
+        "source": "survey",
+        "was:ref": "7-1",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1681663859,
+      "lat": 35.6593017,
+      "lon": 139.7001474,
+      "tags": {
+        "name": "渋谷駅",
+        "name:en": "Shibuya Station",
+        "railway": "subway_entrance",
+        "ref": "A5a",
+        "was:ref": "5-1",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1681663860,
+      "lat": 35.6596571,
+      "lon": 139.7001849,
+      "tags": {
+        "wheelchair": "yes",
+        "name": "渋谷駅",
+        "name:en": "Shibuya Station",
+        "railway": "subway_entrance",
+        "ref": "A6a",
+        "source": "survey",
+        "was:ref": "6-1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1681663861,
+      "lat": 35.6596894,
+      "lon": 139.7004604,
+      "tags": {
+        "wheelchair": "yes",
+        "name": "渋谷駅",
+        "railway": "subway_entrance",
+        "ref": "A6b",
+        "source": "survey",
+        "was:ref": "6-2"
+      }
+    }
+  ]
+}

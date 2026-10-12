@@ -1,0 +1,378 @@
+{
+  "foliage_mode": "coarse",
+  "blender": "4.2.3 LTS",
+  "datum_tp_m": 15.0,
+  "features": [
+    {
+      "id": "node/8007279073",
+      "kind": "tree",
+      "point": [
+        29.901652332275727,
+        -16.0856664201462
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "species, crown size and height are provisional",
+      "anchor_tp": 14.921,
+      "survey_min_tp": 14.913,
+      "survey_max_tp": 14.929
+    },
+    {
+      "id": "node/8007279074",
+      "kind": "tree",
+      "point": [
+        41.85869540320028,
+        -17.755458781784345
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "species, crown size and height are provisional",
+      "anchor_tp": 14.811,
+      "survey_min_tp": 14.803,
+      "survey_max_tp": 14.819
+    },
+    {
+      "id": "node/8363183939",
+      "kind": "tree",
+      "point": [
+        10.690790399070083,
+        42.64649692296151
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "species, crown size and height are provisional",
+      "anchor_tp": 15.531,
+      "survey_min_tp": 15.518,
+      "survey_max_tp": 15.678
+    },
+    {
+      "id": "node/8363183943",
+      "kind": "tree",
+      "point": [
+        26.464680800628027,
+        40.82085727397348
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "species, crown size and height are provisional",
+      "anchor_tp": 15.708,
+      "survey_min_tp": 15.695,
+      "survey_max_tp": 15.721
+    },
+    {
+      "id": "node/8363183944",
+      "kind": "tree",
+      "point": [
+        24.764284358871432,
+        32.93943732545949
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "species, crown size and height are provisional",
+      "anchor_tp": 15.574,
+      "survey_min_tp": 15.561,
+      "survey_max_tp": 15.587
+    },
+    {
+      "id": "node/8363183945",
+      "kind": "tree",
+      "point": [
+        23.190513181729635,
+        26.393851267046983
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "species, crown size and height are provisional",
+      "anchor_tp": 15.462,
+      "survey_min_tp": 15.442,
+      "survey_max_tp": 15.482
+    },
+    {
+      "id": "way/142438894",
+      "kind": "entrance",
+      "name": "推定：地下鉄出入口の上屋（MAGNET前、POI「渋谷駅」）",
+      "ring": [
+        [
+          37.45394504359447,
+          5.387863354079732
+        ],
+        [
+          37.19164984783262,
+          2.3265773570839876
+        ],
+        [
+          45.76598935545526,
+          1.5918687179632036
+        ],
+        [
+          45.91070394542263,
+          3.3173208256484314
+        ],
+        [
+          46.02828455121712,
+          4.653154714958948
+        ]
+      ],
+      "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
+      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "identity": "A7b",
+      "anchor_tp": 14.766,
+      "survey_min_tp": 14.766,
+      "survey_max_tp": 15.083,
+      "max_burial_m": 0.316,
+      "length_m": 8.606,
+      "width_m": 3.073,
+      "stairs": "not exported: descent direction and interior not verified"
+    },
+    {
+      "id": "way/142438895",
+      "kind": "entrance",
+      "name": "推定：地下鉄出入口の上屋（交差点北東の角、POI「渋谷駅」）",
+      "ring": [
+        [
+          24.348229909180585,
+          13.981728043295677
+        ],
+        [
+          29.64840180047548,
+          8.126322827957264
+        ],
+        [
+          27.224432403740707,
+          5.933328859013355
+        ],
+        [
+          21.924260512445812,
+          11.788734075142742
+        ],
+        [
+          23.190513181729635,
+          12.935324830266097
+        ]
+      ],
+      "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
+      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "identity": "A7a",
+      "anchor_tp": 15.028,
+      "survey_min_tp": 15.028,
+      "survey_max_tp": 15.302,
+      "max_burial_m": 0.274,
+      "length_m": 7.899,
+      "width_m": 3.269,
+      "stairs": "not exported: descent direction and interior not verified"
+    },
+    {
+      "id": "way/155807209",
+      "kind": "entrance",
+      "name": "推定：地下鉄出入口の上屋（交差点南西、POI「渋谷駅」）",
+      "ring": [
+        [
+          -33.456204472288555,
+          -17.154333531594613
+        ],
+        [
+          -31.701540057044873,
+          -17.27678497131625
+        ],
+        [
+          -29.99209895389732,
+          -17.388104461828465
+        ],
+        [
+          -30.61618062586294,
+          -26.527434655978034
+        ],
+        [
+          -34.080286144254174,
+          -26.29366372574418
+        ]
+      ],
+      "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
+      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "identity": "A5a",
+      "anchor_tp": 15.366,
+      "survey_min_tp": 15.366,
+      "survey_max_tp": 15.472,
+      "max_burial_m": 0.106,
+      "length_m": 9.163,
+      "width_m": 3.472,
+      "stairs": "not exported: descent direction and interior not verified"
+    },
+    {
+      "id": "way/155807210",
+      "kind": "entrance",
+      "name": "推定：地下鉄出入口の上屋（センター街側、POI「渋谷駅」）",
+      "ring": [
+        [
+          -32.08141585860122,
+          15.707180150980905
+        ],
+        [
+          -32.208041125786664,
+          17.165465480013058
+        ],
+        [
+          -32.35275571575404,
+          18.657146656673458
+        ],
+        [
+          -24.655748417038563,
+          19.358459448956964
+        ],
+        [
+          -24.38440855731509,
+          16.40849294247344
+        ]
+      ],
+      "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
+      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "identity": "A6a",
+      "anchor_tp": 15.168,
+      "survey_min_tp": 15.168,
+      "survey_max_tp": 15.345,
+      "max_burial_m": 0.177,
+      "length_m": 7.731,
+      "width_m": 2.962,
+      "stairs": "not exported: descent direction and interior not verified"
+    },
+    {
+      "id": "way/155807211",
+      "kind": "entrance",
+      "name": "推定：地下鉄出入口の上屋（QFRONT前、POIなし、1階）",
+      "ring": [
+        [
+          -7.091014952102434,
+          18.9020495369077
+        ],
+        [
+          -7.588471356882607,
+          22.319557903858936
+        ],
+        [
+          0.33465249203087005,
+          23.488412557401123
+        ],
+        [
+          0.5969476877927283,
+          21.729564602878618
+        ],
+        [
+          0.8411535582020099,
+          20.07090418965892
+        ]
+      ],
+      "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
+      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "identity": "A6b",
+      "anchor_tp": 15.231,
+      "survey_min_tp": 15.231,
+      "survey_max_tp": 15.368,
+      "max_burial_m": 0.138,
+      "length_m": 8.018,
+      "width_m": 3.455,
+      "stairs": "not exported: descent direction and interior not verified"
+    },
+    {
+      "id": "way/1335178869",
+      "kind": "entrance",
+      "name": "推定：地下鉄出入口の上屋（センター街側、POI「渋谷駅」）",
+      "ring": [
+        [
+          -38.322232588540025,
+          16.486416586148383
+        ],
+        [
+          -38.12325002765622,
+          14.950207613441288
+        ],
+        [
+          -37.91522280281079,
+          13.436262538362055
+        ],
+        [
+          -34.9304843664178,
+          13.825880756736765
+        ],
+        [
+          -35.33749415214704,
+          16.887166752941535
+        ]
+      ],
+      "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
+      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "identity": "unidentified footprint candidate, no entrance POI verified",
+      "anchor_tp": 15.198,
+      "survey_min_tp": 15.198,
+      "survey_max_tp": 15.364,
+      "max_burial_m": 0.166,
+      "length_m": 3.088,
+      "width_m": 3.017,
+      "stairs": "not exported: descent direction and interior not verified"
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "node/6219685050",
+      "kind": "signal",
+      "point": [
+        -17.275304282430728,
+        -20.404862662777518
+      ],
+      "status": "reference_required",
+      "reason": "OSM maps road signal locations/directions; a node is not verified as a support-pole location. No guessed support pole is exported."
+    },
+    {
+      "id": "node/6219685051",
+      "kind": "signal",
+      "point": [
+        -31.240262300399205,
+        3.940709974256997
+      ],
+      "status": "reference_required",
+      "reason": "OSM maps road signal locations/directions; a node is not verified as a support-pole location. No guessed support pole is exported."
+    },
+    {
+      "id": "node/6219685052",
+      "kind": "signal",
+      "point": [
+        13.974002679359444,
+        25.71480237318231
+      ],
+      "status": "reference_required",
+      "reason": "OSM maps road signal locations/directions; a node is not verified as a support-pole location. No guessed support pole is exported."
+    },
+    {
+      "id": "node/6219685053",
+      "kind": "signal",
+      "point": [
+        27.911826708013727,
+        -4.007501668722522
+      ],
+      "status": "reference_required",
+      "reason": "OSM maps road signal locations/directions; a node is not verified as a support-pole location. No guessed support pole is exported."
+    }
+  ],
+  "missing_sources": [
+    "street_lamp positions",
+    "street traffic sign locations",
+    "road guardrail alignments",
+    "additional pedestrian signal poles not present in OSM"
+  ],
+  "objects": {
+    "street_tree_bark": {
+      "triangles": 1056,
+      "vertices": 600
+    },
+    "street_tree_leaves": {
+      "triangles": 2400,
+      "vertices": 1260
+    },
+    "street_concrete": {
+      "triangles": 72,
+      "vertices": 48
+    },
+    "street_steel": {
+      "triangles": 2592,
+      "vertices": 1440
+    },
+    "street_roof": {
+      "triangles": 864,
+      "vertices": 576
+    }
+  },
+  "triangles": 6984
+}
