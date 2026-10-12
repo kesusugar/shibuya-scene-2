@@ -33,6 +33,7 @@ def mat(name,color,metal=0,rough=.65,texture=None):
  M[name]=m
 for name,color in [('pharmacy',(.54,.52,.44)),('fruit',(.63,.61,.49)),('middle',(.44,.41,.34)),('corner',(.52,.035,.028))]:mat('west_wall_'+name,color)
 mat('west_roof',(.33,.34,.32));mat('west_frame',(.30,.32,.29),.55,.4);mat('west_glass',(.09,.20,.16),.25,.28);mat('west_shop_glass',(.025,.06,.05),.15,.35);mat('west_awning',(.014,.19,.15));mat('west_shop_light',(.7,.63,.4));mat('west_screen_back',(.035,.035,.035),.3)
+mat('west_fruit_glass',(.30,.45,.38),.2,.38);mat('west_tile_trim',(.78,.77,.68));mat('west_recess',(.012,.022,.018));mat('west_pharmacy_awning',(.72,.47,.025));mat('west_book_awning',(.018,.22,.46))
 for tex in F['textures']:mat('west_sign_'+tex,(1,1,1),0,.8,tex)
 def face(name,pts,uv=None,layer='base'):
  bm=GROUP.setdefault((layer,name),bmesh.new());lay=bm.loops.layers.uv.verify() if uv else None
@@ -62,7 +63,10 @@ for s in D['surfaces']:
  if s['kind']=='WallSurface':
   for name,x0,x1 in [('pharmacy',-100,-61.911),('fruit',-61.911,-47.347),('middle',-47.347,-40.561),('corner',-40.561,100)]:
    poly=clip_x(clip_x(ring,x0,True),x1,False)
-   if len(poly)>=3:face('west_wall_'+name,poly)
+   # The coarse PLATEAU front/east corner planes would hide the B curved face.
+   # Replace only these street-facing corner planes; keep rear walls and original roof.
+   replaced=name=='corner' and len(poly)>=3 and max(p.y for p in poly)<31
+   if len(poly)>=3 and not replaced:face('west_wall_'+name,poly)
  else:face('west_roof',ring)
 # Street-facing southern frontage follows the measured PLATEAU wall line; window dimensions are B-level estimates.
 def south_y(x):return 21.279+(x+67.253)*(24.78-21.279)/(67.253-36.04)
@@ -71,40 +75,72 @@ def panel(x,z,w,h,name,offset=.08,layer='base'):
  c=Vector((x,south_y(x),z))+n*offset
  pts=[c-t*w/2-Vector((0,0,h/2)),c+t*w/2-Vector((0,0,h/2)),c+t*w/2+Vector((0,0,h/2)),c-t*w/2+Vector((0,0,h/2))]
  face(name,pts,[(0,0),(1,0),(1,1),(0,1)],layer)
-for sec,x0,x1,top in [('pharmacy',-67,-62,16.7),('fruit',-61.7,-48,20.8),('middle',-47.1,-40.8,20.8)]:
- for z in [5.0,8.8,12.6,16.4,20.0]:
-  if z+1.2>top:continue
-  for j in range(max(1,int((x1-x0)/1.7))):
-   x=x0+.8+j*1.7;panel(x,z,1.48,2.3,'west_glass');panel(x,z-1.22,1.65,.13,'west_frame',.12)
- # visibly recessed ground shops and bright lintels, rather than another generic window tile.
- for j in range(max(1,int((x1-x0)/2.3))):
-  x=x0+1.0+j*2.3;panel(x,1.55,1.9,2.55,'west_shop_glass',.12);panel(x,2.9,2.0,.17,'west_shop_light',.15)
-for x in [-65,-60,-57,-54,-51,-45,-42]:
- box((x,south_y(x)-.5,3.0),(2.6,1.1,.12),'west_awning',angle)
+# Pharmacy retains its narrow bays; fruit and middle use the photo-confirmed facade types.
+for z in [5.0,8.8,12.6]:
+ for x in [-66.2,-64.5,-62.8]:
+  panel(x,z,1.48,2.3,'west_glass');panel(x,z-1.22,1.65,.13,'west_frame',.12)
+fruit=F['fruit_frontage'];fx,fw=fruit['window_center_x_m'],fruit['window_width_m']
+for z in fruit['window_center_heights_m']:
+ h=fruit['window_height_m'];panel(fx,z,fw,h,'west_fruit_glass',.10)
+ panel(fruit['recess_center_x_m'],z,fruit['recess_width_m'],h+.15,'west_recess',.11)
+ # Fine mullions and continuous ledges, instead of thick isolated square-window bays.
+ for i in range(13):panel(fx-fw/2+fw*i/12,z,.045,h,'west_tile_trim',.14)
+ panel(fx,z-h/2-.15,fw+.3,.30,'west_awning',.24)
+ panel(fx,z-h/2-.37,fw+.4,.12,'west_tile_trim',.26)
+ for x in [fruit['recess_center_x_m']-1.22,fx+fw/2+.18]:panel(x,z,.24,h+.85,'west_tile_trim',.18)
+mid=F['middle_frontage']
+for z in [4.0,7.7,11.4,15.1]:
+ panel(mid['bay_center_x_m'],z,mid['bay_width_m'],2.8,'west_recess',.12)
+ panel(mid['bay_center_x_m'],z-1.3,mid['bay_width_m']+.15,.1,'west_frame',.16)
+# Two larger fruit-store entrances and a separate narrow middle entrance.
+for x in [-58.0,-52.8]:
+ panel(x,1.45,4.8,2.4,'west_shop_glass',.13);panel(x,2.8,4.8,.15,'west_shop_light',.15)
+ box((x,south_y(x)-.45,.08),(4.8,.7,.16),'west_tile_trim',angle)
+for x in [-60.5,-55.4,-50.3]:panel(x,1.5,.14,2.6,'west_tile_trim',.19)
+panel(mid['bay_center_x_m'],1.4,1.3,2.5,'west_shop_glass',.17)
+panel(-65.0,1.4,3.8,2.5,'west_shop_glass',.12)
+def awning(x,w,material,depth=1.35):
+ c=Vector((x,south_y(x),3.0));a=c-t*w/2;b=c+t*w/2
+ face(material,[a+Vector((0,0,.35)),b+Vector((0,0,.35)),b+n*depth-Vector((0,0,.18)),a+n*depth-Vector((0,0,.18))])
+awning(-55.4,11.8,'west_awning');awning(-65.0,4.2,'west_pharmacy_awning');awning(-43.7,2.6,'west_awning')
+# Blank rooftop panel is visible in both Jan and Feb. No advertisement is invented on it.
+bp=fruit['roof_back_panel'];panel(bp['x_m'],bp['center_height_m'],bp['width_m'],bp['height_m'],'west_tile_trim',.1)
+for x in [bp['x_m']-bp['width_m']/2,bp['x_m']+bp['width_m']/2]:
+ panel(x,bp['center_height_m'],.12,bp['height_m']+.2,'west_frame',.14)
+ box((x,south_y(x)+.05,22.25),(.12,.12,3.0),'west_frame')
 # Red curved corner: roof height is kept below the PLATEAU main roof; dark display housings are geometry.
-CX,CY,R=-38.25,27.8,3.9
+corner=F['corner'];CX,CY=corner['center_m'];R=corner['radius_m'];MID=corner['center_angle_rad']
 start,end=map(math.radians,(-100,20))
 def arc(name,z,w,h,layer='base',radius=R,center_angle=None):
- mid=(start+end)/2 if center_angle is None else center_angle;half=w/(2*radius)
+ mid=MID if center_angle is None else center_angle;half=w/(2*radius)
  for i in range(24):
   a=mid-half+2*half*i/24;b=mid-half+2*half*(i+1)/24
   pts=[(CX+radius*math.cos(a),CY+radius*math.sin(a),z-h/2),(CX+radius*math.cos(b),CY+radius*math.sin(b),z-h/2),(CX+radius*math.cos(b),CY+radius*math.sin(b),z+h/2),(CX+radius*math.cos(a),CY+radius*math.sin(a),z+h/2)]
   face(name,pts,[(i/24,0),((i+1)/24,0),((i+1)/24,1),(i/24,1)],layer)
-arc('west_wall_corner',13.8,8,27.6)
-arc('west_screen_back',23.2,7.5,7.2,radius=R+.05);arc('west_screen_back',12.0,6.2,6.1,radius=R+.05)
-arc('west_sign_rakuten',23.2,7.3,7.0,'signs',R+.09);arc('west_sign_dmm',12.0,6.0,5.9,'signs',R+.09)
-arc('west_sign_taiseido',5.1,7.1,1.5,'signs',R+.10)
-panel(-55,17.9,12.6,2.4,'west_sign_nishimura',.15,'signs');panel(-54.8,7.0,9.5,.75,'west_sign_fruit_band',.16,'signs');panel(-65.4,9.0,1.7,10.5,'west_sign_matsukiyo',.16,'signs');panel(-43.4,F.get('monja_center_height_m',15.4),2.5,11,'west_sign_monja',.16,'signs')
+body=corner['body_height_m'];ws,hs=corner['width_scale'],corner['height_scale']
+arc('west_wall_corner',body/2,8*ws,body)
+arc('west_roof',(body+27.98)/2,8*ws,27.98-body)
+for name,z,w,h in [('rakuten',corner['screen_centers_m']['rakuten'],7.3,7),('dmm',corner['screen_centers_m']['dmm'],6,5.9),('taiseido',corner['screen_centers_m']['taiseido'],7.1,1.5)]:
+ arc('west_screen_back',z,w*ws+.2,h*hs+.2,radius=R+.05)
+ arc('west_sign_'+name,z,w*ws,h*hs,'signs',R+.10)
+flank=corner['flat_flank']
+# Flat flank is independently visible in January and February; it follows the southern wall.
+panel(flank['x_m'],flank['center_height_m'],flank['width_m'],flank['height_m'],'west_sign_asbi_flank',.2,'signs')
+header=fruit['header'];panel(header['x_m'],header['center_height_m'],header['width_m'],header['height_m'],'west_sign_nishimura',.15,'signs');panel(fx,6.0,fw,.75,'west_sign_fruit_band',.27,'signs');panel(-65.4,9.0,1.7,10.5,'west_sign_matsukiyo',.16,'signs');panel(-43.4,F.get('monja_center_height_m',15.4),2.5,11,'west_sign_monja',.16,'signs')
 if F.get('monja_center_height_m',15.4)>21:
  for x in [-44.7,-42.1]:box((x,south_y(x)+.08,25.2),(.12,.12,11.4),'west_frame')
+awning(flank['x_m'],flank['width_m'],'west_wall_corner',1.0)
+awning(-36.8,5.2,'west_book_awning',1.0)
 # Rooftop sign supported by an open steel frame, separate from the original roof mass.
-B=Vector((-37.9,27.5,36.8));T=Vector((.7,.7,0)).normalized();N=Vector((T.y,-T.x,0))
-W,H=8.6,9.1
+roof=F['rooftop_sign'];B=Vector(roof['center_m']);yaw=roof['yaw_rad'];T=Vector((math.cos(yaw),math.sin(yaw),0));N=Vector((T.y,-T.x,0))
+W,H=roof['width_m'],roof['height_m']
 pts=[B-T*W/2-Vector((0,0,H/2)),B+T*W/2-Vector((0,0,H/2)),B+T*W/2+Vector((0,0,H/2)),B-T*W/2+Vector((0,0,H/2))]
 face('west_sign_hisamitsu',pts,[(0,0),(1,0),(1,1),(0,1)],'signs')
+# All supports follow the same sign transform, rather than retaining the old frame.
+bottom=roof['support_base_height_m'];top=B.z+H/2+.15
 for u in [-W/2,0,W/2]:
- p=B+T*u-N*.18;box((p.x,p.y,35.5),(.13,.13,11.5),'west_frame')
-for z in [31.0,34,37,40.5]:box((B.x-N.x*.18,B.y-N.y*.18,z),(W+.3,.13,.13),'west_frame',math.atan2(T.y,T.x))
+ p=B+T*u-N*.18;box((p.x,p.y,(bottom+top)/2),(.13,.13,top-bottom),'west_frame')
+for z in [B.z-H/2,B.z,B.z+H/2]:box((B.x-N.x*.18,B.y-N.y*.18,z),(W+.3,.13,.13),'west_frame',yaw)
 objects=[]
 for (layer,name),bm in GROUP.items():
  bmesh.ops.triangulate(bm,faces=bm.faces[:]);me=bpy.data.meshes.new(name);bm.to_mesh(me);bm.free();me.materials.append(M[name]);me.calc_loop_triangles();ob=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(ob);objects.append((layer,ob))
