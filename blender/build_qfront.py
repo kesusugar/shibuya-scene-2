@@ -90,6 +90,15 @@ def principled(name, col, metal=0., rough=.5, emit=None, estr=0., streaks=0.):
         nt.links.new(cr.outputs['Color'], rr.inputs['Value']); nt.links.new(rr.outputs['Result'], b.inputs['Roughness'])
     nt.links.new(b.outputs['BSDF'], out.inputs['Surface']); return m
 
+def shadow_through(nt, shader, out, tint):
+    """v5 fix (found while matching the podium): shadow rays see a plain, slightly tinted transparent pane, so sunlight
+    reaches the rooms and the blinds behind glass. v4 let the fresnel/glossy mix block a large share of the sun."""
+    lp = nt.nodes.new('ShaderNodeLightPath'); tr = nt.nodes.new('ShaderNodeBsdfTransparent')
+    tr.inputs['Color'].default_value = (.4 + .55*tint[0], .4 + .55*tint[1], .4 + .55*tint[2], 1)
+    mx = nt.nodes.new('ShaderNodeMixShader')
+    nt.links.new(lp.outputs['Is Shadow Ray'], mx.inputs['Fac']); nt.links.new(shader.outputs['Shader'], mx.inputs[1]); nt.links.new(tr.outputs['BSDF'], mx.inputs[2])
+    nt.links.new(mx.outputs['Shader'], out.inputs['Surface'])
+
 def glass(name, tint, transmit, rough=.02, ior=1.9):
     """Thin architectural glazing: fresnel mix of a sharp reflection and a tinted see-through."""
     m, nt, out = node_mat(name)
@@ -98,9 +107,7 @@ def glass(name, tint, transmit, rough=.02, ior=1.9):
     fr = nt.nodes.new('ShaderNodeFresnel'); fr.inputs['IOR'].default_value = ior    # coated panes reflect more than plain glass
     mx = nt.nodes.new('ShaderNodeMixShader')
     nt.links.new(fr.outputs['Fac'], mx.inputs['Fac']); nt.links.new(tr.outputs['BSDF'], mx.inputs[1]); nt.links.new(gl.outputs['BSDF'], mx.inputs[2])
-    nt.links.new(mx.outputs['Shader'], out.inputs['Surface'])
-    m.blend_method = 'BLEND' if hasattr(m, 'blend_method') else None
-    return m
+    shadow_through(nt, mx, out, tint); return m
 
 def panel_glass(name, tint, transmit, ior, pw, ph, rough=.012, wobble=.035, streak=.5, base=None):
     """Curtain-wall glazing that is not one perfect mirror: every pane (pw x ph m, from the ribbon UVs in metres) gets its
@@ -141,7 +148,7 @@ def panel_glass(name, tint, transmit, ior, pw, ph, rough=.012, wobble=.035, stre
     else:   # coated glazing: a near-constant reflectance with only a little fresnel rise (Q032 reads one tone top to bottom)
         fm = nt.nodes.new('ShaderNodeMath'); fm.operation = 'MULTIPLY_ADD'; fm.inputs[1].default_value = .35; fm.inputs[2].default_value = base
         L(fr.outputs['Fac'], fm.inputs[0]); L(fm.outputs['Value'], mx.inputs['Fac'])
-    L(mx.outputs['Shader'], out.inputs['Surface']); return m
+    shadow_through(nt, mx, out, tint); return m
 
 def emissive_image(name, path, strength, sat=1.0):
     m, nt, out = node_mat(name)
@@ -243,7 +250,7 @@ MAT = {
  'steel': principled('truss_steel', (.12, .125, .13) if not NIGHT else (.05, .05, .055), metal=.3 if NIGHT else .5, rough=.75 if NIGHT else .4),
  'plant': principled('plant', (.72, .73, .72) if not NIGHT else (.08, .085, .09), metal=.2, rough=.5),
  'concrete': principled('concrete', (.55, .54, .52), rough=.85),
- 'blind': principled('blind_wood', (.20, .085, .035), rough=.65, emit=(.95, .65, .4), estr=(.5 if NIGHT else 0)),
+ 'blind': principled('blind_wood', (.55, .33, .17), rough=.6, emit=(.95, .65, .4), estr=(.5 if NIGHT else 0)),
  'brace': principled('brace_white', (.88, .88, .88), metal=.1, rough=.35),
  'letters': principled('letters', (.95, .95, .95), rough=.3, emit=(1, 1, 1), estr=(4 if NIGHT else 0)),
  'sb_letters': principled('sb_letters', (.93, .93, .9), rough=.3, emit=(.15, 1, .45), estr=(5 if NIGHT else 0)),
@@ -579,7 +586,10 @@ B.box('05_CROWN', 'q_bar', (qx.x, qx.y, lt['bottom_m']+lt['height_m']*.55), (1.0
 ENT0, ENT1 = -3.2, 3.6                   # recessed entrance (behind the subway canopy)
 BAND0, BAND1 = 4.3, 5.5
 
-MAT['band_white'] = principled('band_white', (.80, .80, .78), metal=.35, rough=.3, streaks=.12)
+SCR_ALB = tuple(float(v) for v in next((a_[4:] for a_ in argv if a_.startswith('scr=')), '.42,.27,.16').split(','))
+BAND_ALB = tuple(float(v) for v in next((a_[5:] for a_ in argv if a_.startswith('band=')), '.50,.48,.45').split(','))
+MAT['screen1f'] = principled('screen1f', SCR_ALB, rough=.85, emit=(.95, .65, .4), estr=(.6 if NIGHT else 0))
+MAT['band_white'] = principled('band_white', BAND_ALB, metal=.1, rough=.5, streaks=.2)   # v5-2: Q032 band reads 138,133,127
 MAT['tsutaya_dark'] = principled('tsutaya_dark', (.025, .025, .03), rough=.35)
 MAT['mull_white'] = principled('mull_white', (.86, .86, .85), metal=.3, rough=.3)
 MAT['stone_dark'] = principled('stone_dark', (.06, .06, .065), rough=.35)
@@ -589,16 +599,26 @@ MAT['pendant'] = principled('pendant', (.9, .8, .6), rough=.4, emit=(1, .72, .42
 MAT['menu'] = principled('menu', (.05, .05, .05), rough=.4, emit=(1, .95, .85), estr=(1.5 if NIGHT else .6))
 MAT['sb_green'] = principled('sb_green', (.0, .25, .15), rough=.4, emit=(0, .35, .2), estr=(2 if NIGHT else 0))
 
-# --- 2F slab band (light, panelled) and the dark TSUTAYA letters on it
+# --- 2F slab band. v5-2 (V-09): in Q032 this strip is glazing in a white frame (mullions on the 0.97 m module, a white
+#     rail top and bottom); only the TSUTAYA sign is a solid white panel. A dark slab edge sits behind the glass.
+SIGN_U0, SIGN_U1 = 3.0, 8.4
 for k in range(48):
-    u0 = -U_END + 2*U_END*k/48; u1 = u0 + 2*U_END/48
-    a, t, d = arc_at(u0, R+.25); b, _, _ = arc_at(u1, R+.25); m = (a+b)/2
-    B.box('06_GROUND_FLOOR', 'band_white', (m.x, m.y, (BAND0+BAND1)/2), ((b-a).length+.02, .55, BAND1-BAND0), yaw_t((b-a).normalized()))
-for u in [x*1.2 - U_END for x in range(int(2*U_END/1.2)+1)]:      # panel joints
-    q, t, d = arc_at(u, R+.53); B.box('06_GROUND_FLOOR', 'mullion', (q.x, q.y, (BAND0+BAND1)/2), (.015, .02, BAND1-BAND0), yaw_t(t))
-for k in range(48):
-    a, t, d = arc_at(-U_END + 2*U_END*k/48, R+.53); b, _, _ = arc_at(-U_END + 2*U_END*(k+1)/48, R+.53); m = (a+b)/2
-    B.box('06_GROUND_FLOOR', 'mullion', (m.x, m.y, (BAND0+BAND1)/2), ((b-a).length+.01, .02, .015), yaw_t((b-a).normalized()))
+    u0 = -U_END + 2*U_END*k/48; u1 = u0 + 2*U_END/48; um = (u0+u1)/2
+    a, t, d = arc_at(u0, R+.1); b, _, _ = arc_at(u1, R+.1); m = (a+b)/2; L_ = (b-a).length; yw_ = yaw_t((b-a).normalized())
+    if SIGN_U0 < um < SIGN_U1:
+        B.box('06_GROUND_FLOOR', 'band_white', (m.x, m.y, (BAND0+BAND1)/2), (L_+.02, .3, BAND1-BAND0), yw_)
+    else:
+        B.quad('06_GROUND_FLOOR', 'clear_glass', [(a.x, a.y, BAND0), (b.x, b.y, BAND0), (b.x, b.y, BAND1), (a.x, a.y, BAND1)], uv=[(u0, BAND0), (u1, BAND0), (u1, BAND1), (u0, BAND1)])
+        a2, _, _ = arc_at(u0, R-.6); b2, _, _ = arc_at(u1, R-.6); m2 = (a2+b2)/2
+        B.box('06_GROUND_FLOOR', 'slab', (m2.x, m2.y, (BAND0+BAND1)/2), (L_+.02, .3, BAND1-BAND0), yw_)
+    for zz, hh in ((BAND0+.06, .12), (BAND1-.05, .1)):
+        a3, _, _ = arc_at(u0, R+.16); b3, _, _ = arc_at(u1, R+.16); m3 = (a3+b3)/2
+        B.box('06_GROUND_FLOOR', 'mull_white', (m3.x, m3.y, zz), ((b3-a3).length+.02, .14, hh), yaw_t((b3-a3).normalized()))
+u = -U_END
+while u <= U_END + .01:
+    if not (SIGN_U0 < u < SIGN_U1):
+        q, t, d = arc_at(u, R+.16); B.box('06_GROUND_FLOOR', 'mull_white', (q.x, q.y, (BAND0+BAND1)/2), (.08, .14, BAND1-BAND0), yaw_t(t))
+    u += MULL
 q, t, d = arc_at(5.5, R+.78)        # flat letters clear the curved band at both ends (sagitta ~0.16 m)
 _tdk = text_object('TSUTAYA', 1.25, .08, '06_GROUND_FLOOR', 'tsutaya_dark', (q.x, q.y, (BAND0+BAND1)/2), yaw, font='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf')
 _tdk.data.bevel_depth = .035     # fattens the dark returns so they show as an outline around the white faces
@@ -626,8 +646,9 @@ for k in range(48):
 # brown screens lowered on the upper 1F glazing west of the entrance (Q032)
 u = -U_END + .1
 while u < ENT0 - .3:
-    q, t, d = arc_at(u + MULL/2, G1-.12); drop = random.uniform(2.1, 2.6)
-    B.box('06_GROUND_FLOOR', 'blind', (q.x, q.y, 3.35-drop/2), (MULL-.1, .02, drop), yaw_t(t)); u += MULL
+    # v5-2: Q032 rows 1460-1540 -> fabric screens fully down from 4.15 m to ~1.0 m, sunlit through the glass
+    q, t, d = arc_at(u + MULL/2, G1-.08); bot = random.uniform(.9, 1.2)
+    B.box('06_GROUND_FLOOR', 'screen1f', (q.x, q.y, (4.15+bot)/2), (MULL-.08, .02, 4.15-bot), yaw_t(t)); u += MULL
 # entrance recess: glass doors 4 m in, dark stone floor, side walls, lit soffit
 REC = R-4.6
 for k in range(12):
@@ -684,10 +705,10 @@ for u_, w_ in ((-1.2, 1.6), (4.6, 1.4)):    # hanging station signs under the ca
 # --- 2F: slatted brown blinds (venetian), window-bar seating, tables, pendants, coffee bar and menu boards
 for p, t, d in arc_stations(MULL, inset=CAVITY+.22)[:-1]:
     if NIGHT and random.random() < .35: continue
-    drop = random.uniform(.5, 2.0) if NIGHT else random.uniform(2.6, 3.4)
+    drop = random.uniform(.5, 2.0) if NIGHT else random.uniform(3.0, 3.6)
     top_ = F3 - .55; z = top_
     B.box('06_GROUND_FLOOR', 'mullion', (p.x, p.y, top_ + .05), (MULL-.08, .08, .1), yaw_t(t))          # head rail
-    tilt = Matrix.Rotation(math.radians(72), 3, 'X')    # slats nearly closed: from the street they read as a brown screen with fine lines
+    tilt = Matrix.Rotation(math.radians(float(next((a_[5:] for a_ in argv if a_.startswith('slat=')), '55'))), 3, 'X')   # v5-2: 72 -> 55 deg, the sunlit slat faces show    # slats nearly closed: from the street they read as a brown screen with fine lines
     while z > top_ - drop:
         B.box('06_GROUND_FLOOR', 'blind', (p.x, p.y, z), (MULL-.12, .05, .012), yaw_t(t), tilt=tilt); z -= .045
     B.box('06_GROUND_FLOOR', 'wood', (p.x, p.y, z), (MULL-.12, .05, .03), yaw_t(t))                     # bottom rail
@@ -1061,6 +1082,12 @@ if _bd and VIEW == 'q032':
     sc.render.border_min_y, sc.render.border_max_y = 1 - y1/1749, 1 - y0/1749
     VIEW = 'q032crop_' + next((a_[4:] for a_ in argv if a_.startswith('tag=')), 'crop')
 os.makedirs(OUT, exist_ok=True)
+if 'testglass' in argv:   # diagnostic: replace the shop glazing with a pure transparent shader
+    tg = bpy.data.materials.new('tg'); tg.use_nodes = True; tn = tg.node_tree
+    for n_ in list(tn.nodes): tn.nodes.remove(n_)
+    tb = tn.nodes.new('ShaderNodeBsdfTransparent'); to_ = tn.nodes.new('ShaderNodeOutputMaterial'); tn.links.new(tb.outputs[0], to_.inputs[0])
+    for ob in sc.objects:
+        if ob.type == 'MESH' and ob.data.materials and ob.data.materials[0].name == 'glass_shop': ob.data.materials[0] = tg
 if 'clay' in argv:   # geometry check: one neutral grey for every surface, glass kept as glass (V-02 occlusion test)
     clay = principled('clay', (.6, .6, .6), rough=.6)
     for ob in sc.objects:
