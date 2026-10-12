@@ -9,12 +9,13 @@
  "crown": {
   "bottom_m": 40.2,
   "top_m": 52.1,
-  "fin_pitch_m": 1.5,
+  "fin_pitch_m": 0.97,
   "letters": {
    "bottom_m": 48.2,
    "height_m": 2.2,
    "width_m": 10.0
-  }
+  },
+  "_fin_note": "v4: re-counted on the Q032 crown crop (~20 fins across the 17.7 m chord); the earlier 1.5 m read every other fin."
  },
  "plateau_inner_roof_m": 48.4,
  "front_face": {
