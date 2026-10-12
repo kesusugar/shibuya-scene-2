@@ -1805,15 +1805,6 @@
    "faces": 29
   },
   {
-   "id": "way/136690966",
-   "plateau_id": "bldg_e6e4de58-1a37-4345-8795-6b759771ade6",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_a",
-   "height_m": 30.14,
-   "faces": 176
-  },
-  {
    "id": "plateau/bldg_e20d398e-4ad5-4308-b836-6907f4990502",
    "plateau_id": "bldg_e20d398e-4ad5-4308-b836-6907f4990502",
    "group": "core",
@@ -2855,20 +2846,25 @@
    "id": "way/136691386",
    "plateau_id": "bldg_5f7ff4f3-a620-4fd0-a380-3ec46435cd27",
    "reason": "own asset: qfront"
+  },
+  {
+   "id": "way/136690966",
+   "plateau_id": "bldg_e6e4de58-1a37-4345-8795-6b759771ade6",
+   "reason": "own asset: west-block"
   }
  ],
  "objects": {
   "core__ctx_roof": {
-   "triangles": 11631,
-   "vertices": 20121
+   "triangles": 11441,
+   "vertices": 19789
   },
   "core__ctx_wall_punched_b": {
    "triangles": 3874,
    "vertices": 7140
   },
   "core__ctx_wall_ribbon_a": {
-   "triangles": 5575,
-   "vertices": 10147
+   "triangles": 5321,
+   "vertices": 9683
   },
   "core__ctx_wall_punched_a": {
    "triangles": 3560,
@@ -2899,5 +2895,5 @@
    "vertices": 4404
   }
  },
- "triangles": 31106
+ "triangles": 30662
 }

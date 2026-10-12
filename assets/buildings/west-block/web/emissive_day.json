@@ -1,0 +1,92 @@
+{
+  "west_shop_glass": {
+    "kind": "interior",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_shop_light": {
+    "kind": "interior",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_sign_hisamitsu": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_sign_rakuten": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_sign_dmm": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_sign_taiseido": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_sign_nishimura": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_sign_fruit_band": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_sign_matsukiyo": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  },
+  "west_sign_monja": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0
+  }
+}
