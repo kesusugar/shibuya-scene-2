@@ -83,7 +83,7 @@ function setTime(t: TimeOfDay) {
   const groundLook = projectedStreet?.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? { ...look, nightGround: 0 } : look;
   if (coreGround?.ok) applyLook(coreGround.root, t, groundLook);
   projectedStreet?.setTime(t, params.get('lamps') !== 'off');
-  if (coreStreet?.ok) applyLook(coreStreet.root, t, look, undefined, env);
+  if (coreStreet?.ok) { applyLook(coreStreet.root, t, look, undefined, env); coreStreet.setTime(t); }
   renderer.toneMappingExposure = t === 'day' ? look.dayExposure : look.nightExposure;
   bloom.enabled = bloomWanted && quality.bloom && t === 'night';
 }
@@ -99,7 +99,7 @@ async function start() {
   coreStreet = streetRes;
   projectedStreet = projectedRes;
   if (projectedStreet?.ok) scene.add(projectedStreet.root);
-  $('provisional').textContent = projectedStreet?.ok ? '仮配置：支柱の位置・寸法・光量は確認待ち（橙色）' : coreStreet?.ok ? '街路形状は試作：出入口候補・樹木の座標は2025年OSMを参照' : '';
+  $('provisional').textContent = projectedStreet?.ok ? '仮配置：支柱の位置・寸法・光量は確認待ち（橙色）' : coreStreet?.ok ? '街路設備は仮：出入口・樹木は2025年OSMの位置、信号・柵は規則による配置、形は標準寸法の汎用品' : '';
   if (coreStreet?.ok) scene.add(coreStreet.root);
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
   else if (coreGround) ground.position.y = 0;   // no Core ground: the disc goes back to y = 0
