@@ -1,4 +1,10 @@
-# Core 街路設備（C2b 試作・検証中）
+# Core 街路設備（C2b v2・仮）
+
+**v2（2026-10-12、Claude Code）**：通常表示に、出入口 6（ガラス張りの箱）・樹木 6・歩行者用信号 10・車両用信号 4・街灯 3・標識 1・柵 220 m。
+位置は OSM（出入口・樹木）、規則 R1〜R3（`source/tools/street_layout.py`）、Codex の写真投影（街灯・標識）。形は標準寸法の汎用品。
+再生成は `docs/core/CODEX_C2B_REVIEW.md` §4、結果は `docs/core/C2B_FIX_REPORT.md`。台帳は `source/data/street_register_v2.csv`。
+以下は PR #8（v1）の記録。`build_street.py` の引数は v2 で `street_layout.json` が加わった。
+
 
 通常表示は2025-10-31のOSMにある出入口候補6件・樹木6件。出入口番号は5件だけ確認できた（A5a/A6a/A6b/A7a/A7b）。way/1335178869 は用途未確認の上屋候補であり、6か所すべてを地下鉄出入口として同定したわけではない。寸法・樹種・葉の形・地下の階段は確認済みではない。階段は書き出さない。
 
