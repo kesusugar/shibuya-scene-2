@@ -1,5 +1,11 @@
 # 引き継ぎ（Claude Code → Codex）：Shibuya Scene 2.0 Core v1
 
+> **最新（2026-10-12 夜、Claude Code）：C2b を作り直し、建物の C 段階を一括で入れた（ブランチ `claude/core-c2b-fix`）。**
+> 1. **最初に `CODEX_C2B_REVIEW.md` を読むこと。** PR #8 の何がダメだったか（信号・柵が通常表示に 0 件、出入口がバス停形、校正に時間を使い切った）と、次の進め方（規則で置く → 同じカメラで見る → 1 つずつ直す）を書いた。
+> 2. 結果：`C2B_FIX_REPORT.md`（街路設備 v2）、`C1_CONTEXT_REPORT.md`（周辺 308 棟の C 段階）。
+> 3. 次の作業：`CODEX_C2B_REVIEW.md` §5 の残り（信号の位置を写真で確認など）と、`C1_CONTEXT_REPORT.md` §5 の B 段階の建物（センター街入口西側 way/136690966 から）。
+> 4. 下の Codex 追記（C2b の旧方針「通常表示に仮支柱を採用しない」）は**廃止**。仮の物は通常表示に出し、台帳と注記で「仮」を示す。
+
 > **Codex追記：C2bは試作・検証中。** 上屋候補6件（番号確認は5件）・樹木6件、写真投影の仮支柱・信号・標識・柵、昼夜比較を実装。位置は別カメラで最大2.861 m変わるためGate完了ではない。通常表示に仮支柱を採用しない。`C2B_REPORT.md` と `evidence/c2b/boards/`、次の建物の準備は `NEXT_BUILDING_AUDIT.md`。Cloudでは `DEV_ENVIRONMENT.md` のCodex追記と `source /workspace/setup-tools/core-env.sh` を使う。
 
 > **2026-10-13 追記：C3a の比較・既定値反映・昼夜の比較画像・検証を完了。** 結果と未達は `C3A_REPORT.md`、画像は `evidence/c3a/boards/`。採用値は昼露出0.85、ガラス反射1.6、外壁反射0.5、夜の路面0.5（C2bで街灯を入れたら0に戻す）。次の実装対象はC2b。以下は2026-10-12の引き継ぎ時点の記録として残す。

@@ -12,11 +12,13 @@ export const LEVEL_BUDGET = {
   B: { triangles: 120_000, primitives: 40, bytes: 3_000_000 },
   C: { triangles: 20_000, primitives: 6, bytes: 400_000 },
   ground: { triangles: 120_000, primitives: 12, bytes: 4_000_000 },
+  // the C-level pack of every Core building without its own asset (PLATEAU shells, shared materials), counted as one
+  context: { triangles: 150_000, primitives: 16, bytes: 6_000_000 },
 } as const;
 export type Level = keyof typeof LEVEL_BUDGET;
 
 /** Level of every shipped asset (an era layer counts with its building). */
-export const ASSET_LEVEL: Record<string, Level> = { qfront: 'A', magnet: 'A', eiraku: 'B', 'ground/core': 'ground', 'street/core': 'B' };
+export const ASSET_LEVEL: Record<string, Level> = { qfront: 'A', magnet: 'A', eiraku: 'B', 'ground/core': 'ground', 'street/core': 'B', 'context/core': 'context' };
 
 /**
  * Whole-scene budget for the Core v1 (everything loaded at once, before shadows double the draws). Chosen so that a

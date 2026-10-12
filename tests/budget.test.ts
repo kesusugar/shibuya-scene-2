@@ -25,6 +25,7 @@ const dirs: Record<string, string> = {};
 for (const id of readdirSync('assets/buildings')) if (existsSync(join('assets/buildings', id, 'web'))) dirs[id] = join('assets/buildings', id, 'web');
 for (const id of readdirSync('assets/ground')) if (existsSync(join('assets/ground', id, 'web'))) dirs[`ground/${id}`] = join('assets/ground', id, 'web');
 if (existsSync('assets/street')) for (const id of readdirSync('assets/street')) if (existsSync(join('assets/street', id, 'web'))) dirs[`street/${id}`] = join('assets/street', id, 'web');
+if (existsSync('assets/context')) for (const id of readdirSync('assets/context')) if (existsSync(join('assets/context', id, 'web'))) dirs[`context/${id}`] = join('assets/context', id, 'web');
 
 describe('performance budget', async () => {
   const m: Record<string, Awaited<ReturnType<typeof measure>>> = {};

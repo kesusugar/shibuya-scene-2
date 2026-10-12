@@ -1,0 +1,2903 @@
+{
+ "blender": "4.2.3 LTS",
+ "datum_tp_m": 15.0,
+ "bay_m": 3.2,
+ "storey_m": 3.6,
+ "buildings": [
+  {
+   "id": "way/136398543",
+   "plateau_id": "bldg_d75548df-ba37-409b-ae6b-0ebaafce4496",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 12.19,
+   "faces": 6
+  },
+  {
+   "id": "way/136398002",
+   "plateau_id": "bldg_c90cb08a-a598-4b69-9d78-aded31d0fa3b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 19.97,
+   "faces": 43
+  },
+  {
+   "id": "way/136397988",
+   "plateau_id": "bldg_63c9c979-fde7-44ef-b994-8bd33bfbc0dc",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 16.45,
+   "faces": 17
+  },
+  {
+   "id": "way/136397985",
+   "plateau_id": "bldg_7144622b-4ce6-4499-a52e-322eb56600b3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 20.39,
+   "faces": 40
+  },
+  {
+   "id": "way/136397981",
+   "plateau_id": "bldg_34d3ddfd-1007-4cde-9ff4-007a837bedc3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 12.41,
+   "faces": 35
+  },
+  {
+   "id": "way/859008488",
+   "plateau_id": "bldg_63de60fa-6d19-4220-b2f7-89bbcbaacdfa",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 8.36,
+   "faces": 5
+  },
+  {
+   "id": "way/858994286",
+   "plateau_id": "bldg_39156963-4d21-4ab1-97dc-452c87e9e9d2",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 5.14,
+   "faces": 13
+  },
+  {
+   "id": "way/136397992",
+   "plateau_id": "bldg_ee13b95f-cac4-4baa-b607-9e1a16667470",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 14.76,
+   "faces": 16
+  },
+  {
+   "id": "way/129061829",
+   "plateau_id": "bldg_5e451202-401c-49fe-85db-e81fff9e0d64",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 23.25,
+   "faces": 73
+  },
+  {
+   "id": "way/136397968",
+   "plateau_id": "bldg_4eb5ce38-e40b-42d1-9490-f7b2fad4af48",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 13.92,
+   "faces": 32
+  },
+  {
+   "id": "way/136398549",
+   "plateau_id": "bldg_3c2f9a83-7e09-4275-bc5c-d77057ca3f3b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 12.74,
+   "faces": 36
+  },
+  {
+   "id": "way/129061822",
+   "plateau_id": "bldg_d37b42d8-cda6-487a-ad2f-751a285022d3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.97,
+   "faces": 16
+  },
+  {
+   "id": "way/136397989",
+   "plateau_id": "bldg_744873a3-abfc-4b7d-92e6-1df8d9789841",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 11.49,
+   "faces": 13
+  },
+  {
+   "id": "way/129061827",
+   "plateau_id": "bldg_15ece067-366b-45c0-a6fb-7fa8b71ab3d3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 19.68,
+   "faces": 34
+  },
+  {
+   "id": "way/136397983",
+   "plateau_id": "bldg_f8c555ec-00c0-4f8e-9032-e6adb10a3297",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 6.82,
+   "faces": 13
+  },
+  {
+   "id": "way/136398538",
+   "plateau_id": "bldg_8b0e2d50-0e78-4307-99e8-40bd4d1a1f2a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.42,
+   "faces": 5
+  },
+  {
+   "id": "plateau/bldg_3efd94b4-dbad-4c52-bb60-223ed706c97a",
+   "plateau_id": "bldg_3efd94b4-dbad-4c52-bb60-223ed706c97a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 9.39,
+   "faces": 15
+  },
+  {
+   "id": "way/136398548",
+   "plateau_id": "bldg_c8f05daf-041b-4ed0-9d20-89c501f45a48",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 31.77,
+   "faces": 31
+  },
+  {
+   "id": "way/157077427",
+   "plateau_id": "bldg_164c8f49-bc30-48cd-8694-09993767aa3d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 18.38,
+   "faces": 15
+  },
+  {
+   "id": "plateau/bldg_0fec934a-23f5-4ceb-875d-7d78d9efe22c",
+   "plateau_id": "bldg_0fec934a-23f5-4ceb-875d-7d78d9efe22c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 15.49,
+   "faces": 31
+  },
+  {
+   "id": "way/136398544",
+   "plateau_id": "bldg_4a495351-1aaf-42d9-8cac-a9cc902f8e71",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 16.73,
+   "faces": 16
+  },
+  {
+   "id": "way/129061821",
+   "plateau_id": "bldg_438441d8-5b91-4cf3-821b-af55c21c00d8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 22.23,
+   "faces": 40
+  },
+  {
+   "id": "way/136397993",
+   "plateau_id": "bldg_e3efacbe-5e5d-4796-a3c2-8344e3273b7c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 8.92,
+   "faces": 16
+  },
+  {
+   "id": "way/136398547",
+   "plateau_id": "bldg_6312c33b-88c0-4028-a3d0-7a16a9f4cde8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 27.07,
+   "faces": 14
+  },
+  {
+   "id": "way/129061815",
+   "plateau_id": "bldg_771c1546-dc9d-4fb9-92f8-5a22d59b7ffa",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 18.58,
+   "faces": 43
+  },
+  {
+   "id": "way/136397997",
+   "plateau_id": "bldg_1e51fb84-8804-4287-8bfd-8c3b749b34d6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.65,
+   "faces": 27
+  },
+  {
+   "id": "way/136398541",
+   "plateau_id": "bldg_3ebcf59f-3a4d-450b-b2ee-0db91f91a543",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 25.73,
+   "faces": 15
+  },
+  {
+   "id": "way/136398539",
+   "plateau_id": "bldg_73f6648f-530e-4c95-98f8-a3c82c474153",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 28.13,
+   "faces": 12
+  },
+  {
+   "id": "way/136397971",
+   "plateau_id": "bldg_f639be72-96c4-4713-94de-7aba0fb47724",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 18.89,
+   "faces": 31
+  },
+  {
+   "id": "way/129061828",
+   "plateau_id": "bldg_a43fffb4-17d9-434e-9501-d20e6a077dbb",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 21.35,
+   "faces": 48
+  },
+  {
+   "id": "way/129061816",
+   "plateau_id": "bldg_93599e3c-5ab6-4725-b06d-9d572b23632b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 23.78,
+   "faces": 39
+  },
+  {
+   "id": "plateau/bldg_14b070c9-8caa-40bd-83ac-ee8eedf5cd6d",
+   "plateau_id": "bldg_14b070c9-8caa-40bd-83ac-ee8eedf5cd6d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 3.26,
+   "faces": 5
+  },
+  {
+   "id": "plateau/bldg_e9562f89-479d-472a-870b-bb95a689a0e9",
+   "plateau_id": "bldg_e9562f89-479d-472a-870b-bb95a689a0e9",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 4.2,
+   "faces": 5
+  },
+  {
+   "id": "way/54500467",
+   "plateau_id": "bldg_884b7aea-8fa7-4447-8d45-d691cfec7237",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 112.43,
+   "faces": 320
+  },
+  {
+   "id": "way/136397972",
+   "plateau_id": "bldg_5c2267c4-ee48-4722-9f46-88e362b44510",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 15.02,
+   "faces": 21
+  },
+  {
+   "id": "plateau/bldg_ecf772e7-e3ca-4e3f-ac1b-e6af616650fe",
+   "plateau_id": "bldg_ecf772e7-e3ca-4e3f-ac1b-e6af616650fe",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 3.81,
+   "faces": 13
+  },
+  {
+   "id": "way/136398003",
+   "plateau_id": "bldg_0f8c010d-f1aa-44b3-8c6b-e57c61fcf5dc",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 6.14,
+   "faces": 20
+  },
+  {
+   "id": "way/136398537",
+   "plateau_id": "bldg_b6d2ee1f-f58e-492b-b301-cf7e4f3f7c57",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 30.24,
+   "faces": 18
+  },
+  {
+   "id": "way/136398535",
+   "plateau_id": "bldg_6205bf51-b1f2-421c-93cf-a522a072f12c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 49.32,
+   "faces": 30
+  },
+  {
+   "id": "way/129061825",
+   "plateau_id": "bldg_b38ce468-d4a7-4f8b-93c2-98fff37f8c20",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 20.02,
+   "faces": 19
+  },
+  {
+   "id": "way/129061819",
+   "plateau_id": "bldg_1c87d07a-993a-4a2d-b688-434d17d0d679",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 18.63,
+   "faces": 34
+  },
+  {
+   "id": "plateau/bldg_1e7ccbe9-00e9-4756-bb12-bb123c5c3c1e",
+   "plateau_id": "bldg_1e7ccbe9-00e9-4756-bb12-bb123c5c3c1e",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.97,
+   "faces": 55
+  },
+  {
+   "id": "plateau/bldg_e3407760-5c5a-4ca9-b44d-d2e112038990",
+   "plateau_id": "bldg_e3407760-5c5a-4ca9-b44d-d2e112038990",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 15.92,
+   "faces": 29
+  },
+  {
+   "id": "plateau/bldg_5e342582-90bd-4497-b851-648330ac5704",
+   "plateau_id": "bldg_5e342582-90bd-4497-b851-648330ac5704",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.4,
+   "faces": 19
+  },
+  {
+   "id": "way/55588118",
+   "plateau_id": "bldg_3ad6aaeb-26f8-4716-a8ec-cb2504b94674",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 104.59,
+   "faces": 171
+  },
+  {
+   "id": "way/136398534",
+   "plateau_id": "bldg_b131a18c-3317-4647-b9e8-13dec811f99c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 37.91,
+   "faces": 18
+  },
+  {
+   "id": "plateau/bldg_4533ca6b-757a-438b-a271-3f96f05208fe",
+   "plateau_id": "bldg_4533ca6b-757a-438b-a271-3f96f05208fe",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.4,
+   "faces": 7
+  },
+  {
+   "id": "plateau/bldg_3fde5d0f-72c7-48cd-b65b-66714d0d1e57",
+   "plateau_id": "bldg_3fde5d0f-72c7-48cd-b65b-66714d0d1e57",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 10.39,
+   "faces": 15
+  },
+  {
+   "id": "plateau/bldg_e82b2cff-d080-4995-80b7-5df6870aadfd",
+   "plateau_id": "bldg_e82b2cff-d080-4995-80b7-5df6870aadfd",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 20.17,
+   "faces": 19
+  },
+  {
+   "id": "way/1333409442",
+   "plateau_id": "bldg_f4c64d6a-f461-403e-a639-85a3cb160f55",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 4.4,
+   "faces": 6
+  },
+  {
+   "id": "way/136690959",
+   "plateau_id": "bldg_eb2f8b5e-2878-4a15-8848-6eb36df63ff1",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 23.32,
+   "faces": 60
+  },
+  {
+   "id": "way/136690949",
+   "plateau_id": "bldg_dbda473e-914f-4f1a-b17c-20f26f3ef9ea",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 16.28,
+   "faces": 53
+  },
+  {
+   "id": "way/136690954",
+   "plateau_id": "bldg_9453e1e3-c7ed-4ceb-974d-05a4ef5adac6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 23.37,
+   "faces": 47
+  },
+  {
+   "id": "plateau/bldg_1fd2c40d-8b17-4cb9-bb8c-6dbbe35c14fc",
+   "plateau_id": "bldg_1fd2c40d-8b17-4cb9-bb8c-6dbbe35c14fc",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 5.86,
+   "faces": 13
+  },
+  {
+   "id": "way/136691374",
+   "plateau_id": "bldg_bd3c7e8a-99d9-4569-b1e1-45974a2df3ea",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.1,
+   "faces": 23
+  },
+  {
+   "id": "way/136587675",
+   "plateau_id": "bldg_1d666cd8-bd25-448c-9c8c-6c7180482547",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 21.07,
+   "faces": 42
+  },
+  {
+   "id": "way/136587817",
+   "plateau_id": "bldg_f402ef98-f5bd-428f-bb88-ef52798c4873",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 21.1,
+   "faces": 40
+  },
+  {
+   "id": "way/1251343320",
+   "plateau_id": "bldg_57635351-47e9-4a44-aea9-11cfc223a7c3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 11.91,
+   "faces": 27
+  },
+  {
+   "id": "way/136587710",
+   "plateau_id": "bldg_cd13ed1c-2c45-42cb-8dbb-2042346bfd3e",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 8.1,
+   "faces": 24
+  },
+  {
+   "id": "way/1188274045",
+   "plateau_id": "bldg_170186ff-56ca-42d0-9a9f-f6b1972aa681",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 18.88,
+   "faces": 13
+  },
+  {
+   "id": "way/1240452485",
+   "plateau_id": "bldg_1cf88184-3750-48b7-a56f-679b3d184a3c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 9.3,
+   "faces": 16
+  },
+  {
+   "id": "way/136691375",
+   "plateau_id": "bldg_7182aa53-883f-4ebd-a7f3-cadd61bd3972",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 30.59,
+   "faces": 55
+  },
+  {
+   "id": "way/136587831",
+   "plateau_id": "bldg_52d703ba-74ed-4c29-8c7b-ba1c60a3d015",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 30.09,
+   "faces": 90
+  },
+  {
+   "id": "way/136690943",
+   "plateau_id": "bldg_d5948a2a-1598-4fe8-95d2-f14179449a66",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 23.9,
+   "faces": 126
+  },
+  {
+   "id": "way/136730043",
+   "plateau_id": "bldg_4b6f8f08-d6a7-4d22-bc4e-e40181b28990",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 9.55,
+   "faces": 16
+  },
+  {
+   "id": "way/136691344",
+   "plateau_id": "bldg_89f20cfa-18f9-47cf-85a9-8bbc4ee8ad05",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 23.08,
+   "faces": 56
+  },
+  {
+   "id": "plateau/bldg_e2a7899a-e528-460e-88b1-acf32927b9d3",
+   "plateau_id": "bldg_e2a7899a-e528-460e-88b1-acf32927b9d3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.12,
+   "faces": 39
+  },
+  {
+   "id": "way/136587807",
+   "plateau_id": "bldg_55f12c4c-a1dc-4f00-9693-cbfacd4ded9e",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 30.39,
+   "faces": 56
+  },
+  {
+   "id": "way/136691371",
+   "plateau_id": "bldg_fe64c255-0ec8-4de7-ac51-6a08eb9e1ef2",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 11.72,
+   "faces": 46
+  },
+  {
+   "id": "way/136609033",
+   "plateau_id": "bldg_ceb9cfb2-6b13-41bc-b06a-c3962933ee3d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 36.5,
+   "faces": 72
+  },
+  {
+   "id": "plateau/bldg_3a55e519-0531-4c9a-b5ff-f8a1b68e2b78",
+   "plateau_id": "bldg_3a55e519-0531-4c9a-b5ff-f8a1b68e2b78",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 5.52,
+   "faces": 13
+  },
+  {
+   "id": "way/136691369",
+   "plateau_id": "bldg_e3266cef-e329-4903-85c8-c8938f7641fe",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 34.71,
+   "faces": 35
+  },
+  {
+   "id": "way/136587804",
+   "plateau_id": "bldg_9a2776fa-bfb8-4f81-81a6-858319f6ecdc",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 7.69,
+   "faces": 21
+  },
+  {
+   "id": "way/136730038",
+   "plateau_id": "bldg_751b47cc-f50d-4681-b62f-b8bd7ff846a0",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 16.18,
+   "faces": 13
+  },
+  {
+   "id": "way/136587749",
+   "plateau_id": "bldg_2fab7664-ad2d-4ac2-bbf1-d9753c59490b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.64,
+   "faces": 6
+  },
+  {
+   "id": "way/136692138",
+   "plateau_id": "bldg_b0ce3e38-ec93-47b5-871e-c6238f238786",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 51.02,
+   "faces": 366
+  },
+  {
+   "id": "way/136587726",
+   "plateau_id": "bldg_4d59b818-ef20-4987-b27c-3d310bbf218f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 8.89,
+   "faces": 13
+  },
+  {
+   "id": "way/136691379",
+   "plateau_id": "bldg_edef4503-f1ef-4f11-839a-3fad9862036c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 33.25,
+   "faces": 35
+  },
+  {
+   "id": "way/136692151",
+   "plateau_id": "bldg_9aad3c5b-caa2-426a-a4d4-bfb754ed3e0a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 12.65,
+   "faces": 48
+  },
+  {
+   "id": "way/136587821",
+   "plateau_id": "bldg_5ffac0b0-dc38-45f2-adb5-9fd863511813",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 14.4,
+   "faces": 43
+  },
+  {
+   "id": "plateau/bldg_fa213f08-951e-43c8-8622-43d9efea1329",
+   "plateau_id": "bldg_fa213f08-951e-43c8-8622-43d9efea1329",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 2.49,
+   "faces": 13
+  },
+  {
+   "id": "way/136587745",
+   "plateau_id": "bldg_3e504004-6ff5-4943-8286-a85399419aeb",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 16.23,
+   "faces": 43
+  },
+  {
+   "id": "way/136587719",
+   "plateau_id": "bldg_c1934b47-c7f4-4bce-88c0-415e40d2fba6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 24.69,
+   "faces": 58
+  },
+  {
+   "id": "way/671085515",
+   "plateau_id": "bldg_3223e392-7191-4027-a371-1736442e1580",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 29.9,
+   "faces": 6
+  },
+  {
+   "id": "way/136587671",
+   "plateau_id": "bldg_a8ffd8bc-311c-4114-aa10-b544107ec1ac",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.92,
+   "faces": 10
+  },
+  {
+   "id": "way/136587729",
+   "plateau_id": "bldg_14ffd32a-5f1a-4155-a02a-83a18bb69536",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 36.54,
+   "faces": 27
+  },
+  {
+   "id": "way/136587688",
+   "plateau_id": "bldg_209b5277-d245-4805-a8dd-cddcf73fe464",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 8.7,
+   "faces": 25
+  },
+  {
+   "id": "way/605959622",
+   "plateau_id": "bldg_b44ec320-98ee-439a-b444-baf32d92652b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 39.5,
+   "faces": 125
+  },
+  {
+   "id": "plateau/bldg_049e6a19-5a84-42bb-8b83-c96317f9cff3",
+   "plateau_id": "bldg_049e6a19-5a84-42bb-8b83-c96317f9cff3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 15.13,
+   "faces": 31
+  },
+  {
+   "id": "way/136587834",
+   "plateau_id": "bldg_762c01d4-ae14-406a-bb59-99e017587c10",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 66.21,
+   "faces": 136
+  },
+  {
+   "id": "way/136691346",
+   "plateau_id": "bldg_c00e2929-5bf4-464f-b518-e26728788531",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 35.32,
+   "faces": 30
+  },
+  {
+   "id": "way/136587674",
+   "plateau_id": "bldg_28f8b474-b44e-45fe-b5e0-70024c195618",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.14,
+   "faces": 13
+  },
+  {
+   "id": "plateau/bldg_529dc3e1-e14a-407c-b9d7-9758898b1b1d",
+   "plateau_id": "bldg_529dc3e1-e14a-407c-b9d7-9758898b1b1d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 7.28,
+   "faces": 10
+  },
+  {
+   "id": "way/136587748",
+   "plateau_id": "bldg_265cfa79-28ae-4c29-b35c-0f061da1573c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.02,
+   "faces": 13
+  },
+  {
+   "id": "way/136690969",
+   "plateau_id": "bldg_6ae50930-209a-44f6-8608-b61827b2e0e8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 17.62,
+   "faces": 29
+  },
+  {
+   "id": "way/136691382",
+   "plateau_id": "bldg_7b1e09f8-cc6a-4261-99f5-57be6cc973c3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 30.63,
+   "faces": 31
+  },
+  {
+   "id": "way/148780864",
+   "plateau_id": "bldg_d8bf476c-cbb6-4e6a-9c47-aa7c28ac55d4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 9.42,
+   "faces": 13
+  },
+  {
+   "id": "way/136587718",
+   "plateau_id": "bldg_f1ff73b0-6b25-42f5-916c-0b95a49daee7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 15.88,
+   "faces": 17
+  },
+  {
+   "id": "way/116710254",
+   "plateau_id": "bldg_7f426b15-a7c6-46c2-a408-83b342afbbce",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 32.48,
+   "faces": 75
+  },
+  {
+   "id": "plateau/bldg_a90da174-5102-46a7-a568-165880de4e65",
+   "plateau_id": "bldg_a90da174-5102-46a7-a568-165880de4e65",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 15.27,
+   "faces": 30
+  },
+  {
+   "id": "way/136691383",
+   "plateau_id": "bldg_5f723751-3edd-4c68-a8d0-04fae960f3b7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 26.93,
+   "faces": 29
+  },
+  {
+   "id": "plateau/bldg_22618c26-b468-4a17-8ede-40d2c21e0a0b",
+   "plateau_id": "bldg_22618c26-b468-4a17-8ede-40d2c21e0a0b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 11.13,
+   "faces": 13
+  },
+  {
+   "id": "plateau/bldg_03e8d48a-b194-45c3-a39b-794ae4e25ce3",
+   "plateau_id": "bldg_03e8d48a-b194-45c3-a39b-794ae4e25ce3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 6.91,
+   "faces": 6
+  },
+  {
+   "id": "way/136691358",
+   "plateau_id": "bldg_0be366d8-b23e-422c-afb2-0c0efc2c1c0d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 36.15,
+   "faces": 48
+  },
+  {
+   "id": "plateau/bldg_e32eb01c-e21c-4880-bae6-979eb92622fa",
+   "plateau_id": "bldg_e32eb01c-e21c-4880-bae6-979eb92622fa",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 8.48,
+   "faces": 23
+  },
+  {
+   "id": "way/136691365",
+   "plateau_id": "bldg_f10aa626-4994-4a29-930f-b2bb6feb23d3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 12.99,
+   "faces": 36
+  },
+  {
+   "id": "way/136691354",
+   "plateau_id": "bldg_bc564936-589f-4719-92d4-1a754dad41d4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 12.79,
+   "faces": 41
+  },
+  {
+   "id": "way/136692166",
+   "plateau_id": "bldg_94a7e058-0025-4782-a0de-eaa94e519e10",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 12.93,
+   "faces": 33
+  },
+  {
+   "id": "plateau/bldg_bd554c93-e5c4-4c74-beb3-eb0fced3944b",
+   "plateau_id": "bldg_bd554c93-e5c4-4c74-beb3-eb0fced3944b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 4.72,
+   "faces": 5
+  },
+  {
+   "id": "way/136691384",
+   "plateau_id": "bldg_eecd520d-323e-4e6c-a449-2b284c879e0b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 18.79,
+   "faces": 73
+  },
+  {
+   "id": "way/136587775",
+   "plateau_id": "bldg_3754a9a8-0ae6-4b27-94a4-3a7c50f39a37",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 18.2,
+   "faces": 25
+  },
+  {
+   "id": "way/136691381",
+   "plateau_id": "bldg_9ee90930-ef48-466d-8846-56db6fb092c9",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 30.28,
+   "faces": 44
+  },
+  {
+   "id": "plateau/bldg_fd7efce9-d30e-44f3-815f-0f22debfad1f",
+   "plateau_id": "bldg_fd7efce9-d30e-44f3-815f-0f22debfad1f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 8.27,
+   "faces": 16
+  },
+  {
+   "id": "way/136587750",
+   "plateau_id": "bldg_51d29ba0-81db-4a8e-a7ef-21158b38dd9e",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 13.06,
+   "faces": 15
+  },
+  {
+   "id": "way/136587665",
+   "plateau_id": "bldg_dac8e8dd-428d-425e-84cc-8ef5db07f49a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 35.79,
+   "faces": 102
+  },
+  {
+   "id": "way/136587786",
+   "plateau_id": "bldg_62646f6f-ee9f-4259-a794-09531274f5d7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 15.68,
+   "faces": 38
+  },
+  {
+   "id": "way/136691373",
+   "plateau_id": "bldg_fbbc51fa-e359-4103-9a8a-f322eb353b24",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 29.67,
+   "faces": 31
+  },
+  {
+   "id": "way/136691360",
+   "plateau_id": "bldg_a4ad374b-42ba-482f-98b4-592a62d6941d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 10.66,
+   "faces": 13
+  },
+  {
+   "id": "way/136587721",
+   "plateau_id": "bldg_1189792a-352c-4c22-bb6d-232b35579ed6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 24.03,
+   "faces": 35
+  },
+  {
+   "id": "plateau/bldg_d2db3f64-faea-40d2-86e4-2505088c0eb1",
+   "plateau_id": "bldg_d2db3f64-faea-40d2-86e4-2505088c0eb1",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 11.48,
+   "faces": 5
+  },
+  {
+   "id": "way/154431360",
+   "plateau_id": "bldg_5c0c12f3-ee55-4488-ad7f-0518c0bac2d5",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 27.54,
+   "faces": 77
+  },
+  {
+   "id": "way/129061813",
+   "plateau_id": "bldg_23c835e4-6ac1-4461-8925-2be8428604b0",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 45.11,
+   "faces": 116
+  },
+  {
+   "id": "way/136667873",
+   "plateau_id": "bldg_cf0b6020-cc2a-48cc-82e5-2019fd772bf3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 27.97,
+   "faces": 24
+  },
+  {
+   "id": "way/136730004",
+   "plateau_id": "bldg_d907d057-6057-41b2-8f1a-1b23f97825f6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 10.47,
+   "faces": 21
+  },
+  {
+   "id": "way/136587742",
+   "plateau_id": "bldg_15c46296-d449-4ea0-8c0a-0d1b6cb9ce73",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 38.89,
+   "faces": 28
+  },
+  {
+   "id": "plateau/bldg_342979e4-d12d-4143-8b29-c2ffc77709f8",
+   "plateau_id": "bldg_342979e4-d12d-4143-8b29-c2ffc77709f8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 9.38,
+   "faces": 23
+  },
+  {
+   "id": "way/1240452484",
+   "plateau_id": "bldg_bd009022-8f30-47b3-b5fd-96de7ffef6c8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 17.59,
+   "faces": 70
+  },
+  {
+   "id": "plateau/bldg_3f65329a-321f-479f-b5c4-664334216d25",
+   "plateau_id": "bldg_3f65329a-321f-479f-b5c4-664334216d25",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 6.15,
+   "faces": 5
+  },
+  {
+   "id": "way/751241770",
+   "plateau_id": "bldg_9ccfc9c7-2fd8-4ad1-bf72-8e01130acfd7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.95,
+   "faces": 47
+  },
+  {
+   "id": "way/136587717",
+   "plateau_id": "bldg_ecb4bc2a-15df-4425-b62a-3a78f3b40e4a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 24.26,
+   "faces": 32
+  },
+  {
+   "id": "way/136587738",
+   "plateau_id": "bldg_7ec0fd81-e100-4d44-ad78-71c150ca9744",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 15.9,
+   "faces": 27
+  },
+  {
+   "id": "plateau/bldg_69271259-e611-46f2-af6b-0f1a057fbfe3",
+   "plateau_id": "bldg_69271259-e611-46f2-af6b-0f1a057fbfe3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 10.97,
+   "faces": 9
+  },
+  {
+   "id": "way/136667887",
+   "plateau_id": "bldg_5606280a-9781-4337-9122-71bb5bcdb5ca",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 28.03,
+   "faces": 22
+  },
+  {
+   "id": "way/129061808",
+   "plateau_id": "bldg_2088bed5-2eeb-40e8-bd2c-23a94396784c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 23.73,
+   "faces": 41
+  },
+  {
+   "id": "way/136587683",
+   "plateau_id": "bldg_5c90f5b5-79fd-4a85-9c0a-500b3dcba64a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 15.65,
+   "faces": 38
+  },
+  {
+   "id": "way/136587728",
+   "plateau_id": "bldg_7a9393c8-e176-4159-b6f8-edfc9b076adf",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 24.69,
+   "faces": 44
+  },
+  {
+   "id": "way/136692171",
+   "plateau_id": "bldg_8244c24f-778a-446a-b1e4-d46dd00c45ba",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.13,
+   "faces": 7
+  },
+  {
+   "id": "way/1333090440",
+   "plateau_id": "bldg_00cb42cf-54c8-479e-9557-96f96a63bc83",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.25,
+   "faces": 13
+  },
+  {
+   "id": "way/60739635",
+   "plateau_id": "bldg_6abf2261-478c-437a-93f4-8ba23d7b1cad",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 31.36,
+   "faces": 25
+  },
+  {
+   "id": "way/116806276",
+   "plateau_id": "bldg_163dfd85-7807-4d53-b7aa-ba69b325727a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 17.85,
+   "faces": 21
+  },
+  {
+   "id": "way/136587666",
+   "plateau_id": "bldg_2b81e0dc-e6c4-4db5-8c5a-c7f715f96dbb",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 20.1,
+   "faces": 41
+  },
+  {
+   "id": "plateau/bldg_a8665d00-b485-4beb-a2f1-a99b95dfec60",
+   "plateau_id": "bldg_a8665d00-b485-4beb-a2f1-a99b95dfec60",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 3.33,
+   "faces": 5
+  },
+  {
+   "id": "way/136690968",
+   "plateau_id": "bldg_103e424a-fceb-458b-853e-d26fcbbb1aa3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 38.16,
+   "faces": 63
+  },
+  {
+   "id": "plateau/bldg_b46a442b-0e89-4ed0-8986-6f5d4ff53ad8",
+   "plateau_id": "bldg_b46a442b-0e89-4ed0-8986-6f5d4ff53ad8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.27,
+   "faces": 32
+  },
+  {
+   "id": "way/136691361",
+   "plateau_id": "bldg_ef90c75f-a643-499b-8daa-56ba51ecd2a4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 18.96,
+   "faces": 23
+  },
+  {
+   "id": "way/136692158",
+   "plateau_id": "bldg_fe2f5e13-007b-496e-88b0-655e9e50ab47",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.46,
+   "faces": 6
+  },
+  {
+   "id": "way/136691377",
+   "plateau_id": "bldg_81291b6a-4e65-4220-b262-b46285b8b121",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 39.45,
+   "faces": 49
+  },
+  {
+   "id": "way/136691362",
+   "plateau_id": "bldg_6a760f0d-01a0-4102-9974-6d5a6dd33671",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 17.06,
+   "faces": 23
+  },
+  {
+   "id": "way/136587803",
+   "plateau_id": "bldg_bbc7acb4-cb33-4f7f-bcae-0ae347ca86b4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.61,
+   "faces": 13
+  },
+  {
+   "id": "way/136691372",
+   "plateau_id": "bldg_ed712500-6db7-46c0-956f-09983a3b0bf0",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 35.98,
+   "faces": 40
+  },
+  {
+   "id": "plateau/bldg_c0876669-2e37-40e3-a077-3badcb6f48c8",
+   "plateau_id": "bldg_c0876669-2e37-40e3-a077-3badcb6f48c8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 19.95,
+   "faces": 19
+  },
+  {
+   "id": "way/136691359",
+   "plateau_id": "bldg_ed50f560-4440-4d99-922d-e2ee366253c5",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 31.14,
+   "faces": 13
+  },
+  {
+   "id": "plateau/bldg_283ba601-4b2a-4dba-a0bb-cbea53dc7718",
+   "plateau_id": "bldg_283ba601-4b2a-4dba-a0bb-cbea53dc7718",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 4.39,
+   "faces": 5
+  },
+  {
+   "id": "way/60739620",
+   "plateau_id": "bldg_dcb8f597-596a-4327-813c-a102d972973b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 41.85,
+   "faces": 33
+  },
+  {
+   "id": "way/136729999",
+   "plateau_id": "bldg_ba67525e-d847-40f2-9234-21d705789b37",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 41.01,
+   "faces": 52
+  },
+  {
+   "id": "way/136690970",
+   "plateau_id": "bldg_2141d213-0d94-4e44-9575-8a87fede5856",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 21.33,
+   "faces": 65
+  },
+  {
+   "id": "way/136587702",
+   "plateau_id": "bldg_e2b9ad0b-dbed-4dc6-8a87-3078ce815c0f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 11.11,
+   "faces": 22
+  },
+  {
+   "id": "way/136730039",
+   "plateau_id": "bldg_e339da3f-5117-414d-b45e-99ab3f71acbe",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 19.73,
+   "faces": 48
+  },
+  {
+   "id": "plateau/bldg_bd9fa216-afd0-4f13-bbe4-afad118a7f0b",
+   "plateau_id": "bldg_bd9fa216-afd0-4f13-bbe4-afad118a7f0b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 8.59,
+   "faces": 5
+  },
+  {
+   "id": "way/136690945",
+   "plateau_id": "bldg_cf2ef3f2-4e6d-46ba-a27c-73e1f93cdff3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 22.59,
+   "faces": 19
+  },
+  {
+   "id": "way/136587731",
+   "plateau_id": "bldg_f7612a9e-e883-49ed-b798-2417d211a19b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 8.27,
+   "faces": 6
+  },
+  {
+   "id": "way/136587833",
+   "plateau_id": "bldg_64b0a293-41f1-4db5-8af7-0259da07ea99",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.23,
+   "faces": 57
+  },
+  {
+   "id": "way/136692145",
+   "plateau_id": "bldg_6dd37eb5-4c41-4d93-85aa-56fd053fe657",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.18,
+   "faces": 46
+  },
+  {
+   "id": "way/114755219",
+   "plateau_id": "bldg_5e891186-4803-48a0-9664-284f212881ac",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 51.89,
+   "faces": 99
+  },
+  {
+   "id": "plateau/bldg_bd8af527-e549-4651-98c5-1b232dc3a02a",
+   "plateau_id": "bldg_bd8af527-e549-4651-98c5-1b232dc3a02a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 17.39,
+   "faces": 41
+  },
+  {
+   "id": "way/136691347",
+   "plateau_id": "bldg_11430dcd-0a96-4364-b067-dca611a20fe7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 22.66,
+   "faces": 91
+  },
+  {
+   "id": "way/1240452483",
+   "plateau_id": "bldg_690ada04-6df0-4b40-90e9-ec7714f91278",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.8,
+   "faces": 17
+  },
+  {
+   "id": "way/136587704",
+   "plateau_id": "bldg_c6b87c62-983d-4f80-a77f-94e341f747b8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 30.47,
+   "faces": 33
+  },
+  {
+   "id": "way/136691364",
+   "plateau_id": "bldg_6ef08122-2d18-4660-a7c0-131298e3331d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 22.83,
+   "faces": 27
+  },
+  {
+   "id": "way/136690961",
+   "plateau_id": "bldg_94b2eef1-e73a-4e25-b36f-ebf413e91d34",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 26.55,
+   "faces": 37
+  },
+  {
+   "id": "way/136691366",
+   "plateau_id": "bldg_390aef14-fadd-4f7d-9a73-b7a80f0d5a28",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 17.74,
+   "faces": 58
+  },
+  {
+   "id": "way/60739633",
+   "plateau_id": "bldg_878d7173-c8dd-402a-be0c-e40190ea3efd",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 35.07,
+   "faces": 42
+  },
+  {
+   "id": "way/136587824",
+   "plateau_id": "bldg_d966a371-11a3-44c3-9cdd-2120096abaca",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.89,
+   "faces": 25
+  },
+  {
+   "id": "way/155807221",
+   "plateau_id": "bldg_a60a6838-a2c7-437e-ba83-4ad80334be40",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 12.65,
+   "faces": 85
+  },
+  {
+   "id": "way/136691356",
+   "plateau_id": "bldg_839384f5-110d-4781-9a73-5ba84683f9eb",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 30.98,
+   "faces": 28
+  },
+  {
+   "id": "way/136690946",
+   "plateau_id": "bldg_c8fd32da-a5b4-4eea-8f77-8b5cec0abb3d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 31.91,
+   "faces": 43
+  },
+  {
+   "id": "way/136690967",
+   "plateau_id": "bldg_ce4b4e78-25ad-4fef-8323-a83d2b38114f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 23.78,
+   "faces": 82
+  },
+  {
+   "id": "way/1333090438",
+   "plateau_id": "bldg_3d0b9c8a-e23c-4023-975d-c0f595ffc601",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 19.76,
+   "faces": 92
+  },
+  {
+   "id": "way/136587679",
+   "plateau_id": "bldg_6cf3ea38-9eac-487b-a386-170815ea6637",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 17.79,
+   "faces": 46
+  },
+  {
+   "id": "way/136608985",
+   "plateau_id": "bldg_e02a6469-973f-4054-8c49-76ac3bcc17fa",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 35.23,
+   "faces": 17
+  },
+  {
+   "id": "way/136690965",
+   "plateau_id": "bldg_3769e9f5-a73f-4a91-8264-758990e4eff7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 10.21,
+   "faces": 23
+  },
+  {
+   "id": "way/136690944",
+   "plateau_id": "bldg_0bce351e-ed3e-4ce8-bab8-5740fcd33a5a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 41.71,
+   "faces": 94
+  },
+  {
+   "id": "plateau/bldg_82fa76b4-4f53-46c8-971a-a1e2411d52c7",
+   "plateau_id": "bldg_82fa76b4-4f53-46c8-971a-a1e2411d52c7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 12.84,
+   "faces": 30
+  },
+  {
+   "id": "plateau/bldg_60934c35-58f3-4e2c-9917-cafe246835a6",
+   "plateau_id": "bldg_60934c35-58f3-4e2c-9917-cafe246835a6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 6.62,
+   "faces": 16
+  },
+  {
+   "id": "way/136587836",
+   "plateau_id": "bldg_9ea43bbb-af67-4679-9fcf-0abfaf7125b6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 23.47,
+   "faces": 33
+  },
+  {
+   "id": "way/136730036",
+   "plateau_id": "bldg_d6b3d004-1de6-400e-9f0f-fff118d89888",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 29.61,
+   "faces": 45
+  },
+  {
+   "id": "way/136691380",
+   "plateau_id": "bldg_b51a7805-b07c-4c17-997a-9b8e63ca75f4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 19.77,
+   "faces": 33
+  },
+  {
+   "id": "way/136587715",
+   "plateau_id": "bldg_9ae26818-1e82-4a55-8c5e-4feefb1f14bb",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.98,
+   "faces": 21
+  },
+  {
+   "id": "way/136608997",
+   "plateau_id": "bldg_cc31b4c7-d828-478d-8a69-918fc39a87b2",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 13.91,
+   "faces": 17
+  },
+  {
+   "id": "way/136691352",
+   "plateau_id": "bldg_d452b84b-7c91-407a-8d5b-7f86db9534a3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.05,
+   "faces": 40
+  },
+  {
+   "id": "way/136587825",
+   "plateau_id": "bldg_81dc4be5-84e1-4435-ba33-b6452f6e4b62",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 8.59,
+   "faces": 30
+  },
+  {
+   "id": "way/136609000",
+   "plateau_id": "bldg_495111d1-6287-4ece-90f5-d3918840afd4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 15.16,
+   "faces": 25
+  },
+  {
+   "id": "way/148780539",
+   "plateau_id": "bldg_d3bfc6de-fd71-47a4-bc69-6a938a127645",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 40.47,
+   "faces": 83
+  },
+  {
+   "id": "way/55895868",
+   "plateau_id": "bldg_aba50b67-9267-4c80-9004-08ebfc7682d8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 49.78,
+   "faces": 141
+  },
+  {
+   "id": "way/136587840",
+   "plateau_id": "bldg_9022e6e0-d77b-4401-88bc-fd2438b0ae0a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 30.35,
+   "faces": 54
+  },
+  {
+   "id": "way/136587761",
+   "plateau_id": "bldg_49629f4e-248c-4d88-939b-d558317756e2",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 9.02,
+   "faces": 10
+  },
+  {
+   "id": "way/136587794",
+   "plateau_id": "bldg_c7a6287b-89c8-4718-ab5c-5788bd03a89c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 16.23,
+   "faces": 15
+  },
+  {
+   "id": "way/136587737",
+   "plateau_id": "bldg_1273bf0c-f005-49ce-8ef1-313931d7bb01",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 18.31,
+   "faces": 34
+  },
+  {
+   "id": "way/136692155",
+   "plateau_id": "bldg_8cf1abd8-9854-4b19-86f0-0f2d3ee8d7e4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 34.38,
+   "faces": 24
+  },
+  {
+   "id": "way/136691350",
+   "plateau_id": "bldg_988c27cc-b304-432b-9301-55d1685c71ee",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 17.44,
+   "faces": 29
+  },
+  {
+   "id": "way/136690966",
+   "plateau_id": "bldg_e6e4de58-1a37-4345-8795-6b759771ade6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 30.14,
+   "faces": 176
+  },
+  {
+   "id": "plateau/bldg_e20d398e-4ad5-4308-b836-6907f4990502",
+   "plateau_id": "bldg_e20d398e-4ad5-4308-b836-6907f4990502",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 7.45,
+   "faces": 15
+  },
+  {
+   "id": "plateau/bldg_b7e020d2-01c5-4ac0-9080-7e053c4c1763",
+   "plateau_id": "bldg_b7e020d2-01c5-4ac0-9080-7e053c4c1763",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 6.68,
+   "faces": 5
+  },
+  {
+   "id": "way/116710255",
+   "plateau_id": "bldg_8ddd90a2-c147-4499-8302-a65409731020",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 44.32,
+   "faces": 64
+  },
+  {
+   "id": "way/136692139",
+   "plateau_id": "bldg_7a988ca4-1dec-4163-8a85-0b0642f00e25",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 18.32,
+   "faces": 51
+  },
+  {
+   "id": "way/136587785",
+   "plateau_id": "bldg_4464aee3-fc53-410d-85c4-f126b32d2fea",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 23.54,
+   "faces": 13
+  },
+  {
+   "id": "way/136587790",
+   "plateau_id": "bldg_ac80d1f6-7968-49b5-81dc-70ef055a1a58",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 18.77,
+   "faces": 13
+  },
+  {
+   "id": "way/136587709",
+   "plateau_id": "bldg_0768768e-d567-4302-ac45-de2aa81fa780",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.28,
+   "faces": 26
+  },
+  {
+   "id": "way/136691385",
+   "plateau_id": "bldg_fe3d7284-7e60-4c2b-81b8-296cfdf5dbc9",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 24.14,
+   "faces": 58
+  },
+  {
+   "id": "way/136691388",
+   "plateau_id": "bldg_3ea067f6-f0c7-49b0-b58a-c1d7e12e487d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 16.4,
+   "faces": 29
+  },
+  {
+   "id": "way/136692150",
+   "plateau_id": "bldg_bd114575-002e-4943-8ab3-2c0ce7608d0e",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.23,
+   "faces": 46
+  },
+  {
+   "id": "plateau/bldg_9eb9d082-8768-4bbb-9142-b115e2c8a445",
+   "plateau_id": "bldg_9eb9d082-8768-4bbb-9142-b115e2c8a445",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 25.11,
+   "faces": 6
+  },
+  {
+   "id": "way/136692134",
+   "plateau_id": "bldg_122bfb6a-8e13-4e82-85b7-e9e5e25ebcdb",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 49.91,
+   "faces": 284
+  },
+  {
+   "id": "plateau/bldg_a4e27670-5674-4902-bbd5-51c0f5084ee9",
+   "plateau_id": "bldg_a4e27670-5674-4902-bbd5-51c0f5084ee9",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 3.17,
+   "faces": 13
+  },
+  {
+   "id": "way/136730049",
+   "plateau_id": "bldg_85664e55-655b-4ac9-a55f-8f3d3f6bf604",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 31.56,
+   "faces": 25
+  },
+  {
+   "id": "way/138594132",
+   "plateau_id": "bldg_9e7ffc67-d31e-40fb-89fd-17ac9baf948d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 38.94,
+   "faces": 40
+  },
+  {
+   "id": "way/120105800",
+   "plateau_id": "bldg_6281e4dc-a955-4b94-b2f2-837a006573b7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 40.41,
+   "faces": 44
+  },
+  {
+   "id": "plateau/bldg_31db4336-3fab-4dfe-87d0-aa755c3473c7",
+   "plateau_id": "bldg_31db4336-3fab-4dfe-87d0-aa755c3473c7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 2.34,
+   "faces": 13
+  },
+  {
+   "id": "way/665967923",
+   "plateau_id": "bldg_39a41406-6ee1-4288-9a4d-aa81e6d7b136",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 7.46,
+   "faces": 15
+  },
+  {
+   "id": "plateau/bldg_c80bf9fe-4992-488e-aecd-6c7a456a654e",
+   "plateau_id": "bldg_c80bf9fe-4992-488e-aecd-6c7a456a654e",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 3.46,
+   "faces": 5
+  },
+  {
+   "id": "way/138589860",
+   "plateau_id": "bldg_094c8da7-6192-4ced-888f-a37b974aa3d9",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 53.25,
+   "faces": 79
+  },
+  {
+   "id": "plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b",
+   "plateau_id": "bldg_20234796-412f-494e-b712-f3f7d6e3197b",
+   "group": "station",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 12.12,
+   "faces": 20
+  },
+  {
+   "id": "plateau/bldg_60092cf0-0ba0-4c19-b046-895cec3a4e41",
+   "plateau_id": "bldg_60092cf0-0ba0-4c19-b046-895cec3a4e41",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 41.21,
+   "faces": 56
+  },
+  {
+   "id": "plateau/bldg_b74387b6-4e3b-4263-becf-732612dcf717",
+   "plateau_id": "bldg_b74387b6-4e3b-4263-becf-732612dcf717",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 11.5,
+   "faces": 5
+  },
+  {
+   "id": "way/138670868",
+   "plateau_id": "bldg_1fa8f542-09c5-44bb-a7d8-8bce45080c12",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 5.43,
+   "faces": 5
+  },
+  {
+   "id": "way/120105803",
+   "plateau_id": "bldg_041236e6-f8ef-46ac-b358-afd42460b3dd",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 39.91,
+   "faces": 62
+  },
+  {
+   "id": "way/138670898",
+   "plateau_id": "bldg_a986ee9c-9267-477d-886e-06bf7e594893",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 5.26,
+   "faces": 16
+  },
+  {
+   "id": "way/138670888",
+   "plateau_id": "bldg_eb4d5910-0839-40cf-bdd1-fa7fd00efdb1",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 5.28,
+   "faces": 7
+  },
+  {
+   "id": "way/138670880",
+   "plateau_id": "bldg_d785bd5a-4615-4edd-8cee-8961707ca81f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 41.1,
+   "faces": 15
+  },
+  {
+   "id": "way/136692161",
+   "plateau_id": "bldg_83e3610a-d401-40a2-a480-13ea1b207181",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 49.96,
+   "faces": 107
+  },
+  {
+   "id": "way/1233446447",
+   "plateau_id": "bldg_72e72d8b-bdf2-48f6-8ba0-14ae9ce4740f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 13.24,
+   "faces": 20
+  },
+  {
+   "id": "way/120105807",
+   "plateau_id": "bldg_dc89f474-122c-4804-a794-b6b8d9f7190a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 33.64,
+   "faces": 11
+  },
+  {
+   "id": "way/120105799",
+   "plateau_id": "bldg_1a5054d8-6c65-415c-9c67-dca9896c04e9",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 34.09,
+   "faces": 28
+  },
+  {
+   "id": "way/138670889",
+   "plateau_id": "bldg_fe91eeb1-5036-4b04-a16d-92408f11a3a6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 46.92,
+   "faces": 52
+  },
+  {
+   "id": "way/120105804",
+   "plateau_id": "bldg_9372a555-72ee-4430-85e2-533872f4dae5",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 53.88,
+   "faces": 315
+  },
+  {
+   "id": "plateau/bldg_cda45866-9096-4dad-8249-82b7d9379558",
+   "plateau_id": "bldg_cda45866-9096-4dad-8249-82b7d9379558",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 4.24,
+   "faces": 15
+  },
+  {
+   "id": "way/327328276",
+   "plateau_id": "bldg_13f1e6b6-9be1-4c36-ba69-39d599cb1448",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 37.89,
+   "faces": 20
+  },
+  {
+   "id": "way/155786802",
+   "plateau_id": "bldg_ed11d259-23db-4c3f-9a47-e45db8c37661",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 21.85,
+   "faces": 36
+  },
+  {
+   "id": "way/136730030",
+   "plateau_id": "bldg_840056c1-4ff3-45cb-9401-4973f8fd5ed1",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 23.16,
+   "faces": 19
+  },
+  {
+   "id": "way/1333409445",
+   "plateau_id": "bldg_3295eb79-b8e0-4eb9-9bd3-dd8d75da4561",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 10.72,
+   "faces": 14
+  },
+  {
+   "id": "plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324",
+   "plateau_id": "bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324",
+   "group": "station",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 17.16,
+   "faces": 7
+  },
+  {
+   "id": "way/120105796",
+   "plateau_id": "bldg_77de016a-7fe8-4a3a-8237-e306681dd91e",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 41.07,
+   "faces": 38
+  },
+  {
+   "id": "way/136730012",
+   "plateau_id": "bldg_567f24ad-36ea-46b5-9b19-2bd7725249c2",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 31.02,
+   "faces": 9
+  },
+  {
+   "id": "plateau/bldg_8a285210-2e39-4edb-9cfa-4175fd2e539f",
+   "plateau_id": "bldg_8a285210-2e39-4edb-9cfa-4175fd2e539f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 3.44,
+   "faces": 5
+  },
+  {
+   "id": "plateau/bldg_3fe07249-7d28-4974-8d06-d4604f159890",
+   "plateau_id": "bldg_3fe07249-7d28-4974-8d06-d4604f159890",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 2.85,
+   "faces": 5
+  },
+  {
+   "id": "way/120105790",
+   "plateau_id": "bldg_339d08c3-3e7e-4ba9-a2dd-3b8c4a991f79",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 37.86,
+   "faces": 14
+  },
+  {
+   "id": "way/1233446448",
+   "plateau_id": "bldg_d624fbba-6dd8-4842-bfca-ab401e458469",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 10.67,
+   "faces": 29
+  },
+  {
+   "id": "plateau/bldg_5eb0f376-2db5-481a-a4a8-b7faa2352be3",
+   "plateau_id": "bldg_5eb0f376-2db5-481a-a4a8-b7faa2352be3",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 4.56,
+   "faces": 13
+  },
+  {
+   "id": "way/55896465",
+   "plateau_id": "bldg_46f3cd1c-4dc8-4e7e-b30f-db8c8c31f776",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 43.91,
+   "faces": 96
+  },
+  {
+   "id": "way/136730007",
+   "plateau_id": "bldg_1c885f9b-48af-4914-8d8a-d9678da084e0",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 35.78,
+   "faces": 11
+  },
+  {
+   "id": "way/120105795",
+   "plateau_id": "bldg_9ee6bab6-1870-4a07-8dfd-99bfcc44350b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 37.39,
+   "faces": 37
+  },
+  {
+   "id": "way/136730032",
+   "plateau_id": "bldg_d5d47104-8103-43cd-b84d-1bbea60dea3d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 40.52,
+   "faces": 96
+  },
+  {
+   "id": "way/120105810",
+   "plateau_id": "bldg_329c17a8-52bc-4d99-9f6b-c1af3974327a",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 55.62,
+   "faces": 57
+  },
+  {
+   "id": "way/120105797",
+   "plateau_id": "bldg_7edfc7f6-0237-472b-b7e5-748ffb6c7a43",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 25.01,
+   "faces": 60
+  },
+  {
+   "id": "way/138670896",
+   "plateau_id": "bldg_fa882a11-04a1-49cf-a03e-f571938f784c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 28.75,
+   "faces": 21
+  },
+  {
+   "id": "way/136692173",
+   "plateau_id": "bldg_0a93aacc-5f26-4f57-bec7-ee20d954d576",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 37.0,
+   "faces": 29
+  },
+  {
+   "id": "way/136730035",
+   "plateau_id": "bldg_a739d2b6-15b3-42c6-ad5e-f0c0bd24cf25",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 32.09,
+   "faces": 13
+  },
+  {
+   "id": "way/138589857",
+   "plateau_id": "bldg_34050035-f104-474c-96af-7b303cf2b2b5",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 35.5,
+   "faces": 34
+  },
+  {
+   "id": "plateau/bldg_dfeba0c4-0fbd-423b-b91f-3388b53e7595",
+   "plateau_id": "bldg_dfeba0c4-0fbd-423b-b91f-3388b53e7595",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 5.59,
+   "faces": 5
+  },
+  {
+   "id": "plateau/bldg_4103682d-632a-47e1-999e-9b4ec8830aa1",
+   "plateau_id": "bldg_4103682d-632a-47e1-999e-9b4ec8830aa1",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 10.62,
+   "faces": 9
+  },
+  {
+   "id": "way/138670882",
+   "plateau_id": "bldg_5ad5a101-6b18-433a-93e5-998a58fd99be",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 5.65,
+   "faces": 5
+  },
+  {
+   "id": "plateau/bldg_daee952e-280e-488a-b073-f1cc2a0b1320",
+   "plateau_id": "bldg_daee952e-280e-488a-b073-f1cc2a0b1320",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 4.56,
+   "faces": 5
+  },
+  {
+   "id": "plateau/bldg_5db01781-54dc-4dbb-b392-cae3696fe8e2",
+   "plateau_id": "bldg_5db01781-54dc-4dbb-b392-cae3696fe8e2",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 7.12,
+   "faces": 9
+  },
+  {
+   "id": "way/116806279",
+   "plateau_id": "bldg_2f738de4-0ac0-4938-90b5-12b10fdb27b0",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 44.55,
+   "faces": 25
+  },
+  {
+   "id": "way/120105789",
+   "plateau_id": "bldg_86d1a7bd-d648-4111-9375-d685bf1863fc",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 32.09,
+   "faces": 16
+  },
+  {
+   "id": "plateau/bldg_95464060-e1db-4530-9f61-8f3c54b74164",
+   "plateau_id": "bldg_95464060-e1db-4530-9f61-8f3c54b74164",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 46.17,
+   "faces": 262
+  },
+  {
+   "id": "way/355250634",
+   "plateau_id": "bldg_84560e8a-53da-47bf-a0c8-93a0e6d434b5",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 20.28,
+   "faces": 39
+  },
+  {
+   "id": "way/155538676",
+   "plateau_id": "bldg_dd896242-2859-4439-aeff-a6ecc2c893c6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 4.33,
+   "faces": 7
+  },
+  {
+   "id": "plateau/bldg_5369333e-5975-493a-b05d-b341800715c2",
+   "plateau_id": "bldg_5369333e-5975-493a-b05d-b341800715c2",
+   "group": "station",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 12.66,
+   "faces": 13
+  },
+  {
+   "id": "way/120105793",
+   "plateau_id": "bldg_48512859-326a-45cd-a9de-f376bf14b09b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 35.73,
+   "faces": 37
+  },
+  {
+   "id": "way/1333409427",
+   "plateau_id": "bldg_d8bddbaf-1f8b-4cda-8604-4d141d61b32b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 3.92,
+   "faces": 5
+  },
+  {
+   "id": "way/760664437",
+   "plateau_id": "bldg_68f76730-049b-4b8f-a388-a1f5d1c78044",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 14.22,
+   "faces": 16
+  },
+  {
+   "id": "plateau/bldg_cee7364f-1d8a-413d-a6db-ff974581f16d",
+   "plateau_id": "bldg_cee7364f-1d8a-413d-a6db-ff974581f16d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 16.32,
+   "faces": 5
+  },
+  {
+   "id": "way/155749492",
+   "plateau_id": "bldg_d53674f2-f05a-43cd-bef7-41a48a3ef467",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 37.65,
+   "faces": 13
+  },
+  {
+   "id": "way/1391515611",
+   "plateau_id": "bldg_7890bdec-67d0-44a3-ba79-37d006adea28",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 32.61,
+   "faces": 5
+  },
+  {
+   "id": "way/138594088",
+   "plateau_id": "bldg_3b0bb007-1edf-4417-898e-82c7db795f1b",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 8.97,
+   "faces": 13
+  },
+  {
+   "id": "way/136691389",
+   "plateau_id": "bldg_40a631a5-66a5-45d3-acf2-e9f75c5d38c6",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 30.36,
+   "faces": 14
+  },
+  {
+   "id": "way/136692137",
+   "plateau_id": "bldg_f9f524c8-115e-400a-a9c9-4a0adc3fc3a8",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 45.85,
+   "faces": 76
+  },
+  {
+   "id": "way/617560918",
+   "plateau_id": "bldg_7b006717-e9e6-4a94-8843-1f4ce13b2509",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 229.03,
+   "faces": 102
+  },
+  {
+   "id": "way/120105794",
+   "plateau_id": "bldg_6effe34e-b47d-4941-8f09-12d6ab9d634f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 39.99,
+   "faces": 56
+  },
+  {
+   "id": "plateau/bldg_0ddd7616-337c-45f5-a081-8f7bc8136415",
+   "plateau_id": "bldg_0ddd7616-337c-45f5-a081-8f7bc8136415",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 8.61,
+   "faces": 8
+  },
+  {
+   "id": "way/116806280",
+   "plateau_id": "bldg_f97cbe85-c849-4ae9-848c-0a36e129d017",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 30.57,
+   "faces": 109
+  },
+  {
+   "id": "way/155797253",
+   "plateau_id": "bldg_83703e63-6226-4ee4-81e4-b044f82ed0b4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 34.86,
+   "faces": 29
+  },
+  {
+   "id": "way/155749491",
+   "plateau_id": "bldg_48ff7c07-39f6-4717-afd4-25b417cf4c89",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 24.64,
+   "faces": 23
+  },
+  {
+   "id": "way/136730031",
+   "plateau_id": "bldg_41f2c60b-23e5-49ce-9008-4c93a11d44f4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 32.88,
+   "faces": 38
+  },
+  {
+   "id": "plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
+   "plateau_id": "bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
+   "group": "station",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 23.45,
+   "faces": 212
+  },
+  {
+   "id": "way/138594119",
+   "plateau_id": "bldg_fad7288a-1ff2-4db7-9ca6-44a7f8fada83",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 18.56,
+   "faces": 62
+  },
+  {
+   "id": "way/138670891",
+   "plateau_id": "bldg_f5449e55-db40-4109-9207-5480fa7399c9",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 6.47,
+   "faces": 11
+  },
+  {
+   "id": "way/810356690",
+   "plateau_id": "bldg_45523411-bca8-4fa6-8c99-43561e7e7d7e",
+   "group": "station",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 20.64,
+   "faces": 31
+  },
+  {
+   "id": "way/136692143",
+   "plateau_id": "bldg_5629f968-8dcf-4a42-b949-f444fa7f6708",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 31.43,
+   "faces": 25
+  },
+  {
+   "id": "plateau/bldg_d6428aed-719f-4eac-9829-94743c21b62c",
+   "plateau_id": "bldg_d6428aed-719f-4eac-9829-94743c21b62c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 15.75,
+   "faces": 34
+  },
+  {
+   "id": "way/138594134",
+   "plateau_id": "bldg_58b2dfbc-087d-448c-9f32-0e52c63883b7",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 21.28,
+   "faces": 83
+  },
+  {
+   "id": "way/138567308",
+   "plateau_id": "bldg_7475afc1-8633-48cc-b4a4-cdd3eb4123b4",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 34.86,
+   "faces": 22
+  },
+  {
+   "id": "way/138670870",
+   "plateau_id": "bldg_6c13c2ca-acb0-4e4d-8e9d-c5a1f7277499",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 6.32,
+   "faces": 10
+  },
+  {
+   "id": "way/355252207",
+   "plateau_id": "bldg_f0a10e48-3017-40fc-bcf3-8870b9182b01",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 3.31,
+   "faces": 5
+  },
+  {
+   "id": "way/120105814",
+   "plateau_id": "bldg_2c4f82f5-efa7-42b3-87f1-67bda4b88d9f",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 38.94,
+   "faces": 25
+  },
+  {
+   "id": "way/138594076",
+   "plateau_id": "bldg_626a725f-b7d7-4f0d-b743-ae38382dc924",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 36.22,
+   "faces": 35
+  },
+  {
+   "id": "way/120105791",
+   "plateau_id": "bldg_527df5bc-2770-4ea6-af61-fb6d203a341c",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 32.88,
+   "faces": 15
+  },
+  {
+   "id": "way/138594074",
+   "plateau_id": "bldg_115a112e-7d51-4dd6-8d2a-e8f50f28c7ce",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_b",
+   "height_m": 17.83,
+   "faces": 16
+  },
+  {
+   "id": "way/120105802",
+   "plateau_id": "bldg_be856600-c515-4468-b6ba-27bce37893ea",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 29.04,
+   "faces": 13
+  },
+  {
+   "id": "way/138594053",
+   "plateau_id": "bldg_ec92a1bf-df56-47ce-b437-a52e13c67464",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 37.31,
+   "faces": 38
+  },
+  {
+   "id": "way/138594085",
+   "plateau_id": "bldg_815380ee-cbda-4f5d-b162-2d0e84518e77",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 16.35,
+   "faces": 15
+  },
+  {
+   "id": "way/120105798",
+   "plateau_id": "bldg_fa681200-8d0d-4dfb-9773-14defd89a69d",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 29.49,
+   "faces": 32
+  },
+  {
+   "id": "way/138589841",
+   "plateau_id": "bldg_fdf01d11-2157-4ccf-a5ef-f597bdfe7e14",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 19.5,
+   "faces": 13
+  },
+  {
+   "id": "way/1333409426",
+   "plateau_id": "bldg_82053eb7-7257-4721-8f91-afdc5ceb3fe5",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 3.8,
+   "faces": 5
+  },
+  {
+   "id": "way/138594106",
+   "plateau_id": "bldg_a09d56a2-3bea-4b3d-889b-bca0cb5c55bd",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_b",
+   "height_m": 14.67,
+   "faces": 13
+  },
+  {
+   "id": "way/136730040",
+   "plateau_id": "bldg_b36b808a-74a2-4853-af2d-58b14db52194",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_ribbon_a",
+   "height_m": 37.31,
+   "faces": 52
+  },
+  {
+   "id": "plateau/bldg_fa8eb7fc-5e42-40ff-80fc-0532714b99ed",
+   "plateau_id": "bldg_fa8eb7fc-5e42-40ff-80fc-0532714b99ed",
+   "group": "core",
+   "kind": "building",
+   "material": "ctx_wall_punched_a",
+   "height_m": 3.27,
+   "faces": 5
+  },
+  {
+   "id": "brid/brid_32c694b5-5723-4a50-a9a9-87b6b64cedb8",
+   "plateau_id": "brid_32c694b5-5723-4a50-a9a9-87b6b64cedb8",
+   "group": "core",
+   "kind": "structure",
+   "material": "ctx_structure",
+   "height_m": 8.15,
+   "faces": 507
+  },
+  {
+   "id": "brid/brid_74a18c48-d0e4-491a-9607-6e88988516ae",
+   "plateau_id": "brid_74a18c48-d0e4-491a-9607-6e88988516ae",
+   "group": "core",
+   "kind": "structure",
+   "material": "ctx_structure",
+   "height_m": 28.39,
+   "faces": 52
+  },
+  {
+   "id": "brid/brid_95680199-7365-41de-a5b7-9275321fe8bf",
+   "plateau_id": "brid_95680199-7365-41de-a5b7-9275321fe8bf",
+   "group": "core",
+   "kind": "structure",
+   "material": "ctx_structure",
+   "height_m": 16.92,
+   "faces": 296
+  },
+  {
+   "id": "brid/brid_a4d3aa47-8095-4c24-99e2-80202b230bc1",
+   "plateau_id": "brid_a4d3aa47-8095-4c24-99e2-80202b230bc1",
+   "group": "core",
+   "kind": "structure",
+   "material": "ctx_structure",
+   "height_m": 13.45,
+   "faces": 60
+  },
+  {
+   "id": "brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
+   "plateau_id": "brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
+   "group": "core",
+   "kind": "structure",
+   "material": "ctx_structure",
+   "height_m": 17.7,
+   "faces": 24
+  },
+  {
+   "id": "brid/brid_0e0c081e-d376-4692-91c7-a3c866c1e46e",
+   "plateau_id": "brid_0e0c081e-d376-4692-91c7-a3c866c1e46e",
+   "group": "core",
+   "kind": "structure",
+   "material": "ctx_structure",
+   "height_m": 6.13,
+   "faces": 12
+  },
+  {
+   "id": "brid/brid_cb8a47ec-def6-47a9-9366-b294a047ee63",
+   "plateau_id": "brid_cb8a47ec-def6-47a9-9366-b294a047ee63",
+   "group": "core",
+   "kind": "structure",
+   "material": "ctx_structure",
+   "height_m": 6.3,
+   "faces": 517
+  }
+ ],
+ "excluded": [
+  {
+   "id": "way/116806281",
+   "plateau_id": "bldg_d47d8aa9-e4f5-4599-9d9a-bc129a12d6a8",
+   "reason": "own asset: magnet + eiraku"
+  },
+  {
+   "id": "way/1335178869",
+   "plateau_id": "bldg_878576b4-ab9a-4dc4-959d-799ffda853e6",
+   "reason": "street asset entrance"
+  },
+  {
+   "id": "way/136691386",
+   "plateau_id": "bldg_5f7ff4f3-a620-4fd0-a380-3ec46435cd27",
+   "reason": "own asset: qfront"
+  }
+ ],
+ "objects": {
+  "core__ctx_roof": {
+   "triangles": 11631,
+   "vertices": 20121
+  },
+  "core__ctx_wall_punched_b": {
+   "triangles": 3874,
+   "vertices": 7140
+  },
+  "core__ctx_wall_ribbon_a": {
+   "triangles": 5575,
+   "vertices": 10147
+  },
+  "core__ctx_wall_punched_a": {
+   "triangles": 3560,
+   "vertices": 6508
+  },
+  "core__ctx_wall_ribbon_b": {
+   "triangles": 4252,
+   "vertices": 7720
+  },
+  "station__ctx_roof": {
+   "triangles": 279,
+   "vertices": 437
+  },
+  "station__ctx_wall_punched_a": {
+   "triangles": 70,
+   "vertices": 132
+  },
+  "station__ctx_wall_ribbon_b": {
+   "triangles": 356,
+   "vertices": 664
+  },
+  "station__ctx_wall_punched_b": {
+   "triangles": 41,
+   "vertices": 79
+  },
+  "core__ctx_structure": {
+   "triangles": 1468,
+   "vertices": 4404
+  }
+ },
+ "triangles": 31106
+}

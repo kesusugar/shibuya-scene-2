@@ -1,6 +1,6 @@
 {
   "id": "street/core",
-  "status": "C2b prototype; photo placements experimental only",
+  "status": "C2b v2: rule-placed furniture in the normal view (provisional positions and shapes); Codex photo placements kept as opt-in experiment",
   "fidelity": "B",
   "datum_tp_m": 15,
   "tools": {
@@ -9,14 +9,14 @@
     "addons": []
   },
   "stats": {
-    "triangles": 9624,
-    "primitives": 11,
-    "bytes": 675824,
+    "triangles": 41296,
+    "primitives": 22,
+    "bytes": 1932568,
     "files": {
       "street_core.glb": {
-        "triangles": 6984,
-        "primitives": 5,
-        "bytes": 519920
+        "triangles": 38656,
+        "primitives": 16,
+        "bytes": 1776664
       },
       "street_projected.glb": {
         "triangles": 2640,
@@ -35,8 +35,8 @@
       "sha256": "f1204ab37f65f5ded8bbd5717e2e03b6876dd884a82317b3e94e34517f9b940e"
     },
     "source/blender/build_street.py": {
-      "bytes": 11112,
-      "sha256": "c75d6d302dbb318bd708e2dbc90bb634c4da9bd37d1e71d2c9c9f7f8881dd884"
+      "bytes": 18792,
+      "sha256": "7f1bb6304be4e47dca56ecc701bcf91f0f0b5bbdea0f93341eec51f574c4c866"
     },
     "source/blender/project_furniture.py": {
       "bytes": 3597,
@@ -86,9 +86,17 @@
       "bytes": 8625,
       "sha256": "a962769658a1e3a63ad3792a2a0959cbe4d09a2fb0fc5527fe2caea68fd95bb5"
     },
+    "source/data/street_layout.json": {
+      "bytes": 7087,
+      "sha256": "432af341562ab3072f75593e98c43de847b59a35de03b9881075b7f3eecf0870"
+    },
+    "source/data/street_register_v2.csv": {
+      "bytes": 4063,
+      "sha256": "cbe866080f8b6b7cbafb937e14c32e3c991f857944bfaaa724c08963d0f7e53a"
+    },
     "source/data/street_stats.json": {
-      "bytes": 10666,
-      "sha256": "5f71cc8c50931cec970317ce08a6dedbd458f689daca201ff9ac83b930c57f1d"
+      "bytes": 14942,
+      "sha256": "8a00941d61c1958f81b00738154d0001816b1dc38bae5765238f9dcd083ea36f"
     },
     "source/refs/commons_metadata.json": {
       "bytes": 16354,
@@ -110,13 +118,25 @@
       "bytes": 1935709,
       "sha256": "76e319107f5ef44a4a7c41af1553aac8257c56be7b8747962f311ce136cab075"
     },
+    "source/tools/plot_layout.py": {
+      "bytes": 2220,
+      "sha256": "619c2c1f62d7335d376f0812d7d9424ca61720b25ac11acb58782f2f54d9263f"
+    },
+    "source/tools/street_layout.py": {
+      "bytes": 9575,
+      "sha256": "957123e226e4829c3d47b4c77f35146b03e7172c6cb9ce3b79df8bfd345d57bd"
+    },
+    "source/tools/write_register.py": {
+      "bytes": 1188,
+      "sha256": "aed8ef1f52de11f31df2a0dcbac8ec244a81e758c8818d3e8de197aedafadc6f"
+    },
     "web/projected.json": {
       "bytes": 3394,
       "sha256": "783219d97f39b65800896ce14b2bb3591047320659c65e8ca4919075d0895e3d"
     },
     "web/street_core.glb": {
-      "bytes": 519920,
-      "sha256": "898319e3ab5206eaeddab747eab48601e510b8f2b58550a426d0de8880b6abf1"
+      "bytes": 1776664,
+      "sha256": "de970a9a1951dc7fb57213b5849c19de92000d9477a2a7948074c8ded08fcf9a"
     },
     "web/street_projected.glb": {
       "bytes": 155904,

@@ -1,86 +1,8 @@
 {
-  "foliage_mode": "coarse",
+  "version": 2,
   "blender": "4.2.3 LTS",
   "datum_tp_m": 15.0,
   "features": [
-    {
-      "id": "node/8007279073",
-      "kind": "tree",
-      "point": [
-        29.901652332275727,
-        -16.0856664201462
-      ],
-      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
-      "shape_status": "species, crown size and height are provisional",
-      "anchor_tp": 14.921,
-      "survey_min_tp": 14.913,
-      "survey_max_tp": 14.929
-    },
-    {
-      "id": "node/8007279074",
-      "kind": "tree",
-      "point": [
-        41.85869540320028,
-        -17.755458781784345
-      ],
-      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
-      "shape_status": "species, crown size and height are provisional",
-      "anchor_tp": 14.811,
-      "survey_min_tp": 14.803,
-      "survey_max_tp": 14.819
-    },
-    {
-      "id": "node/8363183939",
-      "kind": "tree",
-      "point": [
-        10.690790399070083,
-        42.64649692296151
-      ],
-      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
-      "shape_status": "species, crown size and height are provisional",
-      "anchor_tp": 15.531,
-      "survey_min_tp": 15.518,
-      "survey_max_tp": 15.678
-    },
-    {
-      "id": "node/8363183943",
-      "kind": "tree",
-      "point": [
-        26.464680800628027,
-        40.82085727397348
-      ],
-      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
-      "shape_status": "species, crown size and height are provisional",
-      "anchor_tp": 15.708,
-      "survey_min_tp": 15.695,
-      "survey_max_tp": 15.721
-    },
-    {
-      "id": "node/8363183944",
-      "kind": "tree",
-      "point": [
-        24.764284358871432,
-        32.93943732545949
-      ],
-      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
-      "shape_status": "species, crown size and height are provisional",
-      "anchor_tp": 15.574,
-      "survey_min_tp": 15.561,
-      "survey_max_tp": 15.587
-    },
-    {
-      "id": "node/8363183945",
-      "kind": "tree",
-      "point": [
-        23.190513181729635,
-        26.393851267046983
-      ],
-      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
-      "shape_status": "species, crown size and height are provisional",
-      "anchor_tp": 15.462,
-      "survey_min_tp": 15.442,
-      "survey_max_tp": 15.482
-    },
     {
       "id": "way/142438894",
       "kind": "entrance",
@@ -108,15 +30,15 @@
         ]
       ],
       "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
-      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "shape_status": "provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured",
       "identity": "A7b",
-      "anchor_tp": 14.766,
-      "survey_min_tp": 14.766,
-      "survey_max_tp": 15.083,
-      "max_burial_m": 0.316,
+      "anchor_tp": 14.762,
+      "survey_min_tp": 14.762,
+      "survey_max_tp": 15.081,
+      "max_burial_m": 0.32,
       "length_m": 8.606,
       "width_m": 3.073,
-      "stairs": "not exported: descent direction and interior not verified"
+      "open_end": "rule: short end nearer the crossing centre (not photo-verified)"
     },
     {
       "id": "way/142438895",
@@ -145,15 +67,15 @@
         ]
       ],
       "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
-      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "shape_status": "provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured",
       "identity": "A7a",
-      "anchor_tp": 15.028,
-      "survey_min_tp": 15.028,
-      "survey_max_tp": 15.302,
-      "max_burial_m": 0.274,
+      "anchor_tp": 15.029,
+      "survey_min_tp": 15.029,
+      "survey_max_tp": 15.281,
+      "max_burial_m": 0.252,
       "length_m": 7.899,
       "width_m": 3.269,
-      "stairs": "not exported: descent direction and interior not verified"
+      "open_end": "rule: short end nearer the crossing centre (not photo-verified)"
     },
     {
       "id": "way/155807209",
@@ -182,15 +104,15 @@
         ]
       ],
       "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
-      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "shape_status": "provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured",
       "identity": "A5a",
       "anchor_tp": 15.366,
       "survey_min_tp": 15.366,
-      "survey_max_tp": 15.472,
-      "max_burial_m": 0.106,
+      "survey_max_tp": 15.467,
+      "max_burial_m": 0.101,
       "length_m": 9.163,
       "width_m": 3.472,
-      "stairs": "not exported: descent direction and interior not verified"
+      "open_end": "rule: short end nearer the crossing centre (not photo-verified)"
     },
     {
       "id": "way/155807210",
@@ -219,15 +141,15 @@
         ]
       ],
       "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
-      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "shape_status": "provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured",
       "identity": "A6a",
-      "anchor_tp": 15.168,
-      "survey_min_tp": 15.168,
+      "anchor_tp": 15.177,
+      "survey_min_tp": 15.177,
       "survey_max_tp": 15.345,
-      "max_burial_m": 0.177,
+      "max_burial_m": 0.168,
       "length_m": 7.731,
       "width_m": 2.962,
-      "stairs": "not exported: descent direction and interior not verified"
+      "open_end": "rule: short end nearer the crossing centre (not photo-verified)"
     },
     {
       "id": "way/155807211",
@@ -256,15 +178,15 @@
         ]
       ],
       "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
-      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "shape_status": "provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured",
       "identity": "A6b",
       "anchor_tp": 15.231,
       "survey_min_tp": 15.231,
       "survey_max_tp": 15.368,
-      "max_burial_m": 0.138,
+      "max_burial_m": 0.137,
       "length_m": 8.018,
       "width_m": 3.455,
-      "stairs": "not exported: descent direction and interior not verified"
+      "open_end": "rule: short end nearer the crossing centre (not photo-verified)"
     },
     {
       "id": "way/1335178869",
@@ -293,17 +215,234 @@
         ]
       ],
       "position_basis": "OSM footprint, verified present in 2025-10 snapshot",
-      "shape_status": "shared provisional canopy; dimensions and stair direction not photo-measured",
+      "shape_status": "provisional generic Tokyo Metro enclosure (glass sides, flat roof, sign band); not photo-measured",
       "identity": "unidentified footprint candidate, no entrance POI verified",
-      "anchor_tp": 15.198,
-      "survey_min_tp": 15.198,
-      "survey_max_tp": 15.364,
-      "max_burial_m": 0.166,
+      "anchor_tp": 15.33,
+      "survey_min_tp": 15.33,
+      "survey_max_tp": 15.362,
+      "max_burial_m": 0.032,
       "length_m": 3.088,
       "width_m": 3.017,
-      "stairs": "not exported: descent direction and interior not verified"
+      "open_end": "rule: short end nearer the crossing centre (not photo-verified)"
+    },
+    {
+      "id": "node/8007279073",
+      "kind": "tree",
+      "point": [
+        29.901652332275727,
+        -16.0856664201462
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "provisional generic broad-leaved tree; species, height and crown not measured",
+      "anchor_tp": 14.921,
+      "survey_min_tp": 14.921,
+      "survey_max_tp": 14.921,
+      "height_m": 9.51,
+      "crown_radius_m": 3.11
+    },
+    {
+      "id": "node/8007279074",
+      "kind": "tree",
+      "point": [
+        41.85869540320028,
+        -17.755458781784345
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "provisional generic broad-leaved tree; species, height and crown not measured",
+      "anchor_tp": 14.811,
+      "survey_min_tp": 14.811,
+      "survey_max_tp": 14.811,
+      "height_m": 10.11,
+      "crown_radius_m": 3.02
+    },
+    {
+      "id": "node/8363183939",
+      "kind": "tree",
+      "point": [
+        10.690790399070083,
+        42.64649692296151
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "provisional generic broad-leaved tree; species, height and crown not measured",
+      "anchor_tp": 15.531,
+      "survey_min_tp": 15.531,
+      "survey_max_tp": 15.531,
+      "height_m": 10.03,
+      "crown_radius_m": 3.43
+    },
+    {
+      "id": "node/8363183943",
+      "kind": "tree",
+      "point": [
+        26.464680800628027,
+        40.82085727397348
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "provisional generic broad-leaved tree; species, height and crown not measured",
+      "anchor_tp": 15.708,
+      "survey_min_tp": 15.708,
+      "survey_max_tp": 15.708,
+      "height_m": 9.87,
+      "crown_radius_m": 3.39
+    },
+    {
+      "id": "node/8363183944",
+      "kind": "tree",
+      "point": [
+        24.764284358871432,
+        32.93943732545949
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "provisional generic broad-leaved tree; species, height and crown not measured",
+      "anchor_tp": 15.574,
+      "survey_min_tp": 15.574,
+      "survey_max_tp": 15.574,
+      "height_m": 9.69,
+      "crown_radius_m": 3.38
+    },
+    {
+      "id": "node/8363183945",
+      "kind": "tree",
+      "point": [
+        23.190513181729635,
+        26.393851267046983
+      ],
+      "position_basis": "OSM tree node, verified present in 2025-10 snapshot",
+      "shape_status": "provisional generic broad-leaved tree; species, height and crown not measured",
+      "anchor_tp": 15.462,
+      "survey_min_tp": 15.462,
+      "survey_max_tp": 15.462,
+      "height_m": 8.77,
+      "crown_radius_m": 3.04
+    },
+    {
+      "id": "PED_754454449_a",
+      "kind": "ped_signal",
+      "anchor_tp": 14.926,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_754454449_b",
+      "kind": "ped_signal",
+      "anchor_tp": 15.233,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_1157451161_a",
+      "kind": "ped_signal",
+      "anchor_tp": 14.917,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_1157451161_b",
+      "kind": "ped_signal",
+      "anchor_tp": 15.317,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_355248080_a",
+      "kind": "ped_signal",
+      "anchor_tp": 15.23,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_355248080_b",
+      "kind": "ped_signal",
+      "anchor_tp": 15.192,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_355248081_a",
+      "kind": "ped_signal",
+      "anchor_tp": 15.047,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_355248081_b",
+      "kind": "ped_signal",
+      "anchor_tp": 14.89,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_355248078_a",
+      "kind": "ped_signal",
+      "anchor_tp": 15.176,
+      "placement": "rule R1"
+    },
+    {
+      "id": "PED_355248078_b",
+      "kind": "ped_signal",
+      "anchor_tp": 15.259,
+      "placement": "rule R1"
+    },
+    {
+      "id": "VEH_6219685050",
+      "kind": "vehicle_signal",
+      "anchor_tp": 15.317,
+      "placement": "rule R2",
+      "osm_node": "node/6219685050"
+    },
+    {
+      "id": "VEH_6219685051",
+      "kind": "vehicle_signal",
+      "anchor_tp": 15.176,
+      "placement": "rule R2",
+      "osm_node": "node/6219685051"
+    },
+    {
+      "id": "VEH_6219685052",
+      "kind": "vehicle_signal",
+      "anchor_tp": 15.192,
+      "placement": "rule R2",
+      "osm_node": "node/6219685052"
+    },
+    {
+      "id": "VEH_6219685053",
+      "kind": "vehicle_signal",
+      "anchor_tp": 14.89,
+      "placement": "rule R2",
+      "osm_node": "node/6219685053"
+    },
+    {
+      "id": "P01",
+      "kind": "lamp",
+      "anchor_tp": 15.312,
+      "placement": "photo projection (Stream 2025, Codex C2b)"
+    },
+    {
+      "id": "P02",
+      "kind": "lamp",
+      "anchor_tp": 15.325,
+      "placement": "photo projection (Stream 2025, Codex C2b)"
+    },
+    {
+      "id": "P03",
+      "kind": "lamp",
+      "anchor_tp": 15.269,
+      "placement": "photo projection (Stream 2025, Codex C2b)"
+    },
+    {
+      "id": "P04",
+      "kind": "sign_pair",
+      "anchor_tp": 15.384,
+      "placement": "photo projection (Stream 2025, Codex C2b)"
     }
   ],
+  "lights": [
+    {
+      "id": "P01",
+      "tp": 20.312
+    },
+    {
+      "id": "P02",
+      "tp": 20.325
+    },
+    {
+      "id": "P03",
+      "tp": 20.269
+    }
+  ],
+  "rail_length_m": 220.0,
   "unresolved": [
     {
       "id": "node/6219685050",
@@ -353,26 +492,70 @@
     "additional pedestrian signal poles not present in OSM"
   ],
   "objects": {
-    "street_tree_bark": {
-      "triangles": 1056,
-      "vertices": 600
-    },
-    "street_tree_leaves": {
-      "triangles": 2400,
-      "vertices": 1260
-    },
     "street_concrete": {
+      "triangles": 2100,
+      "vertices": 1400
+    },
+    "street_stair_well": {
+      "triangles": 288,
+      "vertices": 192
+    },
+    "street_roof": {
       "triangles": 72,
       "vertices": 48
     },
-    "street_steel": {
-      "triangles": 2592,
-      "vertices": 1440
+    "street_panel": {
+      "triangles": 1272,
+      "vertices": 848
     },
-    "street_roof": {
-      "triangles": 864,
-      "vertices": 576
+    "street_glass": {
+      "triangles": 216,
+      "vertices": 144
+    },
+    "street_sign_blue": {
+      "triangles": 108,
+      "vertices": 88
+    },
+    "street_sign_white": {
+      "triangles": 108,
+      "vertices": 88
+    },
+    "street_steel": {
+      "triangles": 1064,
+      "vertices": 620
+    },
+    "street_signal_body": {
+      "triangles": 400,
+      "vertices": 320
+    },
+    "street_signal_green": {
+      "triangles": 56,
+      "vertices": 64
+    },
+    "street_signal_red": {
+      "triangles": 120,
+      "vertices": 80
+    },
+    "street_rail": {
+      "triangles": 16040,
+      "vertices": 10176
+    },
+    "street_lamp_glass": {
+      "triangles": 36,
+      "vertices": 24
+    },
+    "street_tree_bark": {
+      "triangles": 696,
+      "vertices": 400
+    },
+    "street_tree_leaves": {
+      "triangles": 8614,
+      "vertices": 10148
+    },
+    "street_tree_leaves_light": {
+      "triangles": 7466,
+      "vertices": 10684
     }
   },
-  "triangles": 6984
+  "triangles": 38656
 }

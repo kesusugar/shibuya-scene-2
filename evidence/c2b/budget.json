@@ -53,14 +53,14 @@
     }
   },
   "street/core": {
-    "triangles": 9624,
-    "primitives": 11,
-    "bytes": 675824,
+    "triangles": 41296,
+    "primitives": 22,
+    "bytes": 1932568,
     "files": {
       "street_core.glb": {
-        "triangles": 6984,
-        "primitives": 5,
-        "bytes": 519920
+        "triangles": 38656,
+        "primitives": 16,
+        "bytes": 1776664
       },
       "street_projected.glb": {
         "triangles": 2640,
@@ -70,8 +70,8 @@
     }
   },
   "total": {
-    "triangles": 223010,
-    "primitives": 139,
-    "bytes": 10853192
+    "triangles": 254682,
+    "primitives": 150,
+    "bytes": 12109936
   }
 }
