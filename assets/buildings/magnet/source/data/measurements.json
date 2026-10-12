@@ -60,15 +60,15 @@
  },
  "drum": {
   "centre": [
-   29.5,
-   17.3
+   29.65,
+   17.0
   ],
   "r": 2.25,
   "z0": 10.44,
   "top_m": 31.2,
   "lookout_top_m": 33.9,
   "lookout_r": 2.5,
-  "_src": "photo M027 with the fitted camera: silhouette rays at rows 500/650 give centre (29.5, 17.4) and r 2.2 at 45 m (depth along the ray +-1 m); top 31.2, lookout 33.9; base = PLATEAU 10.44 notch roof"
+  "_src": "photo M027 with the fitted camera: silhouette rays at rows 500/650 give centre (29.5, 17.4) [v2 camera, sunlit edge: (29.65, 17.0)] and r 2.2 at 45 m (depth along the ray +-1 m); top 31.2, lookout 33.9; base = PLATEAU 10.44 notch roof"
  },
  "tower": {
   "pane_w_m": 1.25,
@@ -126,5 +126,27 @@
  "rooftop": {
   "deck_rail_h": 1.2,
   "truss_h": 3.3
+ },
+ "glass_box": {
+  "poly": [
+   [
+    28.2,
+    26.0
+   ],
+   [
+    38.0,
+    26.0
+   ],
+   [
+    40.0,
+    35.8
+   ],
+   [
+    29.4,
+    35.8
+   ]
+  ],
+  "top_m": 37.6,
+  "_src": "photo only (not in PLATEAU 2025 LOD2): a lower glass block west of the main tower, seen in M027, M002 and M001. Top 37.6 m estimated on M002 between the lookout (33.9) and the tower (42.42), +-2 m; plan from back-projecting its two top corners on M027 at that height (apex 343,131 -> 28.2,26.0; NW 183,187 -> 29.4,35.8); its west face runs parallel to the west facade, 1.2-2.4 m behind it. East extent assumed to meet the tower."
  }
 }

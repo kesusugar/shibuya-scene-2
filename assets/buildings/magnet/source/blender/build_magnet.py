@@ -36,10 +36,11 @@ WING = roof_polys(33.1, .1)[0]                  # white west wing (deck polygon,
 ANNEX = [p for p in roof_polys(31.44) if max(v.y for v in p) > 60][0]
 NE = roof_polys(35.99)[0] + []; NE2 = roof_polys(34.41)[0]
 EIRAKU = [V2(p) for p in M['eiraku']['poly']]
+GBOX = [V2(p) for p in M['glass_box']['poly']]   # v2: lower glass block from the photos (not in PLATEAU)
 
 def area(poly): return sum(poly[i].x*poly[(i+1) % len(poly)].y - poly[(i+1) % len(poly)].x*poly[i].y for i in range(len(poly)))/2
 def ccw(poly): return poly if area(poly) > 0 else poly[::-1]
-TOWER, TOWER_FW, STEP_A, STEP_B, WING, ANNEX, NE, NE2, EIRAKU = map(ccw, (TOWER, TOWER_FW, STEP_A, STEP_B, WING, ANNEX, NE, NE2, EIRAKU))
+TOWER, TOWER_FW, STEP_A, STEP_B, WING, ANNEX, NE, NE2, EIRAKU, GBOX = map(ccw, (TOWER, TOWER_FW, STEP_A, STEP_B, WING, ANNEX, NE, NE2, EIRAKU, GBOX))
 def edges(poly):
     for i in range(len(poly)):
         a, b = poly[i], poly[(i+1) % len(poly)]; L = (b-a).length
@@ -80,8 +81,8 @@ def tint_reflection(m, rgb):
     nt = m.node_tree; gl = next(n for n in nt.nodes if n.type == 'BSDF_GLOSSY'); src = gl.inputs['Color'].links[0].from_socket
     mx = nt.nodes.new('ShaderNodeMix'); mx.data_type = 'RGBA'; mx.blend_type = 'MULTIPLY'; mx.inputs['Factor'].default_value = 1
     nt.links.new(src, mx.inputs[6]); mx.inputs[7].default_value = (*rgb, 1); nt.links.new(mx.outputs[2], gl.inputs['Color']); return m
-mat('tower_glass', panel_glass('tower_glass', (.18, .24, .34), .22, 2.2, M['tower']['pane_w_m'], M['tower']['pane_h_m'], wobble=.05, base=.4))
-tint_reflection(MAT['tower_glass'], (.22, .33, .6))
+mat('tower_glass', panel_glass('tower_glass', (.18, .24, .34), .22, 2.2, M['tower']['pane_w_m'], M['tower']['pane_h_m'], wobble=.05, base=.3))
+tint_reflection(MAT['tower_glass'], (.14, .24, .52))   # v2: M027 glass reads 31,49,80
 mat('shop_glass', panel_glass('shop_glass', (.6, .62, .62), .75, 1.5, 1.8, 3.0, base=.06))
 mat('lookout_glass', panel_glass('lookout_glass', (.7, .75, .78), .8, 1.5, 1.2, 1.1, base=.08))
 mat('mullion', principled('mullion', (.16, .17, .19), metal=.7, rough=.35))
@@ -132,10 +133,10 @@ def neighbour_h(a, b, n, others):
 
 DRUM_C = V2(M['drum']['centre']); DRUM_R = M['drum']['r']
 WF = M['west_face']; RIB = WF['ribbons_m']; WALL_TOP = HGT['west_wall_top_m']
-ALL = [TOWER, TOWER_FW, STEP_A, STEP_B, WING, ANNEX, NE, NE2, EIRAKU]
+ALL = [TOWER, TOWER_FW, STEP_A, STEP_B, WING, ANNEX, NE, NE2, EIRAKU, GBOX]
 for poly_, h_ in ((TOWER, HGT['tower_parapetTop_m']), (TOWER_FW, HGT['tower_parapetTop_m']), (STEP_A, HGT['tower_step_roofs_m'][0]),
                   (STEP_B, HGT['tower_step_roofs_m'][1]), (WING, HGT['west_wall_top_m']), (ANNEX, HGT['north_annex_roof_m']),
-                  (NE, 35.99), (NE2, 34.41), (EIRAKU, HGT['eiraku_roof_m'])): HEIGHT[id(poly_)] = h_
+                  (NE, 35.99), (NE2, 34.41), (EIRAKU, HGT['eiraku_roof_m']), (GBOX, M['glass_box']['top_m'])): HEIGHT[id(poly_)] = h_
 HEIGHT[id(TOWER_FW)] = HGT['tower_front_west_roof_m'] + .4
 
 # ---------------------------------------------------------------- 01 west wing: white panels, ribbon windows, shopfront
@@ -192,7 +193,7 @@ for a, b, L, t, n in edges(WING):
 c0 = Vector((36.5, 40.0))
 for k in range(6):   # stepped bleacher seating on the deck, facing south-west (MAG7, M020)
     B.box('06_ROOFTOP', 'deck_wood', (c0.x + .2*k, c0.y + 1.1*k, WALL_TOP + .25 + .35*k), (6.5, 1.0, .5 + .7*k), yaw=math.radians(78))
-for p in ((33.5, 30.0), (35.0, 50.0), (38.0, 58.0)):
+for p in ((33.0, 45.0), (35.0, 52.0), (38.0, 58.0)):   # v2: clear of the glass block
     B.box('06_ROOFTOP', 'plant', (p[0], p[1], WALL_TOP + 1.0), (3.0, 2.2, 2.0))
 
 # ---------------------------------------------------------------- 02 drum: white cylinder, dark band, glazed lookout
@@ -243,7 +244,8 @@ curtain(TOWER, HGT['tower_parapetTop_m'], others(TOWER))
 curtain(TOWER_FW, HGT['tower_front_west_roof_m'] + .4, others(TOWER_FW))   # M027: corner top at 40.33 (+ coping), fitted point
 curtain(STEP_A, HGT['tower_step_roofs_m'][0], others(STEP_A), zbot=WALL_TOP)
 curtain(STEP_B, HGT['tower_step_roofs_m'][1], others(STEP_B), zbot=WALL_TOP)
-for poly, h in ((TOWER, HGT['tower_roof_m']), (TOWER_FW, HGT['tower_front_west_roof_m']), (STEP_A, HGT['tower_step_roofs_m'][0]), (STEP_B, HGT['tower_step_roofs_m'][1])):
+curtain(GBOX, M['glass_box']['top_m'], others(GBOX), zbot=WALL_TOP)
+for poly, h in ((GBOX, M['glass_box']['top_m']), (TOWER, HGT['tower_roof_m']), (TOWER_FW, HGT['tower_front_west_roof_m']), (STEP_A, HGT['tower_step_roofs_m'][0]), (STEP_B, HGT['tower_step_roofs_m'][1])):
     cap('03_TOWER', 'roof', poly, h)
 # north and north-east low parts: same white cladding, no shopfront detail (not seen in the 2025 photos)
 for poly, h in ((ANNEX, HGT['north_annex_roof_m']), (NE, 35.99), (NE2, 34.41)):

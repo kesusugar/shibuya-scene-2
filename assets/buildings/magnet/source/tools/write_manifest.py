@@ -20,7 +20,7 @@ common = {
     "generatorRevision": rev or "(uncommitted)",
 }
 magnet = {
-    "id": "magnet", "name": "MAGNET by SHIBUYA109（渋谷区神南1-23-10）", "version": "v1", "status": "G3 v1 - for owner review",
+    "id": "magnet", "name": "MAGNET by SHIBUYA109（渋谷区神南1-23-10）", "version": "v2", "status": "G3 v2 - owner asked to fix the three v1 gaps; for review",
     "referenceYear": 2025,
     "referenceYearNote": "Form from 2019-2026 photos and PLATEAU 2025; signs, ads and screens are the 2025 era layer (source/data/signage_2025.json -> web/magnet_signs_2025.glb). 2026-02/03 photos (M001-M003) were used only to confirm signs still in place.",
     "footprintSource": "PLATEAU 2025 LOD2, Shibuya ward, tile 53393596, bldg_d47d8aa9-e4f5-4599-9d9a-bc129a12d6a8 (OSM way/116806281 'MAGNET SHIBUYA' agrees, PLATEAU share 0.93)",
@@ -31,8 +31,8 @@ magnet = {
         "steppedRoofs": {"values": [H['tower_front_west_roof_m']] + H['tower_step_roofs_m'] + [H['north_annex_roof_m']], "source": "PLATEAU LOD2"},
         "signTopHeight": {"value": 32.0, "source": "sign box top, photos M014/M027 (estimated)", "geometryConfidence": "photo-estimated"},
     },
-    "geometryConfidence": f"high for footprint and roof heights (PLATEAU); medium for west face, drum and tower corner (photo M027, camera fit {F['rms_px']:.1f} px RMS, PARTIAL vs the 15 px target); estimated: north and east faces, rooftop plant, sign box depth",
-    "cameras": {"m027": f"source/data/camera_m027_fit.json ({F['rms_px']:.1f} px RMS over 3 points + 4 vanishing lines + eye-level horizon; PARTIAL)"},
+    "geometryConfidence": f"high for footprint and roof heights (PLATEAU); medium for west face, drum and tower corner (photo M027, camera fit {F.get('rms_all_px', F['rms_px']):.1f} px RMS); photo-only: the lower glass block west of the tower (top 37.6 m +-2 m, not in PLATEAU); estimated: north and east faces, rooftop plant, sign box depth",
+    "cameras": {"m027": f"source/data/camera_m027_fit.json ({F.get('rms_all_px', F['rms_px']):.1f} px RMS over 2 points, 3 vanishing lines, 2 PLATEAU edges and the eye-level horizon; points alone {F['rms_px']:.1f} px)"},
     "layers": {"signs_2025": {"file": "web/magnet_signs_2025.glb", "source": "source/data/signage_2025.json", "content": "lettering rebuilt from fonts; ad and screen artwork is original placeholder art (source/tools/make_signs.py); no photo pixels"}},
     "relatedBuildings": {"eiraku": "assets/buildings/eiraku (inside the PLATEAU MAGNET footprint, modelled separately; its finance signs are in this era layer)"},
     "sourceBlend": ["source/blend/magnet_day.blend", "source/blend/magnet_night.blend"],

@@ -1,32 +1,44 @@
 {
  "pos": [
-  -11.390250482709089,
-  -1.8972305568413363,
+  -11.327218845311421,
+  -3.346415728417041,
   1.5
  ],
- "yaw": 72.7134805698616,
- "pitch": 5.912115381632544,
- "roll": -4.025547959074512,
+ "yaw": 71.2404627706144,
+ "pitch": 5.848231368370223,
+ "roll": -3.5227875421076997,
  "fpx": 1134,
  "W": 1280,
  "H": 1707,
  "photo": "M027.jpg",
- "rms_px": 16.279372955960216,
- "n_points": 3,
+ "rms_px": 11.734534355781754,
+ "n_points": 2,
  "residuals_px": {
-  "tower_sw_top": 9.1,
-  "tower_se_top": 25.5,
-  "corner_base_chamfer_s": 7.9
+  "tower_sw_top": 15.9,
+  "corner_base_chamfer_s": 4.8
  },
  "fixed": {
   "z": 1.5,
   "fpx": 1134
  },
- "note": "Shibuya Crossing 20250901 131850 (Taufik, CC0), Galaxy S25 Ultra 23 mm-equiv -> 1134 px at 1280 wide. Hand-read pixels on the 1280 px copy.",
+ "note": "Shibuya Crossing 20250901 131850 (Taufik, CC0), Galaxy S25 Ultra 23 mm-equiv -> 1134 px at 1280 wide. Hand-read pixels on the 1280 px copy. v2: + roof-truss and tower-top edges (points on projected 3D lines); shadow-side drum edge dropped.",
  "line_residuals_px": {
-  "drum_left_edge": 8.6,
-  "drum_right_edge": 19.9,
-  "tower_corner": 12.7,
-  "west_ribbon": -10.3
- }
+  "drum_left_edge": 4.9,
+  "tower_corner": 10.6,
+  "west_ribbon": -18.5
+ },
+ "edge_residuals_px": {
+  "truss_top_west": [
+   10.0,
+   1.2,
+   -6.7,
+   -14.6
+  ],
+  "tower_south_top": [
+   18.3,
+   1.7,
+   -10.3
+  ]
+ },
+ "rms_all_px": 11.388690948310128
 }

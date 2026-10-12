@@ -40,7 +40,7 @@ def fit(lm_path, out_path):
     v0 = {**{'x': I['pos'][0], 'y': I['pos'][1], 'z': I['pos'][2]}, **I}
     def full(v):
         d = dict(fixed); d.update(dict(zip(free, v))); return [d[k] for k in KEYS]
-    lines = L.get('lines', [])
+    lines = [l for l in L.get('lines', []) if not l.get('skip')]
     def vp_res(cam):
         # line constraints: an image segment along a known 3D direction must point at that direction's vanishing point
         f, rt, up = basis(cam['yaw'], cam['pitch'], cam['roll']); out = []
@@ -53,13 +53,22 @@ def fit(lm_path, out_path):
             out.append(w_line * (l @ np.append(b, 1)) / max(n, 1e-9))
         return np.array(out)
     w_line = L.get('line_weight', 1.0)
+    edges3 = [e for e in L.get('edges3d', []) if not e.get('skip')]
+    def edge_res(cam):
+        # image points that must lie on the projection of a known 3D edge (no point-to-point correspondence needed)
+        out = []
+        for e in edges3:
+            (pa, _), (pb, _) = project(cam, e['a'], W, H), project(cam, e['b'], W, H)
+            t = pb - pa; n = np.array([-t[1], t[0]]) / max(np.linalg.norm(t), 1e-9)
+            out += [float((np.asarray(q, float) - pa) @ n) for q in e['px']]
+        return np.array(out)
     def res(v):
         cam = to_cam(full(v)); uv, z = project(cam, X, W, H)
         hz = []
         if 'horizon_y' in L:   # eye-level line read off distant pedestrians' heads (camera height ~ eye height)
             f_, rt_, up_ = basis(cam['yaw'], cam['pitch'], cam['roll']); fl = np.array([f_[0], f_[1], 0.]); fl /= np.linalg.norm(fl)
             q, _ = project(cam, np.asarray(cam['pos']) + fl*1e4, W, H); hz = [L.get('horizon_weight', 3.0)*(q[1] - L['horizon_y'])]
-        return np.concatenate([(uv - U).ravel(), np.where(z < 1, 1e3, 0), vp_res(cam), hz])
+        return np.concatenate([(uv - U).ravel(), np.where(z < 1, 1e3, 0), vp_res(cam), hz, edge_res(cam)])
     r = least_squares(res, [v0[k] for k in free], loss='soft_l1', f_scale=20)
     cam = to_cam(full(r.x)); uv, _ = project(cam, X, W, H); e = np.linalg.norm(uv - U, axis=1)
     out = {**cam, 'W': W, 'H': H, 'photo': L['photo'], 'rms_px': float(np.sqrt((e**2).mean())), 'n_points': len(pts),
@@ -70,6 +79,13 @@ def fit(lm_path, out_path):
     lr = vp_res(cam) / w_line if lines else []
     for ln, x in zip(lines, lr): print(f"  line {ln['id']:23s} {x:6.1f} px")
     out['line_residuals_px'] = {ln['id']: round(float(x), 1) for ln, x in zip(lines, lr)}
+    er = edge_res(cam); k = 0
+    for e in edges3:
+        r = er[k:k+len(e['px'])]; k += len(e['px'])
+        print(f"  edge {e['id']:23s} " + ' '.join(f'{x:6.1f}' for x in r) + ' px')
+        out.setdefault('edge_residuals_px', {})[e['id']] = [round(float(x), 1) for x in r]
+    allr = np.concatenate([e_ for e_ in (np.linalg.norm(uv - U, axis=1), np.asarray(lr, float), er) if len(e_)])
+    out['rms_all_px'] = float(np.sqrt((allr**2).mean())); print(f"  RMS over points, lines and edges: {out['rms_all_px']:.1f} px")
     json.dump(out, open(out_path, 'w'), indent=1)
 
 def draw(fit_path, photo, lod2_path, out, lm_path=None, edges_path=None):

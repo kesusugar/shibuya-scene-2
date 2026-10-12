@@ -7,7 +7,7 @@ from PIL import Image, ImageStat
 ROI = {
     'west_wall_white': (20, 540, 170, 620),
     'drum_wrap_white': (450, 400, 530, 560),
-    'tower_glass':     (575, 160, 660, 300),
+    'tower_glass':     (618, 175, 660, 290),   # v2: inside the glass in both images (v1 box 575,160,660,300 caught the lookout)
     'sign_box_grey':   (690, 330, 740, 470),
     'sky':             (860, 30, 980, 180),
 }
