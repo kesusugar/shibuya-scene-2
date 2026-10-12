@@ -1,8 +1,8 @@
 {
  "id": "magnet",
  "name": "MAGNET by SHIBUYA109（渋谷区神南1-23-10）",
- "version": "v1",
- "status": "G3 v1 - for owner review",
+ "version": "v2",
+ "status": "G3 v2 - owner asked to fix the three v1 gaps; for review",
  "referenceYear": 2025,
  "referenceYearNote": "Form from 2019-2026 photos and PLATEAU 2025; signs, ads and screens are the 2025 era layer (source/data/signage_2025.json -> web/magnet_signs_2025.glb). 2026-02/03 photos (M001-M003) were used only to confirm signs still in place.",
  "footprintSource": "PLATEAU 2025 LOD2, Shibuya ward, tile 53393596, bldg_d47d8aa9-e4f5-4599-9d9a-bc129a12d6a8 (OSM way/116806281 'MAGNET SHIBUYA' agrees, PLATEAU share 0.93)",
@@ -36,9 +36,9 @@
    "geometryConfidence": "photo-estimated"
   }
  },
- "geometryConfidence": "high for footprint and roof heights (PLATEAU); medium for west face, drum and tower corner (photo M027, camera fit 16.3 px RMS, PARTIAL vs the 15 px target); estimated: north and east faces, rooftop plant, sign box depth",
+ "geometryConfidence": "high for footprint and roof heights (PLATEAU); medium for west face, drum and tower corner (photo M027, camera fit 11.4 px RMS); photo-only: the lower glass block west of the tower (top 37.6 m +-2 m, not in PLATEAU); estimated: north and east faces, rooftop plant, sign box depth",
  "cameras": {
-  "m027": "source/data/camera_m027_fit.json (16.3 px RMS over 3 points + 4 vanishing lines + eye-level horizon; PARTIAL)"
+  "m027": "source/data/camera_m027_fit.json (11.4 px RMS over 2 points, 3 vanishing lines, 2 PLATEAU edges and the eye-level horizon; points alone 11.7 px)"
  },
  "layers": {
   "signs_2025": {
@@ -102,18 +102,18 @@
  "renderSettings": "Blender 4.2.3 Cycles CPU, AgX Medium High Contrast; day: sun az 207 / el 57 (M027, 2025-09-01 13:18 JST), camera-ray sky tint; night: deep-blue dome, street area lights; glossy rays see CC0 Poly Haven HDRIs (QFRONT copy)",
  "generator": "assets/buildings/magnet/source/blender/build_magnet.py (Blender 4.2.3 LTS): blender -b -P build_magnet.py -- <out> day|night preview|final view=m027|sw|south|west|roof [era=2025|none] [save] [clay]",
  "exporter": "assets/buildings/magnet/source/blender/export_web.py",
- "generatorRevision": "d6ca861a6656c1d2097ed54fb179b287b8cb3f05",
+ "generatorRevision": "82a4e3854ed3217ccf29f8dee92fbc2ae750a528",
  "files": {
   "web/magnet.glb": {
-   "sha256": "7fd1a161fced80151adc60519a88d68046aed51cb7264de503931fcd1c9fdbea",
-   "bytes": 570684
+   "sha256": "39ec44c3357b51f9fde3e1eef7328ecc1db6113a1314d2c53e92d499a040de2e",
+   "bytes": 604008
   },
   "web/magnet_signs_2025.glb": {
-   "sha256": "24fc640944a076cc5eb468d0e9375894ef85fe0e8548caa74b93f515366b6163",
+   "sha256": "fedc370e1242801366ddfb617e4a363a6097f092cf9b52f73eb55238e613d673",
    "bytes": 1112464
   },
   "web/viewer.json": {
-   "sha256": "3fb77fbcad364efe4906999980f533fe64bf70f82996139f533d57ffc8f6c085",
+   "sha256": "1fef38a4b92117736a006231dc8d902dbbfe1970c11ceed6382080ca1a1671bf",
    "bytes": 578
   },
   "web/emissive_day.json": {
@@ -125,32 +125,32 @@
    "bytes": 4180
   },
   "source/blend/magnet_day.blend": {
-   "sha256": "8bcd221ed27d406e6936ccae65348c62feaec7685cac9826c1890ed244e1b03e",
-   "bytes": 10153912
+   "sha256": "90f9ffc1d3ca7ceaa7a7b3fff33855645d7f5781296774b85294c5c3096e1de3",
+   "bytes": 10175660
   },
   "source/blend/magnet_night.blend": {
-   "sha256": "231fed8ae7be63599a6fe3e77fb51dacd0d5cccfc8a6f4cf164ab7b21e12e11a",
-   "bytes": 10140580
+   "sha256": "d19f9e14599f0900f0ecf8d3ddd2a6014f2996d2a1a22f4a7f2a79321fad352f",
+   "bytes": 10162328
   },
   "source/blender/build_magnet.py": {
-   "sha256": "417fdfcf738d5fe11bbafe4fa65ee14f9a2f077ac9bff5e91e4c3ee9d3300d5b",
-   "bytes": 36089
+   "sha256": "848b717d1b112fcfe9b5004b5fe96db2843a9c7d7f1c5e4315282f987e5c342b",
+   "bytes": 36415
   },
   "source/blender/export_web.py": {
    "sha256": "63290b8a3289945fa9a863b7a8549e297638fc4413a47c7cc2287c8efdee3d87",
    "bytes": 6504
   },
   "source/data/measurements.json": {
-   "sha256": "88ef758521da105e1d1a93bf223b1a85d4400d9e9547be480b8b848e84ba691f",
-   "bytes": 2827
+   "sha256": "5caead422393012ca5701b42630ea97afb438b66296ce4f0500ee6fd24344abd",
+   "bytes": 3482
   },
   "source/data/signage_2025.json": {
    "sha256": "b446d6892ae473e87bff2815114032b620a053212112dea2211019b8bb2fb2e2",
    "bytes": 2751
   },
   "source/data/camera_m027_fit.json": {
-   "sha256": "14b1a6f868f1b56bd7078b1ee6ffb1a1dd8072102b34fff0315b807ef452687b",
-   "bytes": 681
+   "sha256": "f2926caa8b3b4e5712bd0ca2f294dc485ebc7ee4be63c01a46e7ae6dc97a8b46",
+   "bytes": 909
   },
   "source/data/magnet_plateau_lod2.json": {
    "sha256": "9bfd1c6558dfa4f5d5d20c71d54c300c1f2d1f414c30b27c55d9777cf02e0434",
