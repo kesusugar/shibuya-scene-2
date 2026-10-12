@@ -1,0 +1,475 @@
+{
+  "street_missing": {
+    "query": "streeturl=missing",
+    "viewer": {
+      "ready": true,
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 7,
+        "triangles": 71323
+      },
+      "street": {
+        "ok": false,
+        "error": "Unexpected token '<', \"<!doctype \"... is not valid JSON",
+        "mode": "all",
+        "meshes": 0,
+        "triangles": 0
+      },
+      "projected": "off",
+      "offsets": {
+        "qfront": 0.20199999999999996,
+        "magnet": -0.09299999999999997,
+        "eiraku": -0.09299999999999997
+      },
+      "bench": null
+    },
+    "status": "街路設備の読み込みに失敗: Unexpected token '<', \"<!doctype \"... is not valid JSON（建物と地面は表示を継続）",
+    "notice": "",
+    "camera": [
+      20.134653632433018,
+      25.255800010754292,
+      33.508250187950445
+    ],
+    "ground": 0.16662850110979832,
+    "errors": [],
+    "httpErrors": [],
+    "missingResponses": [
+      {
+        "status": 200,
+        "type": "text/html"
+      }
+    ],
+    "browser": "141.0.7390.37"
+  },
+  "projected_missing": {
+    "query": "street=projected&projectedurl=missing",
+    "viewer": {
+      "ready": true,
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 7,
+        "triangles": 71323
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 5,
+        "triangles": 6984
+      },
+      "projected": {
+        "ok": false,
+        "error": "Unexpected token '<', \"<!doctype \"... is not valid JSON",
+        "lamps": [],
+        "groundEmissive": 0.5
+      },
+      "offsets": {
+        "qfront": 0.20199999999999996,
+        "magnet": -0.09299999999999997,
+        "eiraku": -0.09299999999999997
+      },
+      "bench": null
+    },
+    "status": "写真からの仮配置を読み込めず: Unexpected token '<', \"<!doctype \"... is not valid JSON（通常表示を継続）",
+    "notice": "街路形状は試作：出入口候補・樹木の座標は2025年OSMを参照",
+    "camera": [
+      20.134653632433018,
+      25.255800010754292,
+      33.508250187950445
+    ],
+    "ground": 0.16662850110979832,
+    "errors": [],
+    "httpErrors": [],
+    "missingResponses": [
+      {
+        "status": 200,
+        "type": "text/html"
+      }
+    ],
+    "browser": "141.0.7390.37"
+  },
+  "walk": {
+    "query": "view=walk",
+    "viewer": {
+      "ready": true,
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 7,
+        "triangles": 71323
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 5,
+        "triangles": 6984
+      },
+      "projected": "off",
+      "offsets": {
+        "qfront": 0.20199999999999996,
+        "magnet": -0.09299999999999997,
+        "eiraku": -0.09299999999999997
+      },
+      "bench": null
+    },
+    "status": "",
+    "notice": "街路形状は試作：出入口候補・樹木の座標は2025年OSMを参照",
+    "camera": [
+      -6.0807845416166,
+      1.8305830073667466,
+      -11.154659845631599
+    ],
+    "ground": 0.23058300736674653,
+    "errors": [],
+    "httpErrors": [],
+    "missingResponses": [],
+    "browser": "141.0.7390.37"
+  },
+  "lamps": {
+    "query": "street=projected&time=night",
+    "viewer": {
+      "ready": true,
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 7,
+        "triangles": 71323
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 5,
+        "triangles": 6984
+      },
+      "projected": {
+        "ok": true,
+        "status": "experimental_only",
+        "cameraStatus": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+        "lamps": [
+          {
+            "id": "P01",
+            "intensity": 1800,
+            "position": [
+              -10.315,
+              6.361999999999999,
+              -14.324
+            ]
+          },
+          {
+            "id": "P02",
+            "intensity": 1800,
+            "position": [
+              -0.238,
+              8.875,
+              -20.308
+            ]
+          },
+          {
+            "id": "P03",
+            "intensity": 1800,
+            "position": [
+              -26.242,
+              6.819,
+              10.08
+            ]
+          }
+        ],
+        "groundEmissive": 0
+      },
+      "offsets": {
+        "qfront": 0.20199999999999996,
+        "magnet": -0.09299999999999997,
+        "eiraku": -0.09299999999999997
+      },
+      "bench": null
+    },
+    "status": "",
+    "notice": "仮配置：支柱の位置・寸法・光量は確認待ち（橙色）",
+    "camera": [
+      20.134653632433018,
+      25.255800010754292,
+      33.508250187950445
+    ],
+    "ground": 0.16662850110979832,
+    "errors": [],
+    "httpErrors": [],
+    "missingResponses": [],
+    "browser": "141.0.7390.37"
+  },
+  "stream_projection": {
+    "query": "street=projected&streetref=stream2025",
+    "viewer": {
+      "ready": true,
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 7,
+        "triangles": 71323
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 5,
+        "triangles": 6984
+      },
+      "projected": {
+        "ok": true,
+        "status": "experimental_only",
+        "cameraStatus": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+        "lamps": [
+          {
+            "id": "P01",
+            "intensity": 0,
+            "position": [
+              -10.315,
+              6.361999999999999,
+              -14.324
+            ]
+          },
+          {
+            "id": "P02",
+            "intensity": 0,
+            "position": [
+              -0.238,
+              8.875,
+              -20.308
+            ]
+          },
+          {
+            "id": "P03",
+            "intensity": 0,
+            "position": [
+              -26.242,
+              6.819,
+              10.08
+            ]
+          }
+        ],
+        "groundEmissive": 0
+      },
+      "offsets": {
+        "qfront": 0.20199999999999996,
+        "magnet": -0.09299999999999997,
+        "eiraku": -0.09299999999999997
+      },
+      "bench": null
+    },
+    "status": "",
+    "notice": "仮配置：支柱の位置・寸法・光量は確認待ち（橙色）",
+    "camera": [
+      161.9,
+      159.6,
+      201.8
+    ],
+    "ground": 0,
+    "projectionChecks": [
+      {
+        "id": "P01",
+        "expected": [
+          482.40000000000003,
+          626.4000000000001
+        ],
+        "rendered": [
+          482.4017401244519,
+          626.403896283097
+        ],
+        "error_px": 0.004267206941205167
+      },
+      {
+        "id": "P02",
+        "expected": [
+          581.6,
+          628.8000000000001
+        ],
+        "rendered": [
+          581.59734057406,
+          628.797997217139
+        ],
+        "error_px": 0.0033292169528099038
+      },
+      {
+        "id": "P03",
+        "expected": [
+          244.8,
+          676.8000000000001
+        ],
+        "rendered": [
+          244.80319567397694,
+          676.8015252290596
+        ],
+        "error_px": 0.003540996448875538
+      },
+      {
+        "id": "P04",
+        "expected": [
+          216,
+          672
+        ],
+        "rendered": [
+          215.9971365496297,
+          672.0031232719142
+        ],
+        "error_px": 0.004237236773335928
+      },
+      {
+        "id": "R01a",
+        "expected": [
+          180,
+          677.6
+        ],
+        "rendered": [
+          179.9954478348021,
+          677.6039003021594
+        ],
+        "error_px": 0.0059945445968676014
+      },
+      {
+        "id": "R01b",
+        "expected": [
+          233.60000000000002,
+          678.4000000000001
+        ],
+        "rendered": [
+          233.5998294194443,
+          678.4022838541275
+        ],
+        "error_px": 0.0022902155796689573
+      }
+    ],
+    "errors": [],
+    "httpErrors": [],
+    "missingResponses": [],
+    "browser": "141.0.7390.37"
+  }
+}

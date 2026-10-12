@@ -1,0 +1,68 @@
+{
+  "glb_json_equal": true,
+  "accessor_differences": [
+    {
+      "accessor": 7,
+      "type": "SCALAR",
+      "different_values": 1008,
+      "max_abs_diff": 356.0
+    },
+    {
+      "accessor": 15,
+      "type": "SCALAR",
+      "different_values": 34,
+      "max_abs_diff": 47.0
+    }
+  ],
+  "note": "All vertex attributes, materials, transforms and oriented triangle sets match. Two index buffers differ only in triangle order; GLB byte hashes are not identical.",
+  "triangle_checks": [
+    {
+      "mesh": "Cylinder",
+      "indices_equal": true,
+      "triangle_sets_equal": true,
+      "area_original": 26.36023712158203,
+      "area_repeat": 26.36023712158203,
+      "oriented_triangle_sets_equal": true
+    },
+    {
+      "mesh": "Sphere",
+      "indices_equal": false,
+      "triangle_sets_equal": true,
+      "area_original": 2.0814292430877686,
+      "area_repeat": 2.0814290046691895,
+      "oriented_triangle_sets_equal": true
+    },
+    {
+      "mesh": "Cylinder.004",
+      "indices_equal": true,
+      "triangle_sets_equal": true,
+      "area_original": 1.3409894704818726,
+      "area_repeat": 1.3409894704818726,
+      "oriented_triangle_sets_equal": true
+    },
+    {
+      "mesh": "Sphere.002",
+      "indices_equal": false,
+      "triangle_sets_equal": true,
+      "area_original": 0.0384952649474144,
+      "area_repeat": 0.0384952612221241,
+      "oriented_triangle_sets_equal": true
+    },
+    {
+      "mesh": "Cylinder.014",
+      "indices_equal": true,
+      "triangle_sets_equal": true,
+      "area_original": 1.9190282821655273,
+      "area_repeat": 1.9190282821655273,
+      "oriented_triangle_sets_equal": true
+    },
+    {
+      "mesh": "Cylinder.015",
+      "indices_equal": true,
+      "triangle_sets_equal": true,
+      "area_original": 0.9222339391708374,
+      "area_repeat": 0.9222339391708374,
+      "oriented_triangle_sets_equal": true
+    }
+  ]
+}

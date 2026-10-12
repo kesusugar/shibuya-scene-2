@@ -1,0 +1,158 @@
+{
+  "pole_heads": [
+    {
+      "id": "P01",
+      "height_m": 6.5,
+      "observed_px": [
+        602,
+        724
+      ],
+      "model_pole_top_px": [
+        600.23,
+        722.83
+      ],
+      "error_px": 2.13,
+      "pixel_sensitivity_m": 1.334
+    },
+    {
+      "id": "P02",
+      "height_m": 9.0,
+      "observed_px": [
+        721,
+        694
+      ],
+      "model_pole_top_px": [
+        724.72,
+        701.9
+      ],
+      "error_px": 8.73,
+      "pixel_sensitivity_m": 1.337
+    },
+    {
+      "id": "P03",
+      "height_m": 7.0,
+      "observed_px": [
+        304,
+        778
+      ],
+      "model_pole_top_px": [
+        299.92,
+        780.32
+      ],
+      "error_px": 4.7,
+      "pixel_sensitivity_m": 1.434
+    }
+  ],
+  "vegetation": {
+    "photo": "M027",
+    "resolution": [
+      640,
+      853
+    ],
+    "mask_method": "manual regions plus HSV filter; approximate, not hand-segmented ground truth",
+    "reference_regions_original_px": [
+      [
+        [
+          0,
+          750
+        ],
+        [
+          64,
+          737
+        ],
+        [
+          130,
+          782
+        ],
+        [
+          202,
+          736
+        ],
+        [
+          279,
+          776
+        ],
+        [
+          273,
+          885
+        ],
+        [
+          233,
+          939
+        ],
+        [
+          62,
+          980
+        ],
+        [
+          0,
+          962
+        ]
+      ],
+      [
+        [
+          760,
+          840
+        ],
+        [
+          822,
+          810
+        ],
+        [
+          974,
+          812
+        ],
+        [
+          1048,
+          896
+        ],
+        [
+          1026,
+          999
+        ],
+        [
+          900,
+          1050
+        ],
+        [
+          812,
+          1014
+        ],
+        [
+          770,
+          958
+        ]
+      ]
+    ],
+    "render_mask_method": "vegetation class intersected with the same HSV leaf-colour filter; bark excluded",
+    "reference_pixels": 9694,
+    "render_pixels": 3133,
+    "intersection_pixels": 1646,
+    "iou": 0.1472,
+    "reference_recall": 0.1698,
+    "render_precision": 0.5254,
+    "photo_leaf_mean_Lab": [
+      25.63,
+      -6.86,
+      11.89
+    ],
+    "render_leaf_mean_Lab": [
+      24.18,
+      -14.32,
+      14.73
+    ],
+    "leaf_mean_delta_Lab": [
+      -1.45,
+      -7.46,
+      2.84
+    ],
+    "class_vs_photo_leaf_iou": 0.1724,
+    "unmodelled_right_tree_included": true,
+    "camera_rms_original_px": 11.38869
+  },
+  "limitations": [
+    "Pole heads use the same provisional camera as placement: not independent position validation.",
+    "Pixel sensitivity is not a confidence interval for whole-camera uncertainty.",
+    "Tree masks are approximate; people, buildings and camera error affect their edges."
+  ]
+}

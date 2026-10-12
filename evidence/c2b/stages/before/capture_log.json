@@ -1,0 +1,210 @@
+{
+ "m027_beauty": {
+  "query": "/?time=day&view=m027&capture&street=off",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": "off",
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 1.5  (39フレーム平均)\nframe p50 45.7 ms / p95 2334.9 ms\ndraw calls 192  tris 293k\ngeometries 124  textures 25\n解像度 640x853  DPR 1.00"
+ },
+ "q032_beauty": {
+  "query": "/?time=day&view=q032&capture&street=off",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": "off",
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 1.1  (39フレーム平均)\nframe p50 44.0 ms / p95 3214.7 ms\ndraw calls 193  tris 351k\ngeometries 124  textures 21\n解像度 640x875  DPR 1.00"
+ },
+ "refa_beauty": {
+  "query": "/?time=day&pose=-12.6,-68.2,10.2,0.8,30.7,16.2,52.2&capture&street=off",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": "off",
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 1.7  (39フレーム平均)\nframe p50 24.3 ms / p95 2151.9 ms\ndraw calls 251  tris 369k\ngeometries 130  textures 26\n解像度 640x480  DPR 1.00"
+ },
+ "refb_beauty": {
+  "query": "/?time=night&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8&capture&street=off",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": "off",
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 1.8  (51フレーム平均)\nframe p50 24.4 ms / p95 2434.1 ms\ndraw calls 118  tris 210k\ngeometries 108  textures 25\n解像度 640x482  DPR 1.00"
+ }
+}

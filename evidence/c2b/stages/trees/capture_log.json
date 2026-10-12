@@ -1,0 +1,458 @@
+{
+ "m027_beauty": {
+  "query": "/?time=day&view=m027&capture",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 1.6  (35フレーム平均)\nframe p50 127.5 ms / p95 2147.5 ms\ndraw calls 202  tris 307k\ngeometries 129  textures 25\n解像度 640x853  DPR 1.00"
+ },
+ "m027_class": {
+  "query": "/?time=day&view=m027&capture&pass=class",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 9.7  (76フレーム平均)\nframe p50 57.2 ms / p95 135.7 ms\ndraw calls 79  tris 145k\ngeometries 81  textures 20\n解像度 640x853  DPR 1.00"
+ },
+ "q032_beauty": {
+  "query": "/?time=day&view=q032&capture",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 1.1  (38フレーム平均)\nframe p50 37.1 ms / p95 3396.2 ms\ndraw calls 203  tris 365k\ngeometries 129  textures 21\n解像度 640x875  DPR 1.00"
+ },
+ "q032_class": {
+  "query": "/?time=day&view=q032&capture&pass=class",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 7.7  (66フレーム平均)\nframe p50 94.5 ms / p95 160.3 ms\ndraw calls 81  tris 203k\ngeometries 83  textures 20\n解像度 640x875  DPR 1.00"
+ },
+ "refa_beauty": {
+  "query": "/?time=day&pose=-12.6,-68.2,10.2,0.8,30.7,16.2,52.2&capture",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 1.4  (37フレーム平均)\nframe p50 33.3 ms / p95 3244.0 ms\ndraw calls 261  tris 383k\ngeometries 135  textures 26\n解像度 640x480  DPR 1.00"
+ },
+ "refa_class": {
+  "query": "/?time=day&pose=-12.6,-68.2,10.2,0.8,30.7,16.2,52.2&capture&pass=class",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 8.3  (64フレーム平均)\nframe p50 73.7 ms / p95 178.7 ms\ndraw calls 133  tris 220k\ngeometries 135  textures 20\n解像度 640x480  DPR 1.00"
+ },
+ "refb_beauty": {
+  "query": "/?time=night&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8&capture",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 1.8  (47フレーム平均)\nframe p50 45.1 ms / p95 1714.4 ms\ndraw calls 123  tris 217k\ngeometries 113  textures 25\n解像度 640x482  DPR 1.00"
+ },
+ "refb_class": {
+  "query": "/?time=night&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8&capture&pass=class",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 7.1  (65フレーム平均)\nframe p50 95.7 ms / p95 193.9 ms\ndraw calls 111  tris 216k\ngeometries 113  textures 20\n解像度 640x482  DPR 1.00"
+ }
+}

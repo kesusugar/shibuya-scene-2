@@ -1,0 +1,219 @@
+{
+  "photo": "assets/street/core/source/refs/stream_2025.jpg",
+  "measurement_size": [
+    900,
+    1195
+  ],
+  "camera": {
+    "pos": [
+      161.9,
+      -201.8,
+      159.6
+    ],
+    "yaw": -41.295363697504456,
+    "pitch": -26.666043710761528,
+    "roll": 3.8741631094037783,
+    "vfov": 20.126677634578236,
+    "W": 900,
+    "H": 1195,
+    "rms_px": 4.57,
+    "max_px": 8.12,
+    "n": 12,
+    "photo": "assets/street/core/source/refs/stream_2025.jpg",
+    "per_point": {
+      "way/155807210_roof_0": 2.0,
+      "way/155807210_roof_2": 7.8,
+      "way/155807210_roof_3": 1.4,
+      "way/155807210_roof_4": 6.7,
+      "way/155807211_roof_0": 1.4,
+      "way/155807211_roof_1": 1.4,
+      "way/155807211_roof_2": 1.5,
+      "way/155807211_roof_4": 1.9,
+      "way/1335178869_roof_0": 6.3,
+      "way/1335178869_roof_2": 3.7,
+      "way/1335178869_roof_3": 8.1,
+      "way/1335178869_roof_4": 3.2
+    },
+    "target": [
+      102.93,
+      -134.66,
+      114.72
+    ]
+  },
+  "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+  "observations": [
+    {
+      "id": "P01",
+      "kind": "lamp",
+      "px": [
+        603,
+        783
+      ],
+      "head_px": [
+        602,
+        724
+      ],
+      "height_m": 6.5,
+      "ground_base_visible": true,
+      "description": "Decorative lantern at the QFRONT-west pedestrian island",
+      "source": "photo-projection",
+      "photo": "assets/street/core/source/refs/stream_2025.jpg",
+      "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+      "point": [
+        -10.315,
+        14.324
+      ],
+      "anchor_tp": 15.312,
+      "ray_distance_m": 318.97,
+      "pixel_error_ground_radius_m": 1.334,
+      "status": "provisional",
+      "reason": "Photo-derived position; camera and feature identity still require independent validation; pixel sensitivity exceeds the 1m verification limit or sampled rays miss ground"
+    },
+    {
+      "id": "P02",
+      "kind": "lamp_signal",
+      "px": [
+        727,
+        786
+      ],
+      "head_px": [
+        721,
+        694
+      ],
+      "height_m": 9.0,
+      "ground_base_visible": true,
+      "description": "Combined decorative lamp and pedestrian-signal support near QFRONT",
+      "source": "photo-projection",
+      "photo": "assets/street/core/source/refs/stream_2025.jpg",
+      "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+      "point": [
+        -0.238,
+        20.308
+      ],
+      "anchor_tp": 15.325,
+      "ray_distance_m": 317.79,
+      "pixel_error_ground_radius_m": 1.337,
+      "status": "provisional",
+      "reason": "Photo-derived position; camera and feature identity still require independent validation; pixel sensitivity exceeds the 1m verification limit or sampled rays miss ground"
+    },
+    {
+      "id": "P03",
+      "kind": "lamp",
+      "px": [
+        306,
+        846
+      ],
+      "head_px": [
+        304,
+        778
+      ],
+      "height_m": 7.0,
+      "ground_base_visible": true,
+      "description": "Decorative lantern at the south-west island",
+      "source": "photo-projection",
+      "photo": "assets/street/core/source/refs/stream_2025.jpg",
+      "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+      "point": [
+        -26.242,
+        -10.08
+      ],
+      "anchor_tp": 15.269,
+      "ray_distance_m": 312.31,
+      "pixel_error_ground_radius_m": 1.434,
+      "status": "provisional",
+      "reason": "Photo-derived position; camera and feature identity still require independent validation; pixel sensitivity exceeds the 1m verification limit or sampled rays miss ground"
+    },
+    {
+      "id": "P04",
+      "kind": "sign",
+      "px": [
+        270,
+        840
+      ],
+      "height_m": 3.2,
+      "ground_base_visible": true,
+      "description": "Two circular regulation signs at the south-west island",
+      "source": "photo-projection",
+      "photo": "assets/street/core/source/refs/stream_2025.jpg",
+      "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+      "point": [
+        -29.637,
+        -11.29
+      ],
+      "anchor_tp": 15.384,
+      "ray_distance_m": 313.58,
+      "pixel_error_ground_radius_m": 1.442,
+      "status": "provisional",
+      "reason": "Photo-derived position; camera and feature identity still require independent validation; pixel sensitivity exceeds the 1m verification limit or sampled rays miss ground"
+    },
+    {
+      "id": "R01a",
+      "kind": "guardrail_endpoint",
+      "px": [
+        225,
+        847
+      ],
+      "ground_base_visible": true,
+      "description": "Visible ground foot of white roadside railing, west endpoint",
+      "source": "photo-projection",
+      "photo": "assets/street/core/source/refs/stream_2025.jpg",
+      "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+      "point": [
+        -32.275,
+        -14.592
+      ],
+      "anchor_tp": 15.398,
+      "ray_distance_m": 313.2,
+      "pixel_error_ground_radius_m": 1.428,
+      "status": "provisional",
+      "reason": "Photo-derived position; camera and feature identity still require independent validation; pixel sensitivity exceeds the 1m verification limit or sampled rays miss ground"
+    },
+    {
+      "id": "R01b",
+      "kind": "guardrail_endpoint",
+      "px": [
+        292,
+        848
+      ],
+      "ground_base_visible": true,
+      "description": "Visible ground foot of white roadside railing, east endpoint",
+      "source": "photo-projection",
+      "photo": "assets/street/core/source/refs/stream_2025.jpg",
+      "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+      "point": [
+        -26.988,
+        -11.18
+      ],
+      "anchor_tp": 15.355,
+      "ray_distance_m": 312.05,
+      "pixel_error_ground_radius_m": 1.449,
+      "status": "provisional",
+      "reason": "Photo-derived position; camera and feature identity still require independent validation; pixel sensitivity exceeds the 1m verification limit or sampled rays miss ground"
+    },
+    {
+      "id": "P05",
+      "kind": "signal",
+      "px": [
+        815,
+        768
+      ],
+      "ground_base_visible": false,
+      "description": "Other QFRONT-side support: base hidden by pedestrians; do not invent a ground point",
+      "source": "photo-projection",
+      "photo": "assets/street/core/source/refs/stream_2025.jpg",
+      "camera_status": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+      "status": "unresolved",
+      "reason": "Base occluded: no projection of an invented foot point"
+    }
+  ],
+  "geometry_status": "provisional heights and fixture detail, not measured dimensions",
+  "station_era_note": "January 2025 photo: crossing-furniture reference only, not October station geometry",
+  "camera_validation": {
+    "status": "not independently validated",
+    "alternative": "Commons GPS XY constrained fit; roof heights still assumed",
+    "alternative_rms_px": 4.893462836679811,
+    "camera_xy_difference_m": 68.848,
+    "max_projected_position_difference_m": 2.861,
+    "evidence": "evidence/c2b/camera_sensitivity.json"
+  }
+}

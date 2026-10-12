@@ -1,0 +1,77 @@
+{
+  "eiraku": {
+    "triangles": 394,
+    "primitives": 5,
+    "bytes": 32840,
+    "files": {
+      "eiraku.glb": {
+        "triangles": 394,
+        "primitives": 5,
+        "bytes": 32840
+      }
+    }
+  },
+  "magnet": {
+    "triangles": 26473,
+    "primitives": 60,
+    "bytes": 1716472,
+    "files": {
+      "magnet.glb": {
+        "triangles": 10381,
+        "primitives": 29,
+        "bytes": 604008
+      },
+      "magnet_signs_2025.glb": {
+        "triangles": 16092,
+        "primitives": 31,
+        "bytes": 1112464
+      }
+    }
+  },
+  "qfront": {
+    "triangles": 115196,
+    "primitives": 56,
+    "bytes": 5808996,
+    "files": {
+      "qfront.glb": {
+        "triangles": 115196,
+        "primitives": 56,
+        "bytes": 5808996
+      }
+    }
+  },
+  "ground/core": {
+    "triangles": 71323,
+    "primitives": 7,
+    "bytes": 2619060,
+    "files": {
+      "ground_core.glb": {
+        "triangles": 71323,
+        "primitives": 7,
+        "bytes": 2619060
+      }
+    }
+  },
+  "street/core": {
+    "triangles": 9624,
+    "primitives": 11,
+    "bytes": 675824,
+    "files": {
+      "street_core.glb": {
+        "triangles": 6984,
+        "primitives": 5,
+        "bytes": 519920
+      },
+      "street_projected.glb": {
+        "triangles": 2640,
+        "primitives": 6,
+        "bytes": 155904
+      }
+    }
+  },
+  "total": {
+    "triangles": 223010,
+    "primitives": 139,
+    "bytes": 10853192
+  }
+}

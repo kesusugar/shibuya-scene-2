@@ -1,0 +1,20 @@
+id,kind,identity,source,x_m,y_m,anchor_tp_m,placement_status,shape_status,photo,base_u_px,base_v_px,pixel_sensitivity_m,display,camera_variant_difference_m
+node/8007279073,tree,mapped tree,OSM-2025-10-31,29.902,-16.086,14.921,map_coordinate_only,"species, crown size and height are provisional",,,,,default prototype,
+node/8007279074,tree,mapped tree,OSM-2025-10-31,41.859,-17.755,14.811,map_coordinate_only,"species, crown size and height are provisional",,,,,default prototype,
+node/8363183939,tree,mapped tree,OSM-2025-10-31,10.691,42.646,15.531,map_coordinate_only,"species, crown size and height are provisional",,,,,default prototype,
+node/8363183943,tree,mapped tree,OSM-2025-10-31,26.465,40.821,15.708,map_coordinate_only,"species, crown size and height are provisional",,,,,default prototype,
+node/8363183944,tree,mapped tree,OSM-2025-10-31,24.764,32.939,15.574,map_coordinate_only,"species, crown size and height are provisional",,,,,default prototype,
+node/8363183945,tree,mapped tree,OSM-2025-10-31,23.191,26.394,15.462,map_coordinate_only,"species, crown size and height are provisional",,,,,default prototype,
+way/142438894,entrance,A7b,OSM-2025-10-31,42.47,3.455,14.766,map_coordinate_only,shared provisional canopy; dimensions and stair direction not photo-measured,,,,,default prototype,
+way/142438895,entrance,A7a,OSM-2025-10-31,25.267,10.553,15.028,map_coordinate_only,shared provisional canopy; dimensions and stair direction not photo-measured,,,,,default prototype,
+way/155807209,entrance,A5a,OSM-2025-10-31,-31.969,-20.928,15.366,map_coordinate_only,shared provisional canopy; dimensions and stair direction not photo-measured,,,,,default prototype,
+way/155807210,entrance,A6a,OSM-2025-10-31,-29.136,17.459,15.168,map_coordinate_only,shared provisional canopy; dimensions and stair direction not photo-measured,,,,,default prototype,
+way/155807211,entrance,A6b,OSM-2025-10-31,-2.581,21.302,15.231,map_coordinate_only,shared provisional canopy; dimensions and stair direction not photo-measured,,,,,default prototype,
+way/1335178869,entrance,"unidentified footprint candidate, no entrance POI verified",OSM-2025-10-31,-36.926,15.117,15.198,map_coordinate_only,shared provisional canopy; dimensions and stair direction not photo-measured,,,,,default prototype,
+P01,lamp,Decorative lantern at the QFRONT-west pedestrian island,photo-projection,-10.315,14.324,15.312,provisional,provisional height/detail,assets/street/core/source/refs/stream_2025.jpg,603,783,1.334,opt-in amber experiment,0.424
+P02,lamp_signal,Combined decorative lamp and pedestrian-signal support near QFRONT,photo-projection,-0.238,20.308,15.325,provisional,provisional height/detail,assets/street/core/source/refs/stream_2025.jpg,727,786,1.337,opt-in amber experiment,0.059
+P03,lamp,Decorative lantern at the south-west island,photo-projection,-26.242,-10.08,15.269,provisional,provisional height/detail,assets/street/core/source/refs/stream_2025.jpg,306,846,1.434,opt-in amber experiment,2.475
+P04,sign,Two circular regulation signs at the south-west island,photo-projection,-29.637,-11.29,15.384,provisional,provisional height/detail,assets/street/core/source/refs/stream_2025.jpg,270,840,1.442,opt-in amber experiment,2.724
+R01a,guardrail_endpoint,"Visible ground foot of white roadside railing, west endpoint",photo-projection,-32.275,-14.592,15.398,provisional,provisional height/detail,assets/street/core/source/refs/stream_2025.jpg,225,847,1.428,opt-in amber experiment,2.861
+R01b,guardrail_endpoint,"Visible ground foot of white roadside railing, east endpoint",photo-projection,-26.988,-11.18,15.355,provisional,provisional height/detail,assets/street/core/source/refs/stream_2025.jpg,292,848,1.449,opt-in amber experiment,2.69
+P05,signal,Other QFRONT-side support: base hidden by pedestrians; do not invent a ground point,photo-projection,,,,unresolved,provisional height/detail,assets/street/core/source/refs/stream_2025.jpg,815,768,,not exported: base occluded,

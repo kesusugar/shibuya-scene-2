@@ -1,0 +1,123 @@
+{
+  "photo": "assets/street/core/source/refs/stream_2025.jpg",
+  "measurement_size": [
+    900,
+    1195
+  ],
+  "camera": {
+    "pos": [
+      216.80054641265338,
+      -243.34440687429617,
+      219.45131826358985
+    ],
+    "yaw": -43.43934826815742,
+    "pitch": -29.84968123213885,
+    "roll": 6.669216783259293,
+    "vfov": 15.699185728067148,
+    "W": 900,
+    "H": 1195,
+    "rms_px": 4.893462836679811,
+    "max_px": 8.485716532400868,
+    "n": 12,
+    "photo": "assets/street/core/source/refs/stream_2025.jpg",
+    "position_basis": "Commons photo GPS XY, approximate; Z bounded fit with assumed canopy roofs, not independently validated",
+    "active_bounds": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "camera_status": "unadopted GPS-constrained sensitivity trial; not independently verified",
+  "observations": [
+    {
+      "id": "P01",
+      "kind": "lamp",
+      "px": [
+        603,
+        783
+      ],
+      "head_px": [
+        602,
+        724
+      ],
+      "height_m": 6.5,
+      "ground_base_visible": true,
+      "description": "Decorative lantern at the QFRONT-west pedestrian island"
+    },
+    {
+      "id": "P02",
+      "kind": "lamp_signal",
+      "px": [
+        727,
+        786
+      ],
+      "head_px": [
+        721,
+        694
+      ],
+      "height_m": 9.0,
+      "ground_base_visible": true,
+      "description": "Combined decorative lamp and pedestrian-signal support near QFRONT"
+    },
+    {
+      "id": "P03",
+      "kind": "lamp",
+      "px": [
+        306,
+        846
+      ],
+      "head_px": [
+        304,
+        778
+      ],
+      "height_m": 7.0,
+      "ground_base_visible": true,
+      "description": "Decorative lantern at the south-west island"
+    },
+    {
+      "id": "P04",
+      "kind": "sign",
+      "px": [
+        270,
+        840
+      ],
+      "height_m": 3.2,
+      "ground_base_visible": true,
+      "description": "Two circular regulation signs at the south-west island"
+    },
+    {
+      "id": "R01a",
+      "kind": "guardrail_endpoint",
+      "px": [
+        225,
+        847
+      ],
+      "ground_base_visible": true,
+      "description": "Visible ground foot of white roadside railing, west endpoint"
+    },
+    {
+      "id": "R01b",
+      "kind": "guardrail_endpoint",
+      "px": [
+        292,
+        848
+      ],
+      "ground_base_visible": true,
+      "description": "Visible ground foot of white roadside railing, east endpoint"
+    },
+    {
+      "id": "P05",
+      "kind": "signal",
+      "px": [
+        815,
+        768
+      ],
+      "ground_base_visible": false,
+      "description": "Other QFRONT-side support: base hidden by pedestrians; do not invent a ground point"
+    }
+  ],
+  "geometry_status": "provisional heights and fixture detail, not measured dimensions",
+  "station_era_note": "January 2025 photo: crossing-furniture reference only, not October station geometry"
+}

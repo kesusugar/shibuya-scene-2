@@ -1,0 +1,80 @@
+{
+  "query_date": "2025-10-31T23:59:59Z",
+  "sha256": "21b815625b26e47792c983e704376fe5314a8b4a0253c7e1995596c33ef1bee9",
+  "features": [
+    {
+      "id": "node/8007279073",
+      "kind": "tree",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": null
+    },
+    {
+      "id": "node/8007279074",
+      "kind": "tree",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": null
+    },
+    {
+      "id": "node/8363183939",
+      "kind": "tree",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": null
+    },
+    {
+      "id": "node/8363183943",
+      "kind": "tree",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": null
+    },
+    {
+      "id": "node/8363183944",
+      "kind": "tree",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": null
+    },
+    {
+      "id": "node/8363183945",
+      "kind": "tree",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": null
+    },
+    {
+      "id": "way/142438894",
+      "kind": "entrance",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": "A7b"
+    },
+    {
+      "id": "way/142438895",
+      "kind": "entrance",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": "A7a"
+    },
+    {
+      "id": "way/155807209",
+      "kind": "entrance",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": "A5a"
+    },
+    {
+      "id": "way/155807210",
+      "kind": "entrance",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": "A6a"
+    },
+    {
+      "id": "way/155807211",
+      "kind": "entrance",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": "A6b"
+    },
+    {
+      "id": "way/1335178869",
+      "kind": "entrance",
+      "difference_from_retained_2025_osm_m": 0.0,
+      "identity": "unidentified footprint candidate, no entrance POI verified"
+    }
+  ],
+  "max_difference_m": 0.0,
+  "limitations": "Agreement with a retained map coordinate does not prove photo agreement or physical survey accuracy."
+}

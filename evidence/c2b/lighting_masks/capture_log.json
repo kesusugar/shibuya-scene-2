@@ -1,0 +1,94 @@
+{
+ "refb_class": {
+  "query": "/?time=night&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8&capture&pass=class&street=projected&look=nightGround:0",
+  "errors": [],
+  "state": {
+   "viewer": {
+    "ready": true,
+    "stats": {
+     "qfront": {
+      "meshes": 56,
+      "triangles": 115196,
+      "materials": 44,
+      "layers": [],
+      "layerErrors": []
+     },
+     "magnet": {
+      "meshes": 60,
+      "triangles": 26473,
+      "materials": 37,
+      "layers": [
+       "signs_2025"
+      ],
+      "layerErrors": []
+     },
+     "eiraku": {
+      "meshes": 5,
+      "triangles": 394,
+      "materials": 5,
+      "layers": [],
+      "layerErrors": []
+     }
+    },
+    "failed": [],
+    "ground": {
+     "ok": true,
+     "missing": [],
+     "meshes": 7,
+     "triangles": 71323
+    },
+    "street": {
+     "ok": true,
+     "mode": "all",
+     "meshes": 5,
+     "triangles": 6984
+    },
+    "projected": {
+     "ok": true,
+     "status": "experimental_only",
+     "cameraStatus": "provisional: prior 2024 Stream camera location held fixed; 2025 image roof controls use assumed 3m roof heights; no independent ground validation yet",
+     "lamps": [
+      {
+       "id": "P01",
+       "intensity": 1800,
+       "position": [
+        -10.315,
+        6.361999999999999,
+        -14.324
+       ]
+      },
+      {
+       "id": "P02",
+       "intensity": 1800,
+       "position": [
+        -0.238,
+        8.875,
+        -20.308
+       ]
+      },
+      {
+       "id": "P03",
+       "intensity": 1800,
+       "position": [
+        -26.242,
+        6.819,
+        10.08
+       ]
+      }
+     ],
+     "groundEmissive": 0
+    },
+    "offsets": {
+     "qfront": 0.20199999999999996,
+     "magnet": -0.09299999999999997,
+     "eiraku": -0.09299999999999997
+    },
+    "bench": null
+   },
+   "status": ""
+  },
+  "browser": "141.0.7390.37",
+  "executablePath": "playwright bundled",
+  "perf": "FPS 2.8  (26フレーム平均)\nframe p50 55.0 ms / p95 2556.0 ms\ndraw calls 117  tris 218k\ngeometries 119  textures 20\n解像度 640x482  DPR 1.00"
+ }
+}

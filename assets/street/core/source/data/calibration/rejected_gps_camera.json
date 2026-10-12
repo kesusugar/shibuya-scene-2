@@ -1,0 +1,25 @@
+{
+  "pos": [
+    216.80054641265338,
+    -243.34440687429617,
+    219.45131826358985
+  ],
+  "yaw": -43.43934826815742,
+  "pitch": -29.84968123213885,
+  "roll": 6.669216783259293,
+  "vfov": 15.699185728067148,
+  "W": 900,
+  "H": 1195,
+  "rms_px": 4.893462836679811,
+  "max_px": 8.485716532400868,
+  "n": 12,
+  "photo": "assets/street/core/source/refs/stream_2025.jpg",
+  "position_basis": "Commons photo GPS XY, approximate; Z bounded fit with assumed canopy roofs, not independently validated",
+  "active_bounds": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}
