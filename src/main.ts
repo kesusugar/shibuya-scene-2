@@ -115,6 +115,9 @@ async function start() {
     failed: results.filter((r) => !r.ok).map((r) => r.id),
     ground: coreGround ? { ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
     offsets: Object.fromEntries(loaded.map((b) => [b.id, b.root.position.y])),
+    // QA: camera position and the Core ground height under it (walk mode keeps the eye 1.6 m above it)
+    cameraPos: () => camera.position.toArray(),
+    groundUnderCamera: () => controls.groundY(camera.position.x, camera.position.z),
   };
 }
 

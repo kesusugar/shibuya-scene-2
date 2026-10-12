@@ -3,7 +3,7 @@
 // never a performance figure.
 //   node scripts/capture-core.mjs http://127.0.0.1:5181 evidence/c2a [only]
 import { chromium } from 'playwright';
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const [base = 'http://127.0.0.1:5181', out = 'evidence/c2a', only = ''] = process.argv.slice(2);
 mkdirSync(out, { recursive: true });
@@ -29,8 +29,10 @@ for (const t of ['day', 'night']) {
 shots.push(['night_c01_after', `?time=night&capture&pose=${P.c01_to_qfront}`, 1280, 720]);
 shots.push(['isolation_ground_missing', `?time=day&capture&pose=${P.top_down}&groundurl=missing`, 1280, 720]);
 const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
-const log = {};
+const logPath = `${out}/capture_log.json`;
+const log = existsSync(logPath) ? JSON.parse(readFileSync(logPath, 'utf8')) : {};
 for (const [name, q, w, h] of shots.filter(([n]) => !only || only.split(',').some((o) => n.startsWith(o)))) {
+  if (!process.env.FORCE && existsSync(`${out}/${name}.png`) && log[name]) continue;   // resumable
   const page = await browser.newPage({ viewport: { width: w, height: h } });
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
@@ -41,8 +43,8 @@ for (const [name, q, w, h] of shots.filter(([n]) => !only || only.split(',').som
   await page.screenshot({ path: `${out}/${name}.png`, timeout: 240000 });
   const v = await page.evaluate(() => ({ ground: window.__viewer.ground, offsets: window.__viewer.offsets, failed: window.__viewer.failed, perf: document.querySelector('#perf')?.textContent, status: document.querySelector('#status')?.textContent }));
   log[name] = { query: q, ...v, errors };
+  writeFileSync(logPath, JSON.stringify(log, null, 1));
   console.log(name, JSON.stringify(v.ground), JSON.stringify(v.offsets), errors.length ? 'ERRORS ' + errors.join(' | ') : 'no errors');
   await page.close();
 }
 await browser.close();
-writeFileSync(`${out}/capture_log.json`, JSON.stringify(log, null, 1));
