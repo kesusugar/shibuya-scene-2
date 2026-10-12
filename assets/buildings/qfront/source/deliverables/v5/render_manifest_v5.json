@@ -1,0 +1,80 @@
+[
+ {
+  "file": "renders/final5/day_q032_final.png",
+  "sha256": "fee81c5953b11cc6e6ed57c48f4520b8310853c23cf8b7fc870859e962321d01",
+  "size": [
+   1280,
+   1749
+  ],
+  "source_commit": "979512227171a345caf7372032057cf6e8e60c7f",
+  "working_tree": "clean",
+  "blender": "4.2.3 LTS",
+  "engine": "Cycles CPU 256 spp + OIDN",
+  "camera": "q032 (data/camera_q032_fit.json)"
+ },
+ {
+  "file": "renders/final5/day_q032crop_crown_final.png",
+  "sha256": "7e5f83235f3e864a450eca4aeefe4ec69d6c3ae2f0569d994f2204236975320f",
+  "size": [
+   1120,
+   680
+  ],
+  "source_commit": "979512227171a345caf7372032057cf6e8e60c7f",
+  "working_tree": "clean",
+  "blender": "4.2.3 LTS",
+  "engine": "Cycles CPU 256 spp + OIDN",
+  "camera": "q032 (data/camera_q032_fit.json)"
+ },
+ {
+  "file": "renders/final5/day_q032crop_podium_final.png",
+  "sha256": "b31d5c58d32c19dc7badc615db905f8dad2d20c070f43b7dd58f3cfec1ce2f0e",
+  "size": [
+   1160,
+   520
+  ],
+  "source_commit": "979512227171a345caf7372032057cf6e8e60c7f",
+  "working_tree": "clean",
+  "blender": "4.2.3 LTS",
+  "engine": "Cycles CPU 256 spp + OIDN",
+  "camera": "q032 (data/camera_q032_fit.json)"
+ },
+ {
+  "file": "renders/final5/night_q031_final.png",
+  "sha256": "cbaba7a7d8d02bceb2177be6fc313a6315b38bb24cf990d7fcc74a883961ac11",
+  "size": [
+   1280,
+   1887
+  ],
+  "source_commit": "979512227171a345caf7372032057cf6e8e60c7f",
+  "working_tree": "clean",
+  "blender": "4.2.3 LTS",
+  "engine": "Cycles CPU 256 spp + OIDN",
+  "camera": "q031 (data/camera_q031_fit.json, PARTIAL)"
+ },
+ {
+  "file": "renders/final5/night_q032_final.png",
+  "sha256": "c2576b84ee2cdc001d9cc26341c7f372b6021a1288d884e7f7c4f1795213dc4d",
+  "size": [
+   1280,
+   1749
+  ],
+  "source_commit": "979512227171a345caf7372032057cf6e8e60c7f",
+  "working_tree": "clean",
+  "blender": "4.2.3 LTS",
+  "engine": "Cycles CPU 256 spp + OIDN",
+  "camera": "q032 (data/camera_q032_fit.json)"
+ },
+ {
+  "file": "renders/final5/night_q032crop_podium_final.png",
+  "sha256": "75fd81e301379978b2265101f8f6a6f8a023ff89f492aa59afe490a57a8e72ec",
+  "size": [
+   1160,
+   520
+  ],
+  "source_commit": "979512227171a345caf7372032057cf6e8e60c7f",
+  "working_tree": "clean",
+  "blender": "4.2.3 LTS",
+  "engine": "Cycles CPU 256 spp + OIDN",
+  "camera": "q032 (data/camera_q032_fit.json)"
+ }
+]
