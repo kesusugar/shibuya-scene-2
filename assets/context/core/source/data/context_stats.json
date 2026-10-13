@@ -2381,15 +2381,6 @@
    "faces": 7
   },
   {
-   "id": "plateau/bldg_5369333e-5975-493a-b05d-b341800715c2",
-   "plateau_id": "bldg_5369333e-5975-493a-b05d-b341800715c2",
-   "group": "station",
-   "kind": "building",
-   "material": "ctx_wall_punched_a",
-   "height_m": 12.66,
-   "faces": 13
-  },
-  {
    "id": "way/120105793",
    "plateau_id": "bldg_48512859-326a-45cd-a9de-f376bf14b09b",
    "group": "core",
@@ -2830,6 +2821,10 @@
    "id": "brid/brid_95680199-7365-41de-a5b7-9275321fe8bf",
    "plateau_id": "brid_95680199-7365-41de-a5b7-9275321fe8bf",
    "reason": "own asset: station-north (north canopy B; south/viaduct geometry retained)"
+  },
+  {
+   "id": "plateau/bldg_5369333e-5975-493a-b05d-b341800715c2",
+   "reason": "own asset station-service; identity/material/vent estimates, no full October facade certification"
   }
  ],
  "objects": {
@@ -2854,12 +2849,12 @@
    "vertices": 7720
   },
   "station__ctx_roof": {
-   "triangles": 260,
-   "vertices": 412
+   "triangles": 250,
+   "vertices": 392
   },
   "station__ctx_wall_punched_a": {
-   "triangles": 28,
-   "vertices": 56
+   "triangles": 12,
+   "vertices": 24
   },
   "station__ctx_wall_ribbon_b": {
    "triangles": 356,
@@ -2874,5 +2869,5 @@
    "vertices": 3444
   }
  },
- "triangles": 30117
+ "triangles": 30091
 }

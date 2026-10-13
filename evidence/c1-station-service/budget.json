@@ -1,0 +1,64 @@
+{
+  "assets": {
+    "eiraku": {
+      "triangles": 394,
+      "primitives": 5,
+      "bytes": 32840
+    },
+    "ekimae": {
+      "triangles": 6640,
+      "primitives": 18,
+      "bytes": 1736204
+    },
+    "magnet": {
+      "triangles": 26473,
+      "primitives": 60,
+      "bytes": 1716472
+    },
+    "qfront": {
+      "triangles": 115196,
+      "primitives": 56,
+      "bytes": 5808996
+    },
+    "station-concourse": {
+      "triangles": 848,
+      "primitives": 9,
+      "bytes": 54128
+    },
+    "station-north": {
+      "triangles": 996,
+      "primitives": 9,
+      "bytes": 68400
+    },
+    "station-service": {
+      "triangles": 342,
+      "primitives": 6,
+      "bytes": 24288
+    },
+    "west-block": {
+      "triangles": 1257,
+      "primitives": 25,
+      "bytes": 1751748
+    },
+    "ground/core": {
+      "triangles": 71323,
+      "primitives": 7,
+      "bytes": 2619060
+    },
+    "street/core": {
+      "triangles": 41296,
+      "primitives": 22,
+      "bytes": 1932568
+    },
+    "context/core": {
+      "triangles": 30091,
+      "primitives": 10,
+      "bytes": 2258044
+    }
+  },
+  "total": {
+    "triangles": 294856,
+    "primitives": 227,
+    "bytes": 18002748
+  }
+}
