@@ -1,0 +1,66 @@
+{
+  "id": "station-north",
+  "source_ids": [
+    "plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b",
+    "brid/brid_95680199-7365-41de-a5b7-9275321fe8bf"
+  ],
+  "level": "B_partial_north_prototype",
+  "source_levels": {
+    "north_canopy": "B prototype; positions estimated",
+    "southern_facility": "C preserved, October facade unconfirmed",
+    "JR_bridge": "C preserved, original geometry retained"
+  },
+  "reference_era": "2025-10-11",
+  "absolute_datum_tp_m": 15,
+  "stats": {
+    "triangles": 996,
+    "primitives": 9,
+    "bytes": 68400
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1298,
+      "sha256": "0371f83ca7282688f3d8d481b0ec2fd8e8967c310db0c54f8ee924343c6bb266"
+    },
+    "source/blender/build_station_north.py": {
+      "bytes": 6671,
+      "sha256": "6bc395d689d8853ad3ddf416e35ba95bd16c2aeef40565240828bf9c8cb80d35"
+    },
+    "source/data/layout.json": {
+      "bytes": 835,
+      "sha256": "929f1a2ee2dc541653cb5f83730c4b475459270671bd3dba81682883bf32653d"
+    },
+    "source/data/parts.json": {
+      "bytes": 91506,
+      "sha256": "caf9559efb69521f3b4a0f968578aa6ecbed4487c6c0d05f446b3ef495e076cb"
+    },
+    "source/data/stats.json": {
+      "bytes": 1269,
+      "sha256": "e64d5d17172a743f549077b36d33fdf5ff4d39968159536510fab7aa6d5489a3"
+    },
+    "source/refs/README.md": {
+      "bytes": 369,
+      "sha256": "8129a2f450e06b24d547b4acf7fabf71712d6f7919432f5064d9ded8a1b2d4e0"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 494,
+      "sha256": "c1d3c5ca7a0cab1596053974cf1ce03dbe705ee3dedf23e96a1858ef5c2d19f3"
+    },
+    "web/emissive_day.json": {
+      "bytes": 118,
+      "sha256": "56f92d25cfed860034a6a96f76a0f626662cafd2757325d22fe904dfc0a41030"
+    },
+    "web/emissive_night.json": {
+      "bytes": 118,
+      "sha256": "fd177664c053624cb3958e8e877378b780965a8d6a80b14dbb112a28d53b1da0"
+    },
+    "web/station-north.glb": {
+      "bytes": 68400,
+      "sha256": "5eb413ef61b02eb1d715434503e72018c957a3d19d42271de11e6f4c8162b4d2"
+    },
+    "web/viewer.json": {
+      "bytes": 103,
+      "sha256": "2d46b965f57e85729fb0e38cca6f482a952af521aafb6b964041e125b76644ce"
+    }
+  }
+}

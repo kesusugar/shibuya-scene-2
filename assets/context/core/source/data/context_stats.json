@@ -1976,15 +1976,6 @@
    "faces": 79
   },
   {
-   "id": "plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b",
-   "plateau_id": "bldg_20234796-412f-494e-b712-f3f7d6e3197b",
-   "group": "station",
-   "kind": "building",
-   "material": "ctx_wall_punched_a",
-   "height_m": 12.12,
-   "faces": 20
-  },
-  {
    "id": "plateau/bldg_60092cf0-0ba0-4c19-b046-895cec3a4e41",
    "plateau_id": "bldg_60092cf0-0ba0-4c19-b046-895cec3a4e41",
    "group": "core",
@@ -2768,15 +2759,6 @@
    "faces": 52
   },
   {
-   "id": "brid/brid_95680199-7365-41de-a5b7-9275321fe8bf",
-   "plateau_id": "brid_95680199-7365-41de-a5b7-9275321fe8bf",
-   "group": "core",
-   "kind": "structure",
-   "material": "ctx_structure",
-   "height_m": 16.92,
-   "faces": 296
-  },
-  {
    "id": "brid/brid_a4d3aa47-8095-4c24-99e2-80202b230bc1",
    "plateau_id": "brid_a4d3aa47-8095-4c24-99e2-80202b230bc1",
    "group": "core",
@@ -2838,6 +2820,16 @@
    "id": "brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
    "plateau_id": "brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
    "reason": "own asset: station-concourse"
+  },
+  {
+   "id": "plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b",
+   "plateau_id": "bldg_20234796-412f-494e-b712-f3f7d6e3197b",
+   "reason": "own asset: station-north (north canopy B; south/viaduct geometry retained)"
+  },
+  {
+   "id": "brid/brid_95680199-7365-41de-a5b7-9275321fe8bf",
+   "plateau_id": "brid_95680199-7365-41de-a5b7-9275321fe8bf",
+   "reason": "own asset: station-north (north canopy B; south/viaduct geometry retained)"
   }
  ],
  "objects": {
@@ -2862,12 +2854,12 @@
    "vertices": 7720
   },
   "station__ctx_roof": {
-   "triangles": 279,
-   "vertices": 437
+   "triangles": 260,
+   "vertices": 412
   },
   "station__ctx_wall_punched_a": {
-   "triangles": 70,
-   "vertices": 132
+   "triangles": 28,
+   "vertices": 56
   },
   "station__ctx_wall_ribbon_b": {
    "triangles": 356,
@@ -2878,9 +2870,9 @@
    "vertices": 79
   },
   "core__ctx_structure": {
-   "triangles": 1444,
-   "vertices": 4332
+   "triangles": 1148,
+   "vertices": 3444
   }
  },
- "triangles": 30474
+ "triangles": 30117
 }

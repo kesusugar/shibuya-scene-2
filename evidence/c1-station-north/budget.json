@@ -1,0 +1,59 @@
+{
+  "assets": {
+    "buildings/eiraku": {
+      "triangles": 394,
+      "primitives": 5,
+      "bytes": 32840
+    },
+    "buildings/ekimae": {
+      "triangles": 6640,
+      "primitives": 18,
+      "bytes": 1736204
+    },
+    "buildings/magnet": {
+      "triangles": 26473,
+      "primitives": 60,
+      "bytes": 1716472
+    },
+    "buildings/qfront": {
+      "triangles": 115196,
+      "primitives": 56,
+      "bytes": 5808996
+    },
+    "buildings/station-concourse": {
+      "triangles": 592,
+      "primitives": 7,
+      "bytes": 38484
+    },
+    "buildings/station-north": {
+      "triangles": 996,
+      "primitives": 9,
+      "bytes": 68400
+    },
+    "buildings/west-block": {
+      "triangles": 1257,
+      "primitives": 25,
+      "bytes": 1751748
+    },
+    "ground/core": {
+      "triangles": 71323,
+      "primitives": 7,
+      "bytes": 2619060
+    },
+    "street/core": {
+      "triangles": 41296,
+      "primitives": 22,
+      "bytes": 1932568
+    },
+    "context/core": {
+      "triangles": 30117,
+      "primitives": 10,
+      "bytes": 2259864
+    }
+  },
+  "total": {
+    "triangles": 294284,
+    "primitives": 219,
+    "bytes": 17964636
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "stn_light": {
+    "kind": "interior",
+    "emit": [
+      1,
+      0.97,
+      0.86
+    ],
+    "estr": 0.2
+  }
+}
