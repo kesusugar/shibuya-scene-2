@@ -1,0 +1,30 @@
+{
+ "id": "station-southeast",
+ "style": "station",
+ "floors": 5,
+ "bay_pitch_m": 3.6,
+ "bay_width_ratio": 0.65,
+ "glass_height_ratio": 0.64,
+ "podium_floors": 0,
+ "wall_rgb": [
+  0.65,
+  0.66,
+  0.63
+ ],
+ "frame_rgb": [
+  0.6,
+  0.62,
+  0.6
+ ],
+ "spandrel_rgb": [
+  0.62,
+  0.64,
+  0.61
+ ],
+ "glass_rgb": [
+  0.045,
+  0.065,
+  0.07
+ ],
+ "basis": "Original PLATEAU station shell. White wall with vertically proportioned punched glazing from January2024 exterior; October2025 identity/construction state unresolved. Divisions and dimensions estimated; no copied logo/advertising."
+}

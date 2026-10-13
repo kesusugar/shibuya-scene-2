@@ -1,0 +1,60 @@
+{
+  "id": "station-southeast",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 5648,
+    "primitives": 7,
+    "bytes": 337704
+  },
+  "files": {
+    "README.md": {
+      "bytes": 888,
+      "sha256": "11775ab3e970c9e43b8762c9a9a0d6959e894dbb6a3d3f03655e6f73539fd70f"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 581,
+      "sha256": "dc96e5bcb13568c707389cec3e4f61a8ebd867777125248bb835fb99c8867e15"
+    },
+    "source/data/plateau.json": {
+      "bytes": 74240,
+      "sha256": "76234babe21a144fb8c5d6ad24766d14af8f3e7b11e95b77cfd5581f6969bc35"
+    },
+    "source/data/stats.json": {
+      "bytes": 50347,
+      "sha256": "660ce02a8e5d55b335603eff331a8fe4d0cfdf49e5a52fd2557639c49ddb19e6"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 519,
+      "sha256": "262b4f7926f57451d67aa336837dc62b7c7109b885a42b94a84be3b08b691161"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 2981681,
+      "sha256": "0e7bca79edd30725e0d6542595e9f09c78c0eee59fb5f2ec0b273a0b07d2f9bf"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3936,
+      "sha256": "0928e3766eb542cb18eed74ccd4cc56cdfe1d0be3a0266ab6887b5dee9fdd856"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/station-southeast.glb": {
+      "bytes": 337704,
+      "sha256": "ba96179c966d542c364b378b787cc5e95709b5d21a6cb03d51578140a3773330"
+    },
+    "web/viewer.json": {
+      "bytes": 194,
+      "sha256": "9169f70eec0e5d01fed987acbad34f7f5ead4d6d4191d4b05728b7ed47428cfb"
+    }
+  }
+}

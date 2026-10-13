@@ -2471,15 +2471,6 @@
    "faces": 38
   },
   {
-   "id": "plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
-   "plateau_id": "bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
-   "group": "station",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_b",
-   "height_m": 23.45,
-   "faces": 212
-  },
-  {
    "id": "way/138594119",
    "plateau_id": "bldg_fad7288a-1ff2-4db7-9ca6-44a7f8fada83",
    "group": "core",
@@ -2795,6 +2786,11 @@
    "id": "way/55588118",
    "plateau_id": "bldg_3ad6aaeb-26f8-4716-a8ec-cb2504b94674",
    "reason": "own asset: fukuras"
+  },
+  {
+   "id": "plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
+   "plateau_id": "bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
+   "reason": "own asset: station-southeast"
   }
  ],
  "objects": {
@@ -2818,18 +2814,10 @@
    "triangles": 3997,
    "vertices": 7239
   },
-  "station__ctx_roof": {
-   "triangles": 218,
-   "vertices": 334
-  },
-  "station__ctx_wall_ribbon_b": {
-   "triangles": 356,
-   "vertices": 664
-  },
   "core__ctx_structure": {
    "triangles": 1148,
    "vertices": 3444
   }
  },
- "triangles": 28834
+ "triangles": 28260
 }

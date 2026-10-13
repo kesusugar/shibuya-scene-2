@@ -17,3 +17,7 @@ blender -b --python-exit-code 1 -t 4 -P assets/buildings/station-west-viaduct/so
 1,332三角形・5描画単位・78,096 bytes。Cから同じIDを一度だけ除外。`context=nostation`で駅側4資産を消し、既存5資産を残す。推定を台帳・HUDへ記載。
 
 出典はsource/refs、報告は `docs/core/C1_STATION_VIADUCT_REPORT.md`、画像は `evidence/c1-station-viaduct/boards/`。
+
+## 地形補填後の追記
+
+Core外側をDEMで補填した後の照会結果はstats.jsonとC1_STATION_FINISH_REPORT.md参照。補填は地形の推定であり、実際の仕上げ歩道を測った高さではない。屋根・上面は保持。生成時に最後の引数へ `assets/ground/extension/web/extension.glb` を追加する。旧い未取得の記録は当時の結果として保持。
