@@ -1,8 +1,8 @@
 {
  "id": "ground_core",
  "name": "Core ground (Shibuya Scramble Crossing, radius 150 m)",
- "version": "C2a v1 + north paving prototype",
- "status": "foundation geometry retained; north sidewalk paver material prototype, actual dimensions/layout unverified",
+ "version": "C2a v1 + north and Hachiko plaza paving prototypes",
+ "status": "foundation geometry retained; paving dimensions, pale bands and boundaries estimated",
  "datum": {
   "definition": "world Y = T.P. elevation - 15.000 m",
   "doc": "docs/core/C2A_PLAN.md"
@@ -34,7 +34,7 @@
     "bytes": 1778090
    }
   },
-  "paving": "Self-authored procedural atlas; CC0 photos referenced only, not texture inputs",
+  "paving": "Self-authored procedural atlases; registered photos are references only, not texture inputs",
   "paving_references": "source/refs/PAVING_REFERENCE_REGISTER.csv"
  },
  "parameters_not_measured": {
@@ -45,23 +45,124 @@
   "zebra_bar_m": 0.45,
   "zebra_gap_m": 0.45,
   "default_crosswalk_width_m": 4.0,
-  "paving_tile_size_m": [
-   0.6,
-   0.3
-  ],
-  "paving_joint_width_m": 0.006,
-  "paving_yaw_deg": 6.4,
-  "paving_bounds_xy_m": [
-   -80,
-   0,
-   50,
-   65
-  ]
+  "paving": {
+   "version": 1,
+   "status": "B material prototype: block size, grid direction and area mask are estimated",
+   "tile_size_m": [
+    0.6,
+    0.3
+   ],
+   "atlas_tiles": [
+    4,
+    4
+   ],
+   "atlas_px": [
+    1024,
+    512
+   ],
+   "joint_width_m": 0.006,
+   "joint_level": 0.82,
+   "tile_level": 0.985,
+   "tile_variation": 0.01,
+   "grain": 0.0007,
+   "seed": 244,
+   "yaw_deg": 6.4,
+   "bounds_xy_m": [
+    -80,
+    0,
+    50,
+    65
+   ],
+   "texture": "../textures/paving_gray.png",
+   "notes": [
+    "Only north sidewalk/island faces within the mask; no road/kerb/marking/fill texture",
+    "No measured actual block size or laying direction; January and February 2025 photo references",
+    "Shared look defaults and geometry remain unchanged"
+   ]
+  },
+  "plaza_paving": {
+   "version": 1,
+   "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated",
+   "tile_size_m": [
+    0.2,
+    0.1
+   ],
+   "atlas_tiles": [
+    30,
+    60
+   ],
+   "atlas_px": [
+    1024,
+    1024
+   ],
+   "joint_width_m": 0.003,
+   "joint_level": 0.7,
+   "tile_level": 0.98,
+   "tile_variation": 0.025,
+   "grain": 0.001,
+   "tile_rgb": [
+    0.89,
+    0.67,
+    0.63
+   ],
+   "joint_rgb": [
+    0.89,
+    0.67,
+    0.63
+   ],
+   "bands": {
+    "width_m": 0.12,
+    "rgb": [
+     0.99,
+     0.97,
+     0.91
+    ]
+   },
+   "seed": 155538,
+   "yaw_deg": -10,
+   "origin_xy_m": [
+    14,
+    -15
+   ],
+   "polygon_xy_m": [
+    [
+     13,
+     -11
+    ],
+    [
+     43,
+     -14
+    ],
+    [
+     40,
+     -47
+    ],
+    [
+     5,
+     -43
+    ],
+    [
+     7,
+     -36
+    ],
+    [
+     12,
+     -30
+    ]
+   ],
+   "texture": "../textures/paving_plaza.png",
+   "notes": [
+    "February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture",
+    "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring",
+    "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"
+   ]
+  }
  },
  "parameter_notes": {
   "kerb_height_m": "道路構造令 standard; PLATEAU LOD3 has no kerb step (2,125 shared vertices, max 0.008 m)",
   "kerb_low_m": "barrier-free landing value",
-  "zebra": "Japanese road-marking standard 45 cm / 45 cm; check on photos in C3"
+  "zebra": "Japanese road-marking standard 45 cm / 45 cm; check on photos in C3",
+  "paving": "Geometry and heights retained; photos confirm types only. Dimensions, boundaries, colour and full October layout not independently verified."
  },
  "prepare_stats": {
   "surfaces": {
@@ -173,6 +274,89 @@
    "yaw_deg": 6.4,
    "joint_width_m": 0.006,
    "joint_level": 0.82
+  },
+  "plaza_paving": {
+   "version": 1,
+   "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated",
+   "tile_size_m": [
+    0.2,
+    0.1
+   ],
+   "atlas_tiles": [
+    30,
+    60
+   ],
+   "atlas_px": [
+    1024,
+    1024
+   ],
+   "joint_width_m": 0.003,
+   "joint_level": 0.7,
+   "tile_level": 0.98,
+   "tile_variation": 0.025,
+   "grain": 0.001,
+   "tile_rgb": [
+    0.89,
+    0.67,
+    0.63
+   ],
+   "joint_rgb": [
+    0.89,
+    0.67,
+    0.63
+   ],
+   "bands": {
+    "width_m": 0.12,
+    "rgb": [
+     0.99,
+     0.97,
+     0.91
+    ]
+   },
+   "seed": 155538,
+   "yaw_deg": -10,
+   "origin_xy_m": [
+    14,
+    -15
+   ],
+   "polygon_xy_m": [
+    [
+     13,
+     -11
+    ],
+    [
+     43,
+     -14
+    ],
+    [
+     40,
+     -47
+    ],
+    [
+     5,
+     -43
+    ],
+    [
+     7,
+     -36
+    ],
+    [
+     12,
+     -30
+    ]
+   ],
+   "texture": "../textures/paving_plaza.png",
+   "notes": [
+    "February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture",
+    "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring",
+    "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"
+   ],
+   "faces": 6721,
+   "area_m2": 1002.33,
+   "atlas_period_m": [
+    6.0,
+    6.0
+   ]
   }
  },
  "building_anchors": {
@@ -230,31 +414,33 @@
  "generator": [
   "python3 source/tools/measure_crosswalks.py <old data json> <gsi tiles> source/data/crosswalks_measured.json",
   "python3 source/tools/prepare_ground.py <plateau_core.json> source/data/crosswalks_measured.json source/data/ground_input.json 150",
+  "python3 source/tools/make_paving.py source/data/paving_layout.json",
+  "python3 source/tools/make_paving.py source/data/plaza_paving_layout.json",
   "blender -b -P source/blender/build_ground.py -- source/data/ground_input.json web/ground_core.glb source/data/ground_stats.json",
   "blender -b -P source/blender/ground_anchor.py -- web/ground_core.glb <plateau_core.json> source/data/ground_anchors.json",
-  "source/tools/make_paving.py"
+  "python3 source/tools/write_manifest.py"
  ],
- "generatorRevision": "C2a foundation + northern material prototype, Blender 4.2.3",
+ "generatorRevision": "f083e61f46017a019420a57c3b9659db2daf25f3",
  "files": {
   "web/ground_core.glb": {
-   "sha256": "edcd3112db1c5e8225aab695a49379ab440b49f857fa4c3c90b2f1a92c21a29c",
-   "bytes": 3036424
+   "sha256": "f36ae1aa390d8ecbb610ac4cecb354c821ed91557974733daad8fcc464c25964",
+   "bytes": 3517960
   },
   "source/data/ground_input.json": {
    "sha256": "b2b21f5f80fb7b2cebfc04f886ab228f3605f5ff30a760699f1d583de1bfb1f7",
    "bytes": 1098622
   },
   "source/data/ground_stats.json": {
-   "sha256": "44d150e21205c9e8357c6843991b5af67f14be5b6cd1142c01f7b39cb96212a2",
-   "bytes": 1346
+   "sha256": "02398b76eb53d6b188455941d3742ad8a4c45c3130e218534d07f6e5938799fa",
+   "bytes": 2684
   },
   "source/data/crosswalks_measured.json": {
    "sha256": "dbaa6719fcca798114ce4aa0d958ddaeae9bf93c3c8b96c7c76316ce05f084e0",
    "bytes": 17538
   },
   "source/blender/build_ground.py": {
-   "sha256": "0723005f0bc42aa6a09fd7d008abfde09823081c1764d38428023af1375ca709",
-   "bytes": 11449
+   "sha256": "48504667d5bec4db44c51d5174a1867c91a93c03b83680c3dd16e1786748e6f6",
+   "bytes": 13505
   },
   "source/tools/prepare_ground.py": {
    "sha256": "aca0f2dd230068aa2023da99746a2cc6c356f54795b2367188c4c7ad950f2975",
@@ -273,24 +459,36 @@
    "bytes": 3978
   },
   "README.md": {
-   "sha256": "dbe011303f88f16235f49a842bf334764df2e86ae026a096afc2cbb4e6f6becc",
-   "bytes": 6006
+   "sha256": "60e02c131325fcb42f6eebfcb6930b1dd14d49eb1b39897097351ae2dc2dcaeb",
+   "bytes": 7493
   },
   "source/data/paving_layout.json": {
    "sha256": "b36874c8b6dec04eca21f87091950b86448b5c87320155ceb83f0509d094810b",
    "bytes": 744
   },
+  "source/data/plaza_paving_layout.json": {
+   "sha256": "7c5418e64940c60d71758c26b8fe36820ac800f31fe8ece77db44119634de08f",
+   "bytes": 1300
+  },
+  "source/tools/make_paving.py": {
+   "sha256": "151e519e8490fcd5bc6f1004db267e1f309d5c3b9058ba3499f0533c5c76cee7",
+   "bytes": 1729
+  },
+  "source/tools/write_manifest.py": {
+   "sha256": "a68a026f666fa79d94ea8ec2a6e3877a2ca0ed00acd34ad8fcd4e45ea62c5e99",
+   "bytes": 5823
+  },
   "source/refs/PAVING_REFERENCE_REGISTER.csv": {
-   "sha256": "ae81ece59c4c6d40265c53f0200f717faa0b9f6376b94af3e7340bf8e6a22a28",
-   "bytes": 1206
+   "sha256": "bf731a1547b9e28d9a576020dbc86b0e1da89ccb83ae5e1728cf36b271990808",
+   "bytes": 1900
   },
   "source/textures/paving_gray.png": {
    "sha256": "e02a43b6d2082c4b31bebca9af25f7317b97da2a0f89078329e46a291da41d04",
    "bytes": 95560
   },
-  "source/tools/make_paving.py": {
-   "sha256": "b992de6df57b044d3a6e84bb3c2f181562aa61813e14c1598f1d143a11da5c26",
-   "bytes": 1253
+  "source/textures/paving_plaza.png": {
+   "sha256": "9d6b456be9045516dc6e9448a05266b4264775902931046966fb50ffeb128d99",
+   "bytes": 470231
   }
  }
 }

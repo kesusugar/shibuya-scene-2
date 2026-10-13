@@ -1,0 +1,157 @@
+{
+  "first": {
+    "version": 1,
+    "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated",
+    "tile_size_m": [
+      0.2,
+      0.1
+    ],
+    "atlas_tiles": [
+      30,
+      60
+    ],
+    "atlas_px": [
+      1024,
+      1024
+    ],
+    "joint_width_m": 0.003,
+    "joint_level": 0.7,
+    "tile_level": 0.98,
+    "tile_variation": 0.025,
+    "grain": 0.001,
+    "tile_rgb": [
+      0.89,
+      0.73,
+      0.63
+    ],
+    "joint_rgb": [
+      0.89,
+      0.73,
+      0.63
+    ],
+    "bands": {
+      "width_m": 0.12,
+      "rgb": [
+        0.99,
+        0.97,
+        0.91
+      ]
+    },
+    "seed": 155538,
+    "yaw_deg": -10,
+    "origin_xy_m": [
+      14,
+      -15
+    ],
+    "polygon_xy_m": [
+      [
+        13,
+        -11
+      ],
+      [
+        43,
+        -14
+      ],
+      [
+        40,
+        -47
+      ],
+      [
+        5,
+        -43
+      ],
+      [
+        7,
+        -36
+      ],
+      [
+        12,
+        -30
+      ]
+    ],
+    "texture": "../textures/paving_plaza.png",
+    "notes": [
+      "February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture",
+      "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring",
+      "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"
+    ]
+  },
+  "final": {
+    "version": 1,
+    "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated",
+    "tile_size_m": [
+      0.2,
+      0.1
+    ],
+    "atlas_tiles": [
+      30,
+      60
+    ],
+    "atlas_px": [
+      1024,
+      1024
+    ],
+    "joint_width_m": 0.003,
+    "joint_level": 0.7,
+    "tile_level": 0.98,
+    "tile_variation": 0.025,
+    "grain": 0.001,
+    "tile_rgb": [
+      0.89,
+      0.67,
+      0.63
+    ],
+    "joint_rgb": [
+      0.89,
+      0.67,
+      0.63
+    ],
+    "bands": {
+      "width_m": 0.12,
+      "rgb": [
+        0.99,
+        0.97,
+        0.91
+      ]
+    },
+    "seed": 155538,
+    "yaw_deg": -10,
+    "origin_xy_m": [
+      14,
+      -15
+    ],
+    "polygon_xy_m": [
+      [
+        13,
+        -11
+      ],
+      [
+        43,
+        -14
+      ],
+      [
+        40,
+        -47
+      ],
+      [
+        5,
+        -43
+      ],
+      [
+        7,
+        -36
+      ],
+      [
+        12,
+        -30
+      ]
+    ],
+    "texture": "../textures/paving_plaza.png",
+    "notes": [
+      "February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture",
+      "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring",
+      "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"
+    ]
+  },
+  "changed_property": "brick colour green channel 0.73 -> 0.67; camera, lighting, size, band pattern and other material parameters fixed"
+}
