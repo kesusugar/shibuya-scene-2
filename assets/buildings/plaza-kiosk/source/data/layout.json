@@ -1,0 +1,29 @@
+{
+ "id": "plaza-kiosk",
+ "style": "kiosk",
+ "floors": 1,
+ "bay_pitch_m": 2.0,
+ "glass_height_ratio": 0.6,
+ "podium_floors": 1,
+ "wall_rgb": [
+  0.52,
+  0.53,
+  0.49
+ ],
+ "frame_rgb": [
+  0.38,
+  0.42,
+  0.4
+ ],
+ "spandrel_rgb": [
+  0.52,
+  0.53,
+  0.49
+ ],
+ "glass_rgb": [
+  0.045,
+  0.075,
+  0.08
+ ],
+ "basis": "PLATEAU footprint and roof retained. Shop-window/blank fascia type is an estimate; identity as kiosk and October2025 exterior unconfirmed. No logo or advertising imagery."
+}

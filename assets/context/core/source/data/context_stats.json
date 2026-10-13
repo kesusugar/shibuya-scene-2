@@ -2336,15 +2336,6 @@
    "faces": 262
   },
   {
-   "id": "way/155538676",
-   "plateau_id": "bldg_dd896242-2859-4439-aeff-a6ecc2c893c6",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_punched_b",
-   "height_m": 4.33,
-   "faces": 7
-  },
-  {
    "id": "way/120105793",
    "plateau_id": "bldg_48512859-326a-45cd-a9de-f376bf14b09b",
    "group": "core",
@@ -2791,16 +2782,21 @@
    "id": "plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
    "plateau_id": "bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
    "reason": "own asset: station-southeast"
+  },
+  {
+   "id": "way/155538676",
+   "plateau_id": "bldg_dd896242-2859-4439-aeff-a6ecc2c893c6",
+   "reason": "own asset: plaza-kiosk"
   }
  ],
  "objects": {
   "core__ctx_roof": {
-   "triangles": 10865,
-   "vertices": 18851
+   "triangles": 10861,
+   "vertices": 18845
   },
   "core__ctx_wall_punched_b": {
-   "triangles": 3758,
-   "vertices": 6930
+   "triangles": 3746,
+   "vertices": 6906
   },
   "core__ctx_wall_ribbon_a": {
    "triangles": 4964,
@@ -2819,5 +2815,5 @@
    "vertices": 3444
   }
  },
- "triangles": 28260
+ "triangles": 28244
 }
