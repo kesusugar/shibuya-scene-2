@@ -35,6 +35,7 @@ def bar(a,b,width,depth,name):
  n.normalize();v=t.cross(n).normalized();pts=[p+n*u+v*w for p in [a,b] for u,w in [(-width/2,-depth/2),(width/2,-depth/2),(width/2,depth/2),(-width/2,depth/2)]]
  for ids in [(0,3,2,1),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)]:face(name,[pts[i] for i in ids])
 A=Vector((*F['roof_axis_xy_m'][0],0));B=Vector((*F['roof_axis_xy_m'][1],0));T=(B-A).normalized();N=Vector((-T.y,T.x,0));L=(B-A).length;angle=math.atan2(T.y,T.x)
+platform_width=F.get('platform_width_m',6.0);edges=[-6-platform_width/2,-6+platform_width/2]
 def floor_z(u):return F['floor_west_tp_m']-15+(F['floor_east_tp_m']-F['floor_west_tp_m'])*u/L
 def point(u,v,z):return A+T*u+N*v+Vector((0,0,z))
 def below_bed(poly):
@@ -57,13 +58,13 @@ for part in D:
    if len(lower)>=3:face('gc_base',lower)
    opened+=1
 # Sloped deck and raised island floor interpolate nearby PLATEAU bridge surfaces; not a surveyed station floor.
-for v0,v1,offset,mat in [(-17.7,6.1,-F['platform_step_m'],'gc_bed'),(-9,-3,0,'gc_floor')]:
+for v0,v1,offset,mat in [(-17.7,6.1,-F['platform_step_m'],'gc_bed'),(edges[0],edges[1],0,'gc_floor')]:
  face(mat,[point(0,v0,floor_z(0)+offset),point(L,v0,floor_z(L)+offset),point(L,v1,floor_z(L)+offset),point(0,v1,floor_z(0)+offset)])
-for v in [-9,-3]:
+for v in edges:
  face('gc_base',[point(0,v,floor_z(0)-F['platform_step_m']),point(L,v,floor_z(L)-F['platform_step_m']),point(L,v,floor_z(L)),point(0,v,floor_z(0))])
-for v in [-.3,-11.7]:
+for v in [edges[1]+F.get('rail_edge_offset_m',2.7),edges[0]-F.get('rail_edge_offset_m',2.7)]:
  for d in [-.7175,.7175]:bar(point(0,v+d,floor_z(0)-F['platform_step_m']+.10),point(L,v+d,floor_z(L)-F['platform_step_m']+.10),.07,.10,'gc_rail')
-for v in [-8.5,-3.5]:
+for v in [edges[0]+.5,edges[1]-.5]:
  face('gc_tactile',[point(0,v-.16,floor_z(0)+.012),point(L,v-.16,floor_z(L)+.012),point(L,v+.16,floor_z(L)+.012),point(0,v+.16,floor_z(0)+.012)])
 # The exterior upper deck remains unchanged; M-profile ribs hang below it.
 controls=[(6.1,15.50),(0,20.23),(-5.85,18.85),(-11.7,20.23),(-17.7,15.50)]
@@ -79,7 +80,7 @@ for i in range(F['rib_count']):
  for v in [-8,-4]:
   box(tuple(point(u,v,18.85-.25)),(2.1,.13,.055),'gc_ceil_light',angle)
 # Closed static screen-door bays; no people, train, advertisement texture or operating simulation.
-for v in [-9,-3]:
+for v in edges:
  for i in range(F['door_bays']):
   u=(i+.5)*L/F['door_bays'];z=floor_z(u)
   for shift in [-.48,.48]:
@@ -97,5 +98,5 @@ bpy.ops.export_scene.gltf(filepath=str(OUT/'ginza-canopy.glb'),export_format='GL
 points=[p for b in D for s in b['surfaces'] for p in s['ring']]
 (OUT/'viewer.json').write_text(json.dumps({'planBounds':[min(p[0] for p in points),min(p[1] for p in points),max(p[0] for p in points),max(p[1] for p in points)],'groundElevationTP':15},indent=2)+'\n')
 for mode in ['day','night']:(OUT/f'emissive_{mode}.json').write_text(json.dumps({'gc_glass':{'kind':'glass','emit':[0,0,0],'estr':0},'gc_ceil_light':{'kind':'interior','emit':[1,.98,.87],'estr':.15 if mode=='day' else .8}},indent=2)+'\n')
-(ROOT/'stats.json').write_text(json.dumps({'source_ids':[p['id'] for p in D],'datum_tp_m':15,'roof_deviation_vs_plateau_m':0,'floor_reference_tp_m':[F['floor_west_tp_m'],F['floor_east_tp_m']],'floor_status':'nearby bridge levels interpolated, not measured platform floor','ground_queries':ground_samples,'lower_base_status':'original geometry below track bed retained as C, ground matching unconfirmed','continuous_housing':F.get('continuous_housing',False),'rib_drop_m':F.get('rib_drop_m',0),'opened_upper_wall_faces':opened,'objects':counts,'triangles':sum(v['triangles'] for v in counts.values()),'status':'Partial B upper hall. Original roof/top deck preserved; M ribs/doors from dated auxiliary references, October interior independently unconfirmed. Floor/rib/door/track dimensions and positions estimated.'},indent=2)+'\n')
+(ROOT/'stats.json').write_text(json.dumps({'source_ids':[p['id'] for p in D],'datum_tp_m':15,'roof_deviation_vs_plateau_m':0,'floor_reference_tp_m':[F['floor_west_tp_m'],F['floor_east_tp_m']],'floor_status':'nearby bridge levels interpolated, not measured platform floor','ground_queries':ground_samples,'lower_base_status':'original geometry below track bed retained as C, ground matching unconfirmed','platform_width_m':platform_width,'continuous_housing':F.get('continuous_housing',False),'rib_drop_m':F.get('rib_drop_m',0),'opened_upper_wall_faces':opened,'objects':counts,'triangles':sum(v['triangles'] for v in counts.values()),'status':'Partial B upper hall. Original roof/top deck preserved; M ribs/doors from dated auxiliary references, October interior independently unconfirmed. Floor/rib/door/track dimensions and positions estimated.'},indent=2)+'\n')
 print('GINZA',sum(v['triangles'] for v in counts.values()),'ground',ground_samples)

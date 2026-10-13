@@ -43,3 +43,13 @@ it('opens the upper hall with transparent screen doors while retaining the lower
   expect(new Raycaster(gapOrigin,normal.clone().negate(),0,30).intersectObjects(meshes,false).some(h=>h.object.name==='gc_door')).toBe(true);
  }finally{for(const m of meshes)m.geometry.dispose();material.dispose();}
 });
+
+it('uses the official new-station 12m platform design width in the shipped floor geometry',async()=>{
+ const root=(await new NodeIO().read(base+'web/ginza-canopy.glb')).getRoot(),values:number[]=[];
+ const length=Math.hypot(86.172,28.711);
+ for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimitives()??[]){
+  if(p.getMaterial()!.getName()!=='gc_floor')continue;const a=p.getAttribute('POSITION')!,world=new Matrix4().fromArray(n.getWorldMatrix());
+  for(let i=0;i<a.getCount();i++){const v=new Vector3().fromArray(a.getElement(i,[])).applyMatrix4(world);values.push((v.x-122.486)*(-28.711/length)+(-v.z+67.458)*(86.172/length));}
+ }
+ expect(Math.max(...values)-Math.min(...values)).toBeCloseTo(12,3);
+});
