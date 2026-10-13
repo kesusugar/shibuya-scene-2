@@ -1,3 +1,4 @@
+import { loadPlaza, type PlazaResult } from './world/plaza';
 import { loadSurround, type SurroundResult } from './world/surround';
 import { loadHachiko, type HachikoResult } from './world/hachiko';
 import { loadDrainage, type DrainageResult } from './world/drainage';
@@ -63,6 +64,7 @@ ground.rotation.x = -Math.PI / 2; ground.position.y = useGround ? -0.62 : 0; gro
 scene.add(ground);
 let coreGround: GroundResult | undefined;
 let coreStreet: StreetResult | undefined;
+let corePlaza: PlazaResult | undefined;
 let coreSurround: SurroundResult | undefined;
 let coreHachiko: HachikoResult | undefined;
 let coreDrainage: DrainageResult | undefined;
@@ -93,6 +95,7 @@ function setTime(t: TimeOfDay) {
   const groundLook = projectedStreet?.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? { ...look, nightGround: 0 } : look;
   if (coreGround?.ok) applyLook(coreGround.root, t, groundLook);
   projectedStreet?.setTime(t, params.get('lamps') !== 'off');
+  if (corePlaza?.ok) applyLook(corePlaza.root, t, groundLook);
   if (coreSurround?.ok) applyLook(coreSurround.root, t, look, undefined, env);
   if (coreHachiko?.ok) applyLook(coreHachiko.root, t, look, undefined, env);
   if (coreDrainage?.ok) applyLook(coreDrainage.root, t, look, undefined, env);
@@ -105,7 +108,7 @@ function setTime(t: TimeOfDay) {
 
 async function start() {
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
-  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
+  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes, plazaRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
     useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined),
     params.get('street') !== 'off' ? loadStreet(io.loadGlb, params.get('streeturl') === 'missing' ? '/street/core/missing.glb' : undefined, params.get('street') !== 'entrances') : Promise.resolve(undefined),
     params.get('street') === 'projected' ? loadProjectedStreet(io, params.get('projectedurl') === 'missing' ? '/street/core/missing.glb' : undefined) : Promise.resolve(undefined),
@@ -113,7 +116,8 @@ async function start() {
     useGround && params.get('street') !== 'off' && params.get('tactile') !== 'off' ? loadTactile(io.loadGlb, params.get('tactileurl') === 'missing' ? '/street/tactile/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('drainage') !== 'off' ? loadDrainage(io.loadGlb, params.get('drainageurl') === 'missing' ? '/street/drainage/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('hachiko') !== 'off' ? loadHachiko(io.loadGlb, params.get('hachikourl') === 'missing' ? '/street/hachiko/missing.glb' : undefined) : Promise.resolve(undefined),
-    useGround && params.get('street') !== 'off' && params.get('surround') !== 'off' ? loadSurround(io.loadGlb, params.get('surroundurl') === 'missing' ? '/street/hachiko-surround/missing.glb' : undefined) : Promise.resolve(undefined)]);
+    useGround && params.get('street') !== 'off' && params.get('surround') !== 'off' ? loadSurround(io.loadGlb, params.get('surroundurl') === 'missing' ? '/street/hachiko-surround/missing.glb' : undefined) : Promise.resolve(undefined),
+    useGround && params.get('plaza') !== 'off' ? loadPlaza(io.loadGlb, params.get('plazaurl') === 'missing' ? '/street/plaza-finish/missing.glb' : undefined) : Promise.resolve(undefined)]);
   results.forEach((r: BuildingResult) => scene.add(r.root));
   coreGround = groundRes;
   coreStreet = streetRes;
@@ -121,6 +125,7 @@ async function start() {
   coreDrainage = drainageRes;
   coreHachiko = hachikoRes;
   coreSurround = surroundRes;
+  corePlaza = plazaRes;
   coreContext = contextRes;
   if (coreContext?.ok) scene.add(coreContext.root);
   projectedStreet = projectedRes;
@@ -130,6 +135,7 @@ async function start() {
   if (loaded.some(b => b.id === 'center-gai-gate')) $('provisional').textContent += '／センター街ゲートは位置・寸法のB推定、広告内容は後工程';
   if (coreGround?.ok) $('provisional').textContent += '／北側歩道・ハチ公広場の舗装寸法・割付けは試作';
   if (coreStreet?.ok) scene.add(coreStreet.root);
+  if (corePlaza?.ok) { scene.add(corePlaza.root); $('provisional').textContent += '／像周辺の敷石は写真から推定、寸法・敷設範囲は未測量'; }
   if (coreSurround?.ok) { scene.add(coreSurround.root); $('provisional').textContent += '／像周辺の石縁・レール・低木・石板は写真から試作、位置・寸法・10月状態・銘文は未確認'; }
   if (coreHachiko?.ok) { scene.add(coreHachiko.root); $('provisional').textContent += '／ハチ公像と台座は写真から試作、寸法・向き・10月状態は未確認'; }
   if (coreDrainage?.ok) { scene.add(coreDrainage.root); $('provisional').textContent += '／円形路面蓋はM027から推定、用途・位置・寸法は未測量'; }
@@ -150,6 +156,7 @@ async function start() {
   const problems = [
     ...(projectedStreet && !projectedStreet.ok ? [`写真からの仮配置を読み込めず: ${projectedStreet.error}（通常表示を継続）`] : []),
     ...(coreContext && !coreContext.ok ? [`周辺の建物（C段階）の読み込みに失敗: ${coreContext.error}（他は表示を継続）`] : []),
+    ...(corePlaza && !corePlaza.ok ? [`敷石の読み込みに失敗: ${corePlaza.error}（ほかの表示は継続）`] : []),
     ...(coreSurround && !coreSurround.ok ? [`像周辺の設備の読み込みに失敗: ${coreSurround.error}（ほかの表示は継続）`] : []),
     ...(coreHachiko && !coreHachiko.ok ? [`ハチ公像の読み込みに失敗: ${coreHachiko.error}（ほかの表示は継続）`] : []),
     ...(coreDrainage && !coreDrainage.ok ? [`路面蓋の読み込みに失敗: ${coreDrainage.error}（ほかの表示は継続）`] : []),
@@ -180,6 +187,7 @@ async function start() {
     for (const b of loaded) applyClassPass(b.root, { ...b.emissive.day });
     if (coreGround?.ok) applyClassPass(coreGround.root);
     if (coreStreet?.ok) applyClassPass(coreStreet.root);
+    if (corePlaza?.ok) applyClassPass(corePlaza.root);
     if (coreSurround?.ok) applyClassPass(coreSurround.root);
     if (coreHachiko?.ok) applyClassPass(coreHachiko.root);
     if (coreDrainage?.ok) applyClassPass(coreDrainage.root);
@@ -201,6 +209,7 @@ async function start() {
     failed: results.filter((r) => !r.ok).map((r) => r.id),
     ground: coreGround ? { ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
     context: coreContext ? { ok: coreContext.ok, error: coreContext.error, ...coreContext.stats } : 'off',
+    plaza: corePlaza ? { ok: corePlaza.ok, error: corePlaza.error, ...corePlaza.stats } : 'off',
     surround: coreSurround ? { ok: coreSurround.ok, error: coreSurround.error, ...coreSurround.stats } : 'off',
     hachiko: coreHachiko ? { ok: coreHachiko.ok, error: coreHachiko.error, ...coreHachiko.stats } : 'off',
     drainage: coreDrainage ? { ok: coreDrainage.ok, error: coreDrainage.error, ...coreDrainage.stats } : 'off',

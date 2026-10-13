@@ -49,7 +49,15 @@ def ell(name,loc,scale,collect=True,mat='bronze'):
  bpy.ops.mesh.primitive_uv_sphere_add(segments=32,ring_count=20,location=loc);o=bpy.context.object;o.scale=scale;bpy.ops.object.transform_apply(location=False,rotation=False,scale=True);finish(o,name,mat)
  if collect:parts.append(o)
  return o
-ell('rump',(0,-.12,.25),(.23,.26,.27));ell('chest',(0,.08,.54),(.195,.21,.36));ell('neck',(0,.15,.75),(.13,.145,.24));ell('head',(0,.21,.97),(.155,.18,.17));ell('muzzle',(0,.37,.93),(.10,.16,.085));ell('jaw',(0,.32,.885),(.105,.12,.066))
+ell('rump',(0,-.12,.25),(.23,.26,.27));ell('chest',(0,.08,.54),(.195,.21,.36));ell('neck',(0,.15,.75),(.13,.145,.24));ell('head',(0,.21,.98),(.16,.17,.135));ell('jaw',(0,.34,.904),(.09,.105,.045))
+# Tapered canine snout rather than a spherical muzzle; blends into the remeshed skull.
+v=[];f=[]
+for y,z,rx,rz in [(.30,.925,.10,.06),(.34,.94,.105,.07),(.40,.95,.075,.05),(.46,.95,.045,.025)]:
+ for i in range(16):
+  t=i*math.tau/16;v.append((rx*math.cos(t),y,z+rz*math.sin(t)))
+for j in range(3):
+ for i in range(16):f.append((j*16+i,j*16+(i+1)%16,(j+1)*16+(i+1)%16,(j+1)*16+i))
+f.extend([tuple(range(15,-1,-1)),tuple(range(48,64))]);me=bpy.data.meshes.new('tapered_muzzle');me.from_pydata(v,[],f);o=bpy.data.objects.new('tapered_muzzle',me);bpy.context.collection.objects.link(o);finish(o,'muzzle','bronze');parts.append(o)
 for x in [-.145,.145]:
  ell('thigh',(x*1.22,-.15,.20),(.105,.17,.20));ell('hind_paw',(x*1.32,-.03,.055),(.095,.13,.052));ell('shoulder',(x,.10,.58),(.08,.13,.16));ell('foreleg',(x,.21,.29),(.051,.072,.285));ell('front_paw',(x,.255,.047),(.068,.10,.047))
 # Tail curls onto the back of the bronze base, visible in the side reference.
@@ -58,7 +66,7 @@ for i in range(13):
 # Closed triangular ear solids: one upright, the other bent, as visible in July photographs.
 def ear(name,points):
  v=[(x,y-.018,z) for x,y,z in points]+[(x,y+.018,z) for x,y,z in points];f=[(0,2,1),(3,4,5),(0,1,4,3),(1,2,5,4),(2,0,3,5)];me=bpy.data.meshes.new(name);me.from_pydata(v,[],f);o=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(o);finish(o,name,'bronze');parts.append(o)
-ear('upright_ear',[(.075,.19,1.035),(.165,.14,1.175),(.18,.23,1.035)])
+ear('upright_ear',[(.055,.20,1.035),(.16,.145,1.15),(.185,.24,1.04)])
 ear('bent_ear',[(-.075,.20,1.06),(-.185,.20,1.07),(-.17,.26,1.01)])
 bpy.ops.object.select_all(action='DESELECT')
 for o in parts:o.select_set(True)
@@ -69,13 +77,13 @@ m=dog.modifiers.new('web reduction','DECIMATE');m.ratio=.55;bpy.ops.object.modif
 for v in dog.data.vertices:
  p=v.co;v.co+=v.normal*(.0015*math.sin(p.x*170)*math.sin(p.y*140)*math.sin(p.z*160))
 # Small anatomical details remain separate, not fused into an indistinct head.
-ell('nose',(0,.505,.95),(.056,.034,.034),False,'dark')
-for x in [-.12,.12]:ell('eye',(x,.312,1.005),(.014,.018,.011),False,'dark')
+ell('nose',(0,.465,.96),(.040,.023,.024),False,'dark')
+for x in [-.12,.12]:ell('eye',(x,.34,1.00),(.014,.018,.011),False,'dark')
 def curve(name,pts,width,mat):
  c=bpy.data.curves.new(name,'CURVE');c.dimensions='3D';c.bevel_depth=width;c.bevel_resolution=2;s=c.splines.new('POLY');s.points.add(len(pts)-1)
  for p,xyz in zip(s.points,pts):p.co=(*xyz,1)
  o=bpy.data.objects.new(name,c);bpy.context.collection.objects.link(o);o.data.materials.append(materials[mat]);bpy.context.view_layer.objects.active=o;o.select_set(True);dog.select_set(False);bpy.ops.object.convert(target='MESH');o=bpy.context.object;o.name='street_hachiko_'+name;o.select_set(False);return o
-curve('mouth',[(-.07,.42,.894),(0,.48,.892),(.07,.42,.894)],.003,'dark')
+curve('mouth',[(-.075,.41,.921),(0,.455,.917),(.075,.41,.921)],.003,'dark')
 curve('collar',[(.171*math.cos(i*math.tau/48),.12+.185*math.sin(i*math.tau/48),.70-.035*math.sin(i*math.tau/48)) for i in range(49)],.014,'bronze')
 for x in [-.145,.145]:
  for dx in [-.022,.022]:curve('toe',[(x+dx,.305,.067),(x+dx,.335,.043)],.002,'dark')

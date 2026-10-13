@@ -1,0 +1,76 @@
+{
+ "id": "plaza-finish",
+ "status": "local paving prototype; tile size, extent, direction and October condition unverified",
+ "datum_tp_m": 15,
+ "coordinates": "Blender east/north/up; web east/up/south",
+ "licences": {
+  "model": "CC BY-SA 4.0",
+  "reference_photos": "RuinDig/Yuki Uchida, CC BY 4.0; SOURCES.json",
+  "position_origin": "OSM contributors, ODbL",
+  "terrain": "MLIT PLATEAU, CC BY 4.0 compatible"
+ },
+ "build_stats": {
+  "triangles": 600,
+  "height_offset_m": 0.001
+ },
+ "inputs": {
+  "assets/ground/core/web/ground_core.glb": {
+   "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32",
+   "bytes": 3700232
+  },
+  "assets/street/hachiko/source/data/layout.json": {
+   "sha256": "174941855d335f3bf481939f4f299fb909e9d6c4a8f7eb832a2fa1d585da7f8a",
+   "bytes": 363
+  },
+  "assets/street/hachiko/source/refs/july094.jpg": {
+   "sha256": "bcf5b33895fc22aeff13f0396a1a09f55af2ee11d486b4eb40e266fabc329533",
+   "bytes": 9448212
+  },
+  "assets/street/hachiko/source/refs/july095.jpg": {
+   "sha256": "9694141740dc56810cb4e6a5dbf5a98c3b2d4a139a468d71b175584709d13186",
+   "bytes": 10065544
+  },
+  "assets/street/tactile/source/data/stats.json": {
+   "sha256": "cc32a5db621f71daffcee09711faccf8e1b9e6409c0001cfc971f963d30ebf96",
+   "bytes": 53691
+  }
+ },
+ "files": {
+  "README.md": {
+   "sha256": "fe8a1f7e8234d45531d2bb5934a74c04812b193a8097806a422c15c5eebac86e",
+   "bytes": 788
+  },
+  "source/blender/build_paving.py": {
+   "sha256": "eda4ad35c1d5d64316104ab7f0e1d7b4087cf85d7f4bd72ef079a8b9861edd6b",
+   "bytes": 2470
+  },
+  "source/data/layout.json": {
+   "sha256": "2bc3910bec4fdc0bf9ed2eaab8e67a55e6c004964af10d7758766b8a1d7a8e78",
+   "bytes": 452
+  },
+  "source/data/paving.png": {
+   "sha256": "18eba7f5cee0005c52b89b7d3615218a5c6ee0f919b16f3b5a4c1dbb0b09a794",
+   "bytes": 161477
+  },
+  "source/data/stats.json": {
+   "sha256": "8539c144eec13f6563a2b65bb47f0bcc038b002ab39c58dcbf4cf8385b7c900a",
+   "bytes": 890
+  },
+  "source/refs/SOURCES.json": {
+   "sha256": "488f2ba3fdcb7f37652525f70b9a3da14785e20ea53c31508a9818d86218a919",
+   "bytes": 404
+  },
+  "source/tools/make_paving.py": {
+   "sha256": "151e519e8490fcd5bc6f1004db267e1f309d5c3b9058ba3499f0533c5c76cee7",
+   "bytes": 1729
+  },
+  "source/tools/write_manifest.py": {
+   "sha256": "7dde5ab14ddc87229669cf13a1bf6e4d8fa1f6cbb9c98e1521d0d7a5f210cad3",
+   "bytes": 1206
+  },
+  "web/plaza-finish.glb": {
+   "sha256": "c8e3d64165a7d872b28a585b63d0af9454aeba0f088b2a3dcbfa017311c47048",
+   "bytes": 219756
+  }
+ }
+}

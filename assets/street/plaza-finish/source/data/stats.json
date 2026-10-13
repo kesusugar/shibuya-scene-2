@@ -1,0 +1,57 @@
+{
+ "layout": {
+  "centre_xy": [
+   11.568175521259887,
+   -48.68573220011713
+  ],
+  "yaw_deg": 35,
+  "bounds_local_m": [
+   -5.2,
+   -4.0,
+   5.2,
+   3.0
+  ],
+  "render_offset_m": 0.001,
+  "status": "photo-informed local paving; grid size, orientation and extent estimated; original terrain and walk heights preserved",
+  "tile_size_m": [
+   0.3,
+   0.3
+  ],
+  "atlas_tiles": [
+   4,
+   4
+  ],
+  "atlas_px": [
+   512,
+   512
+  ],
+  "joint_width_m": 0.004,
+  "joint_level": 0.66,
+  "tile_level": 0.94,
+  "tile_variation": 0.035,
+  "grain": 0.005,
+  "seed": 815,
+  "texture": "paving.png"
+ },
+ "polygon_xy": [
+  [
+   9.602890636361312,
+   -54.94493784629854
+  ],
+  [
+   18.12207189696683,
+   -48.97974290824765
+  ],
+  [
+   14.107036842509508,
+   -43.245678598224714
+  ],
+  [
+   5.587855581903991,
+   -49.2108735362756
+  ]
+ ],
+ "triangles": 600,
+ "vertices": 1664,
+ "height_offset_m": 0.001
+}
