@@ -3,11 +3,11 @@ import {readFileSync} from 'node:fs';
 import {NodeIO} from '@gltf-transform/core';
 import {Matrix4,Vector3,BufferGeometry,Float32BufferAttribute,Mesh,MeshBasicMaterial,DoubleSide,Raycaster} from 'three';
 const base='assets/buildings/station-west-viaduct/';
-it('replaces the source block once and keeps two C station candidates',()=>{
+it('replaces the source block once and keeps one C station candidate',()=>{
  const id=JSON.parse(readFileSync(base+'source/data/parts.json','utf8'))[0].id;
  const c=JSON.parse(readFileSync('assets/context/core/source/data/context_input.json','utf8'));
  expect(c.buildings.some((b:{id:string})=>b.id===id)).toBe(false);expect(c.excluded.filter((b:{id:string})=>b.id===id)).toHaveLength(1);
- expect(c.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(2);
+ expect(c.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(1);
  expect(JSON.parse(readFileSync(base+'web/viewer.json','utf8')).groundElevationTP).toBe(15);
 });
 it('preserves the original top and uses a transparent non-glowing safety-net approximation',async()=>{
