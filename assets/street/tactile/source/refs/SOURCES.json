@@ -17,6 +17,6 @@
     "license": "CC0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "sha256": "012b30ec23de9d4f92430f295aea6302cfa2cd56db66f20e10772ac284dd23f0",
-    "use": "yellow guidance visible across plaza/north corners; no calibrated positions or photo texture"
+    "use": "yellow guidance across plaza/north corners and plaza branching type; no calibrated route/junction positions or photo texture"
   }
 ]
