@@ -1,0 +1,63 @@
+{
+  "id": "daiichi-kangin",
+  "source_id": "way/114755219",
+  "level": "B",
+  "status": "B prototype; estimated facade and sign housings; advertising images deferred",
+  "sources": [
+    "source/data/plateau.json",
+    "source/data/layout.json",
+    "source/refs/REFERENCE_REGISTER.csv",
+    "source/refs/SOURCE.json"
+  ],
+  "stats": {
+    "triangles": 868,
+    "primitives": 10,
+    "bytes": 56136
+  },
+  "files": {
+    "README.md": {
+      "bytes": 2726,
+      "sha256": "1d1b792562325578e847eb5d0d13e25a393fb11b03cd5fca6c94f1c8611fb0c7"
+    },
+    "source/blender/build_daiichi.py": {
+      "bytes": 7174,
+      "sha256": "2d1a1f27f20581946d28cb542214c5d205169910f215472b6cdcb0586f1ff906"
+    },
+    "source/data/layout.json": {
+      "bytes": 1826,
+      "sha256": "98f98c05e263cda73c8f18861f84ecfddba08878bf8136462d98609d54d28ff7"
+    },
+    "source/data/plateau.json": {
+      "bytes": 46551,
+      "sha256": "93cfdbb50918649b0aec5b51fb2e13eb8f4ba7950a8bd8e0e86a087fbb46fbc1"
+    },
+    "source/data/stats.json": {
+      "bytes": 8291,
+      "sha256": "34be6e79f8af4e2d89fc40af14572031e40acd1ba987de4aea65102cbf615f64"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 745,
+      "sha256": "ce44f53e9ada3a69d4b84ea151031baeabb061cb3f36aeea4c53aa4394d84710"
+    },
+    "source/refs/SOURCE.json": {
+      "bytes": 511,
+      "sha256": "01d98589c554c5c077bd00ff2747b11afc77027d22f45b657520304401ac50fd"
+    },
+    "web/daiichi-kangin.glb": {
+      "bytes": 56136,
+      "sha256": "2e70da14b822b5f58ccf35dab4941c74034f341d7720114f5b88fed56c5ea78d"
+    },
+    "web/emissive_day.json": {
+      "bytes": 237,
+      "sha256": "797e4efd5206ac064c022764d1c6434c621cfb860ccd17c0e80f7b2f1378803d"
+    },
+    "web/emissive_night.json": {
+      "bytes": 242,
+      "sha256": "da92d37ea6d4c940393cd29e5ea085dd24dd677c5fa8f9351331817365215a4d"
+    },
+    "web/viewer.json": {
+      "bytes": 165,
+      "sha256": "69169696147df161425f8adedeb7a984c7833dd7c4d7ff89c6ec6ca4bfeae71d"
+    }
+  }
+}

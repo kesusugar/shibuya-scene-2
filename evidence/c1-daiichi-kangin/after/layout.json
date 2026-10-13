@@ -1,0 +1,85 @@
+{
+  "source_id": "way/114755219",
+  "status": "B prototype: facade and fixture dimensions estimated from 2025 photo types; no ad imagery",
+  "facades": [
+    {
+      "name": "south",
+      "a": [
+        -94.139,
+        23.696
+      ],
+      "b": [
+        -72.944,
+        19.98
+      ],
+      "normal": [
+        -0.1727,
+        -0.98497
+      ],
+      "length_m": 21.518,
+      "height_m": 31.274,
+      "bay_count": 10,
+      "levels_m": [
+        3.3,
+        7.1,
+        10.9,
+        14.7,
+        18.5,
+        22.3,
+        26.1,
+        29.7
+      ]
+    },
+    {
+      "name": "east",
+      "a": [
+        -72.944,
+        19.98
+      ],
+      "b": [
+        -70.034,
+        47.56
+      ],
+      "normal": [
+        0.99448,
+        -0.10493
+      ],
+      "length_m": 27.733,
+      "height_m": 31.274,
+      "bay_count": 12,
+      "levels_m": [
+        3.3,
+        7.1,
+        10.9,
+        14.7,
+        18.5,
+        22.3,
+        26.1,
+        29.7
+      ]
+    }
+  ],
+  "window_height_m": 2.7,
+  "mullion_width_m": 0.13,
+  "east_display": {
+    "center_u": 0.3,
+    "center_z": 25.9,
+    "width_m": 13.4,
+    "height_m": 8.4
+  },
+  "reference_observations": [
+    "Jan 2025 Stream and Feb 2025 12214: pale external frame, dense rectangular window grid and red infill on south frontage",
+    "East frontage: dark glazing and broad stacked storefront bands below a large screen",
+    "Upper south-west PLATEAU tower corresponds to rooftop advertising mass; keep original geometry and add panel joints only"
+  ],
+  "uncertainties": [
+    "Source-name to physical premises not independently surveyed",
+    "Window count, floor elevations, panels and screen dimensions are estimates",
+    "Ads and individual tenant lettering intentionally deferred"
+  ],
+  "glass_color": [
+    0.035,
+    0.06,
+    0.058
+  ]
+}

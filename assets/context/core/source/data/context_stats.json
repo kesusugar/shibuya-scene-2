@@ -1463,15 +1463,6 @@
    "faces": 46
   },
   {
-   "id": "way/114755219",
-   "plateau_id": "bldg_5e891186-4803-48a0-9664-284f212881ac",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_b",
-   "height_m": 51.89,
-   "faces": 99
-  },
-  {
    "id": "plateau/bldg_bd8af527-e549-4651-98c5-1b232dc3a02a",
    "plateau_id": "bldg_bd8af527-e549-4651-98c5-1b232dc3a02a",
    "group": "core",
@@ -2815,12 +2806,17 @@
   {
    "id": "way/810356690",
    "reason": "own asset ginza-canopy; partial upper-hall B, original lower base retained, October interior not independently verified"
+  },
+  {
+   "id": "way/114755219",
+   "plateau_id": "bldg_5e891186-4803-48a0-9664-284f212881ac",
+   "reason": "own asset: daiichi-kangin"
   }
  ],
  "objects": {
   "core__ctx_roof": {
-   "triangles": 11373,
-   "vertices": 19675
+   "triangles": 11268,
+   "vertices": 19496
   },
   "core__ctx_wall_punched_b": {
    "triangles": 3810,
@@ -2835,8 +2831,8 @@
    "vertices": 6444
   },
   "core__ctx_wall_ribbon_b": {
-   "triangles": 4252,
-   "vertices": 7720
+   "triangles": 4117,
+   "vertices": 7461
   },
   "station__ctx_roof": {
    "triangles": 218,
@@ -2851,5 +2847,5 @@
    "vertices": 3444
   }
  },
- "triangles": 30006
+ "triangles": 29766
 }

@@ -1,0 +1,11 @@
+{
+  "geometry": {
+    "author": "国土交通省 Project PLATEAU",
+    "dataset": "渋谷区2025年度3D都市モデル",
+    "url": "https://www.mlit.go.jp/plateau/",
+    "terms": "https://www.mlit.go.jp/plateau/site-policy/",
+    "processing": "Extracted from context_input, retain original roof and shell; procedural estimated facade added"
+  },
+  "photos": "REFERENCE_REGISTER.csv: shared unchanged CC0 photos, no texture extraction",
+  "target": "2025, October correspondence not independently verified"
+}

@@ -5,6 +5,10 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  daiichi_front: { q: "time=day&pose=-28,-8,4,-82,31,21,58", w: 900, h: 675 },
+  entry: { q: "time=day", w: 1000, h: 750 },
+  entry_night: { q: "time=night", w: 1000, h: 750 },
+  center_front: { q: "time=day&pose=-6,12,4,-45,61,16,48", w: 900, h: 675 },
   ginza_hall_night: { q: 'time=night&pose=148,-65,15.2,190,-51,16.3,65', w: 900, h: 675 },
   ginza_hall: { q: 'time=day&pose=148,-65,15.2,190,-51,16.3,65', w: 900, h: 675 },
   station_viaduct: { q: 'time=day&pose=12,-48,13,32,-90,9,55', w: 900, h: 675 },
@@ -32,13 +36,16 @@ try {
     await page.route('**/favicon.ico', (r) => r.fulfill({ status: 204 }));
     page.on('pageerror', (e) => errors.push(e.message));
     page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
+    page.on('response', (r) => { if (r.status() >= 400) errors.push(`HTTP ${r.status()} ${r.url()}`); });
+    page.on('requestfailed', (r) => errors.push(`${r.url()}: ${r.failure()?.errorText}`));
     await page.goto(`${base}/?capture&${v.q}${process.env.EXTRA ? `&${process.env.EXTRA}` : ""}`);
     await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 300000 });
     await page.waitForTimeout(2500);
     const state = await page.evaluate(() => ({ street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
     await page.screenshot({ path: `${out}/${name}.png`, timeout: 300000 });
-    log[name] = { ...v, state, errors }; writeFileSync(logPath, JSON.stringify(log, null, 2));
+    log[name] = { ...v, state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
     assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true);
+    for (const asset of Object.values(state.stats)) assert.deepEqual(asset.layerErrors, []);
     console.log(name, errors.length ? errors : 'ok'); await page.close();
   }
 } finally { await browser.close(); }

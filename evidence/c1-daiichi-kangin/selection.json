@@ -1,0 +1,34 @@
+{
+  "base_commit": "c820b00",
+  "entry_camera_source": "ViewerControls.frameBuilding(QFRONT hints), derived from unchanged source",
+  "entry_position_world": [
+    19.811139988706884,
+    12,
+    32.67287628692171
+  ],
+  "entry_target_world": [
+    -8.73436944865534,
+    24,
+    -41.03707084509977
+  ],
+  "vfov": 55,
+  "width": 1000,
+  "height": 750,
+  "candidate_top_projection_px": {
+    "way/136691379": [
+      266,
+      362
+    ],
+    "way/136691389": [
+      368,
+      365
+    ],
+    "way/114755219": [
+      46,
+      223
+    ]
+  },
+  "projection_note": "Projected source roof representative points; not visible-area scores. Occlusion judged in saved entry and center_front images.",
+  "choice": "way/114755219: left entry frontage; other two significantly occluded",
+  "protected_assets": "No diffs to QFRONT, MAGNET, west-block, station or street authoring/export files; Seibu worktrees untouched"
+}
