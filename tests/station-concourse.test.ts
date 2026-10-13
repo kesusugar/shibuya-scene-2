@@ -41,3 +41,26 @@ it('opens the east bay while retaining the western ground-level solid',async()=>
   expect(hits(-25).length).toBeGreaterThan(0);
  } finally {for(const m of meshes)m.geometry.dispose();material.dispose();}
 });
+it('keeps a visible recess behind transparent north glazing and opaque transoms in front',async()=>{
+ const root=(await new NodeIO().read(base+'web/station-concourse.glb')).getRoot();
+ const glass=root.listMaterials().find(m=>m.getName()==='sc_glass')!;
+ expect(glass.getAlphaMode()).toBe('BLEND');expect(glass.getBaseColorFactor()[3]).toBeLessThan(1);
+ const meshes:Mesh[]=[],material=new MeshBasicMaterial({side:DoubleSide});
+ try{
+  for(const n of root.listNodes())for(const prim of n.getMesh()?.listPrimitives()??[]){
+   const a=prim.getAttribute('POSITION')!,idx=prim.getIndices(),world=new Matrix4().fromArray(n.getWorldMatrix()),pts:number[]=[];
+   for(let i=0;i<(idx?.getCount()??a.getCount());i++){
+    const p=new Vector3().fromArray(a.getElement(idx?idx.getScalar(i):i,[])).applyMatrix4(world);pts.push(p.x,p.y,p.z);
+   }
+   const geometry=new BufferGeometry();geometry.setAttribute('position',new Float32BufferAttribute(pts,3));
+   const mesh=new Mesh(geometry,material);mesh.name=prim.getMaterial()!.getName();meshes.push(mesh);
+  }
+  const tangent=new Vector3(50.345,0,-6.193).normalize(),normal=new Vector3(tangent.z,0,-tangent.x);
+  const ray=(height:number)=>new Raycaster(new Vector3(-44.855,height,71.856).addScaledVector(tangent,20.3).add(normal),normal.clone().negate(),0,2).intersectObjects(meshes,false);
+  const open=ray(8.8);
+  expect(open[0].object.name).toBe('sc_glass');
+  expect(open.some(h=>h.object.name==='sc_interior'&&h.distance>1.5)).toBe(true);
+  expect(open.some(h=>h.object.name==='sc_wall')).toBe(false);
+  expect(ray(8.25)[0].object.name).toBe('sc_frame');
+ }finally{for(const m of meshes)m.geometry.dispose();material.dispose();}
+});
