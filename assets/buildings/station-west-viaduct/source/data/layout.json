@@ -1,0 +1,32 @@
+{
+  "north_edge_xy_m": [
+    [
+      4.623,
+      -89.839
+    ],
+    [
+      64.162,
+      -80.199
+    ]
+  ],
+  "south_edge_xy_m": [
+    [
+      5.995,
+      -98.273
+    ],
+    [
+      64.895,
+      -88.7
+    ]
+  ],
+  "top_tp_m": 32.3,
+  "girder_depth_m": 0.9,
+  "middle_beam_tp_m": 25.3,
+  "support_count": 8,
+  "support_offset_m": 4.3,
+  "fallback_ground_tp_m": 15.14,
+  "barrier_height_m": 1.1,
+  "barrier_alpha": 0.22,
+  "basis": "Original PLATEAU upper surface retained. October18 article near Ginza viaduct shows open concrete/steel girders, piers, lower bracing and blue construction-edge net. Association with bldg_9b0ce3b9 remains inferred, not independently confirmed. Regular supports follow the source strip, eight C2a foundation queries returned no hit outside coverage, feet use original PLATEAU T.P.15.14m. Mid-level, girder/pier/brace sizes and net location are B estimates; no October geometry survey/camera calibration.",
+  "barrier_revision_basis": "Initial same-pose view showed the blue construction net as an opaque board. October18 reference shows a see-through blue net. Changed panel opacity (alpha) only from 1.0 to .22 as a lightweight B approximation. Positions, colour, mesh geometry, posts/girders/piers/braces and original top unchanged. No calibrated optical measurement."
+}

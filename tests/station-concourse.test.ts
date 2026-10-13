@@ -7,7 +7,7 @@ it('replaces both solid wrappers exactly once without certifying remaining stati
  const parts=JSON.parse(readFileSync(base+'source/data/parts.json','utf8'));
  const context=JSON.parse(readFileSync('assets/context/core/source/data/context_input.json','utf8'));
  for(const part of parts){expect(context.buildings.some((b:{id:string})=>b.id===part.id)).toBe(false);expect(context.excluded.filter((e:{id:string})=>e.id===part.id)).toHaveLength(1);}
- expect(context.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(3);
+ expect(context.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(2);
  const hints=JSON.parse(readFileSync(base+'web/viewer.json','utf8'));
  expect(hints.groundElevationTP).toBe(15);
  const stats=JSON.parse(readFileSync(base+'source/data/stats.json','utf8'));

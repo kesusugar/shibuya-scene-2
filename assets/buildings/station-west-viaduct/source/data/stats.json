@@ -1,0 +1,83 @@
+{
+  "source_ids": [
+    "plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324"
+  ],
+  "datum_tp_m": 15,
+  "roof_deviation_vs_plateau_m": 0,
+  "top_tp_m": 32.3,
+  "ground_samples": [
+    {
+      "x": 6.791,
+      "y": -93.844,
+      "tp": 15.14,
+      "basis": "PLATEAU fallback"
+    },
+    {
+      "x": 14.873,
+      "y": -92.535,
+      "tp": 15.14,
+      "basis": "PLATEAU fallback"
+    },
+    {
+      "x": 22.956,
+      "y": -91.227,
+      "tp": 15.14,
+      "basis": "PLATEAU fallback"
+    },
+    {
+      "x": 31.039,
+      "y": -89.918,
+      "tp": 15.14,
+      "basis": "PLATEAU fallback"
+    },
+    {
+      "x": 39.121,
+      "y": -88.609,
+      "tp": 15.14,
+      "basis": "PLATEAU fallback"
+    },
+    {
+      "x": 47.204,
+      "y": -87.301,
+      "tp": 15.14,
+      "basis": "PLATEAU fallback"
+    },
+    {
+      "x": 55.286,
+      "y": -85.992,
+      "tp": 15.14,
+      "basis": "PLATEAU fallback"
+    },
+    {
+      "x": 63.369,
+      "y": -84.683,
+      "tp": 15.14,
+      "basis": "PLATEAU fallback"
+    }
+  ],
+  "lower_closed_wall_faces_removed": 6,
+  "objects": {
+    "wv_top": {
+      "triangles": 4,
+      "vertices": 6
+    },
+    "wv_concrete": {
+      "triangles": 232,
+      "vertices": 462
+    },
+    "wv_steel": {
+      "triangles": 552,
+      "vertices": 1104
+    },
+    "wv_mesh": {
+      "triangles": 4,
+      "vertices": 8
+    },
+    "wv_rail": {
+      "triangles": 540,
+      "vertices": 1080
+    }
+  },
+  "triangles": 1332,
+  "status": "B prototype. Association with October18 western/Ginza elevated structure inferred, not independent identity certification. Source upper surface retained; girder/pier/brace/barrier dimensions and positions estimated. No photo texture or generic windows."
+}
