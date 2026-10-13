@@ -21,3 +21,5 @@ blender -b --python-exit-code 1 -t 4 -P assets/buildings/ginza-canopy/source/ble
 11,314三角形・11描画単位・715,544 bytes。通常表示に追加し、同じIDのCを一度だけ除いた。context=nostationでは駅側5資産を除き、既存5資産を残す。推定を台帳とHUDへ記載。広告・人物・列車は追加していない。
 
 出典はsource/refs、報告は `docs/core/C1_GINZA_CANOPY_REPORT.md`、画像は `evidence/c1-ginza-canopy/boards/`。
+
+公式の2019-10-28設計資料（GC05）がホーム幅約12 mと明記するため、試作6 mを12 mへ訂正し、ドア・点字帯を新しい端、線路を端の外1.35 m（推定）へ合わせた。幅補正前はplatform_width_m=6・rail_edge_offset_m=2.7、最終版は12・1.35で再生成できる。フレーム・床の高さ・ドア区画数・透明度・照明は変えていない。
