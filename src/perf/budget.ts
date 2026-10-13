@@ -18,7 +18,7 @@ export const LEVEL_BUDGET = {
 export type Level = keyof typeof LEVEL_BUDGET;
 
 /** Level of every shipped asset (an era layer counts with its building). */
-export const ASSET_LEVEL: Record<string, Level> = { 'plaza-kiosk':'B', 'street/plaza-facilities':'B', 'station-southeast': 'B', 'ground/extension': 'ground','center244': 'B', 'quattro': 'B', 'scramble-square': 'B', 'fukuras': 'B',  qfront: 'A', magnet: 'A', eiraku: 'B', 'west-block': 'B', ekimae: 'B', 'station-concourse': 'B', 'station-north': 'B', 'station-service': 'B', 'station-west-viaduct': 'B', 'ginza-canopy': 'B', 'daiichi-kangin': 'B', 'center-gai-gate': 'B', 'ground/core': 'ground', 'street/core': 'B', 'street/tactile': 'B', 'street/drainage': 'B', 'street/hachiko': 'B', 'street/hachiko-surround': 'B', 'street/plaza-finish': 'B', 'context/core': 'context' };
+export const ASSET_LEVEL: Record<string, Level> = { 'street/tactile-extra':'B','street/tactile-links':'B', 'plaza-kiosk':'B', 'street/plaza-facilities':'B', 'station-southeast': 'B', 'ground/extension': 'ground','center244': 'B', 'quattro': 'B', 'scramble-square': 'B', 'fukuras': 'B',  qfront: 'A', magnet: 'A', eiraku: 'B', 'west-block': 'B', ekimae: 'B', 'station-concourse': 'B', 'station-north': 'B', 'station-service': 'B', 'station-west-viaduct': 'B', 'ginza-canopy': 'B', 'daiichi-kangin': 'B', 'center-gai-gate': 'B', 'ground/core': 'ground', 'street/core': 'B', 'street/tactile': 'B', 'street/drainage': 'B', 'street/hachiko': 'B', 'street/hachiko-surround': 'B', 'street/plaza-finish': 'B', 'context/core': 'context' };
 
 /**
  * Whole-scene budget for the Core v1 (everything loaded at once, before shadows double the draws). Chosen so that a

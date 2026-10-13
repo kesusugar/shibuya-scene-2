@@ -39,6 +39,8 @@ for seg in D['segments']:
  for i in range(count):box('wall_'+seg['id'],(x0+(i+.5)*step,y-t/2,z+h/2),(step-.006,t,h),'stone',.004)
  box('cap_'+seg['id'],((x0+x1)/2,y-t/2,z+h+.035),(x1-x0,.27,.07),'stone',.007)
  for x in [x0+t/2,x1-t/2]:box('return_'+seg['id'],(x,y-depth/2,z+h/2),(t,depth,h),'stone',.004)
+ for i in range(count):box('rear_'+seg['id'],(x0+(i+.5)*step,y-depth+t/2,z+h/2),(step-.006,t,h),'stone',.004)
+ box('rear_cap_'+seg['id'],((x0+x1)/2,y-depth+t/2,z+h+.035),(x1-x0,.27,.07),'stone',.007)
  box('soil_'+seg['id'],((x0+x1)/2,y-depth/2,z+h-.04),(x1-x0-t*2,depth-t*2,.08),'soil')
  yf=y+.12;yb=yf-D['rail_depth_m'];zf=z+D['rail_front_height_m'];zb=z+D['rail_rear_height_m']
  for yy,zz in [(yf,zf),(yb,zb)]:tube('rail_'+seg['id'],(x0+.05,yy,zz),(x1-.05,yy,zz),D['rail_radius_m'],'silver',20)
