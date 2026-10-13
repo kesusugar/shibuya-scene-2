@@ -1,0 +1,62 @@
+{
+  "id": "quattro",
+  "source_id": "way/136691389",
+  "level": "B",
+  "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery",
+  "stats": {
+    "triangles": 1376,
+    "primitives": 8,
+    "bytes": 87840
+  },
+  "generator": "tools/core/build_facade.py",
+  "files": {
+    "README.md": {
+      "bytes": 950,
+      "sha256": "8b7d9c3ccbd33192ff8ab95d5c7fc47f91e02707010b6fbd0f1262a8f8daa3be"
+    },
+    "source/data/stats.json": {
+      "bytes": 5694,
+      "sha256": "313e3a15bb950e659fdd7d3bcbaff172ba30b419c67ce67d728d407c6ff5dc44"
+    },
+    "source/data/layout.json": {
+      "bytes": 479,
+      "sha256": "5450193c049b3a7011642c98f6420afceb3aec1fbf1a410f652d511cd7c92885"
+    },
+    "source/data/plateau.json": {
+      "bytes": 5057,
+      "sha256": "967dbde173f2b5920619b7b4eba017be79e1948c35afd7e8d3be2336f8f7ccd8"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 4115752,
+      "sha256": "9f146732f51c9d89f0f1d378c14ba91c13f8b14ad952ae69a4ad5486fbb5f750"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3651,
+      "sha256": "9925f2266b7b33cd59251f7bf21fe4004834a3a34a361a3c3f945f653066a3b8"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 565,
+      "sha256": "e3b829014ced1d4acf168d688d1f7e05bb99cdf8f153fe8701f52bd9b6e27899"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/viewer.json": {
+      "bytes": 194,
+      "sha256": "fb75c179fb8e99734f17b057eb70e97f372be4e80f18588497958b2dab1b8f8d"
+    },
+    "web/quattro.glb": {
+      "bytes": 87840,
+      "sha256": "add9d2573c36274a4d0f737dd5b1b01b5a9997293e778e4c23032905ac228ba7"
+    }
+  }
+}

@@ -401,15 +401,6 @@
    "faces": 19
   },
   {
-   "id": "way/55588118",
-   "plateau_id": "bldg_3ad6aaeb-26f8-4716-a8ec-cb2504b94674",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_a",
-   "height_m": 104.59,
-   "faces": 171
-  },
-  {
    "id": "way/136398534",
    "plateau_id": "bldg_b131a18c-3317-4647-b9e8-13dec811f99c",
    "group": "core",
@@ -696,15 +687,6 @@
    "material": "ctx_wall_punched_b",
    "height_m": 8.89,
    "faces": 13
-  },
-  {
-   "id": "way/136691379",
-   "plateau_id": "bldg_edef4503-f1ef-4f11-839a-3fad9862036c",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_punched_b",
-   "height_m": 33.25,
-   "faces": 35
   },
   {
    "id": "way/136692151",
@@ -2426,15 +2408,6 @@
    "faces": 13
   },
   {
-   "id": "way/136691389",
-   "plateau_id": "bldg_40a631a5-66a5-45d3-acf2-e9f75c5d38c6",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_a",
-   "height_m": 30.36,
-   "faces": 14
-  },
-  {
    "id": "way/136692137",
    "plateau_id": "bldg_f9f524c8-115e-400a-a9c9-4a0adc3fc3a8",
    "group": "core",
@@ -2442,15 +2415,6 @@
    "material": "ctx_wall_ribbon_b",
    "height_m": 45.85,
    "faces": 76
-  },
-  {
-   "id": "way/617560918",
-   "plateau_id": "bldg_7b006717-e9e6-4a94-8843-1f4ce13b2509",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_b",
-   "height_m": 229.03,
-   "faces": 102
   },
   {
    "id": "way/120105794",
@@ -2811,28 +2775,48 @@
    "id": "way/114755219",
    "plateau_id": "bldg_5e891186-4803-48a0-9664-284f212881ac",
    "reason": "own asset: daiichi-kangin"
+  },
+  {
+   "id": "way/136691379",
+   "plateau_id": "bldg_edef4503-f1ef-4f11-839a-3fad9862036c",
+   "reason": "own asset: center244"
+  },
+  {
+   "id": "way/136691389",
+   "plateau_id": "bldg_40a631a5-66a5-45d3-acf2-e9f75c5d38c6",
+   "reason": "own asset: quattro"
+  },
+  {
+   "id": "way/617560918",
+   "plateau_id": "bldg_7b006717-e9e6-4a94-8843-1f4ce13b2509",
+   "reason": "own asset: scramble-square"
+  },
+  {
+   "id": "way/55588118",
+   "plateau_id": "bldg_3ad6aaeb-26f8-4716-a8ec-cb2504b94674",
+   "reason": "own asset: fukuras"
   }
  ],
  "objects": {
   "core__ctx_roof": {
-   "triangles": 11268,
-   "vertices": 19496
+   "triangles": 10865,
+   "vertices": 18851
   },
   "core__ctx_wall_punched_b": {
-   "triangles": 3810,
-   "vertices": 7026
+   "triangles": 3758,
+   "vertices": 6930
   },
   "core__ctx_wall_ribbon_a": {
-   "triangles": 5321,
-   "vertices": 9683
+   "triangles": 4964,
+   "vertices": 9070
   },
   "core__ctx_wall_punched_a": {
    "triangles": 3528,
    "vertices": 6444
   },
   "core__ctx_wall_ribbon_b": {
-   "triangles": 4117,
-   "vertices": 7461
+   "triangles": 3997,
+   "vertices": 7239
   },
   "station__ctx_roof": {
    "triangles": 218,
@@ -2847,5 +2831,5 @@
    "vertices": 3444
   }
  },
- "triangles": 29766
+ "triangles": 28834
 }

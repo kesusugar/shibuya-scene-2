@@ -1,0 +1,30 @@
+{
+ "id": "fukuras",
+ "name": "渋谷フクラス",
+ "style": "fukuras",
+ "floors": 18,
+ "bay_pitch_m": 2.4,
+ "wall_rgb": [
+  0.63,
+  0.64,
+  0.62
+ ],
+ "glass_rgb": [
+  0.14,
+  0.19,
+  0.24
+ ],
+ "frame_rgb": [
+  0.58,
+  0.6,
+  0.6
+ ],
+ "spandrel_rgb": [
+  0.63,
+  0.64,
+  0.62
+ ],
+ "podium_floors": 3,
+ "glass_height_ratio": 0.8,
+ "estimation": "Photo-type facade; bay/floor divisions estimated; original PLATEAU shell unchanged; reference predates 2025"
+}
