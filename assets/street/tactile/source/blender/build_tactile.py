@@ -5,6 +5,8 @@ import bpy,bmesh,json,sys,math
 from pathlib import Path
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
+sys.path.insert(0,str(Path(__file__).resolve().parents[4]/"ground/core/source/blender"))
+from paving_boundary import partition
 layout,crossings,street,ground,output,stats=sys.argv[sys.argv.index('--')+1:][:6]
 P=json.load(open(Path(street).with_name('street_layout.json')))['items']
 D=json.load(open(layout));C=json.load(open(crossings))['crosswalks'];F=json.load(open(street))['features']
@@ -32,18 +34,21 @@ def clear(x,y):
   if f['kind']=='tree' and math.hypot(x-f['point'][0],y-f['point'][1])<.7:return False
  return pavement(x,y) is not None
 
-verts=[];faces=[];records=[];tiles=[];samples=[]
+verts=[];faces=[];records=[];tiles=[];samples=[];clip_mask=None;route_records=[]
 def polygon(points):
- vs=[]
- for x,y,dz in points:
-  z=pavement(x,y)
-  if z is None:raise ValueError('tile relief outside sidewalk')
-  samples.append({'x':x,'y':y,'ground_z':z,'offset':dz})
-  vs.append(len(verts));verts.append((x,y,z+dz))
- faces.append(vs)
+ pieces=[points] if clip_mask is None else [piece for piece,covered in partition(points,clip_mask) if not covered]
+ for piece in pieces:
+  vs=[]
+  for x,y,dz in piece:
+   z=pavement(x,y)
+   if z is None:raise ValueError('tile relief outside sidewalk')
+   samples.append({'x':x,'y':y,'ground_z':z,'offset':dz})
+   vs.append(len(verts));verts.append((x,y,z+dz))
+  faces.append(vs)
 
 def tile(cx,cy,d,kind,group):
  # Local X across the route, local Y along it. No overlapping warning and guide tiles.
+ face_start=len(faces)
  ux,uy=d[1],-d[0];vx,vy=d
  def point(x,y,z):return (cx+ux*x+vx*y,cy+uy*x+vy*y,z)
  half=D['tile_m']/2-.0015;base=D['base_offset_m'];top=base+D['relief_m']
@@ -63,7 +68,8 @@ def tile(cx,cy,d,kind,group):
    upper=[point(x-.0085,-.135,top),point(x+.0085,-.135,top),point(x+.0085,.135,top),point(x-.0085,.135,top)]
    polygon(upper)
    for k in range(4):polygon([lower[k],lower[(k+1)%4],upper[(k+1)%4],upper[k]])
- tiles.append({'group':group,'kind':kind,'centre_xy':[cx,cy],'direction_xy':d})
+ if len(faces)==face_start:return
+ tiles.append({'group':group,'kind':kind,'centre_xy':[cx,cy],'direction_xy':list(d)})
 
 def tile_clear(cx,cy,d):
  ux,uy=d[1],-d[0]
@@ -93,9 +99,49 @@ for c in C:
    if not tile_clear(x,y,d):break
    tile(x,y,d,'guide',group);guides+=1
   records.append({'id':group,'status':'prototype','centre_xy':[cx,cy],'setback_from_measured_endpoint_m':setback,'guide_tiles':guides})
+# Extend only the two plaza approaches, keeping the original 60 tiles unchanged.
+if D.get('plaza_links'):
+ links=D['plaza_links'];anchors=[]
+ for group in links['approaches']:
+  record=next(r for r in records if r['id']==group)
+  direction=next(t['direction_xy'] for t in tiles if t['group']==group)
+  anchors.append((Vector(record['centre_xy']),Vector(direction)))
+ p0,d0=anchors[0];p1,d1=anchors[1]
+ cross=lambda a,b:a.x*b.y-a.y*b.x
+ denominator=cross(d0,d1)
+ if abs(denominator)<1e-6:raise ValueError('parallel approach axes need explicit junction')
+ distance0=cross(p1-p0,d1)/denominator
+ distance1=cross(p1-p0,d0)/denominator
+ if min(distance0,distance1)<=2.1:raise ValueError('junction overlaps original approaches')
+ junction=p0+d0*distance0;south=(d0+d1).normalized();across=Vector((south.y,-south.x))
+ count=links['junction_tiles'];half=count*D['tile_m']/2
+ for i in range(count):
+  for j in range(count):
+   centre=junction+across*((i-(count-1)/2)*.3)+south*((j-(count-1)/2)*.3)
+   if not tile_clear(centre.x,centre.y,south):raise ValueError('junction blocked')
+   tile(centre.x,centre.y,south,'warning','plaza-junction')
+ # Cut both the base and ribs away from the junction, so the surfaces never overlap.
+ clip_mask=[tuple(junction+across*x+south*y) for x,y in [(-half,-half),(half,-half),(half,half),(-half,half)]]
+ for group,(point,direction),length in zip(links['approaches'],anchors,[distance0,distance1]):
+  start=len(tiles)
+  for i in range(math.ceil((length-2.1)/.3)):
+   centre=point+direction*(2.25+i*.3)
+   if not tile_clear(centre.x,centre.y,direction):raise ValueError('connecting approach blocked: '+group)
+   tile(centre.x,centre.y,direction,'guide','plaza-link:'+group)
+  route_records.append({'id':'plaza-link:'+group,'from':group,'to':'plaza-junction','length_from_warning_centre_m':length,'rendered_tiles':len(tiles)-start})
+ clip_mask=None
+ start=len(tiles)
+ for i in range(round(links['south_length_m']/.3)):
+  centre=junction+south*(half+.15+i*.3)
+  if not tile_clear(centre.x,centre.y,south):raise ValueError('south continuation blocked')
+  tile(centre.x,centre.y,south,'guide','plaza-south-continuation')
+ route_records.append({'id':'plaza-south-continuation','from':'plaza-junction','to':'unverified continuation endpoint','length_m':links['south_length_m'],'rendered_tiles':len(tiles)-start,'end_xy':list(junction+south*(half+links['south_length_m']))})
+ junction_record={'centre_xy':list(junction),'direction_xy':list(south),'tiles':count*count,'polygon_xy':clip_mask if clip_mask else [list(junction+across*x+south*y) for x,y in [(-half,-half),(half,-half),(half,half),(-half,half)]]}
+else:junction_record=None
+
 me=bpy.data.meshes.new('street_tactile');me.from_pydata(verts,[],faces);me.update()
 ob=bpy.data.objects.new('street_tactile',me);bpy.context.collection.objects.link(ob)
 mat=bpy.data.materials.new('street_tactile_yellow');mat.use_nodes=True;bsdf=mat.node_tree.nodes['Principled BSDF'];bsdf.inputs['Base Color'].default_value=(*D['yellow_linear_rgb'],1);bsdf.inputs['Roughness'].default_value=.9;me.materials.append(mat)
 bpy.ops.export_scene.gltf(filepath=output,export_format='GLB',export_yup=True,export_normals=True,export_materials='EXPORT')
-Path(stats).write_text(json.dumps({'config':D,'groups':records,'tiles':tiles,'contact_check':{'count':len(samples),'missing':0,'min_offset_m':min(p['offset'] for p in samples),'max_offset_m':max(p['offset'] for p in samples)},'contact_samples':samples[::max(1,len(samples)//120)],'triangles':sum(len(f)-2 for f in faces),'vertices':len(verts)},indent=1)+'\n')
+Path(stats).write_text(json.dumps({'config':D,'groups':records,'routes':route_records,'junction':junction_record,'tiles':tiles,'contact_check':{'count':len(samples),'missing':0,'min_offset_m':min(p['offset'] for p in samples),'max_offset_m':max(p['offset'] for p in samples)},'contact_samples':samples[::max(1,len(samples)//120)],'triangles':sum(len(f)-2 for f in faces),'vertices':len(verts)},indent=1)+'\n')
 print('TACTILE',len(tiles),'tiles',len(records),'approaches',sum(len(f)-2 for f in faces),'triangles')

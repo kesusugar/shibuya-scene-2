@@ -5,6 +5,7 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  tactile_network: { q: 'time=day&pose=25,-33,2,21.2,-24.7,.2,65', w: 900, h: 675 },
   tactile_close: { q: 'time=day&pose=22,-18,1.9,22.9,-13.1,.2,65', w: 900, h: 675 },
   plaza: { q: 'time=day&pose=27,-32,2.3,18,-18,.4,65', w: 900, h: 675 },
   plaza_night: { q: 'time=night&pose=27,-32,2.3,18,-18,.4,65', w: 900, h: 675 },
