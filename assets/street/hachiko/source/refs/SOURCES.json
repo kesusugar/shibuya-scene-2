@@ -1,0 +1,41 @@
+{
+ "photos": [
+  {
+   "file": "hachiko.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:The_Hachiko_statue_at_Shibuya,_Tokyo,_Japan.jpg",
+   "author": "<a href=\"//commons.wikimedia.org/wiki/User:Joli_Rumi\" title=\"User:Joli Rumi\">Joli Rumi</a>",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "captured": "2025-11-01 13:12:23",
+   "sha256": "19818d853f75af4eac10ebc974e123b2e14b9d50f99318247e7501c1c5536ca4",
+   "use": "shape reference, no photograph texture; July election banner omitted; November is auxiliary to October target"
+  },
+  {
+   "file": "july094.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_094.jpg",
+   "author": "<a href=\"//commons.wikimedia.org/wiki/User:RuinDig\" title=\"User:RuinDig\">RuinDig/Yuki Uchida</a>",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "captured": "13 July 2025 15:11:58",
+   "sha256": "bcf5b33895fc22aeff13f0396a1a09f55af2ee11d486b4eb40e266fabc329533",
+   "use": "shape reference, no photograph texture; July election banner omitted; November is auxiliary to October target"
+  },
+  {
+   "file": "july095.jpg",
+   "url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_095.jpg",
+   "author": "<a href=\"//commons.wikimedia.org/wiki/User:RuinDig\" title=\"User:RuinDig\">RuinDig/Yuki Uchida</a>",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "captured": "13 July 2025 15:12:49",
+   "sha256": "9694141740dc56810cb4e6a5dbf5a98c3b2d4a139a468d71b175584709d13186",
+   "use": "shape reference, no photograph texture; July election banner omitted; November is auxiliary to October target"
+  }
+ ],
+ "generated_textures": {
+  "bronze.png": "self-generated noise; not a photographic texture",
+  "granite.png": "self-generated noise; not a photographic texture",
+  "plaque.png": "self-typeset 忠犬ハチ公, Noto Serif CJK Bold (SIL OFL 1.1); not extracted from photo"
+ },
+ "font_source": "https://github.com/notofonts/noto-cjk",
+ "position": "OSM node/597685675 version48, 2025-06-08; ODbL; extracted from history before 2025-11-01"
+}

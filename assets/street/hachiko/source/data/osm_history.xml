@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (1320 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <node id="597685675" visible="true" version="1" changeset="3420548" timestamp="2009-12-21T14:25:36Z" user="Nahainec" uid="96268" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="2" changeset="7419448" timestamp="2011-02-28T12:36:42Z" user="wheelmap_visitor" uid="290680" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="wheelchair" v="yes"/>
+ </node>
+ <node id="597685675" visible="true" version="3" changeset="10885433" timestamp="2012-03-05T22:40:43Z" user="Fabimaru" uid="324552" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="wheelchair" v="yes"/>
+ </node>
+ <node id="597685675" visible="true" version="4" changeset="13040801" timestamp="2012-09-09T06:44:18Z" user="tothod" uid="351532" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="wheelchair" v="yes"/>
+ </node>
+ <node id="597685675" visible="true" version="5" changeset="24946244" timestamp="2014-08-23T01:18:59Z" user="irwinp" uid="608162" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="en:Hachik%C5%8D"/>
+ </node>
+ <node id="597685675" visible="true" version="6" changeset="24946319" timestamp="2014-08-23T01:28:36Z" user="irwinp" uid="608162" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="en:Hachik%C5%8D#Bronze statues"/>
+ </node>
+ <node id="597685675" visible="true" version="7" changeset="31518401" timestamp="2015-05-27T23:23:47Z" user="MadAkella" uid="2912196" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="en:Hachik%C5%8D#Bronze statues"/>
+ </node>
+ <node id="597685675" visible="true" version="8" changeset="31803111" timestamp="2015-06-08T01:53:08Z" user="futurumspes" uid="651065" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="9" changeset="44755441" timestamp="2016-12-29T11:55:38Z" user="R_co" uid="5042744" lat="35.6590821" lon="139.7006682">
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公的雕像"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="10" changeset="47568608" timestamp="2017-04-08T14:04:25Z" user="AduMi1" uid="5301148" lat="35.6590821" lon="139.7006682">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="Shibuya-ku, tokyo"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="Chome"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公的雕像"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="11" changeset="51873396" timestamp="2017-09-09T09:16:00Z" user="muramototomoya" uid="610947" lat="35.6590821" lon="139.7006682">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="Shibuya-ku, tokyo"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="Chome"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公的雕像"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="12" changeset="52337373" timestamp="2017-09-24T19:31:12Z" user="nyuriks" uid="339581" lat="35.6590821" lon="139.7006682">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="Shibuya-ku, tokyo"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="Chome"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公的雕像"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q186486"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="13" changeset="56624082" timestamp="2018-02-23T23:08:12Z" user="Carlos_N" uid="3242739" lat="35.6590821" lon="139.7006682">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="Shibuya-ku, tokyo"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="Chome"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公的雕像"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q186486"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="14" changeset="58843117" timestamp="2018-05-10T09:03:52Z" user="Queenfrodi" uid="8207170" lat="35.6590821" lon="139.7006682">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="Shibuya-ku, tokyo"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="Chome"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="historic" v="memorial"/>
+  <tag k="name" v="ハチ公"/>
+  <tag k="name:en" v="Hachikō (dog statue)"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公的雕像"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q186486"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="15" changeset="60774651" timestamp="2018-07-16T19:46:43Z" user="Bigmorr" uid="6802110" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="historic" v="memorial"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="ハチ公像"/>
+  <tag k="name:en" v="Hachikō memorial statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q186486"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="16" changeset="62237829" timestamp="2018-09-03T07:29:16Z" user="Bigmorr" uid="6802110" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="ハチ公像"/>
+  <tag k="name:en" v="Hachikō memorial statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q186486"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="17" changeset="66466275" timestamp="2019-01-20T00:23:41Z" user="Diego Sanguinetti" uid="309382" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="ハチ公像"/>
+  <tag k="name:en" v="Hachikō memorial statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q186486"/>
+  <tag k="wikipedia" v="ja:忠犬ハチ公"/>
+ </node>
+ <node id="597685675" visible="true" version="18" changeset="68358505" timestamp="2019-03-21T01:37:33Z" user="pizzaiolo" uid="1772368" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="ハチ公像"/>
+  <tag k="name:en" v="Hachikō memorial statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+ </node>
+ <node id="597685675" visible="true" version="19" changeset="68358623" timestamp="2019-03-21T01:48:04Z" user="pizzaiolo" uid="1772368" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachikō memorial statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+ </node>
+ <node id="597685675" visible="true" version="20" changeset="97702848" timestamp="2021-01-18T13:38:55Z" user="NomiInItaliano" uid="12172134" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachikō memorial statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="21" changeset="98841117" timestamp="2021-02-07T08:20:30Z" user="Retired Account" uid="741163" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="22" changeset="114668275" timestamp="2021-12-07T16:45:29Z" user="Oos1812" uid="7163247" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="23" changeset="138527188" timestamp="2023-07-14T23:30:41Z" user="woodрeck_reрair" uid="19648304" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="24" changeset="138530361" timestamp="2023-07-15T04:55:41Z" user="快乐的老鼠宝宝" uid="9403945" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="25" changeset="138963616" timestamp="2023-07-25T00:58:37Z" user="SdfN5h5063" uid="19889284" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="26" changeset="138966672" timestamp="2023-07-25T04:02:21Z" user="SomeoneElse_Revert" uid="1778799" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="27" changeset="138998707" timestamp="2023-07-25T16:44:07Z" user="CrnatNo1NO8Harrowingnes" uid="19922490" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="28" changeset="138999962" timestamp="2023-07-25T17:13:01Z" user="jeslop" uid="275212" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="29" changeset="139001651" timestamp="2023-07-25T17:53:37Z" user="Du1N139BerRe1naricoid" uid="19922525" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="30" changeset="139002549" timestamp="2023-07-25T18:24:41Z" user="SomeoneElse_Revert" uid="1778799" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="31" changeset="139009382" timestamp="2023-07-25T21:34:16Z" user="Tuwr_PretObulation1538" uid="19922526" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="32" changeset="139012828" timestamp="2023-07-26T01:13:46Z" user="hdevine825" uid="2456367" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="33" changeset="140148231" timestamp="2023-08-20T19:15:18Z" user="BlWsterwe418moTlage" uid="20047278" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="34" changeset="140148778" timestamp="2023-08-20T19:29:36Z" user="rskedgell" uid="3951648" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="35" changeset="140149093" timestamp="2023-08-20T19:37:23Z" user="basilEed1524" uid="20047284" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="36" changeset="140150172" timestamp="2023-08-20T20:10:25Z" user="Taya_S" uid="15944521" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="37" changeset="140156808" timestamp="2023-08-21T00:39:36Z" user="Hoarer66_FRcitR" uid="20047745" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="38" changeset="140161768" timestamp="2023-08-21T05:32:54Z" user="NorthCrab" uid="15215305" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="39" changeset="140197849" timestamp="2023-08-21T19:29:49Z" user="PydDmasChandric031" uid="20048565" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="40" changeset="140207483" timestamp="2023-08-22T03:37:39Z" user="NorthCrab" uid="15215305" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="41" changeset="141192260" timestamp="2023-09-13T06:38:35Z" user="tg4567" uid="12500589" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="42" changeset="143359224" timestamp="2023-10-30T11:10:00Z" user="tartiflex" uid="507417" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ja-Hira" v="ちゅうけん はちこうぞう"/>
+  <tag k="name:ja-Latn" v="Chūkenhachikō-zō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="subject" v="ハチ公"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="subject:wikipedia" v="ja:忠犬ハチ公"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="43" changeset="143359285" timestamp="2023-10-30T11:11:33Z" user="tartiflex" uid="507417" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artist_name" v="Teru Andō;Takeshi Andō"/>
+  <tag k="artist:wikidata" v="Q11451366;Q11451284"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ja-Hira" v="ちゅうけん はちこうぞう"/>
+  <tag k="name:ja-Latn" v="Chūkenhachikō-zō"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="start_date" v="21 avril 1934"/>
+  <tag k="subject" v="ハチ公"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="subject:wikipedia" v="ja:忠犬ハチ公"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="44" changeset="144035596" timestamp="2023-11-15T05:29:31Z" user="hangukhistory" uid="17860844" lat="35.6590699" lon="139.7006793">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artist_name" v="Teru Andō;Takeshi Andō"/>
+  <tag k="artist:wikidata" v="Q11451366;Q11451284"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ja-Hira" v="ちゅうけん はちこうぞう"/>
+  <tag k="name:ja-Latn" v="Chūkenhachikō-zō"/>
+  <tag k="name:ko" v="충견 하치코상"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="start_date" v="21 avril 1934"/>
+  <tag k="subject" v="ハチ公"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="subject:wikipedia" v="ja:忠犬ハチ公"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="45" changeset="153823606" timestamp="2024-07-11T18:05:54Z" user="rollercoasting" uid="10869342" lat="35.6590597" lon="139.7006279">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artist_name" v="Teru Andō;Takeshi Andō"/>
+  <tag k="artist:wikidata" v="Q11451366;Q11451284"/>
+  <tag k="artwork_subject" v="Hachiko"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ja-Hira" v="ちゅうけん はちこうぞう"/>
+  <tag k="name:ja-Latn" v="Chūkenhachikō-zō"/>
+  <tag k="name:ko" v="충견 하치코상"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="start_date" v="21 avril 1934"/>
+  <tag k="subject" v="ハチ公"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="subject:wikipedia" v="ja:忠犬ハチ公"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="46" changeset="156690986" timestamp="2024-09-16T14:22:21Z" user="rollercoasting" uid="10869342" lat="35.6590597" lon="139.7006279">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artist_name" v="Teru Andō;Takeshi Andō"/>
+  <tag k="artist:wikidata" v="Q11451366;Q11451284"/>
+  <tag k="artwork_subject" v="Hachikō"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ja-Hira" v="ちゅうけん はちこうぞう"/>
+  <tag k="name:ja-Latn" v="Chūkenhachikō-zō"/>
+  <tag k="name:ko" v="충견 하치코상"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="start_date" v="21 April 1934"/>
+  <tag k="subject" v="ハチ公"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="subject:wikipedia" v="ja:忠犬ハチ公"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="47" changeset="159300468" timestamp="2024-11-18T20:55:43Z" user="Anonymous897234" uid="16885157" lat="35.6590597" lon="139.7006279">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artist_name" v="Teru Andō;Takeshi Andō"/>
+  <tag k="artist:wikidata" v="Q11451366;Q11451284"/>
+  <tag k="artwork_subject" v="Hachikō"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="attraction" v="yes"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ja-Hira" v="ちゅうけん はちこうぞう"/>
+  <tag k="name:ja-Latn" v="Chūkenhachikō-zō"/>
+  <tag k="name:ko" v="충견 하치코상"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="start_date" v="21 April 1934"/>
+  <tag k="subject" v="ハチ公"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="subject:wikipedia" v="ja:忠犬ハチ公"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="48" changeset="167372210" timestamp="2025-06-08T22:19:54Z" user="km2bp" uid="3610826" lat="35.6590597" lon="139.7006279">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Estatua Hachiko"/>
+  <tag k="artist_name" v="Teru Andō;Takeshi Andō"/>
+  <tag k="artist:wikidata" v="Q11451366;Q11451284"/>
+  <tag k="artwork_subject" v="Hachikō"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="attraction" v="yes"/>
+  <tag k="image" v="https://photos.app.goo.gl/A7PbTNW1RbBbZUrTA"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ja-Hira" v="ちゅうけん はちこうぞう"/>
+  <tag k="name:ja-Latn" v="Chūkenhachikō-zō"/>
+  <tag k="name:ko" v="충견 하치코상"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="start_date" v="21 April 1934"/>
+  <tag k="subject" v="ハチ公"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="subject:wikipedia" v="ja:忠犬ハチ公"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+ <node id="597685675" visible="true" version="49" changeset="188261028" timestamp="2026-08-30T17:07:54Z" user="Monolo23" uid="17519482" lat="35.6590597" lon="139.7006279">
+  <tag k="addr:block_number" v="2"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:postcode" v="150-0043"/>
+  <tag k="addr:province" v="東京都"/>
+  <tag k="addr:quarter" v="道玄坂"/>
+  <tag k="alt_name:es" v="Hachiko;Estatua del fiel Hachiko"/>
+  <tag k="artist_name" v="Teru Andō;Takeshi Andō"/>
+  <tag k="artist:wikidata" v="Q11451366;Q11451284"/>
+  <tag k="artwork_subject" v="Hachikō"/>
+  <tag k="artwork_type" v="statue"/>
+  <tag k="attraction" v="yes"/>
+  <tag k="image" v="https://photos.app.goo.gl/A7PbTNW1RbBbZUrTA"/>
+  <tag k="inscription" v="忠犬ハチ公"/>
+  <tag k="material" v="bronze"/>
+  <tag k="memorial" v="bust"/>
+  <tag k="name" v="忠犬ハチ公像"/>
+  <tag k="name:en" v="Hachiko Memorial Statue"/>
+  <tag k="name:es" v="Estatua de Hachiko"/>
+  <tag k="name:fr" v="Hachikō"/>
+  <tag k="name:it" v="Statua di Hachikō"/>
+  <tag k="name:ja" v="忠犬ハチ公像"/>
+  <tag k="name:ja-Hira" v="ちゅうけん はちこうぞう"/>
+  <tag k="name:ja-Latn" v="Chūken Hachikō-zō"/>
+  <tag k="name:ko" v="충견 하치코상"/>
+  <tag k="name:ru" v="Хатико"/>
+  <tag k="name:zh" v="忠犬八公雕像"/>
+  <tag k="short_name" v="ハチ公像"/>
+  <tag k="start_date" v="21 April 1934"/>
+  <tag k="subject" v="ハチ公"/>
+  <tag k="subject:wikidata" v="Q186486"/>
+  <tag k="subject:wikipedia" v="ja:忠犬ハチ公"/>
+  <tag k="tourism" v="artwork"/>
+  <tag k="wheelchair" v="yes"/>
+  <tag k="wikidata" v="Q62124995"/>
+  <tag k="wikimedia_commons" v="Category:Statue of Hachiko (Shibuya)"/>
+  <tag k="wikipedia" v="en:Statue of Hachikō"/>
+ </node>
+</osm>

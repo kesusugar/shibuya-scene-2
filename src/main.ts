@@ -1,3 +1,4 @@
+import { loadHachiko, type HachikoResult } from './world/hachiko';
 import { loadDrainage, type DrainageResult } from './world/drainage';
 import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, Mesh, MeshStandardMaterial, PCFSoftShadowMap, PerspectiveCamera, Scene, SRGBColorSpace, WebGLRenderer } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -61,6 +62,7 @@ ground.rotation.x = -Math.PI / 2; ground.position.y = useGround ? -0.62 : 0; gro
 scene.add(ground);
 let coreGround: GroundResult | undefined;
 let coreStreet: StreetResult | undefined;
+let coreHachiko: HachikoResult | undefined;
 let coreDrainage: DrainageResult | undefined;
 let coreTactile: TactileResult | undefined;
 let coreContext: ContextResult | undefined;
@@ -89,6 +91,7 @@ function setTime(t: TimeOfDay) {
   const groundLook = projectedStreet?.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? { ...look, nightGround: 0 } : look;
   if (coreGround?.ok) applyLook(coreGround.root, t, groundLook);
   projectedStreet?.setTime(t, params.get('lamps') !== 'off');
+  if (coreHachiko?.ok) applyLook(coreHachiko.root, t, look, undefined, env);
   if (coreDrainage?.ok) applyLook(coreDrainage.root, t, look, undefined, env);
   if (coreTactile?.ok) applyLook(coreTactile.root, t, look, undefined, env);
   if (coreStreet?.ok) { applyLook(coreStreet.root, t, look, undefined, env); coreStreet.setTime(t); }
@@ -99,18 +102,20 @@ function setTime(t: TimeOfDay) {
 
 async function start() {
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
-  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
+  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
     useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined),
     params.get('street') !== 'off' ? loadStreet(io.loadGlb, params.get('streeturl') === 'missing' ? '/street/core/missing.glb' : undefined, params.get('street') !== 'entrances') : Promise.resolve(undefined),
     params.get('street') === 'projected' ? loadProjectedStreet(io, params.get('projectedurl') === 'missing' ? '/street/core/missing.glb' : undefined) : Promise.resolve(undefined),
     params.get('context') !== 'off' ? loadContext(io.loadGlb, params.get('contexturl') === 'missing' ? '/context/core/missing.glb' : undefined, params.get('context') !== 'nostation') : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('tactile') !== 'off' ? loadTactile(io.loadGlb, params.get('tactileurl') === 'missing' ? '/street/tactile/missing.glb' : undefined) : Promise.resolve(undefined),
-    useGround && params.get('street') !== 'off' && params.get('drainage') !== 'off' ? loadDrainage(io.loadGlb, params.get('drainageurl') === 'missing' ? '/street/drainage/missing.glb' : undefined) : Promise.resolve(undefined)]);
+    useGround && params.get('street') !== 'off' && params.get('drainage') !== 'off' ? loadDrainage(io.loadGlb, params.get('drainageurl') === 'missing' ? '/street/drainage/missing.glb' : undefined) : Promise.resolve(undefined),
+    useGround && params.get('street') !== 'off' && params.get('hachiko') !== 'off' ? loadHachiko(io.loadGlb, params.get('hachikourl') === 'missing' ? '/street/hachiko/missing.glb' : undefined) : Promise.resolve(undefined)]);
   results.forEach((r: BuildingResult) => scene.add(r.root));
   coreGround = groundRes;
   coreStreet = streetRes;
   coreTactile = tactileRes;
   coreDrainage = drainageRes;
+  coreHachiko = hachikoRes;
   coreContext = contextRes;
   if (coreContext?.ok) scene.add(coreContext.root);
   projectedStreet = projectedRes;
@@ -120,6 +125,7 @@ async function start() {
   if (loaded.some(b => b.id === 'center-gai-gate')) $('provisional').textContent += '／センター街ゲートは位置・寸法のB推定、広告内容は後工程';
   if (coreGround?.ok) $('provisional').textContent += '／北側歩道・ハチ公広場の舗装寸法・割付けは試作';
   if (coreStreet?.ok) scene.add(coreStreet.root);
+  if (coreHachiko?.ok) { scene.add(coreHachiko.root); $('provisional').textContent += '／ハチ公像と台座は写真から試作、寸法・向き・10月状態は未確認'; }
   if (coreDrainage?.ok) { scene.add(coreDrainage.root); $('provisional').textContent += '／円形路面蓋はM027から推定、用途・位置・寸法は未測量'; }
   if (coreTactile?.ok) { scene.add(coreTactile.root); $('provisional').textContent += '／点字ブロックは横断歩道端を基準にした部分試作、位置・接続先は推定'; }
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
@@ -138,6 +144,7 @@ async function start() {
   const problems = [
     ...(projectedStreet && !projectedStreet.ok ? [`写真からの仮配置を読み込めず: ${projectedStreet.error}（通常表示を継続）`] : []),
     ...(coreContext && !coreContext.ok ? [`周辺の建物（C段階）の読み込みに失敗: ${coreContext.error}（他は表示を継続）`] : []),
+    ...(coreHachiko && !coreHachiko.ok ? [`ハチ公像の読み込みに失敗: ${coreHachiko.error}（ほかの表示は継続）`] : []),
     ...(coreDrainage && !coreDrainage.ok ? [`路面蓋の読み込みに失敗: ${coreDrainage.error}（ほかの表示は継続）`] : []),
     ...(coreTactile && !coreTactile.ok ? [`点字ブロックの読み込みに失敗: ${coreTactile.error}（ほかの表示は継続）`] : []),
     ...(coreStreet && !coreStreet.ok ? [`街路設備の読み込みに失敗: ${coreStreet.error}（建物と地面は表示を継続）`] : []),
@@ -166,6 +173,7 @@ async function start() {
     for (const b of loaded) applyClassPass(b.root, { ...b.emissive.day });
     if (coreGround?.ok) applyClassPass(coreGround.root);
     if (coreStreet?.ok) applyClassPass(coreStreet.root);
+    if (coreHachiko?.ok) applyClassPass(coreHachiko.root);
     if (coreDrainage?.ok) applyClassPass(coreDrainage.root);
     if (coreTactile?.ok) applyClassPass(coreTactile.root);
     if (coreContext?.ok) applyClassPass(coreContext.root);
@@ -185,6 +193,7 @@ async function start() {
     failed: results.filter((r) => !r.ok).map((r) => r.id),
     ground: coreGround ? { ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
     context: coreContext ? { ok: coreContext.ok, error: coreContext.error, ...coreContext.stats } : 'off',
+    hachiko: coreHachiko ? { ok: coreHachiko.ok, error: coreHachiko.error, ...coreHachiko.stats } : 'off',
     drainage: coreDrainage ? { ok: coreDrainage.ok, error: coreDrainage.error, ...coreDrainage.stats } : 'off',
     tactile: coreTactile ? { ok: coreTactile.ok, error: coreTactile.error, ...coreTactile.stats } : 'off',
     street: coreStreet ? { ok: coreStreet.ok, error: coreStreet.error, mode: params.get('street') === 'entrances' ? 'entrances' : 'all', ...coreStreet.stats } : 'off',

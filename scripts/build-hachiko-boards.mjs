@@ -1,0 +1,11 @@
+import {chromium} from 'playwright';
+import {readFileSync,mkdirSync} from 'node:fs';
+const dir=process.cwd()+'/',out=dir+'evidence/c2-hachiko/boards/';mkdirSync(out,{recursive:true});
+const uri=p=>'data:image/'+(p.endsWith('.jpg')?'jpeg':'png')+';base64,'+readFileSync(dir+p).toString('base64');
+const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1510,height:900},deviceScaleFactor:1});
+const panel=(label,file,caption)=>`<div class=p><h3>${label}</h3><img src="${uri(file)}"><p>${caption}</p></div>`;
+await page.setContent(`<style>body{margin:0;background:#18212a;color:#fff;font:19px sans-serif}main{display:flex;padding:15px;gap:15px}.p{width:480px}h3{font-size:20px;font-weight:normal}img{width:480px;height:640px;object-fit:contain;object-position:bottom}p{font-size:17px;line-height:1.5;margin:10px 0}footer{font-size:16px;padding:0 15px;color:#cbd5df}</style><main>${panel('写真 / 2025-07-13','assets/street/hachiko/source/refs/july095.jpg','RuinDig/Yuki Uchida / CC BY 4.0。<br>7月の選挙告知板は10月の模型に採用しない。')}${panel('初版 / 正面','evidence/c2-hachiko/v1/statue_front.png','首と頭の境が弱く、台座が幅広い。')}${panel('修正後 / 初版と同じカメラ','evidence/c2-hachiko/after/statue_front.png','首の形→台座の寸法→材質を順に修正。<br>向き・実寸・10月状態は未確認。')}</main><footer>写真と模型のカメラは未校正。種類・輪郭の比較であり、実測精度や写真品質の完成を示すものではありません。</footer>`);
+await page.screenshot({path:out+'photo-v1-after.png'});
+await page.setViewportSize({width:1260,height:660});
+await page.setContent(`<style>body{margin:0;background:#18212a;color:white;font:20px sans-serif}main{display:flex;gap:20px;padding:20px}img{width:600px}footer{padding:0 20px;font-size:17px;line-height:1.6}</style><main><div>追加前 / 広場の近接視点<br><img src="${uri('evidence/c2-hachiko/before/statue_side.png')}"></div><div>追加後 / 同じ視点<br><img src="${uri('evidence/c2-hachiko/after/statue_side.png')}"></div></main><footer>ハチ公像・台座・銘板を通常表示へ追加。位置は2025年OSM履歴、形は7月・11月の写真を参考にした自作。</footer>`);await page.screenshot({path:out+'side-before-after.png'});
+await browser.close();

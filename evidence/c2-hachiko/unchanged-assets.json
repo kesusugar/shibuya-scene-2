@@ -1,0 +1,107 @@
+[
+ {
+  "file": "assets/buildings/center-gai-gate/web/center-gai-gate.glb",
+  "unchanged": true,
+  "sha256": "e55c6c519840b6e396997af1c135310352043f5f81b939ded9ad3a2ac4b48373"
+ },
+ {
+  "file": "assets/buildings/daiichi-kangin/web/daiichi-kangin.glb",
+  "unchanged": true,
+  "sha256": "2e70da14b822b5f58ccf35dab4941c74034f341d7720114f5b88fed56c5ea78d"
+ },
+ {
+  "file": "assets/buildings/eiraku/web/eiraku.glb",
+  "unchanged": true,
+  "sha256": "07b535d3334f0f9afeb8bc4753c55ed29e82d53a35b8f79b23f9666d0882f3e5"
+ },
+ {
+  "file": "assets/buildings/ekimae/web/ekimae.glb",
+  "unchanged": true,
+  "sha256": "5deef737ec1ecf4cafcfc4186318398944a3f4ee3265d8915158d79b5dea3d64"
+ },
+ {
+  "file": "assets/buildings/ekimae/web/signs-2025-11.glb",
+  "unchanged": true,
+  "sha256": "4b2297c627cc1382078e6a671cc0865b44fd7e1fa9a0033e058b4322b7b94d96"
+ },
+ {
+  "file": "assets/buildings/ginza-canopy/web/ginza-canopy.glb",
+  "unchanged": true,
+  "sha256": "b1ef2c9c1f814452ec2a7239db1063c6bf557f6c1e728fcbc3f4683584e7c0b5"
+ },
+ {
+  "file": "assets/buildings/magnet/web/magnet.glb",
+  "unchanged": true,
+  "sha256": "39ec44c3357b51f9fde3e1eef7328ecc1db6113a1314d2c53e92d499a040de2e"
+ },
+ {
+  "file": "assets/buildings/magnet/web/magnet_signs_2025.glb",
+  "unchanged": true,
+  "sha256": "fedc370e1242801366ddfb617e4a363a6097f092cf9b52f73eb55238e613d673"
+ },
+ {
+  "file": "assets/buildings/qfront/web/qfront.glb",
+  "unchanged": true,
+  "sha256": "2b4e4dccb8b68c97e3981ca1999d0c459bd3524aaa6b903901f3085b22a6ea04"
+ },
+ {
+  "file": "assets/buildings/station-concourse/web/station-concourse.glb",
+  "unchanged": true,
+  "sha256": "5c6d84d4fc720cea612b6cdf06d90aa5908efc7762feb83309f341e3c02b0733"
+ },
+ {
+  "file": "assets/buildings/station-north/web/station-north.glb",
+  "unchanged": true,
+  "sha256": "5eb413ef61b02eb1d715434503e72018c957a3d19d42271de11e6f4c8162b4d2"
+ },
+ {
+  "file": "assets/buildings/station-service/web/station-service.glb",
+  "unchanged": true,
+  "sha256": "957d8a34a4a340743ec721d4ae09bcb4dd02871e82cce4b8c2e3117c10c22936"
+ },
+ {
+  "file": "assets/buildings/station-west-viaduct/web/station-west-viaduct.glb",
+  "unchanged": true,
+  "sha256": "61942aff66ac40970f32bf11cd1ce13b8a5921686dffd39416553cb1765d12e2"
+ },
+ {
+  "file": "assets/buildings/west-block/web/signs-2025-01.glb",
+  "unchanged": true,
+  "sha256": "d7e0af7785794b835cc03d766b715998518d065e02b7dd1c736ff39122067f68"
+ },
+ {
+  "file": "assets/buildings/west-block/web/west-block.glb",
+  "unchanged": true,
+  "sha256": "d4bd7222906dcbdcd34853740a21ef4a17d0387d87fe3951e3f6d9f48037e3c2"
+ },
+ {
+  "file": "assets/context/core/web/context_core.glb",
+  "unchanged": true,
+  "sha256": "7b308be68d5a56a84116337c6588f347416ffcb1cc1e534b0e1208d0815ce5ef"
+ },
+ {
+  "file": "assets/ground/core/web/ground_core.glb",
+  "unchanged": true,
+  "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32"
+ },
+ {
+  "file": "assets/street/core/web/street_core.glb",
+  "unchanged": true,
+  "sha256": "de970a9a1951dc7fb57213b5849c19de92000d9477a2a7948074c8ded08fcf9a"
+ },
+ {
+  "file": "assets/street/core/web/street_projected.glb",
+  "unchanged": true,
+  "sha256": "5106f6b4c013e00e5cfa84f2dbb9b477c413aae6708454a9ece8b4ea6a575a7f"
+ },
+ {
+  "file": "assets/street/drainage/web/drainage.glb",
+  "unchanged": true,
+  "sha256": "432f74b26099fd3fc75bc58bc0e303c22c86f86d076298ebb005c7dee24506f2"
+ },
+ {
+  "file": "assets/street/tactile/web/tactile.glb",
+  "unchanged": true,
+  "sha256": "1dc0e2774d8936e7c949286037e9e92de4f2a14ef8583147712dca3cbe1ad4d2"
+ }
+]
