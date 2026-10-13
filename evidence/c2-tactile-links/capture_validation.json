@@ -1,0 +1,12 @@
+{
+  "new_captures": 5,
+  "reused_baseline_images": 3,
+  "after_views": [
+    "tactile_network",
+    "plaza_night",
+    "entry",
+    "overview"
+  ],
+  "errors": 0,
+  "same_camera_all_views": true
+}

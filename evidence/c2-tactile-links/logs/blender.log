@@ -1,0 +1,18 @@
+12:36:12 | INFO: Data are loaded, start creating Blender stuff
+12:36:12 | INFO: Blender create Mesh node ground_road
+12:36:12 | INFO: Blender create Mesh node ground_intersection
+12:36:12 | INFO: Blender create Mesh node ground_sidewalk
+12:36:12 | INFO: Blender create Mesh node ground_kerb
+12:36:12 | INFO: Blender create Mesh node ground_marking
+12:36:12 | INFO: Blender create Mesh node ground_fill
+12:36:12 | INFO: glTF import finished in 0.10s
+12:36:12 | INFO: Starting glTF 2.0 export
+12:36:12 | INFO: Extracting primitive: street_tactile
+12:36:12 | INFO: Primitives created: 1
+12:36:12 | INFO: Finished glTF 2.0 export in 0.022289514541625977 s
+INFO Draco mesh compression is available, use library at /workspace/toolchains/blender-4.2.3-linux-x64/4.2/python/lib/python3.11/site-packages/libextern_draco.so
+
+TACTILE 164 tiles 6 approaches 25386 triangles
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+
+Blender quit

@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "datum_tp_m": 15,
-  "status": "partial prototype: crossing approach pads and short guide strips; not a verified continuous guidance network",
+  "status": "partial plaza connections prototype: two crossing approaches joined at an estimated junction; southern continuation not connected to a verified facility",
   "crosswalk_ids": [
     "way/355248080",
     "way/355248081",
@@ -25,8 +25,17 @@
   "position_basis": "measured crossing endpoint and outward axis; search for complete pad on existing sidewalk, excluding OSM entrance footprints and tree roots and existing signal/lamp/sign pole bases",
   "notes": [
     "2025 February high photo confirms yellow guidance/warning type; individual pad locations and route connections are estimates",
-    "Only local crossing approaches, no claim of a continuous or accessible real-world route",
+    "Two plaza approaches extended and joined at an inferred junction; southern continuation has no verified facility connection; not a complete real-world guidance network",
     "Geometry draped to existing sidewalk; no road or provisional-fill placement"
   ],
-  "pole_clearance_m": 0.2
+  "pole_clearance_m": 0.2,
+  "plaza_links": {
+    "approaches": [
+      "way/355248081/start",
+      "way/754454449/start"
+    ],
+    "junction_tiles": 3,
+    "south_length_m": 9,
+    "basis": "intersection of the two existing outward approach axes; south axis is their normalized sum; photograph confirms long yellow guidance and junction type, not these coordinates"
+  }
 }
