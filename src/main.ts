@@ -69,8 +69,8 @@ const io: BuildingIO = {
 };
 
 // Buildings load side by side and independently: one broken asset shows a red placeholder, the rest still draw.
-const ids = (params.get('buildings') ?? 'qfront,magnet,eiraku,west-block,ekimae,station-concourse,station-north,station-service,station-west-viaduct,ginza-canopy,daiichi-kangin').split(',').map((s) => s.trim()).filter(Boolean).filter((id) => params.get('context') !== 'nostation' || !['station-concourse', 'station-north', 'station-service', 'station-west-viaduct', 'ginza-canopy'].includes(id));
-const NAMES: Record<string, string> = { qfront: 'QFRONT', magnet: 'MAGNET', eiraku: '栄楽ビル', 'west-block': 'センター街入口西側街区', ekimae: '渋谷駅前ビル', 'station-concourse': '駅・マークシティ連絡通路', 'station-north': 'JR北側ホーム上屋', 'station-service': '駅西側の小施設', 'station-west-viaduct': '駅西側の高架部（推定）', 'ginza-canopy': '銀座線ホーム上屋（試作）', 'daiichi-kangin': '第一勧銀共同ビル（B試作）' };
+const ids = (params.get('buildings') ?? 'qfront,magnet,eiraku,west-block,ekimae,station-concourse,station-north,station-service,station-west-viaduct,ginza-canopy,daiichi-kangin,center-gai-gate').split(',').map((s) => s.trim()).filter(Boolean).filter(id => id !== 'center-gai-gate' || params.get('street') !== 'off').filter((id) => params.get('context') !== 'nostation' || !['station-concourse', 'station-north', 'station-service', 'station-west-viaduct', 'ginza-canopy'].includes(id));
+const NAMES: Record<string, string> = { qfront: 'QFRONT', magnet: 'MAGNET', eiraku: '栄楽ビル', 'west-block': 'センター街入口西側街区', ekimae: '渋谷駅前ビル', 'station-concourse': '駅・マークシティ連絡通路', 'station-north': 'JR北側ホーム上屋', 'station-service': '駅西側の小施設', 'station-west-viaduct': '駅西側の高架部（推定）', 'ginza-canopy': '銀座線ホーム上屋（試作）', 'daiichi-kangin': '第一勧銀共同ビル（B試作）', 'center-gai-gate': 'センター街入口ゲート（形状試作）' };
 let loaded: LoadedBuilding[] = [];
 let building: LoadedBuilding | undefined;   // the building the camera presets frame (QFRONT when present)
 let mode: TimeOfDay = params.get('time') === 'night' ? 'night' : 'day';
@@ -107,6 +107,7 @@ async function start() {
   if (projectedStreet?.ok) scene.add(projectedStreet.root);
   $('provisional').textContent = projectedStreet?.ok ? '仮配置：支柱の位置・寸法・光量は確認待ち（橙色）' : coreStreet?.ok ? '街路設備は仮：出入口・樹木は2025年OSMの位置、信号・柵は規則による配置、形は標準寸法の汎用品' : '';
   if (loaded.some(b => b.id === 'daiichi-kangin')) $('provisional').textContent += '／第一勧銀共同ビルは窓割り・店舗枠のB推定、広告内容は後工程';
+  if (loaded.some(b => b.id === 'center-gai-gate')) $('provisional').textContent += '／センター街ゲートは位置・寸法のB推定、広告内容は後工程';
   if (coreStreet?.ok) scene.add(coreStreet.root);
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
   else if (coreGround) ground.position.y = 0;   // no Core ground: the disc goes back to y = 0
