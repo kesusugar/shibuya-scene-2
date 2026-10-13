@@ -46,12 +46,13 @@ if 'paving' in st or 'plaza_paving' in st:
     m['status'] = 'foundation geometry retained; paving dimensions, pale bands and boundaries estimated'
     m['sources']['paving'] = 'Self-authored procedural atlases; registered photos are references only, not texture inputs'
     m['sources']['paving_references'] = 'source/refs/PAVING_REFERENCE_REGISTER.csv'
-    m['generator'] += ['python3 source/tools/make_paving.py source/data/paving_layout.json',
+    m['generator'][2:2] = ['python3 source/tools/make_paving.py source/data/paving_layout.json',
                        'python3 source/tools/make_paving.py source/data/plaza_paving_layout.json']
     for key, filename in [('paving', 'paving_layout.json'), ('plaza_paving', 'plaza_paving_layout.json')]:
         if key in st:
             layout = json.load(open(os.path.join(SRC, 'data', filename)))
             m['parameters_not_measured'][key] = layout
+    m['generator'].append('python3 source/tools/write_manifest.py')
     m['parameter_notes']['paving'] = 'Geometry and heights retained; photos confirm types only. Dimensions, boundaries, colour and full October layout not independently verified.'
 json.dump(m, open(os.path.join(ROOT, 'manifest.json'), 'w'), ensure_ascii=False, indent=1)
 print('manifest', len(m['files']), 'files')
