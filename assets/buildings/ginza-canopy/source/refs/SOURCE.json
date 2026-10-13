@@ -1,0 +1,72 @@
+[
+  {
+    "id": "GC01",
+    "path": "assets/buildings/ginza-canopy/source/refs/platform_mar2025.jpg",
+    "date": "2025-03-11",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File%3AGinza_line_seen_from_Hikarie.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Ginza_line_seen_from_Hikarie.jpg/960px-Ginza_line_seen_from_Hikarie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "sha256": "8cafcd6143df161dc2aed1b0e4b580980e74f9095238015f0eaffd7ce8fe73c7",
+    "changes": "Commons resized thumbnail, no crop; reference only, no model texture",
+    "use": "auxiliary platform/door, upper-deck, or M-frame types; not October interior certification"
+  },
+  {
+    "id": "GC02",
+    "path": "assets/buildings/ginza-canopy/source/refs/upper_deck_mar2025.jpg",
+    "date": "2025-03-11",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "url": "https://commons.wikimedia.org/wiki/File%3APossibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg/960px-Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "sha256": "d8fe244979fc339c829d23775c94750910ec46ec790a33d17aae3bcd0143bf72",
+    "changes": "Commons resized thumbnail, no crop; reference only, no model texture",
+    "use": "auxiliary platform/door, upper-deck, or M-frame types; not October interior certification"
+  },
+  {
+    "id": "GC03",
+    "path": "assets/buildings/ginza-canopy/source/refs/m_frame_dec2024.jpg",
+    "date": "2024-12-01",
+    "author": "nakashi",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "url": "https://commons.wikimedia.org/wiki/File%3APlatform%2C_Shibuya_Station%2C_Ginza_Line%2C_Tokyo_Metro_-_Dec_1%2C_2024.jpg",
+    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Platform%2C_Shibuya_Station%2C_Ginza_Line%2C_Tokyo_Metro_-_Dec_1%2C_2024.jpg/960px-Platform%2C_Shibuya_Station%2C_Ginza_Line%2C_Tokyo_Metro_-_Dec_1%2C_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "sha256": "a75f1a595c6fb734d1524fe1b883f4db18c73f312b313425c1db250e1aaf3956",
+    "changes": "Commons resized thumbnail, no crop; reference only, no model texture",
+    "use": "auxiliary platform/door, upper-deck, or M-frame types; not October interior certification"
+  },
+  {
+    "id": "GC04",
+    "date": "2025-10-18",
+    "publication_date": "2025-10-22",
+    "publisher": "再開発調査兵団（view.tokyo）",
+    "url": "https://view.tokyo/?p=73418",
+    "license": "未確認、URL参照のみ",
+    "use": "October general station/elevated-work context, not independent M-hall interior verification",
+    "path": null,
+    "texture_use": false
+  },
+  {
+    "id": "GC00",
+    "date": "2025 dataset",
+    "publisher": "国土交通省 Project PLATEAU",
+    "url": "https://www.mlit.go.jp/plateau/",
+    "license_url": "https://www.mlit.go.jp/plateau/site-policy/",
+    "license": "Project PLATEAU利用規約",
+    "use": "original source shell/roof and nearby bridge elevation references",
+    "dataset": "渋谷区2025年度3D都市モデル"
+  },
+  {
+    "id": "GC05",
+    "date": "2019-10-28",
+    "publisher": "東京メトロ",
+    "url": "https://www.tokyometro.jp/news/2019/203391.html",
+    "pdf_url": "https://www.tokyometro.jp/news/images_h/metroNews20191028_105.pdf",
+    "license": "URL参照、図・PDFの転載なし",
+    "use": "new-station design: platform widened from about6m to about12m; M-shaped arch. Not October2025 interior survey.",
+    "platform_width_design_m": 12
+  }
+]

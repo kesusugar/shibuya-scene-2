@@ -1,0 +1,97 @@
+{
+  "id": "ginza-canopy",
+  "source_ids": [
+    "way/810356690"
+  ],
+  "level": "B",
+  "status": "partial upper hall prototype; original roof/top deck and lower base retained; floor/frames/doors estimated, October interior independently unconfirmed",
+  "reference_era": "2025-10 context; 2025-03/2024-12 auxiliary structural types",
+  "absolute_datum_tp_m": 15,
+  "source_levels": {
+    "upper_hall": "B prototype",
+    "lower_base": "C geometry retained, ground/exterior unconfirmed"
+  },
+  "stats": {
+    "triangles": 11314,
+    "primitives": 11,
+    "bytes": 715544
+  },
+  "files": {
+    "README.md": {
+      "bytes": 2643,
+      "sha256": "5a7f347dcb3d27fe0e307b8f5238f863b285bcce323bff5f115174e62e94f6f2"
+    },
+    "source/blender/build_ginza_canopy.py": {
+      "bytes": 8541,
+      "sha256": "9ccc0b24b08046bfd545eee7ad4ca167fc913495c87de3f6883485f891046d1a"
+    },
+    "source/data/floor_refs.json": {
+      "bytes": 409,
+      "sha256": "5e99ab01b12c881d54a83319eec9bb3caadbbe610f1dc9d710100ce25ec7b523"
+    },
+    "source/data/layout.json": {
+      "bytes": 2074,
+      "sha256": "204fdbc8d1a44e695a4ab60830bdc6b652f3839c94541022af69acf8da714211"
+    },
+    "source/data/parts.json": {
+      "bytes": 16179,
+      "sha256": "3259879a10bc7890fe769dde119c940c6d88ab23af483fc09895605d40f077cf"
+    },
+    "source/data/stats.json": {
+      "bytes": 1989,
+      "sha256": "7ca4fa175c2d74cd098130035cf3f8e6f02760c0bf0bd754e5b22ed8d3e97f21"
+    },
+    "source/refs/GC01_metadata.json": {
+      "bytes": 5196,
+      "sha256": "d329405f26fc64d7c67c3e3534571a39b498fabf66f715f61e403e1bdbc842b2"
+    },
+    "source/refs/GC02_metadata.json": {
+      "bytes": 6130,
+      "sha256": "8a475ab2f456ac9c27e4cdbd8c13ec61b57c44c28e6e1b3e4209275445ecc472"
+    },
+    "source/refs/GC03_metadata.json": {
+      "bytes": 4977,
+      "sha256": "ace4a5244c56c2e8f653ed0a2f3cdef193a9e8fffbb7a12083e79efcd04e42be"
+    },
+    "source/refs/README.md": {
+      "bytes": 838,
+      "sha256": "a2a1cb4d5a5961d34afbf6ca1eae04ca991df177f9e3ee46429237e70fd4999a"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 1722,
+      "sha256": "cda77528fd14c0d161fc5bd9298fd9ba483318a8300f4a9e488ba9c4149d9d79"
+    },
+    "source/refs/SOURCE.json": {
+      "bytes": 4128,
+      "sha256": "6c5c760eebfbfe53a18682f5ff6cefd288d84d2e9bef1ad33bb37745fd9712a5"
+    },
+    "source/refs/m_frame_dec2024.jpg": {
+      "bytes": 212462,
+      "sha256": "a75f1a595c6fb734d1524fe1b883f4db18c73f312b313425c1db250e1aaf3956"
+    },
+    "source/refs/platform_mar2025.jpg": {
+      "bytes": 186922,
+      "sha256": "8cafcd6143df161dc2aed1b0e4b580980e74f9095238015f0eaffd7ce8fe73c7"
+    },
+    "source/refs/upper_deck_mar2025.jpg": {
+      "bytes": 180369,
+      "sha256": "d8fe244979fc339c829d23775c94750910ec46ec790a33d17aae3bcd0143bf72"
+    },
+    "web/emissive_day.json": {
+      "bytes": 226,
+      "sha256": "152cb604171e72db732fe512e0c6b51ea0ca645d5319b42895957ff440db79ca"
+    },
+    "web/emissive_night.json": {
+      "bytes": 225,
+      "sha256": "df60828efb99809e02d3d62699ee76b0d8e932bb2d09a17afd1963b0f1404bf0"
+    },
+    "web/ginza-canopy.glb": {
+      "bytes": 715544,
+      "sha256": "b1ef2c9c1f814452ec2a7239db1063c6bf557f6c1e728fcbc3f4683584e7c0b5"
+    },
+    "web/viewer.json": {
+      "bytes": 104,
+      "sha256": "87aa32259e1c47012e629401e44916d1118f1d31090c0f94c3a06cf1932cf2ed"
+    }
+  }
+}

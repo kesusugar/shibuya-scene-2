@@ -1,0 +1,116 @@
+{
+  "pageid": 161833324,
+  "ns": 6,
+  "title": "File:Possibly a pedestrian bridge in construction, on top of Shibuya's Ginza line platform (34959).jpg",
+  "index": 8,
+  "imagerepository": "local",
+  "imageinfo": [
+    {
+      "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg/960px-Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "thumbwidth": 900,
+      "thumbheight": 678,
+      "responsiveUrls": {
+        "2": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg/1920px-Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      },
+      "thumbattribs": {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg/960px-Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "decoding": "async",
+        "loading": "lazy",
+        "width": 900,
+        "height": 678,
+        "srcset": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg/1920px-Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail 2x"
+      },
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Possibly_a_pedestrian_bridge_in_construction%2C_on_top_of_Shibuya%27s_Ginza_line_platform_%2834959%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Possibly_a_pedestrian_bridge_in_construction,_on_top_of_Shibuya%27s_Ginza_line_platform_(34959).jpg",
+      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=161833324",
+      "extmetadata": {
+        "DateTime": {
+          "value": "2025-03-12 11:24:20",
+          "source": "mediawiki-metadata",
+          "hidden": ""
+        },
+        "ObjectName": {
+          "value": "Possibly a pedestrian bridge in construction, on top of Shibuya's Ginza line platform (34959)",
+          "source": "mediawiki-metadata"
+        },
+        "CommonsMetadataExtension": {
+          "value": 1.2,
+          "source": "extension",
+          "hidden": ""
+        },
+        "Categories": {
+          "value": "CC-Zero|Self-published work|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation|Photographs taken on 2025-03-11|Skyway (Shibuya)",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "Assessments": {
+          "value": "",
+          "source": "commons-categories",
+          "hidden": ""
+        },
+        "GPSLatitude": {
+          "value": "35.659136",
+          "source": "commons-desc-page"
+        },
+        "GPSLongitude": {
+          "value": "139.702931",
+          "source": "commons-desc-page"
+        },
+        "GPSMapDatum": {
+          "value": "WGS-84",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "ImageDescription": {
+          "value": "Possibly a pedestrian bridge in construction, on top of Shibuya's Ginza line platform <span class=\"mw-valign-text-top noprint\" typeof=\"mw:File/Frameless\"><a href=\"//commons.wikimedia.org/wiki/File:Possibly_a_pedestrian_bridge_in_construction,_on_top_of_Shibuya%27s_Ginza_line_platform_(34959).jpg#ooui-php-4\" title=\"Edit this at Structured Data on Commons\"><img alt=\"Edit this at Structured Data on Commons\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"10\" height=\"10\" class=\"mw-file-element\" data-file-width=\"20\" data-file-height=\"20\"></a></span>",
+          "source": "commons-desc-page"
+        },
+        "DateTimeOriginal": {
+          "value": "11 March 2025 (according to <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Exif\" class=\"extiw\" title=\"en:Exif\">Exif</a></span> data)",
+          "source": "commons-desc-page"
+        },
+        "Credit": {
+          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+          "source": "commons-desc-page"
+        },
+        "Artist": {
+          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Syced\" title=\"User:Syced\">Syced</a>",
+          "source": "commons-desc-page"
+        },
+        "LicenseShortName": {
+          "value": "CC0",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "UsageTerms": {
+          "value": "Creative Commons Zero, Public Domain Dedication",
+          "source": "commons-desc-page"
+        },
+        "AttributionRequired": {
+          "value": "false",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "LicenseUrl": {
+          "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source": "commons-desc-page"
+        },
+        "Copyrighted": {
+          "value": "True",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "Restrictions": {
+          "value": "",
+          "source": "commons-desc-page",
+          "hidden": ""
+        },
+        "License": {
+          "value": "cc0",
+          "source": "commons-templates",
+          "hidden": ""
+        }
+      }
+    }
+  ]
+}

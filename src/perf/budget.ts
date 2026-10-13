@@ -18,7 +18,7 @@ export const LEVEL_BUDGET = {
 export type Level = keyof typeof LEVEL_BUDGET;
 
 /** Level of every shipped asset (an era layer counts with its building). */
-export const ASSET_LEVEL: Record<string, Level> = { qfront: 'A', magnet: 'A', eiraku: 'B', 'west-block': 'B', ekimae: 'B', 'station-concourse': 'B', 'station-north': 'B', 'station-service': 'B', 'station-west-viaduct': 'B', 'ground/core': 'ground', 'street/core': 'B', 'context/core': 'context' };
+export const ASSET_LEVEL: Record<string, Level> = { qfront: 'A', magnet: 'A', eiraku: 'B', 'west-block': 'B', ekimae: 'B', 'station-concourse': 'B', 'station-north': 'B', 'station-service': 'B', 'station-west-viaduct': 'B', 'ginza-canopy': 'B', 'ground/core': 'ground', 'street/core': 'B', 'context/core': 'context' };
 
 /**
  * Whole-scene budget for the Core v1 (everything loaded at once, before shadows double the draws). Chosen so that a

@@ -1,0 +1,26 @@
+
+> shibuya-scene-2@0.1.0 test
+> npm run sync-assets && vitest run
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: eiraku, ekimae, ginza-canopy, magnet, qfront, station-concourse, station-north, station-service, station-west-viaduct, west-block; ground: core; street: core; context: core
+
+ RUN  v5.0.3 /workspace/ss2-station-hachiko
+
+
+ Test Files  17 passed (17)
+      Tests  79 passed (79)
+   Start at  05:44:05
+   Duration  2.95s (tests 68%, import 24%, transform 7%, worker 1%)
+
+    Isolate  17 workers spawned · ~93ms startup each (spawn + environment, per file)
+             at least ~434ms faster with isolate: false — reuses workers across files instead of one per file
+
+npm notice
+npm notice New major version of npm available! 10.9.7 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
