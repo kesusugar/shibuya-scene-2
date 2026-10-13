@@ -1,0 +1,92 @@
+{
+  "id": "center-gai-gate",
+  "source_id": "photo/center-gai-entrance-gate",
+  "datum_tp_m": 15,
+  "feet": [
+    {
+      "xy": [
+        -31.2,
+        36.0
+      ],
+      "tp": 15.269996643066406,
+      "min_tp": 15.269996643066406,
+      "max_tp": 15.270004272460938,
+      "samples": [
+        {
+          "x": -31.2,
+          "y": 36.0,
+          "tp": 15.269996643066406
+        },
+        {
+          "x": -31.419999999999998,
+          "y": 36.0,
+          "tp": 15.270004272460938
+        },
+        {
+          "x": -30.98,
+          "y": 36.0,
+          "tp": 15.269996643066406
+        },
+        {
+          "x": -31.2,
+          "y": 35.78,
+          "tp": 15.269996643066406
+        },
+        {
+          "x": -31.2,
+          "y": 36.22,
+          "tp": 15.269996643066406
+        }
+      ]
+    },
+    {
+      "xy": [
+        -23.0,
+        35.0
+      ],
+      "tp": 15.325775146484375,
+      "min_tp": 15.322196960449219,
+      "max_tp": 15.329338073730469,
+      "samples": [
+        {
+          "x": -23.0,
+          "y": 35.0,
+          "tp": 15.325775146484375
+        },
+        {
+          "x": -23.22,
+          "y": 35.0,
+          "tp": 15.329338073730469
+        },
+        {
+          "x": -22.78,
+          "y": 35.0,
+          "tp": 15.322196960449219
+        },
+        {
+          "x": -23.0,
+          "y": 34.78,
+          "tp": 15.324180603027344
+        },
+        {
+          "x": -23.0,
+          "y": 35.22,
+          "tp": 15.327362060546875
+        }
+      ]
+    }
+  ],
+  "span_m": 8.260751365496882,
+  "top_local_m": 6.317885990142822,
+  "min_clear_height_m": 4.276017665863037,
+  "triangles": 2424,
+  "primitives": 4,
+  "materials": {
+    "gate_base": 120,
+    "gate_frame": 1996,
+    "gate_panel": 128,
+    "gate_lamp": 180
+  },
+  "position_basis": "B estimate in the alley bounded by west-block and QFRONT; photo gate location, not independently calibrated projection",
+  "status": "B photo-type prototype; foot placement and dimensions estimated, no ad content"
+}

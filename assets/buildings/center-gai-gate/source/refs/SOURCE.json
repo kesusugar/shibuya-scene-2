@@ -1,0 +1,8 @@
+{
+  "geometry": "procedural model, photo types and estimated alley placement",
+  "ground": "MLIT Project PLATEAU Shibuya2025 C2a ground GLB; T.P.15 datum",
+  "ground_source_url": "https://www.mlit.go.jp/plateau/",
+  "ground_terms": "https://www.mlit.go.jp/plateau/site-policy/",
+  "photos": "REFERENCE_REGISTER.csv, original shared references; no textures",
+  "target": "2025, October and dimensions unverified"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "center-gai-gate",
+  "source_id": "photo/center-gai-entrance-gate",
+  "level": "B",
+  "kind": "street structure",
+  "status": "photo-type prototype; placement/dimensions/October/ground-fill height unverified; ad artwork deferred",
+  "sources": [
+    "source/data/layout.json",
+    "source/data/ground_surface_audit.json",
+    "source/refs/REFERENCE_REGISTER.csv",
+    "source/refs/SOURCE.json"
+  ],
+  "stats": {
+    "triangles": 2424,
+    "primitives": 4,
+    "bytes": 162216
+  },
+  "files": {
+    "README.md": {
+      "bytes": 3062,
+      "sha256": "50af62b8d94ae2215714571c3828cb90c29a2e938d491941363534e599e37960"
+    },
+    "source/blender/build_gate.py": {
+      "bytes": 5698,
+      "sha256": "cf2eca8500c533fdab0c5914d8199ae90b1ba8f8dab1e52a122869d60425dfec"
+    },
+    "source/data/ground_surface_audit.json": {
+      "bytes": 1014,
+      "sha256": "c5ae2f83f6e7ae717988e63ed8c7f68c341fd1e7a61a42a1361596c3006d3b6e"
+    },
+    "source/data/layout.json": {
+      "bytes": 1069,
+      "sha256": "a62e81d1cba24333bec11cc7f81dc38ba5221cc11a9dcacf926539b694305e0d"
+    },
+    "source/data/stats.json": {
+      "bytes": 2012,
+      "sha256": "fb0538717bfb572141fbd498dcb98e9759491a17fe933fc50008cc11b492a142"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 942,
+      "sha256": "b5743d3c43f2fbc22760053ad7a9f356801224a7a4b394999d4dba5c0b906fee"
+    },
+    "source/refs/SOURCE.json": {
+      "bytes": 414,
+      "sha256": "ff493e308bf1696f7a11fb11894c304c1b4129ef56e933f78386d585b2bbd747"
+    },
+    "web/center-gai-gate.glb": {
+      "bytes": 162216,
+      "sha256": "e55c6c519840b6e396997af1c135310352043f5f81b939ded9ad3a2ac4b48373"
+    },
+    "web/emissive_day.json": {
+      "bytes": 116,
+      "sha256": "10951a71db2a5610e5de281f7e5aa7e2cbc0b35f03dd96bfe29987149af80862"
+    },
+    "web/emissive_night.json": {
+      "bytes": 119,
+      "sha256": "2bacea1390c3658d03efa07233a74c3431f0630ba1de66c570cb3983a74202ce"
+    },
+    "web/viewer.json": {
+      "bytes": 171,
+      "sha256": "e444a5460175d9e6903b395cff1d49134c92cafaf941f891663ffa7b23bf02d9"
+    }
+  }
+}
