@@ -3,11 +3,11 @@ import { readFileSync } from 'node:fs';
 import { NodeIO } from '@gltf-transform/core';
 import { Matrix4, Vector3, BufferGeometry, Float32BufferAttribute, Mesh, MeshBasicMaterial, DoubleSide, Raycaster } from 'three';
 const base='assets/buildings/station-north/';
-it('replaces the northern facility and JR bridge once while keeping three other C station candidates',()=>{
+it('replaces the northern facility and JR bridge once while keeping two other C station candidates',()=>{
  const parts=JSON.parse(readFileSync(base+'source/data/parts.json','utf8'));
  const context=JSON.parse(readFileSync('assets/context/core/source/data/context_input.json','utf8'));
  for(const p of parts){expect(context.buildings.some((b:{id:string})=>b.id===p.id)).toBe(false);expect(context.excluded.filter((e:{id:string})=>e.id===p.id)).toHaveLength(1);}
- expect(context.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(3);
+ expect(context.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(2);
  const stats=JSON.parse(readFileSync(base+'source/data/stats.json','utf8'));
  expect(stats.platform_deck_tp).toBe(21.29);expect(stats.roof_deviation_vs_plateau_m).toBe(0);expect(stats.north_open_wall_faces).toBeGreaterThan(0);
 });

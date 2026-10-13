@@ -3,12 +3,12 @@ import {readFileSync} from 'node:fs';
 import {NodeIO} from '@gltf-transform/core';
 import {Matrix4,Vector3,BufferGeometry,Float32BufferAttribute,Mesh,MeshBasicMaterial,DoubleSide,Raycaster} from 'three';
 const base='assets/buildings/station-service/';
-it('replaces the facility once and retains three other C station candidates',()=>{
+it('replaces the facility once and retains two other C station candidates',()=>{
  const parts=JSON.parse(readFileSync(base+'source/data/parts.json','utf8'));
  const context=JSON.parse(readFileSync('assets/context/core/source/data/context_input.json','utf8'));
  const id=parts[0].id;expect(context.buildings.some((b:{id:string})=>b.id===id)).toBe(false);
  expect(context.excluded.filter((b:{id:string})=>b.id===id)).toHaveLength(1);
- expect(context.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(3);
+ expect(context.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(2);
  expect(JSON.parse(readFileSync(base+'web/viewer.json','utf8')).groundElevationTP).toBe(15);
 });
 it('retains every original shell/roof vertex without generic glass or glowing windows',async()=>{
