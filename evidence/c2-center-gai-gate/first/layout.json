@@ -1,0 +1,41 @@
+{
+  "id": "center-gai-gate",
+  "source_id": "photo/center-gai-entrance-gate",
+  "datum_tp_m": 15,
+  "foot_points": [
+    [
+      -31.2,
+      36.0
+    ],
+    [
+      -23.0,
+      35.0
+    ]
+  ],
+  "post_radius_m": 0.13,
+  "base_radius_m": 0.27,
+  "base_height_m": 0.38,
+  "shoulder_height_m": 4.7,
+  "arch_rise_m": 1.2,
+  "arch_radius_m": 0.12,
+  "panel_width_fraction": 0.78,
+  "panel_height_m": 0.7,
+  "panel_depth_m": 0.12,
+  "panel_color": [
+    0.74,
+    0.6,
+    0.025
+  ],
+  "arch_steps": 48,
+  "day_emission": 0,
+  "night_emission": 0.55,
+  "position_basis": "B estimate in the alley bounded by west-block and QFRONT; photo gate location, not independently calibrated projection",
+  "dimension_basis": "2025-01 photo type and width/height proportions; estimated, not surveyed",
+  "advertising": "no ad image or tenant text; structural backing only",
+  "uncertainties": [
+    "foot positions and real dimensions",
+    "October 2025 appearance not independently verified",
+    "banner contents and typography",
+    "night flux and local light distribution"
+  ]
+}

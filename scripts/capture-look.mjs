@@ -51,7 +51,7 @@ for (const [name, v] of Object.entries(VIEWS).filter(([n]) => !only.length || on
     await page.waitForTimeout(2500);
     await page.screenshot({ path: file, timeout: 240000 });
     const state = await page.evaluate(() => ({ viewer: window.__viewer, status: document.querySelector('#status')?.textContent }));
-    log[`${name}_${pass}`] = { query: q, errors, state, expectedBuildings: (new URLSearchParams(q.split('?')[1]).get('buildings') ?? 'qfront,magnet,eiraku,west-block,ekimae,station-concourse,station-north,station-service,station-west-viaduct,ginza-canopy,daiichi-kangin').split(',').filter((id) => new URLSearchParams(q.split('?')[1]).get('context') !== 'nostation' || !['station-concourse', 'station-north', 'station-service', 'station-west-viaduct', 'ginza-canopy'].includes(id)),
+    log[`${name}_${pass}`] = { query: q, errors, state, expectedBuildings: (new URLSearchParams(q.split('?')[1]).get('buildings') ?? 'qfront,magnet,eiraku,west-block,ekimae,station-concourse,station-north,station-service,station-west-viaduct,ginza-canopy,daiichi-kangin,center-gai-gate').split(',').filter(id => id !== 'center-gai-gate' || new URLSearchParams(q.split('?')[1]).get('street') !== 'off').filter((id) => new URLSearchParams(q.split('?')[1]).get('context') !== 'nostation' || !['station-concourse', 'station-north', 'station-service', 'station-west-viaduct', 'ginza-canopy'].includes(id)),
       browser: browser.version(), executablePath: process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH || 'playwright bundled',
       perf: await page.evaluate(() => document.querySelector('#perf')?.textContent) };
     // Persist each completed frame even if a later frame fails.
