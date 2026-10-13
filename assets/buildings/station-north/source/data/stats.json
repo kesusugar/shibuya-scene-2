@@ -1,0 +1,57 @@
+{
+  "source_ids": [
+    "plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b",
+    "brid/brid_95680199-7365-41de-a5b7-9275321fe8bf"
+  ],
+  "north_open_wall_faces": 5,
+  "platform_deck_tp": 21.29,
+  "datum_tp_m": 15,
+  "roof_deviation_vs_plateau_m": 0,
+  "ground_samples": [
+    {
+      "x": 53.8,
+      "y": -20,
+      "tp": 14.582
+    }
+  ],
+  "objects": {
+    "stn_roof": {
+      "triangles": 25,
+      "vertices": 43
+    },
+    "stn_ceiling": {
+      "triangles": 19,
+      "vertices": 25
+    },
+    "stn_service_wall": {
+      "triangles": 32,
+      "vertices": 60
+    },
+    "stn_concrete": {
+      "triangles": 258,
+      "vertices": 768
+    },
+    "stn_deck": {
+      "triangles": 38,
+      "vertices": 114
+    },
+    "stn_column": {
+      "triangles": 252,
+      "vertices": 504
+    },
+    "stn_steel": {
+      "triangles": 276,
+      "vertices": 552
+    },
+    "stn_light": {
+      "triangles": 84,
+      "vertices": 168
+    },
+    "stn_tactile": {
+      "triangles": 12,
+      "vertices": 24
+    }
+  },
+  "triangles": 996,
+  "status": "North canopy B prototype; southern facility/whole original JR viaduct geometry preserved, not October facade certification. October GPS/photo/deck association is supporting evidence; post/beam/tactile positions estimated."
+}

@@ -1,0 +1,17 @@
+{
+  "north_y_min_m": -50,
+  "platform_deck_tp": 21.29,
+  "roof_thickness_m": 0.16,
+  "support_rows_y_m": [
+    -24,
+    -28,
+    -32,
+    -36,
+    -40,
+    -44,
+    -48
+  ],
+  "tactile_offset_m": 3.0,
+  "basis": "October11 photo confirms open canopy/columns/beams/fluorescent fixtures/tactile strip types. GPS close to only one of five station roofs and inside JR bridge floor supports association, not exact facade/camera verification. Original south building and entire JR viaduct retained. Support/tactile dimensions and locations estimated.",
+  "tactile_revision_basis": "First view showed unrotated rectangular tiles forming a zigzag. October photo shows a continuous yellow tactile band. Replaced tile assembly with a continuous band along the same estimated line; width, height, offset, roof and support positions unchanged."
+}

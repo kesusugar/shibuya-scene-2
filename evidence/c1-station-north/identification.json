@@ -1,0 +1,38 @@
+{
+  "photo_date": "2025-10-11 16:52:28",
+  "latitude": 35.659286,
+  "longitude": 139.701186,
+  "origin_lat_lon": [
+    35.6595,
+    139.7005
+  ],
+  "approximate_plan_xy_m": [
+    62.046664643388745,
+    -23.82247999996821
+  ],
+  "station_candidates": [
+    {
+      "source_id": "plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b",
+      "roof_distance_m": 1.542
+    },
+    {
+      "source_id": "plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324",
+      "roof_distance_m": 56.416
+    },
+    {
+      "source_id": "plateau/bldg_5369333e-5975-493a-b05d-b341800715c2",
+      "roof_distance_m": 40.108
+    },
+    {
+      "source_id": "plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
+      "roof_distance_m": 62.126
+    },
+    {
+      "source_id": "way/810356690",
+      "roof_distance_m": 60.681
+    }
+  ],
+  "floor_tp_from_original_bridge": 21.29,
+  "gps_altitude_ignored_m": 60.84,
+  "status": "GPS approximate horizontal support only; canopy/bridge type checked in photo. Camera aim, fixture placement and southern facade remain estimated/unconfirmed."
+}
