@@ -1,0 +1,65 @@
+{
+ "id": "tactile",
+ "status": "partial local crossing approach prototype; position, setbacks, colour and route connections unverified",
+ "datum_tp_m": 15,
+ "coordinates": "Blender X east, Y north, Z = T.P.-15; web X east, Y up, Z south",
+ "licences": {
+  "terrain": "MLIT Project PLATEAU, CC BY 4.0 compatible",
+  "positions": "OSM ODbL and GSI aerial measurements, see ground/core manifest",
+  "photos": "reference only, SOURCES.json; no photographic texture"
+ },
+ "build_stats": {
+  "count": 36720,
+  "missing": 0,
+  "min_offset_m": 0.002,
+  "max_offset_m": 0.007
+ },
+ "inputs": {
+  "assets/ground/core/web/ground_core.glb": {
+   "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32",
+   "bytes": 3700232
+  },
+  "assets/ground/core/source/data/crosswalks_measured.json": {
+   "sha256": "dbaa6719fcca798114ce4aa0d958ddaeae9bf93c3c8b96c7c76316ce05f084e0",
+   "bytes": 17538
+  },
+  "assets/street/core/source/data/street_input.json": {
+   "sha256": "a962769658a1e3a63ad3792a2a0959cbe4d09a2fb0fc5527fe2caea68fd95bb5",
+   "bytes": 8625
+  },
+  "assets/street/core/source/data/street_layout.json": {
+   "sha256": "432af341562ab3072f75593e98c43de847b59a35de03b9881075b7f3eecf0870",
+   "bytes": 7087
+  }
+ },
+ "files": {
+  "web/tactile.glb": {
+   "sha256": "6483e7379c66aac47c44a497469c6b1a0978ad16bccbf1697fa411ba10eb0eee",
+   "bytes": 978160
+  },
+  "source/data/layout.json": {
+   "sha256": "82d71afb44379ffbbcac1fa53bae6f4776a2281a514cbc2c0561cabd0bce98b4",
+   "bytes": 1109
+  },
+  "source/data/stats.json": {
+   "sha256": "37e3d0c5fecbe9613232c139218a7b3238a4bcad02ff479057acf618ec93ec40",
+   "bytes": 29444
+  },
+  "source/blender/build_tactile.py": {
+   "sha256": "cd298083d161f2a2d0b7df0ec434cf275e1045ffe11e3d9cfd38e30a2eb0c463",
+   "bytes": 5671
+  },
+  "source/tools/write_manifest.py": {
+   "sha256": "97f97f95a8c706ce03456dbd7c2485b7b50cc73e599061636e568173c495f407",
+   "bytes": 1422
+  },
+  "source/refs/SOURCES.json": {
+   "sha256": "041f70b7811292aaa3d01a9c6cbe8bab1ac3d5aaec4b1eca783fc36ad4065b57",
+   "bytes": 1015
+  },
+  "README.md": {
+   "sha256": "fe0cbdcd7a5c40f02c3abc16a8fff8f454bd5d95c5c93d574b9a93e5f5f7633b",
+   "bytes": 1756
+  }
+ }
+}

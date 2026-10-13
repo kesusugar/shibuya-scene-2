@@ -1,0 +1,105 @@
+{
+  "tactileurl=missing": {
+    "state": {
+      "tactile": {
+        "ok": false,
+        "error": "SyntaxError: Unexpected token '<', \"<!doctype \"... is not valid JSON",
+        "meshes": 0,
+        "triangles": 0
+      },
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "failed": [],
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "buildings": [
+        "qfront",
+        "magnet",
+        "eiraku",
+        "west-block",
+        "ekimae",
+        "station-concourse",
+        "station-north",
+        "station-service",
+        "station-west-viaduct",
+        "ginza-canopy",
+        "daiichi-kangin",
+        "center-gai-gate"
+      ],
+      "status": "点字ブロックの読み込みに失敗: SyntaxError: Unexpected token '<', \"<!doctype \"... is not valid JSON（ほかの表示は継続）"
+    },
+    "requests": [
+      "http://localhost:5211/street/tactile/missing.glb"
+    ]
+  },
+  "tactile=off": {
+    "state": {
+      "tactile": "off",
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "failed": [],
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "buildings": [
+        "qfront",
+        "magnet",
+        "eiraku",
+        "west-block",
+        "ekimae",
+        "station-concourse",
+        "station-north",
+        "station-service",
+        "station-west-viaduct",
+        "ginza-canopy",
+        "daiichi-kangin",
+        "center-gai-gate"
+      ],
+      "status": ""
+    },
+    "requests": []
+  },
+  "street=off": {
+    "state": {
+      "tactile": "off",
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "failed": [],
+      "street": "off",
+      "buildings": [
+        "qfront",
+        "magnet",
+        "eiraku",
+        "west-block",
+        "ekimae",
+        "station-concourse",
+        "station-north",
+        "station-service",
+        "station-west-viaduct",
+        "ginza-canopy",
+        "daiichi-kangin"
+      ],
+      "status": ""
+    },
+    "requests": []
+  }
+}

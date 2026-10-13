@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "datum_tp_m": 15,
+  "status": "partial prototype: crossing approach pads and short guide strips; not a verified continuous guidance network",
+  "crosswalk_ids": [
+    "way/355248080",
+    "way/355248081",
+    "way/754454449"
+  ],
+  "tile_m": 0.3,
+  "warning_rows": 2,
+  "warning_columns": 2,
+  "guide_tiles": 6,
+  "minimum_setback_m": 0.6,
+  "maximum_search_m": 6,
+  "base_offset_m": 0.002,
+  "relief_m": 0.005,
+  "dot_top_radius_m": 0.006,
+  "dot_base_radius_m": 0.011,
+  "yellow_linear_rgb": [
+    0.72,
+    0.5,
+    0.025
+  ],
+  "position_basis": "measured crossing endpoint and outward axis; search for complete pad on existing sidewalk, excluding OSM entrance footprints and tree roots and existing signal/lamp/sign pole bases",
+  "notes": [
+    "2025 February high photo confirms yellow guidance/warning type; individual pad locations and route connections are estimates",
+    "Only local crossing approaches, no claim of a continuous or accessible real-world route",
+    "Geometry draped to existing sidewalk; no road or provisional-fill placement"
+  ],
+  "pole_clearance_m": 0.2
+}
