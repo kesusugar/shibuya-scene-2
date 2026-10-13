@@ -1,0 +1,50 @@
+{
+ "iterations": [
+  {
+   "id": "v1",
+   "neck": {
+    "centre_z": 0.79,
+    "radii": [
+     0.16,
+     0.18,
+     0.27
+    ]
+   },
+   "plinth_size_m": [
+    1.1,
+    1.0
+   ],
+   "metallic": 0.7
+  },
+  {
+   "id": "v2-neck",
+   "changed": "neck geometry only",
+   "neck": {
+    "centre_z": 0.75,
+    "radii": [
+     0.13,
+     0.145,
+     0.24
+    ]
+   }
+  },
+  {
+   "id": "v3-plinth",
+   "changed": "plinth/base plan sizes and consequent sidewalk contact; sculpture shape/colour retained",
+   "plinth_size_m": [
+    0.78,
+    0.85
+   ],
+   "base_size_m": [
+    1.2,
+    1.1
+   ],
+   "capture_status": "front, side, plaza captured before material refinement; remaining views interrupted, not final QA"
+  },
+  {
+   "id": "after",
+   "changed": "bronze metallic 0.7 to 0.35 only, approximating weathered surface",
+   "metallic": 0.35
+  }
+ ]
+}

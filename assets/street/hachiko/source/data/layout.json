@@ -1,0 +1,22 @@
+{
+ "xy": [
+  11.568175521259887,
+  -48.68573220011713
+ ],
+ "yaw_deg": 35,
+ "plinth_height_m": 1.1,
+ "dog_scale": 0.85,
+ "status": "OSM 2025 position; orientation/dimensions/October condition unverified; July and November photos used for shape",
+ "base_size_m": [
+  1.2,
+  1.1
+ ],
+ "plinth_size_m": [
+  0.78,
+  0.85
+ ],
+ "bronze_base_size_m": [
+  0.7,
+  0.72
+ ]
+}

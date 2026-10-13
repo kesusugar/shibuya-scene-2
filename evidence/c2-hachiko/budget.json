@@ -1,0 +1,12 @@
+{
+  "asset": {
+    "triangles": 51478,
+    "primitives": 15,
+    "bytes": 1585908
+  },
+  "total": {
+    "triangles": 390235,
+    "primitives": 276,
+    "bytes": 23244392
+  }
+}
