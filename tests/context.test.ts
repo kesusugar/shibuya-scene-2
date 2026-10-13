@@ -10,7 +10,7 @@ describe('C-level context asset', async () => {
 
   it('never duplicates a building that has its own asset or the street entrances', () => {
     const ids = new Set(stats.buildings.map((b: { id: string }) => b.id));
-    for (const own of ['way/136691386', 'way/116806281', 'way/136690966', 'way/60739635', 'plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b', 'brid/brid_95680199-7365-41de-a5b7-9275321fe8bf', 'way/355250634', 'brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d']) expect(ids.has(own)).toBe(false);   // QFRONT, MAGNET (+ Eiraku)
+    for (const own of ['way/136691386', 'way/116806281', 'way/136690966', 'way/60739635', 'plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b', 'brid/brid_95680199-7365-41de-a5b7-9275321fe8bf', 'plateau/bldg_5369333e-5975-493a-b05d-b341800715c2','way/355250634', 'brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d']) expect(ids.has(own)).toBe(false);   // QFRONT, MAGNET (+ Eiraku)
     expect(stats.excluded.map((e: { id: string }) => e.id).sort()).toEqual(expect.arrayContaining(['way/116806281', 'way/136691386']));
     const plateau = stats.buildings.map((b: { plateau_id: string }) => b.plateau_id);
     expect(new Set(plateau).size).toBe(plateau.length);

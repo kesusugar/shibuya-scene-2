@@ -69,8 +69,8 @@ const io: BuildingIO = {
 };
 
 // Buildings load side by side and independently: one broken asset shows a red placeholder, the rest still draw.
-const ids = (params.get('buildings') ?? 'qfront,magnet,eiraku,west-block,ekimae,station-concourse,station-north').split(',').map((s) => s.trim()).filter(Boolean).filter((id) => params.get('context') !== 'nostation' || !['station-concourse', 'station-north'].includes(id));
-const NAMES: Record<string, string> = { qfront: 'QFRONT', magnet: 'MAGNET', eiraku: '栄楽ビル', 'west-block': 'センター街入口西側街区', ekimae: '渋谷駅前ビル', 'station-concourse': '駅・マークシティ連絡通路', 'station-north': 'JR北側ホーム上屋' };
+const ids = (params.get('buildings') ?? 'qfront,magnet,eiraku,west-block,ekimae,station-concourse,station-north,station-service').split(',').map((s) => s.trim()).filter(Boolean).filter((id) => params.get('context') !== 'nostation' || !['station-concourse', 'station-north', 'station-service'].includes(id));
+const NAMES: Record<string, string> = { qfront: 'QFRONT', magnet: 'MAGNET', eiraku: '栄楽ビル', 'west-block': 'センター街入口西側街区', ekimae: '渋谷駅前ビル', 'station-concourse': '駅・マークシティ連絡通路', 'station-north': 'JR北側ホーム上屋', 'station-service': '駅西側の小施設' };
 let loaded: LoadedBuilding[] = [];
 let building: LoadedBuilding | undefined;   // the building the camera presets frame (QFRONT when present)
 let mode: TimeOfDay = params.get('time') === 'night' ? 'night' : 'day';
@@ -115,6 +115,7 @@ async function start() {
   if (loaded.some((b) => b.id === 'ekimae')) $('provisional').textContent += '\n渋谷駅前ビルの外観は試作、看板は2025年11月の写真を参照';
   if (loaded.some((b) => b.id === 'station-concourse')) $('provisional').textContent += '\n駅側の連絡通路は試作、開口・窓・内部・工事用の囲いの寸法と配置、光量は推定';
   if (loaded.some((b) => b.id === 'station-north')) $('provisional').textContent += '\nJR北側ホーム上屋は試作、柱・梁・床の帯の配置は推定、南側は外観未確認';
+  if (loaded.some((b) => b.id === 'station-service')) $('provisional').textContent += '\n駅西側の小施設は試作、設備棟との対応・外装・換気口は推定、正面の同定は未完了';
   // QA only: ?datum=off reproduces the scene before the common datum (every model at its own 0 m = Y 0)
   if (params.get('datum') === 'off') for (const b of loaded) { b.hints.groundElevationTP = undefined; b.root.position.y = 0; }
   const problems = [
