@@ -1,0 +1,65 @@
+{
+ "id": "drainage",
+ "status": "one photo-derived solid road cover; utility purpose, position and dimensions unverified",
+ "datum_tp_m": 15,
+ "coordinates": "Blender X east, Y north, Z = T.P.-15; web X east, Y up, Z south",
+ "licences": {
+  "terrain": "MLIT Project PLATEAU, CC BY 4.0 compatible",
+  "positions": "OSM ODbL and GSI aerial measurements, see ground/core manifest",
+  "photos": "reference only, SOURCES.json; no photographic texture"
+ },
+ "build_stats": {
+  "count": 2020,
+  "missing": 0,
+  "min_offset_m": 0.016,
+  "max_offset_m": 0.017
+ },
+ "inputs": {
+  "assets/ground/core/web/ground_core.glb": {
+   "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32",
+   "bytes": 3700232
+  },
+  "assets/buildings/magnet/web/viewer.json": {
+   "sha256": "880916e62da178a0f37a0cc9b5ce6612717e9a2c1cb831267b10923f8f1a4d83",
+   "bytes": 924
+  },
+  "assets/buildings/magnet/source/refs/raw/M027.jpg": {
+   "sha256": "7f53e1dbd04a45ab6927d9a753d9d6bf1342b577c0d355a65aba162a294554bb",
+   "bytes": 771574
+  }
+ },
+ "files": {
+  "web/drainage.glb": {
+   "sha256": "432f74b26099fd3fc75bc58bc0e303c22c86f86d076298ebb005c7dee24506f2",
+   "bytes": 57012
+  },
+  "source/data/layout.json": {
+   "sha256": "7f96d9986da7a49d34e362be05d068e129a6891eda0e9f6c4504b6f096033eaf",
+   "bytes": 2039
+  },
+  "source/data/stats.json": {
+   "sha256": "1808edd00cddbf23828c23bc1410dd2bb573b8bd4ffca375e232708af28e43f9",
+   "bytes": 12362
+  },
+  "source/blender/build_cover.py": {
+   "sha256": "29d31258a3267430ac622fdcec8193fd156e3b23ba82b637ea414eb671d3c109",
+   "bytes": 3238
+  },
+  "source/tools/write_manifest.py": {
+   "sha256": "19213793b660426289234ac6dbd3438076fac7e244a5f1eecd224e903a7d4044",
+   "bytes": 1373
+  },
+  "source/tools/project_cover.mjs": {
+   "sha256": "f4b28c94308e84ed06a283e19bf6db8e218cf3f4ca281ed43e6a198f24908a58",
+   "bytes": 3080
+  },
+  "source/refs/SOURCES.json": {
+   "sha256": "c1afede1660145be690875d390695f8ce51487660b7d6111dfaef14bff421ecb",
+   "bytes": 475
+  },
+  "README.md": {
+   "sha256": "9da57430d7b0f65bc44a64b5be2da59ed9ba60c695f86ae8a09ff7d47f6557ff",
+   "bytes": 1342
+  }
+ }
+}

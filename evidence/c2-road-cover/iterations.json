@@ -1,0 +1,64 @@
+{
+ "iterations": [
+  {
+   "id": "v1",
+   "centre_pixel": [
+    789,
+    1255
+   ],
+   "rim_pixels": [
+    [
+     733,
+     1250
+    ],
+    [
+     846,
+     1264
+    ]
+   ],
+   "diameter_m": 0.4907812891862565,
+   "repair_contour": "circular",
+   "issue": "metal edge partly confused with repair surround"
+  },
+  {
+   "id": "v2",
+   "centre_pixel": [
+    789,
+    1255
+   ],
+   "rim_pixels": [
+    [
+     733,
+     1250
+    ],
+    [
+     846,
+     1264
+    ]
+   ],
+   "diameter_m": 0.4907812891862565,
+   "repair_contour": "irregular",
+   "changed": "repair outline only"
+  },
+  {
+   "id": "after",
+   "centre_pixel": [
+    775,
+    1254
+   ],
+   "rim_pixels": [
+    [
+     731,
+     1248
+    ],
+    [
+     819,
+     1260
+    ]
+   ],
+   "diameter_m": 0.3833764084003508,
+   "repair_contour": "irregular",
+   "changed": "photo rim measurements corrected, projected geometry regenerated"
+  }
+ ]
+}

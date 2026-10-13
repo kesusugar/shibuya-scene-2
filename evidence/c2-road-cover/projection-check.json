@@ -1,0 +1,24 @@
+{
+  "reference": "M027 / original 1280x1707 pixels",
+  "input_centre": [
+    775,
+    1254
+  ],
+  "rendered_centre": [
+    775.1801819695654,
+    1250.216191784345
+  ],
+  "centre_delta_px": [
+    0.18018196956541033,
+    -3.7838082156549717
+  ],
+  "input_edge_horizontal_span_px": 88,
+  "rendered_metal_bounds_px": [
+    727.6587093369254,
+    1238.4680062522914,
+    823.2014284987382,
+    1262.6838738907368
+  ],
+  "rendered_metal_horizontal_span_px": 95.54271916181278,
+  "caveat": "same input photo and existing building camera, not independent accuracy; frame included in model extent, partial occlusion and manually read edges; offset moves apparent centre"
+}
