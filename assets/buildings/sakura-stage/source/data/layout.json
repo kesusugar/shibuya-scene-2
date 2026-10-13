@@ -1,0 +1,37 @@
+{
+ "id": "sakura-stage",
+ "name": "Sakura Stage SHIBUYA Tower",
+ "style": "sakura",
+ "floors": 39,
+ "bay_pitch_m": 1.8,
+ "wall_rgb": [
+  0.37,
+  0.42,
+  0.45
+ ],
+ "roof_rgb": [
+  0.37,
+  0.42,
+  0.45
+ ],
+ "frame_rgb": [
+  0.65,
+  0.69,
+  0.7
+ ],
+ "spandrel_rgb": [
+  0.37,
+  0.42,
+  0.45
+ ],
+ "glass_rgb": [
+  0.055,
+  0.12,
+  0.2
+ ],
+ "glass_height_ratio": 0.9,
+ "band_m": 0.095,
+ "podium_floors": 2,
+ "basis": "PLATEAU 2025 shell preserved; divisions/colors/roof housings are photo-type estimates. Reference year is recorded separately; no historical advertising imagery copied.",
+ "probe_solid_normals": true
+}

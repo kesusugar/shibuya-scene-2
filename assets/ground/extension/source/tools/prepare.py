@@ -24,9 +24,9 @@ def height(x,y):
   idx=int(surface_tree.nearest(Point(x,y)));q=nearest_points(Point(x,y),polys[idx])[1];t=np.array(old[idx]);a=t[0,:2];u=t[1,:2]-a;v=t[2,:2]-a;weights2=np.linalg.solve(np.column_stack((u,v)),np.array([q.x,q.y])-a);near=float(t[0,2]+weights2[0]*(t[1,2]-t[0,2])+weights2[1]*(t[2,2]-t[0,2]));f=min(1,dist/20);h=near*(1-f)+h*f
  return round(h,4)
 tri=[]
-for x in range(-250,260,5):
- for y in range(-300,220,5):
-  cell=box(x,y,x+5,y+5).difference(mask)
+for x in range(-330,380,6):
+ for y in range(-450,350,6):
+  cell=box(x,y,min(x+6,380),min(y+6,350)).difference(mask)
   if cell.is_empty:continue
   for p in (cell.geoms if hasattr(cell,'geoms') else [cell]):
    if p.geom_type!='Polygon' or p.area<1e-5:continue
@@ -39,5 +39,5 @@ for x in range(-250,260,5):
      for final in triangulate(clipped):
       if not clipped.covers(final.representative_point()) or final.area<1e-5:continue
       tri.append([[round(a,4),round(b,4),height(a,b)] for a,b in list(final.exterior.coords)[:3]])
-stats={'source':'GSI DEM5A','source_acquired':'2026-10-13','datum_tp_m':15,'bounds_m':[-250,-300,260,220],'grid_m':5,'edge_blend_m':20,'source_ground_unchanged':True,'triangles':len(tri),'missing_dem':missing,'height_tp_range':[min(p[2] for t in tri for p in t),max(p[2] for t in tri for p in t)],'limitation':'DEM terrain substrate; finished street surfaces/roads are not surveyed. Blend at original ground seam is estimated, not source DEM.'}
+stats={'source':'GSI DEM5A','source_acquired':'2026-10-13','datum_tp_m':15,'bounds_m':[-330,-450,380,350],'grid_m':6,'edge_blend_m':20,'source_ground_unchanged':True,'triangles':len(tri),'missing_dem':missing,'height_tp_range':[min(p[2] for t in tri for p in t),max(p[2] for t in tri for p in t)],'limitation':'DEM terrain substrate; finished street surfaces/roads are not surveyed. Blend at original ground seam is estimated, not source DEM.'}
 (P/'extension.json').write_text(json.dumps({'triangles':tri,'stats':stats},separators=(',',':'))+'\n');(P/'stats.json').write_text(json.dumps(stats,indent=1)+'\n');print(stats)

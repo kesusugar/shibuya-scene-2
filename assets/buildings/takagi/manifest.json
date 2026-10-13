@@ -1,0 +1,60 @@
+{
+  "id": "takagi",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 4424,
+    "primitives": 8,
+    "bytes": 267380
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1106,
+      "sha256": "454b66937b39cbdd1d8ff24455e8d6bf2029e3f190e1fb48c7d805336fee2531"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 685,
+      "sha256": "b24e4d15c763c1944abb97a80137b8e91831b0c387213adaf52bdda79d40a47b"
+    },
+    "source/data/plateau.json": {
+      "bytes": 38693,
+      "sha256": "91168e63a0f5dfdee3c203fe2d83431b8f059ef5a1f61d017c9e09f99f38e42f"
+    },
+    "source/data/stats.json": {
+      "bytes": 10945,
+      "sha256": "634305dd3016b97d552a3f5ba18ffe51944982bbdcb23314588f29bf1bd9d275"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 612,
+      "sha256": "7ddc70bef6b065f8877998361d5a4fbb6da2b59399c97ad1c0aa19aadf5259af"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 7293487,
+      "sha256": "0b5cec75608be664a9f2e4ab08b906a245d3f00ce0e4d556fcc8b513579bc656"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3724,
+      "sha256": "5f1b25b4f9ea14e36fef6200696d64a96ef9438facb3bb151874fca578b1f4a9"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/takagi.glb": {
+      "bytes": 267380,
+      "sha256": "688994205c09486b8799adbe045f98d699f4e7ed8f2bc5c2372bdfbc94478dbd"
+    },
+    "web/viewer.json": {
+      "bytes": 194,
+      "sha256": "876b7fe2546bde5e78ab0ef5125a76e192db655d2e6247ed0c59a0379bc41692"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "sakura-stage",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 36336,
+    "primitives": 8,
+    "bytes": 2234272
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1132,
+      "sha256": "c7513bf7e3658a88532378d164be46ea7ea02cfd7777906275975ce96585257f"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 614,
+      "sha256": "2b18a58d6a8aaad86db2fb589df668c8c80ec66aafaf11a39ab16f8a558e5f36"
+    },
+    "source/data/plateau.json": {
+      "bytes": 86645,
+      "sha256": "6a58d4643e44a4442b5cbc11cb0808f26c4c19b5eb7d5e05c5ef57b42ab9602e"
+    },
+    "source/data/stats.json": {
+      "bytes": 31070,
+      "sha256": "364c9f43752290ef873ca2285a2d82fd65418054127c933e3874fd5106b7a989"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 586,
+      "sha256": "133d9c8a51abf2d83191e291cc972db8d497e5c8ef3d0b8b53df1e45597fbdb3"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 4381566,
+      "sha256": "c97fe752ce5e8a643d7b19dcee376c313863368544e5ae7d3e7834d33f220b9f"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3622,
+      "sha256": "fbfb231595e740d564063a565d7b82098584f08f6070ec759b9119b245fc4a43"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/sakura-stage.glb": {
+      "bytes": 2234272,
+      "sha256": "0781a138445fa96b2f34a5491c0c238dbbd9af7f2d0fe7ae8536c59f3e7de98e"
+    },
+    "web/viewer.json": {
+      "bytes": 191,
+      "sha256": "27b692bb10eeb087b3685b64018a19581696278b567e9465f66787fc81deca3f"
+    }
+  }
+}

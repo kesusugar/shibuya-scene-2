@@ -1,0 +1,37 @@
+{
+ "id": "stream",
+ "name": "渋谷ストリーム",
+ "style": "stream",
+ "floors": 35,
+ "bay_pitch_m": 1.7,
+ "wall_rgb": [
+  0.69,
+  0.69,
+  0.66
+ ],
+ "roof_rgb": [
+  0.69,
+  0.69,
+  0.66
+ ],
+ "frame_rgb": [
+  0.54,
+  0.56,
+  0.55
+ ],
+ "spandrel_rgb": [
+  0.8,
+  0.8,
+  0.76
+ ],
+ "glass_rgb": [
+  0.13,
+  0.23,
+  0.27
+ ],
+ "glass_height_ratio": 0.86,
+ "band_m": 0.075,
+ "podium_floors": 2,
+ "basis": "PLATEAU 2025 shell preserved; divisions/colors/roof housings are photo-type estimates. Reference year is recorded separately; no historical advertising imagery copied.",
+ "probe_solid_normals": true
+}

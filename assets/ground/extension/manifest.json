@@ -3,14 +3,14 @@
   "level": "ground",
   "status": "prototype; see README for evidence and estimates",
   "stats": {
-    "triangles": 25623,
+    "triangles": 37125,
     "primitives": 1,
-    "bytes": 2059276
+    "bytes": 3025280
   },
   "files": {
     "README.md": {
-      "bytes": 1670,
-      "sha256": "c861c5c9f59ff898de24985b5e10f80cd22e7b8f996893d95493e33045a408e4"
+      "bytes": 1964,
+      "sha256": "b4fcccff7dc16e7456214b47cbc4a82c459a7e8d29e2f23526473b55fcc9c2d7"
     },
     "source/blender/build.py": {
       "bytes": 896,
@@ -33,8 +33,8 @@
       "sha256": "7eaea455a09c9f6fb910c5632dbfa1974bb0bbe253bc689702a6ee3a0555b7ba"
     },
     "source/data/extension.json": {
-      "bytes": 1822367,
-      "sha256": "3329a843fc60a2037a75ea52aba1b8d83d6b0bd13c29aa4d273522d1e43da3bd"
+      "bytes": 2622805,
+      "sha256": "ad1a3f26ccd71207422c3272438170231f368acd5dbbaa056479b9352a287eb5"
     },
     "source/data/source.json": {
       "bytes": 247,
@@ -42,19 +42,19 @@
     },
     "source/data/stats.json": {
       "bytes": 433,
-      "sha256": "0dff6addea374402cb8d3e4e7913b2b9d4bb6664f0f37a03fe721d3657c3fe16"
+      "sha256": "6bf34a8cf3dbaa86067ee7268eda4b586715fc57725f3d07a722ab7fe1cd24c2"
     },
     "source/tools/extract-ground.mjs": {
       "bytes": 721,
       "sha256": "fed42121ae2886018224d78fb17556d5bad8dcf90a7c4448dd3f5d83d381ad86"
     },
     "source/tools/prepare.py": {
-      "bytes": 3154,
-      "sha256": "b1b7a7d7fae4643c91c5e784aa0064c2b8666c3237983d5137d160a2e98e711d"
+      "bytes": 3172,
+      "sha256": "13c60d9c0cdf9552070e9ad1e7f0483cbf740ce0c48fe2c67b134b40a76bb21b"
     },
     "web/extension.glb": {
-      "bytes": 2059276,
-      "sha256": "e901cb1d98febebede36dff4665bd2d884282932e14e5df403426a5b1a07bb21"
+      "bytes": 3025280,
+      "sha256": "6e906f9ee6708544461276a2778cbcaf88d7d6c038c593c5cdddc3350575fc3e"
     }
   }
 }

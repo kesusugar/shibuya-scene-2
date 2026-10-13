@@ -1,0 +1,60 @@
+{
+  "id": "shibuya109",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 5690,
+    "primitives": 11,
+    "bytes": 374592
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1108,
+      "sha256": "52bbeab62484d5372bb9d0c674eb3e968a4cccaaa2d409517b16cdbb1933e1d3"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 639,
+      "sha256": "131a73b9988ccf2acdb46ea97a5239a17c54aa9e49458faf7753b0594e1103fd"
+    },
+    "source/data/plateau.json": {
+      "bytes": 52910,
+      "sha256": "8275ced42472f0e11130bac0dc952bce73279921e3363c2b2f84fa93345f2706"
+    },
+    "source/data/stats.json": {
+      "bytes": 22321,
+      "sha256": "2ec5aee4c72cfff0524cbd27ae6277e74114e3263792a1d00b354882a5fc4081"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 525,
+      "sha256": "578896b29c307a8d25e8d6d37fe8e077c08bdeff65c98cd8f31263c283c8a726"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 720002,
+      "sha256": "ca0e134d6185af69938e1122a34fa28e0fb4a015ba1c1375da5774e98f3aaaf2"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 2365,
+      "sha256": "77fd5aab32ab81e8949921cfdf594220d15a17b034f1322c0ba645fb70e1d418"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/shibuya109.glb": {
+      "bytes": 374592,
+      "sha256": "9fdf34b09205681c43722220086d63e60c591e6d690fa8c562b74822b30b68bb"
+    },
+    "web/viewer.json": {
+      "bytes": 196,
+      "sha256": "1fc41f73eb8b5f9cfb7e1dcf3f08eaf2bd260a0dc3413bb6fbf0bc362090511b"
+    }
+  }
+}

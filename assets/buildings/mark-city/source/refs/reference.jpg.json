@@ -1,0 +1,102 @@
+{
+ "pageid": 181197123,
+ "ns": 6,
+ "title": "File:Shibuya Mark City West 2025-06-12.jpg",
+ "index": 6,
+ "imagerepository": "local",
+ "imageinfo": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Shibuya_Mark_City_West_2025-06-12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "descriptionurl": "https://commons.wikimedia.org/wiki/File:Shibuya_Mark_City_West_2025-06-12.jpg",
+   "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=181197123",
+   "extmetadata": {
+    "DateTime": {
+     "value": "2026-01-04 05:59:57",
+     "source": "mediawiki-metadata",
+     "hidden": ""
+    },
+    "ObjectName": {
+     "value": "Shibuya Mark City West 2025-06-12",
+     "source": "mediawiki-metadata"
+    },
+    "CommonsMetadataExtension": {
+     "value": 1.2,
+     "source": "extension",
+     "hidden": ""
+    },
+    "Categories": {
+     "value": "CC-Zero|D\u014dgenzaka|Self-published work|Files with coordinates missing SDC location of creation|Shibuya Mark City West|Shibuya photographs taken on 2025-06-12",
+     "source": "commons-categories",
+     "hidden": ""
+    },
+    "Assessments": {
+     "value": "",
+     "source": "commons-categories",
+     "hidden": ""
+    },
+    "GPSLatitude": {
+     "value": "35.658389",
+     "source": "commons-desc-page"
+    },
+    "GPSLongitude": {
+     "value": "139.696578",
+     "source": "commons-desc-page"
+    },
+    "GPSMapDatum": {
+     "value": "WGS-84",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "ImageDescription": {
+     "value": "\u9053\u7384\u5742\u304b\u3089\u898b\u305f\u6e0b\u8c37\u30de\u30fc\u30af\u30b7\u30c6\u30a3\u30fb\u30a6\u30a8\u30b9\u30c8\u306e\u5317\u9762\n<ul><li>\u9053\u7384\u5742\u4e8c\u4e01\u76ee\u5357\u5730\u533a\u7b2c\u4e00\u7a2e\u5e02\u8857\u5730\u518d\u958b\u767a\u4e8b\u696d\u306b\u3088\u308a\u3001\u4ee5\u524d\u304b\u3089\u3042\u3063\u305f\u4e2d\u5c0f\u306e\u5546\u696d\u65bd\u8a2d\u304c\u53d6\u308a\u58ca\u3055\u308c\u3066\u3044\u308b\u3002</li></ul>",
+     "source": "commons-desc-page"
+    },
+    "DateTimeOriginal": {
+     "value": "2025-06-12 13:12:37",
+     "source": "commons-desc-page"
+    },
+    "Credit": {
+     "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+     "source": "commons-desc-page"
+    },
+    "Artist": {
+     "value": "<a href=\"//commons.wikimedia.org/wiki/User:Asanagi\" title=\"User:Asanagi\">Asanagi</a>",
+     "source": "commons-desc-page"
+    },
+    "LicenseShortName": {
+     "value": "CC0",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "UsageTerms": {
+     "value": "Creative Commons Zero, Public Domain Dedication",
+     "source": "commons-desc-page"
+    },
+    "AttributionRequired": {
+     "value": "false",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "LicenseUrl": {
+     "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "source": "commons-desc-page"
+    },
+    "Copyrighted": {
+     "value": "True",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "Restrictions": {
+     "value": "",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "License": {
+     "value": "cc0",
+     "source": "commons-templates",
+     "hidden": ""
+    }
+   }
+  }
+ ]
+}

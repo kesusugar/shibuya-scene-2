@@ -1,0 +1,58 @@
+[
+ {
+  "code": "53393596",
+  "maxLod": 2,
+  "url": "https://assets.cms.plateau.reearth.io/assets/fd/21cbf7-ee57-42bb-a445-ea9c46f8c1b3/13113_shibuya-ku_pref_2025_citygml_1_op/udx/bldg/53393596_bldg_6697_op.gml",
+  "fileSize": 101932486,
+  "features": 1946,
+  "lod0": 1946,
+  "lod1": 1946,
+  "lod2": 739,
+  "lod3": 0,
+  "lod4": 0,
+  "actual_bytes": 102300141,
+  "sha256": "88dab9e2cc41dc75b37a83ca3ad78dfa0eb1f081b918af56fc79851c80150724"
+ },
+ {
+  "code": "53393595",
+  "maxLod": 2,
+  "url": "https://assets.cms.plateau.reearth.io/assets/fd/21cbf7-ee57-42bb-a445-ea9c46f8c1b3/13113_shibuya-ku_pref_2025_citygml_1_op/udx/bldg/53393595_bldg_6697_op.gml",
+  "fileSize": 86574230,
+  "features": 2236,
+  "lod0": 2236,
+  "lod1": 2236,
+  "lod2": 758,
+  "lod3": 0,
+  "lod4": 0,
+  "actual_bytes": 86969338,
+  "sha256": "f510af46f1548f584f257a85796e3e0afcf504490974163757f12b06b3aa4ec9"
+ },
+ {
+  "code": "53393586",
+  "maxLod": 2,
+  "url": "https://assets.cms.plateau.reearth.io/assets/fd/21cbf7-ee57-42bb-a445-ea9c46f8c1b3/13113_shibuya-ku_pref_2025_citygml_1_op/udx/bldg/53393586_bldg_6697_op.gml",
+  "fileSize": 81081357,
+  "features": 2616,
+  "lod0": 2616,
+  "lod1": 2616,
+  "lod2": 646,
+  "lod3": 0,
+  "lod4": 0,
+  "actual_bytes": 81500744,
+  "sha256": "7e3bc860ec6404e4c3b131fbcabf42e74f91b695809aa79c868306d9e7b1fc14"
+ },
+ {
+  "code": "53393585",
+  "maxLod": 2,
+  "url": "https://assets.cms.plateau.reearth.io/assets/fd/21cbf7-ee57-42bb-a445-ea9c46f8c1b3/13113_shibuya-ku_pref_2025_citygml_1_op/udx/bldg/53393585_bldg_6697_op.gml",
+  "fileSize": 92854868,
+  "features": 2737,
+  "lod0": 2737,
+  "lod1": 2737,
+  "lod2": 921,
+  "lod3": 0,
+  "lod4": 0,
+  "actual_bytes": 93256591,
+  "sha256": "b15701cede323e2e8aafb6c0ce651f2211b1c050a6f7354c73a50bf54572f7cb"
+ }
+]

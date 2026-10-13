@@ -1,0 +1,60 @@
+{
+  "id": "hikarie",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 37134,
+    "primitives": 8,
+    "bytes": 2344640
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1104,
+      "sha256": "7e58a87f149d1bb1ba9eb8add8e7e64167a05d785887457c7756bcea71b69466"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 603,
+      "sha256": "9c2c9941d174f2db858ccde44e267250fd24d6f57c1ee6f11043c24553cc1205"
+    },
+    "source/data/plateau.json": {
+      "bytes": 33987,
+      "sha256": "49cafd4ce7ded54115267ff5cab3847e0b72d0bfd181fea8f582b8a7c6eb35c2"
+    },
+    "source/data/stats.json": {
+      "bytes": 10288,
+      "sha256": "f09587e54e0ee906de44ae256d55f893b7894d8a55ce4572c2476396ac878fec"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 594,
+      "sha256": "e2c62cf96aab2ad69cbf9fcc1adbca89ea068c56d4509ef255d98eff0c41317a"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 4327076,
+      "sha256": "4d77f8b571cce722c55b3403e41825d8f08bac500410582bc268c9c0ba9ebead"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3642,
+      "sha256": "dbc65dbb25fcd6594c65dafa11d7c97687e5a0a19dbc7fba1998622a0b119418"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/hikarie.glb": {
+      "bytes": 2344640,
+      "sha256": "273bae02397a50bfe47274b2812728cda8212866265f67fe36400d6ca079d77b"
+    },
+    "web/viewer.json": {
+      "bytes": 194,
+      "sha256": "675caea37343010aa1df27b022d33c0aa8f45c1ed03eabfaef06c14e4aabbd7c"
+    }
+  }
+}

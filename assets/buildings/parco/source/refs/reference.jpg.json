@@ -1,0 +1,102 @@
+{
+ "pageid": 146057666,
+ "ns": 6,
+ "title": "File:Shibuya Parco.jpg",
+ "index": 1,
+ "imagerepository": "local",
+ "imageinfo": [
+  {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Shibuya_Parco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "descriptionurl": "https://commons.wikimedia.org/wiki/File:Shibuya_Parco.jpg",
+   "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=146057666",
+   "extmetadata": {
+    "DateTime": {
+     "value": "2024-03-04 11:36:03",
+     "source": "mediawiki-metadata",
+     "hidden": ""
+    },
+    "ObjectName": {
+     "value": "Shibuya Parco",
+     "source": "mediawiki-metadata"
+    },
+    "CommonsMetadataExtension": {
+     "value": 1.2,
+     "source": "extension",
+     "hidden": ""
+    },
+    "Categories": {
+     "value": "CC-Zero|Shibuya Parco|Self-published work|Uploaded with Mobile/Android|Files with coordinates missing SDC location of creation|Shibuya photographs taken on 2024-03-04",
+     "source": "commons-categories",
+     "hidden": ""
+    },
+    "Assessments": {
+     "value": "",
+     "source": "commons-categories",
+     "hidden": ""
+    },
+    "GPSLatitude": {
+     "value": "35.662383",
+     "source": "commons-desc-page"
+    },
+    "GPSLongitude": {
+     "value": "139.699025",
+     "source": "commons-desc-page"
+    },
+    "GPSMapDatum": {
+     "value": "WGS-84",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "ImageDescription": {
+     "value": "Shibuya Parco (\u65e5\u672c\u306e\u30d5\u30a1\u30c3\u30b7\u30e7\u30f3\u30d3\u30eb)",
+     "source": "commons-desc-page"
+    },
+    "DateTimeOriginal": {
+     "value": "4 March 2024, 13:03",
+     "source": "commons-desc-page"
+    },
+    "Credit": {
+     "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+     "source": "commons-desc-page"
+    },
+    "Artist": {
+     "value": "<a href=\"//commons.wikimedia.org/wiki/User:Syced\" title=\"User:Syced\">Syced</a>",
+     "source": "commons-desc-page"
+    },
+    "LicenseShortName": {
+     "value": "CC0",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "UsageTerms": {
+     "value": "Creative Commons Zero, Public Domain Dedication",
+     "source": "commons-desc-page"
+    },
+    "AttributionRequired": {
+     "value": "false",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "LicenseUrl": {
+     "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "source": "commons-desc-page"
+    },
+    "Copyrighted": {
+     "value": "True",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "Restrictions": {
+     "value": "",
+     "source": "commons-desc-page",
+     "hidden": ""
+    },
+    "License": {
+     "value": "cc0",
+     "source": "commons-templates",
+     "hidden": ""
+    }
+   }
+  }
+ ]
+}
