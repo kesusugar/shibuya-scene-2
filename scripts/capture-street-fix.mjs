@@ -5,6 +5,9 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  statue_front: { q: 'time=day&pose=9.274,-45.409,1.9,11.568,-48.686,1.4,44', w: 750, h: 900 },
+  statue_side: { q: 'time=day&pose=7,-52,2.2,11.568,-48.686,1.4,44', w: 900, h: 750 },
+  statue_plaza: { q: 'time=day&pose=16,-35,2,11.568,-48.686,1.3,60', w: 900, h: 675 },
   cover: { q: 'time=day&pose=-7,-4,1.8,-6.272,-2.426,.23,45', w: 900, h: 675 },
   tactile_network: { q: 'time=day&pose=25,-33,2,21.2,-24.7,.2,65', w: 900, h: 675 },
   tactile_close: { q: 'time=day&pose=22,-18,1.9,22.9,-13.1,.2,65', w: 900, h: 675 },
@@ -52,10 +55,10 @@ try {
     await page.goto(`${base}/?capture&${v.q}${process.env.EXTRA ? `&${process.env.EXTRA}` : ""}`);
     await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 300000 });
     await page.waitForTimeout(2500);
-    const state = await page.evaluate(() => ({ drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
+    const state = await page.evaluate(() => ({ hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
     await page.screenshot({ path: `${out}/${name}.png`, timeout: 300000 });
     log[name] = { ...v, state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
-    if (process.env.EXTRA?.includes('drainage=off')) assert.equal(state.drainage, 'off'); else assert.equal(state.drainage.ok, true); assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); if (process.env.EXTRA?.includes('tactile=off')) assert.equal(state.tactile, 'off'); else assert.equal(state.tactile.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
+    if (process.env.EXTRA?.includes('hachiko=off')) assert.equal(state.hachiko, 'off'); else assert.equal(state.hachiko.ok, true); if (process.env.EXTRA?.includes('drainage=off')) assert.equal(state.drainage, 'off'); else assert.equal(state.drainage.ok, true); assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); if (process.env.EXTRA?.includes('tactile=off')) assert.equal(state.tactile, 'off'); else assert.equal(state.tactile.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
     for (const asset of Object.values(state.stats)) assert.deepEqual(asset.layerErrors, []);
     console.log(name, errors.length ? errors : 'ok'); await page.close();
   }
