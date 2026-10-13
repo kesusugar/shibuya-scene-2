@@ -1,0 +1,236 @@
+{
+  "station_concourse_night": {
+    "q": "time=night&pose=-15,-44,2,-16,-74,8,55",
+    "w": 900,
+    "h": 600,
+    "state": {
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 10,
+        "triangles": 30117
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 7,
+          "triangles": 592,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": []
+  },
+  "station_concourse": {
+    "q": "time=day&pose=-15,-44,2,-16,-74,8,55",
+    "w": 900,
+    "h": 600,
+    "state": {
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 10,
+        "triangles": 30117
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 7,
+          "triangles": 592,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": []
+  },
+  "night": {
+    "q": "time=night&pose=161.9,-201.8,159.6,-5,-18.7,12,15.8",
+    "w": 640,
+    "h": 482,
+    "state": {
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 10,
+        "triangles": 30117
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 7,
+          "triangles": 592,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": []
+  }
+}

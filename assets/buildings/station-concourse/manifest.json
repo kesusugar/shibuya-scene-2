@@ -5,54 +5,54 @@
     "brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d"
   ],
   "level": "B",
-  "status": "prototype; corridor association, bay/window/scaffold dimensions estimated; five station buildings not certified",
-  "reference_era": "2025-10; December auxiliary types only",
+  "status": "B prototype; October north glazing/interior/transom types, positions/dimensions/brightness estimated; four remaining station candidates unconfirmed",
+  "reference_era": "2025-10-10/11/18; December historical auxiliary types only",
   "absolute_datum_tp_m": 15,
   "stats": {
-    "triangles": 592,
-    "primitives": 7,
-    "bytes": 38484
+    "triangles": 848,
+    "primitives": 9,
+    "bytes": 54128
   },
   "files": {
     "README.md": {
-      "bytes": 2425,
-      "sha256": "69c056d43776a222471407811faa686fe03d9679e790c15acdaf48c832c798a1"
+      "bytes": 3066,
+      "sha256": "81ef43dd7830976b0aed1bffdbe1c2a46991cfb5648f36c3a8d2df2a7f3f278e"
     },
     "source/blender/build_station_concourse.py": {
-      "bytes": 6988,
-      "sha256": "ee63f9a87320762e58bcd1a20965500d6db7de81a4a8ab8bc01e5b8a31de6d11"
+      "bytes": 9052,
+      "sha256": "457af2e9efd18729fd8de060e975b1f70e4ad7532820f6c1754628a37eede005"
     },
     "source/data/layout.json": {
-      "bytes": 3765,
-      "sha256": "f5b0ee090e2b659768986547e2f46766251e1cad566dabc228b904cbc47e000e"
+      "bytes": 4438,
+      "sha256": "54c83e21da91c66a3b6f1239ee24d4c2d2f6faf2a88b719d2f0ab572575fdd0c"
     },
     "source/data/parts.json": {
       "bytes": 22022,
       "sha256": "dd59fc668b3a479de1dd388cd404bd1f45880f35381df2c916fd44e1759dd740"
     },
     "source/data/stats.json": {
-      "bytes": 6798,
-      "sha256": "e233e3afd378b99fd372c2fbd93467b3fb5a77fbcc46fcf35f50345ce828e181"
+      "bytes": 7076,
+      "sha256": "cb002606ba443744d96d9b79251deaa3c1a54df6e3ca56ef25ec5d716ae33b83"
     },
     "source/refs/README.md": {
-      "bytes": 390,
-      "sha256": "011e49613d691df00e7c341668f402c1dce6c025aede52004971740c0fd8589e"
+      "bytes": 669,
+      "sha256": "229720f4ef083b6a97da673f9174a86d9fba218d311e25c8e22aded2f74c8ca2"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
-      "bytes": 997,
-      "sha256": "53d80ca69fb6066e5f1f72cf5a494e6ac589e868b7cba9f1ce8490736fce92ba"
+      "bytes": 2003,
+      "sha256": "a3324f8281ce735d33e631a5b5db9b8444859061a0f0f440c1a9736d2e3e7db6"
     },
     "web/emissive_day.json": {
-      "bytes": 225,
-      "sha256": "f3799a420cff56495d0f434d2bbfcd635952d8899db4e8311f0cfa305a0b16a5"
+      "bytes": 456,
+      "sha256": "d763884495033624cb19755c5bba0172911411b9e735dbf942c94fafe1239b67"
     },
     "web/emissive_night.json": {
-      "bytes": 231,
-      "sha256": "faaf1aa005a3633a5ab7c8f32b58d40d60b93b02d2606807d9ce51675f59159b"
+      "bytes": 460,
+      "sha256": "bf47d755321dbf97ea0d393269878fe40c49085382c51479ab5b6b48409c1664"
     },
     "web/station-concourse.glb": {
-      "bytes": 38484,
-      "sha256": "0da3c16fb7e7e597d9f50c2d6ecbbb761f8564efe05e4bc67179a6a9265c14c1"
+      "bytes": 54128,
+      "sha256": "5c6d84d4fc720cea612b6cdf06d90aa5908efc7762feb83309f341e3c02b0733"
     },
     "web/viewer.json": {
       "bytes": 103,

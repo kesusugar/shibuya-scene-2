@@ -1,0 +1,29 @@
+{
+  "purpose": "Verify only the transom changed in the same-model-camera first/final render; not a photograph accuracy metric",
+  "regions": {
+    "upper": {
+      "pixel_y_range": [
+        0,
+        180
+      ],
+      "mean_absolute_rgb_difference_0_to_255": 0.0,
+      "changed_pixel_fraction_over_1": 0.0
+    },
+    "glazing_band": {
+      "pixel_y_range": [
+        180,
+        350
+      ],
+      "mean_absolute_rgb_difference_0_to_255": 0.7583660130718954,
+      "changed_pixel_fraction_over_1": 0.014431372549019607
+    },
+    "lower": {
+      "pixel_y_range": [
+        350,
+        600
+      ],
+      "mean_absolute_rgb_difference_0_to_255": 0.0,
+      "changed_pixel_fraction_over_1": 0.0
+    }
+  }
+}

@@ -1,12 +1,12 @@
 {
   "sc_glass": {
-    "kind": "interior",
+    "kind": "glass",
     "emit": [
-      1,
-      0.9,
-      0.72
+      0,
+      0,
+      0
     ],
-    "estr": 0.24
+    "estr": 0
   },
   "sc_light": {
     "kind": "interior",
@@ -16,5 +16,23 @@
       0.72
     ],
     "estr": 0.24
+  },
+  "sc_interior": {
+    "kind": "interior",
+    "emit": [
+      1,
+      0.95,
+      0.72
+    ],
+    "estr": 0.4
+  },
+  "sc_interior_light": {
+    "kind": "interior",
+    "emit": [
+      1,
+      0.96,
+      0.78
+    ],
+    "estr": 1.2
   }
 }
