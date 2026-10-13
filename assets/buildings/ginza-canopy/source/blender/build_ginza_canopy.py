@@ -9,13 +9,15 @@ src,config,ground,out=sys.argv[sys.argv.index('--')+1:][:4]
 assert bpy.app.version==(4,2,3)
 D=json.loads(Path(src).read_text());F=json.loads(Path(config).read_text());ROOT=Path(config).parent;OUT=Path(out);OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.gltf(filepath=ground)
+extra=sys.argv[sys.argv.index("--")+1:][4:]
+for extension in extra:bpy.ops.import_scene.gltf(filepath=extension)
 bm=bmesh.new()
 for ob in list(bpy.context.scene.objects):
  if ob.type=='MESH' and ob.name.startswith(('ground_road','ground_sidewalk','ground_intersection','ground_fill')):
   me=ob.data.copy();me.transform(ob.matrix_world);bm.from_mesh(me);bpy.data.meshes.remove(me)
 bvh=BVHTree.FromBMesh(bm);bm.free();ground_samples=[]
 for xy in F['ground_query_xy_m']:
- hit=bvh.ray_cast(Vector((*xy,80)),Vector((0,0,-1)))[0];ground_samples.append({'x':xy[0],'y':xy[1],'tp':round(hit.z+15,4) if hit else None,'basis':'C2a ray' if hit else 'outside C2a; lower source base retained'})
+ hit=bvh.ray_cast(Vector((*xy,80)),Vector((0,0,-1)))[0];ground_samples.append({'x':xy[0],'y':xy[1],'tp':round(hit.z+15,4) if hit else None,'basis':('Core/DEM substrate ray' if extra else 'C2a ray') if hit else 'outside C2a; lower source base retained'})
 for ob in list(bpy.context.scene.objects):bpy.data.objects.remove(ob,do_unlink=True)
 M={};GROUP={}
 for name,rgb,rough,metal in [('gc_roof',(.40,.44,.44),.8,0),('gc_ceiling',(.56,.60,.60),.8,0),('gc_base',(.55,.59,.57),.85,0),('gc_arch',(.84,.85,.82),.6,.15),('gc_floor',(.62,.63,.57),.7,0),('gc_bed',(.20,.23,.23),.9,0),('gc_tactile',(.91,.67,.035),.85,0),('gc_door',(.82,.85,.82),.5,.15),('gc_glass',(.30,.46,.46),.2,.1),('gc_rail',(.36,.42,.41),.4,.6),('gc_ceil_light',(.92,.93,.87),.5,0)]:

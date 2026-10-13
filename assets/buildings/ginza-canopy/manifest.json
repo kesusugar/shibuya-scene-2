@@ -18,12 +18,12 @@
   },
   "files": {
     "README.md": {
-      "bytes": 2643,
-      "sha256": "5a7f347dcb3d27fe0e307b8f5238f863b285bcce323bff5f115174e62e94f6f2"
+      "bytes": 3048,
+      "sha256": "ba94848a0a52ee69057e3760d7017acb63f28788d9bf5224fd1ed843a5cb3b02"
     },
     "source/blender/build_ginza_canopy.py": {
-      "bytes": 8541,
-      "sha256": "9ccc0b24b08046bfd545eee7ad4ca167fc913495c87de3f6883485f891046d1a"
+      "bytes": 8695,
+      "sha256": "c90003191937795fcd36fe06eec48d1318e5e9ab0b3b548f7636369062d86352"
     },
     "source/data/floor_refs.json": {
       "bytes": 409,
@@ -38,8 +38,8 @@
       "sha256": "3259879a10bc7890fe769dde119c940c6d88ab23af483fc09895605d40f077cf"
     },
     "source/data/stats.json": {
-      "bytes": 1989,
-      "sha256": "7ca4fa175c2d74cd098130035cf3f8e6f02760c0bf0bd754e5b22ed8d3e97f21"
+      "bytes": 1962,
+      "sha256": "cf74a036cc6e812b1232caff8de08f578141960db63fab9bc2d9c03eff9f2fe1"
     },
     "source/refs/GC01_metadata.json": {
       "bytes": 5196,

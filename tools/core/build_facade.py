@@ -7,7 +7,10 @@ from pathlib import Path
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
 source,layout,ground,output=sys.argv[sys.argv.index('--')+1:][:4];D=json.load(open(source));L=json.load(open(layout));OUT=Path(output);OUT.mkdir(parents=True,exist_ok=True);ID=L['id'];BASE=D['ground_tp']-15
-bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.gltf(filepath=ground);bm=bmesh.new()
+bpy.ops.wm.read_factory_settings(use_empty=True);bpy.ops.import_scene.gltf(filepath=ground);
+extra=sys.argv[sys.argv.index('--')+1:][4:]
+for extension in extra:bpy.ops.import_scene.gltf(filepath=extension)
+bm=bmesh.new()
 for o in list(bpy.context.scene.objects):
  if o.type=='MESH' and o.name.startswith(('ground_road','ground_intersection','ground_sidewalk','ground_fill')):
   me=o.data.copy();me.transform(o.matrix_world);bm.from_mesh(me);bpy.data.meshes.remove(me)
@@ -57,7 +60,7 @@ for si,s in enumerate(D['surfaces']):
   z=BASE+(row+.5)*storey;localv=(z-origin.z)/v.z;h=storey*L.get('glass_height_ratio',.78)
   columns=max(1,round((umax-umin)/pitch));actual_pitch=(umax-umin)/columns
   for col in range(columns):
-   u=umin+(col+.5)*actual_pitch;w=actual_pitch-.12
+   u=umin+(col+.5)*actual_pitch;w=(actual_pitch-.12)*L.get("bay_width_ratio",1)
    if not all(inside(u+dx,localv+dy,poly) for dx in [-w/2,w/2] for dy in [-h/2,h/2]):continue
    variant=(zlib.crc32((str(si)+':'+str(row)+':'+str(col)).encode())%3);panel(u,z,w,h,'glass'+str(variant));panels+=1
    # Thin physical mullions, with building-specific rhythm and podium infill.
@@ -68,7 +71,7 @@ for si,s in enumerate(D['surfaces']):
    if row<L.get('podium_floors',1):
     panel(u,z-h*.35,w,.50,'sign_housing',.13)
   if all(inside(uu,localv,poly) for uu in [umin+.15,umax-.15]):
-   band= .16 if L['style']=='square' else .32 if L['style']=='centre' else .65
+   band= .16 if L['style']=='square' else .32 if L['style']=='centre' else .24 if L['style']=='station' else .65
    panel((umin+umax)/2,z-h/2-.08,umax-umin-.12,band,'spandrel',.12)
  # Follow actual diagonal source boundaries rather than inventing rectangular cut-outs.
  if L['style']=='square':

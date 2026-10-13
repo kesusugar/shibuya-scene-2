@@ -23,3 +23,7 @@ blender -b --python-exit-code 1 -t 4 -P assets/buildings/ginza-canopy/source/ble
 出典はsource/refs、報告は `docs/core/C1_GINZA_CANOPY_REPORT.md`、画像は `evidence/c1-ginza-canopy/boards/`。
 
 公式の2019-10-28設計資料（GC05）がホーム幅約12 mと明記するため、試作6 mを12 mへ訂正し、ドア・点字帯を新しい端、線路を端の外1.35 m（推定）へ合わせた。幅補正前はplatform_width_m=6・rail_edge_offset_m=2.7、最終版は12・1.35で再生成できる。フレーム・床の高さ・ドア区画数・透明度・照明は変えていない。
+
+## 地形補填後の追記
+
+Core外側をDEMで補填した後の照会結果はstats.jsonとC1_STATION_FINISH_REPORT.md参照。補填は地形の推定であり、実際の仕上げ歩道を測った高さではない。屋根・上面は保持。生成時に最後の引数へ `assets/ground/extension/web/extension.glb` を追加する。旧い未取得の記録は当時の結果として保持。

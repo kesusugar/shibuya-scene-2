@@ -5,6 +5,9 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  terrain: {q:'time=day&pose=0,-180,100,100,-160,0,65',w:1000,h:750},
+  station_southeast: {q:'time=day&pose=25,-200,34,85,-135,10,62',w:1000,h:750},
+
   square: { q:'time=day&pose=8,-52,20,157,-119,110,62',w:900,h:900 },
   fukuras: { q:'time=day&pose=35,-95,16,-29,-200,55,60',w:900,h:900 },
   center244: { q:'time=day&pose=-38,33,4,-68,78,18,50',w:900,h:675 },
