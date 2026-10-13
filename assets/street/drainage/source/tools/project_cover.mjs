@@ -1,0 +1,15 @@
+// Use the existing M027 camera fit, with the same axes/datum offset as ViewerControls.fitView.
+import {NodeIO} from '@gltf-transform/core';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {BufferAttribute,BufferGeometry,DoubleSide,Matrix4,Mesh,MeshBasicMaterial,PerspectiveCamera,Raycaster,Vector2,Vector3} from 'three';
+const hints=JSON.parse(readFileSync('assets/buildings/magnet/web/viewer.json')),c=hints.cameraFit;
+const [yaw,pitch,roll]=[c.yaw,c.pitch,c.roll].map(v=>v*Math.PI/180),w=(x,y,z)=>new Vector3(x,z,-y);
+const f=w(Math.sin(yaw)*Math.cos(pitch),Math.cos(yaw)*Math.cos(pitch),Math.sin(pitch)),right=w(Math.cos(yaw),-Math.sin(yaw),0),up=new Vector3().crossVectors(right,f);
+const camera=new PerspectiveCamera(2*Math.atan(c.H/2/c.fpx)*180/Math.PI,c.W/c.H,.1,1000);
+camera.position.copy(w(...c.pos)).add(new Vector3(0,hints.groundElevationTP-15,0));camera.up.copy(up.multiplyScalar(Math.cos(roll)).addScaledVector(right,Math.sin(roll)));camera.lookAt(camera.position.clone().add(f));camera.updateMatrixWorld();
+const root=(await new NodeIO().read('assets/ground/core/web/ground_core.glb')).getRoot(),ground=[];
+for(const n of root.listNodes())if(n.getName().startsWith('ground_road')||n.getName().startsWith('ground_intersection'))for(const p of n.getMesh()?.listPrimitives()??[]){const g=new BufferGeometry().setAttribute('position',new BufferAttribute(p.getAttribute('POSITION').getArray(),3));g.setIndex(new BufferAttribute(p.getIndices().getArray(),1));g.applyMatrix4(new Matrix4().fromArray(n.getWorldMatrix()));const m=new Mesh(g,new MeshBasicMaterial({side:DoubleSide}));m.name=n.getName();m.updateMatrixWorld();ground.push(m);}
+const ray=new Raycaster(),pixels=[[775,1254],[731,1248],[819,1260]],points=pixels.map(pixel=>{ray.setFromCamera(new Vector2(pixel[0]/c.W*2-1,1-pixel[1]/c.H*2),camera);const hit=ray.intersectObjects(ground,false)[0];if(!hit)throw Error('no road under photo pixel');return{pixel,xy:[hit.point.x,-hit.point.z],ground_tp:hit.point.y+15,part:hit.object.name};});
+const centre=new Vector2(...points[0].xy),radii=points.slice(1).map(p=>new Vector2(...p.xy).distanceTo(centre)),radius=radii.reduce((a,v)=>a+v,0)/2;
+const layout={version:1,status:'photo-derived circular road cover prototype: utility purpose, dimensions and position not independently surveyed',datum_tp_m:15,source_photo:'M027',camera:c,camera_height_offset_m:hints.groundElevationTP-15,cover:{id:'M027-cover-01',centre_xy:points[0].xy,diameter_m:2*radius,points,projected_edge_radii_m:radii,position_basis:'photo-projection with existing 11.4 px building-camera fit onto C2a road/intersection; no independent position check'},base_offset_m:.016,relief_m:.001,notes:['Solid patterned circular lid; drainage/sewer/communication role unknown','Pixel centre/edges read from visible rim; asymmetry and occlusion make diameter approximate','16 mm render offset clears existing synthetic 12 mm marking layer; not a measured physical step']};
+writeFileSync('assets/street/drainage/source/data/layout.json',JSON.stringify(layout,null,2)+'\n');console.log(layout.cover);
