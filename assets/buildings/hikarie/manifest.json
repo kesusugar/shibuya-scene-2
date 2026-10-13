@@ -56,5 +56,9 @@
       "bytes": 194,
       "sha256": "675caea37343010aa1df27b022d33c0aa8f45c1ed03eabfaef06c14e4aabbd7c"
     }
-  }
+  },
+  "source_id": "way/204091879",
+  "source_aliases": [],
+  "plateau_id": "bldg_9ad5b600-360f-4627-8a89-fca39aad5576",
+  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
 }

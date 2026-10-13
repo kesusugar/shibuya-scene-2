@@ -11,7 +11,7 @@ const views = {
   bic: {q:'time=day&pose=-55,-60,60,-88,-20,15,55',w:900,h:750},
   cine: {q:'time=day&pose=-75,-12,90,-140,-50,30,55',w:900,h:750},
   mixed: {q:'time=day&pose=50,-20,70,90,23,25,55',w:900,h:750},
-  hikarie: {q:'time=day&pose=130,-170,200,285,-45,90,65',w:900,h:750},
+  hikarie: {q:'time=day&pose=470,-120,195,285,-45,90,65',w:900,h:750},
   parco: {q:'time=day&pose=-40,150,150,-155,270,50,65',w:900,h:750},
   streamtower: {q:'time=day&pose=55,-145,210,245,-250,100,65',w:900,h:750},
   sakura: {q:'time=day&pose=-75,-160,210,135,-320,95,65',w:900,h:750},
