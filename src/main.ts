@@ -119,6 +119,7 @@ async function start() {
     useGround && params.get('street') !== 'off' && params.get('surround') !== 'off' ? loadSurround(io.loadGlb, params.get('surroundurl') === 'missing' ? '/street/hachiko-surround/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('plaza') !== 'off' ? loadPlaza(io.loadGlb, params.get('plazaurl') === 'missing' ? '/street/plaza-finish/missing.glb' : undefined) : Promise.resolve(undefined)]);
   results.forEach((r: BuildingResult) => scene.add(r.root));
+  loaded = results.filter((r): r is LoadedBuilding => r.ok);
   coreGround = groundRes;
   coreStreet = streetRes;
   coreTactile = tactileRes;
@@ -144,7 +145,6 @@ async function start() {
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
   else if (coreGround) ground.position.y = 0;   // no Core ground: the disc goes back to y = 0
   controls.setGround([...(coreGround?.ok ? [coreGround.root] : []), ...(coreStreet?.ok ? coreStreet.walkSurfaces : [])]);
-  loaded = results.filter((r): r is LoadedBuilding => r.ok);
   if (loaded.some((b) => b.id === 'west-block')) $('provisional').textContent += '\n西側街区の外観は試作、看板は2025年1月の写真を参照';
   if (loaded.some((b) => b.id === 'ekimae')) $('provisional').textContent += '\n渋谷駅前ビルの外観は試作、看板は2025年11月の写真を参照';
   if (loaded.some((b) => b.id === 'station-concourse')) $('provisional').textContent += '\n駅側の連絡通路は試作、開口・窓・内部・工事用の囲いの寸法と配置、光量は推定';
