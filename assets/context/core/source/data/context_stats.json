@@ -2543,15 +2543,6 @@
    "faces": 11
   },
   {
-   "id": "way/810356690",
-   "plateau_id": "bldg_45523411-bca8-4fa6-8c99-43561e7e7d7e",
-   "group": "station",
-   "kind": "building",
-   "material": "ctx_wall_punched_b",
-   "height_m": 20.64,
-   "faces": 31
-  },
-  {
    "id": "way/136692143",
    "plateau_id": "bldg_5629f968-8dcf-4a42-b949-f444fa7f6708",
    "group": "core",
@@ -2820,6 +2811,10 @@
   {
    "id": "plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324",
    "reason": "own asset station-west-viaduct; western/Ginza elevated-structure association and dimensions estimated, not certified"
+  },
+  {
+   "id": "way/810356690",
+   "reason": "own asset ginza-canopy; partial upper-hall B, original lower base retained, October interior not independently verified"
   }
  ],
  "objects": {
@@ -2844,21 +2839,17 @@
    "vertices": 7720
   },
   "station__ctx_roof": {
-   "triangles": 246,
-   "vertices": 386
+   "triangles": 218,
+   "vertices": 334
   },
   "station__ctx_wall_ribbon_b": {
    "triangles": 356,
    "vertices": 664
-  },
-  "station__ctx_wall_punched_b": {
-   "triangles": 41,
-   "vertices": 79
   },
   "core__ctx_structure": {
    "triangles": 1148,
    "vertices": 3444
   }
  },
- "triangles": 30075
+ "triangles": 30006
 }

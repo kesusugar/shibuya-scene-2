@@ -1,0 +1,90 @@
+{
+  "source_ids": [
+    "way/810356690"
+  ],
+  "datum_tp_m": 15,
+  "roof_deviation_vs_plateau_m": 0,
+  "floor_reference_tp_m": [
+    28.125,
+    29.531
+  ],
+  "floor_status": "nearby bridge levels interpolated, not measured platform floor",
+  "ground_queries": [
+    {
+      "x": 107.236,
+      "y": -64.32,
+      "tp": 15.282,
+      "basis": "C2a ray"
+    },
+    {
+      "x": 113.83,
+      "y": -84.882,
+      "tp": null,
+      "basis": "outside C2a; lower source base retained"
+    },
+    {
+      "x": 214.339,
+      "y": -31.113,
+      "tp": null,
+      "basis": "outside C2a; lower source base retained"
+    },
+    {
+      "x": 221.934,
+      "y": -51.342,
+      "tp": null,
+      "basis": "outside C2a; lower source base retained"
+    }
+  ],
+  "lower_base_status": "original geometry below track bed retained as C, ground matching unconfirmed",
+  "continuous_housing": true,
+  "rib_drop_m": 0.35,
+  "opened_upper_wall_faces": 19,
+  "objects": {
+    "gc_roof": {
+      "triangles": 28,
+      "vertices": 52
+    },
+    "gc_ceiling": {
+      "triangles": 28,
+      "vertices": 52
+    },
+    "gc_base": {
+      "triangles": 34,
+      "vertices": 68
+    },
+    "gc_bed": {
+      "triangles": 2,
+      "vertices": 4
+    },
+    "gc_floor": {
+      "triangles": 2,
+      "vertices": 4
+    },
+    "gc_rail": {
+      "triangles": 48,
+      "vertices": 96
+    },
+    "gc_tactile": {
+      "triangles": 4,
+      "vertices": 8
+    },
+    "gc_arch": {
+      "triangles": 6528,
+      "vertices": 13056
+    },
+    "gc_ceil_light": {
+      "triangles": 384,
+      "vertices": 768
+    },
+    "gc_glass": {
+      "triangles": 224,
+      "vertices": 448
+    },
+    "gc_door": {
+      "triangles": 4032,
+      "vertices": 8064
+    }
+  },
+  "triangles": 11314,
+  "status": "Partial B upper hall. Original roof/top deck preserved; M ribs/doors from dated auxiliary references, October interior independently unconfirmed. Floor/rib/door/track dimensions and positions estimated."
+}

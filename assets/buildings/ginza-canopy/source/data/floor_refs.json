@@ -1,0 +1,14 @@
+[
+  {
+    "id": "brid/brid_a4d3aa47-8095-4c24-99e2-80202b230bc1",
+    "min_floor_tp_m": 28.125,
+    "max_floor_tp_m": 28.125,
+    "use": "nearby bridge top reference only; station floor not surveyed"
+  },
+  {
+    "id": "brid/brid_0e0c081e-d376-4692-91c7-a3c866c1e46e",
+    "min_floor_tp_m": 29.531,
+    "max_floor_tp_m": 30.658,
+    "use": "nearby bridge top reference only; station floor not surveyed"
+  }
+]

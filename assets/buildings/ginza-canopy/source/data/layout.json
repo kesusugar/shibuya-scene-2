@@ -1,0 +1,41 @@
+{
+  "roof_axis_xy_m": [
+    [
+      122.486,
+      -67.458
+    ],
+    [
+      208.658,
+      -38.747
+    ]
+  ],
+  "floor_west_tp_m": 28.125,
+  "floor_east_tp_m": 29.531,
+  "platform_step_m": 1.1,
+  "rib_count": 16,
+  "door_bays": 28,
+  "door_glass_alpha": 0.8,
+  "ground_query_xy_m": [
+    [
+      107.236,
+      -64.32
+    ],
+    [
+      113.83,
+      -84.882
+    ],
+    [
+      214.339,
+      -31.113
+    ],
+    [
+      221.934,
+      -51.342
+    ]
+  ],
+  "basis": "Original PLATEAU roof/top deck retained. 2025March door/platform and 2024December M-rib photos are auxiliary structural types, not October interior certification. October18 station-work article supports general elevated context only. Nearby bridge floor levels interpolated for estimated island/track bed; not measured platform floor. Lower original base kept below track bed. Rib/door/track sizes and positions estimated.",
+  "rib_drop_m": 0.35,
+  "rib_revision_basis": "Initial same-pose view showed outer M ribs disappearing into the source roof/ceiling. Lowered the rib profile only by .35m so it reads as a continuous frame below the retained deck. Original roof, plan positions, floor, doors/glass alpha and lighting unchanged. Connection geometry/clearance remain B estimates.",
+  "continuous_housing": true,
+  "housing_revision_basis": "After rib-clearance correction, geometry review found gaps between fixed door housings. Sized and centred the fixed housings from the bay pitch to connect adjacent door units. Door bay positions/count, glass opacity, floor, lighting, ribs and original roof unchanged. Exact real housing details remain estimated."
+}
