@@ -1,0 +1,44 @@
+{
+  "id": "street/tactile-links",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 19245,
+    "primitives": 1,
+    "bytes": 1385368
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1388,
+      "sha256": "2eff94ee073f8bcfc5d76d63335bc1507b3994b522a113fa719f7cd32d4ac4fa"
+    },
+    "source/blender/build.py": {
+      "bytes": 2008,
+      "sha256": "dc03c41ba69216399eaf85625828ed122740f43e34cc1e4369da65d07a31e20f"
+    },
+    "source/data/geometry.json": {
+      "bytes": 2058262,
+      "sha256": "4023c063094dea4055315b8461bc9f26655228d6b2321eca504eb4f121ff3cf4"
+    },
+    "source/data/routes.json": {
+      "bytes": 3834,
+      "sha256": "4cc944498e5d76d62d98dc14b03f0c88341a06cbe533b5a365a7058bc9796a71"
+    },
+    "source/data/stats.json": {
+      "bytes": 64682,
+      "sha256": "bbc331d279b2f5b48b23d971bfc4eced275491369c4a4144f7e97f4f1118773d"
+    },
+    "source/tools/plan.py": {
+      "bytes": 4096,
+      "sha256": "51c91c7831c4d5a4752e7ffd47bfb5098396f5224546a1229163fc8005366f7a"
+    },
+    "source/tools/prepare.py": {
+      "bytes": 4288,
+      "sha256": "bdbe058fa826fd6fb4e223dfaa3d9b9c402a7f93c5f740c6a09981a3d04807b0"
+    },
+    "web/tactile-links.glb": {
+      "bytes": 1385368,
+      "sha256": "4151689c7534f5bff4605094023ebbe7f6d9b4c743e625466082ec01a8f5cd22"
+    }
+  }
+}

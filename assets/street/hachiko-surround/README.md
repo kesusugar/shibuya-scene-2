@@ -11,3 +11,7 @@
 blender -b --python-exit-code 1 -t 4 -P assets/street/hachiko-surround/source/blender/build_surround.py -- assets/street/hachiko-surround/source/data/layout.json assets/ground/core/web/ground_core.glb assets/street/hachiko-surround/web/hachiko-surround.glb assets/street/hachiko-surround/source/data/stats.json
 python assets/street/hachiko-surround/source/tools/write_manifest.py
 ```
+
+## 区画の裏面の追記
+
+土の面の奥が開いた初版へ、元の段取りと寸法に合わせた背面の石の小口と笠石を追加。像・前面・レール・低木の配置は保持。背面の実際の区画外形は写真で独立して測ったものではなく、区画を閉じる推定。実GLBの背面への水平の光線で、左右両区間の石壁があることを確認する。
