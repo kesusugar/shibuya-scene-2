@@ -18,7 +18,7 @@
 17,way/204091879,building,渋谷ヒカリエ,,plateau_lod2,17.11,202.0,184.89,plateau_lod2_surfaces,273.6,not_started,10,0.01111,0.00826,0.00509,0.01089,0.00481,0.0,0.0,5,0.01111,0.4,0.381
 18,way/1200029947,building,Shibuya Sakura Stage SHIBUYA Tower,,plateau_lod2,12.24,195.843,183.6,plateau_lod2_surfaces,284.5,not_started,9,0.00848,0.00742,0.00756,0.00853,0.00725,0.0,0.0,5,0.00853,0.4,0.3758
 19,way/55588118,building,渋谷フクラス,,plateau_lod2,16.31,120.899,104.59,plateau_lod2_surfaces,203.1,not_started,11,0.00516,0.00236,0.00447,0.00619,0.00387,0.0,0.0,5,0.00619,0.4,0.3711
-20,way/114755219,building,渋谷第一勧銀共同ビル,,plateau_lod2,15.526,67.416,51.89,plateau_lod2_surfaces,94.1,not_started,15,0.00316,0.00421,0.00055,0.00132,0.0,0.0,0.01062,4,0.01062,0.4,0.3443
+20,way/114755219,building,渋谷第一勧銀共同ビル,,plateau_lod2,15.526,67.416,51.89,plateau_lod2_surfaces,94.1,B_prototype_facade_estimated_ads_deferred,15,0.00316,0.00421,0.00055,0.00132,0.0,0.0,0.01062,4,0.01062,0.4,0.3443
 21,way/136691379,building,センター244ビル,,plateau_lod2,16.59,49.843,33.25,plateau_lod2_surfaces,107.7,not_started,14,0.00205,2e-05,0.00332,0.0,0.00556,0.0005,0.00277,4,0.00556,0.4,0.3341
 22,way/155538676,building,(名称なし),推定：ハチ公広場の売店（POI「シュマンケル」）,plateau_lod2,15.27,19.6,4.33,plateau_lod2_surfaces,52.3,not_started,20,0.00241,0.01508,0.00084,0.00203,0.00069,0.0,0.00242,4,0.01508,0.2,0.3133
 23,way/451564412,building,渋谷Parco,,plateau_lod2,23.4,124.8,101.4,plateau_lod2_surfaces,325.0,not_started,81,0.0,0.00051,0.0,0.0,0.0,0.00424,0.02556,2,0.02556,0.4,0.303
