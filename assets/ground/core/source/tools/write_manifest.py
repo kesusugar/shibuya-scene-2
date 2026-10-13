@@ -13,7 +13,7 @@ inp = json.load(open(os.path.join(SRC, 'data', 'ground_input.json'))); st = json
 rev = subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=SRC, capture_output=True, text=True).stdout.strip()
 files = ['web/ground_core.glb', 'source/data/ground_input.json', 'source/data/ground_stats.json', 'source/data/crosswalks_measured.json',
          'source/blender/build_ground.py', 'source/tools/prepare_ground.py', 'source/tools/measure_crosswalks.py',
-         'source/data/ground_anchors.json', 'source/blender/ground_anchor.py', 'README.md',
+         'source/data/ground_anchors.json', 'source/blender/ground_anchor.py', 'source/blender/paving_boundary.py', 'README.md',
          'source/data/paving_layout.json', 'source/data/plaza_paving_layout.json',
          'source/tools/make_paving.py', 'source/tools/write_manifest.py',
          'source/refs/PAVING_REFERENCE_REGISTER.csv',
