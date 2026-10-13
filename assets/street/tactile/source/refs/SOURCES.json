@@ -1,0 +1,22 @@
+[
+  {
+    "kind": "shape standard reference",
+    "url": "https://www.mlit.go.jp/road/road/traffic/bf/kijun/pdf/02-7.pdf",
+    "publisher": "国土交通省",
+    "section": "参考2-7-5 / 図2-7-11・12 / JIS T9251:2014",
+    "use": "300 mm tile, minimum four ribs, 25 warning dots, rib-end gap <=30 mm. Rounded shapes approximated with eight sides; not conformity certification",
+    "sha256": "72ac4db4149baaa4fe6f6a435450e717673fe1377fda562f06ed64c93bd24497",
+    "redistributed": false
+  },
+  {
+    "kind": "2025 photo reference",
+    "file": "docs/core/building_refs/crossing_12214.jpg",
+    "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg",
+    "author": "Syced",
+    "date": "2025-02-07",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sha256": "012b30ec23de9d4f92430f295aea6302cfa2cd56db66f20e10772ac284dd23f0",
+    "use": "yellow guidance visible across plaza/north corners; no calibrated positions or photo texture"
+  }
+]

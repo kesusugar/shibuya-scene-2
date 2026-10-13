@@ -1,0 +1,12 @@
+{
+  "tactile": {
+    "triangles": 15960,
+    "primitives": 1,
+    "bytes": 978160
+  },
+  "total": {
+    "triangles": 328369,
+    "primitives": 258,
+    "bytes": 21049264
+  }
+}

@@ -5,6 +5,7 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  tactile_close: { q: 'time=day&pose=22,-18,1.9,22.9,-13.1,.2,65', w: 900, h: 675 },
   plaza: { q: 'time=day&pose=27,-32,2.3,18,-18,.4,65', w: 900, h: 675 },
   plaza_night: { q: 'time=night&pose=27,-32,2.3,18,-18,.4,65', w: 900, h: 675 },
   entry_left: { q: "time=day&pose=20.134654,-33.508250,25.255800,32.406007,45.484403,24,55", w: 1000, h: 750 },
@@ -49,10 +50,10 @@ try {
     await page.goto(`${base}/?capture&${v.q}${process.env.EXTRA ? `&${process.env.EXTRA}` : ""}`);
     await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 300000 });
     await page.waitForTimeout(2500);
-    const state = await page.evaluate(() => ({ ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
+    const state = await page.evaluate(() => ({ tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
     await page.screenshot({ path: `${out}/${name}.png`, timeout: 300000 });
     log[name] = { ...v, state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
-    assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
+    assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); if (process.env.EXTRA?.includes('tactile=off')) assert.equal(state.tactile, 'off'); else assert.equal(state.tactile.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
     for (const asset of Object.values(state.stats)) assert.deepEqual(asset.layerErrors, []);
     console.log(name, errors.length ? errors : 'ok'); await page.close();
   }
