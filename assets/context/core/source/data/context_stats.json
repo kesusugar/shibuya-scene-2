@@ -2138,15 +2138,6 @@
    "faces": 14
   },
   {
-   "id": "plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324",
-   "plateau_id": "bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324",
-   "group": "station",
-   "kind": "building",
-   "material": "ctx_wall_punched_a",
-   "height_m": 17.16,
-   "faces": 7
-  },
-  {
    "id": "way/120105796",
    "plateau_id": "bldg_77de016a-7fe8-4a3a-8237-e306681dd91e",
    "group": "core",
@@ -2825,6 +2816,10 @@
   {
    "id": "plateau/bldg_5369333e-5975-493a-b05d-b341800715c2",
    "reason": "own asset station-service; identity/material/vent estimates, no full October facade certification"
+  },
+  {
+   "id": "plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324",
+   "reason": "own asset station-west-viaduct; western/Ginza elevated-structure association and dimensions estimated, not certified"
   }
  ],
  "objects": {
@@ -2849,12 +2844,8 @@
    "vertices": 7720
   },
   "station__ctx_roof": {
-   "triangles": 250,
-   "vertices": 392
-  },
-  "station__ctx_wall_punched_a": {
-   "triangles": 12,
-   "vertices": 24
+   "triangles": 246,
+   "vertices": 386
   },
   "station__ctx_wall_ribbon_b": {
    "triangles": 356,
@@ -2869,5 +2860,5 @@
    "vertices": 3444
   }
  },
- "triangles": 30091
+ "triangles": 30075
 }

@@ -1,0 +1,65 @@
+{
+  "id": "station-west-viaduct",
+  "source_ids": [
+    "plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324"
+  ],
+  "level": "B",
+  "status": "prototype; elevated-structure association and geometry details estimated, C2a coverage absent at supports; not October facade certification",
+  "reference_era": "2025-10-18 types; original PLATEAU2025 top",
+  "absolute_datum_tp_m": 15,
+  "stats": {
+    "triangles": 1332,
+    "primitives": 5,
+    "bytes": 78096
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1913,
+      "sha256": "84adee815184827822c23b01373abdc46d0b0837d0290e59a31c25e64669f4b8"
+    },
+    "source/blender/build_station_viaduct.py": {
+      "bytes": 6607,
+      "sha256": "3ebb1490d3ad3c204f3167362a22a9fbb9b45c813818cc7472d32fcd59912356"
+    },
+    "source/data/layout.json": {
+      "bytes": 1307,
+      "sha256": "b14dad1a79176f87ee9534ad505b15d99a059750a7230e2222890e864c2dd466"
+    },
+    "source/data/parts.json": {
+      "bytes": 3834,
+      "sha256": "992c089a768f15716397e92216d5c60840b09d73892f26bcaec05e7045da0571"
+    },
+    "source/data/stats.json": {
+      "bytes": 1719,
+      "sha256": "673d5956da8bc6586c5f5ed95eee7757cd88055ef936338bbe082470e74f8fe4"
+    },
+    "source/refs/README.md": {
+      "bytes": 651,
+      "sha256": "88d7ff31ef42232c242d245b886a36bb0772bd97d5fb7c56957fcc72bcd265b7"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 524,
+      "sha256": "5a8147b179e6f0525fd8877c59fbfdcb4eccd6feeaa598d42d9243143296c0a7"
+    },
+    "source/refs/SOURCE.json": {
+      "bytes": 722,
+      "sha256": "a69e4db9f18e168f61a86601caf635716eb6f4ae3bc4d07d9c1d1cbc32480968"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/station-west-viaduct.glb": {
+      "bytes": 78096,
+      "sha256": "61942aff66ac40970f32bf11cd1ce13b8a5921686dffd39416553cb1765d12e2"
+    },
+    "web/viewer.json": {
+      "bytes": 101,
+      "sha256": "f10df6c0b12f8c927e9cf7b68134382f04ccd9ecf77ed28be1baba6bbab33868"
+    }
+  }
+}
