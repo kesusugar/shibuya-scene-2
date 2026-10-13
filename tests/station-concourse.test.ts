@@ -3,11 +3,11 @@ import { readFileSync } from 'node:fs';
 import { NodeIO } from '@gltf-transform/core';
 import { Matrix4, Vector3, BufferGeometry, Float32BufferAttribute, Mesh, MeshBasicMaterial, DoubleSide, Raycaster } from 'three';
 const base='assets/buildings/station-concourse/';
-it('replaces both solid wrappers exactly once without certifying the five station buildings',()=>{
+it('replaces both solid wrappers exactly once without certifying remaining station facades',()=>{
  const parts=JSON.parse(readFileSync(base+'source/data/parts.json','utf8'));
  const context=JSON.parse(readFileSync('assets/context/core/source/data/context_input.json','utf8'));
  for(const part of parts){expect(context.buildings.some((b:{id:string})=>b.id===part.id)).toBe(false);expect(context.excluded.filter((e:{id:string})=>e.id===part.id)).toHaveLength(1);}
- expect(context.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(5);
+ expect(context.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(4);
  const hints=JSON.parse(readFileSync(base+'web/viewer.json','utf8'));
  expect(hints.groundElevationTP).toBe(15);
  const stats=JSON.parse(readFileSync(base+'source/data/stats.json','utf8'));
