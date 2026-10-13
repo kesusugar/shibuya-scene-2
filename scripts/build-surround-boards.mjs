@@ -1,0 +1,14 @@
+import {chromium} from 'playwright';
+import {readFileSync,mkdirSync} from 'node:fs';
+const dir=process.cwd()+'/',out=dir+'evidence/c2-hachiko-surround/boards/';mkdirSync(out,{recursive:true});
+const uri=p=>'data:image/'+(p.endsWith('.jpg')?'jpeg':'png')+';base64,'+readFileSync(dir+p).toString('base64');
+const browser=await chromium.launch({headless:true}),page=await browser.newPage({viewport:{width:1560,height:570},deviceScaleFactor:1});
+const crop=(file,w,h,x,y,scale,height)=>`<div class=crop style="height:${height}px"><img src="${uri(file)}" style="width:${w*scale}px;height:${h*scale}px;left:${-x*scale}px;top:${-y*scale}px"></div>`;
+const photo=crop('assets/street/hachiko/source/refs/july095.jpg',3072,4096,0,850,500/3072,340);
+const render=f=>crop('evidence/c2-hachiko-surround/'+f+'/surround.png',1000,750,150,195,500/700,340);
+await page.setContent(`<style>body{margin:0;background:#18212a;color:#fff;font:20px sans-serif}main{display:flex;gap:15px;padding:15px}.p{width:500px}h3{font:20px sans-serif}.crop{position:relative;overflow:hidden;width:500px}img{position:absolute}p,footer{font-size:16px;line-height:1.6}footer{padding:0 15px;color:#cbd5df}</style><main><div class=p><h3>写真 / 石縁・レール・植栽</h3>${photo}<p>2025-07-13、RuinDig/Yuki Uchida / CC BY 4.0。<br>比較用に切り抜き。7月の選挙告知は非採用。</p></div><div class=p><h3>初版 / 周辺設備</h3>${render('v1')}<p>石板が左右逆、低木が疎らで低い。</p></div><div class=p><h3>修正後 / 初版と同じカメラ</h3>${render('after')}<p>石板位置→密度→高さ→葉束幅を順に補正。<br>位置・寸法・種・10月状態・銘文は未確認。</p></div></main><footer>写真と模型のカメラは未校正。形の種類と輪郭の比較であり、位置精度・実測寸法・完成度の保証ではありません。</footer>`);
+await page.screenshot({path:out+'photo-v1-after.png'});
+await page.setViewportSize({width:1260,height:440});
+const cropWide=f=>crop('evidence/c2-hachiko-surround/'+f+'/surround.png',1000,750,150,190,600/700,280);
+await page.setContent(`<style>body{margin:0;background:#18212a;color:white;font:20px sans-serif}main{display:flex;gap:20px;padding:20px}.crop{position:relative;overflow:hidden;width:600px}img{position:absolute}footer{padding:0 20px;font-size:17px;line-height:1.6}</style><main><div>追加前 / 同じ視点の拡大<br>${cropWide('before')}</div><div>追加後 / 同じ視点の拡大<br>${cropWide('after')}</div></main><footer>石縁と傾斜した銀色レール2区間、低木6株、自然石6個、石製掲示板を追加。<br>ハチ公像・既存樹木・地面など、既存22GLBは保持。写真テクスチャは使用していません。</footer>`);
+await page.screenshot({path:out+'before-after.png'});await browser.close();

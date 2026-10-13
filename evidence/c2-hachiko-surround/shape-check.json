@@ -1,0 +1,30 @@
+{
+  "photo": {
+    "source": "july095.jpg / 3072x4096",
+    "approximate_y_px": {
+      "shrub_top": 915,
+      "rear_rail_top": 2012,
+      "dog_top": 83,
+      "dog_paw_bottom": 1432
+    }
+  },
+  "photo_gap_over_dog_height": 0.8131949592290586,
+  "model_world_ranges_m": {
+    "needles": [
+      1.1345887184143066,
+      2.0800561904907227
+    ],
+    "rails": [
+      0.4255540370941162,
+      1.316069334745407
+    ],
+    "dog": [
+      1.8622074574232101,
+      2.872317671775818
+    ]
+  },
+  "final_world_gap_over_dog_height": 0.7563400952587775,
+  "initial_nominal_gap_over_dog_height": 0.34649684264832376,
+  "final_nominal_gap_over_dog_height": 0.7721929636162642,
+  "caveat": "Photograph pixel ratio and model world ratio are different measures. Uncalibrated perspective, occlusion, manually read approximate points and ground slope apply. Directional silhouette proxy only, not positional/physical accuracy or a pass score."
+}
