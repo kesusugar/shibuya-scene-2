@@ -7,7 +7,7 @@
 6,way/87250190,building,渋谷マークシティEAST,,osm_prism,,,112.43,plateau_top,125.8,not_started,5,0.01698,0.01874,0.01139,0.01358,0.00941,0.0,0.0,5,0.01874,0.8,0.4764
 7,way/60739635,building,渋谷駅前ビル,,plateau_lod2,15.24,46.6,31.36,plateau_lod2_surfaces,65.0,B_prototype,7,0.02652,0.02757,0.02307,0.01331,0.0213,0.0,0.01609,6,0.02757,0.4,0.4499
 8,way/54500467,building,Ishi-usubiki Nihachi Soba Sobashiki Shibuya Mark City,渋谷マークシティ WEST（OSM の名前は入居店舗名）,plateau_lod2,15.578,128.009,112.43,plateau_lod2_surfaces,286.7,not_started,29,0.00345,0.00492,0.00137,0.00236,0.00113,0.0,0.0,5,0.00492,0.8,0.4485
-9,way/355250634,building,(名称なし),推定：駅側の高架歩行者デッキ／コンコース（layer 1、2〜3階、POI「渋谷駅の歩道橋から見た渋谷交差点」）,plateau_lod2,15.41,35.686,20.28,plateau_lod2_surfaces,79.6,not_started,8,0.01266,0.0362,0.00792,0.00733,0.00739,0.0,0.00716,6,0.0362,0.2,0.4273
+9,way/355250634,building,(名称なし),推定：駅側の高架歩行者デッキ／コンコース（layer 1、2〜3階、POI「渋谷駅の歩道橋から見た渋谷交差点」）,plateau_lod2,15.41,35.686,20.28,plateau_lod2_surfaces,79.6,B_prototype,8,0.01266,0.0362,0.00792,0.00733,0.00739,0.0,0.00716,6,0.0362,0.2,0.4273
 10,plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0,building,(名称なし),推定：駅南東側の駅関連建物（PLATEAU のみ。高所 X02 の手前で大きく写る）,plateau_lod2,14.62,38.069,23.45,plateau_lod2_surfaces,146.4,not_started,,1e-05,0.0,8e-05,0.0,0.00014,0.0,0.12071,1,0.12071,0.2,0.4194
 11,way/55895868,building,Shibuya 109,,plateau_lod2,16.17,65.949,49.78,plateau_lod2_surfaces,153.9,not_started,12,0.00454,0.0,0.00371,0.00287,0.0,0.0,0.00111,4,0.00454,0.8,0.412
 12,brid/brid_95680199-7365-41de-a5b7-9275321fe8bf,structure,(名称なし),推定：JR山手線・山手貨物線の高架橋（OSM way/146060265・155269569 等と位置が一致）,plateau_lod2,14.704,31.626,16.92,plateau_lod2_surfaces,50.5,not_started,,0.0033,0.00241,0.00067,0.01214,0.0005,0.00129,0.00269,5,0.01214,0.5,0.4031
@@ -64,7 +64,7 @@
 63,brid/brid_32c694b5-5723-4a50-a9a9-87b6b64cedb8,structure,(名称なし),横断歩道橋（PLATEAU 機能コード 07、明治通り）,plateau_lod2,14.524,22.673,8.15,plateau_lod2_surfaces,247.0,not_started,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.5,0.2
 64,brid/brid_74a18c48-d0e4-491a-9607-6e88988516ae,structure,(名称なし),推定：西武渋谷店 A館とB館を結ぶ連絡橋（井の頭通りの上、地上約6〜34 m）,plateau_lod2,21.237,49.623,28.39,plateau_lod2_surfaces,103.1,not_started,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.5,0.2
 65,brid/brid_a4d3aa47-8095-4c24-99e2-80202b230bc1,structure,(名称なし),推定：東京メトロ銀座線の高架（西側、マークシティ方面。OSM way/16688536 と位置が一致）,plateau_lod2,15.678,29.125,13.45,plateau_lod2_surfaces,87.5,not_started,,0.0,0.0,0.0,1e-05,0.0,0.0,0.0,0,1e-05,0.5,0.2
-66,brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d,structure,(名称なし),推定：JR駅とマークシティを結ぶ連絡通路の橋部分（way/355250634 と重なる。REF-A の撮影場所）,plateau_lod2,15.557,33.255,17.7,plateau_lod2_surfaces,67.6,not_started,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.5,0.2
+66,brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d,structure,(名称なし),推定：JR駅とマークシティを結ぶ連絡通路の橋部分（way/355250634 と重なる。REF-A の撮影場所）,plateau_lod2,15.557,33.255,17.7,plateau_lod2_surfaces,67.6,B_prototype,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.5,0.2
 67,brid/brid_0e0c081e-d376-4692-91c7-a3c866c1e46e,structure,(名称なし),推定：東京メトロ銀座線の高架（東側、宮益坂方面）,plateau_lod2,24.531,30.658,6.13,plateau_lod2_surfaces,184.7,not_started,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.5,0.2
 68,brid/brid_cb8a47ec-def6-47a9-9366-b294a047ee63,structure,(名称なし),推定：JR山手線の高架（北側、原宿方面）,plateau_lod2,16.213,22.516,6.3,plateau_lod2_surfaces,103.3,not_started,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.5,0.2
 69,plateau/bldg_5e342582-90bd-4497-b851-648330ac5704,building,(名称なし),,plateau_lod2,12.0,26.4,14.4,plateau_lod2_surfaces,211.7,not_started,,0.0,0.0,0.0,0.0,0.0,0.0,0.01132,1,0.01132,0.2,0.1986

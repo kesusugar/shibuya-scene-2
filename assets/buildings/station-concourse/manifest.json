@@ -1,0 +1,62 @@
+{
+  "id": "station-concourse",
+  "source_ids": [
+    "way/355250634",
+    "brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d"
+  ],
+  "level": "B",
+  "status": "prototype; corridor association, bay/window/scaffold dimensions estimated; five station buildings not certified",
+  "reference_era": "2025-10; December auxiliary types only",
+  "absolute_datum_tp_m": 15,
+  "stats": {
+    "triangles": 592,
+    "primitives": 7,
+    "bytes": 38484
+  },
+  "files": {
+    "README.md": {
+      "bytes": 2425,
+      "sha256": "69c056d43776a222471407811faa686fe03d9679e790c15acdaf48c832c798a1"
+    },
+    "source/blender/build_station_concourse.py": {
+      "bytes": 6988,
+      "sha256": "ee63f9a87320762e58bcd1a20965500d6db7de81a4a8ab8bc01e5b8a31de6d11"
+    },
+    "source/data/layout.json": {
+      "bytes": 3765,
+      "sha256": "f5b0ee090e2b659768986547e2f46766251e1cad566dabc228b904cbc47e000e"
+    },
+    "source/data/parts.json": {
+      "bytes": 22022,
+      "sha256": "dd59fc668b3a479de1dd388cd404bd1f45880f35381df2c916fd44e1759dd740"
+    },
+    "source/data/stats.json": {
+      "bytes": 6798,
+      "sha256": "e233e3afd378b99fd372c2fbd93467b3fb5a77fbcc46fcf35f50345ce828e181"
+    },
+    "source/refs/README.md": {
+      "bytes": 390,
+      "sha256": "011e49613d691df00e7c341668f402c1dce6c025aede52004971740c0fd8589e"
+    },
+    "source/refs/REFERENCE_REGISTER.csv": {
+      "bytes": 997,
+      "sha256": "53d80ca69fb6066e5f1f72cf5a494e6ac589e868b7cba9f1ce8490736fce92ba"
+    },
+    "web/emissive_day.json": {
+      "bytes": 225,
+      "sha256": "f3799a420cff56495d0f434d2bbfcd635952d8899db4e8311f0cfa305a0b16a5"
+    },
+    "web/emissive_night.json": {
+      "bytes": 231,
+      "sha256": "faaf1aa005a3633a5ab7c8f32b58d40d60b93b02d2606807d9ce51675f59159b"
+    },
+    "web/station-concourse.glb": {
+      "bytes": 38484,
+      "sha256": "0da3c16fb7e7e597d9f50c2d6ecbbb761f8564efe05e4bc67179a6a9265c14c1"
+    },
+    "web/viewer.json": {
+      "bytes": 103,
+      "sha256": "8579adee069d364c53d5c6f1038fcc9dc0dd3a74b0bce316c68f30388d36fb3d"
+    }
+  }
+}
