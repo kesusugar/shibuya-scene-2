@@ -1,0 +1,84 @@
+{
+ "id": "hachiko-surround",
+ "status": "partial photo-informed planter/perch-rail prototype; offsets, dimensions, species, October condition and inscription unverified",
+ "datum_tp_m": 15,
+ "coordinates": "Blender east/north/up; web east/up/south",
+ "licences": {
+  "model": "CC BY-SA 4.0",
+  "reference_photos": "RuinDig/Yuki Uchida, CC BY 4.0; SOURCES.json",
+  "position_origin": "OSM contributors, ODbL",
+  "terrain": "MLIT PLATEAU, CC BY 4.0 compatible"
+ },
+ "build_stats": {
+  "triangles": 16440,
+  "anchors": [
+   {
+    "id": "left",
+    "anchor_tp": 15.4710693359375,
+    "max_burial_m": 0.039661407470703125
+   },
+   {
+    "id": "right",
+    "anchor_tp": 15.41555404663086,
+    "max_burial_m": 0.039745330810546875
+   },
+   {
+    "id": "stone-panel",
+    "anchor_tp": 15.507125854492188,
+    "max_burial_m": 0.015232086181640625
+   }
+  ]
+ },
+ "inputs": {
+  "assets/ground/core/web/ground_core.glb": {
+   "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32",
+   "bytes": 3700232
+  },
+  "assets/street/hachiko/source/data/layout.json": {
+   "sha256": "174941855d335f3bf481939f4f299fb909e9d6c4a8f7eb832a2fa1d585da7f8a",
+   "bytes": 363
+  },
+  "assets/street/hachiko/source/refs/july094.jpg": {
+   "sha256": "bcf5b33895fc22aeff13f0396a1a09f55af2ee11d486b4eb40e266fabc329533",
+   "bytes": 9448212
+  },
+  "assets/street/hachiko/source/refs/july095.jpg": {
+   "sha256": "9694141740dc56810cb4e6a5dbf5a98c3b2d4a139a468d71b175584709d13186",
+   "bytes": 10065544
+  },
+  "assets/street/tactile/source/data/stats.json": {
+   "sha256": "cc32a5db621f71daffcee09711faccf8e1b9e6409c0001cfc971f963d30ebf96",
+   "bytes": 53691
+  }
+ },
+ "files": {
+  "README.md": {
+   "sha256": "dc17e48e0b14fed99a8c759e7ea1216ead422d434e5bcd8163b0b97a86b6f2fd",
+   "bytes": 1980
+  },
+  "source/blender/build_surround.py": {
+   "sha256": "0f25df8b544b937060a524587916b1e3d5c54c21f2f4e82723c55f56bd6b7996",
+   "bytes": 7934
+  },
+  "source/data/layout.json": {
+   "sha256": "4b6913335f6127711d1dd49733e3cdc22f825d8188d67d8d7d942edbc53c4768",
+   "bytes": 869
+  },
+  "source/data/stats.json": {
+   "sha256": "710ee4881ea0c6465b738df9318b9316e7a40d89c78f521890bced7e1ee9f32f",
+   "bytes": 5644
+  },
+  "source/refs/SOURCES.json": {
+   "sha256": "e2e8978b6d09f374b20bac70f30423f0b7e69738f2e54df7d54b83e2263d0ec8",
+   "bytes": 947
+  },
+  "source/tools/write_manifest.py": {
+   "sha256": "14633aca38f5822178ddaf5948b121119f8c3b3d94681c65d011f13606381145",
+   "bytes": 1297
+  },
+  "web/hachiko-surround.glb": {
+   "sha256": "5bc8f912e75b2953cd7d229612f7766313c3c22536f6f82a50272fe9f6584cac",
+   "bytes": 1202916
+  }
+ }
+}

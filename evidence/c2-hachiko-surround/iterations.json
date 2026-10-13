@@ -1,0 +1,40 @@
+{
+ "iterations": [
+  {
+   "id": "v1",
+   "panel_x_m": 3.65,
+   "branch_fans": 11,
+   "shrub_height_m": 0.67
+  },
+  {
+   "id": "v2-panel",
+   "changed": "panel local X only",
+   "panel_x_m": -3.65,
+   "branch_fans": 11,
+   "shrub_height_m": 0.67
+  },
+  {
+   "id": "v3-density",
+   "changed": "additional branch/needle fans only, separate RNG preserves original branches and rocks",
+   "panel_x_m": -3.65,
+   "branch_fans": 28,
+   "shrub_height_m": 0.67
+  },
+  {
+   "id": "v4-height",
+   "changed": "shrub height only",
+   "panel_x_m": -3.65,
+   "branch_fans": 28,
+   "shrub_height_m": 1.1,
+   "needle_bundle_width_m": 0.004
+  },
+  {
+   "id": "after",
+   "changed": "leaf bundle width only, keeping branch positions, height and colour",
+   "needle_bundle_width_m": 0.012,
+   "panel_x_m": -3.65,
+   "branch_fans": 28,
+   "shrub_height_m": 1.1
+  }
+ ]
+}

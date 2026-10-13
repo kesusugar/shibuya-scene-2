@@ -1,0 +1,40 @@
+{
+ "id": "hachiko-surround",
+ "statue_layout": "assets/street/hachiko/source/data/layout.json",
+ "datum_tp_m": 15,
+ "status": "photo-informed partial planter/perch-rail/stone-panel prototype; positions, dimensions, October condition and inscriptions unverified",
+ "segments": [
+  {
+   "id": "left",
+   "x0": -3.1,
+   "x1": -0.75
+  },
+  {
+   "id": "right",
+   "x0": 0.75,
+   "x1": 3.1
+  }
+ ],
+ "front_y_m": -1.0,
+ "depth_m": 0.75,
+ "wall_height_m": 0.52,
+ "wall_thickness_m": 0.22,
+ "rail_front_height_m": 0.65,
+ "rail_rear_height_m": 0.81,
+ "rail_depth_m": 0.22,
+ "rail_radius_m": 0.035,
+ "shrubs_per_segment": 3,
+ "shrub_height_m": 1.1,
+ "panel": {
+  "xy_local": [
+   -3.65,
+   -1.25
+  ],
+  "width_m": 0.95,
+  "height_m": 1.35,
+  "depth_m": 0.2
+ },
+ "source": "july094/july095, 2025-07-13; no photograph texture",
+ "branch_fans": 28,
+ "needle_bundle_width_m": 0.012
+}
