@@ -81,7 +81,7 @@
    ]
   },
   "plaza_paving": {
-   "version": 1,
+   "version": 2,
    "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated",
    "tile_size_m": [
     0.2,
@@ -153,7 +153,7 @@
    "texture": "../textures/paving_plaza.png",
    "notes": [
     "February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture",
-    "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring",
+    "Existing sidewalk/island faces partitioned at polygon edges with interpolated original heights; no road, kerb, marking or provisional fill recolouring",
     "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"
    ]
   }
@@ -226,8 +226,8 @@
     "z_max": 3.332
    },
    "ground_sidewalk": {
-    "triangles": 46775,
-    "vertices": 23645,
+    "triangles": 48595,
+    "vertices": 28090,
     "z_min": -0.487,
     "z_max": 3.29
    },
@@ -252,7 +252,7 @@
   },
   "kerb_length_m": 1266.2,
   "skirt_length_m": 1363.3,
-  "triangles_total": 73722,
+  "triangles_total": 75542,
   "paving": {
    "status": "B material prototype: block size, grid direction and area mask are estimated",
    "faces": 7565,
@@ -276,7 +276,7 @@
    "joint_level": 0.82
   },
   "plaza_paving": {
-   "version": 1,
+   "version": 2,
    "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated",
    "tile_size_m": [
     0.2,
@@ -348,15 +348,17 @@
    "texture": "../textures/paving_plaza.png",
    "notes": [
     "February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture",
-    "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring",
+    "Existing sidewalk/island faces partitioned at polygon edges with interpolated original heights; no road, kerb, marking or provisional fill recolouring",
     "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"
    ],
-   "faces": 6721,
-   "area_m2": 1002.33,
+   "faces": 7744,
+   "area_m2": 1002.96,
    "atlas_period_m": [
     6.0,
     6.0
-   ]
+   ],
+   "boundary_split_faces": 881,
+   "boundary_method": "polygon edge partition; interpolated original triangle heights"
   }
  },
  "building_anchors": {
@@ -420,27 +422,27 @@
   "blender -b -P source/blender/ground_anchor.py -- web/ground_core.glb <plateau_core.json> source/data/ground_anchors.json",
   "python3 source/tools/write_manifest.py"
  ],
- "generatorRevision": "f083e61f46017a019420a57c3b9659db2daf25f3",
+ "generatorRevision": "ab3adc746881822f62b1b10960f6a0f56c874cda",
  "files": {
   "web/ground_core.glb": {
-   "sha256": "f36ae1aa390d8ecbb610ac4cecb354c821ed91557974733daad8fcc464c25964",
-   "bytes": 3517960
+   "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32",
+   "bytes": 3700232
   },
   "source/data/ground_input.json": {
    "sha256": "b2b21f5f80fb7b2cebfc04f886ab228f3605f5ff30a760699f1d583de1bfb1f7",
    "bytes": 1098622
   },
   "source/data/ground_stats.json": {
-   "sha256": "02398b76eb53d6b188455941d3742ad8a4c45c3130e218534d07f6e5938799fa",
-   "bytes": 2684
+   "sha256": "34cc666d5ad5cacd07c7416208f54416c44cfdbcc4cf5c78923bb71050e60206",
+   "bytes": 2849
   },
   "source/data/crosswalks_measured.json": {
    "sha256": "dbaa6719fcca798114ce4aa0d958ddaeae9bf93c3c8b96c7c76316ce05f084e0",
    "bytes": 17538
   },
   "source/blender/build_ground.py": {
-   "sha256": "48504667d5bec4db44c51d5174a1867c91a93c03b83680c3dd16e1786748e6f6",
-   "bytes": 13505
+   "sha256": "860d1a413aa429c54b35865b888108d81b1e5454cf209693d0c4eb7732287b1e",
+   "bytes": 15234
   },
   "source/tools/prepare_ground.py": {
    "sha256": "aca0f2dd230068aa2023da99746a2cc6c356f54795b2367188c4c7ad950f2975",
@@ -458,25 +460,29 @@
    "sha256": "51c30faf4db73bdb4acf947c2f77409c2588ae2448b9e142a80ce75d255762af",
    "bytes": 3978
   },
+  "source/blender/paving_boundary.py": {
+   "sha256": "18735b9bc65292ba853d6053bb01a625decd1c939bccca36ad745b99fbb1a861",
+   "bytes": 2010
+  },
   "README.md": {
-   "sha256": "60e02c131325fcb42f6eebfcb6930b1dd14d49eb1b39897097351ae2dc2dcaeb",
-   "bytes": 7493
+   "sha256": "7db36bf60319898004196c9a2a0cd788f896df597854cf3076b3e2b331b2991f",
+   "bytes": 8186
   },
   "source/data/paving_layout.json": {
    "sha256": "b36874c8b6dec04eca21f87091950b86448b5c87320155ceb83f0509d094810b",
    "bytes": 744
   },
   "source/data/plaza_paving_layout.json": {
-   "sha256": "7c5418e64940c60d71758c26b8fe36820ac800f31fe8ece77db44119634de08f",
-   "bytes": 1300
+   "sha256": "ade7152e02141e122515df3c1593b93f39754e879eddfac14f98a0d3164fa1ce",
+   "bytes": 1347
   },
   "source/tools/make_paving.py": {
    "sha256": "151e519e8490fcd5bc6f1004db267e1f309d5c3b9058ba3499f0533c5c76cee7",
    "bytes": 1729
   },
   "source/tools/write_manifest.py": {
-   "sha256": "a68a026f666fa79d94ea8ec2a6e3877a2ca0ed00acd34ad8fcd4e45ea62c5e99",
-   "bytes": 5823
+   "sha256": "e7fd0a6e38cbe18cfd826e431be2647f29eddf828295061620caef6d004d8064",
+   "bytes": 5860
   },
   "source/refs/PAVING_REFERENCE_REGISTER.csv": {
    "sha256": "bf731a1547b9e28d9a576020dbc86b0e1da89ccb83ae5e1728cf36b271990808",

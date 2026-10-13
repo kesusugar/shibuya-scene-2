@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated",
   "tile_size_m": [
     0.2,
@@ -71,7 +71,7 @@
   "texture": "../textures/paving_plaza.png",
   "notes": [
     "February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture",
-    "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring",
+    "Existing sidewalk/island faces partitioned at polygon edges with interpolated original heights; no road, kerb, marking or provisional fill recolouring",
     "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"
   ]
 }

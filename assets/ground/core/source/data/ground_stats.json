@@ -25,8 +25,8 @@
    "z_max": 3.332
   },
   "ground_sidewalk": {
-   "triangles": 46775,
-   "vertices": 23645,
+   "triangles": 48595,
+   "vertices": 28090,
    "z_min": -0.487,
    "z_max": 3.29
   },
@@ -51,7 +51,7 @@
  },
  "kerb_length_m": 1266.2,
  "skirt_length_m": 1363.3,
- "triangles_total": 73722,
+ "triangles_total": 75542,
  "paving": {
   "status": "B material prototype: block size, grid direction and area mask are estimated",
   "faces": 7565,
@@ -75,7 +75,7 @@
   "joint_level": 0.82
  },
  "plaza_paving": {
-  "version": 1,
+  "version": 2,
   "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated",
   "tile_size_m": [
    0.2,
@@ -147,14 +147,16 @@
   "texture": "../textures/paving_plaza.png",
   "notes": [
    "February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture",
-   "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring",
+   "Existing sidewalk/island faces partitioned at polygon edges with interpolated original heights; no road, kerb, marking or provisional fill recolouring",
    "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"
   ],
-  "faces": 6721,
-  "area_m2": 1002.33,
+  "faces": 7744,
+  "area_m2": 1002.96,
   "atlas_period_m": [
    6.0,
    6.0
-  ]
+  ],
+  "boundary_split_faces": 881,
+  "boundary_method": "polygon edge partition; interpolated original triangle heights"
  }
 }
