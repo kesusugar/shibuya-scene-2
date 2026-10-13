@@ -5,6 +5,17 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  b109: {q:'time=day&pose=-75,-20,70,-155,10,25,55',w:900,h:750},
+  markcity: {q:'time=day&pose=-5,-150,150,-165,-130,50,65',w:900,h:750},
+  takagi: {q:'time=day&pose=-26,30,75,-73,100,25,55',w:900,h:750},
+  bic: {q:'time=day&pose=-55,-60,60,-88,-20,15,55',w:900,h:750},
+  cine: {q:'time=day&pose=-75,-12,90,-140,-50,30,55',w:900,h:750},
+  mixed: {q:'time=day&pose=50,-20,70,90,23,25,55',w:900,h:750},
+  hikarie: {q:'time=day&pose=130,-170,200,285,-45,90,65',w:900,h:750},
+  parco: {q:'time=day&pose=-40,150,150,-155,270,50,65',w:900,h:750},
+  streamtower: {q:'time=day&pose=55,-145,210,245,-250,100,65',w:900,h:750},
+  sakura: {q:'time=day&pose=-75,-160,210,135,-320,95,65',w:900,h:750},
+
   tactile_entrance_nw: {q:'time=day&pose=-18,9,2.2,-37,14,1.2,60',w:1000,h:750},
 
   tactile_entrance_east: {q:'time=day&pose=22,-4,2.2,34,3,1,65',w:1000,h:750},
