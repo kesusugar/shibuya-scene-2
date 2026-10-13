@@ -215,9 +215,18 @@
       ]
     ]
   ],
-  "time_reference": "2025-10-11",
-  "basis": "October platform photo shows elevated connection/columns and scaffolded clearance. December7 CC0 pictures clarify structural types only, not October work arrangement. Source blocks are solid wrappers; only eastern connection bay replaced; western lower solid retained. Dimensions and association remain B estimates. No new ads or December equipment.",
+  "time_reference": "2025-10-10/11/18",
+  "basis": "October11 platform photo for structure, October10/18 crossing photos for north glazing/interior/transom types. Corridor association/dimensions remain B estimates. Original roofs/lower western solid retained. December7 pictures are historical auxiliary types only, not October works or advertisements.",
   "roof_policy": "Keep original absolute PLATEAU T.P. levels, sample ground per support; no blanket anchoring shift",
   "window_bays": 44,
-  "window_revision_basis": "Initial same-pose view had overly broad 2.1m panes. December auxiliary photographs show finer window/metal divisions; chose ~1.15m spacing as a B estimate. Changed spacing only; glass height, floor, roof and bay remain fixed. October front-pane dimensions are not independently measured."
+  "window_revision_basis": "Initial same-pose view had overly broad 2.1m panes. December auxiliary photographs show finer window/metal divisions; chose ~1.15m spacing as a B estimate. Changed spacing only; glass height, floor, roof and bay remain fixed. October front-pane dimensions are not independently measured.",
+  "glass_alpha": 0.32,
+  "interior_depth_m": 0.75,
+  "interior_night_strength": 0.4,
+  "fixture_night_strength": 1.2,
+  "transom_offsets_m": [
+    -0.55
+  ],
+  "glazing_basis": "SC04/SC05 (October10/18,2025) show bright interior and horizontal transoms on north concourse glazing. Added a shallow corridor box and fixtures; dimensions/opacity/light strength estimated, no calibrated camera or photometric match. Roof and lower bay unchanged.",
+  "transom_revision_basis": "SC04/SC05 show a horizontal division in the north glazing. After initial recess/fixture build, added one continuous transom only, .55m below pane centre as an estimate. Pane height, vertical bay spacing, recess depth and lighting unchanged."
 }

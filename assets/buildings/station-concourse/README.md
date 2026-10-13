@@ -19,6 +19,12 @@ npx vite preview --port 5192 --strictPort
 VIEWS=station_concourse,overview,sw_island,night node scripts/capture-street-fix.mjs http://127.0.0.1:5192 evidence/c1-station-concourse/<run>
 ```
 
-592三角形・7描画単位・38,484 bytes、B予算内。撮影中は資産・srcを変えず、ブラウザは一つずつ実行。`?context=nostation`は新しい通路も消す。
+848三角形・9描画単位・54,128 bytes、B予算内。撮影中は資産・srcを変えず、ブラウザは一つずつ実行。`?context=nostation`は新しい通路も消す。
 
-正確な同定、10月正面とのカメラ合わせ・寸法測量、開口・柱の位置、窓・外装の色、養生・足場の配置、夜の光量は未達。駅舎5棟はCのままで10月確認済みとは扱わない。結果は `docs/core/C1_STATION_CONCOURSE_REPORT.md`、比較板は `evidence/c1-station-concourse/boards/`。
+正確な同定、10月正面とのカメラ合わせ・寸法測量、開口・柱の位置、窓・外装の色、養生・足場の配置、夜の光量は未達。残る駅側4候補はCのままで10月確認済みとは扱わない。結果は `docs/core/C1_STATION_CONCOURSE_REPORT.md`、比較板は `evidence/c1-station-concourse/boards/`。
+
+## 10月の北側ガラス帯の補正
+
+SC04/SC05の10月10日・18日写真を参考に、窓の奥に浅い床・天井・柱・照明を追加。透明なガラスの裏を元の北側壁が塞がないようガラス帯だけを開けた。深さ0.75 m、配置と光量は推定。初版の比較後は横枠だけを追加した。初版はlayout.jsonのtransom_offsets_mを空配列、最終版は[-0.55]として再生成できる。写真カメラ・画素誤差の検証は未達。
+
+結果と残る差は `docs/core/C1_STATION_GLAZING_REPORT.md`、画像は `evidence/c1-station-glazing/boards/`。広告は後工程。
