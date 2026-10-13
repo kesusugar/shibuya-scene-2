@@ -1,0 +1,21 @@
+11:09:19 | INFO: Starting glTF 2.0 export
+11:09:19 | INFO: Extracting primitive: ground_road
+11:09:19 | INFO: Primitives created: 1
+11:09:19 | INFO: Extracting primitive: ground_intersection
+11:09:19 | INFO: Primitives created: 1
+11:09:19 | WARNING: Mesh ground_sidewalk is not valid, and may be exported wrongly
+11:09:19 | INFO: Extracting primitive: ground_sidewalk
+11:09:19 | INFO: Primitives created: 4
+11:09:19 | INFO: Extracting primitive: ground_kerb
+11:09:19 | INFO: Primitives created: 1
+11:09:19 | INFO: Extracting primitive: ground_marking
+11:09:19 | INFO: Primitives created: 1
+11:09:19 | INFO: Extracting primitive: ground_fill
+11:09:19 | INFO: Primitives created: 1
+11:09:19 | INFO: Finished glTF 2.0 export in 0.11563634872436523 s
+INFO Draco mesh compression is available, use library at /workspace/toolchains/blender-4.2.3-linux-x64/4.2/python/lib/python3.11/site-packages/libextern_draco.so
+
+GROUND {"params": {"radius_m": 150.0, "kerb_height_m": 0.15, "kerb_low_m": 0.02, "landing_flat_m": 1.0, "landing_ramp_m": 1.5, "zebra_bar_m": 0.45, "zebra_gap_m": 0.45, "default_crosswalk_width_m": 4.0, "fill_grid_m": 3.0}, "datum_tp_m": 15.0, "objects": {"ground_road": {"triangles": 443, "vertices": 475, "z_min": -0.594, "z_max": 3.089}, "ground_intersection": {"triangles": 426, "vertices": 449, "z_min": -0.594, "z_max": 3.332}, "ground_sidewalk": {"triangles": 46775, "vertices": 23645, "z_min": -0.487, "z_max": 3.29}, "ground_kerb": {"triangles": 13950, "vertices": 27900, "z_min": -0.894, "z_max": 3.332}, "ground_marking": {"triangles": 4459, "vertices": 4683, "z_min": -0.137, "z_max": 1.894}, "ground_fill": {"triangles": 7669, "vertices": 5421, "z_min": -0.497, "z_max": 3.28}}, "kerb_length_m": 1266.2, "skirt_length_m": 1363.3, "triangles_total": 73722, "paving": {"status": "B material prototype: block size, grid direction and area mask are estimated", "faces": 7565, "area_m2": 1623.3, "tile_size_m": [0.6, 0.3], "atlas_period_m": [2.4, 1.2], "bounds_xy_m": [-80, 0, 50, 65], "yaw_deg": 6.4, "joint_width_m": 0.006, "joint_level": 0.82}, "plaza_paving": {"version": 1, "status": "B material prototype: Hachiko plaza block size, pale bands and boundary estimated", "tile_size_m": [0.2, 0.1], "atlas_tiles": [30, 60], "atlas_px": [1024, 1024], "joint_width_m": 0.003, "joint_level": 0.7, "tile_level": 0.98, "tile_variation": 0.025, "grain": 0.001, "tile_rgb": [0.89, 0.67, 0.63], "joint_rgb": [0.89, 0.67, 0.63], "bands": {"width_m": 0.12, "rgb": [0.99, 0.97, 0.91]}, "seed": 155538, "yaw_deg": -10, "origin_xy_m": [14, -15], "polygon_xy_m": [[13, -11], [43, -14], [40, -47], [5, -43], [7, -36], [12, -30]], "texture": "../textures/paving_plaza.png", "notes": ["February 2025 CC0 high view shows reddish paving with pale divisions; reference only, no photo texture", "Only existing sidewalk/island faces by centroid; no road, kerb, marking or provisional fill recolouring", "Boundary, laying direction, band spacing and actual block dimensions are estimates; October 10 photo confirms block type only at the southwest edge, not the whole plaza"], "faces": 6721, "area_m2": 1002.33, "atlas_period_m": [6.0, 6.0]}}
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+
+Blender quit

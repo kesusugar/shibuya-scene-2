@@ -1,0 +1,84 @@
+{
+  "total": {
+    "triangles": 310469,
+    "primitives": 257,
+    "bytes": 19888832
+  },
+  "assets": {
+    "buildings/center-gai-gate": {
+      "triangles": 2424,
+      "primitives": 4,
+      "bytes": 162216
+    },
+    "buildings/daiichi-kangin": {
+      "triangles": 868,
+      "primitives": 10,
+      "bytes": 56136
+    },
+    "buildings/eiraku": {
+      "triangles": 394,
+      "primitives": 5,
+      "bytes": 32840
+    },
+    "buildings/ekimae": {
+      "triangles": 6640,
+      "primitives": 18,
+      "bytes": 1736204
+    },
+    "buildings/ginza-canopy": {
+      "triangles": 11314,
+      "primitives": 11,
+      "bytes": 715544
+    },
+    "buildings/magnet": {
+      "triangles": 26473,
+      "primitives": 60,
+      "bytes": 1716472
+    },
+    "buildings/qfront": {
+      "triangles": 115196,
+      "primitives": 56,
+      "bytes": 5808996
+    },
+    "buildings/station-concourse": {
+      "triangles": 848,
+      "primitives": 9,
+      "bytes": 54128
+    },
+    "buildings/station-north": {
+      "triangles": 996,
+      "primitives": 9,
+      "bytes": 68400
+    },
+    "buildings/station-service": {
+      "triangles": 342,
+      "primitives": 6,
+      "bytes": 24288
+    },
+    "buildings/station-west-viaduct": {
+      "triangles": 1332,
+      "primitives": 5,
+      "bytes": 78096
+    },
+    "buildings/west-block": {
+      "triangles": 1257,
+      "primitives": 25,
+      "bytes": 1751748
+    },
+    "ground/core": {
+      "triangles": 71323,
+      "primitives": 9,
+      "bytes": 3517960
+    },
+    "street/core": {
+      "triangles": 41296,
+      "primitives": 22,
+      "bytes": 1932568
+    },
+    "context/core": {
+      "triangles": 29766,
+      "primitives": 8,
+      "bytes": 2233236
+    }
+  }
+}

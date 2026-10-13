@@ -1,7 +1,7 @@
 # Core ground (C2a)
 
 This asset is the ground of the Shibuya Scramble Core, within 150 m of the crossing centre (OSM node/291758776).
-It fixes positions and heights. Northern sidewalk faces now use an estimated procedural paver atlas; other materials remain the existing flat colours.
+It fixes positions and heights. Northern sidewalk and selected Hachiko plaza walking faces use estimated procedural paver atlases; other materials remain the existing flat colours.
 
 ## What it contains
 | Object | Source |
@@ -76,6 +76,7 @@ python3 source/tools/write_manifest.py <53393596_tran.gml> <plateau_core.json> <
 source /workspace/setup-tools/core-env.sh
 python3 assets/ground/core/source/tools/make_paving.py assets/ground/core/source/data/paving_layout.json
 blender -b --python-exit-code 1 -t 4 -P assets/ground/core/source/blender/build_ground.py -- assets/ground/core/source/data/ground_input.json assets/ground/core/web/ground_core.glb assets/ground/core/source/data/ground_stats.json
+python3 assets/ground/core/source/tools/write_manifest.py
 ```
 
 既存の生成コマンドは、同じフォルダのpaving_layout.jsonがあれば舗装を含めて生成する。設定や目地色を変えたら、先にmake_paving.pyでアトラスを再生成する。BlenderのMultiplyノードがglTFの色係数として出ない場合もあるため、書き出したGLBの舗装材質の係数だけを0.30/0.28/0.25へ明示し、Blender側のTintとそろえる。バッファ内の形状は変更しない。
@@ -85,3 +86,22 @@ blender -b --python-exit-code 1 -t 4 -P assets/ground/core/source/blender/build_
 初版の目地色は0.60、補正後は0.82。ほかの設定・露出・光は固定。初版/最終版の設定とアトラスをevidence/c2-north-paving/{first,after}/へ保存。別フォルダへ設定をコピーする際はdata/とtextures/の相対関係を維持し、Blenderの4番目の引数でコピーした設定を渡す。
 
 寸法・目地幅・方向・対象境界、実際の舗装色・摩耗・汚れ・凹凸・夜の反射は未達。ハチ公広場の異なる舗装、点字誘導、排水溝、マンホールは今回の対象外で、舗装全体の完成を認定しない。
+
+## ハチ公広場の舗装試作（PR #22後）
+
+`source/data/plaza_paving_layout.json`は赤茶色のブロック・淡い区画線と
+推定の対象ポリゴンを記録する。2月の高所写真と10月10日の南西側歩道写真を
+種類の参考にした。ブロック0.2×0.1 m、区画6 m、角度・境界・色は未実測。
+写真の人物や影は使わず、自作アトラスをGLBへ埋め込む。
+
+```bash
+python3 assets/ground/core/source/tools/make_paving.py assets/ground/core/source/data/paving_layout.json
+python3 assets/ground/core/source/tools/make_paving.py assets/ground/core/source/data/plaza_paving_layout.json
+blender -b --python-exit-code 1 -t 4 -P assets/ground/core/source/blender/build_ground.py -- assets/ground/core/source/data/ground_input.json assets/ground/core/web/ground_core.glb assets/ground/core/source/data/ground_stats.json
+python3 assets/ground/core/source/tools/write_manifest.py
+```
+
+生成器の第4引数は北側の設定、第5引数は広場の設定。省略時は既定ファイルを使う。
+存在しない設定パスを指定するとその材質追加を省略する。選択は歩道・島の面の
+重心だけで、道路・縁石・白線・仮補填面を変更しない。元の高さ・三角形を維持し、
+材質の境界自体は未実測。表面の凹凸、点字・排水、10月の全区画の照合は未達。
