@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "triangles": 71323,
+    "primitives": 9,
+    "bytes": 3517960
+  },
+  "ground": {
+    "triangles": 73263,
+    "primitives": 9,
+    "bytes": 3700232
+  },
+  "total": {
+    "triangles": 312409,
+    "primitives": 257,
+    "bytes": 20071104
+  }
+}

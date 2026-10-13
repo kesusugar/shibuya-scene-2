@@ -11,6 +11,8 @@ import numpy as np
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
 from mathutils.kdtree import KDTree
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from paving_boundary import partition
 
 argv = sys.argv[sys.argv.index('--') + 1:]
 src, out_glb, out_stats = argv[:3]
@@ -137,27 +139,6 @@ if PAVING:
             x,y=loop.vert.co.x,loop.vert.co.y
             loop[uv].uv=((co*x+si*y)/px,(-si*x+co*y)/py)
 
-plaza_faces=0;plaza_area=0.0
-if PLAZA:
-    # Select only existing walking faces. Do not raise overlays or alter provisional fill.
-    polygon=PLAZA['polygon_xy_m']
-    def in_plaza(x,y):
-        inside=False
-        for i,(x1,y1) in enumerate(polygon):
-            x2,y2=polygon[i-1]
-            if (y1>y)!=(y2>y) and x<(x2-x1)*(y-y1)/(y2-y1)+x1:inside=not inside
-        return inside
-    uv=bm_walk.loops.layers.uv.verify();a=math.radians(PLAZA['yaw_deg']);co,si=math.cos(a),math.sin(a)
-    plaza_px,plaza_py=[size*count for size,count in zip(PLAZA['tile_size_m'],PLAZA['atlas_tiles'])]
-    ox,oy=PLAZA['origin_xy_m']
-    for f in bm_walk.faces:
-        c=f.calc_center_median()
-        if not in_plaza(c.x,c.y):continue
-        f.material_index=3 if PAVING else 2;plaza_faces+=1;plaza_area+=f.calc_area()
-        for loop in f.loops:
-            x,y=loop.vert.co.x-ox,loop.vert.co.y-oy
-            loop[uv].uv=((co*x+si*y)/plaza_px,(-si*x+co*y)/plaza_py)
-
 # kerb faces (sidewalk edge over carriageway) and skirts (all other open edges), built from the lifted edge
 bm_kerb = bmesh.new(); kerb_len = 0.0; skirt_len = 0.0
 def add_quad(bm, a, b, za, zb):
@@ -197,6 +178,56 @@ for e in [e for e in bm_fill.edges if len(e.link_faces) == 1]:
     a, b = e.verts[0].co.copy(), e.verts[1].co.copy(); add_quad(bm_kerb, a, b, a.z - 0.3, b.z - 0.3)
 for f in bm_kerb.faces: f.normal_update()
 
+# Partition only the walking mesh after kerbs/fill have been built from the
+# original edges: new material seams must never change their geometry/heights.
+plaza_faces=0;plaza_area=0.0;boundary_split_faces=0
+if PLAZA:
+    polygon=PLAZA['polygon_xy_m']
+    x0=min(p[0] for p in polygon);x1=max(p[0] for p in polygon)
+    y0=min(p[1] for p in polygon);y1=max(p[1] for p in polygon)
+    uv=bm_walk.loops.layers.uv.verify()
+    vertices={}
+    def vertex(p):
+        key=tuple(round(float(c),9) for c in p)
+        if key not in vertices:vertices[key]=bm_walk.verts.new(p)
+        return vertices[key]
+    new_faces=[]
+    for face in list(bm_walk.faces):
+        points=[tuple(v.co) for v in face.verts]
+        if max(p[0] for p in points)<x0 or min(p[0] for p in points)>x1 or max(p[1] for p in points)<y0 or min(p[1] for p in points)>y1:continue
+        pieces=partition(points,polygon)
+        if len(pieces)==1:
+            if pieces[0][1]:face.material_index=3 if PAVING else 2
+            continue
+        boundary_split_faces+=1;old_material=face.material_index
+        # Preserve coincident source triangles independently; do not weld them or change their heights.
+        vertices.clear()
+        bmesh.ops.delete(bm_walk,geom=[face],context='FACES_ONLY')
+        for piece,inside in pieces:
+            for j in range(1,len(piece)-1):
+                vs=[vertex(p) for p in (piece[0],piece[j],piece[j+1])]
+                if len(set(vs))<3:continue
+                f=bm_walk.faces.new(vs)
+                f.material_index=(3 if PAVING else 2) if inside else old_material
+                new_faces.append(f)
+    a=math.radians(PLAZA['yaw_deg']);co,si=math.cos(a),math.sin(a)
+    plaza_px,plaza_py=[size*count for size,count in zip(PLAZA['tile_size_m'],PLAZA['atlas_tiles'])]
+    ox,oy=PLAZA['origin_xy_m']
+    # Restore the original north/world UV for newly split, untextured pieces.
+    if PAVING:
+        na=math.radians(PAVING['yaw_deg']);nc,ns=math.cos(na),math.sin(na)
+        for f in new_faces:
+            for loop in f.loops:
+                x,y=loop.vert.co.x,loop.vert.co.y
+                loop[uv].uv=((nc*x+ns*y)/px,(-ns*x+nc*y)/py)
+    for f in bm_walk.faces:
+        if f.material_index!=(3 if PAVING else 2):continue
+        plaza_faces+=1;plaza_area+=f.calc_area()
+        for loop in f.loops:
+            x,y=loop.vert.co.x-ox,loop.vert.co.y-oy
+            loop[uv].uv=((co*x+si*y)/plaza_px,(-si*x+co*y)/plaza_py)
+    bm_walk.normal_update()
+
 objs = {'ground_road': finish('ground_road', bm_road, MAT['road']), 'ground_intersection': finish('ground_intersection', bm_int, MAT['intersection'])}
 w = finish('ground_sidewalk', bm_walk, MAT['sidewalk']); w.data.materials.append(MAT['island']); objs['ground_sidewalk'] = w
 if PAVING: w.data.materials.append(MAT['pavers'])
@@ -215,7 +246,7 @@ stats['triangles_total'] = sum(v['triangles'] for v in stats['objects'].values()
 if PAVING:
     stats['paving']={'status':PAVING['status'],'faces':paving_faces,'area_m2':round(paving_area,2),'tile_size_m':PAVING['tile_size_m'],'atlas_period_m':[px,py],'bounds_xy_m':PAVING['bounds_xy_m'],'yaw_deg':PAVING['yaw_deg'],'joint_width_m':PAVING['joint_width_m'],'joint_level':PAVING['joint_level']}
 if PLAZA:
-    stats['plaza_paving']={**PLAZA,'faces':plaza_faces,'area_m2':round(plaza_area,2),'atlas_period_m':[plaza_px,plaza_py]}
+    stats['plaza_paving']={**PLAZA,'faces':plaza_faces,'area_m2':round(plaza_area,2),'atlas_period_m':[plaza_px,plaza_py],'boundary_split_faces':boundary_split_faces,'boundary_method':'polygon edge partition; interpolated original triangle heights'}
 bpy.ops.export_scene.gltf(filepath=out_glb, export_format='GLB', export_yup=True, export_apply=True, export_normals=True,
                           export_texcoords=bool(PAVING or PLAZA), export_materials='EXPORT', export_extras=False)
 if PAVING or PLAZA:

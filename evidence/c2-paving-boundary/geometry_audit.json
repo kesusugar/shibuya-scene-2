@@ -1,0 +1,21 @@
+{
+  "baseline_commit": "3e99483",
+  "unchanged_other_parts": {
+    "ground_road": true,
+    "ground_intersection": true,
+    "ground_kerb": true,
+    "ground_marking": true,
+    "ground_fill": true
+  },
+  "sidewalk_before_triangles": 44376,
+  "sidewalk_after_triangles": 46316,
+  "maximum_nonvertical_height_error_m": 8.620362394874591e-08,
+  "maximum_triangle_plane_distance_m": 8.583654367676674e-08,
+  "exact_triangle_matches": 43615,
+  "nonvertical_plane_matches": 2701,
+  "unmatched_after_triangles": 0,
+  "summed_plan_area_before_m2": 9160.8762669669,
+  "summed_plan_area_after_m2": 9160.876279858752,
+  "coverage_symmetric_difference_m2": 2.2116297387699295e-06,
+  "method": "Unchanged triangles matched at 10 micrometre quantization. Changed triangles matched to original 3D planes using dominant-axis projected coverage with 20 micrometre tolerance. Height error evaluated for abs(normal.z)>=0.1; near-vertical faces use 3D plane distance. Compare plan-area sum and union; other parts compared as triangle-coordinate multisets."
+}
