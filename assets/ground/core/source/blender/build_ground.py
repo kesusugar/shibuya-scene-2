@@ -4,7 +4,7 @@
 # Objects: ground_road, ground_intersection, ground_sidewalk (+ islands), ground_kerb, ground_marking, ground_fill.
 # Sidewalks are densified (edges <= 1.5 m) and lifted by the kerb height, dropping to the low kerb at crosswalk
 # landings; kerb faces are built where a sidewalk edge meets the carriageway, short skirts elsewhere hide seams.
-# Optional northern paving colour atlas; source geometry/height construction stays unchanged.
+# Optional northern and Hachiko plaza paving colour atlases; source geometry/height construction stays unchanged.
 import bpy, bmesh, json, sys, math, struct
 from pathlib import Path
 import numpy as np
@@ -17,6 +17,8 @@ src, out_glb, out_stats = argv[:3]
 D = json.load(open(src)); PR = D['params']; DATUM = 15.0
 config = Path(argv[3]) if len(argv)>3 else Path(__file__).resolve().parents[1]/'data/paving_layout.json'
 PAVING = json.loads(config.read_text()) if config.is_file() else None
+plaza_config = Path(argv[4]) if len(argv)>4 else Path(__file__).resolve().parents[1]/'data/plaza_paving_layout.json'
+PLAZA = json.loads(plaza_config.read_text()) if plaza_config.is_file() else None
 KH, KL, LF, LR = PR['kerb_height_m'], PR['kerb_low_m'], PR['landing_flat_m'], PR['landing_ramp_m']
 bpy.ops.wm.read_factory_settings(use_empty=True)
 
@@ -38,6 +40,17 @@ if PAVING:
     tint.inputs[0].default_value=1;tint.inputs[2].default_value=(.30,.28,.25,1)
     m.node_tree.links.new(tex.outputs['Color'],tint.inputs[1])
     m.node_tree.links.new(tint.outputs['Color'],m.node_tree.nodes['Principled BSDF'].inputs['Base Color'])
+
+if PLAZA:
+    MAT['plaza'] = material('ground_sidewalk_plaza_pavers', (.30,.28,.25), .9)
+    m=MAT['plaza'];tex=m.node_tree.nodes.new('ShaderNodeTexImage')
+    tex.image=bpy.data.images.load(str((plaza_config.parent/PLAZA['texture']).resolve()))
+    tex.image.colorspace_settings.name='sRGB';tex.extension='REPEAT'
+    tint=m.node_tree.nodes.new('ShaderNodeMixRGB');tint.blend_type='MULTIPLY'
+    tint.inputs[0].default_value=1;tint.inputs[2].default_value=(.30,.28,.25,1)
+    m.node_tree.links.new(tex.outputs['Color'],tint.inputs[1])
+    m.node_tree.links.new(tint.outputs['Color'],m.node_tree.nodes['Principled BSDF'].inputs['Base Color'])
+
 
 def mesh_from(name, polys, zf, mat):
     bm = bmesh.new()
@@ -124,6 +137,27 @@ if PAVING:
             x,y=loop.vert.co.x,loop.vert.co.y
             loop[uv].uv=((co*x+si*y)/px,(-si*x+co*y)/py)
 
+plaza_faces=0;plaza_area=0.0
+if PLAZA:
+    # Select only existing walking faces. Do not raise overlays or alter provisional fill.
+    polygon=PLAZA['polygon_xy_m']
+    def in_plaza(x,y):
+        inside=False
+        for i,(x1,y1) in enumerate(polygon):
+            x2,y2=polygon[i-1]
+            if (y1>y)!=(y2>y) and x<(x2-x1)*(y-y1)/(y2-y1)+x1:inside=not inside
+        return inside
+    uv=bm_walk.loops.layers.uv.verify();a=math.radians(PLAZA['yaw_deg']);co,si=math.cos(a),math.sin(a)
+    plaza_px,plaza_py=[size*count for size,count in zip(PLAZA['tile_size_m'],PLAZA['atlas_tiles'])]
+    ox,oy=PLAZA['origin_xy_m']
+    for f in bm_walk.faces:
+        c=f.calc_center_median()
+        if not in_plaza(c.x,c.y):continue
+        f.material_index=3 if PAVING else 2;plaza_faces+=1;plaza_area+=f.calc_area()
+        for loop in f.loops:
+            x,y=loop.vert.co.x-ox,loop.vert.co.y-oy
+            loop[uv].uv=((co*x+si*y)/plaza_px,(-si*x+co*y)/plaza_py)
+
 # kerb faces (sidewalk edge over carriageway) and skirts (all other open edges), built from the lifted edge
 bm_kerb = bmesh.new(); kerb_len = 0.0; skirt_len = 0.0
 def add_quad(bm, a, b, za, zb):
@@ -166,6 +200,7 @@ for f in bm_kerb.faces: f.normal_update()
 objs = {'ground_road': finish('ground_road', bm_road, MAT['road']), 'ground_intersection': finish('ground_intersection', bm_int, MAT['intersection'])}
 w = finish('ground_sidewalk', bm_walk, MAT['sidewalk']); w.data.materials.append(MAT['island']); objs['ground_sidewalk'] = w
 if PAVING: w.data.materials.append(MAT['pavers'])
+if PLAZA: w.data.materials.append(MAT['plaza'])
 objs['ground_kerb'] = finish('ground_kerb', bm_kerb, MAT['kerb'])
 objs['ground_marking'] = finish('ground_marking', bm_mark, MAT['marking'])
 objs['ground_fill'] = finish('ground_fill', bm_fill, MAT['fill'])
@@ -179,15 +214,17 @@ for n, o in objs.items():
 stats['triangles_total'] = sum(v['triangles'] for v in stats['objects'].values())
 if PAVING:
     stats['paving']={'status':PAVING['status'],'faces':paving_faces,'area_m2':round(paving_area,2),'tile_size_m':PAVING['tile_size_m'],'atlas_period_m':[px,py],'bounds_xy_m':PAVING['bounds_xy_m'],'yaw_deg':PAVING['yaw_deg'],'joint_width_m':PAVING['joint_width_m'],'joint_level':PAVING['joint_level']}
+if PLAZA:
+    stats['plaza_paving']={**PLAZA,'faces':plaza_faces,'area_m2':round(plaza_area,2),'atlas_period_m':[plaza_px,plaza_py]}
 bpy.ops.export_scene.gltf(filepath=out_glb, export_format='GLB', export_yup=True, export_apply=True, export_normals=True,
-                          export_texcoords=bool(PAVING), export_materials='EXPORT', export_extras=False)
-if PAVING:
+                          export_texcoords=bool(PAVING or PLAZA), export_materials='EXPORT', export_extras=False)
+if PAVING or PLAZA:
     # Blender's image/multiply graph is not always gathered as a glTF colour factor.
     # Keep the portable asset tint consistent with the Blender shader and the shared web look.
     data=Path(out_glb).read_bytes();magic,version,_=struct.unpack('<III',data[:12])
     length,kind=struct.unpack('<II',data[12:20]);doc=json.loads(data[20:20+length])
     for m in doc['materials']:
-        if m['name']=='ground_sidewalk_pavers':m['pbrMetallicRoughness']['baseColorFactor']=[.30,.28,.25,1]
+        if m['name'] in ('ground_sidewalk_pavers','ground_sidewalk_plaza_pavers'):m['pbrMetallicRoughness']['baseColorFactor']=[.30,.28,.25,1]
     encoded=json.dumps(doc,separators=(',',':')).encode();encoded+=b' '*((-len(encoded))%4)
     rest=data[20+length:];total=20+len(encoded)+len(rest)
     Path(out_glb).write_bytes(struct.pack('<III',magic,version,total)+struct.pack('<II',len(encoded),kind)+encoded+rest)

@@ -3,14 +3,21 @@
 import json, hashlib, os, sys, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__)); SRC = os.path.dirname(HERE); ROOT = os.path.dirname(SRC)
 sha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()
-ext = {}
+# Retain recorded source hashes when those large external inputs are not available locally.
+existing_path = os.path.join(ROOT, 'manifest.json')
+previous = json.load(open(existing_path)) if os.path.exists(existing_path) else {}
+ext = previous.get('sources', {}).get('external_inputs', {}).copy()
 for k, p in zip(('plateau_tran_gml', 'plateau_core_json', 'old_scene_data_json'), sys.argv[1:4]):
     if os.path.exists(p): ext[k] = {'file': os.path.basename(p), 'sha256': sha(p), 'bytes': os.path.getsize(p)}
 inp = json.load(open(os.path.join(SRC, 'data', 'ground_input.json'))); st = json.load(open(os.path.join(SRC, 'data', 'ground_stats.json')))
 rev = subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=SRC, capture_output=True, text=True).stdout.strip()
 files = ['web/ground_core.glb', 'source/data/ground_input.json', 'source/data/ground_stats.json', 'source/data/crosswalks_measured.json',
          'source/blender/build_ground.py', 'source/tools/prepare_ground.py', 'source/tools/measure_crosswalks.py',
-         'source/data/ground_anchors.json', 'source/blender/ground_anchor.py']
+         'source/data/ground_anchors.json', 'source/blender/ground_anchor.py', 'README.md',
+         'source/data/paving_layout.json', 'source/data/plaza_paving_layout.json',
+         'source/tools/make_paving.py', 'source/tools/write_manifest.py',
+         'source/refs/PAVING_REFERENCE_REGISTER.csv',
+         'source/textures/paving_gray.png', 'source/textures/paving_plaza.png']
 m = {
     'id': 'ground_core', 'name': 'Core ground (Shibuya Scramble Crossing, radius 150 m)', 'version': 'C2a v1', 'status': 'foundation: positions and heights; flat colours, no surface detail',
     'datum': {'definition': 'world Y = T.P. elevation - 15.000 m', 'doc': 'docs/core/C2A_PLAN.md'},
@@ -34,5 +41,17 @@ m = {
     'generatorRevision': rev or '(uncommitted)',
     'files': {f: {'sha256': sha(os.path.join(ROOT, f)), 'bytes': os.path.getsize(os.path.join(ROOT, f))} for f in files if os.path.exists(os.path.join(ROOT, f))},
 }
+if 'paving' in st or 'plaza_paving' in st:
+    m['version'] = 'C2a v1 + north and Hachiko plaza paving prototypes'
+    m['status'] = 'foundation geometry retained; paving dimensions, pale bands and boundaries estimated'
+    m['sources']['paving'] = 'Self-authored procedural atlases; registered photos are references only, not texture inputs'
+    m['sources']['paving_references'] = 'source/refs/PAVING_REFERENCE_REGISTER.csv'
+    m['generator'] += ['python3 source/tools/make_paving.py source/data/paving_layout.json',
+                       'python3 source/tools/make_paving.py source/data/plaza_paving_layout.json']
+    for key, filename in [('paving', 'paving_layout.json'), ('plaza_paving', 'plaza_paving_layout.json')]:
+        if key in st:
+            layout = json.load(open(os.path.join(SRC, 'data', filename)))
+            m['parameters_not_measured'][key] = layout
+    m['parameter_notes']['paving'] = 'Geometry and heights retained; photos confirm types only. Dimensions, boundaries, colour and full October layout not independently verified.'
 json.dump(m, open(os.path.join(ROOT, 'manifest.json'), 'w'), ensure_ascii=False, indent=1)
 print('manifest', len(m['files']), 'files')

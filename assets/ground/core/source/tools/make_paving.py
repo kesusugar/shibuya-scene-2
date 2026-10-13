@@ -18,7 +18,15 @@ blend=np.clip((D['joint_width_m']/2+pixel_m*.5-distance)/pixel_m,0,1)
 rng=np.random.default_rng(D['seed']);variation=rng.uniform(-D['tile_variation'],D['tile_variation'],(ny,nx))
 level=D['tile_level']+variation[row%ny,column]+rng.normal(0,D['grain'],(h,w))
 level=level*(1-blend)+D['joint_level']*blend
-rgb=np.repeat(np.clip(np.rint(level*255),0,255).astype(np.uint8)[...,None],3,axis=2)
+tile_rgb=np.array(D.get('tile_rgb',[1,1,1]))
+joint_rgb=np.array(D.get('joint_rgb',[1,1,1]))
+colour=level[...,None]*((1-blend[...,None])*tile_rgb+blend[...,None]*joint_rgb)
+if 'bands' in D:
+    # Pale divisions repeat across the atlas seam; both directions use the same metre scale.
+    band=D['bands'];dx=np.minimum(X,tw*nx-X);dy=np.minimum(Y,th*ny-Y)
+    mask=np.clip((band['width_m']/2+pixel_m*.5-np.minimum(dx,dy))/pixel_m,0,1)
+    colour=colour*(1-mask[...,None])+np.array(band['rgb'])*mask[...,None]
+rgb=np.clip(np.rint(colour*255),0,255).astype(np.uint8)
 output=(config.parent/D['texture']).resolve();output.parent.mkdir(parents=True,exist_ok=True)
 Image.fromarray(rgb).save(output)
 print('PAVING',output.name,w,h,'period_m',tw*nx,th*ny,'mean_srgb',float(rgb.mean()/255))
