@@ -51,5 +51,27 @@
  },
  "kerb_length_m": 1266.2,
  "skirt_length_m": 1363.3,
- "triangles_total": 73722
+ "triangles_total": 73722,
+ "paving": {
+  "status": "B material prototype: block size, grid direction and area mask are estimated",
+  "faces": 7565,
+  "area_m2": 1623.3,
+  "tile_size_m": [
+   0.6,
+   0.3
+  ],
+  "atlas_period_m": [
+   2.4,
+   1.2
+  ],
+  "bounds_xy_m": [
+   -80,
+   0,
+   50,
+   65
+  ],
+  "yaw_deg": 6.4,
+  "joint_width_m": 0.006,
+  "joint_level": 0.82
+ }
 }

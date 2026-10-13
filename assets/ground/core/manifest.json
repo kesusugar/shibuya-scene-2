@@ -1,8 +1,8 @@
 {
  "id": "ground_core",
  "name": "Core ground (Shibuya Scramble Crossing, radius 150 m)",
- "version": "C2a v1",
- "status": "foundation: positions and heights; flat colours, no surface detail",
+ "version": "C2a v1 + north paving prototype",
+ "status": "foundation geometry retained; north sidewalk paver material prototype, actual dimensions/layout unverified",
  "datum": {
   "definition": "world Y = T.P. elevation - 15.000 m",
   "doc": "docs/core/C2A_PLAN.md"
@@ -33,7 +33,9 @@
     "sha256": "0df9136ac10aaeb538ef25e75524caa5e9ab4d15551bcfe30f2c53da55bb6fe5",
     "bytes": 1778090
    }
-  }
+  },
+  "paving": "Self-authored procedural atlas; CC0 photos referenced only, not texture inputs",
+  "paving_references": "source/refs/PAVING_REFERENCE_REGISTER.csv"
  },
  "parameters_not_measured": {
   "kerb_height_m": 0.15,
@@ -42,7 +44,19 @@
   "landing_ramp_m": 1.5,
   "zebra_bar_m": 0.45,
   "zebra_gap_m": 0.45,
-  "default_crosswalk_width_m": 4.0
+  "default_crosswalk_width_m": 4.0,
+  "paving_tile_size_m": [
+   0.6,
+   0.3
+  ],
+  "paving_joint_width_m": 0.006,
+  "paving_yaw_deg": 6.4,
+  "paving_bounds_xy_m": [
+   -80,
+   0,
+   50,
+   65
+  ]
  },
  "parameter_notes": {
   "kerb_height_m": "道路構造令 standard; PLATEAU LOD3 has no kerb step (2,125 shared vertices, max 0.008 m)",
@@ -137,7 +151,29 @@
   },
   "kerb_length_m": 1266.2,
   "skirt_length_m": 1363.3,
-  "triangles_total": 73722
+  "triangles_total": 73722,
+  "paving": {
+   "status": "B material prototype: block size, grid direction and area mask are estimated",
+   "faces": 7565,
+   "area_m2": 1623.3,
+   "tile_size_m": [
+    0.6,
+    0.3
+   ],
+   "atlas_period_m": [
+    2.4,
+    1.2
+   ],
+   "bounds_xy_m": [
+    -80,
+    0,
+    50,
+    65
+   ],
+   "yaw_deg": 6.4,
+   "joint_width_m": 0.006,
+   "joint_level": 0.82
+  }
  },
  "building_anchors": {
   "magnet": {
@@ -195,29 +231,30 @@
   "python3 source/tools/measure_crosswalks.py <old data json> <gsi tiles> source/data/crosswalks_measured.json",
   "python3 source/tools/prepare_ground.py <plateau_core.json> source/data/crosswalks_measured.json source/data/ground_input.json 150",
   "blender -b -P source/blender/build_ground.py -- source/data/ground_input.json web/ground_core.glb source/data/ground_stats.json",
-  "blender -b -P source/blender/ground_anchor.py -- web/ground_core.glb <plateau_core.json> source/data/ground_anchors.json"
+  "blender -b -P source/blender/ground_anchor.py -- web/ground_core.glb <plateau_core.json> source/data/ground_anchors.json",
+  "source/tools/make_paving.py"
  ],
- "generatorRevision": "934e48ab6565a840057a124a1299da4b424b3d95",
+ "generatorRevision": "C2a foundation + northern material prototype, Blender 4.2.3",
  "files": {
   "web/ground_core.glb": {
-   "sha256": "2b9d3add1172a2418d4befaffbea66b44121fcf6e31b6aedca3cc83267e61661",
-   "bytes": 2619060
+   "sha256": "edcd3112db1c5e8225aab695a49379ab440b49f857fa4c3c90b2f1a92c21a29c",
+   "bytes": 3036424
   },
   "source/data/ground_input.json": {
    "sha256": "b2b21f5f80fb7b2cebfc04f886ab228f3605f5ff30a760699f1d583de1bfb1f7",
    "bytes": 1098622
   },
   "source/data/ground_stats.json": {
-   "sha256": "74d03f42f65a7bb08543981fbe28e4d030ff14423c1115c49cf10c7f5a572dad",
-   "bytes": 1001
+   "sha256": "44d150e21205c9e8357c6843991b5af67f14be5b6cd1142c01f7b39cb96212a2",
+   "bytes": 1346
   },
   "source/data/crosswalks_measured.json": {
    "sha256": "dbaa6719fcca798114ce4aa0d958ddaeae9bf93c3c8b96c7c76316ce05f084e0",
    "bytes": 17538
   },
   "source/blender/build_ground.py": {
-   "sha256": "7ba72ccdd79c329e962c241b811d0f9b45dc4db356561b72852db06b54b1f071",
-   "bytes": 8654
+   "sha256": "0723005f0bc42aa6a09fd7d008abfde09823081c1764d38428023af1375ca709",
+   "bytes": 11449
   },
   "source/tools/prepare_ground.py": {
    "sha256": "aca0f2dd230068aa2023da99746a2cc6c356f54795b2367188c4c7ad950f2975",
@@ -234,6 +271,26 @@
   "source/blender/ground_anchor.py": {
    "sha256": "51c30faf4db73bdb4acf947c2f77409c2588ae2448b9e142a80ce75d255762af",
    "bytes": 3978
+  },
+  "README.md": {
+   "sha256": "dbe011303f88f16235f49a842bf334764df2e86ae026a096afc2cbb4e6f6becc",
+   "bytes": 6006
+  },
+  "source/data/paving_layout.json": {
+   "sha256": "b36874c8b6dec04eca21f87091950b86448b5c87320155ceb83f0509d094810b",
+   "bytes": 744
+  },
+  "source/refs/PAVING_REFERENCE_REGISTER.csv": {
+   "sha256": "ae81ece59c4c6d40265c53f0200f717faa0b9f6376b94af3e7340bf8e6a22a28",
+   "bytes": 1206
+  },
+  "source/textures/paving_gray.png": {
+   "sha256": "e02a43b6d2082c4b31bebca9af25f7317b97da2a0f89078329e46a291da41d04",
+   "bytes": 95560
+  },
+  "source/tools/make_paving.py": {
+   "sha256": "b992de6df57b044d3a6e84bb3c2f181562aa61813e14c1598f1d143a11da5c26",
+   "bytes": 1253
   }
  }
 }

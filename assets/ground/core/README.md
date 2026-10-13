@@ -1,7 +1,7 @@
 # Core ground (C2a)
 
 This asset is the ground of the Shibuya Scramble Core, within 150 m of the crossing centre (OSM node/291758776).
-It fixes positions and heights only. The materials are flat placeholder colours until the C3 material pass.
+It fixes positions and heights. Northern sidewalk faces now use an estimated procedural paver atlas; other materials remain the existing flat colours.
 
 ## What it contains
 | Object | Source |
@@ -65,3 +65,23 @@ python3 source/tools/write_manifest.py <53393596_tran.gml> <plateau_core.json> <
 - PLATEAU: 国土交通省 Project PLATEAU, CC BY 4.0 compatible.
 - OSM: ODbL, © OpenStreetMap contributors.
 - GSI: 出典：国土地理院（シームレス空中写真）. Used as a measurement reference only.
+
+## 北側歩道の舗装仕上げ（2026-10-13、試作）
+
+北側領域の歩道・島の面へ、写真を貼らずに自作した平板模様を追加。道路・縁石・横断歩道・補填面の材質は保持。面の頂点・標高を動かさず、平面座標のUVで坂でも平板の尺度をそろえる。既存WebGLの露出・歩道色・粗さは変更しない。
+
+平板0.6×0.3 m、目地6 mm、敷設角6.4度は写真の種類を参考にした推定。実測値ではない。X=-80〜50 m、Y=0〜65 m内に重心がある歩道面を試作対象にし、実際の舗装切替位置を確認した境界とは扱わない。模様は2.4×1.2 m周期、1024×512ピクセル、16枚の平板で微小な色差を付けた。法線・凹凸の追加や舗装の高さ変更はない。
+
+```bash
+source /workspace/setup-tools/core-env.sh
+python3 assets/ground/core/source/tools/make_paving.py assets/ground/core/source/data/paving_layout.json
+blender -b --python-exit-code 1 -t 4 -P assets/ground/core/source/blender/build_ground.py -- assets/ground/core/source/data/ground_input.json assets/ground/core/web/ground_core.glb assets/ground/core/source/data/ground_stats.json
+```
+
+既存の生成コマンドは、同じフォルダのpaving_layout.jsonがあれば舗装を含めて生成する。設定や目地色を変えたら、先にmake_paving.pyでアトラスを再生成する。BlenderのMultiplyノードがglTFの色係数として出ない場合もあるため、書き出したGLBの舗装材質の係数だけを0.30/0.28/0.25へ明示し、Blender側のTintとそろえる。バッファ内の形状は変更しない。
+
+2025年1月・2月のCC0写真を模様の種類の参考にし、出典・日付・ハッシュはsource/refs/PAVING_REFERENCE_REGISTER.csv。M027は混雑と細い歩道領域のため舗装色の合否には使わない。写真をテクスチャとして加工していない。
+
+初版の目地色は0.60、補正後は0.82。ほかの設定・露出・光は固定。初版/最終版の設定とアトラスをevidence/c2-north-paving/{first,after}/へ保存。別フォルダへ設定をコピーする際はdata/とtextures/の相対関係を維持し、Blenderの4番目の引数でコピーした設定を渡す。
+
+寸法・目地幅・方向・対象境界、実際の舗装色・摩耗・汚れ・凹凸・夜の反射は未達。ハチ公広場の異なる舗装、点字誘導、排水溝、マンホールは今回の対象外で、舗装全体の完成を認定しない。

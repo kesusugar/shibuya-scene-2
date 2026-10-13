@@ -1,0 +1,258 @@
+{
+ "views": {
+  "m027": {
+   "time": "day",
+   "year": 2025,
+   "aligned": true,
+   "size": [
+    640,
+    853
+   ],
+   "classes": {
+    "glass": {
+     "px": 4159,
+     "photo_rgb": [
+      81,
+      88,
+      103
+     ],
+     "render_rgb": [
+      88,
+      86,
+      82
+     ],
+     "photo_lab": [
+      37.4,
+      0.6,
+      -9.3
+     ],
+     "render_lab": [
+      36.5,
+      0.2,
+      2.5
+     ],
+     "dL": -0.8,
+     "dE": 11.8
+    },
+    "sign": {
+     "px": 11590,
+     "photo_rgb": [
+      120,
+      126,
+      137
+     ],
+     "render_rgb": [
+      133,
+      116,
+      134
+     ],
+     "photo_lab": [
+      52.7,
+      0.3,
+      -7.0
+     ],
+     "render_lab": [
+      50.9,
+      10.1,
+      -7.5
+     ],
+     "dL": -1.8,
+     "dE": 10.0
+    },
+    "wall": {
+     "px": 74295,
+     "photo_rgb": [
+      121,
+      130,
+      142
+     ],
+     "render_rgb": [
+      117,
+      116,
+      115
+     ],
+     "photo_lab": [
+      53.9,
+      -0.8,
+      -7.4
+     ],
+     "render_lab": [
+      48.9,
+      0.1,
+      0.6
+     ],
+     "dL": -5.1,
+     "dE": 9.5
+    },
+    "road": {
+     "px": 188343,
+     "photo_rgb": [
+      118,
+      117,
+      117
+     ],
+     "render_rgb": [
+      113,
+      110,
+      108
+     ],
+     "photo_lab": [
+      49.5,
+      0.3,
+      0.3
+     ],
+     "render_lab": [
+      46.7,
+      1.0,
+      1.6
+     ],
+     "dL": -2.8,
+     "dE": 3.2
+    },
+    "vegetation": {
+     "px": 5008,
+     "photo_rgb": [
+      71,
+      79,
+      66
+     ],
+     "render_rgb": [
+      61,
+      80,
+      47
+     ],
+     "photo_lab": [
+      32.6,
+      -5.8,
+      6.6
+     ],
+     "render_lab": [
+      31.6,
+      -14.0,
+      17.2
+     ],
+     "dL": -1.0,
+     "dE": 13.4
+    },
+    "furniture": {
+     "px": 5196,
+     "photo_rgb": [
+      98,
+      113,
+      122
+     ],
+     "render_rgb": [
+      117,
+      121,
+      123
+     ],
+     "photo_lab": [
+      46.6,
+      -3.3,
+      -7.1
+     ],
+     "render_lab": [
+      50.5,
+      -1.1,
+      -1.7
+     ],
+     "dL": 3.9,
+     "dE": 7.0
+    }
+   }
+  }
+ },
+ "summary": {
+  "glass": {
+   "views": 1,
+   "mean_abs_dL": 0.8,
+   "mean_dE": 11.8,
+   "mean_dL": -0.8
+  },
+  "sign": {
+   "views": 1,
+   "mean_abs_dL": 1.8,
+   "mean_dE": 10.0,
+   "mean_dL": -1.8
+  },
+  "wall": {
+   "views": 1,
+   "mean_abs_dL": 5.1,
+   "mean_dE": 9.5,
+   "mean_dL": -5.1
+  },
+  "road": {
+   "views": 1,
+   "mean_abs_dL": 2.8,
+   "mean_dE": 3.2,
+   "mean_dL": -2.8
+  },
+  "vegetation": {
+   "views": 1,
+   "mean_abs_dL": 1.0,
+   "mean_dE": 13.4,
+   "mean_dL": -1.0
+  },
+  "furniture": {
+   "views": 1,
+   "mean_abs_dL": 3.9,
+   "mean_dE": 7.0,
+   "mean_dL": 3.9
+  },
+  "_score": {
+   "scored_classes": [
+    "glass",
+    "wall",
+    "road",
+    "sidewalk"
+   ],
+   "weights": "aligned views 1.0, REF-A/REF-B 0.5",
+   "all": {
+    "n": 3,
+    "mean_abs_dL": 2.9,
+    "mean_dE": 8.17
+   },
+   "day": {
+    "n": 3,
+    "mean_abs_dL": 2.9,
+    "mean_dE": 8.17
+   },
+   "night": null,
+   "aligned_only": {
+    "n": 3,
+    "mean_abs_dL": 2.9,
+    "mean_dE": 8.17
+   }
+  }
+ },
+ "refs": {
+  "m027": {
+   "photo": "assets/buildings/magnet/source/refs/raw/M027.jpg",
+   "time": "day",
+   "year": 2025,
+   "licence": "CC0 (Taufik)",
+   "aligned": true
+  },
+  "q032": {
+   "photo": "assets/buildings/qfront/source/refs/raw/Q032.jpg",
+   "time": "day",
+   "year": 2018,
+   "licence": "CC BY-SA 4.0 (Kakidai)",
+   "aligned": true
+  },
+  "refa": {
+   "photo": "evidence/c3a/refs/In_Front_of_Shibuya_Station.jpg",
+   "time": "day",
+   "year": 2010,
+   "licence": "CC BY 2.0 (Dick Johnson)",
+   "aligned": false
+  },
+  "refb": {
+   "photo": "evidence/c3a/refs/Shibuya_scramble_av_night_from_Stream.jpg",
+   "time": "night",
+   "year": 2024,
+   "licence": "CC0 (Syced)",
+   "aligned": false
+  }
+ }
+}

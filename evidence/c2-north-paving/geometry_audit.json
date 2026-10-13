@@ -1,0 +1,59 @@
+{
+  "baseline_commit": "3f5c954",
+  "baseline_glb_sha256": "2b9d3add1172a2418d4befaffbea66b44121fcf6e31b6aedca3cc83267e61661",
+  "quantization_m": 0.00001,
+  "method": "World-coordinate triangle multiset, vertex order/material grouping ignored; shape and height, not winding or normals",
+  "before": {
+    "ground_road": {
+      "triangles": 443,
+      "sha256": "6d80e3d7700de419ed0a3feee8549674bece69fa14803373f2939263694341bc"
+    },
+    "ground_intersection": {
+      "triangles": 426,
+      "sha256": "6e7edb912825e851f47d37d1b28a3c35ea4b278b481a968a7953a63bfc9397f5"
+    },
+    "ground_sidewalk": {
+      "triangles": 44376,
+      "sha256": "c17e1f376543c7667756ece3968f2d3df0b2f84f9bb3b5b3769a8d53b8babaf1"
+    },
+    "ground_kerb": {
+      "triangles": 13950,
+      "sha256": "3101ffa97cc95fa176e19fd4e13353c6219f06c8e349ba50e2bac58056e0b312"
+    },
+    "ground_marking": {
+      "triangles": 4459,
+      "sha256": "efd13ede2abad5cf0c2373c6141ac4b63869a208ceb73fcf97f09cc94b09658e"
+    },
+    "ground_fill": {
+      "triangles": 7669,
+      "sha256": "3873b5a54f4129e92f33f3af67f60e16025e6ec7b1ab27009f9dade51223a614"
+    }
+  },
+  "after": {
+    "ground_road": {
+      "triangles": 443,
+      "sha256": "6d80e3d7700de419ed0a3feee8549674bece69fa14803373f2939263694341bc"
+    },
+    "ground_intersection": {
+      "triangles": 426,
+      "sha256": "6e7edb912825e851f47d37d1b28a3c35ea4b278b481a968a7953a63bfc9397f5"
+    },
+    "ground_sidewalk": {
+      "triangles": 44376,
+      "sha256": "c17e1f376543c7667756ece3968f2d3df0b2f84f9bb3b5b3769a8d53b8babaf1"
+    },
+    "ground_kerb": {
+      "triangles": 13950,
+      "sha256": "3101ffa97cc95fa176e19fd4e13353c6219f06c8e349ba50e2bac58056e0b312"
+    },
+    "ground_marking": {
+      "triangles": 4459,
+      "sha256": "efd13ede2abad5cf0c2373c6141ac4b63869a208ceb73fcf97f09cc94b09658e"
+    },
+    "ground_fill": {
+      "triangles": 7669,
+      "sha256": "3873b5a54f4129e92f33f3af67f60e16025e6ec7b1ab27009f9dade51223a614"
+    }
+  },
+  "equal": true
+}
