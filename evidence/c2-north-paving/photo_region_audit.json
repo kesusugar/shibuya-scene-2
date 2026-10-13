@@ -1,0 +1,19 @@
+{
+  "view": "M027",
+  "camera_photo": "2025-09-01",
+  "rows": {
+    "photo_before": {
+      "raw_sidewalk_px": 2066,
+      "eroded_sidewalk_px": 0,
+      "required_px": 400,
+      "usable": false
+    },
+    "photo_first": {
+      "raw_sidewalk_px": 2066,
+      "eroded_sidewalk_px": 0,
+      "required_px": 400,
+      "usable": false
+    }
+  },
+  "decision": "Do not use as pavement colour or block-size acceptance; insufficient eroded sidewalk region and crowd occlusion"
+}

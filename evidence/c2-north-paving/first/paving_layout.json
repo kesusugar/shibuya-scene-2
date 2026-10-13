@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "status": "B material prototype: block size, grid direction and area mask are estimated",
+  "tile_size_m": [
+    0.6,
+    0.3
+  ],
+  "atlas_tiles": [
+    4,
+    4
+  ],
+  "atlas_px": [
+    1024,
+    512
+  ],
+  "joint_width_m": 0.006,
+  "joint_level": 0.6,
+  "tile_level": 0.985,
+  "tile_variation": 0.01,
+  "grain": 0.0007,
+  "seed": 244,
+  "yaw_deg": 6.4,
+  "bounds_xy_m": [
+    -80,
+    0,
+    50,
+    65
+  ],
+  "texture": "../textures/paving_gray.png",
+  "notes": [
+    "Only north sidewalk/island faces within the mask; no road/kerb/marking/fill texture",
+    "No measured actual block size or laying direction; January and February 2025 photo references",
+    "Shared look defaults and geometry remain unchanged"
+  ]
+}

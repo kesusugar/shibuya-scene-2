@@ -108,6 +108,7 @@ async function start() {
   $('provisional').textContent = projectedStreet?.ok ? '仮配置：支柱の位置・寸法・光量は確認待ち（橙色）' : coreStreet?.ok ? '街路設備は仮：出入口・樹木は2025年OSMの位置、信号・柵は規則による配置、形は標準寸法の汎用品' : '';
   if (loaded.some(b => b.id === 'daiichi-kangin')) $('provisional').textContent += '／第一勧銀共同ビルは窓割り・店舗枠のB推定、広告内容は後工程';
   if (loaded.some(b => b.id === 'center-gai-gate')) $('provisional').textContent += '／センター街ゲートは位置・寸法のB推定、広告内容は後工程';
+  if (coreGround?.ok) $('provisional').textContent += '／北側歩道の平板寸法・割付けは試作';
   if (coreStreet?.ok) scene.add(coreStreet.root);
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
   else if (coreGround) ground.position.y = 0;   // no Core ground: the disc goes back to y = 0
