@@ -2381,15 +2381,6 @@
    "faces": 262
   },
   {
-   "id": "way/355250634",
-   "plateau_id": "bldg_84560e8a-53da-47bf-a0c8-93a0e6d434b5",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_punched_b",
-   "height_m": 20.28,
-   "faces": 39
-  },
-  {
    "id": "way/155538676",
    "plateau_id": "bldg_dd896242-2859-4439-aeff-a6ecc2c893c6",
    "group": "core",
@@ -2795,15 +2786,6 @@
    "faces": 60
   },
   {
-   "id": "brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
-   "plateau_id": "brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
-   "group": "core",
-   "kind": "structure",
-   "material": "ctx_structure",
-   "height_m": 17.7,
-   "faces": 24
-  },
-  {
    "id": "brid/brid_0e0c081e-d376-4692-91c7-a3c866c1e46e",
    "plateau_id": "brid_0e0c081e-d376-4692-91c7-a3c866c1e46e",
    "group": "core",
@@ -2846,16 +2828,26 @@
   {
    "id": "way/60739635",
    "reason": "own asset: ekimae"
+  },
+  {
+   "id": "way/355250634",
+   "plateau_id": "bldg_84560e8a-53da-47bf-a0c8-93a0e6d434b5",
+   "reason": "own asset: station-concourse"
+  },
+  {
+   "id": "brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
+   "plateau_id": "brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d",
+   "reason": "own asset: station-concourse"
   }
  ],
  "objects": {
   "core__ctx_roof": {
-   "triangles": 11419,
-   "vertices": 19749
+   "triangles": 11373,
+   "vertices": 19675
   },
   "core__ctx_wall_punched_b": {
-   "triangles": 3874,
-   "vertices": 7140
+   "triangles": 3810,
+   "vertices": 7026
   },
   "core__ctx_wall_ribbon_a": {
    "triangles": 5321,
@@ -2886,9 +2878,9 @@
    "vertices": 79
   },
   "core__ctx_structure": {
-   "triangles": 1468,
-   "vertices": 4404
+   "triangles": 1444,
+   "vertices": 4332
   }
  },
- "triangles": 30608
+ "triangles": 30474
 }
