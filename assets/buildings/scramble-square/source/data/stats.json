@@ -1,0 +1,15 @@
+{
+ "id": "scramble-square",
+ "source_id": "way/617560918",
+ "datum_tp_m": 15,
+ "source_ground_tp": 14.61,
+ "source_top_tp": 243.637,
+ "roof_translation_m": 0,
+ "facades": 43,
+ "glass_panels": 7856,
+ "triangles": 35608,
+ "primitives": 9,
+ "pavement_samples": [],
+ "missing_pavement_samples": 36,
+ "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery"
+}

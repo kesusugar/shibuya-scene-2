@@ -1,0 +1,15 @@
+{
+ "id": "fukuras",
+ "source_id": "way/55588118",
+ "datum_tp_m": 15,
+ "source_ground_tp": 16.31,
+ "source_top_tp": 120.899,
+ "roof_translation_m": 0,
+ "facades": 110,
+ "glass_panels": 1726,
+ "triangles": 12959,
+ "primitives": 8,
+ "pavement_samples": [],
+ "missing_pavement_samples": 135,
+ "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery"
+}
