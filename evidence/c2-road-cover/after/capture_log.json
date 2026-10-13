@@ -1,0 +1,542 @@
+{
+  "cover": {
+    "q": "time=day&pose=-7,-4,1.8,-6.272,-2.426,.23,45",
+    "w": 900,
+    "h": 675,
+    "state": {
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 29766
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T14:06:45.606Z",
+    "cameraPos": [
+      -7,
+      1.8,
+      4
+    ]
+  },
+  "entry": {
+    "q": "time=day",
+    "w": 1000,
+    "h": 750,
+    "state": {
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 29766
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T14:07:20.815Z",
+    "cameraPos": [
+      20.134653632433018,
+      25.255800010754292,
+      33.508250187950445
+    ]
+  },
+  "entry_night": {
+    "q": "time=night",
+    "w": 1000,
+    "h": 750,
+    "state": {
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 29766
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T14:08:48.203Z",
+    "cameraPos": [
+      20.134653632433018,
+      25.255800010754292,
+      33.508250187950445
+    ]
+  },
+  "m027": {
+    "q": "time=day&view=m027",
+    "w": 640,
+    "h": 853,
+    "state": {
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 29766
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T14:10:07.188Z",
+    "cameraPos": [
+      -11.327218845311421,
+      1.407,
+      3.346415728417041
+    ]
+  }
+}

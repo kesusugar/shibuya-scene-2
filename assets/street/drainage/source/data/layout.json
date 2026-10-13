@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "status": "photo-derived circular road cover prototype: utility purpose, dimensions and position not independently surveyed",
+  "datum_tp_m": 15,
+  "source_photo": "M027",
+  "camera": {
+    "photo": "M027 (2025-09-01, Taufik, CC0)",
+    "pos": [
+      -11.327218845311421,
+      -3.346415728417041,
+      1.5
+    ],
+    "yaw": 71.2404627706144,
+    "pitch": 5.848231368370223,
+    "roll": -3.5227875421076997,
+    "fpx": 1134,
+    "W": 1280,
+    "H": 1707,
+    "rms_px": 11.4
+  },
+  "camera_height_offset_m": -0.09299999999999997,
+  "cover": {
+    "id": "M027-cover-01",
+    "centre_xy": [
+      -6.294254382354511,
+      -2.3689853216016736
+    ],
+    "diameter_m": 0.3833764084003508,
+    "points": [
+      {
+        "pixel": [
+          775,
+          1254
+        ],
+        "xy": [
+          -6.294254382354511,
+          -2.3689853216016736
+        ],
+        "ground_tp": 15.21588151727299,
+        "part": "ground_intersection"
+      },
+      {
+        "pixel": [
+          731,
+          1248
+        ],
+        "xy": [
+          -6.311326235810015,
+          -2.1762843575166313
+        ],
+        "ground_tp": 15.219142039295583,
+        "part": "ground_intersection"
+      },
+      {
+        "pixel": [
+          819,
+          1260
+        ],
+        "xy": [
+          -6.2774944815719,
+          -2.5581650757037693
+        ],
+        "ground_tp": 15.212680574520018,
+        "part": "ground_intersection"
+      }
+    ],
+    "projected_edge_radii_m": [
+      0.19345570485181093,
+      0.18992070354853985
+    ],
+    "position_basis": "photo-projection with existing 11.4 px building-camera fit onto C2a road/intersection; no independent position check"
+  },
+  "base_offset_m": 0.016,
+  "relief_m": 0.001,
+  "notes": [
+    "Solid patterned circular lid; drainage/sewer/communication role unknown",
+    "Pixel centre/edges read from visible rim; asymmetry and occlusion make diameter approximate",
+    "16 mm render offset clears existing synthetic 12 mm marking layer; not a measured physical step"
+  ]
+}
