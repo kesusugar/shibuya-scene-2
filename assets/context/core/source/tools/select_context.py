@@ -15,7 +15,7 @@ street = json.load(open(street_path))
 by_plateau = {r['plateau_id']: r for r in R if r.get('plateau_id') and r['geometry'] == 'plateau_lod2'}
 
 # buildings with their own asset (assets/buildings/*): QFRONT, MAGNET (its PLATEAU solid also holds the Eiraku roof)
-OWN_ASSETS = {'way/136691386': 'qfront', 'way/116806281': 'magnet + eiraku', 'way/136690966': 'west-block', 'way/60739635': 'ekimae'}
+OWN_ASSETS = {'way/136691386': 'qfront', 'way/116806281': 'magnet + eiraku', 'way/136690966': 'west-block', 'way/60739635': 'ekimae', 'way/355250634': 'station-concourse', 'brid/brid_bd5e7fe1-da73-494d-83a9-2dfdb790bb3d': 'station-concourse'}
 # subway entrance canopies are drawn by the street asset (assets/street/core)
 ENTRANCES = {f['id'] for f in street['features'] if f['kind'] == 'entrance'}
 ENTRANCE_RINGS = [f['ring'] for f in street['features'] if f['kind'] == 'entrance']
