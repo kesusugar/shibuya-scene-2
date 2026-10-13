@@ -3,7 +3,7 @@ import {readFileSync} from 'node:fs';
 import {NodeIO} from '@gltf-transform/core';
 import {Matrix4,Vector3} from 'three';
 const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
-for(const id of ['center244','quattro','scramble-square','fukuras']) {
+for(const id of ['center244','quattro','scramble-square','fukuras','station-southeast']) {
   it(`${id} replaces C once and retains surveyed roof coordinates`,async()=>{
     const base=`assets/buildings/${id}/`,s=json(base+'source/data/plateau.json');
     for(const name of ['context_input','context_stats']) {
@@ -26,6 +26,6 @@ for(const id of ['center244','quattro','scramble-square','fukuras']) {
     const stats=json(base+'source/data/stats.json');
     expect(stats.glass_panels).toBeGreaterThan(100);
     expect(stats.roof_translation_m).toBe(0);
-    if(['scramble-square','fukuras'].includes(id))expect(stats.missing_pavement_samples).toBeGreaterThan(0);
+    if(['scramble-square','fukuras'].includes(id)){expect(stats.missing_pavement_samples).toBe(0);expect(stats.pavement_samples.length).toBeGreaterThan(30);}
   });
 }

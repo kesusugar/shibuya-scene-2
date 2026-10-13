@@ -3,10 +3,10 @@ import {readFileSync} from 'node:fs';
 import {NodeIO} from '@gltf-transform/core';
 import {Matrix4,Vector3,BufferGeometry,Float32BufferAttribute,Mesh,MeshBasicMaterial,DoubleSide,Raycaster} from 'three';
 const base='assets/buildings/ginza-canopy/';
-it('replaces the source once while retaining one C station candidate and recording inferred floor levels',()=>{
+it('replaces the source once while removing duplicated C station shells and recording inferred floor levels',()=>{
  const c=JSON.parse(readFileSync('assets/context/core/source/data/context_input.json','utf8'));
  expect(c.buildings.some((b:{id:string})=>b.id==='way/810356690')).toBe(false);expect(c.excluded.filter((b:{id:string})=>b.id==='way/810356690')).toHaveLength(1);
- expect(c.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(1);
+ expect(c.buildings.filter((b:{group:string})=>b.group==='station')).toHaveLength(0);
  const s=JSON.parse(readFileSync(base+'source/data/stats.json','utf8'));expect(s.floor_reference_tp_m).toEqual([28.125,29.531]);expect(s.floor_status).toContain('not measured');
  expect(JSON.parse(readFileSync(base+'web/viewer.json','utf8')).groundElevationTP).toBe(15);
 });
