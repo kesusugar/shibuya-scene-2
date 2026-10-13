@@ -58,6 +58,7 @@ for si,s in enumerate(D['surfaces']):
   face(name,[p-t*w/2-v*h/2,p+t*w/2-v*h/2,p+t*w/2+v*h/2,p-t*w/2+v*h/2])
  for row in range(L['floors']):
   z=BASE+(row+.5)*storey;localv=(z-origin.z)/v.z;h=storey*L.get('glass_height_ratio',.78)
+  if L['style']=='kiosk':z=BASE+1.85;localv=(z-origin.z)/v.z;h=2.6
   columns=max(1,round((umax-umin)/pitch));actual_pitch=(umax-umin)/columns
   for col in range(columns):
    u=umin+(col+.5)*actual_pitch;w=(actual_pitch-.12)*L.get("bay_width_ratio",1)
@@ -69,10 +70,17 @@ for si,s in enumerate(D['surfaces']):
    if L['style']=='square' and (col+row//3)%5==0:panel(u-w/2+.12,z,.16,h,'dark',.11)
    if L['style']=='fukuras' and (row+col)%4==0:panel(u,z-h*.25,w,h*.48,'spandrel',.12)
    if row<L.get('podium_floors',1):
-    panel(u,z-h*.35,w,.50,'sign_housing',.13)
+    panel(u,BASE+3.35 if L['style']=='kiosk' else z-h*.35,w,.50,'sign_housing',.13)
   if all(inside(uu,localv,poly) for uu in [umin+.15,umax-.15]):
    band= .16 if L['style']=='square' else .32 if L['style']=='centre' else .24 if L['style']=='station' else .65
    panel((umin+umax)/2,z-h/2-.08,umax-umin-.12,band,'spandrel',.12)
+ if L['style']=='kiosk' and n.y>.5 and umax-umin>5:
+  u=umin+1.5;z=BASE+1.15
+  if all(inside(u+dx,(z-origin.z)/v.z+dy,poly) for dx in [-.5,.5] for dy in [-1.05,1.05]):
+   panel(u,z,.95,2.1,'shop_glass',.15)
+   for du in [-.5,.5]:panel(u+du,z,.06,2.18,'frame',.18)
+   panel(u,BASE+2.23,1.06,.06,'frame',.18)
+   panel(u+.34,BASE+1.05,.035,.18,'frame',.20)
  # Follow actual diagonal source boundaries rather than inventing rectangular cut-outs.
  if L['style']=='square':
   for i,p in enumerate(ring):

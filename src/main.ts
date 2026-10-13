@@ -1,3 +1,4 @@
+import {loadFacilities, type FacilitiesResult} from './world/facilities';
 import { loadTerrain, type TerrainResult } from './world/terrain';
 import { loadPlaza, type PlazaResult } from './world/plaza';
 import { loadSurround, type SurroundResult } from './world/surround';
@@ -63,6 +64,7 @@ const useGround = params.get('ground') !== 'off';
 const ground = new Mesh(new CircleGeometry(1500, 96), new MeshStandardMaterial({ color: 0x5b5a57, roughness: 0.9 }));
 ground.rotation.x = -Math.PI / 2; ground.position.y = useGround ? -0.62 : 0; ground.receiveShadow = true; ground.name = 'ground';
 scene.add(ground);
+let coreFacilities: FacilitiesResult | undefined;
 let coreTerrain: TerrainResult | undefined;
 let coreGround: GroundResult | undefined;
 let coreStreet: StreetResult | undefined;
@@ -81,8 +83,8 @@ const io: BuildingIO = {
 };
 
 // Buildings load side by side and independently: one broken asset shows a red placeholder, the rest still draw.
-const ids = (params.get('buildings') ?? 'qfront,magnet,eiraku,west-block,ekimae,station-concourse,station-north,station-service,station-west-viaduct,ginza-canopy,daiichi-kangin,center-gai-gate,center244,quattro,scramble-square,fukuras,station-southeast').split(',').map((s) => s.trim()).filter(Boolean).filter(id => id !== 'center-gai-gate' || params.get('street') !== 'off').filter((id) => params.get('context') !== 'nostation' || !['station-southeast','station-concourse', 'station-north', 'station-service', 'station-west-viaduct', 'ginza-canopy'].includes(id));
-const NAMES: Record<string, string> = { 'station-southeast': 'JR南東側施設（外装推定）','center244': 'センター244ビル（外装推定）', 'quattro': '渋谷平和クワトロビル（台帳名）（外装推定）', 'scramble-square': '渋谷スクランブルスクエア（外装推定）', 'fukuras': '渋谷フクラス（外装推定）',  qfront: 'QFRONT', magnet: 'MAGNET', eiraku: '栄楽ビル', 'west-block': 'センター街入口西側街区', ekimae: '渋谷駅前ビル', 'station-concourse': '駅・マークシティ連絡通路', 'station-north': 'JR北側ホーム上屋', 'station-service': '駅西側の小施設', 'station-west-viaduct': '駅西側の高架部（推定）', 'ginza-canopy': '銀座線ホーム上屋（試作）', 'daiichi-kangin': '第一勧銀共同ビル（B試作）', 'center-gai-gate': 'センター街入口ゲート（形状試作）' };
+const ids = (params.get('buildings') ?? 'qfront,magnet,eiraku,west-block,ekimae,station-concourse,station-north,station-service,station-west-viaduct,ginza-canopy,daiichi-kangin,center-gai-gate,center244,quattro,scramble-square,fukuras,station-southeast,plaza-kiosk').split(',').map((s) => s.trim()).filter(Boolean).filter(id => id !== 'center-gai-gate' || params.get('street') !== 'off').filter((id) => params.get('context') !== 'nostation' || !['station-southeast','station-concourse', 'station-north', 'station-service', 'station-west-viaduct', 'ginza-canopy'].includes(id));
+const NAMES: Record<string, string> = { 'plaza-kiosk':'広場の低層施設（売店候補）', 'station-southeast': 'JR南東側施設（外装推定）','center244': 'センター244ビル（外装推定）', 'quattro': '渋谷平和クワトロビル（台帳名）（外装推定）', 'scramble-square': '渋谷スクランブルスクエア（外装推定）', 'fukuras': '渋谷フクラス（外装推定）',  qfront: 'QFRONT', magnet: 'MAGNET', eiraku: '栄楽ビル', 'west-block': 'センター街入口西側街区', ekimae: '渋谷駅前ビル', 'station-concourse': '駅・マークシティ連絡通路', 'station-north': 'JR北側ホーム上屋', 'station-service': '駅西側の小施設', 'station-west-viaduct': '駅西側の高架部（推定）', 'ginza-canopy': '銀座線ホーム上屋（試作）', 'daiichi-kangin': '第一勧銀共同ビル（B試作）', 'center-gai-gate': 'センター街入口ゲート（形状試作）' };
 let loaded: LoadedBuilding[] = [];
 let building: LoadedBuilding | undefined;   // the building the camera presets frame (QFRONT when present)
 let mode: TimeOfDay = params.get('time') === 'night' ? 'night' : 'day';
@@ -97,6 +99,7 @@ function setTime(t: TimeOfDay) {
   const groundLook = projectedStreet?.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? { ...look, nightGround: 0 } : look;
   if (coreGround?.ok) applyLook(coreGround.root, t, groundLook);
   projectedStreet?.setTime(t, params.get('lamps') !== 'off');
+  if (coreFacilities?.ok) applyLook(coreFacilities.root, t, look, undefined, env);
   if (coreTerrain?.ok) applyLook(coreTerrain.root, t, groundLook);
   if (corePlaza?.ok) applyLook(corePlaza.root, t, groundLook);
   if (coreSurround?.ok) applyLook(coreSurround.root, t, look, undefined, env);
@@ -111,7 +114,7 @@ function setTime(t: TimeOfDay) {
 
 async function start() {
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
-  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes, plazaRes, terrainRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
+  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes, plazaRes, terrainRes, facilitiesRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
     useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined),
     params.get('street') !== 'off' ? loadStreet(io.loadGlb, params.get('streeturl') === 'missing' ? '/street/core/missing.glb' : undefined, params.get('street') !== 'entrances') : Promise.resolve(undefined),
     params.get('street') === 'projected' ? loadProjectedStreet(io, params.get('projectedurl') === 'missing' ? '/street/core/missing.glb' : undefined) : Promise.resolve(undefined),
@@ -121,11 +124,13 @@ async function start() {
     useGround && params.get('street') !== 'off' && params.get('hachiko') !== 'off' ? loadHachiko(io.loadGlb, params.get('hachikourl') === 'missing' ? '/street/hachiko/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('surround') !== 'off' ? loadSurround(io.loadGlb, params.get('surroundurl') === 'missing' ? '/street/hachiko-surround/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('plaza') !== 'off' ? loadPlaza(io.loadGlb, params.get('plazaurl') === 'missing' ? '/street/plaza-finish/missing.glb' : undefined) : Promise.resolve(undefined),
-    useGround && params.get('terrain') !== 'off' ? loadTerrain(io.loadGlb, params.get('terrainurl') === 'missing' ? '/ground/extension/missing.glb' : undefined) : Promise.resolve(undefined)]);
+    useGround && params.get('terrain') !== 'off' ? loadTerrain(io.loadGlb, params.get('terrainurl') === 'missing' ? '/ground/extension/missing.glb' : undefined) : Promise.resolve(undefined),
+    useGround && params.get('street') !== 'off' && params.get('facilities') !== 'off' ? loadFacilities(io.loadGlb, params.get('facilitiesurl') === 'missing' ? '/street/plaza-facilities/missing.glb' : undefined) : Promise.resolve(undefined)]);
   results.forEach((r: BuildingResult) => scene.add(r.root));
   loaded = results.filter((r): r is LoadedBuilding => r.ok);
   coreGround = groundRes;
   coreTerrain = terrainRes;
+  coreFacilities = facilitiesRes;
   coreStreet = streetRes;
   coreTactile = tactileRes;
   coreDrainage = drainageRes;
@@ -141,6 +146,7 @@ async function start() {
   if (loaded.some(b => ['center244','quattro','scramble-square','fukuras'].includes(b.id))) $('provisional').textContent += '／周辺建物の窓割り・外装は旧年写真によるB推定';
   if (loaded.some(b => b.id === 'center-gai-gate')) $('provisional').textContent += '／センター街ゲートは位置・寸法のB推定、広告内容は後工程';
   if (coreGround?.ok) $('provisional').textContent += '／北側歩道・ハチ公広場の舗装寸法・割付けは試作';
+  if (coreFacilities?.ok) { scene.add(coreFacilities.root); $('provisional').textContent += '／小施設の形・高さ・用途は推定、喫煙設備のOSM形状は喫煙区画全体ではない'; }
   if (coreTerrain?.ok) { scene.add(coreTerrain.root); $('provisional').textContent += '／外側の地面は国土地理院標高による補填、仕上げ道路・歩道と継ぎ目は推定'; }
   if (coreStreet?.ok) scene.add(coreStreet.root);
   if (corePlaza?.ok) { scene.add(corePlaza.root); $('provisional').textContent += '／像周辺の敷石は写真から推定、寸法・敷設範囲は未測量'; }
@@ -153,6 +159,7 @@ async function start() {
   controls.setGround([...(coreGround?.ok ? [coreGround.root] : []), ...(coreTerrain?.ok ? [coreTerrain.root] : []), ...(coreStreet?.ok ? coreStreet.walkSurfaces : [])]);
   if (loaded.some((b) => b.id === 'west-block')) $('provisional').textContent += '\n西側街区の外観は試作、看板は2025年1月の写真を参照';
   if (loaded.some((b) => b.id === 'ekimae')) $('provisional').textContent += '\n渋谷駅前ビルの外観は試作、看板は2025年11月の写真を参照';
+  if (loaded.some(b => b.id === 'plaza-kiosk')) $('provisional').textContent += '\n広場の低層施設は売店候補、窓と筐体は推定、用途・10月現況は未確認';
   if (loaded.some(b => b.id === 'station-southeast')) $('provisional').textContent += '\nJR南東側施設は旧年写真による外装推定、10月現況と施設同定は未確認';
   if (loaded.some((b) => b.id === 'station-concourse')) $('provisional').textContent += '\n駅側の連絡通路は試作、開口・窓・内部・工事用の囲いの寸法と配置、光量は推定';
   if (loaded.some((b) => b.id === 'station-north')) $('provisional').textContent += '\nJR北側ホーム上屋は試作、柱・梁・床の帯の配置は推定、南側は外観未確認';
@@ -164,6 +171,7 @@ async function start() {
   const problems = [
     ...(projectedStreet && !projectedStreet.ok ? [`写真からの仮配置を読み込めず: ${projectedStreet.error}（通常表示を継続）`] : []),
     ...(coreContext && !coreContext.ok ? [`周辺の建物（C段階）の読み込みに失敗: ${coreContext.error}（他は表示を継続）`] : []),
+    ...(coreFacilities && !coreFacilities.ok ? [`小施設の読み込みに失敗: ${coreFacilities.error}（ほかの表示を継続）`] : []),
     ...(coreTerrain && !coreTerrain.ok ? [`外側地面の読み込みに失敗: ${coreTerrain.error}（元の地面を継続）`] : []),
     ...(corePlaza && !corePlaza.ok ? [`敷石の読み込みに失敗: ${corePlaza.error}（ほかの表示は継続）`] : []),
     ...(coreSurround && !coreSurround.ok ? [`像周辺の設備の読み込みに失敗: ${coreSurround.error}（ほかの表示は継続）`] : []),
@@ -196,6 +204,7 @@ async function start() {
     for (const b of loaded) applyClassPass(b.root, { ...b.emissive.day });
     if (coreGround?.ok) applyClassPass(coreGround.root);
     if (coreStreet?.ok) applyClassPass(coreStreet.root);
+    if (coreFacilities?.ok) applyClassPass(coreFacilities.root);
     if (coreTerrain?.ok) applyClassPass(coreTerrain.root);
     if (corePlaza?.ok) applyClassPass(corePlaza.root);
     if (coreSurround?.ok) applyClassPass(coreSurround.root);
@@ -219,6 +228,7 @@ async function start() {
     failed: results.filter((r) => !r.ok).map((r) => r.id),
     ground: coreGround ? { ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
     context: coreContext ? { ok: coreContext.ok, error: coreContext.error, ...coreContext.stats } : 'off',
+    facilities: coreFacilities ? {ok:coreFacilities.ok, error:coreFacilities.error, ...coreFacilities.stats} : 'off',
     terrain: coreTerrain ? { ok: coreTerrain.ok, error: coreTerrain.error, ...coreTerrain.stats } : 'off',
     plaza: corePlaza ? { ok: corePlaza.ok, error: corePlaza.error, ...corePlaza.stats } : 'off',
     surround: coreSurround ? { ok: coreSurround.ok, error: coreSurround.error, ...coreSurround.stats } : 'off',
