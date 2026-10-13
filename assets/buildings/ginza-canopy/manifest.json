@@ -18,28 +18,28 @@
   },
   "files": {
     "README.md": {
-      "bytes": 2237,
-      "sha256": "8840e4331b34f9985bed17c4ac4935df8aef0e2469c33882a50cde282df5ce42"
+      "bytes": 2643,
+      "sha256": "5a7f347dcb3d27fe0e307b8f5238f863b285bcce323bff5f115174e62e94f6f2"
     },
     "source/blender/build_ginza_canopy.py": {
-      "bytes": 8320,
-      "sha256": "745d3c4c48c7c2b7653a1257704e8c326364c4d98bd5dd2a9161cb32b1dbeed7"
+      "bytes": 8541,
+      "sha256": "9ccc0b24b08046bfd545eee7ad4ca167fc913495c87de3f6883485f891046d1a"
     },
     "source/data/floor_refs.json": {
       "bytes": 409,
       "sha256": "5e99ab01b12c881d54a83319eec9bb3caadbbe610f1dc9d710100ce25ec7b523"
     },
     "source/data/layout.json": {
-      "bytes": 1629,
-      "sha256": "311dc041cfb59b420f83400be0f5a9b187350dbbc47bfcd7cdf49b482b2550a0"
+      "bytes": 2074,
+      "sha256": "204fdbc8d1a44e695a4ab60830bdc6b652f3839c94541022af69acf8da714211"
     },
     "source/data/parts.json": {
       "bytes": 16179,
       "sha256": "3259879a10bc7890fe769dde119c940c6d88ab23af483fc09895605d40f077cf"
     },
     "source/data/stats.json": {
-      "bytes": 1963,
-      "sha256": "a297825863dbd56a7c4a4c2237b430bcff3baed571c4596c48e4cdb0ed8d1b5e"
+      "bytes": 1989,
+      "sha256": "7ca4fa175c2d74cd098130035cf3f8e6f02760c0bf0bd754e5b22ed8d3e97f21"
     },
     "source/refs/GC01_metadata.json": {
       "bytes": 5196,
@@ -58,12 +58,12 @@
       "sha256": "a2a1cb4d5a5961d34afbf6ca1eae04ca991df177f9e3ee46429237e70fd4999a"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
-      "bytes": 1525,
-      "sha256": "3d5eb91095e8b599cb6d8d83e523f232ff33230733a3da38972777f7869b0e87"
+      "bytes": 1722,
+      "sha256": "cda77528fd14c0d161fc5bd9298fd9ba483318a8300f4a9e488ba9c4149d9d79"
     },
     "source/refs/SOURCE.json": {
-      "bytes": 3679,
-      "sha256": "1e87e172fa97a4e4b35de81b112ff88b50a20c07b96bf1d8a2967954822d5ac2"
+      "bytes": 4128,
+      "sha256": "6c5c760eebfbfe53a18682f5ff6cefd288d84d2e9bef1ad33bb37745fd9712a5"
     },
     "source/refs/m_frame_dec2024.jpg": {
       "bytes": 212462,
@@ -87,7 +87,7 @@
     },
     "web/ginza-canopy.glb": {
       "bytes": 715544,
-      "sha256": "24e1169efdd562f9c83afe200940e5fd306ff15a572a1ef067c777a9f9caf1fa"
+      "sha256": "b1ef2c9c1f814452ec2a7239db1063c6bf557f6c1e728fcbc3f4683584e7c0b5"
     },
     "web/viewer.json": {
       "bytes": 104,

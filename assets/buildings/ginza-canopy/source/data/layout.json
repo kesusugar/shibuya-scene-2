@@ -37,5 +37,8 @@
   "rib_drop_m": 0.35,
   "rib_revision_basis": "Initial same-pose view showed outer M ribs disappearing into the source roof/ceiling. Lowered the rib profile only by .35m so it reads as a continuous frame below the retained deck. Original roof, plan positions, floor, doors/glass alpha and lighting unchanged. Connection geometry/clearance remain B estimates.",
   "continuous_housing": true,
-  "housing_revision_basis": "After rib-clearance correction, geometry review found gaps between fixed door housings. Sized and centred the fixed housings from the bay pitch to connect adjacent door units. Door bay positions/count, glass opacity, floor, lighting, ribs and original roof unchanged. Exact real housing details remain estimated."
+  "housing_revision_basis": "After rib-clearance correction, geometry review found gaps between fixed door housings. Sized and centred the fixed housings from the bay pitch to connect adjacent door units. Door bay positions/count, glass opacity, floor, lighting, ribs and original roof unchanged. Exact real housing details remain estimated.",
+  "platform_width_m": 12,
+  "rail_edge_offset_m": 1.35,
+  "platform_width_basis": "Tokyo Metro official 2019-10-28 new-station release states platform widened from about6m to about12m. Adopt12m design width; keep centre/floor height, move doors/tactile to new edges and place tracks1.35m outside each edge as an estimate. Original roof/ribs/lighting/door pitch/glass unchanged. Design reference is not independent October2025 interior survey."
 }

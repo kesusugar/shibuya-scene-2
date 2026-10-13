@@ -36,6 +36,7 @@
     }
   ],
   "lower_base_status": "original geometry below track bed retained as C, ground matching unconfirmed",
+  "platform_width_m": 12,
   "continuous_housing": true,
   "rib_drop_m": 0.35,
   "opened_upper_wall_faces": 19,

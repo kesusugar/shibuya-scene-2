@@ -58,5 +58,15 @@
     "license": "Project PLATEAU利用規約",
     "use": "original source shell/roof and nearby bridge elevation references",
     "dataset": "渋谷区2025年度3D都市モデル"
+  },
+  {
+    "id": "GC05",
+    "date": "2019-10-28",
+    "publisher": "東京メトロ",
+    "url": "https://www.tokyometro.jp/news/2019/203391.html",
+    "pdf_url": "https://www.tokyometro.jp/news/images_h/metroNews20191028_105.pdf",
+    "license": "URL参照、図・PDFの転載なし",
+    "use": "new-station design: platform widened from about6m to about12m; M-shaped arch. Not October2025 interior survey.",
+    "platform_width_design_m": 12
   }
 ]
