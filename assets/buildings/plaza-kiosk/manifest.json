@@ -1,0 +1,60 @@
+{
+  "id": "plaza-kiosk",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 342,
+    "primitives": 9,
+    "bytes": 26692
+  },
+  "files": {
+    "README.md": {
+      "bytes": 847,
+      "sha256": "57c7357103c2edee79d6d8587a303b4b8c1f0d35965e04d1e7b52cc72ce42456"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 487,
+      "sha256": "10a324eae927840e42982c6cd2f2cd78688f8807c45b71fca04af0e5d3f010fb"
+    },
+    "source/data/plateau.json": {
+      "bytes": 2390,
+      "sha256": "d0a68810659784d4f5212586e0b223b579b7af56ca607c91df3465c7926804bf"
+    },
+    "source/data/stats.json": {
+      "bytes": 5857,
+      "sha256": "6fb330b4db42b8de9db99a44146155f58f3b754440e9e78f4a05146d805549e2"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 492,
+      "sha256": "4a48a1f92f30d6d5c3828c29070986f47b59c7dca116775f4e9f0757d00c2291"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 7293487,
+      "sha256": "0b5cec75608be664a9f2e4ab08b906a245d3f00ce0e4d556fcc8b513579bc656"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3724,
+      "sha256": "5f1b25b4f9ea14e36fef6200696d64a96ef9438facb3bb151874fca578b1f4a9"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/plaza-kiosk.glb": {
+      "bytes": 26692,
+      "sha256": "2549efd51358019454410b77cf31ad00b9c5b5841e030566f38418331f88f41a"
+    },
+    "web/viewer.json": {
+      "bytes": 194,
+      "sha256": "d17f463d610b9c89166cc3d7deff2adf286b47d99415080fcf806436225bc648"
+    }
+  }
+}

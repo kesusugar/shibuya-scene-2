@@ -5,6 +5,11 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  plaza_facilities: {q:'time=day&pose=6,-40,2,18,-53,2,65',w:1000,h:750},
+  plaza_facilities_night: {q:'time=night&pose=6,-40,2,18,-53,2,65',w:1000,h:750},
+  plaza_service: {q:'time=day&pose=8,-56,2,11,-62,1.5,60',w:900,h:675},
+  plaza_kiosk: {q:'time=day&pose=18,-30,3,34,-46,2.2,60',w:900,h:675},
+
   terrain: {q:'time=day&pose=0,-180,100,100,-160,0,65',w:1000,h:750},
   station_southeast: {q:'time=day&pose=25,-200,34,85,-135,10,62',w:1000,h:750},
 
@@ -65,10 +70,11 @@ try {
     await page.goto(`${base}/?capture&${v.q}${process.env.EXTRA ? `&${process.env.EXTRA}` : ""}`);
     await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 300000 });
     await page.waitForTimeout(2500);
-    const state = await page.evaluate(() => ({ plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
+    const state = await page.evaluate(() => ({ facilities: window.__viewer.facilities, plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
     await page.screenshot({ path: `${out}/${name}.png`, timeout: 300000 });
     log[name] = { ...v, state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
     if (process.env.BASELINE === '1') assert.equal(state.plaza, undefined); else if (process.env.EXTRA?.includes('plaza=off')) assert.equal(state.plaza, 'off'); else assert.equal(state.plaza.ok, true); if (process.env.EXTRA?.includes('surround=off')) assert.equal(state.surround, 'off'); else assert.equal(state.surround.ok, true); if (process.env.EXTRA?.includes('hachiko=off')) assert.equal(state.hachiko, 'off'); else assert.equal(state.hachiko.ok, true); if (process.env.EXTRA?.includes('drainage=off')) assert.equal(state.drainage, 'off'); else assert.equal(state.drainage.ok, true); assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); if (process.env.EXTRA?.includes('tactile=off')) assert.equal(state.tactile, 'off'); else assert.equal(state.tactile.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
+    if (process.env.FACILITIES === '1') assert.equal(state.facilities.ok,true);
     for (const asset of Object.values(state.stats)) assert.deepEqual(asset.layerErrors, []);
     console.log(name, errors.length ? errors : 'ok'); await page.close();
   }
