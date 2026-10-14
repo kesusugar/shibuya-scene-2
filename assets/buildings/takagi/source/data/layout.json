@@ -1,0 +1,42 @@
+{
+ "id": "takagi",
+ "name": "高木ビルディング",
+ "style": "centre",
+ "floors": 10,
+ "bay_pitch_m": 1.8,
+ "wall_rgb": [
+  0.54,
+  0.55,
+  0.53
+ ],
+ "roof_rgb": [
+  0.54,
+  0.55,
+  0.53
+ ],
+ "frame_rgb": [
+  0.54,
+  0.56,
+  0.55
+ ],
+ "spandrel_rgb": [
+  0.54,
+  0.55,
+  0.53
+ ],
+ "glass_rgb": [
+  0.075,
+  0.12,
+  0.15
+ ],
+ "glass_height_ratio": 0.55,
+ "band_m": 0.38,
+ "podium_floors": 2,
+ "basis": "PLATEAU 2025 shell preserved; divisions/colors/roof housings are photo-type estimates. Reference year is recorded separately; no historical advertising imagery copied.",
+ "roof_sign": {
+  "width_m": 14,
+  "height_m": 7.5,
+  "base_offset_m": 1
+ },
+ "probe_solid_normals": true
+}

@@ -1,0 +1,60 @@
+{
+  "id": "ground/extension",
+  "level": "ground",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 37125,
+    "primitives": 1,
+    "bytes": 3025280
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1964,
+      "sha256": "b4fcccff7dc16e7456214b47cbc4a82c459a7e8d29e2f23526473b55fcc9c2d7"
+    },
+    "source/blender/build.py": {
+      "bytes": 896,
+      "sha256": "0154650ca1c4b8ed336c25e6b59bd47e39f0b005d40e04dc4c13a22a3e332e3e"
+    },
+    "source/data/29099-12906.txt": {
+      "bytes": 392772,
+      "sha256": "9d5d3a1c6f1cd6603bc14eab424ec52d471765f9544cd9a13bb4d5936880c05a"
+    },
+    "source/data/29100-12905.txt": {
+      "bytes": 393215,
+      "sha256": "4a4816dc4df004b3bb03ce46b15bfe96ae4df3754f1c8233f9540e5f6b192731"
+    },
+    "source/data/29100-12906.txt": {
+      "bytes": 392644,
+      "sha256": "d2f459558eb78c31236e5982acae90cea5668e6027135bc01148d843ec4094f5"
+    },
+    "source/data/dem.txt": {
+      "bytes": 393216,
+      "sha256": "7eaea455a09c9f6fb910c5632dbfa1974bb0bbe253bc689702a6ee3a0555b7ba"
+    },
+    "source/data/extension.json": {
+      "bytes": 2622805,
+      "sha256": "ad1a3f26ccd71207422c3272438170231f368acd5dbbaa056479b9352a287eb5"
+    },
+    "source/data/source.json": {
+      "bytes": 247,
+      "sha256": "a88b48e5efdf8706ce3721428997a4a8826a38725feee1bde94ef4cec7e700a5"
+    },
+    "source/data/stats.json": {
+      "bytes": 433,
+      "sha256": "6bf34a8cf3dbaa86067ee7268eda4b586715fc57725f3d07a722ab7fe1cd24c2"
+    },
+    "source/tools/extract-ground.mjs": {
+      "bytes": 721,
+      "sha256": "fed42121ae2886018224d78fb17556d5bad8dcf90a7c4448dd3f5d83d381ad86"
+    },
+    "source/tools/prepare.py": {
+      "bytes": 3172,
+      "sha256": "13c60d9c0cdf9552070e9ad1e7f0483cbf740ce0c48fe2c67b134b40a76bb21b"
+    },
+    "web/extension.glb": {
+      "bytes": 3025280,
+      "sha256": "6e906f9ee6708544461276a2778cbcaf88d7d6c038c593c5cdddc3350575fc3e"
+    }
+  }
+}

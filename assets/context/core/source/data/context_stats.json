@@ -302,15 +302,6 @@
    "faces": 5
   },
   {
-   "id": "way/54500467",
-   "plateau_id": "bldg_884b7aea-8fa7-4447-8d45-d691cfec7237",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_a",
-   "height_m": 112.43,
-   "faces": 320
-  },
-  {
    "id": "way/136397972",
    "plateau_id": "bldg_5c2267c4-ee48-4722-9f46-88e362b44510",
    "group": "core",
@@ -399,15 +390,6 @@
    "material": "ctx_wall_punched_b",
    "height_m": 14.4,
    "faces": 19
-  },
-  {
-   "id": "way/55588118",
-   "plateau_id": "bldg_3ad6aaeb-26f8-4716-a8ec-cb2504b94674",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_a",
-   "height_m": 104.59,
-   "faces": 171
   },
   {
    "id": "way/136398534",
@@ -698,15 +680,6 @@
    "faces": 13
   },
   {
-   "id": "way/136691379",
-   "plateau_id": "bldg_edef4503-f1ef-4f11-839a-3fad9862036c",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_punched_b",
-   "height_m": 33.25,
-   "faces": 35
-  },
-  {
    "id": "way/136692151",
    "plateau_id": "bldg_9aad3c5b-caa2-426a-a4d4-bfb754ed3e0a",
    "group": "core",
@@ -806,15 +779,6 @@
    "faces": 31
   },
   {
-   "id": "way/136587834",
-   "plateau_id": "bldg_762c01d4-ae14-406a-bb59-99e017587c10",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_b",
-   "height_m": 66.21,
-   "faces": 136
-  },
-  {
    "id": "way/136691346",
    "plateau_id": "bldg_c00e2929-5bf4-464f-b518-e26728788531",
    "group": "core",
@@ -885,15 +849,6 @@
    "material": "ctx_wall_punched_a",
    "height_m": 15.88,
    "faces": 17
-  },
-  {
-   "id": "way/116710254",
-   "plateau_id": "bldg_7f426b15-a7c6-46c2-a408-83b342afbbce",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_punched_b",
-   "height_m": 32.48,
-   "faces": 75
   },
   {
    "id": "plateau/bldg_a90da174-5102-46a7-a568-165880de4e65",
@@ -1092,15 +1047,6 @@
    "material": "ctx_wall_ribbon_a",
    "height_m": 27.54,
    "faces": 77
-  },
-  {
-   "id": "way/129061813",
-   "plateau_id": "bldg_23c835e4-6ac1-4461-8925-2be8428604b0",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_b",
-   "height_m": 45.11,
-   "faces": 116
   },
   {
    "id": "way/136667873",
@@ -1724,15 +1670,6 @@
    "faces": 83
   },
   {
-   "id": "way/55895868",
-   "plateau_id": "bldg_aba50b67-9267-4c80-9004-08ebfc7682d8",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_a",
-   "height_m": 49.78,
-   "faces": 141
-  },
-  {
    "id": "way/136587840",
    "plateau_id": "bldg_9022e6e0-d77b-4401-88bc-fd2438b0ae0a",
    "group": "core",
@@ -2066,15 +2003,6 @@
    "faces": 28
   },
   {
-   "id": "way/138670889",
-   "plateau_id": "bldg_fe91eeb1-5036-4b04-a16d-92408f11a3a6",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_b",
-   "height_m": 46.92,
-   "faces": 52
-  },
-  {
    "id": "way/120105804",
    "plateau_id": "bldg_9372a555-72ee-4430-85e2-533872f4dae5",
    "group": "core",
@@ -2354,15 +2282,6 @@
    "faces": 262
   },
   {
-   "id": "way/155538676",
-   "plateau_id": "bldg_dd896242-2859-4439-aeff-a6ecc2c893c6",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_punched_b",
-   "height_m": 4.33,
-   "faces": 7
-  },
-  {
    "id": "way/120105793",
    "plateau_id": "bldg_48512859-326a-45cd-a9de-f376bf14b09b",
    "group": "core",
@@ -2426,15 +2345,6 @@
    "faces": 13
   },
   {
-   "id": "way/136691389",
-   "plateau_id": "bldg_40a631a5-66a5-45d3-acf2-e9f75c5d38c6",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_a",
-   "height_m": 30.36,
-   "faces": 14
-  },
-  {
    "id": "way/136692137",
    "plateau_id": "bldg_f9f524c8-115e-400a-a9c9-4a0adc3fc3a8",
    "group": "core",
@@ -2442,15 +2352,6 @@
    "material": "ctx_wall_ribbon_b",
    "height_m": 45.85,
    "faces": 76
-  },
-  {
-   "id": "way/617560918",
-   "plateau_id": "bldg_7b006717-e9e6-4a94-8843-1f4ce13b2509",
-   "group": "core",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_b",
-   "height_m": 229.03,
-   "faces": 102
   },
   {
    "id": "way/120105794",
@@ -2505,15 +2406,6 @@
    "material": "ctx_wall_punched_a",
    "height_m": 32.88,
    "faces": 38
-  },
-  {
-   "id": "plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
-   "plateau_id": "bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
-   "group": "station",
-   "kind": "building",
-   "material": "ctx_wall_ribbon_b",
-   "height_m": 23.45,
-   "faces": 212
   },
   {
    "id": "way/138594119",
@@ -2811,41 +2703,113 @@
    "id": "way/114755219",
    "plateau_id": "bldg_5e891186-4803-48a0-9664-284f212881ac",
    "reason": "own asset: daiichi-kangin"
+  },
+  {
+   "id": "way/136691379",
+   "plateau_id": "bldg_edef4503-f1ef-4f11-839a-3fad9862036c",
+   "reason": "own asset: center244"
+  },
+  {
+   "id": "way/136691389",
+   "plateau_id": "bldg_40a631a5-66a5-45d3-acf2-e9f75c5d38c6",
+   "reason": "own asset: quattro"
+  },
+  {
+   "id": "way/617560918",
+   "plateau_id": "bldg_7b006717-e9e6-4a94-8843-1f4ce13b2509",
+   "reason": "own asset: scramble-square"
+  },
+  {
+   "id": "way/55588118",
+   "plateau_id": "bldg_3ad6aaeb-26f8-4716-a8ec-cb2504b94674",
+   "reason": "own asset: fukuras"
+  },
+  {
+   "id": "plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
+   "plateau_id": "bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
+   "reason": "own asset: station-southeast"
+  },
+  {
+   "id": "way/155538676",
+   "plateau_id": "bldg_dd896242-2859-4439-aeff-a6ecc2c893c6",
+   "reason": "own asset: plaza-kiosk"
+  },
+  {
+   "id": "way/54500467",
+   "plateau_id": "bldg_884b7aea-8fa7-4447-8d45-d691cfec7237",
+   "reason": "own asset: mark-city"
+  },
+  {
+   "id": "way/55895868",
+   "plateau_id": "bldg_aba50b67-9267-4c80-9004-08ebfc7682d8",
+   "reason": "own asset: shibuya109"
+  },
+  {
+   "id": "way/129061813",
+   "plateau_id": "bldg_23c835e4-6ac1-4461-8925-2be8428604b0",
+   "reason": "own asset: takagi"
+  },
+  {
+   "id": "way/116710254",
+   "plateau_id": "bldg_7f426b15-a7c6-46c2-a408-83b342afbbce",
+   "reason": "own asset: bic-camera"
+  },
+  {
+   "id": "way/136587834",
+   "plateau_id": "bldg_762c01d4-ae14-406a-bb59-99e017587c10",
+   "reason": "own asset: cine-tower"
+  },
+  {
+   "id": "way/138670889",
+   "plateau_id": "bldg_fe91eeb1-5036-4b04-a16d-92408f11a3a6",
+   "reason": "own asset: east-mixeduse"
+  },
+  {
+   "id": "way/204091879",
+   "plateau_id": "bldg_9ad5b600-360f-4627-8a89-fca39aad5576",
+   "reason": "own asset outside previous C selection: hikarie"
+  },
+  {
+   "id": "way/451564412",
+   "plateau_id": "bldg_e199100f-cb89-4a81-8e38-0abee12cb1d4",
+   "reason": "own asset outside previous C selection: parco"
+  },
+  {
+   "id": "way/521438304",
+   "plateau_id": "bldg_1db9c375-4ff6-4e3a-8c05-3a5c37e4580d",
+   "reason": "own asset outside previous C selection: stream"
+  },
+  {
+   "id": "way/1200029947",
+   "plateau_id": "bldg_9442d303-7a48-4f81-aa67-b6ef05dbd43b",
+   "reason": "own asset outside previous C selection: sakura-stage"
   }
  ],
  "objects": {
   "core__ctx_roof": {
-   "triangles": 11268,
-   "vertices": 19496
+   "triangles": 9902,
+   "vertices": 17322
   },
   "core__ctx_wall_punched_b": {
-   "triangles": 3810,
-   "vertices": 7026
+   "triangles": 3636,
+   "vertices": 6706
   },
   "core__ctx_wall_ribbon_a": {
-   "triangles": 5321,
-   "vertices": 9683
+   "triangles": 4151,
+   "vertices": 7595
   },
   "core__ctx_wall_punched_a": {
    "triangles": 3528,
    "vertices": 6444
   },
   "core__ctx_wall_ribbon_b": {
-   "triangles": 4117,
-   "vertices": 7461
-  },
-  "station__ctx_roof": {
-   "triangles": 218,
-   "vertices": 334
-  },
-  "station__ctx_wall_ribbon_b": {
-   "triangles": 356,
-   "vertices": 664
+   "triangles": 3546,
+   "vertices": 6424
   },
   "core__ctx_structure": {
    "triangles": 1148,
    "vertices": 3444
   }
  },
- "triangles": 29766
+ "triangles": 25911
 }

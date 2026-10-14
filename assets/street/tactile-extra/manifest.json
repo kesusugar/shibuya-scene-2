@@ -1,0 +1,32 @@
+{
+  "id": "street/tactile-extra",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 40376,
+    "primitives": 1,
+    "bytes": 2730888
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1345,
+      "sha256": "eb8248c19e65a1f0960778cf0c8ad0f377600d79d3e78edb33147030971b2060"
+    },
+    "source/blender/build.py": {
+      "bytes": 9848,
+      "sha256": "27f25c987990e7f83b29a478145b6ee027c425d8ba12a46dde610f4465613e70"
+    },
+    "source/data/layout.json": {
+      "bytes": 1352,
+      "sha256": "735f71c197b7d5f51f8aea73b6575e0a155493e47e184456a5ab03911a605228"
+    },
+    "source/data/stats.json": {
+      "bytes": 43018,
+      "sha256": "2a7a3f757363d4ef22535fc09ad5d801d019f236e131bc5fe4097a9f5f1582c9"
+    },
+    "web/tactile-extra.glb": {
+      "bytes": 2730888,
+      "sha256": "b3e144a0cef330d31deec70120d20367cf32b68033b9ad98de221cbda3747912"
+    }
+  }
+}

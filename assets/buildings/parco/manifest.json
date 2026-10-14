@@ -1,0 +1,64 @@
+{
+  "id": "parco",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 5314,
+    "primitives": 8,
+    "bytes": 340788
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1089,
+      "sha256": "0a81a0602d4e9b6feaaac016bd1b84e5bcaa43385c187fc89ca7c136f81c97a2"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 590,
+      "sha256": "9940a723d4ffe6ba7f28a7142fdb1769246a74fea113546f4468731ba3e26133"
+    },
+    "source/data/plateau.json": {
+      "bytes": 60919,
+      "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1"
+    },
+    "source/data/stats.json": {
+      "bytes": 12223,
+      "sha256": "a894717b7bec8c2c08a812e0a0b0c072d466384cc7cbef0376685ada56eee0c6"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 532,
+      "sha256": "b228d16586ae5be09e198ad14b305e5e2c162721b443bf3264ceca987d0ef211"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 2981707,
+      "sha256": "e170ebff22d906c1c514941db60383d82b38570fda183f7c2b29a5ca10f426dc"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 2816,
+      "sha256": "56b9437800849704b9badc27e18b7617ce3bac180878e4eaeb3dec0bd7273347"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/parco.glb": {
+      "bytes": 340788,
+      "sha256": "a975d6cf37e3e4cd673be5353859865581be1a0aa9018f904989d1ef4d11b0f8"
+    },
+    "web/viewer.json": {
+      "bytes": 193,
+      "sha256": "8a727c450e07127326a23ecb45364f42787bb86c829bc89a215ed22336ec21be"
+    }
+  },
+  "source_id": "way/451564412",
+  "source_aliases": [],
+  "plateau_id": "bldg_e199100f-cb89-4a81-8e38-0abee12cb1d4",
+  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+}

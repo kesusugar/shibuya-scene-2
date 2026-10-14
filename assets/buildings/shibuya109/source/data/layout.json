@@ -1,0 +1,39 @@
+{
+ "id": "shibuya109",
+ "name": "SHIBUYA109",
+ "style": "cylinder",
+ "floors": 16,
+ "bay_pitch_m": 2.4,
+ "wall_rgb": [
+  0.7,
+  0.7,
+  0.67
+ ],
+ "roof_rgb": [
+  0.7,
+  0.7,
+  0.67
+ ],
+ "frame_rgb": [
+  0.43,
+  0.44,
+  0.43
+ ],
+ "spandrel_rgb": [
+  0.7,
+  0.7,
+  0.67
+ ],
+ "glass_rgb": [
+  0.055,
+  0.1,
+  0.13
+ ],
+ "glass_height_ratio": 0.82,
+ "band_m": 0.025,
+ "podium_floors": 2,
+ "basis": "PLATEAU 2025 shell preserved; divisions/colors/roof housings are photo-type estimates. Reference year is recorded separately; no historical advertising imagery copied.",
+ "identity_109": true,
+ "logo_scale_m": 1.3,
+ "probe_solid_normals": true
+}

@@ -1,0 +1,21 @@
+{
+ "source": "GSI DEM5A",
+ "source_acquired": "2026-10-13",
+ "datum_tp_m": 15,
+ "bounds_m": [
+  -330,
+  -450,
+  380,
+  350
+ ],
+ "grid_m": 6,
+ "edge_blend_m": 20,
+ "source_ground_unchanged": true,
+ "triangles": 37188,
+ "missing_dem": 0,
+ "height_tp_range": [
+  9.8045,
+  35.3167
+ ],
+ "limitation": "DEM terrain substrate; finished street surfaces/roads are not surveyed. Blend at original ground seam is estimated, not source DEM."
+}

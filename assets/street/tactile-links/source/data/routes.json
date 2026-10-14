@@ -1,0 +1,199 @@
+{
+ "routes": [
+  {
+   "id": "way/142438894",
+   "goal": [
+    36.67516220945127,
+    3.9127142163810413
+   ],
+   "endpoint_distance_m": 0.12548356564614813,
+   "length_m": 12.300000000000008,
+   "source_tile": {
+    "group": "way/355248081/end",
+    "kind": "guide",
+    "centre_xy": [
+     25.447269248554118,
+     4.835335697181661
+    ],
+    "direction_xy": [
+     0.14216118909916148,
+     0.9898435211253911
+    ]
+   },
+   "points": [
+    [
+     25.447269248554118,
+     4.835335697181661
+    ],
+    [
+     36.8,
+     3.9
+    ]
+   ],
+   "status": "estimated connection to modeled open end; not surveyed route"
+  },
+  {
+   "id": "way/142438895",
+   "goal": [
+    22.699558396530904,
+    13.3676641396367
+   ],
+   "endpoint_distance_m": 0.1323365971744731,
+   "length_m": 2.9999999999999996,
+   "source_tile": {
+    "group": "way/355248080/end",
+    "kind": "guide",
+    "centre_xy": [
+     21.918684955557616,
+     15.647941349683478
+    ],
+    "direction_xy": [
+     0.9802686100225948,
+     -0.19767005894765627
+    ]
+   },
+   "points": [
+    [
+     21.918684955557616,
+     15.647941349683478
+    ],
+    [
+     22.7,
+     13.5
+    ]
+   ],
+   "status": "estimated connection to modeled open end; not surveyed route"
+  },
+  {
+   "id": "way/155807209",
+   "goal": [
+    -31.679775050133173,
+    -16.62134736304157
+   ],
+   "endpoint_distance_m": 0.14522135222098823,
+   "length_m": 12.600000000000009,
+   "source_tile": {
+    "group": "way/1157451161/start",
+    "kind": "guide",
+    "centre_xy": [
+     -20.672399908547668,
+     -14.587129889508432
+    ],
+    "direction_xy": [
+     -0.9780170783842171,
+     0.2085248052122337
+    ]
+   },
+   "points": [
+    [
+     -20.672399908547668,
+     -14.587129889508432
+    ],
+    [
+     -31.6,
+     -16.5
+    ]
+   ],
+   "status": "estimated connection to modeled open end; not surveyed route"
+  },
+  {
+   "id": "way/155807210",
+   "goal": [
+    -23.87149361078162,
+    17.94257200430415
+   ],
+   "endpoint_distance_m": 0.09170229589402996,
+   "length_m": 5.399999999999999,
+   "source_tile": {
+    "group": "way/355248078/start",
+    "kind": "guide",
+    "centre_xy": [
+     -22.85416572955684,
+     13.3892506608484
+    ],
+    "direction_xy": [
+     0.19581244638110706,
+     0.9806413645376407
+    ]
+   },
+   "points": [
+    [
+     -22.85416572955684,
+     13.3892506608484
+    ],
+    [
+     -23.8,
+     18.0
+    ]
+   ],
+   "status": "estimated connection to modeled open end; not surveyed route"
+  },
+  {
+   "id": "way/155807211",
+   "goal": [
+    1.2325865927402835,
+    21.87465653028759
+   ],
+   "endpoint_distance_m": 0.13498702171520588,
+   "length_m": 2.4,
+   "source_tile": {
+    "group": "way/355248080/start",
+    "kind": "guide",
+    "centre_xy": [
+     1.3582292751640959,
+     19.81266947445158
+    ],
+    "direction_xy": [
+     -0.9799335434306968,
+     0.1993244853482851
+    ]
+   },
+   "points": [
+    [
+     1.3582292751640959,
+     19.81266947445158
+    ],
+    [
+     1.1,
+     21.9
+    ]
+   ],
+   "status": "estimated connection to modeled open end; not surveyed route"
+  },
+  {
+   "id": "way/1335178869",
+   "goal": [
+    -36.34002879210858,
+    12.982756615563225
+   ],
+   "endpoint_distance_m": 0.8676652924100108,
+   "length_m": 12.600000000000009,
+   "source_tile": {
+    "group": "way/355248078/start",
+    "kind": "guide",
+    "centre_xy": [
+     -22.912909463471173,
+     13.095058251487107
+    ],
+    "direction_xy": [
+     0.19581244638110706,
+     0.9806413645376407
+    ]
+   },
+   "points": [
+    [
+     -22.912909463471173,
+     13.095058251487107
+    ],
+    [
+     -35.5,
+     13.2
+    ]
+   ],
+   "status": "estimated connection to modeled open end; not surveyed route"
+  }
+ ],
+ "grid_m": 0.3,
+ "clearance_m": 0.22,
+ "position_basis": "Existing modeled opening orientation and sidewalk-only shortest grid route; not a verified 2025 guidance layout"
+}

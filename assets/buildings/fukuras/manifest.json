@@ -1,0 +1,62 @@
+{
+  "id": "fukuras",
+  "source_id": "way/55588118",
+  "level": "B",
+  "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery",
+  "stats": {
+    "triangles": 13199,
+    "primitives": 8,
+    "bytes": 781552
+  },
+  "generator": "tools/core/build_facade.py",
+  "files": {
+    "README.md": {
+      "bytes": 1328,
+      "sha256": "1b8d2e359f6c19a852bc9ac784fc99e0c858b8e14e07c177115ab7e2e99cfbe2"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 456,
+      "sha256": "c8712b2317a1169f3127c5611de0c31a8dc8f15e153bfe7760ed7bd5f797eddd"
+    },
+    "source/data/plateau.json": {
+      "bytes": 64691,
+      "sha256": "a7ab8db419a3551440f2daa3371dc66b8b07314f7cc7ded67922a1e769df0b82"
+    },
+    "source/data/stats.json": {
+      "bytes": 14094,
+      "sha256": "c1749b36f438c789a5488fc3cf4776ea3408fd7de92a1b299aafe9df746b0f26"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 528,
+      "sha256": "a785da31e87eab7cd74cccd12244570c320e5301416a465b03b4466edc6db702"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 8923985,
+      "sha256": "394e4469f5343c17725566bbf6c0168712a28f0bf2e15098217258bf6a736145"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 2582,
+      "sha256": "480c561a8eece4ec3514add977791f82eeebbbf01e625ccbc8de4fb644bfcdc5"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/fukuras.glb": {
+      "bytes": 781552,
+      "sha256": "bf4843908b8633d546fdf7798e6a645c8103558469e4e18e8c0e012fcec91ec2"
+    },
+    "web/viewer.json": {
+      "bytes": 195,
+      "sha256": "c79a55ab50f9cf269c611140a51e34c8495e0089dfeecd571f6e93795121915f"
+    }
+  }
+}

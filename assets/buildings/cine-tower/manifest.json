@@ -1,0 +1,64 @@
+{
+  "id": "cine-tower",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 3876,
+    "primitives": 8,
+    "bytes": 232924
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1119,
+      "sha256": "80964d644536d0d2ecb75eb623a98b0d3b1ea3d5b7255d94459606904e7987fa"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 607,
+      "sha256": "b051b023da184a4acef2a95288133acb0f98580e62fe7cb193044dd244246e01"
+    },
+    "source/data/plateau.json": {
+      "bytes": 49675,
+      "sha256": "2bca0b408febcfa8d895b8f3920722acfb809b41b8c3ad3b375914e98e0004a0"
+    },
+    "source/data/stats.json": {
+      "bytes": 15709,
+      "sha256": "9e66848c7d11bbd0f6ceaf32e2432c67c6a2cd23cdff6deffe4935b6e1af9b98"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 499,
+      "sha256": "06ada54fc0a85db2a42bcd2df9932a6d2a9997c9af3a3fedefb7b1a8cc7c4425"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 293823,
+      "sha256": "37ca97423d07a2401295922190411c0e42776ae82d80b8bb07e1049c01cfacef"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 2177,
+      "sha256": "4c9e9091691978e3db8c37514419968027ea4a647aa195cb8dead8560f731dd6"
+    },
+    "web/cine-tower.glb": {
+      "bytes": 232924,
+      "sha256": "9b0b478732e0c1b6ec7d6df92f2ec958eb30cf1fdd03da67b46968946cff1a87"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/viewer.json": {
+      "bytes": 195,
+      "sha256": "8dd27db4249a1075a04a5b7462f3fe3f6a37129d33a1e7d21b40839d3780fcb1"
+    }
+  },
+  "source_id": "way/136587834",
+  "source_aliases": [],
+  "plateau_id": "bldg_762c01d4-ae14-406a-bb59-99e017587c10",
+  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+}

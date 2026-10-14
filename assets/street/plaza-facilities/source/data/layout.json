@@ -1,0 +1,82 @@
+{
+ "items": [
+  {
+   "id": "way/155807205",
+   "ring": [
+    [
+     5.236883211287103,
+     -57.5648244001699
+    ],
+    [
+     5.3182855413025765,
+     -57.99606300049534
+    ],
+    [
+     7.036779166679347,
+     -57.719628000407596
+    ],
+    [
+     6.955376836663873,
+     -57.277331999952935
+    ]
+   ],
+   "tags": {
+    "amenity": "smoking_area",
+    "building": "yes",
+    "smoking": "yes",
+    "source": "Bing"
+   },
+   "height_m": 1.05,
+   "kind": "smoking_cabinet_estimate",
+   "basis": "2025-10-31 OSM geometry; shape/height estimated. Small smoking footprint does not establish the perimeter of the smoking enclosure. No 9m default extrusion."
+  },
+  {
+   "id": "way/858994297",
+   "ring": [
+    [
+     7.145315607556865,
+     -62.894491200384536
+    ],
+    [
+     7.651818993177299,
+     -64.75213440009422
+    ],
+    [
+     14.516748797061902,
+     -63.92282939983099
+    ],
+    [
+     14.191139479570666,
+     -61.93249740014204
+    ],
+    [
+     13.693680796714027,
+     -62.00989920026089
+    ],
+    [
+     13.45851851200206,
+     -60.395518800251295
+    ],
+    [
+     8.44775288266313,
+     -61.10319239987881
+    ],
+    [
+     8.673870464611303,
+     -62.673343200157206
+    ]
+   ],
+   "tags": {
+    "building": "yes"
+   },
+   "height_m": 3.03,
+   "kind": "unidentified_small_structure",
+   "basis": "2025-10-31 OSM geometry; shape/height estimated. Small smoking footprint does not establish the perimeter of the smoking enclosure. No 9m default extrusion."
+  }
+ ],
+ "datum_tp_m": 15,
+ "query_date": "2025-10-31T23:59:59Z",
+ "endpoint": "https://overpass-api.de/api/interpreter",
+ "license": "ODbL-1.0",
+ "attribution": "\u00a9 OpenStreetMap contributors"
+}

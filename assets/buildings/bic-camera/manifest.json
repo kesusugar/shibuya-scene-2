@@ -1,0 +1,64 @@
+{
+  "id": "bic-camera",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 932,
+    "primitives": 8,
+    "bytes": 59960
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1116,
+      "sha256": "8b83b10fc1f966fc2d200a1b6431c98bb3af96bccfcf54d4f5b51921a7d0f032"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 603,
+      "sha256": "e354d7403a416ca100c97abf8fcbd2aeb99b8500aa944de6ef36e0ba3b815235"
+    },
+    "source/data/plateau.json": {
+      "bytes": 26281,
+      "sha256": "f7d50377a2427cd71a64230c2801999892b823e3a27b51e92704e797a796b2b8"
+    },
+    "source/data/stats.json": {
+      "bytes": 10420,
+      "sha256": "8e45cb9d877a2964515d7cefc29113634c6a74c513b3e81c09d95dcd8fbc270d"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 612,
+      "sha256": "7ddc70bef6b065f8877998361d5a4fbb6da2b59399c97ad1c0aa19aadf5259af"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 7293487,
+      "sha256": "0b5cec75608be664a9f2e4ab08b906a245d3f00ce0e4d556fcc8b513579bc656"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3724,
+      "sha256": "5f1b25b4f9ea14e36fef6200696d64a96ef9438facb3bb151874fca578b1f4a9"
+    },
+    "web/bic-camera.glb": {
+      "bytes": 59960,
+      "sha256": "bca35d355f6f150b5ef125aec371506c22c6c82f3156011f2e07aabd90126df6"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/viewer.json": {
+      "bytes": 197,
+      "sha256": "642d578557c073190e23f708fe4a1689a9b11bbed6716cc76fb20d6a8bf52676"
+    }
+  },
+  "source_id": "way/116710254",
+  "source_aliases": [],
+  "plateau_id": "bldg_7f426b15-a7c6-46c2-a408-83b342afbbce",
+  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+}

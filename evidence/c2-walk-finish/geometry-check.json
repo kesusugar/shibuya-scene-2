@@ -1,0 +1,17 @@
+{
+ "exported_extra_vs_prior_overlap_m2": 0.0,
+ "exported_links_vs_prior_and_extra_overlap_m2": 0.0,
+ "new_tactile_vs_rail_4cm_buffer_overlap_m2": 0.0,
+ "assets/ground/core/web/ground_core.glb": {
+  "byte_identical": true,
+  "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32"
+ },
+ "assets/street/tactile/web/tactile.glb": {
+  "byte_identical": true,
+  "sha256": "1dc0e2774d8936e7c949286037e9e92de4f2a14ef8583147712dca3cbe1ad4d2"
+ },
+ "assets/street/core/web/street_core.glb": {
+  "byte_identical": true,
+  "sha256": "de970a9a1951dc7fb57213b5849c19de92000d9477a2a7948074c8ded08fcf9a"
+ }
+}

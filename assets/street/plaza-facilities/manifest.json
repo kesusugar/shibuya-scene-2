@@ -1,0 +1,48 @@
+{
+  "id": "street/plaza-facilities",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 536,
+    "primitives": 5,
+    "bytes": 36812
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1526,
+      "sha256": "ccf54c613523c0388d0fbb00b5fa22e15ddc5a1ca309acac3e80fafa72362c58"
+    },
+    "source/blender/build.py": {
+      "bytes": 4700,
+      "sha256": "e85b9ca94d2978dabdd5d8fe9847e4e9adb2386727f59af94ff439a0058192b9"
+    },
+    "source/data/layout.json": {
+      "bytes": 1677,
+      "sha256": "eed15d07f7169eccabe89e9bfbe4e0a2b419526a039999e034e28ae8629e7d36"
+    },
+    "source/data/osm_2025.json": {
+      "bytes": 2471,
+      "sha256": "05ae14edf3103e881edae5d71df311b8a65959906620d44a8a247e853db3f601"
+    },
+    "source/data/stats.json": {
+      "bytes": 2231,
+      "sha256": "53b52686ec686a64aa6a0a561673bdacb8c2e28326891181c008c80297a19878"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 477,
+      "sha256": "5c11f165019b6c6aabbb1087414a5b178896eba205af9327ee4273f6a6487baa"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 6275041,
+      "sha256": "ce3bf50ff5eb27b2c2358885b0a34c9cf81094c9cac4e91daa16f6673b04b971"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3290,
+      "sha256": "567e34200535562a978ee2aa59377a6e488c31e45388bbabbbb3e32059798dac"
+    },
+    "web/plaza-facilities.glb": {
+      "bytes": 36812,
+      "sha256": "5acd842b8f46789a4a4c44102c0130ecdc57114eba509cb956402a371103147b"
+    }
+  }
+}

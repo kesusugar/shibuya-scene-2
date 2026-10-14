@@ -1,0 +1,30 @@
+{
+ "id": "scramble-square",
+ "name": "渋谷スクランブルスクエア",
+ "style": "square",
+ "floors": 47,
+ "bay_pitch_m": 1.4,
+ "wall_rgb": [
+  0.18,
+  0.22,
+  0.24
+ ],
+ "glass_rgb": [
+  0.065,
+  0.16,
+  0.22
+ ],
+ "frame_rgb": [
+  0.58,
+  0.6,
+  0.6
+ ],
+ "spandrel_rgb": [
+  0.18,
+  0.22,
+  0.24
+ ],
+ "podium_floors": 1,
+ "glass_height_ratio": 0.8,
+ "estimation": "Photo-type facade; bay/floor divisions estimated; original PLATEAU shell unchanged; reference predates 2025"
+}

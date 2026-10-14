@@ -1,0 +1,62 @@
+{
+  "id": "center244",
+  "source_id": "way/136691379",
+  "level": "B",
+  "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery",
+  "stats": {
+    "triangles": 1257,
+    "primitives": 8,
+    "bytes": 80188
+  },
+  "generator": "tools/core/build_facade.py",
+  "files": {
+    "README.md": {
+      "bytes": 934,
+      "sha256": "59781a26706b87207030376c8e98d1c439241fecf35a81f47c019373a01edbe3"
+    },
+    "source/data/stats.json": {
+      "bytes": 6367,
+      "sha256": "307aed263929f291b5163629fd5104a3d5c2c1c4eea8c86ecab98ca41c838d02"
+    },
+    "source/data/layout.json": {
+      "bytes": 459,
+      "sha256": "683b9ead95b64cf3c94163b9bd31da0eb744666a19c980fdcf594d59f1f7a09a"
+    },
+    "source/data/plateau.json": {
+      "bytes": 11924,
+      "sha256": "3df9205722f35b952183fb20bae33fb67e6c30b0f273592f5ed5a753ca38dc3a"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 4115752,
+      "sha256": "9f146732f51c9d89f0f1d378c14ba91c13f8b14ad952ae69a4ad5486fbb5f750"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3651,
+      "sha256": "9925f2266b7b33cd59251f7bf21fe4004834a3a34a361a3c3f945f653066a3b8"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 565,
+      "sha256": "e3b829014ced1d4acf168d688d1f7e05bb99cdf8f153fe8701f52bd9b6e27899"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/viewer.json": {
+      "bytes": 193,
+      "sha256": "2e0f1abb509c83aad5ed57d3ad982cbb9713797f2a78a5c135213baac629253c"
+    },
+    "web/center244.glb": {
+      "bytes": 80188,
+      "sha256": "396c5aa583cc459df38e516277e466a3bede74b2a54a2cea0475c1a5fae79df7"
+    }
+  }
+}

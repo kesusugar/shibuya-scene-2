@@ -1,0 +1,64 @@
+{
+  "id": "stream",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 32532,
+    "primitives": 8,
+    "bytes": 2022108
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1103,
+      "sha256": "d43ce32ad1dc8bb395882db48d985c9435547e7265ed8ce84591ea8239bc5546"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 603,
+      "sha256": "657f847ab67873f7a9a5617600068c2d8ac67bc0ba4616a5a965ac94432286bc"
+    },
+    "source/data/plateau.json": {
+      "bytes": 44603,
+      "sha256": "8eae0210e5d73f9bdbcb0e2eccabff99a4f77244fd6db720abfd734a7254e356"
+    },
+    "source/data/stats.json": {
+      "bytes": 14929,
+      "sha256": "1a4c6ceb840a9b8cc60f1e1a089dfecf13989476597b18a048e24b7c746cf07e"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 664,
+      "sha256": "5d80dfe697502925a6c35deb32a094d237637a0274c7599edc3d73728dd26514"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 4067564,
+      "sha256": "2510b2ec3e33914865a920db7b96e30cdaf43a33ea4309a8a528c040b7280c05"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3238,
+      "sha256": "93798759b2566c1bcf11ae53f4aa26993255d51ffae2471ebfcbbfe515975483"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/stream.glb": {
+      "bytes": 2022108,
+      "sha256": "16b029fbec71fa753b2c8f5bdbcead325105d9576df2bc636b637f05af130aed"
+    },
+    "web/viewer.json": {
+      "bytes": 195,
+      "sha256": "c33725a32685c9b3f592927bf4359ffb90b7e4e9ba95e571f9d09218a66c7bcb"
+    }
+  },
+  "source_id": "way/521438304",
+  "source_aliases": [],
+  "plateau_id": "bldg_1db9c375-4ff6-4e3a-8c05-3a5c37e4580d",
+  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+}

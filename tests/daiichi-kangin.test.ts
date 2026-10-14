@@ -6,13 +6,12 @@ import { Matrix4, Vector3, BufferGeometry, Float32BufferAttribute, Mesh, MeshBas
 const base = 'assets/buildings/daiichi-kangin/';
 const json = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
 
-it('replaces the Daiichi C model exactly once while retaining both deferred centre-street buildings', () => {
+it('replaces the Daiichi C model exactly once without duplicating its C shell', () => {
   const input = json('assets/context/core/source/data/context_input.json');
   const stats = json('assets/context/core/source/data/context_stats.json');
   for (const c of [input, stats]) {
     expect(c.buildings.some((b: { id: string }) => b.id === 'way/114755219')).toBe(false);
     expect(c.excluded.filter((b: { id: string }) => b.id === 'way/114755219')).toHaveLength(1);
-    for (const id of ['way/136691379', 'way/136691389']) expect(c.buildings.some((b: { id: string }) => b.id === id)).toBe(true);
   }
   const ground = json(base+'source/data/stats.json');
   expect(ground.pavement_samples.length).toBeGreaterThan(30);

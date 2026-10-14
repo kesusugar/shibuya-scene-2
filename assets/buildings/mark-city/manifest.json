@@ -1,0 +1,66 @@
+{
+  "id": "mark-city",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 23912,
+    "primitives": 8,
+    "bytes": 1458896
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1147,
+      "sha256": "811d8c1dffada12c9782c1ce5e726856b8b6e8c4b3cc34d3566defb941e8336c"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 682,
+      "sha256": "a29d7399d8ee7d1a38ff99d92aa05f3ba3d67e6561daf228548c9e57546252b9"
+    },
+    "source/data/plateau.json": {
+      "bytes": 120263,
+      "sha256": "ac0b62994521aed4ae7156cee2d609c7beaa2f6a3509743a197a123429e4368b"
+    },
+    "source/data/stats.json": {
+      "bytes": 30632,
+      "sha256": "57b989c06ff78a8818bf5d0bd21325306665f3189569ea0c6857b25a569e9251"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 574,
+      "sha256": "3a98a9ff1b2e66f00464d1be1791d9c24f9b4038ea16ff1d7cc280b9853650ad"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 2708498,
+      "sha256": "41e8a1b752e41db35b857f2bf3f3c81824b23946309259cd496d7241f1390034"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3261,
+      "sha256": "2dc4d0fac9454c0667019d3575fc3a079a4857d02c665f935c8ed58d0a2bdc29"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/mark-city.glb": {
+      "bytes": 1458896,
+      "sha256": "480a59ca1ca497a180366a09a719953c62933a1aa334c73802134669908b25a8"
+    },
+    "web/viewer.json": {
+      "bytes": 196,
+      "sha256": "3ceba554a4e3403364b18aa06e7a93b93b7feda84a019098cae3a556bc9e2558"
+    }
+  },
+  "source_id": "way/54500467",
+  "source_aliases": [
+    "way/87250190"
+  ],
+  "plateau_id": "bldg_884b7aea-8fa7-4447-8d45-d691cfec7237",
+  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+}

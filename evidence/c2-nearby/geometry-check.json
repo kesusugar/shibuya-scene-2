@@ -1,0 +1,15 @@
+{
+ "terrain_core_projected_overlap_m2": 0.0,
+ "assets/ground/core/web/ground_core.glb": {
+  "byte_identical": true,
+  "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32"
+ },
+ "assets/street/core/web/street_core.glb": {
+  "byte_identical": true,
+  "sha256": "de970a9a1951dc7fb57213b5849c19de92000d9477a2a7948074c8ded08fcf9a"
+ },
+ "assets/buildings/qfront/web/qfront.glb": {
+  "byte_identical": true,
+  "sha256": "2b4e4dccb8b68c97e3981ca1999d0c459bd3524aaa6b903901f3085b22a6ea04"
+ }
+}
