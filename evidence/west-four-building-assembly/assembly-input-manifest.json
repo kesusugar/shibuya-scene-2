@@ -1,0 +1,103 @@
+{
+  "blender": "4.2.3",
+  "coordinate_policy": "Unchanged XY; Blender Z offset groundElevationTP minus 15 m",
+  "scope": "Four-building review only; January and November ad layers mixed; Center244 January explicitly imported for review, not runtime registration",
+  "inputs": [
+    {
+      "building": "west-block",
+      "path": "assets/buildings/west-block/web/west-block.glb",
+      "source": "/workspace/shared/west_storefront_fidelity/assets/buildings/west-block/web/west-block.glb",
+      "bytes": 547344,
+      "sha256": "ea60ca2848e1ecc981dc2bf42d9de389d52e3b36b97d17357edc621da82ccb16",
+      "render": true
+    },
+    {
+      "building": "west-block",
+      "path": "assets/buildings/west-block/web/signs-2025-01.glb",
+      "source": "/workspace/shared/west_storefront_fidelity/assets/buildings/west-block/web/signs-2025-01.glb",
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386",
+      "render": true
+    },
+    {
+      "building": "west-block",
+      "path": "assets/buildings/west-block/web/viewer.json",
+      "source": "/workspace/shared/west_storefront_fidelity/assets/buildings/west-block/web/viewer.json",
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd",
+      "render": false
+    },
+    {
+      "building": "daiichi-kangin",
+      "path": "assets/buildings/daiichi-kangin/web/daiichi-kangin.glb",
+      "source": "/workspace/shared/daiichi_fidelity/assets/buildings/daiichi-kangin/web/daiichi-kangin.glb",
+      "bytes": 421116,
+      "sha256": "0f9f8cf4195f41a2cf0cf258fbf920fac0a2b2aab4eae1ac1111e080991fd6a4",
+      "render": true
+    },
+    {
+      "building": "daiichi-kangin",
+      "path": "assets/buildings/daiichi-kangin/web/signs-2025-01.glb",
+      "source": "/workspace/shared/daiichi_fidelity/assets/buildings/daiichi-kangin/web/signs-2025-01.glb",
+      "bytes": 1666828,
+      "sha256": "7f4b15b41d37a2516602cdefafbf75a4d555f060880dc45d9e761a98f23db78f",
+      "render": true
+    },
+    {
+      "building": "daiichi-kangin",
+      "path": "assets/buildings/daiichi-kangin/web/viewer.json",
+      "source": "/workspace/shared/daiichi_fidelity/assets/buildings/daiichi-kangin/web/viewer.json",
+      "bytes": 164,
+      "sha256": "0b1db4119c4359b8cec4a21b3c50d280bcdafdc28bc9e805da5a457e26ece758",
+      "render": false
+    },
+    {
+      "building": "ekimae",
+      "path": "assets/buildings/ekimae/web/ekimae.glb",
+      "source": "/workspace/shared/ekimae_sign_alignment/assets/buildings/ekimae/web/ekimae.glb",
+      "bytes": 1787720,
+      "sha256": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d",
+      "render": true
+    },
+    {
+      "building": "ekimae",
+      "path": "assets/buildings/ekimae/web/signs-2025-11.glb",
+      "source": "/workspace/shared/ekimae_sign_alignment/assets/buildings/ekimae/web/signs-2025-11.glb",
+      "bytes": 300716,
+      "sha256": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5",
+      "render": true
+    },
+    {
+      "building": "ekimae",
+      "path": "assets/buildings/ekimae/web/viewer.json",
+      "source": "/workspace/shared/ekimae_sign_alignment/assets/buildings/ekimae/web/viewer.json",
+      "bytes": 158,
+      "sha256": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57",
+      "render": false
+    },
+    {
+      "building": "center244",
+      "path": "assets/buildings/center244/web/center244.glb",
+      "source": "/workspace/shared/center244_fidelity/assets/buildings/center244/web/center244.glb",
+      "bytes": 536480,
+      "sha256": "4a425ab97e75957cd3093fad9dec51ab9a72bbbdc9d93766b667772a2e59f597",
+      "render": true
+    },
+    {
+      "building": "center244",
+      "path": "assets/buildings/center244/web/signs-2025-01.glb",
+      "source": "/workspace/shared/center244_fidelity/assets/buildings/center244/web/signs-2025-01.glb",
+      "bytes": 514204,
+      "sha256": "1a5ba8c1a3079014bf0999692e626559c9d385242bbe20be93bfc57c02a7cd2e",
+      "render": true
+    },
+    {
+      "building": "center244",
+      "path": "assets/buildings/center244/web/viewer.json",
+      "source": "/workspace/shared/center244_fidelity/assets/buildings/center244/web/viewer.json",
+      "bytes": 165,
+      "sha256": "1c310453d6e477285345956dd1e9ed490a0b7e243ed819e5be62b6aa684ef589",
+      "render": false
+    }
+  ]
+}

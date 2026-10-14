@@ -1,0 +1,9 @@
+
+ RUN  v5.0.3 /workspace/shared/four_building_final
+
+
+ Test Files  3 passed (3)
+      Tests  12 passed (12)
+   Start at  23:51:31
+   Duration  1.48s (tests 85%, transform 7%, import 7%, worker 1%)
+

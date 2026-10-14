@@ -1,0 +1,455 @@
+23:51:35 | INFO: Data are loaded, start creating Blender stuff
+23:51:35 | INFO: Blender create Mesh node west_roof
+23:51:35 | INFO: Blender create Mesh node west_wall_fruit
+23:51:35 | INFO: Blender create Mesh node west_wall_corner_body
+23:51:35 | INFO: Blender create Mesh node west_wall_pharmacy
+23:51:35 | INFO: Blender create Mesh node west_wall_middle
+23:51:35 | INFO: Blender create Mesh node west_tile_trim
+23:51:35 | INFO: Blender create Mesh node west_tile_joint
+23:51:35 | INFO: Blender create Mesh node west_recess
+23:51:35 | INFO: Blender create Mesh node west_shop_glass
+23:51:35 | INFO: Blender create Mesh node west_curtains
+23:51:35 | INFO: Blender create Mesh node west_metal_edge
+23:51:35 | INFO: Blender create Mesh node west_awning
+23:51:35 | INFO: Blender create Mesh node west_frame
+23:51:35 | INFO: Blender create Mesh node west_shop_light
+23:51:35 | INFO: Blender create Mesh node west_wall_corner
+23:51:35 | INFO: Blender create Mesh node west_glass
+23:51:35 | INFO: Blender create Mesh node west_book_awning
+23:51:35 | INFO: Blender create Mesh node west_pharmacy_awning
+23:51:35 | INFO: Blender create Mesh node west_housing
+23:51:35 | INFO: Blender create Mesh node west_screen_back
+23:51:35 | INFO: glTF import finished in 0.05s
+23:51:35 | INFO: Data are loaded, start creating Blender stuff
+23:51:35 | INFO: Blender create Mesh node west_sign_clinic_upper
+23:51:35 | INFO: Blender create Mesh node west_sign_clinic_lower
+23:51:35 | INFO: Blender create Mesh node west_sign_sushi
+23:51:35 | INFO: Blender create Mesh node west_sign_fruit_shop_band
+23:51:35 | INFO: Blender create Mesh node west_sign_middle_tenants
+23:51:35 | INFO: Blender create Mesh node west_sign_rakuten
+23:51:35 | INFO: Blender create Mesh node west_sign_dmm
+23:51:35 | INFO: Blender create Mesh node west_sign_asbi_flank
+23:51:35 | INFO: Blender create Mesh node west_sign_nishimura
+23:51:35 | INFO: Blender create Mesh node west_sign_matsukiyo
+23:51:35 | INFO: Blender create Mesh node west_sign_monja
+23:51:35 | INFO: Blender create Mesh node west_sign_hisamitsu
+23:51:35 | INFO: Blender create Mesh node west_sign_sanzenri
+23:51:35 | INFO: Blender create Mesh node west_sign_taiseido_left
+23:51:35 | INFO: Blender create Mesh node west_sign_taiseido_right
+23:51:35 | INFO: glTF import finished in 0.03s
+23:51:35 | INFO: Data are loaded, start creating Blender stuff
+23:51:35 | INFO: Blender create Mesh node dk_roof
+23:51:35 | INFO: Blender create Mesh node dk_wall
+23:51:35 | INFO: Blender create Mesh node dk_reveal
+23:51:35 | INFO: Blender create Mesh node dk_glass_0
+23:51:35 | INFO: Blender create Mesh node dk_curtain
+23:51:35 | INFO: Blender create Mesh node dk_aluminum
+23:51:35 | INFO: Blender create Mesh node dk_glass_1
+23:51:35 | INFO: Blender create Mesh node dk_glass_2
+23:51:35 | INFO: Blender create Mesh node dk_glass_3
+23:51:35 | INFO: Blender create Mesh node dk_brace
+23:51:35 | INFO: Blender create Mesh node dk_joint
+23:51:35 | INFO: Blender create Mesh node dk_shop_glass
+23:51:35 | INFO: Blender create Mesh node dk_sign_case
+23:51:35 | INFO: Blender create Mesh node dk_shop_light
+23:51:35 | INFO: glTF import finished in 0.04s
+23:51:35 | INFO: Data are loaded, start creating Blender stuff
+23:51:35 | INFO: Blender create Mesh node dk_sign_jan_roof_campaign
+23:51:35 | INFO: Blender create Mesh node dk_sign_jan_uc_east
+23:51:35 | INFO: Blender create Mesh node dk_sign_jan_uc_south
+23:51:35 | INFO: Blender create Mesh node dk_sign_jan_vanguard
+23:51:35 | INFO: Blender create Mesh node dk_sign_jan_mizuho
+23:51:35 | INFO: glTF import finished in 0.01s
+23:51:35 | INFO: Data are loaded, start creating Blender stuff
+23:51:35 | INFO: Blender create Mesh node ek_roof
+23:51:35 | INFO: Blender create Mesh node ek_wall
+23:51:35 | INFO: Blender create Mesh node ek_reveal
+23:51:35 | INFO: Blender create Mesh node ek_red_frame
+23:51:35 | INFO: Blender create Mesh node ek_glass_warm
+23:51:35 | INFO: Blender create Mesh node ek_silver
+23:51:35 | INFO: Blender create Mesh node ek_glass
+23:51:35 | INFO: Blender create Mesh node ek_glass_blue
+23:51:35 | INFO: Blender create Mesh node ek_band
+23:51:35 | INFO: Blender create Mesh node ek_shop_glass
+23:51:35 | INFO: Blender create Mesh node ek_steel
+23:51:35 | INFO: Blender create Mesh node ek_gold_dark
+23:51:35 | INFO: Blender create Mesh node ek_cafe_ceiling
+23:51:35 | INFO: Blender create Mesh node ek_gold
+23:51:35 | INFO: Blender create Mesh node ek_yellow
+23:51:35 | INFO: Blender create Mesh node ek_leaf
+23:51:35 | INFO: Blender create Mesh node ek_lavender
+23:51:35 | INFO: Blender create Mesh node ek_leaf_light
+23:51:35 | INFO: Blender create Mesh node ek_screen_back
+23:51:35 | INFO: glTF import finished in 0.09s
+23:51:35 | INFO: Data are loaded, start creating Blender stuff
+23:51:35 | INFO: Blender create Mesh node ek_sign_loccitane
+23:51:35 | INFO: Blender create Mesh node ek_sign_shabu
+23:51:35 | INFO: Blender create Mesh node ek_sign_francais
+23:51:35 | INFO: Blender create Mesh node ek_sign_gusto
+23:51:35 | INFO: Blender create Mesh node ek_sign_eyecity
+23:51:35 | INFO: Blender create Mesh node ek_sign_longboard
+23:51:35 | INFO: Blender create Mesh node ek_sign_samsung
+23:51:35 | INFO: Blender create Mesh node ek_sign_hit_sky
+23:51:35 | INFO: glTF import finished in 0.02s
+23:51:35 | INFO: Data are loaded, start creating Blender stuff
+23:51:35 | INFO: Blender create Mesh node c244_roof
+23:51:35 | INFO: Blender create Mesh node c244_stone_dark
+23:51:35 | INFO: Blender create Mesh node c244_joint
+23:51:35 | INFO: Blender create Mesh node c244_stone
+23:51:35 | INFO: Blender create Mesh node c244_stone_light
+23:51:35 | INFO: Blender create Mesh node c244_reveal
+23:51:35 | INFO: Blender create Mesh node c244_glass_dark
+23:51:35 | INFO: Blender create Mesh node c244_frame
+23:51:35 | INFO: Blender create Mesh node c244_glass
+23:51:35 | INFO: Blender create Mesh node c244_gold
+23:51:35 | INFO: Blender create Mesh node c244_blind
+23:51:35 | INFO: Blender create Mesh node c244_gold_glass
+23:51:35 | INFO: Blender create Mesh node c244_steel
+23:51:35 | INFO: Blender create Mesh node c244_screen_back
+23:51:35 | INFO: Blender create Mesh node c244_lamp
+23:51:35 | INFO: glTF import finished in 0.06s
+23:51:35 | INFO: Data are loaded, start creating Blender stuff
+23:51:35 | INFO: Blender create Mesh node c244_ad_2025_01
+23:51:35 | INFO: Blender create Mesh node c244_davinci_2025_01
+23:51:35 | INFO: glTF import finished in 0.01s
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Fra:1 Mem:41.49M (Peak 41.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_roof
+Fra:1 Mem:41.49M (Peak 41.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_wall_fruit
+Fra:1 Mem:43.50M (Peak 43.50M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_wall_corner_body
+Fra:1 Mem:43.60M (Peak 43.60M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_wall_pharmacy
+Fra:1 Mem:43.60M (Peak 43.60M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_tile_trim
+Fra:1 Mem:43.65M (Peak 43.65M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_tile_joint
+Fra:1 Mem:43.64M (Peak 43.65M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_recess
+Fra:1 Mem:43.71M (Peak 43.71M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_shop_glass
+Fra:1 Mem:44.16M (Peak 44.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_curtains
+Fra:1 Mem:44.51M (Peak 44.51M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_metal_edge
+Fra:1 Mem:44.52M (Peak 44.52M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_davinci_2025_01
+Fra:1 Mem:44.51M (Peak 44.52M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_awning
+Fra:1 Mem:44.51M (Peak 44.52M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_frame
+Fra:1 Mem:44.58M (Peak 44.58M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_ad_2025_01
+Fra:1 Mem:44.61M (Peak 44.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_lamp
+Fra:1 Mem:44.67M (Peak 44.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_screen_back
+Fra:1 Mem:44.37M (Peak 44.67M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_steel
+Fra:1 Mem:47.01M (Peak 47.19M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_shop_light
+Fra:1 Mem:47.03M (Peak 47.19M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_wall_corner
+Fra:1 Mem:47.07M (Peak 47.19M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_glass
+Fra:1 Mem:47.19M (Peak 47.19M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_book_awning
+Fra:1 Mem:47.25M (Peak 47.25M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_pharmacy_awning
+Fra:1 Mem:47.26M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_housing
+Fra:1 Mem:46.77M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_screen_back
+Fra:1 Mem:46.98M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_clinic_upper
+Fra:1 Mem:46.94M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_clinic_lower
+Fra:1 Mem:46.17M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_sushi
+Fra:1 Mem:46.19M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_fruit_shop_band
+Fra:1 Mem:46.42M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_middle_tenants
+Fra:1 Mem:46.55M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_rakuten
+Fra:1 Mem:46.77M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_dmm
+Fra:1 Mem:46.80M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_asbi_flank
+Fra:1 Mem:46.02M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_nishimura
+Fra:1 Mem:45.74M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_matsukiyo
+Fra:1 Mem:45.81M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_gold_glass
+Fra:1 Mem:45.85M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_monja
+Fra:1 Mem:45.58M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_hisamitsu
+Fra:1 Mem:45.63M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_blind
+Fra:1 Mem:45.61M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_sanzenri
+Fra:1 Mem:45.64M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_taiseido_left
+Fra:1 Mem:45.66M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_taiseido_right
+Fra:1 Mem:45.64M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_roof
+Fra:1 Mem:45.65M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_gold
+Fra:1 Mem:45.66M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_wall
+Fra:1 Mem:46.17M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_glass
+Fra:1 Mem:46.28M (Peak 47.26M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_frame
+Fra:1 Mem:46.40M (Peak 47.26M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_reveal
+Fra:1 Mem:47.34M (Peak 47.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_glass_0
+Fra:1 Mem:47.34M (Peak 47.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_curtain
+Fra:1 Mem:47.16M (Peak 47.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_aluminum
+Fra:1 Mem:47.29M (Peak 47.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_glass_1
+Fra:1 Mem:46.92M (Peak 47.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_glass_2
+Fra:1 Mem:47.07M (Peak 47.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_glass_3
+Fra:1 Mem:47.14M (Peak 47.37M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_brace
+Fra:1 Mem:48.87M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_joint
+Fra:1 Mem:48.86M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_shop_glass
+Fra:1 Mem:48.87M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_case
+Fra:1 Mem:48.86M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_shop_light
+Fra:1 Mem:48.86M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_roof_campaign
+Fra:1 Mem:48.60M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_uc_east
+Fra:1 Mem:48.72M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_uc_south
+Fra:1 Mem:48.83M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_vanguard
+Fra:1 Mem:49.04M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_mizuho
+Fra:1 Mem:49.04M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_roof
+Fra:1 Mem:49.04M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_wall
+Fra:1 Mem:48.77M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_reveal
+Fra:1 Mem:48.94M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_red_frame
+Fra:1 Mem:48.83M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_glass_dark
+Fra:1 Mem:48.98M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_glass_warm
+Fra:1 Mem:49.03M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_reveal
+Fra:1 Mem:48.90M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_stone_light
+Fra:1 Mem:49.18M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_silver
+Fra:1 Mem:49.03M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_glass
+Fra:1 Mem:49.13M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_glass_blue
+Fra:1 Mem:47.57M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_stone
+Fra:1 Mem:48.39M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_band
+Fra:1 Mem:48.26M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_shop_glass
+Fra:1 Mem:48.30M (Peak 49.55M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_steel
+Fra:1 Mem:51.42M (Peak 51.42M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_joint
+Fra:1 Mem:50.92M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_gold_dark
+Fra:1 Mem:49.58M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_cafe_ceiling
+Fra:1 Mem:51.49M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_stone_dark
+Fra:1 Mem:50.81M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_gold
+Fra:1 Mem:51.92M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_roof
+Fra:1 Mem:51.37M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_hit_sky
+Fra:1 Mem:51.37M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_samsung
+Fra:1 Mem:51.38M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_longboard
+Fra:1 Mem:51.38M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_eyecity
+Fra:1 Mem:51.40M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_gusto
+Fra:1 Mem:51.54M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_francais
+Fra:1 Mem:51.44M (Peak 52.54M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_shabu
+Fra:1 Mem:53.43M (Peak 54.42M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_loccitane
+Fra:1 Mem:53.43M (Peak 54.42M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_screen_back
+Fra:1 Mem:53.77M (Peak 54.42M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_leaf_light
+Fra:1 Mem:53.99M (Peak 54.42M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_yellow
+Fra:1 Mem:53.51M (Peak 54.42M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_leaf
+Fra:1 Mem:53.50M (Peak 54.42M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_lavender
+Fra:1 Mem:52.09M (Peak 54.79M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:51.69M (Peak 54.79M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading davinci-2025-01
+Fra:1 Mem:51.69M (Peak 54.79M) | Time:00:00.03 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading clinic_lower
+Fra:1 Mem:52.40M (Peak 54.79M) | Time:00:00.03 | Mem:0.38M, Peak:0.38M | Scene, ViewLayer | Updating Images | Loading fruit_shop_band
+Fra:1 Mem:52.60M (Peak 54.79M) | Time:00:00.03 | Mem:0.69M, Peak:0.69M | Scene, ViewLayer | Updating Images | Loading middle_tenants
+Fra:1 Mem:52.74M (Peak 54.79M) | Time:00:00.03 | Mem:0.78M, Peak:0.78M | Scene, ViewLayer | Updating Images | Loading rakuten
+Fra:1 Mem:54.15M (Peak 54.79M) | Time:00:00.03 | Mem:0.90M, Peak:0.90M | Scene, ViewLayer | Updating Images | Loading dmm
+Fra:1 Mem:54.81M (Peak 54.81M) | Time:00:00.03 | Mem:1.04M, Peak:1.04M | Scene, ViewLayer | Updating Images | Loading asbi_flank
+Fra:1 Mem:55.20M (Peak 55.99M) | Time:00:00.03 | Mem:1.43M, Peak:1.43M | Scene, ViewLayer | Updating Images | Loading nishimura
+Fra:1 Mem:55.59M (Peak 56.91M) | Time:00:00.03 | Mem:2.09M, Peak:2.09M | Scene, ViewLayer | Updating Images | Loading matsukiyo
+Fra:1 Mem:56.16M (Peak 56.91M) | Time:00:00.04 | Mem:2.48M, Peak:2.48M | Scene, ViewLayer | Updating Images | Loading monja
+Fra:1 Mem:59.83M (Peak 59.83M) | Time:00:00.04 | Mem:2.87M, Peak:2.87M | Scene, ViewLayer | Updating Images | Loading hisamitsu
+Fra:1 Mem:57.67M (Peak 59.83M) | Time:00:00.04 | Mem:4.27M, Peak:4.27M | Scene, ViewLayer | Updating Images | Loading sanzenri
+Fra:1 Mem:57.66M (Peak 59.83M) | Time:00:00.04 | Mem:4.46M, Peak:4.46M | Scene, ViewLayer | Updating Images | Loading billboard-2025-01
+Fra:1 Mem:58.55M (Peak 59.83M) | Time:00:00.04 | Mem:4.93M, Peak:4.93M | Scene, ViewLayer | Updating Images | Loading taiseido_left
+Fra:1 Mem:58.70M (Peak 60.02M) | Time:00:00.04 | Mem:5.58M, Peak:5.58M | Scene, ViewLayer | Updating Images | Loading taiseido_right
+Fra:1 Mem:58.90M (Peak 60.02M) | Time:00:00.04 | Mem:5.74M, Peak:5.74M | Scene, ViewLayer | Updating Images | Loading roof_campaign
+Fra:1 Mem:61.08M (Peak 61.84M) | Time:00:00.04 | Mem:6.11M, Peak:6.11M | Scene, ViewLayer | Updating Images | Loading uc_east
+Fra:1 Mem:62.58M (Peak 62.58M) | Time:00:00.04 | Mem:6.30M, Peak:6.30M | Scene, ViewLayer | Updating Images | Loading uc_south
+Fra:1 Mem:63.52M (Peak 64.46M) | Time:00:00.05 | Mem:7.24M, Peak:7.24M | Scene, ViewLayer | Updating Images | Loading vanguard
+Fra:1 Mem:63.91M (Peak 64.70M) | Time:00:00.05 | Mem:7.63M, Peak:7.63M | Scene, ViewLayer | Updating Images | Loading mizuho
+Fra:1 Mem:65.93M (Peak 68.94M) | Time:00:00.05 | Mem:9.13M, Peak:9.13M | Scene, ViewLayer | Updating Images | Loading loccitane
+Fra:1 Mem:64.23M (Peak 68.94M) | Time:00:00.05 | Mem:10.01M, Peak:10.01M | Scene, ViewLayer | Updating Images | Loading hit_sky
+Fra:1 Mem:65.73M (Peak 68.94M) | Time:00:00.05 | Mem:10.09M, Peak:10.09M | Scene, ViewLayer | Updating Images | Loading shabu
+Fra:1 Mem:66.73M (Peak 68.94M) | Time:00:00.05 | Mem:10.34M, Peak:10.34M | Scene, ViewLayer | Updating Images | Loading francais
+Fra:1 Mem:72.75M (Peak 74.76M) | Time:00:00.06 | Mem:11.34M, Peak:11.34M | Scene, ViewLayer | Updating Images | Loading gusto
+Fra:1 Mem:71.74M (Peak 74.76M) | Time:00:00.06 | Mem:12.34M, Peak:12.34M | Scene, ViewLayer | Updating Images | Loading eyecity
+Fra:1 Mem:69.20M (Peak 74.76M) | Time:00:00.06 | Mem:13.84M, Peak:13.84M | Scene, ViewLayer | Updating Images | Loading samsung
+Fra:1 Mem:71.71M (Peak 74.76M) | Time:00:00.06 | Mem:14.31M, Peak:14.31M | Scene, ViewLayer | Updating Images | Loading longboard
+Fra:1 Mem:65.38M (Peak 78.34M) | Time:00:00.07 | Mem:20.75M, Peak:20.75M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:65.39M (Peak 78.34M) | Time:00:00.07 | Mem:20.75M, Peak:20.75M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:65.39M (Peak 78.34M) | Time:00:00.07 | Mem:20.75M, Peak:20.75M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:65.39M (Peak 78.34M) | Time:00:00.07 | Mem:20.75M, Peak:20.75M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:65.53M (Peak 78.34M) | Time:00:00.07 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:65.53M (Peak 78.34M) | Time:00:00.07 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:65.53M (Peak 78.34M) | Time:00:00.07 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:65.53M (Peak 78.34M) | Time:00:00.07 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:65.53M (Peak 78.34M) | Time:00:00.07 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:65.53M (Peak 78.34M) | Time:00:00.07 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:65.56M (Peak 78.34M) | Time:00:00.07 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:65.56M (Peak 78.34M) | Time:00:00.08 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:65.56M (Peak 78.34M) | Time:00:00.08 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:65.56M (Peak 78.34M) | Time:00:00.08 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:66.28M (Peak 78.34M) | Time:00:00.08 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:67.95M (Peak 78.34M) | Time:00:00.09 | Mem:20.84M, Peak:20.84M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:67.93M (Peak 78.34M) | Time:00:00.09 | Mem:22.48M, Peak:22.48M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:67.93M (Peak 78.34M) | Time:00:00.09 | Mem:22.48M, Peak:22.48M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:67.93M (Peak 78.34M) | Time:00:00.09 | Mem:23.93M, Peak:23.93M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:67.93M (Peak 78.34M) | Time:00:00.10 | Mem:25.51M, Peak:26.97M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:67.93M (Peak 78.34M) | Time:00:00.10 | Mem:25.51M, Peak:26.97M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:25.51M, Peak:26.97M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.85M, Peak:30.85M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.85M, Peak:30.85M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.85M, Peak:30.85M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.85M, Peak:30.85M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.77M, Peak:30.85M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.86M, Peak:30.86M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:73.19M (Peak 78.34M) | Time:00:00.10 | Mem:30.86M, Peak:30.86M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:73.20M (Peak 78.34M) | Time:00:00.10 | Mem:30.86M, Peak:30.86M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:73.20M (Peak 78.34M) | Time:00:00.10 | Mem:30.86M, Peak:30.86M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:255.86M (Peak 255.86M) | Time:00:00.62 | Remaining:00:16.28 | Mem:213.52M, Peak:213.52M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:332.77M (Peak 448.13M) | Time:00:31.74 | Mem:213.52M, Peak:213.52M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:332.77M (Peak 448.13M) | Time:00:31.74 | Mem:213.52M, Peak:213.52M | Scene, ViewLayer | Finished
+Saved: '/workspace/shared/four_building_final/evidence/west-four-building-assembly/assembly-southeast.png'
+Time: 00:32.11 (Saving: 00:00.36)
+
+Fra:1 Mem:44.76M (Peak 44.76M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_roof
+Fra:1 Mem:44.77M (Peak 44.77M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_wall_corner_body
+Fra:1 Mem:44.85M (Peak 44.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_wall_pharmacy
+Fra:1 Mem:44.85M (Peak 44.85M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_tile_trim
+Fra:1 Mem:44.92M (Peak 44.92M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_tile_joint
+Fra:1 Mem:44.91M (Peak 44.92M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_shop_glass
+Fra:1 Mem:44.95M (Peak 44.95M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_curtains
+Fra:1 Mem:45.30M (Peak 45.30M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_metal_edge
+Fra:1 Mem:45.29M (Peak 45.30M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_awning
+Fra:1 Mem:45.33M (Peak 45.33M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_frame
+Fra:1 Mem:45.49M (Peak 45.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_davinci_2025_01
+Fra:1 Mem:45.47M (Peak 45.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_shop_light
+Fra:1 Mem:46.17M (Peak 46.17M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_ad_2025_01
+Fra:1 Mem:47.34M (Peak 47.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_wall_corner
+Fra:1 Mem:47.34M (Peak 47.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_lamp
+Fra:1 Mem:47.34M (Peak 47.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_screen_back
+Fra:1 Mem:47.35M (Peak 47.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_glass
+Fra:1 Mem:47.35M (Peak 47.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_steel
+Fra:1 Mem:47.35M (Peak 47.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_book_awning
+Fra:1 Mem:47.40M (Peak 47.40M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_pharmacy_awning
+Fra:1 Mem:47.89M (Peak 47.89M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_housing
+Fra:1 Mem:47.91M (Peak 47.91M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_screen_back
+Fra:1 Mem:47.95M (Peak 47.95M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_clinic_upper
+Fra:1 Mem:48.05M (Peak 48.05M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_clinic_lower
+Fra:1 Mem:48.11M (Peak 48.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_sushi
+Fra:1 Mem:48.10M (Peak 48.11M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_fruit_shop_band
+Fra:1 Mem:48.12M (Peak 48.12M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_middle_tenants
+Fra:1 Mem:48.16M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_rakuten
+Fra:1 Mem:47.67M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_dmm
+Fra:1 Mem:47.17M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_asbi_flank
+Fra:1 Mem:47.32M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_nishimura
+Fra:1 Mem:47.40M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_monja
+Fra:1 Mem:47.40M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_matsukiyo
+Fra:1 Mem:47.40M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_hisamitsu
+Fra:1 Mem:47.56M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_sanzenri
+Fra:1 Mem:47.50M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_taiseido_left
+Fra:1 Mem:46.72M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | west_sign_taiseido_right
+Fra:1 Mem:46.97M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_roof
+Fra:1 Mem:46.58M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_gold_glass
+Fra:1 Mem:46.95M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_wall
+Fra:1 Mem:47.05M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_blind
+Fra:1 Mem:47.06M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_reveal
+Fra:1 Mem:47.09M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_gold
+Fra:1 Mem:47.02M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_glass
+Fra:1 Mem:47.04M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_frame
+Fra:1 Mem:46.62M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_glass_0
+Fra:1 Mem:47.05M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_curtain
+Fra:1 Mem:48.04M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_aluminum
+Fra:1 Mem:48.04M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_glass_1
+Fra:1 Mem:47.89M (Peak 48.16M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_glass_2
+Fra:1 Mem:48.89M (Peak 49.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_glass_3
+Fra:1 Mem:48.96M (Peak 49.61M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_brace
+Fra:1 Mem:50.00M (Peak 50.00M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_joint
+Fra:1 Mem:50.10M (Peak 50.10M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_shop_glass
+Fra:1 Mem:50.27M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_case
+Fra:1 Mem:50.07M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_shop_light
+Fra:1 Mem:49.82M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_roof_campaign
+Fra:1 Mem:49.82M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_uc_east
+Fra:1 Mem:49.74M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_uc_south
+Fra:1 Mem:49.86M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_vanguard
+Fra:1 Mem:49.88M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | dk_sign_jan_mizuho
+Fra:1 Mem:49.90M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_roof
+Fra:1 Mem:49.93M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_wall
+Fra:1 Mem:49.78M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_reveal
+Fra:1 Mem:49.77M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_red_frame
+Fra:1 Mem:47.77M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_glass_dark
+Fra:1 Mem:47.93M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_reveal
+Fra:1 Mem:48.01M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_stone_light
+Fra:1 Mem:48.26M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_glass_warm
+Fra:1 Mem:48.18M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_silver
+Fra:1 Mem:48.35M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_glass
+Fra:1 Mem:48.36M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_stone
+Fra:1 Mem:48.56M (Peak 50.27M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_glass_blue
+Fra:1 Mem:51.74M (Peak 52.02M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_band
+Fra:1 Mem:53.93M (Peak 54.22M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_joint
+Fra:1 Mem:53.03M (Peak 54.22M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_shop_glass
+Fra:1 Mem:53.21M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_steel
+Fra:1 Mem:53.81M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_stone_dark
+Fra:1 Mem:51.67M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_gold_dark
+Fra:1 Mem:51.45M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_cafe_ceiling
+Fra:1 Mem:51.45M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_gold
+Fra:1 Mem:52.79M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_roof
+Fra:1 Mem:52.88M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_hit_sky
+Fra:1 Mem:52.86M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_samsung
+Fra:1 Mem:52.42M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_longboard
+Fra:1 Mem:52.49M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_eyecity
+Fra:1 Mem:52.49M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_gusto
+Fra:1 Mem:52.48M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_francais
+Fra:1 Mem:52.39M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_shabu
+Fra:1 Mem:52.79M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_sign_loccitane
+Fra:1 Mem:53.66M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_screen_back
+Fra:1 Mem:53.95M (Peak 54.22M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_leaf_light
+Fra:1 Mem:54.19M (Peak 55.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_lavender
+Fra:1 Mem:54.64M (Peak 55.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_yellow
+Fra:1 Mem:54.65M (Peak 55.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | ek_leaf
+Fra:1 Mem:52.09M (Peak 55.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:51.69M (Peak 55.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading davinci-2025-01
+Fra:1 Mem:51.69M (Peak 55.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading curtain
+Fra:1 Mem:51.69M (Peak 55.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading clinic_upper
+Fra:1 Mem:51.69M (Peak 55.24M) | Time:00:00.02 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading clinic_lower
+Fra:1 Mem:52.78M (Peak 55.24M) | Time:00:00.02 | Mem:0.19M, Peak:0.19M | Scene, ViewLayer | Updating Images | Loading sushi
+Fra:1 Mem:52.70M (Peak 55.24M) | Time:00:00.02 | Mem:0.38M, Peak:0.38M | Scene, ViewLayer | Updating Images | Loading fruit_shop_band
+Fra:1 Mem:52.80M (Peak 55.24M) | Time:00:00.02 | Mem:0.69M, Peak:0.69M | Scene, ViewLayer | Updating Images | Loading middle_tenants
+Fra:1 Mem:52.79M (Peak 55.24M) | Time:00:00.02 | Mem:0.78M, Peak:0.78M | Scene, ViewLayer | Updating Images | Loading rakuten
+Fra:1 Mem:54.34M (Peak 55.24M) | Time:00:00.02 | Mem:0.90M, Peak:0.90M | Scene, ViewLayer | Updating Images | Loading dmm
+Fra:1 Mem:54.99M (Peak 55.24M) | Time:00:00.02 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Images | Loading billboard-2025-01
+Fra:1 Mem:55.87M (Peak 55.87M) | Time:00:00.02 | Mem:1.22M, Peak:1.22M | Scene, ViewLayer | Updating Images | Loading asbi_flank
+Fra:1 Mem:56.27M (Peak 57.06M) | Time:00:00.02 | Mem:1.61M, Peak:1.61M | Scene, ViewLayer | Updating Images | Loading nishimura
+Fra:1 Mem:56.66M (Peak 57.98M) | Time:00:00.02 | Mem:2.27M, Peak:2.27M | Scene, ViewLayer | Updating Images | Loading matsukiyo
+Fra:1 Mem:57.05M (Peak 57.98M) | Time:00:00.02 | Mem:2.66M, Peak:2.66M | Scene, ViewLayer | Updating Images | Loading monja
+Fra:1 Mem:60.34M (Peak 60.34M) | Time:00:00.03 | Mem:3.05M, Peak:3.05M | Scene, ViewLayer | Updating Images | Loading hisamitsu
+Fra:1 Mem:59.12M (Peak 60.34M) | Time:00:00.03 | Mem:4.46M, Peak:4.46M | Scene, ViewLayer | Updating Images | Loading sanzenri
+Fra:1 Mem:58.55M (Peak 60.34M) | Time:00:00.03 | Mem:4.93M, Peak:4.93M | Scene, ViewLayer | Updating Images | Loading taiseido_left
+Fra:1 Mem:58.70M (Peak 60.34M) | Time:00:00.03 | Mem:5.08M, Peak:5.08M | Scene, ViewLayer | Updating Images | Loading taiseido_right
+Fra:1 Mem:60.66M (Peak 60.66M) | Time:00:00.03 | Mem:5.27M, Peak:5.27M | Scene, ViewLayer | Updating Images | Loading roof_campaign
+Fra:1 Mem:64.17M (Peak 64.17M) | Time:00:00.03 | Mem:5.65M, Peak:5.65M | Scene, ViewLayer | Updating Images | Loading uc_east
+Fra:1 Mem:64.35M (Peak 65.67M) | Time:00:00.03 | Mem:6.30M, Peak:6.30M | Scene, ViewLayer | Updating Images | Loading uc_south
+Fra:1 Mem:62.58M (Peak 65.67M) | Time:00:00.03 | Mem:7.18M, Peak:7.18M | Scene, ViewLayer | Updating Images | Loading hit_sky
+Fra:1 Mem:65.02M (Peak 68.03M) | Time:00:00.03 | Mem:8.68M, Peak:8.68M | Scene, ViewLayer | Updating Images | Loading samsung
+Fra:1 Mem:67.52M (Peak 69.40M) | Time:00:00.03 | Mem:9.62M, Peak:9.62M | Scene, ViewLayer | Updating Images | Loading vanguard
+Fra:1 Mem:72.91M (Peak 75.92M) | Time:00:00.04 | Mem:11.12M, Peak:11.12M | Scene, ViewLayer | Updating Images | Loading mizuho
+Fra:1 Mem:73.16M (Peak 75.92M) | Time:00:00.04 | Mem:11.51M, Peak:11.51M | Scene, ViewLayer | Updating Images | Loading loccitane
+Fra:1 Mem:73.24M (Peak 75.92M) | Time:00:00.04 | Mem:11.59M, Peak:11.59M | Scene, ViewLayer | Updating Images | Loading shabu
+Fra:1 Mem:69.23M (Peak 75.92M) | Time:00:00.04 | Mem:14.09M, Peak:14.09M | Scene, ViewLayer | Updating Images | Loading longboard
+Fra:1 Mem:69.98M (Peak 75.92M) | Time:00:00.04 | Mem:14.34M, Peak:14.34M | Scene, ViewLayer | Updating Images | Loading francais
+Fra:1 Mem:77.38M (Peak 78.89M) | Time:00:00.04 | Mem:15.09M, Peak:15.09M | Scene, ViewLayer | Updating Images | Loading eyecity
+Fra:1 Mem:77.85M (Peak 78.89M) | Time:00:00.04 | Mem:16.09M, Peak:16.09M | Scene, ViewLayer | Updating Images | Loading gusto
+Fra:1 Mem:65.39M (Peak 78.89M) | Time:00:00.05 | Mem:20.75M, Peak:20.75M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:65.39M (Peak 78.89M) | Time:00:00.05 | Mem:20.75M, Peak:20.75M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:65.39M (Peak 78.89M) | Time:00:00.05 | Mem:20.75M, Peak:20.75M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:65.39M (Peak 78.89M) | Time:00:00.05 | Mem:20.75M, Peak:20.75M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:65.54M (Peak 78.89M) | Time:00:00.05 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:65.54M (Peak 78.89M) | Time:00:00.05 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:65.54M (Peak 78.89M) | Time:00:00.05 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:65.54M (Peak 78.89M) | Time:00:00.05 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:65.54M (Peak 78.89M) | Time:00:00.05 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:65.54M (Peak 78.89M) | Time:00:00.05 | Mem:20.81M, Peak:20.81M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:65.56M (Peak 78.89M) | Time:00:00.05 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:65.56M (Peak 78.89M) | Time:00:00.05 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:65.56M (Peak 78.89M) | Time:00:00.05 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:65.56M (Peak 78.89M) | Time:00:00.05 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:66.28M (Peak 78.89M) | Time:00:00.05 | Mem:20.83M, Peak:20.83M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:67.95M (Peak 78.89M) | Time:00:00.05 | Mem:20.84M, Peak:20.84M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:67.93M (Peak 78.89M) | Time:00:00.05 | Mem:22.48M, Peak:22.48M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:67.93M (Peak 78.89M) | Time:00:00.05 | Mem:22.48M, Peak:22.48M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:67.93M (Peak 78.89M) | Time:00:00.05 | Mem:23.93M, Peak:23.93M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:67.93M (Peak 78.89M) | Time:00:00.06 | Mem:25.51M, Peak:26.97M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:67.93M (Peak 78.89M) | Time:00:00.06 | Mem:25.51M, Peak:26.97M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:25.51M, Peak:26.97M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.77M, Peak:30.77M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.85M, Peak:30.85M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.85M, Peak:30.85M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.85M, Peak:30.85M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.85M, Peak:30.85M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.77M, Peak:30.85M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.86M, Peak:30.86M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:73.19M (Peak 78.89M) | Time:00:00.06 | Mem:30.86M, Peak:30.86M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:73.20M (Peak 78.89M) | Time:00:00.06 | Mem:30.86M, Peak:30.86M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:73.20M (Peak 78.89M) | Time:00:00.06 | Mem:30.86M, Peak:30.86M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:255.86M (Peak 255.86M) | Time:00:00.29 | Remaining:00:07.36 | Mem:213.52M, Peak:213.52M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:332.77M (Peak 448.13M) | Time:00:22.72 | Mem:213.52M, Peak:213.52M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:332.77M (Peak 448.13M) | Time:00:22.72 | Mem:213.52M, Peak:213.52M | Scene, ViewLayer | Finished
+Saved: '/workspace/shared/four_building_final/evidence/west-four-building-assembly/assembly-plan.png'
+Time: 00:23.03 (Saving: 00:00.29)
+
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender').
+
+Blender quit
