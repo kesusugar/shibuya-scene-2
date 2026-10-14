@@ -1,0 +1,3 @@
+{"id": "selftest_vending", "target": {"height_m": 1.83, "width_m": 1.0, "depth_m": 0.75}, "max_triangles": 2000, "lod_ratio": 0.25,
+ "materials": {"glass": "glass", "metal": "furniture", "default": "furniture"},
+ "source": {"tool": "tools/props/make_fixture.py (self-test only, never shipped)"}}
