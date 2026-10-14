@@ -3,38 +3,40 @@
   "source_id": "photo/center-gai-entrance-gate",
   "level": "B",
   "kind": "street structure",
-  "status": "photo-type prototype; placement/dimensions/October/ground-fill height unverified; ad artwork deferred",
+  "status": "B photo-type: flat tapered casings/triple collars; unchanged estimated feet and January campaign; dimensions/typeface/reverse face/full-scene clearance unverified",
   "sources": [
     "source/data/layout.json",
     "source/data/ground_surface_audit.json",
     "source/refs/REFERENCE_REGISTER.csv",
-    "source/refs/SOURCE.json"
+    "source/refs/SOURCE.json",
+    "source/data/recorded_ground.json",
+    "source/refs/FIDELITY_SOURCES.md"
   ],
   "stats": {
-    "triangles": 2424,
-    "primitives": 4,
-    "bytes": 162216
+    "triangles": 2180,
+    "primitives": 8,
+    "bytes": 172344
   },
   "files": {
     "README.md": {
-      "bytes": 3062,
-      "sha256": "50af62b8d94ae2215714571c3828cb90c29a2e938d491941363534e599e37960"
+      "bytes": 4129,
+      "sha256": "88f53437108a9cc32f557b5ce9c91dafa6c005815fc93a3169ca22b5724a498d"
     },
     "source/blender/build_gate.py": {
-      "bytes": 5698,
-      "sha256": "cf2eca8500c533fdab0c5914d8199ae90b1ba8f8dab1e52a122869d60425dfec"
+      "bytes": 11468,
+      "sha256": "f424bdc9859199239234df3142cb954215c6b0dc43a8e115c14065f052dc6598"
     },
     "source/data/ground_surface_audit.json": {
       "bytes": 1014,
       "sha256": "c5ae2f83f6e7ae717988e63ed8c7f68c341fd1e7a61a42a1361596c3006d3b6e"
     },
     "source/data/layout.json": {
-      "bytes": 1069,
-      "sha256": "a62e81d1cba24333bec11cc7f81dc38ba5221cc11a9dcacf926539b694305e0d"
+      "bytes": 1760,
+      "sha256": "e5b119c7e73e7401422e4202845c5850b93fc3c0ad486bd01ee8ca5b42c81202"
     },
     "source/data/stats.json": {
-      "bytes": 2012,
-      "sha256": "fb0538717bfb572141fbd498dcb98e9759491a17fe933fc50008cc11b492a142"
+      "bytes": 2227,
+      "sha256": "714a39ea0f4b15abf50437f8a88d63cf2d5fcc76f59acfec8985069bdcfe3b3c"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
       "bytes": 942,
@@ -45,20 +47,52 @@
       "sha256": "ff493e308bf1696f7a11fb11894c304c1b4129ef56e933f78386d585b2bbd747"
     },
     "web/center-gai-gate.glb": {
-      "bytes": 162216,
-      "sha256": "e55c6c519840b6e396997af1c135310352043f5f81b939ded9ad3a2ac4b48373"
+      "bytes": 172344,
+      "sha256": "f20e95cac51cafd108ccbacd6a565be66f074c7f15a7503fd39bd363858e6832"
     },
     "web/emissive_day.json": {
-      "bytes": 116,
-      "sha256": "10951a71db2a5610e5de281f7e5aa7e2cbc0b35f03dd96bfe29987149af80862"
+      "bytes": 230,
+      "sha256": "a7a3c909c831190b6e8457febcedc3bdbd79ceebafd5fcbfb41f9850e7a207d2"
     },
     "web/emissive_night.json": {
-      "bytes": 119,
-      "sha256": "2bacea1390c3658d03efa07233a74c3431f0630ba1de66c570cb3983a74202ce"
+      "bytes": 235,
+      "sha256": "d06421cd3568fe13e8ddf7650223d9ae4a1edf76a573c395f93fbe85691bc82d"
     },
     "web/viewer.json": {
-      "bytes": 171,
-      "sha256": "e444a5460175d9e6903b395cff1d49134c92cafaf941f891663ffa7b23bf02d9"
+      "bytes": 223,
+      "sha256": "1241bddd3636c605658b1e093358656e0f43f3ba36a7a0e07f83c28f39828bfd"
+    },
+    "web/signs-2025-01.glb": {
+      "bytes": 100104,
+      "sha256": "e3d61300241cfc5cf3692739f1a33d994d5abc05f64b703536ec35495852d3ec"
+    },
+    "source/refs/FIDELITY_SOURCES.md": {
+      "bytes": 1952,
+      "sha256": "40b4ee7a249fd5b7913fa802d334ae86b4d15682cdc12fd3fea87a4e37aaec7a"
+    },
+    "source/textures/permanent_name.png": {
+      "bytes": 33995,
+      "sha256": "2537fce279bf3129e208ba9b2d0f56e4ae657eb68930410a64904ce1d8eeaae8"
+    },
+    "source/textures/banner_2025_01.png": {
+      "bytes": 98342,
+      "sha256": "1caec4afb6f73be690b17a94f37cef0bfb38e4bbfee3127d19a48374f57df05e"
+    },
+    "source/data/recorded_ground.json": {
+      "bytes": 1576,
+      "sha256": "089381039c9cf56bf1354a7f31f6de2065e41258f6eb45909cbac2fd9600c5a7"
+    },
+    "source/blender/center-gai-gate.blend": {
+      "bytes": 907644,
+      "sha256": "d08847f00ca3b2bf4ec9213ff8dee0fb98f9ac69439401c890fb2bdd507367c1"
+    },
+    "source/blender/render_evidence.py": {
+      "bytes": 1826,
+      "sha256": "141b3e7e7ec089896c75030b233af97247b0f7f2ffab5b715f469ab37fa21821"
+    },
+    "source/blender/make_name.py": {
+      "bytes": 758,
+      "sha256": "21b60d3de74c5e1590e17a6986550f03bf6db97b644359409ca9b2105d9e8b61"
     }
   }
 }
