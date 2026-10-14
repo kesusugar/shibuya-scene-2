@@ -1,0 +1,9 @@
+
+ RUN  v5.0.3 /workspace/shared/center244_review/rebuild
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed | 5 skipped (6)
+   Start at  23:48:31
+   Duration  330ms (tests 60%, import 22%, transform 17%, worker 2%)
+

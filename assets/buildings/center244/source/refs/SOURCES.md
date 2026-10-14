@@ -1,17 +1,10 @@
-# 出典
+# Sources and rights
 
-File:Shibuya Center-Gai during a building fire incident 4.jpg
+- PLATEAU source: existing repository assets/buildings/center244/source/data/plateau.json, blob fetched at ebca8ba894fdec363e95d3ed86622cf856d243bb. SHA256 3df9205722f35b952183fb20bae33fb67e6c30b0f273592f5ed5a753ca38dc3a. Existing PLATEAU attribution/license unchanged.
+- WB01: https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg — Syced, 2025-01-31, CC0 1.0. Original 3072x4080 pixels. Source for billboard and DA VINCI textures and comparison photo. Derivatives are perspective rectification/crop, occlusion alpha mask and scaling only. Underlying advertisement/artwork/trademark rights are separate from photo CC0.
+- WB02: https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg — Syced, 2025-02-07, CC0 1.0. Corroborating geometry, not texture.
+- Identity: https://www.navitime.co.jp/poi?spot=01127-10001112114 — tenant location35.66017,139.699721 converts to(-70.458239,74.084580) within source polygon.
+- Identity and view-only architecture: https://davinci-clinic.jp/clinic/access/ and https://shinjuku-reiwa.com/shibuya/access/ — current operator pages; not evidence of current tenants in2025. Exterior image https://davinci-clinic.jp/wp-content/themes/da-vinci-theme/images/new/access/exterior1.png and route image https://shinjuku-reiwa.com/wp-content/themes/ReiwaClinic-themes/images/access/hachikou_route01_6.webp are copyrighted, undated, VIEW ONLY. No copies in deliverables/textures.
+- Floor count context7F/B1: https://www.oasis-estate.jp/building/28404 and https://www.officetar.jp/building/64544/ (latter updated2023-11-07). Not survey-grade dimensions, not seven equal divisions of the entire billboard-inclusive envelope.
 
-https://commons.wikimedia.org/wiki/File:Shibuya_Center-Gai_during_a_building_fire_incident_4.jpg
-
-Artist: Syced
-
-LicenseShortName: CC0
-
-LicenseUrl: http://creativecommons.org/publicdomain/zero/1.0/deed.en
-
-DateTimeOriginal: 22 September 2023, 13:31
-
-Credit: Own work
-
-写真は構造の補助。模型のカメラ未校正、窓割りや寸法は推定。2025年の広告を示さない。元写真はライセンスを保持して同梱し、モデルのテクスチャには使わない。
+Photo-derived structure: cream faceting/grid, broad window arrangement, crown separator, gold fan, billboard and open supports. Inferred: exact dimensions, recess depth, visible colors under different lighting, brace counts, hidden rear and occluded shopfront. Billboard/frontage and photo camera fitting are not a new geospatial survey.
