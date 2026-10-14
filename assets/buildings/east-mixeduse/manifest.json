@@ -3,14 +3,14 @@
   "level": "B",
   "status": "prototype; see README for evidence and estimates",
   "stats": {
-    "triangles": 2106,
+    "triangles": 2112,
     "primitives": 8,
-    "bytes": 127464
+    "bytes": 127836
   },
   "files": {
     "README.md": {
-      "bytes": 1155,
-      "sha256": "f78f6df832363cbeb015edc4ba1696ead8ebb3d9baf87e648a4cc76caf76e114"
+      "bytes": 1453,
+      "sha256": "834184c7083f6f27c6980b89238300a0b6da18859fb27bcc6d33e5e6218c33d8"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -25,8 +25,8 @@
       "sha256": "e13dca42a509d311543bcc59450e695fe1da80bc90328650c226ce6be47ffe0e"
     },
     "source/data/stats.json": {
-      "bytes": 9993,
-      "sha256": "b058261b9b1c9fb8b7ea6c4e2466cbae3c7cbe5da0147fa145def8e427b0bb04"
+      "bytes": 10275,
+      "sha256": "bb5d0d2adacd7cfa6556ba4f98d15712a00dd5ab32d2bc47dae281f3168f3b98"
     },
     "source/refs/SOURCES.md": {
       "bytes": 612,
@@ -41,8 +41,8 @@
       "sha256": "5f1b25b4f9ea14e36fef6200696d64a96ef9438facb3bb151874fca578b1f4a9"
     },
     "web/east-mixeduse.glb": {
-      "bytes": 127464,
-      "sha256": "194e2315143db410e312c61c17323c9a6e8dd5c9299be90bb9473bfa70f13d66"
+      "bytes": 127836,
+      "sha256": "a8947266cf55941db6e0f1a57f5731f32e4c67d5e9ac2a0ee1bd773ad49b0de2"
     },
     "web/emissive_day.json": {
       "bytes": 3,

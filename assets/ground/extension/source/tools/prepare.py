@@ -4,7 +4,7 @@ from shapely.geometry import Polygon,box,Point
 from shapely.ops import unary_union,triangulate,nearest_points
 from shapely.strtree import STRtree
 from scipy.spatial import cKDTree
-P=Path(sys.argv[1]);old=json.loads(Path(sys.argv[2]).read_text());polys=[Polygon([p[:2] for p in t]) for t in old];mask=unary_union([p for p in polys if p.is_valid and p.area>1e-8]).buffer(.002)
+P=Path(sys.argv[1]);old=json.loads(Path(sys.argv[2]).read_text());old=[t for t in old if Polygon([p[:2] for p in t]).is_valid and Polygon([p[:2] for p in t]).area>1e-8];polys=[Polygon([p[:2] for p in t]) for t in old];mask=unary_union([p for p in polys if p.is_valid and p.area>1e-8]).buffer(.002)
 points=np.array([p for t in old for p in t]);tree=cKDTree(points[:,:2]);surface_tree=STRtree(polys);S=json.loads((P/'source.json').read_text());DEM={}
 for dx in [0,1]:
  for dy in [0,1]:
@@ -39,5 +39,5 @@ for x in range(-330,380,6):
      for final in triangulate(clipped):
       if not clipped.covers(final.representative_point()) or final.area<1e-5:continue
       tri.append([[round(a,4),round(b,4),height(a,b)] for a,b in list(final.exterior.coords)[:3]])
-stats={'source':'GSI DEM5A','source_acquired':'2026-10-13','datum_tp_m':15,'bounds_m':[-330,-450,380,350],'grid_m':6,'edge_blend_m':20,'source_ground_unchanged':True,'triangles':len(tri),'missing_dem':missing,'height_tp_range':[min(p[2] for t in tri for p in t),max(p[2] for t in tri for p in t)],'limitation':'DEM terrain substrate; finished street surfaces/roads are not surveyed. Blend at original ground seam is estimated, not source DEM.'}
+stats={'source':'GSI DEM5A','source_acquired':'2026-10-13','datum_tp_m':15,'bounds_m':[-330,-450,380,350],'grid_m':6,'edge_blend_m':20,'source_ground_unchanged':True,'triangles':len(tri),'missing_dem':missing,'height_tp_range':[min(p[2] for t in tri for p in t),max(p[2] for t in tri for p in t)],'limitation':'DEM substrate excludes Core and added street tiles; seam blend follows their modelled heights, not an independent survey.'}
 (P/'extension.json').write_text(json.dumps({'triangles':tri,'stats':stats},separators=(',',':'))+'\n');(P/'stats.json').write_text(json.dumps(stats,indent=1)+'\n');print(stats)

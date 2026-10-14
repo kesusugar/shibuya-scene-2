@@ -1,0 +1,58 @@
+{
+ "version": 2,
+ "datum_tp_m": 15,
+ "status": "remaining local warning approaches on extended PLATEAU sidewalk; estimated",
+ "crosswalk_ids": [
+  "way/754454448",
+  "way/754454447",
+  "way/906194284",
+  "way/1157451161",
+  "way/355248078",
+  "way/664532507",
+  "way/355252210",
+  "way/355248423",
+  "way/215956002",
+  "way/215956003",
+  "way/372165785",
+  "way/372165786",
+  "way/372165787",
+  "way/1462471075"
+ ],
+ "tile_m": 0.3,
+ "warning_rows": 2,
+ "warning_columns": 2,
+ "guide_tiles": 3,
+ "minimum_setback_m": 0.6,
+ "maximum_search_m": 6,
+ "base_offset_m": 0.002,
+ "relief_m": 0.005,
+ "dot_top_radius_m": 0.006,
+ "dot_base_radius_m": 0.011,
+ "yellow_linear_rgb": [
+  0.72,
+  0.5,
+  0.025
+ ],
+ "position_basis": "measured crossing endpoint and outward axis; search for complete pad on existing sidewalk, excluding OSM entrance footprints and tree roots and existing signal/lamp/sign pole bases",
+ "notes": [
+  "2025 February high photo confirms yellow guidance/warning type; individual pad locations and route connections are estimates",
+  "Two plaza approaches extended and joined at an inferred junction; southern continuation has no verified facility connection; not a complete real-world guidance network",
+  "Geometry draped to existing sidewalk; no road or provisional-fill placement"
+ ],
+ "pole_clearance_m": 0.2,
+ "rail_clearance_m": 0.12,
+ "only_groups": [
+  "way/215956002/start",
+  "way/215956002/end",
+  "way/215956003/start",
+  "way/215956003/end",
+  "way/372165785/start",
+  "way/372165785/end",
+  "way/372165786/start",
+  "way/372165786/end",
+  "way/372165787/start",
+  "way/372165787/end",
+  "way/1462471075/start",
+  "way/1462471075/end"
+ ]
+}

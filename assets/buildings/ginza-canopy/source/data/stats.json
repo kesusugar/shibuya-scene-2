@@ -13,26 +13,26 @@
     {
       "x": 107.236,
       "y": -64.32,
-      "tp": 15.282,
-      "basis": "Core/DEM substrate ray"
+      "tp": 16.1026,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 113.83,
       "y": -84.882,
-      "tp": 15.1738,
-      "basis": "Core/DEM substrate ray"
+      "tp": 15.3691,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 214.339,
       "y": -31.113,
-      "tp": 17.2511,
-      "basis": "Core/DEM substrate ray"
+      "tp": 17.5788,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 221.934,
       "y": -51.342,
-      "tp": 17.4478,
-      "basis": "Core/DEM substrate ray"
+      "tp": 17.549,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     }
   ],
   "lower_base_status": "original geometry below track bed retained as C, ground matching unconfirmed",

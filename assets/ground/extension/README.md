@@ -17,3 +17,5 @@ blender -b --python-exit-code 1 -t 4 -P assets/ground/extension/source/blender/b
 ## 周辺建物追加時の範囲拡張
 
 外側を東西-330〜380 m、南北-450〜350 mへ拡張し、6 m格子へ。補填の高さはsource/data/stats.json、元のCore地面は保持。遠方の建物の足元の地形を収録するが、道路・歩道仕上げの再現ではない。
+
+外側道路の追加後はCore+3道路タイルの三角形を保護マスクへ渡し、仕上げ面の下にDEMを重ねない。継ぎ目20mの補間は道路モデルの高さへ接続する推定。Core原本は保持。

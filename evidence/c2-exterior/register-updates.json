@@ -1,0 +1,97 @@
+[
+ {
+  "source_id": "way/617560918",
+  "asset": "scramble-square",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/54500467",
+  "asset": "mark-city",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0",
+  "asset": "station-southeast",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/55895868",
+  "asset": "shibuya109",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/204091879",
+  "asset": "hikarie",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/1200029947",
+  "asset": "sakura-stage",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/55588118",
+  "asset": "fukuras",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/136691379",
+  "asset": "center244",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/155538676",
+  "asset": "plaza-kiosk",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/451564412",
+  "asset": "parco",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/129061813",
+  "asset": "takagi",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/116710254",
+  "asset": "bic-camera",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/136691389",
+  "asset": "quattro",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/521438304",
+  "asset": "stream",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/138670889",
+  "asset": "east-mixeduse",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/136587834",
+  "asset": "cine-tower",
+  "status": "B_prototype"
+ },
+ {
+  "source_id": "way/87250190",
+  "asset": "mark-city",
+  "status": "B_compound_prototype"
+ },
+ {
+  "source_id": "way/155807205",
+  "asset": "plaza-facilities",
+  "status": "B_facility_prototype"
+ },
+ {
+  "source_id": "way/858994297",
+  "asset": "plaza-facilities",
+  "status": "B_facility_prototype"
+ }
+]

@@ -5,12 +5,12 @@
   "stats": {
     "triangles": 5690,
     "primitives": 11,
-    "bytes": 374592
+    "bytes": 374688
   },
   "files": {
     "README.md": {
-      "bytes": 1108,
-      "sha256": "52bbeab62484d5372bb9d0c674eb3e968a4cccaaa2d409517b16cdbb1933e1d3"
+      "bytes": 1406,
+      "sha256": "febbca576d37b8ba103eb8e0d0d63dade5bd024d7048381a3e56def5f380dff7"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -25,8 +25,8 @@
       "sha256": "8275ced42472f0e11130bac0dc952bce73279921e3363c2b2f84fa93345f2706"
     },
     "source/data/stats.json": {
-      "bytes": 22321,
-      "sha256": "2ec5aee4c72cfff0524cbd27ae6277e74114e3263792a1d00b354882a5fc4081"
+      "bytes": 22290,
+      "sha256": "e02ffd31e94100d9d242d8c8bfc3c0257cad786790e25a1c7dab6a84c052c1a7"
     },
     "source/refs/SOURCES.md": {
       "bytes": 525,
@@ -49,8 +49,8 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/shibuya109.glb": {
-      "bytes": 374592,
-      "sha256": "9fdf34b09205681c43722220086d63e60c591e6d690fa8c562b74822b30b68bb"
+      "bytes": 374688,
+      "sha256": "c792a0781c83a31d8828d8dcf8848a8617c02cf186812c7bdf2131e7800d03f9"
     },
     "web/viewer.json": {
       "bytes": 196,

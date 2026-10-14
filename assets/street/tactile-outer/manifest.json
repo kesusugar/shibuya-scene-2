@@ -1,0 +1,32 @@
+{
+  "id": "street/tactile-outer",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 30240,
+    "primitives": 1,
+    "bytes": 2045940
+  },
+  "files": {
+    "README.md": {
+      "bytes": 757,
+      "sha256": "ef928c5a335a19e75a39630a0700f28b7bed5e8efb25a1f22267f423dd124095"
+    },
+    "source/blender/build.py": {
+      "bytes": 10037,
+      "sha256": "51c7b982cc811169f603310cd5bc579dba436fe536d12f91088051c2239578a7"
+    },
+    "source/data/layout.json": {
+      "bytes": 1664,
+      "sha256": "d3ad3b461ad7ab28062bc6eb8eb43fcc66022665b30ed8d9f4686f4cb53e54af"
+    },
+    "source/data/stats.json": {
+      "bytes": 35430,
+      "sha256": "be822b8e059c7ecef76652c9b57de7ad0d4a81e1a5a8545079b1a8b794612d30"
+    },
+    "web/tactile-outer.glb": {
+      "bytes": 2045940,
+      "sha256": "c30dace55a8d95ad52a6a010329703c144094764778470786bde57e8551005fa"
+    }
+  }
+}

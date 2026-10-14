@@ -1,0 +1,30 @@
+{
+ "former_core_fill_replaced_by_streets_area_m2": 7835.139227242819,
+ "exported_exterior_vs_protected_core_overlap_m2": 0.0,
+ "exported_dem_vs_finished_ground_overlap_m2": 0.0,
+ "outer_vs_existing_tactile_overlap_m2": 0.0,
+ "assets/ground/core/web/ground_core.glb": {
+  "byte_identical": true,
+  "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32"
+ },
+ "assets/street/core/web/street_core.glb": {
+  "byte_identical": true,
+  "sha256": "de970a9a1951dc7fb57213b5849c19de92000d9477a2a7948074c8ded08fcf9a"
+ },
+ "assets/street/tactile/web/tactile.glb": {
+  "byte_identical": true,
+  "sha256": "1dc0e2774d8936e7c949286037e9e92de4f2a14ef8583147712dca3cbe1ad4d2"
+ },
+ "assets/street/tactile-extra/web/tactile-extra.glb": {
+  "byte_identical": true,
+  "sha256": "b3e144a0cef330d31deec70120d20367cf32b68033b9ad98de221cbda3747912"
+ },
+ "assets/street/tactile-links/web/tactile-links.glb": {
+  "byte_identical": true,
+  "sha256": "4151689c7534f5bff4605094023ebbe7f6d9b4c743e625466082ec01a8f5cd22"
+ },
+ "assets/buildings/qfront/web/qfront.glb": {
+  "byte_identical": true,
+  "sha256": "2b4e4dccb8b68c97e3981ca1999d0c459bd3524aaa6b903901f3085b22a6ea04"
+ }
+}

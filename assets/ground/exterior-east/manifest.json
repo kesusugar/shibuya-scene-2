@@ -1,0 +1,32 @@
+{
+  "id": "ground/exterior-east",
+  "level": "ground",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 52401,
+    "primitives": 5,
+    "bytes": 2537180
+  },
+  "files": {
+    "README.md": {
+      "bytes": 320,
+      "sha256": "3461c4f249b064e47b11f1992b8c34d6b7b678ba89a391a57d7a73af8739acf6"
+    },
+    "source/blender/build.py": {
+      "bytes": 150,
+      "sha256": "83f568095490b5ae36e1e00cda061e05b5180886b771bb735669bce9f6ba239e"
+    },
+    "source/data/input.json": {
+      "bytes": 1610492,
+      "sha256": "f1424a6e5147a609865b090786b5ec5bead01d4c227573ac581274d753f2c0a2"
+    },
+    "source/data/stats.json": {
+      "bytes": 1028,
+      "sha256": "0baeef7c2c42401d1b504162aa25431ff8bd6d59581bb5c90624734b2e1ae21b"
+    },
+    "web/exterior-east.glb": {
+      "bytes": 2537180,
+      "sha256": "8866e25dee5e72034f42c68384d0a4d4e8a977ad13b368e3ead440158a827ff2"
+    }
+  }
+}

@@ -6,13 +6,13 @@
   "stats": {
     "triangles": 13199,
     "primitives": 8,
-    "bytes": 781552
+    "bytes": 781556
   },
   "generator": "tools/core/build_facade.py",
   "files": {
     "README.md": {
-      "bytes": 1328,
-      "sha256": "1b8d2e359f6c19a852bc9ac784fc99e0c858b8e14e07c177115ab7e2e99cfbe2"
+      "bytes": 1626,
+      "sha256": "4deabc1ee94923513621befffd6d00600a0e18d5a98867cc4d67617a41629a2a"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -27,8 +27,8 @@
       "sha256": "a7ab8db419a3551440f2daa3371dc66b8b07314f7cc7ded67922a1e769df0b82"
     },
     "source/data/stats.json": {
-      "bytes": 14094,
-      "sha256": "c1749b36f438c789a5488fc3cf4776ea3408fd7de92a1b299aafe9df746b0f26"
+      "bytes": 14177,
+      "sha256": "85a59470d7a73c7875d54b0375c4f2ec2d0f8b4f056020615cab19df76e674e5"
     },
     "source/refs/SOURCES.md": {
       "bytes": 528,
@@ -51,8 +51,8 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/fukuras.glb": {
-      "bytes": 781552,
-      "sha256": "bf4843908b8633d546fdf7798e6a645c8103558469e4e18e8c0e012fcec91ec2"
+      "bytes": 781556,
+      "sha256": "e25a48ed0f4792088de9e5dfed71db2249e5a7b95f71b9d7cf866bde6a8069bb"
     },
     "web/viewer.json": {
       "bytes": 195,

@@ -7,3 +7,5 @@ source/data/plateau.jsonの高さはT.P.、ringのZはT.P.-15 m。屋根を移�
 ```sh
 blender -b --python-exit-code 1 -t 4 -P assets/buildings/cine-tower/source/blender/build.py -- assets/buildings/cine-tower/source/data/plateau.json assets/buildings/cine-tower/source/data/layout.json assets/ground/core/web/ground_core.glb assets/buildings/cine-tower/web assets/ground/extension/web/extension.glb
 ```
+
+外側道路追加後の足元を再生成する場合は、最後の引数へextension.glbとexterior-west/middle/eastの各GLBを順に渡す。追加道路使用時は旧Coreの仮fillを照会から除き、測ったCore面・追加交通面・DEMへ照会する。屋根・上面は保持。

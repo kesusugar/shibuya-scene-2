@@ -21,3 +21,5 @@ blender -b --python-exit-code 1 -t 4 -P assets/buildings/station-west-viaduct/so
 ## 地形補填後の追記
 
 Core外側をDEMで補填した後の照会結果はstats.jsonとC1_STATION_FINISH_REPORT.md参照。補填は地形の推定であり、実際の仕上げ歩道を測った高さではない。屋根・上面は保持。生成時に最後の引数へ `assets/ground/extension/web/extension.glb` を追加する。旧い未取得の記録は当時の結果として保持。
+
+外側道路追加後の足元を再生成する場合は、最後の引数へextension.glbとexterior-west/middle/eastの各GLBを順に渡す。追加道路使用時は旧Coreの仮fillを照会から除き、測ったCore面・追加交通面・DEMへ照会する。屋根・上面は保持。

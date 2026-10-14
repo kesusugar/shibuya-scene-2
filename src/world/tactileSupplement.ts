@@ -7,12 +7,12 @@ export interface TactileSupplementResult {
 }
 
 /** Sidewalk-only tactile supplements; preserve the original tactile asset. */
-export async function loadTactileSupplement(loadGlb: (url: string) => Promise<Object3D>, kind: 'extra' | 'links', url = `/street/tactile-${kind}/tactile-${kind}.glb`): Promise<TactileSupplementResult> {
+export async function loadTactileSupplement(loadGlb: (url: string) => Promise<Object3D>, kind: 'extra' | 'links' | 'outer', url = `/street/tactile-${kind}/tactile-${kind}.glb`): Promise<TactileSupplementResult> {
   const root = new Group(); root.name = `street:tactile-${kind}`;
   try {
     const scene = await loadGlb(url), problems = validateBuilding(scene);
     if (problems.length) throw new Error(problems.join(', '));
-    if (!scene.getObjectByName(kind === 'extra' ? 'street_tactile' : 'street_tactile_links')) throw new Error('missing tactile supplement mesh');
+    if (!scene.getObjectByName(kind === 'extra' ? 'street_tactile' : `street_tactile_${kind}`)) throw new Error('missing tactile supplement mesh');
     let meshes = 0, triangles = 0;
     scene.traverse(o => {
       const m = o as Mesh; if (!m.isMesh) return;

@@ -3,14 +3,14 @@
   "level": "B",
   "status": "prototype; see README for evidence and estimates",
   "stats": {
-    "triangles": 932,
+    "triangles": 934,
     "primitives": 8,
-    "bytes": 59960
+    "bytes": 60068
   },
   "files": {
     "README.md": {
-      "bytes": 1116,
-      "sha256": "8b83b10fc1f966fc2d200a1b6431c98bb3af96bccfcf54d4f5b51921a7d0f032"
+      "bytes": 1414,
+      "sha256": "f40a61d40090f0a39fc698df8226c92f39f4a4d5faaf0d463df61f293fdfd243"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -25,8 +25,8 @@
       "sha256": "f7d50377a2427cd71a64230c2801999892b823e3a27b51e92704e797a796b2b8"
     },
     "source/data/stats.json": {
-      "bytes": 10420,
-      "sha256": "8e45cb9d877a2964515d7cefc29113634c6a74c513b3e81c09d95dcd8fbc270d"
+      "bytes": 10493,
+      "sha256": "db062d52b1143be5aa7e8e3fe43a3d875cf78ae32289dd524f9e140674a3f423"
     },
     "source/refs/SOURCES.md": {
       "bytes": 612,
@@ -41,8 +41,8 @@
       "sha256": "5f1b25b4f9ea14e36fef6200696d64a96ef9438facb3bb151874fca578b1f4a9"
     },
     "web/bic-camera.glb": {
-      "bytes": 59960,
-      "sha256": "bca35d355f6f150b5ef125aec371506c22c6c82f3156011f2e07aabd90126df6"
+      "bytes": 60068,
+      "sha256": "96375c86ad8e86f51631f7d710596fbc32721aad4a25f25778fc24f7ef54651e"
     },
     "web/emissive_day.json": {
       "bytes": 3,

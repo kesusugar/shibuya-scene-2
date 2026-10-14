@@ -3,14 +3,14 @@
   "level": "B",
   "status": "prototype; see README for evidence and estimates",
   "stats": {
-    "triangles": 23912,
+    "triangles": 23908,
     "primitives": 8,
-    "bytes": 1458896
+    "bytes": 1458728
   },
   "files": {
     "README.md": {
-      "bytes": 1147,
-      "sha256": "811d8c1dffada12c9782c1ce5e726856b8b6e8c4b3cc34d3566defb941e8336c"
+      "bytes": 1445,
+      "sha256": "dd95fedbeec80f7c1501aa7caee0b5aea0042175dbb0dc40071e3efba36c75f5"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -25,8 +25,8 @@
       "sha256": "ac0b62994521aed4ae7156cee2d609c7beaa2f6a3509743a197a123429e4368b"
     },
     "source/data/stats.json": {
-      "bytes": 30632,
-      "sha256": "57b989c06ff78a8818bf5d0bd21325306665f3189569ea0c6857b25a569e9251"
+      "bytes": 30519,
+      "sha256": "97f4a04bb89facfbd01ca1b3573b4699f0f421089cfa55ad9887d7e80cb82c58"
     },
     "source/refs/SOURCES.md": {
       "bytes": 574,
@@ -49,8 +49,8 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/mark-city.glb": {
-      "bytes": 1458896,
-      "sha256": "480a59ca1ca497a180366a09a719953c62933a1aa334c73802134669908b25a8"
+      "bytes": 1458728,
+      "sha256": "50046cf85c7c6bbe30fca9c7b5364b93b2c00729f73935ca52eb78401338b025"
     },
     "web/viewer.json": {
       "bytes": 196,

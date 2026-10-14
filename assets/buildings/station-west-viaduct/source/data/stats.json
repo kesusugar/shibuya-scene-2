@@ -9,50 +9,50 @@
     {
       "x": 6.791,
       "y": -93.844,
-      "tp": 16.0417,
-      "basis": "Core/DEM substrate ray"
+      "tp": 16.0075,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 14.873,
       "y": -92.535,
-      "tp": 16.0355,
-      "basis": "Core/DEM substrate ray"
+      "tp": 15.7979,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 22.956,
       "y": -91.227,
-      "tp": 15.9452,
-      "basis": "Core/DEM substrate ray"
+      "tp": 15.5836,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 31.039,
       "y": -89.918,
-      "tp": 15.6984,
-      "basis": "Core/DEM substrate ray"
+      "tp": 15.6199,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 39.121,
       "y": -88.609,
-      "tp": 15.5017,
-      "basis": "Core/DEM substrate ray"
+      "tp": 15.5828,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 47.204,
       "y": -87.301,
-      "tp": 15.4583,
-      "basis": "Core/DEM substrate ray"
+      "tp": 15.5823,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 55.286,
       "y": -85.992,
-      "tp": 15.3912,
-      "basis": "Core/DEM substrate ray"
+      "tp": 15.5623,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     },
     {
       "x": 63.369,
       "y": -84.683,
-      "tp": 15.2425,
-      "basis": "Core/DEM substrate ray"
+      "tp": 15.5252,
+      "basis": "Core/PLATEAU streets/DEM substrate ray"
     }
   ],
   "lower_closed_wall_faces_removed": 6,

@@ -9,8 +9,8 @@
   },
   "files": {
     "README.md": {
-      "bytes": 1089,
-      "sha256": "0a81a0602d4e9b6feaaac016bd1b84e5bcaa43385c187fc89ca7c136f81c97a2"
+      "bytes": 1387,
+      "sha256": "ea6cfe97a3ce44a42cdf23c6a3081f971596cee44d4bd05fa74d7ec68106040a"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -25,8 +25,8 @@
       "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1"
     },
     "source/data/stats.json": {
-      "bytes": 12223,
-      "sha256": "a894717b7bec8c2c08a812e0a0b0c072d466384cc7cbef0376685ada56eee0c6"
+      "bytes": 12224,
+      "sha256": "cfaeac8a3888262aa6474e9114132336334ef3b73349aef2fff7e9332075fdf5"
     },
     "source/refs/SOURCES.md": {
       "bytes": 532,
@@ -50,7 +50,7 @@
     },
     "web/parco.glb": {
       "bytes": 340788,
-      "sha256": "a975d6cf37e3e4cd673be5353859865581be1a0aa9018f904989d1ef4d11b0f8"
+      "sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2"
     },
     "web/viewer.json": {
       "bytes": 193,
