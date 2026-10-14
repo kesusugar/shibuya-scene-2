@@ -1,0 +1,2621 @@
+{
+  "exterior_walk": {
+    "q": "time=day&pose=-107,12,3.6,-148,10,17,65",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T23:55:03.843Z",
+    "cameraPos": [
+      -107,
+      3.6,
+      -12
+    ]
+  },
+  "exterior_markcity": {
+    "q": "time=day&pose=-90,-90,150,-125,-130,0,65",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-14T00:02:40.427Z",
+    "cameraPos": [
+      -90,
+      150,
+      90
+    ]
+  },
+  "plaza_facilities": {
+    "q": "time=day&pose=6,-40,2,18,-53,2,65",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T23:56:15.214Z",
+    "cameraPos": [
+      6,
+      2,
+      40
+    ]
+  },
+  "terrain": {
+    "q": "time=day&pose=0,-180,100,100,-160,0,65",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T23:56:47.697Z",
+    "cameraPos": [
+      0,
+      100,
+      180
+    ]
+  },
+  "surround": {
+    "q": "time=day&pose=6.41,-41.32,2.3,12,-49.3,1,52",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T23:57:28.584Z",
+    "cameraPos": [
+      6.41,
+      2.3,
+      41.32
+    ]
+  },
+  "entry_left": {
+    "q": "time=day&pose=20.134654,-33.508250,25.255800,32.406007,45.484403,24,55",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T23:58:18.234Z",
+    "cameraPos": [
+      20.134654,
+      25.2558,
+      33.50825
+    ]
+  },
+  "entry_right": {
+    "q": "time=day&pose=20.134654,-33.508250,25.255800,-42.139314,16.615380,24,55",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T23:59:08.479Z",
+    "cameraPos": [
+      20.134654,
+      25.2558,
+      33.50825
+    ]
+  },
+  "entry": {
+    "q": "time=day",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-13T23:59:57.849Z",
+    "cameraPos": [
+      20.134653632433018,
+      25.255800010754292,
+      33.508250187950445
+    ]
+  },
+  "entry_night": {
+    "q": "time=night",
+    "w": 1000,
+    "h": 750,
+    "extra": "q=low",
+    "state": {
+      "exterior": {
+        "ok": true,
+        "meshes": 17,
+        "triangles": 139747,
+        "tiles": 3
+      },
+      "tactileOuter": {
+        "ok": true,
+        "attached": true,
+        "meshes": 1,
+        "triangles": 30240
+      },
+      "tactileExtra": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 40376
+      },
+      "tactileLinks": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 19245
+      },
+      "facilities": {
+        "ok": true,
+        "meshes": 5,
+        "triangles": 536
+      },
+      "plaza": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 600
+      },
+      "surround": {
+        "ok": true,
+        "meshes": 8,
+        "triangles": 18168
+      },
+      "hachiko": {
+        "ok": true,
+        "meshes": 15,
+        "triangles": 50502
+      },
+      "drainage": {
+        "ok": true,
+        "meshes": 3,
+        "triangles": 962
+      },
+      "tactile": {
+        "ok": true,
+        "meshes": 1,
+        "triangles": 25386
+      },
+      "ground": {
+        "fillReplaced": true,
+        "ok": true,
+        "missing": [],
+        "meshes": 9,
+        "triangles": 73263
+      },
+      "street": {
+        "ok": true,
+        "mode": "all",
+        "meshes": 16,
+        "triangles": 38656
+      },
+      "context": {
+        "ok": true,
+        "meshes": 6,
+        "triangles": 25911
+      },
+      "stats": {
+        "qfront": {
+          "meshes": 56,
+          "triangles": 115196,
+          "materials": 44,
+          "layers": [],
+          "layerErrors": []
+        },
+        "magnet": {
+          "meshes": 60,
+          "triangles": 26473,
+          "materials": 37,
+          "layers": [
+            "signs_2025"
+          ],
+          "layerErrors": []
+        },
+        "eiraku": {
+          "meshes": 5,
+          "triangles": 394,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "west-block": {
+          "meshes": 25,
+          "triangles": 1257,
+          "materials": 25,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "ekimae": {
+          "meshes": 18,
+          "triangles": 6640,
+          "materials": 18,
+          "layers": [
+            "signs"
+          ],
+          "layerErrors": []
+        },
+        "station-concourse": {
+          "meshes": 9,
+          "triangles": 848,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-north": {
+          "meshes": 9,
+          "triangles": 996,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-service": {
+          "meshes": 6,
+          "triangles": 342,
+          "materials": 6,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-west-viaduct": {
+          "meshes": 5,
+          "triangles": 1332,
+          "materials": 5,
+          "layers": [],
+          "layerErrors": []
+        },
+        "ginza-canopy": {
+          "meshes": 11,
+          "triangles": 11314,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "daiichi-kangin": {
+          "meshes": 10,
+          "triangles": 868,
+          "materials": 10,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center-gai-gate": {
+          "meshes": 4,
+          "triangles": 2424,
+          "materials": 4,
+          "layers": [],
+          "layerErrors": []
+        },
+        "center244": {
+          "meshes": 8,
+          "triangles": 1257,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "quattro": {
+          "meshes": 8,
+          "triangles": 1376,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "scramble-square": {
+          "meshes": 9,
+          "triangles": 35672,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "fukuras": {
+          "meshes": 8,
+          "triangles": 13199,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "station-southeast": {
+          "meshes": 7,
+          "triangles": 5700,
+          "materials": 7,
+          "layers": [],
+          "layerErrors": []
+        },
+        "plaza-kiosk": {
+          "meshes": 9,
+          "triangles": 342,
+          "materials": 9,
+          "layers": [],
+          "layerErrors": []
+        },
+        "mark-city": {
+          "meshes": 8,
+          "triangles": 23908,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "shibuya109": {
+          "meshes": 11,
+          "triangles": 5690,
+          "materials": 11,
+          "layers": [],
+          "layerErrors": []
+        },
+        "takagi": {
+          "meshes": 8,
+          "triangles": 4430,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "bic-camera": {
+          "meshes": 8,
+          "triangles": 934,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "cine-tower": {
+          "meshes": 8,
+          "triangles": 3882,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "east-mixeduse": {
+          "meshes": 8,
+          "triangles": 2112,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "hikarie": {
+          "meshes": 8,
+          "triangles": 37134,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "parco": {
+          "meshes": 8,
+          "triangles": 5314,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "stream": {
+          "meshes": 8,
+          "triangles": 32532,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        },
+        "sakura-stage": {
+          "meshes": 8,
+          "triangles": 36336,
+          "materials": 8,
+          "layers": [],
+          "layerErrors": []
+        }
+      },
+      "failed": [],
+      "status": ""
+    },
+    "errors": [],
+    "capturedAt": "2026-10-14T00:00:48.846Z",
+    "cameraPos": [
+      20.134653632433018,
+      25.255800010754292,
+      33.508250187950445
+    ]
+  }
+}

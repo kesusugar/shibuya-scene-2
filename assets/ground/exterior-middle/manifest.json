@@ -1,0 +1,32 @@
+{
+  "id": "ground/exterior-middle",
+  "level": "ground",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 37737,
+    "primitives": 6,
+    "bytes": 1814856
+  },
+  "files": {
+    "README.md": {
+      "bytes": 322,
+      "sha256": "a1dc01c6425af17b73f4735effc14338586e8da5039dc572f7bed9824d6eda00"
+    },
+    "source/blender/build.py": {
+      "bytes": 150,
+      "sha256": "83f568095490b5ae36e1e00cda061e05b5180886b771bb735669bce9f6ba239e"
+    },
+    "source/data/input.json": {
+      "bytes": 1291815,
+      "sha256": "f4252d142aa0ca9bf3f41d30055f656da74700fdb713bc799152e03bd73b281f"
+    },
+    "source/data/stats.json": {
+      "bytes": 1031,
+      "sha256": "c6ed87e988a0b94167d03bffe6e9af5f8d43ae88567fb32a63aaeb1fc742142a"
+    },
+    "web/exterior-middle.glb": {
+      "bytes": 1814856,
+      "sha256": "239ca2294bd01cdb6b29e39375c34e7b8ac9c1d32f7aa0a072540b28c566dae7"
+    }
+  }
+}

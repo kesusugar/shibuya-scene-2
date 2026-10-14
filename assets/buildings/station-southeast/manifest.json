@@ -3,14 +3,14 @@
   "level": "B",
   "status": "prototype; see README for evidence and estimates",
   "stats": {
-    "triangles": 5648,
+    "triangles": 5700,
     "primitives": 7,
-    "bytes": 337704
+    "bytes": 340464
   },
   "files": {
     "README.md": {
-      "bytes": 888,
-      "sha256": "11775ab3e970c9e43b8762c9a9a0d6959e894dbb6a3d3f03655e6f73539fd70f"
+      "bytes": 1186,
+      "sha256": "8f852f4a7e8cad51f42c886aa4065498a22b4bd231e87fafb2c74904cc7a3c00"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -25,8 +25,8 @@
       "sha256": "76234babe21a144fb8c5d6ad24766d14af8f3e7b11e95b77cfd5581f6969bc35"
     },
     "source/data/stats.json": {
-      "bytes": 50347,
-      "sha256": "660ce02a8e5d55b335603eff331a8fe4d0cfdf49e5a52fd2557639c49ddb19e6"
+      "bytes": 52790,
+      "sha256": "e079b3d4b305e667c823c9015f319d41ef2cae58b8c2c6aeb675fbe41f1a75c0"
     },
     "source/refs/SOURCES.md": {
       "bytes": 519,
@@ -49,8 +49,8 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/station-southeast.glb": {
-      "bytes": 337704,
-      "sha256": "ba96179c966d542c364b378b787cc5e95709b5d21a6cb03d51578140a3773330"
+      "bytes": 340464,
+      "sha256": "fa2a6975f8f095d72d77e461c1a6f44f7dd5b8d9042dd1074f501dbc8fcb0113"
     },
     "web/viewer.json": {
       "bytes": 194,

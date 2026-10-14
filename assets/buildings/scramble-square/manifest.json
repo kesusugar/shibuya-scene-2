@@ -11,8 +11,8 @@
   "generator": "tools/core/build_facade.py",
   "files": {
     "README.md": {
-      "bytes": 1378,
-      "sha256": "f837ee35240db81fbd910b0708fc9451e2c16f50c9c2f455a854957071d63fee"
+      "bytes": 1676,
+      "sha256": "1b82419667a75b50b83cdb6856dbff156273e90fec35aad467f91aa5e5bf40a6"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -27,8 +27,8 @@
       "sha256": "1eb45c10f27fc00d02f5c6c534e135bdcf7ec4ce60e367200e4b06bab0ba0d65"
     },
     "source/data/stats.json": {
-      "bytes": 4039,
-      "sha256": "d35dd4a16c48a58a433e21c4b9468713ce6650c58152460ad791af8ea25dcf30"
+      "bytes": 4114,
+      "sha256": "fe4f426ee221c643b36474eab43f35bfe24141c8562828f71228e29829f2cefb"
     },
     "source/refs/SOURCES.md": {
       "bytes": 531,
@@ -52,7 +52,7 @@
     },
     "web/scramble-square.glb": {
       "bytes": 2350656,
-      "sha256": "f74674e1928eea6e14753f54d4784726148c981f7ae6602ba8f1262c868c6d69"
+      "sha256": "c184cadf05ebfbad08504664745377c3049b25e667019f03093a2459eb71f78d"
     },
     "web/viewer.json": {
       "bytes": 195,

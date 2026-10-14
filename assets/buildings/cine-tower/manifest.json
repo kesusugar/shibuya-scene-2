@@ -3,14 +3,14 @@
   "level": "B",
   "status": "prototype; see README for evidence and estimates",
   "stats": {
-    "triangles": 3876,
+    "triangles": 3882,
     "primitives": 8,
-    "bytes": 232924
+    "bytes": 233440
   },
   "files": {
     "README.md": {
-      "bytes": 1119,
-      "sha256": "80964d644536d0d2ecb75eb623a98b0d3b1ea3d5b7255d94459606904e7987fa"
+      "bytes": 1417,
+      "sha256": "2aa4a8cede8b844391cd4ef232020aecd2edba618863363b4ebd685f6fe0f3dd"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -25,8 +25,8 @@
       "sha256": "2bca0b408febcfa8d895b8f3920722acfb809b41b8c3ad3b375914e98e0004a0"
     },
     "source/data/stats.json": {
-      "bytes": 15709,
-      "sha256": "9e66848c7d11bbd0f6ceaf32e2432c67c6a2cd23cdff6deffe4935b6e1af9b98"
+      "bytes": 15985,
+      "sha256": "1f68cec077a1a1799383378e1cade0e9fa34b64eedd5128bbb4e91f505906e86"
     },
     "source/refs/SOURCES.md": {
       "bytes": 499,
@@ -41,8 +41,8 @@
       "sha256": "4c9e9091691978e3db8c37514419968027ea4a647aa195cb8dead8560f731dd6"
     },
     "web/cine-tower.glb": {
-      "bytes": 232924,
-      "sha256": "9b0b478732e0c1b6ec7d6df92f2ec958eb30cf1fdd03da67b46968946cff1a87"
+      "bytes": 233440,
+      "sha256": "708f4f9acb7142ccfe3987b0fd65a07350c7a44f4de7143a6048c9851cc1ee3b"
     },
     "web/emissive_day.json": {
       "bytes": 3,

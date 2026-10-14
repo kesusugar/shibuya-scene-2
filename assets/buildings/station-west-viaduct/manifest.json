@@ -10,16 +10,16 @@
   "stats": {
     "triangles": 1332,
     "primitives": 5,
-    "bytes": 78764
+    "bytes": 78864
   },
   "files": {
     "README.md": {
-      "bytes": 2318,
-      "sha256": "b74f3ab24b6c873c192bbab2376f6efd3cfad72136e680825bfbb1bff20c9d18"
+      "bytes": 2616,
+      "sha256": "1783a518f64e78106d1868f834286bca10d2abee71fc9ed0280b097bebaa1ca6"
     },
     "source/blender/build_station_viaduct.py": {
-      "bytes": 6761,
-      "sha256": "7d98e24d09220b636081de3f88dea554d1b6a2692ef43ec2e42d4800b904b32e"
+      "bytes": 6860,
+      "sha256": "6a3f130a682905a7e59452741723cc348da0ff4b68c66b27a730611d98b11229"
     },
     "source/data/layout.json": {
       "bytes": 1307,
@@ -30,8 +30,8 @@
       "sha256": "992c089a768f15716397e92216d5c60840b09d73892f26bcaec05e7045da0571"
     },
     "source/data/stats.json": {
-      "bytes": 1783,
-      "sha256": "7c76acd95707b5c60f4e307dd43472905ba0bee54f4ba6e03623f286e189dea7"
+      "bytes": 1911,
+      "sha256": "c558f60668150dad9d65976eef5628f911353a05b6087df8a67a2cb709aac8a8"
     },
     "source/refs/README.md": {
       "bytes": 651,
@@ -54,8 +54,8 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/station-west-viaduct.glb": {
-      "bytes": 78764,
-      "sha256": "5c2ef2239b1e7302aae4b60c807f06526d68d10ee33994d9930fba2e545e2236"
+      "bytes": 78864,
+      "sha256": "027afa39e59715d6f7b5e60375c7423948f5c41598ab69544a02847c8980d0c1"
     },
     "web/viewer.json": {
       "bytes": 101,

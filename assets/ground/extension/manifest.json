@@ -3,14 +3,14 @@
   "level": "ground",
   "status": "prototype; see README for evidence and estimates",
   "stats": {
-    "triangles": 37125,
+    "triangles": 36728,
     "primitives": 1,
-    "bytes": 3025280
+    "bytes": 3016964
   },
   "files": {
     "README.md": {
-      "bytes": 1964,
-      "sha256": "b4fcccff7dc16e7456214b47cbc4a82c459a7e8d29e2f23526473b55fcc9c2d7"
+      "bytes": 2192,
+      "sha256": "29f88b11b5f0a20fa75a0a9afc1d442c08b70a419607e5b60b502104a8ad5938"
     },
     "source/blender/build.py": {
       "bytes": 896,
@@ -33,28 +33,28 @@
       "sha256": "7eaea455a09c9f6fb910c5632dbfa1974bb0bbe253bc689702a6ee3a0555b7ba"
     },
     "source/data/extension.json": {
-      "bytes": 2622805,
-      "sha256": "ad1a3f26ccd71207422c3272438170231f368acd5dbbaa056479b9352a287eb5"
+      "bytes": 2710581,
+      "sha256": "9d8789348f89209cab7a70401aaaba5cbc8bd4773be8aa1a5bcc71f52b9364d6"
     },
     "source/data/source.json": {
       "bytes": 247,
       "sha256": "a88b48e5efdf8706ce3721428997a4a8826a38725feee1bde94ef4cec7e700a5"
     },
     "source/data/stats.json": {
-      "bytes": 433,
-      "sha256": "6bf34a8cf3dbaa86067ee7268eda4b586715fc57725f3d07a722ab7fe1cd24c2"
+      "bytes": 424,
+      "sha256": "9802e0737a7fcf4eb839ddc3b41c66ada470075ea96c5cc5c6780209c6fe4d2d"
     },
     "source/tools/extract-ground.mjs": {
-      "bytes": 721,
-      "sha256": "fed42121ae2886018224d78fb17556d5bad8dcf90a7c4448dd3f5d83d381ad86"
+      "bytes": 752,
+      "sha256": "e2bf4a383f0595282785d70685315c5946b53076fc87f543b614ff52e1d836f0"
     },
     "source/tools/prepare.py": {
-      "bytes": 3172,
-      "sha256": "13c60d9c0cdf9552070e9ad1e7f0483cbf740ce0c48fe2c67b134b40a76bb21b"
+      "bytes": 3265,
+      "sha256": "172bc840f27766a7a0c02ba4ee28482dc9fc22de189c37fc003f132ae094e564"
     },
     "web/extension.glb": {
-      "bytes": 3025280,
-      "sha256": "6e906f9ee6708544461276a2778cbcaf88d7d6c038c593c5cdddc3350575fc3e"
+      "bytes": 3016964,
+      "sha256": "86e58b050106eb2fcf55997971395688b75d313f8f16c167eaaed2f8556e88ad"
     }
   }
 }

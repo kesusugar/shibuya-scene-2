@@ -9,8 +9,8 @@
   },
   "files": {
     "README.md": {
-      "bytes": 1132,
-      "sha256": "c7513bf7e3658a88532378d164be46ea7ea02cfd7777906275975ce96585257f"
+      "bytes": 1430,
+      "sha256": "e771f6332510a5b6186f89f1fe5d6b465333e846daae660e294e9f5759718e9b"
     },
     "source/blender/build.py": {
       "bytes": 144,
@@ -25,8 +25,8 @@
       "sha256": "6a58d4643e44a4442b5cbc11cb0808f26c4c19b5eb7d5e05c5ef57b42ab9602e"
     },
     "source/data/stats.json": {
-      "bytes": 31070,
-      "sha256": "364c9f43752290ef873ca2285a2d82fd65418054127c933e3874fd5106b7a989"
+      "bytes": 31110,
+      "sha256": "007dd4d341ef7a272ed3f96fed47745ca6e9d7371509d9106088603a62266d8b"
     },
     "source/refs/SOURCES.md": {
       "bytes": 586,
