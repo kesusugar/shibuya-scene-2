@@ -18,13 +18,19 @@ for(const id of ['center244','quattro','scramble-square','fukuras','station-sout
       for(let i=0;i<a.getCount();i++) {
         const v=new Vector3().fromArray(a.getElement(i,[])).applyMatrix4(m);
         expect([v.x,v.y,v.z].every(Number.isFinite)).toBe(true);
-        if(p.getMaterial()!.getName()===id+'_roof')roof.push(v);
+        if(p.getMaterial()!.getName()===(id==='center244'?'c244_roof':id+'_roof'))roof.push(v);
       }
     }
-    for(const f of s.surfaces.filter((f:{kind:string})=>f.kind!=='WallSurface'))for(const p of f.ring)
+    // Center244 upper envelope is an explicit photo-derived billboard proxy; low source roofs remain exact.
+    for(const f of s.surfaces.filter((f:{kind:string,ring:number[][]})=>f.kind!=='WallSurface' && (id!=='center244' || Math.max(...f.ring.map(p=>p[2]))<=21.635)))for(const p of f.ring)
       expect(roof.some(v=>v.distanceTo(new Vector3(p[0],p[2],-p[1]))<.002)).toBe(true);
     const stats=json(base+'source/data/stats.json');
-    expect(stats.glass_panels).toBeGreaterThan(id==='plaza-kiosk'?10:100);
+    if(id==='center244') {
+      expect(stats.upper_reinterpreted_indices).toEqual([1,3,4,5,7,14,17,25,26,27,29,32,33]);
+      expect(stats.upper_original_visible_mesh_preserved).toBe(false);
+      expect(stats.upper_original_hidden_provenance_preserved).toBe(true);
+      expect(stats.source_top_tp).toBe(49.843);
+    } else expect(stats.glass_panels).toBeGreaterThan(id==='plaza-kiosk'?10:100);
     expect(stats.roof_translation_m).toBe(0);
     if(['scramble-square','fukuras'].includes(id)){expect(stats.missing_pavement_samples).toBe(0);expect(stats.pavement_samples.length).toBeGreaterThan(30);}
   });
