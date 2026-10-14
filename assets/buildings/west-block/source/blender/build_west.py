@@ -127,10 +127,39 @@ sc=corner['screen_centers_m'];lo=sc['dmm']+5.9*hs/2+.15;hi=sc['rakuten']-7*hs/2-
 z=lo
 while z<hi:
  arc('west_frame',z,8*ws-.3,.06,radius=R+.04);z+=.45
-arc('west_roof',(body+27.98)/2,8*ws,27.98-body)
-for name,z,w,h in [('rakuten',corner['screen_centers_m']['rakuten'],7.3,7),('dmm',corner['screen_centers_m']['dmm'],6,5.9),('taiseido',corner['screen_centers_m']['taiseido'],7.1,1.5)]:
+# Claude review R2: the part above the Rakuten screen is a grey box (screen housing) in WB01-03, not the top of a
+# cylinder. Two flat faces meet at the corner; the back is closed against the building. Height unchanged (to 27.98).
+mat('west_housing',(.20,.21,.22),.4,.55)
+half=8*ws/(2*R)
+a0,a1=MID-half,MID+half
+def on_arc(a,r):return Vector((CX+r*math.cos(a),CY+r*math.sin(a),0))
+# corner point where the two flat faces meet, pulled in so the box stays within 1.0 m of the arc (not the far tangent apex)
+cm=on_arc(MID,R+1.0)
+foot=[on_arc(a0,R+.15),cm,on_arc(a1,R+.15),on_arc(a1,R*.25),on_arc(a0,R*.25)]
+zb,zt=body,27.98
+for p,q in zip(foot,foot[1:]+foot[:1]):face('west_housing',[Vector((p.x,p.y,zb)),Vector((q.x,q.y,zb)),Vector((q.x,q.y,zt)),Vector((p.x,p.y,zt))])
+face('west_housing',[Vector((p.x,p.y,zt)) for p in foot]);face('west_housing',[Vector((p.x,p.y,zb)) for p in reversed(foot)])
+for p,q in [(foot[0],foot[1]),(foot[1],foot[2])]:
+ for z in (zb+.35,zt-.25):
+  d=(q-p);n2=Vector((d.y,-d.x,0)).normalized()*.03
+  face('west_frame',[Vector((p.x,p.y,z-.04))+n2,Vector((q.x,q.y,z-.04))+n2,Vector((q.x,q.y,z+.04))+n2,Vector((p.x,p.y,z+.04))+n2])
+for name,z,w,h in [('rakuten',corner['screen_centers_m']['rakuten'],7.3,7),('taiseido',corner['screen_centers_m']['taiseido'],7.1,1.5)]:
  arc('west_screen_back',z,w*ws+.2,h*hs+.2,radius=R+.05)
  arc('west_sign_'+name,z,w*ws,h*hs,'signs',R+.10)
+# DMM: a flat screen in a dark box frame on the corner (WB01-03 show a flat panel, unlike the curved Rakuten screen).
+zd,wd,hd=corner['screen_centers_m']['dmm'],6*ws,5.9*hs
+tn=Vector((math.cos(MID),math.sin(MID),0));tt=Vector((-tn.y,tn.x,0));front=Vector((CX,CY,0))+tn*(R+.30)
+back=Vector((CX,CY,0))+tn*(R-1.6)
+c=(front+back)/2;dep=(front-back).length
+fp=front+tn*.02
+# keep the screen inside the PLATEAU footprint (east bound), as the curved screens are: slide it along the face
+east=max(p[0] for sf in D['surfaces'] for p in sf['ring'])-.01
+over=max((fp+tt*wd/2).x,(fp-tt*wd/2).x)-east
+if over>0:
+ shift=-tt*(over/abs(tt.x))*(1 if (fp+tt*wd/2).x>(fp-tt*wd/2).x else -1)
+ fp+=shift;c+=shift
+box((c.x,c.y,zd),(dep,wd+.4,hd+.4),'west_screen_back',MID)
+face('west_sign_dmm',[fp-tt*wd/2+Vector((0,0,zd-hd/2)),fp+tt*wd/2+Vector((0,0,zd-hd/2)),fp+tt*wd/2+Vector((0,0,zd+hd/2)),fp-tt*wd/2+Vector((0,0,zd+hd/2))],[(0,0),(1,0),(1,1),(0,1)],'signs')
 flank=corner['flat_flank']
 # Flat flank is independently visible in January and February; it follows the southern wall.
 panel(flank['x_m'],flank['center_height_m'],flank['width_m'],flank['height_m'],'west_sign_asbi_flank',.2,'signs')

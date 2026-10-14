@@ -54,7 +54,7 @@ it('keeps the passage open at walking height while the posts remain collidable',
     const ray = new Raycaster(centre.clone().addScaledVector(forward, 3), forward.clone().negate(), 0, 6);
     expect(ray.intersectObjects(objects, false)).toHaveLength(0);
     ray.set(a.clone().addScaledVector(forward, 1), forward.clone().negate()); ray.far = 2;
-    expect(ray.intersectObjects(objects, false)[0]?.object.name).toBe('gate_frame');
+    expect(['gate_frame', 'gate_crook']).toContain(ray.intersectObjects(objects, false)[0]?.object.name);   // crook posts (Claude review R2)
     expect(stats.min_clear_height_m).toBeGreaterThan(4);
   } finally { dispose(objects); }
 });

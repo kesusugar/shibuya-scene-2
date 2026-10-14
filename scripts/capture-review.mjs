@@ -17,6 +17,8 @@ export const views = {
   statue_side: { q: 'time=day&pose=7,-52,2.2,11.568,-48.686,1.4,44', w: 900, h: 750 },
   b109: { q: 'time=day&pose=-75,-20,70,-155,10,25,55', w: 900, h: 750 },   // Codex PR #35 camera
   b109_street: { q: 'time=day&pose=-110,-10,1.8,-150,6,25,60', w: 750, h: 900 },
+  gate: { q: 'time=day&pose=-22,22,1.8,-27.5,36,4.6,58', w: 900, h: 700 },
+  plaza_se: { q: 'time=day&pose=2,-34,1.7,32,-64,6,62', w: 1000, h: 700 },   // plaza towards the station side (same direction as hachiko.jpg, 2025-11)
   station_front: { q: 'time=day&pose=10,-5,1.9,70,-40,8,62', w: 1000, h: 700 },
 };
 if (base) {

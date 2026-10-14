@@ -162,7 +162,7 @@ async function start() {
   $('provisional').textContent = projectedStreet?.ok ? '仮配置：支柱の位置・寸法・光量は確認待ち（橙色）' : coreStreet?.ok ? '街路設備は仮：出入口・樹木は2025年OSMの位置、信号・柵は規則による配置、形は標準寸法の汎用品' : '';
   if (loaded.some(b => b.id === 'daiichi-kangin')) $('provisional').textContent += '／第一勧銀共同ビルは窓割り・店舗枠のB推定、広告内容は後工程';
   if (loaded.some(b => ['center244','quattro','scramble-square','fukuras'].includes(b.id))) $('provisional').textContent += '／周辺建物の窓割り・外装は旧年写真によるB推定';
-  if (loaded.some(b => b.id === 'center-gai-gate')) $('provisional').textContent += '／センター街ゲートは位置・寸法のB推定、広告内容は後工程';
+  if (loaded.some(b => b.id === 'center-gai-gate')) $('provisional').textContent += '／センター街ゲートは位置・寸法のB推定、横断幕は2025年1月の写真';
   if (coreGround?.ok) $('provisional').textContent += '／北側歩道・ハチ公広場の舗装寸法・割付けは試作';
   for (const supplement of [tactileExtra,tactileLinks,tactileOuter]) if (supplement?.ok) scene.add(supplement.root);
   if (tactileLinks?.ok) $('provisional').textContent += '／点字の施設前接続はモデル上の出入口へ推定した経路、実際の全経路は未確認';
@@ -212,7 +212,7 @@ async function start() {
   if (!building) { status(problems.join('\n')); return; }
   lighting.placeSun(building.hints);
   for (const b of loaded) lighting.placeFloods(b.hints);
-  controls.setObstacles([...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
+  controls.setObstacles([...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
   controls.frameBuilding(building.hints);
   setTime(mode);
   const envNote = envState.day === 'fulfilled' && envState.night === 'fulfilled' ? '' : '（環境マップの一部を読み込めず、反射は簡易表示）';
@@ -273,6 +273,13 @@ async function start() {
     projectPlan: (p: [number, number, number]) => { const v = new Vector3(p[0], p[2], -p[1]).project(camera); return [(v.x * 0.5 + 0.5) * innerWidth, (-v.y * 0.5 + 0.5) * innerHeight]; },
     bench: null as unknown,
     groundUnderCamera: () => controls.groundY(camera.position.x, camera.position.z),
+    // QA: walk n steps of d metres from plan (x, y) toward plan direction (dx, dy); returns the eye path in plan metres
+    walkTest: (x: number, y: number, dx: number, dy: number, n: number, d = 0.25) => {
+      const g = controls.groundAt(x, -y); if (g === null) return { start: null };
+      let p = new Vector3(x, g + 1.6, -y); const dir = new Vector3(dx, 0, -dy).normalize(); const path: number[][] = [];
+      for (let i = 0; i < n; i++) { const q = controls.stepTo(p, dir, d); if (!q) return { path, stoppedAt: [p.x, -p.z, p.y - 1.6] }; p = q; path.push([p.x, -p.z, p.y - 1.6]); }
+      return { path, stoppedAt: null };
+    },
     // QA: which asset/mesh is under a screen pixel (names from the hit mesh up to the scene)
     pick: (x: number, y: number) => {
       const ray = new Raycaster(); ray.setFromCamera(new Vector2((x / innerWidth) * 2 - 1, -(y / innerHeight) * 2 + 1), camera);
