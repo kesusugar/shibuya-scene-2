@@ -1,0 +1,38 @@
+{
+  "blender": "4.2.3",
+  "triangles": 23822,
+  "primitives": 27,
+  "bytes": 2048704,
+  "budget": {
+    "triangles": 120000,
+    "primitives": 40,
+    "bytes": 3000000
+  },
+  "Samsung_actual_developed_width_m": 21.585933685302734,
+  "Samsung_actual_height_m": 16.31999969482422,
+  "preserved_original_shell_vertices": true,
+  "anchor_tp": 15.29,
+  "frontage_samples_reused": 82,
+  "sign_materials": [
+    "ek_sign_eyecity",
+    "ek_sign_francais",
+    "ek_sign_gusto",
+    "ek_sign_hit_sky",
+    "ek_sign_loccitane",
+    "ek_sign_longboard",
+    "ek_sign_samsung",
+    "ek_sign_shabu"
+  ],
+  "sign_rays": {
+    "samsung": "ek_sign_samsung",
+    "gusto": "ek_sign_gusto"
+  },
+  "finite": true,
+  "plan_x_bounds_pass": true,
+  "full_npm_and_browser_tests": "NOT RUN: incomplete source/dependencies/public assets in dot environment",
+  "sha256": {
+    "ekimae.glb": "3ef781afe95a308ce77d8e563c89fea0b455bdfbb21747a27a2c28ca8da27c1d",
+    "signs-2025-11.glb": "27172c6adf0160133a7fbd629014c2f5431e34074be9ad9a4c75f520b554a8b4"
+  },
+  "repeat_regeneration_glb_byte_identical": true
+}

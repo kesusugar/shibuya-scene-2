@@ -5,11 +5,12 @@
   "license": "CC BY-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
   "source_url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_Tokyo,_Japan.jpg",
-  "status": "B prototype: hand-read image quads and estimated dimensions; HiT north image left edge cropped in source; eyeCity/Loccitane partly obstructed; no fabricated missing ad content",
+  "status": "Photo-led facade revision; separate November signs; inferred interior, curvature and unseen facade; HiT image incomplete.",
   "rooftop": {
     "center_height_m": 41.5,
-    "height_m": 16,
-    "basis": "large roof billboard above nine floors in Feb/Nov; dimensional estimate for first comparison"
+    "height_m": 16.32,
+    "basis": "Manufacturer Hibino specification W21600 x H16320 mm and YUNIKA 2024-12-24: https://chromatek.hibino.co.jp/usecase/shibuyaekimaevision/ and https://www.yunikavision.jp/news/U1kIrR6P . Width used as developed curved frontage. Height center and curvature radius inferred; adjacent HiT is separately repositioned on the east wing with historical approximate dimensions and explicitly partial photo coverage.",
+    "developed_width_m": 21.6
   },
   "textures": {
     "samsung": {
@@ -32,8 +33,26 @@
         ]
       ],
       "size": [
-        640,
-        512
+        1024,
+        640
+      ],
+      "full_resolution_quad": [
+        [
+          576.4499999999999,
+          255.15
+        ],
+        [
+          1143.45,
+          538.65
+        ],
+        [
+          1080.45,
+          850.5
+        ],
+        [
+          437.84999999999997,
+          620.55
+        ]
       ]
     },
     "hit_sky": {
@@ -56,8 +75,26 @@
         ]
       ],
       "size": [
-        512,
+        768,
         512
+      ],
+      "full_resolution_quad": [
+        [
+          0.0,
+          25.2
+        ],
+        [
+          567.0,
+          198.45
+        ],
+        [
+          447.3,
+          604.8
+        ],
+        [
+          0.0,
+          491.4
+        ]
       ]
     },
     "shabu": {
@@ -80,8 +117,26 @@
         ]
       ],
       "size": [
-        640,
+        768,
         160
+      ],
+      "full_resolution_quad": [
+        [
+          418.95,
+          686.6999999999999
+        ],
+        [
+          1004.85,
+          841.05
+        ],
+        [
+          989.1,
+          926.1
+        ],
+        [
+          400.05,
+          765.4499999999999
+        ]
       ]
     },
     "francais": {
@@ -104,8 +159,26 @@
         ]
       ],
       "size": [
-        640,
+        768,
         160
+      ],
+      "full_resolution_quad": [
+        [
+          396.9,
+          762.3
+        ],
+        [
+          985.9499999999999,
+          922.9499999999999
+        ],
+        [
+          970.1999999999999,
+          995.4
+        ],
+        [
+          378.0,
+          844.1999999999999
+        ]
       ]
     },
     "gusto": {
@@ -128,8 +201,26 @@
         ]
       ],
       "size": [
-        640,
+        768,
         160
+      ],
+      "full_resolution_quad": [
+        [
+          371.7,
+          847.35
+        ],
+        [
+          967.05,
+          998.55
+        ],
+        [
+          954.4499999999999,
+          1074.1499999999999
+        ],
+        [
+          352.8,
+          929.25
+        ]
       ]
     },
     "eyecity": {
@@ -154,6 +245,24 @@
       "size": [
         192,
         640
+      ],
+      "full_resolution_quad": [
+        [
+          151.2,
+          645.75
+        ],
+        [
+          308.7,
+          689.85
+        ],
+        [
+          185.85,
+          1143.45
+        ],
+        [
+          31.5,
+          1083.6
+        ]
       ]
     },
     "loccitane": {
@@ -177,8 +286,51 @@
       ],
       "size": [
         256,
-        128
+        80
+      ],
+      "full_resolution_quad": [
+        [
+          405,
+          1278
+        ],
+        [
+          532,
+          1293
+        ],
+        [
+          529,
+          1330
+        ],
+        [
+          399,
+          1315
+        ]
       ]
+    },
+    "longboard": {
+      "full_resolution_quad": [
+        [
+          991,
+          850
+        ],
+        [
+          1078,
+          882
+        ],
+        [
+          948,
+          1477
+        ],
+        [
+          851,
+          1460
+        ]
+      ],
+      "size": [
+        192,
+        1024
+      ],
+      "basis": "EK01 visible right-edge 17LIVE longboard; verified 2025-10-30 to 2025-11-30 campaign, photograph only; small top edge and bottom obstruction retained."
     }
   },
   "east_frontage_revision": {
@@ -196,5 +348,20 @@
     "date": "2026-10-14",
     "basis": "EK01 photograph and pixel inspection of existing licensed crops. Correct outward reading direction; map Samsung and three tenant strips once across arc and 13 m east return instead of repeating full crops. U split is proportional to existing modeled arc/return lengths, not a surveyed photo calibration.",
     "unchanged": "All texture pixels, source dates, geometry, anchor, footprint and HiT missing left edge."
+  },
+  "crop_revision": {
+    "source_size": [
+      4032,
+      2268
+    ],
+    "method": "Perspective reprojection of full-resolution original; no invented pixels. Roof HiT left edge remains outside photograph."
+  },
+  "geometry_revision": {
+    "date": "2026-10-14",
+    "main_facade": "NE curve and short north return",
+    "neighbor_wing": "long east return; HiT attribution to adjacent Daigai building unresolved within coarse PLATEAU shell",
+    "sigma_dimensions": "Samsung W21.6 H16.32 primary manufacturer; roof center41.5m and radius8.72m inferred",
+    "hit_dimensions": "W24.32 H17.28m historical approximate; 2024 official area approximately420sqm; partial16m artwork coverage estimated",
+    "ground": "82 recorded frontage samples explicitly reused; anchorTP15.29 unchanged"
   }
 }

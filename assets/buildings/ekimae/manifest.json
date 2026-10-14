@@ -2,103 +2,123 @@
   "id": "ekimae",
   "source_id": "way/60739635",
   "level": "B",
-  "status": "prototype; dimensions, partial cropped signs and storefront assignments approximate",
+  "status": "Photo-led facade revision; preserved georeferenced shell/anchor; middle facade and interiors inferred; HiT incomplete photograph retained as neutral gap",
   "sign_era": "2025-11-01",
   "sign_license": "CC BY-SA 4.0",
   "attribution": "Joli Rumi; see source/textures/LICENSE.md",
   "stats": {
-    "triangles": 6640,
-    "primitives": 18,
-    "bytes": 1736204
+    "triangles": 23822,
+    "primitives": 27,
+    "bytes": 2048704
   },
   "files": {
     "README.md": {
-      "bytes": 2350,
-      "sha256": "376845164c1099510d791be5a8078d15a855c5e76b9005ba10341897c4047dd9"
+      "bytes": 4534,
+      "sha256": "b6104f855a63cb9ab7a3d7433c5d37648ba0e37f004acf1e4d4ed25a8cac62ac"
     },
     "source/blender/build_ekimae.py": {
-      "bytes": 11009,
-      "sha256": "08b76a26585c858081ff106ae3d6538276fc14e4ca56075aea0bd28838fb01d0"
+      "bytes": 8007,
+      "sha256": "fc7447df1382d8fcc4979bf2d4ff43ced5c4bac0262756ef9dae3dde6a2b88a5"
+    },
+    "source/blender/ekimae-fidelity.blend": {
+      "bytes": 2606265,
+      "sha256": "f73606c20a1ef5cde8b002d0e5160cb2d1f0f8639edb0de5531b8f82836ccb25"
+    },
+    "source/blender/ekimae-uv.blend": {
+      "bytes": 1425808,
+      "sha256": "307314e82d306b216c20f6c0b8b168c96d792cb47c03f889bdf6ee9608ae96ab"
+    },
+    "source/blender/facade_detail.py": {
+      "bytes": 9090,
+      "sha256": "ecda8b52e689306b7fc9303d5d3033e7a76448fd456c0e6922709dd5fdd06276"
+    },
+    "source/blender/recrop_ek01.py": {
+      "bytes": 1824,
+      "sha256": "8db55a9c10ef19b15df81510e3351e4358ec1f1f34b3c0e7ec0ceddc7a661498"
+    },
+    "source/blender/render_ekimae.py": {
+      "bytes": 1414,
+      "sha256": "6180157df0ad3463473f14f409ad438183305683dc14dd963ac240e21ba99311"
+    },
+    "source/blender/save_editable.py": {
+      "bytes": 670,
+      "sha256": "8d44c57081700c0c2cce967fd56dc2ec4fc4b53f389454362dab5e8f06243fc3"
     },
     "source/data/facades.json": {
-      "bytes": 3725,
-      "sha256": "5a446f8a57173e222098bcb55891032409e358d3c2a4af0e90891cd4c455f5d9"
+      "bytes": 7215,
+      "sha256": "89a3b92c83354e070c9f730183ccce94f6438465a3910c6c9b6d53cf0f8e8e75"
     },
     "source/data/plateau.json": {
       "bytes": 8102,
       "sha256": "b3a9a323838f4f26f29607ff8dce0b33b236dc329b64e8f68282a370ad8c4661"
     },
     "source/data/stats.json": {
-      "bytes": 6331,
-      "sha256": "d99819ec1334e7a1afa36ed7949f4547624049548453a58f63739a34949c8f51"
+      "bytes": 6376,
+      "sha256": "e1efe430a3a6ef2bf0d6c63418a324baf90d3db475665e999346b557a06c9fc6"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
       "bytes": 919,
       "sha256": "a7d15c3337c1b91b34fed3b6cc670a753c8ebe6cc76c0035568a9c8e091138ca"
     },
     "source/refs/SOURCES.json": {
-      "bytes": 1603,
-      "sha256": "cb61e97d992b6496e1bd52970b94cf0ef0acd3c4ff482b3e93b7f90502fdfacd"
+      "bytes": 2759,
+      "sha256": "8c5dcae8b31c3934b44bd124a855056806b293500d6ddfbfaffa9dd3de07fe2a"
     },
     "source/textures/LICENSE.md": {
-      "bytes": 1019,
-      "sha256": "6a434f2a59e21db3d8113961a820d2cf063005883e691eeeee72f65d20aa9d0a"
+      "bytes": 1595,
+      "sha256": "661772ecfdb56ac6d4488c98ad4620fc426d69fc9955e0aad5507657fc00c1d8"
     },
     "source/textures/eyecity.png": {
-      "bytes": 177075,
-      "sha256": "f1c612a4d9289a3dca2e019df001949eddd3b7f768d7cb03aeae09a5e89630f3"
+      "bytes": 181762,
+      "sha256": "f6f648394ba725f615d42a5bfe63b14f040c85971a9ef0090283e6f3c29dd541"
     },
     "source/textures/francais.png": {
-      "bytes": 156546,
-      "sha256": "908456106b84346f76ffdb697369a606a47e08363dfe7103f49bff64eb9f3012"
+      "bytes": 192044,
+      "sha256": "490799041f797e14953a906c9dbd842ffe4761cf27bfd9ee33d14ff2b5a79d43"
     },
     "source/textures/gusto.png": {
-      "bytes": 161518,
-      "sha256": "87684149eba0692ce4a15631d2db182b98a8417dd56445d035daf22c40791401"
+      "bytes": 197968,
+      "sha256": "6cacbfbdb51507d615a76ee7a345e015146e04d73eb9851ec2e3debf7517a3d8"
     },
     "source/textures/hit_sky.png": {
-      "bytes": 235643,
-      "sha256": "fb55006480df220c7dde3fe25836b7b320cc70b3e7e4be9a03be6b5c89270c9b"
+      "bytes": 430078,
+      "sha256": "e3fc6c51428b7d8aed0b917746176f9db3e90ca956cd39c9296f2f943156b141"
     },
     "source/textures/loccitane.png": {
-      "bytes": 36769,
-      "sha256": "aacfcee0cc811d6a653a8b0fa6d032d9c028305606b56fbc541b1824e8d7da8e"
+      "bytes": 31363,
+      "sha256": "b6a238fbebddb30b8b13d6fb3ebb7ceec0f96b9fe7fc15cb8c337f98813ab1ba"
+    },
+    "source/textures/longboard.png": {
+      "bytes": 363199,
+      "sha256": "ee82529f6b05f4e50b713bda66d638905c006fccf31b28d0cf48147239424234"
     },
     "source/textures/samsung.png": {
-      "bytes": 235708,
-      "sha256": "959d09f8a4670f2ff88cc0c4604dcdaf3b8d220a377b13002a98abb9497b5edf"
+      "bytes": 519579,
+      "sha256": "3c35e3f3855396ca2063e7d1bc167dbf9e0e8fccf563a23ca6cd3025b42318d3"
     },
     "source/textures/shabu.png": {
-      "bytes": 161634,
-      "sha256": "d8d57887d8d8c31255a392cc2804a509dfd927f6b3c2f1112b8d476be15ae42d"
+      "bytes": 210010,
+      "sha256": "b99ac56035659c95d4c1f83ad3a7c238da9e36f01635d62a3b7bc09480714c03"
     },
     "web/ekimae.glb": {
-      "bytes": 542116,
-      "sha256": "5deef737ec1ecf4cafcfc4186318398944a3f4ee3265d8915158d79b5dea3d64"
+      "bytes": 1796908,
+      "sha256": "3ef781afe95a308ce77d8e563c89fea0b455bdfbb21747a27a2c28ca8da27c1d"
     },
     "web/emissive_day.json": {
-      "bytes": 1025,
-      "sha256": "b41a094628c76bc5603f8d706d1c8bae4e31b436a2f83dfe2a291854217a19e3"
+      "bytes": 1140,
+      "sha256": "c848d9910f22f27231b2d09c5b3ca0d5114d4e40bb8583474ab4ceeccb317306"
     },
     "web/emissive_night.json": {
-      "bytes": 1043,
-      "sha256": "192d990f1d2a42151da913bc698b5968ae841051e11b51339aeb5fb487cab336"
+      "bytes": 1160,
+      "sha256": "d03b6802d6edcd9234118a2340132fbf7298a64e360c0f94260e69a01fc1a886"
     },
     "web/signs-2025-11.glb": {
-      "bytes": 1194088,
-      "sha256": "a95e40a0c0718491d541e40b874fe86f465be247ec9a7726bdb9668bdc4114be"
+      "bytes": 251796,
+      "sha256": "27172c6adf0160133a7fbd629014c2f5431e34074be9ad9a4c75f520b554a8b4"
     },
     "web/viewer.json": {
       "bytes": 158,
       "sha256": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57"
-    },
-    "source/blender/save_editable.py": {
-      "bytes": 664,
-      "sha256": "d9d6108b2aef7d95bee6f18ccfc5621aeaf77ab02efad0ccba2018d7574a07bd"
-    },
-    "source/blender/ekimae-uv.blend": {
-      "bytes": 1425808,
-      "sha256": "307314e82d306b216c20f6c0b8b168c96d792cb47c03f889bdf6ee9608ae96ab"
     }
   }
 }

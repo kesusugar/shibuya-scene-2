@@ -10,7 +10,8 @@ assert bpy.app.version==(4,2,3)
 D=json.loads(Path(src).read_text());F=json.loads(Path(config).read_text());ROOT=Path(config).parent.parent;OUT=Path(out);OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 SIGN_ONLY='--signs-only' in sys.argv
-if not SIGN_ONLY: bpy.ops.import_scene.gltf(filepath=ground)
+RECORDED='--recorded-ground' in sys.argv
+if not SIGN_ONLY and not RECORDED: bpy.ops.import_scene.gltf(filepath=ground)
 bm=bmesh.new()
 for ob in list(bpy.context.scene.objects):
  if ob.type=='MESH' and ob.name.startswith(('ground_road','ground_sidewalk','ground_intersection','ground_fill')):
@@ -27,7 +28,7 @@ samples=[]
 for p in front:
  hit=bvh.ray_cast(Vector((p.x,p.y,60)),Vector((0,0,-1)))[0]
  if hit:samples.append({'x':round(p.x,3),'y':round(p.y,3),'tp':round(hit.z+15,3)})
-if SIGN_ONLY:
+if SIGN_ONLY or RECORDED:
  saved=json.loads((ROOT/'data/stats.json').read_text());samples=saved['frontage_samples']
 assert samples,'No frontage ground samples';anchor=min(p['tp'] for p in samples);BASE=D['ground_tp']-15
 for ob in list(bpy.context.scene.objects):bpy.data.objects.remove(ob,do_unlink=True)
@@ -69,58 +70,10 @@ for surface in D['surfaces']:
  if surface['kind']=='WallSurface' and all(p.x>-47 for p in ring) and all(p.y>-21 for p in ring):removed+=1;continue
  face('ek_wall' if surface['kind']=='WallSurface' else 'ek_roof',ring)
 H=D['top_tp']-D['ground_tp'];arc(H/2,H,'ek_wall')
-# North face: narrow square windows with red surrounds and horizontal ceramic/metal bands.
-for z in [5.1,8.5,11.9,15.3,18.7,22.1,25.5,28.9]:
- for u in [1.2,3.4,5.6,7.8,10,12.2,14.4]:
-  panel(u,z,1.7,2.6,'ek_red_frame');panel(u,z+.03,1.42,2.25,'ek_glass',.15)
- panel(L/2,z-1.55,L,.23,'ek_band',.18)
-# Rounded face: lower cafes and upper ribbon windows/restaurant bands.
-for z in [5.1,8.5,11.9,15.3,18.7]:
- arc(z,2.5,'ek_glass',.08);arc(z-1.45,.26,'ek_band',.17)
- for i in range(13):
-  a=START+(END-START)*i/12;arc(z,2.7,'ek_band',.15,start=a-.006,end=a+.006)
-for z in [4.0,7.2,10.4]:arc(z,.1,'ek_gold',.21)
-arc(1.6,3.2,'ek_yellow',.04)
-for i in range(5):
- a=START+(END-START)*(i+.5)/5;arc(1.5,2.4,'ek_shop_glass',.10,start=a+.115,end=a-.115)
-arc(3.0,.14,'ek_shop_light',.19)
-for u in [2,6,10,14]:panel(u,1.5,3.3,2.7,'ek_shop_glass',.14)
-# Correct the initially missing long east frontage as one facade item.
-for z in [5.1,8.5,11.9,15.3,18.7,22.1,25.5,28.9]:
- for i in range(15):
-  u=1.15+2.2*i;east_panel(u,z,1.75,2.65,'ek_red_frame');east_panel(u,z+.03,1.42,2.25,'ek_glass',.16)
- east_panel(EL/2,z-1.5,EL,.22,'ek_band',.19)
-for z in [5.1,8.5,11.9,15.3,18.7]:
- east_panel(6.5,z,12.9,2.65,'ek_glass',.2)
- for i in range(8):east_panel(.2+1.85*i,z,.07,2.7,'ek_band',.24)
- east_panel(6.5,z-1.5,13.0,.22,'ek_band',.26)
-east_panel(6.5,1.6,13.0,3.2,'ek_yellow',.22)
-for u in [2,5,8,11]:east_panel(u,1.5,2.4,2.6,'ek_shop_glass',.25)
-east_panel(6.5,3.0,13,.16,'ek_shop_light',.28)
-for z in [4,7.2,10.4]:east_panel(6.5,z,13,.10,'ek_gold',.27)
-# EK01: each crop spans both the curved corner and east return; never repeat it.
-SIGN_SPLIT=(R*(START-END))/(R*(START-END)+13.0)
-for name,z,h in [('shabu',29.4,2.65),('francais',26.1,3.1),('gusto',22.75,3.2)]:east_panel(6.5,z,13,h,'ek_sign_'+name,.29,'signs',uv_span=(1-SIGN_SPLIT,0))
-east_panel(15,17.2,2.8,22,'ek_sign_eyecity',.25,'signs')
-east_panel(6.5,7.0,7.5,1.5,'ek_sign_loccitane',.30,'signs')
-# Restaurant and vertical tenant signs: photographed November 1, 2025, not a February campaign.
-for name,z,h in [('shabu',29.4,2.65),('francais',26.1,3.1),('gusto',22.75,3.2)]:arc(z,h,'ek_sign_'+name,.23,'signs',uv_span=(1,1-SIGN_SPLIT))
-for z in [20.9,24.35,27.7,30.9]:arc(z,.22,'ek_band',.26)
-panel(10.8,17.2,2.8,22,'ek_sign_eyecity',.23,'signs')
-# L'OCCITANE store silhouette and green awning are photo-confirmed; branches conceal precise entrance count.
-arc(7.0,1.5,'ek_sign_loccitane',.24,'signs',math.radians(70),math.radians(15))
-for i in range(16):
- a=START+(END-START)*i/16;b=START+(END-START)*(i+1)/16
- face('ek_glass',[(CX+(R+.1)*math.cos(a),CY+(R+.1)*math.sin(a),3.35),(CX+(R+.1)*math.cos(b),CY+(R+.1)*math.sin(b),3.35),(CX+(R+1.0)*math.cos(b),CY+(R+1.0)*math.sin(b),2.75),(CX+(R+1.0)*math.cos(a),CY+(R+1.0)*math.sin(a),2.75)])
-# Rooftop billboards, support steel and backings. Height revised independently after the first comparison.
-roof=F['rooftop'];z,h=roof['center_height_m'],roof['height_m']
-arc(z,h+.25,'ek_screen_back',.20);east_panel(6.5,z,13.2,h+.25,'ek_screen_back',.20);arc(z,h,'ek_sign_samsung',.24,'signs',uv_span=(1,1-SIGN_SPLIT));east_panel(6.5,z,13,h,'ek_sign_samsung',.25,'signs',uv_span=(1-SIGN_SPLIT,0))
-panel(L/2,z,L,h,'ek_screen_back',.2);panel(L/2,z,L-.15,h-.15,'ek_sign_hit_sky',.24,'signs')
-for i in range(7):
- a=START+(END-START)*i/6;p=Vector((CX+(R-.18)*math.cos(a),CY+(R-.18)*math.sin(a),0));box((p.x,p.y,(31.36+z+h/2)/2),(.12,.12,z+h/2-31.36),'ek_steel')
-for u in [0,L/3,2*L/3,L]:
- p=A+T*u-N*.16;box((p.x,p.y,(31.36+z+h/2)/2),(.12,.12,z+h/2-31.36),'ek_steel')
-for zz in [z-h/2,z,z+h/2]:arc(zz,.12,'ek_steel',-.2)
+# Photo-led full facade replacement, separate from original PLATEAU shell.
+sys.path.insert(0,str(Path(__file__).parent))
+from facade_detail import build
+build(globals())
 objects=[]
 for (layer,name),bm in GROUP.items():
  bmesh.ops.triangulate(bm,faces=bm.faces[:]);me=bpy.data.meshes.new(name);bm.to_mesh(me);bm.free();me.materials.append(M[name]);me.calc_loop_triangles();ob=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(ob);objects.append((layer,ob))
@@ -129,7 +82,7 @@ for layer,file in [('base','ekimae.glb'),('signs','signs-2025-11.glb')]:
  if SIGN_ONLY and layer=='base':continue
  bpy.ops.object.select_all(action='DESELECT')
  for kind,ob in objects:ob.select_set(kind==layer)
- bpy.ops.export_scene.gltf(filepath=str(OUT/file),export_format='GLB',use_selection=True,export_yup=True)
+ bpy.ops.export_scene.gltf(filepath=str(OUT/file),export_format='GLB',use_selection=True,export_yup=True,export_image_format='JPEG',export_jpeg_quality=90)
  counts[layer]={'meshes':sum(k==layer for k,o in objects),'triangles':sum(len(o.data.loop_triangles) for k,o in objects if k==layer)}
 if SIGN_ONLY:
  print('EKIMAE signs-only: base, anchor, viewer and stats preserved',counts);sys.exit(0)
@@ -138,5 +91,9 @@ points=[p for s in D['surfaces'] for p in s['ring']]
 for mode in ['day','night']:
  rows={name:{'kind':'led' if name.startswith('ek_sign_') else 'interior','emit':[1,.9,.75],'estr':(1.2 if name in ['ek_sign_samsung','ek_sign_hit_sky'] else .5 if name.startswith('ek_sign_') else .4) if mode=='night' else 0} for name in M if name.startswith('ek_sign_') or name in ['ek_shop_glass','ek_shop_light']}
  (OUT/f'emissive_{mode}.json').write_text(json.dumps(rows,indent=2)+'\n')
-(ROOT/'data/stats.json').write_text(json.dumps({'source_id':D['id'],'plateau_id':D['plateau_id'],'anchor_tp':anchor,'plateau_ground_tp':D['ground_tp'],'roof_deviation_vs_plateau_m':anchor-D['ground_tp'],'frontage_samples':samples,'replaced_corner_faces':removed,'geometry':counts,'status':'B prototype; facade/entrances estimated; rooftop/tenant images November 2025 CC BY-SA 4.0'},indent=2)+'\n')
+(ROOT/'data/stats.json').write_text(json.dumps({'source_id':D['id'],'plateau_id':D['plateau_id'],'anchor_tp':anchor,'plateau_ground_tp':D['ground_tp'],'roof_deviation_vs_plateau_m':anchor-D['ground_tp'],'frontage_samples':samples,'replaced_corner_faces':removed,'geometry':counts,'status':'Photo-led revision; interior and unseen surfaces inferred; November 2025 signs CC BY-SA 4.0', 'ground_sample_mode':'recorded reuse' if RECORDED else 'fresh raycast'},indent=2)+'\n')
+bpy.context.scene.unit_settings.system='METRIC'
+bpy.context.scene.unit_settings.scale_length=1
+bpy.ops.file.pack_all()
+bpy.ops.wm.save_as_mainfile(filepath=str(Path(__file__).parent/'ekimae-fidelity.blend'),compress=True)
 print('EKIMAE',anchor,counts,'replaced wall faces',removed)

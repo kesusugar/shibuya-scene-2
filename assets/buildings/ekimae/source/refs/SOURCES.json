@@ -8,7 +8,12 @@
       "license": "CC BY-SA 4.0",
       "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_Tokyo,_Japan.jpg",
       "use": "November textures and facade types; partial/obstructed crops documented",
-      "sha256": "e338994724e2a3996f57d59963df5797c3e6109ce16dff6093a91c490994e987"
+      "sha256": "e338994724e2a3996f57d59963df5797c3e6109ce16dff6093a91c490994e987",
+      "full_resolution_sha256": "df6f54bfc4a44c030deffa5335c01aa78a1dd19c05f6b2b497be66f06e21defa",
+      "full_resolution_size": [
+        4032,
+        2268
+      ]
     },
     {
       "id": "EK02",
@@ -33,5 +38,33 @@
   ],
   "metadata_register": "docs/core/building_refs/REFERENCE_REGISTER.csv",
   "commons_metadata": "docs/core/building_refs/commons_crossing_metadata.json",
-  "plateau_source": "assets/context/core/source/data/context_input.json from PR9 PLATEAU 2025 selection"
+  "plateau_source": "assets/context/core/source/data/context_input.json from PR9 PLATEAU 2025 selection",
+  "dimension_sources": [
+    {
+      "url": "https://chromatek.hibino.co.jp/usecase/shibuyaekimaevision/",
+      "use": "Samsung screen21.6x16.32m; text dimensions only"
+    },
+    {
+      "url": "https://www.yunikavision.jp/news/U1kIrR6P",
+      "use": "2024-12-24 corroborates Samsung screen dimensions"
+    },
+    {
+      "url": "https://www.shibukei.com/headline/10148/",
+      "use": "HiT historical24.32x17.28m approximation, not current verified survey"
+    },
+    {
+      "url": "https://www.hit-ad.co.jp/news/s5rr5n00000007rd-att/240226_shibuhachi_replace.pdf",
+      "use": "2024 replacement approx420sqm only"
+    }
+  ],
+  "view_only_sources": [
+    {
+      "url": "https://prtimes.jp/main/html/rd/p/000000467.000011965.html",
+      "use": "2024 Loccitane renovation shapes, no image redistribution/texture"
+    },
+    {
+      "url": "https://8pro.media/ichika/news/20251030-00.html",
+      "use": "17LIVE campaign dates only; all texture pixels from licensed EK01"
+    }
+  ]
 }

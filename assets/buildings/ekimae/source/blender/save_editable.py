@@ -11,4 +11,4 @@ for name in ('ekimae.glb', 'signs-2025-11.glb'):
 bpy.context.scene.unit_settings.system = 'METRIC'
 bpy.context.scene.unit_settings.scale_length = 1
 bpy.ops.file.pack_all()
-bpy.ops.wm.save_as_mainfile(filepath=str(Path(__file__).with_name('ekimae-uv.blend')), compress=True)
+bpy.ops.wm.save_as_mainfile(filepath=str(Path(__file__).with_name('ekimae-fidelity.blend')), compress=True)
