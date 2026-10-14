@@ -419,8 +419,8 @@
   ],
   "geometry": {
     "base": {
-      "meshes": 16,
-      "triangles": 1101
+      "meshes": 17,
+      "triangles": 1873
     },
     "signs": {
       "meshes": 9,
