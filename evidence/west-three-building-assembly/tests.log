@@ -1,0 +1,10 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+ RUN  v5.0.3 /workspace/shared/three_building_final
+
+
+ Test Files  6 passed (6)
+      Tests  24 passed (24)
+   Start at  23:07:06
+   Duration  1.46s (tests 65%, transform 18%, import 15%, worker 1%)
+
