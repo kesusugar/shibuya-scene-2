@@ -1,0 +1,26 @@
+
+ RUN  v5.0.3 /workspace/shared/four_building_final
+
+ ❯ tests/west-block.test.ts (3 tests | 1 failed) 609ms
+   × keeps the revised curved and planar signs on their specified surfaces and visible through the shell 33ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/west-block.test.ts > keeps the revised curved and planar signs on their specified surfaces and visible through the shell
+AssertionError: expected -32.535484313964844 to be close to -32.510506, received difference is 0.02497831396484429, but expected 0.0005
+ ❯ tests/west-block.test.ts:108:21
+    106|   // Full-asset east extent is 2.3075m beyond PLATEAU (baseline alread…
+    107|   // Keep a millimetre-scale regression guard, not a broad allowance f…
+    108|   expect(wholeEast).toBeCloseTo(-32.510506,3);
+       |                     ^
+    109|   for (const s of surfaces) {
+    110|    const points = seen.get('west_sign_'+s.name)!;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 2 passed (3)
+      Tests  1 failed | 11 passed (12)
+   Start at  23:50:32
+   Duration  1.32s (tests 82%, import 9%, transform 9%, worker 1%)
+

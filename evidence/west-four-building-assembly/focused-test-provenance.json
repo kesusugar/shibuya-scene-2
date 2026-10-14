@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    {
+      "path": "tests/west-block.test.ts",
+      "source": "/workspace/shared/west_storefront_review/tests/west-block.test.ts",
+      "bytes": 8245,
+      "sha256": "7e8be72634acadc8f7566fa5c331047f6c3c984fb823c5842678edc238ecdb1b"
+    },
+    {
+      "path": "tests/daiichi-kangin.test.ts",
+      "source": "/workspace/shared/three_building_final/tests/daiichi-kangin.test.ts",
+      "bytes": 4711,
+      "sha256": "b81477f62c6b53659132010b10332a141f7973fa0f869655644ba6e4aed895e5"
+    },
+    {
+      "path": "tests/ekimae.test.ts",
+      "source": "/workspace/shared/three_building_final/tests/ekimae.test.ts",
+      "bytes": 6788,
+      "sha256": "2229eecfadd591cd1abb7709193a33d357baceede91e603082a9b530b8a8d9a9"
+    }
+  ],
+  "results": "12/12 pass; tsc --noEmit exit 0",
+  "scope": "Focused suites only; no full suite/build"
+}

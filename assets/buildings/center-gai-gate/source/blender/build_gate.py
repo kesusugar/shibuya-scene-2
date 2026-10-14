@@ -11,20 +11,26 @@ layout, ground, output = sys.argv[sys.argv.index('--')+1:][:3]
 assert bpy.app.version == (4,2,3)
 L=json.loads(Path(layout).read_text());OUT=Path(output);OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
-bpy.ops.import_scene.gltf(filepath=ground)
-bm=bmesh.new()
-for ob in list(bpy.context.scene.objects):
-    if ob.type=='MESH' and ob.name.startswith(('ground_road','ground_intersection','ground_sidewalk','ground_fill')):
-        me=ob.data.copy();me.transform(ob.matrix_world);bm.from_mesh(me);bpy.data.meshes.remove(me)
-bvh=BVHTree.FromBMesh(bm);bm.free();feet=[]
-for i,(x,y) in enumerate(L['foot_points']):
-    hits=[]
-    for dx,dy in [(0,0),(-.22,0),(.22,0),(0,-.22),(0,.22)]:
-        hit=bvh.ray_cast(Vector((x+dx,y+dy,80)),Vector((0,0,-1)))[0]
-        if hit:hits.append({'x':x+dx,'y':y+dy,'tp':hit.z+15})
-    assert len(hits)>=3, f'Foot {i}: insufficient ground coverage'
-    tp=sorted(h['tp'] for h in hits)[len(hits)//2]
-    feet.append({'xy':[x,y],'tp':tp,'min_tp':min(h['tp'] for h in hits),'max_tp':max(h['tp'] for h in hits),'samples':hits})
+# '-' explicitly reuses checked historic C2a samples; it does NOT make a new terrain observation.
+if ground == '-':
+    recorded=json.loads((Path(layout).parent/'recorded_ground.json').read_text())
+    feet=recorded['feet']
+    assert [f['xy'] for f in feet] == L['foot_points']
+else:
+    bpy.ops.import_scene.gltf(filepath=ground)
+    bm=bmesh.new()
+    for ob in list(bpy.context.scene.objects):
+        if ob.type=='MESH' and ob.name.startswith(('ground_road','ground_intersection','ground_sidewalk','ground_fill')):
+            me=ob.data.copy();me.transform(ob.matrix_world);bm.from_mesh(me);bpy.data.meshes.remove(me)
+    bvh=BVHTree.FromBMesh(bm);bm.free();feet=[]
+    for i,(x,y) in enumerate(L['foot_points']):
+        hits=[]
+        for dx,dy in [(0,0),(-.22,0),(.22,0),(0,-.22),(0,.22)]:
+            hit=bvh.ray_cast(Vector((x+dx,y+dy,80)),Vector((0,0,-1)))[0]
+            if hit:hits.append({'x':x+dx,'y':y+dy,'tp':hit.z+15})
+        assert len(hits)>=3, f'Foot {i}: insufficient ground coverage'
+        tp=sorted(h['tp'] for h in hits)[len(hits)//2]
+        feet.append({'xy':[x,y],'tp':tp,'min_tp':min(h['tp'] for h in hits),'max_tp':max(h['tp'] for h in hits),'samples':hits})
 for ob in list(bpy.context.scene.objects):bpy.data.objects.remove(ob,do_unlink=True)
 A,B=[Vector((*f['xy'],f['tp']-15)) for f in feet];span=(Vector(B.xy)-Vector(A.xy)).length
 T=Vector((B.x-A.x,B.y-A.y,0)).normalized();N=Vector((T.y,-T.x,0));Z=Vector((0,0,1))
@@ -59,16 +65,62 @@ def crook(p,toward):
     for k in range(1,9):
         a=math.pi/2*k/8;pts.append(tip+toward*.45*math.sin(a)-Z*.45*(1-math.cos(a)))
     return pts
+# 2025 Jan/Feb casing: shallow chamfered rectangular shell, not round tube.
+# The seven-character permanent name is a self-authored approximate Noto Sans CJK JP label.
+label_mat=bpy.data.materials.new('gate_name');label_mat.use_nodes=True
+nt=label_mat.node_tree; txlabel=nt.nodes.new('ShaderNodeTexImage')
+txlabel.image=bpy.data.images.load(str(Path(layout).parent.parent/'textures'/'permanent_name.png'))
+nt.links.new(txlabel.outputs['Color'],nt.nodes['Principled BSDF'].inputs['Base Color'])
+nt.nodes['Principled BSDF'].inputs['Roughness'].default_value=.7
+LABEL=bmesh.new();luv=LABEL.loops.layers.uv.verify()
+mat('gate_recess',(.23,.27,.25),.15,.65)
+mat('gate_ribs',(.72,.75,.71),.25,.48)
+def casing(p,toward):
+    # Broad side panel rising from lower shoulder; terminal cap tapers inward.
+    pts=[]; widths=[]
+    for k in range(25):
+        t=k/24
+        # Quarter elliptical bend with tangent vertical at the shoulder.
+        angle=t*math.pi/2
+        pts.append(p+Z*(L['casing_shoulder_m']+L['casing_rise_m']*math.sin(angle))+toward*(1.5*(1-math.cos(angle))))
+        widths.append(.27+.10*math.sin(math.pi*t)-.17*t**5)
+    rings=[]; normals=[]
+    for i,q in enumerate(pts):
+        tangent=(pts[min(i+1,24)]-pts[max(i-1,0)]).normalized()
+        v=tangent.cross(N).normalized(); normals.append(v)
+        w=widths[i]; dep=L['casing_depth_m']/2; bevel=.035
+        section=[(-dep+bevel,-w), (dep-bevel,-w), (dep,-w+bevel), (dep,w-bevel), (dep-bevel,w),(-dep+bevel,w),(-dep,w-bevel),(-dep,-w+bevel)]
+        rings.append([q+N*x+v*y for x,y in section])
+    for ar,br in zip(rings,rings[1:]):
+        for j in range(8):face('gate_crook',[ar[j],ar[(j+1)%8],br[(j+1)%8],br[j]])
+    face('gate_crook',list(reversed(rings[0])));face('gate_crook',rings[-1])
+    # Restrained outlined strip follows the casing on its observed outward face.
+    # Back is plain because fine reverse-side details are not established by the sources.
+    for i in range(1,22):
+        j=i+1; off=N*(L['casing_depth_m']/2+.001)
+        wi=widths[i]*.74; wj=widths[j]*.74
+        face('gate_recess',[pts[i]-normals[i]*wi+off,pts[j]-normals[j]*wj+off,pts[j]+normals[j]*wj+off,pts[i]+normals[i]*wi+off])
+        off+=N*.002; wi-=.018; wj-=.018
+        q=[pts[i]-normals[i]*wi+off,pts[j]-normals[j]*wj+off,pts[j]+normals[j]*wj+off,pts[i]+normals[i]*wi+off]
+        f=LABEL.faces.new([LABEL.verts.new(x) for x in q])
+        for loop,uvp in zip(f.loops,[(0,(i-1)/21),(0,(j-1)/21),(1,(j-1)/21),(1,(i-1)/21)]):loop[luv].uv=uvp
+    return pts
+
 tips=[]
 for i,(p,toward) in enumerate([(A,T),(B,-T)]):
     bottom=feet[i]['min_tp']-15-.025
     tube('gate_base',[Vector((p.x,p.y,bottom)),p+Z*L['base_height_m']],L['base_radius_m'])
-    path=crook(p,toward)
-    tube('gate_crook',path[:2],L['post_radius_m'])
-    tube('gate_crook',path[1:],L['crook_tube_radius_m'],20)
-    # collar ring where the post meets the thicker crook (visible joint in WB01)
-    tube('gate_frame',[path[1]-Z*.12,path[1]+Z*.08],L['crook_tube_radius_m']+.04,20)
+    tube('gate_crook',[p+Z*L['base_height_m'],p+Z*L['casing_shoulder_m']],L['post_radius_m'])
+    casing(p,toward)
+    # Three pale projecting ribs and a recessed dark sleeve, corroborated Jan/Feb/Nov.
+    h=L['casing_shoulder_m']
+    tube('gate_recess',[p+Z*(h-.42),p+Z*(h+.03)],.235,20)
+    for z in [h-.36,h-.20,h-.04]:
+        tube('gate_ribs',[p+Z*(z-.035),p+Z*(z+.035)],.315,24)
+    path=crook(p,toward) # Preserve the existing banner anchor and lamp positions exactly.
     tips.append(path[-1])
+    # Estimated narrow support neck joins the fixed legacy lamp/hanger to the casing underside.
+    tube('gate_crook',[path[-1]-Z*.025,p+toward*1.5+Z*(L['casing_shoulder_m']+L['casing_rise_m'])],.065,12)
     tube('gate_lamp',[path[-1]-Z*.02,path[-1]-Z*.16],.11,16)
 # Flat banner between the tips: structural backing (gate_panel, dark) plus the January-2025 banner in a separate layer.
 la,lb=tips;mid_top=(la+lb)/2-Z*.25;W=L['banner_width_m'];Hb=L['banner_height_m']
@@ -92,6 +144,11 @@ counts={}
 for name,bm in G.items():
     bmesh.ops.triangulate(bm,faces=bm.faces[:]);me=bpy.data.meshes.new(name);bm.to_mesh(me);bm.free();me.materials.append(M[name]);me.calc_loop_triangles()
     ob=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(ob);counts[name]=len(me.loop_triangles)
+bmesh.ops.triangulate(LABEL,faces=LABEL.faces[:]);me=bpy.data.meshes.new('gate_name');LABEL.to_mesh(me);LABEL.free();me.materials.append(label_mat)
+ob=bpy.data.objects.new('gate_name',me);bpy.context.collection.objects.link(ob);me.calc_loop_triangles();counts['gate_name']=len(me.loop_triangles)
+actual_top=max((ob.matrix_world @ v.co).z for ob in bpy.context.scene.objects if ob.type=='MESH' for v in ob.data.vertices)
+bpy.ops.file.pack_all()
+bpy.ops.wm.save_as_mainfile(filepath=str(Path(layout).parent.parent/'blender'/'center-gai-gate.blend'))
 bpy.ops.export_scene.gltf(filepath=str(OUT/'center-gai-gate.glb'),export_format='GLB',export_yup=True)
 for ob in list(bpy.context.scene.objects):bpy.data.objects.remove(ob,do_unlink=True)
 me=bpy.data.meshes.new('gate_sign_banner');SIGN.to_mesh(me);SIGN.free();me.materials.append(sm)
@@ -102,6 +159,7 @@ hints={'groundElevationTP':15,'layers':{'signs':'signs-2025-01.glb'},'planBounds
 for mode in ['day','night']:
     emit={'gate_lamp':{'kind':'interior','emit':[1,.95,.78],'estr':L['night_emission'] if mode=='night' else L['day_emission']},'gate_sign_banner':{'kind':'led','emit':[1,.92,.8],'estr':.5 if mode=='night' else 0}}
     (OUT/f'emissive_{mode}.json').write_text(json.dumps(emit,indent=2)+'\n')
-stats={'id':L['id'],'source_id':L['source_id'],'datum_tp_m':15,'feet':feet,'span_m':span,'top_local_m':max(p.z for p in path)+L['crook_tube_radius_m'],'min_clear_height_m':bl.z-max(A.z,B.z),'triangles':sum(counts.values()),'primitives':len(counts),'materials':counts,'position_basis':L['position_basis'],'status':'B photo-type prototype; two crook posts and a flat banner (Claude review R2); foot placement and dimensions estimated; banner = January 2025 photo extract in the signs layer'}
+stats={'id':L['id'],'source_id':L['source_id'],'datum_tp_m':15,'feet':feet,'span_m':span,'top_local_m':actual_top,'min_clear_height_m':bl.z-max(A.z,B.z),'triangles':sum(counts.values()),'primitives':len(counts),'materials':counts,'position_basis':L['position_basis'],'status':'B photo-type prototype; tapered planar casings and triple collars from Jan/Feb/Nov 2025; foot placement and dimensions estimated; January banner unchanged; permanent Noto Sans CJK JP glyph style approximate'}
 Path(layout).with_name('stats.json').write_text(json.dumps(stats,indent=2)+'\n')
 print('GATE',stats['triangles'],stats['primitives'],[f['tp'] for f in feet],stats['min_clear_height_m'])
+

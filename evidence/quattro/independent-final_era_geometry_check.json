@@ -1,0 +1,122 @@
+{
+  "triangles": 4,
+  "primitives": 2,
+  "textures": 2,
+  "materials": [
+    {
+      "name": "quattro_january_blade_0",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "baseTexture": true,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_january_blade_1",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "baseTexture": true,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "source_vertex_max_distance_m": 21.93790694074679,
+  "bounds": [
+    [
+      -53.009910583496094,
+      -41.147396087646484
+    ],
+    [
+      52.27976989746094,
+      63.7910270690918
+    ],
+    [
+      5.119999885559082,
+      15.180000305175781
+    ]
+  ],
+  "mesh_results": [
+    {
+      "node": "january_blade_0",
+      "material": "quattro_january_blade_0",
+      "triangles": 2,
+      "bounds": [
+        [
+          -53.009910583496094,
+          -52.50230026245117
+        ],
+        [
+          63.26640319824219,
+          63.7910270690918
+        ],
+        [
+          5.119999885559082,
+          15.180000305175781
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        }
+      }
+    },
+    {
+      "node": "january_blade_1",
+      "material": "quattro_january_blade_1",
+      "triangles": 2,
+      "bounds": [
+        [
+          -41.655006408691406,
+          -41.147396087646484
+        ],
+        [
+          52.27976989746094,
+          52.80439376831055
+        ],
+        [
+          5.119999885559082,
+          15.180000305175781
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        }
+      }
+    }
+  ]
+}

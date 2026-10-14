@@ -1,0 +1,12 @@
+{
+  "context_input": {
+    "git_blob": "665b4701bf14e5931d7abe1d0beb06ed99384efb",
+    "bytes": 1818630,
+    "source": "Existing shared pinned data; Git blob matches current connector SHA"
+  },
+  "context_stats": {
+    "git_blob": "b78161fdcca042bf2cc033696c2ecf12cf2984c2",
+    "bytes": 69617,
+    "source": "Existing shared pinned data; Git blob matches current connector SHA"
+  }
+}

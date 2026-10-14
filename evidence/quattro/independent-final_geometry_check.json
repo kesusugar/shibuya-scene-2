@@ -1,0 +1,662 @@
+{
+  "triangles": 4300,
+  "primitives": 14,
+  "textures": 0,
+  "materials": [
+    {
+      "name": "quattro_roof",
+      "baseColor": [
+        0.07500000298023224,
+        0.0820000022649765,
+        0.08100000023841858,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_wall",
+      "baseColor": [
+        0.6600000262260437,
+        0.6299999952316284,
+        0.5199999809265137,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_glass_dim",
+      "baseColor": [
+        0.07500000298023224,
+        0.12999999523162842,
+        0.15000000596046448,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_silver",
+      "baseColor": [
+        0.4699999988079071,
+        0.5099999904632568,
+        0.5199999809265137,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_glass",
+      "baseColor": [
+        0.11999999731779099,
+        0.20999999344348907,
+        0.23000000417232513,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_edge",
+      "baseColor": [
+        0.15000000596046448,
+        0.17000000178813934,
+        0.18000000715255737,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_shadow",
+      "baseColor": [
+        0.024000000208616257,
+        0.029999999329447746,
+        0.03099999949336052,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_sign_back",
+      "baseColor": [
+        0.5699999928474426,
+        0.5699999928474426,
+        0.5299999713897705,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_red_housing",
+      "baseColor": [
+        0.47999998927116394,
+        0.014000000432133675,
+        0.026000000536441803,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "name": "quattro_hood_brown",
+      "baseColor": [
+        0.18000000715255737,
+        0.10000000149011612,
+        0.08500000089406967,
+        1
+      ],
+      "baseTexture": false,
+      "emissiveTexture": false,
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "source_vertex_max_distance_m": 3.373814538444309e-06,
+  "bounds": [
+    [
+      -53.236328125,
+      -35.67399215698242
+    ],
+    [
+      52.21244430541992,
+      75.0489730834961
+    ],
+    [
+      0.6589999794960022,
+      31.014999389648438
+    ]
+  ],
+  "mesh_results": [
+    {
+      "node": "quattro_roof",
+      "material": "quattro_roof",
+      "triangles": 11,
+      "bounds": [
+        [
+          -52.58100128173828,
+          -35.69300079345703
+        ],
+        [
+          52.88399887084961,
+          75.02999877929688
+        ],
+        [
+          15.586000442504883,
+          31.014999389648438
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.11214795185961
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 67.41425744923748
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 0.8289405335703411
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 50.0467097553683
+        }
+      }
+    },
+    {
+      "node": "quattro_wall",
+      "material": "quattro_wall",
+      "triangles": 121,
+      "bounds": [
+        [
+          -52.6119270324707,
+          -35.67399215698242
+        ],
+        [
+          52.88399887084961,
+          75.0489730834961
+        ],
+        [
+          0.6589999794960022,
+          31.014999389648438
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.110819520607624
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 67.41425744923748
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 0.8289405335703411
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 50.0467097553683
+        }
+      }
+    },
+    {
+      "node": "quattro_glass_dim_details",
+      "material": "quattro_glass_dim",
+      "triangles": 168,
+      "bounds": [
+        [
+          -52.395023345947266,
+          -41.26337432861328
+        ],
+        [
+          53.090084075927734,
+          63.86162185668945
+        ],
+        [
+          0.8600000143051147,
+          15.199999809265137
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.454100719764451
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 76.3281979158708
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 12.87472283828278
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 62.004814588715895
+        }
+      }
+    },
+    {
+      "node": "quattro_silver_details",
+      "material": "quattro_silver",
+      "triangles": 2948,
+      "bounds": [
+        [
+          -53.0717887878418,
+          -38.47422790527344
+        ],
+        [
+          52.21244430541992,
+          71.21906280517578
+        ],
+        [
+          0.6589999794960022,
+          29.896034240722656
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.103363396532261
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 70.56037702287979
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 4.764130310929438
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 53.986560091596274
+        }
+      }
+    },
+    {
+      "node": "quattro_glass_details",
+      "material": "quattro_glass",
+      "triangles": 144,
+      "bounds": [
+        [
+          -50.44025421142578,
+          -41.26337432861328
+        ],
+        [
+          53.090084075927734,
+          61.970252990722656
+        ],
+        [
+          4.690000057220459,
+          15.199999809265137
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.454100719764451
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 78.7139349673974
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 12.914091788466045
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 63.37313901436404
+        }
+      }
+    },
+    {
+      "node": "quattro_edge_details",
+      "material": "quattro_edge",
+      "triangles": 416,
+      "bounds": [
+        [
+          -52.987728118896484,
+          -37.59521484375
+        ],
+        [
+          52.50184631347656,
+          71.39846801757812
+        ],
+        [
+          0.6589999794960022,
+          28.58806800842285
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.092432959466336
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 70.16559238281164
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 4.228942123272315
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 53.96357077103442
+        }
+      }
+    },
+    {
+      "node": "quattro_shadow_details",
+      "material": "quattro_shadow",
+      "triangles": 28,
+      "bounds": [
+        [
+          -50.54859924316406,
+          -41.46098709106445
+        ],
+        [
+          53.07279586791992,
+          66.28067016601562
+        ],
+        [
+          0.8199999928474426,
+          25.66283416748047
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.62958328298179
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 78.96146623692684
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 13.097797750474546
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 63.686652114424774
+        }
+      }
+    },
+    {
+      "node": "quattro_sign_back_details",
+      "material": "quattro_sign_back",
+      "triangles": 60,
+      "bounds": [
+        [
+          -53.236328125,
+          -41.110939025878906
+        ],
+        [
+          52.248470306396484,
+          64.02003479003906
+        ],
+        [
+          4.880000114440918,
+          15.25
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.226105810538252
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 76.1026339471525
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 12.799532529298173
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 61.91259134669861
+        }
+      }
+    },
+    {
+      "node": "quattro_red_housing_details",
+      "material": "quattro_red_housing",
+      "triangles": 48,
+      "bounds": [
+        [
+          -53.02141189575195,
+          -41.148834228515625
+        ],
+        [
+          52.28116226196289,
+          63.802154541015625
+        ],
+        [
+          4.960000038146973,
+          15.180000305175781
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.23954258592107
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 76.34703095115287
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 12.970796417633181
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 62.0943205080941
+        }
+      }
+    },
+    {
+      "node": "quattro_roof_details",
+      "material": "quattro_roof",
+      "triangles": 340,
+      "bounds": [
+        [
+          -51.94347381591797,
+          -38.690059661865234
+        ],
+        [
+          53.50422286987305,
+          70.92479705810547
+        ],
+        [
+          15.596060752868652,
+          28.819049835205078
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 14.93038094646879
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 70.85061917700646
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 5.0335008218249735
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 54.261673599561455
+        }
+      }
+    },
+    {
+      "node": "quattro_roof_lower_hood_details",
+      "material": "quattro_roof",
+      "triangles": 2,
+      "bounds": [
+        [
+          -50.44597244262695,
+          -41.26953887939453
+        ],
+        [
+          56.31282043457031,
+          66.43424224853516
+        ],
+        [
+          21.01067352294922,
+          22.139511108398438
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 16.32518600338519
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 74.74207216924295
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 9.205402347018222
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 58.842548078283386
+        }
+      }
+    },
+    {
+      "node": "quattro_wall_details",
+      "material": "quattro_wall",
+      "triangles": 10,
+      "bounds": [
+        [
+          -50.44597244262695,
+          -39.81722640991211
+        ],
+        [
+          56.31282043457031,
+          70.05720520019531
+        ],
+        [
+          18.660673141479492,
+          28.919414520263672
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        }
+      }
+    },
+    {
+      "node": "quattro_hood_brown_details",
+      "material": "quattro_hood_brown",
+      "triangles": 2,
+      "bounds": [
+        [
+          -49.8681755065918,
+          -42.016475677490234
+        ],
+        [
+          60.929771423339844,
+          69.46666717529297
+        ],
+        [
+          25.622936248779297,
+          26.372068405151367
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": 18.494281101487
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 72.01154707858404
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 6.594105862023741
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": 55.81313894685656
+        }
+      }
+    },
+    {
+      "node": "quattro_roof_upper_opening_details",
+      "material": "quattro_shadow",
+      "triangles": 2,
+      "bounds": [
+        [
+          -48.34577178955078,
+          -40.113616943359375
+        ],
+        [
+          61.22080993652344,
+          69.31782531738281
+        ],
+        [
+          27.17533302307129,
+          28.919414520263672
+        ]
+      ],
+      "protected": {
+        "qfront": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/136692138 \u897f\u6b66\u6e0b\u8c37\u5e97\u30ed\u30d5\u30c8\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/55896465 \u897f\u6b66\u6e0b\u8c37\u5e97A\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        },
+        "way/136692137 \u897f\u6b66\u6e0b\u8c37\u5e97B\u9928": {
+          "intersection_m2": 0.0,
+          "clearance_m": NaN
+        }
+      }
+    }
+  ]
+}

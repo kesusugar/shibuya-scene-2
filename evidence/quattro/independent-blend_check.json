@@ -1,0 +1,44 @@
+{
+  "blender_version": "4.2.3 LTS",
+  "images": [
+    {
+      "name": "blade-1-2025-01.png",
+      "packed": true,
+      "source": "FILE",
+      "size": [
+        96,
+        960
+      ]
+    },
+    {
+      "name": "blade-2-2025-01.png",
+      "packed": true,
+      "source": "FILE",
+      "size": [
+        96,
+        960
+      ]
+    }
+  ],
+  "era_collections": [
+    {
+      "name": "JANUARY_2025_UNREGISTERED",
+      "hide_render": true,
+      "hide_viewport": true,
+      "objects": [
+        "january_blade_0",
+        "january_blade_1"
+      ]
+    }
+  ],
+  "original_shell": [
+    {
+      "name": "quattro_roof",
+      "preserved_flag": true
+    },
+    {
+      "name": "quattro_wall",
+      "preserved_flag": true
+    }
+  ]
+}

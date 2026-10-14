@@ -1,0 +1,86 @@
+23:41:21 | INFO: Data are loaded, start creating Blender stuff
+23:41:21 | INFO: Blender create Mesh node c244_roof
+23:41:21 | INFO: Blender create Mesh node c244_stone_dark
+23:41:21 | INFO: Blender create Mesh node c244_joint
+23:41:21 | INFO: Blender create Mesh node c244_stone
+23:41:21 | INFO: Blender create Mesh node c244_stone_light
+23:41:21 | INFO: Blender create Mesh node c244_reveal
+23:41:21 | INFO: Blender create Mesh node c244_glass_dark
+23:41:21 | INFO: Blender create Mesh node c244_frame
+23:41:21 | INFO: Blender create Mesh node c244_glass
+23:41:21 | INFO: Blender create Mesh node c244_gold
+23:41:21 | INFO: Blender create Mesh node c244_blind
+23:41:21 | INFO: Blender create Mesh node c244_gold_glass
+23:41:21 | INFO: Blender create Mesh node c244_steel
+23:41:21 | INFO: Blender create Mesh node c244_screen_back
+23:41:21 | INFO: Blender create Mesh node c244_lamp
+23:41:21 | INFO: glTF import finished in 0.04s
+23:41:21 | INFO: Data are loaded, start creating Blender stuff
+23:41:21 | INFO: Blender create Mesh node c244_ad_2025_01
+23:41:21 | INFO: Blender create Mesh node c244_davinci_2025_01
+23:41:21 | INFO: glTF import finished in 0.00s
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Fra:1 Mem:15.29M (Peak 15.29M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_roof
+Fra:1 Mem:15.29M (Peak 15.29M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_joint
+Fra:1 Mem:17.31M (Peak 17.31M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_davinci_2025_01
+Fra:1 Mem:17.38M (Peak 17.38M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_stone
+Fra:1 Mem:17.40M (Peak 17.40M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_ad_2025_01
+Fra:1 Mem:17.76M (Peak 17.76M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_lamp
+Fra:1 Mem:17.78M (Peak 17.78M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_screen_back
+Fra:1 Mem:18.69M (Peak 18.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_steel
+Fra:1 Mem:18.55M (Peak 18.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_stone_light
+Fra:1 Mem:18.58M (Peak 18.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_reveal
+Fra:1 Mem:18.61M (Peak 18.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_glass_dark
+Fra:1 Mem:18.53M (Peak 18.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_gold_glass
+Fra:1 Mem:18.49M (Peak 18.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_blind
+Fra:1 Mem:18.58M (Peak 18.69M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_frame
+Fra:1 Mem:18.89M (Peak 18.89M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_glass
+Fra:1 Mem:18.90M (Peak 18.90M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | c244_gold
+Fra:1 Mem:18.81M (Peak 19.51M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:18.74M (Peak 19.51M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading davinci-2025-01
+Fra:1 Mem:18.74M (Peak 19.51M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading billboard-2025-01
+Fra:1 Mem:18.58M (Peak 20.70M) | Time:00:00.01 | Mem:1.07M, Peak:1.07M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:18.58M (Peak 20.70M) | Time:00:00.01 | Mem:1.07M, Peak:1.07M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:18.58M (Peak 20.70M) | Time:00:00.01 | Mem:1.07M, Peak:1.07M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:18.58M (Peak 20.70M) | Time:00:00.01 | Mem:1.07M, Peak:1.07M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:18.67M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:18.67M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:18.67M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:18.67M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:18.67M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:18.67M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:18.68M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:18.68M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:18.68M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:18.68M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:18.80M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:19.10M (Peak 20.70M) | Time:00:00.01 | Mem:1.08M, Peak:1.08M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:19.09M (Peak 20.70M) | Time:00:00.01 | Mem:1.37M, Peak:1.37M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:19.09M (Peak 20.70M) | Time:00:00.01 | Mem:1.37M, Peak:1.37M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:19.09M (Peak 20.70M) | Time:00:00.01 | Mem:1.63M, Peak:1.63M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:19.09M (Peak 20.70M) | Time:00:00.01 | Mem:1.88M, Peak:2.14M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:19.09M (Peak 20.70M) | Time:00:00.01 | Mem:1.88M, Peak:2.14M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:1.88M, Peak:2.14M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.82M, Peak:2.82M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.82M, Peak:2.82M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.82M, Peak:2.82M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.82M, Peak:2.82M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.82M, Peak:2.82M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.90M, Peak:2.90M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.90M, Peak:2.90M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.90M, Peak:2.90M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.90M, Peak:2.90M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.82M, Peak:2.90M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.90M, Peak:2.90M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.90M, Peak:2.90M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.90M, Peak:2.90M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:20.03M (Peak 20.70M) | Time:00:00.01 | Mem:2.90M, Peak:2.90M | Scene, ViewLayer | Sample 0/24
+Fra:1 Mem:93.98M (Peak 93.98M) | Time:00:00.28 | Remaining:00:06.12 | Mem:76.84M, Peak:76.84M | Scene, ViewLayer | Sample 1/24
+Fra:1 Mem:125.11M (Peak 171.80M) | Time:00:12.04 | Mem:76.84M, Peak:76.84M | Scene, ViewLayer | Sample 24/24
+Fra:1 Mem:125.11M (Peak 171.80M) | Time:00:12.04 | Mem:76.84M, Peak:76.84M | Scene, ViewLayer | Finished
+Saved: '/workspace/shared/center244_fidelity/evidence/center244/after-side.png'
+Time: 00:12.30 (Saving: 00:00.26)
+
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender').
+
+Blender quit

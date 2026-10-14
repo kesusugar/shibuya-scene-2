@@ -1,0 +1,11 @@
+{
+  "all_render_inputs_match_copied_and_producer_bytes": true,
+  "render_input_count": 15,
+  "building_tests_passed": 22,
+  "selected_neighbourhood_tests_passed": 2,
+  "neighbourhood_tests_skipped": 4,
+  "typescript_exit_code": 0,
+  "blender": "4.2.3",
+  "scope": "Limited five-building review; no fullscene or runtime certification",
+  "older_four_building_evidence_modified": false
+}

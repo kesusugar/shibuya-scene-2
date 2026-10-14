@@ -77,17 +77,20 @@
     }
   ],
   "span_m": 8.260751365496882,
-  "top_local_m": 6.0957755279541015,
+  "top_local_m": 6.516477584838867,
   "min_clear_height_m": 4.022110939025879,
-  "triangles": 2572,
-  "primitives": 5,
+  "triangles": 2180,
+  "primitives": 8,
   "materials": {
     "gate_base": 120,
-    "gate_crook": 2112,
-    "gate_frame": 216,
+    "gate_crook": 1000,
+    "gate_recess": 236,
+    "gate_ribs": 552,
     "gate_lamp": 120,
-    "gate_panel": 4
+    "gate_panel": 4,
+    "gate_frame": 64,
+    "gate_name": 84
   },
   "position_basis": "B estimate in the alley bounded by west-block and QFRONT; photo gate location, not independently calibrated projection",
-  "status": "B photo-type prototype; two crook posts and a flat banner (Claude review R2); foot placement and dimensions estimated; banner = January 2025 photo extract in the signs layer"
+  "status": "B photo-type prototype; tapered planar casings and triple collars from Jan/Feb/Nov 2025; foot placement and dimensions estimated; January banner unchanged; permanent Noto Sans CJK JP glyph style approximate"
 }

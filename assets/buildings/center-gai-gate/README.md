@@ -1,22 +1,35 @@
-# センター街入口ゲート — 写真の形を参考にしたB試作
+# センター街入口ゲート — 独立した2本の曲線筐体（B試作）
 
-センター街入口のアーチ型構造を、2025-01-31のStream写真（Syced、CC0）を参考に自作。支柱2本、滑らかな曲線フレーム、湾曲した掲示面と小さな照明器具を通常表示へ追加する。既存のQFRONT・西側街区・街路設備を変更せず、別の資産として読み込む。
+既存の2支柱と2025年1月の独立広告レイヤーを維持し、上部の細い丸管を、幅のある平面側板・面取りした縁・先端へ細くなる曲線筐体へ修正。黒い単一カラーを、写真に見える3段の淡色リブと暗い隙間へ変更した。連続アーチには戻していない。根元、地理座標、viewerのT.P.15 m基準、バナーの位置とサイズ、ランプの位置と光量は変更していない。
 
-OSMやPLATEAUで確認した設備IDではないため、source_idはphoto/center-gai-entrance-gate。足元の位置はQFRONTと西側街区の間の通路へ推定配置。広告・テナントの文字・ロゴは貼っていない。黄色い面は掲示面の構造表現で、2025年10月の広告を認定しない。将来の広告は別GLBレイヤーにする。
+## 出典と確度
 
-2025年11月の夜写真（Joli Rumi、CC BY-SA 4.0）は街の照明の文脈のみで、ゲート自体を独立同定した資料ではない。写真をモデルテクスチャに使っていない。出典とハッシュはsource/refs/REFERENCE_REGISTER.csv。地面は国土交通省Project PLATEAU渋谷区2025年度モデルを加工した既存C2a資産で、出典・条件はSOURCE.json。
+2025-01-31および02-07のSyced写真（CC0）、11-01のJoli Rumi写真（CC BY-SA4.0）で、曲線筐体・縁取り・3段カラーを照合。参照URLと画像の由来は `source/refs/FIDELITY_SOURCES.md`。11月の写真は形の参考のみで、テクスチャに採用していない。
 
-ブラウザの高さはT.P.−15、viewer.jsonのgroundElevationTP=15。支柱位置(-31.2,36.0)、(-23.0,35.0)は未実測。周辺各5点、合計10/10点がC2a地面に当たり、足元中央値はT.P.15.270 / 15.326 m。台座の下を近傍最小地面より0.025 m下げて接地。地面種別の確認で左5点はground_road、右5点はground_fill（補填面）。これは既存モデルへの接触であり、右側の現地実測標高を確認したものではない。通路幅は約8.261 m、掲示面の最小下端は高い側の足元から約4.276 m。数値は試作寸法で、現地測量ではない。
+恒久名「渋谷センター街」は縁取りパネル上に自作した。Noto Sans CJK JP Bold（SIL OFL1.1）による近似であり、現物フォント・細かな字形・文字間隔の一致を認定しない。裏面の銘文は確認不足のため追加していない。写真の不鮮明な広告やポスターを創作しない。
 
-夜は器具の自発光だけ。道路や壁へ当たる光・実光量は未調整。通常building一覧へ読み込むが、street=offでゲートも非表示にする。context=nostationでもゲートは残る。PLATEAUの同じ形を置き換えたものではないので、Cの除外は追加していない。
+2025年1月の広告 `web/signs-2025-01.glb` は従来バイトを保持。SHA256: e3d61300241cfc5cf3692739f1a33d994d5abc05f64b703536ec35495852d3ec。10月の広告として扱わない。永久銘板は建築GLB、広告は独立GLBであり、読み込み登録や切替の実装は未変更。
+
+## 寸法・位置の扱い
+
+根元XY=(-31.2,36.0),(-23.0,35.0)、間隔8.260751 mは元モデルの推定配置を保持。足元中央値T.P.15.26999664/15.32577515 m、各5点の地面照会記録も元モデルの値を継承した。台座下端は近傍最小値から0.025 m下。これは新しい地形測定・現地測量ではない。右側地面は元のground_fillであり現地標高精度は未確認。
+
+筐体肩4.22 m、曲線立上り1.79 m、厚さ0.32 m、カラー半径0.315 m、先端へ幅を絞る形状は写真比例による推定。高さを上げずに肩を下げて筐体の占める割合を修正した。固定済みランプ・バナーの接続点まで細い支持首を追加し、空中で切れる形を避けた。この接続部の詳細は推定。外周や絶対寸法の実測ではない。
+
+旧statsの頂部は先端2点のみを参照し、実メッシュの頂部より低かった。今回は全頂点から計算。バナー下端の通行余裕は元の4.022110939 mを保持。
 
 ## 再生成
 
-```bash
-source /workspace/setup-tools/core-env.sh
-blender -b --python-exit-code 1 -t 4 -P assets/buildings/center-gai-gate/source/blender/build_gate.py -- assets/buildings/center-gai-gate/source/data/layout.json assets/ground/core/web/ground_core.glb assets/buildings/center-gai-gate/web
-```
+Blender4.2.3を厳密に使用する。通常は実地面GLBを引数へ渡す。
 
-生成にはBlender4.2.3の標準glTF書き出しだけを使う。layout.jsonの設定・地面の照会・再生成統計を保存。位置、支柱間隔、高さ、掲示面の厚さ、文字と広告、光量、10月の状態は未確認で、写真品質の完成・Gate合格ではない。
+    blender -b --python-exit-code 1 -t 4 -P assets/buildings/center-gai-gate/source/blender/build_gate.py -- assets/buildings/center-gai-gate/source/data/layout.json assets/ground/core/web/ground_core.glb assets/buildings/center-gai-gate/web
 
-初版の掲示面色はRGB(0.74,0.60,0.025)、補正後は(0.90,0.72,0.003)。位置・形・光は固定。設定をevidence/c2-center-gai-gate/{first,after}/layout.jsonへ保存し、別フォルダへコピーして別の出力先で再生成できる。stats.jsonは渡したlayoutの隣へ保存される。
+同じ履歴サンプルから再生成する場合は第2引数を `-` にする。`source/data/recorded_ground.json` を明示的に再利用し、新測定と混同しない。
+
+`source/blender/center-gai-gate.blend` は建築メッシュとパック済み画像を保存。GLB再生成は梱包済みPNGを使い、システムフォントを必要としない。銘板PNGを再作成する場合のみPillowとNotoSansCJK-Bold.ttcが必要で、`make_name.py`にその手順を保存した。
+
+## 検証と未達
+
+独立した同一カメラの正面・斜め側面・低い視点で前後を比較。写真のカメラとは未校正であり、旧履歴の全景スクリーンショットと新しい全景比較を行ったものではない。足元・中央通路・恒久名/広告分離・実メッシュ頂部・三角形数を専用テストで検査。
+
+QFRONT・西武・他の建物・runtimeコードは変更しない。現行フルシーンでの壁離隔・遮蔽・street-off/signs-offのブラウザ確認、写真測量、10月広告、裏面詳細、低い柱のポスター、実配光、オーナーPCのFPSは未達。独立したモデル比較をフルシーン品質合格として扱わない。

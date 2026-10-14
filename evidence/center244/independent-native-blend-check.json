@@ -1,0 +1,26 @@
+{
+  "blender_version": "4.2.3 LTS",
+  "unit_scale": 1.0,
+  "raw_surface_count": 35,
+  "raw_vertex_count": 157,
+  "raw_coordinate_max_error_m": 3.6010742121561634e-06,
+  "reference_hidden": true,
+  "packed_images": [
+    {
+      "name": "billboard-2025-01.png",
+      "size": [
+        420,
+        550
+      ],
+      "packed": true
+    },
+    {
+      "name": "davinci-2025-01.png",
+      "size": [
+        220,
+        220
+      ],
+      "packed": true
+    }
+  ]
+}

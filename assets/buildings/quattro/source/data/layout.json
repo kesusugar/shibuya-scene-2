@@ -1,30 +1,52 @@
 {
- "id": "quattro",
- "name": "渋谷平和クワトロビル（台帳名）",
- "style": "centre",
- "floors": 8,
- "bay_pitch_m": 1.8,
- "wall_rgb": [
-  0.7,
-  0.7,
-  0.68
- ],
- "glass_rgb": [
-  0.045,
-  0.065,
-  0.07
- ],
- "frame_rgb": [
-  0.58,
-  0.6,
-  0.6
- ],
- "spandrel_rgb": [
-  0.7,
-  0.7,
-  0.68
- ],
- "podium_floors": 1,
- "glass_height_ratio": 0.8,
- "estimation": "Photo-type facade; bay/floor divisions estimated; original PLATEAU shell unchanged; reference predates 2025"
+  "id": "quattro",
+  "name": "渋谷平和ビル / BIG ECHO 渋谷センター街本店（宇田川町21-8）",
+  "source_id": "way/136691389",
+  "identity_note": "Not the separate mineo / 渋谷平和クワトロビル21-9. Stable legacy folder id retained.",
+  "frontage_bay_edges_m": [
+    0.32,
+    3.04,
+    5.63,
+    8.19,
+    10.78,
+    13.37,
+    15.86
+  ],
+  "frontage_glazing_z_m": [
+    [
+      0.9,
+      4.03
+    ],
+    [
+      4.69,
+      7.92
+    ],
+    [
+      8.49,
+      11.77
+    ],
+    [
+      12.36,
+      15.2
+    ]
+  ],
+  "front_sign_housings_m": [
+    [
+      3.09,
+      13.31,
+      11.95,
+      15.1
+    ],
+    [
+      10.83,
+      15.8,
+      4.89,
+      8.1
+    ]
+  ],
+  "blade_u_m": [
+    0.18,
+    15.98
+  ],
+  "estimation": "Four low-front tiers inferred from actual exterior photos. Exact bay divisions/tenancy not independently surveyed. Rear blank; source steep roof and all original shell triangles preserved."
 }

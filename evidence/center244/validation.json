@@ -1,0 +1,49 @@
+{
+  "raw_source_hash": "3df9205722f35b952183fb20bae33fb67e6c30b0f273592f5ed5a753ca38dc3a",
+  "actual_blender_xyz_bounds": [
+    [
+      -74.69000244140625,
+      -62.709346771240234
+    ],
+    [
+      70.69998168945312,
+      83.32799530029297
+    ],
+    [
+      1.1931042671203613,
+      34.84300231933594
+    ]
+  ],
+  "triangles": 8423,
+  "primitives": 17,
+  "bytes": 1050684,
+  "january_not_registered": true,
+  "window_recess_rays": [
+    {
+      "name": "c244_frame",
+      "depth": -0.10970714688301086
+    },
+    {
+      "name": "c244_glass",
+      "depth": -0.16000156849622726
+    },
+    {
+      "name": "c244_blind",
+      "depth": -0.15599514544010162
+    }
+  ],
+  "billboard_front_rays": [
+    "c244_ad_2025_01",
+    "c244_ad_2025_01",
+    "c244_ad_2025_01",
+    "c244_ad_2025_01",
+    "c244_ad_2025_01",
+    "c244_ad_2025_01",
+    "c244_ad_2025_01",
+    "c244_ad_2025_01",
+    "c244_ad_2025_01"
+  ],
+  "hidden_provenance_mesh_exact_within_float32": true,
+  "full_scene": "not run; complete scene assets unavailable",
+  "fps": "not measured"
+}

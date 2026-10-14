@@ -2,33 +2,33 @@
   "id": "quattro",
   "source_id": "way/136691389",
   "level": "B",
-  "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery",
+  "status": "bounded photo-supported architecture; exact original shell; inferred dimensions; January layer separate and unregistered",
   "stats": {
-    "triangles": 1376,
-    "primitives": 8,
-    "bytes": 87840
+    "triangles": 4304,
+    "primitives": 16,
+    "bytes": 454428
   },
-  "generator": "tools/core/build_facade.py",
+  "generator": "assets/buildings/quattro/source/blender/build.py",
   "files": {
     "README.md": {
-      "bytes": 950,
-      "sha256": "8b7d9c3ccbd33192ff8ab95d5c7fc47f91e02707010b6fbd0f1262a8f8daa3be"
+      "bytes": 3822,
+      "sha256": "da71cfb812baf802898f88f3a37eb83e47eda0e75732f7284abd5d6f62c06a72"
     },
     "source/data/stats.json": {
-      "bytes": 5694,
-      "sha256": "313e3a15bb950e659fdd7d3bcbaff172ba30b419c67ce67d728d407c6ff5dc44"
+      "bytes": 618,
+      "sha256": "f1642e4e84b8bd3415909d7909d02b2c3460452265a511335450b5158be4ade8"
     },
     "source/data/layout.json": {
-      "bytes": 479,
-      "sha256": "5450193c049b3a7011642c98f6420afceb3aec1fbf1a410f652d511cd7c92885"
+      "bytes": 951,
+      "sha256": "8e2b4b3b934597ae5c50ddb0633fc6b3bdad52bdeceb0e7b170a0cd10efc7586"
     },
     "source/data/plateau.json": {
       "bytes": 5057,
       "sha256": "967dbde173f2b5920619b7b4eba017be79e1948c35afd7e8d3be2336f8f7ccd8"
     },
     "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+      "bytes": 11534,
+      "sha256": "8b6b4fb779e1be4d3e115eb279bc0a1368bc55e66af96533a4a8eca036179d41"
     },
     "source/refs/reference.jpg": {
       "bytes": 4115752,
@@ -39,8 +39,8 @@
       "sha256": "9925f2266b7b33cd59251f7bf21fe4004834a3a34a361a3c3f945f653066a3b8"
     },
     "source/refs/SOURCES.md": {
-      "bytes": 565,
-      "sha256": "e3b829014ced1d4acf168d688d1f7e05bb99cdf8f153fe8701f52bd9b6e27899"
+      "bytes": 4292,
+      "sha256": "d202076074c6d33b76d190bc2f08b4164391262045a1e9a54b486b3e7699dbb6"
     },
     "web/emissive_night.json": {
       "bytes": 3,
@@ -55,8 +55,52 @@
       "sha256": "fb75c179fb8e99734f17b057eb70e97f372be4e80f18588497958b2dab1b8f8d"
     },
     "web/quattro.glb": {
-      "bytes": 87840,
-      "sha256": "add9d2573c36274a4d0f737dd5b1b01b5a9997293e778e4c23032905ac228ba7"
+      "bytes": 237016,
+      "sha256": "2e3342cbba74eb71f7975b29ea1b8dbd7567e5085b1b50db733fe042a032f8ea"
+    },
+    "web/signs-2025-01.glb": {
+      "bytes": 217412,
+      "sha256": "2c8cd0969a92572a5404284b7e60972eb08f8b4f959e7daa153c4442ed441413"
+    },
+    "source/refs/blade-2-2025-01.png": {
+      "bytes": 106764,
+      "sha256": "07244fac78bbb06254be9ec059fdaddad8310b33568ae9f05bfa93325af07d68"
+    },
+    "source/refs/blade-1-2025-01.png": {
+      "bytes": 107919,
+      "sha256": "fa400057a4d13d28c2304bb382f224840e8deae005029168d068b10607eebc6d"
+    },
+    "source/refs/WB01-target-2025-01.png": {
+      "bytes": 843530,
+      "sha256": "5111429348bb865776bfc98b044aad1a1dec8cfeec340cbbda750130bfa3ebf2"
+    },
+    "source/data/protected_footprints.json": {
+      "bytes": 29474,
+      "sha256": "8f6b1866432665f7c02cc1bbd397d2a545a9df214f6dedccb26b08a0f3c88489"
+    },
+    "source/data/original_shell.json": {
+      "bytes": 18494,
+      "sha256": "cc742469b0d06bd1245215a7a416e8f292884e891277abfbd79aad343576c55f"
+    },
+    "source/blender/render_evidence.py": {
+      "bytes": 1449,
+      "sha256": "3dfca8c32a9124ef0b8b8dbc8273414d5ea935b2e068424fc5594a9e55d36a53"
+    },
+    "source/blender/prepare_textures.py": {
+      "bytes": 497,
+      "sha256": "326984f146741f92437d8a426d6fa5c6a4ec4acf84e4a56fb24e7f192563b217"
+    },
+    "source/blend/quattro.blend": {
+      "bytes": 385384,
+      "sha256": "12bbee6fd273cac7e3878fb65efd1f55f5364f4c8a98e20eca9f2d0c1327a9c5"
+    }
+  },
+  "name": "渋谷平和ビル / BIG ECHO（宇田川町21-8、互換ID quattro）",
+  "era_layers": {
+    "2025-01": {
+      "file": "web/signs-2025-01.glb",
+      "registered": false,
+      "reason": "No verified time gating; comparison/manual preview only."
     }
   }
 }

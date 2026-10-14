@@ -1,0 +1,51 @@
+{
+  "source": "WB01.jpg",
+  "source_size": [
+    3072,
+    4080
+  ],
+  "quad_TL_TR_BR_BL": [
+    [
+      1716,
+      761
+    ],
+    [
+      2013,
+      733
+    ],
+    [
+      2021,
+      1054
+    ],
+    [
+      1724,
+      1080
+    ]
+  ],
+  "corner_evidence": "TL/TR/BR observed; BL extrapolated from visible left/right vertical borders, lower-left occluded",
+  "occlusion_mask": "Source x<1752 and y>969 alpha=0; underlying neutral billboard backing remains, no invented lettering",
+  "output_size": [
+    420,
+    550
+  ],
+  "method": "single projective homography; no full-facade projection",
+  "davinci_quad_TL_TR_BR_BL": [
+    [
+      1770,
+      1466
+    ],
+    [
+      1826,
+      1461
+    ],
+    [
+      1827,
+      1527
+    ],
+    [
+      1774,
+      1522
+    ]
+  ],
+  "davinci_note": "Observed woman/4F right fragment only, left obscured; map to right42% of chamfer with neutral full panel backing. No stretching fragment across entire sign; no invented lettering."
+}

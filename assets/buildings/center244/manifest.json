@@ -2,33 +2,33 @@
   "id": "center244",
   "source_id": "way/136691379",
   "level": "B",
-  "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery",
+  "status": "photo-derived facade; original upper closed solid retained as provenance, display billboard proxy; hidden rear and lower-left inferred; January layer unregistered",
   "stats": {
-    "triangles": 1257,
-    "primitives": 8,
-    "bytes": 80188
+    "triangles": 8423,
+    "primitives": 17,
+    "bytes": 1050684
   },
-  "generator": "tools/core/build_facade.py",
+  "generator": "assets/buildings/center244/source/blender/build.py",
   "files": {
     "README.md": {
-      "bytes": 934,
-      "sha256": "59781a26706b87207030376c8e98d1c439241fecf35a81f47c019373a01edbe3"
+      "bytes": 4685,
+      "sha256": "5d7bdcef83f01e170ed323de8ed72796575c0a7fb57484b33a6986644571cc41"
     },
     "source/data/stats.json": {
-      "bytes": 6367,
-      "sha256": "307aed263929f291b5163629fd5104a3d5c2c1c4eea8c86ecab98ca41c838d02"
+      "bytes": 8568,
+      "sha256": "230edd4ae5539b0621b66aeb316deae2cd92ead782f3e74372643fa1411e0614"
     },
     "source/data/layout.json": {
-      "bytes": 459,
-      "sha256": "683b9ead95b64cf3c94163b9bd31da0eb744666a19c980fdcf594d59f1f7a09a"
+      "bytes": 884,
+      "sha256": "401275d3ed9956d6df22987a53e5524ee6284087f604292629b402295cde2d62"
     },
     "source/data/plateau.json": {
       "bytes": 11924,
       "sha256": "3df9205722f35b952183fb20bae33fb67e6c30b0f273592f5ed5a753ca38dc3a"
     },
     "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+      "bytes": 13203,
+      "sha256": "f24fd11b79a987d90e40b69d19dc7634344d9a671725e85cf747ce386718168b"
     },
     "source/refs/reference.jpg": {
       "bytes": 4115752,
@@ -39,8 +39,8 @@
       "sha256": "9925f2266b7b33cd59251f7bf21fe4004834a3a34a361a3c3f945f653066a3b8"
     },
     "source/refs/SOURCES.md": {
-      "bytes": 565,
-      "sha256": "e3b829014ced1d4acf168d688d1f7e05bb99cdf8f153fe8701f52bd9b6e27899"
+      "bytes": 2059,
+      "sha256": "3c17f687073a5eae0dfe2526ab765ff5f6c6cf6da3a917beede2336d40ac5285"
     },
     "web/emissive_night.json": {
       "bytes": 3,
@@ -51,12 +51,78 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/viewer.json": {
-      "bytes": 193,
-      "sha256": "2e0f1abb509c83aad5ed57d3ad982cbb9713797f2a78a5c135213baac629253c"
+      "bytes": 165,
+      "sha256": "1c310453d6e477285345956dd1e9ed490a0b7e243ed819e5be62b6aa684ef589"
     },
     "web/center244.glb": {
-      "bytes": 80188,
-      "sha256": "396c5aa583cc459df38e516277e466a3bede74b2a54a2cea0475c1a5fae79df7"
+      "bytes": 536480,
+      "sha256": "4a425ab97e75957cd3093fad9dec51ab9a72bbbdc9d93766b667772a2e59f597"
+    },
+    "source/blender/center244.blend": {
+      "bytes": 2045492,
+      "sha256": "d7c520f65b2377d688fdb05cd4b6050eabc3233b483ebe0de91fa2da1d1ab365"
+    },
+    "source/blender/prepare_texture.py": {
+      "bytes": 2107,
+      "sha256": "fc28f6c339aac148d518cadeac9c4b54e5fb13e72f129d6fe124807e804b083b"
+    },
+    "source/blender/render_evidence.py": {
+      "bytes": 2342,
+      "sha256": "94a8b0b55e0a0d37fae8ea89b3992f025152074a15ea6d84a3549fb51916687c"
+    },
+    "source/data/recorded_ground.json": {
+      "bytes": 6368,
+      "sha256": "be266e6b1bfe56967373e74b9658e248476adcc72cc6dcf5f54424ee7faa4d6e"
+    },
+    "source/data/texture_quad.json": {
+      "bytes": 978,
+      "sha256": "54f878775434ec371937f319646f349c51e06b3d276169efaeeb7408d41ec25a"
+    },
+    "source/data/view_fit.json": {
+      "bytes": 1443,
+      "sha256": "562067d4a5087e231c0e8fc6a62f50ad9cef4f707af836da8bd0d4fe78a70149"
+    },
+    "source/refs/billboard-2025-01.png": {
+      "bytes": 454972,
+      "sha256": "ec9858ed8e7f58385fbd4d1fff318d5c4a49cb69112b046c8798502341d4626a"
+    },
+    "source/refs/davinci-2025-01.png": {
+      "bytes": 56570,
+      "sha256": "2eb8df58093411c2e38ddb640c3be47eeb552d725c800eeead972c2a003351c3"
+    },
+    "web/signs-2025-01.glb": {
+      "bytes": 514204,
+      "sha256": "1a5ba8c1a3079014bf0999692e626559c9d385242bbe20be93bfc57c02a7cd2e"
     }
-  }
+  },
+  "source_top_tp": 49.843,
+  "source_plan_bounds": [
+    -74.69,
+    70.742,
+    -62.747,
+    83.268
+  ],
+  "actual_blender_xyz_bounds": [
+    [
+      -74.69000244140625,
+      -62.709346771240234
+    ],
+    [
+      70.69998168945312,
+      83.32799530029297
+    ],
+    [
+      1.1931042671203613,
+      34.84300231933594
+    ]
+  ],
+  "era_layers": {
+    "2025-01": {
+      "file": "web/signs-2025-01.glb",
+      "registered": false,
+      "reason": "No runtime date-selection changes; loader would otherwise display indiscriminately"
+    }
+  },
+  "raw_upper_geometry_preserved_in_display": false,
+  "raw_upper_geometry_preserved_in_hidden_blend": true
 }
