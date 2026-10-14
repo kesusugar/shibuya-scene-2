@@ -32,6 +32,9 @@ def mat(name,color,metal=0,rough=.65,texture=None):
   tex=m.node_tree.nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(ROOT/'textures'/f'{texture}.png'));m.node_tree.links.new(tex.outputs['Color'],p.inputs['Base Color']);m.node_tree.links.new(tex.outputs['Color'],p.inputs['Emission Color']);p.inputs['Emission Strength'].default_value=1
  M[name]=m
 for name,color in [('pharmacy',(.54,.52,.44)),('fruit',(.63,.61,.49)),('middle',(.44,.41,.34)),('corner',(.52,.035,.028))]:mat('west_wall_'+name,color)
+# Claude review 2026-10-14: the Daiseido corner body is grey metal cladding in Jan/Feb/Nov 2025 (WB01-03); only the
+# narrow flank (クスリ) and its awning are red. The red is kept for those; the corner body gets its own material.
+mat('west_wall_corner_body',(.50,.51,.50),.35,.45)
 mat('west_roof',(.33,.34,.32));mat('west_frame',(.30,.32,.29),.55,.4);mat('west_glass',(.09,.20,.16),.25,.28);mat('west_shop_glass',(.025,.06,.05),.15,.35);mat('west_awning',(.014,.19,.15));mat('west_shop_light',(.7,.63,.4));mat('west_screen_back',(.035,.035,.035),.3)
 mat('west_fruit_glass',(.30,.45,.38),.2,.38);mat('west_tile_trim',(.78,.77,.68));mat('west_recess',(.012,.022,.018));mat('west_pharmacy_awning',(.72,.47,.025));mat('west_book_awning',(.018,.22,.46))
 for tex in F['textures']:mat('west_sign_'+tex,(1,1,1),0,.8,tex)
@@ -66,7 +69,7 @@ for s in D['surfaces']:
    # The coarse PLATEAU front/east corner planes would hide the B curved face.
    # Replace only these street-facing corner planes; keep rear walls and original roof.
    replaced=name=='corner' and len(poly)>=3 and max(p.y for p in poly)<31
-   if len(poly)>=3 and not replaced:face('west_wall_'+name,poly)
+   if len(poly)>=3 and not replaced:face('west_wall_'+('corner_body' if name=='corner' else name),poly)
  else:face('west_roof',ring)
 # Street-facing southern frontage follows the measured PLATEAU wall line; window dimensions are B-level estimates.
 def south_y(x):return 21.279+(x+67.253)*(24.78-21.279)/(67.253-36.04)
@@ -118,7 +121,12 @@ def arc(name,z,w,h,layer='base',radius=R,center_angle=None):
   pts=[(CX+radius*math.cos(a),CY+radius*math.sin(a),z-h/2),(CX+radius*math.cos(b),CY+radius*math.sin(b),z-h/2),(CX+radius*math.cos(b),CY+radius*math.sin(b),z+h/2),(CX+radius*math.cos(a),CY+radius*math.sin(a),z+h/2)]
   face(name,pts,[(i/24,0),((i+1)/24,0),((i+1)/24,1),(i/24,1)],layer)
 body=corner['body_height_m'];ws,hs=corner['width_scale'],corner['height_scale']
-arc('west_wall_corner',body/2,8*ws,body)
+arc('west_wall_corner_body',body/2,8*ws,body)
+# Horizontal louvres of the grey band between the Rakuten and DMM screens (WB01/WB02), drawn just proud of the body.
+sc=corner['screen_centers_m'];lo=sc['dmm']+5.9*hs/2+.15;hi=sc['rakuten']-7*hs/2-.15
+z=lo
+while z<hi:
+ arc('west_frame',z,8*ws-.3,.06,radius=R+.04);z+=.45
 arc('west_roof',(body+27.98)/2,8*ws,27.98-body)
 for name,z,w,h in [('rakuten',corner['screen_centers_m']['rakuten'],7.3,7),('dmm',corner['screen_centers_m']['dmm'],6,5.9),('taiseido',corner['screen_centers_m']['taiseido'],7.1,1.5)]:
  arc('west_screen_back',z,w*ws+.2,h*hs+.2,radius=R+.05)
@@ -141,6 +149,24 @@ bottom=roof['support_base_height_m'];top=B.z+H/2+.15
 for u in [-W/2,0,W/2]:
  p=B+T*u-N*.18;box((p.x,p.y,(bottom+top)/2),(.13,.13,top-bottom),'west_frame')
 for z in [B.z-H/2,B.z,B.z+H/2]:box((B.x-N.x*.18,B.y-N.y*.18,z),(W+.3,.13,.13),'west_frame',yaw)
+# Open lattice under the sign (WB01/WB03 show a braced steel frame, not three bare posts): a second post line 1.6 m
+# behind, horizontal ties and X-bracing in both planes from the roof to the sign bottom. Member sizes estimated.
+def strut(a,b,r=.05):
+ d=b-a;mid=(a+b)/2;ang=math.atan2(d.y,d.x);hz=math.hypot(d.x,d.y);tilt=math.atan2(hz,d.z)
+ bmx=GROUP.setdefault(('base','west_frame'),bmesh.new());m=bmesh.ops.create_cone(bmx,cap_ends=True,segments=6,radius1=r,radius2=r,depth=d.length)
+ q=d.to_track_quat('Z','Y')
+ for v in m['verts']:v.co.rotate(q);v.co+=mid
+lo_z,hi_z=bottom,B.z-H/2
+for depth in (-.18,-1.78):
+ cols=[B+T*u+N*depth for u in (-W/2,0,W/2)]
+ if depth<-1:
+  for c in cols:box((c.x,c.y,(lo_z+B.z+H/2)/2),(.13,.13,B.z+H/2-lo_z),'west_frame')
+ for a,b in zip(cols,cols[1:]):
+  strut(Vector((a.x,a.y,lo_z)),Vector((b.x,b.y,hi_z)));strut(Vector((b.x,b.y,lo_z)),Vector((a.x,a.y,hi_z)))
+for u in (-W/2,0,W/2):
+ f=B+T*u-N*.18;r=B+T*u-N*1.78
+ for z in (lo_z+.2,hi_z,B.z+H/2):strut(Vector((f.x,f.y,z)),Vector((r.x,r.y,z)),.045)
+ strut(Vector((f.x,f.y,lo_z)),Vector((r.x,r.y,hi_z)),.04)
 objects=[]
 for (layer,name),bm in GROUP.items():
  bmesh.ops.triangulate(bm,faces=bm.faces[:]);me=bpy.data.meshes.new(name);bm.to_mesh(me);bm.free();me.materials.append(M[name]);me.calc_loop_triangles();ob=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(ob);objects.append((layer,ob))

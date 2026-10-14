@@ -19,7 +19,7 @@ for o in list(bpy.context.scene.objects):
 bvh=BVHTree.FromBMesh(bm);bm.free()
 for o in list(bpy.context.scene.objects):bpy.data.objects.remove(o,do_unlink=True)
 M={};G={};samples=[];missing=0
-for name,color,metal,rough in [('wall',L['wall_rgb'],0,.8),('roof',L.get('roof_rgb',[.3,.31,.3]),0,.95),('frame',L['frame_rgb'],.5,.45),('spandrel',L['spandrel_rgb'],.25,.7),('dark',[.018,.023,.025],0,.8),('sign_housing',[.03,.035,.04],.15,.6),('shop_glass',[.025,.045,.05],.3,.4)]:
+for name,color,metal,rough in [('wall',L['wall_rgb'],L.get('wall_metal',0),L.get('wall_rough',.8)),('roof',L.get('roof_rgb',[.3,.31,.3]),0,.95),('frame',L['frame_rgb'],.5,.45),('spandrel',L['spandrel_rgb'],.25,.7),('dark',[.018,.023,.025],0,.8),('sign_housing',[.03,.035,.04],.15,.6),('shop_glass',[.025,.045,.05],.3,.4)]:
  m=bpy.data.materials.new(ID+'_'+name);m.use_nodes=True;p=m.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(*color,1);p.inputs['Metallic'].default_value=metal;p.inputs['Roughness'].default_value=rough;M[name]=m
 for i,factor in enumerate([.93,1,1.05]):
  m=bpy.data.materials.new(ID+'_glass_'+str(i));m.use_nodes=True;p=m.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(*(min(1,v*factor) for v in L['glass_rgb']),1);p.inputs['Metallic'].default_value=.3;p.inputs['Roughness'].default_value=.28;M['glass'+str(i)]=m

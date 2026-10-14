@@ -52,23 +52,31 @@ for seg in D['segments']:
  for i in range(D['shrubs_per_segment']):
   x=x0+t+.25+(x1-x0-t*2-.5)*i/max(1,D['shrubs_per_segment']-1);yy=y-depth*.6;bottom=z+h-.03
   tube('shrub_trunk',(x,yy,bottom),(x,yy,bottom+D['shrub_height_m']*.7),.013,'branch')
-  # Branch fans and slender needles, not spherical crowns or another full-size OSM tree.
-  for j in range(D.get('branch_fans',11)):
-   if j==11:
-    base_rng=rng;rng=random.Random(793+(0 if seg['id']=='left' else 100)+i)
-   ang=rng.uniform(0,math.tau);length=rng.uniform(.22,.42);tip=Vector((x+math.cos(ang)*length,yy+math.sin(ang)*length,bottom+rng.uniform(.30,D['shrub_height_m'])))
-   start=Vector((x,yy,bottom+.16));tube('shrub_branch',start,tip,.005,'branch',6)
-   direction=(tip-start).normalized();across=direction.cross(Vector((0,0,1))).normalized()
-   for k in range(24):
-    p=start.lerp(tip,.45+.55*k/23)
-    for sign in [-1,1]:
-     end=p+across*sign*rng.uniform(.025,.06)+direction*.018+Vector((0,0,.02));width=D.get('needle_bundle_width_m',.004)
-     start_index=len(leaf_vertices);leaf_vertices.extend([tuple(p),tuple(end+Vector((0,0,width))),tuple(end-Vector((0,0,width)))]);leaf_faces.append((start_index,start_index+1,start_index+2));leaf_materials.append(1 if rng.random()<.35 else 0)
-  if D.get('branch_fans',11)>11:rng=base_rng
+  # Claude review 2026-10-14: july094/095 show clipped black pine (dense rounded needle tufts on short branches),
+  # not the radiating agave-like fans of the first version. Each shrub = a few short branches ending in a
+  # rounded tuft: a dark core plus short needles sprouting outward from its surface.
+  srng=random.Random(793+(0 if seg['id']=='left' else 100)+i)
+  for j in range(D.get('pine_tufts',6)):
+   ang=srng.uniform(0,math.tau);reach=srng.uniform(.08,.30);lift=srng.uniform(.35,D['shrub_height_m'])
+   tip=Vector((x+math.cos(ang)*reach,yy+math.sin(ang)*reach*.6,bottom+lift));start=Vector((x,yy,bottom+lift*.45))
+   tube('shrub_branch',start,tip,.012,'branch',6)
+   rad=srng.uniform(.13,.21)
+   bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2,radius=1,location=tip);core=bpy.context.object;core.scale=(rad*.85,rad*.85,rad*.62)
+   for v in core.data.vertices:v.co*=srng.uniform(.85,1.1)
+   for poly in core.data.polygons:poly.use_smooth=True
+   finish(core,'tuft_core','needle')
+   for k in range(150):
+    d=Vector([srng.gauss(0,1) for _ in range(3)]).normalized()
+    if d.z<-.3:d.z=-d.z*.3
+    d.normalize();base_p=tip+Vector((d.x*rad*.8,d.y*rad*.8,d.z*rad*.55));end_p=base_p+d*srng.uniform(.05,.10)+Vector((0,0,.015))
+    side=d.cross(Vector((0,0,1)));side=side.normalized() if side.length>1e-6 else Vector((1,0,0))
+    w=D.get('needle_bundle_width_m',.012)*.6
+    start_index=len(leaf_vertices);leaf_vertices.extend([tuple(base_p+side*w),tuple(base_p-side*w),tuple(end_p)]);leaf_faces.append((start_index,start_index+1,start_index+2));leaf_materials.append(1 if srng.random()<.4 else 0)
  for i in range(3):
   x=x0+.35+(x1-x0-.7)*i/2;yy=y-depth*.48
-  bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2,radius=1,location=(x,yy,z+h+.06));o=bpy.context.object;o.scale=(rng.uniform(.22,.34),.20,rng.uniform(.16,.23));
+  bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=2,radius=1,location=(x,yy,z+h+.06));o=bpy.context.object;o.scale=(rng.uniform(.30,.42),.24,rng.uniform(.28,.38));   # july094/095: boulders rise well above the cap
   for v in o.data.vertices:v.co*=rng.uniform(.86,1.12)
+  for poly in o.data.polygons:poly.use_smooth=True
   finish(o,'rock','rock')
  records.append({'id':seg['id'],'contact_samples':contacts,'anchor_tp':z+15,'max_burial_m':max(p['ground_z'] for p in contacts)-z,'local_bounds':[x0,x1,y-depth,y+.155]})
 me=bpy.data.meshes.new('needles');me.from_pydata(leaf_vertices,[],leaf_faces);o=bpy.data.objects.new('needles',me);bpy.context.collection.objects.link(o);finish(o,'needles','needle');me.materials.append(mats['needle_light'])

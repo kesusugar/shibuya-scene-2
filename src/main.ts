@@ -25,7 +25,7 @@ import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
-import { Vector2, Vector3 } from 'three';
+import { Raycaster, Vector2, Vector3 } from 'three';
 
 const params = new URLSearchParams(location.search);
 const $ = (id: string) => document.getElementById(id)!;
@@ -273,6 +273,14 @@ async function start() {
     projectPlan: (p: [number, number, number]) => { const v = new Vector3(p[0], p[2], -p[1]).project(camera); return [(v.x * 0.5 + 0.5) * innerWidth, (-v.y * 0.5 + 0.5) * innerHeight]; },
     bench: null as unknown,
     groundUnderCamera: () => controls.groundY(camera.position.x, camera.position.z),
+    // QA: which asset/mesh is under a screen pixel (names from the hit mesh up to the scene)
+    pick: (x: number, y: number) => {
+      const ray = new Raycaster(); ray.setFromCamera(new Vector2((x / innerWidth) * 2 - 1, -(y / innerHeight) * 2 + 1), camera);
+      const hit = ray.intersectObjects(scene.children, true).find((h) => h.object.visible);
+      if (!hit) return null;
+      const names: string[] = []; let o: typeof hit.object | null = hit.object; while (o) { if (o.name) names.push(o.name); o = o.parent; }
+      return { names, point: [hit.point.x, -hit.point.z, hit.point.y], material: (hit.object as unknown as { material?: { name?: string } }).material?.name };
+    },
   };
 }
 

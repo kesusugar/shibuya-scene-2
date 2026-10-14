@@ -56,11 +56,15 @@ it('keeps a visible recess behind transparent north glazing and opaque transoms 
    const mesh=new Mesh(geometry,material);mesh.name=prim.getMaterial()!.getName();meshes.push(mesh);
   }
   const tangent=new Vector3(50.345,0,-6.193).normalize(),normal=new Vector3(tangent.z,0,-tangent.x);
-  const ray=(height:number)=>new Raycaster(new Vector3(-44.855,height,71.856).addScaledVector(tangent,20.3).add(normal),normal.clone().negate(),0,2).intersectObjects(meshes,false);
-  const open=ray(8.8);
+  const ray=(height:number)=>new Raycaster(new Vector3(-44.855,height,71.856).addScaledVector(tangent,20.3).add(normal),normal.clone().negate(),0,5).intersectObjects(meshes,false);   // interior now 3 m deep
+  const layout=JSON.parse(readFileSync(base+'source/data/layout.json','utf8'));
+  const glassZ=layout.glass_center_tp-15;
+  const open=ray(glassZ-1);
   expect(open[0].object.name).toBe('sc_glass');
   expect(open.some(h=>h.object.name==='sc_interior'&&h.distance>1.5)).toBe(true);
   expect(open.some(h=>h.object.name==='sc_wall')).toBe(false);
-  expect(ray(8.25)[0].object.name).toBe('sc_frame');
+  expect(ray(glassZ+layout.transom_offsets_m[0])[0].object.name).toBe('sc_frame');
+  // Claude review: the glazing fills most of the north face (SC05), so no blank wall remains above it
+  expect(ray(glassZ+layout.glass_height_m/2-.4)[0].object.name).toBe('sc_glass');
  }finally{for(const m of meshes)m.geometry.dispose();material.dispose();}
 });
