@@ -1,0 +1,9 @@
+{
+  "baseline_glb_sha256": "c184cadf05ebfbad08504664745377c3049b25e667019f03093a2459eb71f78d",
+  "material_hashes": {
+    "scramble-square_wall": "54b944f8539bcc21ed467c53cd9bd7a29a7820afd648a7321fbc7ca0dfb65594",
+    "scramble-square_roof": "dde6c2542d9c48d90fbfb16224e3c370efbdd71b3e76a0b4a9305fd3b6cacd70"
+  },
+  "off_north_triangles": 27234,
+  "off_north_hash": "b6c24234908f8f1fbc3e06b5102b75f47bd09f01233772fbe72ce596351c1598"
+}

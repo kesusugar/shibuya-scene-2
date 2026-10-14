@@ -1,0 +1,63 @@
+{
+  "id": "scramble-square",
+  "source_id": "way/617560918",
+  "level": "B",
+  "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery",
+  "stats": {
+    "triangles": 35672,
+    "primitives": 9,
+    "bytes": 2350656
+  },
+  "generator": "tools/core/build_facade.py",
+  "files": {
+    "README.md": {
+      "bytes": 1676,
+      "sha256": "1b82419667a75b50b83cdb6856dbff156273e90fec35aad467f91aa5e5bf40a6"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 482,
+      "sha256": "c93c43f60ffa191521f5d9e096c6340c102d935ba87d259bcacac509ae8345ef"
+    },
+    "source/data/plateau.json": {
+      "bytes": 35849,
+      "sha256": "1eb45c10f27fc00d02f5c6c534e135bdcf7ec4ce60e367200e4b06bab0ba0d65"
+    },
+    "source/data/stats.json": {
+      "bytes": 4114,
+      "sha256": "fe4f426ee221c643b36474eab43f35bfe24141c8562828f71228e29829f2cefb"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 531,
+      "sha256": "107281d8cd03253ca91003e7a19bde76136967af4ec8776e96a556e1818fad42"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 4973941,
+      "sha256": "e113b409f732670ad9b17ccd437210ceaa32c04d7c338c0bc8ba4054cc63b12d"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 2688,
+      "sha256": "ca569a82fbf33d85ed33a563e2636d91d0ffb4e2079c7aeee53edde4be8438f6"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/scramble-square.glb": {
+      "bytes": 2350656,
+      "sha256": "c184cadf05ebfbad08504664745377c3049b25e667019f03093a2459eb71f78d"
+    },
+    "web/viewer.json": {
+      "bytes": 195,
+      "sha256": "02dc53f7e6125211898d55d264eef2742c23baa62f010af55a51fd4987085c22"
+    }
+  }
+}
+
