@@ -1,5 +1,8 @@
 {
   "groundElevationTP": 15,
+  "layers": {
+    "signs": "signs-2025-01.glb"
+  },
   "planBounds": [
     -31.60000076293945,
     34.6,

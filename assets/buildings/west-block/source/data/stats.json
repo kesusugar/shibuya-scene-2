@@ -419,12 +419,12 @@
   ],
   "geometry": {
     "base": {
-      "meshes": 17,
-      "triangles": 1873
+      "meshes": 18,
+      "triangles": 1813
     },
     "signs": {
       "meshes": 9,
-      "triangles": 156
+      "triangles": 110
     }
   },
   "status": "B-stage, facade boundaries and dimensions approximate; January 2025 static ads"

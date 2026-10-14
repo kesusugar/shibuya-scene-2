@@ -1,34 +1,58 @@
 {
-  "corners_xy_m": [
-    [
-      24.864,
-      -61.765
-    ],
-    [
-      42.883,
-      -59.056
-    ],
-    [
-      43.958,
-      -66.169
-    ],
-    [
-      25.939,
-      -68.88
-    ]
+ "corners_xy_m": [
+  [
+   24.864,
+   -61.765
   ],
-  "base_tp_m": 15.439,
-  "top_tp_m": 28.1,
-  "joint_width_m": 0.025,
-  "horizontal_joint_tp_m": [
-    19.439,
-    23.439
+  [
+   42.883,
+   -59.056
   ],
-  "vent_center_tp_m": 24.8,
-  "vent_size_m": [
-    3.2,
-    1.15
+  [
+   43.958,
+   -66.169
   ],
-  "basis": "PLATEAU original rectangular shell and recessed/parapet roof retained. October18 view.tokyo article shows a white equipment-like facility near old platform; association with bldg_5369333e and exact identity remain inferred, not independently confirmed. No generic residential windows; metal panel/louver types used as B estimates. Joint spacing, vent position and dimensions not surveyed. Local C2a skirt added without shifting roof.",
-  "joint_revision_basis": "Initial model inspection showed a pronounced grid on an equipment-like facade. October18 reference shows a largely plain white shell with subdued panel seams. Reduced seam width only from .07m to .025m as a B estimate; positions, material colour, vent, roof and shell unchanged. No calibrated pixel measurement."
+  [
+   25.939,
+   -68.88
+  ]
+ ],
+ "base_tp_m": 15.439,
+ "top_tp_m": 28.1,
+ "joint_width_m": 0.025,
+ "horizontal_joint_tp_m": [
+  19.439,
+  23.439
+ ],
+ "vent_center_tp_m": 24.8,
+ "vent_size_m": [
+  3.2,
+  1.15
+ ],
+ "basis": "PLATEAU original rectangular shell and recessed/parapet roof retained. October18 view.tokyo article shows a white equipment-like facility near old platform; association with bldg_5369333e and exact identity remain inferred, not independently confirmed. No generic residential windows; metal panel/louver types used as B estimates. Joint spacing, vent position and dimensions not surveyed. Local C2a skirt added without shifting roof.",
+ "joint_revision_basis": "Initial model inspection showed a pronounced grid on an equipment-like facade. October18 reference shows a largely plain white shell with subdued panel seams. Reduced seam width only from .07m to .025m as a B estimate; positions, material colour, vent, roof and shell unchanged. No calibrated pixel measurement.",
+ "scaffold": {
+  "faces": [
+   0,
+   3
+  ],
+  "offset_m": 0.6,
+  "depth_m": 0.9,
+  "bay_m": 1.8,
+  "lift_m": 2.0,
+  "above_roof_m": 1.0,
+  "billboard_face": 0
+ },
+ "hoarding": {
+  "height_m": 3.0,
+  "offset_m": 2.0
+ },
+ "billboard": {
+  "width_m": 15.5,
+  "height_m": 7.0,
+  "bottom_above_base_m": 4.6,
+  "texture": "billboard_2025_10.png",
+  "source": "SC04 docs/core/station_glazing_refs/oct2025_6646.jpg (2025-10-10, ウィ貴公子, CC BY-SA 4.0), quad (385,471),(386,541),(540,539),(538,467) of 1280x960; a traffic signal and two road signs in front of the left third were filled by diffusion from the surrounding pixels (blurred patch), not repainted"
+ },
+ "frontage_revision_basis": "Claude review 2026-10-14: hachiko.jpg (2025-11-01) taken from the plaza in the same direction shows white hoarding, scaffolding and a large billboard where this shell stood as a blank grey wall; SC04 (2025-10-10) shows the October billboard on the same frame. Association of the frame with this PLATEAU shell inferred from view direction, not surveyed."
 }
