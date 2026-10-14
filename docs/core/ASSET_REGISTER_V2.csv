@@ -3,33 +3,33 @@
 2,way/136691386,building,Q-FRONT,,plateau_lod2,15.099,67.23,52.13,plateau_lod2_surfaces,44.1,finished_verified,2,0.04414,0.01586,0.22294,0.03431,0.19783,0.06525,0.01991,7,0.22294,0.8,0.86
 3,way/136690966,building,(名称なし),推定：センター街入口西側の雑居ビル（JTB・マツモトキヨシ・西村フルーツパーラー等が入居）。旧プロジェクトで屋上の看板フレーム（久光・サロンパス）の親。大盛堂書店ビルかどうかは未確認,plateau_lod2,15.33,45.47,30.14,plateau_lod2_surfaces,73.3,B_prototype,3,0.01239,0.00613,0.03821,0.00663,0.07922,0.02349,0.00815,7,0.07922,1.0,0.7099
 4,way/904652357,building,渋谷,渋谷駅（OSM building=train_station、駅舎の一部）,osm_prism,,,10.2,levels_x3.4,129.8,not_started,6,0.00845,0.0055,0.00362,0.01464,0.00287,0.0,0.00972,6,0.01464,0.8,0.5038
-5,way/617560918,building,渋谷スクランブルスクエア,,plateau_lod2,14.61,243.637,229.03,plateau_lod2_surfaces,179.6,not_started,4,0.02033,0.02013,0.01749,0.02019,0.01661,0.0,0.0,5,0.02033,0.8,0.4796
-6,way/87250190,building,渋谷マークシティEAST,,osm_prism,,,112.43,plateau_top,125.8,not_started,5,0.01698,0.01874,0.01139,0.01358,0.00941,0.0,0.0,5,0.01874,0.8,0.4764
+5,way/617560918,building,渋谷スクランブルスクエア,,plateau_lod2,14.61,243.637,229.03,plateau_lod2_surfaces,179.6,B_prototype,4,0.02033,0.02013,0.01749,0.02019,0.01661,0.0,0.0,5,0.02033,0.8,0.4796
+6,way/87250190,building,渋谷マークシティEAST,,osm_prism,,,112.43,plateau_top,125.8,B_compound_prototype,5,0.01698,0.01874,0.01139,0.01358,0.00941,0.0,0.0,5,0.01874,0.8,0.4764
 7,way/60739635,building,渋谷駅前ビル,,plateau_lod2,15.24,46.6,31.36,plateau_lod2_surfaces,65.0,B_prototype,7,0.02652,0.02757,0.02307,0.01331,0.0213,0.0,0.01609,6,0.02757,0.4,0.4499
-8,way/54500467,building,Ishi-usubiki Nihachi Soba Sobashiki Shibuya Mark City,渋谷マークシティ WEST（OSM の名前は入居店舗名）,plateau_lod2,15.578,128.009,112.43,plateau_lod2_surfaces,286.7,not_started,29,0.00345,0.00492,0.00137,0.00236,0.00113,0.0,0.0,5,0.00492,0.8,0.4485
+8,way/54500467,building,Ishi-usubiki Nihachi Soba Sobashiki Shibuya Mark City,渋谷マークシティ WEST（OSM の名前は入居店舗名）,plateau_lod2,15.578,128.009,112.43,plateau_lod2_surfaces,286.7,B_prototype,29,0.00345,0.00492,0.00137,0.00236,0.00113,0.0,0.0,5,0.00492,0.8,0.4485
 9,way/355250634,building,(名称なし),推定：駅側の高架歩行者デッキ／コンコース（layer 1、2〜3階、POI「渋谷駅の歩道橋から見た渋谷交差点」）,plateau_lod2,15.41,35.686,20.28,plateau_lod2_surfaces,79.6,B_prototype,8,0.01266,0.0362,0.00792,0.00733,0.00739,0.0,0.00716,6,0.0362,0.2,0.4273
-10,plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0,building,(名称なし),推定：駅南東側の駅関連建物（PLATEAU のみ。高所 X02 の手前で大きく写る）,plateau_lod2,14.62,38.069,23.45,plateau_lod2_surfaces,146.4,not_started,,1e-05,0.0,8e-05,0.0,0.00014,0.0,0.12071,1,0.12071,0.2,0.4194
-11,way/55895868,building,Shibuya 109,,plateau_lod2,16.17,65.949,49.78,plateau_lod2_surfaces,153.9,not_started,12,0.00454,0.0,0.00371,0.00287,0.0,0.0,0.00111,4,0.00454,0.8,0.412
+10,plateau/bldg_d7fb4726-719f-47a1-a94f-4d0a1e89a2e0,building,(名称なし),推定：駅南東側の駅関連建物（PLATEAU のみ。高所 X02 の手前で大きく写る）,plateau_lod2,14.62,38.069,23.45,plateau_lod2_surfaces,146.4,B_prototype,,1e-05,0.0,8e-05,0.0,0.00014,0.0,0.12071,1,0.12071,0.2,0.4194
+11,way/55895868,building,Shibuya 109,,plateau_lod2,16.17,65.949,49.78,plateau_lod2_surfaces,153.9,B_prototype,12,0.00454,0.0,0.00371,0.00287,0.0,0.0,0.00111,4,0.00454,0.8,0.412
 12,brid/brid_95680199-7365-41de-a5b7-9275321fe8bf,structure,(名称なし),推定：JR山手線・山手貨物線の高架橋（OSM way/146060265・155269569 等と位置が一致）,plateau_lod2,14.704,31.626,16.92,plateau_lod2_surfaces,50.5,C_preserved_in_station_north,,0.0033,0.00241,0.00067,0.01214,0.0005,0.00129,0.00269,5,0.01214,0.5,0.4031
 13,plateau/bldg_5369333e-5975-493a-b05d-b341800715c2,building,(名称なし),推定：JR渋谷駅 ハチ公口側の駅舎（PLATEAU のみ。OSM は駅を屋内通路で描くため建物の way がない）,plateau_lod2,15.439,28.1,12.66,plateau_lod2_surfaces,66.8,B_prototype_identity_estimated,,0.00335,0.02392,0.00161,0.00221,0.0014,0.0,0.00562,6,0.02392,0.2,0.4026
 14,plateau/bldg_9b0ce3b9-6e8c-4bf9-a86b-4f48e326b324,building,(名称なし),推定：JR渋谷駅 駅舎の中央部（PLATEAU のみ）,plateau_lod2,15.14,32.3,17.16,plateau_lod2_surfaces,94.9,B_prototype_viaduct_association_estimated,,0.00424,0.01721,0.00221,0.00363,0.00182,0.0,0.0163,6,0.01721,0.2,0.389
 15,plateau/bldg_20234796-412f-494e-b712-f3f7d6e3197b,building,(名称なし),推定：JR渋谷駅 東側、山手線高架脇の駅施設（PLATEAU のみ）,plateau_lod2,14.88,27.0,12.12,plateau_lod2_surfaces,82.0,B_partial_north_prototype,,0.0031,0.00618,0.00132,0.00296,0.0011,0.0,0.01395,6,0.01395,0.2,0.3825
 16,way/55896465,building,西武渋谷店A館,,plateau_lod2,15.62,59.531,43.91,plateau_lod2_surfaces,92.0,in_progress,16,0.00371,0.002,0.0,0.0,0.0,0.00223,0.00426,4,0.00426,0.8,0.3815
-17,way/204091879,building,渋谷ヒカリエ,,plateau_lod2,17.11,202.0,184.89,plateau_lod2_surfaces,273.6,not_started,10,0.01111,0.00826,0.00509,0.01089,0.00481,0.0,0.0,5,0.01111,0.4,0.381
-18,way/1200029947,building,Shibuya Sakura Stage SHIBUYA Tower,,plateau_lod2,12.24,195.843,183.6,plateau_lod2_surfaces,284.5,not_started,9,0.00848,0.00742,0.00756,0.00853,0.00725,0.0,0.0,5,0.00853,0.4,0.3758
-19,way/55588118,building,渋谷フクラス,,plateau_lod2,16.31,120.899,104.59,plateau_lod2_surfaces,203.1,not_started,11,0.00516,0.00236,0.00447,0.00619,0.00387,0.0,0.0,5,0.00619,0.4,0.3711
+17,way/204091879,building,渋谷ヒカリエ,,plateau_lod2,17.11,202.0,184.89,plateau_lod2_surfaces,273.6,B_prototype,10,0.01111,0.00826,0.00509,0.01089,0.00481,0.0,0.0,5,0.01111,0.4,0.381
+18,way/1200029947,building,Shibuya Sakura Stage SHIBUYA Tower,,plateau_lod2,12.24,195.843,183.6,plateau_lod2_surfaces,284.5,B_prototype,9,0.00848,0.00742,0.00756,0.00853,0.00725,0.0,0.0,5,0.00853,0.4,0.3758
+19,way/55588118,building,渋谷フクラス,,plateau_lod2,16.31,120.899,104.59,plateau_lod2_surfaces,203.1,B_prototype,11,0.00516,0.00236,0.00447,0.00619,0.00387,0.0,0.0,5,0.00619,0.4,0.3711
 20,way/114755219,building,渋谷第一勧銀共同ビル,,plateau_lod2,15.526,67.416,51.89,plateau_lod2_surfaces,94.1,B_prototype_facade_estimated_ads_deferred,15,0.00316,0.00421,0.00055,0.00132,0.0,0.0,0.01062,4,0.01062,0.4,0.3443
-21,way/136691379,building,センター244ビル,,plateau_lod2,16.59,49.843,33.25,plateau_lod2_surfaces,107.7,not_started,14,0.00205,2e-05,0.00332,0.0,0.00556,0.0005,0.00277,4,0.00556,0.4,0.3341
-22,way/155538676,building,(名称なし),推定：ハチ公広場の売店（POI「シュマンケル」）,plateau_lod2,15.27,19.6,4.33,plateau_lod2_surfaces,52.3,not_started,20,0.00241,0.01508,0.00084,0.00203,0.00069,0.0,0.00242,4,0.01508,0.2,0.3133
-23,way/451564412,building,渋谷Parco,,plateau_lod2,23.4,124.8,101.4,plateau_lod2_surfaces,325.0,not_started,81,0.0,0.00051,0.0,0.0,0.0,0.00424,0.02556,2,0.02556,0.4,0.303
+21,way/136691379,building,センター244ビル,,plateau_lod2,16.59,49.843,33.25,plateau_lod2_surfaces,107.7,B_prototype,14,0.00205,2e-05,0.00332,0.0,0.00556,0.0005,0.00277,4,0.00556,0.4,0.3341
+22,way/155538676,building,(名称なし),推定：ハチ公広場の売店（POI「シュマンケル」）,plateau_lod2,15.27,19.6,4.33,plateau_lod2_surfaces,52.3,B_prototype,20,0.00241,0.01508,0.00084,0.00203,0.00069,0.0,0.00242,4,0.01508,0.2,0.3133
+23,way/451564412,building,渋谷Parco,,plateau_lod2,23.4,124.8,101.4,plateau_lod2_surfaces,325.0,B_prototype,81,0.0,0.00051,0.0,0.0,0.0,0.00424,0.02556,2,0.02556,0.4,0.303
 24,way/136692137,building,西武渋谷店B館,,plateau_lod2,16.755,62.608,45.85,plateau_lod2_surfaces,156.1,not_started,28,0.0,0.00013,0.0,0.0,0.0,0.0,0.00253,1,0.00253,0.8,0.3008
-25,way/129061813,building,高木ビルディング,,plateau_lod2,15.88,60.994,45.11,plateau_lod2_surfaces,124.6,not_started,51,0.00093,0.00058,0.001,0.0,0.00208,0.00248,0.0053,3,0.0053,0.4,0.2978
-26,way/116710254,building,ビックカメラ,,plateau_lod2,15.74,48.222,32.48,plateau_lod2_surfaces,97.7,not_started,26,0.0002,0.0,0.00262,0.00021,0.00369,0.0,0.00129,3,0.00369,0.4,0.2946
+25,way/129061813,building,高木ビルディング,,plateau_lod2,15.88,60.994,45.11,plateau_lod2_surfaces,124.6,B_prototype,51,0.00093,0.00058,0.001,0.0,0.00208,0.00248,0.0053,3,0.0053,0.4,0.2978
+26,way/116710254,building,ビックカメラ,,plateau_lod2,15.74,48.222,32.48,plateau_lod2_surfaces,97.7,B_prototype,26,0.0002,0.0,0.00262,0.00021,0.00369,0.0,0.00129,3,0.00369,0.4,0.2946
 27,way/155807211,building,(名称なし),推定：地下鉄出入口の上屋（QFRONT前、POIなし、1階）,osm_prism,,,3.4,levels_x3.4,25.0,not_started,18,0.00194,0.0002,0.01014,0.00052,0.00204,0.0009,0.0003,3,0.01014,0.2,0.2676
-28,way/136691389,building,渋谷平和クワトロビル,,plateau_lod2,15.659,46.015,30.36,plateau_lod2_surfaces,90.1,not_started,13,0.00028,0.00095,8e-05,0.0,0.00545,0.00298,0.00067,2,0.00545,0.4,0.2624
-29,way/521438304,building,渋谷ストリーム,,plateau_lod2,12.42,194.0,181.58,plateau_lod2_surfaces,336.8,not_started,22,0.00085,0.00049,0.00068,0.0,0.00078,0.0,0.0,0,0.00085,0.8,0.2617
-30,way/138670889,building,(名称なし),推定：東側の11階建て金属外装の雑居ビル（肉屋の台所・DJ Bar Bridge等が入居）,plateau_lod2,14.936,61.856,46.92,plateau_lod2_surfaces,85.4,not_started,24,0.00486,0.00402,0.0,0.0053,0.0,0.0,0.0,3,0.0053,0.2,0.2578
-31,way/136587834,building,渋東シネタワー,,plateau_lod2,16.89,83.097,66.21,plateau_lod2_surfaces,148.5,not_started,25,0.0,0.00018,0.00156,3e-05,0.00255,0.0,0.0,2,0.00255,0.4,0.2566
+28,way/136691389,building,渋谷平和クワトロビル,,plateau_lod2,15.659,46.015,30.36,plateau_lod2_surfaces,90.1,B_prototype,13,0.00028,0.00095,8e-05,0.0,0.00545,0.00298,0.00067,2,0.00545,0.4,0.2624
+29,way/521438304,building,渋谷ストリーム,,plateau_lod2,12.42,194.0,181.58,plateau_lod2_surfaces,336.8,B_prototype,22,0.00085,0.00049,0.00068,0.0,0.00078,0.0,0.0,0,0.00085,0.8,0.2617
+30,way/138670889,building,(名称なし),推定：東側の11階建て金属外装の雑居ビル（肉屋の台所・DJ Bar Bridge等が入居）,plateau_lod2,14.936,61.856,46.92,plateau_lod2_surfaces,85.4,B_prototype,24,0.00486,0.00402,0.0,0.0053,0.0,0.0,0.0,3,0.0053,0.2,0.2578
+31,way/136587834,building,渋東シネタワー,,plateau_lod2,16.89,83.097,66.21,plateau_lod2_surfaces,148.5,B_prototype,25,0.0,0.00018,0.00156,3e-05,0.00255,0.0,0.0,2,0.00255,0.4,0.2566
 32,way/142438895,building,(名称なし),推定：地下鉄出入口の上屋（交差点北東の角、POI「渋谷駅」）,osm_prism,,,3.4,levels_x3.4,22.6,not_started,23,0.00223,0.00035,0.00031,0.01884,0.00011,0.00093,0.00029,2,0.01884,0.2,0.2494
 33,way/810356690,building,(名称なし),推定：渋谷駅の高架部（中央改札付近、layer 1）,plateau_lod2,14.86,35.5,20.64,plateau_lod2_surfaces,174.6,B_partial_upper_hall_prototype,34,0.0,0.0,0.00071,0.00079,0.00067,0.0,0.0,0,0.00079,0.7,0.2416
 34,way/904734439,building,(名称なし),京王井の頭線 渋谷駅（西口）,osm_prism,,,9.0,default_9m,176.5,not_started,31,0.00028,0.0001,2e-05,0.00022,2e-05,0.0,0.0,0,0.00028,0.7,0.2406
@@ -69,7 +69,7 @@
 68,brid/brid_cb8a47ec-def6-47a9-9366-b294a047ee63,structure,(名称なし),推定：JR山手線の高架（北側、原宿方面）,plateau_lod2,16.213,22.516,6.3,plateau_lod2_surfaces,103.3,not_started,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.5,0.2
 69,plateau/bldg_5e342582-90bd-4497-b851-648330ac5704,building,(名称なし),,plateau_lod2,12.0,26.4,14.4,plateau_lod2_surfaces,211.7,not_started,,0.0,0.0,0.0,0.0,0.0,0.0,0.01132,1,0.01132,0.2,0.1986
 70,plateau/bldg_a4e27670-5674-4902-bbd5-51c0f5084ee9,building,(名称なし),,plateau_lod2,15.431,18.6,3.17,plateau_lod2_surfaces,60.6,not_started,,0.00044,0.00775,0.00015,0.00035,0.00013,0.0,0.00029,1,0.00775,0.2,0.1914
-71,way/155807205,building,(名称なし),推定：ハチ公広場の喫煙所（amenity=smoking_area）,osm_prism,,,9.0,default_9m,56.0,not_started,39,0.00038,0.00721,0.00018,0.00026,0.00017,0.0,0.00026,1,0.00721,0.2,0.1903
+71,way/155807205,building,(名称なし),推定：ハチ公広場の喫煙所（amenity=smoking_area）,osm_prism,,,9.0,default_9m,56.0,B_facility_prototype,39,0.00038,0.00721,0.00018,0.00026,0.00017,0.0,0.00026,1,0.00721,0.2,0.1903
 72,way/136691375,building,ダッキープラザ,,plateau_lod2,15.76,46.355,30.59,plateau_lod2_surfaces,167.1,not_started,151,0.0,0.0,0.0,0.0,0.0,0.0,0.00097,0,0.00097,0.4,0.182
 73,way/607516260,building,アソルティ渋谷ビル,,osm_prism,,,35.82,plateau_top,338.0,not_started,235,0.0,0.0,0.0,0.0,0.0,0.0,0.00098,0,0.00098,0.4,0.182
 74,way/136691372,building,A2,,plateau_lod2,16.43,52.411,35.98,plateau_lod2_surfaces,234.5,not_started,149,0.0,0.0,0.0,0.0,0.0,0.0,0.00094,0,0.00094,0.4,0.1819
@@ -91,7 +91,7 @@
 90,way/116806279,building,FPG Links Shibuya,,plateau_lod2,15.7,60.253,44.55,plateau_lod2_surfaces,125.8,not_started,54,0.0,0.00052,0.0,0.0,0.0,0.0,0.0,0,0.00052,0.4,0.1811
 91,way/136730036,building,キラクビル,,plateau_lod2,16.06,45.668,29.61,plateau_lod2_surfaces,222.4,not_started,175,0.0,0.0,0.0,0.0,0.0,0.0,0.00052,0,0.00052,0.4,0.1811
 92,way/491722174,building,宮益坂ビルディング,,plateau_lod2,22.646,81.5,58.85,plateau_lod2_surfaces,291.5,not_started,56,0.00053,0.0,0.0,6e-05,0.0,0.0,0.0,0,0.00053,0.4,0.1811
-93,way/858994297,building,(名称なし),推定：ハチ公広場の小構造物（高さ3.0 m、名称なし）,osm_prism,,,3.03,height,61.0,not_started,40,0.00015,0.00267,7e-05,9e-05,5e-05,0.0,0.00045,1,0.00267,0.2,0.1811
+93,way/858994297,building,(名称なし),推定：ハチ公広場の小構造物（高さ3.0 m、名称なし）,osm_prism,,,3.03,height,61.0,B_facility_prototype,40,0.00015,0.00267,7e-05,9e-05,5e-05,0.0,0.00045,1,0.00267,0.2,0.1811
 94,way/116710255,building,THE PRIME,,plateau_lod2,17.28,61.603,44.32,plateau_lod2_surfaces,202.3,not_started,53,0.00046,0.0,0.00018,0.00047,0.0,0.0,0.0,0,0.00047,0.4,0.181
 95,way/136691344,building,センタービル,,plateau_lod2,15.83,38.907,23.08,plateau_lod2_surfaces,178.8,not_started,144,0.0,0.0,0.0,0.0,0.0,0.0,0.00047,0,0.00047,0.4,0.181
 96,way/116806280,building,渋谷パークサイド共同ビル,,plateau_lod2,15.51,46.078,30.57,plateau_lod2_surfaces,110.5,not_started,62,0.00014,0.00045,0.0,0.0,0.0,0.0,0.0,0,0.00045,0.4,0.1809
