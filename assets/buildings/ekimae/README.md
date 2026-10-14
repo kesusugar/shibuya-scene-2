@@ -1,6 +1,6 @@
 # 渋谷駅前ビル — B段階・写真に基づく再構成
 
-現行版（2026-10-14）：23,822三角形・27描画単位・2,048,704 bytes。Samsung画面はメーカー公表21.6×16.32mに整合。編集用は `source/blender/ekimae-fidelity.blend`。出典・未達・再生成は下の「写真に基づく外装再構成」と `C1_EKIMAE_FIDELITY_REPORT.md` を参照。
+現行版（2026-10-14）：23,730三角形・27描画単位・2,088,436 bytes。Samsung画面はメーカー公表21.6×16.32mに整合。編集用は `source/blender/ekimae-fidelity.blend`。出典・未達・再生成は下の「写真に基づく外装再構成」と `C1_EKIMAE_FIDELITY_REPORT.md` を参照。
 
 ## 旧 B 初版の記録（以下の数値・配置説明は旧版）
 
@@ -52,3 +52,8 @@ python source/blender/recrop_ek01.py /path/to/EK01-full.jpg
 Pillow、NumPy が必要。4032×2268 の元画像は SOURCES.json の EK01 URL/ハッシュで照合する。画像のない部分を生成しない。
 
 正面・側面の検証画像：リポジトリルートと出力パスを指定し、`source/blender/render_ekimae.py -- REPO_ROOT output.png front`（または `side`）を Blender で実行。
+
+
+## 看板の向き・階境界の修正
+
+現行の飲食店看板は全3階を通した2面を先に透視補正し、同じ縦の窓枠を共通U座標へ揃え、その後にY方向だけで階境界を整える。各階を独立にずらす方式は撤回した。詳細は `docs/core/C1_EKIMAE_SIGN_ALIGNMENT_REPORT.md`、拡大比較は `evidence/c1-ekimae-sign-alignment/comparison.jpg`。初期の全体比較も現在のモデルで更新済み。

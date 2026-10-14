@@ -22,3 +22,7 @@ warp(quad,(192,1024)).save(root/'textures/longboard.png',optimize=True)
 cfg['textures']['longboard']={'full_resolution_quad':quad,'size':[192,1024],'basis':'EK01 visible right-edge 17LIVE longboard; verified 2025-10-30 to 2025-11-30 campaign, photograph only; small top edge and bottom obstruction retained.'}
 cfg['crop_revision']={'source_size':[4032,2268],'method':'Perspective reprojection of full-resolution original; no invented pixels. Roof HiT left edge remains outside photograph.'}
 (root/'data/facades.json').write_text(json.dumps(cfg,ensure_ascii=False,indent=2)+'\n')
+
+# Shared-boundary multi-face rectification supersedes original whole-floor quads.
+from rectify_restaurant_signs import rectify
+rectify(sys.argv[1])

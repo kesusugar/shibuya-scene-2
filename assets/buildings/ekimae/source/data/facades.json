@@ -137,7 +137,8 @@
           400.05,
           765.4499999999999
         ]
-      ]
+      ],
+      "overridden_by": "restaurant_alignment: full-height face rectification then fixed-U/Y-only floor-edge straightening; original quad retained only as historical first-pass metadata"
     },
     "francais": {
       "quad": [
@@ -179,7 +180,8 @@
           378.0,
           844.1999999999999
         ]
-      ]
+      ],
+      "overridden_by": "restaurant_alignment: full-height face rectification then fixed-U/Y-only floor-edge straightening; original quad retained only as historical first-pass metadata"
     },
     "gusto": {
       "quad": [
@@ -221,7 +223,8 @@
           352.8,
           929.25
         ]
-      ]
+      ],
+      "overridden_by": "restaurant_alignment: full-height face rectification then fixed-U/Y-only floor-edge straightening; original quad retained only as historical first-pass metadata"
     },
     "eyecity": {
       "quad": [
@@ -363,5 +366,110 @@
     "sigma_dimensions": "Samsung W21.6 H16.32 primary manufacturer; roof center41.5m and radius8.72m inferred",
     "hit_dimensions": "W24.32 H17.28m historical approximate; 2024 official area approximately420sqm; partial16m artwork coverage estimated",
     "ground": "82 recorded frontage samples explicitly reused; anchorTP15.29 unchanged"
+  },
+  "restaurant_alignment": {
+    "source": "EK01 4032x2268, Joli Rumi,2025-11-01,CC BY-SA4.0",
+    "method": "Two full-height facade-plane projective rectifications first, sharing exact central corner, then Y-only floor-edge straightening with fixed common U stations. No independent horizontal shifts by floor.",
+    "face_quads_px": {
+      "front": [
+        [
+          420,
+          660
+        ],
+        [
+          800,
+          750
+        ],
+        [
+          715,
+          1010
+        ],
+        [
+          320,
+          934
+        ]
+      ],
+      "return": [
+        [
+          800,
+          750
+        ],
+        [
+          1000,
+          848
+        ],
+        [
+          930,
+          1073
+        ],
+        [
+          715,
+          1010
+        ]
+      ]
+    },
+    "central_corner_px": [
+      [
+        800,
+        750
+      ],
+      [
+        715,
+        1010
+      ]
+    ],
+    "full_stack_size": [
+      1024,
+      768
+    ],
+    "face_split_u": 0.666015625,
+    "bands": [
+      {
+        "name": "shabu",
+        "z0": 27.7,
+        "z1": 31.0,
+        "rectified_upper_y_at_u_knots": [
+          0,
+          0,
+          0
+        ],
+        "rectified_lower_y_at_u_knots": [
+          260,
+          240,
+          260
+        ]
+      },
+      {
+        "name": "francais",
+        "z0": 24.35,
+        "z1": 27.7,
+        "rectified_upper_y_at_u_knots": [
+          260,
+          240,
+          260
+        ],
+        "rectified_lower_y_at_u_knots": [
+          505,
+          480,
+          510
+        ]
+      },
+      {
+        "name": "gusto",
+        "z0": 21.15,
+        "z1": 24.35,
+        "rectified_upper_y_at_u_knots": [
+          505,
+          480,
+          510
+        ],
+        "rectified_lower_y_at_u_knots": [
+          768,
+          768,
+          768
+        ]
+      }
+    ],
+    "geometry": "No generic uprights across continuous advertising; outer floor strips only. Physical facade widths/curvature and floor heights inferred."
   }
 }

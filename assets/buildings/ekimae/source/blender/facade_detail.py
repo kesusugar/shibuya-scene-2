@@ -111,11 +111,12 @@ def build(g):
   solid(s,s+.8,10.4,20.8,'ek_band',.1,.4)
   for zz in [11,12.4,13.8,15.2,16.6,18,19.4]:solid(s,s+.8,zz,zz+.035,'ek_steel',.4,.415)
  # Upper restaurant sign strips remain in a separate dated layer, once across front.
- for name,z,h in [('shabu',29.4,2.65),('francais',26.1,3.1),('gusto',22.75,3.2)]:
-  surf(0,total,z-h/2,z+h/2,'ek_sign_'+name,.44,'signs',(0,1))
-  for zz in [z-h/2,z+h/2]:solid(0,total,zz-.06,zz+.06,'ek_band',.2,.51)
-  # physical aluminum uprights align to visible bays, without duplicating advertisements
-  for j in range(1,11):solid(total*j/11-.025,total*j/11+.025,z-h/2,z+h/2,'ek_silver',.45,.5)
+ for band in F['restaurant_alignment']['bands']:
+  name,z0,z1=band['name'],band['z0'],band['z1']
+  surf(0,total,z0,z1,'ek_sign_'+name,.44,'signs',(0,1))
+  # Only floor-edge trim. Uniform bay bars would wrongly cross continuous lettering.
+  for zz in [z0,z1]:solid(0,total,zz-.045,zz+.045,'ek_band',.2,.49)
+  if name=='gusto':solid(0,total,z0-.48,z0-.04,'ek_band',.1,.47)
  east_panel(2.6,17.2,2.8,22,'ek_sign_eyecity',.43,'signs')
  # Tall 17LIVE return billboard, present in the same November reference, not a fabricated generic banner.
  panel(L-8.2,17.5,3.0,26.1,'ek_screen_back',.38)

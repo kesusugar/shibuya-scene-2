@@ -2,39 +2,47 @@
   "id": "ekimae",
   "source_id": "way/60739635",
   "level": "B",
-  "status": "Photo-led facade revision; preserved georeferenced shell/anchor; middle facade and interiors inferred; HiT incomplete photograph retained as neutral gap",
+  "status": "Photo-led facade; current restaurant alignment rectifies full-height faces with common vertical stations; inferred unseen details/HiT missing photograph recorded",
   "sign_era": "2025-11-01",
   "sign_license": "CC BY-SA 4.0",
   "attribution": "Joli Rumi; see source/textures/LICENSE.md",
   "stats": {
-    "triangles": 23822,
+    "triangles": 23730,
     "primitives": 27,
-    "bytes": 2048704
+    "bytes": 2088436
   },
   "files": {
     "README.md": {
-      "bytes": 4534,
-      "sha256": "b6104f855a63cb9ab7a3d7433c5d37648ba0e37f004acf1e4d4ed25a8cac62ac"
+      "bytes": 4992,
+      "sha256": "27716d9ede121ad276369277749fe1819d80a78fb9c671b00685a112f33f5e87"
     },
     "source/blender/build_ekimae.py": {
       "bytes": 8007,
       "sha256": "fc7447df1382d8fcc4979bf2d4ff43ced5c4bac0262756ef9dae3dde6a2b88a5"
     },
     "source/blender/ekimae-fidelity.blend": {
-      "bytes": 2606265,
-      "sha256": "f73606c20a1ef5cde8b002d0e5160cb2d1f0f8639edb0de5531b8f82836ccb25"
+      "bytes": 3131105,
+      "sha256": "45d442366041ec8787e462430849e9a01fe7e74aa89f11e4a596ce6bd6ab7482"
     },
     "source/blender/ekimae-uv.blend": {
       "bytes": 1425808,
       "sha256": "307314e82d306b216c20f6c0b8b168c96d792cb47c03f889bdf6ee9608ae96ab"
     },
     "source/blender/facade_detail.py": {
-      "bytes": 9090,
-      "sha256": "ecda8b52e689306b7fc9303d5d3033e7a76448fd456c0e6922709dd5fdd06276"
+      "bytes": 9063,
+      "sha256": "e125ec392d4b5435b6c9df2d3a0bdbd914e91c273da87d21e022bd85eb3f742c"
     },
     "source/blender/recrop_ek01.py": {
-      "bytes": 1824,
-      "sha256": "8db55a9c10ef19b15df81510e3351e4358ec1f1f34b3c0e7ec0ceddc7a661498"
+      "bytes": 1973,
+      "sha256": "5e29d664bfc7118462ba90e6c46aecf57570d6ba11740bc8da1503d2e21d3ddc"
+    },
+    "source/blender/rectify_restaurant_signs.py": {
+      "bytes": 2888,
+      "sha256": "9de07c776b2c613e88b361e92541cca0eac3d2277e806496df32c19a1ee0716b"
+    },
+    "source/blender/render_alignment.py": {
+      "bytes": 1415,
+      "sha256": "c070fdce02e76bc9ba9faa0a6673262f54f10165b760e3982831bdd9f8571793"
     },
     "source/blender/render_ekimae.py": {
       "bytes": 1414,
@@ -45,8 +53,8 @@
       "sha256": "8d44c57081700c0c2cce967fd56dc2ec4fc4b53f389454362dab5e8f06243fc3"
     },
     "source/data/facades.json": {
-      "bytes": 7215,
-      "sha256": "89a3b92c83354e070c9f730183ccce94f6438465a3910c6c9b6d53cf0f8e8e75"
+      "bytes": 9784,
+      "sha256": "508d5d637806fb6f547dcd2a3ff71d5056ac01dc0ee193aeb019f53390389e4c"
     },
     "source/data/plateau.json": {
       "bytes": 8102,
@@ -54,7 +62,7 @@
     },
     "source/data/stats.json": {
       "bytes": 6376,
-      "sha256": "e1efe430a3a6ef2bf0d6c63418a324baf90d3db475665e999346b557a06c9fc6"
+      "sha256": "a13d4dd72f27606f47cc37672d54610f379417d278550e162caff4ee48d9efb4"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
       "bytes": 919,
@@ -65,20 +73,20 @@
       "sha256": "8c5dcae8b31c3934b44bd124a855056806b293500d6ddfbfaffa9dd3de07fe2a"
     },
     "source/textures/LICENSE.md": {
-      "bytes": 1595,
-      "sha256": "661772ecfdb56ac6d4488c98ad4620fc426d69fc9955e0aad5507657fc00c1d8"
+      "bytes": 1921,
+      "sha256": "650b3a8c61988c2974d8bd6d0db942f9a79b671fd6010f7f2802ff52aad5a629"
     },
     "source/textures/eyecity.png": {
       "bytes": 181762,
       "sha256": "f6f648394ba725f615d42a5bfe63b14f040c85971a9ef0090283e6f3c29dd541"
     },
     "source/textures/francais.png": {
-      "bytes": 192044,
-      "sha256": "490799041f797e14953a906c9dbd842ffe4761cf27bfd9ee33d14ff2b5a79d43"
+      "bytes": 355255,
+      "sha256": "370dd9aa91bf4b8b991fab8e70922c6bd6fc70b62b45f8fe57669445e3528226"
     },
     "source/textures/gusto.png": {
-      "bytes": 197968,
-      "sha256": "6cacbfbdb51507d615a76ee7a345e015146e04d73eb9851ec2e3debf7517a3d8"
+      "bytes": 377417,
+      "sha256": "5aa05007e25a7f64139afb8710253b9fe20a2e0d3cb31a933a2de24c4a00b49b"
     },
     "source/textures/hit_sky.png": {
       "bytes": 430078,
@@ -97,12 +105,12 @@
       "sha256": "3c35e3f3855396ca2063e7d1bc167dbf9e0e8fccf563a23ca6cd3025b42318d3"
     },
     "source/textures/shabu.png": {
-      "bytes": 210010,
-      "sha256": "b99ac56035659c95d4c1f83ad3a7c238da9e36f01635d62a3b7bc09480714c03"
+      "bytes": 390485,
+      "sha256": "1bce6a899f47a76446da44a0c5583f0649cba481daace76fb849adda968cc6bd"
     },
     "web/ekimae.glb": {
-      "bytes": 1796908,
-      "sha256": "3ef781afe95a308ce77d8e563c89fea0b455bdfbb21747a27a2c28ca8da27c1d"
+      "bytes": 1787720,
+      "sha256": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d"
     },
     "web/emissive_day.json": {
       "bytes": 1140,
@@ -113,8 +121,8 @@
       "sha256": "d03b6802d6edcd9234118a2340132fbf7298a64e360c0f94260e69a01fc1a886"
     },
     "web/signs-2025-11.glb": {
-      "bytes": 251796,
-      "sha256": "27172c6adf0160133a7fbd629014c2f5431e34074be9ad9a4c75f520b554a8b4"
+      "bytes": 300716,
+      "sha256": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5"
     },
     "web/viewer.json": {
       "bytes": 158,

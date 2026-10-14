@@ -10,3 +10,5 @@ The PNG files in this folder and ../../web/signs-2025-11.glb contain adapted por
 This license notice applies to these photo derivatives and sign GLB, not to unrelated source code or existing repository assets. Building geometry is based on the existing PLATEAU 2025 data; its upstream attribution remains applicable.
 
 The adapted photographic components packed into `source/blender/ekimae-fidelity.blend`, the rendered model images, and `evidence/c1-ekimae-fidelity/` photo/model comparison images are also licensed CC BY-SA 4.0, with the same Joli Rumi attribution and source above. This notice covers the photographic adaptations and does not relicense unrelated code, PLATEAU geometry, or other repository assets. The original photograph is cropped and perspective-rectified, then applied to reconstructed geometry; the missing left-hand HiT portion remains neutral rather than fabricated.
+
+`evidence/c1-ekimae-sign-alignment/` の比較・現在案の描画画像も、同じ Joli Rumi / CC BY-SA 4.0 の写真派生部分を含む。今回の追加改変は全高の2面透視補正と、共通U位置を維持した階境界のY方向補正。無関係なコードや形状のライセンスは変更しない。

@@ -1,8 +1,8 @@
 {
   "blender": "4.2.3",
-  "triangles": 23822,
+  "triangles": 23730,
   "primitives": 27,
-  "bytes": 2048704,
+  "bytes": 2088436,
   "budget": {
     "triangles": 120000,
     "primitives": 40,
@@ -31,8 +31,15 @@
   "plan_x_bounds_pass": true,
   "full_npm_and_browser_tests": "NOT RUN: incomplete source/dependencies/public assets in dot environment",
   "sha256": {
-    "ekimae.glb": "3ef781afe95a308ce77d8e563c89fea0b455bdfbb21747a27a2c28ca8da27c1d",
-    "signs-2025-11.glb": "27172c6adf0160133a7fbd629014c2f5431e34074be9ad9a4c75f520b554a8b4"
+    "ekimae.glb": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d",
+    "signs-2025-11.glb": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5"
   },
-  "repeat_regeneration_glb_byte_identical": true
+  "independent_exact_blender_regeneration_byte_identical": true,
+  "independent_full_recrop_all_png_byte_identical": true,
+  "focused_vitest": {
+    "files": 3,
+    "tests": 12,
+    "result": "pass",
+    "scope": "West,Ekimae,Daiichi focused tests; not full project integration"
+  }
 }
