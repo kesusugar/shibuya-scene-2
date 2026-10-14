@@ -1,0 +1,38 @@
+{
+  "into_statue": {
+    "steps": 14,
+    "stoppedAt": [
+      11.6,
+      -47.5,
+      0.43454986432688303
+    ],
+    "maxStepChange_m": 0.004,
+    "minZ": 0.3869567374943377
+  },
+  "into_kiosk": {
+    "steps": 11,
+    "stoppedAt": [
+      34.5,
+      -38.75,
+      0.10875909772438663
+    ],
+    "maxStepChange_m": 0.004,
+    "minZ": 0.10070017906871609
+  },
+  "road_to_kerb": {
+    "steps": 120,
+    "stoppedAt": null,
+    "maxStepChange_m": 0.018,
+    "minZ": -0.10578325064137362
+  },
+  "across_plaza": {
+    "steps": 78,
+    "stoppedAt": [
+      33.78858223313779,
+      -38.78858223313779,
+      0.13016321070793957
+    ],
+    "maxStepChange_m": 0.006,
+    "minZ": 0.043894487522781356
+  }
+}
