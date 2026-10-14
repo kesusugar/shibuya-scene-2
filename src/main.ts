@@ -1,3 +1,4 @@
+import { loadExterior, replaceProvisionalFill, type ExteriorResult } from './world/exterior';
 import {loadTactileSupplement,type TactileSupplementResult} from './world/tactileSupplement';
 import {loadFacilities, type FacilitiesResult} from './world/facilities';
 import { loadTerrain, type TerrainResult } from './world/terrain';
@@ -65,9 +66,11 @@ const useGround = params.get('ground') !== 'off';
 const ground = new Mesh(new CircleGeometry(1500, 96), new MeshStandardMaterial({ color: 0x5b5a57, roughness: 0.9 }));
 ground.rotation.x = -Math.PI / 2; ground.position.y = useGround ? -0.62 : 0; ground.receiveShadow = true; ground.name = 'ground';
 scene.add(ground);
+let tactileOuter: TactileSupplementResult | undefined;
 let tactileExtra: TactileSupplementResult | undefined;
 let tactileLinks: TactileSupplementResult | undefined;
 let coreFacilities: FacilitiesResult | undefined;
+let coreExterior: ExteriorResult | undefined;
 let coreTerrain: TerrainResult | undefined;
 let coreGround: GroundResult | undefined;
 let coreStreet: StreetResult | undefined;
@@ -102,9 +105,10 @@ function setTime(t: TimeOfDay) {
   const groundLook = projectedStreet?.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? { ...look, nightGround: 0 } : look;
   if (coreGround?.ok) applyLook(coreGround.root, t, groundLook);
   projectedStreet?.setTime(t, params.get('lamps') !== 'off');
-  for (const supplement of [tactileExtra,tactileLinks]) if (supplement?.ok) applyLook(supplement.root,t,look,undefined,env);
+  for (const supplement of [tactileExtra,tactileLinks,tactileOuter]) if (supplement?.ok) applyLook(supplement.root,t,look,undefined,env);
   if (coreFacilities?.ok) applyLook(coreFacilities.root, t, look, undefined, env);
   if (coreTerrain?.ok) applyLook(coreTerrain.root, t, groundLook);
+  if (coreExterior?.ok) applyLook(coreExterior.root, t, groundLook);
   if (corePlaza?.ok) applyLook(corePlaza.root, t, groundLook);
   if (coreSurround?.ok) applyLook(coreSurround.root, t, look, undefined, env);
   if (coreHachiko?.ok) applyLook(coreHachiko.root, t, look, undefined, env);
@@ -118,7 +122,7 @@ function setTime(t: TimeOfDay) {
 
 async function start() {
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
-  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes, plazaRes, terrainRes, facilitiesRes, tactileExtraRes, tactileLinksRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
+  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes, plazaRes, terrainRes, facilitiesRes, tactileExtraRes, tactileLinksRes, exteriorRes, tactileOuterRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
     useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined),
     params.get('street') !== 'off' ? loadStreet(io.loadGlb, params.get('streeturl') === 'missing' ? '/street/core/missing.glb' : undefined, params.get('street') !== 'entrances') : Promise.resolve(undefined),
     params.get('street') === 'projected' ? loadProjectedStreet(io, params.get('projectedurl') === 'missing' ? '/street/core/missing.glb' : undefined) : Promise.resolve(undefined),
@@ -131,11 +135,17 @@ async function start() {
     useGround && params.get('terrain') !== 'off' ? loadTerrain(io.loadGlb, params.get('terrainurl') === 'missing' ? '/ground/extension/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('facilities') !== 'off' ? loadFacilities(io.loadGlb, params.get('facilitiesurl') === 'missing' ? '/street/plaza-facilities/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('tactile') !== 'off' && params.get('tactileextra') !== 'off' ? loadTactileSupplement(io.loadGlb,'extra') : Promise.resolve(undefined),
-    useGround && params.get('street') !== 'off' && params.get('tactile') !== 'off' && params.get('tactilelinks') !== 'off' ? loadTactileSupplement(io.loadGlb,'links') : Promise.resolve(undefined)]);
+    useGround && params.get('street') !== 'off' && params.get('tactile') !== 'off' && params.get('tactilelinks') !== 'off' ? loadTactileSupplement(io.loadGlb,'links') : Promise.resolve(undefined),
+    useGround && params.get('exterior') !== 'off' ? loadExterior(io.loadGlb, params.get('exteriorurl') === 'missing' ? '/missing' : undefined) : Promise.resolve(undefined),
+    useGround && params.get('street') !== 'off' && params.get('tactile') !== 'off' && params.get('exterior') !== 'off' ? loadTactileSupplement(io.loadGlb,'outer') : Promise.resolve(undefined)]);
   results.forEach((r: BuildingResult) => scene.add(r.root));
   loaded = results.filter((r): r is LoadedBuilding => r.ok);
   coreGround = groundRes;
   coreTerrain = terrainRes;
+  coreExterior = exteriorRes;
+  // Replace only the provisional Core fill when both replacements loaded successfully.
+  if (coreGround?.ok) replaceProvisionalFill(coreGround.root, !!(coreExterior?.ok && coreTerrain?.ok));
+  tactileOuter = tactileOuterRes;
   coreFacilities = facilitiesRes;
   tactileExtra = tactileExtraRes;
   tactileLinks = tactileLinksRes;
@@ -154,9 +164,10 @@ async function start() {
   if (loaded.some(b => ['center244','quattro','scramble-square','fukuras'].includes(b.id))) $('provisional').textContent += '／周辺建物の窓割り・外装は旧年写真によるB推定';
   if (loaded.some(b => b.id === 'center-gai-gate')) $('provisional').textContent += '／センター街ゲートは位置・寸法のB推定、広告内容は後工程';
   if (coreGround?.ok) $('provisional').textContent += '／北側歩道・ハチ公広場の舗装寸法・割付けは試作';
-  for (const supplement of [tactileExtra,tactileLinks]) if (supplement?.ok) scene.add(supplement.root);
+  for (const supplement of [tactileExtra,tactileLinks,tactileOuter]) if (supplement?.ok) scene.add(supplement.root);
   if (tactileLinks?.ok) $('provisional').textContent += '／点字の施設前接続はモデル上の出入口へ推定した経路、実際の全経路は未確認';
   if (coreFacilities?.ok) { scene.add(coreFacilities.root); $('provisional').textContent += '／小施設の形・高さ・用途は推定、喫煙設備のOSM形状は喫煙区画全体ではない'; }
+  if (coreExterior?.ok) { scene.add(coreExterior.root); $('provisional').textContent += '／外側道路・歩道：PLATEAU形状、欠測高さ・縁石・白線は推定'; }
   if (coreTerrain?.ok) { scene.add(coreTerrain.root); $('provisional').textContent += '／外側の地面は国土地理院標高による補填、仕上げ道路・歩道と継ぎ目は推定'; }
   if (coreStreet?.ok) scene.add(coreStreet.root);
   if (corePlaza?.ok) { scene.add(corePlaza.root); $('provisional').textContent += '／像周辺の敷石は写真から推定、寸法・敷設範囲は未測量'; }
@@ -166,7 +177,7 @@ async function start() {
   if (coreTactile?.ok) { scene.add(coreTactile.root); $('provisional').textContent += '／点字ブロックは横断歩道端を基準にした部分試作、位置・接続先は推定'; }
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
   else if (coreGround) ground.position.y = 0;   // no Core ground: the disc goes back to y = 0
-  controls.setGround([...(coreGround?.ok ? [coreGround.root] : []), ...(coreTerrain?.ok ? [coreTerrain.root] : []), ...(coreStreet?.ok ? coreStreet.walkSurfaces : [])]);
+  controls.setGround([...(coreGround?.ok ? [coreGround.root] : []), ...(coreTerrain?.ok ? [coreTerrain.root] : []), ...(coreExterior?.ok ? [coreExterior.root] : []), ...(coreStreet?.ok ? coreStreet.walkSurfaces : [])]);
   if (loaded.some((b) => b.id === 'west-block')) $('provisional').textContent += '\n西側街区の外観は試作、看板は2025年1月の写真を参照';
   if (loaded.some((b) => b.id === 'ekimae')) $('provisional').textContent += '\n渋谷駅前ビルの外観は試作、看板は2025年11月の写真を参照';
   if (loaded.some(b => ['mark-city', 'shibuya109', 'takagi', 'bic-camera', 'cine-tower', 'east-mixeduse', 'hikarie', 'parco', 'stream', 'sakura-stage'].includes(b.id))) $('provisional').textContent += '\n追加の周辺建物は窓・色・看板筐体のB推定、写真との精密照合は未完了';
@@ -182,8 +193,9 @@ async function start() {
   const problems = [
     ...(projectedStreet && !projectedStreet.ok ? [`写真からの仮配置を読み込めず: ${projectedStreet.error}（通常表示を継続）`] : []),
     ...(coreContext && !coreContext.ok ? [`周辺の建物（C段階）の読み込みに失敗: ${coreContext.error}（他は表示を継続）`] : []),
-    ...[tactileExtra,tactileLinks].flatMap(r => r && !r.ok ? [`点字の補足を読み込めず: ${r.error}（元の面を継続）`] : []),
+    ...[tactileExtra,tactileLinks,tactileOuter].flatMap(r => r && !r.ok ? [`点字の補足を読み込めず: ${r.error}（元の面を継続）`] : []),
     ...(coreFacilities && !coreFacilities.ok ? [`小施設の読み込みに失敗: ${coreFacilities.error}（ほかの表示を継続）`] : []),
+    ...(coreExterior && !coreExterior.ok ? [`外側道路の読み込みに失敗: ${coreExterior.error}（元Coreを継続）`] : []),
     ...(coreTerrain && !coreTerrain.ok ? [`外側地面の読み込みに失敗: ${coreTerrain.error}（元の地面を継続）`] : []),
     ...(corePlaza && !corePlaza.ok ? [`敷石の読み込みに失敗: ${corePlaza.error}（ほかの表示は継続）`] : []),
     ...(coreSurround && !coreSurround.ok ? [`像周辺の設備の読み込みに失敗: ${coreSurround.error}（ほかの表示は継続）`] : []),
@@ -216,9 +228,10 @@ async function start() {
     for (const b of loaded) applyClassPass(b.root, { ...b.emissive.day });
     if (coreGround?.ok) applyClassPass(coreGround.root);
     if (coreStreet?.ok) applyClassPass(coreStreet.root);
-    for (const supplement of [tactileExtra,tactileLinks]) if (supplement?.ok) applyClassPass(supplement.root);
+    for (const supplement of [tactileExtra,tactileLinks,tactileOuter]) if (supplement?.ok) applyClassPass(supplement.root);
     if (coreFacilities?.ok) applyClassPass(coreFacilities.root);
     if (coreTerrain?.ok) applyClassPass(coreTerrain.root);
+    if (coreExterior?.ok) applyClassPass(coreExterior.root);
     if (corePlaza?.ok) applyClassPass(corePlaza.root);
     if (coreSurround?.ok) applyClassPass(coreSurround.root);
     if (coreHachiko?.ok) applyClassPass(coreHachiko.root);
@@ -239,11 +252,13 @@ async function start() {
     ready: true,
     stats: Object.fromEntries(loaded.map((b) => [b.id, { ...b.stats, layers: b.layers, layerErrors: b.layerErrors }])),
     failed: results.filter((r) => !r.ok).map((r) => r.id),
-    ground: coreGround ? { ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
+    ground: coreGround ? {fillReplaced:coreGround.ok && !coreGround.root.getObjectByName('ground_fill'), ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
     context: coreContext ? { ok: coreContext.ok, error: coreContext.error, ...coreContext.stats } : 'off',
+    tactileOuter: tactileOuter ? {ok:tactileOuter.ok,attached:tactileOuter.root.parent===scene,error:tactileOuter.error,...tactileOuter.stats} : 'off',
     tactileExtra: tactileExtra ? {ok:tactileExtra.ok,error:tactileExtra.error,...tactileExtra.stats} : 'off',
     tactileLinks: tactileLinks ? {ok:tactileLinks.ok,error:tactileLinks.error,...tactileLinks.stats} : 'off',
     facilities: coreFacilities ? {ok:coreFacilities.ok, error:coreFacilities.error, ...coreFacilities.stats} : 'off',
+    exterior: coreExterior ? {ok:coreExterior.ok,error:coreExterior.error,...coreExterior.stats} : 'off',
     terrain: coreTerrain ? { ok: coreTerrain.ok, error: coreTerrain.error, ...coreTerrain.stats } : 'off',
     plaza: corePlaza ? { ok: corePlaza.ok, error: corePlaza.error, ...corePlaza.stats } : 'off',
     surround: coreSurround ? { ok: coreSurround.ok, error: coreSurround.error, ...coreSurround.stats } : 'off',

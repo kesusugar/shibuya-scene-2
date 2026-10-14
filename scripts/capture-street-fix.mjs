@@ -5,13 +5,15 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  exterior_walk: {q:'time=day&pose=-107,12,3.6,-148,10,17,65',w:1000,h:750},
+  exterior_markcity: {q:'time=day&pose=-90,-90,150,-125,-130,0,65',w:1000,h:750},
   b109: {q:'time=day&pose=-75,-20,70,-155,10,25,55',w:900,h:750},
   markcity: {q:'time=day&pose=-5,-150,150,-165,-130,50,65',w:900,h:750},
   takagi: {q:'time=day&pose=-26,30,75,-73,100,25,55',w:900,h:750},
   bic: {q:'time=day&pose=-55,-60,60,-88,-20,15,55',w:900,h:750},
   cine: {q:'time=day&pose=-75,-12,90,-140,-50,30,55',w:900,h:750},
   mixed: {q:'time=day&pose=50,-20,70,90,23,25,55',w:900,h:750},
-  hikarie: {q:'time=day&pose=130,-170,200,285,-45,90,65',w:900,h:750},
+  hikarie: {q:'time=day&pose=470,-120,195,285,-45,90,65',w:900,h:750},
   parco: {q:'time=day&pose=-40,150,150,-155,270,50,65',w:900,h:750},
   streamtower: {q:'time=day&pose=55,-145,210,245,-250,100,65',w:900,h:750},
   sakura: {q:'time=day&pose=-75,-160,210,135,-320,95,65',w:900,h:750},
@@ -88,11 +90,15 @@ try {
     await page.goto(`${base}/?capture&${v.q}${process.env.EXTRA ? `&${process.env.EXTRA}` : ""}`);
     await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 300000 });
     await page.waitForTimeout(2500);
-    const state = await page.evaluate(() => ({ tactileExtra: window.__viewer.tactileExtra, tactileLinks: window.__viewer.tactileLinks, facilities: window.__viewer.facilities, plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
+    // Freeze the settled QA frame before screenshotting; no application/FPS change.
+    await page.evaluate(() => { window.requestAnimationFrame = () => 0; });
+    await page.waitForTimeout(500);
+    const state = await page.evaluate(() => ({ exterior: window.__viewer.exterior, tactileOuter: window.__viewer.tactileOuter, tactileExtra: window.__viewer.tactileExtra, tactileLinks: window.__viewer.tactileLinks, facilities: window.__viewer.facilities, plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
     await page.screenshot({ path: `${out}/${name}.png`, timeout: 300000 });
-    log[name] = { ...v, state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
+    log[name] = { ...v, extra:process.env.EXTRA??null, state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
     if (process.env.BASELINE === '1') assert.equal(state.plaza, undefined); else if (process.env.EXTRA?.includes('plaza=off')) assert.equal(state.plaza, 'off'); else assert.equal(state.plaza.ok, true); if (process.env.EXTRA?.includes('surround=off')) assert.equal(state.surround, 'off'); else assert.equal(state.surround.ok, true); if (process.env.EXTRA?.includes('hachiko=off')) assert.equal(state.hachiko, 'off'); else assert.equal(state.hachiko.ok, true); if (process.env.EXTRA?.includes('drainage=off')) assert.equal(state.drainage, 'off'); else assert.equal(state.drainage.ok, true); assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); if (process.env.EXTRA?.includes('tactile=off')) assert.equal(state.tactile, 'off'); else assert.equal(state.tactile.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
     if (process.env.SUPPLEMENTS === '1') {assert.equal(state.tactileExtra.ok,true);assert.equal(state.tactileLinks.ok,true);}
+    if (process.env.EXTERIOR === '1') {assert.equal(state.exterior.ok,true);assert.equal(state.ground.fillReplaced,true);assert.equal(state.exterior.tiles,3);assert.equal(state.tactileOuter.ok,true);assert.equal(state.tactileOuter.attached,true);}
     if (process.env.FACILITIES === '1') assert.equal(state.facilities.ok,true);
     for (const asset of Object.values(state.stats)) assert.deepEqual(asset.layerErrors, []);
     console.log(name, errors.length ? errors : 'ok'); await page.close();

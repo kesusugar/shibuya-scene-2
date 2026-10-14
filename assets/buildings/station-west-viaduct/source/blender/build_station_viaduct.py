@@ -13,6 +13,7 @@ extra=sys.argv[sys.argv.index("--")+1:][4:]
 for extension in extra:bpy.ops.import_scene.gltf(filepath=extension)
 bm=bmesh.new()
 for ob in list(bpy.context.scene.objects):
+ if ob.name=='ground_fill' and any('exterior-' in path for path in extra):continue
  if ob.type=='MESH' and ob.name.startswith(('ground_road','ground_sidewalk','ground_intersection','ground_fill')):
   me=ob.data.copy();me.transform(ob.matrix_world);bm.from_mesh(me);bpy.data.meshes.remove(me)
 bvh=BVHTree.FromBMesh(bm);bm.free()
@@ -56,7 +57,7 @@ for part in D:
 samples=[];supports=[]
 for i in range(F['support_count']):
  u=1.5+(L-3)*i/(F['support_count']-1);p=A+T*u-N*F['support_offset_m'];hit=bvh.ray_cast(Vector((p.x,p.y,50)),Vector((0,0,-1)))[0]
- g=hit.z if hit else F['fallback_ground_tp_m']-15;samples.append({'x':round(p.x,3),'y':round(p.y,3),'tp':round(g+15,4),'basis':('Core/DEM substrate ray' if extra else 'C2a ray') if hit else 'PLATEAU fallback'});supports.append((p,g))
+ g=hit.z if hit else F['fallback_ground_tp_m']-15;samples.append({'x':round(p.x,3),'y':round(p.y,3),'tp':round(g+15,4),'basis':('Core/PLATEAU streets/DEM substrate ray' if extra else 'C2a ray') if hit else 'PLATEAU fallback'});supports.append((p,g))
  box((p.x,p.y,(mid+g)/2),(.42,.75,mid-g),'wv_steel',angle)
  for d in [-.26,.26]:
   q=p+T*d;box((q.x,q.y,(mid+g)/2),(.12,1.05,mid-g),'wv_steel',angle)

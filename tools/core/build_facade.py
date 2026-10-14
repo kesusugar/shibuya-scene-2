@@ -13,6 +13,7 @@ extra=sys.argv[sys.argv.index('--')+1:][4:]
 for extension in extra:bpy.ops.import_scene.gltf(filepath=extension)
 bm=bmesh.new()
 for o in list(bpy.context.scene.objects):
+ if o.name=='ground_fill' and any('exterior-' in path for path in extra):continue
  if o.type=='MESH' and o.name.startswith(('ground_road','ground_intersection','ground_sidewalk','ground_fill')):
   me=o.data.copy();me.transform(o.matrix_world);bm.from_mesh(me);bpy.data.meshes.remove(me)
 bvh=BVHTree.FromBMesh(bm);bm.free()
