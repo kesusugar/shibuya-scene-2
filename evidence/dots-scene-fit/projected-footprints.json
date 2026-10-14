@@ -1,0 +1,17 @@
+{
+  "method": "Union of every nonzero-area GLB triangle projected to plan XY, all heights. Overlap is a conservative candidate, not proof of 3D collision. Excludes separate advertisement layers.",
+  "pairs": [
+    {
+      "a": "west-block",
+      "b": "quattro",
+      "projected_mesh_overlap_m2": 0.0,
+      "projected_mesh_distance_m": 11.453105406249474
+    },
+    {
+      "a": "center244",
+      "b": "takagi",
+      "projected_mesh_overlap_m2": 0.0,
+      "projected_mesh_distance_m": 4.876357359116031
+    }
+  ]
+}

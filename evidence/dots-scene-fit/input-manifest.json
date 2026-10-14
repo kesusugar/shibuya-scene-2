@@ -1,0 +1,222 @@
+{
+  "main_commit": "275f832018f1fb8f052c672522f43a86e1fd87fc",
+  "assets": [
+    {
+      "path": "assets/buildings/bic-camera/web/bic-camera.glb",
+      "sha256": "96375c86ad8e86f51631f7d710596fbc32721aad4a25f25778fc24f7ef54651e"
+    },
+    {
+      "path": "assets/buildings/center-gai-gate/web/center-gai-gate.glb",
+      "sha256": "1695756ff110e9cb0bedbf84ec7a9ef2982f97c6370cea32c6c649f138eefcf1"
+    },
+    {
+      "path": "assets/buildings/center-gai-gate/web/signs-2025-01.glb",
+      "sha256": "e3d61300241cfc5cf3692739f1a33d994d5abc05f64b703536ec35495852d3ec"
+    },
+    {
+      "path": "assets/buildings/center244/web/center244.glb",
+      "sha256": "396c5aa583cc459df38e516277e466a3bede74b2a54a2cea0475c1a5fae79df7"
+    },
+    {
+      "path": "assets/buildings/cine-tower/web/cine-tower.glb",
+      "sha256": "708f4f9acb7142ccfe3987b0fd65a07350c7a44f4de7143a6048c9851cc1ee3b"
+    },
+    {
+      "path": "assets/buildings/daiichi-kangin/web/daiichi-kangin.glb",
+      "sha256": "0f9f8cf4195f41a2cf0cf258fbf920fac0a2b2aab4eae1ac1111e080991fd6a4"
+    },
+    {
+      "path": "assets/buildings/daiichi-kangin/web/signs-2025-01.glb",
+      "sha256": "7f4b15b41d37a2516602cdefafbf75a4d555f060880dc45d9e761a98f23db78f"
+    },
+    {
+      "path": "assets/buildings/east-mixeduse/web/east-mixeduse.glb",
+      "sha256": "a8947266cf55941db6e0f1a57f5731f32e4c67d5e9ac2a0ee1bd773ad49b0de2"
+    },
+    {
+      "path": "assets/buildings/eiraku/web/eiraku.glb",
+      "sha256": "07b535d3334f0f9afeb8bc4753c55ed29e82d53a35b8f79b23f9666d0882f3e5"
+    },
+    {
+      "path": "assets/buildings/ekimae/web/ekimae.glb",
+      "sha256": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d"
+    },
+    {
+      "path": "assets/buildings/ekimae/web/signs-2025-11.glb",
+      "sha256": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5"
+    },
+    {
+      "path": "assets/buildings/fukuras/web/fukuras.glb",
+      "sha256": "e25a48ed0f4792088de9e5dfed71db2249e5a7b95f71b9d7cf866bde6a8069bb"
+    },
+    {
+      "path": "assets/buildings/ginza-canopy/web/ginza-canopy.glb",
+      "sha256": "b1ef2c9c1f814452ec2a7239db1063c6bf557f6c1e728fcbc3f4683584e7c0b5"
+    },
+    {
+      "path": "assets/buildings/hikarie/web/hikarie.glb",
+      "sha256": "8f39f54b18278e169bc89016080fd7632424fa2534d348522f32920a101d2fa6"
+    },
+    {
+      "path": "assets/buildings/magnet/web/magnet.glb",
+      "sha256": "39ec44c3357b51f9fde3e1eef7328ecc1db6113a1314d2c53e92d499a040de2e"
+    },
+    {
+      "path": "assets/buildings/magnet/web/magnet_signs_2025.glb",
+      "sha256": "fedc370e1242801366ddfb617e4a363a6097f092cf9b52f73eb55238e613d673"
+    },
+    {
+      "path": "assets/buildings/mark-city/web/mark-city.glb",
+      "sha256": "50046cf85c7c6bbe30fca9c7b5364b93b2c00729f73935ca52eb78401338b025"
+    },
+    {
+      "path": "assets/buildings/parco/web/parco.glb",
+      "sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2"
+    },
+    {
+      "path": "assets/buildings/plaza-kiosk/web/plaza-kiosk.glb",
+      "sha256": "2549efd51358019454410b77cf31ad00b9c5b5841e030566f38418331f88f41a"
+    },
+    {
+      "path": "assets/buildings/qfront/web/qfront.glb",
+      "sha256": "2b4e4dccb8b68c97e3981ca1999d0c459bd3524aaa6b903901f3085b22a6ea04"
+    },
+    {
+      "path": "assets/buildings/quattro/web/quattro.glb",
+      "sha256": "add9d2573c36274a4d0f737dd5b1b01b5a9997293e778e4c23032905ac228ba7"
+    },
+    {
+      "path": "assets/buildings/sakura-stage/web/sakura-stage.glb",
+      "sha256": "0781a138445fa96b2f34a5491c0c238dbbd9af7f2d0fe7ae8536c59f3e7de98e"
+    },
+    {
+      "path": "assets/buildings/scramble-square/web/scramble-square.glb",
+      "sha256": "c184cadf05ebfbad08504664745377c3049b25e667019f03093a2459eb71f78d"
+    },
+    {
+      "path": "assets/buildings/shibuya109/web/shibuya109.glb",
+      "sha256": "152920785e92f2c11a95b2cf2b29aec8a7aac76c71d119fd9045442dfde491a5"
+    },
+    {
+      "path": "assets/buildings/station-concourse/web/station-concourse.glb",
+      "sha256": "2f330497a77d090de19412c382c02c799d536ded5c1c82f6436debce404bdbca"
+    },
+    {
+      "path": "assets/buildings/station-north/web/station-north.glb",
+      "sha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09"
+    },
+    {
+      "path": "assets/buildings/station-service/web/signs-2025-10.glb",
+      "sha256": "d6ce7ba267ab9973aeb4800af1b4c05cf3e2c9476c04613f291e922147e4c97a"
+    },
+    {
+      "path": "assets/buildings/station-service/web/station-service.glb",
+      "sha256": "9964c80f193d305a28def5d33c78230ffb3c738e142c36fd48bcc470a492af48"
+    },
+    {
+      "path": "assets/buildings/station-southeast/web/station-southeast.glb",
+      "sha256": "fa2a6975f8f095d72d77e461c1a6f44f7dd5b8d9042dd1074f501dbc8fcb0113"
+    },
+    {
+      "path": "assets/buildings/station-west-viaduct/web/station-west-viaduct.glb",
+      "sha256": "027afa39e59715d6f7b5e60375c7423948f5c41598ab69544a02847c8980d0c1"
+    },
+    {
+      "path": "assets/buildings/stream/web/stream.glb",
+      "sha256": "16b029fbec71fa753b2c8f5bdbcead325105d9576df2bc636b637f05af130aed"
+    },
+    {
+      "path": "assets/buildings/takagi/web/takagi.glb",
+      "sha256": "5fe2ee53947ca18f72460da90ef5de1f849c687968a6b623e0db2e1cb5ce218d"
+    },
+    {
+      "path": "assets/buildings/west-block/web/signs-2025-01.glb",
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    },
+    {
+      "path": "assets/buildings/west-block/web/west-block.glb",
+      "sha256": "ea60ca2848e1ecc981dc2bf42d9de389d52e3b36b97d17357edc621da82ccb16"
+    },
+    {
+      "path": "assets/context/core/web/context_core.glb",
+      "sha256": "3be77a6eed01e80aacad227396e6f20d5f94636ac07d7d81f3a731c8c17b8556"
+    },
+    {
+      "path": "assets/ground/core/web/ground_core.glb",
+      "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32"
+    },
+    {
+      "path": "assets/ground/extension/web/extension.glb",
+      "sha256": "86e58b050106eb2fcf55997971395688b75d313f8f16c167eaaed2f8556e88ad"
+    },
+    {
+      "path": "assets/ground/exterior-east/web/exterior-east.glb",
+      "sha256": "8866e25dee5e72034f42c68384d0a4d4e8a977ad13b368e3ead440158a827ff2"
+    },
+    {
+      "path": "assets/ground/exterior-middle/web/exterior-middle.glb",
+      "sha256": "239ca2294bd01cdb6b29e39375c34e7b8ac9c1d32f7aa0a072540b28c566dae7"
+    },
+    {
+      "path": "assets/ground/exterior-west/web/exterior-west.glb",
+      "sha256": "91917a924149b3612be1067b7475dd903d7bbcb898a88fc814ec1870760e50d1"
+    },
+    {
+      "path": "assets/street/core/web/street_core.glb",
+      "sha256": "de970a9a1951dc7fb57213b5849c19de92000d9477a2a7948074c8ded08fcf9a"
+    },
+    {
+      "path": "assets/street/core/web/street_projected.glb",
+      "sha256": "5106f6b4c013e00e5cfa84f2dbb9b477c413aae6708454a9ece8b4ea6a575a7f"
+    },
+    {
+      "path": "assets/street/drainage/web/drainage.glb",
+      "sha256": "432f74b26099fd3fc75bc58bc0e303c22c86f86d076298ebb005c7dee24506f2"
+    },
+    {
+      "path": "assets/street/hachiko/web/hachiko.glb",
+      "sha256": "370db19f30af6c4c3ab9d49ae910fa99e14643fc507630f90655cf6d220d0ae5"
+    },
+    {
+      "path": "assets/street/hachiko-surround/web/hachiko-surround.glb",
+      "sha256": "0ecfb7da7445353eb5fc778ea5770a74f824f70bc816f398d924dd248dfb5a94"
+    },
+    {
+      "path": "assets/street/plaza-facilities/web/plaza-facilities.glb",
+      "sha256": "5acd842b8f46789a4a4c44102c0130ecdc57114eba509cb956402a371103147b"
+    },
+    {
+      "path": "assets/street/plaza-finish/web/plaza-finish.glb",
+      "sha256": "c8e3d64165a7d872b28a585b63d0af9454aeba0f088b2a3dcbfa017311c47048"
+    },
+    {
+      "path": "assets/street/props/incoming/grey_louvered_cabinet/grey_louvered_cabinet.glb",
+      "sha256": "cee9e6879b78c202017789416ed0f8b4b9df2b88a166cbb8fa7d2f30aedba595"
+    },
+    {
+      "path": "assets/street/props/incoming/hachiko_white_bollard/hachiko_white_bollard.glb",
+      "sha256": "83312b3cc5333488defd783c47767c370a3b7fb1e7db37c98cd35911be0a6298"
+    },
+    {
+      "path": "assets/street/props/incoming/standing_notice_sign/standing_notice_sign.glb",
+      "sha256": "953b65709a870c403715ecb1699ac32d34a3e5e7e54f41ebcc61b4e56ede3adc"
+    },
+    {
+      "path": "assets/street/tactile/web/tactile.glb",
+      "sha256": "1dc0e2774d8936e7c949286037e9e92de4f2a14ef8583147712dca3cbe1ad4d2"
+    },
+    {
+      "path": "assets/street/tactile-extra/web/tactile-extra.glb",
+      "sha256": "b3e144a0cef330d31deec70120d20367cf32b68033b9ad98de221cbda3747912"
+    },
+    {
+      "path": "assets/street/tactile-links/web/tactile-links.glb",
+      "sha256": "4151689c7534f5bff4605094023ebbe7f6d9b4c743e625466082ec01a8f5cd22"
+    },
+    {
+      "path": "assets/street/tactile-outer/web/tactile-outer.glb",
+      "sha256": "c30dace55a8d95ad52a6a010329703c144094764778470786bde57e8551005fa"
+    }
+  ],
+  "note": "No asset changes; runtime QA hook and temporary props exist only in Playwright session."
+}
