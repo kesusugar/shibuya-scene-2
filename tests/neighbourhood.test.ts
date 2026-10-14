@@ -30,6 +30,12 @@ for(const id of ['center244','quattro','scramble-square','fukuras','station-sout
       expect(stats.upper_original_visible_mesh_preserved).toBe(false);
       expect(stats.upper_original_hidden_provenance_preserved).toBe(true);
       expect(stats.source_top_tp).toBe(49.843);
+    } else if(id==='quattro') {
+      expect(stats.glass_panels).toBe(24);
+      expect(stats.frontage_tiers).toBe(4);
+      expect(stats.source_id).toBe('way/136691389');
+      expect(stats.source_top_tp).toBe(46.015);
+      expect(stats.blank_flanks).toBe(true);
     } else expect(stats.glass_panels).toBeGreaterThan(id==='plaza-kiosk'?10:100);
     expect(stats.roof_translation_m).toBe(0);
     if(['scramble-square','fukuras'].includes(id)){expect(stats.missing_pavement_samples).toBe(0);expect(stats.pavement_samples.length).toBeGreaterThan(30);}
