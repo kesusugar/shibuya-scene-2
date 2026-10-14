@@ -1,0 +1,48 @@
+{
+  "baseline": {
+    "qfront": {
+      "overlap": false,
+      "minimum_plan_distance_m": 0.1458084458616108
+    },
+    "way/136692138 西武渋谷店ロフト館": {
+      "overlap": false,
+      "minimum_plan_distance_m": 109.53071939872301
+    },
+    "way/55896465 西武渋谷店A館": {
+      "overlap": false,
+      "minimum_plan_distance_m": 21.76227563614304
+    },
+    "way/136692137 西武渋谷店B館": {
+      "overlap": false,
+      "minimum_plan_distance_m": 84.51322183371789
+    },
+    "west_block": {
+      "gate_min_x": -31.468015670776367,
+      "west_max_x": -32.535484313964844,
+      "disjoint_x_projection_gap_m": 1.0674686431884766
+    }
+  },
+  "final": {
+    "qfront": {
+      "overlap": false,
+      "minimum_plan_distance_m": 0.10079903004724254
+    },
+    "way/136692138 西武渋谷店ロフト館": {
+      "overlap": false,
+      "minimum_plan_distance_m": 109.48333558688545
+    },
+    "way/55896465 西武渋谷店A館": {
+      "overlap": false,
+      "minimum_plan_distance_m": 21.714102927386385
+    },
+    "way/136692137 西武渋谷店B館": {
+      "overlap": false,
+      "minimum_plan_distance_m": 84.46826174213481
+    },
+    "west_block": {
+      "gate_min_x": -31.512683868408203,
+      "west_max_x": -32.535484313964844,
+      "disjoint_x_projection_gap_m": 1.0228004455566406
+    }
+  }
+}

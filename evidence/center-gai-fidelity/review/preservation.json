@@ -1,0 +1,117 @@
+{
+  "gate_base_triangles_exact": true,
+  "gate_panel_triangles_exact": true,
+  "gate_lamp_triangles_exact": true,
+  "walking_aperture_21_rays_clear": true,
+  "rays": [
+    {
+      "h": 0.8,
+      "x": -3,
+      "hits": 0
+    },
+    {
+      "h": 0.8,
+      "x": -2,
+      "hits": 0
+    },
+    {
+      "h": 0.8,
+      "x": -1,
+      "hits": 0
+    },
+    {
+      "h": 0.8,
+      "x": 0,
+      "hits": 0
+    },
+    {
+      "h": 0.8,
+      "x": 1,
+      "hits": 0
+    },
+    {
+      "h": 0.8,
+      "x": 2,
+      "hits": 0
+    },
+    {
+      "h": 0.8,
+      "x": 3,
+      "hits": 0
+    },
+    {
+      "h": 1.9,
+      "x": -3,
+      "hits": 0
+    },
+    {
+      "h": 1.9,
+      "x": -2,
+      "hits": 0
+    },
+    {
+      "h": 1.9,
+      "x": -1,
+      "hits": 0
+    },
+    {
+      "h": 1.9,
+      "x": 0,
+      "hits": 0
+    },
+    {
+      "h": 1.9,
+      "x": 1,
+      "hits": 0
+    },
+    {
+      "h": 1.9,
+      "x": 2,
+      "hits": 0
+    },
+    {
+      "h": 1.9,
+      "x": 3,
+      "hits": 0
+    },
+    {
+      "h": 2.3,
+      "x": -3,
+      "hits": 0
+    },
+    {
+      "h": 2.3,
+      "x": -2,
+      "hits": 0
+    },
+    {
+      "h": 2.3,
+      "x": -1,
+      "hits": 0
+    },
+    {
+      "h": 2.3,
+      "x": 0,
+      "hits": 0
+    },
+    {
+      "h": 2.3,
+      "x": 1,
+      "hits": 0
+    },
+    {
+      "h": 2.3,
+      "x": 2,
+      "hits": 0
+    },
+    {
+      "h": 2.3,
+      "x": 3,
+      "hits": 0
+    }
+  ],
+  "posts_collidable": [
+    "gate_crook",
+    "gate_crook"
+  ]
+}

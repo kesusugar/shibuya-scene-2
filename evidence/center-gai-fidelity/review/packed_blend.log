@@ -1,0 +1,5 @@
+PACKED_REVIEW {"version": [4, 2, 3], "meshes": 8, "images": [{"name": "banner_2025_01.png", "packed": true, "size": [512, 128]}, {"name": "permanent_name.png", "packed": true, "size": [256, 1536]}]}
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Read blend: "/workspace/shared/center_gai_fidelity/assets/buildings/center-gai-gate/source/blender/center-gai-gate.blend"
+
+Blender quit

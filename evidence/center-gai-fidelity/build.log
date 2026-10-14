@@ -1,0 +1,33 @@
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Info: Total files 2 | Changed 2 | Failed 0
+00:17:05 | INFO: Starting glTF 2.0 export
+00:17:05 | INFO: Extracting primitive: gate_base
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Extracting primitive: gate_crook
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Extracting primitive: gate_recess
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Extracting primitive: gate_ribs
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Extracting primitive: gate_lamp
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Extracting primitive: gate_panel
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Extracting primitive: gate_frame
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Extracting primitive: gate_name
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Finished glTF 2.0 export in 0.03994417190551758 s
+00:17:05 | INFO: Starting glTF 2.0 export
+00:17:05 | INFO: Extracting primitive: gate_sign_banner
+00:17:05 | INFO: Primitives created: 1
+00:17:05 | INFO: Finished glTF 2.0 export in 0.008482933044433594 s
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender').
+Info: Packed 2 file(s)
+Info: Saved "center-gai-gate.blend"
+INFO Draco mesh compression is available, use library at /workspace/shared/blender423/blender-4.2.3-linux-x64/4.2/python/lib/python3.11/site-packages/libextern_draco.so
+
+
+GATE 2180 8 [15.269996643066406, 15.325775146484375] 4.022110939025879
+
+Blender quit
