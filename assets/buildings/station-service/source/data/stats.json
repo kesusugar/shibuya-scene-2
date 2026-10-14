@@ -277,8 +277,8 @@
       "vertices": 32
     },
     "ss_joint": {
-      "triangles": 44,
-      "vertices": 88
+      "triangles": 224,
+      "vertices": 448
     },
     "ss_metal": {
       "triangles": 204,
@@ -291,8 +291,20 @@
     "ss_vent": {
       "triangles": 12,
       "vertices": 24
+    },
+    "ss_scaffold": {
+      "triangles": 2400,
+      "vertices": 4128
+    },
+    "ss_hoarding": {
+      "triangles": 24,
+      "vertices": 48
+    },
+    "ss_billboard_frame": {
+      "triangles": 12,
+      "vertices": 24
     }
   },
-  "triangles": 342,
+  "triangles": 2958,
   "status": "B prototype. Association to October18 white service facility inferred, identity/facade coverage unconfirmed. Original PLATEAU shell/roof preserved; panel joints/vent estimated, no reference texture or invented illuminated windows."
 }

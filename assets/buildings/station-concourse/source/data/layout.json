@@ -1,8 +1,8 @@
 {
   "open_bay_x_min_m": -14,
   "open_bay_floor_tp": 21.0,
-  "glass_center_tp": 23.8,
-  "glass_height_m": 3.8,
+  "glass_center_tp": 27.55,
+  "glass_height_m": 8.5,
   "open_bay_floor_triangles": [
     [
       [
@@ -218,15 +218,16 @@
   "time_reference": "2025-10-10/11/18",
   "basis": "October11 platform photo for structure, October10/18 crossing photos for north glazing/interior/transom types. Corridor association/dimensions remain B estimates. Original roofs/lower western solid retained. December7 pictures are historical auxiliary types only, not October works or advertisements.",
   "roof_policy": "Keep original absolute PLATEAU T.P. levels, sample ground per support; no blanket anchoring shift",
-  "window_bays": 44,
+  "window_bays": 18,
   "window_revision_basis": "Initial same-pose view had overly broad 2.1m panes. December auxiliary photographs show finer window/metal divisions; chose ~1.15m spacing as a B estimate. Changed spacing only; glass height, floor, roof and bay remain fixed. October front-pane dimensions are not independently measured.",
   "glass_alpha": 0.32,
-  "interior_depth_m": 0.75,
+  "interior_depth_m": 3.0,
   "interior_night_strength": 0.4,
   "fixture_night_strength": 1.2,
   "transom_offsets_m": [
-    -0.55
+    2.65
   ],
   "glazing_basis": "SC04/SC05 (October10/18,2025) show bright interior and horizontal transoms on north concourse glazing. Added a shallow corridor box and fixtures; dimensions/opacity/light strength estimated, no calibrated camera or photometric match. Roof and lower bay unchanged.",
-  "transom_revision_basis": "SC04/SC05 show a horizontal division in the north glazing. After initial recess/fixture build, added one continuous transom only, .55m below pane centre as an estimate. Pane height, vertical bay spacing, recess depth and lighting unchanged."
+  "transom_revision_basis": "SC04/SC05 show a horizontal division in the north glazing. After initial recess/fixture build, added one continuous transom only, .55m below pane centre as an estimate. Pane height, vertical bay spacing, recess depth and lighting unchanged.",
+  "proportion_revision_basis": "Claude review 2026-10-14: SC05 (2025-10-18, same north face, nearly frontal) measured in pixels: fascia 30 px / glazing 110 px / lower band 30 px over the 170 px from soffit to the top of the north wall, i.e. glazing ~65% of the 13.2 m between the concourse floor (T.P.21.0) and the PLATEAU north wall top (T.P.34.2). The former 3.8 m ribbon left an 8 m blank wall that the photo does not show. Glazing now T.P.23.3-31.8; primary mullions ~2.8 m (18 bays; SC05 shows ~17-18 wide panes); one transom 1.6 m below the head (upper clerestory row in SC05). Interior depth 3.0 m so the lit corridor reads through the glass. Roof, floor and open bay unchanged."
 }

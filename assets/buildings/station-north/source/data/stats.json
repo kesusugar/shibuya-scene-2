@@ -28,20 +28,28 @@
       "vertices": 60
     },
     "stn_concrete": {
-      "triangles": 258,
-      "vertices": 768
+      "triangles": 750,
+      "vertices": 1752
     },
     "stn_deck": {
       "triangles": 38,
       "vertices": 114
     },
+    "stn_louvre": {
+      "triangles": 28,
+      "vertices": 56
+    },
+    "stn_steel": {
+      "triangles": 2940,
+      "vertices": 5880
+    },
+    "stn_hoarding": {
+      "triangles": 6,
+      "vertices": 12
+    },
     "stn_column": {
       "triangles": 252,
       "vertices": 504
-    },
-    "stn_steel": {
-      "triangles": 276,
-      "vertices": 552
     },
     "stn_light": {
       "triangles": 84,
@@ -52,6 +60,6 @@
       "vertices": 24
     }
   },
-  "triangles": 996,
+  "triangles": 4186,
   "status": "North canopy B prototype; southern facility/whole original JR viaduct geometry preserved, not October facade certification. October GPS/photo/deck association is supporting evidence; post/beam/tactile positions estimated."
 }

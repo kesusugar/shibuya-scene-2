@@ -1,24 +1,22 @@
-// C2a QA: in walk mode the eye must stay 1.6 m above the Core ground while walking over kerbs and slopes.
-//   node scripts/walk-check.mjs http://127.0.0.1:5181 evidence/c2a/walk_check.json
+// QA: scripted walks in the real scene (statue, kiosk, kerb, plaza). node scripts/walk-check.mjs <base> <out.json>
 import { chromium } from 'playwright';
 import { writeFileSync } from 'node:fs';
-const [base = 'http://127.0.0.1:5181', out = 'evidence/c2a/walk_check.json'] = process.argv.slice(2);
-const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
-const page = await browser.newPage({ viewport: { width: 640, height: 360 } });
-await page.goto(base + '/?time=day&view=walk&capture');
-await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 240000 });
-const samples = [];
-for (const key of ['KeyW', 'KeyD', 'KeyW', 'KeyA', 'KeyS']) {
-  await page.keyboard.down(key);
-  for (let i = 0; i < 6; i++) {
-    await page.waitForTimeout(700);
-    samples.push(await page.evaluate((k) => { const p = window.__viewer.cameraPos(); return { key: k, x: +p[0].toFixed(2), y: +p[1].toFixed(3), z: +p[2].toFixed(2), ground: +window.__viewer.groundUnderCamera().toFixed(3) }; }, key));
-  }
-  await page.keyboard.up(key);
+const [base, out] = process.argv.slice(2);
+const walks = {
+  into_statue: [11.6, -44.0, 0, -1, 40],          // from the plaza straight at Hachiko (statue centre ~11.57,-48.69)
+  into_kiosk: [34.5, -36.0, 0, -1, 60],            // at the kiosk candidate (27..42, -53..-39)
+  road_to_kerb: [6.5, -2.0, 1, -1.35, 120],        // crossing centre to the station-side pavement over the kerb
+  across_plaza: [20, -25, 1, -1, 80],
+};
+const b = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
+const p = await b.newPage({ viewport: { width: 400, height: 300 } });
+await p.goto(`${base}/?capture&time=day`); await p.waitForFunction(() => window.__viewer?.ready, null, { timeout: 400000 });
+const res = {};
+for (const [k, a] of Object.entries(walks)) {
+  const r = await p.evaluate((a) => window.__viewer.walkTest(...a), a);
+  const zs = (r.path ?? []).map((q) => q[2]); let maxJump = 0;
+  for (let i = 1; i < zs.length; i++) maxJump = Math.max(maxJump, Math.abs(zs[i] - zs[i - 1]));
+  res[k] = { steps: r.path?.length ?? 0, stoppedAt: r.stoppedAt, maxStepChange_m: +maxJump.toFixed(3), minZ: zs.length ? Math.min(...zs) : null };
+  console.log(k, JSON.stringify(res[k]));
 }
-await browser.close();
-const eye = samples.map((s) => +(s.y - s.ground).toFixed(3));
-const res = { samples, eye_min: Math.min(...eye), eye_max: Math.max(...eye), ground_min: Math.min(...samples.map((s) => s.ground)), ground_max: Math.max(...samples.map((s) => s.ground)),
-  moved_m: +Math.hypot(samples.at(-1).x - samples[0].x, samples.at(-1).z - samples[0].z).toFixed(2) };
-writeFileSync(out, JSON.stringify(res, null, 1));
-console.log(JSON.stringify({ eye_min: res.eye_min, eye_max: res.eye_max, ground_min: res.ground_min, ground_max: res.ground_max, n: samples.length }));
+writeFileSync(out, JSON.stringify(res, null, 2)); await b.close();

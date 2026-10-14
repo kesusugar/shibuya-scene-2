@@ -43,7 +43,7 @@ def clip(poly,axis,boundary,positive):
   if not clean or (p-clean[-1]).length>1e-6:clean.append(p)
  if len(clean)>1 and (clean[0]-clean[-1]).length<1e-6:clean.pop()
  return clean
-split=F['north_y_min_m'];deck=F['platform_deck_tp']-15;removed=0
+split=F['north_y_min_m'];deck=F['platform_deck_tp']-15;removed=0;dressed=[]
 for part in D:
  for surface in part['surfaces']:
   ring=[Vector(p) for p in surface['ring']]
@@ -55,9 +55,39 @@ for part in D:
    face('stn_roof',ring);face('stn_ceiling',[p-Vector((0,0,F['roof_thickness_m'])) for p in reversed(ring)])
   elif surface['kind']=='WallSurface':
    south=clip(ring,1,split,False);north=clip(ring,1,split,True);lower=clip(north,2,deck,False)
-   if len(south)>=3:face('stn_service_wall',south)
-   if len(lower)>=3:face('stn_concrete',lower)
+   if len(south)>=3:face('stn_service_wall',south);dressed.append(('louvre',south))
+   if len(lower)>=3:face('stn_concrete',lower);dressed.append(('hoarding',lower))
    if len(north)>=3 and max(p.z for p in north)>deck:removed+=1
+# Claude review R2 (2026-10-14): the plain grey walls read as blank slabs from the plaza. hachiko.jpg (2025-11-01)
+# shows the upper station-side facility as dark grey boxes with close vertical louvres; SC04 (2025-10-10) shows white
+# site hoarding at street level. Louvres on the southern facility walls, a 3 m white hoarding on the lower building
+# walls; spacing and heights estimated, shells unchanged.
+for name,rgb,rough,metal in [('stn_louvre',(.24,.26,.27),.5,.45),('stn_hoarding',(.86,.87,.86),.7,0)]:
+ m=bpy.data.materials.new(name);m.use_nodes=True;p=m.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(*rgb,1);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=metal;M[name]=m
+bpts=[Vector(p) for b in D if b['kind']=='building' for s_ in b['surfaces'] for p in s_['ring']];bc=sum(bpts,Vector())/len(bpts)
+def strip(name,a,b,z0,z1,off):
+ t=(b-a);t.z=0
+ if t.length<.3:return None
+ t.normalize();n=Vector((-t.y,t.x,0))
+ if n.dot(Vector(((a.x+b.x)/2-bc.x,(a.y+b.y)/2-bc.y,0)))<0:n=-n
+ return t,n
+for kind,poly in dressed:
+ zs=[p.z for p in poly];edges=[(p,q) for p,q in zip(poly,poly[1:]+poly[:1]) if abs(p.z-q.z)<.01 and (Vector((q.x-p.x,q.y-p.y,0))).length>.3]
+ if not edges:continue
+ a,b=max(edges,key=lambda e:(Vector((e[1].x-e[0].x,e[1].y-e[0].y,0))).length);r=strip(kind,a,b,min(zs),max(zs),.1)
+ if not r:continue
+ t,n=r;L=Vector((b.x-a.x,b.y-a.y,0)).length;z0,z1=min(zs),max(zs)
+ if kind=='louvre':
+  face('stn_louvre',[Vector((a.x,a.y,z0))+n*.03,Vector((b.x,b.y,z0))+n*.03,Vector((b.x,b.y,z1))+n*.03,Vector((a.x,a.y,z1))+n*.03])
+  k=.4
+  while k<L-.2:
+   c=Vector((a.x,a.y,0))+t*k+n*.09;box((c.x,c.y,(z0+z1)/2),(.07 if abs(t.x)<.5 else .12,.12 if abs(t.x)<.5 else .07,z1-z0),'stn_steel');k+=.45
+ else:
+  H=min(3.0,z1-z0);za=z0
+  face('stn_hoarding',[Vector((a.x,a.y,za))+n*.18,Vector((b.x,b.y,za))+n*.18,Vector((b.x,b.y,za+H))+n*.18,Vector((a.x,a.y,za+H))+n*.18])
+  k=0
+  while k<=L:
+   c=Vector((a.x,a.y,0))+t*k+n*.2;box((c.x,c.y,za+H/2),(.04,.04,H),'stn_concrete');k+=1.8
 # Posts and crossbeams follow the northern narrow PLATEAU roof strip, dimensions are standard B estimates.
 for y in F['support_rows_y_m']:
  x=58.0+(-y-24)*.09;top=11.60

@@ -3,7 +3,8 @@ from pathlib import Path
 import sys,numpy as np
 from PIL import Image,ImageFont,ImageDraw
 root=Path(__file__).resolve().parents[1]/'data';rng=np.random.default_rng(42)
-for name,base in [('bronze',[76,84,74]),('granite',[118,113,102])]:
+# bronze: warm brown patina measured on the lit leg in july095 (2025-07, sRGB ~98,89,81); was a green-grey 76,84,74
+for name,base in [('bronze',[94,82,68]),('granite',[118,113,102])]:
  a=rng.normal(0,14 if name=='granite' else 10,(256,256,1))+np.array(base)
  Image.fromarray(np.uint8(np.clip(a,0,255))).save(root/(name+'.png'))
 font_path=sys.argv[1] if len(sys.argv)>1 else '/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc'

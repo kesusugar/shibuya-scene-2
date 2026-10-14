@@ -1,0 +1,250 @@
+{
+  "checked_at_jst": "2026-10-14T11:21:01+09:00",
+  "repository": "kesusugar/shibuya-scene-2",
+  "scope": "PR12–36; PR10–11 baseline supplement",
+  "pull_requests": [
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-west-block-b",
+      "mergedAt": "2026-10-12T23:06:02Z",
+      "number": 10,
+      "state": "MERGED",
+      "title": "Core: センター街入口西側をB段階へ置換し、PR9の比較手順を継承",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/10"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-west-block-refine",
+      "mergedAt": "2026-10-12T23:25:20Z",
+      "number": 11,
+      "state": "MERGED",
+      "title": "Core: 西側街区Bの屋上看板・赤い角・窓と入口を順に補正",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/11"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-ekimae-b",
+      "mergedAt": "2026-10-12T23:44:36Z",
+      "number": 12,
+      "state": "MERGED",
+      "title": "Core: 渋谷駅前ビルをB段階へ置換し、東側正面を実写比較で補正",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/12"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-station-oct2025",
+      "mergedAt": "2026-10-13T00:26:01Z",
+      "number": 13,
+      "state": "MERGED",
+      "title": "Core: 駅側の連絡通路・橋をB試作へ置換し、接続側に開口を追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/13"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-station-hachiko-b",
+      "mergedAt": "2026-10-13T01:05:20Z",
+      "number": 14,
+      "state": "MERGED",
+      "title": "Core: JR北側ホーム上屋を部分B化し、点字帯の継ぎ目を補正",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/14"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-station-glazing",
+      "mergedAt": "2026-10-13T04:08:00Z",
+      "number": 15,
+      "state": "MERGED",
+      "title": "Core: 10月写真を参考に駅側連絡通路の窓奥・照明・横枠を補正",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/15"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-station-service-b",
+      "mergedAt": "2026-10-13T04:27:53Z",
+      "number": 16,
+      "state": "MERGED",
+      "title": "Core: 駅西側の小施設をB試作し、住宅風の共通窓を外装へ置換",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/16"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-station-west-viaduct-b",
+      "mergedAt": "2026-10-13T04:51:23Z",
+      "number": 17,
+      "state": "MERGED",
+      "title": "Core: 駅西側の高架候補を桁・柱のB試作へ置換し、養生網を補正",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/17"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-ginza-canopy-b",
+      "mergedAt": "2026-10-13T06:15:56Z",
+      "number": 18,
+      "state": "MERGED",
+      "title": "Core: 銀座線ホーム上部を公式設計幅12m・M形フレームの部分B試作へ置換",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/18"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-entry-quality-plan",
+      "mergedAt": "2026-10-13T06:36:17Z",
+      "number": 19,
+      "state": "MERGED",
+      "title": "設計: Claudeの完成資産を維持し、初期画面周辺の未制作対象を優先する",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/19"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-daiichi-kangin-b",
+      "mergedAt": "2026-10-13T07:00:14Z",
+      "number": 20,
+      "state": "MERGED",
+      "title": "Core: 初期画面左側の第一勧銀共同ビルを個別B試作へ置換",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/20"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-center-gai-gate",
+      "mergedAt": "2026-10-13T09:52:47Z",
+      "number": 21,
+      "state": "MERGED",
+      "title": "Core: センター街入口にアーチ型ゲートのB試作を追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/21"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-north-paving",
+      "mergedAt": "2026-10-13T10:53:43Z",
+      "number": 22,
+      "state": "MERGED",
+      "title": "Core: 地面形状を保って北側歩道へ平板舗装の模様を追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/22"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-plaza-paving",
+      "mergedAt": "2026-10-13T11:29:14Z",
+      "number": 23,
+      "state": "MERGED",
+      "title": "ハチ公広場の舗装材質を追加し北側歩道と描き分ける",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/23"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-paving-boundary",
+      "mergedAt": "2026-10-13T11:52:10Z",
+      "number": 24,
+      "state": "MERGED",
+      "title": "広場舗装の段状境界を修正し地面の高さを保持",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/24"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-tactile",
+      "mergedAt": "2026-10-13T12:21:07Z",
+      "number": 25,
+      "state": "MERGED",
+      "title": "横断歩道6か所に警告・誘導ブロックの局所試作を追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/25"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-tactile-links",
+      "mergedAt": "2026-10-13T13:13:34Z",
+      "number": 26,
+      "state": "MERGED",
+      "title": "ハチ公広場の点字誘導を分岐部で接続し南へ延伸",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/26"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-drainage",
+      "mergedAt": "2026-10-13T14:13:23Z",
+      "number": 27,
+      "state": "MERGED",
+      "title": "交差点の円形路面蓋を写真から推定して追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/27"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-hachiko",
+      "mergedAt": "2026-10-13T15:04:38Z",
+      "number": 28,
+      "state": "MERGED",
+      "title": "ハチ公像・台座・銘板の部分試作を広場へ追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/28"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-hachiko-surround",
+      "mergedAt": "2026-10-13T15:59:53Z",
+      "number": 29,
+      "state": "MERGED",
+      "title": "ハチ公像周辺に石縁・銀色レール・植栽を追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/29"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-plaza-finish",
+      "mergedAt": "2026-10-13T22:56:39Z",
+      "number": 30,
+      "state": "MERGED",
+      "title": "core: ハチ公周辺の石舗装と像の顔を調整",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/30"
+    },
+    {
+      "baseRefName": "codex/core-plaza-finish",
+      "headRefName": "codex/core-neighbourhood",
+      "mergedAt": "2026-10-13T22:57:00Z",
+      "number": 31,
+      "state": "MERGED",
+      "title": "core: 周辺4棟の個別外装とC重複除去",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/31"
+    },
+    {
+      "baseRefName": "codex/core-neighbourhood",
+      "headRefName": "codex/core-station-finish",
+      "mergedAt": "2026-10-13T22:57:17Z",
+      "number": 32,
+      "state": "MERGED",
+      "title": "core: 外側地形とJR南東施設・高架支柱の足元を追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/32"
+    },
+    {
+      "baseRefName": "codex/core-station-finish",
+      "headRefName": "codex/core-plaza-facilities",
+      "mergedAt": "2026-10-13T22:57:56Z",
+      "number": 33,
+      "state": "MERGED",
+      "title": "core: 広場の低層施設と小設備を通常表示へ追加",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/33"
+    },
+    {
+      "baseRefName": "codex/core-plaza-facilities",
+      "headRefName": "codex/core-walk-finish",
+      "mergedAt": "2026-10-13T22:58:15Z",
+      "number": 34,
+      "state": "MERGED",
+      "title": "core: 点字の施設前接続と植栽区画の裏面を補足",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/34"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-nearby-finish",
+      "mergedAt": "2026-10-14T02:15:29Z",
+      "number": 35,
+      "state": "MERGED",
+      "title": "Core: 周辺10資産の個別外装とマージ済み駅・歩道のmain統合",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/35"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "codex/core-exterior-walk",
+      "mergedAt": "2026-10-14T02:15:46Z",
+      "number": 36,
+      "state": "MERGED",
+      "title": "Core: 仮地面をPLATEAU道路・歩道へ置換し、点字12端と駅の足元を接続",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/pull/36"
+    }
+  ]
+}

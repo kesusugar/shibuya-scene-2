@@ -7,5 +7,14 @@
       0.78
     ],
     "estr": 0.55
+  },
+  "gate_sign_banner": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.92,
+      0.8
+    ],
+    "estr": 0.5
   }
 }

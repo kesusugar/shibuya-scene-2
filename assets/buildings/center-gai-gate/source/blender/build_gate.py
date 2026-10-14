@@ -45,46 +45,63 @@ def tube(name,path,radius,sides=16):
     for a,b in zip(rings,rings[1:]):
         for j in range(sides):face(name,[a[j],a[(j+1)%sides],b[(j+1)%sides],b[j]])
     face(name,list(reversed(rings[0])));face(name,rings[-1])
-def arch(u):
-    # Cubic with vertical shoulder tangents and a smooth horizontal top.
-    p0=A+Z*L['shoulder_height_m'];p3=B+Z*L['shoulder_height_m']
-    lift=L['arch_rise_m']*4/3
-    p1=p0+Z*lift;p2=p3+Z*lift
-    return p0*(1-u)**3+p1*(3*(1-u)**2*u)+p2*(3*(1-u)*u*u)+p3*u**3
-
-for i,p in enumerate([A,B]):
+# Claude review R2: WB01 (2025-01, CC0) and the 2025-02 high view show two separate light-grey crook posts whose tops
+# bend in towards the street centre, with a flat banner hung between the tips - not one continuous dark arch with a
+# curved yellow panel. Dimensions remain estimates (photo proportions: banner ~4.3 x crook height / 1.3 m tall).
+mat('gate_crook',tuple(L.get('crook_color',[.78,.79,.78])),.35,.4)
+def crook(p,toward):
+    """Vertical post, then a quarter bend of radius R toward the centre, ending in a short drooping tip."""
+    H=L['crook_bend_height_m'];R=L['crook_radius_m'];pts=[p+Z*L['base_height_m'],p+Z*H]
+    c=p+Z*H+toward*R
+    for k in range(1,17):
+        a=math.pi/2*k/16;pts.append(c-toward*R*math.cos(a)+Z*R*math.sin(a))
+    tip=pts[-1]
+    for k in range(1,9):
+        a=math.pi/2*k/8;pts.append(tip+toward*.45*math.sin(a)-Z*.45*(1-math.cos(a)))
+    return pts
+tips=[]
+for i,(p,toward) in enumerate([(A,T),(B,-T)]):
     bottom=feet[i]['min_tp']-15-.025
     tube('gate_base',[Vector((p.x,p.y,bottom)),p+Z*L['base_height_m']],L['base_radius_m'])
-    tube('gate_frame',[p+Z*L['base_height_m'],p+Z*L['shoulder_height_m']],L['post_radius_m'])
-path=[arch(i/L['arch_steps']) for i in range(L['arch_steps']+1)]
-tube('gate_frame',path,L['arch_radius_m'])
-start=(1-L['panel_width_fraction'])/2;end=1-start
-segments=32
-front=[];back=[]
-for i in range(segments+1):
-    u=start+(end-start)*i/segments;top=arch(u)-Z*.14;bottom=top-Z*L['panel_height_m']
-    front.append((top+N*L['panel_depth_m']/2,bottom+N*L['panel_depth_m']/2))
-    back.append((top-N*L['panel_depth_m']/2,bottom-N*L['panel_depth_m']/2))
-for i in range(segments):
-    a,b=front[i],front[i+1];c,d=back[i],back[i+1]
-    face('gate_panel',[a[1],b[1],b[0],a[0]]);face('gate_panel',[c[0],d[0],d[1],c[1]])
-    face('gate_frame',[a[0],b[0],d[0],c[0]]);face('gate_frame',[c[1],d[1],b[1],a[1]])
-for i in [0,segments]:face('gate_frame',[front[i][0],front[i][1],back[i][1],back[i][0]])
-for u in (.25,.5,.75):
-    p=arch(u)-Z*(L['panel_height_m']+.24)+N*.12
-    tube('gate_frame',[p+Z*.10,p-Z*.05],.11)
-    tube('gate_lamp',[p-Z*.055,p-Z*.075],.085)
-
+    path=crook(p,toward)
+    tube('gate_crook',path[:2],L['post_radius_m'])
+    tube('gate_crook',path[1:],L['crook_tube_radius_m'],20)
+    # collar ring where the post meets the thicker crook (visible joint in WB01)
+    tube('gate_frame',[path[1]-Z*.12,path[1]+Z*.08],L['crook_tube_radius_m']+.04,20)
+    tips.append(path[-1])
+    tube('gate_lamp',[path[-1]-Z*.02,path[-1]-Z*.16],.11,16)
+# Flat banner between the tips: structural backing (gate_panel, dark) plus the January-2025 banner in a separate layer.
+la,lb=tips;mid_top=(la+lb)/2-Z*.25;W=L['banner_width_m'];Hb=L['banner_height_m']
+c=mid_top-Z*Hb/2;tl=c-T*W/2+Z*Hb/2;tr=c+T*W/2+Z*Hb/2;br=c+T*W/2-Z*Hb/2;bl=c-T*W/2-Z*Hb/2
+d=N*L['panel_depth_m']/2
+face('gate_panel',[bl-d,br-d,tr-d,tl-d]);face('gate_panel',[tl+d,tr+d,br+d,bl+d])
+for a,b in [(tl,tr),(bl,br)]:face('gate_frame',[a-d,b-d,b+d,a+d])
+for a,b in [(tl,bl),(tr,br)]:face('gate_frame',[a-d,b-d,b+d,a+d])
+# hangers from the crook tips to the banner corners
+for tip,corner in [(la,tl),(lb,tr)]:tube('gate_frame',[tip,corner],.02,8)
+SIGN=bmesh.new();uv=SIGN.loops.layers.uv.verify()
+for off,quad,uvs in [(d+N*.01,[bl,br,tr,tl],[(0,0),(1,0),(1,1),(0,1)]),(-d-N*.01,[br,bl,tl,tr],[(0,0),(1,0),(1,1),(0,1)])]:
+    f=SIGN.faces.new([SIGN.verts.new(q+off) for q in quad])
+    for l,q in zip(f.loops,uvs):l[uv].uv=q
+sm=bpy.data.materials.new('gate_sign_banner');sm.use_nodes=True;bp=sm.node_tree.nodes['Principled BSDF']
+tx=sm.node_tree.nodes.new('ShaderNodeTexImage');tx.image=bpy.data.images.load(str(Path(layout).parent.parent/'textures'/L['banner_texture']))
+sm.node_tree.links.new(tx.outputs['Color'],bp.inputs['Base Color']);sm.node_tree.links.new(tx.outputs['Color'],bp.inputs['Emission Color']);bp.inputs['Emission Strength'].default_value=1;bp.inputs['Roughness'].default_value=.8
+path=tips
+front=[(tl,bl)]
 counts={}
 for name,bm in G.items():
     bmesh.ops.triangulate(bm,faces=bm.faces[:]);me=bpy.data.meshes.new(name);bm.to_mesh(me);bm.free();me.materials.append(M[name]);me.calc_loop_triangles()
     ob=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(ob);counts[name]=len(me.loop_triangles)
 bpy.ops.export_scene.gltf(filepath=str(OUT/'center-gai-gate.glb'),export_format='GLB',export_yup=True)
-hints={'groundElevationTP':15,'planBounds':[min(A.x,B.x)-.4,min(A.y,B.y)-.4,max(A.x,B.x)+.4,max(A.y,B.y)+.4],'sun':{'azimuth_deg':207,'elevation_deg':57}}
+for ob in list(bpy.context.scene.objects):bpy.data.objects.remove(ob,do_unlink=True)
+me=bpy.data.meshes.new('gate_sign_banner');SIGN.to_mesh(me);SIGN.free();me.materials.append(sm)
+ob=bpy.data.objects.new('gate_sign_banner',me);bpy.context.collection.objects.link(ob)
+bpy.ops.export_scene.gltf(filepath=str(OUT/'signs-2025-01.glb'),export_format='GLB',export_yup=True)
+hints={'groundElevationTP':15,'layers':{'signs':'signs-2025-01.glb'},'planBounds':[min(A.x,B.x)-.4,min(A.y,B.y)-.4,max(A.x,B.x)+.4,max(A.y,B.y)+.4],'sun':{'azimuth_deg':207,'elevation_deg':57}}
 (OUT/'viewer.json').write_text(json.dumps(hints,indent=2)+'\n')
 for mode in ['day','night']:
-    emit={'gate_lamp':{'kind':'interior','emit':[1,.95,.78],'estr':L['night_emission'] if mode=='night' else L['day_emission']}}
+    emit={'gate_lamp':{'kind':'interior','emit':[1,.95,.78],'estr':L['night_emission'] if mode=='night' else L['day_emission']},'gate_sign_banner':{'kind':'led','emit':[1,.92,.8],'estr':.5 if mode=='night' else 0}}
     (OUT/f'emissive_{mode}.json').write_text(json.dumps(emit,indent=2)+'\n')
-stats={'id':L['id'],'source_id':L['source_id'],'datum_tp_m':15,'feet':feet,'span_m':span,'top_local_m':max(p.z for p in path)+L['arch_radius_m'],'min_clear_height_m':min(p[1].z for p in front)-max(A.z,B.z),'triangles':sum(counts.values()),'primitives':len(counts),'materials':counts,'position_basis':L['position_basis'],'status':'B photo-type prototype; foot placement and dimensions estimated, no ad content'}
+stats={'id':L['id'],'source_id':L['source_id'],'datum_tp_m':15,'feet':feet,'span_m':span,'top_local_m':max(p.z for p in path)+L['crook_tube_radius_m'],'min_clear_height_m':bl.z-max(A.z,B.z),'triangles':sum(counts.values()),'primitives':len(counts),'materials':counts,'position_basis':L['position_basis'],'status':'B photo-type prototype; two crook posts and a flat banner (Claude review R2); foot placement and dimensions estimated; banner = January 2025 photo extract in the signs layer'}
 Path(layout).with_name('stats.json').write_text(json.dumps(stats,indent=2)+'\n')
 print('GATE',stats['triangles'],stats['primitives'],[f['tp'] for f in feet],stats['min_clear_height_m'])

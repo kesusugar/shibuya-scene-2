@@ -20,7 +20,7 @@ for i in range(81):
 assert samples
 for ob in list(bpy.context.scene.objects):bpy.data.objects.remove(ob,do_unlink=True)
 M={};GROUP={}
-for name,rgb,rough,metal in [('sc_wall',(.63,.65,.63),.7,0),('sc_roof',(.32,.34,.32),.85,0),('sc_structure',(.73,.73,.70),.7,0),('sc_frame',(.55,.57,.57),.4,.45),('sc_glass',(.055,.12,.14),.28,.25),('sc_sheet',(.60,.64,.68),.9,0),('sc_safety_blue',(.025,.15,.25),.9,0),('sc_light',(.7,.65,.48),.5,0),('sc_interior',(.54,.52,.42),.8,0),('sc_interior_light',(.92,.89,.70),.6,0)]:
+for name,rgb,rough,metal in [('sc_wall',(.74,.76,.76),.45,.35),('sc_roof',(.32,.34,.32),.85,0),('sc_structure',(.73,.73,.70),.7,0),('sc_frame',(.55,.57,.57),.4,.45),('sc_glass',(.055,.12,.14),.28,.25),('sc_sheet',(.60,.64,.68),.9,0),('sc_safety_blue',(.025,.15,.25),.9,0),('sc_light',(.7,.65,.48),.5,0),('sc_interior',(.54,.52,.42),.8,0),('sc_interior_light',(.92,.89,.70),.6,0)]:
  m=bpy.data.materials.new(name);m.use_nodes=True;p=m.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(*rgb,1);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=metal;M[name]=m
 # Shallow real window recesses: no photograph pasted on the facade.
 M['sc_glass'].node_tree.nodes['Principled BSDF'].inputs['Alpha'].default_value=F['glass_alpha']
@@ -95,8 +95,15 @@ for i in range(bays+1):panel(i*L/bays,F['glass_center_tp']-15,.11,F['glass_heigh
 for z in [F['glass_center_tp']-15-F['glass_height_m']/2-.13,F['glass_center_tp']-15+F['glass_height_m']/2+.13]:panel(L/2,z,L,.22,'sc_frame',.19)
 for relative_z in F['transom_offsets_m']:
  panel(L/2,glass_z+relative_z,L,.085,'sc_frame',.20)
-# Corrugated metal skin above the ribbon, no invented advertisement or campaign.
-for i in range(65):panel((i+.5)*L/65,14.5,.035,5.0,'sc_frame',.17)
+# Silver fascia above the glazing (SC05): horizontal panel joints and a drip edge, no invented advertisement.
+roof_z=max(p[2] for b in D if b['kind']=='building' for sf in b['surfaces'] if sf['kind']=='WallSurface' and max(abs((Vector(q)-A).dot(N)) for q in sf['ring'])<.1 for p in sf['ring'])   # top of the north wall
+for z in [glass_top+.55+k*(roof_z-glass_top-.6)/3 for k in range(3)]:panel(L/2,z,L,.04,'sc_frame',.17)
+panel(L/2,roof_z-.12,L+.2,.24,'sc_frame',.22)
+# Lower silver band between the open soffit and the glazing, with the same joints.
+for z in [floor+.9,floor+1.7]:panel(L/2,z,L,.035,'sc_frame',.17)
+# A mid-height interior floor/slab edge read through the tall glazing (two-level concourse look in SC05; height estimated).
+face('sc_interior',[A+N*.05+Vector((0,0,glass_bottom+4.4)),B+N*.05+Vector((0,0,glass_bottom+4.4)),B-N*depth+Vector((0,0,glass_bottom+4.4)),A-N*depth+Vector((0,0,glass_bottom+4.4))])
+panel(L/2,glass_bottom+4.4,L,.35,'sc_frame',-.05)
 # Make the lower beam explicit, leaving the opening below it rather than a solid wall.
 u0=(split-A.x)/T.x
 panel((u0+L)/2,floor+.25,L-u0,.5,'sc_structure',.3)

@@ -12,16 +12,19 @@ it('replaces the facility once without duplicated C station shells',()=>{
  expect(JSON.parse(readFileSync(base+'web/viewer.json','utf8')).groundElevationTP).toBe(15);
 });
 it('retains every original shell/roof vertex without generic glass or glowing windows',async()=>{
- const root=(await new NodeIO().read(base+'web/station-service.glb')).getRoot(),vertices:Vector3[]=[];
+ const root=(await new NodeIO().read(base+'web/station-service.glb')).getRoot(),vertices:Vector3[]=[],scaffold:Vector3[]=[];
  for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimitives()??[]){
+  const target=p.getMaterial()!.getName()==='ss_scaffold'?scaffold:vertices;   // site scaffold may rise above the roof (Claude review R2)
   const a=p.getAttribute('POSITION')!,world=new Matrix4().fromArray(n.getWorldMatrix());
-  for(let i=0;i<a.getCount();i++){const v=new Vector3().fromArray(a.getElement(i,[])).applyMatrix4(world);expect([v.x,v.y,v.z].every(Number.isFinite)).toBe(true);vertices.push(v);}
+  for(let i=0;i<a.getCount();i++){const v=new Vector3().fromArray(a.getElement(i,[])).applyMatrix4(world);expect([v.x,v.y,v.z].every(Number.isFinite)).toBe(true);target.push(v);}
  }
  for(const b of JSON.parse(readFileSync(base+'source/data/parts.json','utf8')))for(const s of b.surfaces)for(const p of s.ring)
   expect(vertices.some(v=>v.distanceTo(new Vector3(p[0],p[2],-p[1]))<.001)).toBe(true);
  expect(Math.max(...vertices.map(v=>v.y))).toBeLessThanOrEqual(13.101);
+ expect(Math.max(...scaffold.map(v=>v.y))).toBeLessThanOrEqual(14.2);
  expect(root.listMaterials().some(m=>/glass|window/i.test(m.getName()))).toBe(false);
- for(const time of ['day','night'])expect(JSON.parse(readFileSync(base+`web/emissive_${time}.json`,'utf8'))).toEqual({});
+ // only the October billboard (separate signs layer) may light; the facility itself has no glowing windows
+ for(const time of ['day','night'])expect(Object.keys(JSON.parse(readFileSync(base+`web/emissive_${time}.json`,'utf8')))).toEqual(['ss_sign_billboard']);
 });
 it('closes the gap below the original base at locally measured lower ground',async()=>{
  const stats=JSON.parse(readFileSync(base+'source/data/stats.json','utf8'));

@@ -6,7 +6,7 @@
   "datum_tp_m": 15.0,
   "roof_deviation_vs_plateau_m": 0,
   "opened_north_glazing_sections": 2,
-  "interior_depth_m": 0.75,
+  "interior_depth_m": 3.0,
   "ground_samples": [
     {
       "x": -44.916,
@@ -432,20 +432,20 @@
       "vertices": 206
     },
     "sc_interior": {
-      "triangles": 10,
-      "vertices": 20
+      "triangles": 12,
+      "vertices": 24
     },
     "sc_interior_light": {
       "triangles": 144,
       "vertices": 288
     },
     "sc_frame": {
-      "triangles": 390,
-      "vertices": 780
+      "triangles": 222,
+      "vertices": 444
     },
     "sc_glass": {
-      "triangles": 88,
-      "vertices": 176
+      "triangles": 36,
+      "vertices": 72
     },
     "sc_safety_blue": {
       "triangles": 2,
@@ -456,6 +456,6 @@
       "vertices": 4
     }
   },
-  "triangles": 848,
+  "triangles": 630,
   "status": "B prototype. October10/18 north glazing/interior/transom types; October11 structural reference. Positions/dimensions/brightness estimated; western lower solid retained, four station candidates unconfirmed. No calibrated photographic pixel error."
 }

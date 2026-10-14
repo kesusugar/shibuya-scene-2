@@ -6,6 +6,8 @@ import { groundOffset, hasArc, planCentre, type CameraFit, type ViewerHints } fr
 
 export type ControlMode = 'orbit' | 'walk';
 const EYE = 1.6;
+/** Highest kerb/step a walker climbs without stopping (m); a bigger rise is treated as a wall. */
+export const MAX_STEP = 0.35;
 
 /** 360-degree orbit around the building, or free walking at eye height with simple wall collision. */
 export class ViewerControls {
@@ -36,10 +38,32 @@ export class ViewerControls {
   /** Walking keeps the eye 1.6 m above whatever these surfaces are under the camera (Core ground, else y = 0). */
   setGround(objs: Object3D[]) { this.ground = objs; }
   groundY(x: number, z: number): number {
-    if (!this.ground.length) return 0;
-    this.ray.set(new Vector3(x, 80, z), new Vector3(0, -1, 0)); this.ray.far = 200;
+    return this.groundAt(x, z) ?? 0;
+  }
+  /** Ground height under (x, z), or null when no walking surface is there (so a walker never drops to y = 0). */
+  groundAt(x: number, z: number, from = 80): number | null {
+    if (!this.ground.length) return null;
+    this.ray.set(new Vector3(x, from, z), new Vector3(0, -1, 0)); this.ray.far = 200;
     const hit = this.ray.intersectObjects(this.ground, true)[0];
-    return hit ? hit.point.y : 0;
+    return hit ? hit.point.y : null;
+  }
+  /**
+   * One walking step: blocked by obstacles at knee and chest height, by a missing walking surface, and by a rise
+   * above MAX_STEP. Returns the new eye position, or null when the step is refused. Public for tests.
+   */
+  stepTo(from: Vector3, move: Vector3, distance: number): Vector3 | null {
+    const base = from.y - EYE;
+    for (const y of [0.25, 0.5, 1.3]) {
+      this.ray.set(from.clone().setY(base + y), move);
+      this.ray.far = distance + 0.4;
+      if (this.ray.intersectObjects(this.obstacles, true).length) return null;
+    }
+    const to = from.clone().addScaledVector(move, distance);
+    // probe from just above a climbable step, so roofs, canopies and crowns overhead are never taken as the floor
+    const g = this.ground.length ? this.groundAt(to.x, to.z, base + MAX_STEP + 0.05) : 0;
+    if (g === null) return null;
+    if (g - base > MAX_STEP) return null;
+    return to.setY(g + EYE);
   }
 
   frameBuilding(h: ViewerHints) {
@@ -161,14 +185,8 @@ export class ViewerControls {
     if (this.keys.has('KeyA') || this.keys.has('ArrowLeft')) move.sub(right);
     if (move.lengthSq() === 0) return;
     move.normalize();
-    // stop 0.4 m short of any wall, glass or column at knee and chest height (above the ground under the eye)
-    const base = this.camera.position.y - EYE;
-    for (const y of [0.5, 1.3]) {
-      this.ray.set(this.camera.position.clone().setY(base + y), move);
-      this.ray.far = speed + 0.4;
-      if (this.ray.intersectObjects(this.obstacles, true).length) return;
-    }
-    this.camera.position.addScaledVector(move, speed);
-    this.camera.position.setY(this.groundY(this.camera.position.x, this.camera.position.z) + EYE);
+    // stop 0.4 m short of walls/furniture, at gaps in the walking surface and at rises above MAX_STEP
+    const next = this.stepTo(this.camera.position, move, speed);
+    if (next) this.camera.position.copy(next);
   }
 }
