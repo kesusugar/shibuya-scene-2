@@ -1,0 +1,139 @@
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node west_roof
+00:15:10 | INFO: Blender create Mesh node west_wall_fruit
+00:15:10 | INFO: Blender create Mesh node west_wall_corner_body
+00:15:10 | INFO: Blender create Mesh node west_wall_pharmacy
+00:15:10 | INFO: Blender create Mesh node west_wall_middle
+00:15:10 | INFO: Blender create Mesh node west_tile_trim
+00:15:10 | INFO: Blender create Mesh node west_tile_joint
+00:15:10 | INFO: Blender create Mesh node west_recess
+00:15:10 | INFO: Blender create Mesh node west_shop_glass
+00:15:10 | INFO: Blender create Mesh node west_curtains
+00:15:10 | INFO: Blender create Mesh node west_metal_edge
+00:15:10 | INFO: Blender create Mesh node west_awning
+00:15:10 | INFO: Blender create Mesh node west_frame
+00:15:10 | INFO: Blender create Mesh node west_shop_light
+00:15:10 | INFO: Blender create Mesh node west_wall_corner
+00:15:10 | INFO: Blender create Mesh node west_glass
+00:15:10 | INFO: Blender create Mesh node west_book_awning
+00:15:10 | INFO: Blender create Mesh node west_pharmacy_awning
+00:15:10 | INFO: Blender create Mesh node west_housing
+00:15:10 | INFO: Blender create Mesh node west_screen_back
+00:15:10 | INFO: glTF import finished in 0.05s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node west_sign_clinic_upper
+00:15:10 | INFO: Blender create Mesh node west_sign_clinic_lower
+00:15:10 | INFO: Blender create Mesh node west_sign_sushi
+00:15:10 | INFO: Blender create Mesh node west_sign_fruit_shop_band
+00:15:10 | INFO: Blender create Mesh node west_sign_middle_tenants
+00:15:10 | INFO: Blender create Mesh node west_sign_rakuten
+00:15:10 | INFO: Blender create Mesh node west_sign_dmm
+00:15:10 | INFO: Blender create Mesh node west_sign_asbi_flank
+00:15:10 | INFO: Blender create Mesh node west_sign_nishimura
+00:15:10 | INFO: Blender create Mesh node west_sign_matsukiyo
+00:15:10 | INFO: Blender create Mesh node west_sign_monja
+00:15:10 | INFO: Blender create Mesh node west_sign_hisamitsu
+00:15:10 | INFO: Blender create Mesh node west_sign_sanzenri
+00:15:10 | INFO: Blender create Mesh node west_sign_taiseido_left
+00:15:10 | INFO: Blender create Mesh node west_sign_taiseido_right
+00:15:10 | INFO: glTF import finished in 0.05s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node dk_roof
+00:15:10 | INFO: Blender create Mesh node dk_wall
+00:15:10 | INFO: Blender create Mesh node dk_reveal
+00:15:10 | INFO: Blender create Mesh node dk_glass_0
+00:15:10 | INFO: Blender create Mesh node dk_curtain
+00:15:10 | INFO: Blender create Mesh node dk_aluminum
+00:15:10 | INFO: Blender create Mesh node dk_glass_1
+00:15:10 | INFO: Blender create Mesh node dk_glass_2
+00:15:10 | INFO: Blender create Mesh node dk_glass_3
+00:15:10 | INFO: Blender create Mesh node dk_brace
+00:15:10 | INFO: Blender create Mesh node dk_joint
+00:15:10 | INFO: Blender create Mesh node dk_shop_glass
+00:15:10 | INFO: Blender create Mesh node dk_sign_case
+00:15:10 | INFO: Blender create Mesh node dk_shop_light
+00:15:10 | INFO: glTF import finished in 0.05s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node dk_sign_jan_roof_campaign
+00:15:10 | INFO: Blender create Mesh node dk_sign_jan_uc_east
+00:15:10 | INFO: Blender create Mesh node dk_sign_jan_uc_south
+00:15:10 | INFO: Blender create Mesh node dk_sign_jan_vanguard
+00:15:10 | INFO: Blender create Mesh node dk_sign_jan_mizuho
+00:15:10 | INFO: glTF import finished in 0.02s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node ek_roof
+00:15:10 | INFO: Blender create Mesh node ek_wall
+00:15:10 | INFO: Blender create Mesh node ek_reveal
+00:15:10 | INFO: Blender create Mesh node ek_red_frame
+00:15:10 | INFO: Blender create Mesh node ek_glass_warm
+00:15:10 | INFO: Blender create Mesh node ek_silver
+00:15:10 | INFO: Blender create Mesh node ek_glass
+00:15:10 | INFO: Blender create Mesh node ek_glass_blue
+00:15:10 | INFO: Blender create Mesh node ek_band
+00:15:10 | INFO: Blender create Mesh node ek_shop_glass
+00:15:10 | INFO: Blender create Mesh node ek_steel
+00:15:10 | INFO: Blender create Mesh node ek_gold_dark
+00:15:10 | INFO: Blender create Mesh node ek_cafe_ceiling
+00:15:10 | INFO: Blender create Mesh node ek_gold
+00:15:10 | INFO: Blender create Mesh node ek_yellow
+00:15:10 | INFO: Blender create Mesh node ek_leaf
+00:15:10 | INFO: Blender create Mesh node ek_lavender
+00:15:10 | INFO: Blender create Mesh node ek_leaf_light
+00:15:10 | INFO: Blender create Mesh node ek_screen_back
+00:15:10 | INFO: glTF import finished in 0.12s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node ek_sign_loccitane
+00:15:10 | INFO: Blender create Mesh node ek_sign_shabu
+00:15:10 | INFO: Blender create Mesh node ek_sign_francais
+00:15:10 | INFO: Blender create Mesh node ek_sign_gusto
+00:15:10 | INFO: Blender create Mesh node ek_sign_eyecity
+00:15:10 | INFO: Blender create Mesh node ek_sign_longboard
+00:15:10 | INFO: Blender create Mesh node ek_sign_samsung
+00:15:10 | INFO: Blender create Mesh node ek_sign_hit_sky
+00:15:10 | INFO: glTF import finished in 0.03s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node c244_roof
+00:15:10 | INFO: Blender create Mesh node c244_stone_dark
+00:15:10 | INFO: Blender create Mesh node c244_joint
+00:15:10 | INFO: Blender create Mesh node c244_stone
+00:15:10 | INFO: Blender create Mesh node c244_stone_light
+00:15:10 | INFO: Blender create Mesh node c244_reveal
+00:15:10 | INFO: Blender create Mesh node c244_glass_dark
+00:15:10 | INFO: Blender create Mesh node c244_frame
+00:15:10 | INFO: Blender create Mesh node c244_glass
+00:15:10 | INFO: Blender create Mesh node c244_gold
+00:15:10 | INFO: Blender create Mesh node c244_blind
+00:15:10 | INFO: Blender create Mesh node c244_gold_glass
+00:15:10 | INFO: Blender create Mesh node c244_steel
+00:15:10 | INFO: Blender create Mesh node c244_screen_back
+00:15:10 | INFO: Blender create Mesh node c244_lamp
+00:15:10 | INFO: glTF import finished in 0.08s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node c244_ad_2025_01
+00:15:10 | INFO: Blender create Mesh node c244_davinci_2025_01
+00:15:10 | INFO: glTF import finished in 0.01s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node quattro_roof
+00:15:10 | INFO: Blender create Mesh node quattro_wall
+00:15:10 | INFO: Blender create Mesh node quattro_glass_dim_details
+00:15:10 | INFO: Blender create Mesh node quattro_silver_details
+00:15:10 | INFO: Blender create Mesh node quattro_glass_details
+00:15:10 | INFO: Blender create Mesh node quattro_edge_details
+00:15:10 | INFO: Blender create Mesh node quattro_shadow_details
+00:15:10 | INFO: Blender create Mesh node quattro_sign_back_details
+00:15:10 | INFO: Blender create Mesh node quattro_red_housing_details
+00:15:10 | INFO: Blender create Mesh node quattro_roof_details
+00:15:10 | INFO: Blender create Mesh node quattro_roof_lower_hood_details
+00:15:10 | INFO: Blender create Mesh node quattro_wall_details
+00:15:10 | INFO: Blender create Mesh node quattro_hood_brown_details
+00:15:10 | INFO: Blender create Mesh node quattro_roof_upper_opening_details
+00:15:10 | INFO: glTF import finished in 0.06s
+00:15:10 | INFO: Data are loaded, start creating Blender stuff
+00:15:10 | INFO: Blender create Mesh node january_blade_0
+00:15:10 | INFO: Blender create Mesh node january_blade_1
+00:15:10 | INFO: glTF import finished in 0.02s
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender').
+FINAL_SEPARATION 8.998439812945552 SOURCE_SEPARATION 11.56350729411222
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+
+Blender quit

@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    {
+      "path": "tests/west-block.test.ts",
+      "source": "/workspace/shared/west_storefront_review/tests/west-block.test.ts",
+      "bytes": 8245,
+      "sha256": "7e8be72634acadc8f7566fa5c331047f6c3c984fb823c5842678edc238ecdb1b"
+    },
+    {
+      "path": "tests/daiichi-kangin.test.ts",
+      "source": "/workspace/shared/three_building_final/tests/daiichi-kangin.test.ts",
+      "bytes": 4711,
+      "sha256": "b81477f62c6b53659132010b10332a141f7973fa0f869655644ba6e4aed895e5"
+    },
+    {
+      "path": "tests/ekimae.test.ts",
+      "source": "/workspace/shared/three_building_final/tests/ekimae.test.ts",
+      "bytes": 6788,
+      "sha256": "2229eecfadd591cd1abb7709193a33d357baceede91e603082a9b530b8a8d9a9"
+    },
+    {
+      "path": "tests/center244-fidelity.test.ts",
+      "source": "/workspace/shared/center244_fidelity/tests/center244-fidelity.test.ts",
+      "bytes": 3088,
+      "sha256": "687481712634c573ec6b3456cae3c0992c04fa1f71104ded5e948ec4cc7643ce"
+    },
+    {
+      "path": "tests/quattro-fidelity.test.ts",
+      "source": "/workspace/shared/bigecho_fidelity/tests/quattro-fidelity.test.ts",
+      "bytes": 7451,
+      "sha256": "51b69594c8bc64d6025eb360b06fe5c43acdd49e6517e0b96e3cd1db7a82ab65"
+    },
+    {
+      "path": "tests/neighbourhood.test.ts",
+      "source": "/workspace/shared/bigecho_fidelity/tests/neighbourhood.test.ts",
+      "bytes": 2702,
+      "sha256": "debb030a68f4eaf60475e668ed03da97152e3a67b1ab20b329d92686b94434f8"
+    }
+  ],
+  "results": "22/22 building tests, 2/2 selected neighbourhood tests (4 skipped), tsc --noEmit exit 0",
+  "scope": "Focused suites only; no full suite/build"
+}

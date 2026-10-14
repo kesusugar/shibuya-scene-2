@@ -1,0 +1,107 @@
+{
+  "coordinates": "Blender X/Y plan, Z relative to TP15; no recentering",
+  "pairs": [
+    {
+      "a": "west-block",
+      "b": "daiichi-kangin",
+      "separating_gaps_m": {
+        "X": 2.3400039672851562,
+        "Y": -34.73527908325195,
+        "Z": -40.00899928808212
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "west-block",
+      "b": "ekimae",
+      "separating_gaps_m": {
+        "X": -29.568931579589844,
+        "Y": 29.52821445465088,
+        "Z": -39.99599930644035
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "west-block",
+      "b": "center244",
+      "separating_gaps_m": {
+        "X": -4.543651580810547,
+        "Y": 15.154983520507812,
+        "Z": -33.649898052215576
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "west-block",
+      "b": "quattro",
+      "separating_gaps_m": {
+        "X": -17.562335968017578,
+        "Y": -3.3325538635253906,
+        "Z": -30.355999410152435
+      },
+      "aabb_disjoint": false,
+      "geometry_surface_contacts": [],
+      "caveat": "Triangle-surface check distinguishes AABB overlap; not a solid-containment or runtime collision certification."
+    },
+    {
+      "a": "daiichi-kangin",
+      "b": "ekimae",
+      "separating_gaps_m": {
+        "X": 1.7960052490234375,
+        "Y": 28.80336856842041,
+        "Z": -50.4000024497509
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "daiichi-kangin",
+      "b": "center244",
+      "separating_gaps_m": {
+        "X": -5.0970001220703125,
+        "Y": 15.96798324584961,
+        "Z": -33.649898052215576
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "daiichi-kangin",
+      "b": "quattro",
+      "separating_gaps_m": {
+        "X": 16.356674194335938,
+        "Y": -2.5195541381835938,
+        "Z": -30.355999410152435
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "ekimae",
+      "b": "center244",
+      "separating_gaps_m": {
+        "X": -5.087650299072266,
+        "Y": 80.23147678375244,
+        "Z": -33.649898052215576
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "ekimae",
+      "b": "quattro",
+      "separating_gaps_m": {
+        "X": -15.552261352539062,
+        "Y": 61.74393939971924,
+        "Z": -30.355999410152435
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "center244",
+      "b": "quattro",
+      "separating_gaps_m": {
+        "X": 9.473018646240234,
+        "Y": -4.348991394042969,
+        "Z": -29.821895122528076
+      },
+      "aabb_disjoint": true
+    }
+  ]
+}

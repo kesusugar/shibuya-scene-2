@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    {
+      "path": "assets/buildings/west-block/source/data/plateau.json",
+      "bytes": 83361,
+      "sha256": "9a0d6514b692e6c2a14357397c68e6522e2357708762d8e06aa0fa446b84a50d"
+    },
+    {
+      "path": "assets/buildings/quattro/source/data/original_shell.json",
+      "bytes": 18494,
+      "sha256": "cc742469b0d06bd1245215a7a416e8f292884e891277abfbd79aad343576c55f"
+    }
+  ]
+}
