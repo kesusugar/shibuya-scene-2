@@ -1,0 +1,46 @@
+{
+  "raw_source_sha256": "967dbde173f2b5920619b7b4eba017be79e1948c35afd7e8d3be2336f8f7ccd8",
+  "raw_source_exact": true,
+  "input_transport_note": "Materialized input has one extra trailing newline; compare candidate to original baseline manifest SHA instead.",
+  "shell_geometry_exact": {
+    "quattro_roof": true,
+    "quattro_wall": true
+  },
+  "rebuild_sha256": {
+    "quattro.glb": {
+      "candidate": "2e3342cbba74eb71f7975b29ea1b8dbd7567e5085b1b50db733fe042a032f8ea",
+      "rebuild": "2e3342cbba74eb71f7975b29ea1b8dbd7567e5085b1b50db733fe042a032f8ea",
+      "exact": true
+    },
+    "signs-2025-01.glb": {
+      "candidate": "2c8cd0969a92572a5404284b7e60972eb08f8b4f959e7daa153c4442ed441413",
+      "rebuild": "2c8cd0969a92572a5404284b7e60972eb08f8b4f959e7daa153c4442ed441413",
+      "exact": true
+    }
+  },
+  "protected_baseline_unchanged": true,
+  "protected_baseline_files": [
+    "assets/context/core/source/data/context_input.json",
+    "assets/context/core/source/data/context_stats.json"
+  ],
+  "candidate_asset_paths": [
+    "assets/buildings/quattro/README.md",
+    "assets/buildings/quattro/web/viewer.json",
+    "assets/buildings/quattro/web/quattro.glb",
+    "assets/buildings/quattro/web/signs-2025-01.glb",
+    "assets/buildings/quattro/source/refs/blade-2-2025-01.png",
+    "assets/buildings/quattro/source/refs/blade-1-2025-01.png",
+    "assets/buildings/quattro/source/refs/SOURCES.md",
+    "assets/buildings/quattro/source/refs/WB01-target-2025-01.png",
+    "assets/buildings/quattro/source/data/protected_footprints.json",
+    "assets/buildings/quattro/source/data/original_shell.json",
+    "assets/buildings/quattro/source/data/stats.json",
+    "assets/buildings/quattro/source/data/plateau.json",
+    "assets/buildings/quattro/source/data/layout.json",
+    "assets/buildings/quattro/source/blender/build.py",
+    "assets/buildings/quattro/source/blender/render_evidence.py",
+    "assets/buildings/quattro/source/blend/quattro.blend1",
+    "assets/buildings/quattro/source/blend/quattro.blend"
+  ],
+  "asset_paths_target_only": true
+}

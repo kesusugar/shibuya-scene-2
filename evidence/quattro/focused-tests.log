@@ -1,0 +1,9 @@
+
+ RUN  v5.0.3 /workspace/shared/bigecho_fidelity/validation_workspace
+
+
+ Test Files  1 passed (1)
+      Tests  7 passed (7)
+   Start at  00:07:36
+   Duration  983ms (tests 86%, transform 8%, import 6%, worker 1%)
+

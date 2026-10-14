@@ -1,0 +1,20 @@
+{
+  "files": 39,
+  "hash_or_size_failures": [],
+  "outside_allowed_paths": [],
+  "duplicate_paths": false,
+  "no_deletions": true,
+  "unchanged_inherited_files": [
+    "source/refs/reference.jpg",
+    "source/refs/reference.jpg.json",
+    "web/emissive_day.json",
+    "web/emissive_night.json"
+  ],
+  "inherited_entries_exactly_preserved": true,
+  "manifest_stats": {
+    "triangles": 4304,
+    "primitives": 16,
+    "bytes": 454428
+  },
+  "asset_materialized_hash_failures": []
+}
