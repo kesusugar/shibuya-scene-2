@@ -4,8 +4,29 @@
     "dataset": "渋谷区2025年度3D都市モデル",
     "url": "https://www.mlit.go.jp/plateau/",
     "terms": "https://www.mlit.go.jp/plateau/site-policy/",
-    "processing": "Extracted from context_input, retain original roof and shell; procedural estimated facade added"
+    "processing": "All original roof/wall vertices retained; incorrect attached facade replaced by correct UC-building architecture"
   },
-  "photos": "REFERENCE_REGISTER.csv: shared unchanged CC0 photos, no texture extraction",
-  "target": "2025, October correspondence not independently verified"
+  "identity_owner_reference": {
+    "url": "https://www.seiwa-building.co.jp/building/office/item_off_shibuya.html",
+    "address": "東京都渋谷区宇田川町23番3号",
+    "use": "identity reference only, undated owner photograph NOT redistributed or textured"
+  },
+  "photo_derivatives": {
+    "date": "2025-01-31",
+    "author": "Syced",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg",
+    "source_sha256": "0b5cec75608be664a9f2e4ab08b906a245d3f00ce0e4d556fcc8b513579bc656",
+    "processing": "Five manual perspective-corrected crops and resizing, no invented pixels",
+    "era_layer": "signs-2025-01.glb"
+  },
+  "second_photo": {
+    "date": "2025-02-07",
+    "author": "Syced",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg",
+    "use": "architecture corroboration only"
+  },
+  "target": "Architecture 2025 prototype; October campaign correspondence not verified"
 }

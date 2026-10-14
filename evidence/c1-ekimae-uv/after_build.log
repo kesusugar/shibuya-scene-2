@@ -1,0 +1,21 @@
+21:05:41 | INFO: Starting glTF 2.0 export
+21:05:41 | INFO: Extracting primitive: ek_sign_shabu
+21:05:41 | INFO: Primitives created: 1
+21:05:41 | INFO: Extracting primitive: ek_sign_francais
+21:05:41 | INFO: Primitives created: 1
+21:05:41 | INFO: Extracting primitive: ek_sign_gusto
+21:05:42 | INFO: Primitives created: 1
+21:05:42 | INFO: Extracting primitive: ek_sign_eyecity
+21:05:42 | INFO: Primitives created: 1
+21:05:42 | INFO: Extracting primitive: ek_sign_loccitane
+21:05:42 | INFO: Primitives created: 1
+21:05:42 | INFO: Extracting primitive: ek_sign_samsung
+21:05:42 | INFO: Primitives created: 1
+21:05:42 | INFO: Extracting primitive: ek_sign_hit_sky
+21:05:42 | INFO: Primitives created: 1
+21:05:42 | INFO: Finished glTF 2.0 export in 0.046051025390625 s
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender').
+INFO Draco mesh compression is available, use library at /workspace/shared/blender423/blender-4.2.3-linux-x64/4.2/python/lib/python3.11/site-packages/libextern_draco.so
+
+EKIMAE signs-only: base, anchor, viewer and stats preserved {'signs': {'meshes': 7, 'triangles': 296}}

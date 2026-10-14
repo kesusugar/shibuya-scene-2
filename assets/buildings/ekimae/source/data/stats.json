@@ -419,13 +419,14 @@
   "replaced_corner_faces": 2,
   "geometry": {
     "base": {
-      "meshes": 11,
-      "triangles": 6344
+      "meshes": 19,
+      "triangles": 23446
     },
     "signs": {
-      "meshes": 7,
-      "triangles": 296
+      "meshes": 8,
+      "triangles": 284
     }
   },
-  "status": "B prototype; facade/entrances estimated; rooftop/tenant images November 2025 CC BY-SA 4.0"
+  "status": "Photo-led revision; interior and unseen surfaces inferred; November 2025 signs CC BY-SA 4.0",
+  "ground_sample_mode": "recorded reuse"
 }

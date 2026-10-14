@@ -1,0 +1,19 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> shibuya-scene-2@0.1.0 build
+> npm run sync-assets && tsc --noEmit && vite build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: daiichi-kangin, ekimae, west-block; ground: (none); street: core; context: (none)
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 43 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  2.17 kB │ gzip:   1.10 kB
+dist/assets/index-sbyx-IDM.js  714.22 kB │ gzip: 185.35 kB
+✓ built in 1.70s

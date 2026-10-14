@@ -1,8 +1,30 @@
 {
   "source_id": "way/114755219",
   "plateau_id": "bldg_5e891186-4803-48a0-9664-284f212881ac",
+  "triangles": 7653,
+  "primitives": 19,
+  "materials": {
+    "dk_roof": 142,
+    "dk_wall": 413,
+    "dk_reveal": 30,
+    "dk_glass_0": 88,
+    "dk_curtain": 42,
+    "dk_aluminum": 5484,
+    "dk_glass_1": 292,
+    "dk_glass_2": 88,
+    "dk_glass_3": 86,
+    "dk_brace": 588,
+    "dk_joint": 336,
+    "dk_shop_glass": 10,
+    "dk_sign_case": 18,
+    "dk_shop_light": 26,
+    "dk_sign_jan_roof_campaign": 2,
+    "dk_sign_jan_uc_east": 2,
+    "dk_sign_jan_uc_south": 2,
+    "dk_sign_jan_vanguard": 2,
+    "dk_sign_jan_mizuho": 2
+  },
   "datum_tp_m": 15,
-  "source_ground_tp": 15.526,
   "roof_deviation_m": 0,
   "pavement_samples": [
     {
@@ -349,21 +371,6 @@
       "tp": 16.135215759277344
     }
   ],
-  "pavement_min_tp": 15.139984130859375,
-  "pavement_max_tp": 16.135215759277344,
-  "triangles": 868,
-  "primitives": 10,
-  "materials": {
-    "dk_roof": 105,
-    "dk_wall": 255,
-    "dk_glass": 310,
-    "dk_infill": 30,
-    "dk_frame": 88,
-    "dk_shop_glass": 12,
-    "dk_sign_back": 30,
-    "dk_shop_light": 12,
-    "dk_sign_trim": 16,
-    "dk_panel_joint": 10
-  },
-  "status": "B prototype: facade and fixture dimensions estimated from 2025 photo types; no ad imagery"
+  "geometry_status": "Identity-corrected prototype, estimated facade dimensions; retained original shell",
+  "sign_era": "2025-01-31 only, not October"
 }

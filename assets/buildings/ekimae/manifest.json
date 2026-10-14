@@ -2,91 +2,127 @@
   "id": "ekimae",
   "source_id": "way/60739635",
   "level": "B",
-  "status": "prototype; dimensions, partial cropped signs and storefront assignments approximate",
+  "status": "Photo-led facade; current restaurant alignment rectifies full-height faces with common vertical stations; inferred unseen details/HiT missing photograph recorded",
   "sign_era": "2025-11-01",
   "sign_license": "CC BY-SA 4.0",
   "attribution": "Joli Rumi; see source/textures/LICENSE.md",
   "stats": {
-    "triangles": 6640,
-    "primitives": 18,
-    "bytes": 1736204
+    "triangles": 23730,
+    "primitives": 27,
+    "bytes": 2088436
   },
   "files": {
     "README.md": {
-      "bytes": 2350,
-      "sha256": "376845164c1099510d791be5a8078d15a855c5e76b9005ba10341897c4047dd9"
+      "bytes": 4992,
+      "sha256": "27716d9ede121ad276369277749fe1819d80a78fb9c671b00685a112f33f5e87"
     },
     "source/blender/build_ekimae.py": {
-      "bytes": 10210,
-      "sha256": "d8b0ae73aa05d6fb6f94d75e2a9b3b816116a3d72c13540ec530c01ad51ae2d9"
+      "bytes": 8007,
+      "sha256": "fc7447df1382d8fcc4979bf2d4ff43ced5c4bac0262756ef9dae3dde6a2b88a5"
+    },
+    "source/blender/ekimae-fidelity.blend": {
+      "bytes": 3131105,
+      "sha256": "45d442366041ec8787e462430849e9a01fe7e74aa89f11e4a596ce6bd6ab7482"
+    },
+    "source/blender/ekimae-uv.blend": {
+      "bytes": 1425808,
+      "sha256": "307314e82d306b216c20f6c0b8b168c96d792cb47c03f889bdf6ee9608ae96ab"
+    },
+    "source/blender/facade_detail.py": {
+      "bytes": 9063,
+      "sha256": "e125ec392d4b5435b6c9df2d3a0bdbd914e91c273da87d21e022bd85eb3f742c"
+    },
+    "source/blender/recrop_ek01.py": {
+      "bytes": 1973,
+      "sha256": "5e29d664bfc7118462ba90e6c46aecf57570d6ba11740bc8da1503d2e21d3ddc"
+    },
+    "source/blender/rectify_restaurant_signs.py": {
+      "bytes": 2888,
+      "sha256": "9de07c776b2c613e88b361e92541cca0eac3d2277e806496df32c19a1ee0716b"
+    },
+    "source/blender/render_alignment.py": {
+      "bytes": 1415,
+      "sha256": "c070fdce02e76bc9ba9faa0a6673262f54f10165b760e3982831bdd9f8571793"
+    },
+    "source/blender/render_ekimae.py": {
+      "bytes": 1414,
+      "sha256": "6180157df0ad3463473f14f409ad438183305683dc14dd963ac240e21ba99311"
+    },
+    "source/blender/save_editable.py": {
+      "bytes": 670,
+      "sha256": "8d44c57081700c0c2cce967fd56dc2ec4fc4b53f389454362dab5e8f06243fc3"
     },
     "source/data/facades.json": {
-      "bytes": 3247,
-      "sha256": "6f7af822fb0748d1f6e7d1eb90159afea17dda9cf17a18a3da3a1e46cafecdb1"
+      "bytes": 9784,
+      "sha256": "508d5d637806fb6f547dcd2a3ff71d5056ac01dc0ee193aeb019f53390389e4c"
     },
     "source/data/plateau.json": {
       "bytes": 8102,
       "sha256": "b3a9a323838f4f26f29607ff8dce0b33b236dc329b64e8f68282a370ad8c4661"
     },
     "source/data/stats.json": {
-      "bytes": 6331,
-      "sha256": "d99819ec1334e7a1afa36ed7949f4547624049548453a58f63739a34949c8f51"
+      "bytes": 6376,
+      "sha256": "a13d4dd72f27606f47cc37672d54610f379417d278550e162caff4ee48d9efb4"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
       "bytes": 919,
       "sha256": "a7d15c3337c1b91b34fed3b6cc670a753c8ebe6cc76c0035568a9c8e091138ca"
     },
     "source/refs/SOURCES.json": {
-      "bytes": 1603,
-      "sha256": "cb61e97d992b6496e1bd52970b94cf0ef0acd3c4ff482b3e93b7f90502fdfacd"
+      "bytes": 2759,
+      "sha256": "8c5dcae8b31c3934b44bd124a855056806b293500d6ddfbfaffa9dd3de07fe2a"
     },
     "source/textures/LICENSE.md": {
-      "bytes": 1019,
-      "sha256": "6a434f2a59e21db3d8113961a820d2cf063005883e691eeeee72f65d20aa9d0a"
+      "bytes": 1921,
+      "sha256": "650b3a8c61988c2974d8bd6d0db942f9a79b671fd6010f7f2802ff52aad5a629"
     },
     "source/textures/eyecity.png": {
-      "bytes": 177075,
-      "sha256": "f1c612a4d9289a3dca2e019df001949eddd3b7f768d7cb03aeae09a5e89630f3"
+      "bytes": 181762,
+      "sha256": "f6f648394ba725f615d42a5bfe63b14f040c85971a9ef0090283e6f3c29dd541"
     },
     "source/textures/francais.png": {
-      "bytes": 156546,
-      "sha256": "908456106b84346f76ffdb697369a606a47e08363dfe7103f49bff64eb9f3012"
+      "bytes": 355255,
+      "sha256": "370dd9aa91bf4b8b991fab8e70922c6bd6fc70b62b45f8fe57669445e3528226"
     },
     "source/textures/gusto.png": {
-      "bytes": 161518,
-      "sha256": "87684149eba0692ce4a15631d2db182b98a8417dd56445d035daf22c40791401"
+      "bytes": 377417,
+      "sha256": "5aa05007e25a7f64139afb8710253b9fe20a2e0d3cb31a933a2de24c4a00b49b"
     },
     "source/textures/hit_sky.png": {
-      "bytes": 235643,
-      "sha256": "fb55006480df220c7dde3fe25836b7b320cc70b3e7e4be9a03be6b5c89270c9b"
+      "bytes": 430078,
+      "sha256": "e3fc6c51428b7d8aed0b917746176f9db3e90ca956cd39c9296f2f943156b141"
     },
     "source/textures/loccitane.png": {
-      "bytes": 36769,
-      "sha256": "aacfcee0cc811d6a653a8b0fa6d032d9c028305606b56fbc541b1824e8d7da8e"
+      "bytes": 31363,
+      "sha256": "b6a238fbebddb30b8b13d6fb3ebb7ceec0f96b9fe7fc15cb8c337f98813ab1ba"
+    },
+    "source/textures/longboard.png": {
+      "bytes": 363199,
+      "sha256": "ee82529f6b05f4e50b713bda66d638905c006fccf31b28d0cf48147239424234"
     },
     "source/textures/samsung.png": {
-      "bytes": 235708,
-      "sha256": "959d09f8a4670f2ff88cc0c4604dcdaf3b8d220a377b13002a98abb9497b5edf"
+      "bytes": 519579,
+      "sha256": "3c35e3f3855396ca2063e7d1bc167dbf9e0e8fccf563a23ca6cd3025b42318d3"
     },
     "source/textures/shabu.png": {
-      "bytes": 161634,
-      "sha256": "d8d57887d8d8c31255a392cc2804a509dfd927f6b3c2f1112b8d476be15ae42d"
+      "bytes": 390485,
+      "sha256": "1bce6a899f47a76446da44a0c5583f0649cba481daace76fb849adda968cc6bd"
     },
     "web/ekimae.glb": {
-      "bytes": 542116,
-      "sha256": "5deef737ec1ecf4cafcfc4186318398944a3f4ee3265d8915158d79b5dea3d64"
+      "bytes": 1787720,
+      "sha256": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d"
     },
     "web/emissive_day.json": {
-      "bytes": 1025,
-      "sha256": "b41a094628c76bc5603f8d706d1c8bae4e31b436a2f83dfe2a291854217a19e3"
+      "bytes": 1140,
+      "sha256": "c848d9910f22f27231b2d09c5b3ca0d5114d4e40bb8583474ab4ceeccb317306"
     },
     "web/emissive_night.json": {
-      "bytes": 1043,
-      "sha256": "192d990f1d2a42151da913bc698b5968ae841051e11b51339aeb5fb487cab336"
+      "bytes": 1160,
+      "sha256": "d03b6802d6edcd9234118a2340132fbf7298a64e360c0f94260e69a01fc1a886"
     },
     "web/signs-2025-11.glb": {
-      "bytes": 1194088,
-      "sha256": "4b2297c627cc1382078e6a671cc0865b44fd7e1fa9a0033e058b4322b7b94d96"
+      "bytes": 300716,
+      "sha256": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5"
     },
     "web/viewer.json": {
       "bytes": 158,

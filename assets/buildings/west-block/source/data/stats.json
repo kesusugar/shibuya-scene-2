@@ -419,13 +419,13 @@
   ],
   "geometry": {
     "base": {
-      "meshes": 18,
-      "triangles": 1813
+      "meshes": 20,
+      "triangles": 7654
     },
     "signs": {
-      "meshes": 9,
-      "triangles": 110
+      "meshes": 15,
+      "triangles": 76
     }
   },
-  "status": "B-stage, facade boundaries and dimensions approximate; January 2025 static ads"
+  "status": "Photo-fidelity work in progress; facade and overhang dimensions inferred; original PLATEAU shell/ground anchor retained; January 2025 static ads"
 }

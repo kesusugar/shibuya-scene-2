@@ -37,7 +37,9 @@ it('retains original roof vertices and exports architectural glazing without adv
     for (const p of s.ring) expect(roof.some(v => v.distanceTo(new Vector3(p[0], p[2], -p[1])) < .002)).toBe(true);
   }
   const names = root.listMaterials().map(m => m.getName());
-  expect(names).toContain('dk_glass'); expect(names).toContain('dk_infill'); expect(names).toContain('dk_sign_back');
+  expect(names.some(n => n.startsWith('dk_glass_'))).toBe(true);
+  expect(names).toContain('dk_brace'); expect(names).toContain('dk_aluminum');
+  expect(names).not.toContain('dk_infill'); expect(names).not.toContain('dk_sign_back');
   expect(roof.length).toBeGreaterThan(50);
 });
 
@@ -63,7 +65,17 @@ it('keeps the east glazing visible in front of the retained source shell from th
     const x = east.a[0]+(east.b[0]-east.a[0])*u+east.normal[0]*.09;
     const y = east.a[1]+(east.b[1]-east.a[1])*u+east.normal[1]*.09;
     const origin = new Vector3(-28, 4, 8);
-    const target = new Vector3(x, tp+26.1, -y);
-    expect(new Raycaster(origin, target.sub(origin).normalize()).intersectObjects(meshes, false)[0]?.object.name).toBe('dk_glass');
+    const target = new Vector3(x, tp+layout.east_window_centers_m[5], -y);
+    expect(new Raycaster(origin, target.sub(origin).normalize()).intersectObjects(meshes, false)[0]?.object.name).toMatch(/^dk_glass_/);
   } finally { for (const mesh of meshes) mesh.geometry.dispose(); material.dispose(); }
+});
+
+
+// Dated content must stay out of the architecture GLB, and is not implicitly October.
+it('separates the January 2025 UC billboard and tenant photograph layer', async () => {
+  const signs = (await new NodeIO().read(base+'web/signs-2025-01.glb')).getRoot();
+  expect(signs.listTextures()).toHaveLength(5);
+  expect(signs.listMaterials().every(m => m.getName().startsWith('dk_sign_jan_'))).toBe(true);
+  const sources = json(base+'source/data/texture_quads.json');
+  expect(sources.date).toBe('2025-01-31');
 });

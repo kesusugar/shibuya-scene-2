@@ -1,0 +1,98 @@
+{
+  "inputs": [
+    {
+      "path": "assets/buildings/west-block/web/emissive_day.json",
+      "bytes": 2257,
+      "sha256": "1a7c39ba76de3e04c1d2a2bee5ca48c7f5f5c269230a65ef5d0e51dc0f11aca0"
+    },
+    {
+      "path": "assets/buildings/west-block/web/emissive_night.json",
+      "bytes": 2310,
+      "sha256": "fdf31918b1e4ec6e39acb0c9868d02b9b58dfb3101e537cb460429633ef9917e"
+    },
+    {
+      "path": "assets/buildings/west-block/web/signs-2025-01.glb",
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    },
+    {
+      "path": "assets/buildings/west-block/web/viewer.json",
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+    },
+    {
+      "path": "assets/buildings/west-block/web/west-block.glb",
+      "bytes": 539376,
+      "sha256": "7b21d6978bf1a0580207031120be9e9caeb54a96e241eda0e788e49108a0b5b1"
+    },
+    {
+      "path": "assets/buildings/daiichi-kangin/web/daiichi-kangin.glb",
+      "bytes": 421116,
+      "sha256": "0f9f8cf4195f41a2cf0cf258fbf920fac0a2b2aab4eae1ac1111e080991fd6a4"
+    },
+    {
+      "path": "assets/buildings/daiichi-kangin/web/emissive_day.json",
+      "bytes": 118,
+      "sha256": "0ca5d39249fbe074ea27e20c8b674fdf7db2ee9b03aacb711b2306530de0759b"
+    },
+    {
+      "path": "assets/buildings/daiichi-kangin/web/emissive_night.json",
+      "bytes": 120,
+      "sha256": "a95e24d238bfdec447e5a7b94c841901239d15e02c2a33b75b262ea3d30dca19"
+    },
+    {
+      "path": "assets/buildings/daiichi-kangin/web/signs-2025-01.glb",
+      "bytes": 1666828,
+      "sha256": "7f4b15b41d37a2516602cdefafbf75a4d555f060880dc45d9e761a98f23db78f"
+    },
+    {
+      "path": "assets/buildings/daiichi-kangin/web/viewer.json",
+      "bytes": 164,
+      "sha256": "0b1db4119c4359b8cec4a21b3c50d280bcdafdc28bc9e805da5a457e26ece758"
+    },
+    {
+      "path": "assets/buildings/ekimae/web/ekimae.glb",
+      "bytes": 1787720,
+      "sha256": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d"
+    },
+    {
+      "path": "assets/buildings/ekimae/web/emissive_day.json",
+      "bytes": 1140,
+      "sha256": "c848d9910f22f27231b2d09c5b3ca0d5114d4e40bb8583474ab4ceeccb317306"
+    },
+    {
+      "path": "assets/buildings/ekimae/web/emissive_night.json",
+      "bytes": 1160,
+      "sha256": "d03b6802d6edcd9234118a2340132fbf7298a64e360c0f94260e69a01fc1a886"
+    },
+    {
+      "path": "assets/buildings/ekimae/web/signs-2025-11.glb",
+      "bytes": 300716,
+      "sha256": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5"
+    },
+    {
+      "path": "assets/buildings/ekimae/web/viewer.json",
+      "bytes": 158,
+      "sha256": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57"
+    },
+    {
+      "path": "tests/west-block.test.ts",
+      "bytes": 8085,
+      "sha256": "22ebac1d847a5f4cff87443b2d5ad5aef896c0c9ab95ded769aa9de647e47b71",
+      "git_blob_sha1": "e8a45dd64a6fb9165066ed09d4c21af1a9926067"
+    },
+    {
+      "path": "tests/ekimae.test.ts",
+      "bytes": 6788,
+      "sha256": "2229eecfadd591cd1abb7709193a33d357baceede91e603082a9b530b8a8d9a9",
+      "git_blob_sha1": "115d67791b0af2781860b2e9dbbbb14d0c526691"
+    },
+    {
+      "path": "tests/daiichi-kangin.test.ts",
+      "bytes": 4711,
+      "sha256": "b81477f62c6b53659132010b10332a141f7973fa0f869655644ba6e4aed895e5",
+      "git_blob_sha1": "ab817a274a85b191653334094224d2dd39a77aef"
+    }
+  ],
+  "ekimae_frozen_files_verified": 28
+}

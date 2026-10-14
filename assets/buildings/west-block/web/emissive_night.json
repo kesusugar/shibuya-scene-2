@@ -97,5 +97,77 @@
       0.65
     ],
     "estr": 0.55
+  },
+  "west_sign_clinic_upper": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0.55
+  },
+  "west_sign_clinic_lower": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0.55
+  },
+  "west_sign_sushi": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0.55
+  },
+  "west_sign_middle_tenants": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0.55
+  },
+  "west_sign_fruit_shop_band": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0.55
+  },
+  "west_sign_sanzenri": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0.55
+  },
+  "west_sign_taiseido_left": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0.55
+  },
+  "west_sign_taiseido_right": {
+    "kind": "led",
+    "emit": [
+      1,
+      0.85,
+      0.65
+    ],
+    "estr": 0.55
   }
 }

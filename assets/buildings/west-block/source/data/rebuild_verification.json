@@ -1,0 +1,26 @@
+{
+  "blender_version": "4.2.3",
+  "web_outputs": {
+    "emissive_day.json": {
+      "sha256": "1a7c39ba76de3e04c1d2a2bee5ca48c7f5f5c269230a65ef5d0e51dc0f11aca0",
+      "bytes": 2257
+    },
+    "emissive_night.json": {
+      "sha256": "fdf31918b1e4ec6e39acb0c9868d02b9b58dfb3101e537cb460429633ef9917e",
+      "bytes": 2310
+    },
+    "signs-2025-01.glb": {
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386",
+      "bytes": 516764
+    },
+    "viewer.json": {
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd",
+      "bytes": 222
+    },
+    "west-block.glb": {
+      "sha256": "7b21d6978bf1a0580207031120be9e9caeb54a96e241eda0e788e49108a0b5b1",
+      "bytes": 539376
+    }
+  },
+  "result": "byte_identical"
+}

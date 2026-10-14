@@ -1,0 +1,20 @@
+{
+  "baseline_matches_repository_sha256": true,
+  "changed_uv_materials": [
+    "ek_sign_shabu",
+    "ek_sign_francais",
+    "ek_sign_gusto",
+    "ek_sign_eyecity",
+    "ek_sign_loccitane",
+    "ek_sign_samsung",
+    "ek_sign_hit_sky"
+  ],
+  "sign_triangles": 296,
+  "sign_materials": 7,
+  "sign_bytes": 1194088,
+  "base_geometry_byte_identical": true,
+  "sign_positions_normals_indices_identical": true,
+  "embedded_images_identical": true,
+  "uv_finite_and_in_unit_range": true,
+  "npm_webgl_full_scene": "not run"
+}

@@ -1,0 +1,8 @@
+{
+  "blender": "4.2.3 LTS",
+  "byte_identical": true,
+  "files": {
+    "daiichi-kangin.glb": "0f9f8cf4195f41a2cf0cf258fbf920fac0a2b2aab4eae1ac1111e080991fd6a4",
+    "signs-2025-01.glb": "7f4b15b41d37a2516602cdefafbf75a4d555f060880dc45d9e761a98f23db78f"
+  }
+}

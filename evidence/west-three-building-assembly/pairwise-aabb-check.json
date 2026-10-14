@@ -1,0 +1,35 @@
+{
+  "coordinates": "Blender X/Y plan, Z elevation relative to TP15; original coordinates without recentering",
+  "pairs": [
+    {
+      "a": "west-block",
+      "b": "daiichi-kangin",
+      "separating_gaps_m": {
+        "X": 2.3400039672851562,
+        "Y": -34.73527908325195,
+        "Z": -40.17601516842842
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "west-block",
+      "b": "ekimae",
+      "separating_gaps_m": {
+        "X": -29.568931579589844,
+        "Y": 29.52821445465088,
+        "Z": -39.99599930644035
+      },
+      "aabb_disjoint": true
+    },
+    {
+      "a": "daiichi-kangin",
+      "b": "ekimae",
+      "separating_gaps_m": {
+        "X": 1.7960052490234375,
+        "Y": 28.80336856842041,
+        "Z": -50.58001831173897
+      },
+      "aabb_disjoint": true
+    }
+  ]
+}

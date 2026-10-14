@@ -1,0 +1,16 @@
+{
+  "exact_blender": "4.2.3 LTS",
+  "all_source_wall_and_roof_vertices_retained": true,
+  "aggregate_triangles": 7653,
+  "aggregate_primitives": 19,
+  "aggregate_glb_bytes": 2087944,
+  "photo_textures_in_dated_layer": 5,
+  "source_id_unchanged": "way/114755219",
+  "ground_datum": 15,
+  "integration_tests": "not run: no complete authenticated checkout",
+  "budget_result": "within existing B asset budget",
+  "byte_identical_regeneration": true,
+  "baseline": "Original main asset (868 triangles), not unpublished trim candidate",
+  "roof_sign_feet": "Columns extended to original RoofSurface intersections at each footprint point; geometry beyond photo visibility inferred",
+  "dated_layer_requires_separate_runtime_review": true
+}

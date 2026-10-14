@@ -1,0 +1,12 @@
+{
+  "parameters": [
+    0.6658337435453402,
+    0.3148622388437075,
+    -0.033973685573639445,
+    33.36761607598205,
+    2006.147297274835,
+    2690.0678933149998
+  ],
+  "rms_px": 9.239844665988992,
+  "basis": "Orthographic approximate photo view from three observed sign rectangles; not geospatial recalibration"
+}
