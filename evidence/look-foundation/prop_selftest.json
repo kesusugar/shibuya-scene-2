@@ -1,0 +1,31 @@
+{
+ "id": "selftest_vending",
+ "source_file": "messy.glb",
+ "warnings": [
+  "decimated 15516 -> 2000 triangles"
+ ],
+ "input_dimensions": [
+  100.0,
+  83.5,
+  183.0
+ ],
+ "scale_factor": 0.01,
+ "dimensions_m": {
+  "width": 1.0,
+  "depth": 0.835,
+  "height": 1.83
+ },
+ "merged_vertices": 24796,
+ "input_triangles": 15516,
+ "triangles": 2000,
+ "materials": [
+  "prop_furniture_0",
+  "prop_glass_1",
+  "prop_furniture_2"
+ ],
+ "lod1_triangles": 500,
+ "bytes": 257244,
+ "source": {
+  "tool": "tools/props/make_fixture.py (self-test only, never shipped)"
+ }
+}

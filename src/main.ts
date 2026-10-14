@@ -24,6 +24,10 @@ import { runBenchmark } from './perf/benchmark';
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+import { GTAOPass } from 'three/examples/jsm/postprocessing/GTAOPass.js';
+import { applyAtmosphere } from './world/atmosphere';
+import { loadProps } from './world/props';
+import { applySurfaceDetail, makeDetailTexture } from './world/surface-detail';
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import { Raycaster, Vector2, Vector3 } from 'three';
 
@@ -53,6 +57,13 @@ const stats = new FrameStats();
 // bloom only at night (lit letters, LED screen, shop windows), and only from the medium preset up
 const composer = new EffectComposer(renderer);
 composer.addPass(new RenderPass(scene, camera));
+// Look foundation: contact shadows (GTAO) at wall bases, corners and under furniture. ?ao=off to compare.
+const aoWanted = quality.ao && params.get('ao') !== 'off';
+const ao = new GTAOPass(scene, camera, innerWidth, innerHeight);
+ao.blendIntensity = Number(params.get('aoi') ?? 0.85);
+ao.updateGtaoMaterial({ radius: 1.6, distanceExponent: 1.4, thickness: 1.2, scale: 1.0, samples: 12 });
+ao.enabled = aoWanted;
+composer.addPass(ao);
 // the composer works on linear radiance before tone mapping: only the lit letters, LED and lamps (>~8) should bloom
 // Off by default: under headless SwiftShader the pass hazes the whole frame (cause not isolated yet). ?bloom=on to try on a real GPU.
 const bloomWanted = params.get('bloom') === 'on';
@@ -100,6 +111,7 @@ function setTime(t: TimeOfDay) {
   $('btn-day').classList.toggle('on', t === 'day'); $('btn-night').classList.toggle('on', t === 'night');
   if (!building) return;
   lighting.apply(t, loaded.map((b) => b.root));
+  applyAtmosphere(scene, t, params.get('sky') !== 'flat');
   const env = { map: scene.environment, intensity: scene.environmentIntensity };
   for (const b of loaded) { applyEmissive(b.root, b.emissive[t]); applyLook(b.root, t, look, b.emissive.day, env); }
   const groundLook = projectedStreet?.ok && params.get('lamps') !== 'off' && !params.get('look')?.includes('nightGround:') ? { ...look, nightGround: 0 } : look;
@@ -214,6 +226,18 @@ async function start() {
   for (const b of loaded) lighting.placeFloods(b.hints);
   controls.setObstacles([...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
   controls.frameBuilding(building.hints);
+  // Imported street props (assets/street/props, tools/props/import_prop.py); none placed yet. ?props=off
+  if (params.get('props') !== 'off' && params.get('street') !== 'off') {
+    const props = await loadProps(io.loadGlb, io.loadJson, (x, z) => controls.groundAt(x, z));
+    if (props.ok) { scene.add(props.root); applyLook(props.root, mode, look, undefined, { map: scene.environment, intensity: scene.environmentIntensity }); }
+    (window as unknown as Record<string, unknown>).__props = props.ok ? props.stats : { error: props.error };
+  }
+  // Look foundation: world-space surface detail on roads, paving and plain walls (not on the hand-made heroes)
+  if (params.get('detail') !== 'off') {
+    const detail = makeDetailTexture();
+    for (const r of [coreGround, coreExterior, coreTerrain, coreContext]) if (r?.ok) applySurfaceDetail(r.root, detail);
+    for (const b of loaded) if (!['qfront', 'magnet', 'eiraku'].includes(b.id)) applySurfaceDetail(b.root, detail, ['wall']);
+  }
   setTime(mode);
   const envNote = envState.day === 'fulfilled' && envState.night === 'fulfilled' ? '' : '（環境マップの一部を読み込めず、反射は簡易表示）';
   status([...problems, envNote].filter(Boolean).join('\n'));
@@ -240,7 +264,7 @@ async function start() {
     if (coreContext?.ok) applyClassPass(coreContext.root);
     if (projectedStreet?.ok) applyClassPass(projectedStreet.root);
     ground.material = new MeshStandardMaterial({ color: 0x000000 }); ground.visible = false;
-    scene.background = new Color(0x000000); scene.environment = null; bloom.enabled = false;
+    scene.background = new Color(0x000000); scene.environment = null; bloom.enabled = false; ao.enabled = false; scene.fog = null;
   }
   const pose = params.get('pose');   // QA: pose=x,y,z,tx,ty,tz[,vfov] in plan metres, heights in the common datum
   if (pose) { const v = pose.split(',').map(Number); controls.poseView([v[0], v[1], v[2]], [v[3], v[4], v[5]], v[6] || 55, building.hints); }
@@ -332,7 +356,7 @@ let lastHud = 0;
 renderer.setAnimationLoop(() => {
   const dt = Math.min(0.1, stats.tick());
   controls.update(dt);
-  if (bloom.enabled) composer.render(); else renderer.render(scene, camera);
+  if (bloom.enabled || ao.enabled) composer.render(); else renderer.render(scene, camera);
   const now = performance.now();
   if (now - lastHud > 500) { $('perf').textContent = stats.report(renderer); lastHud = now; }
 });
