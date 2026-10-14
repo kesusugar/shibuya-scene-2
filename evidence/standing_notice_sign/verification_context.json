@@ -1,0 +1,25 @@
+{
+  "blender_required": "4.2.3 LTS",
+  "importer_source": "Exact PR #38 importer copy supplied by parent; used outside publication payload",
+  "importer_sha256": "157e6993e0ea3c11766c8cf97ffb3717004fe92a2952c2c892a49f41d66e38f2",
+  "validation_scope": [
+    "generate in exact version",
+    "open compressed blend and reversible vertex edit",
+    "source GLB reimport",
+    "PR #38 importer with no LOD generation",
+    "imported GLB reimport",
+    "bounds, finite vertices, mesh count, material class names, triangle budget, no image textures"
+  ],
+  "not_run": [
+    "full npm suite",
+    "WebGL integration",
+    "scene placement",
+    "FPS"
+  ],
+  "visual_review": "Original reference and crop inspected; rounded upright, panel, lower opening and base reviewed. Added raised foot lip and fixed a small connection-block gap found in side review. Studio floor hidden for orthographic inspection to avoid horizon obstruction.",
+  "publication": "Incoming GLB only. Imported validation GLB excluded. No web paths, placement changes, runtime code or importer copy in manifest.",
+  "blender_archive_sha256": "3a64efd1982465395abab4259b4091d5c8c56054c7267e9633e4f702a71ea3f4",
+  "blender_archive_verification": "Recomputed SHA256 matches cached official Blender 4.2.3 checksum list supplied by cabinet builder",
+  "independent_clean_directory_rebuild": "Completed with identical GLB bytes",
+  "source_glb_sha256": "953b65709a870c403715ecb1699ac32d34a3e5e7e54f41ebcc61b4e56ede3adc"
+}

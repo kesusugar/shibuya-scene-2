@@ -1,0 +1,39 @@
+{
+ "id": "hachiko_white_bollard",
+ "source_file": "hachiko_white_bollard.glb",
+ "warnings": [
+  "no UVs: textures cannot be used, solid colours only"
+ ],
+ "input_dimensions": [
+  0.1142,
+  0.1142,
+  0.8
+ ],
+ "scale_factor": 1.0,
+ "dimensions_m": {
+  "width": 0.114,
+  "depth": 0.114,
+  "height": 0.8
+ },
+ "merged_vertices": 0,
+ "input_triangles": 2676,
+ "triangles": 2676,
+ "materials": [
+  "prop_furniture_0",
+  "prop_furniture_1"
+ ],
+ "lod1_triangles": 669,
+ "bytes": 95720,
+ "source": {
+  "tool": "Blender 4.2.3 LTS / regenerate_bollard.py",
+  "author": "dot (OpenAI), generated for this project",
+  "date": "2026-10-14",
+  "terms": "Original generated geometry and solid-colour materials supplied for project use and editing; no third-party mesh or photographic texture. Reference photograph/crops: RuinDig/Yuki Uchida, CC BY 4.0.",
+  "photo_url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_095.jpg",
+  "photo_date": "2025-07-13",
+  "photo_author": "RuinDig/Yuki Uchida",
+  "photo_license": "CC BY 4.0",
+  "photo_license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "era_status": "July reference only; October 2025 state not verified"
+ }
+}

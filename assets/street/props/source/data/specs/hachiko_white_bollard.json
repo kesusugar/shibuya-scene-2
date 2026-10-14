@@ -1,0 +1,26 @@
+{
+  "id": "hachiko_white_bollard",
+  "target": {
+    "height_m": 0.8,
+    "width_m": 0.1142,
+    "depth_m": 0.1142
+  },
+  "max_triangles": 3000,
+  "lod_ratio": 0.25,
+  "materials": {
+    "default": "furniture"
+  },
+  "dimension_basis": "All absolute dimensions inferred, not measured. Shaft diameter 0.114 m; 0.1 mm band increases maximum diameter to 0.1142 m. Hidden lower shaft/base inferred.",
+  "source": {
+    "tool": "Blender 4.2.3 LTS / regenerate_bollard.py",
+    "author": "dot (OpenAI), generated for this project",
+    "date": "2026-10-14",
+    "terms": "Original generated geometry and solid-colour materials supplied for project use and editing; no third-party mesh or photographic texture. Reference photograph/crops: RuinDig/Yuki Uchida, CC BY 4.0.",
+    "photo_url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_095.jpg",
+    "photo_date": "2025-07-13",
+    "photo_author": "RuinDig/Yuki Uchida",
+    "photo_license": "CC BY 4.0",
+    "photo_license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "era_status": "July reference only; October 2025 state not verified"
+  }
+}

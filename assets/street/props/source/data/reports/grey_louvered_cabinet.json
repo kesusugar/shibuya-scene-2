@@ -1,0 +1,38 @@
+{
+ "id": "grey_louvered_cabinet",
+ "source_file": "grey_louvered_cabinet_source.glb",
+ "warnings": [],
+ "input_dimensions": [
+  1.28,
+  0.441,
+  1.92
+ ],
+ "scale_factor": 1.0,
+ "dimensions_m": {
+  "width": 1.28,
+  "depth": 0.441,
+  "height": 1.92
+ },
+ "merged_vertices": 0,
+ "input_triangles": 2484,
+ "triangles": 2484,
+ "materials": [
+  "prop_furniture_0",
+  "prop_furniture_1",
+  "prop_furniture_2",
+  "prop_furniture_3"
+ ],
+ "lod1_triangles": 621,
+ "bytes": 225376,
+ "source": {
+  "tool": "Blender 4.2.3 LTS / procedural Python",
+  "author": "OpenAI dot (generated model); reference photograph: RuinDig/Yuki Uchida",
+  "date": "2026-10-14",
+  "terms": "モデル・Pythonは本プロジェクト向け新規制作。参照写真およびトリミング写真は CC BY 4.0。出典・作者・改変の表示を保持。",
+  "reference_url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_164.jpg",
+  "reference_license": "https://creativecommons.org/licenses/by/4.0/",
+  "reference_datetime": "2025-07-13T15:58:23",
+  "reference_location": "Minami-Azabu Building, Minato, Tokyo",
+  "reference_use": "Shape and proportions only; no photo textures"
+ }
+}

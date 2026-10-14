@@ -1,0 +1,29 @@
+{
+  "blender": "4.2.3 LTS",
+  "status": "PASS",
+  "units": "meters",
+  "bounds_min": [
+    -0.057100001722574234,
+    -0.057100001722574234,
+    0.0
+  ],
+  "bounds_max": [
+    0.057100001722574234,
+    0.057100001722574234,
+    0.800000011920929
+  ],
+  "dimensions": [
+    0.11420000344514847,
+    0.11420000344514847,
+    0.800000011920929
+  ],
+  "root_origin": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "mesh_count": 3,
+  "camera_count": 0,
+  "light_count": 0,
+  "note": "Band adds 0.0002 m to shaft diameter. All physical dimensions provisional."
+}

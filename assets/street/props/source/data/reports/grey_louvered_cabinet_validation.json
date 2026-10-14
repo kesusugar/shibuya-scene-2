@@ -1,0 +1,36 @@
+{
+  "blender": "4.2.3 LTS",
+  "blend_reopened": true,
+  "reversible_vertex_edit_verified": true,
+  "source_glb_mesh_nodes": 1,
+  "source_node_name": "grey_louvered_cabinet",
+  "bounds_min_m": [
+    -0.6399999856948853,
+    -0.22049999237060547,
+    0.0
+  ],
+  "bounds_max_m": [
+    0.6399999856948853,
+    0.22049999237060547,
+    1.9199999570846558
+  ],
+  "triangles": 2484,
+  "single_cabinet_only": true,
+  "meters": true,
+  "bottom_center_origin_verified": true,
+  "finite_vertices": true,
+  "external_images": false,
+  "official_blender_archive_sha256": "3a64efd1982465395abab4259b4091d5c8c56054c7267e9633e4f702a71ea3f4",
+  "official_sha256_verified": true,
+  "importer_commit": "c00c7db",
+  "importer_branch": "claude/core-exterior-review",
+  "importer_warnings": [],
+  "runtime_placement": "not added",
+  "visual_iterations": 2,
+  "known_visual_differences": [
+    "Uncalibrated camera",
+    "Uniform clean paint, no grime or scratches",
+    "Lower right panel/footing partly inferred",
+    "Back and right side inferred"
+  ]
+}
