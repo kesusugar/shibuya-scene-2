@@ -2,62 +2,113 @@
   "id": "daiichi-kangin",
   "source_id": "way/114755219",
   "level": "B",
-  "status": "B prototype; estimated facade and sign housings; advertising images deferred",
+  "status": "Identity-corrected photo-informed prototype; January signs separate, October not verified",
   "sources": [
     "source/data/plateau.json",
     "source/data/layout.json",
+    "source/data/recorded_ground.json",
     "source/refs/REFERENCE_REGISTER.csv",
-    "source/refs/SOURCE.json"
+    "source/refs/SOURCE.json",
+    "source/data/texture_quads.json"
   ],
   "stats": {
-    "triangles": 868,
-    "primitives": 10,
-    "bytes": 56136
+    "triangles": 7653,
+    "primitives": 19,
+    "bytes": 2087944,
+    "scope": "base plus active January layer"
   },
   "files": {
     "README.md": {
-      "bytes": 2726,
-      "sha256": "1d1b792562325578e847eb5d0d13e25a393fb11b03cd5fca6c94f1c8611fb0c7"
+      "bytes": 4907,
+      "sha256": "eb159629b3961f00a5924b8dd826ef5d311354e38a012e4d51018315feca2bb0"
     },
     "source/blender/build_daiichi.py": {
-      "bytes": 7174,
-      "sha256": "2d1a1f27f20581946d28cb542214c5d205169910f215472b6cdcb0586f1ff906"
+      "bytes": 573,
+      "sha256": "637b63c373838b286e0ca5c30b7e98a0d4f242b59c99bcc8eb688d7ab484123b"
+    },
+    "source/blender/build_daiichi_fidelity.py": {
+      "bytes": 11073,
+      "sha256": "1c4740f62e072504fb15739430d6eafe5194fa2fe4062f3a3104f3dab5db4ace"
+    },
+    "source/blender/daiichi-kangin.blend": {
+      "bytes": 3086164,
+      "sha256": "f8287c33f918c549097800492c30b2b8a851a040909bf471406898fb9b80d0d4"
+    },
+    "source/data/comparison_view_fit.json": {
+      "bytes": 316,
+      "sha256": "9c81ca4e59a0e5710a442fd8587c5f130707b6cde7a052a9bad5715981b5dd8d"
     },
     "source/data/layout.json": {
-      "bytes": 1826,
-      "sha256": "98f98c05e263cda73c8f18861f84ecfddba08878bf8136462d98609d54d28ff7"
+      "bytes": 1049,
+      "sha256": "9c89faf80f0bce2d47bf2cc9f3866ed5db077e4a6e38f15b1d4e8163e542bc97"
     },
     "source/data/plateau.json": {
-      "bytes": 46551,
-      "sha256": "93cfdbb50918649b0aec5b51fb2e13eb8f4ba7950a8bd8e0e86a087fbb46fbc1"
+      "bytes": 46552,
+      "sha256": "43bf56137bc92c4018b0c62c1992ad947fd3fed33289d70868ab4fefd0bd2b71"
+    },
+    "source/data/recorded_ground.json": {
+      "bytes": 8292,
+      "sha256": "048fadb91b7ead44523e8fc050455693a37a0f20fb7527e1f97053d0873ed675"
     },
     "source/data/stats.json": {
-      "bytes": 8291,
-      "sha256": "34be6e79f8af4e2d89fc40af14572031e40acd1ba987de4aea65102cbf615f64"
+      "bytes": 8471,
+      "sha256": "7df7de1661ec2a1c01da4b7d7c5e17380591d18bca574a39ad172e9da2e0a596"
+    },
+    "source/data/texture_quads.json": {
+      "bytes": 1607,
+      "sha256": "61cd3f8141a6fbe95b5e7012cf9cf505d7c5f358b2cdf92cfdfecb8e91211a57"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
-      "bytes": 745,
-      "sha256": "ce44f53e9ada3a69d4b84ea151031baeabb061cb3f36aeea4c53aa4394d84710"
+      "bytes": 773,
+      "sha256": "dd831b3dcd63cbce64482fbcac697edc15821be5d09878e203ceedb5b0c9afcc"
     },
     "source/refs/SOURCE.json": {
-      "bytes": 511,
-      "sha256": "01d98589c554c5c077bd00ff2747b11afc77027d22f45b657520304401ac50fd"
+      "bytes": 1452,
+      "sha256": "f179483620aed326513cb23c6bdaac2118deed822e06ee6162529c4d72c5d688"
+    },
+    "source/textures/mizuho.png": {
+      "bytes": 62852,
+      "sha256": "77c906b3237766a5f77a1a30c3ae5b6faa9b87665ea380ab07e03ef2d1af2c2a"
+    },
+    "source/textures/roof_campaign.png": {
+      "bytes": 646730,
+      "sha256": "9865e205dbd5aa3ed223e3a52ebb97dc53259590cbacf001d6b09bede146f51b"
+    },
+    "source/textures/uc_east.png": {
+      "bytes": 528149,
+      "sha256": "4d0fc28dee048291b5d79877c3b8840f0e42bdac3651641fbc7ce6780103b123"
+    },
+    "source/textures/uc_south.png": {
+      "bytes": 278060,
+      "sha256": "0d4fd21a746ccbdade4cdc2f9dc40aafb182781b27736a78e22803bdf73a8378"
+    },
+    "source/textures/vanguard.png": {
+      "bytes": 145023,
+      "sha256": "0fbfe8d242d765c8a26ea4e61f317c6dd25ac4e67cf87196f1514455c75a4c6a"
+    },
+    "source/tools/extract_textures.py": {
+      "bytes": 1187,
+      "sha256": "b630f2321128c9fae3d8b42b91225938da8adf1560ca496871803d6798617507"
     },
     "web/daiichi-kangin.glb": {
-      "bytes": 56136,
-      "sha256": "2e70da14b822b5f58ccf35dab4941c74034f341d7720114f5b88fed56c5ea78d"
+      "bytes": 421116,
+      "sha256": "0f9f8cf4195f41a2cf0cf258fbf920fac0a2b2aab4eae1ac1111e080991fd6a4"
     },
     "web/emissive_day.json": {
-      "bytes": 237,
-      "sha256": "797e4efd5206ac064c022764d1c6434c621cfb860ccd17c0e80f7b2f1378803d"
+      "bytes": 118,
+      "sha256": "0ca5d39249fbe074ea27e20c8b674fdf7db2ee9b03aacb711b2306530de0759b"
     },
     "web/emissive_night.json": {
-      "bytes": 242,
-      "sha256": "da92d37ea6d4c940393cd29e5ea085dd24dd677c5fa8f9351331817365215a4d"
+      "bytes": 120,
+      "sha256": "a95e24d238bfdec447e5a7b94c841901239d15e02c2a33b75b262ea3d30dca19"
+    },
+    "web/signs-2025-01.glb": {
+      "bytes": 1666828,
+      "sha256": "7f4b15b41d37a2516602cdefafbf75a4d555f060880dc45d9e761a98f23db78f"
     },
     "web/viewer.json": {
-      "bytes": 165,
-      "sha256": "69169696147df161425f8adedeb7a984c7833dd7c4d7ff89c6ec6ca4bfeae71d"
+      "bytes": 164,
+      "sha256": "0b1db4119c4359b8cec4a21b3c50d280bcdafdc28bc9e805da5a457e26ece758"
     }
   }
 }

@@ -2,97 +2,224 @@
   "id": "west-block",
   "source_id": "way/136690966",
   "level": "B",
-  "status": "B prototype refined: rooftop/corner/window/entrance types compared, dimensions and occupancy approximate",
+  "status": "Photo-fidelity revision candidate: original measured anchor and source shell preserved, facade/overhang dimensions inferred; January2025 signs; full-scene validation pending",
   "sign_era": "2025-01-31",
   "sources": [
     "source/data/plateau.json",
-    "source/refs/REFERENCE_REGISTER.csv"
+    "source/refs/REFERENCE_REGISTER.csv",
+    "source/refs/PHOTO_FIDELITY_SOURCES.md",
+    "source/data/fullres_texture_sources.json",
+    "source/data/rakuten_boundary_landmarks.json"
   ],
   "stats": {
-    "triangles": 1257,
-    "primitives": 25,
-    "bytes": 1751748
+    "triangles": 7602,
+    "primitives": 35,
+    "bytes": 1056140
   },
   "files": {
     "README.md": {
-      "bytes": 4161,
-      "sha256": "209bae455b7f305d8a35a5b2e8a52da315a1516164a2795c69196f1c9fcdbbfc"
+      "bytes": 5506,
+      "sha256": "c93ead6ad85f8432573b2f82f1552fa85abbce96a37aae0d3f64bdadf36f6ee3"
     },
     "source/blender/build_west.py": {
-      "bytes": 12206,
-      "sha256": "886518469235cbc3c37a79b2ca61a9257c4b3908475543f6b58b6ec870c53221"
+      "bytes": 15232,
+      "sha256": "14603fcdfb793c9ba2ed2fcc64b328c3e0a3b15bf941e71b3e722025baa9e00c"
+    },
+    "source/blender/corner_fidelity.py": {
+      "bytes": 3658,
+      "sha256": "315088f30e1384dd1652fadc73f20f18c0cae06795df748084a2abf3fef767f9"
+    },
+    "source/blender/facade_fidelity.py": {
+      "bytes": 7339,
+      "sha256": "7001bd4bdfa2de7b6daa3cb0f52892059b52bda9b5f78bd82af862e7d39b7424"
+    },
+    "source/blender/render_evidence.py": {
+      "bytes": 2293,
+      "sha256": "c87b7b1b2e13155b84afe08d5232d5dd270eca4a0f7cb36b6a3441c55c63510b"
+    },
+    "source/blender/west-block.blend": {
+      "bytes": 2631620,
+      "sha256": "50a98989c838e9517bbb212a7edef29f3ce0e6bd21db83b72f773183a87f7b74"
     },
     "source/data/facades.json": {
-      "bytes": 6264,
-      "sha256": "453e6ba19ad8d322d84abc057743343cc27b331dec20b0e159236de10bf2016c"
+      "bytes": 6562,
+      "sha256": "7aa9a328194bc2285c14764dab36361b9496862c381e098ffc2f923c0a2550ba"
+    },
+    "source/data/fidelity_validation.json": {
+      "bytes": 1409,
+      "sha256": "9e84dd9fe2dad1bdb6c34259eddceee580cad482835bfd34c61149bcb7b99a36"
+    },
+    "source/data/fullres_texture_sources.json": {
+      "bytes": 6668,
+      "sha256": "53f5c08253b5cd67a38c60016452ac0138507d9b8d3bad3e24531eb403953681"
+    },
+    "source/data/ground_measurements.json": {
+      "bytes": 5849,
+      "sha256": "28467be90c39d5bbc572684ce6dca0c0ab2d3501e49c48a6c8b5f225846fbb60"
     },
     "source/data/plateau.json": {
       "bytes": 83361,
       "sha256": "9a0d6514b692e6c2a14357397c68e6522e2357708762d8e06aa0fa446b84a50d"
     },
+    "source/data/rakuten_boundary_landmarks.json": {
+      "bytes": 668,
+      "sha256": "f95b460527bd4855c141a5d0eeec2d3b79c954173fdf8b0e49c36245ccaad028"
+    },
+    "source/data/rebuild_verification.json": {
+      "bytes": 771,
+      "sha256": "eaa93a16360bec5891b59aa94b121749d4ef3369276c2c75def4d12253d72806"
+    },
     "source/data/stats.json": {
-      "bytes": 6298,
-      "sha256": "b6aa8f06e098151187792b7823509852460d8e6fe542bd0d90862d0713f67423"
+      "bytes": 6364,
+      "sha256": "8a406fc9152d7c63a8cf3ed3a661b6c4d1f56b8f4cf2bf859f2f93afbc116448"
+    },
+    "source/data/view_fit.json": {
+      "bytes": 316,
+      "sha256": "9c81ca4e59a0e5710a442fd8587c5f130707b6cde7a052a9bad5715981b5dd8d"
+    },
+    "source/refs/PHOTO_FIDELITY_SOURCES.md": {
+      "bytes": 2201,
+      "sha256": "62edb34edd736642e8e0776b1ab48eb456151d107dae1794b27e36228ce2bd79"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
-      "bytes": 902,
-      "sha256": "c64daf688378dd38d6859db5fac341b496f0f46c9ba270c42532796ad6471f6d"
+      "bytes": 935,
+      "sha256": "dcf0c0d5c6c2c6e58957e82059d6d2cf6f68cf692f9546ec3e7a7e338b276185"
+    },
+    "source/textures/asbi_flank.jpg": {
+      "bytes": 27744,
+      "sha256": "9ad758911584f0a726ab8cb09a13c04ad2649d426ecb0eb0af9f0dd4ff5344fb"
     },
     "source/textures/asbi_flank.png": {
       "bytes": 105481,
       "sha256": "7f33fc933e92b1af726187f0edc404156dfd0cb9a048b189e22b8ca797118c1d"
     },
+    "source/textures/clinic_lower.jpg": {
+      "bytes": 15230,
+      "sha256": "40cf8450b5f5e21822ec64c81c4faf8143de0ccbd2bfce4cd2a6d3818e10543a"
+    },
+    "source/textures/clinic_upper.jpg": {
+      "bytes": 13378,
+      "sha256": "54067f6dbb2235671a65aaae275e410b390bf53cee2ad61ee608ed84d5cf98c2"
+    },
+    "source/textures/curtain.jpg": {
+      "bytes": 24091,
+      "sha256": "433c7a7c03557e7681e2b5ead5576ccc51b8bb2352467e1565af706c91581c3f"
+    },
+    "source/textures/dmm.jpg": {
+      "bytes": 54534,
+      "sha256": "1b0d56080c77b6e72d78f04849a6131bfad2b42806ea795dbf965c70fd67af53"
+    },
     "source/textures/dmm.png": {
       "bytes": 219373,
       "sha256": "7cdc5500731a96de54f2e4bcbc89a5bc237d19eaad0fe910bacfac1b36b1c308"
+    },
+    "source/textures/fruit_band.jpg": {
+      "bytes": 14868,
+      "sha256": "7270fac19d9d1d03fadf672214d14567923a63f72cdbef2d5f52542b16101b48"
     },
     "source/textures/fruit_band.png": {
       "bytes": 66432,
       "sha256": "856bf821b50cc3bc79b06fc9ac1ff811109d7a8d15efe1c8295d155d45566b09"
     },
+    "source/textures/fruit_shop_band.jpg": {
+      "bytes": 8698,
+      "sha256": "85dfe79807993b08262afc25e22360c4188cbce5a99a1ef11538c89b6a736f03"
+    },
+    "source/textures/hisamitsu.jpg": {
+      "bytes": 44974,
+      "sha256": "f2aba6a19746c70f4a3d7156f6d19354bbee3c9b8e2812c79e2c9b97a2f3bc4d"
+    },
     "source/textures/hisamitsu.png": {
       "bytes": 198299,
       "sha256": "3cc30689ded7a1b7180cf1c0d5d5766d1729ae9a73f2404217cf15a8a46fda7e"
+    },
+    "source/textures/matsukiyo.jpg": {
+      "bytes": 36812,
+      "sha256": "acc31d3f7a2ace824720b8cee3cdcc263ab7475940ceeab32a26c31193191135"
     },
     "source/textures/matsukiyo.png": {
       "bytes": 134028,
       "sha256": "295c1f1dfa6e815081ef0feb51f81fd41ebdcbf55972999126cc9bc2f3e778a8"
     },
+    "source/textures/middle_tenants.jpg": {
+      "bytes": 13588,
+      "sha256": "3cb2826b4439a656a71c189b292235684682c51bcac2803c2e647912573f61c5"
+    },
+    "source/textures/monja.jpg": {
+      "bytes": 34644,
+      "sha256": "6bdbc4bff7b68af4b7092424b16a348de4f9bc536b49b64ba5c627319bb39bed"
+    },
     "source/textures/monja.png": {
       "bytes": 219978,
       "sha256": "8d8fbccc08138936c9fa8d5b9f4e14f2789afe658a2406195164673ceca1390b"
+    },
+    "source/textures/nishimura.jpg": {
+      "bytes": 38406,
+      "sha256": "e37f1c1422e68823284d0335151e50d49dec562588603e68327736d5e3add94b"
     },
     "source/textures/nishimura.png": {
       "bytes": 155105,
       "sha256": "64078c32f0d7b069b8f6673487842682cee440c04181aefaa39c330e3db6d144"
     },
+    "source/textures/rakuten.jpg": {
+      "bytes": 115891,
+      "sha256": "5159e41a3e59d9c032c43052efec2932ec17e53b7f8e553035b9abb02b2eb128"
+    },
     "source/textures/rakuten.png": {
       "bytes": 401089,
       "sha256": "57beca91c30ae03f31e4e82445a8c6c501aba1b9d57176b785987d632c2804bf"
+    },
+    "source/textures/sanzenri.jpg": {
+      "bytes": 44737,
+      "sha256": "b4626c520f33e24e34ee5a2c379e58a3d57fae9e5663501ad8a429b552a00e01"
+    },
+    "source/textures/sushi.jpg": {
+      "bytes": 8611,
+      "sha256": "3d58a45725b51dd33cd4ee0ee845e48b8ee1c32d79c12e2e46bc1bc0a68861ef"
+    },
+    "source/textures/taiseido.jpg": {
+      "bytes": 35514,
+      "sha256": "60e3a90e4323a274d8936b779745cfc4da5120dc1fedf24bbe988c3e40ecfc1c"
     },
     "source/textures/taiseido.png": {
       "bytes": 138867,
       "sha256": "815f30102b1c311823fa2f54232c35d9a5ce6cc2b993773a6462a57603188af6"
     },
+    "source/textures/taiseido_left.jpg": {
+      "bytes": 15839,
+      "sha256": "5d6f15fcaf82285cda8676097dae48d2ed1b00b8fce40b2d530abd2bff6700a2"
+    },
+    "source/textures/taiseido_right.jpg": {
+      "bytes": 22293,
+      "sha256": "7e3bf648f02089ba44b2f7ede6ca367f40cad96fe45bc89da91ed0045b2e4ae1"
+    },
+    "source/tools/extract_fullres.py": {
+      "bytes": 4071,
+      "sha256": "65e099066b92169ffa2fa67205e8fd96dcd8e70d27820016a936980b8762c5ac"
+    },
+    "source/tools/fit_reference_view.py": {
+      "bytes": 1765,
+      "sha256": "41bbc364a186ef2efdfbde3e25b038bced4d1dd9753da77719178dc36377c03f"
+    },
     "web/emissive_day.json": {
-      "bytes": 1292,
-      "sha256": "99eca18cf5bb4f2b3efc187cee40b0bcf04cd63c2e9faf5b253343c53eecb54b"
+      "bytes": 2257,
+      "sha256": "1a7c39ba76de3e04c1d2a2bee5ca48c7f5f5c269230a65ef5d0e51dc0f11aca0"
     },
     "web/emissive_night.json": {
-      "bytes": 1321,
-      "sha256": "c8d177689f8413bdb46ddc3c72687d733a44a7197fcf078f515d1c4519d00d22"
+      "bytes": 2310,
+      "sha256": "fdf31918b1e4ec6e39acb0c9868d02b9b58dfb3101e537cb460429633ef9917e"
     },
     "web/signs-2025-01.glb": {
-      "bytes": 1660576,
-      "sha256": "d7e0af7785794b835cc03d766b715998518d065e02b7dd1c736ff39122067f68"
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
     },
     "web/viewer.json": {
       "bytes": 222,
       "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
     },
     "web/west-block.glb": {
-      "bytes": 91172,
-      "sha256": "d4bd7222906dcbdcd34853740a21ef4a17d0387d87fe3951e3f6d9f48037e3c2"
+      "bytes": 539376,
+      "sha256": "7b21d6978bf1a0580207031120be9e9caeb54a96e241eda0e788e49108a0b5b1"
     }
   }
 }

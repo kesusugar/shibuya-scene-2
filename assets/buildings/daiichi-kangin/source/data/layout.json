@@ -1,6 +1,7 @@
 {
   "source_id": "way/114755219",
-  "status": "B prototype: facade and fixture dimensions estimated from 2025 photo types; no ad imagery",
+  "identity": "UC rooftop / external steel X braces / Mizuho; NOT Ekimae red-window facade",
+  "status": "Photograph-informed prototype. Dimensions inferred, Jan 2025 ads separated.",
   "facades": [
     {
       "name": "south",
@@ -16,19 +17,7 @@
         -0.1727,
         -0.98497
       ],
-      "length_m": 21.518,
-      "height_m": 31.274,
-      "bay_count": 10,
-      "levels_m": [
-        3.3,
-        7.1,
-        10.9,
-        14.7,
-        18.5,
-        22.3,
-        26.1,
-        29.7
-      ]
+      "length_m": 21.518
     },
     {
       "name": "east",
@@ -44,42 +33,28 @@
         0.99448,
         -0.10493
       ],
-      "length_m": 27.733,
-      "height_m": 31.274,
-      "bay_count": 12,
-      "levels_m": [
-        3.3,
-        7.1,
-        10.9,
-        14.7,
-        18.5,
-        22.3,
-        26.1,
-        29.7
-      ]
+      "length_m": 27.733
     }
   ],
-  "window_height_m": 2.7,
-  "mullion_width_m": 0.13,
-  "east_display": {
-    "center_u": 0.3,
-    "center_z": 25.9,
-    "width_m": 13.4,
-    "height_m": 8.4
-  },
-  "reference_observations": [
-    "Jan 2025 Stream and Feb 2025 12214: pale external frame, dense rectangular window grid and red infill on south frontage",
-    "East frontage: dark glazing and broad stacked storefront bands below a large screen",
-    "Upper south-west PLATEAU tower corresponds to rooftop advertising mass; keep original geometry and add panel joints only"
+  "east_window_centers_m": [
+    6.55,
+    10.3,
+    14.05,
+    17.8,
+    21.55,
+    25.3,
+    29.05
   ],
-  "uncertainties": [
-    "Source-name to physical premises not independently surveyed",
-    "Window count, floor elevations, panels and screen dimensions are estimates",
-    "Ads and individual tenant lettering intentionally deferred"
+  "south_braced_front_u": [
+    0.265,
+    0.975
   ],
-  "glass_color": [
-    0.035,
-    0.06,
-    0.058
+  "south_floor_pitch_m": 3.75,
+  "inferred": true,
+  "excluded_wrong_features": [
+    "red infill",
+    "large east screen",
+    "full height east glazing",
+    "L Occitane curved frontage"
   ]
 }

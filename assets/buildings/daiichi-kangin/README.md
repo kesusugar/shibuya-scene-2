@@ -1,22 +1,35 @@
-# 渋谷第一勧銀共同ビル — 交差点側の個別B試作
+# 渋谷第一勧銀共同ビル：対象同定の修正と外装の再制作
 
-way/114755219、PLATEAU bldg_5e891186-4803-48a0-9664-284f212881ac。初期画面の左側に見えるため、QFRONT等に隠れるセンター244・クワトロより先行した。元の全表面と屋根を保持し、共通窓柄を個別のガラス・窓枠・赤い腰壁・店舗面・看板筐体へ置換。通常ロードし、同じIDのCを一度だけ除く。
+対象は way/114755219 / PLATEAU bldg_5e891186-4803-48a0-9664-284f212881ac。宇田川町23-3の「UC屋上看板・外付けX筋交い・みずほ」の建物です。隣の渋谷駅前ビルにある赤い窓枠、EyeCity、L'Occitane、曲面広告ではありません。
 
-2025年1月31日のStream写真と2月7日の高所写真（Syced、CC0）で形の種類を確認。窓数、階高、店舗面、看板筐体の寸法・位置は推定。2025年10月の独立照合や実測ではない。既存写真はsource/refs/REFERENCE_REGISTER.csvの相対パスで参照し、再加工していない。
+以前のlayout/READMEは隣ビルの外観特徴を取り違え、赤腰壁・全面ガラス・大きな東面スクリーン・横一列の黒い広告帯を誤って付けていました。今回はそれを撤去し、2025年1月31日/2月7日の写真に写る正しい横ルーバー、外付け筋交い、東面の細い連続窓、UC塔、屋上看板支持架構へ変更しました。既存PLATEAUの全壁面/屋根の頂点と位置は保持。既存モデルの重複や建物移動ではなく、付加外装の取り違えの修正です。
 
-広告内容の切り貼り・個別テナントの文字は後工程。看板は支持物・筐体だけで、新しい広告テクスチャや日付不明の文字を貼っていない。黒い看板面が実写真と異なる点を未達に残す。将来の広告画像は別GLBレイヤーで追加する。
+## 日付と表示
 
-座標は元のcontext入力のT.P.−15。viewer.jsonはgroundElevationTP=15として二度引きを防ぐ。元の屋根と全体位置は移動0、屋根差0 m。南・東正面62点中49点でC2a地面に当たり、T.P.15.140〜16.135 m。外側の足元に地面へつながるスカートだけを追加した。13点は範囲外で、全周・入口の実段差や勾配は未確認。夜は店舗の自発光のみで、実配光は未調整。
+- 建築本体：web/daiichi-kangin.glb。写真テクスチャなし。
+- 別レイヤー：web/signs-2025-01.glb。2025-01-31 Syced / CC0写真由来のUC 2面・龍角散・Vanguard・みずほ、5枚。
+- 1月の広告を10月と扱わない。ビューアーの既定年代やレイヤー設定はこの変更では触らない。新レイヤーの通常表示への接続は別途確認が必要。
+- 比較画像は1月の別レイヤーを明示的に重ねたBlender画像。既存WebGLの通常画面を検証したものではない。
 
-## 再生成
+## 再生成（Blender 4.2.3 LTS）
 
-```bash
-source /workspace/setup-tools/core-env.sh
-blender -b --python-exit-code 1 -t 4 -P assets/buildings/daiichi-kangin/source/blender/build_daiichi.py -- assets/buildings/daiichi-kangin/source/data/plateau.json assets/buildings/daiichi-kangin/source/data/layout.json assets/ground/core/web/ground_core.glb assets/buildings/daiichi-kangin/web
-```
+    blender -b --python-exit-code 1 -P assets/buildings/daiichi-kangin/source/blender/build_daiichi.py
 
-context_input.jsonの対象1棟だけを独立資産へ移した。将来全体を再抽出するときはselect_context.pyのOWN_ASSETSが同じIDを除く。両方の入力を更新し、build_context.pyで再生成する。
+引数なしで、同じ資産フォルダのsource/data/plateau.json、recorded_ground.json、同梱PNGを読み、webの2 GLB・viewer/emissive設定・stats・編集用blendを再生成。ネットワーク/外部Pythonパッケージ不要。旧4引数CLIは誤ったlayoutの再適用を避けるため明示的にエラーにする。build_daiichi_fidelity.pyが本体。blendは全画像をpack済み。source/data/layout.jsonは正しい対象と寸法推定の説明用で、生成の数値定義はPythonに集約。
 
-国土交通省Project PLATEAU「渋谷区2025年度3D都市モデル」を加工。出典 https://www.mlit.go.jp/plateau/ 、利用条件 https://www.mlit.go.jp/plateau/site-policy/ 。写真は参考のみで、生成モデルに写真テクスチャはない。
+T.P.15 m基準と既存地理原点を保持。建物は街路小物の底面原点へ移動しない。viewer groundElevationTP=15。足元は既存49サンプルの記録を再利用して同じスカートを作る。新しい地面測定をしたとの主張はしない。
 
-初版と最終版の設定はevidence/c1-daiichi-kangin/{first,after}/layout.jsonに保存。ガラス色だけを変更した。初版を再生成する場合はfirst/layout.jsonを/tmp等へコピーし、別の出力先で上記スクリプトを実行する（stats.jsonは渡したlayoutの隣へ保存される）。
+## 根拠と推定
+
+- 建物同定：所有者の「渋谷共同ビル」公式ページ、宇田川町23番3号、地上8階・地下2階。https://www.seiwa-building.co.jp/building/office/item_off_shibuya.html 。公式写真は同定の閲覧参考のみ、再配布やテクスチャ化なし。掲載写真の日付は不明。
+- 2025-01-31、Syced、CC0: https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg 。UC・X筋交い・横ルーバー・屋上看板を直接確認。5画像は透視補正・縮小のみ。看板の輪郭の少量の周辺画素/撮影時の陰影は残り、欠けた文字を描き足していない。
+- 2025-02-07、Syced、CC0: https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg 。別角度で筋交い/横ルーバー/東面窓帯を確認。
+- PLATEAU：国土交通省 Project PLATEAU「渋谷区2025年度3D都市モデル」を加工。https://www.mlit.go.jp/plateau/ 、https://www.mlit.go.jp/plateau/site-policy/ 。全元頂点の保持を検査。
+- 推定：正面有効範囲u=.265–.975、3.75 m階間隔、筋交い材0.16–0.20 m、5段ルーバー間隔0.22 m、東面窓高さ0.92 m、看板支柱/奥行、屋上サービス箱、入り口分割・室内カーテン。実測ではなく写真の種類・比率をPLATEAUへ合わせた値。
+- 屋上看板は1月写真の大まかな投影と既存屋根内の支持位置を用いた推定。UC塔の既存屋根は保持。隠れる背面のテナント文字は生成しない。
+
+## 残る差 / 検査
+
+実写では隣の駅前ビルと西側街区が大きく手前を隠す。比較モデルは対象単独のため、その遮蔽を意図的に再現していない。投影は西側街区写真の近似カメラを転用し、本建物の精密測量カメラではない。正面全体の窓数、1階の隠れた店舗詳細、裏面・屋上設備の正確な配置、光沢/汚れ、10月の看板は未達。フォトリアル完成の判定はしていない。
+
+Blender 4.2.3で再生成、全元壁/屋根頂点の保持、建築本体の画像なし、日付別画像5枚、B予算（120k tris/40 primitives/3MB）内を検証。全体npm test/build/ブラウザ統合/FPSはこの環境では未実施。旧テストの赤い腰壁必須・大きな窓の位置固定は誤外装を正当化するため、正しい材質/細窓・別レイヤーの検査への差分を別途提供する。

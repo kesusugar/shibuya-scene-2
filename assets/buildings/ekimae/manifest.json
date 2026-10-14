@@ -17,12 +17,12 @@
       "sha256": "376845164c1099510d791be5a8078d15a855c5e76b9005ba10341897c4047dd9"
     },
     "source/blender/build_ekimae.py": {
-      "bytes": 10210,
-      "sha256": "d8b0ae73aa05d6fb6f94d75e2a9b3b816116a3d72c13540ec530c01ad51ae2d9"
+      "bytes": 11009,
+      "sha256": "08b76a26585c858081ff106ae3d6538276fc14e4ca56075aea0bd28838fb01d0"
     },
     "source/data/facades.json": {
-      "bytes": 3247,
-      "sha256": "6f7af822fb0748d1f6e7d1eb90159afea17dda9cf17a18a3da3a1e46cafecdb1"
+      "bytes": 3725,
+      "sha256": "5a446f8a57173e222098bcb55891032409e358d3c2a4af0e90891cd4c455f5d9"
     },
     "source/data/plateau.json": {
       "bytes": 8102,
@@ -86,11 +86,19 @@
     },
     "web/signs-2025-11.glb": {
       "bytes": 1194088,
-      "sha256": "4b2297c627cc1382078e6a671cc0865b44fd7e1fa9a0033e058b4322b7b94d96"
+      "sha256": "a95e40a0c0718491d541e40b874fe86f465be247ec9a7726bdb9668bdc4114be"
     },
     "web/viewer.json": {
       "bytes": 158,
       "sha256": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57"
+    },
+    "source/blender/save_editable.py": {
+      "bytes": 664,
+      "sha256": "d9d6108b2aef7d95bee6f18ccfc5621aeaf77ab02efad0ccba2018d7574a07bd"
+    },
+    "source/blender/ekimae-uv.blend": {
+      "bytes": 1425808,
+      "sha256": "307314e82d306b216c20f6c0b8b168c96d792cb47c03f889bdf6ee9608ae96ab"
     }
   }
 }

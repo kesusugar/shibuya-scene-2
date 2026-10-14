@@ -9,7 +9,8 @@ src,config,ground,out=sys.argv[sys.argv.index('--')+1:][:4]
 assert bpy.app.version==(4,2,3)
 D=json.loads(Path(src).read_text());F=json.loads(Path(config).read_text());ROOT=Path(config).parent.parent;OUT=Path(out);OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
-bpy.ops.import_scene.gltf(filepath=ground)
+SIGN_ONLY='--signs-only' in sys.argv
+if not SIGN_ONLY: bpy.ops.import_scene.gltf(filepath=ground)
 bm=bmesh.new()
 for ob in list(bpy.context.scene.objects):
  if ob.type=='MESH' and ob.name.startswith(('ground_road','ground_sidewalk','ground_intersection','ground_fill')):
@@ -26,6 +27,8 @@ samples=[]
 for p in front:
  hit=bvh.ray_cast(Vector((p.x,p.y,60)),Vector((0,0,-1)))[0]
  if hit:samples.append({'x':round(p.x,3),'y':round(p.y,3),'tp':round(hit.z+15,3)})
+if SIGN_ONLY:
+ saved=json.loads((ROOT/'data/stats.json').read_text());samples=saved['frontage_samples']
 assert samples,'No frontage ground samples';anchor=min(p['tp'] for p in samples);BASE=D['ground_tp']-15
 for ob in list(bpy.context.scene.objects):bpy.data.objects.remove(ob,do_unlink=True)
 M={};GROUP={}
@@ -44,17 +47,20 @@ def box(center,size,name):
  x,y,z=center;w,d,h=size;p=[(x+a,y+b,z+c) for a,b,c in [(-w/2,-d/2,-h/2),(w/2,-d/2,-h/2),(w/2,d/2,-h/2),(-w/2,d/2,-h/2),(-w/2,-d/2,h/2),(w/2,-d/2,h/2),(w/2,d/2,h/2),(-w/2,d/2,h/2)]]
  for ids in [(0,3,2,1),(4,5,6,7),(0,1,5,4),(1,2,6,5),(2,3,7,6),(3,0,4,7)]:face(name,[p[i] for i in ids])
 def panel(u,z,w,h,name,offset=.12,layer='base'):
- c=A+T*u+N*offset+Vector((0,0,z));pts=[c-T*w/2-Vector((0,0,h/2)),c-T*w/2+Vector((0,0,h/2)),c+T*w/2+Vector((0,0,h/2)),c+T*w/2-Vector((0,0,h/2))];face(name,pts,[(0,0),(0,1),(1,1),(1,0)],layer)
+ c=A+T*u+N*offset+Vector((0,0,z));pts=[c-T*w/2-Vector((0,0,h/2)),c-T*w/2+Vector((0,0,h/2)),c+T*w/2+Vector((0,0,h/2)),c+T*w/2-Vector((0,0,h/2))];face(name,pts,[(1,0),(1,1),(0,1),(0,0)] if layer=='signs' else [(0,0),(0,1),(1,1),(1,0)],layer)
 E=Vector((-38.316,-20.562,0));ET=(Vector((-45.003,-54.21,0))-E).normalized();EN=Vector((-ET.y,ET.x,0));EL=34.305
 # Long east frontage is the dominant side in the Stream view; texture horizontal axes run south to north.
-def east_panel(u,z,w,h,name,offset=.12,layer='base'):
+def east_panel(u,z,w,h,name,offset=.12,layer='base',uv_span=None):
  c=E+ET*u+EN*offset+Vector((0,0,z));pts=[c-ET*w/2-Vector((0,0,h/2)),c-ET*w/2+Vector((0,0,h/2)),c+ET*w/2+Vector((0,0,h/2)),c+ET*w/2-Vector((0,0,h/2))]
- face(name,pts,[(1,0),(1,1),(0,1),(0,0)],layer)
-def arc(z,h,name,offset=0,layer='base',start=START,end=END):
+ lo,hi=uv_span if uv_span is not None else (1,0)
+ face(name,pts,[(lo,0),(lo,1),(hi,1),(hi,0)],layer)
+def arc(z,h,name,offset=0,layer='base',start=START,end=END,uv_span=None):
+ if uv_span is None:uv_span=(1,0) if layer=='signs' else (0,1)
  for i in range(28):
   a=start+(end-start)*i/28;b=start+(end-start)*(i+1)/28;r=R+offset
   pts=[(CX+r*math.cos(a),CY+r*math.sin(a),z-h/2),(CX+r*math.cos(a),CY+r*math.sin(a),z+h/2),(CX+r*math.cos(b),CY+r*math.sin(b),z+h/2),(CX+r*math.cos(b),CY+r*math.sin(b),z-h/2)]
-  face(name,pts,[(i/28,0),(i/28,1),((i+1)/28,1),((i+1)/28,0)],layer)
+  u0=uv_span[0]+(uv_span[1]-uv_span[0])*i/28;u1=uv_span[0]+(uv_span[1]-uv_span[0])*(i+1)/28
+  face(name,pts,[(u0,0),(u0,1),(u1,1),(u1,0)],layer)
 # Replace only the diagonal NE street wall with a curve. Keep original roof and remaining wall faces.
 removed=0
 for surface in D['surfaces']:
@@ -92,11 +98,13 @@ east_panel(6.5,1.6,13.0,3.2,'ek_yellow',.22)
 for u in [2,5,8,11]:east_panel(u,1.5,2.4,2.6,'ek_shop_glass',.25)
 east_panel(6.5,3.0,13,.16,'ek_shop_light',.28)
 for z in [4,7.2,10.4]:east_panel(6.5,z,13,.10,'ek_gold',.27)
-for name,z,h in [('shabu',29.4,2.65),('francais',26.1,3.1),('gusto',22.75,3.2)]:east_panel(6.5,z,13,h,'ek_sign_'+name,.29,'signs')
+# EK01: each crop spans both the curved corner and east return; never repeat it.
+SIGN_SPLIT=(R*(START-END))/(R*(START-END)+13.0)
+for name,z,h in [('shabu',29.4,2.65),('francais',26.1,3.1),('gusto',22.75,3.2)]:east_panel(6.5,z,13,h,'ek_sign_'+name,.29,'signs',uv_span=(1-SIGN_SPLIT,0))
 east_panel(15,17.2,2.8,22,'ek_sign_eyecity',.25,'signs')
 east_panel(6.5,7.0,7.5,1.5,'ek_sign_loccitane',.30,'signs')
 # Restaurant and vertical tenant signs: photographed November 1, 2025, not a February campaign.
-for name,z,h in [('shabu',29.4,2.65),('francais',26.1,3.1),('gusto',22.75,3.2)]:arc(z,h,'ek_sign_'+name,.23,'signs')
+for name,z,h in [('shabu',29.4,2.65),('francais',26.1,3.1),('gusto',22.75,3.2)]:arc(z,h,'ek_sign_'+name,.23,'signs',uv_span=(1,1-SIGN_SPLIT))
 for z in [20.9,24.35,27.7,30.9]:arc(z,.22,'ek_band',.26)
 panel(10.8,17.2,2.8,22,'ek_sign_eyecity',.23,'signs')
 # L'OCCITANE store silhouette and green awning are photo-confirmed; branches conceal precise entrance count.
@@ -106,7 +114,7 @@ for i in range(16):
  face('ek_glass',[(CX+(R+.1)*math.cos(a),CY+(R+.1)*math.sin(a),3.35),(CX+(R+.1)*math.cos(b),CY+(R+.1)*math.sin(b),3.35),(CX+(R+1.0)*math.cos(b),CY+(R+1.0)*math.sin(b),2.75),(CX+(R+1.0)*math.cos(a),CY+(R+1.0)*math.sin(a),2.75)])
 # Rooftop billboards, support steel and backings. Height revised independently after the first comparison.
 roof=F['rooftop'];z,h=roof['center_height_m'],roof['height_m']
-arc(z,h+.25,'ek_screen_back',.20);east_panel(6.5,z,13.2,h+.25,'ek_screen_back',.20);arc(z,h,'ek_sign_samsung',.24,'signs');east_panel(6.5,z,13,h,'ek_sign_samsung',.25,'signs')
+arc(z,h+.25,'ek_screen_back',.20);east_panel(6.5,z,13.2,h+.25,'ek_screen_back',.20);arc(z,h,'ek_sign_samsung',.24,'signs',uv_span=(1,1-SIGN_SPLIT));east_panel(6.5,z,13,h,'ek_sign_samsung',.25,'signs',uv_span=(1-SIGN_SPLIT,0))
 panel(L/2,z,L,h,'ek_screen_back',.2);panel(L/2,z,L-.15,h-.15,'ek_sign_hit_sky',.24,'signs')
 for i in range(7):
  a=START+(END-START)*i/6;p=Vector((CX+(R-.18)*math.cos(a),CY+(R-.18)*math.sin(a),0));box((p.x,p.y,(31.36+z+h/2)/2),(.12,.12,z+h/2-31.36),'ek_steel')
@@ -118,10 +126,13 @@ for (layer,name),bm in GROUP.items():
  bmesh.ops.triangulate(bm,faces=bm.faces[:]);me=bpy.data.meshes.new(name);bm.to_mesh(me);bm.free();me.materials.append(M[name]);me.calc_loop_triangles();ob=bpy.data.objects.new(name,me);bpy.context.collection.objects.link(ob);objects.append((layer,ob))
 counts={}
 for layer,file in [('base','ekimae.glb'),('signs','signs-2025-11.glb')]:
+ if SIGN_ONLY and layer=='base':continue
  bpy.ops.object.select_all(action='DESELECT')
  for kind,ob in objects:ob.select_set(kind==layer)
  bpy.ops.export_scene.gltf(filepath=str(OUT/file),export_format='GLB',use_selection=True,export_yup=True)
  counts[layer]={'meshes':sum(k==layer for k,o in objects),'triangles':sum(len(o.data.loop_triangles) for k,o in objects if k==layer)}
+if SIGN_ONLY:
+ print('EKIMAE signs-only: base, anchor, viewer and stats preserved',counts);sys.exit(0)
 points=[p for s in D['surfaces'] for p in s['ring']]
 (OUT/'viewer.json').write_text(json.dumps({'planBounds':[min(p[0] for p in points),min(p[1] for p in points),max(p[0] for p in points),max(p[1] for p in points)],'groundElevationTP':anchor,'layers':{'signs':'signs-2025-11.glb'}},indent=2)+'\n')
 for mode in ['day','night']:

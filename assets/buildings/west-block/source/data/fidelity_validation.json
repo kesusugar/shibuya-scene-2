@@ -1,0 +1,55 @@
+{
+  "assets": {
+    "west-block.glb": {
+      "bytes": 539376,
+      "triangles": 7526,
+      "primitives": 20,
+      "materials": 20,
+      "bounds_gltf_y_up": {
+        "min": [
+          -67.25299835205078,
+          -0.07000000029802322,
+          -55.54499816894531
+        ],
+        "max": [
+          -32.51050567626953,
+          39.93899917602539,
+          -19.996719360351562
+        ]
+      },
+      "sha256": "7b21d6978bf1a0580207031120be9e9caeb54a96e241eda0e788e49108a0b5b1"
+    },
+    "signs-2025-01.glb": {
+      "bytes": 516764,
+      "triangles": 76,
+      "primitives": 15,
+      "materials": 15,
+      "bounds_gltf_y_up": {
+        "min": [
+          -66.93152618408203,
+          2.200000047683716,
+          -33.7204475402832
+        ],
+        "max": [
+          -32.707828521728516,
+          39.78900146484375,
+          -21.053428649902344
+        ]
+      },
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    }
+  },
+  "combined": {
+    "bytes": 1056140,
+    "triangles": 7602,
+    "primitives": 35
+  },
+  "budget_limits": {
+    "bytes": 3000000,
+    "triangles": 120000,
+    "primitives": 40
+  },
+  "budget_pass": true,
+  "full_project_tests": "NOT RUN: partial connector-based snapshot, no full checkout/npm dependencies or complete shipped assets",
+  "baseline_base_sha256": "364cdda5c5b81ae4d937afc2c983b5039c9153d1380f4ef9c66d5cc83680eebd"
+}

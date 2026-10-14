@@ -1,0 +1,53 @@
+{
+  "source": "WB01",
+  "original_top_landmarks": [
+    [
+      1441,
+      1527
+    ],
+    [
+      1525,
+      1535
+    ],
+    [
+      1610,
+      1530
+    ],
+    [
+      1695,
+      1519
+    ],
+    [
+      1780,
+      1505
+    ]
+  ],
+  "original_bottom_landmarks": [
+    [
+      1453,
+      1834
+    ],
+    [
+      1538,
+      1842
+    ],
+    [
+      1622,
+      1834
+    ],
+    [
+      1707,
+      1820
+    ],
+    [
+      1792,
+      1805
+    ]
+  ],
+  "method": "64 strip boundary warp, approximate cylinder geometry; overrides planar rakuten entry in fullres_texture_sources.json",
+  "output_size": [
+    640,
+    576
+  ],
+  "output_file": "textures/rakuten.jpg"
+}

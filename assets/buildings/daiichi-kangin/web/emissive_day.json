@@ -1,19 +1,10 @@
 {
-  "dk_shop_glass": {
-    "kind": "interior",
-    "emit": [
-      1,
-      0.84,
-      0.62
-    ],
-    "estr": 0
-  },
   "dk_shop_light": {
     "kind": "interior",
     "emit": [
       1,
-      0.84,
-      0.62
+      0.95,
+      0.8
     ],
     "estr": 0
   }

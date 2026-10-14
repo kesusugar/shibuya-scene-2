@@ -191,5 +191,10 @@
       -45.003,
       -54.21
     ]
+  },
+  "uv_revision": {
+    "date": "2026-10-14",
+    "basis": "EK01 photograph and pixel inspection of existing licensed crops. Correct outward reading direction; map Samsung and three tenant strips once across arc and 13 m east return instead of repeating full crops. U split is proportional to existing modeled arc/return lengths, not a surveyed photo calibration.",
+    "unchanged": "All texture pixels, source dates, geometry, anchor, footprint and HiT missing left edge."
   }
 }
