@@ -23,6 +23,8 @@ export function classify(material: Material, meshName: string, table?: EmissiveT
   const n = material.name || '';
   if (n.startsWith('street_tree_')) return 'vegetation';
   if (n.startsWith('street_')) return 'furniture';
+  // imported props (tools/props/import_prop.py names them prop_<class>_<n>)
+  if (n.startsWith('prop_')) return n.startsWith('prop_glass') ? 'glass' : n.startsWith('prop_sign') ? 'sign' : 'furniture';
   if (meshName.startsWith('ground_') || n.startsWith('ground_')) {
     if (n.includes('marking') || meshName.startsWith('ground_marking')) return 'marking';
     if (n.includes('kerb') || meshName.startsWith('ground_kerb')) return 'kerb';
