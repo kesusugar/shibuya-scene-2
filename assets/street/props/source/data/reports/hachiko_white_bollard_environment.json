@@ -1,0 +1,10 @@
+{
+  "blender": "4.2.3 LTS",
+  "official_archive_sha256": "3a64efd1982465395abab4259b4091d5c8c56054c7267e9633e4f702a71ea3f4",
+  "importer_dependency": "PR #38 tools/props/import_prop.py; not committed in this asset-only package",
+  "importer_sha256": "157e6993e0ea3c11766c8cf97ffb3717004fe92a2952c2c892a49f41d66e38f2",
+  "render": "Cycles CPU, 48 samples, denoising disabled",
+  "source_preservation": "Original approved files not modified",
+  "npm_test_typecheck_build": "NOT RUN: full repository/dependencies unavailable",
+  "runtime_and_fps": "NOT RUN: asset-only package, no placement"
+}

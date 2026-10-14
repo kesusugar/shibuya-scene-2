@@ -1,0 +1,7 @@
+{
+ "id":"standing_notice_sign", "target":{"height_m":1.1,"width_m":0.56,"depth_m":0.29},"max_triangles":4000,"lod_ratio":0,"merge_vertices":false,
+ "materials":{"default":"furniture"},
+ "source":{"tool":"Blender 4.2.3; generate_standing_sign.py","author":"dot (model); ウィ貴公子 (reference photograph)","date":"2026-10-14","terms":"Model and adapted reference evidence: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/","reference_url":"https://commons.wikimedia.org/wiki/File:渋谷スクランブル交差点_2025年10月10日の渋谷_202510102313_IMG_6646.jpg","reference_date":"2025-10-10 23:13:28","reference_sha1":"aa631a90b32274e3c35e38094b5e901d806aed79","changes":"Reference cropped and resized for comparison. Geometry modeled from silhouette, no photo texture. Notice text and emblem omitted. Dimensions inferred, not measured; rear/base depth simplified."},
+ "dimension_basis":"Photo proportions: height approximately twice foot width, upright width approximately 90% of foot width; absolute height 1.1 m and base depth 0.29 m are unverified working estimates.",
+ "placement":"Unplaced asset. Candidate: Hachiko-side edge of Shibuya scramble crossing visible in dated photograph; exact coordinate and permanence unconfirmed."
+}

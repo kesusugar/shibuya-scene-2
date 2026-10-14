@@ -1,0 +1,68 @@
+{
+  "blender": "4.2.3 LTS",
+  "blend_reopened": true,
+  "reversible_edit_verified": true,
+  "editable_asset_parts": 64,
+  "glbs": [
+    {
+      "file": "standing_notice_sign.glb",
+      "bounds_min_m": [
+        -0.2800000011920929,
+        -0.14504998922348022,
+        -7.480296382311735e-10
+      ],
+      "bounds_max_m": [
+        0.2800000011920929,
+        0.14505000412464142,
+        1.0959999561309814
+      ],
+      "dimensions_m": [
+        0.5600000023841858,
+        0.29009999334812164,
+        1.095999956879011
+      ],
+      "triangles": 2499,
+      "materials": [
+        "Paint | warm pale inferred daylight",
+        "Dark inset border",
+        "Blank notice | lettering intentionally omitted",
+        "Fasteners",
+        "Paint scuffs",
+        "Exposed dark metal wear"
+      ],
+      "single_mesh_only": true,
+      "base_origin_verified": true,
+      "no_image_textures": true
+    },
+    {
+      "file": "standing_notice_sign_imported.glb",
+      "bounds_min_m": [
+        -0.28102192282676697,
+        -0.14557938277721405,
+        0.0
+      ],
+      "bounds_max_m": [
+        0.28102192282676697,
+        0.14557938277721405,
+        1.100000023841858
+      ],
+      "dimensions_m": [
+        0.5620438456535339,
+        0.2911587655544281,
+        1.100000023841858
+      ],
+      "triangles": 2499,
+      "materials": [
+        "prop_furniture_0",
+        "prop_furniture_1",
+        "prop_furniture_2",
+        "prop_furniture_3",
+        "prop_furniture_4",
+        "prop_furniture_5"
+      ],
+      "single_mesh_only": true,
+      "base_origin_verified": true,
+      "no_image_textures": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+ "id":"grey_louvered_cabinet",
+ "target":{"height_m":1.92,"width_m":1.28,"depth_m":0.441},
+ "max_triangles":4000,"lod_ratio":0.25,"materials":{"default":"furniture"},
+ "dimensions_basis":"全寸法は単眼写真からの制作上の仮定。実測値ではない。幅・高さの比率と浅い箱形を写真に合わせた。底部は遮蔽あり。",
+ "placement_status":"保留。参照写真は港区・南麻布ビル。渋谷の設置証拠ではない。",
+ "source":{"tool":"Blender 4.2.3 LTS / procedural Python","author":"OpenAI dot (generated model); reference photograph: RuinDig/Yuki Uchida","date":"2026-10-14","terms":"モデル・Pythonは本プロジェクト向け新規制作。参照写真およびトリミング写真は CC BY 4.0。出典・作者・改変の表示を保持。","reference_url":"https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_164.jpg","reference_license":"https://creativecommons.org/licenses/by/4.0/","reference_datetime":"2025-07-13T15:58:23","reference_location":"Minami-Azabu Building, Minato, Tokyo","reference_use":"Shape and proportions only; no photo textures"}
+}

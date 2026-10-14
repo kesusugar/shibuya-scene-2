@@ -1,0 +1,15 @@
+{
+  "blender": "4.2.3 LTS",
+  "triangles": 2499,
+  "dimensions_m": [
+    0.5600000023841858,
+    0.29009997844696045,
+    1.0959999561309814
+  ],
+  "asset_meshes": 64,
+  "front": "-Y",
+  "origin": "bottom center",
+  "camera": "Approximate only; uncalibrated",
+  "text": "Intentionally blank",
+  "placement": "NOT PLACED"
+}

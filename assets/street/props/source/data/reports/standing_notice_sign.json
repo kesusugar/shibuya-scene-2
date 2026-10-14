@@ -1,0 +1,38 @@
+{
+ "id": "standing_notice_sign",
+ "source_file": "standing_notice_sign.glb",
+ "warnings": [],
+ "input_dimensions": [
+  0.56,
+  0.2901,
+  1.096
+ ],
+ "scale_factor": 1.00365,
+ "dimensions_m": {
+  "width": 0.562,
+  "depth": 0.291,
+  "height": 1.1
+ },
+ "merged_vertices": 0,
+ "input_triangles": 2499,
+ "triangles": 2499,
+ "materials": [
+  "prop_furniture_0",
+  "prop_furniture_1",
+  "prop_furniture_2",
+  "prop_furniture_3",
+  "prop_furniture_4",
+  "prop_furniture_5"
+ ],
+ "bytes": 174404,
+ "source": {
+  "tool": "Blender 4.2.3; generate_standing_sign.py",
+  "author": "dot (model); ウィ貴公子 (reference photograph)",
+  "date": "2026-10-14",
+  "terms": "Model and adapted reference evidence: CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/",
+  "reference_url": "https://commons.wikimedia.org/wiki/File:渋谷スクランブル交差点_2025年10月10日の渋谷_202510102313_IMG_6646.jpg",
+  "reference_date": "2025-10-10 23:13:28",
+  "reference_sha1": "aa631a90b32274e3c35e38094b5e901d806aed79",
+  "changes": "Reference cropped and resized for comparison. Geometry modeled from silhouette, no photo texture. Notice text and emblem omitted. Dimensions inferred, not measured; rear/base depth simplified."
+ }
+}

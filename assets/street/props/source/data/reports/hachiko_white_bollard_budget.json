@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "source": {
+    "bytes": 62772,
+    "triangles": 2676,
+    "primitives": 3,
+    "mesh_count": 3,
+    "materials": [
+      "Paint_White_Estimated",
+      "Yellow_Band_Approximate_Not_Retroreflective"
+    ],
+    "nodes": [
+      "White_Cap_Inferred",
+      "White_Shaft",
+      "Yellow_Band",
+      "Bollard_Root_BASE_CENTER"
+    ]
+  },
+  "temporary_importer_output": {
+    "bytes": 95720,
+    "triangles": 3345,
+    "primitives": 4,
+    "mesh_count": 2,
+    "materials": [
+      "prop_furniture_0",
+      "prop_furniture_1"
+    ],
+    "nodes": [
+      "hachiko_white_bollard",
+      "hachiko_white_bollard_lod1"
+    ]
+  },
+  "limits": {
+    "LOD0_triangles": 3000,
+    "LOD1_triangles": 750,
+    "validation_bytes_each": 400000
+  },
+  "warning": "Temporary imported GLB contains overlapping LOD0 and LOD1; excluded from committed incoming source. Runtime must select one LOD.",
+  "npm_suite": "NOT RUN: full repository and dependencies unavailable; no runtime integration or FPS claim."
+}
