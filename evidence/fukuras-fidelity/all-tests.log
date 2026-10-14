@@ -1,0 +1,901 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+ RUN  v5.0.3 /workspace/shared/fukuras_fidelity/checkrepo
+
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'paving_boundary'
+ ❯ tests/paving-boundary.test.ts (2 tests | 2 failed) 71ms
+   × partitions concave masks in both windings without losing area or changing sloped heights 54ms
+   × clips actual paving triangle vertices to the mask instead of selecting crossing faces by centroid 4ms
+ ❯ tests/hachiko.test.ts (3 tests | 2 failed) 42ms
+   × exports the dog, plinth and readable plaque without emissive materials 27ms
+   × anchors the exported plinth on the original sidewalk without floating and clears tactile tiles 1ms
+ ❯ tests/ginza-canopy.test.ts (4 tests | 4 failed) 153ms
+   × replaces the source once while removing duplicated C station shells and recording inferred floor levels 109ms
+   × retains all source roof vertices and a curved M frame below the upper deck 20ms
+   × opens the upper hall with transparent screen doors while retaining the lower base 2ms
+   × uses the official new-station 12m platform design width in the shipped floor geometry 21ms
+ ❯ tests/nearby-buildings.test.ts (11 tests | 11 failed) 138ms
+   × mark-city preserves its source roof and does not duplicate the C parent 18ms
+   × shibuya109 preserves its source roof and does not duplicate the C parent 1ms
+   × takagi preserves its source roof and does not duplicate the C parent 10ms
+   × bic-camera preserves its source roof and does not duplicate the C parent 1ms
+   × cine-tower preserves its source roof and does not duplicate the C parent 0ms
+   × east-mixeduse preserves its source roof and does not duplicate the C parent 1ms
+   × hikarie preserves its source roof and does not duplicate the C parent 0ms
+   × parco preserves its source roof and does not duplicate the C parent 0ms
+   × stream preserves its source roof and does not duplicate the C parent 0ms
+   × sakura-stage preserves its source roof and does not duplicate the C parent 0ms
+   × draws the shared Mark City parent once for both OSM names 104ms
+ ❯ tests/plaza.test.ts (3 tests | 2 failed) 34ms
+   × uses original self-generated paving and the sidewalk look class 16ms
+   × keeps exported paving vertices on the original road with documented 1 mm render offset 7ms
+ ❯ tests/drainage.test.ts (3 tests | 2 failed) 32ms
+   × exports a solid textured-by-geometry cover without photographic texture or emission 15ms
+   × keeps exported cover vertices on the original road with documented 16–17 mm render offset 1ms
+ ❯ tests/tactile.test.ts (4 tests | 3 failed) 75ms
+   × exports yellow unlit-by-emission tactile surfaces in the furniture class 22ms
+   × keeps exported tactile vertices on the existing sidewalk with 2–7 mm relief 1ms
+   × keeps warning and guide footprints clear of existing pole bases 1ms
+ ❯ tests/projected-street.test.ts (4 tests | 1 failed) 83ms
+   × keeps the actual experimental GLB finite and in the ground datum, with all six expected parts 36ms
+ ❯ tests/tactile-supplement.test.ts (3 tests | 2 failed) 46ms
+   × drapes both exported supplements to the original sidewalk and connects six modeled open ends 25ms
+   × closes the rear of both modeled stone planting segments 1ms
+ ❯ tests/surround.test.ts (3 tests | 2 failed) 73ms
+   × exports stone, inclined metal rails, shrubs and the stone panel without photo texture or invented lighting 29ms
+   × keeps exported stone bases on the sidewalk and new footprints clear of the statue and tactile route 1ms
+ ❯ tests/station-concourse.test.ts (4 tests | 4 failed) 28ms
+   × replaces both solid wrappers exactly once without certifying remaining station facades 4ms
+   × preserves all original roof vertices in the common absolute datum 1ms
+   × opens the east bay while retaining the western ground-level solid 21ms
+   × keeps a visible recess behind transparent north glazing and opaque transoms in front 1ms
+ ❯ tests/station-service.test.ts (3 tests | 3 failed) 21ms
+   × replaces the facility once without duplicated C station shells 14ms
+   × retains every original shell/roof vertex without generic glass or glowing windows 4ms
+   × closes the gap below the original base at locally measured lower ground 1ms
+ ❯ tests/station-viaduct.test.ts (3 tests | 3 failed) 39ms
+   × replaces the source block once and has no duplicated C station shells 12ms
+   × preserves the original top and uses a transparent non-glowing safety-net approximation 23ms
+   × opens the lower span while preserving piers and their recorded absolute foot heights 2ms
+ ❯ tests/center-gai-gate.test.ts (3 tests | 3 failed) 23ms
+   × anchors both bases to measured C2a pavement in the common T.P.15 datum 15ms
+   × keeps the passage open at walking height while the posts remain collidable 5ms
+   × keeps the estimated footings clear of existing QFRONT and west-block wall surfaces 1ms
+ ❯ tests/station-north.test.ts (3 tests | 3 failed) 26ms
+   × replaces the northern facility and JR bridge once without duplicated C station shells 13ms
+   × retains original roof and complete JR-bridge vertices in the absolute datum 10ms
+   × opens the north platform above its original deck while retaining southern walls 1ms
+ ❯ tests/exterior.test.ts (4 tests | 1 failed) 63ms
+   × preserves protected Core and original tactile byte for byte 5ms
+ ❯ tests/exterior-marking.test.ts (2 tests | 2 failed) 34ms
+   × west white bars stay on exported roads rather than dropping to zero 24ms
+   × middle white bars stay on exported roads rather than dropping to zero 9ms
+ ❯ tests/tactile-links.test.ts (1 test | 1 failed) 37ms
+   × joins both plaza approaches through the junction without guide ribs crossing its warning surface 36ms
+ ❯ tests/terrain.test.ts (2 tests | 1 failed) 36ms
+   × keeps the exported terrain outside the protected original streets and covers the distant building feet with terrain or added streets 25ms
+ ❯ tests/budget.test.ts (0 test)
+ ❯ tests/plaza-facilities.test.ts (2 tests | 1 failed) 29ms
+   × uses 2025 OSM small footprints and recorded Core contacts instead of a default 9m tower 24ms
+ ❯ tests/paving.test.ts (0 test)
+ ❯ tests/magnet-asset.test.ts (0 test)
+ ❯ tests/ground.test.ts (0 test)
+ ❯ tests/context.test.ts (0 test)
+ ❯ tests/qfront-asset.test.ts (0 test)
+ ❯ tests/plaza-paving.test.ts (0 test)
+ ❯ tests/street.test.ts (0 test)
+ ❯ tests/neighbourhood.test.ts (6 tests | 3 failed) 972ms
+   × scramble-square replaces C once and retains surveyed roof coordinates 6ms
+   × station-southeast replaces C once and retains surveyed roof coordinates 1ms
+   × plaza-kiosk replaces C once and retains surveyed roof coordinates 1ms
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 8 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/budget.test.ts [ tests/budget.test.ts ]
+Error: ENOENT: no such file or directory, scandir 'assets/ground'
+ ❯ tests/budget.test.ts:26:18
+     24| const dirs: Record<string, string> = {};
+     25| for (const id of readdirSync('assets/buildings')) if (existsSync(join(…
+     26| for (const id of readdirSync('assets/ground')) if (existsSync(join('as…
+       |                  ^
+     27| if (existsSync('assets/street')) for (const id of readdirSync('assets/…
+     28| if (existsSync('assets/context')) for (const id of readdirSync('assets…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/64]⎯
+
+ FAIL  tests/context.test.ts [ tests/context.test.ts ]
+Error: ENOENT: no such file or directory, open 'assets/context/core/web/context_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/context.test.ts:8:17
+      6|
+      7| describe('C-level context asset', async () => {
+      8|   const root = (await new NodeIO().read('assets/context/core/web/conte…
+       |                 ^
+      9|   const stats = JSON.parse(readFileSync('assets/context/core/source/da…
+     10|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/64]⎯
+
+ FAIL  tests/ground.test.ts [ tests/ground.test.ts ]
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/ground.test.ts:11:17
+      9| const io = new NodeIO();
+     10| describe('Core ground asset', async () => {
+     11|   const root = (await io.read('assets/ground/core/web/ground_core.glb'…
+       |                 ^
+     12|   const parts: Record<string, { tris: number; ymin: number; ymax: numb…
+     13|   for (const node of root.listNodes()) {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/64]⎯
+
+ FAIL  tests/magnet-asset.test.ts [ tests/magnet-asset.test.ts ]
+Error: ENOENT: no such file or directory, open 'assets/buildings/magnet/web/magnet.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tris tests/magnet-asset.test.ts:8:17
+      6| const io = new NodeIO();
+      7| const tris = async (path: string) => {
+      8|   const root = (await io.read(path)).getRoot();
+       |                 ^
+      9|   let n = 0;
+     10|   for (const mesh of root.listMeshes()) for (const prim of mesh.listPr…
+ ❯ tests/magnet-asset.test.ts:32:18
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/64]⎯
+
+ FAIL  tests/paving.test.ts [ tests/paving.test.ts ]
+Error: ENOENT: no such file or directory, open 'assets/ground/core/source/data/paving_layout.json'
+ ❯ tests/paving.test.ts:6:27
+      4| import { Matrix4, Vector3 } from 'three';
+      5|
+      6| const config = JSON.parse(readFileSync('assets/ground/core/source/data…
+       |                           ^
+      7|
+      8| it('textures only the two dedicated paving materials and retains a por…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/64]⎯
+
+ FAIL  tests/plaza-paving.test.ts [ tests/plaza-paving.test.ts ]
+Error: ENOENT: no such file or directory, open 'assets/ground/core/source/data/plaza_paving_layout.json'
+ ❯ tests/plaza-paving.test.ts:8:27
+      6| import { MeshStandardMaterial } from 'three';
+      7|
+      8| const layout = JSON.parse(readFileSync('assets/ground/core/source/data…
+       |                           ^
+      9| const contains = (x: number,y: number) => {
+     10|   let inside = false;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/64]⎯
+
+ FAIL  tests/qfront-asset.test.ts [ tests/qfront-asset.test.ts ]
+Error: ENOENT: no such file or directory, open 'assets/buildings/qfront/web/qfront.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/qfront-asset.test.ts:9:15
+      7|
+      8| describe('QFRONT web asset', async () => {
+      9|   const doc = await new NodeIO().read(`${dir}/qfront.glb`);
+       |               ^
+     10|   const root = doc.getRoot();
+     11|
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/64]⎯
+
+ FAIL  tests/street.test.ts [ tests/street.test.ts ]
+Error: ENOENT: no such file or directory, open 'assets/street/core/web/street_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/street.test.ts:10:17
+      8|
+      9| describe('Core street asset', async () => {
+     10|   const root = (await new NodeIO().read('assets/street/core/web/street…
+       |                 ^
+     11|   const stats = JSON.parse(readFileSync('assets/street/core/source/dat…
+     12|   const history = JSON.parse(readFileSync('assets/street/core/source/d…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/64]⎯
+
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 56 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/center-gai-gate.test.ts > anchors both bases to measured C2a pavement in the common T.P.15 datum
+Error: ENOENT: no such file or directory, open 'assets/buildings/center-gai-gate/source/data/stats.json'
+ ❯ json tests/center-gai-gate.test.ts:7:43
+      5|
+      6| const base = 'assets/buildings/center-gai-gate/';
+      7| const json = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
+       |                                           ^
+      8| async function meshes(path: string, offset = 0) {
+      9|   const root = (await new NodeIO().read(path)).getRoot(), result: Mesh…
+ ❯ tests/center-gai-gate.test.ts:26:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/64]⎯
+
+ FAIL  tests/center-gai-gate.test.ts > keeps the passage open at walking height while the posts remain collidable
+Error: ENOENT: no such file or directory, open 'assets/buildings/center-gai-gate/web/center-gai-gate.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ meshes tests/center-gai-gate.test.ts:9:17
+      7| const json = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
+      8| async function meshes(path: string, offset = 0) {
+      9|   const root = (await new NodeIO().read(path)).getRoot(), result: Mesh…
+       |                 ^
+     10|   for (const node of root.listNodes()) for (const primitive of node.ge…
+     11|     const matrix = new Matrix4().fromArray(node.getWorldMatrix()), pos…
+ ❯ tests/center-gai-gate.test.ts:47:19
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/64]⎯
+
+ FAIL  tests/center-gai-gate.test.ts > keeps the estimated footings clear of existing QFRONT and west-block wall surfaces
+Error: ENOENT: no such file or directory, open 'assets/buildings/qfront/web/viewer.json'
+ ❯ json tests/center-gai-gate.test.ts:7:43
+      5|
+      6| const base = 'assets/buildings/center-gai-gate/';
+      7| const json = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
+       |                                           ^
+      8| async function meshes(path: string, offset = 0) {
+      9|   const root = (await new NodeIO().read(path)).getRoot(), result: Mesh…
+ ❯ tests/center-gai-gate.test.ts:66:22
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/64]⎯
+
+ FAIL  tests/drainage.test.ts > exports a solid textured-by-geometry cover without photographic texture or emission
+Error: ENOENT: no such file or directory, open 'assets/street/drainage/web/drainage.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/drainage.test.ts:17:15
+     15| });
+     16| it('exports a solid textured-by-geometry cover without photographic te…
+     17|   const root=(await new NodeIO().read('assets/street/drainage/web/drai…
+       |               ^
+     18|   expect(root.listMaterials()).toHaveLength(3);
+     19|   for (const m of root.listMaterials()) {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/64]⎯
+
+ FAIL  tests/drainage.test.ts > keeps exported cover vertices on the original road with documented 16–17 mm render offset
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/drainage.test.ts:25:33
+     23| });
+     24| it('keeps exported cover vertices on the original road with documented…
+     25|   const io=new NodeIO(),ground=(await io.read('assets/ground/core/web/…
+       |                                 ^
+     26|   for (const n of ground.listNodes()) {
+     27|     if (!n.getName().match(/^ground_(road|intersection)/)) continue;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[13/64]⎯
+
+ FAIL  tests/exterior-marking.test.ts > west white bars stay on exported roads rather than dropping to zero
+Error: ENOENT: no such file or directory, open 'assets/ground/exterior-west/web/exterior-west.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/exterior-marking.test.ts:5:14
+      3| import {Matrix4,Vector3,Mesh,BufferGeometry,Float32BufferAttribute,Mes…
+      4| for(const id of ['west','middle'])it(`${id} white bars stay on exporte…
+      5|  const root=(await new NodeIO().read(`assets/ground/exterior-${id}/web…
+       |              ^
+      6|  for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimi…
+      7|   const pos=p.getAttribute('POSITION')!,idx=p.getIndices()!,world=new …
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[14/64]⎯
+
+ FAIL  tests/exterior-marking.test.ts > middle white bars stay on exported roads rather than dropping to zero
+Error: ENOENT: no such file or directory, open 'assets/ground/exterior-middle/web/exterior-middle.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/exterior-marking.test.ts:5:14
+      3| import {Matrix4,Vector3,Mesh,BufferGeometry,Float32BufferAttribute,Mes…
+      4| for(const id of ['west','middle'])it(`${id} white bars stay on exporte…
+      5|  const root=(await new NodeIO().read(`assets/ground/exterior-${id}/web…
+       |              ^
+      6|  for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimi…
+      7|   const pos=p.getAttribute('POSITION')!,idx=p.getIndices()!,world=new …
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[15/64]⎯
+
+ FAIL  tests/exterior.test.ts > preserves protected Core and original tactile byte for byte
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ tests/exterior.test.ts:18:87
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[16/64]⎯
+
+ FAIL  tests/ginza-canopy.test.ts > replaces the source once while removing duplicated C station shells and recording inferred floor levels
+Error: ENOENT: no such file or directory, open 'assets/buildings/ginza-canopy/source/data/stats.json'
+ ❯ tests/ginza-canopy.test.ts:10:21
+      8|  expect(c.buildings.some((b:{id:string})=>b.id==='way/810356690')).toB…
+      9|  expect(c.buildings.filter((b:{group:string})=>b.group==='station')).t…
+     10|  const s=JSON.parse(readFileSync(base+'source/data/stats.json','utf8')…
+       |                     ^
+     11|  expect(JSON.parse(readFileSync(base+'web/viewer.json','utf8')).ground…
+     12| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[17/64]⎯
+
+ FAIL  tests/ginza-canopy.test.ts > retains all source roof vertices and a curved M frame below the upper deck
+Error: ENOENT: no such file or directory, open 'assets/buildings/ginza-canopy/web/ginza-canopy.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/ginza-canopy.test.ts:14:14
+     12| });
+     13| it('retains all source roof vertices and a curved M frame below the up…
+     14|  const root=(await new NodeIO().read(base+'web/ginza-canopy.glb')).get…
+       |              ^
+     15|  for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimi…
+     16|   const target=p.getMaterial()!.getName()==='gc_roof'?roof:p.getMateri…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[18/64]⎯
+
+ FAIL  tests/ginza-canopy.test.ts > opens the upper hall with transparent screen doors while retaining the lower base
+Error: ENOENT: no such file or directory, open 'assets/buildings/ginza-canopy/web/ginza-canopy.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/ginza-canopy.test.ts:27:14
+     25| });
+     26| it('opens the upper hall with transparent screen doors while retaining…
+     27|  const root=(await new NodeIO().read(base+'web/ginza-canopy.glb')).get…
+       |              ^
+     28|  const glass=root.listMaterials().find(m=>m.getName()==='gc_glass')!;e…
+     29|  try{
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[19/64]⎯
+
+ FAIL  tests/ginza-canopy.test.ts > uses the official new-station 12m platform design width in the shipped floor geometry
+Error: ENOENT: no such file or directory, open 'assets/buildings/ginza-canopy/web/ginza-canopy.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/ginza-canopy.test.ts:48:14
+     46|
+     47| it('uses the official new-station 12m platform design width in the shi…
+     48|  const root=(await new NodeIO().read(base+'web/ginza-canopy.glb')).get…
+       |              ^
+     49|  const length=Math.hypot(86.172,28.711);
+     50|  for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimi…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[20/64]⎯
+
+ FAIL  tests/hachiko.test.ts > exports the dog, plinth and readable plaque without emissive materials
+Error: ENOENT: no such file or directory, open 'assets/street/hachiko/web/hachiko.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/hachiko.test.ts:16:15
+     14|
+     15| it('exports the dog, plinth and readable plaque without emissive mater…
+     16|   const root=(await new NodeIO().read('assets/street/hachiko/web/hachi…
+       |               ^
+     17|   const names=root.listNodes().map(n=>n.getName());
+     18|   for (const name of ['street_hachiko','street_hachiko_dog','street_ha…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[21/64]⎯
+
+ FAIL  tests/hachiko.test.ts > anchors the exported plinth on the original sidewalk without floating and clears tactile tiles
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/hachiko.test.ts:24:28
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > mark-city preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/mark-city/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[23/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > shibuya109 preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/shibuya109/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[24/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > takagi preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/takagi/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[25/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > bic-camera preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/bic-camera/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[26/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > cine-tower preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/cine-tower/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[27/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > east-mixeduse preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/east-mixeduse/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[28/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > hikarie preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/hikarie/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[29/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > parco preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/parco/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[30/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > stream preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/stream/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[31/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > sakura-stage preserves its source roof and does not duplicate the C parent
+Error: ENOENT: no such file or directory, open 'assets/buildings/sakura-stage/source/data/plateau.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:7:46
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[32/64]⎯
+
+ FAIL  tests/nearby-buildings.test.ts > draws the shared Mark City parent once for both OSM names
+Error: ENOENT: no such file or directory, open 'assets/buildings/mark-city/source/data/layout.json'
+ ❯ json tests/nearby-buildings.test.ts:5:35
+
+ ❯ tests/nearby-buildings.test.ts:15:9
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[33/64]⎯
+
+ FAIL  tests/neighbourhood.test.ts > scramble-square replaces C once and retains surveyed roof coordinates
+Error: ENOENT: no such file or directory, open 'assets/buildings/scramble-square/source/data/plateau.json'
+ ❯ json tests/neighbourhood.test.ts:5:35
+      3| import {NodeIO} from '@gltf-transform/core';
+      4| import {Matrix4,Vector3} from 'three';
+      5| const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+       |                                   ^
+      6| for(const id of ['center244','quattro','scramble-square','fukuras','st…
+      7|   it(`${id} replaces C once and retains surveyed roof coordinates`,asy…
+ ❯ tests/neighbourhood.test.ts:8:44
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[34/64]⎯
+
+ FAIL  tests/neighbourhood.test.ts > station-southeast replaces C once and retains surveyed roof coordinates
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-southeast/source/data/plateau.json'
+ ❯ json tests/neighbourhood.test.ts:5:35
+      3| import {NodeIO} from '@gltf-transform/core';
+      4| import {Matrix4,Vector3} from 'three';
+      5| const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+       |                                   ^
+      6| for(const id of ['center244','quattro','scramble-square','fukuras','st…
+      7|   it(`${id} replaces C once and retains surveyed roof coordinates`,asy…
+ ❯ tests/neighbourhood.test.ts:8:44
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[35/64]⎯
+
+ FAIL  tests/neighbourhood.test.ts > plaza-kiosk replaces C once and retains surveyed roof coordinates
+Error: ENOENT: no such file or directory, open 'assets/buildings/plaza-kiosk/source/data/plateau.json'
+ ❯ json tests/neighbourhood.test.ts:5:35
+      3| import {NodeIO} from '@gltf-transform/core';
+      4| import {Matrix4,Vector3} from 'three';
+      5| const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
+       |                                   ^
+      6| for(const id of ['center244','quattro','scramble-square','fukuras','st…
+      7|   it(`${id} replaces C once and retains surveyed roof coordinates`,asy…
+ ❯ tests/neighbourhood.test.ts:8:44
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[36/64]⎯
+
+ FAIL  tests/paving-boundary.test.ts > partitions concave masks in both windings without losing area or changing sloped heights
+Error: Command failed: python3 -c 
+import sys
+sys.path.insert(0,'assets/ground/core/source/blender')
+from paving_boundary import partition
+
+def area(p):
+ return abs(sum(p[i-1][0]*p[i][1]-p[i][0]*p[i-1][1] for i in range(len(p)))/2)
+polygon=[(0,0),(2,0),(2,1),(1,1),(1,2),(0,2)]
+triangle=[(x,y,1+2*x-3*y) for x,y in [(-1,-1),(4,-1),(-1,4)]]
+for mask in [polygon,polygon[::-1]]:
+ pieces=partition(triangle,mask)
+ assert abs(sum(area(p) for p,_ in pieces)-12.5)<1e-8
+ assert abs(sum(area(p) for p,inside in pieces if inside)-3)<1e-8
+ for piece,inside in pieces:
+  for x,y,z in piece:assert abs(z-(1+2*x-3*y))<1e-8
+  x=sum(p[0] for p in piece)/len(piece);y=sum(p[1] for p in piece)/len(piece)
+  expected=(0<x<2 and 0<y<1) or (0<x<1 and 0<y<2)
+  assert inside==expected
+print('area and height preserved')
+
+Traceback (most recent call last):
+  File "<string>", line 4, in <module>
+ModuleNotFoundError: No module named 'paving_boundary'
+
+ ❯ tests/paving-boundary.test.ts:8:18
+      6|
+      7| it('partitions concave masks in both windings without losing area or c…
+      8|   const result = execFileSync('python3', ['-c', `
+       |                  ^
+      9| import sys
+     10| sys.path.insert(0,'assets/ground/core/source/blender')
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[37/64]⎯
+
+ FAIL  tests/paving-boundary.test.ts > clips actual paving triangle vertices to the mask instead of selecting crossing faces by centroid
+Error: ENOENT: no such file or directory, open 'assets/ground/core/source/data/plaza_paving_layout.json'
+ ❯ tests/paving-boundary.test.ts:32:42
+     30|
+     31| it('clips actual paving triangle vertices to the mask instead of selec…
+     32|   const polygon: number[][] = JSON.parse(readFileSync('assets/ground/c…
+       |                                          ^
+     33|   const inside = (x: number,y: number) => {
+     34|     let c=false, distance=Infinity;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[38/64]⎯
+
+ FAIL  tests/plaza-facilities.test.ts > uses 2025 OSM small footprints and recorded Core contacts instead of a default 9m tower
+Error: ENOENT: no such file or directory, open 'assets/street/plaza-facilities/source/data/layout.json'
+ ❯ json tests/plaza-facilities.test.ts:6:74
+      4| import {Group,Mesh,BoxGeometry,MeshStandardMaterial,Matrix4,Vector3} f…
+      5| import {loadFacilities} from '../src/world/facilities';
+      6| const base='assets/street/plaza-facilities/',json=(p:string)=>JSON.par…
+       |                                                                          ^
+      7| it('isolates failed loading and requires the actual facility mesh',asy…
+      8|  expect((await loadFacilities(async()=>{throw Error('missing')})).ok).…
+ ❯ tests/plaza-facilities.test.ts:14:10
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39/64]⎯
+
+ FAIL  tests/plaza.test.ts > uses original self-generated paving and the sidewalk look class
+Error: ENOENT: no such file or directory, open 'assets/street/plaza-finish/web/plaza-finish.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/plaza.test.ts:17:15
+     15| });
+     16| it('uses original self-generated paving and the sidewalk look class', …
+     17|   const root=(await new NodeIO().read('assets/street/plaza-finish/web/…
+       |               ^
+     18|   expect(root.listMaterials()).toHaveLength(1);
+     19|   const m=root.listMaterials()[0];expect(m.getEmissiveFactor()).toEqua…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[40/64]⎯
+
+ FAIL  tests/plaza.test.ts > keeps exported paving vertices on the original road with documented 1 mm render offset
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/plaza.test.ts:23:33
+     21| });
+     22| it('keeps exported paving vertices on the original road with documente…
+     23|   const io=new NodeIO(),ground=(await io.read('assets/ground/core/web/…
+       |                                 ^
+     24|   for (const n of ground.listNodes()) {
+     25|     if (!n.getName().startsWith('ground_sidewalk')) continue;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[41/64]⎯
+
+ FAIL  tests/projected-street.test.ts > keeps the actual experimental GLB finite and in the ground datum, with all six expected parts
+Error: ENOENT: no such file or directory, open 'assets/street/core/web/street_projected.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/projected-street.test.ts:36:17
+     34|
+     35| it('keeps the actual experimental GLB finite and in the ground datum, …
+     36|   const root = (await new NodeIO().read('assets/street/core/web/street…
+       |                 ^
+     37|   const names = [];
+     38|   for (const node of root.listNodes()) {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[42/64]⎯
+
+ FAIL  tests/station-concourse.test.ts > replaces both solid wrappers exactly once without certifying remaining station facades
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-concourse/source/data/parts.json'
+ ❯ tests/station-concourse.test.ts:7:25
+      5| const base='assets/buildings/station-concourse/';
+      6| it('replaces both solid wrappers exactly once without certifying remai…
+      7|  const parts=JSON.parse(readFileSync(base+'source/data/parts.json','ut…
+       |                         ^
+      8|  const context=JSON.parse(readFileSync('assets/context/core/source/dat…
+      9|  for(const part of parts){expect(context.buildings.some((b:{id:string}…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[43/64]⎯
+
+ FAIL  tests/station-concourse.test.ts > preserves all original roof vertices in the common absolute datum
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-concourse/source/data/parts.json'
+ ❯ tests/station-concourse.test.ts:18:25
+     16| });
+     17| it('preserves all original roof vertices in the common absolute datum'…
+     18|  const parts=JSON.parse(readFileSync(base+'source/data/parts.json','ut…
+       |                         ^
+     19|  const io=new NodeIO(),root=(await io.read(base+'web/station-concourse…
+     20|  const vertices:Vector3[]=[];
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[44/64]⎯
+
+ FAIL  tests/station-concourse.test.ts > opens the east bay while retaining the western ground-level solid
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-concourse/web/station-concourse.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/station-concourse.test.ts:31:30
+     29| });
+     30| it('opens the east bay while retaining the western ground-level solid'…
+     31|  const io=new NodeIO(),root=(await io.read(base+'web/station-concourse…
+       |                              ^
+     32|  const material=new MeshBasicMaterial({side:DoubleSide});
+     33|  try {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[45/64]⎯
+
+ FAIL  tests/station-concourse.test.ts > keeps a visible recess behind transparent north glazing and opaque transoms in front
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-concourse/web/station-concourse.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/station-concourse.test.ts:45:14
+     43| });
+     44| it('keeps a visible recess behind transparent north glazing and opaque…
+     45|  const root=(await new NodeIO().read(base+'web/station-concourse.glb')…
+       |              ^
+     46|  const glass=root.listMaterials().find(m=>m.getName()==='sc_glass')!;
+     47|  expect(glass.getAlphaMode()).toBe('BLEND');expect(glass.getBaseColorF…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[46/64]⎯
+
+ FAIL  tests/station-north.test.ts > replaces the northern facility and JR bridge once without duplicated C station shells
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-north/source/data/parts.json'
+ ❯ tests/station-north.test.ts:7:25
+      5| const base='assets/buildings/station-north/';
+      6| it('replaces the northern facility and JR bridge once without duplicat…
+      7|  const parts=JSON.parse(readFileSync(base+'source/data/parts.json','ut…
+       |                         ^
+      8|  const context=JSON.parse(readFileSync('assets/context/core/source/dat…
+      9|  for(const p of parts){expect(context.buildings.some((b:{id:string})=>…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[47/64]⎯
+
+ FAIL  tests/station-north.test.ts > retains original roof and complete JR-bridge vertices in the absolute datum
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-north/web/station-north.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/station-north.test.ts:15:14
+     13| });
+     14| it('retains original roof and complete JR-bridge vertices in the absol…
+     15|  const root=(await new NodeIO().read(base+'web/station-north.glb')).ge…
+       |              ^
+     16|  for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimi…
+     17|   const a=p.getAttribute('POSITION')!,matrix=new Matrix4().fromArray(n…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[48/64]⎯
+
+ FAIL  tests/station-north.test.ts > opens the north platform above its original deck while retaining southern walls
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-north/web/station-north.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/station-north.test.ts:27:14
+     25| });
+     26| it('opens the north platform above its original deck while retaining s…
+     27|  const root=(await new NodeIO().read(base+'web/station-north.glb')).ge…
+       |              ^
+     28|  try{
+     29|   for(const n of root.listNodes())for(const prim of n.getMesh()?.listP…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[49/64]⎯
+
+ FAIL  tests/station-service.test.ts > replaces the facility once without duplicated C station shells
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-service/source/data/parts.json'
+ ❯ tests/station-service.test.ts:7:25
+      5| const base='assets/buildings/station-service/';
+      6| it('replaces the facility once without duplicated C station shells',()…
+      7|  const parts=JSON.parse(readFileSync(base+'source/data/parts.json','ut…
+       |                         ^
+      8|  const context=JSON.parse(readFileSync('assets/context/core/source/dat…
+      9|  const id=parts[0].id;expect(context.buildings.some((b:{id:string})=>b…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[50/64]⎯
+
+ FAIL  tests/station-service.test.ts > retains every original shell/roof vertex without generic glass or glowing windows
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-service/web/station-service.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/station-service.test.ts:15:14
+     13| });
+     14| it('retains every original shell/roof vertex without generic glass or …
+     15|  const root=(await new NodeIO().read(base+'web/station-service.glb')).…
+       |              ^
+     16|  for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimi…
+     17|   const target=p.getMaterial()!.getName()==='ss_scaffold'?scaffold:ver…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[51/64]⎯
+
+ FAIL  tests/station-service.test.ts > closes the gap below the original base at locally measured lower ground
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-service/source/data/stats.json'
+ ❯ tests/station-service.test.ts:30:25
+     28| });
+     29| it('closes the gap below the original base at locally measured lower g…
+     30|  const stats=JSON.parse(readFileSync(base+'source/data/stats.json','ut…
+       |                         ^
+     31|  expect(stats.ground_samples.length).toBeGreaterThan(40);expect(stats.…
+     32|  const sample=stats.ground_samples.filter((p:{tp:number})=>p.tp<15.35&…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[52/64]⎯
+
+ FAIL  tests/station-viaduct.test.ts > replaces the source block once and has no duplicated C station shells
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-west-viaduct/source/data/parts.json'
+ ❯ tests/station-viaduct.test.ts:7:22
+      5| const base='assets/buildings/station-west-viaduct/';
+      6| it('replaces the source block once and has no duplicated C station she…
+      7|  const id=JSON.parse(readFileSync(base+'source/data/parts.json','utf8'…
+       |                      ^
+      8|  const c=JSON.parse(readFileSync('assets/context/core/source/data/cont…
+      9|  expect(c.buildings.some((b:{id:string})=>b.id===id)).toBe(false);expe…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[53/64]⎯
+
+ FAIL  tests/station-viaduct.test.ts > preserves the original top and uses a transparent non-glowing safety-net approximation
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-west-viaduct/web/station-west-viaduct.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/station-viaduct.test.ts:14:14
+     12| });
+     13| it('preserves the original top and uses a transparent non-glowing safe…
+     14|  const root=(await new NodeIO().read(base+'web/station-west-viaduct.gl…
+       |              ^
+     15|  for(const n of root.listNodes())for(const p of n.getMesh()?.listPrimi…
+     16|   if(p.getMaterial()!.getName()!=='wv_top')continue;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[54/64]⎯
+
+ FAIL  tests/station-viaduct.test.ts > opens the lower span while preserving piers and their recorded absolute foot heights
+Error: ENOENT: no such file or directory, open 'assets/buildings/station-west-viaduct/web/station-west-viaduct.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/station-viaduct.test.ts:29:14
+     27| });
+     28| it('opens the lower span while preserving piers and their recorded abs…
+     29|  const root=(await new NodeIO().read(base+'web/station-west-viaduct.gl…
+       |              ^
+     30|  try{
+     31|   for(const n of root.listNodes())for(const prim of n.getMesh()?.listP…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[55/64]⎯
+
+ FAIL  tests/surround.test.ts > exports stone, inclined metal rails, shrubs and the stone panel without photo texture or invented lighting
+Error: ENOENT: no such file or directory, open 'assets/street/hachiko-surround/web/hachiko-surround.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/surround.test.ts:13:14
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[56/64]⎯
+
+ FAIL  tests/surround.test.ts > keeps exported stone bases on the sidewalk and new footprints clear of the statue and tactile route
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/surround.test.ts:18:27
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[57/64]⎯
+
+ FAIL  tests/tactile-links.test.ts > joins both plaza approaches through the junction without guide ribs crossing its warning surface
+Error: ENOENT: no such file or directory, open 'assets/street/tactile/web/tactile.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/tactile-links.test.ts:8:15
+      6|
+      7| it('joins both plaza approaches through the junction without guide rib…
+      8|   const root=(await new NodeIO().read('assets/street/tactile/web/tacti…
+       |               ^
+      9|   const triangles: number[][][]=[];
+     10|   for (const n of root.listNodes()) for (const p of n.getMesh()?.listP…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[58/64]⎯
+
+ FAIL  tests/tactile-supplement.test.ts > drapes both exported supplements to the original sidewalk and connects six modeled open ends
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ meshes tests/tactile-supplement.test.ts:8:102
+
+ ❯ tests/tactile-supplement.test.ts:16:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[59/64]⎯
+
+ FAIL  tests/tactile-supplement.test.ts > closes the rear of both modeled stone planting segments
+Error: ENOENT: no such file or directory, open 'assets/street/hachiko-surround/web/hachiko-surround.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ meshes tests/tactile-supplement.test.ts:8:102
+
+ ❯ tests/tactile-supplement.test.ts:26:14
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[60/64]⎯
+
+ FAIL  tests/tactile.test.ts > exports yellow unlit-by-emission tactile surfaces in the furniture class
+Error: ENOENT: no such file or directory, open 'assets/street/tactile/web/tactile.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/tactile.test.ts:18:15
+     16|
+     17| it('exports yellow unlit-by-emission tactile surfaces in the furniture…
+     18|   const root=(await new NodeIO().read('assets/street/tactile/web/tacti…
+       |               ^
+     19|   const m=root.listMaterials()[0];
+     20|   expect(m.getEmissiveFactor()).toEqual([0,0,0]);expect(m.getBaseColor…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[61/64]⎯
+
+ FAIL  tests/tactile.test.ts > keeps exported tactile vertices on the existing sidewalk with 2–7 mm relief
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/tactile.test.ts:26:33
+     24|
+     25| it('keeps exported tactile vertices on the existing sidewalk with 2–7 …
+     26|   const io=new NodeIO(),ground=(await io.read('assets/ground/core/web/…
+       |                                 ^
+     27|   for (const n of ground.listNodes()) {
+     28|     if (!n.getName().startsWith('ground_sidewalk')) continue;
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[62/64]⎯
+
+ FAIL  tests/tactile.test.ts > keeps warning and guide footprints clear of existing pole bases
+Error: ENOENT: no such file or directory, open 'assets/street/tactile/source/data/stats.json'
+ ❯ tests/tactile.test.ts:51:26
+     49|
+     50| it('keeps warning and guide footprints clear of existing pole bases', …
+     51|   const tiles=JSON.parse(readFileSync('assets/street/tactile/source/da…
+       |                          ^
+     52|   const poles=JSON.parse(readFileSync('assets/street/core/source/data/…
+     53|   for (const t of tiles) for (const p of poles) {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[63/64]⎯
+
+ FAIL  tests/terrain.test.ts > keeps the exported terrain outside the protected original streets and covers the distant building feet with terrain or added streets
+Error: ENOENT: no such file or directory, open 'assets/ground/core/web/ground_core.glb'
+ ❯ NodeIO.readAsJSON ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:111:16
+ ❯ NodeIO.read ../../west_integration/node_modules/@gltf-transform/core/src/io/platform-io.ts:106:30
+ ❯ tests/terrain.test.ts:13:34
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[64/64]⎯
+
+
+ Test Files  29 failed | 10 passed (39)
+      Tests  56 failed | 63 passed (119)
+   Start at  00:45:02
+   Duration  5.44s (tests 41%, transform 29%, import 27%, worker 3%)
+
+  Transform  transforming modules took 5.06s · 29% of tracked time, re-done on every run
+             persist transforms across runs with fsModuleCache: true
+             learn more: https://vitest.dev/guide/improving-performance#caching-between-reruns
+
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice

@@ -2,33 +2,33 @@
   "id": "fukuras",
   "source_id": "way/55588118",
   "level": "B",
-  "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery",
+  "status": "bounded October2025 photo-guided facade; dimensions estimated; hidden and upper service facades inherited approximation",
   "stats": {
-    "triangles": 13199,
-    "primitives": 8,
-    "bytes": 781556
+    "triangles": 12231,
+    "primitives": 13,
+    "bytes": 1046328
   },
-  "generator": "tools/core/build_facade.py",
+  "generator": "assets/buildings/fukuras/source/blender/build.py",
   "files": {
     "README.md": {
-      "bytes": 1626,
-      "sha256": "4deabc1ee94923513621befffd6d00600a0e18d5a98867cc4d67617a41629a2a"
+      "bytes": 2298,
+      "sha256": "a20701249172464bd435da807283c1b3fad51c04b1fe5db4e171988ea705ede5"
     },
     "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+      "bytes": 12013,
+      "sha256": "f407cbfb43db3d088cafe15d3fccf2e4e1e29e89c4cb7447ffaba84854ecf7f5"
     },
     "source/data/layout.json": {
-      "bytes": 456,
-      "sha256": "c8712b2317a1169f3127c5611de0c31a8dc8f15e153bfe7760ed7bd5f797eddd"
+      "bytes": 756,
+      "sha256": "641291e87d215811f1cc65bbe9979fe4008b6bbb727cb1a254da3241b3d76996"
     },
     "source/data/plateau.json": {
       "bytes": 64691,
       "sha256": "a7ab8db419a3551440f2daa3371dc66b8b07314f7cc7ded67922a1e769df0b82"
     },
     "source/data/stats.json": {
-      "bytes": 14177,
-      "sha256": "85a59470d7a73c7875d54b0375c4f2ec2d0f8b4f056020615cab19df76e674e5"
+      "bytes": 17314,
+      "sha256": "cf098fb1a5e512fd0a2a2a584ee4821968be1b9a3f5502350f7aa124812ecd0d"
     },
     "source/refs/SOURCES.md": {
       "bytes": 528,
@@ -51,12 +51,52 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/fukuras.glb": {
-      "bytes": 781556,
-      "sha256": "e25a48ed0f4792088de9e5dfed71db2249e5a7b95f71b9d7cf866bde6a8069bb"
+      "bytes": 1046328,
+      "sha256": "accdfc0288c42caa6ef956d63cc6be4196bee54be39b57dd5f4a95097dfb3a3d"
     },
     "web/viewer.json": {
       "bytes": 195,
       "sha256": "c79a55ab50f9cf269c611140a51e34c8495e0089dfeecd571f6e93795121915f"
+    },
+    "source/blender/fukuras.blend": {
+      "bytes": 1941228,
+      "sha256": "10bac8313970be32bd6e3357d15621d494fb7640119e5d3eddaa803ab30f0be4"
+    },
+    "source/data/baseline.glb": {
+      "bytes": 781556,
+      "sha256": "e25a48ed0f4792088de9e5dfed71db2249e5a7b95f71b9d7cf866bde6a8069bb"
+    },
+    "source/data/baseline_stats.json": {
+      "bytes": 14178,
+      "sha256": "3e17e34410f830c9e47c5617368205c5eb01ba43e4dd1072e51f2ae6cdd261be"
+    },
+    "source/data/facade_map.json": {
+      "bytes": 352959,
+      "sha256": "516eedb806888683eedd37c3046a84aae74f75fb7517e0ca0fb249d770f68272"
+    },
+    "source/refs/FIDELITY_SOURCES.md": {
+      "bytes": 2999,
+      "sha256": "e0647b6f519067115eb471072813219f108a2e86e6e342c3194e8cc7d9cccca9"
+    },
+    "source/refs/OCT10-north-actual-crop.jpg": {
+      "bytes": 25801,
+      "sha256": "2b67fa46cc1e0251938d766952b223f7fd48e790d0a85006123aafec51e2838e"
+    },
+    "source/refs/OCT11-facade-actual-crop.jpg": {
+      "bytes": 51423,
+      "sha256": "4ad8857ccdce0382e396e464e2bf924acb3b86119f6d2896fe5e71973ecbe8cb"
+    },
+    "source/refs/OCT11-podium-actual-crop.jpg": {
+      "bytes": 16358,
+      "sha256": "37088fbc374daf4b398aef7f5b7198c2fb6fcfc47b01a086a4ea0bd424fee4f1"
+    },
+    "source/refs/OCT18-north-actual-crop.jpg": {
+      "bytes": 18551,
+      "sha256": "83598567631a40372beb7d9d69ce0365d7142865cf184f11417aa1ca5daba4d0"
+    },
+    "source/refs/SEP30-northeast-actual-crop.jpg": {
+      "bytes": 77553,
+      "sha256": "c1e9def335f22048734a0785eac29bcdc3dda00a55a60c672fbac001098f08f7"
     }
   }
 }

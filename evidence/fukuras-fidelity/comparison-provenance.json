@@ -1,0 +1,31 @@
+{
+  "photo": {
+    "author": "Mikagekawase",
+    "date": "2025-10-11",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://commons.wikimedia.org/wiki/File:渋谷区_渋谷駅_東急東横デパート撤去後_20251011.jpg",
+    "crop_box_original_thumbnail": [
+      495,
+      0,
+      870,
+      399
+    ]
+  },
+  "render_glb_sha256": "accdfc0288c42caa6ef956d63cc6be4196bee54be39b57dd5f4a95097dfb3a3d",
+  "operations": "Unretouched actual photo crop and frozen actual renders, aspect-preserving resizing and labels only. No generated image content. Photo direction approximate, not calibrated.",
+  "files": [
+    {
+      "path": "/workspace/shared/fukuras_research/refs/OCT11-facade-actual-crop.jpg",
+      "sha256": "4ad8857ccdce0382e396e464e2bf924acb3b86119f6d2896fe5e71973ecbe8cb"
+    },
+    {
+      "path": "/workspace/shared/fukuras_fidelity/overlay/evidence/fukuras-fidelity/photo_oct11-before.png",
+      "sha256": "327b7f524ab178940bcf493fd204df770d45e8c93a35ae91d88d61c38cf32e2f"
+    },
+    {
+      "path": "/workspace/shared/fukuras_fidelity/overlay/evidence/fukuras-fidelity/photo_oct11-after.png",
+      "sha256": "1ea2e5bb9c00c45de8611bb7513b93bffa31ba7b9de1b60745c5919c633831eb"
+    }
+  ]
+}
