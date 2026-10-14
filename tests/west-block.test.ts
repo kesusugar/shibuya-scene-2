@@ -103,9 +103,11 @@ it('keeps the revised curved and planar signs on their specified surfaces and vi
     }
    }
   }
-  // Full-asset east extent is 2.3075m beyond PLATEAU (baseline already 2.1756m).
+  // Full-asset east extent is 2.282516m beyond PLATEAU. The photo-aligned ground
+  // canopy removes the prior eastmost radial vertex (-32.510506 at z=1.93m),
+  // shrinking the envelope by 24.978mm. Unchanged rooftop metal is now eastmost.
   // Keep a millimetre-scale regression guard, not a broad allowance for any sign.
-  expect(wholeEast).toBeCloseTo(-32.510506,3);
+  expect(wholeEast).toBeCloseTo(-32.535484,3);
   for (const s of surfaces) {
    const points = seen.get('west_sign_'+s.name)!;
    expect(points, s.name+' missing').toBeDefined();
