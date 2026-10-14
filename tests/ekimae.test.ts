@@ -48,9 +48,15 @@ it('renders roof and restaurant signs in front of the replacement shell within t
   const c=JSON.parse(readFileSync('assets/street/core/web/projected.json','utf8')).camera.pos,origin=new Vector3(c[0],c[2],-c[1]);
   for(const [name,height] of [['samsung',config.rooftop.center_height_m],['gusto',22.75]] as [string,number][]){
    // Target the real NE rounded facade, not the old misassigned south-east return.
-   const angle=40*Math.PI/180,r=8.72+(name==='samsung'?.26:.44);
+   for(const degrees of (name==='gusto'?[20,40,60,80]:[40])){
+   const angle=degrees*Math.PI/180,r=8.72+(name==='samsung'?.26:.44);
    const target=new Vector3(-47.25+r*Math.cos(angle),height+hints.groundElevationTP-15,19.25-r*Math.sin(angle));
-   expect(new Raycaster(origin,target.sub(origin).normalize()).intersectObjects(meshes,false)[0]?.object.name).toBe('ek_sign_'+name);
+   // Keep the original projected-camera 40-degree check. Additional Gusto points
+   // use short outward-normal rays: the high photo camera legitimately self-occludes
+   // far curve points behind the nearer upper floor.
+   const probeOrigin=(name==='gusto' && degrees!==40)?target.clone().add(new Vector3(Math.cos(angle),0,-Math.sin(angle)).multiplyScalar(5)):origin;
+   expect(new Raycaster(probeOrigin,target.sub(probeOrigin).normalize()).intersectObjects(meshes,false)[0]?.object.name).toBe('ek_sign_'+name);
+   }
   }
  } finally {for(const mesh of meshes)mesh.geometry.dispose();material.dispose();}
 });
@@ -69,4 +75,16 @@ it('matches the manufacturer-confirmed Samsung developed width and height',async
  const bottom=new Map<number,Vector3>();for(const {u,p} of points)if(Math.abs(p.y-low)<1e-4)bottom.set(u,p);
  const ordered=[...bottom].sort((a,b)=>a[0]-b[0]);let width=0;for(let i=1;i<ordered.length;i++)width+=ordered[i][1].distanceTo(ordered[i-1][1]);
  expect(Math.abs(width-21.6)).toBeLessThan(.03);
+});
+
+it('rectifies the three floors with common full-height facade correspondences',()=>{
+ const a=JSON.parse(readFileSync(base+'source/data/facades.json','utf8')).restaurant_alignment;
+ expect(a.bands.map((b:{name:string})=>b.name)).toEqual(['shabu','francais','gusto']);
+ expect(a.bands[0].z0).toBe(a.bands[1].z1);expect(a.bands[1].z0).toBe(a.bands[2].z1);
+ expect(a.face_quads_px.front[1]).toEqual(a.face_quads_px.return[0]);
+ expect(a.face_quads_px.front[2]).toEqual(a.face_quads_px.return[3]);
+ expect(a.face_split_u).toBeCloseTo(682/1024,8);
+ expect(a.bands[0].rectified_lower_y_at_u_knots).toEqual(a.bands[1].rectified_upper_y_at_u_knots);
+ expect(a.bands[1].rectified_lower_y_at_u_knots).toEqual(a.bands[2].rectified_upper_y_at_u_knots);
+ for(const band of a.bands){expect(band.rectified_upper_y_at_u_knots).toHaveLength(3);expect(band.rectified_lower_y_at_u_knots).toHaveLength(3);}
 });
