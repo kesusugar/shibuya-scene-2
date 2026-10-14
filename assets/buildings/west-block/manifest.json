@@ -2,7 +2,7 @@
   "id": "west-block",
   "source_id": "way/136690966",
   "level": "B",
-  "status": "Photo-fidelity revision candidate: original measured anchor and source shell preserved, facade/overhang dimensions inferred; January2025 signs; full-scene validation pending",
+  "status": "Ground storefront fidelity revision: asymmetric Taiseido opening and plane-aligned blue awnings, pale corner wedge; dimensions inferred, January signs and PLATEAU anchors retained",
   "sign_era": "2025-01-31",
   "sources": [
     "source/data/plateau.json",
@@ -12,22 +12,22 @@
     "source/data/rakuten_boundary_landmarks.json"
   ],
   "stats": {
-    "triangles": 7602,
-    "primitives": 35,
-    "bytes": 1056140
+    "bytes": 1064108,
+    "triangles": 7730,
+    "primitives": 35
   },
   "files": {
     "README.md": {
-      "bytes": 5506,
-      "sha256": "c93ead6ad85f8432573b2f82f1552fa85abbce96a37aae0d3f64bdadf36f6ee3"
+      "bytes": 5756,
+      "sha256": "09112df9dc74537b748a061e9deff4949f70d12e9853d60e807bf548957cd511"
     },
     "source/blender/build_west.py": {
-      "bytes": 15232,
-      "sha256": "14603fcdfb793c9ba2ed2fcc64b328c3e0a3b15bf941e71b3e722025baa9e00c"
+      "bytes": 15223,
+      "sha256": "2a1e2ea618eec5eb95d175621352ee9c02ad10ab7d10cd7f0485778f3cee08cd"
     },
     "source/blender/corner_fidelity.py": {
-      "bytes": 3658,
-      "sha256": "315088f30e1384dd1652fadc73f20f18c0cae06795df748084a2abf3fef767f9"
+      "bytes": 6110,
+      "sha256": "00e1f92411530b7548ec587dd053740437c897b76efe579717ef3108ac3edb01"
     },
     "source/blender/facade_fidelity.py": {
       "bytes": 7339,
@@ -37,9 +37,13 @@
       "bytes": 2293,
       "sha256": "c87b7b1b2e13155b84afe08d5232d5dd270eca4a0f7cb36b6a3441c55c63510b"
     },
+    "source/blender/render_storefront_evidence.py": {
+      "bytes": 2295,
+      "sha256": "75db9e6edca7e80f26d0b6b687b5944cbe840d42fbf51cee0776a1d2d11e2d59"
+    },
     "source/blender/west-block.blend": {
-      "bytes": 2631620,
-      "sha256": "50a98989c838e9517bbb212a7edef29f3ce0e6bd21db83b72f773183a87f7b74"
+      "bytes": 2642504,
+      "sha256": "0a291ba221a1bfc6b06d850a74b0e3df4ce1c6d3cf4fc54f0bf3a51e5b12247d"
     },
     "source/data/facades.json": {
       "bytes": 6562,
@@ -71,7 +75,11 @@
     },
     "source/data/stats.json": {
       "bytes": 6364,
-      "sha256": "8a406fc9152d7c63a8cf3ed3a661b6c4d1f56b8f4cf2bf859f2f93afbc116448"
+      "sha256": "49ecbeb3018a69b267fe53691ff8b9adfc1b914e5aa08038f2967de45c2ee25f"
+    },
+    "source/data/storefront_validation.json": {
+      "bytes": 859,
+      "sha256": "3bd1e6c7f3f2b502f4d4463f36ca80a68eb367a1f5d0b05e7fcecbc9450b1254"
     },
     "source/data/view_fit.json": {
       "bytes": 316,
@@ -218,8 +226,8 @@
       "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
     },
     "web/west-block.glb": {
-      "bytes": 539376,
-      "sha256": "7b21d6978bf1a0580207031120be9e9caeb54a96e241eda0e788e49108a0b5b1"
+      "bytes": 547344,
+      "sha256": "ea60ca2848e1ecc981dc2bf42d9de389d52e3b36b97d17357edc621da82ccb16"
     }
   }
 }

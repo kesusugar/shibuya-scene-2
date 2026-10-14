@@ -63,3 +63,6 @@ blender -b -t 4 -P assets/buildings/west-block/source/blender/render_evidence.py
 Blender4.2.3実行、GLB出力、画像の目視確認、同じカメラの前後比較、有限座標・三角形/プリミティブ/容量、再生成の同一性を確認する。`npm test`、`npm run build`、実シーンへの同期・全体描画、オーナーPCでのFPSはこの限定スナップショットでは未実施。技術予算に収まることを写真品質の合格と同一視しない。
 
 現出力は建築7,526三角形/20プリミティブ、1月看板76三角形/15プリミティブ、合計7,602三角形/35プリミティブ/1,056,140 bytes。既存B予算120,000三角形/40プリミティブ/3,000,000 bytes内。独立したBlender4.2.3再生成で5つのweb出力がバイト一致。これらは技術検証であり写真品質の合格判定ではない。
+
+## Ground storefront revision
+Taiseido ground-only asymmetric solid/recessed storefront and plane-aligned blue awnings with exposed pale corner wedge; see docs/core/WEST_STOREFRONT_FIDELITY_REPORT.md. Upper facade and January sign images unchanged.

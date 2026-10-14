@@ -96,7 +96,7 @@ def arc(name,z,w,h,layer='base',radius=R,center_angle=None):
   face(name,pts,[(i/24,0),((i+1)/24,0),((i+1)/24,1),(i/24,1)],layer)
 body=corner['body_height_m'];ws,hs=corner['width_scale'],corner['height_scale']
 # Cut out true planar bookshop/DMM casings; curved body cannot remain in front of their facets.
-for bottom,top in [(0,2.14),(3.86,4.49),(11.51,body)]:
+for bottom,top in [(3.86,4.49),(11.51,body)]:
  arc('west_wall_corner_body',(bottom+top)/2,8*ws,top-bottom)
 # Horizontal louvres of the grey band between the Rakuten and DMM screens (WB01/WB02), drawn just proud of the body.
 sc=corner['screen_centers_m'];lo=sc['dmm']+corner['dmm_height_m']/2+.15;hi=sc['rakuten']-corner['rakuten_height_m']/2-.15

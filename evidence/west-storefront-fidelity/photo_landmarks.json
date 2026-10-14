@@ -1,0 +1,113 @@
+{
+  "purpose": "Twelve manually identified stable architectural landmarks across Jan31 and Feb07; not a camera calibration or fitted residual benchmark.",
+  "landmarks": [
+    {
+      "photo": "WB01",
+      "landmark": "sign lower hinge",
+      "pixel_xy": [
+        1617.2,
+        2225.6
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB01",
+      "landmark": "canopy back hinge",
+      "pixel_xy": [
+        1616.4,
+        2233.1
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB01",
+      "landmark": "left canopy outer leading corner",
+      "pixel_xy": [
+        1456.0,
+        2242.4
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB01",
+      "landmark": "right canopy outer leading corner",
+      "pixel_xy": [
+        1811.2,
+        2227.0
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB01",
+      "landmark": "right entrance upper left",
+      "pixel_xy": [
+        1674.9,
+        2260.8
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB01",
+      "landmark": "pale corner foot",
+      "pixel_xy": [
+        1642.6,
+        2348.8
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB02",
+      "landmark": "sign lower hinge",
+      "pixel_xy": [
+        2164.9,
+        967.0
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB02",
+      "landmark": "canopy back hinge",
+      "pixel_xy": [
+        2163.6,
+        975.7
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB02",
+      "landmark": "left canopy outer leading corner",
+      "pixel_xy": [
+        2002.1,
+        960.3
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB02",
+      "landmark": "right canopy outer leading corner",
+      "pixel_xy": [
+        2334.2,
+        975.0
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB02",
+      "landmark": "right entrance upper left",
+      "pixel_xy": [
+        2202.8,
+        1010.8
+      ],
+      "read_uncertainty_px": 5
+    },
+    {
+      "photo": "WB02",
+      "landmark": "pale corner foot",
+      "pixel_xy": [
+        2174.2,
+        1082.4
+      ],
+      "read_uncertainty_px": 5
+    }
+  ]
+}

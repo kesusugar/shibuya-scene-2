@@ -1,0 +1,34 @@
+{
+  "metric": "Plan-distance from storefront outer frame endpoints to corresponding unchanged sign-plane endpoints. This is model consistency, NOT calibrated photo reprojection accuracy.",
+  "before_endpoint_errors_m": [
+    1.1036204211473648,
+    1.137215129199693,
+    3.7643497029065816,
+    1.426864147559777
+  ],
+  "before_mean_m": 1.858012350203354,
+  "after_endpoint_errors_m": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "after_mean_m": 0,
+  "before_canopy_back_corner_gap_m": 4.349064210325967,
+  "after_canopy_back_corner_gap_m": 0,
+  "reference_planes_m": [
+    [
+      -39.573866205908814,
+      25.049140873000304
+    ],
+    [
+      -35.50348696414702,
+      26.724869813719128
+    ],
+    [
+      -33.44856480991311,
+      33.720446246385656
+    ]
+  ],
+  "inference": "Existing sign geometry is the common anchor, not surveyed truth; its geographic error is not estimated here."
+}

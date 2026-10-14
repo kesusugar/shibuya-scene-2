@@ -1,0 +1,35 @@
+{
+  "assets": {
+    "west-block.glb": {
+      "bytes": 547344,
+      "sha256": "ea60ca2848e1ecc981dc2bf42d9de389d52e3b36b97d17357edc621da82ccb16",
+      "triangles": 7654,
+      "primitives": 20
+    },
+    "signs-2025-01.glb": {
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386",
+      "triangles": 76,
+      "primitives": 15
+    }
+  },
+  "combined": {
+    "bytes": 1064108,
+    "triangles": 7730,
+    "primitives": 35
+  },
+  "budget_limits": {
+    "bytes": 3000000,
+    "triangles": 120000,
+    "primitives": 40
+  },
+  "budget_pass": true,
+  "preservation": {
+    "source/data/plateau.json": true,
+    "source/data/ground_measurements.json": true,
+    "source/data/facades.json": true,
+    "web/signs-2025-01.glb": true,
+    "web/viewer.json": true,
+    "source/blender/facade_fidelity.py": true
+  }
+}

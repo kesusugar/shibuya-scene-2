@@ -27,18 +27,67 @@ for pa,pb in [(dleft,dhinge),(dhinge,dright)]:
   p=pa.lerp(pb,(i+.5)/6);p.z=zd-hd/2-.22
   box(p+out*.25,(.08,.58,.07),'west_frame',ang)
   box(p+out*.48+Vector((0,0,.12)),(.23,.20,.21),'west_metal_edge',ang)
-# Ground-level bookshop: visible paired storefronts below the curved title, blue folded awning and pale door frames.
-for a in [MID-.44,MID+.40]:
- nr=Vector((math.cos(a),math.sin(a),0));tv=Vector((-nr.y,nr.x,0));q=Vector((CX,CY,1.10))+nr*(R+.02)
- for u in [-1.1,0,1.1]:
-  p=q+tv*u;box(p,(.08,.08,2.15),'west_metal_edge')
- face('west_shop_glass',[q-tv*1.1-Vector((0,0,1.05)),q+tv*1.1-Vector((0,0,1.05)),q+tv*1.1+Vector((0,0,1.05)),q-tv*1.1+Vector((0,0,1.05))])
- for z in [.1,2.15]:
-  p=q.copy();p.z=z;box(p,(2.3,.08,.08),'west_metal_edge',a+math.pi/2)
- # sloping blue canopy wraps each of the two door planes rather than the unrelated southern frontage
- p=q+Vector((0,0,1.15));a1=p-tv*1.2;b1=p+tv*1.2
- face('west_book_awning',[a1,b1,b1+nr*.95-Vector((0,0,.32)),a1+nr*.95-Vector((0,0,.32))])
- face('west_book_awning',[a1+nr*.95-Vector((0,0,.32)),b1+nr*.95-Vector((0,0,.32)),b1+nr*.95-Vector((0,0,.48)),a1+nr*.95-Vector((0,0,.48))])
+# Ground storefronts: WB01 Jan31 and WB02 Feb07 resolve asymmetric solid/open faces.
+# Use the same endpoints as the unchanged lettering and DMM planes, never radial floating bays.
+# Dimensions below are inferred from visible proportions; no hidden interior or product graphics.
+Z=Vector((0,0,1))
+def shop_basis(a,b):
+ tangent=(b-a).normalized();normal=Vector((tangent.y,-tangent.x,0))
+ return tangent,normal,(b-a).length
+
+def shop_face(a,b,u0,u1,z0,z1,material,depth=0):
+ tv,nv,w=shop_basis(a,b)
+ p=a+tv*(w*u0)+nv*depth;q=a+tv*(w*u1)+nv*depth
+ face(material,[p+Z*z0,q+Z*z0,q+Z*z1,p+Z*z1])
+
+def shop_solid(a,b,u0,u1,z0,z1,material,depth=.08,offset=0):
+ tv,nv,w=shop_basis(a,b);q=a+tv*(w*(u0+u1)/2)+nv*offset+Z*((z0+z1)/2)
+ box(q,(w*(u1-u0),depth,z1-z0),material,math.atan2(tv.y,tv.x))
+
+# Left: broad pale shutter/panel field, shadowed upper strip, broad corner jamb.
+a,b=dleft,dhinge
+shop_solid(a,b,0,1,.02,2.20,'west_tile_trim',.18,-.09)
+shop_face(a,b,.10,.83,1.42,2.06,'west_frame',.012)
+shop_solid(a,b,.12,.82,.06,1.43,'west_tile_trim',.09,.025)
+for u in [.10,.46,.83]:shop_solid(a,b,u,u+.014,.05,2.13,'west_metal_edge',.07,.06)
+# Photos resolve broad pale panels, not evenly spaced shutter slats.
+# Corner's pale pier continues down from the exact sign hinge.
+shop_solid(a,b,.84,1,.02,2.18,'west_tile_trim',.20,-.07)
+
+# Center-gai: light outer jambs, recessed dark doorway, display frames on each side.
+a,b=dhinge,dright
+tv,nv,w=shop_basis(a,b)
+shop_face(a,b,0,1,.02,2.18,'west_recess',-.46)
+for u0,u1 in [(0,.13),(.91,1)]:shop_solid(a,b,u0,u1,.02,2.18,'west_tile_trim',.46,-.23)
+shop_solid(a,b,0,1,2.07,2.20,'west_tile_trim',.46,-.23)
+shop_solid(a,b,.13,.91,.015,.07,'west_metal_edge',.53,-.23)
+# Open entry between the two photo-resolved display fields. Neutral backing only.
+for u0,u1 in [(.13,.31),(.66,.91)]:
+ shop_face(a,b,u0,u1,.16,2.04,'west_shop_glass',-.10)
+ for u in [u0,u1]:shop_solid(a,b,u,u+.018,.08,2.08,'west_metal_edge',.12,-.04)
+ for z in [.18,.77,1.37,2.02]:shop_solid(a,b,u0,u1,z,z+.028,'west_frame',.12,-.035)
+# Doorway returns connect opening to the dark back plane instead of painted-on glazing.
+for u in [.31,.66]:
+ p=a+tv*(w*u)
+ face('west_tile_trim',[p+Z*.07,p-nv*.46+Z*.07,p-nv*.46+Z*2.07,p+Z*2.07])
+
+# Unequal blue awnings share wall/sign planes but expose the photographed pale corner wedge.
+# Both backs attach to the wall; closed end returns prevent floating roof fragments.
+t0,n0,w0=shop_basis(dleft,dhinge);t1,n1,w1=shop_basis(dhinge,dright)
+depth0,depth1=.68,.92
+left_tip=dhinge+n0*depth0-t0*.18
+right_tip=dhinge+n1*depth1+t1*.18
+for pa,pb,fa,fb in [(dleft,dhinge,dleft+n0*depth0,left_tip),(dhinge,dright,right_tip,dright+n1*depth1)]:
+ backa=pa+Z*2.17;backb=pb+Z*2.17;fronta=fa+Z*1.96;frontb=fb+Z*1.96
+ face('west_book_awning',[backa,backb,frontb,fronta])
+ face('west_book_awning',[fronta,frontb,frontb-Z*.13,fronta-Z*.13])
+ # Pale sewn leading edge seen in both photos, with closed triangular end returns.
+ face('west_tile_trim',[fronta+Z*.025,frontb+Z*.025,frontb-Z*.018,fronta-Z*.018])
+ for back,front in [(backa,fronta),(backb,frontb)]:face('west_book_awning',[back,front,front-Z*.13,back-Z*.06])
+ # Discreet seams follow the roof slope, not fake wall tilt.
+ for f in [.25,.50,.75]:
+  v=backa.lerp(backb,f);q=fronta.lerp(frontb,f);dv=(frontb-fronta).normalized()*.006
+  face('west_frame',[v-dv+Z*.004,v+dv+Z*.004,q+dv+Z*.004,q-dv+Z*.004])
 
 # Separate top pharmacy sign and two planar Taiseido lettering faces, all Jan31 photo extractions.
 for tex in ['sanzenri','taiseido_left','taiseido_right']:mat('west_sign_'+tex,(1,1,1),0,.7,tex)
