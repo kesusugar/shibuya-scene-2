@@ -1,0 +1,14 @@
+# Source attribution and actual pixel references
+
+## Evidence, actual crops and provenance
+Every listed crop is an ordinary unretouched rectangle of real pixels. No AI generation, fill, enhancement or advertising texture extraction. Original-pixel coordinate boxes use left, top, right, bottom. All files under refs/.
+
+- **OCT11:** Mikagekawase, captured 2025-10-11, CC BY 4.0. https://commons.wikimedia.org/wiki/File:渋谷区_渋谷駅_東急東横デパート撤去後_20251011.jpg . License https://creativecommons.org/licenses/by/4.0/ . Full reused repository thumbnail `OCT11-full.jpg` (1280x961); `OCT11-facade-actual-crop.jpg` [495,0,870,399]; `OCT11-podium-actual-crop.jpg` [501,245,785,398]. Date/license also preserved in station_west_research source metadata. Best lower/east-face evidence, but wires/cranes occlude sections and roof is out of frame.
+- **OCT10:** ウィ貴公子, captured 2025-10-10 23:13:28, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:渋谷スクランブル交差点_2025年10月10日の渋谷_202510102313_IMG_6646.jpg . License https://creativecommons.org/licenses/by-sa/4.0/ . `OCT10-full.jpg` (1280x960); `OCT10-north-actual-crop.jpg` [915,64,1278,393]. Upper silhouette, TOKYU PLAZA identity and nonuniform grouped glazing; lower facade occluded by concourse/ads. Night color not a daylight material measurement.
+- **OCT18:** ウィ貴公子, captured 2025-10-18 23:19:29, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:渋谷スクランブル交差点_2025年10月18日の渋谷_202510182319_IMG_8427.jpg . Same license. `OCT18-full.jpg` (1280x960); `OCT18-north-actual-crop.jpg` [414,280,718,567]. Confirms upper facade, stepped roofline and localized luminous edge pattern. Do not infer actual lighting power from this exposure.
+- **SEP30:** かなえゆうじん, captured 2025-09-30 15:39:38, CC0 1.0. https://commons.wikimedia.org/wiki/File:渋谷駅全景2025.jpg . License https://creativecommons.org/publicdomain/zero/1.0/ . Full original downloaded and inspected, `SEP30-full.jpg` (4032x3024); `SEP30-northeast-actual-crop.jpg` [3400,850,4032,1800]. Particularly helpful daylight grouping/top reference, but building is partly clipped at right and is **September, not October**. October views corroborate stable architectural features; September temporary signs/works cannot stand in for October.
+- WB02 and EK01 were also inspected; they face the opposite frontage and do not show this target. They are not evidence for Fukuras. WB01 was not needed.
+- Official Shimizu architecture page https://www.shimz.co.jp/shimzdesign/works/2019fukuras.html describes the transparent urban core and segmented crystalline facade. Text supports architectural interpretation; its image pixels were not inspected or downloaded and are not a texture/redistribution source.
+
+
+Only listed crops are included in this revision. Full photos were inspected in research; no photograph is used as an asset texture. All geometry is generated independently.

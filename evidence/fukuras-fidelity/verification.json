@@ -1,0 +1,22 @@
+{
+  "glb_sha256": "accdfc0288c42caa6ef956d63cc6be4196bee54be39b57dd5f4a95097dfb3a3d",
+  "baseline_glb_sha256": "e25a48ed0f4792088de9e5dfed71db2249e5a7b95f71b9d7cf866bde6a8069bb",
+  "regenerated_glb_sha256": "accdfc0288c42caa6ef956d63cc6be4196bee54be39b57dd5f4a95097dfb3a3d",
+  "blender": "4.2.3",
+  "triangles": 12231,
+  "primitives": 13,
+  "bytes": 1046328,
+  "focused_tests_passed": 5,
+  "focused_tests_deselected": 5,
+  "full_suite": {
+    "passed": 63,
+    "failed": 56,
+    "note": "Incomplete local snapshot; missing large scene GLBs and source data. Not a full-scene pass."
+  },
+  "typecheck": "passed",
+  "vite_compile": "passed",
+  "full_scene_render": "not verified",
+  "fps": "not measured",
+  "ground": "original135 samples retained; no new query",
+  "render": "isolated Cycles CPU24 samples; identical before/after cameras and lights; photo directions not calibrated"
+}

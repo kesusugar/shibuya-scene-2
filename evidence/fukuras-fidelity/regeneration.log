@@ -1,0 +1,51 @@
+00:48:07 | INFO: Data are loaded, start creating Blender stuff
+00:48:07 | INFO: Blender create Mesh node fukuras_roof
+00:48:07 | INFO: Blender create Mesh node fukuras_wall
+00:48:07 | INFO: Blender create Mesh node fukuras_glass2
+00:48:07 | INFO: Blender create Mesh node fukuras_frame
+00:48:07 | INFO: Blender create Mesh node fukuras_glass1
+00:48:07 | INFO: Blender create Mesh node fukuras_spandrel
+00:48:07 | INFO: Blender create Mesh node fukuras_glass0
+00:48:07 | INFO: Blender create Mesh node fukuras_sign_housing
+00:48:07 | INFO: Blender create Mesh node fukuras_mullion_silver
+00:48:07 | INFO: Blender create Mesh node fukuras_curtain_glass
+00:48:07 | INFO: Blender create Mesh node fukuras_infill_silver
+00:48:07 | INFO: Blender create Mesh node fukuras_circulation_glass
+00:48:07 | INFO: Blender create Mesh node fukuras_circulation_metal
+00:48:07 | INFO: glTF import finished in 0.07s
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Info: Total files 0 | Changed 0 | Failed 0
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender').
+Info: No new files have been packed
+Info: Saved "fukuras.blend"
+{
+  "id": "fukuras",
+  "source_id": "way/55588118",
+  "datum_tp_m": 15,
+  "source_ground_tp": 16.31,
+  "source_top_tp": 120.899,
+  "roof_translation_m": 0,
+  "facades": 110,
+  "solid_probe_normal_flips": 0,
+  "internal_wall_overlays_skipped": 0,
+  "glass_panels": 1922,
+  "triangles": 12231,
+  "primitives": 13,
+  "missing_pavement_samples": 0,
+  "status": "bounded October2025 photo-guided facade; dimensions estimated; hidden and upper service facades inherited approximation",
+  "baseline_glass_panels": 1726,
+  "treated_surfaces": [
+    76,
+    81,
+    135
+  ],
+  "removed_overlay_triangles": {
+    "76": 1284,
+    "81": 2066,
+    "135": 126
+  },
+  "source_buffers_preserved": true,
+  "ground_sampling": "inherited exact baseline; not freshly queried"
+}
+
+Blender quit

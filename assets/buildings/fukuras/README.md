@@ -1,15 +1,19 @@
-# 渋谷フクラス
+# 渋谷フクラス / Tokyu Plaza: bounded facade revision
 
-PLATEAU 2025の元の壁・屋根を保持し、個別の窓と桟・腰壁・空の看板筐体を追加したB試作。窓割り・色・階の分割は推定。参照写真の撮影年はsource/refs/reference.jpg.jsonに記録し、2025年の現況とは扱わない。写真をテクスチャに使用せず、広告を複製しない。平和クワトロの外観はセンター街写真の補助に留まり、建物個別の写真対応は未確定。
+way/55588118. The complete PLATEAU shell and roofs, original mesh attributes/index buffers, source datum T.P.15, source top T.P.120.899, and all135 recorded foot samples are retained. No whole-building translation or equal-floor division.
 
-地面は元のC2aへ照会するが、範囲外はstatsのmissing_pavement_samplesに記録。建物全体を移動して屋根高さを合わせることはしない。
+Only source wall76 (north),81 (east), and confirmed joining facet135 receive the new treatment below source z83.9. Fine panes, explicitly grouped silver infill, tall lower corner glazing, three broad east-side returns and a localized cap replace the old uniform18-row/checker/sign-strip overlays. The tiny joining facet is not a new rounded podium. The full source shell remains opaque; diagonal circulation relief is a restrained depth cue, not a surveyed staircase or open interior.
 
-```sh
-blender -b --python-exit-code 1 -t 4 -P assets/buildings/fukuras/source/blender/build.py -- assets/buildings/fukuras/source/data/plateau.json assets/buildings/fukuras/source/data/layout.json assets/ground/core/web/ground_core.glb assets/buildings/fukuras/web
-```
+## Regenerate exactly
 
-## 地形補填後の追記
+Blender4.2.3 LTS, no add-ons:
 
-Core外側をDEMで補填した後の照会結果はstats.jsonとC1_STATION_FINISH_REPORT.md参照。補填は地形の推定であり、実際の仕上げ歩道を測った高さではない。屋根・上面は保持。生成時に最後の引数へ `assets/ground/extension/web/extension.glb` を追加する。旧い未取得の記録は当時の結果として保持。
+    blender -b --python-exit-code 1 -t 4 -P assets/buildings/fukuras/source/blender/build.py
 
-外側道路追加後の足元を再生成する場合は、最後の引数へextension.glbとexterior-west/middle/eastの各GLBを順に渡す。追加道路使用時は旧Coreの仮fillを照会から除き、測ったCore面・追加交通面・DEMへ照会する。屋根・上面は保持。
+The asset-local script reads unchanged plateau.json plus source/data/baseline.glb (exact main275f832 export, SHA256 e25a48ed0f4792088de9e5dfed71db2249e5a7b95f71b9d7cf866bde6a8069bb) and baseline_stats.json. It writes web/fukuras.glb, source/data/stats.json, facade_map.json, and packed source/blender/fukuras.blend. No shared builder changes; no ground GLB needed because original footing geometry and sampling evidence are preserved, not remeasured. layout.json documents dimensions; the explicit pane patches and level arrays are in build.py.
+
+## Source and limitations
+
+See source/refs/FIDELITY_SOURCES.md and docs/core/FUKURAS_FIDELITY_REPORT.md. All dimensions except source shell anchors are estimated. No photo texture, signage extraction, invented luminous outlines, or new lettering. Non-target walls, lower north wing104, higher stepped/service portions, roof equipment, interiors and unseen base remain the inherited approximation. The permanent TOKYU PLAZA lettering remains missing.
+
+Actual isolated Blender before/after renders share cameras and lighting. Photo-angle labels indicate comparable viewing direction only, not calibrated photo alignment. No new full-scene asset-completeness or owner-PC FPS claim. Strict asset-local tests and existing Fukuras roof/C-exclusion test pass; complete repository suite needs unavailable large scene assets.

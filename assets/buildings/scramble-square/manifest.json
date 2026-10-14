@@ -2,21 +2,21 @@
   "id": "scramble-square",
   "source_id": "way/617560918",
   "level": "B",
-  "status": "individual facade prototype; counts/dimensions/2025 exterior not independently surveyed; no advertising imagery",
+  "status": "north facade photo-derived shallow approximation; retained source shell; no advertisement",
   "stats": {
-    "triangles": 35672,
-    "primitives": 9,
-    "bytes": 2350656
+    "triangles": 44392,
+    "primitives": 10,
+    "bytes": 2930780
   },
-  "generator": "tools/core/build_facade.py",
+  "generator": "assets/buildings/scramble-square/source/blender/build.py",
   "files": {
     "README.md": {
-      "bytes": 1676,
-      "sha256": "1b82419667a75b50b83cdb6856dbff156273e90fec35aad467f91aa5e5bf40a6"
+      "bytes": 2274,
+      "sha256": "398b9ceba1ebe88747655d227822ebf2027b2e29620bb822641aa05d50cbedc5"
     },
     "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+      "bytes": 16928,
+      "sha256": "02b049707c2548b27680ba50d767ee373867f618cd81fe190adee34b19d72fdd"
     },
     "source/data/layout.json": {
       "bytes": 482,
@@ -27,8 +27,8 @@
       "sha256": "1eb45c10f27fc00d02f5c6c534e135bdcf7ec4ce60e367200e4b06bab0ba0d65"
     },
     "source/data/stats.json": {
-      "bytes": 4114,
-      "sha256": "fe4f426ee221c643b36474eab43f35bfe24141c8562828f71228e29829f2cefb"
+      "bytes": 8130,
+      "sha256": "fd9e07d8f14f1066ad8696c2534104d42b69d29b7b3196e9727749adf19826d0"
     },
     "source/refs/SOURCES.md": {
       "bytes": 531,
@@ -51,12 +51,52 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/scramble-square.glb": {
-      "bytes": 2350656,
-      "sha256": "c184cadf05ebfbad08504664745377c3049b25e667019f03093a2459eb71f78d"
+      "bytes": 2930780,
+      "sha256": "b2e0fe242decdc792bde04be9bf49c428183c8bda3f64892c35d3d7fe36d9f54"
     },
     "web/viewer.json": {
       "bytes": 195,
       "sha256": "02dc53f7e6125211898d55d264eef2742c23baa62f010af55a51fd4987085c22"
+    },
+    "source/refs/FACADE_SOURCES.md": {
+      "bytes": 1978,
+      "sha256": "cbdc66d25792effcaa56d42867afef5945e7c75376c187c5ef1f535aea27af87"
+    },
+    "source/refs/SEP30-podium-actual-crop.jpg": {
+      "bytes": 145030,
+      "sha256": "9d31d1ef39480f972b8972109393b7655e34817003b5467f0a04871ecde28a1d"
+    },
+    "source/refs/OCT10-podium-actual-crop.jpg": {
+      "bytes": 56329,
+      "sha256": "9d39fd1b487b03f27262b3b7aa81c976f3d04d253fb49ed87b794093707629bf"
+    },
+    "source/refs/JUN15-podium-actual-crop.jpg": {
+      "bytes": 159991,
+      "sha256": "058af0a66325ff8758f4978ffc9f88506d4eab2462351ec875b4e45697e0adb1"
+    },
+    "source/refs/SEP30-upper-facade-actual-crop.jpg": {
+      "bytes": 129988,
+      "sha256": "02a768068f24ccf7705b2f6ac9411ee273057f205526b919ef94a0351c4ccd6e"
+    },
+    "source/data/baseline-geometry.json": {
+      "bytes": 435,
+      "sha256": "55d5a25bef55c4a03da4ee0bf700cbd5684d7c9d351a30246a5273591377528d"
+    },
+    "source/data/original-manifest.json": {
+      "bytes": 2061,
+      "sha256": "683bf70fca1496ad34325a22894123b345b65971710074ee3c9d60984e299b55"
+    },
+    "source/data/pavement-baseline.json": {
+      "bytes": 4114,
+      "sha256": "fe4f426ee221c643b36474eab43f35bfe24141c8562828f71228e29829f2cefb"
+    },
+    "source/blender/reproduce_baseline.py": {
+      "bytes": 12670,
+      "sha256": "5facef2f382e6f88c0a6d21e8b4c43b2f3e3beac0f59aa6d02bef3f2aaefc5a6"
+    },
+    "source/blender/scramble-square.blend": {
+      "bytes": 3905884,
+      "sha256": "9d4adfb7265ab87c695fe0ef268a09b33dc3f1a3a13222be2be27425aba474fe"
     }
   }
 }
