@@ -1,0 +1,72 @@
+{
+  "id": "parco",
+  "level": "B",
+  "status": "bounded northeast shallow-relief prototype; deep terrace unresolved; see README; roof-repair-v1 source faces 22 only; other roof defects not assessed",
+  "stats": {
+    "triangles": 8434,
+    "primitives": 12,
+    "bytes": 513460
+  },
+  "files": {
+    "source/inputs/baseline.glb": {
+      "bytes": 340788,
+      "sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2"
+    },
+    "source/data/plateau.json": {
+      "bytes": 60919,
+      "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1"
+    },
+    "source/data/podium_layout.json": {
+      "bytes": 2250,
+      "sha256": "d93dc352ecfba2519f46f90f55989a5cd6297ab44f89a0e875d27589267512b3"
+    },
+    "source/data/required_inputs.json": {
+      "bytes": 781,
+      "sha256": "eb85f80255633ac12e657faa28b222b2d9e5519d46097d06900a903bb843ec4e"
+    },
+    "source/blender/build_podium.py": {
+      "bytes": 12183,
+      "sha256": "1838c89dd421abad9dc088bdfd229b4251ec62c660391f365f57541df1d42d70"
+    },
+    "source/blender/repair_podium_topology.py": {
+      "bytes": 3011,
+      "sha256": "cbafbafd92731775d3f7dd988cf72911f753b97f83b73ce9bf3cd4b48ce22eb7"
+    },
+    "source/roof-repair-v1/prior.glb": {
+      "bytes": 513460,
+      "sha256": "f47ab16785534c40361c5f8e8014c0348919db8a5cb686ddafb6962ca0976c56"
+    },
+    "source/roof-repair-v1/repair.py": {
+      "bytes": 8234,
+      "sha256": "ea18e79a44979a749effd4c6c1ef3c5a76879f05ddd0fb10e2f5a9cc9db57447"
+    },
+    "source/roof-repair-v1/repair-config.json": {
+      "bytes": 8018,
+      "sha256": "3f2079a86a8a5366553a9a620951470ee219762997ca56cf0935a4c258a93fad"
+    },
+    "web/parco.glb": {
+      "bytes": 513460,
+      "sha256": "7dbb2e71338da1d3a5a6db6ec52ec38235f07ba5adbbd7b0585f6bcb15d372cd"
+    },
+    "source/data/stats.json": {
+      "bytes": 74367,
+      "sha256": "3b82574c0445f515daacf96f3216d84a9ee55a3f0efad96fa5634940dfedfc47"
+    }
+  },
+  "source_id": "way/451564412",
+  "source_aliases": [],
+  "plateau_id": "bldg_e199100f-cb89-4a81-8e38-0abee12cb1d4",
+  "generator": "assets/buildings/parco/source/roof-repair-v1/repair.py",
+  "ground_datum_tp": 15,
+  "scope": "source171, upper108, eastern18.73m of152; all original XYZ and non-target attributes/triangles retained",
+  "prior_generator": "source/blender/build_podium.py (Blender4.2.3), additive export + seven-triangle source108/152 repair + two target152 normal flips",
+  "current_blend": "source/roof-repair-v1/updated.blend",
+  "roof_repair": {
+    "stage": "roof-repair-v1",
+    "source_indices": [
+      22
+    ],
+    "prior_glb_sha256": "f47ab16785534c40361c5f8e8014c0348919db8a5cb686ddafb6962ca0976c56",
+    "current_glb_sha256": "7dbb2e71338da1d3a5a6db6ec52ec38235f07ba5adbbd7b0585f6bcb15d372cd"
+  }
+}

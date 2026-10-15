@@ -1,20 +1,48 @@
 {
   "id": "parco",
   "level": "B",
-  "status": "prototype; see README for evidence and estimates",
+  "status": "completed scoped cumulative exterior and deep-terrace revision; not surveyed or full-scene accepted",
   "stats": {
-    "triangles": 5314,
-    "primitives": 8,
-    "bytes": 340788
+    "triangles": 12085,
+    "primitives": 19,
+    "bytes": 719392
   },
   "files": {
     "README.md": {
-      "bytes": 1387,
-      "sha256": "ea6cfe97a3ce44a42cdf23c6a3081f971596cee44d4bd05fa74d7ec68106040a"
+      "bytes": 2828,
+      "sha256": "210ddcef23840de7319f2c3fd22b4ab57c3ea54e123386fc1246ded8f738d8d5"
+    },
+    "review/main-before-after.jpg": {
+      "bytes": 640712,
+      "sha256": "63a6334043ba94c888e3a6a551db1166aa1c09c9b767939a2fbb02fac19b6d99"
+    },
+    "review/render-manifest.json": {
+      "bytes": 1621,
+      "sha256": "669a95c15c72139bdd611b9e2931e955e30358f0ea3ae94a4e4a447e99195b2e"
+    },
+    "review/render_comparison.py": {
+      "bytes": 1883,
+      "sha256": "79d8ed592d8301086b45730146b3e432421ee5b5345c3a46cd50152a51117957"
+    },
+    "review/validation.json": {
+      "bytes": 2794,
+      "sha256": "3f8755ab9edc8ab50b03d9ef886969eac282761f9d8d3b166e51a37c4a384a64"
     },
     "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+      "bytes": 1236,
+      "sha256": "5f550d3adf3bb94faddbf3640927227b2439dcbeffbc884b195487832e570ff4"
+    },
+    "source/blender/build_podium.py": {
+      "bytes": 12183,
+      "sha256": "1838c89dd421abad9dc088bdfd229b4251ec62c660391f365f57541df1d42d70"
+    },
+    "source/blender/repair_podium_topology.py": {
+      "bytes": 3011,
+      "sha256": "cbafbafd92731775d3f7dd988cf72911f753b97f83b73ce9bf3cd4b48ce22eb7"
+    },
+    "source/data/keyed_faces.json": {
+      "bytes": 8183,
+      "sha256": "b8568ba92347b98d7ba0eb99f8abd00e4146a0449c027d1cd96effee76403345"
     },
     "source/data/layout.json": {
       "bytes": 590,
@@ -24,9 +52,33 @@
       "bytes": 60919,
       "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1"
     },
+    "source/data/podium_layout.json": {
+      "bytes": 2250,
+      "sha256": "d93dc352ecfba2519f46f90f55989a5cd6297ab44f89a0e875d27589267512b3"
+    },
+    "source/data/required_inputs.json": {
+      "bytes": 781,
+      "sha256": "eb85f80255633ac12e657faa28b222b2d9e5519d46097d06900a903bb843ec4e"
+    },
     "source/data/stats.json": {
-      "bytes": 12224,
-      "sha256": "cfaeac8a3888262aa6474e9114132336334ef3b73349aef2fff7e9332075fdf5"
+      "bytes": 14964,
+      "sha256": "58fc303ab64c1930b0356e0b1e13db1b082a5f0affa04ece858be454d49e1b9e"
+    },
+    "source/inputs/baseline.glb": {
+      "bytes": 340788,
+      "sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2"
+    },
+    "source/podium-v1/manifest.json": {
+      "bytes": 2784,
+      "sha256": "a649a9186fa01854869c8fec72679681955a4fcd5d8b1f8c5e80ab4d93d81503"
+    },
+    "source/podium-v1/stats.json": {
+      "bytes": 74367,
+      "sha256": "3b82574c0445f515daacf96f3216d84a9ee55a3f0efad96fa5634940dfedfc47"
+    },
+    "source/refs/MAR04-2024-full.jpg": {
+      "bytes": 2981707,
+      "sha256": "e170ebff22d906c1c514941db60383d82b38570fda183f7c2b29a5ca10f426dc"
     },
     "source/refs/SOURCES.md": {
       "bytes": 532,
@@ -40,6 +92,226 @@
       "bytes": 2816,
       "sha256": "56b9437800849704b9badc27e18b7617ce3bac180878e4eaeb3dec0bd7273347"
     },
+    "source/roof-repair-v1/prior.blend": {
+      "bytes": 4395652,
+      "sha256": "5a22d23afd53970a8ebfa139f0ea1cf370d50a5a4573a7ee4c34da9e9b2df843"
+    },
+    "source/roof-repair-v1/prior.glb": {
+      "bytes": 513460,
+      "sha256": "f47ab16785534c40361c5f8e8014c0348919db8a5cb686ddafb6962ca0976c56"
+    },
+    "source/roof-repair-v1/repair-config.json": {
+      "bytes": 8018,
+      "sha256": "3f2079a86a8a5366553a9a620951470ee219762997ca56cf0935a4c258a93fad"
+    },
+    "source/roof-repair-v1/repair.py": {
+      "bytes": 8234,
+      "sha256": "ea18e79a44979a749effd4c6c1ef3c5a76879f05ddd0fb10e2f5a9cc9db57447"
+    },
+    "source/terrace-v1/README.md": {
+      "bytes": 8794,
+      "sha256": "32d300c352608f0ca52ab172b1c5d94f93b595cc618fc803e2e2a6b8a8fdbc71"
+    },
+    "source/terrace-v1/README_JA.md": {
+      "bytes": 7751,
+      "sha256": "4c478144a58fec344f8721137c5696ed4b6913889901adc117e80db64a5ae0ae"
+    },
+    "source/terrace-v1/docs/MATERIALS.json": {
+      "bytes": 2113,
+      "sha256": "9763ca33cd4b4e2a113fdaf4d82047a14960016ed43d1f58811ffd9a6d2d2a02"
+    },
+    "source/terrace-v1/docs/SOURCES.md": {
+      "bytes": 2816,
+      "sha256": "324145e20f9570b0fe02816c73314962b219fc7bbc9c53e5e3f0363bce3af3f7"
+    },
+    "source/terrace-v1/geometry/layout.json": {
+      "bytes": 5055,
+      "sha256": "196026e7cffdbc85f02777675504735392f9b47eaf8f715d268ebffb688bf515"
+    },
+    "source/terrace-v1/geometry/scope-exceptions.json": {
+      "bytes": 1120,
+      "sha256": "fefd1762889995a5ca60189f2c463fe06074488fd303885fa7406e154e24c582"
+    },
+    "source/terrace-v1/inputs/FILE_HASHES.json": {
+      "bytes": 1037,
+      "sha256": "2e76b11906257a0118e521c4852dbd57d59b103ff01990b5402d3afda8b8c806"
+    },
+    "source/terrace-v1/inputs/INPUTS.json": {
+      "bytes": 985,
+      "sha256": "e23ed6dbcf3ae2c84c62784784cf7fabc8aa36398e7cedb53d721b11654ab0f5"
+    },
+    "source/terrace-v1/inputs/frozen-terrace-additions.glb": {
+      "bytes": 207000,
+      "sha256": "abff1213d0ae49b6a292f1504434e483df4880a5bcf657d0eff6cee02d9e9d9c"
+    },
+    "source/terrace-v1/inputs/frozen-terrace-components.json": {
+      "bytes": 140271,
+      "sha256": "74cdc3ed5244c8ac8923884234c3c66680ed7804cddedf802597517b9668319f"
+    },
+    "source/terrace-v1/inputs/frozen-terrace-layout.json": {
+      "bytes": 5055,
+      "sha256": "2058ec8165de7ccd521c6b61a3ca4932dee4f7cc599e81737418b4819bf33a86"
+    },
+    "source/terrace-v1/inputs/prior-manifest.json": {
+      "bytes": 5960,
+      "sha256": "cd6526f5c68c9dfb9012bdff937195088581af44ed54973b44bc022cbfa494c1"
+    },
+    "source/terrace-v1/inputs/roof22-corrected-base.glb": {
+      "bytes": 513460,
+      "sha256": "7dbb2e71338da1d3a5a6db6ec52ec38235f07ba5adbbd7b0585f6bcb15d372cd"
+    },
+    "source/terrace-v1/inputs/shallow-component-stats.json": {
+      "bytes": 74367,
+      "sha256": "3b82574c0445f515daacf96f3216d84a9ee55a3f0efad96fa5634940dfedfc47"
+    },
+    "source/terrace-v1/inputs/source-plateau.json": {
+      "bytes": 60919,
+      "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1"
+    },
+    "source/terrace-v1/parco_terrace_candidate.blend": {
+      "bytes": 1685392,
+      "sha256": "492709586ef499965fdf9ceb11ee73fc04f812677964e113abe1fddbb0f3a1af"
+    },
+    "source/terrace-v1/parco_terrace_candidate.glb": {
+      "bytes": 719392,
+      "sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179"
+    },
+    "source/terrace-v1/references/MAR04-2024-permanent-panels-crop.jpg": {
+      "bytes": 522832,
+      "sha256": "40f4bb698099934c1845d14c244ed8fb6ce690bc69b9628a9005b2e5c8422b6e"
+    },
+    "source/terrace-v1/references/NORTH_RENDER_MANIFEST.json": {
+      "bytes": 919,
+      "sha256": "49ad4598b472482dfc364cfa845cf5e90fa85e576163f160530787228ca906e2"
+    },
+    "source/terrace-v1/references/PHOTO_SOURCE.json": {
+      "bytes": 1898,
+      "sha256": "6649e845c6d03929867d50a0723bb59029d4a66f47c652fa6e0bef8946d877d8"
+    },
+    "source/terrace-v1/registration/independent/gate-result.json": {
+      "bytes": 2492,
+      "sha256": "036229c5972ac27ed0b8ec4416eabb61fe6c1a40fd4983e00d32f510d112be84"
+    },
+    "source/terrace-v1/registration/independent/landmarks.json": {
+      "bytes": 1931,
+      "sha256": "303491309df39e70a3502ca17a1de4c4706d739584e0bf9757b4b9ae6e8604d7"
+    },
+    "source/terrace-v1/registration/transform.json": {
+      "bytes": 4230,
+      "sha256": "1f2eddc4c0531e19fa766902167e5abf90d3a2624534db74a5b595802adc1ae6"
+    },
+    "source/terrace-v1/requirements.txt": {
+      "bytes": 100,
+      "sha256": "06a3724eb8c894bff43812db6b913a216945ef22b2b54c4788be9d83b5ab7dbf"
+    },
+    "source/terrace-v1/scripts/build_candidate.py": {
+      "bytes": 11444,
+      "sha256": "e8289bc6149a3c26cd21ab12c8dbf0deb246cf7003b043341ea8b59875a931b8"
+    },
+    "source/terrace-v1/scripts/glb_io.py": {
+      "bytes": 1098,
+      "sha256": "182f2124f5f9cb32858371dbcc12dd848cc3c06250724fe41e89039f5f45940b"
+    },
+    "source/terrace-v1/scripts/make_comparison_boards.py": {
+      "bytes": 3366,
+      "sha256": "2e3cb6fc3a7731156b81ab40067b88db31b2f99a95435ad8f472003bf565302c"
+    },
+    "source/terrace-v1/scripts/measure_geometry.py": {
+      "bytes": 4098,
+      "sha256": "4ee59962dc5d52121f9ad2543e1fc1854a86d10757811626ed58340dfb448ede"
+    },
+    "source/terrace-v1/scripts/merge_glb.py": {
+      "bytes": 1509,
+      "sha256": "f92e96a10b317cd5cc710c736fab2e95ca52bd1b61bedcfc4977f82eed768b37"
+    },
+    "source/terrace-v1/scripts/prepare_geometry.py": {
+      "bytes": 8391,
+      "sha256": "f2f5d2a8165f0a76ce613685327af0530295d61d03b9d898cee67d160487cb18"
+    },
+    "source/terrace-v1/scripts/rebuild.py": {
+      "bytes": 2054,
+      "sha256": "0ac05bd5a98e687ffe50fd18d777862caf1afb6aba795ff4c685417d381f1d46"
+    },
+    "source/terrace-v1/scripts/render_candidate.py": {
+      "bytes": 3615,
+      "sha256": "ded4e1a257370c061dc1ddc19df04dd3d6c4497c660390e03ed18791658f78b8"
+    },
+    "source/terrace-v1/scripts/verify_core_coverage_portable.py": {
+      "bytes": 20336,
+      "sha256": "1cdac15e792a035b0fd7c26291e22365d4296c2040512f1bc05e6b37f3b7ab32"
+    },
+    "source/terrace-v1/scripts/verify_dense_geometry.py": {
+      "bytes": 4982,
+      "sha256": "e400d1eb5b9ba90dade5079ffa90704256368c44ff71255228f3f7bde3e71864"
+    },
+    "source/terrace-v1/scripts/verify_geometry.py": {
+      "bytes": 3082,
+      "sha256": "f2f4de58e064250b85f92782346a18cbbe329af153633f4398daca65ecbeb3f6"
+    },
+    "source/terrace-v1/scripts/verify_oblique.py": {
+      "bytes": 1720,
+      "sha256": "ee1512f963790592c68c0d11dab3888fe8bd4ba4f45b3bdb1267a83abfc25be8"
+    },
+    "source/terrace-v1/scripts/verify_preservation.py": {
+      "bytes": 6163,
+      "sha256": "c3a3784ee9b7613d744bd66e52a97835ff3db40c9b3a026c9f8c2fa313d04fbd"
+    },
+    "source/terrace-v1/scripts/verify_retained_quantization.py": {
+      "bytes": 2210,
+      "sha256": "aca1bef6f3e34b19e47e29f1d6a8db82f528edd3b04398231bb34b30d9a3b668"
+    },
+    "source/terrace-v1/scripts/verify_saved_scene.py": {
+      "bytes": 1850,
+      "sha256": "3f8703c141a9e828f3d3d1bad0b25e7a3c30fc4544d31a273b18ab86bc7b84e5"
+    },
+    "source/terrace-v1/scripts/verify_terrace_delta.py": {
+      "bytes": 2627,
+      "sha256": "41665a2f7e61744f8b05b49a25eebc62b1f6dc4396029761a219aee817fb9eaa"
+    },
+    "source/terrace-v1/verification/core-coverage-final.json": {
+      "bytes": 117989,
+      "sha256": "8b03797117d62835053995ea9b84aa3ca955f8b59cafa7f16e566487e85feaa7"
+    },
+    "source/terrace-v1/verification/dense-geometry-check.json": {
+      "bytes": 25789,
+      "sha256": "4efe107800f45a34f55b7d449494184ba607cea9b552850c0f8aae7d8a71e087"
+    },
+    "source/terrace-v1/verification/floor_coverage/coverage-proof.json": {
+      "bytes": 2538,
+      "sha256": "f2e9a51b2a62e0a06b953bb1face08f9eb81393be75118918f3c5f876e335ea9"
+    },
+    "source/terrace-v1/verification/immutable-inputs-start.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "source/terrace-v1/verification/independent-oblique-check.json": {
+      "bytes": 192,
+      "sha256": "ce6d4ce10f7c2f72e51308b1278d32101a5bdb200cf8585ce7e95d285e9580fc"
+    },
+    "source/terrace-v1/verification/measurements.json": {
+      "bytes": 2151,
+      "sha256": "ad4fc082605bf64970de817a7c488f01df281364ab9682c08400dc9489d373e6"
+    },
+    "source/terrace-v1/verification/preservation.json": {
+      "bytes": 32643,
+      "sha256": "726df316872ec071b5990af22a5e88c7760a908520367b8464006fed27825407"
+    },
+    "source/terrace-v1/verification/raycast-depth.json": {
+      "bytes": 8085,
+      "sha256": "50aa779dc6220ccdb067657e63b50151035e154227b177ac3b5a2569ebf04a1d"
+    },
+    "source/terrace-v1/verification/retained-quantization.json": {
+      "bytes": 1701,
+      "sha256": "8fbac1620aa3ab3e315f98a4bebf01db1ab5f4963a240fb276296710a2712d80"
+    },
+    "source/terrace-v1/verification/saved-scene.json": {
+      "bytes": 4189,
+      "sha256": "e49d65906820b7172be20bd871a2c6ee0248963380d3b0822110aa24bd5c10d1"
+    },
+    "source/terrace-v1/verification/terrace-delta.json": {
+      "bytes": 1459,
+      "sha256": "830aca61bc30110f337da704c73c188d214b9591df54351d8c954afeaf88633a"
+    },
     "web/emissive_day.json": {
       "bytes": 3,
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
@@ -49,16 +321,22 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/parco.glb": {
-      "bytes": 340788,
-      "sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2"
+      "bytes": 719392,
+      "sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179"
     },
     "web/viewer.json": {
       "bytes": 193,
       "sha256": "8a727c450e07127326a23ecb45364f42787bb86c829bc89a215ed22336ec21be"
+    },
+    "source/terrace-v1/renders/CC0-2024-north-photo-versus-final-model.jpg": {
+      "bytes": 425041,
+      "sha256": "358e2de4b66ba6874540be6d90a55fbda2a1e5e4c5cb5c0fd74289318ced9e69"
     }
   },
   "source_id": "way/451564412",
   "source_aliases": [],
   "plateau_id": "bldg_e199100f-cb89-4a81-8e38-0abee12cb1d4",
-  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+  "generator": "source/blender/build.py --blender /path/to/Blender4.2.3 (Python 3)",
+  "current_blend": "source/terrace-v1/parco_terrace_candidate.blend",
+  "ground_datum_tp": 15
 }
