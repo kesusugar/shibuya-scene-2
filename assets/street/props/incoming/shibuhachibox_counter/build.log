@@ -1,0 +1,278 @@
+23:06:08 | INFO: Starting glTF 2.0 export
+23:06:08 | INFO: Extracting primitive: Cube.001
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.008
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.003
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.013
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.012
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.014
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.015
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.016
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.017
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.018
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.019
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.011
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.010
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.006
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.007
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.004
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.005
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.002
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.009
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.021
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.020
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.022
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.023
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.024
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.025
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.026
+23:06:08 | INFO: Primitives created: 1
+23:06:08 | INFO: Extracting primitive: Cube.027
+23:06:08 | INFO: Primitives created: 1
+23:06:09 | INFO: Finished glTF 2.0 export in 0.11582374572753906 s
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Fra:1 Mem:16.18M (Peak 16.18M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 3
+Fra:1 Mem:16.19M (Peak 16.19M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 2
+Fra:1 Mem:16.20M (Peak 16.20M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 1
+Fra:1 Mem:16.21M (Peak 16.21M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 3
+Fra:1 Mem:16.22M (Peak 16.22M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 2
+Fra:1 Mem:16.23M (Peak 16.23M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 1
+Fra:1 Mem:16.24M (Peak 16.24M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper rack shelf
+Fra:1 Mem:16.26M (Peak 16.26M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper recessed pale back
+Fra:1 Mem:16.27M (Peak 16.27M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 3
+Fra:1 Mem:16.28M (Peak 16.28M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 2
+Fra:1 Mem:16.29M (Peak 16.29M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 1
+Fra:1 Mem:16.30M (Peak 16.30M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Countertop
+Fra:1 Mem:16.31M (Peak 16.31M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 3
+Fra:1 Mem:16.32M (Peak 16.32M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Right oak front
+Fra:1 Mem:16.33M (Peak 16.33M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 2
+Fra:1 Mem:16.35M (Peak 16.35M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 1
+Fra:1 Mem:16.36M (Peak 16.36M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Left stile
+Fra:1 Mem:16.37M (Peak 16.37M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower rack shelf
+Fra:1 Mem:16.39M (Peak 16.39M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack right stile
+Fra:1 Mem:16.39M (Peak 16.39M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower recessed pale back
+Fra:1 Mem:16.41M (Peak 16.41M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Provisional bottom
+Fra:1 Mem:16.42M (Peak 16.42M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack upper lintel
+Fra:1 Mem:16.44M (Peak 16.44M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Provisional plain rear
+Fra:1 Mem:16.45M (Peak 16.45M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack lower plinth
+Fra:1 Mem:16.47M (Peak 16.47M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Right side
+Fra:1 Mem:16.48M (Peak 16.48M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack middle separator
+Fra:1 Mem:16.49M (Peak 16.49M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Left side
+Fra:1 Mem:16.51M (Peak 16.51M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:16.40M (Peak 16.51M) | Time:00:00.01 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Original_light_oak_grain
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.02 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:17.61M (Peak 20.40M) | Time:00:00.02 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.02 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.02 | Mem:2.10M, Peak:2.10M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.02 | Mem:2.10M, Peak:2.10M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.02 | Mem:2.25M, Peak:2.25M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.02 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.02 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.62M, Peak:2.70M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.02 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:87.47M (Peak 87.47M) | Time:00:01.75 | Remaining:00:53.56 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:87.47M (Peak 87.47M) | Time:00:20.04 | Remaining:00:17.65 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Sample 17/32
+Fra:1 Mem:116.77M (Peak 160.72M) | Time:00:41.43 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:116.77M (Peak 160.72M) | Time:00:41.43 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Finished
+Saved: '/workspace/scratch/b6331e59d884/shibu_hachi_box_counter_revision/front.png'
+Time: 00:41.64 (Saving: 00:00.20)
+
+Fra:1 Mem:16.25M (Peak 16.25M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Countertop
+Fra:1 Mem:16.26M (Peak 16.26M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Right oak front
+Fra:1 Mem:16.28M (Peak 16.28M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 3
+Fra:1 Mem:16.28M (Peak 16.28M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Left stile
+Fra:1 Mem:16.29M (Peak 16.29M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 2
+Fra:1 Mem:16.30M (Peak 16.30M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 1
+Fra:1 Mem:16.31M (Peak 16.31M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack right stile
+Fra:1 Mem:16.32M (Peak 16.32M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 3
+Fra:1 Mem:16.33M (Peak 16.33M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack upper lintel
+Fra:1 Mem:16.34M (Peak 16.34M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 2
+Fra:1 Mem:16.35M (Peak 16.35M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack lower plinth
+Fra:1 Mem:16.36M (Peak 16.36M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 1
+Fra:1 Mem:16.37M (Peak 16.37M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper rack shelf
+Fra:1 Mem:16.37M (Peak 16.37M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack middle separator
+Fra:1 Mem:16.39M (Peak 16.39M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper recessed pale back
+Fra:1 Mem:16.40M (Peak 16.40M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Left side
+Fra:1 Mem:16.41M (Peak 16.41M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 3
+Fra:1 Mem:16.42M (Peak 16.42M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Right side
+Fra:1 Mem:16.43M (Peak 16.43M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 2
+Fra:1 Mem:16.44M (Peak 16.44M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Provisional plain rear
+Fra:1 Mem:16.44M (Peak 16.44M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 1
+Fra:1 Mem:16.46M (Peak 16.46M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Provisional bottom
+Fra:1 Mem:16.46M (Peak 16.46M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 3
+Fra:1 Mem:16.48M (Peak 16.48M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 2
+Fra:1 Mem:16.48M (Peak 16.48M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower recessed pale back
+Fra:1 Mem:16.49M (Peak 16.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 1
+Fra:1 Mem:16.49M (Peak 16.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower rack shelf
+Fra:1 Mem:16.51M (Peak 16.51M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:16.40M (Peak 16.51M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Original_light_oak_grain
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:17.61M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.10M, Peak:2.10M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.10M, Peak:2.10M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.25M, Peak:2.25M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.70M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:87.47M (Peak 87.47M) | Time:00:00.45 | Remaining:00:13.79 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:116.77M (Peak 160.72M) | Time:00:24.63 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:116.77M (Peak 160.72M) | Time:00:24.63 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Finished
+Saved: '/workspace/scratch/b6331e59d884/shibu_hachi_box_counter_revision/side.png'
+Time: 00:24.79 (Saving: 00:00.15)
+
+Fra:1 Mem:16.25M (Peak 16.25M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Countertop
+Fra:1 Mem:16.26M (Peak 16.26M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Right oak front
+Fra:1 Mem:16.27M (Peak 16.27M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Left stile
+Fra:1 Mem:16.29M (Peak 16.29M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 3
+Fra:1 Mem:16.30M (Peak 16.30M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack right stile
+Fra:1 Mem:16.30M (Peak 16.30M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 2
+Fra:1 Mem:16.32M (Peak 16.32M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack upper lintel
+Fra:1 Mem:16.32M (Peak 16.32M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white upright 1
+Fra:1 Mem:16.34M (Peak 16.34M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 3
+Fra:1 Mem:16.33M (Peak 16.34M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack lower plinth
+Fra:1 Mem:16.35M (Peak 16.35M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 2
+Fra:1 Mem:16.36M (Peak 16.36M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Rack middle separator
+Fra:1 Mem:16.37M (Peak 16.37M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper white horizontal rail 1
+Fra:1 Mem:16.38M (Peak 16.38M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Left side
+Fra:1 Mem:16.38M (Peak 16.38M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper rack shelf
+Fra:1 Mem:16.41M (Peak 16.41M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Right side
+Fra:1 Mem:16.40M (Peak 16.41M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | upper recessed pale back
+Fra:1 Mem:16.43M (Peak 16.43M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 3
+Fra:1 Mem:16.42M (Peak 16.43M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Provisional plain rear
+Fra:1 Mem:16.43M (Peak 16.43M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 2
+Fra:1 Mem:16.45M (Peak 16.45M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white upright 1
+Fra:1 Mem:16.46M (Peak 16.46M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | Provisional bottom
+Fra:1 Mem:16.46M (Peak 16.46M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 3
+Fra:1 Mem:16.48M (Peak 16.48M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 2
+Fra:1 Mem:16.48M (Peak 16.48M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower recessed pale back
+Fra:1 Mem:16.49M (Peak 16.49M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower white horizontal rail 1
+Fra:1 Mem:16.50M (Peak 16.50M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Synchronizing object | lower rack shelf
+Fra:1 Mem:16.51M (Peak 16.51M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Initializing
+Fra:1 Mem:16.40M (Peak 16.51M) | Time:00:00.00 | Mem:0.00M, Peak:0.00M | Scene, ViewLayer | Updating Images | Loading Original_light_oak_grain
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Waiting for render to start
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Scene
+Fra:1 Mem:17.44M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Shaders
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Procedurals
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Background
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Camera
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Meshes Flags
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.00M, Peak:2.00M | Scene, ViewLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Particle Systems
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:17.53M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Meshes
+Fra:1 Mem:17.61M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.01M, Peak:2.01M | Scene, ViewLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.10M, Peak:2.10M | Scene, ViewLayer | Updating Scene BVH | Building
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.10M, Peak:2.10M | Scene, ViewLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.25M, Peak:2.25M | Scene, ViewLayer | Updating Scene BVH | Building BVH 0%
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:17.70M (Peak 20.40M) | Time:00:00.00 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Mesh | Computing normals
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.44M, Peak:2.59M | Scene, ViewLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Objects Flags
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Primitive Offsets
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Images
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Camera Volume
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.62M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Lights
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Lights | Computing tree
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Integrator
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Film
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.62M, Peak:2.70M | Scene, ViewLayer | Updating Lookup Tables
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Baking
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Updating Device | Writing constant memory
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Loading denoising kernels (may take a few minutes the first time)
+Fra:1 Mem:17.88M (Peak 20.40M) | Time:00:00.00 | Mem:2.70M, Peak:2.70M | Scene, ViewLayer | Sample 0/32
+Fra:1 Mem:87.47M (Peak 87.47M) | Time:00:00.39 | Remaining:00:12.06 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Sample 1/32
+Fra:1 Mem:116.77M (Peak 160.72M) | Time:00:23.72 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Sample 32/32
+Fra:1 Mem:116.77M (Peak 160.72M) | Time:00:23.72 | Mem:72.29M, Peak:72.29M | Scene, ViewLayer | Finished
+Saved: '/workspace/scratch/b6331e59d884/shibu_hachi_box_counter_revision/photo_near.png'
+Time: 00:23.88 (Saving: 00:00.14)
+
+Info: Total files 1 | Changed 0 | Failed 0
+INFO Draco mesh compression is available, use library at /workspace/scratch/b6331e59d884/tools/blender-4.2.3-linux-x64/4.2/python/lib/python3.11/site-packages/libextern_draco.so
+
+Info: Saved "shibuhachibox_counter.blend"
+VALIDATION {"blender": "4.2.3 LTS", "meshes": 27, "triangles": 5076, "materials": 2, "bounds_blender_m": [[-1.2000000476837158, -0.2840000092983246, 0.0], [1.2000000476837158, 0.2800000011920929, 0.9799999594688416]], "dimensions_m": [2.4000000953674316, 0.5640000104904175, 0.9799999594688416], "root_origin": [0, 0, 0], "front": "-Y", "placement": "unplaced", "tests": {"height_exact": true, "bottom_zero": true, "width_2_4": true, "triangle_budget": true, "finite_geometry": true}}
+
+Blender quit
