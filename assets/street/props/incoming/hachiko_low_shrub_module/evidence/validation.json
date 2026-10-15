@@ -1,0 +1,23 @@
+{
+  "sha256": "16a20e9c3e84efb945c9dcdfc65aed96ee12d65669672a2661a225365baaca29",
+  "bytes": 291544,
+  "triangles": 3824,
+  "primitives": 2,
+  "materials": 2,
+  "embedded_images": 1,
+  "alpha_mode": "MASK",
+  "origin_verified": true,
+  "gltf_bounds": [
+    [
+      -0.5532490015029907,
+      0,
+      -0.4081299901008606
+    ],
+    [
+      0.5532490015029907,
+      1.1854463815689087,
+      0.4081299901008606
+    ]
+  ],
+  "scope": "module only, no runtime FPS acceptance"
+}

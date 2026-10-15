@@ -1,0 +1,18 @@
+{
+  "blender": "4.2.3 LTS",
+  "triangles": 3824,
+  "materials": 2,
+  "dimensions_m": [
+    1.1064980626106262,
+    0.8162600100040436,
+    1.185446358518675
+  ],
+  "origin": "AABB bottom centre",
+  "inferred": true,
+  "placement": "none",
+  "original_stem_offset_in_centered_mesh": [
+    0.002014726400375366,
+    0.041427239775657654,
+    0.001961923437193036
+  ]
+}
