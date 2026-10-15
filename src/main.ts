@@ -1,3 +1,5 @@
+import { debug, measured } from './core/startup-debug';
+import { assetUrl } from './core/asset-url';
 import { loadProps, type PropsResult } from './world/props';
 import { loadExterior, replaceProvisionalFill, type ExteriorResult } from './world/exterior';
 import {loadTactileSupplement,type TactileSupplementResult} from './world/tactileSupplement';
@@ -7,7 +9,7 @@ import { loadPlaza, type PlazaResult } from './world/plaza';
 import { loadSurround, type SurroundResult } from './world/surround';
 import { loadHachiko, type HachikoResult } from './world/hachiko';
 import { loadDrainage, type DrainageResult } from './world/drainage';
-import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, Mesh, MeshStandardMaterial, PCFSoftShadowMap, PerspectiveCamera, Scene, SRGBColorSpace, WebGLRenderer } from 'three';
+import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, DefaultLoadingManager, Mesh, MeshStandardMaterial, PCFSoftShadowMap, PerspectiveCamera, Scene, SRGBColorSpace, WebGLRenderer } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { applyEmissive, groundOffset, hasArc, loadBuilding, type BuildingIO, type BuildingResult, type LoadedBuilding } from './world/buildings';
 import { loadGround, type GroundResult } from './world/ground';
@@ -28,6 +30,7 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js';
 import { Raycaster, Vector2, Vector3 } from 'three';
 
+debug?.mark('WebGLを初期化中');
 const params = new URLSearchParams(location.search);
 const $ = (id: string) => document.getElementById(id)!;
 const status = (msg: string) => { $('status').textContent = msg; };
@@ -35,6 +38,8 @@ if (params.has('capture')) $('hud').style.visibility = 'hidden';   // clean stil
 
 const quality = pickQuality(params.get('q'));
 const look = parseLook(params.get('look'));
+DefaultLoadingManager.setURLModifier(url => assetUrl(url));
+DefaultLoadingManager.onError = url => debug?.error('resource',url);
 const renderer = new WebGLRenderer({ antialias: quality.antialias, powerPreference: 'high-performance', preserveDrawingBuffer: params.has('capture') });
 renderer.setPixelRatio(Math.min(devicePixelRatio, Number(params.get('dpr') ?? quality.maxDpr)));
 renderer.setSize(innerWidth, innerHeight);
@@ -86,8 +91,8 @@ let projectedStreet: ProjectedStreet | undefined;
 
 const gltf = new GLTFLoader();
 const io: BuildingIO = {
-  loadGlb: (url) => gltf.loadAsync(url).then((g) => g.scene),
-  loadJson: async (url) => { const r = await fetch(url); if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`); return r.json(); },
+  loadGlb: (url) => measured(url, () => gltf.loadAsync(url).then((g) => g.scene)),
+  loadJson: (url) => measured(url, async () => { const r = await fetch(assetUrl(url)); if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`); return r.json(); }),
 };
 
 // Buildings load side by side and independently: one broken asset shows a red placeholder, the rest still draw.
@@ -124,6 +129,7 @@ function setTime(t: TimeOfDay) {
 }
 
 async function start() {
+  debug?.mark('街の資産を読み込み中');
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
   const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes, plazaRes, terrainRes, facilitiesRes, tactileExtraRes, tactileLinksRes, exteriorRes, tactileOuterRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
     useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined),
@@ -198,6 +204,7 @@ async function start() {
   if (loaded.some((b) => b.id === 'ginza-canopy')) $('provisional').textContent += '\n銀座線ホームは試作、床・フレーム・ドアの寸法と配置は推定、10月の内部・下部の確認は未達';
   // QA only: ?datum=off reproduces the scene before the common datum (every model at its own 0 m = Y 0)
   if (params.get('datum') === 'off') for (const b of loaded) { b.hints.groundElevationTP = undefined; b.root.position.y = 0; }
+  debug?.mark('街を配置中');
   const problems = [
     ...(coreProps && !coreProps.ok ? [`小物の一部を配置できず: ${coreProps.errors.join("; ")}（ほかは表示を継続）`] : []),
     ...(projectedStreet && !projectedStreet.ok ? [`写真からの仮配置を読み込めず: ${projectedStreet.error}（通常表示を継続）`] : []),
@@ -218,7 +225,8 @@ async function start() {
     ...loaded.flatMap((b) => b.layerErrors.map((e) => `${NAMES[b.id] ?? b.id} の看板レイヤーを読み込めず: ${e}`)),
   ];
   building = loaded.find((b) => b.id === 'qfront') ?? loaded[0];
-  if (!building) { status(problems.join('\n')); return; }
+  if (!building) { throw new Error(problems.join('\n') || '表示できる建物がありません'); }
+  for (const problem of problems) debug?.error('scene', problem);
   lighting.placeSun(building.hints);
   for (const b of loaded) lighting.placeFloods(b.hints);
   controls.setObstacles([...(coreProps ? [coreProps.root] : []), ...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
@@ -344,11 +352,12 @@ renderer.setAnimationLoop(() => {
   const dt = Math.min(0.1, stats.tick());
   controls.update(dt);
   if (bloom.enabled) composer.render(); else renderer.render(scene, camera);
+  debug?.frame({calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,geometries:renderer.info.memory.geometries,textures:renderer.info.memory.textures,quality:quality.name});
   const now = performance.now();
   if (now - lastHud > 500) { $('perf').textContent = stats.report(renderer); lastHud = now; }
 });
 
-start().then(() => { if (params.get('bench') === 'auto') autoBench(); }).catch((e) => status(`起動エラー: ${e instanceof Error ? e.message : e}`));
+start().then(() => { debug?.ready(); if (params.get('bench') === 'auto') autoBench(); }).catch((e) => { debug?.error('startup',e instanceof Error?e.message:e);debug?.mark('起動失敗');status(`起動エラー: ${e instanceof Error ? e.message : e}`); });
 
 /**
  * ?bench=auto: the owner's one-URL measurement. Visits the fixed Core views (day and night), records 10 s each after a

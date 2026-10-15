@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Shibuya Scene 2.0 — building viewer</title>
+    <title>渋谷の街を歩く — Shibuya Scene</title>
     <style>
       html, body { margin: 0; height: 100%; background: #0b0d12; overflow: hidden; font: 13px/1.4 system-ui, sans-serif; color: #e8eaf0; }
       canvas { display: block; }
@@ -16,6 +16,11 @@
       #provisional:empty, #status:empty, #bench-out:empty { display: none; }
       #status { color: #ffb4a8; }
       #help { color: #a9b1c6; }
+      #debug-toggle { position:fixed; right:12px; top:12px; z-index:20; }
+      #debug-panel { position:fixed; right:12px; top:52px; width:min(520px, calc(100vw - 48px)); max-height:75vh; overflow:auto; background:#111827f5; border:1px solid #64748b; border-radius:8px; padding:12px; z-index:21; }
+      #debug-panel[hidden], #debug-toggle[hidden] { display:none; }
+      #debug-output { white-space:pre-wrap; overflow-wrap:anywhere; font:12px/1.6 ui-monospace,monospace; }
+      @media(max-width:600px) { #hud { max-width:calc(100vw - 95px); max-height:85vh; overflow:auto; } }
     </style>
   </head>
   <body>
@@ -26,11 +31,20 @@
         <button id="btn-q032">Q032視点</button><button id="btn-m027">M027視点</button><button id="btn-bench">30秒計測</button>
       </div>
       <div class="panel" id="perf">計測中…</div>
-      <div class="panel" id="provisional" style="color:#ffcf8a"></div>
+      <details class="panel"><summary>再現精度について（推定を含む）</summary><div id="provisional" style="color:#ffcf8a;max-height:35vh;overflow:auto"></div></details>
       <div class="panel" id="status"></div>
       <div class="panel" id="bench-out" style="white-space:pre;font-family:ui-monospace,monospace;font-size:11px;max-height:40vh;overflow:auto"></div>
       <div class="panel" id="help">360°: ドラッグで回転・ホイールで拡大<br />歩行: クリックで開始、WASD移動・マウスで視点・Shiftで走る・Escで解除</div>
     </div>
+    <button id="debug-toggle" aria-controls="debug-panel" aria-expanded="false">診断</button>
+    <aside id="debug-panel" hidden aria-label="起動と描画の診断">
+      <div class="row"><strong>起動・読み込み診断</strong><button id="debug-close">閉じる</button></div>
+      <p>読み込み時間は通信・端末・キャッシュで変わります。</p>
+      <div class="row"><button id="debug-download">診断JSONを保存</button><button id="debug-reload">再読み込み</button></div>
+      <pre id="debug-output" aria-live="off">診断を初期化中…</pre>
+    </aside>
+    <noscript>この街の表示にはJavaScriptが必要です。ブラウザで有効にしてください。</noscript>
+    <script src="%BASE_URL%startup-debug.js"></script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
