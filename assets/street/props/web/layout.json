@@ -1,0 +1,21 @@
+{
+  "coordinate_system": "plan x east/y north, metres; yaw about glTF Y, 0 faces south; datum T.P.15m",
+  "status": "Photo-informed estimated placements, not surveyed coordinates. Temporary signs/cones are not a certified single-date inventory.",
+  "props": {
+    "hachiko_white_bollard": {"file":"hachiko_white_bollard.glb","size_m":[0.1142,0.1142,0.8]},
+    "standing_notice_sign": {"file":"standing_notice_sign.glb","size_m":[0.56,0.2901,1.096]},
+    "oct2025_two_band_cone": {"file":"oct2025_two_band_cone.glb","size_m":[0.38,0.38,0.70]}
+  },
+  "placements": [
+    {"id":"hachiko-rear-west","prop":"hachiko_white_bollard","xy":[10.413,-52.791],"yaw_deg":0,"basis":"July photo shows two white/yellow posts behind Hachiko. Estimated at local (+/-3.3,-2.7)m of existing statue yaw35, outside planter; not measured. July-to-October persistence unknown.","source_photo":"assets/street/hachiko/source/refs/july095.jpg","observed_date":"2025-07-13","status":"estimated"},
+    {"id":"hachiko-rear-east","prop":"hachiko_white_bollard","xy":[15.819,-49.007],"yaw_deg":0,"basis":"Second visible white/yellow post behind Hachiko. Same relative planter-edge rule; count limited to two observed posts. October persistence unknown.","source_photo":"assets/street/hachiko/source/refs/july095.jpg","observed_date":"2025-07-13","status":"estimated"},
+    {"id":"crossing-notice","prop":"standing_notice_sign","xy":[8,-31],"yaw_deg":210,"basis":"SC04 foreground standalone notice at the crossing waiting-space edge. Placed on existing Hachiko-side plaza, facing the crossing; position/yaw are estimated, no camera-calibrated projection. Avoid tactile route and crossing stripes.","source_photo":"docs/core/station_glazing_refs/oct2025_6646.jpg","observed_date":"2025-10-10","status":"estimated"},
+    {"id":"station-boundary-west","prop":"oct2025_two_band_cone","xy":[-12,-61],"yaw_deg":0,"basis":"SC04 shows cones at the station-side roadwork boundary. Estimated short row along existing concourse north edge, not a measured reconstruction of each photographed cone.","source_photo":"docs/core/station_glazing_refs/oct2025_6646.jpg","observed_date":"2025-10-10","status":"estimated"},
+    {"id":"station-boundary-middle","prop":"oct2025_two_band_cone","xy":[-8,-61],"yaw_deg":0,"basis":"Same photographed station-side boundary type; 4m interval is an estimated arrangement. Temporary equipment persistence unknown.","source_photo":"docs/core/station_glazing_refs/oct2025_6646.jpg","observed_date":"2025-10-10","status":"estimated"},
+    {"id":"station-boundary-east","prop":"oct2025_two_band_cone","xy":[-4,-61],"yaw_deg":0,"basis":"Same photographed station-side boundary type; endpoint set back from concourse corner and existing street objects. Position inferred.","source_photo":"docs/core/station_glazing_refs/oct2025_6646.jpg","observed_date":"2025-10-10","status":"estimated"}
+  ],
+  "unplaced": [
+    {"prop":"grey_louvered_cabinet","reason":"Minami-Azabu reference, no Shibuya location evidence."},
+    {"prop":"green_railing_upper_panel","reason":"Minami-Azabu reference, incomplete upper panel without posts/foundation; not a replacement for existing Shibuya rails."}
+  ]
+}

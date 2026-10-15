@@ -1,5 +1,7 @@
 # 引き継ぎ（Claude Code → Codex）：Shibuya Scene 2.0 Core v1
 
+> **最新：オーナーの再開指示によりPR #57までのdots資産を配置検証。** `DOTS_PLACEMENT_57_REPORT.md` を参照。既存28建物を保全し、小物6点を通常表示へ推定配置。南麻布由来の設備盤・部分柵は未配置。次の制作候補90件は `DOTS_NEXT_ASSETS_57.md`。下の「Codex停止」と古い未着手一覧は今回の再開指示より前の記録。
+
 > **最新指示（2026-10-14、日本時間）：オーナーはClaudeによる精査・実装へ切り替える。** Codexの新しい実装は止め、[HANDOFF_CLAUDE_CODEX_PR12_36.md](HANDOFF_CLAUDE_CODEX_PR12_36.md)を引き継ぎの入口とする。#12〜#36の実装・画像・未達・マージ状態をまとめた。`CODEX_COMPLETION_PLAN.md`は計画のみで未実装。以下の過去の「Codexが指示を待たず連続実装」は最新指示より優先しない。
 
 > **最新（連続実装、PR #35・#36）：** 周辺10資産の個別外装、PLATEAU道路・歩道3資産と仮fillの置換、残る横断歩道12端の点字80枚、駅・建物の足元更新を通常表示へ追加。138テスト・型/ビルド、初期昼夜/左右・広場等の9視点成功。保護Coreと追加道路・DEM・新旧点字の重複0㎡。`C1_NEARBY_FINISH_REPORT.md`、`C2_EXTERIOR_REPORT.md`、比較画像と`CONTINUATION_QUEUE.md`を読む。#31〜#34はfeatureへマージされていたため#35でmainへ統合する。両PRのbaseはmain、マージ順は#35→#36。5分野の制作は試作として実装済みで、広告・10月外観照合・遠景C/全経路の精密化・実機FPSは未達。高度なQFRONT・既存街路と旧/西武作業を保全し、終わった対象を古い「未着手」から繰り返さない。
