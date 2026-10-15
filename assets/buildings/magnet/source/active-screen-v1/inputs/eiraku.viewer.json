@@ -1,0 +1,15 @@
+{
+ "_note": "Viewer hints (Blender plan coordinates). Signs of this building live in MAGNET's 2025 era layer.",
+ "planBounds": [
+  45.6,
+  9.9,
+  50.0,
+  27.1
+ ],
+ "sun": {
+  "azimuth_deg": 207,
+  "elevation_deg": 57
+ },
+ "groundElevationTP": 14.907,
+ "_groundNote": "C2a: this model's 0 m is placed on the lowest finished ground along its PLATEAU footprint (T.P. 14.907, from assets/ground/core/source/data/ground_anchors.json) so the base never floats; PLATEAU's own ground for it is T.P. 14.561, so roofs sit +0.346 m from PLATEAU; viewer Y = elevation - 15.000 (Eiraku is modelled in MAGNET's file and shares its 0 m)"
+}

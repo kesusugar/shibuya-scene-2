@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "blend_reopened": true,
+  "authoring_target_vertices": [
+    [
+      35.47999954223633,
+      8.669999122619629,
+      16.459999084472656
+    ],
+    [
+      44.119998931884766,
+      8.669999122619629,
+      16.459999084472656
+    ],
+    [
+      44.119998931884766,
+      8.669999122619629,
+      21.260000228881836
+    ],
+    [
+      35.47999954223633,
+      8.669999122619629,
+      21.260000228881836
+    ]
+  ],
+  "all_five_images_packed_and_pixels_readable": [
+    {
+      "name": "drum_wrap",
+      "size": [
+        1024,
+        2048
+      ],
+      "packed_bytes": 52805,
+      "pixel_count": 8388608
+    },
+    {
+      "name": "led_box",
+      "size": [
+        760,
+        900
+      ],
+      "packed_bytes": 247014,
+      "pixel_count": 2736000
+    },
+    {
+      "name": "led_starts",
+      "size": [
+        720,
+        480
+      ],
+      "packed_bytes": 116842,
+      "pixel_count": 1382400
+    },
+    {
+      "name": "magnet_mark",
+      "size": [
+        512,
+        512
+      ],
+      "packed_bytes": 5304,
+      "pixel_count": 1048576
+    },
+    {
+      "name": "west_banner",
+      "size": [
+        512,
+        2048
+      ],
+      "packed_bytes": 29795,
+      "pixel_count": 4194304
+    }
+  ],
+  "collections": {
+    "UNCHANGED_MAGNET_permanent_building": {
+      "meshes": 29,
+      "triangles": 10381
+    },
+    "UNCHANGED_Eiraku_companion": {
+      "meshes": 5,
+      "triangles": 394
+    },
+    "SIGNS_2025_corrected_active_plane_only": {
+      "meshes": 31,
+      "triangles": 16092
+    }
+  },
+  "no_external_photo_or_font_dependency": true,
+  "note": "Imported mesh editing scene, not the byte-exact canonical GLB generator. Save-time packed-image warnings did not prevent pixel access after reopening."
+}

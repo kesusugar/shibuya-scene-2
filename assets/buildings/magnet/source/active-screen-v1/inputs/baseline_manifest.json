@@ -1,0 +1,38 @@
+{
+  "magnet_signs_2025.before.glb": {
+    "repository_path": "assets/buildings/magnet/web/magnet_signs_2025.glb",
+    "sha256": "fedc370e1242801366ddfb617e4a363a6097f092cf9b52f73eb55238e613d673"
+  },
+  "magnet.unchanged.glb": {
+    "repository_path": "assets/buildings/magnet/web/magnet.glb",
+    "sha256": "39ec44c3357b51f9fde3e1eef7328ecc1db6113a1314d2c53e92d499a040de2e"
+  },
+  "eiraku.unchanged.glb": {
+    "repository_path": "assets/buildings/eiraku/web/eiraku.glb",
+    "sha256": "07b535d3334f0f9afeb8bc4753c55ed29e82d53a35b8f79b23f9666d0882f3e5"
+  },
+  "signage_2025.before.json": {
+    "repository_path": "assets/buildings/magnet/source/data/signage_2025.json",
+    "sha256": "b446d6892ae473e87bff2815114032b620a053212112dea2211019b8bb2fb2e2"
+  },
+  "viewer.json": {
+    "repository_path": "assets/buildings/magnet/web/viewer.json",
+    "sha256": "880916e62da178a0f37a0cc9b5ce6612717e9a2c1cb831267b10923f8f1a4d83"
+  },
+  "emissive_day.json": {
+    "repository_path": "assets/buildings/magnet/web/emissive_day.json",
+    "sha256": "7362f6c22c15c681e13429b67bbb0c27deea7d97749bfec83bfbaee20edf8bf4"
+  },
+  "emissive_night.json": {
+    "repository_path": "assets/buildings/magnet/web/emissive_night.json",
+    "sha256": "29b5ff5abf0a350bc5544b4c5197da74922d4664ab62b7e19a818be5eb722df1"
+  },
+  "eiraku.viewer.json": {
+    "repository_path": "assets/buildings/eiraku/web/viewer.json",
+    "sha256": "3b6a249db2c6ed08580b582f50afa17b11a4f28eba1122f4e7830013cb55c132"
+  },
+  "camera_m027_fit.json": {
+    "repository_path": "assets/buildings/magnet/source/data/camera_m027_fit.json",
+    "sha256": "f2926caa8b3b4e5712bd0ca2f294dc485ebc7ee4be63c01a46e7ae6dc97a8b46"
+  }
+}

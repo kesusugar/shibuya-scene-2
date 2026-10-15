@@ -6,7 +6,7 @@
   {"id": "magnet_logo", "kind": "letters", "text": "MAGNET", "sub": "by SHIBUYA109", "colour": [0.78, 0.05, 0.08], "edge": [0.95, 0.95, 0.95],
    "on": "sign_box_front", "z": [26.6, 29.4], "x": [37.0, 42.6], "src": "M002, M014"},
   {"id": "magnet_mark", "kind": "image", "image": "magnet_mark.png", "on": "sign_box_front", "z": [29.4, 31.4], "x": [38.8, 40.8], "emit_night": 2.0, "src": "M002"},
-  {"id": "box_screen", "kind": "led", "image": "led_box.png", "on": "sign_box_front", "z": [14.0, 23.0], "x": [36.0, 43.6], "strength_day": 2.2, "strength_night": 3.0, "src": "M014, M027 (screen in the grey box)"},
+  {"id": "box_screen", "kind": "led", "image": "led_box.png", "on": "sign_box_front", "z": [16.46, 21.26], "x": [35.48, 44.12], "strength_day": 2.2, "strength_night": 3.0, "src": "PAS 2021-03-08: active 8.64 x 4.80 m; HUIS 2025-10-24 release photo: normalized centre; inherited X/Y anchors; see screen_correction.json"},
   {"id": "drum_wrap", "kind": "wrap", "image": "drum_wrap.png", "on": "drum", "z": [12.0, 30.0], "arc_deg": [135, 315], "emit_night": 1.2, "src": "M027 (white wrap ad, black band at the foot)"},
   {"id": "west_banner", "kind": "printed", "image": "west_banner.png", "on": "west_face", "u": [2.5, 7.0], "z": [12.5, 30.5], "proud": 0.45, "emit_night": 1.4, "src": "M027, M001 (vertical idol banner on a frame)"},
   {"id": "magnet_1f", "kind": "letters", "text": "MAGNET", "sub": "by SHIBUYA109", "colour": [0.8, 0.07, 0.1], "edge": [0.95, 0.9, 0.85],

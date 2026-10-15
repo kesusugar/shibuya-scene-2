@@ -1,0 +1,54 @@
+{
+  "main": "1bec9a4964a10cbba7cf2dd6a6283761acc36c11",
+  "rows": [
+    {
+      "input": "magnet_signs_2025.before.glb",
+      "main_path": "assets/buildings/magnet/web/magnet_signs_2025.glb",
+      "git_blob": "a3c390f735b05a3a22ebb7ded6a0e8ba883b4206",
+      "sha256": "fedc370e1242801366ddfb617e4a363a6097f092cf9b52f73eb55238e613d673",
+      "bytes": 1112464
+    },
+    {
+      "input": "magnet.unchanged.glb",
+      "main_path": "assets/buildings/magnet/web/magnet.glb",
+      "git_blob": "7926f230ef4a13351757846d42f76ffe5c9234cd",
+      "sha256": "39ec44c3357b51f9fde3e1eef7328ecc1db6113a1314d2c53e92d499a040de2e",
+      "bytes": 604008
+    },
+    {
+      "input": "eiraku.unchanged.glb",
+      "main_path": "assets/buildings/eiraku/web/eiraku.glb",
+      "git_blob": "d0761fb8361c66db6300a33c730344685b9d390a",
+      "sha256": "07b535d3334f0f9afeb8bc4753c55ed29e82d53a35b8f79b23f9666d0882f3e5",
+      "bytes": 32840
+    },
+    {
+      "input": "viewer.json",
+      "main_path": "assets/buildings/magnet/web/viewer.json",
+      "git_blob": "e50feb2364ca5f487b3b45b51d36bcc80cb583e5",
+      "sha256": "880916e62da178a0f37a0cc9b5ce6612717e9a2c1cb831267b10923f8f1a4d83",
+      "bytes": 924
+    },
+    {
+      "input": "emissive_day.json",
+      "main_path": "assets/buildings/magnet/web/emissive_day.json",
+      "git_blob": "dcdbb6562b4820118756cf41c04383169f077c22",
+      "sha256": "7362f6c22c15c681e13429b67bbb0c27deea7d97749bfec83bfbaee20edf8bf4",
+      "bytes": 4227
+    },
+    {
+      "input": "emissive_night.json",
+      "main_path": "assets/buildings/magnet/web/emissive_night.json",
+      "git_blob": "4900dbf737d8271cc67c097fe6b5df3c78c38d78",
+      "sha256": "29b5ff5abf0a350bc5544b4c5197da74922d4664ab62b7e19a818be5eb722df1",
+      "bytes": 4180
+    },
+    {
+      "input": "signage_2025.before.json",
+      "main_path": "assets/buildings/magnet/source/data/signage_2025.json",
+      "git_blob": "ef204445eae3cca6322c09e30dfb59534706a859",
+      "sha256": "b446d6892ae473e87bff2815114032b620a053212112dea2211019b8bb2fb2e2",
+      "bytes": 2751
+    }
+  ]
+}

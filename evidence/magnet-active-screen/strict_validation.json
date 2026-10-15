@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "target": "08_SIGNS_2025_box_screen",
+  "before_sha256": "fedc370e1242801366ddfb617e4a363a6097f092cf9b52f73eb55238e613d673",
+  "after_sha256": "72261c821608d40309254b838a11117af04d7100f13a6c6fc3acf645e168de7f",
+  "before_bytes": 1112464,
+  "after_bytes": 1112508,
+  "changed_binary_bytes": 24,
+  "changed_position_components": 8,
+  "position_vertices": 4,
+  "target_triangles": 2,
+  "all_triangles": 16092,
+  "all_position_vertices": 16682,
+  "all_meshes": 31,
+  "all_materials": 19,
+  "unchanged_binary_bytes_outside_target_position": true,
+  "unchanged_json_bytes_except_accessor_bounds_and_padding": true,
+  "all_nodes_materials_textures_images_indices_normals_uvs_unchanged": true,
+  "all_other_signs_and_source_entries_unchanged": true,
+  "main_building_and_eiraku_companion_hashes_verified": true,
+  "authoring_vertices_m": [
+    [
+      35.47999954223633,
+      8.669999122619629,
+      16.459999084472656
+    ],
+    [
+      44.119998931884766,
+      8.669999122619629,
+      16.459999084472656
+    ],
+    [
+      44.119998931884766,
+      8.669999122619629,
+      21.260000228881836
+    ],
+    [
+      35.47999954223633,
+      8.669999122619629,
+      21.260000228881836
+    ]
+  ],
+  "width_m": 8.639999389648438,
+  "height_m": 4.80000114440918,
+  "normal_authoring": [
+    0,
+    -1,
+    0
+  ],
+  "horizontal_center_change_m": 0.0,
+  "cassette_margins_m": {
+    "left": 0.4799995422363281,
+    "right": 0.4800010681152358,
+    "bottom": 7.459999084472656,
+    "top": 10.739999771118164
+  },
+  "logo_clearance_m": 5.3399997711181655,
+  "stand_off_m": 0.030000877380370383,
+  "authoring_datum": "inherited; no rebasing",
+  "runtime_offset_m": -0.09299999999999997,
+  "no_fps_or_walking_tests": true
+}
