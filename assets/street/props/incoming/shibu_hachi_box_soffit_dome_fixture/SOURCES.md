@@ -1,0 +1,7 @@
+# Evidence and rights
+
+1. CASIO release dated 2024-11-15: https://www.atpress.ne.jp/news/417308 . Exterior photograph privately examined. At 840×472 pixels, pale/dark soffit fixture appears approximately x356–368, y93–106. The release date is not independently established EXIF capture time. No open image redistribution license verified.
+2. Shibuya Bunka article https://biz.shibuyabunka.com/watch/107/ , published 2026-08-11 and explicitly documenting August 8, 2026. Day photograph https://biz.shibuyabunka.com/storage/images/watch/1786320443.webp , photographer 松葉理 / Osamu Matsuba. Fixture approximately x550–572, y134–153 in 1080×608 image. All rights reserved; used for private inspection only.
+3. Operator dimensional plan from https://shibuyaplusfun.com/news/detail/?cd=000153 (2024-06-24); attached plan https://shibuyaplusfun.pictona.jp/scc-admin/asset/shibuyaplusfun/000002/000002/d58a90d1.pdf . 2.354 m clear height is a rough scaling aid, NOT a fixture dimension. No PDF or photograph redistributed.
+
+Only newly authored procedural meshes, Python, original model renders and text notes are distributed. No third-party photographs, crops, logos, graphics, models or textures are included. Newly authored material follows the repository license; this does not relicense reference photographs. The user permits present-day appearance specifically in the Hachiko area, but this does not prove the wider area's construction is complete.
