@@ -1,0 +1,15 @@
+{
+  "asset": "shibu_hachi_box",
+  "units": "metres",
+  "origin": "bottom footprint centre",
+  "front": "-Y in Blender",
+  "triangles": 9312,
+  "mesh_objects": 115,
+  "materials": 5,
+  "placement": "unplaced",
+  "estimated_roof_width": 12.76,
+  "measured_outer_plan_width": 12.559,
+  "measured_overall_plan_depth": 3.572,
+  "interior_clear_height": 2.354,
+  "roof_top_estimated": 2.805
+}
