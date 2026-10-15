@@ -1,0 +1,19 @@
+{
+  "views": {
+    "rear": [
+      [
+        -260,
+        8,
+        28
+      ],
+      [
+        -153,
+        8,
+        28
+      ]
+    ]
+  },
+  "model_sha256": "0ef0583ab368e3d2265aa299292bd6306ef68901e859265b94f214090d8b239e",
+  "render_stage": "Entry views: simple staging plane fitted to existing-fill fourpoint heights; wholebuilding: neutral flat1.17datum. Renderstage is not surveyed pavement; actual footcontact verified independently against unchanged extension mesh",
+  "lighting": "Nishita sun38deg rotation120deg strength0.45; exposure-1.5; AgX MediumHighContrast"
+}

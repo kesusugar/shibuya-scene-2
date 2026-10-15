@@ -1,0 +1,147 @@
+{
+  "base_commit": "8633c1b7b9342945f309dab328fe4af36cdeb6d4",
+  "regeneration": "PASS: relocated inputs/scripts only, Blender4.2.3",
+  "regenerated_sha256": "0ef0583ab368e3d2265aa299292bd6306ef68901e859265b94f214090d8b239e",
+  "python_preservation": {
+    "model_sha256": "0ef0583ab368e3d2265aa299292bd6306ef68901e859265b94f214090d8b239e",
+    "protected_untouched_meshes": [
+      "shibuya109_roof",
+      "shibuya109_cap_shadow",
+      "shibuya109_logo_gradient_face",
+      "shibuya109_logo_metal_return",
+      "shibuya109_logo_shibuya_letters"
+    ],
+    "all_original_live_attribute_values_exact": true,
+    "retained_indices_match_original_removal_contract": true,
+    "original_material_prefix_exact": true,
+    "repack_active_accessor_equivalence": true,
+    "added_degenerate_triangles": 0,
+    "added_opposed_normals": 0,
+    "triangles": 45727,
+    "primitives": 37,
+    "bytes": 2763184,
+    "budget_unchanged_pass": true
+  },
+  "python_feet": {
+    "model_sha256": "0ef0583ab368e3d2265aa299292bd6306ef68901e859265b94f214090d8b239e",
+    "ground_sha256": "86e58b050106eb2fcf55997971395688b75d313f8f16c167eaaed2f8556e88ad",
+    "foot_base_checks": [
+      {
+        "name": "rear_left",
+        "center_z": 1.67512128400168,
+        "sampled_base_vertices": 93,
+        "maximum_error_m": 5.7172005796246594e-08
+      },
+      {
+        "name": "rear_right",
+        "center_z": 1.3356098510694931,
+        "sampled_base_vertices": 96,
+        "maximum_error_m": 5.8676997927165075e-08
+      },
+      {
+        "name": "front_left",
+        "center_z": 1.443610477781082,
+        "sampled_base_vertices": 87,
+        "maximum_error_m": 5.944424374959567e-08
+      },
+      {
+        "name": "front_right",
+        "center_z": 1.1394951770062018,
+        "sampled_base_vertices": 96,
+        "maximum_error_m": 5.428713012456399e-08
+      }
+    ],
+    "new_emissive_materials": [
+      "entrance_white_identity"
+    ],
+    "other_new_materials_nonemissive": true,
+    "claim": "Exact contact with pinned model-ground triangles, not survey or fullscene."
+  },
+  "vitest": {
+    "files": 1,
+    "passed": 7,
+    "failed": 0,
+    "test": "tests/shibuya109-revision3.test.ts",
+    "contract_sha256": "1dcad9c511adb6b40a3dfda40d100caaec53958fbfb5255cee18bb91dc6153aa"
+  },
+  "runtime_dependencies": {
+    "src/world/buildings.ts": "5fb4d7b86974894b10edd8570fb8fc905ae0ca71",
+    "src/world/look.ts": "0e2973d891baca34f0da00bb289ec4460b5cd5d4",
+    "package.json": "3748be8943004fc026e57403fb0225a439faad8a",
+    "package-lock.json": "0bf0e2fd1ac401d8d2f24d6321d5d954f0da8391"
+  },
+  "not_run": [
+    "full-scene",
+    "whole-suite",
+    "browser pixels",
+    "FPS",
+    "walking",
+    "collision",
+    "typecheck",
+    "build"
+  ],
+  "current_budget": {
+    "status": "PASS",
+    "parser": "@gltf-transform/core NodeIO4.5.1",
+    "counts": {
+      "triangles": 45727,
+      "primitives": 37,
+      "bytes": 2763184
+    },
+    "currentMainBudgetBlob": "c12722dc0e973341172479571941de9dcf55f18c",
+    "limits": {
+      "triangles": 120000,
+      "primitives": 40,
+      "bytes": 3000000
+    },
+    "scope": "Asset only; aggregate full-scene not run"
+  },
+  "loader": {
+    "loader": "Three.js GLTFLoader",
+    "meshes": 37,
+    "triangles": 45727,
+    "materialCount": 29,
+    "colorAttributeMeshes": 3,
+    "nonfinite": 0,
+    "names": [
+      "shibuya109_roof",
+      "shibuya109_wall",
+      "shibuya109_spandrel",
+      "shibuya109_frame",
+      "shibuya109_glass0",
+      "shibuya109_sign_housing",
+      "shibuya109_glass2",
+      "shibuya109_glass1",
+      "shibuya109_fine_joint",
+      "shibuya109_cap_shadow",
+      "shibuya109_metal_lip",
+      "shibuya109_wing_reveal",
+      "shibuya109_wing_metal",
+      "shibuya109_logo_gradient_face",
+      "shibuya109_logo_metal_return",
+      "shibuya109_logo_shibuya_letters",
+      "entrance_gold_open_frame",
+      "entrance_stowed_gray_awning_spine",
+      "entrance_stair_rails_nosings",
+      "entrance_polygonal_gradient_portal",
+      "entrance_shallow_passage_fixture_housings",
+      "entrance_canonical_white_logo_and_lamps",
+      "entrance_neutral_jamb_soffit",
+      "entrance_gold_mosaic_stair",
+      "entrance_stair_frosted_side_panels",
+      "phase2_retained_fragments_1",
+      "phase2_retained_fragments_2",
+      "phase2_retained_fragments_3",
+      "phase2_retained_fragments_5",
+      "phase2_retained_fragments_6",
+      "phase2_retained_fragments_8",
+      "phase2_retained_fragments_13",
+      "phase2_retained_fragments_16",
+      "phase2_aperture_metal",
+      "phase2_recess_backing",
+      "phase2_spatial_frame",
+      "phase2_right_tower_dark_louvers"
+    ],
+    "scope": "Asset-level loader verification only; no full-game/current-main claim"
+  }
+}

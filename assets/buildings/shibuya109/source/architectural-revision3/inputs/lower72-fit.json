@@ -1,0 +1,109 @@
+{
+  "status": "Research freeze; all new aperture/portal dimensions are photo/grid-fit seeds, not surveyed",
+  "input_sha256": "a31e295bf8ce9bbef9ddc0c6164526db84cb7b08a6caf1957352be142854db90",
+  "coordinate": "source72 frame from WING_SLOT_IMPLEMENTATION.md; z=TP-15, d outward",
+  "grid_pitch_m": 1.35,
+  "native_grid_evidence": {
+    "source": "D285-b",
+    "crop_xyxy": [
+      35,
+      840,
+      1280,
+      1160
+    ],
+    "full_bays_approx": 23,
+    "additional_partial_bay": true,
+    "bay_width_px": [
+      51,
+      53
+    ],
+    "course_height_px": [
+      53,
+      55
+    ],
+    "derived_module_range_m": [
+      1.33,
+      1.38
+    ],
+    "conditional_on_wall_and_cavity_bounds": true
+  },
+  "generic_overlay_removal": {
+    "u": [
+      0,
+      42.30549706598424
+    ],
+    "z": [
+      1.3,
+      7.65
+    ],
+    "d": [
+      0.01,
+      0.3
+    ],
+    "candidate_count": 230,
+    "candidate_file": "LOWER72_TRIANGLES.json",
+    "instruction": "Combine with existing cavity masks against original prior indices. Remove clipped fragments inside region, preserve fragments outside. Do not remove source shell except localized aperture cuts."
+  },
+  "shell_aperture_rects_uz": [
+    [
+      24.0,
+      38.8,
+      4.7,
+      7.4
+    ],
+    [
+      24.0,
+      29.5,
+      1.5,
+      4.6
+    ],
+    [
+      31.0,
+      38.8,
+      1.5,
+      4.6
+    ],
+    [
+      13.5,
+      22.5,
+      1.5,
+      3.8
+    ]
+  ],
+  "aperture_types": [
+    "cafe_upper",
+    "cafe_lower_near",
+    "cafe_lower_far",
+    "near_ground_shop"
+  ],
+  "reveal_depth_m": 0.22,
+  "depth_confidence": "visual simplification, no physical measurement",
+  "solid_field": "source72 u10.5..42.3055 outside listed aperture rects; preserve existing upper/slit treatment",
+  "side_portal": {
+    "confidence": "Topology supported by D285-b/installer sideentry photographs; all metric bounds estimated. Do not describe as surveyed or exact2025geometry.",
+    "header_uz": [
+      1.0,
+      9.7,
+      3.4,
+      4.7
+    ],
+    "header_outward_d": 0.25,
+    "dark_entry_uz": [
+      1.8,
+      8.8,
+      1.45,
+      3.4
+    ],
+    "dark_entry_d": -0.25,
+    "minimum_treatment": "separate shallow silver header/frame and localized dark entry; optional small unlettered gradient panel; no tenant/corporate glyph required",
+    "shell_cut": "none additional; within existing cavity",
+    "caveat": "Check collision/overlap against front portal and cylinder; clamp to source72-owned area. Omit any conflicting extension rather than changing cylinder."
+  },
+  "sources": [
+    "https://docomomojapan.com/structure/285/?lang=ja",
+    "https://shu-group.studio.site/shop/shibuyaekimae",
+    "https://ir.tokyu.co.jp/ja/ir/news/news20180514102999/main/0/link/03_FACTBOOK_2018_j2.pdf",
+    "https://www.hachi-pay.tokyo/handout/campaign/202509_30p_rewards_shoplist.pdf"
+  ],
+  "temporal_limit": "2025 merchant existence confirmed; no newly obtained2025close elevation of cafe. Stable aperture hierarchy from auxiliary2023associated photo. No tenant lettering/interiors."
+}

@@ -1,0 +1,383 @@
+{
+  "status": "Research registration proposal, not survey or completed fit. Reconcile rear posts and cylinder arc before mesh authoring.",
+  "diagram": "historical-plan.png, original PDF page5 rendered maximum1800px",
+  "stage_square_pixels": [
+    [
+      910,
+      425
+    ],
+    [
+      1076,
+      363
+    ],
+    [
+      1144,
+      518
+    ],
+    [
+      978,
+      580
+    ]
+  ],
+  "dimensioned_stage_square_m": [
+    3.6,
+    3.6
+  ],
+  "diagram_edge_vectors_px": [
+    [
+      166.0,
+      -62.0
+    ],
+    [
+      68.0,
+      155.0
+    ]
+  ],
+  "method": "Affine map stage edges to orthogonal3.6m axes; out=-first axis,right=second axis; origin=rear-post midpoint.",
+  "uncertainty": "Suggested±10% dimension envelope includes diagram skew, manually picked points and unknown drawing scale accuracy. No construction dimensions are printed for posts/stair.",
+  "model_anchor_C_blender_xy": [
+    -129.03801651559164,
+    6.935480065764058
+  ],
+  "model_normal_out_xy": [
+    0.998716,
+    -0.050703
+  ],
+  "model_right_tangent_xy": [
+    0.050703,
+    0.998716
+  ],
+  "registration_formula": "XY=C+out*N+right*R; proposed anchor requires silhouette fit, may need common entrance-only translation. Do not move building or roads.",
+  "landmarks": {
+    "rear_left": {
+      "pixel_xy": [
+        1212,
+        222
+      ],
+      "local_out_right_m": [
+        0.002644760569024244,
+        -3.275896613905029
+      ],
+      "proposed_blender_xy": [
+        -129.20147293691002,
+        3.6636556058161522
+      ],
+      "nearest_existing_ground_samples": [
+        {
+          "xy": [
+            -129.82774353027344,
+            4.010729789733887
+          ],
+          "local_z": 1.6738204956054688,
+          "distance_m": 0.7160135091280928
+        },
+        {
+          "xy": [
+            -129.65048217773438,
+            4.254729747772217
+          ],
+          "local_z": 1.6670875549316406,
+          "distance_m": 0.742278882654464
+        },
+        {
+          "xy": [
+            -130.00498962402344,
+            3.7667295932769775
+          ],
+          "local_z": 1.6805610656738281,
+          "distance_m": 0.8101008044439855
+        }
+      ]
+    },
+    "rear_right": {
+      "pixel_xy": [
+        1336,
+        504
+      ],
+      "local_out_right_m": [
+        -0.002644760569024244,
+        3.275896613905029
+      ],
+      "proposed_blender_xy": [
+        -128.87456009427325,
+        10.207304525711965
+      ],
+      "nearest_existing_ground_samples": [
+        {
+          "xy": [
+            -129.30230712890625,
+            9.714712142944336
+          ],
+          "local_z": 1.374755859375,
+          "distance_m": 0.6523915857811289
+        },
+        {
+          "xy": [
+            -129.4800567626953,
+            9.958211898803711
+          ],
+          "local_z": 1.3597908020019531,
+          "distance_m": 0.6547315115757547
+        },
+        {
+          "xy": [
+            -129.26487731933594,
+            9.631065368652344
+          ],
+          "local_z": 1.3801689147949219,
+          "distance_m": 0.6959878607486054
+        }
+      ]
+    },
+    "front_left": {
+      "pixel_xy": [
+        819,
+        368
+      ],
+      "local_out_right_m": [
+        8.519134441995593,
+        -3.291524744540172
+      ],
+      "proposed_blender_xy": [
+        -120.69671082134198,
+        3.216235965383373
+      ],
+      "nearest_existing_ground_samples": [
+        {
+          "xy": [
+            -129.19638061523438,
+            5.121102809906006
+          ],
+          "local_z": 1.6448326110839844,
+          "distance_m": 8.710505398687747
+        },
+        {
+          "xy": [
+            -129.25875854492188,
+            4.826478004455566
+          ],
+          "local_z": 1.6515274047851562,
+          "distance_m": 8.712149025656933
+        },
+        {
+          "xy": [
+            -129.13400268554688,
+            5.4157280921936035
+          ],
+          "local_z": 1.6381340026855469,
+          "distance_m": 8.719269442887878
+        }
+      ]
+    },
+    "front_right": {
+      "pixel_xy": [
+        943,
+        650
+      ],
+      "local_out_right_m": [
+        8.513844920857544,
+        3.260268483269886
+      ],
+      "proposed_blender_xy": [
+        -120.36979797870525,
+        9.759884885279185
+      ],
+      "nearest_existing_ground_samples": [
+        {
+          "xy": [
+            -128.88613891601562,
+            7.864064693450928
+          ],
+          "local_z": 1.4971656799316406,
+          "distance_m": 8.724803559980723
+        },
+        {
+          "xy": [
+            -128.94924926757812,
+            8.158565521240234
+          ],
+          "local_z": 1.4777717590332031,
+          "distance_m": 8.727611822474035
+        },
+        {
+          "xy": [
+            -128.82301330566406,
+            7.5695648193359375
+          ],
+          "local_z": 1.5165519714355469,
+          "distance_m": 8.732373752606161
+        }
+      ]
+    },
+    "stair_bottom_inner": {
+      "pixel_xy": [
+        1162,
+        526
+      ],
+      "local_out_right_m": [
+        3.419434982969345,
+        2.418032458425165
+      ],
+      "proposed_blender_xy": [
+        -125.5003705874009,
+        9.17703215857111
+      ],
+      "nearest_existing_ground_samples": [
+        {
+          "xy": [
+            -129.01239013671875,
+            8.453064918518066
+          ],
+          "local_z": 1.4583854675292969,
+          "distance_m": 3.5858625014716914
+        },
+        {
+          "xy": [
+            -128.94924926757812,
+            8.158565521240234
+          ],
+          "local_z": 1.4777717590332031,
+          "distance_m": 3.5961143532898254
+        },
+        {
+          "xy": [
+            -129.07550048828125,
+            8.747565269470215
+          ],
+          "local_z": 1.4389915466308594,
+          "distance_m": 3.6008326282962364
+        }
+      ]
+    },
+    "stair_bottom_outer": {
+      "pixel_xy": [
+        1162,
+        668
+      ],
+      "local_out_right_m": [
+        4.5802444399919855,
+        5.251773191745142
+      ],
+      "proposed_blender_xy": [
+        -124.19737245331955,
+        11.948277846890086
+      ],
+      "nearest_existing_ground_samples": [
+        {
+          "xy": [
+            -129.3306427001953,
+            14.074322700500488
+          ],
+          "local_z": 1.2223701477050781,
+          "distance_m": 5.556125461778493
+        },
+        {
+          "xy": [
+            -129.26487731933594,
+            9.631065368652344
+          ],
+          "local_z": 1.3801689147949219,
+          "distance_m": 5.5721700652798205
+        },
+        {
+          "xy": [
+            -129.30230712890625,
+            9.714712142944336
+          ],
+          "local_z": 1.374755859375,
+          "distance_m": 5.572178550248566
+        }
+      ]
+    },
+    "stair_top_inner": {
+      "pixel_xy": [
+        1607,
+        526
+      ],
+      "local_out_right_m": [
+        -4.872490482869164,
+        5.734802644760569
+      ],
+      "proposed_blender_xy": [
+        -133.6134790221835,
+        12.909969108881668
+      ],
+      "nearest_existing_ground_samples": [
+        {
+          "xy": [
+            -132.34742736816406,
+            15.787395477294922
+          ],
+          "local_z": 1.2595252990722656,
+          "distance_m": 3.1436394984611757
+        },
+        {
+          "xy": [
+            -130.72430419921875,
+            11.662712097167969
+          ],
+          "local_z": 1.2550468444824219,
+          "distance_m": 3.146900254364979
+        },
+        {
+          "xy": [
+            -131.61654663085938,
+            15.437146186828613
+          ],
+          "local_z": 1.2526893615722656,
+          "distance_m": 3.2209257921939054
+        }
+      ]
+    },
+    "stair_top_outer": {
+      "pixel_xy": [
+        1607,
+        668
+      ],
+      "local_out_right_m": [
+        -3.711681025846524,
+        8.568543378080545
+      ],
+      "proposed_blender_xy": [
+        -132.31048088810215,
+        15.681214797200646
+      ],
+      "nearest_existing_ground_samples": [
+        {
+          "xy": [
+            -132.34742736816406,
+            15.787395477294922
+          ],
+          "local_z": 1.2595252990722656,
+          "distance_m": 0.11242499372581008
+        },
+        {
+          "xy": [
+            -131.61654663085938,
+            15.437146186828613
+          ],
+          "local_z": 1.2526893615722656,
+          "distance_m": 0.735604676401676
+        },
+        {
+          "xy": [
+            -133.0782928466797,
+            16.137643814086914
+          ],
+          "local_z": 1.2650222778320312,
+          "distance_m": 0.8932315775824554
+        }
+      ]
+    }
+  },
+  "ground": {
+    "source_shell_base_local_z": 1.17,
+    "entrance_pavement_samples_local_z": [
+      1.562744,
+      1.54216,
+      1.53595
+    ],
+    "entry_shadow_bottom_z": 2.05,
+    "interpretation": "2.05 is appearance bound, not floor. Near-door pavement≈1.55. Front posts8.5m outward require actual corresponding ground lookup; do not extrapolate wall ground as measured."
+  }
+}

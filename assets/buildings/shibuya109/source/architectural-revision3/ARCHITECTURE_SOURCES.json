@@ -1,0 +1,195 @@
+[
+  {
+    "id": "D285",
+    "url": "https://docomomojapan.com/structure/285/?lang=ja",
+    "date": "2023 selection; image capture unverified, visible banner January 2023",
+    "author": "Photographs: 加藤雅久 (Masahisa Kato)",
+    "license": "All rights reserved; reference-only, do not redistribute",
+    "credit_url": "https://docomomojapan.com/wp-content/themes/docomomo/assets/pdf/credit.pdf",
+    "images": [
+      "https://docomomojapan.com/wp-content/themes/docomomo/assets/img/structure/285-a.jpg",
+      "https://docomomojapan.com/wp-content/themes/docomomo/assets/img/structure/285-b.jpg",
+      "https://docomomojapan.com/wp-content/themes/docomomo/assets/img/structure/285-c.jpg"
+    ],
+    "downloaded_images": [
+      {
+        "file": "refs/docomomo-a.jpg",
+        "sha256": "ceb91bb9b478d9d2c4cf824017ad7fdba3d804ff6066b5ec5be3ff8af92b259c",
+        "dimensions": [
+          1920,
+          2814
+        ],
+        "use": "reference inspection only; excluded from deliverable packaging"
+      },
+      {
+        "file": "refs/docomomo-b.jpg",
+        "sha256": "a37f38705112228c2e3b7c3c26ce2d976b7f013d31cb12c59ad623c532f1adfa",
+        "dimensions": [
+          1920,
+          1513
+        ],
+        "use": "reference inspection only; excluded from deliverable packaging"
+      },
+      {
+        "file": "refs/docomomo-c.jpg",
+        "sha256": "a40ea725f0329c87e90044e549a9a6afde63e2d1475d283b6d3d349ae0c1600e",
+        "dimensions": [
+          1920,
+          1440
+        ],
+        "use": "reference inspection only; excluded from deliverable packaging"
+      }
+    ]
+  },
+  {
+    "id": "S2019",
+    "url": "https://signs-d.ne.jp/article/aoineon-2/",
+    "date": "Installation April 2019; images September 2019 publication folder; EXIF edit 2019-09-20, not capture date",
+    "author": "Signs & Displays, installer Aoi Neon testimony",
+    "license": "All rights reserved; reference-only",
+    "images": [
+      "https://signs-d.ne.jp/cwp/wp-content/uploads/2019/09/02_109-1024x683.jpg",
+      "https://signs-d.ne.jp/cwp/wp-content/uploads/2019/09/03_109-1024x683.jpg"
+    ],
+    "downloaded_images": [
+      {
+        "file": "refs/2019-upper-day.jpg",
+        "sha256": "2ba04797718cfa22c9a85516e5e63b0eaca10b44ddb6675dadcc3405ba2b7408",
+        "dimensions": [
+          1024,
+          683
+        ],
+        "use": "reference inspection only; excluded from deliverable packaging"
+      },
+      {
+        "file": "refs/2019-upper-night.jpg",
+        "sha256": "9a65cfa1ced527a2665b85bf92365b525415608d382e3c78d5869bd3442377f6",
+        "dimensions": [
+          1024,
+          683
+        ],
+        "use": "reference inspection only; excluded from deliverable packaging"
+      }
+    ]
+  },
+  {
+    "id": "AOI",
+    "url": "https://www.aoineon.com/works/",
+    "date": "2025/01 upload path only; capture date unverified",
+    "author": "Aoi Neon",
+    "license": "All rights reserved; reference-only",
+    "images": [
+      "https://www.aoineon.com/wp-content/uploads/2025/01/02_thmb.jpg"
+    ],
+    "downloaded_images": [
+      {
+        "file": "refs/aoineon-2025-upload.jpg",
+        "sha256": "c565340957fb5e64132430a56cd688cfae4072a063fc081b0e1bc96a66bfae6f",
+        "dimensions": [
+          1000,
+          660
+        ],
+        "use": "reference inspection only; excluded from deliverable packaging"
+      }
+    ]
+  },
+  {
+    "id": "FLOOR",
+    "url": "https://shibuya109.jp/floor-map/",
+    "date": "Current page retrieved 2026-10-14; not a 2025 snapshot",
+    "author": "SHIBUYA109 Entertainment",
+    "license": "All rights reserved; reference-only",
+    "images": [
+      "https://shibuya109.jp/wp-content/themes/shibuya109.jp/public/build/assets/floormap_1f_sp-B2Dj8RwR.png",
+      "https://shibuya109.jp/wp-content/themes/shibuya109.jp/public/build/assets/floormap_8f_sp-BuygyZOO.png"
+    ],
+    "downloaded_images": [
+      {
+        "file": "refs/current-floor1.png",
+        "sha256": "6988d1e7c8daebe0f3d148412d899214ab4a50b1dfb9c8ba72d4de35db460daf",
+        "dimensions": [
+          650,
+          800
+        ],
+        "use": "reference inspection only; excluded from deliverable packaging"
+      },
+      {
+        "file": "refs/current-floor8.png",
+        "sha256": "4243814c8a690d11f665f9446fe92b93ff189369159b2751b1bd1a7230841bb7",
+        "dimensions": [
+          650,
+          804
+        ],
+        "use": "reference inspection only; excluded from deliverable packaging"
+      }
+    ]
+  },
+  {
+    "id": "MEDIA19",
+    "url": "https://shibuya109square.com/wp-content/themes/shibuya109square/resources/pdf/%E5%AA%92%E4%BD%93%E8%B3%87%E6%96%99.pdf",
+    "date": "2019-08-09",
+    "author": "SHIBUYA109 Entertainment",
+    "license": "All rights reserved; reference-only",
+    "downloaded_images": []
+  },
+  {
+    "id": "MEDIA_NOW",
+    "url": "https://shibuya109square.com/service/109cylinder/",
+    "date": "Current retrieved 2026-10-14; undated specifications",
+    "author": "SHIBUYA109 Entertainment",
+    "license": "All rights reserved",
+    "downloaded_images": []
+  },
+  {
+    "id": "SIGN_NEWS",
+    "url": "https://www.shibukei.com/headline/14093/",
+    "date": "2019-04-28",
+    "author": "Shibuya Keizai Shimbun",
+    "license": "All rights reserved",
+    "downloaded_images": []
+  },
+  {
+    "id": "HISTORY",
+    "url": "https://www.mjd.co.jp/insights/50941/",
+    "date": "2018-10-26",
+    "author": "Mitsubishi Jisho Design; architectural historian Shunsuke Kurakata",
+    "license": "All rights reserved",
+    "downloaded_images": []
+  },
+  {
+    "id": "AD_SIZE",
+    "url": "https://www.ooh-cmedia.com/media/shibuya-109-cylinder/",
+    "date": "Current retrieved 2026-10-14; not dated historical specification",
+    "author": "OOH Cmedia",
+    "license": "All rights reserved",
+    "downloaded_images": []
+  },
+  {
+    "id": "JUN03",
+    "url": "https://commons.wikimedia.org/wiki/File:%E6%B8%8B%E8%B0%B7%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E4%BA%A4%E5%B7%AE%E7%82%B9_2025%E5%B9%B46%E6%9C%883%E6%97%A5%E3%81%AE%E6%B8%8B%E8%B0%B7_202506031504_IMG_4480.jpg",
+    "date": "3 June 2025, 15:04:02",
+    "author": "ウィ貴公子",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "original_sha256": "65e3283806a40cda94c692c34286b36db17cd08f1dd251d10f9040b802d47545",
+    "original_dimensions": [
+      4032,
+      3024
+    ],
+    "downloaded_images": []
+  },
+  {
+    "id": "SEP30",
+    "url": "https://commons.wikimedia.org/wiki/File:%E6%B8%8B%E8%B0%B7%E3%82%B9%E3%82%AF%E3%83%A9%E3%83%B3%E3%83%96%E3%83%AB%E4%BA%A4%E5%B7%AE%E7%82%B9_2025%E5%B9%B49%E6%9C%8830%E6%97%A5%E3%81%AE%E6%B8%8B%E8%B0%B7_202509301713_IMG_4111.jpg",
+    "date": "30 September 2025, 17:13:11",
+    "author": "ウィ貴公子",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "original_sha256": "ea9dac14cbf3cc60d3400396f50b81bce0918e9e4f31214743c829a2530c4965",
+    "original_dimensions": [
+      4032,
+      3024
+    ],
+    "downloaded_images": []
+  }
+]

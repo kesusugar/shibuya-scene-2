@@ -1,0 +1,1791 @@
+{
+  "description": "Frozen bounded geometry-only accepted revision3 contract. Removal ordinals address the SHA-pinned predecessor, not mutable build reports. Replacement fingerprints protect accepted apertures/local returns and all attributes. No workflow status fields.",
+  "removed": {
+    "12": [
+      [
+        0,
+        115
+      ]
+    ],
+    "20": [
+      [
+        0,
+        7
+      ]
+    ],
+    "11": [
+      [
+        0,
+        33
+      ]
+    ],
+    "1": [
+      [
+        6,
+        6
+      ],
+      [
+        24,
+        32
+      ],
+      [
+        53,
+        61
+      ],
+      [
+        113,
+        113
+      ],
+      [
+        151,
+        151
+      ],
+      [
+        192,
+        192
+      ],
+      [
+        222,
+        222
+      ],
+      [
+        252,
+        255
+      ],
+      [
+        285,
+        285
+      ],
+      [
+        308,
+        308
+      ],
+      [
+        326,
+        334
+      ],
+      [
+        356,
+        364
+      ],
+      [
+        420,
+        420
+      ],
+      [
+        462,
+        462
+      ],
+      [
+        505,
+        505
+      ],
+      [
+        537,
+        537
+      ],
+      [
+        566,
+        569
+      ],
+      [
+        596,
+        596
+      ],
+      [
+        604,
+        604
+      ]
+    ],
+    "2": [
+      [
+        13,
+        20
+      ],
+      [
+        124,
+        132
+      ],
+      [
+        214,
+        221
+      ],
+      [
+        261,
+        268
+      ],
+      [
+        332,
+        339
+      ],
+      [
+        443,
+        451
+      ],
+      [
+        533,
+        540
+      ],
+      [
+        580,
+        587
+      ]
+    ],
+    "3": [
+      [
+        11,
+        18
+      ],
+      [
+        353,
+        492
+      ],
+      [
+        494,
+        505
+      ],
+      [
+        734,
+        737
+      ],
+      [
+        739,
+        757
+      ],
+      [
+        835,
+        842
+      ],
+      [
+        973,
+        980
+      ],
+      [
+        1315,
+        1454
+      ],
+      [
+        1456,
+        1467
+      ],
+      [
+        1696,
+        1699
+      ],
+      [
+        1701,
+        1719
+      ],
+      [
+        1797,
+        1804
+      ]
+    ],
+    "4": [
+      [
+        17,
+        23
+      ],
+      [
+        52,
+        58
+      ]
+    ],
+    "5": [
+      [
+        1,
+        1
+      ],
+      [
+        52,
+        79
+      ],
+      [
+        111,
+        111
+      ],
+      [
+        123,
+        123
+      ],
+      [
+        139,
+        139
+      ],
+      [
+        190,
+        217
+      ],
+      [
+        249,
+        249
+      ],
+      [
+        261,
+        261
+      ]
+    ],
+    "6": [
+      [
+        0,
+        0
+      ],
+      [
+        20,
+        34
+      ],
+      [
+        47,
+        49
+      ],
+      [
+        55,
+        55
+      ],
+      [
+        63,
+        63
+      ],
+      [
+        83,
+        97
+      ],
+      [
+        110,
+        112
+      ],
+      [
+        118,
+        118
+      ]
+    ],
+    "7": [
+      [
+        15,
+        20
+      ],
+      [
+        55,
+        60
+      ]
+    ],
+    "8": [
+      [
+        92,
+        93
+      ],
+      [
+        666,
+        681
+      ],
+      [
+        1324,
+        1325
+      ],
+      [
+        1334,
+        1335
+      ],
+      [
+        1344,
+        1345
+      ],
+      [
+        1366,
+        1367
+      ]
+    ],
+    "10": [
+      [
+        0,
+        63
+      ]
+    ],
+    "13": [
+      [
+        0,
+        5
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        12,
+        15
+      ]
+    ],
+    "14": [
+      [
+        0,
+        3
+      ]
+    ],
+    "15": [
+      [
+        0,
+        39
+      ]
+    ],
+    "16": [
+      [
+        78,
+        119
+      ],
+      [
+        121,
+        121
+      ],
+      [
+        140,
+        140
+      ],
+      [
+        142,
+        183
+      ],
+      [
+        310,
+        313
+      ],
+      [
+        334,
+        337
+      ]
+    ]
+  },
+  "meshMap": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "10": 10,
+    "13": 11,
+    "16": 12,
+    "17": 13,
+    "18": 14,
+    "19": 15
+  },
+  "newMeshes": [
+    {
+      "index": 16,
+      "definition": {
+        "name": "entrance_gold_open_frame",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 49,
+              "NORMAL": 50
+            },
+            "indices": 51,
+            "material": 25,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "51": "a26477e3912d1e88247e3eb0c8ab73092d25aa88d89be97c73d8c27c96ec46b9",
+        "49": "14a67a0e349c7f3715155faa18c411580d2c2d037c0489302ca507931fdacf74",
+        "50": "c282a93c8e9498ff35875396bf10f35432c1acdf07bfd53242555f47f64b8529"
+      }
+    },
+    {
+      "index": 17,
+      "definition": {
+        "name": "entrance_stowed_gray_awning_spine",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 52,
+              "NORMAL": 53
+            },
+            "indices": 54,
+            "material": 26,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "54": "a001cf77ab4a010fbbe05d8a9f8cf0b095fb4b54c01ab1c2a749875b3a434d31",
+        "52": "60fe86ad701f261da28c98b4de43784de3798d4d8279668cfc0dc86c41291a22",
+        "53": "3285e0a350221ffba04d820182b4f2ef3cbb1182e5182222943174d3cda2d1cb"
+      }
+    },
+    {
+      "index": 18,
+      "definition": {
+        "name": "entrance_stair_rails_nosings",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 55,
+              "NORMAL": 56
+            },
+            "indices": 57,
+            "material": 27,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "57": "8dfeff4b539ed0f35056e911457e44371225f26fab1f8935e329b2b412492b1a",
+        "55": "310d731edc1eb8ade8149eb586de023db3f1d9a8b7920d792c71c9cf733af22d",
+        "56": "1bff6968e5f963bf858a119f8375534cd5c4d4b96e9ddf8569b390d3ee2ed551"
+      }
+    },
+    {
+      "index": 19,
+      "definition": {
+        "name": "entrance_polygonal_gradient_portal",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 58,
+              "NORMAL": 59,
+              "COLOR_0": 60
+            },
+            "indices": 61,
+            "material": 28,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "61": "063de0f93eee4448a7df1885fe9b5bbe7e63f8489a0b356ad113f3a816d72713",
+        "58": "f103a28e55ce53a6d986bf64c25c8700d31f12b1f4df61d7088227598fa547d8",
+        "59": "ab195ba34284a853f5f1f344ddc7bf1a02ba52141f6a1e7e827abe4e6fe3cef0",
+        "60": "385ed3454b159886c92ecdc9b6253eb06c49341df48c0307266fb4bf5ec0d72c"
+      }
+    },
+    {
+      "index": 20,
+      "definition": {
+        "name": "entrance_shallow_passage_fixture_housings",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 62,
+              "NORMAL": 63
+            },
+            "indices": 64,
+            "material": 29,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "64": "52213490ce5e1c18822102c7f2f18dd2b40796e5a26602a17c34c5166d272211",
+        "62": "d0980931f13408f3de1a5668eb810cc6e90c6acd0de6586c1f7f5f6fb4aab6ce",
+        "63": "527155324015907cac3c758a579830fd67e46cc352d944985fe012087de142f5"
+      }
+    },
+    {
+      "index": 21,
+      "definition": {
+        "name": "entrance_canonical_white_logo_and_lamps",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 65,
+              "NORMAL": 66
+            },
+            "indices": 67,
+            "material": 30,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "67": "83b99e78fd94b17be215df15568d6c133663da5d9ba7caaaef5092ffe2d0e42a",
+        "65": "d911b746476a65ff36a6f98b919e6101ba9ef687d237aa174a7e5dd24d712c23",
+        "66": "c7090389ff92a9677f112c952d723b05fab612b528d098071c9fd617059961b4"
+      }
+    },
+    {
+      "index": 22,
+      "definition": {
+        "name": "entrance_neutral_jamb_soffit",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 68,
+              "NORMAL": 69
+            },
+            "indices": 70,
+            "material": 31,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "70": "ad21586ba6c2bc1d9807f2a200c6c7a52b905255d5cf2f712e489a8741098e51",
+        "68": "b91744dc9e9ccfde7fec7028ac954a1a2f21f29edc10955a96ec959f2baffeb6",
+        "69": "654f101b07e1ba99f0cdfcd05e82655316bc8ac848c70ff75c407b639da8b144"
+      }
+    },
+    {
+      "index": 23,
+      "definition": {
+        "name": "entrance_gold_mosaic_stair",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 71,
+              "NORMAL": 72,
+              "COLOR_0": 73
+            },
+            "indices": 74,
+            "material": 32,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "74": "a3eb0b5c376cb94b948642475e4a9ed72c24ad39252867f316eda611c7e3c8e2",
+        "71": "df5b8660e5fab657d03dcc71bd6ff72d026c14b8222747b9267241ad508e4d21",
+        "72": "f6583039265f4811dc7846f3d48be88e54a0f6f992201db2ff4ec758a86b688d",
+        "73": "1b5e4c4b1ab2cc2feb3292587cedbb86a8a491d257dd99eb944506f63a04bdf2"
+      }
+    },
+    {
+      "index": 24,
+      "definition": {
+        "name": "entrance_stair_frosted_side_panels",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 75,
+              "NORMAL": 76
+            },
+            "indices": 77,
+            "material": 33,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "77": "ee86fd67a55d49614bdb9c3b1db41d19b1988bbd18d5a379dcfc885137896410",
+        "75": "825c0f68f6385fac84cd6d15e0bc87ad2a768747458b34b28eb79a1c20683fad",
+        "76": "24b421cd7d2d22dd4255e36d09072a815046381f158bf820066a90cce1b6f2f8"
+      }
+    },
+    {
+      "index": 25,
+      "definition": {
+        "name": "phase2_retained_fragments_1",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 78,
+              "NORMAL": 79
+            },
+            "indices": 80,
+            "material": 1,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "80": "8e082fdf5690b0174e3b0cc556974cf630b00f5bdcf00a38ab708913e8f9019e",
+        "78": "828475e30b4a02796846965d9b8536161747a145fd014b5724f9055c806716cd",
+        "79": "8beee73bf25264763515b0d2ff80c873fc4a795518b4db9c61bd8c54ca29308b"
+      }
+    },
+    {
+      "index": 26,
+      "definition": {
+        "name": "phase2_retained_fragments_2",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 81,
+              "NORMAL": 82
+            },
+            "indices": 83,
+            "material": 2,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "83": "ec43e65457f1306a8c9da44d5836d952ff09d3ade11aa385f58480fab425012d",
+        "81": "e19d4ff6568ce2e479d47c7d1d9a9651006c7458222639309b8a1c032b4c9672",
+        "82": "610cb647d16a3e4ccd4f13f15161d0e7087ce08208c91d05fbe539d43d33999d"
+      }
+    },
+    {
+      "index": 27,
+      "definition": {
+        "name": "phase2_retained_fragments_3",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 84,
+              "NORMAL": 85
+            },
+            "indices": 86,
+            "material": 3,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "86": "8bdd1bfbf15db16f7769d650ef0b78ead0138d3f7dbf30bd166a56a086cb238a",
+        "84": "1ba9b236a4dfb90d6f2c4f28d902d69c5839686b5a83cc8be2899eeecd92b541",
+        "85": "7a9a13c21cd3f90a8f5ed1e51de0120c742af9329580d890b8773edc1f180ae5"
+      }
+    },
+    {
+      "index": 28,
+      "definition": {
+        "name": "phase2_retained_fragments_5",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 87,
+              "NORMAL": 88
+            },
+            "indices": 89,
+            "material": 5,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "89": "4451ee5368e490ebd12fc39eb2126a2db99bc93b803c3f6f3f44b4aa49e4fb66",
+        "87": "6149ed2b0238102a7b6c390c8b5db430709656852148d9c76069ea15ca19d565",
+        "88": "d7da71d48964b604ed9c4b075975ea3da2bef4f4dfd3e6c792e682a3b583d841"
+      }
+    },
+    {
+      "index": 29,
+      "definition": {
+        "name": "phase2_retained_fragments_6",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 90,
+              "NORMAL": 91
+            },
+            "indices": 92,
+            "material": 6,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "92": "90eb18bfa029884ef41677540ee022c22d5532c1d8cd0d55a64097d2c50c1bcc",
+        "90": "839737698561e5ecf99a0a2351aa1e345b08278d0e4af9df936ddc9b263d2ebb",
+        "91": "8196b85bb16780f5288e833ec09caa9c830fc385f28a09e066878ff8fc8d1518"
+      }
+    },
+    {
+      "index": 30,
+      "definition": {
+        "name": "phase2_retained_fragments_8",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 93,
+              "NORMAL": 94
+            },
+            "indices": 95,
+            "material": 11,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "95": "f428322133605af9a050afa7df9b8aac2ba499a07b24da61eb84f9f901f14b82",
+        "93": "9246035577602364b311083e4be57017415eb4ed58580597b8652bbb77837cc6",
+        "94": "ac7891523393fb8eb9b73ec0a72cee62763b99e6530a2f00126856f2212c7011"
+      }
+    },
+    {
+      "index": 31,
+      "definition": {
+        "name": "phase2_retained_fragments_13",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 96,
+              "NORMAL": 97
+            },
+            "indices": 98,
+            "material": 16,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "98": "d1d1803d11f859f943601d4a49d07fe6e4a84bf8fa108b6562eb21a5ab99eaf7",
+        "96": "de99b15c5f634ba0b79c257d5cdabaa1c3926afee2b2aa66bc20f037feb1d89c",
+        "97": "f04c0717d33bad1a4aa3857ab4b0e17e776c713155a086d2e928479485a39af6"
+      }
+    },
+    {
+      "index": 32,
+      "definition": {
+        "name": "phase2_retained_fragments_16",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 99,
+              "NORMAL": 100
+            },
+            "indices": 101,
+            "material": 19,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "101": "c09fed285c5c082069c69c3605cc27bec5c87a09f82676b4c8e3630e1aeca61c",
+        "99": "5609355c75191e96fb511f47d1ecc66d04dbfaf27a2a584c544988f1869637ba",
+        "100": "50fe159d5fba38e07e8f04461255ff00620c194a9431dc55be453253642f3dc1"
+      }
+    },
+    {
+      "index": 33,
+      "definition": {
+        "name": "phase2_aperture_metal",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 102,
+              "NORMAL": 103
+            },
+            "indices": 104,
+            "material": 34,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "104": "905860fa16568dbdc0f9f84160de5e2cd79025ae61d4b5b00be3189de8f31056",
+        "102": "046ef5cefa9b62dcdc9b3f26c5da3c304e00ab0205deead457fc18bbc49ef1a4",
+        "103": "32c4e018d22aecebee18645d42ada2dd535d6606f3fd6cdaefe40245ee174a15"
+      }
+    },
+    {
+      "index": 34,
+      "definition": {
+        "name": "phase2_recess_backing",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 105,
+              "NORMAL": 106
+            },
+            "indices": 107,
+            "material": 35,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "107": "7bab4e0a35b0b86f925d16219e469f9a44656fc97f49c69cdb52040b1d4f429c",
+        "105": "3e477b63a094bbc2c5d2662df8a98fa8720943e86bc3d03d77f77c99538d7eb2",
+        "106": "43f9cbd66abfa24aa3fb87c7e53cdf2b859b0642cecd115fa432cec981d9c893"
+      }
+    },
+    {
+      "index": 35,
+      "definition": {
+        "name": "phase2_spatial_frame",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 108,
+              "NORMAL": 109
+            },
+            "indices": 110,
+            "material": 36,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "110": "a6e76d4b68f02e882c56e775c379de5fab5b33b2afd3139522ae398656290d56",
+        "108": "1bf3cef13fc9754cecdee648da7c85db3e82740780f1e83c5c27c3638dbe598d",
+        "109": "33d97c67ed6afea13b9d77cb046b7ca3f864232ec503148d773e4f5a2dadeddc"
+      }
+    },
+    {
+      "index": 36,
+      "definition": {
+        "name": "phase2_right_tower_dark_louvers",
+        "primitives": [
+          {
+            "attributes": {
+              "POSITION": 111,
+              "NORMAL": 112
+            },
+            "indices": 113,
+            "material": 37,
+            "mode": 4
+          }
+        ]
+      },
+      "accessors": {
+        "113": "9a79b14234b73069ee294c1cea9b094b59af13fe8f3ccbaa64ce4a131fb265e3",
+        "111": "0d816eccf9b8cc2ef89e0bcdd72f220aefc53c49e51b70e84dbdda7f2b8a737f",
+        "112": "15f2e45cced9dae105b3ccfafdae630b84fafe5b45aea91dd0839a5a66ca7cf1"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "entrance_anodized_gold",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.57,
+          0.35,
+          0.105,
+          1
+        ],
+        "metallicFactor": 0.75,
+        "roughnessFactor": 0.31
+      }
+    },
+    {
+      "name": "entrance_gray_spine",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.14,
+          0.16,
+          0.17,
+          1
+        ],
+        "metallicFactor": 0.6,
+        "roughnessFactor": 0.4
+      }
+    },
+    {
+      "name": "entrance_brushed_silver",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.55,
+          0.58,
+          0.6,
+          1
+        ],
+        "metallicFactor": 0.82,
+        "roughnessFactor": 0.28
+      }
+    },
+    {
+      "name": "entrance_original_gradient",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0.08,
+        "roughnessFactor": 0.43
+      }
+    },
+    {
+      "name": "entrance_recess_charcoal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.026,
+          0.032,
+          0.032,
+          1
+        ],
+        "metallicFactor": 0.08,
+        "roughnessFactor": 0.7
+      }
+    },
+    {
+      "name": "entrance_white_identity",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.9,
+          0.92,
+          0.9,
+          1
+        ],
+        "metallicFactor": 0.12,
+        "roughnessFactor": 0.38
+      },
+      "emissiveFactor": [
+        0.14,
+        0.14,
+        0.13
+      ]
+    },
+    {
+      "name": "entrance_jamb_metal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.36,
+          0.35,
+          0.31,
+          1
+        ],
+        "metallicFactor": 0.55,
+        "roughnessFactor": 0.47
+      }
+    },
+    {
+      "name": "entrance_original_mosaic_colors",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0.4,
+        "roughnessFactor": 0.42
+      }
+    },
+    {
+      "name": "entrance_frosted_side_glass",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.32,
+          0.46,
+          0.43,
+          1
+        ],
+        "metallicFactor": 0.18,
+        "roughnessFactor": 0.31
+      }
+    },
+    {
+      "name": "phase2_aluminum",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.48,
+          0.5,
+          0.51,
+          1
+        ],
+        "metallicFactor": 0.72,
+        "roughnessFactor": 0.35
+      }
+    },
+    {
+      "name": "phase2_dark_glass",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.025,
+          0.045,
+          0.057,
+          1
+        ],
+        "metallicFactor": 0.3,
+        "roughnessFactor": 0.28
+      }
+    },
+    {
+      "name": "phase2_structural_tubes",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.29,
+          0.32,
+          0.33,
+          1
+        ],
+        "metallicFactor": 0.72,
+        "roughnessFactor": 0.4
+      }
+    },
+    {
+      "name": "phase2_dark_louver_metal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.035,
+          0.04,
+          0.045,
+          1
+        ],
+        "metallicFactor": 0.55,
+        "roughnessFactor": 0.5
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "name": "shibuya109_roof",
+      "mesh": 0
+    },
+    {
+      "name": "shibuya109_wall",
+      "mesh": 1
+    },
+    {
+      "name": "shibuya109_spandrel",
+      "mesh": 2
+    },
+    {
+      "name": "shibuya109_frame",
+      "mesh": 3
+    },
+    {
+      "name": "shibuya109_glass0",
+      "mesh": 4
+    },
+    {
+      "name": "shibuya109_sign_housing",
+      "mesh": 5
+    },
+    {
+      "name": "shibuya109_glass2",
+      "mesh": 6
+    },
+    {
+      "name": "shibuya109_glass1",
+      "mesh": 7
+    },
+    {
+      "name": "shibuya109_fine_joint",
+      "mesh": 8
+    },
+    {
+      "name": "shibuya109_cap_shadow",
+      "mesh": 9
+    },
+    {
+      "name": "shibuya109_metal_lip",
+      "mesh": 10
+    },
+    {
+      "name": "shibuya109_slot_reveal"
+    },
+    {
+      "name": "shibuya109_canopy_under"
+    },
+    {
+      "name": "shibuya109_wing_reveal",
+      "mesh": 11
+    },
+    {
+      "name": "shibuya109_wing_glass"
+    },
+    {
+      "name": "shibuya109_wing_frame"
+    },
+    {
+      "name": "shibuya109_wing_metal",
+      "mesh": 12
+    },
+    {
+      "name": "shibuya109_logo_gradient_face",
+      "mesh": 13
+    },
+    {
+      "name": "shibuya109_logo_metal_return",
+      "mesh": 14
+    },
+    {
+      "name": "shibuya109_logo_shibuya_letters",
+      "mesh": 15
+    },
+    {
+      "name": "shibuya109_entrance_sign_panel"
+    },
+    {
+      "name": "entrance_gold_open_frame",
+      "mesh": 16
+    },
+    {
+      "name": "entrance_stowed_gray_awning_spine",
+      "mesh": 17
+    },
+    {
+      "name": "entrance_stair_rails_nosings",
+      "mesh": 18
+    },
+    {
+      "name": "entrance_polygonal_gradient_portal",
+      "mesh": 19
+    },
+    {
+      "name": "entrance_shallow_passage_fixture_housings",
+      "mesh": 20
+    },
+    {
+      "name": "entrance_canonical_white_logo_and_lamps",
+      "mesh": 21
+    },
+    {
+      "name": "entrance_neutral_jamb_soffit",
+      "mesh": 22
+    },
+    {
+      "name": "entrance_gold_mosaic_stair",
+      "mesh": 23
+    },
+    {
+      "name": "entrance_stair_frosted_side_panels",
+      "mesh": 24
+    },
+    {
+      "name": "phase2_retained_fragments_1",
+      "mesh": 25
+    },
+    {
+      "name": "phase2_retained_fragments_2",
+      "mesh": 26
+    },
+    {
+      "name": "phase2_retained_fragments_3",
+      "mesh": 27
+    },
+    {
+      "name": "phase2_retained_fragments_5",
+      "mesh": 28
+    },
+    {
+      "name": "phase2_retained_fragments_6",
+      "mesh": 29
+    },
+    {
+      "name": "phase2_retained_fragments_8",
+      "mesh": 30
+    },
+    {
+      "name": "phase2_retained_fragments_13",
+      "mesh": 31
+    },
+    {
+      "name": "phase2_retained_fragments_16",
+      "mesh": 32
+    },
+    {
+      "name": "phase2_aperture_metal",
+      "mesh": 33
+    },
+    {
+      "name": "phase2_recess_backing",
+      "mesh": 34
+    },
+    {
+      "name": "phase2_spatial_frame",
+      "mesh": 35
+    },
+    {
+      "name": "phase2_right_tower_dark_louvers",
+      "mesh": 36
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        13,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    }
+  ],
+  "scene": 0,
+  "ground": {
+    "sha256": "86e58b050106eb2fcf55997971395688b75d313f8f16c167eaaed2f8556e88ad",
+    "points": {
+      "rear_left": {
+        "xy": [
+          -129.2041141043258,
+          3.663793589222596
+        ],
+        "z": 1.67512128400168
+      },
+      "rear_right": {
+        "xy": [
+          -128.87191892687417,
+          10.207166542377404
+        ],
+        "z": 1.3356098510694931
+      },
+      "front_left": {
+        "xy": [
+          -120.69507268656598,
+          3.231804988855047
+        ],
+        "z": 1.443610477781082
+      },
+      "front_right": {
+        "xy": [
+          -120.36287750911431,
+          9.775177942009854
+        ],
+        "z": 1.1394951770062018
+      }
+    },
+    "triangles": [
+      [
+        [
+          -134.5579071044922,
+          16.790700912475586,
+          1.2760000228881836
+        ],
+        [
+          -132.0,
+          15.591300010681152,
+          1.2568000555038452
+        ],
+        [
+          -132.0,
+          12.0,
+          1.24590003490448
+        ]
+      ],
+      [
+        [
+          -132.0,
+          0.0,
+          1.7997000217437744
+        ],
+        [
+          -128.42630004882812,
+          0.0,
+          1.7460999488830566
+        ],
+        [
+          -130.42160034179688,
+          -0.694100022315979,
+          1.784999966621399
+        ]
+      ],
+      [
+        [
+          -132.0,
+          6.0,
+          1.6531000137329102
+        ],
+        [
+          -128.42630004882812,
+          0.0,
+          1.7460999488830566
+        ],
+        [
+          -132.0,
+          0.0,
+          1.7997000217437744
+        ]
+      ],
+      [
+        [
+          -132.0,
+          6.0,
+          1.6531000137329102
+        ],
+        [
+          -127.60169982910156,
+          0.28690001368522644,
+          1.7300000190734863
+        ],
+        [
+          -128.42630004882812,
+          0.0,
+          1.7460999488830566
+        ]
+      ],
+      [
+        [
+          -132.0,
+          6.0,
+          1.6531000137329102
+        ],
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ],
+        [
+          -127.60169982910156,
+          0.28690001368522644,
+          1.7300000190734863
+        ]
+      ],
+      [
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ],
+        [
+          -127.60160064697266,
+          0.28690001368522644,
+          1.7300000190734863
+        ],
+        [
+          -127.60169982910156,
+          0.28690001368522644,
+          1.7300000190734863
+        ]
+      ],
+      [
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ],
+        [
+          -126.0,
+          0.8112000226974487,
+          1.6994999647140503
+        ],
+        [
+          -127.60160064697266,
+          0.28690001368522644,
+          1.7300000190734863
+        ]
+      ],
+      [
+        [
+          -132.0,
+          12.0,
+          1.24590003490448
+        ],
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ],
+        [
+          -132.0,
+          6.0,
+          1.6531000137329102
+        ]
+      ],
+      [
+        [
+          -132.0,
+          12.0,
+          1.24590003490448
+        ],
+        [
+          -126.0,
+          12.0,
+          1.1784000396728516
+        ],
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ]
+      ],
+      [
+        [
+          -132.0,
+          15.591300010681152,
+          1.2568000555038452
+        ],
+        [
+          -131.88890075683594,
+          15.539199829101562,
+          1.25600004196167
+        ],
+        [
+          -132.0,
+          12.0,
+          1.24590003490448
+        ]
+      ],
+      [
+        [
+          -131.88890075683594,
+          15.539199829101562,
+          1.25600004196167
+        ],
+        [
+          -126.28109741210938,
+          12.863200187683105,
+          1.184000015258789
+        ],
+        [
+          -132.0,
+          12.0,
+          1.24590003490448
+        ]
+      ],
+      [
+        [
+          -126.28109741210938,
+          12.863200187683105,
+          1.184000015258789
+        ],
+        [
+          -126.0,
+          12.729000091552734,
+          1.180400013923645
+        ],
+        [
+          -126.0,
+          12.0,
+          1.1784000396728516
+        ]
+      ],
+      [
+        [
+          -132.0,
+          12.0,
+          1.24590003490448
+        ],
+        [
+          -126.28109741210938,
+          12.863200187683105,
+          1.184000015258789
+        ],
+        [
+          -126.0,
+          12.0,
+          1.1784000396728516
+        ]
+      ],
+      [
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ],
+        [
+          -125.24009704589844,
+          1.0599000453948975,
+          1.684999942779541
+        ],
+        [
+          -126.0,
+          0.8112000226974487,
+          1.6994999647140503
+        ]
+      ],
+      [
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ],
+        [
+          -120.51709747314453,
+          2.6059000492095947,
+          1.4773000478744507
+        ],
+        [
+          -125.24009704589844,
+          1.0599000453948975,
+          1.684999942779541
+        ]
+      ],
+      [
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ],
+        [
+          -120.0,
+          6.0,
+          1.1956000328063965
+        ],
+        [
+          -120.51709747314453,
+          2.6059000492095947,
+          1.4773000478744507
+        ]
+      ],
+      [
+        [
+          -120.0,
+          6.0,
+          1.1956000328063965
+        ],
+        [
+          -120.0,
+          2.7751998901367188,
+          1.4646999835968018
+        ],
+        [
+          -120.51709747314453,
+          2.6059000492095947,
+          1.4773000478744507
+        ]
+      ],
+      [
+        [
+          -126.0,
+          12.0,
+          1.1784000396728516
+        ],
+        [
+          -124.41179656982422,
+          11.971199989318848,
+          1.159999966621399
+        ],
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ]
+      ],
+      [
+        [
+          -126.0,
+          12.0,
+          1.1784000396728516
+        ],
+        [
+          -124.47219848632812,
+          12.0,
+          1.1607999801635742
+        ],
+        [
+          -124.41190338134766,
+          11.971199989318848,
+          1.159999966621399
+        ]
+      ],
+      [
+        [
+          -124.41179656982422,
+          11.971199989318848,
+          1.159999966621399
+        ],
+        [
+          -120.0,
+          9.928600311279297,
+          1.1157000064849854
+        ],
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ]
+      ],
+      [
+        [
+          -126.0,
+          6.0,
+          1.5964000225067139
+        ],
+        [
+          -120.0,
+          9.928600311279297,
+          1.1157000064849854
+        ],
+        [
+          -120.0,
+          6.0,
+          1.1956000328063965
+        ]
+      ],
+      [
+        [
+          -126.0,
+          12.729000091552734,
+          1.180400013923645
+        ],
+        [
+          -124.47219848632812,
+          12.0,
+          1.1607999801635742
+        ],
+        [
+          -126.0,
+          12.0,
+          1.1784000396728516
+        ]
+      ],
+      [
+        [
+          -120.0,
+          6.0,
+          1.1956000328063965
+        ],
+        [
+          -118.15599822998047,
+          3.3787999153137207,
+          1.4199999570846558
+        ],
+        [
+          -120.0,
+          2.7751998901367188,
+          1.4646999835968018
+        ]
+      ],
+      [
+        [
+          -120.0,
+          6.0,
+          1.1956000328063965
+        ],
+        [
+          -117.19869995117188,
+          6.0,
+          1.2374999523162842
+        ],
+        [
+          -118.15599822998047,
+          3.3787999153137207,
+          1.4199999570846558
+        ]
+      ],
+      [
+        [
+          -117.19869995117188,
+          6.0,
+          1.2374999523162842
+        ],
+        [
+          -116.70130157470703,
+          4.617599964141846,
+          1.3330999612808228
+        ],
+        [
+          -118.15599822998047,
+          3.3787999153137207,
+          1.4199999570846558
+        ]
+      ],
+      [
+        [
+          -120.0,
+          9.928600311279297,
+          1.1157000064849854
+        ],
+        [
+          -118.33460235595703,
+          9.157500267028809,
+          1.0989999771118164
+        ],
+        [
+          -120.0,
+          6.0,
+          1.1956000328063965
+        ]
+      ],
+      [
+        [
+          -118.33460235595703,
+          9.157500267028809,
+          1.0989999771118164
+        ],
+        [
+          -117.51789855957031,
+          6.88730001449585,
+          1.176200032234192
+        ],
+        [
+          -120.0,
+          6.0,
+          1.1956000328063965
+        ]
+      ],
+      [
+        [
+          -120.0,
+          6.0,
+          1.1956000328063965
+        ],
+        [
+          -117.51789855957031,
+          6.88730001449585,
+          1.176200032234192
+        ],
+        [
+          -117.19869995117188,
+          6.0,
+          1.2374999523162842
+        ]
+      ],
+      [
+        [
+          -116.44740295410156,
+          13.159500122070312,
+          1.1067999601364136
+        ],
+        [
+          -116.45349884033203,
+          13.146499633789062,
+          1.0989999771118164
+        ],
+        [
+          -116.44930267333984,
+          13.142900466918945,
+          1.0989999771118164
+        ]
+      ],
+      [
+        [
+          -116.38480377197266,
+          13.263400077819824,
+          0.9490000009536743
+        ],
+        [
+          -116.44560241699219,
+          13.141500473022461,
+          1.107300043106079
+        ],
+        [
+          -116.44280242919922,
+          13.139900207519531,
+          0.9490000009536743
+        ]
+      ],
+      [
+        [
+          -116.44660186767578,
+          13.14050006866455,
+          1.107300043106079
+        ],
+        [
+          -116.44229888916016,
+          13.137499809265137,
+          0.9490000009536743
+        ],
+        [
+          -116.40440368652344,
+          13.104399681091309,
+          1.0987000465393066
+        ]
+      ]
+    ]
+  }
+}
