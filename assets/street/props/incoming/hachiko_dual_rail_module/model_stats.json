@@ -1,0 +1,24 @@
+{
+  "blender": "4.2.3 LTS",
+  "triangles": 216,
+  "materials": 1,
+  "bounds": [
+    [
+      -1.13100004196167,
+      -0.14500004053115845,
+      0.0
+    ],
+    [
+      1.13100004196167,
+      0.14500004053115845,
+      0.8450000286102295
+    ]
+  ],
+  "origin": "plan bounds centre, bottom Z=0",
+  "units": "metres",
+  "old": false,
+  "y_recentering_m": -7.450580596923828e-09,
+  "placement_y_offset_from_stone_module_m": 0.1199999925494194,
+  "scope": "one partial straight rail run; no complete footprint, wall, foliage or runtime placement",
+  "estimates": "all metric dimensions; symmetry and intermediate strap positions inferred; concealed fixings omitted"
+}

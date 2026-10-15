@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "blender": "4.2.3 LTS",
+  "glb_sha256": "3be0f42155af719dbbf8bf406abd953f3df3236e4b886233a714fca6cc585afe",
+  "editable_export_byte_exact": true
+}

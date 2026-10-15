@@ -1,0 +1,54 @@
+{
+  "base_commit": "2c9b8327df024fa8e2fd1189c79dae1f6f9c0825",
+  "datum_tp_m": 15,
+  "integration": "pending; replace only old silver rail/brace/leg generation, never overlay",
+  "instances": [
+    {
+      "id": "left",
+      "origin_in_statue_local_blender": [
+        -1.925,
+        -0.9900000000000001,
+        0.4710693359375
+      ],
+      "origin_world_blender": [
+        10.559148507991114,
+        -50.60082736393899,
+        0.4710693359375
+      ],
+      "origin_web": [
+        10.559148507991114,
+        0.4710693359375,
+        50.60082736393899
+      ],
+      "blender_rotation_z_degrees": 35,
+      "web_rotation_y_degrees": 35,
+      "status": "existing relative estimate; not a newly surveyed placement"
+    },
+    {
+      "id": "right",
+      "origin_in_statue_local_blender": [
+        1.925,
+        -0.9900000000000001,
+        0.4155540466308594
+      ],
+      "origin_world_blender": [
+        13.712883878503732,
+        -48.39255808398747,
+        0.4155540466308594
+      ],
+      "origin_web": [
+        13.712883878503732,
+        0.4155540466308594,
+        48.39255808398747
+      ],
+      "blender_rotation_z_degrees": 35,
+      "web_rotation_y_degrees": 35,
+      "status": "existing relative estimate; not a newly surveyed placement"
+    }
+  ],
+  "stone_relative_offset_blender": [
+    0,
+    0.12,
+    0
+  ]
+}
