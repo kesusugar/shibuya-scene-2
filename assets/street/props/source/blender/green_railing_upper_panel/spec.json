@@ -1,0 +1,27 @@
+{
+  "id": "green_railing_upper_panel",
+  "target": {
+    "width_m": 2.0,
+    "depth_m": 0.044,
+    "height_m": 0.49004223942756653
+  },
+  "max_triangles": 6000,
+  "lod_ratio": 0,
+  "materials": {
+    "default": "furniture"
+  },
+  "source": {
+    "tool": "Blender 4.2.3 LTS / procedural Python",
+    "author": "OpenAI dot (generated model); reference photograph: RuinDig/Yuki Uchida",
+    "date": "2026-10-15",
+    "terms": "Model and Python generated for this project. Reference photograph excluded; historical CC BY 4.0 attribution retained, source-page re-verification unavailable.",
+    "reference_url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_164.jpg",
+    "reference_license": "https://creativecommons.org/licenses/by/4.0/",
+    "reference_datetime": "2025-07-13T15:58:23",
+    "reference_location": "Minami-Azabu Building, Minato, Tokyo",
+    "reference_use": "Shape and proportions only; no photo textures",
+    "reference_license_verification": "Historical package attribution only; photograph excluded from this publication"
+  },
+  "dimensions_basis": "上側装飾パネルのみ。絶対寸法は仮定。左右境界は写真から確定できないため制作上の切断位置。全柵の幅・高さではない。",
+  "placement_status": "未配置。港区の参考形状。渋谷の設置証拠なし。"
+}

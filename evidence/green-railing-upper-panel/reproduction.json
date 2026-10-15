@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "blender": "4.2.3",
+  "accepted_glb_sha256": "b473c5d52294448bb8d9a74b8b183205e1c098d36f76d674dc02c6447f0328fc",
+  "portable_generator_byte_identical": true,
+  "editable_source_export_byte_identical": true,
+  "generator_changes": "Relative saved render path and side-camera framing only; no modeling",
+  "reference_photo_included": false
+}

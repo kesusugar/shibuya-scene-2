@@ -1,0 +1,34 @@
+{
+ "id": "green_railing_upper_panel",
+ "source_file": "green_railing_upper_panel.glb",
+ "warnings": [],
+ "input_dimensions": [
+  2.0,
+  0.044,
+  0.49
+ ],
+ "scale_factor": 1.0,
+ "dimensions_m": {
+  "width": 2.0,
+  "depth": 0.044,
+  "height": 0.49
+ },
+ "merged_vertices": 0,
+ "input_triangles": 3448,
+ "triangles": 3448,
+ "materials": [
+  "prop_furniture_0"
+ ],
+ "bytes": 84756,
+ "source": {
+  "tool": "Blender 4.2.3 LTS / procedural Python",
+  "author": "OpenAI dot (generated model); reference photograph: RuinDig/Yuki Uchida",
+  "date": "2026-10-15",
+  "terms": "モデル・Pythonは本プロジェクト向け新規制作。参照写真およびトリミング写真は CC BY 4.0。出典・作者・改変の表示を保持。",
+  "reference_url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_164.jpg",
+  "reference_license": "https://creativecommons.org/licenses/by/4.0/",
+  "reference_datetime": "2025-07-13T15:58:23",
+  "reference_location": "Minami-Azabu Building, Minato, Tokyo",
+  "reference_use": "Shape and proportions only; no photo textures"
+ }
+}
