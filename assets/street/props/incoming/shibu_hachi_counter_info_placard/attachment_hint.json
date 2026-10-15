@@ -1,0 +1,1 @@
+{"status":"unplaced_estimate_only","target":"shibuhachibox_counter","coordinate_frame":"Blender counter-local; metres; front=-Y","translation_m":[0.79,-0.283,0.43],"rotation_euler_rad":[0,0,0],"counter_nominal_dimensions_m":[2.4,0.56,0.98],"runtime_authorized_by_this_file":false,"must_verify":"Actual counter front surface; temporal persistence; no duplicate existing sign"}

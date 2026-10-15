@@ -1,0 +1,10 @@
+{
+  "glb_version": 2,
+  "bytes": 30652,
+  "triangles": 14,
+  "primitives": 2,
+  "materials": 2,
+  "embedded_images": 1,
+  "external_buffers": false,
+  "threejs_runtime_tested": false
+}

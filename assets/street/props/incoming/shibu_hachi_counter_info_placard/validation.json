@@ -1,0 +1,17 @@
+{
+  "blender": "4.2.3 LTS",
+  "triangles": 14,
+  "materials": 2,
+  "dimensions_m": [
+    0.3400000035762787,
+    0.003100000089034438,
+    0.44999998807907104
+  ],
+  "origin": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "image_source": "own typeset artwork, not a photograph",
+  "runtime_placement": false
+}
