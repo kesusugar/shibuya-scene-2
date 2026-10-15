@@ -1,0 +1,19 @@
+{
+  "base_commit": "2c9b8327df024fa8e2fd1189c79dae1f6f9c0825",
+  "delivery": "additive replacement assembly; integration pending",
+  "runtime_modified": false,
+  "protected_assets_modified": false,
+  "source_reconstruction": {
+    "expected_remote_glb_git_blob": "47d9bc6f30d3fc91ed5fd6035bd263edf8e69e7d",
+    "reconstructed_git_blob": "cc0e01ecd1c929755369d1ac5b238a3d5c610910",
+    "recorded_ground_stats_equal": true,
+    "binary_equality_proven": false
+  },
+  "not_claimed": [
+    "whole enclosure geometry",
+    "October 2026 whole-site confirmation",
+    "current runtime GLB semantic parity",
+    "full scene rendering",
+    "FPS"
+  ]
+}

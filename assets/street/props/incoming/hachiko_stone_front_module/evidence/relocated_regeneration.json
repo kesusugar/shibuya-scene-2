@@ -1,0 +1,18 @@
+{
+  "hachiko_stone_front_module.glb": {
+    "byte_identical": true,
+    "sha256": "f61027c78beca47132144cf954049946f246c1ed9b685d970155b18e52fdfc8d"
+  },
+  "synthetic_granite.png": {
+    "byte_identical": true,
+    "sha256": "eb1bcba7b3edb8b334673fb213ad62acca419ac6014f794136e9bb03952e7e45"
+  },
+  "model_stats.json": {
+    "byte_identical": true,
+    "sha256": "d1fb167ba6e92d02580512274028f4a84d05aaaa184a507a8a474ef7a2f1584d"
+  },
+  "editable_export": {
+    "byte_identical": true,
+    "sha256": "f61027c78beca47132144cf954049946f246c1ed9b685d970155b18e52fdfc8d"
+  }
+}
