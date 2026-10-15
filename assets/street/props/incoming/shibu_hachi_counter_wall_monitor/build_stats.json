@@ -1,0 +1,28 @@
+{
+  "generation_started_utc": "2026-10-15T15:37:23.146885+00:00",
+  "blender_version": "4.2.3 LTS",
+  "model_exported_utc": "2026-10-15T15:37:23.287598+00:00",
+  "geometry_and_export_seconds": 0.1407,
+  "renders": {
+    "front": {
+      "started_utc": "2026-10-15T15:37:23.288218+00:00",
+      "finished_utc": "2026-10-15T15:37:55.992050+00:00",
+      "seconds": 32.7039
+    },
+    "side": {
+      "started_utc": "2026-10-15T15:37:55.992265+00:00",
+      "finished_utc": "2026-10-15T15:38:12.489188+00:00",
+      "seconds": 16.4969
+    },
+    "oblique": {
+      "started_utc": "2026-10-15T15:38:12.489331+00:00",
+      "finished_utc": "2026-10-15T15:38:43.675705+00:00",
+      "seconds": 31.1864
+    }
+  },
+  "generation_finished_utc": "2026-10-15T15:38:43.677148+00:00",
+  "generation_total_seconds": 80.5303,
+  "external_dependencies": [],
+  "packed_images": 0,
+  "packed_images_note": "No texture images are needed; all two materials are native standard PBR."
+}

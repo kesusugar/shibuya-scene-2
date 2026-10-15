@@ -1,0 +1,22 @@
+{
+  "task_started_utc": "2026-10-15T15:33:05Z",
+  "research_and_scope_completed_utc": "2026-10-15T15:35:40.848723+00:00",
+  "fixed_scope": "One unplaced 2024-reference counter wall monitor; neutral black screen; no logos, artwork, ports, stand, hidden mounting bracket or external scene edits.",
+  "previous_candidate_research": "Prior 63-second research was paused before generator checking or modelling. This timing is separate from the current build trial.",
+  "frozen_model_utc": "2026-10-15T15:41:15.580298+00:00",
+  "model_changes_after_first_build": 0,
+  "render_polish_rebuilds": 0,
+  "completed_utc": "2026-10-15T15:42:27.665560+00:00",
+  "elapsed_from_task_start_seconds": 562.666,
+  "research_and_scope_seconds": 155.849,
+  "script_authoring_until_build_start_seconds": 102.298,
+  "blender_build_seconds": 80.5303,
+  "render_seconds_by_view": {
+    "front": 32.7039,
+    "side": 16.4969,
+    "oblique": 31.1864
+  },
+  "final_validation_seconds": 0.1978,
+  "validation_passes": 1,
+  "note": "Documentation was written while the three renders ran, so stages are not wholly additive. No model/re-render correction cycle. Handoff root/index preparation is owned separately by parent and not included here."
+}

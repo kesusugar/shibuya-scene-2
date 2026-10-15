@@ -1,0 +1,51 @@
+{
+  "scope": "Local available related asset packages only; no current remote scene audit or GitHub query performed. Source generators and READMEs were also read.",
+  "checked_utc": "2026-10-15T15:35:40.848435+00:00",
+  "results": [
+    {
+      "path": "shibu_hachi_box_revision/final_output/shibu_hachi_box.glb",
+      "sha256": "2a37f2816ef0aee256e815d1d66ab36c9ee684809c4d14237ba827abe62d0faf",
+      "node_names": [
+        "Batch_01_Pale_anodized_frames",
+        "Batch_02_Dark_brown_fascia_and_gaskets",
+        "Batch_03_Pale_mineral_platform",
+        "Batch_04_Warm_pale_soffit_finish",
+        "Batch_05_Clear_glass_portable_alpha"
+      ],
+      "monitor_named_node": false
+    },
+    {
+      "path": "shibu_hachi_box_counter_revision/shibuhachibox_counter.glb",
+      "sha256": "b2d78aba0df1270c94241a2be22b038bfea64b3b870ec16443008eaaad4408b2",
+      "node_names": [
+        "SHIBUHACHIBOX_counter_bottom_center",
+        "Oak_counter",
+        "White_rack"
+      ],
+      "monitor_named_node": false
+    },
+    {
+      "path": "shibu_hachi_box_info_header/output/shibu_hachi_box_information_header.glb",
+      "sha256": "4e8ef5ea00f3d309eabda9d209ec3378e21410a98fc9ae5f48c35c7f61b18185",
+      "node_names": [
+        "shibu_hachi_box_information_header"
+      ],
+      "monitor_named_node": false
+    },
+    {
+      "path": "shibu_hachi_counter_info_placard/shibu_hachi_counter_info_placard.glb",
+      "sha256": "a7217b39052ff7c06926499516cbbaa6e72e0f41cdff805cfbf9372f2f55a638",
+      "node_names": [
+        "shibu_hachi_counter_info_placard"
+      ],
+      "monitor_named_node": false
+    }
+  ],
+  "conclusion": "No existing counter wall-monitor found in checked local packages; architecture and counter sources contain no screen geometry.",
+  "parent_remote_check": {
+    "source_commit": "92f6b3479f62ced9412ef8d73016fab5291595f8",
+    "observed_result": "incoming/shibu_hachi_counter_wall_monitor absent; monitor PR search no match",
+    "source": "Parent verified GitHub read, reported at 2026-10-15 15:39 UTC",
+    "limit": "Does not rule out an unrelated differently named object."
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "asset_id": "shibu_hachi_counter_wall_monitor",
+  "version": "v001",
+  "status": "UNPLACED_ESTIMATED_HINT_ONLY",
+  "units": "metres",
+  "asset_frame": {
+    "up": "Blender +Z",
+    "front": "Blender -Y",
+    "origin": "cabinet bottom centre"
+  },
+  "counter_local": {
+    "parent_asset": "shibuhachibox_counter",
+    "translation_blender_xyz_m": [
+      0.2,
+      0.4,
+      1.02
+    ],
+    "rotation_blender_xyz_degrees": [
+      0,
+      0,
+      0
+    ],
+    "confidence": "low",
+    "note": "Assumes the separately delivered 2.40 x 0.56 x 0.98 m counter; monitor lower edge is 40 mm above its top. Behind counter, not attached to its front. Photo perspective does not solve exact position."
+  },
+  "pavilion_local": {
+    "parent_asset": "shibu_hachi_box",
+    "translation_blender_xyz_m": [
+      0.2,
+      1.62,
+      1.25
+    ],
+    "rotation_blender_xyz_degrees": [
+      0,
+      0,
+      0
+    ],
+    "confidence": "low",
+    "derivation": "Only if counter bottom-centre were at hypothetical pavilion local [0,1.22,0.23] with matching orientation. That counter location is NOT verified or approved. This derives a test candidate near the architectural rear wall; it is not a measured attachment."
+  },
+  "world_coordinates": null,
+  "runtime_placement": false,
+  "required_before_integration": [
+    "Verify existing scene assets and suppress any duplicate monitor",
+    "Verify counter pose and rear-wall plane against actual placed pavilion",
+    "Check cabinet-wall gap, top clearance and visual alignment",
+    "Choose consistent date scenario",
+    "Do not assume hidden mount or add one without evidence"
+  ]
+}
