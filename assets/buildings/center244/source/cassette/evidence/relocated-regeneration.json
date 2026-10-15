@@ -1,0 +1,45 @@
+{
+  "pass": true,
+  "source": "Independent reviewer clean relocated rebuild, inspected after completion",
+  "minimal_input_folders": [
+    "inputs",
+    "scripts"
+  ],
+  "external_network_required": false,
+  "glb_byte_identical": true,
+  "render_decoded_pixel_comparison": {
+    "front-after.png": {
+      "max_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    "front-before.png": {
+      "max_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    "overview-after.png": {
+      "max_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    "overview-before.png": {
+      "max_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    "side-after.png": {
+      "max_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    "side-before.png": {
+      "max_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    }
+  },
+  "blender": {
+    "version": "4.2.3 LTS",
+    "new_object": "c244_chamfer_cassette",
+    "triangles": 48,
+    "materials": 2,
+    "image_paths_packed": true
+  },
+  "blend_regenerated_and_saved": true,
+  "note": "Our first full rebuild succeeded but bytewise PNG assertion failed on volatile metadata. Corrected checker compares decoded pixels; all six independent relocated-render images are pixel-identical. Blend container bytes are not compared; paths/session metadata vary."
+}

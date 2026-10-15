@@ -1,0 +1,14 @@
+[
+  {
+    "path": "inputs/current/signs-2025-01.glb",
+    "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+  },
+  {
+    "path": "inputs/current/viewer.json",
+    "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+  },
+  {
+    "path": "inputs/current/west-block.glb",
+    "sha256": "884f6a555d59ff3736f610953c2f2151a150d5452aee502008086086e595dd6f"
+  }
+]

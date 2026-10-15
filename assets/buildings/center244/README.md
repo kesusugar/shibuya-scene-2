@@ -1,3 +1,9 @@
+# Current bounded successor
+
+Current combined delivery: 8,471 triangles, 19 primitives, 1,055,044 bytes. Reproduce final geometry with python source/cassette/scripts/add_cassette.py. See source/cassette/README.ja.md for source dates, editable file, inference and precise scope. Historical generator instructions below are not the final successor pipeline. Existing source geometry, ground datum, sign attribution and sign-era registration are retained. Detail is based on 2022/unknown-date reference imagery with partial February 2025 corroboration, not direct October 2025 proof. Rear clearance is estimated 15 mm, not physical attachment. January signs remain unregistered. No browser, full-scene, walking or FPS claim.
+
+## Historical predecessor documentation
+
 # センター244ビル: 2025年写真に基づく個別外装
 
 対象は way/136691379、PLATEAU bldg_edef4503-f1ef-4f11-839a-3fad9862036c、宇田川町24-4。NAVITIMEの店舗座標が元の建物ポリゴン内に入り、公式外観と2025年1・2月の写真の形状が一致する。別の平和クワトロではない。QFRONT・西武は変更しない。

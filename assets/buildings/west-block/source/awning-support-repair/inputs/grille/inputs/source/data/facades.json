@@ -1,0 +1,339 @@
+{
+  "source_photo": "assets/street/core/source/refs/stream_2025.jpg",
+  "measurement_size": [
+    900,
+    1195
+  ],
+  "photo_date": "2025-01-31",
+  "license": "CC0",
+  "author": "Syced",
+  "status": "B-stage approximation; texture corners hand-read, placement follows PLATEAU faces; dimensions and shop boundaries estimated",
+  "textures": {
+    "hisamitsu": {
+      "quad": [
+        [
+          418,
+          287
+        ],
+        [
+          510,
+          289
+        ],
+        [
+          511,
+          394
+        ],
+        [
+          423,
+          397
+        ]
+      ],
+      "size": [
+        384,
+        448
+      ]
+    },
+    "rakuten": {
+      "quad": [
+        [
+          436,
+          447
+        ],
+        [
+          522,
+          446
+        ],
+        [
+          523,
+          519
+        ],
+        [
+          439,
+          531
+        ]
+      ],
+      "size": [
+        512,
+        512
+      ]
+    },
+    "dmm": {
+      "quad": [
+        [
+          438,
+          552
+        ],
+        [
+          502,
+          557
+        ],
+        [
+          502,
+          625
+        ],
+        [
+          438,
+          631
+        ]
+      ],
+      "size": [
+        384,
+        448
+      ]
+    },
+    "taiseido": {
+      "quad": [
+        [
+          438,
+          634
+        ],
+        [
+          509,
+          626
+        ],
+        [
+          509,
+          648
+        ],
+        [
+          438,
+          659
+        ]
+      ],
+      "size": [
+        512,
+        160
+      ]
+    },
+    "nishimura": {
+      "quad": [
+        [
+          243,
+          434
+        ],
+        [
+          363,
+          458
+        ],
+        [
+          363,
+          481
+        ],
+        [
+          243,
+          462
+        ]
+      ],
+      "size": [
+        640,
+        160
+      ]
+    },
+    "fruit_band": {
+      "quad": [
+        [
+          270,
+          568
+        ],
+        [
+          350,
+          576
+        ],
+        [
+          350,
+          588
+        ],
+        [
+          270,
+          580
+        ]
+      ],
+      "size": [
+        512,
+        100
+      ]
+    },
+    "matsukiyo": {
+      "quad": [
+        [
+          230,
+          476
+        ],
+        [
+          253,
+          480
+        ],
+        [
+          252,
+          588
+        ],
+        [
+          227,
+          581
+        ]
+      ],
+      "size": [
+        160,
+        640
+      ]
+    },
+    "monja": {
+      "quad": [
+        [
+          368,
+          359
+        ],
+        [
+          402,
+          368
+        ],
+        [
+          408,
+          491
+        ],
+        [
+          371,
+          486
+        ]
+      ],
+      "size": [
+        192,
+        640
+      ]
+    },
+    "asbi_flank": {
+      "quad": [
+        [
+          405,
+          504
+        ],
+        [
+          437,
+          508
+        ],
+        [
+          437,
+          641
+        ],
+        [
+          406,
+          633
+        ]
+      ],
+      "size": [
+        160,
+        640
+      ]
+    }
+  },
+  "sections": [
+    {
+      "id": "pharmacy",
+      "x_interval": [
+        -67.253,
+        -61.911
+      ],
+      "basis": "yellow vertical pharmacy sign at western facade; PLATEAU step at x=-61.911"
+    },
+    {
+      "id": "fruit",
+      "x_interval": [
+        -61.911,
+        -47.347
+      ],
+      "basis": "cream facade and horizontal green windows; shop split approximate"
+    },
+    {
+      "id": "middle",
+      "x_interval": [
+        -47.347,
+        -40.561
+      ],
+      "basis": "narrow beige vertical restaurant-sign section; name not asserted"
+    },
+    {
+      "id": "corner",
+      "x_interval": [
+        -40.561,
+        -34.818
+      ],
+      "basis": "red corner tower, DMM/Rakuten displays and Taiseido band"
+    }
+  ],
+  "monja_center_height_m": 22.55,
+  "height_revision_basis": "Stream 2025-01 photo: vertical restaurant sign extends above the middle roof; moved from 15.4m to 25.4m as one sign-height correction, still approximate",
+  "rooftop_sign": {
+    "center_m": [
+      -36.455,
+      28.842,
+      34.145
+    ],
+    "width_m": 8.851,
+    "height_m": 11.288,
+    "yaw_rad": 0.561,
+    "support_base_height_m": 27.6,
+    "basis": "Stream 2025-01 four corners using unchanged provisional camera, constrained to the corner roof; placement and dimensions estimated. February and November confirm blue/green rooftop sign type."
+  },
+  "corner": {
+    "center_m": [
+      -41.53,
+      32.93
+    ],
+    "radius_m": 8.0,
+    "center_angle_rad": -0.615,
+    "width_scale": 1.425,
+    "height_scale": 1.2,
+    "screen_centers_m": {
+      "rakuten": 17.9,
+      "dmm": 8.0,
+      "taiseido": 3.0
+    },
+    "body_height_m": 22.8,
+    "basis": "Photo-led inferred above-ground facade envelope, original-to-revision: center(-39.718,29.972) to(-41.53,32.93), radius4.8m to8m; PLATEAU shell, source IDs and measured anchor unchanged. This is an inferred exterior/sign overhang correction, not a resurveyed footprint. Whole-asset east bbox grows0.132m because original rooftop signage already extended beyond PLATEAU. Neighbor collision check not performed.",
+    "flat_flank": {
+      "x_m": -40.96,
+      "center_height_m": 8.91,
+      "width_m": 3.764,
+      "height_m": 12.8,
+      "texture": "asbi_flank"
+    },
+    "facet_apex_angle_rad": -0.8,
+    "housing_top_m": 27.4,
+    "rakuten_height_m": 9.2,
+    "dmm_height_m": 6.7
+  },
+  "fruit_frontage": {
+    "window_center_x_m": -52.55,
+    "window_width_m": 9.0,
+    "window_center_heights_m": [
+      4.75,
+      8.35,
+      11.95,
+      15.55
+    ],
+    "window_height_m": 2.7,
+    "recess_center_x_m": -57.82,
+    "recess_width_m": 1.45,
+    "header": {
+      "x_m": -53.782,
+      "center_height_m": 19.2,
+      "width_m": 14.784,
+      "height_m": 4.0
+    },
+    "roof_back_panel": {
+      "x_m": -52.975,
+      "center_height_m": 27.15,
+      "width_m": 14.913,
+      "height_m": 8.8
+    },
+    "basis": "Jan and Feb both show four horizontal window bands, narrow left dark recess, light tile piers, green projecting ledges, sloping awning and large blank rooftop panel. November has obstructions and confirms only broad facade/sign types. Floor heights use a regular 3.7m B-stage approximation, not pixel fit of every floor."
+  },
+  "middle_frontage": {
+    "bay_center_x_m": -43.7,
+    "bay_width_m": 1.15,
+    "basis": "Jan/Feb narrow dark vertical opening below restaurant sign, rather than fruit-store window grid; individual entrances and tenants not fully verified."
+  },
+  "monja_x_m": -44.5,
+  "monja_width_m": 3.0,
+  "monja_height_m": 9.1
+}

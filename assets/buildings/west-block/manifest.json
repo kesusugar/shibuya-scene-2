@@ -2,24 +2,25 @@
   "id": "west-block",
   "source_id": "way/136690966",
   "level": "B",
-  "status": "Ground storefront fidelity revision: asymmetric Taiseido opening and plane-aligned blue awnings, pale corner wedge; dimensions inferred, January signs and PLATEAU anchors retained",
+  "status": "Ground storefront fidelity revision: asymmetric Taiseido opening and plane-aligned blue awnings, pale corner wedge; dimensions inferred, January signs and PLATEAU anchors retained; bounded successor described in source/awning-support-repair/README.md",
   "sign_era": "2025-01-31",
   "sources": [
     "source/data/plateau.json",
     "source/refs/REFERENCE_REGISTER.csv",
     "source/refs/PHOTO_FIDELITY_SOURCES.md",
     "source/data/fullres_texture_sources.json",
-    "source/data/rakuten_boundary_landmarks.json"
+    "source/data/rakuten_boundary_landmarks.json",
+    "source/awning-support-repair/README.md"
   ],
   "stats": {
-    "bytes": 1064108,
-    "triangles": 7730,
-    "primitives": 35
+    "triangles": 8246,
+    "primitives": 37,
+    "bytes": 1093564
   },
   "files": {
     "README.md": {
-      "bytes": 5756,
-      "sha256": "09112df9dc74537b748a061e9deff4949f70d12e9853d60e807bf548957cd511"
+      "bytes": 6491,
+      "sha256": "7d7f5ca3ab3229700841b2d282fb49d3500e7fd079e191a7dd0a4f19ace84441"
     },
     "source/blender/build_west.py": {
       "bytes": 15223,
@@ -74,8 +75,8 @@
       "sha256": "eaa93a16360bec5891b59aa94b121749d4ef3369276c2c75def4d12253d72806"
     },
     "source/data/stats.json": {
-      "bytes": 6364,
-      "sha256": "49ecbeb3018a69b267fe53691ff8b9adfc1b914e5aa08038f2967de45c2ee25f"
+      "bytes": 6435,
+      "sha256": "649ccfb94aebbb2fe53d2837068d97ad3bb359f1da3a2a5b183d92cfef22147e"
     },
     "source/data/storefront_validation.json": {
       "bytes": 859,
@@ -226,8 +227,280 @@
       "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
     },
     "web/west-block.glb": {
+      "bytes": 576800,
+      "sha256": "3e9d4573f2d88d65877583f23442740fac333849d0c4f7877202b6905812026a"
+    },
+    "source/grille-apron-v2/README.md": {
+      "bytes": 1184,
+      "sha256": "cce43a2276d927bee55367a940f79d339cae859c8612b9896cb177eb8a3382d5"
+    },
+    "source/grille-apron-v2/INPUT_PINS.json": {
+      "bytes": 2107,
+      "sha256": "a8768acfbe32aba5ec0a68951aa09a7df3726e89eae5ced522d083241b294d0b"
+    },
+    "source/awning-support-repair/README.md": {
+      "bytes": 1084,
+      "sha256": "d47d6712690e87ec0c7fe46bcf8b42d5f03b5c5bb89732592c8f710b25c3ced1"
+    },
+    "source/awning-support-repair/INPUT_PINS.json": {
+      "bytes": 408,
+      "sha256": "e0dd148e48e24328ec054db4f6fe733ec4e20c3d7736557d92538e5ff66b812a"
+    },
+    "source/grille-apron-v2/web/viewer.json": {
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+    },
+    "source/grille-apron-v2/web/west-block.glb": {
+      "bytes": 576800,
+      "sha256": "884f6a555d59ff3736f610953c2f2151a150d5452aee502008086086e595dd6f"
+    },
+    "source/grille-apron-v2/web/signs-2025-01.glb": {
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    },
+    "source/grille-apron-v2/evidence/validation.json": {
+      "bytes": 793,
+      "sha256": "4c91a3648b5185dd54ab8bd06254a88a730b6853e33ce2996e4a299aac766b9e"
+    },
+    "source/grille-apron-v2/evidence/context-before.png": {
+      "bytes": 1277744,
+      "sha256": "4e2b75f81b289508ba4c7fca97ef5f5c3e168f02d8ac4f6efe7e57e9b9ac59e4"
+    },
+    "source/grille-apron-v2/evidence/detail-after.png": {
+      "bytes": 1321183,
+      "sha256": "355c3b8553c161f228dda9e1d9d65dea4188c392c3293d00209e538755dd3ad9"
+    },
+    "source/grille-apron-v2/evidence/SOURCES.json": {
+      "bytes": 1310,
+      "sha256": "2eb11c48ad24c84cb9ed6b6bcaa6b322042aca46bac329b6f26269c1f6fe2ab6"
+    },
+    "source/grille-apron-v2/evidence/strict-validation.json": {
+      "bytes": 526,
+      "sha256": "2662451c180812c09ea15870c9cedc25b156bd4deee89d6c3429d5541625a74d"
+    },
+    "source/grille-apron-v2/evidence/front-before.png": {
+      "bytes": 1312393,
+      "sha256": "bc0ae3c61f76cb6171a7934997151ea58deb4caca7e00b3c7a8fd1dc9c96452d"
+    },
+    "source/grille-apron-v2/evidence/detail-before.png": {
+      "bytes": 1310987,
+      "sha256": "2330e29afe16a6283b8cd8392d51df3687c7b4fe819247f42476965e73efb221"
+    },
+    "source/grille-apron-v2/evidence/parts.json": {
+      "bytes": 9324,
+      "sha256": "a6f878474046b37a500e391ce62f4fa79dbcbde74032f587b18fe84b03d8de3e"
+    },
+    "source/grille-apron-v2/evidence/context-after.png": {
+      "bytes": 1283103,
+      "sha256": "3a41e1641880bab9b0f4a64884f0c7535c1eba47dfe5fb3b14530f7bdd592069"
+    },
+    "source/grille-apron-v2/evidence/front-after.png": {
+      "bytes": 1318692,
+      "sha256": "851e6a424d0e1527736cb3dbdec405ee6e1a44406824b5a23f633aa2078a2fb1"
+    },
+    "source/grille-apron-v2/evidence/render-settings.json": {
+      "bytes": 795,
+      "sha256": "13f31706213cff2eddef881669f8c8b370362d53e6fa2ee8ce93b9e201f3ca2a"
+    },
+    "source/grille-apron-v2/source/validate.py": {
+      "bytes": 2504,
+      "sha256": "1c74e14a0f3d0cc6565e21441d36fd4881e1bec18769bfd43cb23ea0fb3d7e70"
+    },
+    "source/grille-apron-v2/source/build_grille.py": {
+      "bytes": 6096,
+      "sha256": "91d2ea8bccaa16e6ae657bd0f00b3f507b0dc23e849b678252bb63ca8232638c"
+    },
+    "source/grille-apron-v2/source/render_verify.py": {
+      "bytes": 2731,
+      "sha256": "e172b1be82dcb99497fce07e3c2262233472371638fddbbd6349993aee5a0de4"
+    },
+    "source/grille-apron-v2/editable/west-frontage-grille.blend": {
+      "bytes": 2941524,
+      "sha256": "75cbccc41d251d934273c9a26ef10abd35ef7f8897c79e7c64fb57642614eef4"
+    },
+    "source/grille-apron-v2/inputs/web/viewer.json": {
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+    },
+    "source/grille-apron-v2/inputs/web/west-block.glb": {
       "bytes": 547344,
       "sha256": "ea60ca2848e1ecc981dc2bf42d9de389d52e3b36b97d17357edc621da82ccb16"
+    },
+    "source/grille-apron-v2/inputs/web/signs-2025-01.glb": {
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    },
+    "source/grille-apron-v2/inputs/source/data/view_fit.json": {
+      "bytes": 316,
+      "sha256": "9c81ca4e59a0e5710a442fd8587c5f130707b6cde7a052a9bad5715981b5dd8d"
+    },
+    "source/grille-apron-v2/inputs/source/data/facades.json": {
+      "bytes": 6562,
+      "sha256": "7aa9a328194bc2285c14764dab36361b9496862c381e098ffc2f923c0a2550ba"
+    },
+    "source/grille-apron-v2/inputs/source/data/plateau.json": {
+      "bytes": 83361,
+      "sha256": "9a0d6514b692e6c2a14357397c68e6522e2357708762d8e06aa0fa446b84a50d"
+    },
+    "source/grille-apron-v2/inputs/source/data/ground_measurements.json": {
+      "bytes": 5849,
+      "sha256": "28467be90c39d5bbc572684ce6dca0c0ab2d3501e49c48a6c8b5f225846fbb60"
+    },
+    "source/grille-apron-v2/inputs/source/blender/build_west.py": {
+      "bytes": 15223,
+      "sha256": "2a1e2ea618eec5eb95d175621352ee9c02ad10ab7d10cd7f0485778f3cee08cd"
+    },
+    "source/grille-apron-v2/inputs/source/blender/corner_fidelity.py": {
+      "bytes": 6110,
+      "sha256": "00e1f92411530b7548ec587dd053740437c897b76efe579717ef3108ac3edb01"
+    },
+    "source/grille-apron-v2/inputs/source/blender/facade_fidelity.py": {
+      "bytes": 7339,
+      "sha256": "7001bd4bdfa2de7b6daa3cb0f52892059b52bda9b5f78bd82af862e7d39b7424"
+    },
+    "source/awning-support-repair/web/viewer.json": {
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+    },
+    "source/awning-support-repair/web/west-block.glb": {
+      "bytes": 576800,
+      "sha256": "3e9d4573f2d88d65877583f23442740fac333849d0c4f7877202b6905812026a"
+    },
+    "source/awning-support-repair/web/signs-2025-01.glb": {
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    },
+    "source/awning-support-repair/evidence/validation.json": {
+      "bytes": 4620,
+      "sha256": "b13d1814b0f9fc09b5d50bdd3e78500cb414a4b6de27ad0abe0d625bc3e68e0a"
+    },
+    "source/awning-support-repair/evidence/SOURCES.json": {
+      "bytes": 1240,
+      "sha256": "5d7a6ce3924276d5363fbdc0ac375426fb1c1f1c49d9cc79d5807c2956f83d73"
+    },
+    "source/awning-support-repair/evidence/chain-regeneration.json": {
+      "bytes": 184,
+      "sha256": "f8cca0def6e1b6a03710f81c03c8e3fdcaa8268dfdad87e6924e97cd26a428f2"
+    },
+    "source/awning-support-repair/evidence/awning-before.png": {
+      "bytes": 1614314,
+      "sha256": "52d168539cc8ceb51053dec0d425588d6a1529e490ec51ea39a6c99c2c11356c"
+    },
+    "source/awning-support-repair/evidence/awning-after.png": {
+      "bytes": 1613350,
+      "sha256": "e614c75ef5219398ce7c7d730d813ac91276390da936e59b3924ffd99205ce30"
+    },
+    "source/awning-support-repair/evidence/render-settings.json": {
+      "bytes": 457,
+      "sha256": "912036c561f5798d80f4f8d75c59bae046dfac71e485d1a159e7671fdbdaa73f"
+    },
+    "source/awning-support-repair/source/SUPPORT_TARGET.json": {
+      "bytes": 7026,
+      "sha256": "2507f393033f3adc7843b54078100e0190e10689ec4198ad055a79e309145083"
+    },
+    "source/awning-support-repair/source/repair.py": {
+      "bytes": 4187,
+      "sha256": "0ddbdd90b9a7e9dd93c9492372f79083a01d0d1c6a22a42e66aa4e370cd5522e"
+    },
+    "source/awning-support-repair/source/render_verify.py": {
+      "bytes": 2350,
+      "sha256": "ced74e4cc80badd198c5602f52b446534a57a9975c98d7d9a20c98fc626b7b9a"
+    },
+    "source/awning-support-repair/source/regenerate.py": {
+      "bytes": 793,
+      "sha256": "ab0532451adad9203dcfd21191ab1e5265d0612e620177fe9cbefc1d69f12359"
+    },
+    "source/awning-support-repair/editable/west-awning-support-repair.blend": {
+      "bytes": 2941524,
+      "sha256": "b8771181280cb50b8e9738272ae5df3692749b3d98b1a028e40644897ee54dcc"
+    },
+    "source/awning-support-repair/inputs/current/viewer.json": {
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+    },
+    "source/awning-support-repair/inputs/current/west-block.glb": {
+      "bytes": 576800,
+      "sha256": "884f6a555d59ff3736f610953c2f2151a150d5452aee502008086086e595dd6f"
+    },
+    "source/awning-support-repair/inputs/current/signs-2025-01.glb": {
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    },
+    "source/awning-support-repair/inputs/grille/INPUT_PINS.json": {
+      "bytes": 2067,
+      "sha256": "54aa34f6d7509331f9b6c86a05d2195fc78fcfd48a3a23e665ac3dea0eccdb0a"
+    },
+    "source/awning-support-repair/inputs/grille/web/viewer.json": {
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+    },
+    "source/awning-support-repair/inputs/grille/web/west-block.glb": {
+      "bytes": 576800,
+      "sha256": "884f6a555d59ff3736f610953c2f2151a150d5452aee502008086086e595dd6f"
+    },
+    "source/awning-support-repair/inputs/grille/web/signs-2025-01.glb": {
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    },
+    "source/awning-support-repair/inputs/grille/evidence/validation.json": {
+      "bytes": 793,
+      "sha256": "4c91a3648b5185dd54ab8bd06254a88a730b6853e33ce2996e4a299aac766b9e"
+    },
+    "source/awning-support-repair/inputs/grille/evidence/parts.json": {
+      "bytes": 9324,
+      "sha256": "a6f878474046b37a500e391ce62f4fa79dbcbde74032f587b18fe84b03d8de3e"
+    },
+    "source/awning-support-repair/inputs/grille/source/validate.py": {
+      "bytes": 2504,
+      "sha256": "1c74e14a0f3d0cc6565e21441d36fd4881e1bec18769bfd43cb23ea0fb3d7e70"
+    },
+    "source/awning-support-repair/inputs/grille/source/build_grille.py": {
+      "bytes": 6096,
+      "sha256": "91d2ea8bccaa16e6ae657bd0f00b3f507b0dc23e849b678252bb63ca8232638c"
+    },
+    "source/awning-support-repair/inputs/grille/source/render_verify.py": {
+      "bytes": 2731,
+      "sha256": "e172b1be82dcb99497fce07e3c2262233472371638fddbbd6349993aee5a0de4"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/web/viewer.json": {
+      "bytes": 222,
+      "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/web/west-block.glb": {
+      "bytes": 547344,
+      "sha256": "ea60ca2848e1ecc981dc2bf42d9de389d52e3b36b97d17357edc621da82ccb16"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/web/signs-2025-01.glb": {
+      "bytes": 516764,
+      "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/source/data/view_fit.json": {
+      "bytes": 316,
+      "sha256": "9c81ca4e59a0e5710a442fd8587c5f130707b6cde7a052a9bad5715981b5dd8d"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/source/data/facades.json": {
+      "bytes": 6562,
+      "sha256": "7aa9a328194bc2285c14764dab36361b9496862c381e098ffc2f923c0a2550ba"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/source/data/plateau.json": {
+      "bytes": 83361,
+      "sha256": "9a0d6514b692e6c2a14357397c68e6522e2357708762d8e06aa0fa446b84a50d"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/source/data/ground_measurements.json": {
+      "bytes": 5849,
+      "sha256": "28467be90c39d5bbc572684ce6dca0c0ab2d3501e49c48a6c8b5f225846fbb60"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/source/blender/build_west.py": {
+      "bytes": 15223,
+      "sha256": "2a1e2ea618eec5eb95d175621352ee9c02ad10ab7d10cd7f0485778f3cee08cd"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/source/blender/corner_fidelity.py": {
+      "bytes": 6110,
+      "sha256": "00e1f92411530b7548ec587dd053740437c897b76efe579717ef3108ac3edb01"
+    },
+    "source/awning-support-repair/inputs/grille/inputs/source/blender/facade_fidelity.py": {
+      "bytes": 7339,
+      "sha256": "7001bd4bdfa2de7b6daa3cb0f52892059b52bda9b5f78bd82af862e7d39b7424"
     }
   }
 }

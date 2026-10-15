@@ -1,0 +1,30 @@
+{
+  "before_base": {
+    "triangles": 7654,
+    "primitives": 20
+  },
+  "after_base": {
+    "triangles": 8170,
+    "primitives": 22
+  },
+  "unchanged_sign_layer": {
+    "triangles": 76,
+    "primitives": 15
+  },
+  "combined": {
+    "triangles": 8246,
+    "primitives": 37,
+    "bytes": 1093564
+  },
+  "added_triangles": 516,
+  "added_primitives": 2,
+  "original_binary_prefix_exact": true,
+  "all_original_json_array_entries_exact": true,
+  "sign_bytes_exact": true,
+  "viewer_bytes_exact": true,
+  "output_sha256": {
+    "west-block.glb": "884f6a555d59ff3736f610953c2f2151a150d5452aee502008086086e595dd6f",
+    "signs-2025-01.glb": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386",
+    "viewer.json": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd"
+  }
+}

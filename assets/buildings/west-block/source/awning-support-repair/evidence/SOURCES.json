@@ -1,0 +1,36 @@
+[
+  {
+    "capture_date": "2025-01-31",
+    "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg",
+    "author": "Syced",
+    "license": "CC0 1.0",
+    "original_sha256": "0b5cec75608be664a9f2e4ab08b906a245d3f00ce0e4d556fcc8b513579bc656",
+    "crop_native_pixels": [
+      785,
+      2080,
+      1180,
+      2220
+    ],
+    "enlargement": 4,
+    "crop_sha256": "d9128dd7699b38ff1fc3f5a0c0dae6ac78ca848a4fcb6f0f1098dbefaae60034",
+    "use": "reference only, not model texture; metadata inherited from verified prior register",
+    "reference_filename_not_bundled": "awning-Jan31.jpg"
+  },
+  {
+    "capture_date": "2025-02-07",
+    "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg",
+    "author": "Syced",
+    "license": "CC0 1.0",
+    "original_sha256": "a0fe5f57da98657907c4fd915eda4ccf991185aa25a40aea76cf2cb1ad9a7ab4",
+    "crop_native_pixels": [
+      1340,
+      760,
+      1740,
+      990
+    ],
+    "enlargement": 3,
+    "crop_sha256": "9711d1bda77dd3978d22bcc87b30db09d9664ddb7d6c96a25a7272dd5a6d223d",
+    "use": "reference only, not model texture; metadata inherited from verified prior register",
+    "reference_filename_not_bundled": "awning-Feb07.jpg"
+  }
+]

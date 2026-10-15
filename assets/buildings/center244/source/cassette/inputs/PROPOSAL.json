@@ -1,0 +1,57 @@
+{
+  "status": "proposal only; approximate fitted dimensions, not survey",
+  "owner": "assets/buildings/center244",
+  "id": "way/136691379",
+  "plateau_id": "bldg_edef4503-f1ef-4f11-839a-3fad9862036c",
+  "source_host_wall_index_zero_based": 18,
+  "origin_a": [
+    -69.497,
+    70.742,
+    0
+  ],
+  "tangent": [
+    0.8828833046079576,
+    0.4695924514347865,
+    0
+  ],
+  "outward": [
+    0.4695924514347865,
+    -0.8828833046079576,
+    0
+  ],
+  "face_width_m": 3.2325902926291166,
+  "local_bounds": {
+    "u": [
+      0.32325902926291167,
+      3.038634875071369
+    ],
+    "outward_d": [
+      0.055,
+      0.3
+    ],
+    "z": [
+      4.43,
+      4.7
+    ]
+  },
+  "asset_aabb_xyz": [
+    [
+      -69.18577241517109,
+      -66.67336226456956
+    ],
+    [
+      70.62893500861762,
+      72.12036141824656
+    ],
+    [
+      4.43,
+      4.7
+    ]
+  ],
+  "width_m": 2.7153758458084574,
+  "height_m": 0.27,
+  "projection_m": 0.245,
+  "coordinate_convention": "Blender x east, y north, z TP-15; raw glTF=(x,z,-y); viewer groundElevationTP=15 unchanged",
+  "geometry": "one pale-metal horizontal cassette: two 0.07m end caps, 0.055m high top housing, narrow dark recessed front slot; no fabric, text, motor, arms or goods",
+  "budget": "<=120 added triangles, <=2 added material primitives; estimate only"
+}

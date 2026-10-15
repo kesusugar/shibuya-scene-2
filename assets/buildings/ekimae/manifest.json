@@ -2,7 +2,7 @@
   "id": "ekimae",
   "source_id": "way/60739635",
   "level": "B",
-  "status": "Photo-led facade; current restaurant alignment rectifies full-height faces with common vertical stations; inferred unseen details/HiT missing photograph recorded",
+  "status": "Photo-led facade; current restaurant alignment rectifies full-height faces with common vertical stations; inferred unseen details/HiT missing photograph recorded; bounded successor described in source/door-envelope-repair/README.md",
   "sign_era": "2025-11-01",
   "sign_license": "CC BY-SA 4.0",
   "attribution": "Joli Rumi; see source/textures/LICENSE.md",
@@ -13,8 +13,8 @@
   },
   "files": {
     "README.md": {
-      "bytes": 4992,
-      "sha256": "27716d9ede121ad276369277749fe1819d80a78fb9c671b00685a112f33f5e87"
+      "bytes": 5677,
+      "sha256": "6be1e4379098067155d7618b59b6344dea7bcbedc5cd866371d9cfde33d82a22"
     },
     "source/blender/build_ekimae.py": {
       "bytes": 8007,
@@ -61,8 +61,8 @@
       "sha256": "b3a9a323838f4f26f29607ff8dce0b33b236dc329b64e8f68282a370ad8c4661"
     },
     "source/data/stats.json": {
-      "bytes": 6376,
-      "sha256": "a13d4dd72f27606f47cc37672d54610f379417d278550e162caff4ee48d9efb4"
+      "bytes": 6446,
+      "sha256": "1f8bba2c858ba136bbd3d0f76478e437cde7abeb2500fbb5fa5768a103599abf"
     },
     "source/refs/REFERENCE_REGISTER.csv": {
       "bytes": 919,
@@ -110,7 +110,7 @@
     },
     "web/ekimae.glb": {
       "bytes": 1787720,
-      "sha256": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d"
+      "sha256": "4ecb3412bc946a8aa88ac9ab0ac4d9f415b8d5bcadac819ead9d8d59885b89c8"
     },
     "web/emissive_day.json": {
       "bytes": 1140,
@@ -127,6 +127,102 @@
     "web/viewer.json": {
       "bytes": 158,
       "sha256": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57"
+    },
+    "source/door-envelope-repair/README.md": {
+      "bytes": 4436,
+      "sha256": "a3e685c9943bcae1f8a8503d917851dc2c9c77396d5ad6b19801257d430366aa"
+    },
+    "source/door-envelope-repair/web/ekimae.glb": {
+      "bytes": 1787720,
+      "sha256": "4ecb3412bc946a8aa88ac9ab0ac4d9f415b8d5bcadac819ead9d8d59885b89c8"
+    },
+    "source/door-envelope-repair/evidence/audit.json": {
+      "bytes": 8776,
+      "sha256": "984fc284a1cc5782beb92fa7f9a0f349995ae8c7e81393d016a5c73b34f791d3"
+    },
+    "source/door-envelope-repair/evidence/accepted_source_pins.json": {
+      "bytes": 580,
+      "sha256": "167d8ddd8d9e44d72703bdd79a35f868956d7f4f0db5576d1d83270ff38b0c4e"
+    },
+    "source/door-envelope-repair/evidence/after-front.png": {
+      "bytes": 798806,
+      "sha256": "a4a9873a30b2a3e314b78067fdb0e6a74b4c3ea2f425ab4cab02f8495da76c95"
+    },
+    "source/door-envelope-repair/evidence/before-side.png": {
+      "bytes": 755355,
+      "sha256": "d46e1bef44592ab337bb53048f47f00792297d857877f5d68500f9c9d3cb720b"
+    },
+    "source/door-envelope-repair/evidence/cameras.json": {
+      "bytes": 294,
+      "sha256": "601741eb17493eabf016957a4810bab5fe38e7e91e05981fd7d5b208e5b9676d"
+    },
+    "source/door-envelope-repair/evidence/before-front.png": {
+      "bytes": 799728,
+      "sha256": "cd7154c7b85c2ea12d6497ef76ecb019f8fb21eef7ddf70703eeb03ff45ea931"
+    },
+    "source/door-envelope-repair/evidence/json_delta.json": {
+      "bytes": 252,
+      "sha256": "15c3de9bc5dfc6922333d2cf1e6dec56d5f94bac066273b83e23ce590d1c5653"
+    },
+    "source/door-envelope-repair/evidence/after-side.png": {
+      "bytes": 756055,
+      "sha256": "892f3548ced773accc47f21f8b3e38586b84b41c2c06b04b671d98bf38d474ac"
+    },
+    "source/door-envelope-repair/input/ekimae.glb": {
+      "bytes": 1787720,
+      "sha256": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d"
+    },
+    "source/door-envelope-repair/source/signatures.json": {
+      "bytes": 58128,
+      "sha256": "2db0487887f0fcbc631bbd19423c06d4821d5898da66fd745b0aeefc13262726"
+    },
+    "source/door-envelope-repair/source/render_editable.py": {
+      "bytes": 2119,
+      "sha256": "92fbf279b27d3765be7dec471d4d2a2061028c72116280ebb12436ed481cd9c3"
+    },
+    "source/door-envelope-repair/source/run.py": {
+      "bytes": 585,
+      "sha256": "2a2fb1e42cdaaca176e9b521d92e1858225c10906dff03dc0b6d6a616c77138d"
+    },
+    "source/door-envelope-repair/source/facade_detail.py": {
+      "bytes": 9063,
+      "sha256": "e125ec392d4b5435b6c9df2d3a0bdbd914e91c273da87d21e022bd85eb3f742c"
+    },
+    "source/door-envelope-repair/source/build_ekimae.py": {
+      "bytes": 8007,
+      "sha256": "fc7447df1382d8fcc4979bf2d4ff43ced5c4bac0262756ef9dae3dde6a2b88a5"
+    },
+    "source/door-envelope-repair/source/REFERENCE.json": {
+      "bytes": 1010,
+      "sha256": "2227cc5ecef1311d2279bc7a1d543805ca25133916c67f639a65d2da72982e21"
+    },
+    "source/door-envelope-repair/source/GEOMETRIC_DIAGNOSTIC.json": {
+      "bytes": 1059,
+      "sha256": "4bc01cb858204f95cf2326caaa8e073e78689ebfc0b51b0dfbaa1ac22aec3ec5"
+    },
+    "source/door-envelope-repair/source/check_incoming.py": {
+      "bytes": 953,
+      "sha256": "27785f813d0672915847760f32d9eb96c8e03c20831ad7652f01cedd1f84f241"
+    },
+    "source/door-envelope-repair/source/repair.py": {
+      "bytes": 6095,
+      "sha256": "8c5f26cc9c5cefa480211907b610588462c95ae2d67dfb80867f11fc3e68a67b"
+    },
+    "source/door-envelope-repair/source/generate_signatures.py": {
+      "bytes": 1639,
+      "sha256": "37a2458f7d43fdca77f2bd30e3414fce08b238f3f6c3cede979a54effbddd236"
+    },
+    "source/door-envelope-repair/source/REPAIR_OPTION.json": {
+      "bytes": 729,
+      "sha256": "b03493d181c4c02bf98bb600bc2ed14c3c2a8192c357a65b66242993d8dfebfc"
+    },
+    "source/door-envelope-repair/source/test_repair.py": {
+      "bytes": 1869,
+      "sha256": "ed6d7aac4886dfdb86567e941cad99ee3b12781e65edb6d542a618dd888597e0"
+    },
+    "source/door-envelope-repair/editable/ekimae-door-envelope.blend": {
+      "bytes": 629461,
+      "sha256": "a495f265cb56e19ba276a622435d34bf6f07d73090462b856998d1a3c2fd3529"
     }
   }
 }

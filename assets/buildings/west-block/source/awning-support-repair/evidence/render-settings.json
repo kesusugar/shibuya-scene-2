@@ -1,0 +1,22 @@
+{
+  "blender": "4.2.3 LTS",
+  "camera": [
+    -43,
+    -15,
+    12
+  ],
+  "aim": [
+    -55.4,
+    22.60848941146317,
+    3.3
+  ],
+  "ortho_scale": 15,
+  "resolution": [
+    1400,
+    650
+  ],
+  "samples": 24,
+  "denoise": false,
+  "scope": "Actual before/after GLB imports, isolated building. Same camera/settings as inspection. Not full scene or photo calibrated.",
+  "render_override": "Emission zero for render only; saved blend keeps original values."
+}

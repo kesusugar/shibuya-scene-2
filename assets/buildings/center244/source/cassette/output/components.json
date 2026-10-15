@@ -1,0 +1,62 @@
+[
+  {
+    "name": "top_housing",
+    "bounds_ud_z": [
+      0.32325902926291167,
+      3.038634875071369,
+      0.055,
+      0.3,
+      4.645,
+      4.7
+    ],
+    "material_group": 0,
+    "vertex_start": 0,
+    "vertex_count": 24,
+    "triangles": 12
+  },
+  {
+    "name": "left_cap",
+    "bounds_ud_z": [
+      0.32325902926291167,
+      0.3932590292629117,
+      0.055,
+      0.3,
+      4.43,
+      4.645
+    ],
+    "material_group": 0,
+    "vertex_start": 24,
+    "vertex_count": 24,
+    "triangles": 12
+  },
+  {
+    "name": "right_cap",
+    "bounds_ud_z": [
+      2.9686348750713694,
+      3.038634875071369,
+      0.055,
+      0.3,
+      4.43,
+      4.645
+    ],
+    "material_group": 0,
+    "vertex_start": 48,
+    "vertex_count": 24,
+    "triangles": 12
+  },
+  {
+    "name": "recess_slot",
+    "bounds_ud_z": [
+      0.3932590292629117,
+      2.9686348750713694,
+      0.265,
+      0.28,
+      4.59,
+      4.625
+    ],
+    "material_group": 1,
+    "vertex_start": 0,
+    "vertex_count": 24,
+    "triangles": 12
+  }
+]

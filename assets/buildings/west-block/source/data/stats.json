@@ -419,13 +419,13 @@
   ],
   "geometry": {
     "base": {
-      "meshes": 20,
-      "triangles": 7654
+      "meshes": 22,
+      "triangles": 8170
     },
     "signs": {
       "meshes": 15,
       "triangles": 76
     }
   },
-  "status": "Photo-fidelity work in progress; facade and overhang dimensions inferred; original PLATEAU shell/ground anchor retained; January 2025 static ads"
+  "status": "Photo-fidelity work in progress; facade and overhang dimensions inferred; original PLATEAU shell/ground anchor retained; January 2025 static ads; bounded successor described in source/awning-support-repair/README.md"
 }
