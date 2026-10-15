@@ -1,0 +1,8 @@
+{
+  "same_folder_and_relocated_glb_sha256_match": true,
+  "blend_vs_glb_front_mean_absolute_pixel_error": 0.07202222222222222,
+  "note": "Tiny shading/triangulation differences may occur; visually no opaque cards",
+  "texture_alpha_min": 0,
+  "texture_alpha_max": 255,
+  "opaque_pixel_fraction_at_cutoff_0_5": 0.1256561279296875
+}
