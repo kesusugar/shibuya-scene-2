@@ -1,0 +1,16 @@
+{
+  "asset_id": "shibu_hachi_box_architecture_reference",
+  "status": "unplaced",
+  "geographic_position": null,
+  "scene_yaw": null,
+  "replaces_existing_object": false,
+  "existing_object_identity": "unresolved",
+  "integration_owner": "separate scene integration workflow",
+  "blender_units": "metres",
+  "blender_up_axis": "+Z",
+  "blender_front_axis": "-Y",
+  "origin": "base footprint bottom centre",
+  "reference_scope": "2024 official measured plan, exterior architecture corroborated in 2024 and August 2026",
+  "advertisement_scope": "excluded",
+  "preserve_existing_scene_until_identity_reconciled": true
+}
