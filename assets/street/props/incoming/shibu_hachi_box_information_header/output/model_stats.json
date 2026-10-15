@@ -1,0 +1,19 @@
+{
+  "triangles": 832,
+  "dimensions_m": [
+    3.6500000953674316,
+    0.004000009503215551,
+    0.18000000715255737
+  ],
+  "materials": 3,
+  "origin": "bottom footprint centre",
+  "front": "Blender -Y",
+  "parent_blender_offset_m": [
+    0,
+    -0.686,
+    2.315
+  ],
+  "status": "unplaced lettering only",
+  "font": "Blender bundled Bfont, approximate",
+  "confirmed_text": "Tourist Information & Souvenir Store"
+}
