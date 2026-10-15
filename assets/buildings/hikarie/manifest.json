@@ -1,64 +1,237 @@
 {
+  "schema": 2,
   "id": "hikarie",
   "level": "B",
-  "status": "prototype; see README for evidence and estimates",
+  "scope": "bounded cumulative successor; inventory covers staged files only; existing unlisted repository files are preserved",
+  "generator": "source/facade91-v1/tools/regenerate.py",
+  "current_blend": "source/facade91-v1/source/hikarie.blend",
   "stats": {
-    "triangles": 37134,
-    "primitives": 8,
-    "bytes": 2344448
+    "triangles": 30562,
+    "primitives": 15,
+    "bytes": 2349752,
+    "sha256": "2f4e95126c0d126c8db2d7d8aad4a54d5d0010ba7af0734b357a939077a87721",
+    "git_blob": "5b6263486c383a4741b55125d147352686466d80"
   },
   "files": {
     "README.md": {
-      "bytes": 1402,
-      "sha256": "7b0b0a93554e832ca87e728fccb31e437bc25f07ff1420f7ff76349c4e5a520a"
+      "bytes": 3293,
+      "sha256": "d17511184cd2bef4ce3d024fa494f6eccd04fb1b88e0865b2e2a6a0e0b492aa9"
     },
-    "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    "evidence/cumulative-v2/cameras.json": {
+      "bytes": 515,
+      "sha256": "e4847707bf78645fe78efe9b7e12f6d472db235f5e910e985b8603507e87b445"
     },
-    "source/data/layout.json": {
-      "bytes": 603,
-      "sha256": "9c2c9941d174f2db858ccde44e267250fd24d6f57c1ee6f11043c24553cc1205"
+    "evidence/cumulative-v2/chosen-blend-parity.json": {
+      "bytes": 7310,
+      "sha256": "43957ddabb96253cdf92701a9ae3fd462fc48a36c778400dad90d74a13479c26"
     },
-    "source/data/plateau.json": {
-      "bytes": 33987,
-      "sha256": "49cafd4ce7ded54115267ff5cab3847e0b72d0bfd181fea8f582b8a7c6eb35c2"
+    "evidence/cumulative-v2/focused-tests.txt": {
+      "bytes": 441,
+      "sha256": "4fde216373794b818d336aa7dde430e9c14418c76b759f5e78b29e28cc0567c3"
     },
-    "source/data/stats.json": {
+    "evidence/cumulative-v2/front-after.png": {
+      "bytes": 1423780,
+      "sha256": "48860b3e69de6a29c8cc271895aed7097af76525de8f2b57019fa1ee599680b5"
+    },
+    "evidence/cumulative-v2/front-before.png": {
+      "bytes": 1452833,
+      "sha256": "b6175c3eb1ed506676d8c37d4b809e97e400c574e52a917768bf2372398af673"
+    },
+    "evidence/cumulative-v2/main-before-after.jpg": {
+      "bytes": 274406,
+      "sha256": "1ca53f736d459b0b9ec00ac2af95a622c4574a84b6a03e9a8487c07f3803fc3e"
+    },
+    "evidence/cumulative-v2/photo_jun15_angle-after.png": {
+      "bytes": 1634816,
+      "sha256": "56d3bb18e1e8a79923b3207b270bb84558fb87efdf5285f3d13fbefae31b3997"
+    },
+    "evidence/cumulative-v2/photo_jun15_angle-before.png": {
+      "bytes": 1556057,
+      "sha256": "29b7b5b3addd4e42c00aa496e5ed66fa69b9f9e20c529d40c9c4a17480454e06"
+    },
+    "evidence/cumulative-v2/render-recipe.py": {
+      "bytes": 1281,
+      "sha256": "91b0470bdd8c221d0e7634bfb773fd17bcb3da7611cf0c4e678b207c0a5dfc40"
+    },
+    "evidence/cumulative-v2/validation.json": {
+      "bytes": 1886,
+      "sha256": "610847db564c72bfe4a9085be0d59a24c12560771d577c81ee72fba9ca20e9e3"
+    },
+    "source/data/baseline-geometry.json": {
+      "bytes": 417,
+      "sha256": "2958615b2c48991113dbe9f81ab6c14cdc3546cb2a5083b6c7d914b4302bc8fc"
+    },
+    "source/data/original-manifest.json": {
+      "bytes": 2084,
+      "sha256": "5f3f62d656a8d63f9e358a0da9d03b810c727d4d59577a444ac4992927ad57ed"
+    },
+    "source/data/pavement-baseline.json": {
       "bytes": 10387,
       "sha256": "596d9e72af3e2d850aff08f5c678a20ecb38110cd2498549b3770de34b941570"
     },
-    "source/refs/SOURCES.md": {
-      "bytes": 594,
-      "sha256": "e2c62cf96aab2ad69cbf9fcc1adbca89ea068c56d4509ef255d98eff0c41317a"
+    "source/data/stats.json": {
+      "bytes": 18157,
+      "sha256": "819e8fb94d45d0a3610b43823e7dd33d345c4f7863be6fd8320e51e607357675"
     },
-    "source/refs/reference.jpg": {
-      "bytes": 4327076,
-      "sha256": "4d77f8b571cce722c55b3403e41825d8f08bac500410582bc268c9c0ba9ebead"
+    "source/facade91-v1/README.md": {
+      "bytes": 3127,
+      "sha256": "bcc59a63c92ba06066c2b081d06c3d5949bc2b513af4f52ef4ef72aff22630a4"
     },
-    "source/refs/reference.jpg.json": {
-      "bytes": 3642,
-      "sha256": "dbc65dbb25fcd6594c65dafa11d7c97687e5a0a19dbc7fba1998622a0b119418"
+    "source/facade91-v1/baseline/hikarie.glb": {
+      "bytes": 2007260,
+      "sha256": "14cb88b7d3870512c23a750e7b9f701e85dc184cc1d473954725b6c138a0749d"
     },
-    "web/emissive_day.json": {
-      "bytes": 3,
-      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    "source/facade91-v1/docs/REPORT.md": {
+      "bytes": 7391,
+      "sha256": "3fa5259cad16e425fc5e8ba4af15b1bd45dc39fde5d85320b81866f5a1f637d8"
     },
-    "web/emissive_night.json": {
-      "bytes": 3,
-      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    "source/facade91-v1/docs/SOURCES.json": {
+      "bytes": 1747,
+      "sha256": "faedc5abc235746173bc7ca6a315114bde00d4555ae5e2aed939512263ed50b1"
     },
-    "web/hikarie.glb": {
+    "source/facade91-v1/docs/UNCERTAINTY.md": {
+      "bytes": 1797,
+      "sha256": "cceea7b018a2fa5a7b245330793cecb68b41a7f90983a2b1e9246f3de2b3855d"
+    },
+    "source/facade91-v1/evidence/blend-parity.json": {
+      "bytes": 7833,
+      "sha256": "a2f22aaef8be5f5ec3df37a6bcf6c7c7dd553f58f6639a23a2f1f0a957abf659"
+    },
+    "source/facade91-v1/evidence/front-after.png": {
+      "bytes": 1423780,
+      "sha256": "3ca6000a39f8972deb3b84d6d050fd38145d1a56c31c05c0586b0067ef41d928"
+    },
+    "source/facade91-v1/evidence/front-before-after.jpg": {
+      "bytes": 270764,
+      "sha256": "67da9dcd8c08f67f1baa4103dcbd0b0a556a7e74e8a845b10ea6388fc3d6e7e9"
+    },
+    "source/facade91-v1/evidence/front-before.png": {
+      "bytes": 1441775,
+      "sha256": "eff00f6c5d7600a30d2ff62ebfe7ff699ad2c538046c13c347df5ad5f93deee7"
+    },
+    "source/facade91-v1/evidence/metadata-scene-parity.json": {
+      "bytes": 425,
+      "sha256": "f75e294f9aa3a113800d4fa0909b2a740221d1e627ef42d5009ebf9ca6e65608"
+    },
+    "source/facade91-v1/evidence/photo-before-after.jpg": {
+      "bytes": 218562,
+      "sha256": "463aee31ec5ba791ccd414982ec0cd25b36539321560e4c6eee039b4b837eb04"
+    },
+    "source/facade91-v1/evidence/photo_jun15_angle-after.png": {
+      "bytes": 1634816,
+      "sha256": "1bde712f602492610981bd1c3df9affeec7188262cde8770091595d6f0206b2d"
+    },
+    "source/facade91-v1/evidence/photo_jun15_angle-before-after.jpg": {
+      "bytes": 306533,
+      "sha256": "dd997493653b19fd1951f91d898e7335d879949ac54d2d9288afa679548da19e"
+    },
+    "source/facade91-v1/evidence/photo_jun15_angle-before.png": {
+      "bytes": 1640378,
+      "sha256": "98b374f9f757b97489b933aa7a5444281e69b8d10743ca7b675604e35209df91"
+    },
+    "source/facade91-v1/evidence/portable-validation.json": {
+      "bytes": 528,
+      "sha256": "afb5effc67f1e321bc686b5f455825577c30cf8264471a3e9d46c08cdc0088b2"
+    },
+    "source/facade91-v1/evidence/standalone-regeneration.json": {
+      "bytes": 468,
+      "sha256": "b3e7a2398f37c7caad2122ba4635ca2ddb5038ac31827b0d3806adf193bbc960"
+    },
+    "source/facade91-v1/evidence/west_side-after.png": {
+      "bytes": 1217581,
+      "sha256": "f5f483e3da4b007d23f5a89d80dbe0d5a0573a2f3b0754502dbaf07335a48e15"
+    },
+    "source/facade91-v1/evidence/west_side-before-after.jpg": {
+      "bytes": 189937,
+      "sha256": "813d445bd2773786f971db4f53ab7eba29517b6892a6b04b01b6a21f8d9682ef"
+    },
+    "source/facade91-v1/evidence/west_side-before.png": {
+      "bytes": 1217581,
+      "sha256": "a71c75bd958c12f7f38a5bb88780cbd2e760dd8c92583d3878156a7fbe1f97a0"
+    },
+    "source/facade91-v1/manifest.json": {
+      "bytes": 4925,
+      "sha256": "16ebbe63dfe82de61a856f39afd32b73466c2dc70b93a6d40d6223164ffc0cae"
+    },
+    "source/facade91-v1/source/JUN15-hikarie-crop.jpg": {
+      "bytes": 222766,
+      "sha256": "d7e59c32f9499ecf395fdbb004cea51533fbf1e3cb65e4d6e4c4dfb5fbdb7456"
+    },
+    "source/facade91-v1/source/cameras.json": {
+      "bytes": 515,
+      "sha256": "e4847707bf78645fe78efe9b7e12f6d472db235f5e910e985b8603507e87b445"
+    },
+    "source/facade91-v1/source/hikarie.blend": {
+      "bytes": 982497,
+      "sha256": "5b35a8710a1ff11db7a2b2ede7717fb63de1e521ee27699bde4012653632ad93"
+    },
+    "source/facade91-v1/source/overlay_contract.json": {
+      "bytes": 34645,
+      "sha256": "5283ee523741d94034b9a7cf16bd086554ef0707fcae788aef2503f482dc27a8"
+    },
+    "source/facade91-v1/source/plateau.json": {
+      "bytes": 33987,
+      "sha256": "49cafd4ce7ded54115267ff5cab3847e0b72d0bfd181fea8f582b8a7c6eb35c2"
+    },
+    "source/facade91-v1/tools/create_editable.py": {
+      "bytes": 3422,
+      "sha256": "69798dee92ff06432975868e5cfd3d1d72db960830d4a08cecd6d6fd6f60cc30"
+    },
+    "source/facade91-v1/tools/make_boards.py": {
+      "bytes": 1942,
+      "sha256": "97fe2a4fdf4bfcddff64c48aed6ce44e7c545e4e95857804fc00e30054934616"
+    },
+    "source/facade91-v1/tools/regenerate.py": {
+      "bytes": 2895,
+      "sha256": "0d7f0da44b546d07dbb51f4d1c8a2f9a318dd62b2437648a31a5d90b95252d33"
+    },
+    "source/facade91-v1/tools/render.py": {
+      "bytes": 1273,
+      "sha256": "6989f92688a7e1e9083e547b7a3d3557231f03b5e3a5fcc44e9b2ed8843efc23"
+    },
+    "source/facade91-v1/tools/validate.py": {
+      "bytes": 2133,
+      "sha256": "a3809d887380aeb7b664be7c227775c2dd7d8c9b1293a4eebe2c72f01d7f5d66"
+    },
+    "source/facade91-v1/web/hikarie.glb": {
+      "bytes": 2349752,
+      "sha256": "2f4e95126c0d126c8db2d7d8aad4a54d5d0010ba7af0734b357a939077a87721"
+    },
+    "source/main-baseline-v1/README.md": {
+      "bytes": 1052,
+      "sha256": "5ce154cd5d08357756a26071009646e523621477ef51dfc385d67675d173af17"
+    },
+    "source/main-baseline-v1/build_facade.py": {
+      "bytes": 12836,
+      "sha256": "b45df14380566e9bd5b9f52d665464d10e78f2fe5c5167478d21cd3025555ef4"
+    },
+    "source/main-baseline-v1/data/layout.json": {
+      "bytes": 603,
+      "sha256": "9c2c9941d174f2db858ccde44e267250fd24d6f57c1ee6f11043c24553cc1205"
+    },
+    "source/main-baseline-v1/data/pavement-baseline.json": {
+      "bytes": 10387,
+      "sha256": "596d9e72af3e2d850aff08f5c678a20ecb38110cd2498549b3770de34b941570"
+    },
+    "source/main-baseline-v1/data/plateau.json": {
+      "bytes": 33987,
+      "sha256": "49cafd4ce7ded54115267ff5cab3847e0b72d0bfd181fea8f582b8a7c6eb35c2"
+    },
+    "source/main-baseline-v1/hikarie.glb": {
       "bytes": 2344448,
       "sha256": "8f39f54b18278e169bc89016080fd7632424fa2534d348522f32920a101d2fa6"
     },
-    "web/viewer.json": {
-      "bytes": 194,
-      "sha256": "675caea37343010aa1df27b022d33c0aa8f45c1ed03eabfaef06c14e4aabbd7c"
+    "source/main-baseline-v1/reconstruct_main.py": {
+      "bytes": 12645,
+      "sha256": "105955a70d440488f7d7d5ab0287d2087e93f7054ad7fcede8c6d3e11adad6f3"
+    },
+    "source/roof-repair-v1/prior.glb": {
+      "bytes": 2007260,
+      "sha256": "fcf6c8a36ee45ca75544cb3bc766bb94745147c15d2cad1e9025a67c4cd208a1"
+    },
+    "web/hikarie.glb": {
+      "bytes": 2349752,
+      "sha256": "2f4e95126c0d126c8db2d7d8aad4a54d5d0010ba7af0734b357a939077a87721"
     }
-  },
-  "source_id": "way/204091879",
-  "source_aliases": [],
-  "plateau_id": "bldg_9ad5b600-360f-4627-8a89-fca39aad5576",
-  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+  }
 }
