@@ -1,0 +1,20 @@
+{
+  "asset": "shibu_hachi_counter_laptop_2024_reference",
+  "reference_article": "https://www.andtrip.jp/article/006193.html",
+  "reference_image": "https://www.andtrip.jp/images/5e2dce4101b447931b7a0e70afda38d6ab3ff4ad.jpg",
+  "publication_date": "2024-09-19",
+  "capture_date": "unknown",
+  "source_caption": "店舗カウンター",
+  "source_dimensions_px": [800, 600],
+  "inspected_laptop_region_xyxy_px_approx": [542, 273, 689, 357],
+  "locally_inspected_source_sha256": "475e03de4f18e700ee7c89d9ced163c16d102ec13a50f059c1b53d51b09c1bf0",
+  "source_photo_redistributed": false,
+  "source_photo_license": "No redistribution permission established. Copyright remains with respective publisher/photographer.",
+  "authored_content": "Original procedural geometry, standard PBR materials and model-only renders; no photographic pixels.",
+  "observed": ["Open portable computer on right countertop", "Warm-metal rear lid", "Rounded rectangular outline", "Narrow dark lower hinge/base line"],
+  "estimated_or_hidden": ["All dimensions", "Exact opening angle", "Base depth and taper", "Operator bezel and inactive display", "Generic unlabelled keys and trackpad", "Underside and supports"],
+  "intentionally_excluded": ["Stickers and manufacturer emblem", "Brand/model assertion", "Screen interface", "Key legends", "Cables and ports", "Neighbouring tabletop sign", "Maps and promotional objects"],
+  "temporal_scope": "Movable equipment visible in a September 2024 publication. Current presence and location unverified.",
+  "placement": "Unplaced. Right countertop is a candidate location only.",
+  "duplicate_audit": "Existing counter README excludes its computer. Existing pavilion and completed detail source inventory checked; no laptop asset found. Wall monitor and placard are distinct completed objects."
+}

@@ -1,0 +1,52 @@
+{
+  "status": "pass",
+  "frozen_sources_and_asset_hashes_unchanged": true,
+  "views": [
+    {
+      "path": "renders/operator_oblique.png",
+      "size_px": [
+        900,
+        750
+      ],
+      "alpha_bbox_xyxy": [
+        93,
+        41,
+        806,
+        702
+      ],
+      "fully_framed": true,
+      "visually_reviewed": true
+    },
+    {
+      "path": "renders/photo_near_rear.png",
+      "size_px": [
+        900,
+        750
+      ],
+      "alpha_bbox_xyxy": [
+        39,
+        182,
+        862,
+        695
+      ],
+      "fully_framed": true,
+      "visually_reviewed": true
+    },
+    {
+      "path": "renders/side.png",
+      "size_px": [
+        900,
+        750
+      ],
+      "alpha_bbox_xyxy": [
+        177,
+        126,
+        723,
+        615
+      ],
+      "fully_framed": true,
+      "visually_reviewed": true
+    }
+  ],
+  "manual_observations": "All three views directly inspected. Lid outline and thin open stance visible; no clipping; rear unbranded; operator side deliberately generic and documented. No reference-image pixels in renders."
+}

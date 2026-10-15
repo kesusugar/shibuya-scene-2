@@ -1,0 +1,9 @@
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Read blend: "shibu_hachi_counter_laptop/shibu_hachi_counter_laptop.blend"
+Traceback (most recent call last):
+  File "shibu_hachi_counter_laptop/source/check_blend.py", line 8, in <module>
+    assert len(s.objects)==len(obs) and len(bpy.data.images)==0 and len(bpy.data.libraries)==0
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Blender quit

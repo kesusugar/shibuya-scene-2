@@ -1,0 +1,33 @@
+{
+  "blender_version": "4.2.3 LTS",
+  "asset": "shibu_hachi_counter_laptop_2024_reference",
+  "units": "metres",
+  "origin": "bottom centre of full open envelope",
+  "visitor_facing_lid_back": "-Y",
+  "bounds_blender_m": [
+    [
+      -0.15199999511241913,
+      -0.12386439740657806,
+      0.0
+    ],
+    [
+      0.15199999511241913,
+      0.12386441230773926,
+      0.21993397176265717
+    ]
+  ],
+  "dimensions_m": [
+    0.30399999022483826,
+    0.24772880971431732,
+    0.21993397176265717
+  ],
+  "triangles": 8904,
+  "editable_objects": 80,
+  "export_material_batches": 3,
+  "external_files": [],
+  "textures": 0,
+  "reference_date": "2024-09-19 publication; capture date unknown",
+  "current_presence_verified": false,
+  "runtime_placement": false,
+  "seconds_build_export_save": 1.0392081400059396
+}

@@ -1,0 +1,43 @@
+{
+  "status": "pass",
+  "blender": "4.2.3",
+  "reimport_meshes": 3,
+  "bounds_blender_m": [
+    [
+      -0.15199999511241913,
+      -0.12386439740657806,
+      0.0
+    ],
+    [
+      0.15199999511241913,
+      0.12386441230773926,
+      0.21993397176265717
+    ]
+  ],
+  "dimensions_m": [
+    0.30399999022483826,
+    0.24772880971431732,
+    0.21993397176265717
+  ],
+  "origin_test": "pass",
+  "finite_vertices": "pass",
+  "roundtrip_dimensions": "pass",
+  "renders": [
+    {
+      "file": "renders/photo_near_rear.png",
+      "seconds": 23.146443429999636,
+      "source": "reimported final GLB"
+    },
+    {
+      "file": "renders/side.png",
+      "seconds": 11.954787606999162,
+      "source": "reimported final GLB"
+    },
+    {
+      "file": "renders/operator_oblique.png",
+      "seconds": 30.995159487996716,
+      "source": "reimported final GLB"
+    }
+  ],
+  "seconds_total": 66.22893865199876
+}

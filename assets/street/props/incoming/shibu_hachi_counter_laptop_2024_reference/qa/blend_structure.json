@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "blender": "4.2.3 LTS",
+  "editable_meshes": 80,
+  "all_objects_have_evidence_classification": true,
+  "origins_at_bottom_centre": true,
+  "units": "metres",
+  "external_libraries": 0,
+  "external_images": 0,
+  "self_contained": true,
+  "pack_status": "No external data dependencies exist; pack_all invoked in generator.",
+  "cameras": 0,
+  "lights": 0,
+  "modifiers_pending": 0,
+  "bounds_blender_m": [
+    [
+      -0.15199999511241913,
+      -0.12386439740657806,
+      0.0
+    ],
+    [
+      0.15199999511241913,
+      0.12386441230773926,
+      0.21993397176265717
+    ]
+  ]
+}
