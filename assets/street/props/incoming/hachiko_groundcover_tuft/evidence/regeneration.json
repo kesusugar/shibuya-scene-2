@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "blender": "4.2.3 LTS 0e22e4fcea03",
+  "glb_sha256": "ce2e6119e5c1cf4292c097e0ffdd7cb1a8c85ccedbb028caec3c48a1dc23db74",
+  "independent_generation_byte_identical": true,
+  "editable_blend_export_byte_identical": true,
+  "validation": "evidence/validation.json",
+  "photo_source_verified": "2026-10-15 Commons author/date/CC BY 4.0",
+  "runtime": "not placed; no main scene or FPS test"
+}

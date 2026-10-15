@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "triangles": 936,
+  "minimum_triangle_area_m2": 5.6424595942704554e-06,
+  "materials": 2,
+  "alpha": "OPAQUE",
+  "external_resources": 0,
+  "gltf_bounds_y_up": [
+    [
+      -0.16543853282928467,
+      0.0,
+      -0.15291261672973633
+    ],
+    [
+      0.16543853282928467,
+      0.16679750382900238,
+      0.15291261672973633
+    ]
+  ],
+  "bytes": 23796,
+  "sha256": "ce2e6119e5c1cf4292c097e0ffdd7cb1a8c85ccedbb028caec3c48a1dc23db74",
+  "scope": "standalone asset; runtime integration and FPS not tested"
+}
