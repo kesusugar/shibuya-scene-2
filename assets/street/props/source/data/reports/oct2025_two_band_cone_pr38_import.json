@@ -1,0 +1,39 @@
+{
+ "id": "oct2025_two_band_cone",
+ "source_file": "oct2025_two_band_cone.glb",
+ "warnings": [],
+ "input_dimensions": [
+  0.38,
+  0.38,
+  0.7
+ ],
+ "scale_factor": 1.0,
+ "dimensions_m": {
+  "width": 0.38,
+  "depth": 0.38,
+  "height": 0.7
+ },
+ "merged_vertices": 0,
+ "input_triangles": 1044,
+ "triangles": 1044,
+ "materials": [
+  "prop_furniture_0.001",
+  "prop_furniture_1.001",
+  "prop_furniture_2"
+ ],
+ "bytes": 34720,
+ "source": {
+  "tool": "Blender 4.2.3 / procedural Python",
+  "author": "dot",
+  "date": "2026-10-15",
+  "terms": "Model, script, model-only renders and documentation: CC BY-SA 4.0. No reference photographs redistributed.",
+  "historical_reference_claim": {
+   "status": "unverified historical delivery claim; primary author/license/EXIF not verified during publication review",
+   "url": "https://commons.wikimedia.org/wiki/File:渋谷スクランブル交差点_2025年10月10日の渋谷_202510102313_IMG_6646.jpg",
+   "claimed_author": "ウィ貴公子",
+   "claimed_datetime": "2025-10-10T23:13:28",
+   "claimed_license": "CC BY-SA 4.0",
+   "photo_redistributed": false
+  }
+ }
+}
