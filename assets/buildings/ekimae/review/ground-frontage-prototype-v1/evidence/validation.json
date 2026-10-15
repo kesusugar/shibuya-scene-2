@@ -1,0 +1,47 @@
+{
+  "status": "Review prototype; geometry preservation passed; photo correspondence NOT passed",
+  "input_pins": {
+    "ekimae.glb": "4ecb3412bc946a8aa88ac9ab0ac4d9f415b8d5bcadac819ead9d8d59885b89c8",
+    "signs-2025-11.glb": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5",
+    "viewer.json": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57"
+  },
+  "asset_budget_before": {
+    "triangles": 23446,
+    "meshes": 19,
+    "primitives": 19,
+    "materials": 19,
+    "nodes": 19
+  },
+  "asset_budget_after": {
+    "triangles": 60760,
+    "meshes": 29,
+    "primitives": 29,
+    "materials": 29,
+    "nodes": 29
+  },
+  "input_glb_bytes": 1787720,
+  "candidate_glb_bytes": 6095644,
+  "runtime_performance_validation": "Not run; no navigation/FPS changes or claim",
+  "candidate_sha256": "e437ee3ec6cbc88e23e7f40ad55cd9b0452705ab9e99e8d89a32d44ebe00e035",
+  "original_and_candidate_used_geometry_bounds": [
+    [
+      -67.7969970703125,
+      -2.220446049250313e-16,
+      9.531495094299316
+    ],
+    [
+      -37.68406677246094,
+      50.400001525878906,
+      55.992000579833984
+    ]
+  ],
+  "used_geometry_global_bounds_unchanged": true,
+  "all_original_binary_bytes_preserved_as_prefix": true,
+  "original_node_transforms_and_materials_unchanged": true,
+  "upper_original_triangle_all_attributes_identical": 20396,
+  "additional_upper_triangles_from_clipped_tall_faces": 1,
+  "all_used_POSITION_accessor_extrema_correct": true,
+  "viewer_groundElevationTP": 15.29,
+  "no_sign_or_viewer_edits": true,
+  "no_other_buildings_or_runtime_files_accessed_for_edit": true
+}

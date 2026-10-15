@@ -1,0 +1,12 @@
+{
+  "status": "independent audit of clipping manifest only; not final candidate or render acceptance",
+  "non_door_changed_triangles": 409,
+  "max_upper_area_error_m2": 4.440892098500626e-14,
+  "total_upper_area_error_m2": 7.194765616613807e-14,
+  "max_retained_vertex_plane_distance_m": 3.5500708184633364e-15,
+  "non_door_removed_area_m2": 58.62951069683619,
+  "door_exception_height_minmax": [
+    0.11999999731779099,
+    3.0199999809265137
+  ]
+}

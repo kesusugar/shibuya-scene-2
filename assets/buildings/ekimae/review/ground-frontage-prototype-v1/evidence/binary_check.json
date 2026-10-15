@@ -1,0 +1,11 @@
+{
+  "input_sha256": "4ecb3412bc946a8aa88ac9ab0ac4d9f415b8d5bcadac819ead9d8d59885b89c8",
+  "candidate_sha256": "e437ee3ec6cbc88e23e7f40ad55cd9b0452705ab9e99e8d89a32d44ebe00e035",
+  "original_nodes_unchanged": true,
+  "original_materials_unchanged": true,
+  "original_binary_prefix_identical": true,
+  "original_scene_node_prefix_unchanged": true,
+  "untouched_triangles_all_attributes_identical_count": 22953,
+  "missing_untouched_triangles": [],
+  "limitations": "Verifies active untouched triangle attributes and original node/material records, not external signs/viewer bytes or clipped-boundary polygon coverage. Complement with manifest audit."
+}
