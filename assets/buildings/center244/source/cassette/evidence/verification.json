@@ -1,0 +1,44 @@
+{
+  "pass": true,
+  "added_triangles": 48,
+  "added_material_primitives": 2,
+  "original_binary_prefix_bytes": 523100,
+  "old_arrays_exact_prefix": true,
+  "original_scene_nodes_preserved": true,
+  "original_inputs_sha256": {
+    "BASE_SOURCES.md": "3c17f687073a5eae0dfe2526ab765ff5f6c6cf6da3a917beede2336d40ac5285",
+    "PROPOSAL.json": "2a825581b5460b459d98a58efd08d5efc170d3ac2c8dc761c7ac665e04e5a205",
+    "center244.glb": "4a425ab97e75957cd3093fad9dec51ab9a72bbbdc9d93766b667772a2e59f597",
+    "emissive_day.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "emissive_night.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "signs-2025-01.glb": "1a5ba8c1a3079014bf0999692e626559c9d385242bbe20be93bfc57c02a7cd2e",
+    "viewer.json": "1c310453d6e477285345956dd1e9ed490a0b7e243ed819e5be62b6aa684ef589"
+  },
+  "actual_local_bounds_u_d_z": [
+    [
+      0.3232543478980595,
+      3.0386334322386883
+    ],
+    [
+      0.05499933465525353,
+      0.30000279856396045
+    ],
+    [
+      4.429999828338623,
+      4.699999809265137
+    ]
+  ],
+  "minimum_triangle_area_m2": 0.00026250409922644964,
+  "positive_closed_component_volumes_m3": [
+    0.03658945829557355,
+    0.003687414368744868,
+    0.003687059559492667,
+    0.0013522529733306738
+  ],
+  "opening_vertical_clearance_m": 0.12999982833862322,
+  "upper_panel_vertical_clearance_m": 0.05000019073486328,
+  "rear_trim_gap_m": 0.014999334655253528,
+  "physical_wall_contact": false,
+  "gap_disclosure": "Estimated envelope leaves 15 mm behind casing to existing trim; no invented brackets, no literal wall-contact claim.",
+  "candidate_sha256": "39356586cd70837e24d0d17dd306a994f84f77826e134bb9ec15c214760115a1"
+}

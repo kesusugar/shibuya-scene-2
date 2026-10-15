@@ -1,0 +1,8 @@
+{
+  "web/ekimae.glb": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d",
+  "web/signs-2025-11.glb": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5",
+  "web/viewer.json": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57",
+  "source/data/stats.json": "a13d4dd72f27606f47cc37672d54610f379417d278550e162caff4ee48d9efb4",
+  "source/blender/build_ekimae.py": "fc7447df1382d8fcc4979bf2d4ff43ced5c4bac0262756ef9dae3dde6a2b88a5",
+  "source/blender/facade_detail.py": "e125ec392d4b5435b6c9df2d3a0bdbd914e91c273da87d21e022bd85eb3f742c"
+}

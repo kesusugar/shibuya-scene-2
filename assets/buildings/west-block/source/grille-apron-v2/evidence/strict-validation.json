@@ -1,0 +1,20 @@
+{
+  "original_binary_bytes_preserved": 528180,
+  "original_meshes_preserved": 20,
+  "original_nodes_preserved": 20,
+  "new_geometry_finite_and_index_valid": true,
+  "triangle_winding_matches_flat_normals": true,
+  "added_triangle_count": 516,
+  "local_ud_z_min": [
+    -1.414999416559859,
+    0.23999924965981717,
+    3.2750000953674316
+  ],
+  "local_ud_z_max": [
+    1.414999867035535,
+    0.40000086377438016,
+    3.8550000190734863
+  ],
+  "sign_and_datum_bytes_exact": true,
+  "no_original_source_changes_required": true
+}

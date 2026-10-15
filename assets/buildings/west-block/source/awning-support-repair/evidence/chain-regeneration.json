@@ -1,0 +1,6 @@
+{
+  "accepted_baseline_to_grille_exact": true,
+  "grille_to_support_repair_exact": true,
+  "network_required": false,
+  "uses_pinned_accepted_baseline_not_old_geometry_rebuild": true
+}

@@ -1,0 +1,19 @@
+{
+  "proposal_type": "model-consistency repair, not calibrated photo match",
+  "old_s_center": 21.214885655842743,
+  "proposed_s_center": 18.740290106591846,
+  "shift_s": -2.474595549250896,
+  "proposed_outer_jamb_bounds": [
+    17.625290106591848,
+    19.855290106591845
+  ],
+  "clearance_to_terminal_yellow_pier": 0.05,
+  "canopy_side_margin": 0.6999999999999993,
+  "projected_center_xy_at_front_offset046": [
+    -51.053509345007136,
+    -9.914666046561344
+  ],
+  "ground_glass_mullion_s_inside_new_shell": 19.03976109593266,
+  "mullion_center_offset_from_door_center": 0.29947098934081495,
+  "inference": "Door-shell center chosen by nearest non-overlap constraint; 5cm margin is modeling allowance, not photo measurement."
+}

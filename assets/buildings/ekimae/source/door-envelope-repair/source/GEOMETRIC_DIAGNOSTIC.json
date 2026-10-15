@@ -1,0 +1,30 @@
+{
+  "curve_length": 14.914885655842744,
+  "cafe_developed_end": 21.155290106591846,
+  "north_return_entrance_center": 21.214885655842743,
+  "north_return_entrance_outer_jamb_bounds": [
+    20.099885655842744,
+    22.32988565584274
+  ],
+  "yellow_end_pier_bounds": [
+    19.905290106591846,
+    21.155290106591846
+  ],
+  "canopy_end": 20.555290106591844,
+  "door_shell_overrun_past_cafe_end": 1.1745955492508955,
+  "door_center_beyond_canopy_end": 0.6595955492508985,
+  "left_jamb_inside_solid_pier": true,
+  "first_door_center": 6.562549688570807,
+  "first_door_outer_bounds": [
+    5.447549688570807,
+    7.677549688570807
+  ],
+  "rejected_test_pier_s": [
+    7.8,
+    9.65
+  ],
+  "rejected_test_clearance_from_first_door_jamb": 0.12245031142919238,
+  "reason_rejected": "This is the wrong side of the first door in the matched street-facing orientation; clearance alone is not photo registration.",
+  "photo_reprojection_rms": null,
+  "photo_reprojection_rms_reason": "No calibrated photo-model correspondence established; do not invent a pixel residual."
+}

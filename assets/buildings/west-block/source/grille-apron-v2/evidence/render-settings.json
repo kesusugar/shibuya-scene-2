@@ -1,0 +1,54 @@
+{
+  "blender": "4.2.3 LTS",
+  "views": [
+    [
+      "context",
+      [
+        -42,
+        -30,
+        17
+      ],
+      [
+        -49,
+        23.3,
+        4
+      ],
+      8
+    ],
+    [
+      "detail",
+      [
+        -47,
+        -8,
+        9
+      ],
+      [
+        -49,
+        23.3,
+        4.3
+      ],
+      4.5
+    ],
+    [
+      "front",
+      [
+        -45.432,
+        -8.48,
+        4.3
+      ],
+      [
+        -49,
+        23.326344151,
+        4.3
+      ],
+      4.5
+    ]
+  ],
+  "samples": 16,
+  "resolution": [
+    1200,
+    1000
+  ],
+  "scope": "Isolated building and January signs; not full scene or photo-calibrated. Before hides only appended object.",
+  "render_override": "Emission strength zero for evidence only; saved editable blend keeps original materials."
+}

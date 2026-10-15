@@ -1,0 +1,44 @@
+[
+  {
+    "id": "WB01",
+    "capture_date": "2025-01-31",
+    "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_seen_from_Shibuya_Stream.jpg",
+    "author": "Syced",
+    "license": "CC0 1.0",
+    "sha256": "0b5cec75608be664a9f2e4ab08b906a245d3f00ce0e4d556fcc8b513579bc656",
+    "crop_native_pixels": [
+      1140,
+      2060,
+      1300,
+      2180
+    ],
+    "use": "reference crop only; no new model texture",
+    "original_filename": "WB01.jpg"
+  },
+  {
+    "id": "WB02",
+    "capture_date": "2025-02-07",
+    "url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg",
+    "author": "Syced",
+    "license": "CC0 1.0",
+    "sha256": "a0fe5f57da98657907c4fd915eda4ccf991185aa25a40aea76cf2cb1ad9a7ab4",
+    "crop_native_pixels": [
+      1650,
+      750,
+      1820,
+      945
+    ],
+    "use": "reference crop only; no new model texture",
+    "original_filename": "WB02.jpg"
+  },
+  {
+    "file": "inputs/web/west-block.glb",
+    "sha256": "ea60ca2848e1ecc981dc2bf42d9de389d52e3b36b97d17357edc621da82ccb16",
+    "role": "actual current accepted model rendered read-only"
+  },
+  {
+    "file": "inputs/web/signs-2025-01.glb",
+    "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386",
+    "role": "actual current accepted model rendered read-only"
+  }
+]

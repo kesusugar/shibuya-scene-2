@@ -1,0 +1,20 @@
+{
+  "asset": "assets/buildings/ekimae",
+  "osm": "way/60739635",
+  "plateau": "bldg_6abf2261-478c-437a-93f4-8ba23d7b1cad",
+  "source_wall_indices_replaced_by_current_curve": [
+    11,
+    12
+  ],
+  "current_glb_sha256": "6813569028d675817d20e16a68ac50f00962a3a18841b5e3980bacb634d3f92d",
+  "reference_page": "https://kure1129.livedoor.blog/archives/39201057.html",
+  "reference_image": "https://livedoor.blogimg.jp/kure1129/imgs/4/5/4553f066.jpg",
+  "reference_image_title": "PXL_20250209_112422513",
+  "publication_date": "2025-02-11",
+  "inferred_capture_date": "2025-02-09",
+  "capture_basis": "Filename only, consistent with publication; no EXIF verified. Not October proof.",
+  "context_image": "https://livedoor.blogimg.jp/kure1129/imgs/4/f/4fce31f5.jpg",
+  "author": "マユリ～ナ",
+  "license": "No redistribution license found; reference-only inspection, no saved or repackaged photo, no texture use.",
+  "decision": "Evidence improved; exact pier/door registration remains HOLD; no model edits."
+}

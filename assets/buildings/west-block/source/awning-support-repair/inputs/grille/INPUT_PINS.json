@@ -1,0 +1,52 @@
+[
+  {
+    "path": "inputs/source/data/plateau.json",
+    "sha256": "9a0d6514b692e6c2a14357397c68e6522e2357708762d8e06aa0fa446b84a50d",
+    "origin": "accepted baseline asset/source/data/plateau.json"
+  },
+  {
+    "path": "inputs/source/data/facades.json",
+    "sha256": "7aa9a328194bc2285c14764dab36361b9496862c381e098ffc2f923c0a2550ba",
+    "origin": "accepted baseline asset/source/data/facades.json"
+  },
+  {
+    "path": "inputs/source/data/view_fit.json",
+    "sha256": "9c81ca4e59a0e5710a442fd8587c5f130707b6cde7a052a9bad5715981b5dd8d",
+    "origin": "accepted baseline asset/source/data/view_fit.json"
+  },
+  {
+    "path": "inputs/source/data/ground_measurements.json",
+    "sha256": "28467be90c39d5bbc572684ce6dca0c0ab2d3501e49c48a6c8b5f225846fbb60",
+    "origin": "accepted baseline asset/source/data/ground_measurements.json"
+  },
+  {
+    "path": "inputs/source/blender/build_west.py",
+    "sha256": "2a1e2ea618eec5eb95d175621352ee9c02ad10ab7d10cd7f0485778f3cee08cd",
+    "origin": "accepted baseline asset/source/blender/build_west.py"
+  },
+  {
+    "path": "inputs/source/blender/facade_fidelity.py",
+    "sha256": "7001bd4bdfa2de7b6daa3cb0f52892059b52bda9b5f78bd82af862e7d39b7424",
+    "origin": "accepted baseline asset/source/blender/facade_fidelity.py"
+  },
+  {
+    "path": "inputs/source/blender/corner_fidelity.py",
+    "sha256": "00e1f92411530b7548ec587dd053740437c897b76efe579717ef3108ac3edb01",
+    "origin": "accepted baseline asset/source/blender/corner_fidelity.py"
+  },
+  {
+    "path": "inputs/web/viewer.json",
+    "sha256": "6bf813d79c29d9a5d5287705028a662f8a8a1bfed8c96156469037b122aca5fd",
+    "origin": "accepted baseline asset/web/viewer.json"
+  },
+  {
+    "path": "inputs/web/west-block.glb",
+    "sha256": "ea60ca2848e1ecc981dc2bf42d9de389d52e3b36b97d17357edc621da82ccb16",
+    "origin": "accepted baseline asset/web/west-block.glb"
+  },
+  {
+    "path": "inputs/web/signs-2025-01.glb",
+    "sha256": "dbd49d4aca93e123daf1f9225b2eec48d0e6f7be383e5c7827cd35405c039386",
+    "origin": "accepted baseline asset/web/signs-2025-01.glb"
+  }
+]
