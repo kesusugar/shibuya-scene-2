@@ -1,0 +1,22 @@
+{
+  "location": [
+    -2,
+    20,
+    52
+  ],
+  "target": [
+    -69,
+    98,
+    25
+  ],
+  "ortho_scale": 61,
+  "resolution": [
+    1000,
+    1000
+  ],
+  "samples": 24,
+  "main": "b678e9364a2cb6fd8dd2869b3b5ee195c86bbe39 actual web/takagi.glb",
+  "default": "web/takagi.glb only; old 24-triangle generic billboard removed",
+  "january": "default plus optional unregistered signs-2025-01.glb",
+  "scope": "isolated model, not browser/full-scene/FPS; camera and lighting fixed"
+}

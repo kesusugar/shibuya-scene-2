@@ -1,0 +1,29 @@
+{
+  "base_commit": "b678e9364a2cb6fd8dd2869b3b5ee195c86bbe39",
+  "source_zip_sha256": "7448a8419d27815be8fa1f8c77539046d8fdc926bcd206f9b9c07c80964089c3",
+  "blender": "4.2.3 LTS",
+  "exact_source_regeneration": {
+    "facade_glb": "d081d33fe9b358769264f0277962248f369f276a04dffd91e22214445f93609f",
+    "combined_glb": "94d893287d20d7155e626a4198a2509719aa66342e1b9620b002e21ba6d4b9fd",
+    "both_byte_identical": true,
+    "combined_editable_export_byte_identical": true,
+    "external_images_fonts_libraries": false
+  },
+  "runtime_relocated_entrypoint": {
+    "architecture_byte_identical": true,
+    "sign_byte_identical": true
+  },
+  "tests": {
+    "new_python_contracts_passed": 6,
+    "unchanged_loader_tests_passed": 8,
+    "existing_takagi_roof_test_before_material_correction": "FAILED: exact original crown vertex classified only under takagi_roof",
+    "corrected_takagi_roof_test": "PASS: accepts only Takagi crown material; coordinates, datum and parent exclusions unchanged",
+    "roof_new_contract": "exactly 7 recolored; other non-source52 ordered triangle coordinates unchanged; source52 same 17 vertices, 15 triangles",
+    "unchanged_per_asset_budget_test": "PASS on bounded Takagi-only harness, including both web GLBs",
+    "full_scene_budget": "NOT RUN",
+    "all_repository_tests": "NOT RUN"
+  },
+  "visual": "main/default/optional-January rendered from fetched main and actual split runtime files, same camera/light; not browser or full scene",
+  "rights": "CC0 Syced 2025-01-31 crop only; inherited model and trademark rights separate; official factbook link-only",
+  "scope": "Local candidate only, no Git writes, no merge/deploy; no QFRONT/Seibu/109/walking/FPS changes"
+}

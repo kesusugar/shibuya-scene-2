@@ -1,0 +1,19 @@
+{
+  "takagi": {
+    "sha256": "a60ccbd14b1fd33fae863145697dc8666eec0c03fa73ff6148762e07ce24fe37",
+    "bytes": 381208,
+    "triangles": 4750,
+    "primitives": 12
+  },
+  "signs-2025-01": {
+    "sha256": "3de0ba5aad4af284dd98111e882d3303e069279df133280cd1e6990c8666a781",
+    "bytes": 16900,
+    "triangles": 169,
+    "primitives": 4
+  },
+  "visibility": {
+    "default": "architecture only",
+    "january_sign": "unregistered, not auto-loaded",
+    "reason": "main loader enables every viewer.layers entry; no date selector exists in this scope"
+  }
+}
