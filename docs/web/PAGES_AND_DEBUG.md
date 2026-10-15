@@ -34,6 +34,7 @@
 Node.js 22.22.2（少なくともViteの要件22.13以上）、npm、既存の配信用GLBが必要。
 
 ```sh
+python3 -m pip install -r requirements-ci.txt
 npm ci
 npm test
 npm run dev
@@ -59,3 +60,9 @@ node scripts/check-web-debug.mjs http://127.0.0.1:5240/shibuya-scene-2/ /tmp/web
 ![通常の街の画面](../../evidence/web-debug-pages/street.png)
 ![起動診断](../../evidence/web-debug-pages/normal.png)
 ![JavaScript本体が届かない場合](../../evidence/web-debug-pages/module-failure.png)
+
+## CIのPython依存関係
+
+`npm test` の点字経路検査はPythonのShapelyを使用する。Pages workflowはNode.jsに加えてPython 3.11と `requirements-ci.txt` をインストールし、テスト前に幾何演算を確認する。npmだけの導入では不十分。制作環境の既存Pythonパッケージに依存せず、新しい仮想環境でも全226テストと公開用ビルドを検証した。
+
+mainの実行38730317819ではShapely未導入により子プロセスが終了し、Node側にはEPIPEも出ていた。幾何の不一致ではなくCIの依存導入漏れ。テストの削除・skip・continue-on-errorは行わない。checkout/setup-node/setup-pythonはNode24対応のv7へ更新。アプリのNodeは22.22.2を維持。PRでもテストとbuildを実行し、mainへのマージ/手動実行だけで公開する。
