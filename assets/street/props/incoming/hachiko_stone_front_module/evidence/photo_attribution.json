@@ -1,0 +1,20 @@
+{
+  "source": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_095.jpg",
+  "author": "RuinDig/Yuki Uchida",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "source_date": "2025-07-13 15:12:49",
+  "verified_page_date": "2026-10-15",
+  "source_sha256": "9694141740dc56810cb4e6a5dbf5a98c3b2d4a139a468d71b175584709d13186",
+  "source_dimensions": [
+    3072,
+    4096
+  ],
+  "crop_normalized": [
+    0.67,
+    0.475,
+    0.997,
+    0.655
+  ],
+  "changes": "crop, resize, JPEG recompression, comparison caption; no generated photo pixels",
+  "comparison_caveat": "similar front/oblique inspection, not calibrated perspective; no metric fit claimed"
+}
