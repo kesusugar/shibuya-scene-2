@@ -1,0 +1,71 @@
+{
+  "full_coverage_proved": true,
+  "exact_plan_containment_proved": true,
+  "exact_serialized_mesh_containment_proved": true,
+  "exact_z_containment_proved": true,
+  "visible_floor_or_closure_loss": false,
+  "allowed_change": "Omit only core_base; preserve core_wrap_4F_floor plan, all top/bottom/side triangles, z interval and opaque floor material.",
+  "method": "Exhaustive exact rational triangle intersections, plus closed-prism z containment; no sampling.",
+  "tolerances": {
+    "containment_area_m2": 0,
+    "z_containment_m": 0,
+    "epsilon_used": false
+  },
+  "areas_m2": {
+    "layout_json_decimal_exact": {
+      "core": 171.5291748519922,
+      "retained_corner_floor": 322.6640584705178,
+      "intersection": 171.5291748519922,
+      "uncovered": 0
+    },
+    "layout_json_parsed_float64_naive_shoelace": {
+      "core": 171.5291748519885,
+      "retained_corner_floor": 322.66405847051647
+    },
+    "serialized_glb_float32_coordinates_exact_rational_arithmetic": {
+      "core": 171.52932952169795,
+      "retained_corner_floor": 322.66407569055445,
+      "intersection": 171.52932952169795,
+      "uncovered": 0
+    }
+  },
+  "layout_z_m": {
+    "core_base": [
+      25.128,
+      25.378
+    ],
+    "retained_core_wrap_4F_floor": [
+      25.028,
+      25.378
+    ],
+    "core_base_thickness": 0.25,
+    "retained_floor_thickness": 0.35,
+    "retained_extra_depth": 0.1
+  },
+  "serialized_z_m": {
+    "core_base": {
+      "interval": [
+        25.128000259399414,
+        25.378000259399414
+      ],
+      "thickness": 0.25
+    },
+    "core_wrap_4F_floor": {
+      "interval": [
+        25.027999877929688,
+        25.378000259399414
+      ],
+      "thickness": 0.35000038146972656
+    }
+  },
+  "source_prototype_sha256": "8a15ad9cf88239e6ccb58cb60c3a548ef86cae8b2cd8e0f6dfe695a0f48692ac",
+  "source_layout_sha256": "2058ec8165de7ccd521c6b61a3ca4932dee4f7cc599e81737418b4819bf33a86",
+  "prototype_all_file_hashes_unchanged": true,
+  "freeze_manifest_all_hashes_match": true,
+  "production_final_mesh_verified": false,
+  "production_condition": "This is the frozen-prototype slab proof. Recheck that the assembled roof22-corrected production candidate preserves the exact retained slab; this report does not certify an uninspected production file.",
+  "detailed_proof_file": "floor_coverage_proof.json",
+  "detailed_proof_sha256": "cfe656f0820eaaaba8cbc4d4ba40cb9d82c4522df6a54d6805edb9c95fa8d718",
+  "reproduce_command": "python historical/prove_floor_coverage.py",
+  "created_utc": "2026-10-14T19:59:49.101167+00:00"
+}

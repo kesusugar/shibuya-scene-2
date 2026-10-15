@@ -1,0 +1,49 @@
+{
+  "base_commit": "dc760eb6b8754b00d9e575bfe062f5aa398f212d",
+  "baseline_git_blob": "12e90051fdb6513acd48fcf8e5c5604cff9e3d9b",
+  "final_git_blob": "9671b999725b9b2cea09de7f8a06e0f2a43247a5",
+  "baseline_recovery": "Unmodified main facade modeling algorithm with exact recorded pavement-sample oracle; accepted only after exact Git blob and SHA256 equality. No remote binary fetch.",
+  "stages": [
+    {
+      "name": "main",
+      "sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2",
+      "git_blob": "12e90051fdb6513acd48fcf8e5c5604cff9e3d9b"
+    },
+    {
+      "name": "podium",
+      "sha256": "f47ab16785534c40361c5f8e8014c0348919db8a5cb686ddafb6962ca0976c56",
+      "git_blob": "f025bf0b509e06b8b1759db8ab310a1f42c4eaa0"
+    },
+    {
+      "name": "roof22",
+      "sha256": "7dbb2e71338da1d3a5a6db6ec52ec38235f07ba5adbbd7b0585f6bcb15d372cd",
+      "git_blob": "f5a3f274c9a62578087281d3b1cf990a77cdbae5"
+    },
+    {
+      "name": "deep-terrace",
+      "sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+      "git_blob": "9671b999725b9b2cea09de7f8a06e0f2a43247a5"
+    }
+  ],
+  "regeneration": "Full canonical chain run in an isolated relocation: exact match at every stage. Blender4.2.3, hash0e22e4fcea03.",
+  "checks": {
+    "dedicated_podium_and_current_terrace": "24 passed, no skips; all existing geometry and mutation assertions retained",
+    "unchanged_main_nearby_parco": "1 passed, 10 unrelated cases explicitly filtered/skipped",
+    "standalone": "preservation, terrace delta, exact floor containment, float32 retained quantization, dense rays, north oblique, saved-scene and measurements passed",
+    "full_build": "not run",
+    "full_browser_scene": "not run",
+    "FPS": "not run"
+  },
+  "test_packaging_note": "Historical helpers now resolve the same exact intermediate GLB/stats inside asset source; obsolete historical full-package manifest replaced with curated predecessor input manifest. Geometry, material, roof, budget and mutation assertions unchanged. Canonical full current manifest checked separately.",
+  "scope": "Cumulative earlier podium/source108+152 repair, roof22 connectivity and deep terrace at source171/upper108/east152. No new model geometry or other asset changes.",
+  "limitations": [
+    "Inferred absolute 1F datum and some opaque/glass finishes",
+    "Eastern 3F\u20134F lower escalator opening unmodeled to protect roof47",
+    "Not surveyed, structurally certified, collision-ready, browser/full-scene or FPS acceptance"
+  ],
+  "references": {
+    "photo": "Syced,2024-03-04,CC0; permanent exterior auxiliary, not October2025 storefront proof",
+    "copyrighted_floorplan_pixels": "none included",
+    "datasets": "Inherited project PLATEAU/OSM conditions; no blanket relicensing"
+  }
+}

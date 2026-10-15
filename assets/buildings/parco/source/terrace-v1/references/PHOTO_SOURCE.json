@@ -1,0 +1,31 @@
+{
+  "file": "../../refs/MAR04-2024-full.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Shibuya_Parco.jpg",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/7/77/Shibuya_Parco.jpg",
+  "taken": "2024-03-04 13:03",
+  "photographer": "Syced",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "crop": "MAR04-2024-permanent-panels-crop.jpg",
+  "crop_box": [
+    400,
+    0,
+    3300,
+    2100
+  ],
+  "sha256": "e170ebff22d906c1c514941db60383d82b38570fda183f7c2b29a5ca10f426dc",
+  "bundled": true,
+  "crop_sha256": "40f4bb698099934c1845d14c244ed8fb6ce690bc69b9628a9005b2e5c8422b6e",
+  "delivery_scope": "Current asset source includes full CC0 photo for historical podium regeneration and crop/photo comparison for review. Final terrace scene contains no photos. Reference is auxiliary2024 permanent exterior, NOT October2025 storefront proof.",
+  "model_runtime_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+  "model_render_sha256": "beee268b8a68449f0c3d257d1bd63bac2683f300fd114f3f71b59f6c4e740772",
+  "model_render": "selected-north-low-matched.png",
+  "board_modification": "Photo crop and model render resized and juxtaposed; labels added. No perspective correction, generated fill or retouching.",
+  "bundled_crop": true,
+  "original_full_photo_bundled": true,
+  "camera_manifest": "NORTH_RENDER_MANIFEST.json",
+  "matched_features": "Central retained notch, paired pale masses, glazed terrace and stepped guard edge",
+  "limitations": "Same north facade, noncalibrated approximate low camera. West-of-notch facade and notch finish remain coarse. Auxiliary2024 date, no October2025-state proof.",
+  "model_render_bundled": false,
+  "model_render_note": "Historical lossless render is not bundled; its JPEG comparison derivative is bundled at ../renders/CC0-2024-north-photo-versus-final-model.jpg."
+}

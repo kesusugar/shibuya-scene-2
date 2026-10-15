@@ -1,0 +1,31 @@
+{
+  "renders": [
+    {
+      "file": "selected-north-low-matched.png",
+      "image_sha256": "beee268b8a68449f0c3d257d1bd63bac2683f300fd114f3f71b59f6c4e740772",
+      "camera": {
+        "location": [
+          -143,
+          330,
+          10.1
+        ],
+        "target": [
+          -146,
+          306,
+          35.5
+        ],
+        "lens": 34
+      },
+      "sensor_width_mm": 36,
+      "image_pixels": [
+        1856,
+        1343
+      ],
+      "asset_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+      "materials": "Unmodified imported frozen GLB materials",
+      "geometry": "Unmodified imported frozen GLB geometry",
+      "created_utc": "2026-10-14T20:29:48.054722+00:00"
+    }
+  ],
+  "photographic_match": "Approximate northern low-angle camera, centered on protected source84/141 central notch. Not calibrated, not a same-date comparison or a 2025 accuracy claim."
+}

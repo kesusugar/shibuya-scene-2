@@ -1,0 +1,34 @@
+{
+  "candidate_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+  "all_pass": true,
+  "fragments": [
+    {
+      "fragment_file": "retained-wall-fragments.json",
+      "mesh": "prototype_terrace_retained",
+      "all_serialized_coordinates_equal_float32_projection": true,
+      "vertex_instances": 69,
+      "maximum_xyz_displacement_m": 1.547926052387644e-05,
+      "maximum_axis_displacement_m": [
+        6.501615928300453e-06,
+        1.4978915942265303e-05,
+        1.8343823455779784e-06
+      ],
+      "loose_pairwise_displacement_bound_m": 3.095852104775288e-05
+    },
+    {
+      "fragment_file": "retained-spandrel-fragments.json",
+      "mesh": "prototype_terrace_retained_spandrel",
+      "all_serialized_coordinates_equal_float32_projection": true,
+      "vertex_instances": 14,
+      "maximum_xyz_displacement_m": 6.861419583509486e-06,
+      "maximum_axis_displacement_m": [
+        6.754146681942075e-06,
+        1.1952799354730814e-06,
+        1.7856980605301942e-07
+      ],
+      "loose_pairwise_displacement_bound_m": 1.3722839167018971e-05
+    }
+  ],
+  "interpretation": "At most 0.0155 mm vertex displacement in the retained source-wall fragments and 0.0069 mm in retained spandrel fragments. The pairwise bound is a numeric upper bound if two originally coincident points quantize independently, not a measured whole-assembly seam width. Identical input coordinates quantize identically. This does not establish global watertightness or certify sub-mm architectural alignment.",
+  "weld_distinction": "The separate 0.1 mm welded-topology test is an edge-count test. It is not a numerical seam bound and not a Boolean-union/collision certificate."
+}

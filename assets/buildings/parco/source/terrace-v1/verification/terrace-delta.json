@@ -1,0 +1,51 @@
+{
+  "candidate_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+  "component_log_equals_frozen_minus_only_core_base": true,
+  "retained_core_wrap_floor_24_serialized_triangles_exact": true,
+  "all_other_added_geometry_triangles_exact": true,
+  "meshes": [
+    {
+      "mesh": "prototype_terrace_structure",
+      "removed_triangle_count": 0,
+      "added_triangle_count": 0,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_floor",
+      "removed_triangle_count": 20,
+      "added_triangle_count": 0,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_glass",
+      "removed_triangle_count": 0,
+      "added_triangle_count": 0,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_frame",
+      "removed_triangle_count": 0,
+      "added_triangle_count": 0,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_rail",
+      "removed_triangle_count": 0,
+      "added_triangle_count": 0,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_retained",
+      "removed_triangle_count": 0,
+      "added_triangle_count": 0,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_retained_spandrel",
+      "removed_triangle_count": 0,
+      "added_triangle_count": 0,
+      "pass": true
+    }
+  ],
+  "scope": "Material values/names may change only on new terrace geometry. Base roof22 is separately preserved. No other primitive geometry flattened or omitted."
+}

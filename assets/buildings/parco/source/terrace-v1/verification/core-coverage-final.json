@@ -1,0 +1,3784 @@
+{
+  "status": "PASS",
+  "full_coverage_proved": true,
+  "production_final_mesh_verified": true,
+  "candidate_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+  "conclusion": "The actual candidate retains the complete closed core-wrap floor and opaque material. Relative to all seven frozen terrace meshes, only the exact 20 redundant core_base triangles are omitted. Complete core plan and z-volume containment is proved with exact arithmetic.",
+  "inputs": {
+    "inputs/frozen-terrace-layout.json": "2058ec8165de7ccd521c6b61a3ca4932dee4f7cc599e81737418b4819bf33a86",
+    "inputs/frozen-terrace-components.json": "74cdc3ed5244c8ac8923884234c3c66680ed7804cddedf802597517b9668319f",
+    "inputs/frozen-terrace-additions.glb": "abff1213d0ae49b6a292f1504434e483df4880a5bcf657d0eff6cee02d9e9d9c",
+    "parco_terrace_candidate.glb": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179"
+  },
+  "input_hashes_unchanged_after_verification": true,
+  "method": {
+    "arithmetic": "Exact rational arithmetic on literal JSON decimals and serialized IEEE-754 float32 values. Exhaustive triangulation/intersection, not sampling.",
+    "area_tolerance_m2": 0,
+    "coordinate_equality_tolerance_m": 0,
+    "z_tolerance_m": 0,
+    "glb_axes": "model x=glTF x; model y=-glTF z; model z=glTF y. Verified root nodes with no transforms or parents."
+  },
+  "layout_plan_proof": {
+    "method": "Exact rational ear clipping, pairwise convex triangle clipping against closed half-planes, exhaustive area equality per source triangle; no sampling and no numeric tolerance.",
+    "source_polygon_simple": true,
+    "cover_polygon_simple": true,
+    "source_triangle_count": 4,
+    "cover_triangle_count": 5,
+    "source_area_m2": {
+      "decimal": 171.5291748519922,
+      "exact_rational": "3430583497039843907597195026377/20000000000000000000000000000"
+    },
+    "cover_area_m2": {
+      "decimal": 322.6640584705178,
+      "exact_rational": "3226640584705177510773662294543/10000000000000000000000000000"
+    },
+    "intersection_area_m2": {
+      "decimal": 171.5291748519922,
+      "exact_rational": "3430583497039843907597195026377/20000000000000000000000000000"
+    },
+    "uncovered_area_m2": {
+      "decimal": 0.0,
+      "exact_rational": "0"
+    },
+    "source_triangles_are_nonoverlapping": true,
+    "cover_triangles_are_nonoverlapping": true,
+    "each_triangulation_exhausts_its_polygon": true,
+    "triangle_proof": [
+      {
+        "source_triangle_index": 0,
+        "source_triangle_xy_exact": [
+          [
+            "-3561489480434571/25000000000000",
+            "15011852034287057/50000000000000"
+          ],
+          [
+            "-13926616727530927/100000000000000",
+            "7252581312516341/25000000000000"
+          ],
+          [
+            "-1555953928105311/12500000000000",
+            "2947639077674637/10000000000000"
+          ]
+        ],
+        "area_m2": {
+          "decimal": 82.38031502497049,
+          "exact_rational": "205950787562426196425625337799/2500000000000000000000000000"
+        },
+        "intersection_with_cover_triangles_m2": [
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 15.785449585623198,
+            "exact_rational": "10054098227575433663802675314489761518058842248351372207417/636921880054169190424864719003125000000000000000000000000"
+          },
+          {
+            "decimal": 66.59486543934727,
+            "exact_rational": "169662907590333941854034891234702808369033284153926179428927/2547687520216676761699458876012500000000000000000000000000"
+          }
+        ],
+        "covered_area_m2": {
+          "decimal": 82.38031502497049,
+          "exact_rational": "205950787562426196425625337799/2500000000000000000000000000"
+        },
+        "uncovered_area_m2": {
+          "decimal": 0.0,
+          "exact_rational": "0"
+        }
+      },
+      {
+        "source_triangle_index": 1,
+        "source_triangle_xy_exact": [
+          [
+            "-1555953928105311/12500000000000",
+            "2947639077674637/10000000000000"
+          ],
+          [
+            "-12799769822779247/100000000000000",
+            "764846158469441/2500000000000"
+          ],
+          [
+            "-13391363943854623/100000000000000",
+            "6081484025621047/20000000000000"
+          ]
+        ],
+        "area_m2": {
+          "decimal": 36.336398411014045,
+          "exact_rational": "145345593644056180025079088583/4000000000000000000000000000"
+        },
+        "intersection_with_cover_triangles_m2": [
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 36.336398411014045,
+            "exact_rational": "145345593644056180025079088583/4000000000000000000000000000"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          }
+        ],
+        "covered_area_m2": {
+          "decimal": 36.336398411014045,
+          "exact_rational": "145345593644056180025079088583/4000000000000000000000000000"
+        },
+        "uncovered_area_m2": {
+          "decimal": 0.0,
+          "exact_rational": "0"
+        }
+      },
+      {
+        "source_triangle_index": 2,
+        "source_triangle_xy_exact": [
+          [
+            "-1555953928105311/12500000000000",
+            "2947639077674637/10000000000000"
+          ],
+          [
+            "-13391363943854623/100000000000000",
+            "6081484025621047/20000000000000"
+          ],
+          [
+            "-6679283370062609/50000000000000",
+            "3030334338458271/10000000000000"
+          ]
+        ],
+        "area_m2": {
+          "decimal": 3.384272401025997,
+          "exact_rational": "1353708960410398749812258311/400000000000000000000000000"
+        },
+        "intersection_with_cover_triangles_m2": [
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 3.384272401025997,
+            "exact_rational": "1353708960410398749812258311/400000000000000000000000000"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          }
+        ],
+        "covered_area_m2": {
+          "decimal": 3.384272401025997,
+          "exact_rational": "1353708960410398749812258311/400000000000000000000000000"
+        },
+        "uncovered_area_m2": {
+          "decimal": 0.0,
+          "exact_rational": "0"
+        }
+      },
+      {
+        "source_triangle_index": 3,
+        "source_triangle_xy_exact": [
+          [
+            "-1555953928105311/12500000000000",
+            "2947639077674637/10000000000000"
+          ],
+          [
+            "-6679283370062609/50000000000000",
+            "3030334338458271/10000000000000"
+          ],
+          [
+            "-3561489480434571/25000000000000",
+            "15011852034287057/50000000000000"
+          ]
+        ],
+        "area_m2": {
+          "decimal": 49.428189014981676,
+          "exact_rational": "12357047253745418732202299569/250000000000000000000000000"
+        },
+        "intersection_with_cover_triangles_m2": [
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 17.41467680980346,
+            "exact_rational": "1465279287488318466646072730652747220337543499450331533/84140481244156685923738707950000000000000000000000000"
+          },
+          {
+            "decimal": 32.013512205178216,
+            "exact_rational": "6734080808148446722899116282218709939758621520243189903/210351203110391714809346769875000000000000000000000000"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          }
+        ],
+        "covered_area_m2": {
+          "decimal": 49.428189014981676,
+          "exact_rational": "12357047253745418732202299569/250000000000000000000000000"
+        },
+        "uncovered_area_m2": {
+          "decimal": 0.0,
+          "exact_rational": "0"
+        }
+      }
+    ],
+    "cover_triangles_xy_exact": [
+      [
+        [
+          "-1555953928105311/12500000000000",
+          "2947639077674637/10000000000000"
+        ],
+        [
+          "-119881/1000",
+          "294839/1000"
+        ],
+        [
+          "-118839/1000",
+          "147763/500"
+        ]
+      ],
+      [
+        [
+          "-1555953928105311/12500000000000",
+          "2947639077674637/10000000000000"
+        ],
+        [
+          "-118839/1000",
+          "147763/500"
+        ],
+        [
+          "-31379/250",
+          "38434/125"
+        ]
+      ],
+      [
+        [
+          "-1555953928105311/12500000000000",
+          "2947639077674637/10000000000000"
+        ],
+        [
+          "-31379/250",
+          "38434/125"
+        ],
+        [
+          "-72111/500",
+          "306519/1000"
+        ]
+      ],
+      [
+        [
+          "-1555953928105311/12500000000000",
+          "2947639077674637/10000000000000"
+        ],
+        [
+          "-72111/500",
+          "306519/1000"
+        ],
+        [
+          "-7298266107854437/50000000000000",
+          "1495661463853227/5000000000000"
+        ]
+      ],
+      [
+        [
+          "-7298266107854437/50000000000000",
+          "1495661463853227/5000000000000"
+        ],
+        [
+          "-13926616727530927/100000000000000",
+          "7252581312516341/25000000000000"
+        ],
+        [
+          "-1555953928105311/12500000000000",
+          "2947639077674637/10000000000000"
+        ]
+      ]
+    ]
+  },
+  "actual_candidate_surface_coverage_proof": {
+    "method": "Exact rational ear clipping, pairwise convex triangle clipping against closed half-planes, exhaustive area equality per source triangle; no sampling and no numeric tolerance.",
+    "source_polygon_simple": true,
+    "cover_polygon_simple": true,
+    "source_triangle_count": 4,
+    "cover_triangle_count": 5,
+    "source_area_m2": {
+      "decimal": 171.52932952169795,
+      "exact_rational": "1473425721201/8589934592"
+    },
+    "cover_area_m2": {
+      "decimal": 322.66407569055445,
+      "exact_rational": "1385831652685/4294967296"
+    },
+    "intersection_area_m2": {
+      "decimal": 171.52932952169795,
+      "exact_rational": "1473425721201/8589934592"
+    },
+    "uncovered_area_m2": {
+      "decimal": 0.0,
+      "exact_rational": "0"
+    },
+    "source_triangles_are_nonoverlapping": true,
+    "cover_triangles_are_nonoverlapping": true,
+    "each_triangulation_exhausts_its_polygon": true,
+    "triangle_proof": [
+      {
+        "source_triangle_index": 0,
+        "source_triangle_xy_exact": [
+          [
+            "-2194041/16384",
+            "9963903/32768"
+          ],
+          [
+            "-16315359/131072",
+            "1207353/4096"
+          ],
+          [
+            "-8388457/65536",
+            "313281/1024"
+          ]
+        ],
+        "area_m2": {
+          "decimal": 36.33644978364464,
+          "exact_rational": "312127726947/8589934592"
+        },
+        "intersection_with_cover_triangles_m2": [
+          {
+            "decimal": 28.93758582916324,
+            "exact_rational": "1034019708833228343644905800291225/35732756524255227824381993418752"
+          },
+          {
+            "decimal": 6.436288175789206,
+            "exact_rational": "29916072562368190467137112526221175930755195085788306327/4648031869502166405401255485665986582888707896188600320"
+          },
+          {
+            "decimal": 0.9625757786921945,
+            "exact_rational": "268885493141408461732417295000307/279339558602575975964976275783680"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          }
+        ],
+        "covered_area_m2": {
+          "decimal": 36.33644978364464,
+          "exact_rational": "312127726947/8589934592"
+        },
+        "uncovered_area_m2": {
+          "decimal": 0.0,
+          "exact_rational": "0"
+        }
+      },
+      {
+        "source_triangle_index": 1,
+        "source_triangle_xy_exact": [
+          [
+            "-4377335/32768",
+            "1241225/4096"
+          ],
+          [
+            "-16315359/131072",
+            "1207353/4096"
+          ],
+          [
+            "-2194041/16384",
+            "9963903/32768"
+          ]
+        ],
+        "area_m2": {
+          "decimal": 3.3841489063343033,
+          "exact_rational": "29069617755/8589934592"
+        },
+        "intersection_with_cover_triangles_m2": [
+          {
+            "decimal": 1.8465230246786752,
+            "exact_rational": "177416427821818599302691168169365/96081351518859033235353321340928"
+          },
+          {
+            "decimal": 1.4016462628615023,
+            "exact_rational": "1154910115663786010010647447267341708170368733494506767/823966892549624338432994240899740245106184454511001600"
+          },
+          {
+            "decimal": 0.13597961879412584,
+            "exact_rational": "5008461492312511179339560128431/36832442514016451289658110771200"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          }
+        ],
+        "covered_area_m2": {
+          "decimal": 3.3841489063343033,
+          "exact_rational": "29069617755/8589934592"
+        },
+        "uncovered_area_m2": {
+          "decimal": 0.0,
+          "exact_rational": "0"
+        }
+      },
+      {
+        "source_triangle_index": 2,
+        "source_triangle_xy_exact": [
+          [
+            "-9336231/65536",
+            "9838167/32768"
+          ],
+          [
+            "-16315359/131072",
+            "1207353/4096"
+          ],
+          [
+            "-4377335/32768",
+            "1241225/4096"
+          ]
+        ],
+        "area_m2": {
+          "decimal": 49.428340052836575,
+          "exact_rational": "424586208045/8589934592"
+        },
+        "intersection_with_cover_triangles_m2": [
+          {
+            "decimal": 2.162849582076219,
+            "exact_rational": "6339993004156864578126393719731845/2931314806492836737788448293781504"
+          },
+          {
+            "decimal": 42.074865523035804,
+            "exact_rational": "303527364730070641164637692200892577636362868541327491653/7213983002842653047322070696716485967848775460952473600"
+          },
+          {
+            "decimal": 5.190624947724552,
+            "exact_rational": "219458373111349950712221339532587/42279759243163069831200741785600"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          }
+        ],
+        "covered_area_m2": {
+          "decimal": 49.428340052836575,
+          "exact_rational": "424586208045/8589934592"
+        },
+        "uncovered_area_m2": {
+          "decimal": 0.0,
+          "exact_rational": "0"
+        }
+      },
+      {
+        "source_triangle_index": 3,
+        "source_triangle_xy_exact": [
+          [
+            "-2281737/16384",
+            "9506103/32768"
+          ],
+          [
+            "-16315359/131072",
+            "1207353/4096"
+          ],
+          [
+            "-9336231/65536",
+            "9838167/32768"
+          ]
+        ],
+        "area_m2": {
+          "decimal": 82.38039077888243,
+          "exact_rational": "353821084227/4294967296"
+        },
+        "intersection_with_cover_triangles_m2": [
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          },
+          {
+            "decimal": 6.79207306438035,
+            "exact_rational": "4197805278587134830286755687/618044776432349217019658240"
+          },
+          {
+            "decimal": 8.993265141362421,
+            "exact_rational": "648742268672703780841700643444002290017/72136455277957431569659290509765509120"
+          },
+          {
+            "decimal": 66.59505257313965,
+            "exact_rational": "41729837909940480124071/626620691741472194560"
+          },
+          {
+            "decimal": 0.0,
+            "exact_rational": "0"
+          }
+        ],
+        "covered_area_m2": {
+          "decimal": 82.38039077888243,
+          "exact_rational": "353821084227/4294967296"
+        },
+        "uncovered_area_m2": {
+          "decimal": 0.0,
+          "exact_rational": "0"
+        }
+      }
+    ],
+    "cover_triangles_xy_exact": [
+      [
+        [
+          "-15576465/131072",
+          "2420949/8192"
+        ],
+        [
+          "-16451633/131072",
+          "5037621/16384"
+        ],
+        [
+          "-9451733/65536",
+          "10044015/32768"
+        ]
+      ],
+      [
+        [
+          "-15576465/131072",
+          "2420949/8192"
+        ],
+        [
+          "-9451733/65536",
+          "10044015/32768"
+        ],
+        [
+          "-9565983/65536",
+          "9801967/32768"
+        ]
+      ],
+      [
+        [
+          "-15576465/131072",
+          "2420949/8192"
+        ],
+        [
+          "-9565983/65536",
+          "9801967/32768"
+        ],
+        [
+          "-16315359/131072",
+          "1207353/4096"
+        ]
+      ],
+      [
+        [
+          "-16315359/131072",
+          "1207353/4096"
+        ],
+        [
+          "-9565983/65536",
+          "9801967/32768"
+        ],
+        [
+          "-2281737/16384",
+          "9506103/32768"
+        ]
+      ],
+      [
+        [
+          "-7856521/65536",
+          "2415321/8192"
+        ],
+        [
+          "-15576465/131072",
+          "2420949/8192"
+        ],
+        [
+          "-16315359/131072",
+          "1207353/4096"
+        ]
+      ]
+    ]
+  },
+  "retained_final_core_wrap_floor": {
+    "label": "core_wrap_4F_floor",
+    "total_triangle_count": 24,
+    "top_triangle_count": 5,
+    "bottom_triangle_count": 5,
+    "side_triangle_count": 14,
+    "coordinate_welded_edge_count": 36,
+    "all_edges_have_two_incident_triangles": true,
+    "top_bottom_normals_outward": true,
+    "side_rectangles": [
+      {
+        "edge": 0,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 1,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 2,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 3,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 4,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 5,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 6,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      }
+    ],
+    "oppositely_facing_neighbor_side_triangles_excluded": 4,
+    "z_m": [
+      {
+        "decimal": 25.027999877929688,
+        "exact_rational": "1640235/65536"
+      },
+      {
+        "decimal": 25.378000259399414,
+        "exact_rational": "13305381/524288"
+      }
+    ],
+    "thickness_m": {
+      "decimal": 0.35000038146972656,
+      "exact_rational": "183501/524288"
+    }
+  },
+  "retained_final_east_plaza_floor": {
+    "label": "east_plaza_4F_floor",
+    "total_triangle_count": 24,
+    "top_triangle_count": 5,
+    "bottom_triangle_count": 5,
+    "side_triangle_count": 14,
+    "coordinate_welded_edge_count": 36,
+    "all_edges_have_two_incident_triangles": true,
+    "top_bottom_normals_outward": true,
+    "side_rectangles": [
+      {
+        "edge": 0,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 1,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 2,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 3,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 4,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 5,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 6,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      }
+    ],
+    "oppositely_facing_neighbor_side_triangles_excluded": 4,
+    "z_m": [
+      {
+        "decimal": 25.027999877929688,
+        "exact_rational": "1640235/65536"
+      },
+      {
+        "decimal": 25.378000259399414,
+        "exact_rational": "13305381/524288"
+      }
+    ],
+    "thickness_m": {
+      "decimal": 0.35000038146972656,
+      "exact_rational": "183501/524288"
+    }
+  },
+  "omitted_reference_core_base": {
+    "label": "core_base",
+    "total_triangle_count": 20,
+    "top_triangle_count": 4,
+    "bottom_triangle_count": 4,
+    "side_triangle_count": 12,
+    "coordinate_welded_edge_count": 30,
+    "all_edges_have_two_incident_triangles": true,
+    "top_bottom_normals_outward": true,
+    "side_rectangles": [
+      {
+        "edge": 0,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 1,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 2,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 3,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 4,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      },
+      {
+        "edge": 5,
+        "triangle_count": 2,
+        "full_normalized_side_rectangle_covered_exactly": true
+      }
+    ],
+    "oppositely_facing_neighbor_side_triangles_excluded": 0,
+    "z_m": [
+      {
+        "decimal": 25.128000259399414,
+        "exact_rational": "13174309/524288"
+      },
+      {
+        "decimal": 25.378000259399414,
+        "exact_rational": "13305381/524288"
+      }
+    ],
+    "thickness_m": {
+      "decimal": 0.25,
+      "exact_rational": "1/4"
+    }
+  },
+  "volume_containment": {
+    "entire_core_base_closed_solid_contained": true,
+    "layout_core_base_z_m": [
+      {
+        "decimal": 25.128,
+        "exact_rational": "3141/125"
+      },
+      {
+        "decimal": 25.378,
+        "exact_rational": "12689/500"
+      }
+    ],
+    "layout_retained_slab_z_m": [
+      {
+        "decimal": 25.028,
+        "exact_rational": "6257/250"
+      },
+      {
+        "decimal": 25.378,
+        "exact_rational": "12689/500"
+      }
+    ],
+    "actual_core_base_z_m": [
+      {
+        "decimal": 25.128000259399414,
+        "exact_rational": "13174309/524288"
+      },
+      {
+        "decimal": 25.378000259399414,
+        "exact_rational": "13305381/524288"
+      }
+    ],
+    "actual_retained_slab_z_m": [
+      {
+        "decimal": 25.027999877929688,
+        "exact_rational": "1640235/65536"
+      },
+      {
+        "decimal": 25.378000259399414,
+        "exact_rational": "13305381/524288"
+      }
+    ],
+    "actual_retained_extra_depth_m": {
+      "decimal": 0.10000038146972656,
+      "exact_rational": "52429/524288"
+    },
+    "uncovered_volume_m3": {
+      "decimal": 0.0,
+      "exact_rational": "0"
+    }
+  },
+  "retained_floor_material": {
+    "gltf_material": {
+      "doubleSided": true,
+      "name": "parco_terrace_stone_paving",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.46000000834465027,
+          0.4699999988079071,
+          0.44999998807907104,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6499999761581421
+      }
+    },
+    "effective_alpha_mode": "OPAQUE",
+    "base_alpha": 1,
+    "transmission_factor": 0,
+    "opaque": true,
+    "scope": "Serialized glTF material is opaque; application-specific runtime material replacement is outside this verifier."
+  },
+  "terrace_mesh_delta": {
+    "only_exact_core_base_20_triangles_removed": true,
+    "all_remaining_oriented_terrace_triangles_unchanged": true,
+    "meshes": [
+      {
+        "mesh": "prototype_terrace_floor",
+        "frozen_triangle_count": 864,
+        "candidate_triangle_count": 844,
+        "removed_triangle_count": 20,
+        "added_triangle_count": 0,
+        "remaining_oriented_triangles_exactly_identical": true
+      },
+      {
+        "mesh": "prototype_terrace_frame",
+        "frozen_triangle_count": 1668,
+        "candidate_triangle_count": 1668,
+        "removed_triangle_count": 0,
+        "added_triangle_count": 0,
+        "remaining_oriented_triangles_exactly_identical": true
+      },
+      {
+        "mesh": "prototype_terrace_glass",
+        "frozen_triangle_count": 492,
+        "candidate_triangle_count": 492,
+        "removed_triangle_count": 0,
+        "added_triangle_count": 0,
+        "remaining_oriented_triangles_exactly_identical": true
+      },
+      {
+        "mesh": "prototype_terrace_rail",
+        "frozen_triangle_count": 384,
+        "candidate_triangle_count": 384,
+        "removed_triangle_count": 0,
+        "added_triangle_count": 0,
+        "remaining_oriented_triangles_exactly_identical": true
+      },
+      {
+        "mesh": "prototype_terrace_retained",
+        "frozen_triangle_count": 33,
+        "candidate_triangle_count": 33,
+        "removed_triangle_count": 0,
+        "added_triangle_count": 0,
+        "remaining_oriented_triangles_exactly_identical": true
+      },
+      {
+        "mesh": "prototype_terrace_retained_spandrel",
+        "frozen_triangle_count": 6,
+        "candidate_triangle_count": 6,
+        "removed_triangle_count": 0,
+        "added_triangle_count": 0,
+        "remaining_oriented_triangles_exactly_identical": true
+      },
+      {
+        "mesh": "prototype_terrace_structure",
+        "frozen_triangle_count": 224,
+        "candidate_triangle_count": 224,
+        "removed_triangle_count": 0,
+        "added_triangle_count": 0,
+        "remaining_oriented_triangles_exactly_identical": true
+      }
+    ],
+    "scope": "All seven terrace meshes are compared in the final assembled candidate. Original building/base meshes are outside this geometry-delta assertion."
+  },
+  "float32_quantization": {
+    "scope": "Measured source-decimal to actual serialized GLB displacement for all vertices of the reference core-base slab and the current candidate core-wrap/east-plaza slabs. Not a whole-assembly clearance or gap test.",
+    "vertices_round_to_matched_glb_coordinates": true,
+    "all_axis_errors_within_half_ulp": true,
+    "max_measured_displacement_m": 1.5183292540498661e-05,
+    "max_measured_displacement_mm": 0.01518329254049866,
+    "components": [
+      {
+        "label": "core_base",
+        "measured_geometry": "frozen reference core_base, intentionally absent in candidate",
+        "vertex_count": 12,
+        "max_axis_abs_error_m": [
+          7.04109698e-06,
+          1.34197979e-05,
+          2.593994140625e-07
+        ],
+        "max_euclidean_displacement_m": 1.4175573935864221e-05,
+        "max_euclidean_displacement_squared_exact_m2": "2057696219250206938601/10240000000000000000000000000000",
+        "max_per_axis_half_ulp_bound_m": [
+          7.62939453125e-06,
+          1.52587890625e-05,
+          9.5367431640625e-07
+        ],
+        "vertices": [
+          {
+            "plan_vertex": 0,
+            "layout_xyz_m": [
+              {
+                "decimal": -142.45957921738284,
+                "exact_rational": "-3561489480434571/25000000000000"
+              },
+              {
+                "decimal": 300.23704068574114,
+                "exact_rational": "15011852034287057/50000000000000"
+              },
+              {
+                "decimal": 25.128,
+                "exact_rational": "3141/125"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -142.45957946777344,
+                "exact_rational": "-9336231/65536"
+              },
+              {
+                "decimal": 300.2370300292969,
+                "exact_rational": "9838167/32768"
+              },
+              {
+                "decimal": 25.128000259399414,
+                "exact_rational": "13174309/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -2.503905975e-07,
+                "exact_rational": "-100156239/400000000000000"
+              },
+              {
+                "decimal": -1.0656444265e-05,
+                "exact_rational": "-2131288853/200000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.1368978788038377e-10,
+              "exact_rational": "1164183427895129759273/10240000000000000000000000000000"
+            },
+            "distance_m": 1.0662541342493532e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 0,
+            "layout_xyz_m": [
+              {
+                "decimal": -142.45957921738284,
+                "exact_rational": "-3561489480434571/25000000000000"
+              },
+              {
+                "decimal": 300.23704068574114,
+                "exact_rational": "15011852034287057/50000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -142.45957946777344,
+                "exact_rational": "-9336231/65536"
+              },
+              {
+                "decimal": 300.2370300292969,
+                "exact_rational": "9838167/32768"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -2.503905975e-07,
+                "exact_rational": "-100156239/400000000000000"
+              },
+              {
+                "decimal": -1.0656444265e-05,
+                "exact_rational": "-2131288853/200000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.1368978788038377e-10,
+              "exact_rational": "1164183427895129759273/10240000000000000000000000000000"
+            },
+            "distance_m": 1.0662541342493532e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 1,
+            "layout_xyz_m": [
+              {
+                "decimal": -133.58566740125218,
+                "exact_rational": "-6679283370062609/50000000000000"
+              },
+              {
+                "decimal": 303.0334338458271,
+                "exact_rational": "3030334338458271/10000000000000"
+              },
+              {
+                "decimal": 25.128,
+                "exact_rational": "3141/125"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -133.58566284179688,
+                "exact_rational": "-4377335/32768"
+              },
+              {
+                "decimal": 303.033447265625,
+                "exact_rational": "1241225/4096"
+              },
+              {
+                "decimal": 25.128000259399414,
+                "exact_rational": "13174309/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 4.559455305e-06,
+                "exact_rational": "911891061/200000000000000"
+              },
+              {
+                "decimal": 1.34197979e-05,
+                "exact_rational": "134197979/10000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 2.0094689641115302e-10,
+              "exact_rational": "2057696219250206938601/10240000000000000000000000000000"
+            },
+            "distance_m": 1.4175573935864221e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 1,
+            "layout_xyz_m": [
+              {
+                "decimal": -133.58566740125218,
+                "exact_rational": "-6679283370062609/50000000000000"
+              },
+              {
+                "decimal": 303.0334338458271,
+                "exact_rational": "3030334338458271/10000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -133.58566284179688,
+                "exact_rational": "-4377335/32768"
+              },
+              {
+                "decimal": 303.033447265625,
+                "exact_rational": "1241225/4096"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 4.559455305e-06,
+                "exact_rational": "911891061/200000000000000"
+              },
+              {
+                "decimal": 1.34197979e-05,
+                "exact_rational": "134197979/10000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 2.0094689641115302e-10,
+              "exact_rational": "2057696219250206938601/10240000000000000000000000000000"
+            },
+            "distance_m": 1.4175573935864221e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 2,
+            "layout_xyz_m": [
+              {
+                "decimal": -133.91363943854623,
+                "exact_rational": "-13391363943854623/100000000000000"
+              },
+              {
+                "decimal": 304.07420128105235,
+                "exact_rational": "6081484025621047/20000000000000"
+              },
+              {
+                "decimal": 25.128,
+                "exact_rational": "3141/125"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -133.91363525390625,
+                "exact_rational": "-2194041/16384"
+              },
+              {
+                "decimal": 304.0741882324219,
+                "exact_rational": "9963903/32768"
+              },
+              {
+                "decimal": 25.128000259399414,
+                "exact_rational": "13174309/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 4.18463998e-06,
+                "exact_rational": "209231999/50000000000000"
+              },
+              {
+                "decimal": -1.3048630475e-05,
+                "exact_rational": "-521945219/40000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.878452570913291e-10,
+              "exact_rational": "1923535432615209926121/10240000000000000000000000000000"
+            },
+            "distance_m": 1.3705665145892376e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 2,
+            "layout_xyz_m": [
+              {
+                "decimal": -133.91363943854623,
+                "exact_rational": "-13391363943854623/100000000000000"
+              },
+              {
+                "decimal": 304.07420128105235,
+                "exact_rational": "6081484025621047/20000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -133.91363525390625,
+                "exact_rational": "-2194041/16384"
+              },
+              {
+                "decimal": 304.0741882324219,
+                "exact_rational": "9963903/32768"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 4.18463998e-06,
+                "exact_rational": "209231999/50000000000000"
+              },
+              {
+                "decimal": -1.3048630475e-05,
+                "exact_rational": "-521945219/40000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.878452570913291e-10,
+              "exact_rational": "1923535432615209926121/10240000000000000000000000000000"
+            },
+            "distance_m": 1.3705665145892376e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 3,
+            "layout_xyz_m": [
+              {
+                "decimal": -127.99769822779247,
+                "exact_rational": "-12799769822779247/100000000000000"
+              },
+              {
+                "decimal": 305.9384633877764,
+                "exact_rational": "764846158469441/2500000000000"
+              },
+              {
+                "decimal": 25.128,
+                "exact_rational": "3141/125"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -127.99769592285156,
+                "exact_rational": "-8388457/65536"
+              },
+              {
+                "decimal": 305.9384765625,
+                "exact_rational": "313281/1024"
+              },
+              {
+                "decimal": 25.128000259399414,
+                "exact_rational": "13174309/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 2.3049409075e-06,
+                "exact_rational": "921976363/400000000000000"
+              },
+              {
+                "decimal": 1.31747236e-05,
+                "exact_rational": "32936809/2500000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.7895338257947984e-10,
+              "exact_rational": "1832482637613873683241/10240000000000000000000000000000"
+            },
+            "distance_m": 1.337734587201362e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 3,
+            "layout_xyz_m": [
+              {
+                "decimal": -127.99769822779247,
+                "exact_rational": "-12799769822779247/100000000000000"
+              },
+              {
+                "decimal": 305.9384633877764,
+                "exact_rational": "764846158469441/2500000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -127.99769592285156,
+                "exact_rational": "-8388457/65536"
+              },
+              {
+                "decimal": 305.9384765625,
+                "exact_rational": "313281/1024"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 2.3049409075e-06,
+                "exact_rational": "921976363/400000000000000"
+              },
+              {
+                "decimal": 1.31747236e-05,
+                "exact_rational": "32936809/2500000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.7895338257947984e-10,
+              "exact_rational": "1832482637613873683241/10240000000000000000000000000000"
+            },
+            "distance_m": 1.337734587201362e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 4,
+            "layout_xyz_m": [
+              {
+                "decimal": -124.47631424842488,
+                "exact_rational": "-1555953928105311/12500000000000"
+              },
+              {
+                "decimal": 294.7639077674637,
+                "exact_rational": "2947639077674637/10000000000000"
+              },
+              {
+                "decimal": 25.128,
+                "exact_rational": "3141/125"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -124.47631072998047,
+                "exact_rational": "-16315359/131072"
+              },
+              {
+                "decimal": 294.763916015625,
+                "exact_rational": "1207353/4096"
+              },
+              {
+                "decimal": 25.128000259399414,
+                "exact_rational": "13174309/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.51844441125e-06,
+                "exact_rational": "2814755529/800000000000000"
+              },
+              {
+                "decimal": 8.2481613e-06,
+                "exact_rational": "82481613/10000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 8.047890396189002e-11,
+              "exact_rational": "824103976569753778681/10240000000000000000000000000000"
+            },
+            "distance_m": 8.971003509189483e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 4,
+            "layout_xyz_m": [
+              {
+                "decimal": -124.47631424842488,
+                "exact_rational": "-1555953928105311/12500000000000"
+              },
+              {
+                "decimal": 294.7639077674637,
+                "exact_rational": "2947639077674637/10000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -124.47631072998047,
+                "exact_rational": "-16315359/131072"
+              },
+              {
+                "decimal": 294.763916015625,
+                "exact_rational": "1207353/4096"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.51844441125e-06,
+                "exact_rational": "2814755529/800000000000000"
+              },
+              {
+                "decimal": 8.2481613e-06,
+                "exact_rational": "82481613/10000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 8.047890396189002e-11,
+              "exact_rational": "824103976569753778681/10240000000000000000000000000000"
+            },
+            "distance_m": 8.971003509189483e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 5,
+            "layout_xyz_m": [
+              {
+                "decimal": -139.26616727530927,
+                "exact_rational": "-13926616727530927/100000000000000"
+              },
+              {
+                "decimal": 290.10325250065364,
+                "exact_rational": "7252581312516341/25000000000000"
+              },
+              {
+                "decimal": 25.128,
+                "exact_rational": "3141/125"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -139.26617431640625,
+                "exact_rational": "-2281737/16384"
+              },
+              {
+                "decimal": 290.1032409667969,
+                "exact_rational": "9506103/32768"
+              },
+              {
+                "decimal": 25.128000259399414,
+                "exact_rational": "13174309/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -7.04109698e-06,
+                "exact_rational": "-352054849/50000000000000"
+              },
+              {
+                "decimal": -1.1533856765e-05,
+                "exact_rational": "-2306771353/200000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8267418661331736e-10,
+              "exact_rational": "74823346836814788177/409600000000000000000000000000"
+            },
+            "distance_m": 1.3515701484322497e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 5,
+            "layout_xyz_m": [
+              {
+                "decimal": -139.26616727530927,
+                "exact_rational": "-13926616727530927/100000000000000"
+              },
+              {
+                "decimal": 290.10325250065364,
+                "exact_rational": "7252581312516341/25000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -139.26617431640625,
+                "exact_rational": "-2281737/16384"
+              },
+              {
+                "decimal": 290.1032409667969,
+                "exact_rational": "9506103/32768"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -7.04109698e-06,
+                "exact_rational": "-352054849/50000000000000"
+              },
+              {
+                "decimal": -1.1533856765e-05,
+                "exact_rational": "-2306771353/200000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8267418661331736e-10,
+              "exact_rational": "74823346836814788177/409600000000000000000000000000"
+            },
+            "distance_m": 1.3515701484322497e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "core_wrap_4F_floor",
+        "measured_geometry": "current candidate retained core-wrap slab",
+        "vertex_count": 14,
+        "max_axis_abs_error_m": [
+          7.04109698e-06,
+          1.513671875e-05,
+          2.593994140625e-07
+        ],
+        "max_euclidean_displacement_m": 1.5183292540498661e-05,
+        "max_euclidean_displacement_squared_exact_m2": "990129/4294967296000000",
+        "max_per_axis_half_ulp_bound_m": [
+          7.62939453125e-06,
+          1.52587890625e-05,
+          9.5367431640625e-07
+        ],
+        "vertices": [
+          {
+            "plan_vertex": 0,
+            "layout_xyz_m": [
+              {
+                "decimal": -119.881,
+                "exact_rational": "-119881/1000"
+              },
+              {
+                "decimal": 294.839,
+                "exact_rational": "294839/1000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -119.88099670410156,
+                "exact_rational": "-7856521/65536"
+              },
+              {
+                "decimal": 294.8389892578125,
+                "exact_rational": "2415321/8192"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.2958984375e-06,
+                "exact_rational": "27/8192000"
+              },
+              {
+                "decimal": -1.07421875e-05,
+                "exact_rational": "-11/1024000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.2627243995666505e-10,
+              "exact_rational": "4237/33554432000000"
+            },
+            "distance_m": 1.1237101047719784e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 0,
+            "layout_xyz_m": [
+              {
+                "decimal": -119.881,
+                "exact_rational": "-119881/1000"
+              },
+              {
+                "decimal": 294.839,
+                "exact_rational": "294839/1000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -119.88099670410156,
+                "exact_rational": "-7856521/65536"
+              },
+              {
+                "decimal": 294.8389892578125,
+                "exact_rational": "2415321/8192"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.2958984375e-06,
+                "exact_rational": "27/8192000"
+              },
+              {
+                "decimal": -1.07421875e-05,
+                "exact_rational": "-11/1024000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.2632482685148715e-10,
+              "exact_rational": "542561/4294967296000000"
+            },
+            "distance_m": 1.1239431785080914e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 1,
+            "layout_xyz_m": [
+              {
+                "decimal": -118.839,
+                "exact_rational": "-118839/1000"
+              },
+              {
+                "decimal": 295.526,
+                "exact_rational": "147763/500"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -118.83899688720703,
+                "exact_rational": "-15576465/131072"
+              },
+              {
+                "decimal": 295.5260009765625,
+                "exact_rational": "2420949/8192"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.11279296875e-06,
+                "exact_rational": "51/16384000"
+              },
+              {
+                "decimal": 9.765625e-07,
+                "exact_rational": "1/1024000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.0658055543899535e-11,
+              "exact_rational": "2861/268435456000000"
+            },
+            "distance_m": 3.2646677539834794e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 1,
+            "layout_xyz_m": [
+              {
+                "decimal": -118.839,
+                "exact_rational": "-118839/1000"
+              },
+              {
+                "decimal": 295.526,
+                "exact_rational": "147763/500"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -118.83899688720703,
+                "exact_rational": "-15576465/131072"
+              },
+              {
+                "decimal": 295.5260009765625,
+                "exact_rational": "2420949/8192"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.11279296875e-06,
+                "exact_rational": "51/16384000"
+              },
+              {
+                "decimal": 9.765625e-07,
+                "exact_rational": "1/1024000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.0710442438721657e-11,
+              "exact_rational": "46001/4294967296000000"
+            },
+            "distance_m": 3.272681230844467e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 2,
+            "layout_xyz_m": [
+              {
+                "decimal": -125.516,
+                "exact_rational": "-31379/250"
+              },
+              {
+                "decimal": 307.472,
+                "exact_rational": "38434/125"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -125.51599884033203,
+                "exact_rational": "-16451633/131072"
+              },
+              {
+                "decimal": 307.47198486328125,
+                "exact_rational": "5037621/16384"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 1.15966796875e-06,
+                "exact_rational": "19/16384000"
+              },
+              {
+                "decimal": -1.513671875e-05,
+                "exact_rational": "-31/2048000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 2.3047998547554016e-10,
+              "exact_rational": "61869/268435456000000"
+            },
+            "distance_m": 1.5181567293120304e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 2,
+            "layout_xyz_m": [
+              {
+                "decimal": -125.516,
+                "exact_rational": "-31379/250"
+              },
+              {
+                "decimal": 307.472,
+                "exact_rational": "38434/125"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -125.51599884033203,
+                "exact_rational": "-16451633/131072"
+              },
+              {
+                "decimal": 307.47198486328125,
+                "exact_rational": "5037621/16384"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 1.15966796875e-06,
+                "exact_rational": "19/16384000"
+              },
+              {
+                "decimal": -1.513671875e-05,
+                "exact_rational": "-31/2048000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 2.305323723703623e-10,
+              "exact_rational": "990129/4294967296000000"
+            },
+            "distance_m": 1.5183292540498661e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 3,
+            "layout_xyz_m": [
+              {
+                "decimal": -144.222,
+                "exact_rational": "-72111/500"
+              },
+              {
+                "decimal": 306.519,
+                "exact_rational": "306519/1000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -144.2220001220703,
+                "exact_rational": "-9451733/65536"
+              },
+              {
+                "decimal": 306.5190124511719,
+                "exact_rational": "10044015/32768"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              },
+              {
+                "decimal": 1.2451171875e-05,
+                "exact_rational": "51/4096000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.5506148338317872e-10,
+              "exact_rational": "5203/33554432000000"
+            },
+            "distance_m": 1.2452368585260344e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 3,
+            "layout_xyz_m": [
+              {
+                "decimal": -144.222,
+                "exact_rational": "-72111/500"
+              },
+              {
+                "decimal": 306.519,
+                "exact_rational": "306519/1000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -144.2220001220703,
+                "exact_rational": "-9451733/65536"
+              },
+              {
+                "decimal": 306.5190124511719,
+                "exact_rational": "10044015/32768"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              },
+              {
+                "decimal": 1.2451171875e-05,
+                "exact_rational": "51/4096000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.5511387027800084e-10,
+              "exact_rational": "666209/4294967296000000"
+            },
+            "distance_m": 1.2454471898800079e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 4,
+            "layout_xyz_m": [
+              {
+                "decimal": -145.96532215708874,
+                "exact_rational": "-7298266107854437/50000000000000"
+              },
+              {
+                "decimal": 299.1322927706454,
+                "exact_rational": "1495661463853227/5000000000000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -145.96531677246094,
+                "exact_rational": "-9565983/65536"
+              },
+              {
+                "decimal": 299.1322937011719,
+                "exact_rational": "9801967/32768"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 5.3846278025e-06,
+                "exact_rational": "2153851121/400000000000000"
+              },
+              {
+                "decimal": 9.30526475e-07,
+                "exact_rational": "37221059/40000000000000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 2.9874997253325754e-11,
+              "exact_rational": "2389999780266060183/80000000000000000000000000000"
+            },
+            "distance_m": 5.465802526008944e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 4,
+            "layout_xyz_m": [
+              {
+                "decimal": -145.96532215708874,
+                "exact_rational": "-7298266107854437/50000000000000"
+              },
+              {
+                "decimal": 299.1322927706454,
+                "exact_rational": "1495661463853227/5000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -145.96531677246094,
+                "exact_rational": "-9565983/65536"
+              },
+              {
+                "decimal": 299.1322937011719,
+                "exact_rational": "9801967/32768"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 5.3846278025e-06,
+                "exact_rational": "2153851121/400000000000000"
+              },
+              {
+                "decimal": 9.30526475e-07,
+                "exact_rational": "37221059/40000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 2.9927384148147876e-11,
+              "exact_rational": "306456413677034219049/10240000000000000000000000000000"
+            },
+            "distance_m": 5.470592668820068e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 5,
+            "layout_xyz_m": [
+              {
+                "decimal": -139.26616727530927,
+                "exact_rational": "-13926616727530927/100000000000000"
+              },
+              {
+                "decimal": 290.10325250065364,
+                "exact_rational": "7252581312516341/25000000000000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -139.26617431640625,
+                "exact_rational": "-2281737/16384"
+              },
+              {
+                "decimal": 290.1032409667969,
+                "exact_rational": "9506103/32768"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -7.04109698e-06,
+                "exact_rational": "-352054849/50000000000000"
+              },
+              {
+                "decimal": -1.1533856765e-05,
+                "exact_rational": "-2306771353/200000000000000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8262179971849523e-10,
+              "exact_rational": "1168779518198369493/6400000000000000000000000000"
+            },
+            "distance_m": 1.3513763344031715e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 5,
+            "layout_xyz_m": [
+              {
+                "decimal": -139.26616727530927,
+                "exact_rational": "-13926616727530927/100000000000000"
+              },
+              {
+                "decimal": 290.10325250065364,
+                "exact_rational": "7252581312516341/25000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -139.26617431640625,
+                "exact_rational": "-2281737/16384"
+              },
+              {
+                "decimal": 290.1032409667969,
+                "exact_rational": "9506103/32768"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -7.04109698e-06,
+                "exact_rational": "-352054849/50000000000000"
+              },
+              {
+                "decimal": -1.1533856765e-05,
+                "exact_rational": "-2306771353/200000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8267418661331736e-10,
+              "exact_rational": "74823346836814788177/409600000000000000000000000000"
+            },
+            "distance_m": 1.3515701484322497e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 6,
+            "layout_xyz_m": [
+              {
+                "decimal": -124.47631424842488,
+                "exact_rational": "-1555953928105311/12500000000000"
+              },
+              {
+                "decimal": 294.7639077674637,
+                "exact_rational": "2947639077674637/10000000000000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -124.47631072998047,
+                "exact_rational": "-16315359/131072"
+              },
+              {
+                "decimal": 294.763916015625,
+                "exact_rational": "1207353/4096"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.51844441125e-06,
+                "exact_rational": "2814755529/800000000000000"
+              },
+              {
+                "decimal": 8.2481613e-06,
+                "exact_rational": "82481613/10000000000000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 8.04265170670679e-11,
+              "exact_rational": "51472970922923453941/640000000000000000000000000000"
+            },
+            "distance_m": 8.96808324376329e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 6,
+            "layout_xyz_m": [
+              {
+                "decimal": -124.47631424842488,
+                "exact_rational": "-1555953928105311/12500000000000"
+              },
+              {
+                "decimal": 294.7639077674637,
+                "exact_rational": "2947639077674637/10000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -124.47631072998047,
+                "exact_rational": "-16315359/131072"
+              },
+              {
+                "decimal": 294.763916015625,
+                "exact_rational": "1207353/4096"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.51844441125e-06,
+                "exact_rational": "2814755529/800000000000000"
+              },
+              {
+                "decimal": 8.2481613e-06,
+                "exact_rational": "82481613/10000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 8.047890396189002e-11,
+              "exact_rational": "824103976569753778681/10240000000000000000000000000000"
+            },
+            "distance_m": 8.971003509189483e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "east_plaza_4F_floor",
+        "measured_geometry": "current candidate retained east-plaza slab",
+        "vertex_count": 14,
+        "max_axis_abs_error_m": [
+          7.04109698e-06,
+          1.3671875e-05,
+          2.593994140625e-07
+        ],
+        "max_euclidean_displacement_m": 1.3693936463801032e-05,
+        "max_euclidean_displacement_squared_exact_m2": "805409/4294967296000000",
+        "max_per_axis_half_ulp_bound_m": [
+          7.62939453125e-06,
+          1.52587890625e-05,
+          9.5367431640625e-07
+        ],
+        "vertices": [
+          {
+            "plan_vertex": 0,
+            "layout_xyz_m": [
+              {
+                "decimal": -110.668,
+                "exact_rational": "-27667/250"
+              },
+              {
+                "decimal": 276.864,
+                "exact_rational": "34608/125"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -110.66799926757812,
+                "exact_rational": "-3626369/32768"
+              },
+              {
+                "decimal": 276.864013671875,
+                "exact_rational": "1134035/4096"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 7.32421875e-07,
+                "exact_rational": "3/4096000"
+              },
+              {
+                "decimal": 1.3671875e-05,
+                "exact_rational": "7/512000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8747150897979737e-10,
+              "exact_rational": "12581/67108864000000"
+            },
+            "distance_m": 1.3692023553142076e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 0,
+            "layout_xyz_m": [
+              {
+                "decimal": -110.668,
+                "exact_rational": "-27667/250"
+              },
+              {
+                "decimal": 276.864,
+                "exact_rational": "34608/125"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -110.66799926757812,
+                "exact_rational": "-3626369/32768"
+              },
+              {
+                "decimal": 276.864013671875,
+                "exact_rational": "1134035/4096"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 7.32421875e-07,
+                "exact_rational": "3/4096000"
+              },
+              {
+                "decimal": 1.3671875e-05,
+                "exact_rational": "7/512000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.875238958746195e-10,
+              "exact_rational": "805409/4294967296000000"
+            },
+            "distance_m": 1.3693936463801032e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 1,
+            "layout_xyz_m": [
+              {
+                "decimal": -119.881,
+                "exact_rational": "-119881/1000"
+              },
+              {
+                "decimal": 294.839,
+                "exact_rational": "294839/1000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -119.88099670410156,
+                "exact_rational": "-7856521/65536"
+              },
+              {
+                "decimal": 294.8389892578125,
+                "exact_rational": "2415321/8192"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.2958984375e-06,
+                "exact_rational": "27/8192000"
+              },
+              {
+                "decimal": -1.07421875e-05,
+                "exact_rational": "-11/1024000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.2627243995666505e-10,
+              "exact_rational": "4237/33554432000000"
+            },
+            "distance_m": 1.1237101047719784e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 1,
+            "layout_xyz_m": [
+              {
+                "decimal": -119.881,
+                "exact_rational": "-119881/1000"
+              },
+              {
+                "decimal": 294.839,
+                "exact_rational": "294839/1000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -119.88099670410156,
+                "exact_rational": "-7856521/65536"
+              },
+              {
+                "decimal": 294.8389892578125,
+                "exact_rational": "2415321/8192"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.2958984375e-06,
+                "exact_rational": "27/8192000"
+              },
+              {
+                "decimal": -1.07421875e-05,
+                "exact_rational": "-11/1024000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.2632482685148715e-10,
+              "exact_rational": "542561/4294967296000000"
+            },
+            "distance_m": 1.1239431785080914e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 2,
+            "layout_xyz_m": [
+              {
+                "decimal": -124.47631424842488,
+                "exact_rational": "-1555953928105311/12500000000000"
+              },
+              {
+                "decimal": 294.7639077674637,
+                "exact_rational": "2947639077674637/10000000000000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -124.47631072998047,
+                "exact_rational": "-16315359/131072"
+              },
+              {
+                "decimal": 294.763916015625,
+                "exact_rational": "1207353/4096"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.51844441125e-06,
+                "exact_rational": "2814755529/800000000000000"
+              },
+              {
+                "decimal": 8.2481613e-06,
+                "exact_rational": "82481613/10000000000000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 8.04265170670679e-11,
+              "exact_rational": "51472970922923453941/640000000000000000000000000000"
+            },
+            "distance_m": 8.96808324376329e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 2,
+            "layout_xyz_m": [
+              {
+                "decimal": -124.47631424842488,
+                "exact_rational": "-1555953928105311/12500000000000"
+              },
+              {
+                "decimal": 294.7639077674637,
+                "exact_rational": "2947639077674637/10000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -124.47631072998047,
+                "exact_rational": "-16315359/131072"
+              },
+              {
+                "decimal": 294.763916015625,
+                "exact_rational": "1207353/4096"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 3.51844441125e-06,
+                "exact_rational": "2814755529/800000000000000"
+              },
+              {
+                "decimal": 8.2481613e-06,
+                "exact_rational": "82481613/10000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 8.047890396189002e-11,
+              "exact_rational": "824103976569753778681/10240000000000000000000000000000"
+            },
+            "distance_m": 8.971003509189483e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 3,
+            "layout_xyz_m": [
+              {
+                "decimal": -139.26616727530927,
+                "exact_rational": "-13926616727530927/100000000000000"
+              },
+              {
+                "decimal": 290.10325250065364,
+                "exact_rational": "7252581312516341/25000000000000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -139.26617431640625,
+                "exact_rational": "-2281737/16384"
+              },
+              {
+                "decimal": 290.1032409667969,
+                "exact_rational": "9506103/32768"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -7.04109698e-06,
+                "exact_rational": "-352054849/50000000000000"
+              },
+              {
+                "decimal": -1.1533856765e-05,
+                "exact_rational": "-2306771353/200000000000000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8262179971849523e-10,
+              "exact_rational": "1168779518198369493/6400000000000000000000000000"
+            },
+            "distance_m": 1.3513763344031715e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 3,
+            "layout_xyz_m": [
+              {
+                "decimal": -139.26616727530927,
+                "exact_rational": "-13926616727530927/100000000000000"
+              },
+              {
+                "decimal": 290.10325250065364,
+                "exact_rational": "7252581312516341/25000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -139.26617431640625,
+                "exact_rational": "-2281737/16384"
+              },
+              {
+                "decimal": 290.1032409667969,
+                "exact_rational": "9506103/32768"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -7.04109698e-06,
+                "exact_rational": "-352054849/50000000000000"
+              },
+              {
+                "decimal": -1.1533856765e-05,
+                "exact_rational": "-2306771353/200000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8267418661331736e-10,
+              "exact_rational": "74823346836814788177/409600000000000000000000000000"
+            },
+            "distance_m": 1.3515701484322497e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 4,
+            "layout_xyz_m": [
+              {
+                "decimal": -137.59178371649233,
+                "exact_rational": "-13759178371649233/100000000000000"
+              },
+              {
+                "decimal": 284.7898608576619,
+                "exact_rational": "2847898608576619/10000000000000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -137.59178161621094,
+                "exact_rational": "-9017215/65536"
+              },
+              {
+                "decimal": 284.78985595703125,
+                "exact_rational": "4665997/16384"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 2.1002813925e-06,
+                "exact_rational": "840112557/400000000000000"
+              },
+              {
+                "decimal": -4.90063065e-06,
+                "exact_rational": "-98012613/20000000000000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 2.8442263856595008e-11,
+              "exact_rational": "2275381108527600737/80000000000000000000000000000"
+            },
+            "distance_m": 5.333128899304329e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 4,
+            "layout_xyz_m": [
+              {
+                "decimal": -137.59178371649233,
+                "exact_rational": "-13759178371649233/100000000000000"
+              },
+              {
+                "decimal": 284.7898608576619,
+                "exact_rational": "2847898608576619/10000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -137.59178161621094,
+                "exact_rational": "-9017215/65536"
+              },
+              {
+                "decimal": 284.78985595703125,
+                "exact_rational": "4665997/16384"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 2.1002813925e-06,
+                "exact_rational": "840112557/400000000000000"
+              },
+              {
+                "decimal": -4.90063065e-06,
+                "exact_rational": "-98012613/20000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 2.849465075141713e-11,
+              "exact_rational": "291785223694511409961/10240000000000000000000000000000"
+            },
+            "distance_m": 5.338038099472233e-06,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 7.62939453125e-06,
+                "exact_rational": "1/131072"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 5,
+            "layout_xyz_m": [
+              {
+                "decimal": -125.04779726035706,
+                "exact_rational": "-6252389863017853/50000000000000"
+              },
+              {
+                "decimal": 288.7427869913637,
+                "exact_rational": "2887427869913637/10000000000000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -125.04779815673828,
+                "exact_rational": "-16390265/131072"
+              },
+              {
+                "decimal": 288.7427978515625,
+                "exact_rational": "2365381/8192"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -8.9638122125e-07,
+                "exact_rational": "-717104977/800000000000000"
+              },
+              {
+                "decimal": 1.08601988e-05,
+                "exact_rational": "27150497/2500000000000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.1876231843052494e-10,
+              "exact_rational": "76007883795535954629/640000000000000000000000000000"
+            },
+            "distance_m": 1.0897812552550393e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 5,
+            "layout_xyz_m": [
+              {
+                "decimal": -125.04779726035706,
+                "exact_rational": "-6252389863017853/50000000000000"
+              },
+              {
+                "decimal": 288.7427869913637,
+                "exact_rational": "2887427869913637/10000000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -125.04779815673828,
+                "exact_rational": "-16390265/131072"
+              },
+              {
+                "decimal": 288.7427978515625,
+                "exact_rational": "2365381/8192"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": -8.9638122125e-07,
+                "exact_rational": "-717104977/800000000000000"
+              },
+              {
+                "decimal": 1.08601988e-05,
+                "exact_rational": "27150497/2500000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.1881470532534704e-10,
+              "exact_rational": "1216662582531553789689/10240000000000000000000000000000"
+            },
+            "distance_m": 1.0900215838475265e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 6,
+            "layout_xyz_m": [
+              {
+                "decimal": -122.07994324344486,
+                "exact_rational": "-6103997162172243/50000000000000"
+              },
+              {
+                "decimal": 272.6366709137836,
+                "exact_rational": "681591677284459/2500000000000"
+              },
+              {
+                "decimal": 25.028,
+                "exact_rational": "6257/250"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -122.07994079589844,
+                "exact_rational": "-8000631/65536"
+              },
+              {
+                "decimal": 272.63665771484375,
+                "exact_rational": "4466879/16384"
+              },
+              {
+                "decimal": 25.027999877929688,
+                "exact_rational": "1640235/65536"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 2.4475464225e-06,
+                "exact_rational": "979018569/400000000000000"
+              },
+              {
+                "decimal": -1.319893985e-05,
+                "exact_rational": "-263978797/20000000000000"
+              },
+              {
+                "decimal": -1.220703125e-07,
+                "exact_rational": "-1/8192000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8021739781540442e-10,
+              "exact_rational": "14417391825232353493/80000000000000000000000000000"
+            },
+            "distance_m": 1.3424507358387659e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          },
+          {
+            "plan_vertex": 6,
+            "layout_xyz_m": [
+              {
+                "decimal": -122.07994324344486,
+                "exact_rational": "-6103997162172243/50000000000000"
+              },
+              {
+                "decimal": 272.6366709137836,
+                "exact_rational": "681591677284459/2500000000000"
+              },
+              {
+                "decimal": 25.378,
+                "exact_rational": "12689/500"
+              }
+            ],
+            "actual_glb_xyz_m": [
+              {
+                "decimal": -122.07994079589844,
+                "exact_rational": "-8000631/65536"
+              },
+              {
+                "decimal": 272.63665771484375,
+                "exact_rational": "4466879/16384"
+              },
+              {
+                "decimal": 25.378000259399414,
+                "exact_rational": "13305381/524288"
+              }
+            ],
+            "signed_error_xyz_m": [
+              {
+                "decimal": 2.4475464225e-06,
+                "exact_rational": "979018569/400000000000000"
+              },
+              {
+                "decimal": -1.319893985e-05,
+                "exact_rational": "-263978797/20000000000000"
+              },
+              {
+                "decimal": 2.593994140625e-07,
+                "exact_rational": "17/65536000"
+              }
+            ],
+            "distance_squared_m2": {
+              "decimal": 1.8026978471022655e-10,
+              "exact_rational": "1845962595432719762729/10240000000000000000000000000000"
+            },
+            "distance_m": 1.3426458382992387e-05,
+            "axis_half_ulp_bounds_m": [
+              {
+                "decimal": 3.814697265625e-06,
+                "exact_rational": "1/262144"
+              },
+              {
+                "decimal": 1.52587890625e-05,
+                "exact_rational": "1/65536"
+              },
+              {
+                "decimal": 9.5367431640625e-07,
+                "exact_rational": "1/1048576"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "numeric_bound_caveat": "A coordinate quantization bound measures representation displacement only. It is not a bound on arbitrary assembly gaps, offsets, overlaps, missing interfaces, or runtime transforms."
+  },
+  "checked_retained_floor_seams": {
+    "seam_count": 2,
+    "all_identical_exactly": true,
+    "max_gap_on_only_these_two_verified_seams_m": 0,
+    "seams": [
+      {
+        "east_plan_edge": 1,
+        "corner_plan_edge": 6,
+        "actual_xy_endpoints_m": [
+          [
+            {
+              "decimal": -119.88099670410156,
+              "exact_rational": "-7856521/65536"
+            },
+            {
+              "decimal": 294.8389892578125,
+              "exact_rational": "2415321/8192"
+            }
+          ],
+          [
+            {
+              "decimal": -124.47631072998047,
+              "exact_rational": "-16315359/131072"
+            },
+            {
+              "decimal": 294.763916015625,
+              "exact_rational": "1207353/4096"
+            }
+          ]
+        ],
+        "actual_top_xyz_endpoints_m": [
+          [
+            {
+              "decimal": -119.88099670410156,
+              "exact_rational": "-7856521/65536"
+            },
+            {
+              "decimal": 294.8389892578125,
+              "exact_rational": "2415321/8192"
+            },
+            {
+              "decimal": 25.378000259399414,
+              "exact_rational": "13305381/524288"
+            }
+          ],
+          [
+            {
+              "decimal": -124.47631072998047,
+              "exact_rational": "-16315359/131072"
+            },
+            {
+              "decimal": 294.763916015625,
+              "exact_rational": "1207353/4096"
+            },
+            {
+              "decimal": 25.378000259399414,
+              "exact_rational": "13305381/524288"
+            }
+          ]
+        ],
+        "actual_bottom_xyz_endpoints_m": [
+          [
+            {
+              "decimal": -119.88099670410156,
+              "exact_rational": "-7856521/65536"
+            },
+            {
+              "decimal": 294.8389892578125,
+              "exact_rational": "2415321/8192"
+            },
+            {
+              "decimal": 25.027999877929688,
+              "exact_rational": "1640235/65536"
+            }
+          ],
+          [
+            {
+              "decimal": -124.47631072998047,
+              "exact_rational": "-16315359/131072"
+            },
+            {
+              "decimal": 294.763916015625,
+              "exact_rational": "1207353/4096"
+            },
+            {
+              "decimal": 25.027999877929688,
+              "exact_rational": "1640235/65536"
+            }
+          ]
+        ],
+        "same_endpoint_coordinates_exactly": true,
+        "same_top_and_bottom_boundary_segments_exactly": true,
+        "both_side_rectangles_complete": true,
+        "endpoint_separation_m": 0,
+        "geometric_gap_on_this_entire_checked_seam_m": 0,
+        "basis": "Identical rational endpoint coordinates and z intervals; entire straight segment and side rectangle coincide, not a sample-point estimate."
+      },
+      {
+        "east_plan_edge": 2,
+        "corner_plan_edge": 5,
+        "actual_xy_endpoints_m": [
+          [
+            {
+              "decimal": -124.47631072998047,
+              "exact_rational": "-16315359/131072"
+            },
+            {
+              "decimal": 294.763916015625,
+              "exact_rational": "1207353/4096"
+            }
+          ],
+          [
+            {
+              "decimal": -139.26617431640625,
+              "exact_rational": "-2281737/16384"
+            },
+            {
+              "decimal": 290.1032409667969,
+              "exact_rational": "9506103/32768"
+            }
+          ]
+        ],
+        "actual_top_xyz_endpoints_m": [
+          [
+            {
+              "decimal": -124.47631072998047,
+              "exact_rational": "-16315359/131072"
+            },
+            {
+              "decimal": 294.763916015625,
+              "exact_rational": "1207353/4096"
+            },
+            {
+              "decimal": 25.378000259399414,
+              "exact_rational": "13305381/524288"
+            }
+          ],
+          [
+            {
+              "decimal": -139.26617431640625,
+              "exact_rational": "-2281737/16384"
+            },
+            {
+              "decimal": 290.1032409667969,
+              "exact_rational": "9506103/32768"
+            },
+            {
+              "decimal": 25.378000259399414,
+              "exact_rational": "13305381/524288"
+            }
+          ]
+        ],
+        "actual_bottom_xyz_endpoints_m": [
+          [
+            {
+              "decimal": -124.47631072998047,
+              "exact_rational": "-16315359/131072"
+            },
+            {
+              "decimal": 294.763916015625,
+              "exact_rational": "1207353/4096"
+            },
+            {
+              "decimal": 25.027999877929688,
+              "exact_rational": "1640235/65536"
+            }
+          ],
+          [
+            {
+              "decimal": -139.26617431640625,
+              "exact_rational": "-2281737/16384"
+            },
+            {
+              "decimal": 290.1032409667969,
+              "exact_rational": "9506103/32768"
+            },
+            {
+              "decimal": 25.027999877929688,
+              "exact_rational": "1640235/65536"
+            }
+          ]
+        ],
+        "same_endpoint_coordinates_exactly": true,
+        "same_top_and_bottom_boundary_segments_exactly": true,
+        "both_side_rectangles_complete": true,
+        "endpoint_separation_m": 0,
+        "geometric_gap_on_this_entire_checked_seam_m": 0,
+        "basis": "Identical rational endpoint coordinates and z intervals; entire straight segment and side rectangle coincide, not a sample-point estimate."
+      }
+    ],
+    "scope": "Only the two entire shared boundary segments between east_plaza_4F_floor and core_wrap_4F_floor, with matching top, bottom and complete side rectangles. No claim that every interface in the building is gap-free."
+  },
+  "limits": [
+    "Model geometry only; not as-built survey or structural adequacy.",
+    "Global assembly manifoldness, arbitrary component interfaces and existing-base preservation are not established by this floor proof.",
+    "The final floor material differs from the neutral prototype intentionally; it remains opaque.",
+    "The exact frozen triangle set proves redundant base removal; triangle soup is not a global Boolean-solid union."
+  ],
+  "portability": {
+    "root_resolution": "Path(__file__).resolve().parents[1]",
+    "required_assets": [
+      "inputs/frozen-terrace-layout.json",
+      "inputs/frozen-terrace-components.json",
+      "inputs/frozen-terrace-additions.glb",
+      "parco_terrace_candidate.glb"
+    ],
+    "python_dependencies": "standard library only",
+    "external_workspace_or_archival_proof_required": false,
+    "output": "verification/core-coverage-final.json"
+  },
+  "verifier_sha256": "1cdac15e792a035b0fd7c26291e22365d4296c2040512f1bc05e6b37f3b7ab32",
+  "created_utc": "2026-10-15T09:50:42.673099+00:00"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "file": "INPUTS.json",
+    "sha256": "e23ed6dbcf3ae2c84c62784784cf7fabc8aa36398e7cedb53d721b11654ab0f5"
+  },
+  {
+    "file": "frozen-terrace-additions.glb",
+    "sha256": "abff1213d0ae49b6a292f1504434e483df4880a5bcf657d0eff6cee02d9e9d9c"
+  },
+  {
+    "file": "frozen-terrace-components.json",
+    "sha256": "74cdc3ed5244c8ac8923884234c3c66680ed7804cddedf802597517b9668319f"
+  },
+  {
+    "file": "frozen-terrace-layout.json",
+    "sha256": "2058ec8165de7ccd521c6b61a3ca4932dee4f7cc599e81737418b4819bf33a86"
+  },
+  {
+    "file": "prior-manifest.json",
+    "sha256": "cd6526f5c68c9dfb9012bdff937195088581af44ed54973b44bc022cbfa494c1"
+  },
+  {
+    "file": "roof22-corrected-base.glb",
+    "sha256": "7dbb2e71338da1d3a5a6db6ec52ec38235f07ba5adbbd7b0585f6bcb15d372cd"
+  },
+  {
+    "file": "shallow-component-stats.json",
+    "sha256": "3b82574c0445f515daacf96f3216d84a9ee55a3f0efad96fa5634940dfedfc47"
+  },
+  {
+    "file": "source-plateau.json",
+    "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1"
+  }
+]

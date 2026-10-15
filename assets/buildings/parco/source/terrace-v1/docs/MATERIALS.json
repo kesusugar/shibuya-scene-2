@@ -1,0 +1,65 @@
+{
+  "status": "Inferred exterior material treatment, not calibrated photometry or final production acceptance.",
+  "materials": [
+    {
+      "name": "parco_terrace_pale_structure",
+      "base_color_linear": [
+        0.67,
+        0.675,
+        0.65
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "basis": "Matches inherited pale podium cladding family; exact stone/concrete finish not measured."
+    },
+    {
+      "name": "parco_terrace_stone_paving",
+      "base_color_linear": [
+        0.46,
+        0.47,
+        0.45
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "basis": "Neutral warm-grey exterior slab/tread proxy; joints and finish not surveyed."
+    },
+    {
+      "name": "parco_terrace_reflective_glass",
+      "base_color_linear": [
+        0.32,
+        0.44,
+        0.45
+      ],
+      "roughness": 0.23,
+      "metallic": 0.22,
+      "alpha": 1,
+      "basis": "Light blue-green exterior reflection proxy corroborated by photos. Opaque reflective shader, not measured transmission. No invented retail interior exposed or certified."
+    },
+    {
+      "name": "parco_terrace_anodized_frame",
+      "base_color_linear": [
+        0.48,
+        0.51,
+        0.51
+      ],
+      "roughness": 0.32,
+      "metallic": 0.42,
+      "basis": "Light metal framing, not black strips; dimensions remain inferred."
+    },
+    {
+      "name": "parco_terrace_clear_rail_glass",
+      "base_color_linear": [
+        0.54,
+        0.65,
+        0.66
+      ],
+      "roughness": 0.2,
+      "metallic": 0.12,
+      "alpha": 0.28,
+      "basis": "Partially transparent floor-edge guard panels; geometry exists independently of alpha."
+    }
+  ],
+  "outside_scope": "All original material and texture/image definitions remain byte-for-byte equal to the roof22-corrected base.",
+  "geometry_proof": "Uniform clay renders and normal/oblique rays are required separately so dark glazing cannot conceal missing depth.",
+  "interiors": "Core floors and simple opaque shaft boxes are inferred placeholders. No current tenant fitout, branding, floor schedule or code-compliance claim."
+}

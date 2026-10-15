@@ -1,0 +1,18 @@
+{
+  "root_authorized_exceptions": [
+    {
+      "region": "Source152 localu11.0\u201318.73m, z26.2\u201330.178m",
+      "action": "Remove only old inferred shallow overlays while retaining the original opaque source wall.",
+      "basis": "Registered exterior route shifts to5F; no4F outdoor railing is supported here. Existing opaque finish is not independently confirmed.",
+      "preservation": "No additional source-wall indices, outside-band segments, roof, source84/141, footprint or office geometry are changed."
+    },
+    {
+      "region": "New inner north termination/back returns within the existing scoped terrace volume",
+      "action": "Extend the newly added return walls from5F down to4F.",
+      "basis": "Independent oblique rays demonstrated74\u201382m hollow-shell sightlines below the5F walkway.",
+      "preservation": "Only two new wall components change. No source-wall cut or original roof/notch/footprint change."
+    }
+  ],
+  "inherited_from_reviewed_prototype": true,
+  "candidate_status": "Applied only in this separate roof22-based review candidate; not a production-acceptance record."
+}

@@ -1,0 +1,108 @@
+{
+  "map_image": {
+    "path": "refs/parco4f.jpg",
+    "size": [
+      1680,
+      1280
+    ]
+  },
+  "structural_image": {
+    "path": "crops/jssi-plan-hi.png",
+    "size": [
+      2331,
+      1450
+    ]
+  },
+  "landmarks": [
+    {
+      "label": "west-upper-lift",
+      "map_pixel": [
+        523.5,
+        308.5
+      ],
+      "structural_original_pixel": [
+        495.0,
+        222.0
+      ]
+    },
+    {
+      "label": "west-lower-lift",
+      "map_pixel": [
+        523.5,
+        360.5
+      ],
+      "structural_original_pixel": [
+        495.0,
+        248.0
+      ]
+    },
+    {
+      "label": "east-left-upper-lift",
+      "map_pixel": [
+        1246.0,
+        421.5
+      ],
+      "structural_original_pixel": [
+        821.0,
+        276.0
+      ]
+    },
+    {
+      "label": "east-left-lower-lift",
+      "map_pixel": [
+        1246.0,
+        475.5
+      ],
+      "structural_original_pixel": [
+        821.0,
+        303.0
+      ]
+    },
+    {
+      "label": "east-right-upper-lift",
+      "map_pixel": [
+        1381.0,
+        421.5
+      ],
+      "structural_original_pixel": [
+        881.0,
+        280.0
+      ]
+    },
+    {
+      "label": "east-right-lower-lift",
+      "map_pixel": [
+        1381.0,
+        475.5
+      ],
+      "structural_original_pixel": [
+        881.0,
+        305.0
+      ]
+    },
+    {
+      "label": "west-escalator",
+      "map_pixel": [
+        403.5,
+        635.5
+      ],
+      "structural_original_pixel": [
+        443.5,
+        363.0
+      ]
+    },
+    {
+      "label": "east-escalator",
+      "map_pixel": [
+        1004.5,
+        712.0
+      ],
+      "structural_original_pixel": [
+        715.0,
+        405.0
+      ]
+    }
+  ],
+  "structural_m_per_pixel": 0.12557781201849,
+  "caution": "Approximate visual picks. Lift shaft centers more reliable than floor-dependent escalator bounding centers. 81.5 m grid dimension spans 1 to 11A, approx x291 to940 original."
+}
