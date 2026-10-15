@@ -1,56 +1,304 @@
 {
   "id": "shibuya109",
   "level": "B",
-  "status": "prototype; see README for evidence and estimates",
+  "status": "Architectural revision3, bounded source and runtime publication; asset-only validation, no full-scene/FPS claim",
   "stats": {
-    "triangles": 5690,
-    "primitives": 11,
-    "bytes": 374688
+    "triangles": 45727,
+    "primitives": 37,
+    "bytes": 2763184
   },
   "files": {
     "README.md": {
-      "bytes": 1406,
-      "sha256": "febbca576d37b8ba103eb8e0d0d63dade5bd024d7048381a3e56def5f380dff7"
+      "bytes": 5942,
+      "sha256": "5a0bb4971717d25fb19041b690c9cde9e469a5a5ac27bab5740159bf5ab7a857"
     },
-    "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    "source/architectural-revision3/ARCHITECTURE_SOURCES.json": {
+      "bytes": 7039,
+      "sha256": "f7432b7e47cf24827751374c3024a8cae25f82b059357d35cbcba4a53e5dca05"
     },
-    "source/data/layout.json": {
-      "bytes": 639,
-      "sha256": "131a73b9988ccf2acdb46ea97a5239a17c54aa9e49458faf7753b0594e1103fd"
+    "source/architectural-revision3/PUBLICATION_VALIDATION.json": {
+      "bytes": 4741,
+      "sha256": "8017d717b9fb38b90058bff9564fc7cacb3715a67656b46ea5548d530510f39f"
     },
-    "source/data/plateau.json": {
+    "source/architectural-revision3/README.md": {
+      "bytes": 297,
+      "sha256": "a012ccd239169f46db58850151468cbcffdca20c64262fc94b8ecc2a6fdb73cb"
+    },
+    "source/architectural-revision3/evidence/before-final/camera-config.json": {
+      "bytes": 580,
+      "sha256": "46f6abc27fa8683afd1a92c08be881a66e5e5ffb1a06fd7b0c939922e5130789"
+    },
+    "source/architectural-revision3/evidence/before-final/complete-camera-config.json": {
+      "bytes": 1435,
+      "sha256": "9aca066066d5d6b6387f742ee502f04189d35edfa192a904ce815f80fc504c30"
+    },
+    "source/architectural-revision3/evidence/before-final/entry-front.jpg": {
+      "bytes": 207906,
+      "sha256": "76dc8d90ee9318a09bb60d1fd82a9ac5890c6efa6fb1926cde7aeb00fcee385f"
+    },
+    "source/architectural-revision3/evidence/before-final/front.jpg": {
+      "bytes": 176255,
+      "sha256": "85b39ab95279b1c87d69d68abad06460ffbe8ea4675a6a138fb0c648c41669f1"
+    },
+    "source/architectural-revision3/evidence/before-final/left.jpg": {
+      "bytes": 177983,
+      "sha256": "4460bd07bd41af5a3cbaf484e758ede92297643db9c3f3aac1d762ab4cb61834"
+    },
+    "source/architectural-revision3/evidence/before-final/overall.jpg": {
+      "bytes": 183655,
+      "sha256": "2dc892a4da7c703a07eed9641c12ce07f204b17427f6179a34850f441594cfb4"
+    },
+    "source/architectural-revision3/evidence/before-final/rear.jpg": {
+      "bytes": 171609,
+      "sha256": "ae8fb2b57c246dbd33bbc053108440fe699cb8133fe5a2bb6b42141d6219c682"
+    },
+    "source/architectural-revision3/evidence/before-final/right.jpg": {
+      "bytes": 176120,
+      "sha256": "1d5411c8c46e00346e1258573fb7201326d1a14c49bf903678093dcf99241f75"
+    },
+    "source/architectural-revision3/evidence/boards/entry-front-before-after.jpg": {
+      "bytes": 238116,
+      "sha256": "98587d1cdc4e9e7dff64104a06c6433091a0ba1ed5856fc355193975fc1d234c"
+    },
+    "source/architectural-revision3/evidence/boards/front-before-after.jpg": {
+      "bytes": 150236,
+      "sha256": "0a84c5a2d5c24b0b759beef1e86e9cd59909c9131e57b5f45dbc5e7262a1245c"
+    },
+    "source/architectural-revision3/evidence/boards/left-before-after.jpg": {
+      "bytes": 155970,
+      "sha256": "4494cae8eaef19dbbccf598ffe4b003ef26069a17d953b8af35722205472d7e4"
+    },
+    "source/architectural-revision3/evidence/boards/overall-before-after.jpg": {
+      "bytes": 163194,
+      "sha256": "4ca903111ab42c786b4a6eb38803cca1f199d2798e66d21ccd2b466940005543"
+    },
+    "source/architectural-revision3/evidence/boards/rear-before-after.jpg": {
+      "bytes": 138302,
+      "sha256": "baa4e19f52a1fde69801dc86e83ec88a13e413f7866fa2467c5ea3293e71c1da"
+    },
+    "source/architectural-revision3/evidence/boards/right-before-after.jpg": {
+      "bytes": 145806,
+      "sha256": "e8541eb7057ac4b9e63f5ce88a312ebcff78eb40cce833be2d4fc9124d2d3dd1"
+    },
+    "source/architectural-revision3/evidence/boards/whole-building-views.jpg": {
+      "bytes": 282813,
+      "sha256": "871b7919d67d941273ed79330d511901dbc3243ac6f226dc27b2184a0df0e802"
+    },
+    "source/architectural-revision3/evidence/final/camera-config.json": {
+      "bytes": 580,
+      "sha256": "e79409fc9cfa60b837e6c656c3ec2f3b9cfa29a040e25cf7f770b8b12d431046"
+    },
+    "source/architectural-revision3/evidence/final/complete-camera-config.json": {
+      "bytes": 2233,
+      "sha256": "9c307fbdefc149cb7c725996bfbf6126823a22316a08a72e4c4f2270b4330d08"
+    },
+    "source/architectural-revision3/evidence/final/entry-front.jpg": {
+      "bytes": 451561,
+      "sha256": "2d34e4fd4994c5d6b5b064a296c013e82b4fab2608549f8a3f53ebdb91d3c899"
+    },
+    "source/architectural-revision3/evidence/final/entry-side.jpg": {
+      "bytes": 317870,
+      "sha256": "5a2358e9966e0d87496f9a15af7579dc94a4d4c386428fbbc30db508131f3eb4"
+    },
+    "source/architectural-revision3/evidence/final/entry-stair.jpg": {
+      "bytes": 409915,
+      "sha256": "96c933ae826886d92af7888d4a6afa323acb0394e7829c083cfb99f190b2b4e4"
+    },
+    "source/architectural-revision3/evidence/final/entry-under.jpg": {
+      "bytes": 469802,
+      "sha256": "b78febb1efd9d3ea9743506ae51241bf7a06e8ab1c13a8b3e59f071cd19a680c"
+    },
+    "source/architectural-revision3/evidence/final/front.jpg": {
+      "bytes": 198072,
+      "sha256": "3892cc715982c0957f5dc5da1ef74e63887347de1d69dc6a22c3d8fa9ad17a58"
+    },
+    "source/architectural-revision3/evidence/final/left.jpg": {
+      "bytes": 213528,
+      "sha256": "16f71f80a9a9bf3ade720a33ddea45cc110a8c3bb95abf17aa3b53d1dc924a60"
+    },
+    "source/architectural-revision3/evidence/final/overall.jpg": {
+      "bytes": 222308,
+      "sha256": "d4bced37b6f5f1512a9162faa14a2e87c017328b9fd601e2f76137c093fc5696"
+    },
+    "source/architectural-revision3/evidence/final/rear.jpg": {
+      "bytes": 171639,
+      "sha256": "a4d7db48ac370c010f57bcb07387d5df55f2c68c2efd03b3c4204c3b6f9018eb"
+    },
+    "source/architectural-revision3/evidence/final/right.jpg": {
+      "bytes": 187534,
+      "sha256": "8f48d9bb57dc55dc2db31d158bca9bfb22bd1221659f4ccded93b7543b0c09f1"
+    },
+    "source/architectural-revision3/evidence/final/stair-landing.jpg": {
+      "bytes": 295414,
+      "sha256": "bcb91b9a8053cff9a8620921b6843f98e1bf864bdfb590b4c7844b4a0bd62d31"
+    },
+    "source/architectural-revision3/evidence/final/wing-up.jpg": {
+      "bytes": 374436,
+      "sha256": "642165007624acc196f1732498942e6d8c1ebab22b03c0e81353169e9d04a625"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/README.md": {
+      "bytes": 1291,
+      "sha256": "8f52cb77cdc66c9b5c7bd16dbe2bdf0338980db6a8cd6488e488376289330e25"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/accepted-revision3-camera.json": {
+      "bytes": 721,
+      "sha256": "b7ecaf4d4a94c8cb045f71da115f149cf2f562072cc2f9a5bcd7508885649f46"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/comparison-receipt.json": {
+      "bytes": 1809,
+      "sha256": "fb99083870eb23e2a53f2187de5dcf606ad915f835748bcf29d97e66f2e59470"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/current-main-camera.json": {
+      "bytes": 721,
+      "sha256": "5b6a4719bc55f6ecf8ea90f558bdd217fd7fcf7fcef7c3fecdee436faaf6adb2"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/entry-front-main-vs-revision3.jpg": {
+      "bytes": 703686,
+      "sha256": "8c264737d85ee0a935be858def9c9f2fcfe989301d1cecfa22a0b9485386967e"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/inputs/current-main.glb": {
+      "bytes": 373996,
+      "sha256": "152920785e92f2c11a95b2cf2b29aec8a7aac76c71d119fd9045442dfde491a5"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/overall-main-vs-revision3.jpg": {
+      "bytes": 438020,
+      "sha256": "1240377d0d28746c2f0f2b0e3a4f5d37eaf237e578ac5d894880ba5712e8a612"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/scripts/render.py": {
+      "bytes": 3637,
+      "sha256": "f54cb1b1ce2701da2833e8752408abd8d4dae7767402a39fe56d551b239a51f6"
+    },
+    "source/architectural-revision3/evidence/main-vs-revision3/scripts/render_evidence_framed.py": {
+      "bytes": 359,
+      "sha256": "badeaea2706b9070970bd914ccf349bc210d957a4dcc234f002fc19190854ab0"
+    },
+    "source/architectural-revision3/inputs/INPUTS.json": {
+      "bytes": 924,
+      "sha256": "1de08d6e1f2f48982b977707d94e824a7d0fb6eb7d1f38ddd67744b4ee6de1c8"
+    },
+    "source/architectural-revision3/inputs/ground-contact.json": {
+      "bytes": 6230,
+      "sha256": "0dafbdf306672f1f848fdb5145245487995aa31d56598ef85780b04e9a53f49d"
+    },
+    "source/architectural-revision3/inputs/logo-record.json": {
+      "bytes": 2000833,
+      "sha256": "1b3edb6ca134bc82df8d6ecece54895e5bcf3c5730b2bafc161c6f5487744ca0"
+    },
+    "source/architectural-revision3/inputs/lower72-fit.json": {
+      "bytes": 3047,
+      "sha256": "b1cc9a2a8e8db00c392a4f22f82fd7d5dd110efd4aa2c5e88bd1d193abf21add"
+    },
+    "source/architectural-revision3/inputs/lower72-triangles.json": {
+      "bytes": 170542,
+      "sha256": "92bd499e912146243d9ba166b43841a50730b165876c35bf33fd99163d1e0d96"
+    },
+    "source/architectural-revision3/inputs/plateau.json": {
       "bytes": 52910,
       "sha256": "8275ced42472f0e11130bac0dc952bce73279921e3363c2b2f84fa93345f2706"
     },
+    "source/architectural-revision3/inputs/prior.glb": {
+      "bytes": 1607812,
+      "sha256": "a31e295bf8ce9bbef9ddc0c6164526db84cb7b08a6caf1957352be142854db90"
+    },
+    "source/architectural-revision3/inputs/registration-proposal.json": {
+      "bytes": 8996,
+      "sha256": "ae40a61b9d19ad9e600a04377b33c4cf5c803f86b32e20f697f84a704fca4ad8"
+    },
+    "source/architectural-revision3/inputs/render-ground-context.json": {
+      "bytes": 8651,
+      "sha256": "ca3541d6021e49159c71f9fb7abddb2fddb5bfb1d77c76e936d8f001fbd24fa3"
+    },
+    "source/architectural-revision3/inputs/source-triangle-map.json": {
+      "bytes": 61802,
+      "sha256": "5dcdcd8180218a7e850c6fe40ea92248f479a68b42b4c8e4b559dc3bad6b7fd5"
+    },
+    "source/architectural-revision3/inputs/sources.json": {
+      "bytes": 3676,
+      "sha256": "88eae3656513c25572c50c9e3de63a9af8656832972cf4e521eb8a873f4c1ecf"
+    },
+    "source/architectural-revision3/output/combined/repack-report.json": {
+      "bytes": 21501,
+      "sha256": "76701f3196f6a1aebb7b29efabe7d26173e47c677a9a473ee5998f0fd0bf81cf"
+    },
+    "source/architectural-revision3/output/combined/report.json": {
+      "bytes": 23211,
+      "sha256": "9ce3fb337375899f9c26e30f3c5cc73f220e9294eac65bd4f8c05d53bd36b0cd"
+    },
+    "source/architectural-revision3/scripts/build.py": {
+      "bytes": 6076,
+      "sha256": "c72f1551113a216b22d1cb5fba02655c3bed30cd68f671de8299a60f949b0a65"
+    },
+    "source/architectural-revision3/scripts/check_loader.mjs": {
+      "bytes": 1308,
+      "sha256": "c307cbc4949bef56977758e7d065103a0a00ddfeb8ca93276954200b243e3c14"
+    },
+    "source/architectural-revision3/scripts/entrance.py": {
+      "bytes": 14793,
+      "sha256": "c7058fe6a9c305fee3793fb5a4a10c35313c66c9b9c41d2297cf917f34e91a92"
+    },
+    "source/architectural-revision3/scripts/glb_helpers.py": {
+      "bytes": 1019,
+      "sha256": "3903f8365d434c5f89b3d0af7db5bf6f88eb2d09f0900db5322f31675b6fae58"
+    },
+    "source/architectural-revision3/scripts/make_boards.py": {
+      "bytes": 1831,
+      "sha256": "cab5fab3ff8e0106586786de229a05ccfec62059be826e29e009093096fac9ab"
+    },
+    "source/architectural-revision3/scripts/phase2.py": {
+      "bytes": 25997,
+      "sha256": "65982a362b04eec3e767ffd441138431ecb6519636136ec90bbe7b95659be8fb"
+    },
+    "source/architectural-revision3/scripts/phase2_checks.py": {
+      "bytes": 7749,
+      "sha256": "ee3538e8c677f76b341d02c3f46b109289938462e96a8deb9cf592e3e92b8658"
+    },
+    "source/architectural-revision3/scripts/register_ground.py": {
+      "bytes": 2533,
+      "sha256": "fc1899fe7e8e0c7c66fe83b46b89fff26501825c768c71e32b0923a9e8a56e85"
+    },
+    "source/architectural-revision3/scripts/render.py": {
+      "bytes": 3637,
+      "sha256": "f54cb1b1ce2701da2833e8752408abd8d4dae7767402a39fe56d551b239a51f6"
+    },
+    "source/architectural-revision3/scripts/render_evidence_framed.py": {
+      "bytes": 359,
+      "sha256": "badeaea2706b9070970bd914ccf349bc210d957a4dcc234f002fc19190854ab0"
+    },
+    "source/architectural-revision3/scripts/repack.py": {
+      "bytes": 3149,
+      "sha256": "13414434e6344e50986d58854d1d2ef7c1718c55ea88688b22a3a41f6ec95d75"
+    },
+    "source/architectural-revision3/scripts/verify.py": {
+      "bytes": 3086,
+      "sha256": "7275089453543516f8ba119a2fac81749cc1566a51cf81df6b1d9061de24b755"
+    },
+    "source/architectural-revision3/scripts/verify_feet_materials.py": {
+      "bytes": 1807,
+      "sha256": "5b07556afe8bcddcf6f88adbad311b8086d64997e66cc47a28c09cf44092697d"
+    },
+    "source/blender/shibuya109.blend": {
+      "bytes": 1507834,
+      "sha256": "e8b7ed6099659f76dbdb8e157b45f39480026e6f4cc2c9e8b1dde7939760a946"
+    },
     "source/data/stats.json": {
-      "bytes": 22290,
-      "sha256": "e02ffd31e94100d9d242d8c8bfc3c0257cad786790e25a1c7dab6a84c052c1a7"
+      "bytes": 27176,
+      "sha256": "62b30ed338e617568b6f1614355c8352ff2bfc4c499f554cb13c56f3cc0d5e04"
     },
-    "source/refs/SOURCES.md": {
-      "bytes": 525,
-      "sha256": "578896b29c307a8d25e8d6d37fe8e077c08bdeff65c98cd8f31263c283c8a726"
-    },
-    "source/refs/reference.jpg": {
-      "bytes": 720002,
-      "sha256": "ca0e134d6185af69938e1122a34fa28e0fb4a015ba1c1375da5774e98f3aaaf2"
-    },
-    "source/refs/reference.jpg.json": {
-      "bytes": 2365,
-      "sha256": "77fd5aab32ab81e8949921cfdf594220d15a17b034f1322c0ba645fb70e1d418"
+    "source/entrance-panel-v1/output/shibuya109.glb": {
+      "bytes": 1607812,
+      "sha256": "a31e295bf8ce9bbef9ddc0c6164526db84cb7b08a6caf1957352be142854db90"
     },
     "web/emissive_day.json": {
-      "bytes": 3,
-      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+      "bytes": 268,
+      "sha256": "45022b885003f60b87868b52db1bc5d8c59bae11d72e18f8adecaa3baa74fdc2"
     },
     "web/emissive_night.json": {
-      "bytes": 3,
-      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+      "bytes": 285,
+      "sha256": "f2a94af0ef32b493ae03794652d77a813f0625484020f58833b6884626fddfa2"
     },
     "web/shibuya109.glb": {
-      "bytes": 374688,
-      "sha256": "c792a0781c83a31d8828d8dcf8848a8617c02cf186812c7bdf2131e7800d03f9"
+      "bytes": 2763184,
+      "sha256": "0ef0583ab368e3d2265aa299292bd6306ef68901e859265b94f214090d8b239e"
     },
     "web/viewer.json": {
       "bytes": 196,
@@ -60,5 +308,9 @@
   "source_id": "way/55895868",
   "source_aliases": [],
   "plateau_id": "bldg_aba50b67-9267-4c80-9004-08ebfc7682d8",
-  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+  "generator": "source/architectural-revision3/scripts/build.py -- --phase2 (Blender 4.2.3)",
+  "historical_generator": "tools/core/build_facade.py (Blender 4.2.3)",
+  "current_blend": "source/blender/shibuya109.blend",
+  "provenance_note": "Deterministic local edits from pinned intermediate predecessor; not full original PLATEAU reconstruction.",
+  "inventory_scope": "Bounded current publication plus unchanged viewer; older base-branch files preserved but not current dependencies."
 }
