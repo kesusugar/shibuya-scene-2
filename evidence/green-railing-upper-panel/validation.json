@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "blender": "4.2.3",
+  "sha256": "b473c5d52294448bb8d9a74b8b183205e1c098d36f76d674dc02c6447f0328fc",
+  "triangles": 3448,
+  "bytes": 84756,
+  "bounds_z_up_m": [
+    [
+      -1.0,
+      -0.02199999988079071,
+      0.0
+    ],
+    [
+      1.0,
+      0.02199999988079071,
+      0.49004223942756653
+    ]
+  ],
+  "mesh_nodes": 1,
+  "materials": [
+    "prop_furniture_0"
+  ],
+  "external_resources": 0,
+  "scope": "upper fragment only; no placement, full-scene or FPS claim",
+  "editable_source_objects": 3,
+  "editable_export_byte_identical": true
+}
