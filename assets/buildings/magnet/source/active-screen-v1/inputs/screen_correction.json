@@ -1,0 +1,36 @@
+{
+  "target": "08_SIGNS_2025_box_screen",
+  "scope": "Active image plane only, all other signs and structures unchanged",
+  "authoring": {
+    "x_m": [
+      35.48,
+      44.12
+    ],
+    "y_m": 8.67,
+    "z_m": [
+      16.46,
+      21.26
+    ],
+    "normal": [
+      0,
+      -1,
+      0
+    ]
+  },
+  "dimensions_source": "PAS operator renewal release 2021-03-08, 8.64 x 4.80 m",
+  "placement_source": "HUIS 2025-10-24 campaign release photo; observed normalized centre v=0.5712689591579574 on inherited Z9..32 cassette",
+  "unrounded_center_z_m": 18.86081393936698,
+  "rounding": "The implemented centre is 18.86 m, 0.00081394 m below the photo-derived number. Dimensions rounded to 0.01 m before float32 storage.",
+  "manual_pick_center_sensitivity_m": [
+    18.72,
+    19.0
+  ],
+  "edge_conflict_m_each": 0.6922431736295778,
+  "inherited_x_center_m": 39.8,
+  "horizontal_placement_calibrated": false,
+  "metric_photo_registration": false,
+  "authoring_datum": "preserve inherited model; do not recenter or convert vertices to T.P.15",
+  "runtime_offset_m": -0.093,
+  "photo_rights": "Copyright reference-only. No photo/campaign pixels are permitted in the package or textures.",
+  "texture": "Existing original placeholder embedded in baseline GLB unchanged; source/data/signage_2025.json and README attest original art. Not a recovered 2025 campaign."
+}

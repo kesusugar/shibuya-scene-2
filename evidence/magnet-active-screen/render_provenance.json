@@ -1,0 +1,159 @@
+{
+  "blender_version": "4.2.3 LTS",
+  "coordinate_space": "Inherited authoring X east / Y north / Z up, metres. No rebasing.",
+  "render_scope": "Asset-only diagnostic renders, not a walking or FPS test. Cameras retained from the accepted generator. Not a photo-camera calibration.",
+  "inputs": {
+    "UNCHANGED_MAGNET_permanent_building": {
+      "filename": "magnet.unchanged.glb",
+      "sha256": "39ec44c3357b51f9fde3e1eef7328ecc1db6113a1314d2c53e92d499a040de2e",
+      "objects": 29,
+      "meshes": 29,
+      "triangles": 10381
+    },
+    "UNCHANGED_Eiraku_companion": {
+      "filename": "eiraku.unchanged.glb",
+      "sha256": "07b535d3334f0f9afeb8bc4753c55ed29e82d53a35b8f79b23f9666d0882f3e5",
+      "objects": 5,
+      "meshes": 5,
+      "triangles": 394
+    },
+    "SIGNS_2025_corrected_active_plane_only": {
+      "filename": "magnet_signs_2025.glb",
+      "sha256": "72261c821608d40309254b838a11117af04d7100f13a6c6fc3acf645e168de7f",
+      "objects": 31,
+      "meshes": 31,
+      "triangles": 16092
+    }
+  },
+  "cameras": {
+    "existing_south_view": {
+      "position": [
+        40,
+        -55,
+        4
+      ],
+      "target": [
+        40,
+        15,
+        22
+      ],
+      "lens_mm": 30,
+      "resolution": [
+        1100,
+        1400
+      ],
+      "basis": "Unchanged camera_look south view from accepted build_magnet.py"
+    },
+    "existing_m027_view": {
+      "fit": {
+        "pos": [
+          -11.327218845311421,
+          -3.346415728417041,
+          1.5
+        ],
+        "yaw": 71.2404627706144,
+        "pitch": 5.848231368370223,
+        "roll": -3.5227875421076997,
+        "fpx": 1134,
+        "W": 1280,
+        "H": 1707,
+        "photo": "M027.jpg",
+        "rms_px": 11.734534355781754,
+        "n_points": 2,
+        "residuals_px": {
+          "tower_sw_top": 15.9,
+          "corner_base_chamfer_s": 4.8
+        },
+        "fixed": {
+          "z": 1.5,
+          "fpx": 1134
+        },
+        "note": "Shibuya Crossing 20250901 131850 (Taufik, CC0), Galaxy S25 Ultra 23 mm-equiv -> 1134 px at 1280 wide. Hand-read pixels on the 1280 px copy. v2: + roof-truss and tower-top edges (points on projected 3D lines); shadow-side drum edge dropped.",
+        "line_residuals_px": {
+          "drum_left_edge": 4.9,
+          "tower_corner": 10.6,
+          "west_ribbon": -18.5
+        },
+        "edge_residuals_px": {
+          "truss_top_west": [
+            10.0,
+            1.2,
+            -6.7,
+            -14.6
+          ],
+          "tower_south_top": [
+            18.3,
+            1.7,
+            -10.3
+          ]
+        },
+        "rms_all_px": 11.388690948310128
+      },
+      "resolution": [
+        1280,
+        1707
+      ],
+      "basis": "Unchanged inherited camera; no source photo loaded or redistributed."
+    }
+  },
+  "renders": [
+    {
+      "file": "south_day_before.jpg",
+      "state": "before",
+      "time": "day",
+      "camera": "existing_south_view",
+      "resolution": [
+        1100,
+        1400
+      ],
+      "sha256": "289f8720505eba48006581d3c4735f1caccc026d31d6450175b2c534e392b873"
+    },
+    {
+      "file": "south_day_after.jpg",
+      "state": "after",
+      "time": "day",
+      "camera": "existing_south_view",
+      "resolution": [
+        1100,
+        1400
+      ],
+      "sha256": "ef1d438c5c78428cc637382e43e19ee1dc59019d0df0e81269b24a510f865dba"
+    }
+  ],
+  "editable_blend": {
+    "file": "magnet_screen_editable.blend",
+    "sha256": "7f1377f23dfe652084290988d197ac2b41ceae1c653fb5467608fddf61fdbf45",
+    "packed_images": [
+      "drum_wrap",
+      "led_box",
+      "led_starts",
+      "magnet_mark",
+      "west_banner"
+    ],
+    "authoring_screen_vertices": [
+      [
+        35.47999954223633,
+        8.669999122619629,
+        16.459999084472656
+      ],
+      [
+        44.119998931884766,
+        8.669999122619629,
+        16.459999084472656
+      ],
+      [
+        44.119998931884766,
+        8.669999122619629,
+        21.260000228881836
+      ],
+      [
+        35.47999954223633,
+        8.669999122619629,
+        21.260000228881836
+      ]
+    ]
+  },
+  "publication_note": "Current main baseline proved byte-identical to fixed input. BEFORE uses actual decoded baseline positions; AFTER accepted final. All other data byte-preserved. Native JPEG rendering, not PNG conversion. The generated blend described below is a transient rendered reconstruction, NOT the preserved original editable shipped in source/active-screen-v1/output.",
+  "format": "JPEG",
+  "quality": 94
+}

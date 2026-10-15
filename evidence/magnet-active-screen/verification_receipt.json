@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-10-15",
+  "baseline_commit": "1bec9a4964a10cbba7cf2dd6a6283761acc36c11",
+  "main_refreshed": "2026-10-15T09:59:18Z",
+  "main_changed": false,
+  "blender": "4.2.3",
+  "canonical_glb_byte_exact": true,
+  "source_json_byte_exact": true,
+  "original_editable_preserved_sha256": "2f18d258f23a43c4ae0c37ce5653f8f61989f7b0abda2aa7e6d17f1e6d2f43a9",
+  "original_editable_reopened": true,
+  "portable_regeneration_and_reopen": true,
+  "existing_tests": {
+    "file": "tests/magnet-asset.test.ts",
+    "passed": 5,
+    "modified": false
+  },
+  "new_regression": "tests/magnet-active-screen-regression.py PASS",
+  "warnings": [
+    "Blender save reports packed-image warnings; both delivered and regenerated scenes reopen with all five packed images and readable pixels."
+  ],
+  "not_run": [
+    "Full-scene build",
+    "Browser",
+    "Walking",
+    "FPS",
+    "Collision"
+  ]
+}
