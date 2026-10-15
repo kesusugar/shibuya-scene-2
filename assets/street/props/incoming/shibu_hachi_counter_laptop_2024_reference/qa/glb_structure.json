@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "sha256": "e755c008ce1a8012129afd42fb5d0343f3810d52153f87ee7a3a1df8794f72aa",
+  "bytes": 258516,
+  "glTF_version": "2.0",
+  "meshes": 3,
+  "primitives": 3,
+  "materials": 3,
+  "triangles": 8904,
+  "zero_area_triangles": 0,
+  "finite_positions": true,
+  "unit_normals": true,
+  "bounds_gltf_y_up_m": [
+    [
+      -0.15199999511241913,
+      0.0,
+      -0.12386441230773926
+    ],
+    [
+      0.15199999511241913,
+      0.21993397176265717,
+      0.12386439740657806
+    ]
+  ],
+  "bottom_centre": true,
+  "embedded_binary_buffer": true,
+  "external_uris": [],
+  "textures": 0,
+  "cameras": 0,
+  "lights": 0,
+  "extensions_required": []
+}

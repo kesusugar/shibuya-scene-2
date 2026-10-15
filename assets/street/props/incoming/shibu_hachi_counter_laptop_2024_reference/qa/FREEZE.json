@@ -1,0 +1,43 @@
+{
+  "state": "refrozen_after_initial_QA_corrections_before_final_QA",
+  "frozen_at_utc": "2026-10-15T16:02:34.031183+00:00",
+  "previous_findings": "69 zero-area bevel residues and cropped operator preview. Removed degenerate geometry; operator scale widened. Blend audit originally counted internal Render Result viewer as an external image; test corrected to check source type.",
+  "files": [
+    {
+      "path": "source/generate.py",
+      "sha256": "6b411a9cfddcf19228de2d93958be68f50ae1044b78035e4444ed17c58945494",
+      "bytes": 10560
+    },
+    {
+      "path": "source/render_validate.py",
+      "sha256": "a2342768ef0aa482feda8f7bb84bcf927e17afd32da41baa866775561a5d932f",
+      "bytes": 2560
+    },
+    {
+      "path": "source/check_blend.py",
+      "sha256": "12eecef7cf9643531ebab4a3257db509fd5e7f7eb01ada8a765bfb8cff8aa206",
+      "bytes": 1453
+    },
+    {
+      "path": "source/check_glb.py",
+      "sha256": "f470544831ae5444592f64226afedbfd5b838917ca262d756097ff102f62782b",
+      "bytes": 2886
+    },
+    {
+      "path": "shibu_hachi_counter_laptop.blend",
+      "sha256": "c9fa5fae79b652aa8e8c315bb05be6200c116534653c4c1d888668e243f32826",
+      "bytes": 1798560
+    },
+    {
+      "path": "shibu_hachi_counter_laptop.glb",
+      "sha256": "e755c008ce1a8012129afd42fb5d0343f3810d52153f87ee7a3a1df8794f72aa",
+      "bytes": 258516
+    },
+    {
+      "path": "build_stats.json",
+      "sha256": "1e8f4a26e7859f79d55dac8785d872568d19b7d4c05c6c3d56e274e9af922426",
+      "bytes": 805
+    }
+  ],
+  "timestamp_basis": "Filesystem UTC modification time of initial final-freeze record; hashes unchanged."
+}
