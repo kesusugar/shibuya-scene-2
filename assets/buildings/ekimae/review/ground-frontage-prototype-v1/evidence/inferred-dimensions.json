@@ -1,0 +1,42 @@
+{
+  "units": "meters, model-conditioned estimates, NOT surveyed",
+  "north_display": [
+    0,
+    1.2
+  ],
+  "entry": [
+    1.2,
+    3.2
+  ],
+  "terminal_pier": [
+    3.235,
+    3.7
+  ],
+  "entry_clear_center": [
+    1.603,
+    2.797
+  ],
+  "transom_height": [
+    2.36,
+    2.7
+  ],
+  "north_front_offset": 0.1,
+  "display_depth": 0.7,
+  "return_direction": "Straight connection from retained arc cut to B; angle inferred, not original wall12 chord",
+  "side_return_endpoint": [
+    -1.275,
+    0.044140010057073714
+  ],
+  "interior_depth": 1.08,
+  "local_soffit_z": 2.975,
+  "original_curve_cut": [
+    -1.7,
+    0.025520013409431615
+  ],
+  "known_uncertainties": [
+    "Original curve/canopy preserved; angular real canopy still differs",
+    "Ground corner return extent and setback unmeasured",
+    "Central opening depiction does not establish real door leaf number or mechanism",
+    "Upper width used for scale is inherited inference"
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "status": "REVIEW ONLY; NOT ACCEPTED FOR PRODUCTION",
+  "candidate_sha256": "e437ee3ec6cbc88e23e7f40ad55cd9b0452705ab9e99e8d89a32d44ebe00e035",
+  "files": {
+    "ATTRIBUTION.md": {
+      "bytes": 1172,
+      "sha256": "66b1cacdf9a5396cfe312fa1f9d149c9bf8e6c17ec5073d73b898da0d8fb957d",
+      "git_blob_sha1": "2d055e8ec6c2ceb1d64a9b2d401a02b7b07123e4"
+    },
+    "README.md": {
+      "bytes": 5551,
+      "sha256": "696ea8fbb7812cc69d813f909faf68b9104a7e2a8f0b4c196d6545001844cb58",
+      "git_blob_sha1": "2e92ac274fed5ec998dd6b10f86552f35895a99c"
+    },
+    "evidence/addition-bounds.json": {
+      "bytes": 614,
+      "sha256": "99922c6809fbaca0a716e1bd6767ee6cb33c371081b9928eaa3625f4cc757871",
+      "git_blob_sha1": "9d3f0a73f15f2bc9ba0acf2dd00470f75316a13d"
+    },
+    "evidence/before-front.png": {
+      "bytes": 1070927,
+      "sha256": "3861b33b3b050331bdcbd6a87722073db25cd8badac2a092abd96c0df06ef126",
+      "git_blob_sha1": "03e1aaaa14a3eb6d22353191531b3f1ad9402ca4"
+    },
+    "evidence/before-oblique-east.png": {
+      "bytes": 1071908,
+      "sha256": "fde73f4d096edd77759f56b727ba25411ebecce31ccc05cc5b097409fc4daf4a",
+      "git_blob_sha1": "00248b99be9c8415a0256158b6433232fc53f83e"
+    },
+    "evidence/before-oblique-west.png": {
+      "bytes": 1172931,
+      "sha256": "6e3b5b3a98fde7b5bea07874492a1fcd8759736b8b040c17fe8d243747345581",
+      "git_blob_sha1": "52eba4cd45a394f7a67a40395ef64be8ded6b89e"
+    },
+    "evidence/binary_check.json": {
+      "bytes": 650,
+      "sha256": "f09d64688f5a2155674f4ddc09e5dbdc05f7153baa292a0cfebbcf1d846f9c73",
+      "git_blob_sha1": "49b4fb0ca76b8a7ac4981892953e3edb7a33bc0e"
+    },
+    "evidence/camera-anchor-check-2024.jpg": {
+      "bytes": 208412,
+      "sha256": "d4e332af0a44e60eef2923c822158dd286ebd27c4bec59537b345050b79ed4df",
+      "git_blob_sha1": "870367522c3fdf85a35263aac5af5357760fb9a5"
+    },
+    "evidence/camera-anchor-check-2025.jpg": {
+      "bytes": 194412,
+      "sha256": "a8c460fd00f2443fc510fd96c4100c66b10d7cea577b28a9f52da728d679e4f8",
+      "git_blob_sha1": "1950679ea14cee864dfadcdae4ed3f22fdac95f5"
+    },
+    "evidence/camera-anchor-check-sourcecorner2024.jpg": {
+      "bytes": 211575,
+      "sha256": "049a9cd49aa57775ec6e5f5d93380bfdc3079a83b5c9f2a5e16846963127ee9e",
+      "git_blob_sha1": "fd7f500ec06644d6edb93a3bc3617f3b721840d0"
+    },
+    "evidence/changed-geometry-map.json": {
+      "bytes": 743891,
+      "sha256": "aca14ea344d2d1473ef5112e81870cc0c435895e756a44e14849dc4595127daa",
+      "git_blob_sha1": "3b32b4c3983df2ff62c113b1168e8a4d08f0e169"
+    },
+    "evidence/clip_manifest_check.json": {
+      "bytes": 450,
+      "sha256": "b5433ecc3117da9c95dd73fbe0b5ed889132c540ee610292d54b55539b86afac",
+      "git_blob_sha1": "43e0b6fc648d754ab681110f26767e806744aea7"
+    },
+    "evidence/inferred-dimensions.json": {
+      "bytes": 948,
+      "sha256": "fb6b06f00c4af01ec6df02d56ee717aa2939640546b4ead8941fd21335b28644",
+      "git_blob_sha1": "817896751b0a3d3de3b96c04a94f219644cf76f5"
+    },
+    "evidence/photo-camera-fit.json": {
+      "bytes": 9788,
+      "sha256": "72ecb00f0f49ee93ef6fcaeca1b670a625a71b04c6de8dde592a30d833372b54",
+      "git_blob_sha1": "49ffd113709c1bb265220537fa12f505c1cfa701"
+    },
+    "evidence/prototype-front.png": {
+      "bytes": 1202491,
+      "sha256": "fc7db2e6d48697cc00abaca9042451534082f746655946c96ba2c0461868f063",
+      "git_blob_sha1": "0040ac52ed93cf8693c9f4cb023814235a7b4b87"
+    },
+    "evidence/prototype-oblique-east.png": {
+      "bytes": 1175945,
+      "sha256": "5ffdabc30698d09970e7e84c5676418d99df96e4d8782c746f14f221a2ccde11",
+      "git_blob_sha1": "fc52d6d3b6b63566cfc8bf8daee594bb503c5749"
+    },
+    "evidence/prototype-oblique-west.png": {
+      "bytes": 1212808,
+      "sha256": "f49d89d8ac5725e5b7ea89af3d6c0570279a0ccd1ca33fefc12423daa16119b8",
+      "git_blob_sha1": "aa1711f3112c4d5fe604dff05ed8e85e74449f6e"
+    },
+    "evidence/prototype-plan-section.png": {
+      "bytes": 780648,
+      "sha256": "9b262da944f9e350a5efcd75fb046d5e0f307316bfabf7445933658ff58bdcc9",
+      "git_blob_sha1": "76a1070aa0bcb3a342ec13f40ea2cd301c05613d"
+    },
+    "evidence/prototype-review-board.jpg": {
+      "bytes": 514641,
+      "sha256": "14ac6b123a1c4ba541daceb99da90ad230fb359d09730c4de08d7e333dffcfea",
+      "git_blob_sha1": "05ea2e22e6033594c9e10c7b9f9f5edb816877d8"
+    },
+    "evidence/prototype-soffit-upward.png": {
+      "bytes": 1339341,
+      "sha256": "5373ec249b571e61a55348beee17f5bbb1db53d65f5fc3806a537308a053067f",
+      "git_blob_sha1": "b9746bc579c80afd231b7f0cc484c7bcb4ce3a52"
+    },
+    "evidence/render-cameras.json": {
+      "bytes": 714,
+      "sha256": "409c953ae9843d24a7566c3b2be15003ec23ed3d68754b303b78ee087f5ce4f6",
+      "git_blob_sha1": "a8b4d9725dc78cc57a7fa91938027e0ce2438277"
+    },
+    "evidence/validation.json": {
+      "bytes": 1601,
+      "sha256": "1ba84fa780a94196b83e5ed041cb5e093cba9f4c2eea9887b0ad0d063f2761a5",
+      "git_blob_sha1": "860463446a2d997da51de16e091b2e97e13be922"
+    },
+    "input/door-signatures.json": {
+      "bytes": 58128,
+      "sha256": "2db0487887f0fcbc631bbd19423c06d4821d5898da66fd745b0aeefc13262726",
+      "git_blob_sha1": "13564267ad6f1b2b4592d7f17ad101a3bd7ea966"
+    },
+    "input/ekimae.glb": {
+      "bytes": 1787720,
+      "sha256": "4ecb3412bc946a8aa88ac9ab0ac4d9f415b8d5bcadac819ead9d8d59885b89c8",
+      "git_blob_sha1": "f52c20d74f52989dbbaba14e0021ad496603477e"
+    },
+    "input/original/blender/build_ekimae.py": {
+      "bytes": 8007,
+      "sha256": "fc7447df1382d8fcc4979bf2d4ff43ced5c4bac0262756ef9dae3dde6a2b88a5",
+      "git_blob_sha1": "7ae5abd9e9a61813eab78dc1b992eb5dc3f617ed"
+    },
+    "input/original/blender/facade_detail.py": {
+      "bytes": 9063,
+      "sha256": "e125ec392d4b5435b6c9df2d3a0bdbd914e91c273da87d21e022bd85eb3f742c",
+      "git_blob_sha1": "b5e60d9fe81ccded412ada567e452fbe58481b08"
+    },
+    "input/original/data/facades.json": {
+      "bytes": 9784,
+      "sha256": "508d5d637806fb6f547dcd2a3ff71d5056ac01dc0ee193aeb019f53390389e4c",
+      "git_blob_sha1": "41ef6f6e8dc74bf776d117f2707d5e495a1df465"
+    },
+    "input/original/data/plateau.json": {
+      "bytes": 8102,
+      "sha256": "b3a9a323838f4f26f29607ff8dce0b33b236dc329b64e8f68282a370ad8c4661",
+      "git_blob_sha1": "cb203133d171b99a33c1ec13d65bf879f806101a"
+    },
+    "input/original/data/stats.json": {
+      "bytes": 6376,
+      "sha256": "a13d4dd72f27606f47cc37672d54610f379417d278550e162caff4ee48d9efb4",
+      "git_blob_sha1": "c9b1d0a4a070efb35e50936e60d854665ba400d4"
+    },
+    "input/signs-2025-11.glb": {
+      "bytes": 300716,
+      "sha256": "cc0290df14ee341e1a5da575b22db80019717c6c70317d09c1377eb4702db7a5",
+      "git_blob_sha1": "f6c012cde1bfb8abd6513c1a644ac847f9b8bca2"
+    },
+    "input/viewer.json": {
+      "bytes": 158,
+      "sha256": "c4dd09fe0be2f62d6f51210abfb8b2e4a126343873002890858fb43b0a55fc57",
+      "git_blob_sha1": "9d2cc0f008532de6e466e56dd84007794286bf3f"
+    },
+    "source/annotate_camera_checks.py": {
+      "bytes": 1208,
+      "sha256": "9c086862db1bd2904a30de554ae8f411470ba271bfba925d26de0fb23d222e3f",
+      "git_blob_sha1": "879816a8ea7e0d41062c293a35dd87030edb486f"
+    },
+    "source/build_addition.py": {
+      "bytes": 8505,
+      "sha256": "34edbd1e67576c60019b4b58154aaa95823151f32906aa38106a174fc034615b",
+      "git_blob_sha1": "7d9c67aec09f3ed7aafe49050a40339e96a32ebb"
+    },
+    "source/clip.py": {
+      "bytes": 6648,
+      "sha256": "aa32a5619cfed88be7a34e26596a777d729227d4736e833beeaf1f0fdff5bc83",
+      "git_blob_sha1": "e103bbff4f985f93c586d8bdf3ce1ff76daa9633"
+    },
+    "source/ekimae-ground-frontage-prototype.blend": {
+      "bytes": 2056810,
+      "sha256": "28cd6ac98e48fbdb73aa89876c00d235454d63ba0ea85bdb4fa724279f8cd1d6",
+      "git_blob_sha1": "62e0a455bbae2b97a1cb097faf5604d439c641cb"
+    },
+    "source/fit_cameras.py": {
+      "bytes": 5165,
+      "sha256": "2564a77f0e931190109422cfa0048cabed7859bd99c43e1705d371270a300382",
+      "git_blob_sha1": "d36f34894f10aec244ca4460aa1afc982fa693fa"
+    },
+    "source/make_board.py": {
+      "bytes": 1377,
+      "sha256": "e8ef1155daa6d501d3fd0df470496ad51c56a93afc106bf5b6328a042375f41b",
+      "git_blob_sha1": "654de0ee61d8d0836959e2f12ca12a3482648315"
+    },
+    "source/merge.py": {
+      "bytes": 1166,
+      "sha256": "f49926f3861a492c4bf9102102f0a8a3d2bbdaa1a30c311a278abffafb900c08",
+      "git_blob_sha1": "2cebc090737d9f85bac54dac1138e0ea599720d3"
+    },
+    "source/provenance.py": {
+      "bytes": 1665,
+      "sha256": "89a825b53eb3c06909007bb31c41adfcd82c37f210f48d0b2d17c2403e0de775",
+      "git_blob_sha1": "32b005c01f8476f8577c681e2e8fe2d7f0df41f7"
+    },
+    "source/render.py": {
+      "bytes": 2734,
+      "sha256": "f44a56838d81ca5f662753db47880c2778ad42d045e0fb847257bc768dd22255",
+      "git_blob_sha1": "6b850b298abb38634f12e599618fa35376a4f559"
+    },
+    "source/render_photo_cameras.py": {
+      "bytes": 1743,
+      "sha256": "ece1e4ec184ee464a676aeb71a70bdb6cd91b29914f99bb9ee346f2fbdb0d2b0",
+      "git_blob_sha1": "7527a7397d232ee36faaefa8094e0151d8269289"
+    },
+    "source/run.py": {
+      "bytes": 803,
+      "sha256": "02a91334d140ad861c5f21c8623dabfc56a61a9577b035ace2e033ae5a1faf3d",
+      "git_blob_sha1": "92551aa6729f44ac0d56b1888089962ca2bf45e5"
+    },
+    "source/save_editable.py": {
+      "bytes": 559,
+      "sha256": "ba6b45cfe70b4bc8597b1a55bff25997f42d52c6efd55dc16c8f139d5370cb81",
+      "git_blob_sha1": "45891f11b27f32863afe6ff4a3858ebf4c1f614e"
+    },
+    "source/validate.py": {
+      "bytes": 3524,
+      "sha256": "05eea6e54099e8011de4f2492dab87047070034035603ff50ea414f0c90a2ebd",
+      "git_blob_sha1": "019234af038e96024f1a21b986603ea34de6e0b2"
+    },
+    "web/ekimae.glb": {
+      "bytes": 6095644,
+      "sha256": "e437ee3ec6cbc88e23e7f40ad55cd9b0452705ab9e99e8d89a32d44ebe00e035",
+      "git_blob_sha1": "c710e647da5fc3859db166a9aabde22ef1123a17"
+    }
+  }
+}

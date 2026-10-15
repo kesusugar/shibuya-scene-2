@@ -1,0 +1,485 @@
+{
+  "2024": {
+    "pixel_size": [
+      1200,
+      900
+    ],
+    "camera_local_u_d_h_yaw_pitch_roll_focal": [
+      3.0744340966044272,
+      6.976253971098079,
+      1.2000000000000004,
+      -0.06249476538026245,
+      0.4386799355407136,
+      0.004012295416331744,
+      752.583936687241
+    ],
+    "fitted_points": [
+      {
+        "model": [
+          0.474373,
+          0.207771,
+          6.55
+        ],
+        "pixel": [
+          390,
+          295
+        ],
+        "prediction": [
+          407.78596595764986,
+          282.7781744878934
+        ]
+      },
+      {
+        "model": [
+          5.464777,
+          0.207771,
+          6.55
+        ],
+        "pixel": [
+          875,
+          275
+        ],
+        "prediction": [
+          855.3517369148038,
+          263.16685803300714
+        ]
+      },
+      {
+        "model": [
+          5.464777,
+          0.207771,
+          3.45
+        ],
+        "pixel": [
+          900,
+          520
+        ],
+        "prediction": [
+          905.0475750493915,
+          532.2037923176399
+        ]
+      },
+      {
+        "model": [
+          0.474373,
+          0.207771,
+          3.45
+        ],
+        "pixel": [
+          377,
+          535
+        ],
+        "prediction": [
+          373.8978076026775,
+          544.8759491745961
+        ]
+      }
+    ],
+    "fit_RMS_px_not_validation": 12.616257495547597,
+    "held_out": [
+      {
+        "label": "display right base",
+        "model": [
+          1.2,
+          0.1,
+          0.145
+        ],
+        "observed": [
+          481,
+          866
+        ],
+        "predicted": [
+          417.25536313601765,
+          953.2105295062406
+        ],
+        "error_px": 108.02340110216787
+      },
+      {
+        "label": "entry right base",
+        "model": [
+          3.2,
+          0.1,
+          0.035
+        ],
+        "observed": [
+          691,
+          868
+        ],
+        "predicted": [
+          675.2020134740932,
+          972.3671161845708
+        ],
+        "error_px": 105.55601034027592
+      },
+      {
+        "label": "pale pier right base",
+        "model": [
+          3.7,
+          0.115,
+          0
+        ],
+        "observed": [
+          745,
+          879
+        ],
+        "predicted": [
+          742.2558732025677,
+          978.943877085635
+        ],
+        "error_px": 99.98154229050931
+      },
+      {
+        "label": "upper next-floor corner",
+        "model": [
+          0.474373,
+          0.207771,
+          10
+        ],
+        "observed": [
+          408,
+          60
+        ],
+        "predicted": [
+          435.00822676762334,
+          72.23578072608547
+        ],
+        "error_px": 29.650609489658226
+      }
+    ],
+    "limitations": [
+      "Upper modeled width/height inherited and not surveyed",
+      "No lens distortion or calibrated focal metadata; street camera height constrained1.2..1.9m",
+      "Fit anchors approximate; ground coplanarity unverified",
+      "Four fitted corners are not held-out validation"
+    ],
+    "held_out_RMS_radial_px": 91.76954008075526
+  },
+  "2025": {
+    "pixel_size": [
+      984,
+      1280
+    ],
+    "camera_local_u_d_h_yaw_pitch_roll_focal": [
+      1.7578422056994745,
+      12.323842630343584,
+      1.8999867887975321,
+      -0.06496400281172565,
+      0.10834136292528813,
+      0.015659791546364613,
+      2199.8711289431362
+    ],
+    "fitted_points": [
+      {
+        "model": [
+          1.2,
+          0.1,
+          0.145
+        ],
+        "pixel": [
+          514,
+          1195
+        ],
+        "prediction": [
+          544.3460005746883,
+          1202.885418496704
+        ]
+      },
+      {
+        "model": [
+          1.2,
+          0.1,
+          2.69
+        ],
+        "pixel": [
+          520,
+          750
+        ],
+        "prediction": [
+          536.0538870559967,
+          735.8637984331666
+        ]
+      },
+      {
+        "model": [
+          3.2,
+          0.1,
+          2.69
+        ],
+        "pixel": [
+          920,
+          750
+        ],
+        "prediction": [
+          898.7212888734897,
+          728.6636467202593
+        ]
+      },
+      {
+        "model": [
+          3.2,
+          0.1,
+          0.035
+        ],
+        "pixel": [
+          941,
+          1195
+        ],
+        "prediction": [
+          916.2745410923342,
+          1221.500988333306
+        ]
+      }
+    ],
+    "fit_RMS_px_not_validation": 21.39594961497401,
+    "held_out": [
+      {
+        "label": "plant turning corner base",
+        "model": [
+          0,
+          0.1,
+          0.145
+        ],
+        "observed": [
+          310,
+          1205
+        ],
+        "predicted": [
+          325.45225484817115,
+          1204.2286392632066
+        ],
+        "error_px": 15.47149563807893
+      },
+      {
+        "label": "left inner frame base",
+        "model": [
+          1.58,
+          0.1,
+          0.105
+        ],
+        "observed": [
+          600,
+          1195
+        ],
+        "predicted": [
+          614.4128784518041,
+          1209.983351152076
+        ],
+        "error_px": 20.79018703650586
+      },
+      {
+        "label": "right inner frame base",
+        "model": [
+          2.82,
+          0.1,
+          0.105
+        ],
+        "observed": [
+          840,
+          1195
+        ],
+        "predicted": [
+          844.6280086819211,
+          1208.621436419056
+        ],
+        "error_px": 14.386173726127483
+      },
+      {
+        "label": "left inner frame head",
+        "model": [
+          1.58,
+          0.1,
+          2.36
+        ],
+        "observed": [
+          600,
+          805
+        ],
+        "predicted": [
+          605.6275671252001,
+          793.992155006938
+        ],
+        "error_px": 12.362935053615448
+      },
+      {
+        "label": "right inner frame head",
+        "model": [
+          2.82,
+          0.1,
+          2.36
+        ],
+        "observed": [
+          840,
+          805
+        ],
+        "predicted": [
+          831.148431657708,
+          789.9081495672335
+        ],
+        "error_px": 17.49611990137413
+      }
+    ],
+    "limitations": [
+      "Close photo crops upper facade endpoints, so independent upper-plane fit is unavailable",
+      "Camera fit uses ground outer-frame points; only interior subdivisions are held out",
+      "Physical depth is unidentifiable from these coplanar fit points",
+      "This is a conditional comparison camera, NOT surveyed photogrammetry"
+    ],
+    "held_out_RMS_radial_px": 16.355533763919084
+  },
+  "sourcecorner2024": {
+    "pixel_size": [
+      1200,
+      900
+    ],
+    "camera_local_u_d_h_yaw_pitch_roll_focal": [
+      2.866913345084571,
+      8.454639500638699,
+      1.2000000000000002,
+      -0.05880679453650675,
+      0.3693621473983053,
+      0.009843543089333771,
+      818.9100965537552
+    ],
+    "fitted_points": [
+      {
+        "model": [
+          0,
+          0.207771,
+          6.55
+        ],
+        "pixel": [
+          390,
+          295
+        ],
+        "prediction": [
+          399.0533878516833,
+          287.93540076455946
+        ]
+      },
+      {
+        "model": [
+          5.464777,
+          0.207771,
+          6.55
+        ],
+        "pixel": [
+          875,
+          275
+        ],
+        "prediction": [
+          864.4951696739872,
+          268.13216831438615
+        ]
+      },
+      {
+        "model": [
+          5.464777,
+          0.207771,
+          3.45
+        ],
+        "pixel": [
+          900,
+          520
+        ],
+        "prediction": [
+          902.7490884408769,
+          527.3485861901007
+        ]
+      },
+      {
+        "model": [
+          0,
+          0.207771,
+          3.45
+        ],
+        "pixel": [
+          377,
+          535
+        ],
+        "prediction": [
+          375.73973439428545,
+          540.7358907597795
+        ]
+      }
+    ],
+    "fit_RMS_px_not_validation": 6.941171412708431,
+    "held_out": [
+      {
+        "label": "display right base",
+        "model": [
+          1.2,
+          0.1,
+          0.145
+        ],
+        "observed": [
+          481,
+          866
+        ],
+        "predicted": [
+          476.0646842919694,
+          891.9843518857206
+        ],
+        "error_px": 26.448891924972656
+      },
+      {
+        "label": "entry right base",
+        "model": [
+          3.2,
+          0.1,
+          0.035
+        ],
+        "observed": [
+          691,
+          868
+        ],
+        "predicted": [
+          696.3829442371897,
+          905.4958045911646
+        ],
+        "error_px": 37.88022506004283
+      },
+      {
+        "label": "pale pier right base",
+        "model": [
+          3.7,
+          0.115,
+          0
+        ],
+        "observed": [
+          745,
+          879
+        ],
+        "predicted": [
+          753.1231267263321,
+          910.1898835635052
+        ],
+        "error_px": 32.23032771346053
+      },
+      {
+        "label": "upper next-floor corner",
+        "model": [
+          0.474373,
+          0.207771,
+          10
+        ],
+        "observed": [
+          408,
+          60
+        ],
+        "predicted": [
+          454.2918016091636,
+          65.00612692940382
+        ],
+        "error_px": 46.56170318035482
+      }
+    ],
+    "limitations": [
+      "SOURCECORNER ALTERNATIVE: virtual calibration plane begins at sourceB/u0, not actual generated upper arc endpoint",
+      "Actual asset upper geometry is NOT changed to this virtual correspondence",
+      "Ground-only RMS32.5px improves on original assumption but is NOT wholemodel validation",
+      "Hand-picked corner perturbations make aspect/focal ill-conditioned; no proof upper geometry is wrong"
+    ],
+    "held_out_RMS_radial_px": 36.54189910989475,
+    "ground_only_RMS_radial_px": 32.523065451949854
+  }
+}
