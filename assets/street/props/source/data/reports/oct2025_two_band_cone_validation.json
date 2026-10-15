@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "blender": "4.2.3 LTS",
+  "glb_sha256": "501b57d84214ded62f4846ce534ee2129a3eac08d0dc109c22a0d19140dc0b29",
+  "bytes": 34680,
+  "triangles": 1044,
+  "materials": 3,
+  "mesh_nodes": 1,
+  "bounds_z_up": [
+    [
+      -0.1899999976158142,
+      -0.1899999976158142,
+      0.0
+    ],
+    [
+      0.1899999976158142,
+      0.1899999976158142,
+      0.699999988079071
+    ]
+  ],
+  "strict_dimensions_m": [
+    0.38,
+    0.38,
+    0.7
+  ],
+  "bottom_center_origin": true,
+  "embedded_dependencies": 0,
+  "editable_parts": 3,
+  "editable_triangle_closure": true,
+  "placement": "none",
+  "scene_fps_tested": false
+}

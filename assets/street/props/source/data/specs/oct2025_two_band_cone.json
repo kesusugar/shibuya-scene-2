@@ -1,0 +1,29 @@
+{
+  "id": "oct2025_two_band_cone",
+  "target": {
+    "height_m": 0.7,
+    "width_m": 0.38,
+    "depth_m": 0.38
+  },
+  "max_triangles": 2000,
+  "lod_ratio": 0,
+  "materials": {
+    "default": "furniture"
+  },
+  "source": {
+    "tool": "Blender 4.2.3 / procedural Python",
+    "author": "dot",
+    "date": "2026-10-15",
+    "terms": "Model, script, model-only renders and documentation: CC BY-SA 4.0. No reference photographs redistributed.",
+    "historical_reference_claim": {
+      "status": "unverified historical delivery claim; primary author/license/EXIF not verified during publication review",
+      "url": "https://commons.wikimedia.org/wiki/File:渋谷スクランブル交差点_2025年10月10日の渋谷_202510102313_IMG_6646.jpg",
+      "claimed_author": "ウィ貴公子",
+      "claimed_datetime": "2025-10-10T23:13:28",
+      "claimed_license": "CC BY-SA 4.0",
+      "photo_redistributed": false
+    }
+  },
+  "placement_status": "unplaced; no surveyed coordinate, reference scene identity not independently verified",
+  "dimensions_basis": "All absolute dimensions are reconstruction assumptions. Historical delivery described two white bands and tapered red-orange silhouette in its claimed October 2025 photograph; primary photograph provenance not independently verified for this publication."
+}
