@@ -1,0 +1,475 @@
+{
+  "source_photo": "docs/core/building_refs/crossing_joli_2025.jpg",
+  "photo_date": "2025-11-01",
+  "author": "Joli Rumi",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing,_Tokyo,_Japan.jpg",
+  "status": "Photo-led facade revision; separate November signs; inferred interior, curvature and unseen facade; HiT image incomplete.",
+  "rooftop": {
+    "center_height_m": 41.5,
+    "height_m": 16.32,
+    "basis": "Manufacturer Hibino specification W21600 x H16320 mm and YUNIKA 2024-12-24: https://chromatek.hibino.co.jp/usecase/shibuyaekimaevision/ and https://www.yunikavision.jp/news/U1kIrR6P . Width used as developed curved frontage. Height center and curvature radius inferred; adjacent HiT is separately repositioned on the east wing with historical approximate dimensions and explicitly partial photo coverage.",
+    "developed_width_m": 21.6
+  },
+  "textures": {
+    "samsung": {
+      "quad": [
+        [
+          183,
+          81
+        ],
+        [
+          363,
+          171
+        ],
+        [
+          343,
+          270
+        ],
+        [
+          139,
+          197
+        ]
+      ],
+      "size": [
+        1024,
+        640
+      ],
+      "full_resolution_quad": [
+        [
+          576.4499999999999,
+          255.15
+        ],
+        [
+          1143.45,
+          538.65
+        ],
+        [
+          1080.45,
+          850.5
+        ],
+        [
+          437.84999999999997,
+          620.55
+        ]
+      ]
+    },
+    "hit_sky": {
+      "quad": [
+        [
+          0,
+          8
+        ],
+        [
+          180,
+          63
+        ],
+        [
+          142,
+          192
+        ],
+        [
+          0,
+          156
+        ]
+      ],
+      "size": [
+        768,
+        512
+      ],
+      "full_resolution_quad": [
+        [
+          0.0,
+          25.2
+        ],
+        [
+          567.0,
+          198.45
+        ],
+        [
+          447.3,
+          604.8
+        ],
+        [
+          0.0,
+          491.4
+        ]
+      ]
+    },
+    "shabu": {
+      "quad": [
+        [
+          133,
+          218
+        ],
+        [
+          319,
+          267
+        ],
+        [
+          314,
+          294
+        ],
+        [
+          127,
+          243
+        ]
+      ],
+      "size": [
+        768,
+        160
+      ],
+      "full_resolution_quad": [
+        [
+          418.95,
+          686.6999999999999
+        ],
+        [
+          1004.85,
+          841.05
+        ],
+        [
+          989.1,
+          926.1
+        ],
+        [
+          400.05,
+          765.4499999999999
+        ]
+      ],
+      "overridden_by": "restaurant_alignment: full-height face rectification then fixed-U/Y-only floor-edge straightening; original quad retained only as historical first-pass metadata"
+    },
+    "francais": {
+      "quad": [
+        [
+          126,
+          242
+        ],
+        [
+          313,
+          293
+        ],
+        [
+          308,
+          316
+        ],
+        [
+          120,
+          268
+        ]
+      ],
+      "size": [
+        768,
+        160
+      ],
+      "full_resolution_quad": [
+        [
+          396.9,
+          762.3
+        ],
+        [
+          985.9499999999999,
+          922.9499999999999
+        ],
+        [
+          970.1999999999999,
+          995.4
+        ],
+        [
+          378.0,
+          844.1999999999999
+        ]
+      ],
+      "overridden_by": "restaurant_alignment: full-height face rectification then fixed-U/Y-only floor-edge straightening; original quad retained only as historical first-pass metadata"
+    },
+    "gusto": {
+      "quad": [
+        [
+          118,
+          269
+        ],
+        [
+          307,
+          317
+        ],
+        [
+          303,
+          341
+        ],
+        [
+          112,
+          295
+        ]
+      ],
+      "size": [
+        768,
+        160
+      ],
+      "full_resolution_quad": [
+        [
+          371.7,
+          847.35
+        ],
+        [
+          967.05,
+          998.55
+        ],
+        [
+          954.4499999999999,
+          1074.1499999999999
+        ],
+        [
+          352.8,
+          929.25
+        ]
+      ],
+      "overridden_by": "restaurant_alignment: full-height face rectification then fixed-U/Y-only floor-edge straightening; original quad retained only as historical first-pass metadata"
+    },
+    "eyecity": {
+      "quad": [
+        [
+          48,
+          205
+        ],
+        [
+          98,
+          219
+        ],
+        [
+          59,
+          363
+        ],
+        [
+          10,
+          344
+        ]
+      ],
+      "size": [
+        192,
+        640
+      ],
+      "full_resolution_quad": [
+        [
+          151.2,
+          645.75
+        ],
+        [
+          308.7,
+          689.85
+        ],
+        [
+          185.85,
+          1143.45
+        ],
+        [
+          31.5,
+          1083.6
+        ]
+      ]
+    },
+    "loccitane": {
+      "quad": [
+        [
+          209,
+          403
+        ],
+        [
+          256,
+          408
+        ],
+        [
+          254,
+          424
+        ],
+        [
+          206,
+          419
+        ]
+      ],
+      "size": [
+        256,
+        80
+      ],
+      "full_resolution_quad": [
+        [
+          405,
+          1278
+        ],
+        [
+          532,
+          1293
+        ],
+        [
+          529,
+          1330
+        ],
+        [
+          399,
+          1315
+        ]
+      ]
+    },
+    "longboard": {
+      "full_resolution_quad": [
+        [
+          991,
+          850
+        ],
+        [
+          1078,
+          882
+        ],
+        [
+          948,
+          1477
+        ],
+        [
+          851,
+          1460
+        ]
+      ],
+      "size": [
+        192,
+        1024
+      ],
+      "basis": "EK01 visible right-edge 17LIVE longboard; verified 2025-10-30 to 2025-11-30 campaign, photograph only; small top edge and bottom obstruction retained."
+    }
+  },
+  "east_frontage_revision": {
+    "basis": "first Stream comparison showed a missing long east facade. Added north-to-south east-wall windows/red frames, restaurant/cafe/ground frontage and billboard continuation as one facade correction. Same November crops continue around the rounded corner; repeated lettering and perspective baked into crops remain approximate.",
+    "start_m": [
+      -38.316,
+      -20.562
+    ],
+    "end_m": [
+      -45.003,
+      -54.21
+    ]
+  },
+  "uv_revision": {
+    "date": "2026-10-14",
+    "basis": "EK01 photograph and pixel inspection of existing licensed crops. Correct outward reading direction; map Samsung and three tenant strips once across arc and 13 m east return instead of repeating full crops. U split is proportional to existing modeled arc/return lengths, not a surveyed photo calibration.",
+    "unchanged": "All texture pixels, source dates, geometry, anchor, footprint and HiT missing left edge."
+  },
+  "crop_revision": {
+    "source_size": [
+      4032,
+      2268
+    ],
+    "method": "Perspective reprojection of full-resolution original; no invented pixels. Roof HiT left edge remains outside photograph."
+  },
+  "geometry_revision": {
+    "date": "2026-10-14",
+    "main_facade": "NE curve and short north return",
+    "neighbor_wing": "long east return; HiT attribution to adjacent Daigai building unresolved within coarse PLATEAU shell",
+    "sigma_dimensions": "Samsung W21.6 H16.32 primary manufacturer; roof center41.5m and radius8.72m inferred",
+    "hit_dimensions": "W24.32 H17.28m historical approximate; 2024 official area approximately420sqm; partial16m artwork coverage estimated",
+    "ground": "82 recorded frontage samples explicitly reused; anchorTP15.29 unchanged"
+  },
+  "restaurant_alignment": {
+    "source": "EK01 4032x2268, Joli Rumi,2025-11-01,CC BY-SA4.0",
+    "method": "Two full-height facade-plane projective rectifications first, sharing exact central corner, then Y-only floor-edge straightening with fixed common U stations. No independent horizontal shifts by floor.",
+    "face_quads_px": {
+      "front": [
+        [
+          420,
+          660
+        ],
+        [
+          800,
+          750
+        ],
+        [
+          715,
+          1010
+        ],
+        [
+          320,
+          934
+        ]
+      ],
+      "return": [
+        [
+          800,
+          750
+        ],
+        [
+          1000,
+          848
+        ],
+        [
+          930,
+          1073
+        ],
+        [
+          715,
+          1010
+        ]
+      ]
+    },
+    "central_corner_px": [
+      [
+        800,
+        750
+      ],
+      [
+        715,
+        1010
+      ]
+    ],
+    "full_stack_size": [
+      1024,
+      768
+    ],
+    "face_split_u": 0.666015625,
+    "bands": [
+      {
+        "name": "shabu",
+        "z0": 27.7,
+        "z1": 31.0,
+        "rectified_upper_y_at_u_knots": [
+          0,
+          0,
+          0
+        ],
+        "rectified_lower_y_at_u_knots": [
+          260,
+          240,
+          260
+        ]
+      },
+      {
+        "name": "francais",
+        "z0": 24.35,
+        "z1": 27.7,
+        "rectified_upper_y_at_u_knots": [
+          260,
+          240,
+          260
+        ],
+        "rectified_lower_y_at_u_knots": [
+          505,
+          480,
+          510
+        ]
+      },
+      {
+        "name": "gusto",
+        "z0": 21.15,
+        "z1": 24.35,
+        "rectified_upper_y_at_u_knots": [
+          505,
+          480,
+          510
+        ],
+        "rectified_lower_y_at_u_knots": [
+          768,
+          768,
+          768
+        ]
+      }
+    ],
+    "geometry": "No generic uprights across continuous advertising; outer floor strips only. Physical facade widths/curvature and floor heights inferred."
+  }
+}
