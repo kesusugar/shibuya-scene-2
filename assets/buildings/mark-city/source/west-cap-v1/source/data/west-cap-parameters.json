@@ -1,0 +1,31 @@
+{
+  "source_face": 235,
+  "u_range": [
+    7.6,
+    37.4
+  ],
+  "dark_z_range": [
+    101.45,
+    104.95
+  ],
+  "dark_bays": 10,
+  "dark_tiers": 3,
+  "glass_z_ranges": [
+    [
+      97.5,
+      98.9
+    ],
+    [
+      93.7,
+      95.0
+    ]
+  ],
+  "glass_bays_inferred": 10,
+  "surface_outward_m": 0.06,
+  "frame_outward_m": 0.085,
+  "vertical_frame_width_m": 0.065,
+  "horizontal_frame_height_m": 0.065,
+  "frame_containment": "All frames lie inside the approved feature bounds; no extension below G2 z93.7.",
+  "semantics": "Opaque dark framed panel proxy, not a proven vent, actual hole, fans or interior. Two short glazed ribbons; all metric sizes and pane counts inferred except visible dark10x3 pattern.",
+  "uncertainty": "Photo association residual10.08-55.06px; G2 residual-sized perturbations hit source279 in6/36 cases. Do not lower G2 or alter279 to force alignment."
+}

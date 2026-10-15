@@ -1,0 +1,40 @@
+{
+ "id": "mark-city",
+ "name": "マークシティ EAST/WEST（同一PLATEAU施設）",
+ "style": "markcity",
+ "floors": 23,
+ "bay_pitch_m": 2.4,
+ "wall_rgb": [
+  0.64,
+  0.67,
+  0.66
+ ],
+ "roof_rgb": [
+  0.64,
+  0.67,
+  0.66
+ ],
+ "frame_rgb": [
+  0.54,
+  0.56,
+  0.55
+ ],
+ "spandrel_rgb": [
+  0.64,
+  0.67,
+  0.66
+ ],
+ "glass_rgb": [
+  0.12,
+  0.24,
+  0.27
+ ],
+ "glass_height_ratio": 0.5,
+ "band_m": 0.48,
+ "podium_floors": 2,
+ "basis": "PLATEAU 2025 shell preserved; divisions/colors/roof housings are photo-type estimates. Reference year is recorded separately; no historical advertising imagery copied.",
+ "source_aliases": [
+  "way/87250190"
+ ],
+ "probe_solid_normals": true
+}

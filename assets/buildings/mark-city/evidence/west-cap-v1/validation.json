@@ -1,0 +1,35 @@
+{
+  "base_commit": "e6430b1a6a296c35fec6b393b3245843be2f4635",
+  "main_git_blob": "2a6035ca020bffffaa5e17dad0fef63292319d9c",
+  "final_git_blob": "be96893665422c98323c17747b7a4e1f014af4c0",
+  "final_sha256": "8dc763dcd1e242de07f7846ba7789a40252c6efb0eed88d531faf6d1c3b4cd5d",
+  "counts": {
+    "triangles": 25312,
+    "primitives": 28,
+    "bytes": 2387000
+  },
+  "delta_from_main": {
+    "triangles": 1404,
+    "primitives": 20,
+    "bytes": 928272
+  },
+  "blender": "4.2.3",
+  "regeneration_exact": true,
+  "wrapper_regeneration_exact": true,
+  "unchanged_nearby_building_tests_passed": 2,
+  "runtime_tests_passed": 2,
+  "other_nearby_tests_selected": false,
+  "python_contract": "PASS; entire predecessor binary, arrays, meshes/materials/nodes preserved; cap bounds, finite nondegenerate outward geometry; 30 dark panes, two glass ribbons; exact regeneration/report",
+  "verified_main_dependencies": {
+    "src/world/buildings.ts": "5fb4d7b86974894b10edd8570fb8fc905ae0ca71",
+    "src/world/look.ts": "0e2973d891baca34f0da00bb289ec4460b5cd5d4",
+    "src/perf/budget.ts": "c12722dc0e973341172479571941de9dcf55f18c",
+    "tests/nearby-buildings.test.ts": "b063c27d7d0ad8fc2ad9a20bd8e868d436b828b7",
+    "assets/context/core/source/data/context_input.json": "665b4701bf14e5931d7abe1d0beb06ed99384efb"
+  },
+  "full_repository_suite_run": false,
+  "full_scene_browser_validated": false,
+  "fps_measured": false,
+  "photo_date": "2025-06-12",
+  "target_date_proven": false
+}

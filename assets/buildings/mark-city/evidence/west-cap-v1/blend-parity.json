@@ -1,0 +1,10 @@
+{
+  "blender": "4.2.3 LTS",
+  "oriented_world_triangle_material_parity": true,
+  "meshes": 28,
+  "triangles": 25312,
+  "images": 0,
+  "linked_libraries": 0,
+  "external_paths": 0,
+  "blend_sha256": "fbfc5f7ee071ef48c4f04259b62adad1618403176fbba8c022cfb83381dd8087"
+}
