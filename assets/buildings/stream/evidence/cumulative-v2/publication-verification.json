@@ -1,0 +1,37 @@
+{
+  "pass": true,
+  "checked_base_commit": "dc760eb6b8754b00d9e575bfe062f5aa398f212d",
+  "actual_main_fixture_git_blob": "981faa7b5ffab3ceffa36367533167f437841f1e",
+  "final_runtime_git_blob": "cc801164bff5b6c848e2b87f73f823c8ab716d53",
+  "exact_regeneration": {
+    "upper_python": true,
+    "lower_python": true,
+    "lower_blender_4_2_3": true
+  },
+  "python_tests": [
+    "test-panel-rhythm.py",
+    "test.py",
+    "test-cumulative.py"
+  ],
+  "vitest": {
+    "passed": 2,
+    "unrelated_filtered_out": 10,
+    "files": [
+      "tests/nearby-buildings.test.ts",
+      "tests/stream-cumulative-v2.test.ts"
+    ],
+    "filter": "Stream|stream preserves",
+    "source": "current-main nearby test and budget module; context fixture exact main Git blob 665b4701bf14e5931d7abe1d0beb06ed99384efb"
+  },
+  "editable_scene": "reopened parity pass, images packed and relative, no external libraries",
+  "native_jpeg_views": 4,
+  "not_run": [
+    "whole-scene budget",
+    "whole application build",
+    "browser runtime",
+    "day/night scene acceptance",
+    "collision",
+    "FPS"
+  ],
+  "protected_scope": "Only assets/buildings/stream and tests/stream-cumulative-v2.test.ts staged; no shared runtime/settings modifications"
+}

@@ -1,33 +1,13 @@
 {
   "id": "stream",
   "level": "B",
-  "status": "prototype; see README for evidence and estimates",
+  "status": "bounded source112 upper and lower-left white-panel stages; December static inference; pending aggregate acceptance",
   "stats": {
-    "triangles": 32532,
+    "triangles": 32538,
     "primitives": 8,
-    "bytes": 2022108
+    "bytes": 2022104
   },
   "files": {
-    "README.md": {
-      "bytes": 1401,
-      "sha256": "8586be1ce88bccc32dfc9b65fa40e13e29bd0662346ce536551fe265feca432c"
-    },
-    "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
-    },
-    "source/data/layout.json": {
-      "bytes": 603,
-      "sha256": "657f847ab67873f7a9a5617600068c2d8ac67bc0ba4616a5a965ac94432286bc"
-    },
-    "source/data/plateau.json": {
-      "bytes": 44603,
-      "sha256": "8eae0210e5d73f9bdbcb0e2eccabff99a4f77244fd6db720abfd734a7254e356"
-    },
-    "source/data/stats.json": {
-      "bytes": 14936,
-      "sha256": "33332f33a599dcbf2919d2593b8aaf79eab39210db2292a2347fe6fbb589eff3"
-    },
     "source/refs/SOURCES.md": {
       "bytes": 664,
       "sha256": "5d80dfe697502925a6c35deb32a094d237637a0274c7599edc3d73728dd26514"
@@ -40,6 +20,190 @@
       "bytes": 3238,
       "sha256": "93798759b2566c1bcf11ae53f4aa26993255d51ffae2471ebfcbbfe515975483"
     },
+    "README.md": {
+      "bytes": 4817,
+      "sha256": "2a63470009805b1b3afd0d14fa215abf7fcdda5aa9834df99a38dd9824f0aa75"
+    },
+    "evidence/cumulative-v2/comparison-main-final.jpg": {
+      "bytes": 331340,
+      "sha256": "14e184e86156348e165e5f4beff1185289a507f1859bb04c58c5ddde25c79233"
+    },
+    "evidence/cumulative-v2/lower/after-lower-field.jpg": {
+      "bytes": 106538,
+      "sha256": "dd74fe2bd3f93a0b843ccefde2b3458b7103ff372151fd34a1e629d9f979cacf"
+    },
+    "evidence/cumulative-v2/lower/after-southeast.jpg": {
+      "bytes": 154975,
+      "sha256": "4ba323b2a44c36ae3f4df2e2e36d6c734da6979bef91bdbefce2abc02a05b78e"
+    },
+    "evidence/cumulative-v2/lower/after-southwest.jpg": {
+      "bytes": 203554,
+      "sha256": "40178a9659681826f3b94362e45a682b6bcf477263c0f61e2a7ed124353a73aa"
+    },
+    "evidence/cumulative-v2/lower/after-upper-seam.jpg": {
+      "bytes": 60890,
+      "sha256": "e0fee627bb80e13e5464dbca65cd4cc95bb11cfddc6717db268f0b2b01486d81"
+    },
+    "evidence/cumulative-v2/lower/before-lower-field.jpg": {
+      "bytes": 111344,
+      "sha256": "ca4508c079528892b0ca0c21af62b976c717e3b5c373dd46cd525ae930816cc4"
+    },
+    "evidence/cumulative-v2/lower/before-southeast.jpg": {
+      "bytes": 154800,
+      "sha256": "13882db0c209c16d21cfd1388837f52340eb0235293541baab13dc0867593a3f"
+    },
+    "evidence/cumulative-v2/lower/before-southwest.jpg": {
+      "bytes": 203715,
+      "sha256": "0d23f77cd84a71a3d8b8366d3d75d03a6b41ff78143c204be4a9307a7732e58d"
+    },
+    "evidence/cumulative-v2/lower/before-upper-seam.jpg": {
+      "bytes": 67139,
+      "sha256": "665e70262c4370dd4bdbdfdd7193b57eebf7e676993e86fbba03f7b0ec6dafb4"
+    },
+    "evidence/cumulative-v2/lower/blend-verification.json": {
+      "bytes": 1140,
+      "sha256": "f92d214277f2cb908805620bd08a7bcbc2ea9029795797d9f0154269db40bd60"
+    },
+    "evidence/cumulative-v2/lower/cameras.json": {
+      "bytes": 1388,
+      "sha256": "921cd74400bee4e71e6cba883d6c1be58ecb344c07fb5954c13029d038954548"
+    },
+    "evidence/cumulative-v2/lower/tests.json": {
+      "bytes": 993,
+      "sha256": "39aab82d5a0c0d4cc48ec55a1249774cb3e92e96535db02c1d43bf6665897c43"
+    },
+    "evidence/cumulative-v2/main-vs-final.json": {
+      "bytes": 1088,
+      "sha256": "c516a61f5aaf0244a0103f66261144a3f3669ebb24b50e8167847b374189208b"
+    },
+    "evidence/cumulative-v2/publication-verification.json": {
+      "bytes": 1222,
+      "sha256": "1684faa3650a9ba79ffa8bc08a4fcbe5f5f6db9620f8a68f103a1f53e82ff9a0"
+    },
+    "evidence/cumulative-v2/upper/tests.json": {
+      "bytes": 678,
+      "sha256": "778ee97765676b43066bba960f4a2045329ac81a7322e32c0f7cc4354568342a"
+    },
+    "source/blender/build-upper.py": {
+      "bytes": 7297,
+      "sha256": "7361eedf37ef222cf6641bd08cc02d8c658c0cfaa19a7a7e18d5f03c0e6b4d97"
+    },
+    "source/blender/build.py": {
+      "bytes": 7196,
+      "sha256": "9eac31bd75320415faf1670fff83c8c2708ef6926817d67370ebac76f736835d"
+    },
+    "source/blender/make-comparison.py": {
+      "bytes": 1048,
+      "sha256": "fbd8213f8ab5a57f184687275ef4048568d2fddee8439ec964fe78b68ed111c0"
+    },
+    "source/blender/render.py": {
+      "bytes": 3745,
+      "sha256": "3cad3916da7228abb9a479221567d7ee47c5e859f52f513b65de21bbbc3d9db4"
+    },
+    "source/blender/stream.blend": {
+      "bytes": 4650104,
+      "sha256": "62d70ec5b7b6ebd4780449f34845aa26bc17e6411d8e2038c8135152a1750e1e"
+    },
+    "source/blender/test-cumulative.py": {
+      "bytes": 3383,
+      "sha256": "f2cf0ee0c29f02e568da1eba59ba48978975c4d6599790a3e24809d4a7098816"
+    },
+    "source/blender/test-panel-rhythm.py": {
+      "bytes": 3141,
+      "sha256": "0ba400952dbe4b2e543b6c98481324dd3f9e3917f5fc19ecd7ea9dee5e66ec18"
+    },
+    "source/blender/test.py": {
+      "bytes": 8085,
+      "sha256": "a8a0c8b961a40d892780fd1cd0d03e4e0c6f07a7fe920efd47efafd74a284536"
+    },
+    "source/blender/verify_blend.py": {
+      "bytes": 2758,
+      "sha256": "5ce78fc1adf0c48c5973bcbdaecc2f80dd44b58cce82c5556dd64baf582793cc"
+    },
+    "source/data/build-report.json": {
+      "bytes": 6926,
+      "sha256": "438c9a4def5f33539bebfc56360e7889ff5007745af7fea61810db312b80044f"
+    },
+    "source/data/layout.json": {
+      "bytes": 603,
+      "sha256": "657f847ab67873f7a9a5617600068c2d8ac67bc0ba4616a5a965ac94432286bc"
+    },
+    "source/data/lower-panel-baseline/accepted-build.py.txt": {
+      "bytes": 7276,
+      "sha256": "fcd05f297e40464f582938d3a67816c7f4edf9bb0e1cf18369da5d33622f446b"
+    },
+    "source/data/lower-panel-baseline/build-report.json": {
+      "bytes": 19320,
+      "sha256": "19811f8ee42e4c687f9d5ec9bcdb558b40cd082121ef61b8b2e617430d3ccab5"
+    },
+    "source/data/lower-panel-baseline/manifest.json": {
+      "bytes": 4026,
+      "sha256": "c1cbc319d6569f6e6c88afdeb8b5eba55d5cf2689ffce4e30bd78647065ef00b"
+    },
+    "source/data/lower-panel-baseline/stats.json": {
+      "bytes": 15224,
+      "sha256": "b587748e3bcbffb74f6d640a237b3cf52779c12023ba0507bd58b65e655c606c"
+    },
+    "source/data/lower-panel-baseline/stream.glb": {
+      "bytes": 2021776,
+      "sha256": "75753aec0940ab0cdb1bc82914918adf424bef0098aad95c020a1b983a06b82c"
+    },
+    "source/data/lower-panel-trace.json": {
+      "bytes": 2100,
+      "sha256": "0714d6d6c64689a8cd3d66624a133c471ec7852472fbd44e222000570bec0a4b"
+    },
+    "source/data/panel-baseline/manifest.json": {
+      "bytes": 2081,
+      "sha256": "e701dc665d22cc751fa616ca25bfbae86d7a8d7ea76b9b4d3890e1a6171835f7"
+    },
+    "source/data/panel-baseline/stats.json": {
+      "bytes": 14936,
+      "sha256": "33332f33a599dcbf2919d2593b8aaf79eab39210db2292a2347fe6fbb589eff3"
+    },
+    "source/data/panel-baseline/stream.glb": {
+      "bytes": 2022108,
+      "sha256": "16b029fbec71fa753b2c8f5bdbcead325105d9576df2bc636b637f05af130aed"
+    },
+    "source/data/panel-trace.json": {
+      "bytes": 8493,
+      "sha256": "3178ded00ec388d846156d31609a8aae056287a027b26d7acb60d6fee470e5d6"
+    },
+    "source/data/plateau.json": {
+      "bytes": 44603,
+      "sha256": "8eae0210e5d73f9bdbcb0e2eccabff99a4f77244fd6db720abfd734a7254e356"
+    },
+    "source/data/stats.json": {
+      "bytes": 18974,
+      "sha256": "dffc23d50f360e25f0e6121e385535d6c609786289a759f496abdda7ca34bb90"
+    },
+    "source/refs/DEC01-lower112-left-grid.jpg": {
+      "bytes": 87612,
+      "sha256": "9a07fee51fb979dc259439c28cf49178114fea1d9ed2b77bb3146adf4d67c446"
+    },
+    "source/refs/DEC01-lower112-left-unmarked.jpg": {
+      "bytes": 67751,
+      "sha256": "ae92b18979091839e5d92200f94275fdbb589d97d21f0893e9cbe5b32a661ba8"
+    },
+    "source/refs/DEC01-lower112-scope.jpg": {
+      "bytes": 165914,
+      "sha256": "20b28b8a39c118c0fe8d57499909e394658c6994fe4527b7797df4c44dea0d7d"
+    },
+    "source/refs/DEC01-lower112-six-rectangles.jpg": {
+      "bytes": 93155,
+      "sha256": "69d281706aeac5079debf36882132d7e88d04d0ebf81d4dc8fdf562ae5811245"
+    },
+    "source/refs/LOWER-PANEL-SOURCE.md": {
+      "bytes": 3378,
+      "sha256": "98a5fece280f784bfbd687e84b15192369261c46a70c4a59a414b1da596a445c"
+    },
+    "source/refs/SOURCE-AND-INFERENCE.md": {
+      "bytes": 5792,
+      "sha256": "934baadafefcf45dc7a6b66112949d6027903a6a5662ae2a0203168461fcc727"
+    },
+    "source/refs/reference-CC0.jpg": {
+      "bytes": 458672,
+      "sha256": "1378cf2216a967714a2ca037fadab98a1a47c725b692d5cacd64e5de99a2ee10"
+    },
     "web/emissive_day.json": {
       "bytes": 3,
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
@@ -49,8 +213,8 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/stream.glb": {
-      "bytes": 2022108,
-      "sha256": "16b029fbec71fa753b2c8f5bdbcead325105d9576df2bc636b637f05af130aed"
+      "bytes": 2022104,
+      "sha256": "e03535bbe29f29524354f76cb8f066b30072fe355abda503d2ddeb8f70f96b32"
     },
     "web/viewer.json": {
       "bytes": 195,
@@ -60,5 +224,14 @@
   "source_id": "way/521438304",
   "source_aliases": [],
   "plateau_id": "bldg_1db9c375-4ff6-4e3a-8c05-3a5c37e4580d",
-  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+  "generator": "source/blender/build.py (Python3+numpy or Blender4.2.3; hash-pinned baseline overlay surgery)",
+  "stage": "cumulative-source112-upper-and-lower",
+  "previous_stage_sha256": "75753aec0940ab0cdb1bc82914918adf424bef0098aad95c020a1b983a06b82c",
+  "runtime_sha256": "e03535bbe29f29524354f76cb8f066b30072fe355abda503d2ddeb8f70f96b32",
+  "publication_base_commit": "dc760eb6b8754b00d9e575bfe062f5aa398f212d",
+  "main_to_final_delta": {
+    "triangles": 6,
+    "bytes": -4
+  },
+  "inherited_reference_records": "Three unchanged files already on main; not current build or render dependencies."
 }
