@@ -1,0 +1,86 @@
+[
+  {
+    "state": "main",
+    "file": "main-north-east.jpg",
+    "asset_sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2",
+    "camera": {
+      "location": [
+        -74,
+        354,
+        10.1
+      ],
+      "target": [
+        -126,
+        296,
+        37
+      ],
+      "lens": 50
+    },
+    "native_materials": true,
+    "blender": "4.2.3",
+    "same_lighting": true
+  },
+  {
+    "state": "main",
+    "file": "main-whole.jpg",
+    "asset_sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2",
+    "camera": {
+      "location": [
+        80,
+        480,
+        135
+      ],
+      "target": [
+        -150,
+        282,
+        53
+      ],
+      "scale": 130
+    },
+    "native_materials": true,
+    "blender": "4.2.3",
+    "same_lighting": true
+  },
+  {
+    "state": "final",
+    "file": "final-north-east.jpg",
+    "asset_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+    "camera": {
+      "location": [
+        -74,
+        354,
+        10.1
+      ],
+      "target": [
+        -126,
+        296,
+        37
+      ],
+      "lens": 50
+    },
+    "native_materials": true,
+    "blender": "4.2.3",
+    "same_lighting": true
+  },
+  {
+    "state": "final",
+    "file": "final-whole.jpg",
+    "asset_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+    "camera": {
+      "location": [
+        80,
+        480,
+        135
+      ],
+      "target": [
+        -150,
+        282,
+        53
+      ],
+      "scale": 130
+    },
+    "native_materials": true,
+    "blender": "4.2.3",
+    "same_lighting": true
+  }
+]

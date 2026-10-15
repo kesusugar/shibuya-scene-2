@@ -1,0 +1,161 @@
+{
+  "blend_sha256": "31d6c83aff4bb59e9ff928f67317579f632d2639ee41a96483bee5233edb55f4",
+  "glb_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+  "all_geometry_mesh_names_match": true,
+  "file_reference_images": [],
+  "mesh_checks": [
+    {
+      "mesh": "parco_roof",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 180,
+      "live_triangles_glb": 180,
+      "pass": true
+    },
+    {
+      "mesh": "parco_wall",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 449,
+      "live_triangles_glb": 449,
+      "pass": true
+    },
+    {
+      "mesh": "parco_glass1",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 438,
+      "live_triangles_glb": 438,
+      "pass": true
+    },
+    {
+      "mesh": "parco_frame",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 2732,
+      "live_triangles_glb": 2732,
+      "pass": true
+    },
+    {
+      "mesh": "parco_sign_housing",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 346,
+      "live_triangles_glb": 346,
+      "pass": true
+    },
+    {
+      "mesh": "parco_glass0",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 472,
+      "live_triangles_glb": 472,
+      "pass": true
+    },
+    {
+      "mesh": "parco_glass2",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 456,
+      "live_triangles_glb": 456,
+      "pass": true
+    },
+    {
+      "mesh": "parco_spandrel",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 226,
+      "live_triangles_glb": 226,
+      "pass": true
+    },
+    {
+      "mesh": "parco_podium_cladding",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 1056,
+      "live_triangles_glb": 1056,
+      "pass": true
+    },
+    {
+      "mesh": "parco_podium_joint",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 36,
+      "live_triangles_glb": 36,
+      "pass": true
+    },
+    {
+      "mesh": "parco_podium_glass",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 0,
+      "live_triangles_glb": 0,
+      "pass": true
+    },
+    {
+      "mesh": "parco_podium_rail_glass",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 0,
+      "live_triangles_glb": 0,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_structure",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 224,
+      "live_triangles_glb": 224,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_floor",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 844,
+      "live_triangles_glb": 844,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_glass",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 492,
+      "live_triangles_glb": 492,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_frame",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 1668,
+      "live_triangles_glb": 1668,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_rail",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 384,
+      "live_triangles_glb": 384,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_retained",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 27,
+      "live_triangles_glb": 27,
+      "pass": true
+    },
+    {
+      "mesh": "prototype_terrace_retained_spandrel",
+      "bounds_max_delta_m": 0.0,
+      "surface_area_delta_m2": 0.0,
+      "live_triangles_blend": 6,
+      "live_triangles_glb": 6,
+      "pass": true
+    }
+  ],
+  "all_pass": true
+}

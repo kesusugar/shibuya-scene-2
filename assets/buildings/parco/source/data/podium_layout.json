@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "asset": "parco",
+  "units": "metres; Blender x east, y north, z=T.P.-15",
+  "kind": "bounded shallow-relief prototype, not a measured terrace reconstruction",
+  "max_outward_depth_m": 0.55,
+  "zones": [
+    {
+      "face": 171,
+      "name": "east_upper_field",
+      "a": [
+        -110.668,
+        276.864
+      ],
+      "b": [
+        -119.881,
+        294.839
+      ],
+      "z_min": 25.4,
+      "z_max": 56.097,
+      "panel_bottom": 34.7,
+      "panel_cols": 8,
+      "panel_rows": 5,
+      "support_u_fractions": [
+        0.18,
+        0.8
+      ]
+    },
+    {
+      "face": 108,
+      "name": "northeast_corner_upper",
+      "a": [
+        -118.839,
+        295.526
+      ],
+      "b": [
+        -125.516,
+        307.472
+      ],
+      "z_min": 26.2,
+      "z_max": 56.097,
+      "panel_bottom": 39.3,
+      "panel_cols": 5,
+      "panel_rows": 4,
+      "support_u_fractions": [
+        0.08
+      ]
+    },
+    {
+      "face": 152,
+      "name": "north_eastern_return",
+      "a": [
+        -125.516,
+        307.472
+      ],
+      "b": [
+        -144.222,
+        306.519
+      ],
+      "z_min": 26.2,
+      "z_max": 56.097,
+      "panel_bottom": 39.3,
+      "panel_cols": 7,
+      "panel_rows": 4,
+      "support_u_fractions": [
+        0.42,
+        0.91
+      ]
+    }
+  ],
+  "parameters": {
+    "joint_width": 0.026,
+    "panel_back_depth": 0.3,
+    "panel_front_depth": 0.48,
+    "glass_depth": 0.065,
+    "support_front_depth": 0.52,
+    "support_width": 0.58,
+    "rail_front_depth": 0.55,
+    "rail_height": 1.12,
+    "mullion_width": 0.065,
+    "glass_bay_width_approx": 2.35
+  },
+  "basis": "Shell endpoints and height from PLATEAU; divisions and material hierarchy visually supported by caption-dated October2025 NE and March2024 CC0 north photo. All panel counts, band elevations, depths, support counts and glass divisions are inferred, not surveyed.",
+  "preservation": "All original XYZ, materials, roof and footprint preserved. Source108 triangle52/272 and source152 triangles367/368/370/372/373 repaired to original ring boundaries. Only target152 normal vertices733/734 x/z signs flip. All other original indices/normals unchanged. Lower108 gets no new cladding. No ads, plantings, deep excavation."
+}

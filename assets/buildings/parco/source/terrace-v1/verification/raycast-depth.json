@@ -1,0 +1,322 @@
+{
+  "dense351ray_missing_or_over25m": [],
+  "raycast_tests": [
+    {
+      "face": 171,
+      "u_m": 1.5,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_structure",
+      "first_hit_inward_depth_m": 11.504796341706047,
+      "hit_xyz": [
+        -121.59049224853516,
+        272.9512634277344,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 1.5,
+      "z": 32.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_structure",
+      "first_hit_inward_depth_m": 11.504796341706047,
+      "hit_xyz": [
+        -121.59049224853516,
+        272.9512634277344,
+        32.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 6,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 10.688366789876213,
+      "hit_xyz": [
+        -122.91650390625,
+        277.32830810546875,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 6,
+      "z": 32.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 10.688366789876213,
+      "hit_xyz": [
+        -122.91650390625,
+        277.32830810546875,
+        32.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 10,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 9.488569964867102,
+      "hit_xyz": [
+        -123.67327117919922,
+        281.4352111816406,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 10,
+      "z": 32.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 9.488569964867102,
+      "hit_xyz": [
+        -123.67327117919922,
+        281.4352111816406,
+        32.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 13,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 8.588734207366706,
+      "hit_xyz": [
+        -124.24085235595703,
+        284.515380859375,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 13,
+      "z": 32.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 8.588734207366706,
+      "hit_xyz": [
+        -124.24085235595703,
+        284.515380859375,
+        32.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 18.5,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 15.274431811648196,
+      "hit_xyz": [
+        -132.69924926757812,
+        286.3604431152344,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 171,
+      "u_m": 18.5,
+      "z": 32.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 15.274431811648196,
+      "hit_xyz": [
+        -132.69924926757812,
+        286.3604431152344,
+        32.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 108,
+      "u_m": 3,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 5.074922624576031,
+      "hit_xyz": [
+        -124.73259735107422,
+        295.668701171875,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 108,
+      "u_m": 3,
+      "z": 35.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 5.074922624576031,
+      "hit_xyz": [
+        -124.73259735107422,
+        295.668701171875,
+        35.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 108,
+      "u_m": 7,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 4.245741881383247,
+      "hit_xyz": [
+        -125.96037292480469,
+        299.5648498535156,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 108,
+      "u_m": 7,
+      "z": 35.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 4.245741881383247,
+      "hit_xyz": [
+        -125.96037292480469,
+        299.5648498535156,
+        35.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 108,
+      "u_m": 11,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 3.4165528750082377,
+      "hit_xyz": [
+        -127.18815612792969,
+        303.4610290527344,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 108,
+      "u_m": 11,
+      "z": 35.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 3.4165528750082377,
+      "hit_xyz": [
+        -127.18815612792969,
+        303.4610290527344,
+        35.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 152,
+      "u_m": 2,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 3.43633176254301,
+      "hit_xyz": [
+        -127.33856964111328,
+        303.9383544921875,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 152,
+      "u_m": 6,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 2.2721957533146044,
+      "hit_xyz": [
+        -131.3926239013672,
+        304.8974609375,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 152,
+      "u_m": 9,
+      "z": 27.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 4.179696132494736,
+      "hit_xyz": [
+        -134.29168701171875,
+        302.83978271484375,
+        27.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 152,
+      "u_m": 13,
+      "z": 32.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 5.219708120043107,
+      "hit_xyz": [
+        -138.2335968017578,
+        301.59759521484375,
+        32.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 152,
+      "u_m": 16,
+      "z": 32.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_glass",
+      "first_hit_inward_depth_m": 5.999771031999707,
+      "hit_xyz": [
+        -141.1900177001953,
+        300.6659240722656,
+        32.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    },
+    {
+      "face": 152,
+      "u_m": 18,
+      "z": 32.5,
+      "hit": true,
+      "first_hit_object": "prototype_terrace_structure",
+      "first_hit_inward_depth_m": 6.444866468594622,
+      "hit_xyz": [
+        -143.164794921875,
+        300.11962890625,
+        32.5
+      ],
+      "outer_coarse_wall_obstructs": false
+    }
+  ],
+  "no_original_front_wall_on_sampled_openings": true,
+  "minimum_non_support_opening_depth_m": 2.2721957533146044,
+  "scope": "Perpendicular ray through actual imported prototype GLB at two heights, excluding floor/rail heights; first hits demonstrate actual depth, not hidden front planes. Structure hits are real support/core objects, not a failure.",
+  "limitations": [
+    "Aperture structure is not a fully connected navigation/collision mesh.",
+    "Eastern3Fto4F escalator opening remains unmodeled because source roof47 must stay unchanged.",
+    "Importeddegenerate source index placeholders are intentional; no frontcoverfacesrender.",
+    "Absolute floorlevelTP25.278 for1F is bounded inference\u00b1.5m, not survey."
+  ]
+}

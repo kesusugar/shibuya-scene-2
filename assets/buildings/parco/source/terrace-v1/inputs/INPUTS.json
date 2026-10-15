@@ -1,0 +1,21 @@
+{
+  "base": {
+    "file": "roof22-corrected-base.glb",
+    "sha256": "7dbb2e71338da1d3a5a6db6ec52ec38235f07ba5adbbd7b0585f6bcb15d372cd",
+    "source": "roof_batch_verification/repo/assets/buildings/parco/web/parco.glb",
+    "role": "Immutable latest corrected runtime baseline; source roof22,108,152 repairs retained."
+  },
+  "source_geometry": {
+    "file": "source-plateau.json",
+    "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1",
+    "role": "Immutable PLATEAU ring coordinates; source179 fixed footprint."
+  },
+  "shallow_component_stats": {
+    "file": "shallow-component-stats.json",
+    "role": "Exact component ownership for removing only superseded shallow terrace band."
+  },
+  "approved_geometry_reference": {
+    "sha256": "8a15ad9cf88239e6ccb58cb60c3a548ef86cae8b2cd8e0f6dfe695a0f48692ac",
+    "role": "Frozen independently reviewed geometry prototype. Not the production base; no geometry/photos copied as an unreviewed replacement."
+  }
+}

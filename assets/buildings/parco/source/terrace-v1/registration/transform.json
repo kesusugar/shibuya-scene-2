@@ -1,0 +1,155 @@
+{
+  "method": "Single isotropic similarity; world = scale * [map_x,-map_y] @ rotation + translation. Footprint stays fixed; no affine stretch.",
+  "scale_m_per_pixel": 0.057432665897648456,
+  "rotation_row_matrix": [
+    [
+      0.9537644226810649,
+      0.30055519630819216
+    ],
+    [
+      -0.3005551963081921,
+      0.9537644226810646
+    ]
+  ],
+  "rotation_degrees": 17.49095254337065,
+  "translation_world_xy_m": [
+    -213.80552623982646,
+    301.53978157950814
+  ],
+  "map_control_pixels": [
+    [
+      270.0,
+      46.0
+    ],
+    [
+      1496.0,
+      358.0
+    ],
+    [
+      1623.0,
+      980.0
+    ],
+    [
+      94.0,
+      1226.0
+    ]
+  ],
+  "source179_control_xy_m": [
+    [
+      -197.775,
+      303.791
+    ],
+    [
+      -125.516,
+      307.472
+    ],
+    [
+      -108.216,
+      276.519
+    ],
+    [
+      -187.873,
+      235.531
+    ]
+  ],
+  "corner_residuals_m": [
+    0.4600576038570642,
+    0.3249172540905253,
+    0.6850868181594749,
+    0.6075008527946576
+  ],
+  "corner_rms_m": 0.5375001059149989,
+  "structural_crosscheck": {
+    "fixed_map_scale_m_per_pixel": 0.057432665897648456,
+    "structural_m_per_pixel": 0.12557781201849,
+    "map_to_structural_scale": 0.4573472413199245,
+    "map_to_structural_rotation_degrees": 0.7683537590107059,
+    "map_to_structural_translation": [
+      254.60328039427526,
+      78.16851939675806
+    ],
+    "six_lift_residuals_m": [
+      0.3673253420407412,
+      0.45961034861733885,
+      0.3381989674429417,
+      0.06966846041179002,
+      0.33015432027387115,
+      0.302217081809305
+    ],
+    "six_lift_residual_vectors_m": [
+      [
+        -0.36279322740118,
+        0.05752374342115804
+      ],
+      [
+        -0.40284187824805573,
+        -0.22126927867584867
+      ],
+      [
+        0.103181261427853,
+        0.3220747876963191
+      ],
+      [
+        0.061592277856091344,
+        0.03255895705711706
+      ],
+      [
+        0.3212252749685194,
+        -0.07626400144826533
+      ],
+      [
+        0.2796362913967577,
+        -0.1146242080504802
+      ]
+    ],
+    "six_lift_rms_m": 0.3331012996947411,
+    "six_lift_max_m": 0.45961034861733885,
+    "escalator_holdouts": [
+      {
+        "name": "west",
+        "map_pixel": [
+          403.5,
+          635.5
+        ],
+        "structural_pixel": [
+          443.5,
+          363.0
+        ],
+        "residual_m": 1.4680288083065332,
+        "residual_vector_m": [
+          -1.038680517544632,
+          1.037425353695925
+        ]
+      },
+      {
+        "name": "east",
+        "map_pixel": [
+          1004.5,
+          712.0
+        ],
+        "structural_pixel": [
+          715.0,
+          405.0
+        ],
+        "residual_m": 0.9182554629981013,
+        "residual_vector_m": [
+          -0.678045662663913,
+          0.6192311157140867
+        ]
+      }
+    ],
+    "source_four_corner_residuals_m": [
+      0.460057603857023,
+      0.3249172540905744,
+      0.6850868181594749,
+      0.607500852794742
+    ],
+    "source_four_corner_rms_m": 0.5375001059150214,
+    "source_four_corner_max_m": 0.6850868181594749,
+    "gate": "Proceed as a bounded approximate prototype, not a uniform <=1 m registration: fixed shafts and outer-corner controls support approximately 1 m plan positioning, but west escalator holdout is 1.47 m and requires approximately 1.5 m local schematic uncertainty. Similarity only; source179 footprint remains fixed. Not survey-grade. 4F schematic perimeter and 2F structural plate are not identical.",
+    "strict_1m_all_landmarks_gate": "FAIL: west escalator holdout is 1.468 m. This does not by itself disprove the map-to-world similarity because escalator geometry can vary by floor and its schematic center is not a fixed structural shaft."
+  },
+  "section_cut": "Fig2 is along structural x/bay-number direction; exact transverse grid/offset is not marked on available plan. Broad terrace 8\u20139m is section-direction estimate, never facade-normal uniform depth.",
+  "uncertainty": "~1m core/corner positioning; ~1.5m local schematic uncertainty. Floor-dependent escalator holdout west1.468m. No architectural survey or exact TP floor schedule.",
+  "gate": "PASS for independent approximate geometry prototype only, not publication acceptance."
+}

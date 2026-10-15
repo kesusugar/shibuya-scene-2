@@ -1,0 +1,72 @@
+{
+  "candidate_sha256": "7338ad9fcebf455a82383f938c36d58d817b9a8b0e9b75ff1e3b88ad9e0d9179",
+  "levels": {
+    "oneF_inferred_z": 10.278,
+    "oneF_inferred_TP": 25.278,
+    "oneF_TP_uncertainty_m": [
+      -0.5,
+      0.5
+    ],
+    "fourF_z": 25.378,
+    "fiveF_z": 30.178,
+    "sixF_z": 34.978,
+    "sevenF_z": 39.778,
+    "east_soffit_z": 34.7,
+    "corner_north_soffit_z": 39.3,
+    "floor_thickness_m": 0.35
+  },
+  "inferred_oneF_TP_range_m": [
+    24.778,
+    25.778
+  ],
+  "clearances_m": {
+    "east4F_to_soffit": 9.322000000000003,
+    "corner4F_to_soffit": 13.921999999999997,
+    "north5F_to_soffit": 9.121999999999996,
+    "under5F_walkway": 4.5
+  },
+  "slab_plan_areas_m2": {
+    "east_floor_polygon": 266.3348154403393,
+    "corner_floor_polygon": 322.66405847051647,
+    "core_polygon": 171.5291748519885,
+    "north_fiveF_polygon": 53.663437347877334,
+    "core_west_fiveF_walkway": 48.55408357027045
+  },
+  "area_limit": "Component footprint areas; overlapping/interior core and under-walkway regions are included. Do not sum as net usable exterior area.",
+  "core_south_stair": {
+    "run_m": 10.567610525167302,
+    "rise_m": 4.8,
+    "risers": 30,
+    "riser_m": 0.16,
+    "tread_run_m": 0.3522536841722434,
+    "width_m": 2.5,
+    "pitch_degrees": 24.42840859501891,
+    "status": "Inferred geometry; not a certified as-built stair or code-compliance model."
+  },
+  "registration_uncertainty_m": {
+    "core_corner_approx": 1,
+    "local_schematic_approx": 1.5
+  },
+  "normal_ray_sample_depths_m": {
+    "east_main_shopfront": [
+      8.589,
+      10.688
+    ],
+    "east_south_return": 11.505,
+    "east_throat_sample": 15.274,
+    "corner_core": [
+      3.417,
+      5.075
+    ],
+    "north": [
+      2.272,
+      6.445
+    ]
+  },
+  "independent_dense_max_cross_throat_depths_m": {
+    "face171": 20.2536401,
+    "face108": 21.4641195,
+    "interpretation": "Oblique crossings through the wider south-of-core throat to stepped rear shopfront; not uniform terrace widths."
+  },
+  "section_8_to9m_limit": "Estimated along structural-x section direction, exact transverse cut unknown. It is not a uniform facade-normal setback."
+}

@@ -1,0 +1,26 @@
+{
+  "blender_version": "4.2.3",
+  "python_dependencies": "Blender bundled Python standard library only",
+  "inputs": [
+    {
+      "path": "source/inputs/baseline.glb",
+      "bytes": 340788,
+      "sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2"
+    },
+    {
+      "path": "source/data/plateau.json",
+      "bytes": 60919,
+      "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1"
+    },
+    {
+      "path": "source/data/podium_layout.json",
+      "bytes": 2250,
+      "sha256": "d93dc352ecfba2519f46f90f55989a5cd6297ab44f89a0e875d27589267512b3"
+    },
+    {
+      "path": "source/refs/MAR04-2024-full.jpg",
+      "bytes": 2981707,
+      "sha256": "e170ebff22d906c1c514941db60383d82b38570fda183f7c2b29a5ca10f426dc"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "parco",
+  "level": "B",
+  "status": "bounded northeast shallow-relief prototype; deep terrace unresolved; see README; roof-repair-v1 source faces 22 only; other roof defects not assessed",
+  "stats": {
+    "triangles": 8434,
+    "primitives": 12,
+    "bytes": 513460
+  },
+  "files": {
+    "README.md": {
+      "bytes": 7419,
+      "sha256": "d477ff0892156c239edb809edb3ca85e9792054daa0d53e8a1cb929f87cc4ce8"
+    },
+    "source/blender/build_podium.py": {
+      "bytes": 12183,
+      "sha256": "1838c89dd421abad9dc088bdfd229b4251ec62c660391f365f57541df1d42d70"
+    },
+    "source/blender/check_reopen.py": {
+      "bytes": 1396,
+      "sha256": "4427e3979149c70c5c549825fcc244fc3683117f5f44fd8e3ee9e6cb762dceff"
+    },
+    "source/blender/render_compare.py": {
+      "bytes": 2664,
+      "sha256": "3989ceb67add8d055d0a9359a8cf4cdcfe415d914a3d2217778adb3e6b80bbd8"
+    },
+    "source/blender/repair_podium_topology.py": {
+      "bytes": 3011,
+      "sha256": "cbafbafd92731775d3f7dd988cf72911f753b97f83b73ce9bf3cd4b48ce22eb7"
+    },
+    "source/data/keyed_faces.json": {
+      "bytes": 8183,
+      "sha256": "b8568ba92347b98d7ba0eb99f8abd00e4146a0449c027d1cd96effee76403345"
+    },
+    "source/data/plateau.json": {
+      "bytes": 60919,
+      "sha256": "031a66d351a04474ffef5346264e1871f50f6d292bdd898d20bce7ca6bb644a1"
+    },
+    "source/data/podium_layout.json": {
+      "bytes": 2250,
+      "sha256": "d93dc352ecfba2519f46f90f55989a5cd6297ab44f89a0e875d27589267512b3"
+    },
+    "source/data/reopen_check.json": {
+      "bytes": 671,
+      "sha256": "ed487ecfbedfdaf8e0ec660bd679926ac24ab59580547e3813606fd645293a1c"
+    },
+    "source/data/required_inputs.json": {
+      "bytes": 781,
+      "sha256": "eb85f80255633ac12e657faa28b222b2d9e5519d46097d06900a903bb843ec4e"
+    },
+    "source/data/stats.json": {
+      "bytes": 74367,
+      "sha256": "3b82574c0445f515daacf96f3216d84a9ee55a3f0efad96fa5634940dfedfc47"
+    },
+    "source/data/topology_repair.json": {
+      "bytes": 3006,
+      "sha256": "86b3b1f633ea0a3a6b1fd9c6eaa5a1ee958b10c87a1869f28384a492718fef8c"
+    },
+    "source/inputs/baseline.glb": {
+      "bytes": 340788,
+      "sha256": "9fa2046b02ac220b305c67241a19b607ea39d2e0a7beedd953cb0a761d3152e2"
+    },
+    "source/parco_podium.blend": {
+      "bytes": 4395652,
+      "sha256": "5a22d23afd53970a8ebfa139f0ea1cf370d50a5a4573a7ee4c34da9e9b2df843"
+    },
+    "source/refs/MAR04-2024-full.jpg": {
+      "bytes": 2981707,
+      "sha256": "e170ebff22d906c1c514941db60383d82b38570fda183f7c2b29a5ca10f426dc"
+    },
+    "source/refs/MAR04-2024-permanent-panels-crop.jpg": {
+      "bytes": 522832,
+      "sha256": "40f4bb698099934c1845d14c244ed8fb6ce690bc69b9628a9005b2e5c8422b6e"
+    },
+    "source/refs/SOURCES.json": {
+      "bytes": 3043,
+      "sha256": "7d96f57954511e3e082a7232ff636d5a9f61fffa0a4b5c873380345e53a38b94"
+    },
+    "source/roof-repair-v1/audit-face.json": {
+      "bytes": 19090,
+      "sha256": "2fb9001ca3e219e98e7ee3e9604fcf3c855121c7c68e5df19884a95a69bb1874"
+    },
+    "source/roof-repair-v1/prior-manifest.json": {
+      "bytes": 4207,
+      "sha256": "2e44d2a7592d9b91c7054876b246e2e66feaa9cc5345c3c9f122ed74eb6ec740"
+    },
+    "source/roof-repair-v1/prior.blend": {
+      "bytes": 4395652,
+      "sha256": "5a22d23afd53970a8ebfa139f0ea1cf370d50a5a4573a7ee4c34da9e9b2df843"
+    },
+    "source/roof-repair-v1/prior.glb": {
+      "bytes": 513460,
+      "sha256": "f47ab16785534c40361c5f8e8014c0348919db8a5cb686ddafb6962ca0976c56"
+    },
+    "source/roof-repair-v1/repair-config.json": {
+      "bytes": 8018,
+      "sha256": "3f2079a86a8a5366553a9a620951470ee219762997ca56cf0935a4c258a93fad"
+    },
+    "source/roof-repair-v1/repair-report.json": {
+      "bytes": 11201,
+      "sha256": "d63cf54a8836750c5b726ee125142ceac2c3ae4736ddcca7ffd2cbae283585c5"
+    },
+    "source/roof-repair-v1/repair.py": {
+      "bytes": 8234,
+      "sha256": "ea18e79a44979a749effd4c6c1ef3c5a76879f05ddd0fb10e2f5a9cc9db57447"
+    },
+    "source/roof-repair-v1/updated.blend": {
+      "bytes": 6741797,
+      "sha256": "c1bc2ddfac8e050e43a4c81efe25c86836ce2807348438b5966dc2c8e3f63ff8"
+    },
+    "source/tools/finalize_manifest.py": {
+      "bytes": 1146,
+      "sha256": "10bf5bb2a4fc106bd9af1ab5d3e62b457c4be3dc0d263fdacfb2d749211f9ca0"
+    },
+    "source/tools/make_boards.py": {
+      "bytes": 2608,
+      "sha256": "312aebca6c6ce2bff571445c5096f5dff1c0631d44aeed7d9ce665c6ff749750"
+    },
+    "source/tools/requirements-boards.txt": {
+      "bytes": 15,
+      "sha256": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/parco.glb": {
+      "bytes": 513460,
+      "sha256": "7dbb2e71338da1d3a5a6db6ec52ec38235f07ba5adbbd7b0585f6bcb15d372cd"
+    },
+    "web/viewer.json": {
+      "bytes": 193,
+      "sha256": "8a727c450e07127326a23ecb45364f42787bb86c829bc89a215ed22336ec21be"
+    }
+  },
+  "source_id": "way/451564412",
+  "source_aliases": [],
+  "plateau_id": "bldg_e199100f-cb89-4a81-8e38-0abee12cb1d4",
+  "generator": "assets/buildings/parco/source/roof-repair-v1/repair.py",
+  "ground_datum_tp": 15,
+  "scope": "source171, upper108, eastern18.73m of152; all original XYZ and non-target attributes/triangles retained",
+  "prior_generator": "source/blender/build_podium.py (Blender4.2.3), additive export + seven-triangle source108/152 repair + two target152 normal flips",
+  "current_blend": "source/roof-repair-v1/updated.blend",
+  "roof_repair": {
+    "stage": "roof-repair-v1",
+    "source_indices": [
+      22
+    ],
+    "prior_glb_sha256": "f47ab16785534c40361c5f8e8014c0348919db8a5cb686ddafb6962ca0976c56",
+    "current_glb_sha256": "7dbb2e71338da1d3a5a6db6ec52ec38235f07ba5adbbd7b0585f6bcb15d372cd"
+  }
+}
