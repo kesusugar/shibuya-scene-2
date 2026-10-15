@@ -1,0 +1,422 @@
+{
+  "asset": "scramble-square",
+  "baseline_sha256": "79c8add22afa054a59d100666ffac27d4cb8b8b32b275136c1eb242f1767746c",
+  "source_sha256": "1eb45c10f27fc00d02f5c6c534e135bdcf7ec4ce60e367200e4b06bab0ba0d65",
+  "mesh_index": 0,
+  "mesh": "scramble-square_roof",
+  "primitive": 0,
+  "index_accessor": 2,
+  "position_accessor": 0,
+  "normal_accessor": 1,
+  "triangle_changes": [
+    {
+      "triangle": 35,
+      "old": [
+        185,
+        189,
+        191
+      ],
+      "new": [
+        189,
+        191,
+        188
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16046,
+      "byte_length": 6
+    },
+    {
+      "triangle": 107,
+      "old": [
+        191,
+        180,
+        185
+      ],
+      "new": [
+        185,
+        187,
+        183
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16478,
+      "byte_length": 6
+    },
+    {
+      "triangle": 111,
+      "old": [
+        180,
+        183,
+        185
+      ],
+      "new": [
+        180,
+        188,
+        191
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16502,
+      "byte_length": 6
+    },
+    {
+      "triangle": 112,
+      "old": [
+        187,
+        188,
+        190
+      ],
+      "new": [
+        183,
+        187,
+        180
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16508,
+      "byte_length": 6
+    },
+    {
+      "triangle": 113,
+      "old": [
+        186,
+        187,
+        190
+      ],
+      "new": [
+        188,
+        180,
+        187
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16514,
+      "byte_length": 6
+    }
+  ],
+  "normal_changes": [
+    {
+      "vertex": 187,
+      "old": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "new": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "prior_triangle_owners": [
+        112,
+        113
+      ],
+      "normal_accessor_primitive_owners": [
+        [
+          0,
+          0
+        ]
+      ],
+      "glb_byte_offset": 14852,
+      "byte_length": 12
+    },
+    {
+      "vertex": 188,
+      "old": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "new": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "prior_triangle_owners": [
+        112
+      ],
+      "normal_accessor_primitive_owners": [
+        [
+          0,
+          0
+        ]
+      ],
+      "glb_byte_offset": 14864,
+      "byte_length": 12
+    }
+  ],
+  "allowed_byte_ranges": [
+    {
+      "offset": 16046,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16478,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16502,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16508,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16514,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 14852,
+      "length": 12,
+      "kind": "normal_changes"
+    },
+    {
+      "offset": 14864,
+      "length": 12,
+      "kind": "normal_changes"
+    }
+  ],
+  "stage": "roof35-repair-v1",
+  "targets": [
+    {
+      "source_index": 35,
+      "triangle_indices": [
+        35,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113
+      ],
+      "source_ring_xyz": [
+        [
+          140.073,
+          -150.241,
+          224.657
+        ],
+        [
+          144.403,
+          -160.437,
+          224.657
+        ],
+        [
+          157.01,
+          -146.819,
+          224.657
+        ],
+        [
+          147.345,
+          -142.662,
+          224.657
+        ],
+        [
+          145.09,
+          -136.946,
+          224.657
+        ],
+        [
+          139.624,
+          -136.471,
+          224.657
+        ],
+        [
+          136.891,
+          -137.81,
+          224.657
+        ],
+        [
+          136.559,
+          -137.973,
+          224.657
+        ],
+        [
+          134.669,
+          -134.443,
+          224.657
+        ],
+        [
+          132.699,
+          -135.595,
+          224.657
+        ]
+      ],
+      "exact_exported_boundary_xyz": [
+        [
+          140.072998046875,
+          -150.24099731445312,
+          224.65699768066406
+        ],
+        [
+          144.4029998779297,
+          -160.43699645996094,
+          224.65699768066406
+        ],
+        [
+          157.00999450683594,
+          -146.81900024414062,
+          224.65699768066406
+        ],
+        [
+          147.34500122070312,
+          -142.66200256347656,
+          224.65699768066406
+        ],
+        [
+          145.08999633789062,
+          -136.9459991455078,
+          224.65699768066406
+        ],
+        [
+          139.62399291992188,
+          -136.4709930419922,
+          224.65699768066406
+        ],
+        [
+          136.89100646972656,
+          -137.80999755859375,
+          224.65699768066406
+        ],
+        [
+          136.5590057373047,
+          -137.97300720214844,
+          224.65699768066406
+        ],
+        [
+          134.66900634765625,
+          -134.4429931640625,
+          224.65699768066406
+        ],
+        [
+          132.69900512695312,
+          -135.59500122070312,
+          224.65699768066406
+        ]
+      ],
+      "exported_source_area_m2": 257.8541982693132,
+      "all_original_vertex_indices": [
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191
+      ],
+      "replacement_triangles": [
+        {
+          "triangle": 35,
+          "indices": [
+            189,
+            191,
+            188
+          ],
+          "source_boundary_indices": [
+            8,
+            9,
+            7
+          ]
+        },
+        {
+          "triangle": 107,
+          "indices": [
+            185,
+            187,
+            183
+          ],
+          "source_boundary_indices": [
+            5,
+            6,
+            3
+          ]
+        },
+        {
+          "triangle": 108,
+          "indices": [
+            180,
+            181,
+            182
+          ],
+          "source_boundary_indices": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "triangle": 109,
+          "indices": [
+            182,
+            183,
+            180
+          ],
+          "source_boundary_indices": [
+            2,
+            3,
+            0
+          ]
+        },
+        {
+          "triangle": 110,
+          "indices": [
+            183,
+            184,
+            185
+          ],
+          "source_boundary_indices": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "triangle": 111,
+          "indices": [
+            180,
+            188,
+            191
+          ],
+          "source_boundary_indices": [
+            0,
+            7,
+            9
+          ]
+        },
+        {
+          "triangle": 112,
+          "indices": [
+            183,
+            187,
+            180
+          ],
+          "source_boundary_indices": [
+            3,
+            6,
+            0
+          ]
+        },
+        {
+          "triangle": 113,
+          "indices": [
+            188,
+            180,
+            187
+          ],
+          "source_boundary_indices": [
+            7,
+            0,
+            6
+          ]
+        }
+      ]
+    }
+  ]
+}

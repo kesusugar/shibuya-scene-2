@@ -1,0 +1,72 @@
+{
+  "delivered": {
+    "mesh_signatures": {
+      "scramble-square_dark": "045459f8a4e49b20593aac7348e9162f06d6b9d906de1ca7a825b6e05e531990",
+      "scramble-square_frame": "49fba9e0de3e9cb9b8f13a458c29e85eeefdd08df8d4c38f417bd28e7b4767dd",
+      "scramble-square_glass0": "e2174cac2325d9c58848c139a7e75bcfb245bdab75725a258d609a1a01f02684",
+      "scramble-square_glass1": "0785ca20457019743973589b3797c43d69f393e44dce860f5e73c0a18672f2ba",
+      "scramble-square_glass2": "15664531f55283c20024522fd68edbcf745bc5a5114875cc982091bcdfc0c5db",
+      "scramble-square_roof": "29cff7077f6649cc726424a405dccdf8870acfe8aa66d9eb15850ccaa195927c",
+      "scramble-square_screen_backing": "aa79ecd52122ce1d8643f797da2290147d6baba3dada5bf1e7e8d2cd8f47c91d",
+      "scramble-square_sign_housing": "4ca742de143d4fcc7f48deb91d8eb6b4832c133b000611c7bb4e0aa0b5a46b62",
+      "scramble-square_spandrel": "ab53afc5fc7941ce578009e3bc431bb6fd8e3aa20b716f8a0c2d1b34e8f25002",
+      "scramble-square_wall": "2a81eb66dc825b5bd3cc7b2baf4bb43e6b08015d2a60e70934c9dfe7203d7084"
+    },
+    "images": [
+      {
+        "name": "JUN15-podium-actual-crop.jpg",
+        "sha256": "058af0a66325ff8758f4978ffc9f88506d4eab2462351ec875b4e45697e0adb1"
+      },
+      {
+        "name": "OCT10-podium-actual-crop.jpg",
+        "sha256": "9d39fd1b487b03f27262b3b7aa81c976f3d04d253fb49ed87b794093707629bf"
+      },
+      {
+        "name": "SEP30-podium-actual-crop.jpg",
+        "sha256": "9d31d1ef39480f972b8972109393b7655e34817003b5467f0a04871ecde28a1d"
+      },
+      {
+        "name": "SEP30-upper-facade-actual-crop.jpg",
+        "sha256": "02a768068f24ccf7705b2f6ac9411ee273057f205526b919ef94a0351c4ccd6e"
+      }
+    ],
+    "triangles": 44392,
+    "external_libraries": 0,
+    "unpacked_images": 0
+  },
+  "regenerated": {
+    "mesh_signatures": {
+      "scramble-square_dark": "045459f8a4e49b20593aac7348e9162f06d6b9d906de1ca7a825b6e05e531990",
+      "scramble-square_frame": "49fba9e0de3e9cb9b8f13a458c29e85eeefdd08df8d4c38f417bd28e7b4767dd",
+      "scramble-square_glass0": "e2174cac2325d9c58848c139a7e75bcfb245bdab75725a258d609a1a01f02684",
+      "scramble-square_glass1": "0785ca20457019743973589b3797c43d69f393e44dce860f5e73c0a18672f2ba",
+      "scramble-square_glass2": "15664531f55283c20024522fd68edbcf745bc5a5114875cc982091bcdfc0c5db",
+      "scramble-square_roof": "29cff7077f6649cc726424a405dccdf8870acfe8aa66d9eb15850ccaa195927c",
+      "scramble-square_screen_backing": "aa79ecd52122ce1d8643f797da2290147d6baba3dada5bf1e7e8d2cd8f47c91d",
+      "scramble-square_sign_housing": "4ca742de143d4fcc7f48deb91d8eb6b4832c133b000611c7bb4e0aa0b5a46b62",
+      "scramble-square_spandrel": "ab53afc5fc7941ce578009e3bc431bb6fd8e3aa20b716f8a0c2d1b34e8f25002",
+      "scramble-square_wall": "2a81eb66dc825b5bd3cc7b2baf4bb43e6b08015d2a60e70934c9dfe7203d7084"
+    },
+    "images": [
+      {
+        "name": "JUN15-podium-actual-crop.jpg",
+        "sha256": "058af0a66325ff8758f4978ffc9f88506d4eab2462351ec875b4e45697e0adb1"
+      },
+      {
+        "name": "OCT10-podium-actual-crop.jpg",
+        "sha256": "9d39fd1b487b03f27262b3b7aa81c976f3d04d253fb49ed87b794093707629bf"
+      },
+      {
+        "name": "SEP30-podium-actual-crop.jpg",
+        "sha256": "9d31d1ef39480f972b8972109393b7655e34817003b5467f0a04871ecde28a1d"
+      },
+      {
+        "name": "SEP30-upper-facade-actual-crop.jpg",
+        "sha256": "02a768068f24ccf7705b2f6ac9411ee273057f205526b919ef94a0351c4ccd6e"
+      }
+    ],
+    "triangles": 44392,
+    "external_libraries": 0,
+    "unpacked_images": 0
+  }
+}

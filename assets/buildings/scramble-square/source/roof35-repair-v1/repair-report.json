@@ -1,0 +1,517 @@
+{
+  "asset": "scramble-square",
+  "stage": "roof35-repair-v1",
+  "blender_version": "4.2.3 LTS",
+  "prior_glb_sha256": "79c8add22afa054a59d100666ffac27d4cb8b8b32b275136c1eb242f1767746c",
+  "current_glb_sha256": "f991d04122d60dbbde417a5f87391bec69505bcaa8ed68746b3e9cf80c2f1da3",
+  "glb_bytes": 2930876,
+  "changed_byte_count": 16,
+  "changed_byte_offsets": [
+    14859,
+    14871,
+    16046,
+    16048,
+    16050,
+    16478,
+    16480,
+    16482,
+    16504,
+    16506,
+    16508,
+    16510,
+    16512,
+    16514,
+    16516,
+    16518
+  ],
+  "allowed_byte_ranges": [
+    {
+      "offset": 16046,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16478,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16502,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16508,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16514,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 14852,
+      "length": 12,
+      "kind": "normal_changes"
+    },
+    {
+      "offset": 14864,
+      "length": 12,
+      "kind": "normal_changes"
+    }
+  ],
+  "position_bytes_unchanged": true,
+  "all_other_bytes_unchanged": true,
+  "json_chunk_unchanged": true,
+  "materials_unchanged": true,
+  "source_ring_file_unchanged": true,
+  "target_proof": [
+    {
+      "source_index": 35,
+      "triangle_indices": [
+        35,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113
+      ],
+      "triangles": 8,
+      "exported_source_area_m2": 257.8541982693132,
+      "boundary_edges_preserved": true,
+      "all_target_used_normals_exact_up": true,
+      "normal_ownership": [
+        {
+          "vertex": 180,
+          "before_triangle_owners": [
+            107,
+            108,
+            109,
+            111
+          ],
+          "after_triangle_owners": [
+            108,
+            109,
+            111,
+            112,
+            113
+          ],
+          "before_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 181,
+          "before_triangle_owners": [
+            108
+          ],
+          "after_triangle_owners": [
+            108
+          ],
+          "before_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 182,
+          "before_triangle_owners": [
+            108,
+            109
+          ],
+          "after_triangle_owners": [
+            108,
+            109
+          ],
+          "before_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 183,
+          "before_triangle_owners": [
+            109,
+            110,
+            111
+          ],
+          "after_triangle_owners": [
+            107,
+            109,
+            110,
+            112
+          ],
+          "before_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 184,
+          "before_triangle_owners": [
+            110
+          ],
+          "after_triangle_owners": [
+            110
+          ],
+          "before_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 185,
+          "before_triangle_owners": [
+            35,
+            107,
+            110,
+            111
+          ],
+          "after_triangle_owners": [
+            107,
+            110
+          ],
+          "before_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 186,
+          "before_triangle_owners": [
+            113
+          ],
+          "after_triangle_owners": [],
+          "before_normal_gltf": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 187,
+          "before_triangle_owners": [
+            112,
+            113
+          ],
+          "after_triangle_owners": [
+            107,
+            112,
+            113
+          ],
+          "before_normal_gltf": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 188,
+          "before_triangle_owners": [
+            112
+          ],
+          "after_triangle_owners": [
+            35,
+            111,
+            113
+          ],
+          "before_normal_gltf": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 189,
+          "before_triangle_owners": [
+            35
+          ],
+          "after_triangle_owners": [
+            35
+          ],
+          "before_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 190,
+          "before_triangle_owners": [
+            112,
+            113
+          ],
+          "after_triangle_owners": [],
+          "before_normal_gltf": [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            -1.0,
+            0.0
+          ]
+        },
+        {
+          "vertex": 191,
+          "before_triangle_owners": [
+            35,
+            107
+          ],
+          "after_triangle_owners": [
+            35,
+            111
+          ],
+          "before_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "after_normal_gltf": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "triangle_changes": [
+    {
+      "triangle": 35,
+      "old": [
+        185,
+        189,
+        191
+      ],
+      "new": [
+        189,
+        191,
+        188
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16046,
+      "byte_length": 6
+    },
+    {
+      "triangle": 107,
+      "old": [
+        191,
+        180,
+        185
+      ],
+      "new": [
+        185,
+        187,
+        183
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16478,
+      "byte_length": 6
+    },
+    {
+      "triangle": 111,
+      "old": [
+        180,
+        183,
+        185
+      ],
+      "new": [
+        180,
+        188,
+        191
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16502,
+      "byte_length": 6
+    },
+    {
+      "triangle": 112,
+      "old": [
+        187,
+        188,
+        190
+      ],
+      "new": [
+        183,
+        187,
+        180
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16508,
+      "byte_length": 6
+    },
+    {
+      "triangle": 113,
+      "old": [
+        186,
+        187,
+        190
+      ],
+      "new": [
+        188,
+        180,
+        187
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16514,
+      "byte_length": 6
+    }
+  ],
+  "normal_changes": [
+    {
+      "vertex": 187,
+      "old": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "new": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "prior_triangle_owners": [
+        112,
+        113
+      ],
+      "normal_accessor_primitive_owners": [
+        [
+          0,
+          0
+        ]
+      ],
+      "glb_byte_offset": 14852,
+      "byte_length": 12
+    },
+    {
+      "vertex": 188,
+      "old": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "new": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "prior_triangle_owners": [
+        112
+      ],
+      "normal_accessor_primitive_owners": [
+        [
+          0,
+          0
+        ]
+      ],
+      "glb_byte_offset": 14864,
+      "byte_length": 12
+    }
+  ],
+  "blend_other_object_signatures": {
+    "scramble-square_dark": "b0efc498959017dcc19cb45e61accb2c9eee811e0bddcb8d8f28f89cd08b280a",
+    "scramble-square_frame": "47c58c0611988acea08ff28fb2c2cfea39a62616bb603d067ba46f2b96a9d831",
+    "scramble-square_glass0": "783f4bab6589f6fdd926c437d3e9c271ec5e82b8bb6802f56241ef81358e4893",
+    "scramble-square_glass1": "14ffcea4a321e077a38b3d8f122ea0b87e4f3847a890e35ac71e7414e5a7ec6e",
+    "scramble-square_glass2": "e38348041c697db82e8d9781167a1ff0e4d10950759ad86d51713ffc99a714d8",
+    "scramble-square_screen_backing": "d1b4c0dedaa3b81eac27b7ec67d9616e267d546203d12fecf621f0884b0fb40b",
+    "scramble-square_sign_housing": "6794ee4732dd02e5669a86d6819a92786d3f45f67d3085d2288dbabfe15db81f",
+    "scramble-square_spandrel": "a64b328a00e22180dea8cbf201a29c2296c80312976fe33231fc2fdc2fc8d325",
+    "scramble-square_wall": "6b2959e221a851629a6bf85f0f3fc2849a6bc247d8270713e447be2790e1ea94"
+  },
+  "retained_prior_images": {
+    "JUN15-podium-actual-crop.jpg": true,
+    "OCT10-podium-actual-crop.jpg": true,
+    "SEP30-podium-actual-crop.jpg": true,
+    "SEP30-upper-facade-actual-crop.jpg": true
+  },
+  "packed_references": [
+    {
+      "name": "JUN15-podium-actual-crop.jpg",
+      "file": "source/refs/JUN15-podium-actual-crop.jpg",
+      "sha256": "058af0a66325ff8758f4978ffc9f88506d4eab2462351ec875b4e45697e0adb1",
+      "packed": true
+    },
+    {
+      "name": "OCT10-podium-actual-crop.jpg",
+      "file": "source/refs/OCT10-podium-actual-crop.jpg",
+      "sha256": "9d39fd1b487b03f27262b3b7aa81c976f3d04d253fb49ed87b794093707629bf",
+      "packed": true
+    },
+    {
+      "name": "SEP30-podium-actual-crop.jpg",
+      "file": "source/refs/SEP30-podium-actual-crop.jpg",
+      "sha256": "9d31d1ef39480f972b8972109393b7655e34817003b5467f0a04871ecde28a1d",
+      "packed": true
+    },
+    {
+      "name": "SEP30-upper-facade-actual-crop.jpg",
+      "file": "source/refs/SEP30-upper-facade-actual-crop.jpg",
+      "sha256": "02a768068f24ccf7705b2f6ac9411ee273057f205526b919ef94a0351c4ccd6e",
+      "packed": true
+    }
+  ],
+  "scope_note": "Only enumerated source faces are repaired. No other roof, real notch, datum, shell coordinate or fa\u00e7ade changes."
+}

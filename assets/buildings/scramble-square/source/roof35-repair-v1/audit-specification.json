@@ -1,0 +1,1217 @@
+{
+  "status": "READ-ONLY SPECIFICATION. No repaired model exists or was rendered by this audit.",
+  "asset": "scramble-square",
+  "baseline_sha256": "79c8add22afa054a59d100666ffac27d4cb8b8b32b275136c1eb242f1767746c",
+  "source_sha256": "1eb45c10f27fc00d02f5c6c534e135bdcf7ec4ce60e367200e4b06bab0ba0d65",
+  "mesh_index": 0,
+  "mesh": "scramble-square_roof",
+  "primitive": 0,
+  "index_accessor": 2,
+  "position_accessor": 0,
+  "normal_accessor": 1,
+  "source_face_index": 35,
+  "current_face_evidence": {
+    "source_index": 35,
+    "kind": "RoofSurface",
+    "source_ring_xyz": [
+      [
+        140.073,
+        -150.241,
+        224.657
+      ],
+      [
+        144.403,
+        -160.437,
+        224.657
+      ],
+      [
+        157.01,
+        -146.819,
+        224.657
+      ],
+      [
+        147.345,
+        -142.662,
+        224.657
+      ],
+      [
+        145.09,
+        -136.946,
+        224.657
+      ],
+      [
+        139.624,
+        -136.471,
+        224.657
+      ],
+      [
+        136.891,
+        -137.81,
+        224.657
+      ],
+      [
+        136.559,
+        -137.973,
+        224.657
+      ],
+      [
+        134.669,
+        -134.443,
+        224.657
+      ],
+      [
+        132.699,
+        -135.595,
+        224.657
+      ]
+    ],
+    "source_normal_newell": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "source_planarity_max_m": 0.0,
+    "source_valid": true,
+    "source_area_m2": 257.8542699999999,
+    "unique_triangle_count": 8,
+    "unique_triangle_ids": [
+      [
+        0,
+        35
+      ],
+      [
+        0,
+        107
+      ],
+      [
+        0,
+        108
+      ],
+      [
+        0,
+        109
+      ],
+      [
+        0,
+        110
+      ],
+      [
+        0,
+        111
+      ],
+      [
+        0,
+        112
+      ],
+      [
+        0,
+        113
+      ]
+    ],
+    "ambiguous_triangle_ids": [],
+    "sum_triangle_area_m2": 271.51149922958575,
+    "union_triangle_area_m2": 264.6828487494495,
+    "overlap_m2": 6.828650480136275,
+    "outside_exact_source_m2": 6.8287051284758435,
+    "uncovered_exact_source_m2": 0.00012637902623590825,
+    "outside_source_at_0_3mm_m2": 6.826457897711222,
+    "uncovered_source_at_0_3mm_m2": 0.0,
+    "downward_triangle_ids": [
+      112,
+      113
+    ],
+    "normal_mismatch_triangles": [],
+    "triangles": [
+      {
+        "mesh_index": 0,
+        "mesh": "scramble-square_roof",
+        "node": "scramble-square_roof",
+        "primitive": 0,
+        "triangle_index": 35,
+        "vertex_indices": [
+          185,
+          189,
+          191
+        ],
+        "material": "scramble-square_roof",
+        "xyz": [
+          [
+            139.62399291992188,
+            -136.4709930419922,
+            224.65699768066406
+          ],
+          [
+            134.66900634765625,
+            -134.4429931640625,
+            224.65699768066406
+          ],
+          [
+            132.69900512695312,
+            -135.59500122070312,
+            224.65699768066406
+          ]
+        ],
+        "area3d_m2": 4.851673343451694,
+        "geometric_normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_owners": [
+          35
+        ],
+        "stored_normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "normal_lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_dots": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "mesh_index": 0,
+        "mesh": "scramble-square_roof",
+        "node": "scramble-square_roof",
+        "primitive": 0,
+        "triangle_index": 107,
+        "vertex_indices": [
+          191,
+          180,
+          185
+        ],
+        "material": "scramble-square_roof",
+        "xyz": [
+          [
+            132.69900512695312,
+            -135.59500122070312,
+            224.65699768066406
+          ],
+          [
+            140.072998046875,
+            -150.24099731445312,
+            224.65699768066406
+          ],
+          [
+            139.62399291992188,
+            -136.4709930419922,
+            224.65699768066406
+          ]
+        ],
+        "area3d_m2": 47.481893338495865,
+        "geometric_normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_owners": [
+          35
+        ],
+        "stored_normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "normal_lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_dots": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "mesh_index": 0,
+        "mesh": "scramble-square_roof",
+        "node": "scramble-square_roof",
+        "primitive": 0,
+        "triangle_index": 108,
+        "vertex_indices": [
+          180,
+          181,
+          182
+        ],
+        "material": "scramble-square_roof",
+        "xyz": [
+          [
+            140.072998046875,
+            -150.24099731445312,
+            224.65699768066406
+          ],
+          [
+            144.4029998779297,
+            -160.43699645996094,
+            224.65699768066406
+          ],
+          [
+            157.00999450683594,
+            -146.81900024414062,
+            224.65699768066406
+          ]
+        ],
+        "area3d_m2": 93.75342750677373,
+        "geometric_normal": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "source_owners": [
+          35
+        ],
+        "stored_normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "normal_lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_dots": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "mesh_index": 0,
+        "mesh": "scramble-square_roof",
+        "node": "scramble-square_roof",
+        "primitive": 0,
+        "triangle_index": 109,
+        "vertex_indices": [
+          182,
+          183,
+          180
+        ],
+        "material": "scramble-square_roof",
+        "xyz": [
+          [
+            157.00999450683594,
+            -146.81900024414062,
+            224.65699768066406
+          ],
+          [
+            147.34500122070312,
+            -142.66200256347656,
+            224.65699768066406
+          ],
+          [
+            140.072998046875,
+            -150.24099731445312,
+            224.65699768066406
+          ]
+        ],
+        "area3d_m2": 51.74031685560476,
+        "geometric_normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_owners": [
+          35
+        ],
+        "stored_normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "normal_lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_dots": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "mesh_index": 0,
+        "mesh": "scramble-square_roof",
+        "node": "scramble-square_roof",
+        "primitive": 0,
+        "triangle_index": 110,
+        "vertex_indices": [
+          183,
+          184,
+          185
+        ],
+        "material": "scramble-square_roof",
+        "xyz": [
+          [
+            147.34500122070312,
+            -142.66200256347656,
+            224.65699768066406
+          ],
+          [
+            145.08999633789062,
+            -136.9459991455078,
+            224.65699768066406
+          ],
+          [
+            139.62399291992188,
+            -136.4709930419922,
+            224.65699768066406
+          ]
+        ],
+        "area3d_m2": 15.086276568472385,
+        "geometric_normal": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_owners": [
+          35
+        ],
+        "stored_normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "normal_lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_dots": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "mesh_index": 0,
+        "mesh": "scramble-square_roof",
+        "node": "scramble-square_roof",
+        "primitive": 0,
+        "triangle_index": 111,
+        "vertex_indices": [
+          180,
+          183,
+          185
+        ],
+        "material": "scramble-square_roof",
+        "xyz": [
+          [
+            140.072998046875,
+            -150.24099731445312,
+            224.65699768066406
+          ],
+          [
+            147.34500122070312,
+            -142.66200256347656,
+            224.65699768066406
+          ],
+          [
+            139.62399291992188,
+            -136.4709930419922,
+            224.65699768066406
+          ]
+        ],
+        "area3d_m2": 51.76926113665104,
+        "geometric_normal": [
+          0.0,
+          -0.0,
+          1.0
+        ],
+        "source_owners": [
+          35
+        ],
+        "stored_normals": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "normal_lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_dots": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "mesh_index": 0,
+        "mesh": "scramble-square_roof",
+        "node": "scramble-square_roof",
+        "primitive": 0,
+        "triangle_index": 112,
+        "vertex_indices": [
+          187,
+          188,
+          190
+        ],
+        "material": "scramble-square_roof",
+        "xyz": [
+          [
+            136.89100646972656,
+            -137.80999755859375,
+            224.65699768066406
+          ],
+          [
+            136.5590057373047,
+            -137.97300720214844,
+            224.65699768066406
+          ],
+          [
+            134.66900634765625,
+            -134.4429931640625,
+            224.65699768066406
+          ]
+        ],
+        "area3d_m2": 0.7400276864646003,
+        "geometric_normal": [
+          -0.0,
+          0.0,
+          -1.0
+        ],
+        "source_owners": [
+          35
+        ],
+        "stored_normals": [
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "normal_lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_dots": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "mesh_index": 0,
+        "mesh": "scramble-square_roof",
+        "node": "scramble-square_roof",
+        "primitive": 0,
+        "triangle_index": 113,
+        "vertex_indices": [
+          186,
+          187,
+          190
+        ],
+        "material": "scramble-square_roof",
+        "xyz": [
+          [
+            139.62399291992188,
+            -136.4709930419922,
+            224.65699768066406
+          ],
+          [
+            136.89100646972656,
+            -137.80999755859375,
+            224.65699768066406
+          ],
+          [
+            134.66900634765625,
+            -134.4429931640625,
+            224.65699768066406
+          ]
+        ],
+        "area3d_m2": 6.088622793671675,
+        "geometric_normal": [
+          -0.0,
+          0.0,
+          -1.0
+        ],
+        "source_owners": [
+          35
+        ],
+        "stored_normals": [
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ]
+        ],
+        "normal_lengths": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "normal_dots": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "source_to_exported_max_m": 1.0194150195012756e-05,
+    "exported_ring_xyz": [
+      [
+        140.072998046875,
+        -150.24099731445312,
+        224.65699768066406
+      ],
+      [
+        144.4029998779297,
+        -160.43699645996094,
+        224.65699768066406
+      ],
+      [
+        157.00999450683594,
+        -146.81900024414062,
+        224.65699768066406
+      ],
+      [
+        147.34500122070312,
+        -142.66200256347656,
+        224.65699768066406
+      ],
+      [
+        145.08999633789062,
+        -136.9459991455078,
+        224.65699768066406
+      ],
+      [
+        139.62399291992188,
+        -136.4709930419922,
+        224.65699768066406
+      ],
+      [
+        136.89100646972656,
+        -137.80999755859375,
+        224.65699768066406
+      ],
+      [
+        136.5590057373047,
+        -137.97300720214844,
+        224.65699768066406
+      ],
+      [
+        134.66900634765625,
+        -134.4429931640625,
+        224.65699768066406
+      ],
+      [
+        132.69900512695312,
+        -135.59500122070312,
+        224.65699768066406
+      ]
+    ],
+    "exported_source_area_m2": 257.8541982693132,
+    "outside_exact_exported_m2": 6.828650480136277,
+    "uncovered_exact_exported_m2": 0.0
+  },
+  "boundary_triangulation_checks": {
+    "source_planarity_max_m": 0.0,
+    "exported_planarity_max_m": 0.0,
+    "source_valid": true,
+    "exact_boundary_vertices_preserved": true,
+    "exact_boundary_edges_preserved": true,
+    "edge_counts_one_or_two": true,
+    "all_upward": true,
+    "source_area_m2": 257.8541982693132,
+    "proposed_sum_area_m2": 257.8541982693132,
+    "proposed_union_area_m2": 257.8541982693132,
+    "proposed_outside_m2": 0.0,
+    "proposed_uncovered_m2": 0.0,
+    "proposed_overlap_m2": 0.0,
+    "proposed_triangle_count": 8,
+    "current_triangle_count": 8
+  },
+  "source_boundary_triangles": [
+    {
+      "boundary_indices": [
+        8,
+        9,
+        7
+      ],
+      "xyz": [
+        [
+          134.66900634765625,
+          -134.4429931640625,
+          224.65699768066406
+        ],
+        [
+          132.69900512695312,
+          -135.59500122070312,
+          224.65699768066406
+        ],
+        [
+          136.5590057373047,
+          -137.97300720214844,
+          224.65699768066406
+        ]
+      ]
+    },
+    {
+      "boundary_indices": [
+        5,
+        6,
+        3
+      ],
+      "xyz": [
+        [
+          139.62399291992188,
+          -136.4709930419922,
+          224.65699768066406
+        ],
+        [
+          136.89100646972656,
+          -137.80999755859375,
+          224.65699768066406
+        ],
+        [
+          147.34500122070312,
+          -142.66200256347656,
+          224.65699768066406
+        ]
+      ]
+    },
+    {
+      "boundary_indices": [
+        3,
+        4,
+        5
+      ],
+      "xyz": [
+        [
+          147.34500122070312,
+          -142.66200256347656,
+          224.65699768066406
+        ],
+        [
+          145.08999633789062,
+          -136.9459991455078,
+          224.65699768066406
+        ],
+        [
+          139.62399291992188,
+          -136.4709930419922,
+          224.65699768066406
+        ]
+      ]
+    },
+    {
+      "boundary_indices": [
+        1,
+        2,
+        0
+      ],
+      "xyz": [
+        [
+          144.4029998779297,
+          -160.43699645996094,
+          224.65699768066406
+        ],
+        [
+          157.00999450683594,
+          -146.81900024414062,
+          224.65699768066406
+        ],
+        [
+          140.072998046875,
+          -150.24099731445312,
+          224.65699768066406
+        ]
+      ]
+    },
+    {
+      "boundary_indices": [
+        0,
+        7,
+        9
+      ],
+      "xyz": [
+        [
+          140.072998046875,
+          -150.24099731445312,
+          224.65699768066406
+        ],
+        [
+          136.5590057373047,
+          -137.97300720214844,
+          224.65699768066406
+        ],
+        [
+          132.69900512695312,
+          -135.59500122070312,
+          224.65699768066406
+        ]
+      ]
+    },
+    {
+      "boundary_indices": [
+        3,
+        6,
+        0
+      ],
+      "xyz": [
+        [
+          147.34500122070312,
+          -142.66200256347656,
+          224.65699768066406
+        ],
+        [
+          136.89100646972656,
+          -137.80999755859375,
+          224.65699768066406
+        ],
+        [
+          140.072998046875,
+          -150.24099731445312,
+          224.65699768066406
+        ]
+      ]
+    },
+    {
+      "boundary_indices": [
+        7,
+        0,
+        6
+      ],
+      "xyz": [
+        [
+          136.5590057373047,
+          -137.97300720214844,
+          224.65699768066406
+        ],
+        [
+          140.072998046875,
+          -150.24099731445312,
+          224.65699768066406
+        ],
+        [
+          136.89100646972656,
+          -137.80999755859375,
+          224.65699768066406
+        ]
+      ]
+    },
+    {
+      "boundary_indices": [
+        3,
+        0,
+        2
+      ],
+      "xyz": [
+        [
+          147.34500122070312,
+          -142.66200256347656,
+          224.65699768066406
+        ],
+        [
+          140.072998046875,
+          -150.24099731445312,
+          224.65699768066406
+        ],
+        [
+          157.00999450683594,
+          -146.81900024414062,
+          224.65699768066406
+        ]
+      ]
+    }
+  ],
+  "target_triangle_indices": [
+    35,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113
+  ],
+  "replacement_triangles": [
+    {
+      "triangle": 35,
+      "indices": [
+        189,
+        191,
+        188
+      ],
+      "source_boundary_indices": [
+        8,
+        9,
+        7
+      ]
+    },
+    {
+      "triangle": 107,
+      "indices": [
+        185,
+        187,
+        183
+      ],
+      "source_boundary_indices": [
+        5,
+        6,
+        3
+      ]
+    },
+    {
+      "triangle": 108,
+      "indices": [
+        180,
+        181,
+        182
+      ],
+      "source_boundary_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "triangle": 109,
+      "indices": [
+        182,
+        183,
+        180
+      ],
+      "source_boundary_indices": [
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "triangle": 110,
+      "indices": [
+        183,
+        184,
+        185
+      ],
+      "source_boundary_indices": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "triangle": 111,
+      "indices": [
+        180,
+        188,
+        191
+      ],
+      "source_boundary_indices": [
+        0,
+        7,
+        9
+      ]
+    },
+    {
+      "triangle": 112,
+      "indices": [
+        183,
+        187,
+        180
+      ],
+      "source_boundary_indices": [
+        3,
+        6,
+        0
+      ]
+    },
+    {
+      "triangle": 113,
+      "indices": [
+        188,
+        180,
+        187
+      ],
+      "source_boundary_indices": [
+        7,
+        0,
+        6
+      ]
+    }
+  ],
+  "triangle_changes": [
+    {
+      "triangle": 35,
+      "old": [
+        185,
+        189,
+        191
+      ],
+      "new": [
+        189,
+        191,
+        188
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16046,
+      "byte_length": 6
+    },
+    {
+      "triangle": 107,
+      "old": [
+        191,
+        180,
+        185
+      ],
+      "new": [
+        185,
+        187,
+        183
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16478,
+      "byte_length": 6
+    },
+    {
+      "triangle": 111,
+      "old": [
+        180,
+        183,
+        185
+      ],
+      "new": [
+        180,
+        188,
+        191
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16502,
+      "byte_length": 6
+    },
+    {
+      "triangle": 112,
+      "old": [
+        187,
+        188,
+        190
+      ],
+      "new": [
+        183,
+        187,
+        180
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16508,
+      "byte_length": 6
+    },
+    {
+      "triangle": 113,
+      "old": [
+        186,
+        187,
+        190
+      ],
+      "new": [
+        188,
+        180,
+        187
+      ],
+      "source_index": 35,
+      "glb_byte_offset": 16514,
+      "byte_length": 6
+    }
+  ],
+  "normal_changes": [
+    {
+      "vertex": 187,
+      "old": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "new": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "prior_triangle_owners": [
+        112,
+        113
+      ],
+      "normal_accessor_primitive_owners": [
+        [
+          0,
+          0
+        ]
+      ],
+      "glb_byte_offset": 14852,
+      "byte_length": 12
+    },
+    {
+      "vertex": 188,
+      "old": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "new": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "prior_triangle_owners": [
+        112
+      ],
+      "normal_accessor_primitive_owners": [
+        [
+          0,
+          0
+        ]
+      ],
+      "glb_byte_offset": 14864,
+      "byte_length": 12
+    }
+  ],
+  "allowed_byte_ranges": [
+    {
+      "offset": 16046,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16478,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16502,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16508,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 16514,
+      "length": 6,
+      "kind": "triangle_changes"
+    },
+    {
+      "offset": 14852,
+      "length": 12,
+      "kind": "normal_changes"
+    },
+    {
+      "offset": 14864,
+      "length": 12,
+      "kind": "normal_changes"
+    }
+  ],
+  "protected_streams": [
+    "All POSITION bytes, including unused duplicate vertex slots",
+    "All JSON chunk bytes, GLB size and accessor/node declarations",
+    "All materials, textures, UVs, colors, roughness, metallic and lighting",
+    "Every non-target triangle index and normal",
+    "Earlier accepted roof faces 28, 49 and 77, other roof faces and complete facade",
+    "All source ring coordinates and edges, genuine recesses and notches",
+    "Horizontal placement, datum, object transforms and all other buildings"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "base_commit": "e6430b1a6a296c35fec6b393b3245843be2f4635",
+  "base_tree": "da50d6f7dbd30bcdc5b6bc2602771d6247cbb23f",
+  "main_git_blob": "d834645cdb7eb500133a700ac7cd7ac56d684b77",
+  "candidate_git_blob": "ff02d1bf8234c0bde5af1a82b5729a3d9bbaf77f",
+  "main_sha256": "b2e0fe242decdc792bde04be9bf49c428183c8bda3f64892c35d3d7fe36d9f54",
+  "candidate_sha256": "f991d04122d60dbbde417a5f87391bec69505bcaa8ed68746b3e9cf80c2f1da3",
+  "main_bytes": 2930780,
+  "candidate_bytes": 2930876,
+  "triangles": 44392,
+  "primitives": 10,
+  "budget": {
+    "triangles": 120000,
+    "primitives": 40,
+    "bytes": 3000000
+  },
+  "changed_source_faces": [
+    77,
+    28,
+    49,
+    35
+  ],
+  "unchanged": "All off-target triangle positions/material assignments; existing north facade features; source rings; 36 ground samples; runtime bindings. Existing facade is not a new building.",
+  "reproduction": "Blender 4.2.3 exact candidate GLB; delivered and regenerated mesh/polygon/normal/material/transform and packed-image signatures equal. See reproduction.json.",
+  "main_reconstruction": "Unmodified exact Git main generator c9dc33f08f3026ee47845dade2d2eb30495c6bf6 and main fixed layout/source/pavement inputs; reconstructed blob matches independently fetched current-main tree.",
+  "tests": "6 focused asset fidelity tests pass after scoped source-face exception with full off-target equality and original feature/budget/ground assertions retained. No full-city/build/browser/FPS assertion.",
+  "source_archive": "terrace_roof35_delivery/shibuya-scramble-square-source35-update.zip",
+  "source_archive_sha256": "c0296b76691a4de7a1bbcf11e90b40cdc7b1b82950368517b050a61a81d09675",
+  "render": "Same supplied front/side orthographic cameras; Workbench diagnostic light, actual verified main vs candidate GLBs. Not browser or photo-calibrated comparison. historical-roof35-detail.jpg compares only immediate preceding roof28/49 stage, NOT current main.",
+  "main_generator_git_blob": "c9dc33f08f3026ee47845dade2d2eb30495c6bf6",
+  "main_generator_note": "Original fetched main already implements recorded-ground sampling; no new adaptation. Restored a terminal blank line dropped during staging so full source bytes now exactly match main Git blob."
+}

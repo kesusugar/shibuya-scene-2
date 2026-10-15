@@ -1,0 +1,7 @@
+Blender 4.2.3 exact GLB regeneration: PASS
+Delivered/regenerated editable geometry, normals and packed-reference parity: PASS
+Vitest 5.0.3: tests/scramble-square-fidelity.test.ts: 6 tests PASS
+Source faces 77,28,49,35: n-2 triangles, complete boundary, manifold interior edges, polygon area PASS
+Every off-target triangle remains identical to exact current main: PASS
+Original 36 ground samples, architecture, 44,392 triangles/10 primitives/2,930,876 bytes B budget: PASS
+Whole repository build, browser, FPS: NOT RUN in this bounded asset harness
