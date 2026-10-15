@@ -1,0 +1,488 @@
+[
+  {
+    "id": "7d329ee3-acbb-4099-bd69-b7ad7b89a619",
+    "assetBaseId": "4fef73c7-443c-4114-b2a2-931374e4bdcb",
+    "displayName": "Commercial Air Conditioning Unit",
+    "description": "a large commercial-grade air conditioning unit that is capable of cooling a mid-sized building",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": {
+      "id": 1525062,
+      "fullName": "ReWork3D "
+    },
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/7d329ee3acbb4099bd69b7ad7b89a619/files/thumbnail_b0533135-4570-4c01-b0c5-cbfa7caeb499.png.256x256_q85_crop-%2C.png",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/7d329ee3acbb4099bd69b7ad7b89a619/files/thumbnail_b0533135-4570-4c01-b0c5-cbfa7caeb499.png.512x512_q85_crop-%2C.png",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "faceCount": 4994,
+      "textureResolutionMax": 4096,
+      "productionLevel": "finished",
+      "procedural": false,
+      "modelStyle": "realistic",
+      "condition": "used",
+      "shaders": [
+        "[principled]"
+      ],
+      "uv": true,
+      "textureResolutionMin": 533,
+      "engines": [
+        "[cycles]"
+      ],
+      "modifiers": [
+        "[bevel weighted normal]"
+      ],
+      "materials": [
+        "[steel dark steel black white plastic screw cobweb grate metallic body - white condensor coil Roughed up Concrete pipes]"
+      ],
+      "rig": false,
+      "simulation": false,
+      "dimensionX": 4.0734,
+      "dimensionY": 2.3577,
+      "dimensionZ": 1.6668,
+      "boundBoxMinX": -2.0346,
+      "boundBoxMinY": -0.9957,
+      "boundBoxMinZ": 0.0021,
+      "boundBoxMaxX": 2.0388,
+      "boundBoxMaxY": 1.362,
+      "boundBoxMaxZ": 1.6689,
+      "faceCountRender": 4994,
+      "meshPolyType": "quad_dominant",
+      "manifold": false,
+      "objectCount": 7,
+      "nodeCount": 95,
+      "textureCount": 8,
+      "megapixels": 61,
+      "gltfGeneratedDate": "2025-07-30",
+      "gltfGodotGeneratedDate": "2025-07-30"
+    },
+    "url": "https://www.blenderkit.com/asset-gallery-detail/4fef73c7-443c-4114-b2a2-931374e4bdcb/",
+    "survey_id": "BK01",
+    "assessment_status": "conditional_photo_date",
+    "preview_visually_reviewed": true,
+    "model_downloaded_or_imported": false,
+    "gallery_url": "https://www.blenderkit.com/asset-gallery-detail/4fef73c7-443c-4114-b2a2-931374e4bdcb/"
+  },
+  {
+    "id": "bdc22d09-d9cd-4b59-bdd0-43573499c1cb",
+    "assetBaseId": "e2d95d66-39bb-4173-8dd1-193f2ddfdf81",
+    "displayName": "Exterior Aircon Unit",
+    "description": "Free 4K exterior aircon unit model with clean and heavily weathered variants, detailed grille and fan, mounting brackets and realistic rust and chipped paint.\n\nby Monsta3D",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": {
+      "id": 118455,
+      "fullName": "Poly Haven "
+    },
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/bdc22d09d9cd4b59bdd043573499c1cb/files/thumbnail_e4c0fe66-5a5e-42bf-9665-dc2898e5284f.png.256x256_q85_crop-%2C.png",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/bdc22d09d9cd4b59bdd043573499c1cb/files/thumbnail_e4c0fe66-5a5e-42bf-9665-dc2898e5284f.png.512x512_q85_crop-%2C.png",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "textureResolutionMax": 4096,
+      "productionLevel": "finished",
+      "modelStyle": "realistic",
+      "condition": "used",
+      "designer": "Monsta3D",
+      "designYear": 2023,
+      "purePbr": true,
+      "materials": [
+        "metal"
+      ],
+      "workHours": 80.0,
+      "dimensionX": 1.8,
+      "dimensionY": 0.9279,
+      "dimensionZ": 0.3742,
+      "boundBoxMinX": -0.8927,
+      "boundBoxMinY": -0.3201,
+      "boundBoxMinZ": -0.0103,
+      "boundBoxMaxX": 0.9073,
+      "boundBoxMaxY": 0.6078,
+      "boundBoxMaxZ": 0.3639,
+      "faceCountRender": 10906,
+      "objectCount": 3,
+      "textureCount": 16
+    },
+    "url": "https://www.blenderkit.com/asset-gallery-detail/e2d95d66-39bb-4173-8dd1-193f2ddfdf81/",
+    "survey_id": "BK02",
+    "assessment_status": "conditional_location",
+    "preview_visually_reviewed": true,
+    "model_downloaded_or_imported": false,
+    "gallery_url": "https://www.blenderkit.com/asset-gallery-detail/e2d95d66-39bb-4173-8dd1-193f2ddfdf81/"
+  },
+  {
+    "id": "03e5dbb4-1bcf-4322-a5a9-9190f653a33e",
+    "assetBaseId": "9c34b364-0584-42ed-af5b-43f5e34e1aa1",
+    "displayName": "Air Duct Vent",
+    "description": "a vent for air ducts",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": {
+      "id": 1525062,
+      "fullName": "ReWork3D "
+    },
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/03e5dbb41bcf4322a5a99190f653a33e/files/thumbnail_b202e453-598f-4388-b978-e5dd2da9744b.png.256x256_q85_crop-%2C.png",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/03e5dbb41bcf4322a5a99190f653a33e/files/thumbnail_b202e453-598f-4388-b978-e5dd2da9744b.png.512x512_q85_crop-%2C.png",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "faceCount": 947,
+      "productionLevel": "finished",
+      "procedural": true,
+      "modelStyle": "realistic",
+      "condition": "used",
+      "shaders": [
+        "[principled]"
+      ],
+      "uv": true,
+      "engines": [
+        "[cycles]"
+      ],
+      "modifiers": [
+        "[bevel weighted normal]"
+      ],
+      "materials": [
+        "[steel duct grate]"
+      ],
+      "rig": false,
+      "simulation": false,
+      "dimensionX": 1.0948,
+      "dimensionY": 1.5044,
+      "dimensionZ": 2.1715,
+      "boundBoxMinX": -0.5703,
+      "boundBoxMinY": -0.957,
+      "boundBoxMinZ": -0.0021,
+      "boundBoxMaxX": 0.5245,
+      "boundBoxMaxY": 0.5474,
+      "boundBoxMaxZ": 2.1693,
+      "faceCountRender": 947,
+      "meshPolyType": "quad_dominant",
+      "manifold": true,
+      "objectCount": 2,
+      "nodeCount": 27,
+      "textureCount": 0,
+      "megapixels": 0,
+      "gltfGeneratedDate": "2025-07-28",
+      "gltfGodotGeneratedDate": "2025-07-28"
+    },
+    "url": "https://www.blenderkit.com/asset-gallery-detail/9c34b364-0584-42ed-af5b-43f5e34e1aa1/",
+    "survey_id": "BK03",
+    "assessment_status": "conditional_location",
+    "preview_visually_reviewed": true,
+    "model_downloaded_or_imported": false,
+    "gallery_url": "https://www.blenderkit.com/asset-gallery-detail/9c34b364-0584-42ed-af5b-43f5e34e1aa1/"
+  },
+  {
+    "id": "f2b46324-3c76-4dbc-b468-b71a1d4e84b9",
+    "assetBaseId": "e536cb75-d1e7-4ace-b44b-41c5e42afd07",
+    "displayName": "Modular Airduct Rectangular",
+    "description": "Free 8K modular airduct set: realistic rectangular metal vents, elbows, joints and grilles. Industrial, workshop/warehouse-ready with detailed, worn-metal finish\n\nby James Ray Cock",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": {
+      "id": 118455,
+      "fullName": "Poly Haven "
+    },
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/f2b463243c764dbcb468b71a1d4e84b9/files/thumbnail_2b3a1533-7e0e-4ebb-ba8b-99508280e824.png.256x256_q85_crop-%2C.png",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/f2b463243c764dbcb468b71a1d4e84b9/files/thumbnail_2b3a1533-7e0e-4ebb-ba8b-99508280e824.png.512x512_q85_crop-%2C.png",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "productionLevel": "template",
+      "modelStyle": "realistic",
+      "condition": "used",
+      "designer": "James Ray Cock",
+      "designYear": 2021,
+      "purePbr": true,
+      "materials": [
+        "metal"
+      ],
+      "workHours": 80.0
+    },
+    "url": "https://www.blenderkit.com/asset-gallery-detail/e536cb75-d1e7-4ace-b44b-41c5e42afd07/",
+    "survey_id": "BK04",
+    "assessment_status": "conditional_location",
+    "preview_visually_reviewed": true,
+    "model_downloaded_or_imported": false,
+    "gallery_url": "https://www.blenderkit.com/asset-gallery-detail/e536cb75-d1e7-4ace-b44b-41c5e42afd07/"
+  },
+  {
+    "id": "f44a6d70-d3f3-457d-aaea-fb65fa0ca229",
+    "assetBaseId": "deda76d0-5679-466b-9a82-6d3dee072614",
+    "displayName": "Modular Metal Gutter",
+    "description": "Free 4K modular metal gutter model with weathered galvanized sections: gutters, downspout, elbow, outlets and brackets.\n\nby Maxim Domnin",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": {
+      "id": 118455,
+      "fullName": "Poly Haven "
+    },
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/f44a6d70d3f3457daaeafb65fa0ca229/files/thumbnail_2be88f32-8389-42ae-947c-f28682f3e7f4.png.256x256_q85_crop-%2C.png",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/f44a6d70d3f3457daaeafb65fa0ca229/files/thumbnail_2be88f32-8389-42ae-947c-f28682f3e7f4.png.512x512_q85_crop-%2C.png",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "textureResolutionMax": 4096,
+      "productionLevel": "template",
+      "modelStyle": "realistic",
+      "condition": "used",
+      "designer": "Maxim Domnin",
+      "designYear": 2023,
+      "purePbr": true,
+      "materials": [
+        "metal"
+      ],
+      "workHours": 80.0,
+      "dimensionX": 2.268427014350891,
+      "dimensionY": 1.5147015303373337,
+      "dimensionZ": 1.8426082134246826,
+      "boundBoxMinX": -0.5155467987060547,
+      "boundBoxMinY": -0.0830797404050827,
+      "boundBoxMinZ": -0.0061779022216796875,
+      "boundBoxMaxX": 1.7528802156448364,
+      "boundBoxMaxY": 1.431621789932251,
+      "boundBoxMaxZ": 1.836430311203003,
+      "faceCountRender": 8224,
+      "objectCount": 12,
+      "textureCount": 4
+    },
+    "url": "https://www.blenderkit.com/asset-gallery-detail/deda76d0-5679-466b-9a82-6d3dee072614/",
+    "survey_id": "BK05",
+    "assessment_status": "conditional_location",
+    "preview_visually_reviewed": true,
+    "model_downloaded_or_imported": false,
+    "gallery_url": "https://www.blenderkit.com/asset-gallery-detail/deda76d0-5679-466b-9a82-6d3dee072614/"
+  },
+  {
+    "id": "b8a2332d-385f-4521-8b20-c07159cb4bb6",
+    "assetBaseId": "014eedf5-987a-4dd2-952e-ce4822fdf1a9",
+    "displayName": "Electrical control panel",
+    "description": "Electrical distribution control panel with high voltage warning symbol. Industrial power supply cabinet with cables",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": {
+      "id": 100322,
+      "fullName": "ALEX SAMUSENKO"
+    },
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/b8a2332d385f45218b20c07159cb4bb6/files/thumbnail_7838dcc6-68dc-4453-8428-377e5008a7a5.jpg.256x256_q85_crop-%2C.jpg",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/b8a2332d385f45218b20c07159cb4bb6/files/thumbnail_7838dcc6-68dc-4453-8428-377e5008a7a5.jpg.512x512_q85_crop-%2C.jpg",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "faceCount": 2569,
+      "textureResolutionMax": 2048,
+      "productionLevel": "finished",
+      "procedural": false,
+      "modelStyle": "realistic",
+      "condition": "used",
+      "validatedManufacturer": true,
+      "validatedManufacturerDate": "2026-02-12T00:00:00Z",
+      "purePbr": true,
+      "shaders": [
+        "[principled]"
+      ],
+      "uv": true,
+      "textureResolutionMin": 2048,
+      "engines": [
+        "[cycles]"
+      ],
+      "modifiers": [
+        "[bevel nodes]"
+      ],
+      "materials": [
+        "[Outdoor electrical panel]"
+      ],
+      "rig": false,
+      "simulation": false,
+      "dimensionX": 0.6,
+      "dimensionY": 1.9045,
+      "dimensionZ": 0.3137,
+      "boundBoxMinX": -0.3,
+      "boundBoxMinY": 0.0,
+      "boundBoxMinZ": -0.0029,
+      "boundBoxMaxX": 0.3,
+      "boundBoxMaxY": 1.9045,
+      "boundBoxMaxZ": 0.3108,
+      "faceCountRender": 2569,
+      "meshPolyType": "quad_dominant",
+      "manifold": false,
+      "objectCount": 1,
+      "nodeCount": 15,
+      "textureCount": 4,
+      "megapixels": 16,
+      "textAIcheckedDate": "2026-01-02",
+      "gltfGeneratedError": "[Errno 2] No such file or directory: '/tmp/tmpuvyzm9hl/014eedf5-987a-4dd2-952e-ce4822fdf1a9_resdata.json' Files are None",
+      "gltfGodotGeneratedError": "[Errno 2] No such file or directory: '/tmp/tmpwqhzc84u/014eedf5-987a-4dd2-952e-ce4822fdf1a9_resdata.json' Files are None"
+    },
+    "url": "https://www.blenderkit.com/asset-gallery-detail/014eedf5-987a-4dd2-952e-ce4822fdf1a9/",
+    "survey_id": "BK06",
+    "assessment_status": "conditional_location",
+    "preview_visually_reviewed": true,
+    "model_downloaded_or_imported": false,
+    "gallery_url": "https://www.blenderkit.com/asset-gallery-detail/014eedf5-987a-4dd2-952e-ce4822fdf1a9/"
+  },
+  {
+    "id": "5dcd7b25-58dd-49f9-939c-164c6c56f3f5",
+    "assetBaseId": "b374e710-4d49-40cc-a447-dabe0aefe8f0",
+    "displayName": "Modular Chainlink Fence",
+    "description": "Free 8K modular chainlink fence kit with rusted posts, gate and configurable panels - gritty urban/industrial barrier ideal for city, alley & security scenes.\n\nby James Ray Cock, Amal Kumar",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": {
+      "id": 118455,
+      "fullName": "Poly Haven "
+    },
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/5dcd7b2558dd49f9939c164c6c56f3f5/files/thumbnail_63263cee-3941-4fbf-b3df-0e7088af25ad.png.256x256_q85_crop-%2C.png",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/5dcd7b2558dd49f9939c164c6c56f3f5/files/thumbnail_63263cee-3941-4fbf-b3df-0e7088af25ad.png.512x512_q85_crop-%2C.png",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "textureResolutionMax": 8192,
+      "productionLevel": "finished",
+      "modelStyle": "realistic",
+      "condition": "old",
+      "designer": "James Ray Cock,Amal Kumar",
+      "designYear": 2023,
+      "purePbr": true,
+      "materials": [
+        "metal"
+      ],
+      "workHours": 80.0,
+      "dimensionX": 8.115001916885376,
+      "dimensionY": 2.1491531878709793,
+      "dimensionZ": 2.5229129791259766,
+      "boundBoxMinX": -6.040004730224609,
+      "boundBoxMinY": -0.07415170967578888,
+      "boundBoxMinZ": 0.0,
+      "boundBoxMaxX": 2.0749971866607666,
+      "boundBoxMaxY": 2.0750014781951904,
+      "boundBoxMaxZ": 2.5229129791259766,
+      "faceCountRender": 47888,
+      "objectCount": 20,
+      "textureCount": 9,
+      "gltfGeneratedDate": "2026-10-08",
+      "gltfGodotGeneratedDate": "2026-10-08",
+      "processingDate": "2026-10-08T13:27:47.988708+00:00"
+    },
+    "url": "https://www.blenderkit.com/asset-gallery-detail/b374e710-4d49-40cc-a447-dabe0aefe8f0/",
+    "survey_id": "BK07",
+    "assessment_status": "not_recommended",
+    "preview_visually_reviewed": true,
+    "model_downloaded_or_imported": false,
+    "gallery_url": "https://www.blenderkit.com/asset-gallery-detail/b374e710-4d49-40cc-a447-dabe0aefe8f0/"
+  },
+  {
+    "id": "923790d4-7b88-4905-aa13-6cc2cdaaa039",
+    "assetBaseId": "a7094891-62b0-4a55-801e-c9c41f69ac16",
+    "displayName": "Rock Moss Set 02",
+    "description": "Free 8K set of weathered moss-covered rocks and stones, with varied shapes, earthy tones, dirt-streaked surfaces and detailed, realistic crevices.\n\nby Kless Gyzen",
+    "license": "cc_zero",
+    "isFree": true,
+    "author": {
+      "id": 118455,
+      "fullName": "Poly Haven "
+    },
+    "thumbnailSmallUrl": "https://public.blenderkit.com/thumbnails/assets/923790d47b884905aa136cc2cdaaa039/files/thumbnail_471de6dc-b70b-4178-b936-642dafae96bb.png.256x256_q85_crop-%2C.png",
+    "thumbnailMiddleUrl": "https://public.blenderkit.com/thumbnails/assets/923790d47b884905aa136cc2cdaaa039/files/thumbnail_471de6dc-b70b-4178-b936-642dafae96bb.png.512x512_q85_crop-%2C.png",
+    "dictParameters": {
+      "sexualizedContent": false,
+      "joinBlenderkitDiscounts": true,
+      "addons": true,
+      "platforms": [
+        "windows-x64",
+        "macos-arm64",
+        "linux-x64",
+        "macos-x64",
+        "windows-arm64"
+      ],
+      "textureResolutionMax": 8192,
+      "productionLevel": "finished",
+      "modelStyle": "realistic",
+      "condition": "used",
+      "designer": "Kless Gyzen",
+      "designYear": 2021,
+      "purePbr": true,
+      "materials": [
+        "stone"
+      ],
+      "workHours": 80.0,
+      "dimensionX": 8.278153419494629,
+      "dimensionY": 3.410416603088379,
+      "dimensionZ": 1.368368238210678,
+      "boundBoxMinX": -3.8086462020874023,
+      "boundBoxMinY": -1.4959301948547363,
+      "boundBoxMinZ": -0.3151787221431732,
+      "boundBoxMaxX": 4.469507217407227,
+      "boundBoxMaxY": 1.9144864082336426,
+      "boundBoxMaxZ": 1.0531895160675049,
+      "faceCountRender": 57647,
+      "objectCount": 7,
+      "textureCount": 3,
+      "gltfGeneratedDate": "2026-10-08",
+      "gltfGodotGeneratedDate": "2026-10-08",
+      "processingDate": "2026-10-08T12:29:06.593676+00:00"
+    },
+    "url": "https://www.blenderkit.com/asset-gallery-detail/a7094891-62b0-4a55-801e-c9c41f69ac16/",
+    "survey_id": "BK08",
+    "assessment_status": "prototype_candidate",
+    "preview_visually_reviewed": true,
+    "model_downloaded_or_imported": false,
+    "gallery_url": "https://www.blenderkit.com/asset-gallery-detail/a7094891-62b0-4a55-801e-c9c41f69ac16/"
+  }
+]
