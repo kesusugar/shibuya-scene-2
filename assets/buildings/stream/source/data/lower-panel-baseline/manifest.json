@@ -1,0 +1,112 @@
+{
+  "id": "stream",
+  "level": "B",
+  "status": "bounded source112 panel prototype; static December-to-October inference; pending full-scene acceptance",
+  "stats": {
+    "triangles": 32532,
+    "primitives": 8,
+    "bytes": 2021776
+  },
+  "files": {
+    "README.md": {
+      "bytes": 3579,
+      "sha256": "9ab2c9015d780523a72c6c4960c7318997249e577d7ba61789603709a49ba130"
+    },
+    "source/blender/build.py": {
+      "bytes": 7276,
+      "sha256": "fcd05f297e40464f582938d3a67816c7f4edf9bb0e1cf18369da5d33622f446b"
+    },
+    "source/data/layout.json": {
+      "bytes": 603,
+      "sha256": "657f847ab67873f7a9a5617600068c2d8ac67bc0ba4616a5a965ac94432286bc"
+    },
+    "source/data/plateau.json": {
+      "bytes": 44603,
+      "sha256": "8eae0210e5d73f9bdbcb0e2eccabff99a4f77244fd6db720abfd734a7254e356"
+    },
+    "source/data/stats.json": {
+      "bytes": 15224,
+      "sha256": "b587748e3bcbffb74f6d640a237b3cf52779c12023ba0507bd58b65e655c606c"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 664,
+      "sha256": "5d80dfe697502925a6c35deb32a094d237637a0274c7599edc3d73728dd26514"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 4067564,
+      "sha256": "2510b2ec3e33914865a920db7b96e30cdaf43a33ea4309a8a528c040b7280c05"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3238,
+      "sha256": "93798759b2566c1bcf11ae53f4aa26993255d51ffae2471ebfcbbfe515975483"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/stream.glb": {
+      "bytes": 2021776,
+      "sha256": "75753aec0940ab0cdb1bc82914918adf424bef0098aad95c020a1b983a06b82c"
+    },
+    "web/viewer.json": {
+      "bytes": 195,
+      "sha256": "c33725a32685c9b3f592927bf4359ffb90b7e4e9ba95e571f9d09218a66c7bcb"
+    },
+    "source/refs/SOURCE-AND-INFERENCE.md": {
+      "bytes": 5552,
+      "sha256": "3f90bb3826551316086ce6cdd5c24118a0dba25d4c0b18cc5739ce737c44dc02"
+    },
+    "source/refs/reference-CC0.jpg": {
+      "bytes": 458672,
+      "sha256": "1378cf2216a967714a2ca037fadab98a1a47c725b692d5cacd64e5de99a2ee10"
+    },
+    "source/data/build-report.json": {
+      "bytes": 19320,
+      "sha256": "19811f8ee42e4c687f9d5ec9bcdb558b40cd082121ef61b8b2e617430d3ccab5"
+    },
+    "source/data/panel-trace.json": {
+      "bytes": 8493,
+      "sha256": "3178ded00ec388d846156d31609a8aae056287a027b26d7acb60d6fee470e5d6"
+    },
+    "source/blender/build-original-wrapper.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/blender/render.py": {
+      "bytes": 1732,
+      "sha256": "0b5cab08859107841c378927386e01c7079268193649d779b64998c307cb69aa"
+    },
+    "source/blender/stream.blend": {
+      "bytes": 4588588,
+      "sha256": "c44b3db02b7b0e3af0e75ee5d1336fece56e5a48e75179f235e4637aa83346d6"
+    },
+    "source/blender/verify_blend.py": {
+      "bytes": 1137,
+      "sha256": "2851497bc8fd65c124010894a3ddf598cd37b04dea9a0a466f2e53cce8d2ea91"
+    },
+    "source/blender/test.py": {
+      "bytes": 3052,
+      "sha256": "17c6ea5ae7b6468a87c23a4623b8af0aa1fa43976121fe93b639fa3fdac2b151"
+    },
+    "source/data/panel-baseline/stream.glb": {
+      "bytes": 2022108,
+      "sha256": "16b029fbec71fa753b2c8f5bdbcead325105d9576df2bc636b637f05af130aed"
+    },
+    "source/data/panel-baseline/stats.json": {
+      "bytes": 14936,
+      "sha256": "33332f33a599dcbf2919d2593b8aaf79eab39210db2292a2347fe6fbb589eff3"
+    },
+    "source/data/panel-baseline/manifest.json": {
+      "bytes": 2081,
+      "sha256": "e701dc665d22cc751fa616ca25bfbae86d7a8d7ea76b9b4d3890e1a6171835f7"
+    }
+  },
+  "source_id": "way/521438304",
+  "source_aliases": [],
+  "plateau_id": "bldg_1db9c375-4ff6-4e3a-8c05-3a5c37e4580d",
+  "generator": "source/blender/build.py (Python3+numpy or Blender4.2.3; hash-pinned baseline overlay surgery)"
+}
