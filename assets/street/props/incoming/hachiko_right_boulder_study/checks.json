@@ -1,0 +1,9 @@
+{
+  "nonmanifold_edges": 0,
+  "zero_area_faces": 0,
+  "signed_volume": 0.08959962204358378,
+  "finite": true,
+  "objects": 1,
+  "packed_images": 1,
+  "transforms_identity": true
+}

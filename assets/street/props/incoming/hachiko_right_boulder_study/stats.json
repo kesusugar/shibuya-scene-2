@@ -1,0 +1,14 @@
+{
+  "blender": "4.2.3 LTS",
+  "triangles": 2300,
+  "vertices": 1152,
+  "dimensions_m": [
+    0.8500000238418579,
+    0.41379204392433167,
+    0.5783125162124634
+  ],
+  "materials": 1,
+  "source_date": "2025-07-13",
+  "placement": "none",
+  "origin": "bottom AABB center"
+}
