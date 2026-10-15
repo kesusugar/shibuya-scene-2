@@ -1,0 +1,55 @@
+{
+  "main_commit": "8633c1b7b9342945f309dab328fe4af36cdeb6d4",
+  "main_git_blob": "be1f75b063c922403ec0286458db850d96d59493",
+  "main_sha256": "152920785e92f2c11a95b2cf2b29aec8a7aac76c71d119fd9045442dfde491a5",
+  "accepted_sha256": "0ef0583ab368e3d2265aa299292bd6306ef68901e859265b94f214090d8b239e",
+  "renderer": "Blender4.2.3 Cycles CPU16samples AgX MediumHighContrast",
+  "same_camera_lighting_datum": true,
+  "source_pngs": [
+    {
+      "input": "current-main/overall.png",
+      "sha256": "578fdaecb3399f27de24a45d5fb9cbc32b84bfbc28042813be8d7110166f570f",
+      "dimensions": [
+        1400,
+        1100
+      ]
+    },
+    {
+      "input": "accepted-revision3/overall.png",
+      "sha256": "a04a6e481e72388b305e1afb478981c3037ad0f0a79e2f77c04b7d0e45cd01f1",
+      "dimensions": [
+        1400,
+        1100
+      ]
+    },
+    {
+      "input": "current-main/entry-front.png",
+      "sha256": "235584a84638992e67adc1ed01a9912e054aa7322a7c7f4335f49cade20f6e25",
+      "dimensions": [
+        1400,
+        1100
+      ]
+    },
+    {
+      "input": "accepted-revision3/entry-front.png",
+      "sha256": "e53b6ae3da97526e642e96de0f37aab4a78fb91ea265983635bf9f271567a4fe",
+      "dimensions": [
+        1400,
+        1100
+      ]
+    }
+  ],
+  "boards": [
+    {
+      "path": "overall-main-vs-revision3.jpg",
+      "sha256": "1240377d0d28746c2f0f2b0e3a4f5d37eaf237e578ac5d894880ba5712e8a612",
+      "bytes": 438020
+    },
+    {
+      "path": "entry-front-main-vs-revision3.jpg",
+      "sha256": "8c264737d85ee0a935be858def9c9f2fcfe989301d1cecfa22a0b9485386967e",
+      "bytes": 703686
+    }
+  ],
+  "qualification": "Fresh renders of actual pinned main and accepted GLBs; no model modification. Provisional studio ground only, not game pavement or FPS test. JPEG comparison is a labelled review derivative."
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "FAB2019",
+    "page": "https://signs-d.ne.jp/article/aoineon-2/",
+    "image": "https://signs-d.ne.jp/cwp/wp-content/uploads/2019/09/07_109-1024x683.jpg",
+    "file": "reference_only/signs-entry.jpg",
+    "date": "Completed April2019; page images September2019; exact photo capture unknown",
+    "author": "Signs & Displays; identifies sign contractor Aoi Neon, photographer not credited",
+    "license": "Copyright, no open license found. Internal reference only; no texture or packaged image.",
+    "sha256": "1cd3dfd1700edf1747b6459fe09c8926494bff6d5da7536ccb8c4fb5570f9beb",
+    "downloaded_actual_bytes": true
+  },
+  {
+    "id": "EVENTFRONT",
+    "page": "https://space-media.jp/feature/detail/21/",
+    "image": "https://space-media.jp/js/ckfinder/userfiles/images/IMG_9557.JPG",
+    "file": "reference_only/space-large.JPG",
+    "date": "Photo capture not stated; visible40th anniversary/Avengers April22–May12 campaign indicates2019, inference",
+    "author": "SPACE MEDIA, photographer not credited",
+    "license": "Copyright, no open license found. Reference only.",
+    "sha256": "9b34ebde35a30340f05f45475cb1914382b18c12b51356f791020c3266965bff",
+    "downloaded_actual_bytes": true
+  },
+  {
+    "id": "MHW2025front",
+    "page": "https://space-media.jp/news/detail/6171/",
+    "image": "https://space-media.jp/js/ckfinder/userfiles/images/IMG_6668.JPG",
+    "file": "reference_only/monster2025.jpg",
+    "date": "Article2025-03-03; event2025-02-28 through03-02; exact photo date not stated",
+    "author": "SPACE MEDIA, photographer not credited",
+    "license": "Copyright, reference only",
+    "sha256": "42f9af0cdfb7f77c47cd17773699adb6ab8dc6ecad3061b630c8aee94a33969a",
+    "downloaded_actual_bytes": true
+  },
+  {
+    "id": "MHW2025side",
+    "page": "https://space-media.jp/news/detail/6171/",
+    "image": "https://space-media.jp/js/ckfinder/userfiles/images/IMG_6702.JPG",
+    "file": "reference_only/monster2025b.jpg",
+    "date": "Article2025-03-03; event2025-02-28 through03-02",
+    "author": "SPACE MEDIA, photographer not credited",
+    "license": "Copyright, reference only",
+    "sha256": "b33b46179463921b171a28714c7c0b723eb3a59c0b36a93e176e3567f8086259",
+    "downloaded_actual_bytes": true
+  },
+  {
+    "id": "JOJO2025",
+    "page": "https://space-media.jp/news/detail/6239/",
+    "image": "https://space-media.jp/js/ckfinder/userfiles/images/IMG_9515%2015_08_49.JPG",
+    "file": "reference_only/jojo2025.jpg",
+    "date": "Article2025-04-07; exact photo capture unknown",
+    "author": "SPACE MEDIA, photographer not credited",
+    "license": "Copyright, reference only",
+    "sha256": "e4338c2aa7a50a9aac2731a8cc7ca4e285eb8a0a9ff9e02f01d04d9bf7ae8e63",
+    "downloaded_actual_bytes": true
+  },
+  {
+    "id": "PLAN2019",
+    "page": "https://shibuya109square.com/wp-content/themes/shibuya109square/resources/pdf/%E5%AA%92%E4%BD%93%E8%B3%87%E6%96%99.pdf",
+    "file": "reference_only/historical-media.pdf",
+    "date": "2019-08-09 update, page5 plan",
+    "author": "SHIBUYA109 Entertainment",
+    "license": "All rights reserved; reference only",
+    "sha256": "1e7eabacfde417ba8e0d22e1b1bcddad7e032a17d9d669474cd0343d7fe0daba",
+    "downloaded_actual_bytes": true
+  },
+  {
+    "id": "PLAN2026",
+    "page": "https://shibuya109square.com/service/109eventspace/",
+    "file": "reference_only/official-1.pdf",
+    "date": "2026-09-25 update, page12 same plan; do not substitute2026changes into2025scene",
+    "author": "SHIBUYA109 Entertainment",
+    "license": "All rights reserved; reference only",
+    "sha256": "d07a416ad9dcbce06c07bbfb43ec08e4ede41604e62c47a6f2746b39c0384440",
+    "downloaded_actual_bytes": true
+  }
+]
