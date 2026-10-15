@@ -1,0 +1,58 @@
+{
+  "source_url": "https://www.andtrip.jp/article/006193.html",
+  "image_url": "https://www.andtrip.jp/images/5e2dce4101b447931b7a0e70afda38d6ab3ff4ad.jpg",
+  "article_published": "2024-09-19",
+  "source_rechecked_utc": "2026-10-15T15:33:50Z",
+  "source_image_pixels": [
+    800,
+    600
+  ],
+  "source_image_sha256": "475e03de4f18e700ee7c89d9ced163c16d102ec13a50f059c1b53d51b09c1bf0",
+  "reference_rectangle_xyxy": [
+    250,
+    0,
+    720,
+    320
+  ],
+  "visible_outer_monitor_quad_approx_xy": [
+    [
+      267,
+      43
+    ],
+    [
+      706,
+      0
+    ],
+    [
+      680,
+      302
+    ],
+    [
+      276,
+      277
+    ]
+  ],
+  "coordinate_note": "Original 800x600 image, upper-left origin. Broad rectangle includes wood reveal and occluding counter objects. Quad is approximate visible extent, not calibrated geometry; upper right is partly clipped.",
+  "observed": [
+    "Landscape flat screen behind counter",
+    "Thin dark perimeter and recessed glossy display",
+    "A subtle outer cabinet/reveal shadow",
+    "Wide black top and bottom areas belong to video letterboxing, not assumed physical bezel"
+  ],
+  "estimated": [
+    "All physical dimensions",
+    "16:9 panel approximation",
+    "Bezel widths, 6 mm recess and small bevels",
+    "Cabinet depth and simple hidden rear taper",
+    "Counter-local and pavilion-local attachment suggestions"
+  ],
+  "not_reproduced": [
+    "Source photograph or video pixels",
+    "Branded content",
+    "Text or logos",
+    "Unseen ports, ventilation, screws, brackets, cables or stand",
+    "Surrounding wood wall or counter"
+  ],
+  "rights": "Reference photographs remain copyrighted by their respective rights holders; no source images or derived crops are included. Model, generator and preview renders are newly authored.",
+  "date_boundary": "2024-reference variant; current 2026 existence, exact screen model and dimensions unverified."
+}

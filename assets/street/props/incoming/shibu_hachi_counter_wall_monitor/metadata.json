@@ -1,0 +1,37 @@
+{
+  "asset_id": "shibu_hachi_counter_wall_monitor",
+  "version": "v001",
+  "placement_state": "unplaced",
+  "runtime_registered": false,
+  "units": "m",
+  "dimensions_status": "estimated, not measured",
+  "size_m_width_depth_height": [
+    1.55,
+    0.07,
+    0.9
+  ],
+  "glb_axes": {
+    "up": "+Y",
+    "front": "+Z",
+    "size_m_order": [
+      "X",
+      "Z",
+      "Y"
+    ]
+  },
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "origin": "bottom centre of complete cabinet",
+  "world_coordinates": null,
+  "parent_attachment": "unapproved hypotheses only; see attachment_hint.json",
+  "source_period": "2024-09-19 article",
+  "materials": 2,
+  "triangles": 520,
+  "textures": 0,
+  "renderer": "Cycles CPU, 32 samples, Blender 4.2.3",
+  "scene_changes": false,
+  "protected_changes": false,
+  "repository_publication": false
+}
