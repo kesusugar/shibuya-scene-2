@@ -2,21 +2,21 @@
   "id": "fukuras",
   "source_id": "way/55588118",
   "level": "B",
-  "status": "bounded October2025 photo-guided facade; dimensions estimated; hidden and upper service facades inherited approximation",
+  "status": "Delivered wall74/76/81 and roof35 tessellation repairs; bounded revision, not whole-building completion",
   "stats": {
     "triangles": 12231,
     "primitives": 13,
-    "bytes": 1046328
+    "bytes": 1137516
   },
   "generator": "assets/buildings/fukuras/source/blender/build.py",
   "files": {
     "README.md": {
-      "bytes": 2298,
-      "sha256": "a20701249172464bd435da807283c1b3fad51c04b1fe5db4e171988ea705ede5"
+      "bytes": 3806,
+      "sha256": "b411302ee3b4f513980f23feaea6c0530b9f44674c3b4739ba92510d26b59269"
     },
     "source/blender/build.py": {
-      "bytes": 12013,
-      "sha256": "f407cbfb43db3d088cafe15d3fccf2e4e1e29e89c4cb7447ffaba84854ecf7f5"
+      "bytes": 23980,
+      "sha256": "fcdaa7815c3ce265ac2af2f277013221e8cd4a37876295d8ab7f34a78e3bff52"
     },
     "source/data/layout.json": {
       "bytes": 756,
@@ -27,8 +27,8 @@
       "sha256": "a7ab8db419a3551440f2daa3371dc66b8b07314f7cc7ded67922a1e769df0b82"
     },
     "source/data/stats.json": {
-      "bytes": 17314,
-      "sha256": "cf098fb1a5e512fd0a2a2a584ee4821968be1b9a3f5502350f7aa124812ecd0d"
+      "bytes": 17730,
+      "sha256": "f98571520ac525d8d2945c0cf5ebbc1ca27c7ed3ac77150fa6ec9f35d2627df0"
     },
     "source/refs/SOURCES.md": {
       "bytes": 528,
@@ -51,16 +51,16 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/fukuras.glb": {
-      "bytes": 1046328,
-      "sha256": "accdfc0288c42caa6ef956d63cc6be4196bee54be39b57dd5f4a95097dfb3a3d"
+      "bytes": 1137516,
+      "sha256": "4454c7c1e0c910688d68a879f8c94b1fa02d058641d23dddde6ad5c37e9d6f44"
     },
     "web/viewer.json": {
       "bytes": 195,
       "sha256": "c79a55ab50f9cf269c611140a51e34c8495e0089dfeecd571f6e93795121915f"
     },
     "source/blender/fukuras.blend": {
-      "bytes": 1941228,
-      "sha256": "10bac8313970be32bd6e3357d15621d494fb7640119e5d3eddaa803ab30f0be4"
+      "bytes": 1941712,
+      "sha256": "047236c2fdad7db96ed4e35ecf02c88b993cfc233a1c3770f6960af94fe23bc5"
     },
     "source/data/baseline.glb": {
       "bytes": 781556,
@@ -97,6 +97,71 @@
     "source/refs/SEP30-northeast-actual-crop.jpg": {
       "bytes": 77553,
       "sha256": "c1e9def335f22048734a0785eac29bcdc3dda00a55a60c672fbac001098f08f7"
+    },
+    "SOURCE_NOTES.md": {
+      "bytes": 1095,
+      "sha256": "b5b305dbc1fa5de6d75de089282eb2cf0437bc5ed054b36bef0161977bea2993"
+    },
+    "evidence/tessellation-v4/cameras.json": {
+      "bytes": 638,
+      "sha256": "5b45aaa258e343045fe3390bbbdbce25ea43f450910ec6eee05905df40f32492"
+    },
+    "evidence/tessellation-v4/check-editable.py": {
+      "bytes": 2115,
+      "sha256": "78aa711cbd85a228eddf1e3a16a5a93a602bcf22baf7619ee6bcc633eaf21138"
+    },
+    "evidence/tessellation-v4/editable-parity.json": {
+      "bytes": 6638,
+      "sha256": "a26ae07a228c583a24ee3636e84c7bdd4c0d9a982918bafc5a5e03d865451705"
+    },
+    "evidence/tessellation-v4/focused-tests.txt": {
+      "bytes": 723,
+      "sha256": "5960683658af1bd9e52b63f05e76d01937402335d1da907befb4294e1e2d0cd1"
+    },
+    "evidence/tessellation-v4/main-before-after.jpg": {
+      "bytes": 252341,
+      "sha256": "988f7c8552fc0c33108ad0152c9ba5d32ae5832f43b9358540cd370371aeb6e4"
+    },
+    "evidence/tessellation-v4/regeneration.json": {
+      "bytes": 1461,
+      "sha256": "abe1fa51f0234e0bb9e57ecb946dcb3e49ee26ac001bc3295cd58e83932e9e33"
+    },
+    "evidence/tessellation-v4/render-comparison.py": {
+      "bytes": 2641,
+      "sha256": "3a0a4a6f79a581b0068d22906b7bc2ee03e66a4f91a2c0c30727f5c50ce5c2ee"
+    },
+    "evidence/tessellation-v4/validation.json": {
+      "bytes": 1156,
+      "sha256": "bc8ba3e4f38a0fdd1f4538dd67b13a8bac1e96883b7372ff107223ca682cab69"
+    },
+    "source/data/roof35_repair.json": {
+      "bytes": 3840,
+      "sha256": "2779d276d0ebf78a53994fdad130360f735e2a21ef0adf79ab3ae051ff095699"
+    },
+    "source/data/tessellation_repair.json": {
+      "bytes": 4829,
+      "sha256": "065a269a563c5719fe9e0aed7b6ef6630461e17f71f086237fb9dd4940c97c1d"
+    },
+    "source/data/tessellation_repair_v2.json": {
+      "bytes": 3105,
+      "sha256": "e5345b6c7fb477636e521e695fc6199ebf8d4b5b8c83f6bb11fe54261b39be92"
+    },
+    "source/tessellation-v4/historical-main-fidelity.test.ts.txt": {
+      "bytes": 6059,
+      "sha256": "5c5c4a0b7d3228e3c8e37b8344623fe5b209b04e39228886843a9fe393ba530d"
+    },
+    "source/tessellation-v4/main-build.py": {
+      "bytes": 12013,
+      "sha256": "f407cbfb43db3d088cafe15d3fccf2e4e1e29e89c4cb7447ffaba84854ecf7f5"
+    },
+    "source/tessellation-v4/main.glb": {
+      "bytes": 1046328,
+      "sha256": "accdfc0288c42caa6ef956d63cc6be4196bee54be39b57dd5f4a95097dfb3a3d"
     }
+  },
+  "verification": {
+    "report": "evidence/tessellation-v4/validation.json",
+    "base_commit": "2d1d416d5b4428db7a983e510eeaba08332f707f",
+    "limitations": "No whole-scene build/browser/FPS verification; existing facade approximation retained."
   }
 }

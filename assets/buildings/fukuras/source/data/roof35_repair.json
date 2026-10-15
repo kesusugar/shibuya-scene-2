@@ -1,0 +1,209 @@
+{
+  "version": 4,
+  "repair_surfaces": [
+    35
+  ],
+  "previous_wall_repair_surfaces": [
+    74,
+    76,
+    81
+  ],
+  "reference_candidate_sha256": "821fb5b27a3e7a4ccbb48cdddc489c030920423c161b4ff250f483342734ab7e",
+  "preservation_exception": "This revision replaces only roof source35 connectivity and upward normals, retaining all previous wall repairs and every other roof triangle exactly. All source boundary coordinates, other wall triangles, roof triangles, footing and approved facade overlays remain unchanged.",
+  "faces": [
+    {
+      "surface": 35,
+      "source_boundary_vertices": 16,
+      "removed_triangles": [
+        {
+          "triangle_index": 35,
+          "indices": [
+            217,
+            221,
+            206
+          ]
+        },
+        {
+          "triangle_index": 140,
+          "indices": [
+            222,
+            203,
+            205
+          ]
+        },
+        {
+          "triangle_index": 141,
+          "indices": [
+            204,
+            206,
+            221
+          ]
+        },
+        {
+          "triangle_index": 142,
+          "indices": [
+            206,
+            207,
+            212
+          ]
+        },
+        {
+          "triangle_index": 143,
+          "indices": [
+            212,
+            207,
+            209
+          ]
+        },
+        {
+          "triangle_index": 144,
+          "indices": [
+            207,
+            208,
+            209
+          ]
+        },
+        {
+          "triangle_index": 145,
+          "indices": [
+            212,
+            210,
+            211
+          ]
+        },
+        {
+          "triangle_index": 146,
+          "indices": [
+            213,
+            214,
+            215
+          ]
+        },
+        {
+          "triangle_index": 147,
+          "indices": [
+            215,
+            216,
+            213
+          ]
+        },
+        {
+          "triangle_index": 148,
+          "indices": [
+            216,
+            218,
+            213
+          ]
+        },
+        {
+          "triangle_index": 149,
+          "indices": [
+            212,
+            217,
+            206
+          ]
+        },
+        {
+          "triangle_index": 150,
+          "indices": [
+            217,
+            219,
+            220
+          ]
+        },
+        {
+          "triangle_index": 151,
+          "indices": [
+            209,
+            210,
+            212
+          ]
+        },
+        {
+          "triangle_index": 152,
+          "indices": [
+            217,
+            220,
+            221
+          ]
+        }
+      ],
+      "replacement_source_vertex_indices": [
+        [
+          12,
+          13,
+          14
+        ],
+        [
+          11,
+          12,
+          14
+        ],
+        [
+          10,
+          11,
+          0
+        ],
+        [
+          0,
+          11,
+          14
+        ],
+        [
+          0,
+          14,
+          15
+        ],
+        [
+          10,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          6,
+          8,
+          9
+        ],
+        [
+          6,
+          9,
+          10
+        ],
+        [
+          5,
+          6,
+          10
+        ],
+        [
+          4,
+          5,
+          10
+        ],
+        [
+          10,
+          2,
+          3
+        ],
+        [
+          10,
+          3,
+          4
+        ]
+      ],
+      "replacement_triangles": 14,
+      "xyz_policy": "exact existing GLB boundary coordinates; normals corrected only for target triangles",
+      "projection": "sourceXY projection for the horizontal roof polygon; exact existing boundaryXYZ retained"
+    }
+  ],
+  "current_glb_sha256": "4454c7c1e0c910688d68a879f8c94b1fa02d058641d23dddde6ad5c37e9d6f44"
+}

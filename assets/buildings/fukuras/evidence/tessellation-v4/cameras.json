@@ -1,0 +1,38 @@
+{
+  "type": "ORTHO",
+  "target": [
+    -25.0,
+    -193.0,
+    53.0
+  ],
+  "direction": [
+    0.4160665273666382,
+    0.8001279830932617,
+    0.4320691227912903
+  ],
+  "scale": 245,
+  "comparison_display_translation_only": [
+    -57.5,
+    57.5
+  ],
+  "camera_right": [
+    -0.8872167468070984,
+    0.46135270595550537,
+    0.0
+  ],
+  "sun_euler": [
+    0.4,
+    -0.3,
+    -0.4
+  ],
+  "sun_energy": 2,
+  "world_strength": 0.8,
+  "resolution": [
+    1600,
+    1000
+  ],
+  "samples": 24,
+  "color": "AgX",
+  "native_format": "JPEG",
+  "scope": "Actual pinned main versus exact delivered final. No camera calibration or whole-scene claim."
+}

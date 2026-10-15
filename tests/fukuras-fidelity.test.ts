@@ -1,17 +1,20 @@
 import { expect, it } from 'vitest';
 import { readFileSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { Vector3 } from 'three';
 import { NodeIO } from '@gltf-transform/core';
 import { LEVEL_BUDGET } from '../src/perf/budget';
 const base='assets/buildings/fukuras/';
 const json=(p:string)=>JSON.parse(readFileSync(base+p,'utf8'));
 function glb(p:string){const b=readFileSync(base+p),n=b.readUInt32LE(12);return {d:JSON.parse(b.subarray(20,20+n).toString()),bin:b.subarray(28+n)};}
-it('Fukuras preserves complete original shell/roof primitives and every original source buffer byte',()=>{
+it('Fukuras preserves original buffer bytes, materials and hierarchy; only scoped shell accessors may change',()=>{
  const old=glb('source/data/baseline.glb'),now=glb('web/fukuras.glb');
  expect(now.bin.subarray(0,old.bin.length).equals(old.bin)).toBe(true);
  for(let i=0;i<old.d.meshes.length;i++) for(let j=0;j<old.d.meshes[i].primitives.length;j++){
   const a=old.d.meshes[i].primitives[j],b=now.d.meshes[i].primitives[j],name=old.d.materials[a.material].name;
-  if(['fukuras_wall','fukuras_roof'].includes(name)) expect(b).toEqual(a);
-  expect(b.attributes).toEqual(a.attributes);expect(b.material).toBe(a.material);
+  if(!['fukuras_wall','fukuras_roof'].includes(name)) expect(b.attributes).toEqual(a.attributes);
+  // The four intended shell repairs are exhaustively checked below, including exact off-target normals.
+  expect(b.material).toBe(a.material);
  }
  expect(now.d.nodes.slice(0,old.d.nodes.length)).toEqual(old.d.nodes);
  expect(now.d.materials.slice(0,old.d.materials.length)).toEqual(old.d.materials);
@@ -49,4 +52,37 @@ it('Fukuras removes old overlay triangles only within the three verified surface
  for(let k=0;k<before.length;k+=3){const ids=before.slice(k,k+3),vs=ids.map((i:number)=>verts[i]),c=[0,1,2].map(j=>vs.reduce((s:number,v:number[])=>s+v[j],0)/3);const target=c[2]<=83.9&&faces.some(f=>{const depth=c.reduce((s,v,j)=>s+(v-f.o[j])*f.n[j],0);return depth>.035&&depth<.25&&vs.every((v:number[])=>Math.abs(v.reduce((s,v,j)=>s+(v-c[j])*f.n[j],0))<.008)&&inside(f.uv(c),f.poly);});const present=kept.has(ids.join(','));if(!present){removed++;expect(target).toBe(true);}if(target)expect(present).toBe(false);}
  }
  expect(removed).toBeGreaterThan(3000);
+});
+
+const readAccessor=(g:any,i:number):number[][]=>{const a=g.d.accessors[i],v=g.d.bufferViews[a.bufferView],w=a.type==='VEC3'?3:1,bytes=a.componentType===5123?2:4;return Array.from({length:a.count},(_,k)=>Array.from({length:w},(_,j)=>{const o=(v.byteOffset??0)+(a.byteOffset??0)+k*(v.byteStride??w*bytes)+j*bytes;return a.componentType===5126?g.bin.readFloatLE(o):bytes===2?g.bin.readUInt16LE(o):g.bin.readUInt32LE(o);}));};
+function triangles(g:any){const out:{material:string,v:Vector3[],n:Vector3[]}[]=[];for(const m of g.d.meshes)for(const p of m.primitives){const pos=readAccessor(g,p.attributes.POSITION),norm=readAccessor(g,p.attributes.NORMAL),idx=readAccessor(g,p.indices).flat();for(let i=0;i<idx.length;i+=3)out.push({material:g.d.materials[p.material].name,v:idx.slice(i,i+3).map(j=>new Vector3(...pos[j])),n:idx.slice(i,i+3).map(j=>new Vector3(...norm[j]))});}return out;}
+it('Fukuras pins actual main and delivered final, with all unrelated primitives, materials and parent/datum unchanged',()=>{
+ const blob=(p:string)=>{const b=readFileSync(base+p);return createHash('sha1').update(Buffer.from('blob '+b.length+'\0')).update(b).digest('hex');};
+ expect(blob('source/tessellation-v4/main.glb')).toBe('954439cc27edeaa65fe76a47c310b8e3bd5875bf');expect(blob('web/fukuras.glb')).toBe('fa1010e80fdfa8bd854931c0edd24f4ee29cc09d');
+ const old=glb('source/tessellation-v4/main.glb'),now=glb('web/fukuras.glb');
+ expect(now.d.nodes).toEqual(old.d.nodes);expect(now.d.scenes).toEqual(old.d.scenes);expect(now.d.materials).toEqual(old.d.materials);
+ expect(now.d.meshes.length).toBe(old.d.meshes.length);
+ for(let mi=0;mi<old.d.meshes.length;mi++)for(let pi=0;pi<old.d.meshes[mi].primitives.length;pi++){
+  const a=old.d.meshes[mi].primitives[pi],b=now.d.meshes[mi].primitives[pi];expect(a.material).toBe(b.material);
+  for(const attr of Object.keys(a.attributes)){const av=readAccessor(old,a.attributes[attr]),bv=readAccessor(now,b.attributes[attr]);expect(bv.slice(0,av.length)).toEqual(av);}
+  if(!['fukuras_wall','fukuras_roof'].includes(old.d.materials[a.material].name)){expect(readAccessor(now,b.indices)).toEqual(readAccessor(old,a.indices));for(const k of Object.keys(a.attributes))expect(readAccessor(now,b.attributes[k])).toEqual(readAccessor(old,a.attributes[k]));}
+ }
+});
+it('Fukuras repairs only 74/76/81/35: exact off-target vertices and normals, exact ring boundary, area, topology and outward normals',()=>{
+ const source=json('source/data/plateau.json');const specs=[74,76,81,35].map(i=>({i,material:i===35?'fukuras_roof':'fukuras_wall',ring:source.surfaces[i].ring.slice(0,-1).map((p:number[])=>new Vector3(p[0],p[2],-p[1]))}));
+ const owns=(t:any,r:any)=>t.material===r.material&&t.v.every((v:Vector3)=>r.ring.some((p:Vector3)=>p.distanceTo(v)<.0003));
+ const old=triangles(glb('source/tessellation-v4/main.glb')),now=triangles(glb('web/fukuras.glb'));
+ const serial=(t:any)=>JSON.stringify([t.material,t.v.map((p:Vector3)=>p.toArray()),t.n.map((p:Vector3)=>p.toArray())]);
+ expect(now.filter(t=>!specs.some(r=>owns(t,r))).map(serial).sort()).toEqual(old.filter(t=>!specs.some(r=>owns(t,r))).map(serial).sort());expect(now.length).toBe(old.length);
+ for(const r of specs){
+  const before=old.filter(t=>owns(t,r)),after=now.filter(t=>owns(t,r));expect(before.length).toBe(r.ring.length-2);expect(after.length).toBe(r.ring.length-2);
+  const exact=r.ring.map((p:Vector3)=>before.flatMap(t=>t.v).find(v=>v.distanceTo(p)<.0003)!);expect(exact.every(Boolean)).toBe(true);
+  const edges=new Map<string,number>();const N=new Vector3();for(let j=0;j<exact.length;j++)N.add(exact[j].clone().cross(exact[(j+1)%exact.length]));const area=N.length()/2;N.normalize();
+  if((r.i===35&&N.y<0)||(r.i===74&&N.x>0)||([76,81].includes(r.i)&&N.z>0))N.negate();
+  let sum=0;for(const t of after){const ids=t.v.map(v=>exact.findIndex((p:Vector3)=>p.equals(v)));expect(ids.every(i=>i>=0)).toBe(true);const cross=t.v[1].clone().sub(t.v[0]).cross(t.v[2].clone().sub(t.v[0]));expect(cross.length()).toBeGreaterThan(1e-6);sum+=cross.length()/2;expect(cross.clone().normalize().dot(N)).toBeGreaterThan(.9999);for(const n of t.n)expect(cross.clone().normalize().dot(n)).toBeGreaterThan(.99999);
+   for(let j=0;j<3;j++){const key=[ids[j],ids[(j+1)%3]].sort((a,b)=>a-b).join(',');edges.set(key,(edges.get(key)??0)+1);}
+  }
+  expect(Math.abs(sum-area)).toBeLessThan(.003);
+  expect([...edges].filter(([,n])=>n===1).map(([e])=>e).sort()).toEqual(exact.map((_:any,i:number)=>[i,(i+1)%exact.length].sort((a:number,b:number)=>a-b).join(',')).sort());expect([...edges.values()].every(n=>n===1||n===2)).toBe(true);
+ }
 });

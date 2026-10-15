@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "base_commit": "2d1d416d5b4428db7a983e510eeaba08332f707f",
+  "baseline_blob": "954439cc27edeaa65fe76a47c310b8e3bd5875bf",
+  "final_blob": "fa1010e80fdfa8bd854931c0edd24f4ee29cc09d",
+  "baseline_proof": "Exact current-main generator fetched at e6430b1; every required fixed input git blob matched main; regeneration output git blob matched canonical main. Compare e6430b1..2d1d416 changes Hikarie only.",
+  "scope": {
+    "74": 10,
+    "76": 12,
+    "81": 6,
+    "35": 14
+  },
+  "off_target_exact_triangles": 12189,
+  "triangles": 12231,
+  "primitives": 13,
+  "main_bytes": 1046328,
+  "final_bytes": 1137516,
+  "material_and_node_and_scene_equal": true,
+  "normal_planarity_dot_tolerance": 0.9999,
+  "normal_vs_triangle_dot_tolerance": 0.99999,
+  "area_tolerance_square_m": 0.003,
+  "boundary_xyz": "Exact existing GLB float32 coordinates, source ring ownership tolerance 0.0003m",
+  "caveat": "Source rings have small inherited nonplanarity; per-triangle normals follow exact old boundary coordinates rather than flattening them.",
+  "unchanged_tests": 3,
+  "scoped_fidelity_tests": 6,
+  "unchanged_neighbourhood_filtered_tests": 1
+}

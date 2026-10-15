@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "blender": "4.2.3 LTS 0e22e4fcea03",
+  "isolated_portable_asset_directory": true,
+  "command": "blender -b -t 2 --python-exit-code 1 -P assets/buildings/fukuras/source/blender/build.py",
+  "outputs": [
+    {
+      "path": "web/fukuras.glb",
+      "bytes": 1137516,
+      "sha256": "4454c7c1e0c910688d68a879f8c94b1fa02d058641d23dddde6ad5c37e9d6f44",
+      "byte_exact": true
+    },
+    {
+      "path": "source/data/stats.json",
+      "bytes": 17730,
+      "sha256": "f98571520ac525d8d2945c0cf5ebbc1ca27c7ed3ac77150fa6ec9f35d2627df0",
+      "byte_exact": true
+    },
+    {
+      "path": "source/data/facade_map.json",
+      "bytes": 352959,
+      "sha256": "516eedb806888683eedd37c3046a84aae74f75fb7517e0ca0fb249d770f68272",
+      "byte_exact": true
+    },
+    {
+      "path": "source/data/tessellation_repair.json",
+      "bytes": 4829,
+      "sha256": "065a269a563c5719fe9e0aed7b6ef6630461e17f71f086237fb9dd4940c97c1d",
+      "byte_exact": true
+    },
+    {
+      "path": "source/data/tessellation_repair_v2.json",
+      "bytes": 3105,
+      "sha256": "e5345b6c7fb477636e521e695fc6199ebf8d4b5b8c83f6bb11fe54261b39be92",
+      "byte_exact": true
+    },
+    {
+      "path": "source/data/roof35_repair.json",
+      "bytes": 3840,
+      "sha256": "2779d276d0ebf78a53994fdad130360f735e2a21ef0adf79ab3ae051ff095699",
+      "byte_exact": true
+    }
+  ],
+  "blend": "Semantic parity checked independently; Blender save bytes not deterministic."
+}
