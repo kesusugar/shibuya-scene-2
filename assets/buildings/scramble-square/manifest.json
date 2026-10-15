@@ -1,46 +1,142 @@
 {
+  "schema": 2,
   "id": "scramble-square",
   "source_id": "way/617560918",
   "level": "B",
-  "status": "north facade photo-derived shallow approximation; retained source shell; no advertisement",
+  "scope": "Existing building cumulative source77/roof28/49/35 connectivity correction. Inventory covers staged files only; unlisted existing files preserved.",
+  "generator": "source/roof35-repair-v1/repair.py",
+  "current_blend": "source/roof35-repair-v1/updated.blend",
   "stats": {
     "triangles": 44392,
     "primitives": 10,
-    "bytes": 2930780
+    "bytes": 2930876,
+    "sha256": "f991d04122d60dbbde417a5f87391bec69505bcaa8ed68746b3e9cf80c2f1da3",
+    "git_blob": "ff02d1bf8234c0bde5af1a82b5729a3d9bbaf77f"
   },
-  "generator": "assets/buildings/scramble-square/source/blender/build.py",
   "files": {
     "README.md": {
-      "bytes": 2274,
-      "sha256": "398b9ceba1ebe88747655d227822ebf2027b2e29620bb822641aa05d50cbedc5"
+      "bytes": 3521,
+      "sha256": "863de9b078914dc069497cddc4feb4cbb970e310e97876025da53e77624a7f9b"
     },
-    "source/blender/build.py": {
+    "SOURCE_AND_LICENSE_JA.md": {
+      "bytes": 1070,
+      "sha256": "ffa6ad4e6bf3d8d2ae2ada01e35779552c81031450a2f58a0daddfefa497dc28"
+    },
+    "evidence/cumulative-v1/cameras.json": {
+      "bytes": 793,
+      "sha256": "7fbb3ca2525614d46c963621b2dc04621aed8b80feacd281c573567912362e1e"
+    },
+    "evidence/cumulative-v1/focused-tests.txt": {
+      "bytes": 548,
+      "sha256": "961a5fa4f4a966bb1a66faf2741e726af91633e447539750c44e1945be1e7e3e"
+    },
+    "evidence/cumulative-v1/front-after.png": {
+      "bytes": 539645,
+      "sha256": "00e8421a5b9d820783132d1aae4f0f397740ee87b15e5bff9dd556cebf106f60"
+    },
+    "evidence/cumulative-v1/front-before.png": {
+      "bytes": 539228,
+      "sha256": "22d9a0ec3f80f4d16b03dd1f12a571b282790910d3edb3a9cd3c42dcd2b57318"
+    },
+    "evidence/cumulative-v1/historical-roof35-detail.jpg": {
+      "bytes": 51670,
+      "sha256": "c114c40f4064dd12aa841b0da5f7564fed7693eca3b7b28e7b666e23a1d6b3c9"
+    },
+    "evidence/cumulative-v1/main-before-after.jpg": {
+      "bytes": 153312,
+      "sha256": "3d5bd6c2fb4a01d2613943a236bc6385e7fcf030f96bb4d5d7cf4697567c9d01"
+    },
+    "evidence/cumulative-v1/reproduction.json": {
+      "bytes": 3541,
+      "sha256": "34c271d9631b2397419f2b0426518af7f733abf2523d16944defcd866c632d15"
+    },
+    "evidence/cumulative-v1/side-after.png": {
+      "bytes": 565834,
+      "sha256": "c42fd245f48336b4848aa56ef4c5ef680f220d01c4f407855e1d6c68400a0f08"
+    },
+    "evidence/cumulative-v1/side-before.png": {
+      "bytes": 565835,
+      "sha256": "fd1dbd31f801a8c75309f57dc6eb7b7a220a518c6784969533cae36ed1c2d350"
+    },
+    "evidence/cumulative-v1/verification.json": {
+      "bytes": 2237,
+      "sha256": "1995ee2e8e6c7a96509ced550ec3a03d9e5329deea4c8528d46e9579f0276791"
+    },
+    "source/cumulative-v1/main-generator.py": {
       "bytes": 16928,
       "sha256": "02b049707c2548b27680ba50d767ee373867f618cd81fe190adee34b19d72fdd"
+    },
+    "source/cumulative-v1/main.glb": {
+      "bytes": 2930780,
+      "sha256": "b2e0fe242decdc792bde04be9bf49c428183c8bda3f64892c35d3d7fe36d9f54"
+    },
+    "source/cumulative-v1/render-main-comparison.py": {
+      "bytes": 1338,
+      "sha256": "85d6b9604830079be0e45a0167e37f3ad7d8fe64313cf1f59ebe4f86a7d5d91f"
     },
     "source/data/layout.json": {
       "bytes": 482,
       "sha256": "c93c43f60ffa191521f5d9e096c6340c102d935ba87d259bcacac509ae8345ef"
+    },
+    "source/data/pavement-baseline.json": {
+      "bytes": 4114,
+      "sha256": "fe4f426ee221c643b36474eab43f35bfe24141c8562828f71228e29829f2cefb"
     },
     "source/data/plateau.json": {
       "bytes": 35849,
       "sha256": "1eb45c10f27fc00d02f5c6c534e135bdcf7ec4ce60e367200e4b06bab0ba0d65"
     },
     "source/data/stats.json": {
-      "bytes": 8130,
-      "sha256": "fd9e07d8f14f1066ad8696c2534104d42b69d29b7b3196e9727749adf19826d0"
+      "bytes": 10939,
+      "sha256": "5e8c6688b5939137e8a048bebff5e698cd7b85e7208a96f357d00f2fe2aa4139"
     },
-    "source/refs/SOURCES.md": {
-      "bytes": 531,
-      "sha256": "107281d8cd03253ca91003e7a19bde76136967af4ec8776e96a556e1818fad42"
+    "source/refs/FACADE_SOURCES.md": {
+      "bytes": 1978,
+      "sha256": "cbdc66d25792effcaa56d42867afef5945e7c75376c187c5ef1f535aea27af87"
     },
-    "source/refs/reference.jpg": {
-      "bytes": 4973941,
-      "sha256": "e113b409f732670ad9b17ccd437210ceaa32c04d7c338c0bc8ba4054cc63b12d"
+    "source/refs/JUN15-podium-actual-crop.jpg": {
+      "bytes": 159991,
+      "sha256": "058af0a66325ff8758f4978ffc9f88506d4eab2462351ec875b4e45697e0adb1"
     },
-    "source/refs/reference.jpg.json": {
-      "bytes": 2688,
-      "sha256": "ca569a82fbf33d85ed33a563e2636d91d0ffb4e2079c7aeee53edde4be8438f6"
+    "source/refs/OCT10-podium-actual-crop.jpg": {
+      "bytes": 56329,
+      "sha256": "9d39fd1b487b03f27262b3b7aa81c976f3d04d253fb49ed87b794093707629bf"
+    },
+    "source/refs/SEP30-podium-actual-crop.jpg": {
+      "bytes": 145030,
+      "sha256": "9d31d1ef39480f972b8972109393b7655e34817003b5467f0a04871ecde28a1d"
+    },
+    "source/refs/SEP30-upper-facade-actual-crop.jpg": {
+      "bytes": 129988,
+      "sha256": "02a768068f24ccf7705b2f6ac9411ee273057f205526b919ef94a0351c4ccd6e"
+    },
+    "source/roof35-repair-v1/audit-specification.json": {
+      "bytes": 22749,
+      "sha256": "4ddde1baa8c1962f41cc1979335fa4282c7a7e2517e0b16d7fd5bf1a6bb6d43c"
+    },
+    "source/roof35-repair-v1/prior.blend": {
+      "bytes": 1365593,
+      "sha256": "1b081ef3853f8707d722ca6ebd4c2e5a9f939770aac4c939098d20ce73c1ef3e"
+    },
+    "source/roof35-repair-v1/prior.glb": {
+      "bytes": 2930876,
+      "sha256": "79c8add22afa054a59d100666ffac27d4cb8b8b32b275136c1eb242f1767746c"
+    },
+    "source/roof35-repair-v1/repair-config.json": {
+      "bytes": 7319,
+      "sha256": "15f55597e02640e809282260df1c7c5aa7483efed0084f9574232ca179ac72fc"
+    },
+    "source/roof35-repair-v1/repair-report.json": {
+      "bytes": 10810,
+      "sha256": "ab8a6d1cc98ec03959be38f4cb078b98c93bb5005c70f236239b1499943cd5c2"
+    },
+    "source/roof35-repair-v1/repair.py": {
+      "bytes": 8240,
+      "sha256": "e4229af7afe0cfd44e025c03f0f33b20aefbbe5e8470295c40fa4e1ef6a5a35b"
+    },
+    "source/roof35-repair-v1/updated.blend": {
+      "bytes": 1365377,
+      "sha256": "dd8fcc992e70cb560eb72031fccd372e6fd8621f9cfea44bc2ca404c09236138"
     },
     "web/emissive_day.json": {
       "bytes": 3,
@@ -51,52 +147,12 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/scramble-square.glb": {
-      "bytes": 2930780,
-      "sha256": "b2e0fe242decdc792bde04be9bf49c428183c8bda3f64892c35d3d7fe36d9f54"
+      "bytes": 2930876,
+      "sha256": "f991d04122d60dbbde417a5f87391bec69505bcaa8ed68746b3e9cf80c2f1da3"
     },
     "web/viewer.json": {
       "bytes": 195,
       "sha256": "02dc53f7e6125211898d55d264eef2742c23baa62f010af55a51fd4987085c22"
-    },
-    "source/refs/FACADE_SOURCES.md": {
-      "bytes": 1978,
-      "sha256": "cbdc66d25792effcaa56d42867afef5945e7c75376c187c5ef1f535aea27af87"
-    },
-    "source/refs/SEP30-podium-actual-crop.jpg": {
-      "bytes": 145030,
-      "sha256": "9d31d1ef39480f972b8972109393b7655e34817003b5467f0a04871ecde28a1d"
-    },
-    "source/refs/OCT10-podium-actual-crop.jpg": {
-      "bytes": 56329,
-      "sha256": "9d39fd1b487b03f27262b3b7aa81c976f3d04d253fb49ed87b794093707629bf"
-    },
-    "source/refs/JUN15-podium-actual-crop.jpg": {
-      "bytes": 159991,
-      "sha256": "058af0a66325ff8758f4978ffc9f88506d4eab2462351ec875b4e45697e0adb1"
-    },
-    "source/refs/SEP30-upper-facade-actual-crop.jpg": {
-      "bytes": 129988,
-      "sha256": "02a768068f24ccf7705b2f6ac9411ee273057f205526b919ef94a0351c4ccd6e"
-    },
-    "source/data/baseline-geometry.json": {
-      "bytes": 435,
-      "sha256": "55d5a25bef55c4a03da4ee0bf700cbd5684d7c9d351a30246a5273591377528d"
-    },
-    "source/data/original-manifest.json": {
-      "bytes": 2061,
-      "sha256": "683bf70fca1496ad34325a22894123b345b65971710074ee3c9d60984e299b55"
-    },
-    "source/data/pavement-baseline.json": {
-      "bytes": 4114,
-      "sha256": "fe4f426ee221c643b36474eab43f35bfe24141c8562828f71228e29829f2cefb"
-    },
-    "source/blender/reproduce_baseline.py": {
-      "bytes": 12670,
-      "sha256": "5facef2f382e6f88c0a6d21e8b4c43b2f3e3beac0f59aa6d02bef3f2aaefc5a6"
-    },
-    "source/blender/scramble-square.blend": {
-      "bytes": 3905884,
-      "sha256": "9d4adfb7265ab87c695fe0ef268a09b33dc3f1a3a13222be2be27425aba474fe"
     }
   }
 }
