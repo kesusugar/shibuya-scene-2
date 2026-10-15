@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "blender": "4.2.3 LTS",
+  "mesh_count": 4,
+  "materials": 2,
+  "triangles": 896,
+  "bbox_min": [
+    -0.07999999821186066,
+    -0.07999999821186066,
+    0.0
+  ],
+  "bbox_max": [
+    0.07999999821186066,
+    0.07999999821186066,
+    0.23000000417232513
+  ],
+  "origin_bottom_centre": true,
+  "closed_positive_volume_meshes": true,
+  "editable_export_byte_exact": true,
+  "glb_2_self_contained_core_pbr": true,
+  "three_js_runtime_test": "not run; core glTF format checks only",
+  "glb_sha256": "c02707298918a2efba4e0736bb0dadba39906df8b91d2975c7bbbf890cac90c6"
+}

@@ -1,0 +1,16 @@
+23:30:33 | INFO: Starting glTF 2.0 export
+23:30:33 | INFO: Extracting primitive: Dark_lower_dome
+23:30:33 | INFO: Primitives created: 1
+23:30:33 | INFO: Extracting primitive: White_lower_collar
+23:30:33 | INFO: Primitives created: 1
+23:30:33 | INFO: Extracting primitive: Dark_separator_ring
+23:30:33 | INFO: Primitives created: 1
+23:30:33 | INFO: Extracting primitive: White_cylindrical_body
+23:30:33 | INFO: Primitives created: 1
+23:30:33 | INFO: Finished glTF 2.0 export in 0.01570415496826172 s
+INFO Draco mesh compression is available, use library at /workspace/scratch/b6331e59d884/tools/blender-4.2.3-linux-x64/4.2/python/lib/python3.11/site-packages/libextern_draco.so
+
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Read blend: "/workspace/scratch/b6331e59d884/shibu_hachi_box_corner_dome_revision/output/corner_dome_visible_fragment.blend"
+
+Blender quit

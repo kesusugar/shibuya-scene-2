@@ -1,0 +1,15 @@
+{
+  "asset": "shibu_hachi_box_corner_dome_visible_fragment",
+  "metres": true,
+  "diameter": 0.16,
+  "visible_height": 0.23,
+  "dimension_status": "low-confidence inferred; upper assembly clipped by photograph",
+  "origin": "bottom centre",
+  "estimated_cutoff_interface_blender_z": 0.23,
+  "triangles": 896,
+  "objects": 4,
+  "materials": 2,
+  "runtime_registered": false,
+  "date_evidence": "2026-08-08; not verified for 2025",
+  "complete_device": false
+}

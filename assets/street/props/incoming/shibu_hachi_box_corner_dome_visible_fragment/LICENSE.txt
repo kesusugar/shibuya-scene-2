@@ -1,0 +1,4 @@
+The original procedural source, generated model and model-only render images in this package are provided under CC0 1.0 Universal.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+This dedication covers only these newly authored files. It does not grant rights in the linked third-party source photograph, brand names or third-party intellectual property. No third-party photograph or texture is included.
