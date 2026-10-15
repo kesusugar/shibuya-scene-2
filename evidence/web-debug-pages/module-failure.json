@@ -1,0 +1,33 @@
+{
+  "phase": "JavaScriptを読み込み中",
+  "readyMs": null,
+  "firstFrameMs": null,
+  "errors": [
+    {
+      "at": 26,
+      "kind": "resource",
+      "message": "http://127.0.0.1:5240/shibuya-scene-2/assets/index-DWjIrFJf.js"
+    }
+  ],
+  "assets": [],
+  "marks": [],
+  "runtime": null,
+  "elapsedMs": 55,
+  "page": "http://127.0.0.1:5240/shibuya-scene-2/",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.37 Safari/537.36",
+  "resources": [
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/assets/index-DWjIrFJf.js",
+      "durationMs": 5,
+      "transferBytes": 0,
+      "decodedBytes": 0
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/startup-debug.js",
+      "durationMs": 9,
+      "transferBytes": 2373,
+      "decodedBytes": 4321
+    }
+  ],
+  "transferBytes": 2373
+}
