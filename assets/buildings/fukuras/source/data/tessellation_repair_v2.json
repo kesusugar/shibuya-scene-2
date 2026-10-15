@@ -1,0 +1,157 @@
+{
+  "version": 3,
+  "repair_surfaces": [
+    74
+  ],
+  "previous_repair_surfaces": [
+    76,
+    81
+  ],
+  "reference_candidate_sha256": "c820b8bb7ef4f833cd4aea474ff9f9fa8566d4f330c6c484be0370f44cef62c8",
+  "preservation_exception": "This revision replaces only source wall74 triangle connectivity and its outward normals, retaining the first76/81 correction exactly. All source boundary coordinates, other wall triangles, roof triangles, footing and approved facade overlays remain unchanged.",
+  "faces": [
+    {
+      "surface": 74,
+      "source_boundary_vertices": 12,
+      "removed_triangles": [
+        {
+          "triangle_index": 29,
+          "indices": [
+            210,
+            217,
+            227
+          ]
+        },
+        {
+          "triangle_index": 291,
+          "indices": [
+            231,
+            204,
+            205
+          ]
+        },
+        {
+          "triangle_index": 292,
+          "indices": [
+            206,
+            208,
+            211
+          ]
+        },
+        {
+          "triangle_index": 293,
+          "indices": [
+            226,
+            231,
+            205
+          ]
+        },
+        {
+          "triangle_index": 294,
+          "indices": [
+            209,
+            213,
+            214
+          ]
+        },
+        {
+          "triangle_index": 295,
+          "indices": [
+            215,
+            219,
+            220
+          ]
+        },
+        {
+          "triangle_index": 296,
+          "indices": [
+            224,
+            225,
+            229
+          ]
+        },
+        {
+          "triangle_index": 297,
+          "indices": [
+            216,
+            221,
+            222
+          ]
+        },
+        {
+          "triangle_index": 298,
+          "indices": [
+            218,
+            223,
+            228
+          ]
+        },
+        {
+          "triangle_index": 299,
+          "indices": [
+            207,
+            212,
+            230
+          ]
+        }
+      ],
+      "replacement_source_vertex_indices": [
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          8,
+          5,
+          6
+        ],
+        [
+          8,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          0,
+          4,
+          10
+        ],
+        [
+          10,
+          4,
+          9
+        ],
+        [
+          0,
+          10,
+          11
+        ]
+      ],
+      "replacement_triangles": 10,
+      "xyz_policy": "exact existing GLB boundary coordinates; normals corrected only for target triangles",
+      "projection": "source-local horizontal tangent plus original source height; no XYZ flattening"
+    }
+  ],
+  "scope_note": "Historical wall74 pass; current roof35 repair is separately recorded in roof35_repair.json",
+  "current_glb_sha256": "4454c7c1e0c910688d68a879f8c94b1fa02d058641d23dddde6ad5c37e9d6f44"
+}

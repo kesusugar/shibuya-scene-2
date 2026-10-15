@@ -1,0 +1,268 @@
+{
+  "version": 2,
+  "repair_surfaces": [
+    76,
+    81
+  ],
+  "preservation_exception": "This file describes earlier76/81 pass only; cumulative repairs also include74 and roof35. All source boundaryXYZ and remaining geometry are unchanged.",
+  "faces": [
+    {
+      "surface": 76,
+      "source_boundary_vertices": 14,
+      "removed_triangles": [
+        {
+          "triangle_index": 31,
+          "indices": [
+            253,
+            260,
+            264
+          ]
+        },
+        {
+          "triangle_index": 303,
+          "indices": [
+            266,
+            236,
+            237
+          ]
+        },
+        {
+          "triangle_index": 304,
+          "indices": [
+            239,
+            241,
+            244
+          ]
+        },
+        {
+          "triangle_index": 305,
+          "indices": [
+            263,
+            267,
+            238
+          ]
+        },
+        {
+          "triangle_index": 306,
+          "indices": [
+            243,
+            246,
+            248
+          ]
+        },
+        {
+          "triangle_index": 307,
+          "indices": [
+            240,
+            245,
+            265
+          ]
+        },
+        {
+          "triangle_index": 308,
+          "indices": [
+            242,
+            247,
+            252
+          ]
+        },
+        {
+          "triangle_index": 309,
+          "indices": [
+            264,
+            243,
+            253
+          ]
+        },
+        {
+          "triangle_index": 310,
+          "indices": [
+            258,
+            261,
+            262
+          ]
+        },
+        {
+          "triangle_index": 311,
+          "indices": [
+            256,
+            257,
+            260
+          ]
+        },
+        {
+          "triangle_index": 312,
+          "indices": [
+            249,
+            250,
+            254
+          ]
+        },
+        {
+          "triangle_index": 313,
+          "indices": [
+            251,
+            255,
+            259
+          ]
+        }
+      ],
+      "replacement_source_vertex_indices": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          12,
+          13,
+          0
+        ],
+        [
+          12,
+          0,
+          3
+        ],
+        [
+          12,
+          3,
+          4
+        ],
+        [
+          12,
+          4,
+          5
+        ],
+        [
+          12,
+          5,
+          6
+        ],
+        [
+          12,
+          6,
+          7
+        ],
+        [
+          12,
+          7,
+          8
+        ],
+        [
+          12,
+          8,
+          11
+        ],
+        [
+          11,
+          8,
+          9
+        ],
+        [
+          10,
+          11,
+          9
+        ]
+      ],
+      "replacement_triangles": 12,
+      "xyz_policy": "exact existing GLB boundary coordinates; normals corrected only for target triangles",
+      "projection": "source-local horizontal tangent plus original source height; no XYZ flattening"
+    },
+    {
+      "surface": 81,
+      "source_boundary_vertices": 8,
+      "removed_triangles": [
+        {
+          "triangle_index": 44,
+          "indices": [
+            322,
+            326,
+            330
+          ]
+        },
+        {
+          "triangle_index": 326,
+          "indices": [
+            333,
+            316,
+            319
+          ]
+        },
+        {
+          "triangle_index": 327,
+          "indices": [
+            320,
+            321,
+            324
+          ]
+        },
+        {
+          "triangle_index": 328,
+          "indices": [
+            328,
+            332,
+            317
+          ]
+        },
+        {
+          "triangle_index": 329,
+          "indices": [
+            331,
+            318,
+            323
+          ]
+        },
+        {
+          "triangle_index": 330,
+          "indices": [
+            325,
+            327,
+            329
+          ]
+        }
+      ],
+      "replacement_source_vertex_indices": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          6,
+          7,
+          0
+        ],
+        [
+          6,
+          0,
+          5
+        ]
+      ],
+      "replacement_triangles": 6,
+      "xyz_policy": "exact existing GLB boundary coordinates; normals corrected only for target triangles",
+      "projection": "source-local horizontal tangent plus original source height; no XYZ flattening"
+    }
+  ],
+  "scope_note": "Historical76/81 pass; later74 and roof35 passes are recorded separately",
+  "current_glb_sha256": "4454c7c1e0c910688d68a879f8c94b1fa02d058641d23dddde6ad5c37e9d6f44"
+}

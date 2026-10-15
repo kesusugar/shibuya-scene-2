@@ -959,7 +959,8 @@
     }
   ],
   "missing_pavement_samples": 0,
-  "status": "bounded October2025 photo-guided facade; dimensions estimated; hidden and upper service facades inherited approximation",
+  "status": "bounded October2025 facade plus source-wall74/76/81 and roof35 bounded tessellation repairs; hidden and upper service facades remain approximation",
+  "glb_sha256": "4454c7c1e0c910688d68a879f8c94b1fa02d058641d23dddde6ad5c37e9d6f44",
   "baseline_glass_panels": 1726,
   "treated_surfaces": [
     76,
@@ -972,5 +973,17 @@
     "135": 126
   },
   "source_buffers_preserved": true,
+  "tessellation_repair_surfaces": [
+    74,
+    76,
+    81
+  ],
+  "roof_repair_surfaces": [
+    35
+  ],
+  "this_revision_repair_surfaces": [
+    35
+  ],
+  "preservation_exception": "Roof35 only changes versus wallv2 correction; previous74/76/81 repairs, all boundaryXYZ and off-target geometry retained",
   "ground_sampling": "inherited exact baseline; not freshly queried"
 }

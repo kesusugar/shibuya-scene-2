@@ -1,0 +1,8 @@
+Blender 4.2.3 LTS (0e22e4fcea03), validation 2026-10-15 UTC.
+Canonical generator in isolated copied asset directory: GLB plus five generated JSONs byte-identical PASS.
+Chosen delivered editable scene vs final GLB: world triangle, corner-normal, material parity PASS; external images 0, linked libraries 0.
+Current-main historical fidelity suite: 4/4 PASS.
+Same unchanged historical suite on delivered final: 3 PASS; intended shell-accessor identity assertion FAIL for tessellation changes.
+Current scoped fidelity suite: 6/6 PASS. Three unaffected original test bodies unchanged.
+Unchanged neighbourhood.test.ts with name filter fukuras: 1 PASS, other five assets not selected.
+No whole-scene test/build/browser/FPS claim.
