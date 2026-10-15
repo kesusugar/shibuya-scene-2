@@ -1,0 +1,260 @@
+{
+  "dependency_sha256": "25eecd5e60bd463efcb7cf133815de413633c93abf0dd7547c246f6d06386881",
+  "surface": 113,
+  "removed_brace_indices": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "removed_generator_rows": [
+    24,
+    27,
+    30,
+    33
+  ],
+  "removed_triangles": [
+    {
+      "triangle_offset": 1833,
+      "indices": [
+        9102,
+        9105,
+        9107
+      ],
+      "brace_index_zero_based": 4,
+      "generator_row": 24,
+      "source_z_actual": [
+        110.19084930419922,
+        124.38538360595703
+      ]
+    },
+    {
+      "triangle_offset": 1834,
+      "indices": [
+        9110,
+        9113,
+        9108
+      ],
+      "brace_index_zero_based": 4,
+      "generator_row": 24,
+      "source_z_actual": [
+        110.19084930419922,
+        124.38538360595703
+      ]
+    },
+    {
+      "triangle_offset": 1835,
+      "indices": [
+        9115,
+        9118,
+        9114
+      ],
+      "brace_index_zero_based": 5,
+      "generator_row": 27,
+      "source_z_actual": [
+        124.31415557861328,
+        138.43746948242188
+      ]
+    },
+    {
+      "triangle_offset": 1836,
+      "indices": [
+        9121,
+        9124,
+        9120
+      ],
+      "brace_index_zero_based": 5,
+      "generator_row": 27,
+      "source_z_actual": [
+        124.31415557861328,
+        138.50869750976562
+      ]
+    },
+    {
+      "triangle_offset": 1837,
+      "indices": [
+        9127,
+        9130,
+        9126
+      ],
+      "brace_index_zero_based": 6,
+      "generator_row": 30,
+      "source_z_actual": [
+        138.43746948242188,
+        152.56077575683594
+      ]
+    },
+    {
+      "triangle_offset": 1838,
+      "indices": [
+        9133,
+        9135,
+        9132
+      ],
+      "brace_index_zero_based": 6,
+      "generator_row": 30,
+      "source_z_actual": [
+        138.43746948242188,
+        152.6320037841797
+      ]
+    },
+    {
+      "triangle_offset": 1839,
+      "indices": [
+        9137,
+        9140,
+        9136
+      ],
+      "brace_index_zero_based": 7,
+      "generator_row": 33,
+      "source_z_actual": [
+        152.56077575683594,
+        166.68408203125
+      ]
+    },
+    {
+      "triangle_offset": 1840,
+      "indices": [
+        9144,
+        9147,
+        9142
+      ],
+      "brace_index_zero_based": 7,
+      "generator_row": 33,
+      "source_z_actual": [
+        152.56077575683594,
+        166.75531005859375
+      ]
+    },
+    {
+      "triangle_offset": 8538,
+      "indices": [
+        9103,
+        9104,
+        9106
+      ],
+      "brace_index_zero_based": 4,
+      "generator_row": 24,
+      "source_z_actual": [
+        110.19084930419922,
+        124.38538360595703
+      ]
+    },
+    {
+      "triangle_offset": 8539,
+      "indices": [
+        9109,
+        9111,
+        9112
+      ],
+      "brace_index_zero_based": 4,
+      "generator_row": 24,
+      "source_z_actual": [
+        110.19084930419922,
+        124.38538360595703
+      ]
+    },
+    {
+      "triangle_offset": 8540,
+      "indices": [
+        9116,
+        9117,
+        9119
+      ],
+      "brace_index_zero_based": 5,
+      "generator_row": 27,
+      "source_z_actual": [
+        124.38538360595703,
+        138.50869750976562
+      ]
+    },
+    {
+      "triangle_offset": 8541,
+      "indices": [
+        9122,
+        9123,
+        9125
+      ],
+      "brace_index_zero_based": 5,
+      "generator_row": 27,
+      "source_z_actual": [
+        124.31415557861328,
+        138.50869750976562
+      ]
+    },
+    {
+      "triangle_offset": 8542,
+      "indices": [
+        9128,
+        9129,
+        9131
+      ],
+      "brace_index_zero_based": 6,
+      "generator_row": 30,
+      "source_z_actual": [
+        138.50869750976562,
+        152.6320037841797
+      ]
+    },
+    {
+      "triangle_offset": 8543,
+      "indices": [
+        9133,
+        9134,
+        9135
+      ],
+      "brace_index_zero_based": 6,
+      "generator_row": 30,
+      "source_z_actual": [
+        138.43746948242188,
+        152.6320037841797
+      ]
+    },
+    {
+      "triangle_offset": 8544,
+      "indices": [
+        9138,
+        9139,
+        9141
+      ],
+      "brace_index_zero_based": 7,
+      "generator_row": 33,
+      "source_z_actual": [
+        152.6320037841797,
+        166.75531005859375
+      ]
+    },
+    {
+      "triangle_offset": 8545,
+      "indices": [
+        9143,
+        9145,
+        9146
+      ],
+      "brace_index_zero_based": 7,
+      "generator_row": 33,
+      "source_z_actual": [
+        152.56077575683594,
+        166.75531005859375
+      ]
+    }
+  ],
+  "retained_unresolved_braces": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "stats": {
+    "triangles": 31834,
+    "primitives": 12,
+    "bytes": 2783244
+  },
+  "unchanged_budget": {
+    "triangles": 120000,
+    "primitives": 40,
+    "bytes": 3000000
+  },
+  "evidence_capture": "2025-12-01",
+  "limits": "December evidence is later than October2025 target; approximate photo registration and accepted static-facade inference; October state unverified. No full-facade or full-scene certification. Lower four X overlays remain unresolved, not validated real structure."
+}

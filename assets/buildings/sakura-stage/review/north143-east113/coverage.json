@@ -1,0 +1,312 @@
+{
+  "surface": 113,
+  "method": "Exact source brace positions projected into unchanged model; approximate affine photo registration for visual key only",
+  "photo_registration_matrix": [
+    [
+      1.7886108684859299,
+      0.7747783276890625
+    ],
+    [
+      0.023162343325228332,
+      1.8685429123865251
+    ],
+    [
+      2928.662375307874,
+      72.43447957802299
+    ]
+  ],
+  "landmarks": {
+    "model": [
+      [
+        564.46,
+        75.05,
+        1.0
+      ],
+      [
+        704.11,
+        214.09,
+        1.0
+      ],
+      [
+        565.55,
+        854.35,
+        1.0
+      ]
+    ],
+    "photo": [
+      [
+        3940,
+        650
+      ],
+      [
+        4193,
+        1018
+      ],
+      [
+        3960,
+        2107
+      ]
+    ],
+    "third_landmark_warning": "Occlusion landmark, not independently surveyed plane113 point"
+  },
+  "capture_date": "2025-12-01",
+  "target_date_caveat": "Later than October2025; no October-specific certification",
+  "braces": [
+    {
+      "brace_index_zero_based": 0,
+      "generator_row": 12,
+      "source_z_m": [
+        53.733230769230765,
+        67.85653846153846
+      ],
+      "photo_coverage_class": "unseen behind foreground",
+      "model_ray_samples_visible": 0,
+      "model_ray_samples_total": 81,
+      "ray_warning": "Illustrative model camera only, not photo visibility measurement",
+      "approx_photo_polygon": [
+        [
+          3969.7470107733634,
+          2845.9467464019026
+        ],
+        [
+          4007.482660291402,
+          2864.838977339557
+        ],
+        [
+          4004.2209185141014,
+          2621.8012443343086
+        ],
+        [
+          3966.4877385433683,
+          2598.8027769101104
+        ]
+      ]
+    },
+    {
+      "brace_index_zero_based": 1,
+      "generator_row": 15,
+      "source_z_m": [
+        67.85653846153845,
+        81.97984615384614
+      ],
+      "photo_coverage_class": "unseen behind foreground",
+      "model_ray_samples_visible": 0,
+      "model_ray_samples_total": 81,
+      "ray_warning": "Illustrative model camera only, not photo visibility measurement",
+      "approx_photo_polygon": [
+        [
+          3966.4877385433683,
+          2598.8027769101104
+        ],
+        [
+          4004.2209185141014,
+          2621.8012443343086
+        ],
+        [
+          4000.968904920997,
+          2379.548299352263
+        ],
+        [
+          3963.238657744436,
+          2352.480966299768
+        ]
+      ]
+    },
+    {
+      "brace_index_zero_based": 2,
+      "generator_row": 18,
+      "source_z_m": [
+        81.97984615384614,
+        96.10315384615383
+      ],
+      "photo_coverage_class": "partly occluded / boundary-sensitive",
+      "model_ray_samples_visible": 6,
+      "model_ray_samples_total": 81,
+      "ray_warning": "Illustrative model camera only, not photo visibility measurement",
+      "approx_photo_polygon": [
+        [
+          3963.238657744436,
+          2352.480966299768
+        ],
+        [
+          4000.968904920997,
+          2379.548299352263
+        ],
+        [
+          3997.708965026837,
+          2138.0910800392653
+        ],
+        [
+          3960.0,
+          2107.0
+        ]
+      ]
+    },
+    {
+      "brace_index_zero_based": 3,
+      "generator_row": 21,
+      "source_z_m": [
+        96.10315384615383,
+        110.22646153846152
+      ],
+      "photo_coverage_class": "partly occluded / boundary-sensitive",
+      "model_ray_samples_visible": 78,
+      "model_ray_samples_total": 81,
+      "ray_warning": "Illustrative model camera only, not photo visibility measurement",
+      "approx_photo_polygon": [
+        [
+          3960.0,
+          2107.0
+        ],
+        [
+          3997.708965026837,
+          2138.0910800392653
+        ],
+        [
+          3994.4766394255594,
+          1897.4263965327477
+        ],
+        [
+          3956.7713020631945,
+          1862.3225071525583
+        ]
+      ]
+    },
+    {
+      "brace_index_zero_based": 4,
+      "generator_row": 24,
+      "source_z_m": [
+        110.22646153846152,
+        124.34976923076921
+      ],
+      "photo_coverage_class": "fully visible, high confidence",
+      "model_ray_samples_visible": 81,
+      "model_ray_samples_total": 81,
+      "ray_warning": "Illustrative model camera only, not photo visibility measurement",
+      "approx_photo_polygon": [
+        [
+          3956.7713020631945,
+          1862.3225071525583
+        ],
+        [
+          3994.4766394255594,
+          1897.4263965327477
+        ],
+        [
+          3991.2542736319115,
+          1657.5651864785564
+        ],
+        [
+          3953.5527955574516,
+          1618.4671731865662
+        ]
+      ]
+    },
+    {
+      "brace_index_zero_based": 5,
+      "generator_row": 27,
+      "source_z_m": [
+        124.34976923076921,
+        138.47307692307692
+      ],
+      "photo_coverage_class": "fully visible, high confidence",
+      "model_ray_samples_visible": 81,
+      "model_ray_samples_total": 81,
+      "ray_warning": "Illustrative model camera only, not photo visibility measurement",
+      "approx_photo_polygon": [
+        [
+          3953.5527955574516,
+          1618.4671731865662
+        ],
+        [
+          3991.2542736319115,
+          1657.5651864785564
+        ],
+        [
+          3988.04163602246,
+          1418.4887644475673
+        ],
+        [
+          3950.3444804827723,
+          1375.4339981020246
+        ]
+      ]
+    },
+    {
+      "brace_index_zero_based": 6,
+      "generator_row": 30,
+      "source_z_m": [
+        138.47307692307692,
+        152.5963846153846
+      ],
+      "photo_coverage_class": "fully visible, high confidence",
+      "model_ray_samples_visible": 81,
+      "model_ray_samples_total": 81,
+      "ray_warning": "Illustrative model camera only, not photo visibility measurement",
+      "approx_photo_polygon": [
+        [
+          3950.3444804827723,
+          1375.4339981020246
+        ],
+        [
+          3988.04163602246,
+          1418.4887644475673
+        ],
+        [
+          3984.838726597205,
+          1180.1971304397803
+        ],
+        [
+          3947.1461252157223,
+          1133.204296469809
+        ]
+      ]
+    },
+    {
+      "brace_index_zero_based": 7,
+      "generator_row": 33,
+      "source_z_m": [
+        152.5963846153846,
+        166.7196923076923
+      ],
+      "photo_coverage_class": "fully visible, high confidence",
+      "model_ray_samples_visible": 81,
+      "model_ray_samples_total": 81,
+      "ray_warning": "Illustrative model camera only, not photo visibility measurement",
+      "approx_photo_polygon": [
+        [
+          3947.1461252157223,
+          1133.204296469809
+        ],
+        [
+          3984.838726597205,
+          1180.1971304397803
+        ],
+        [
+          3981.6455453561466,
+          942.690284455196
+        ],
+        [
+          3943.975615864987,
+          891.7858160731964
+        ]
+      ]
+    }
+  ],
+  "decision": {
+    "remove": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "retain_unresolved": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "inference": "Accepted static-facade inference only; October2025 state unverified",
+    "actual_geometry": "See web/sakura-stage.east113-upper.json for strip edge extents, ~0.0356m beyond centrelines"
+  }
+}

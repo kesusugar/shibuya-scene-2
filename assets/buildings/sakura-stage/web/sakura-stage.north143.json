@@ -1,0 +1,87 @@
+{
+  "baseline_sha256": "0781a138445fa96b2f34a5491c0c238dbbd9af7f2d0fe7ae8536c59f3e7de98e",
+  "surface": 143,
+  "q0": "east endpoint; photo-left",
+  "east_endpoint": [
+    126.564,
+    -230.614
+  ],
+  "west_endpoint": [
+    66.751,
+    -263.078
+  ],
+  "width_m": 68.05517074403676,
+  "removed_triangles": {
+    "sakura-stage_roof": 0,
+    "sakura-stage_wall": 0,
+    "sakura-stage_glass1": 890,
+    "sakura-stage_frame": 2548,
+    "sakura-stage_sign_housing": 0,
+    "sakura-stage_spandrel": 66,
+    "sakura-stage_glass2": 814,
+    "sakura-stage_glass0": 804
+  },
+  "features": [
+    {
+      "surface": 143,
+      "kind": "segmented_dark_stripe",
+      "q": [
+        0.425,
+        0.475
+      ],
+      "pane_count": 2,
+      "z": [
+        25.1,
+        180.843
+      ],
+      "basis": "February and September2025 visual proportions; approximate"
+    },
+    {
+      "surface": 143,
+      "kind": "continuous_fins",
+      "count": 41,
+      "pitch_m": 1.701379268600919,
+      "width_m": 0.13,
+      "depth_m": 0.34,
+      "z": [
+        25.130000000000003,
+        180.803
+      ]
+    },
+    {
+      "surface": 143,
+      "kind": "spandrels",
+      "height_m": 1.05,
+      "storey_pitch_m": 4.707769230769231,
+      "first_row": 6,
+      "last_row": 38
+    },
+    {
+      "surface": 143,
+      "kind": "strong_horizontal_belts",
+      "bottom_z_m": [
+        118.5,
+        127.9
+      ],
+      "height_m": 0.3,
+      "depth_m": 0.42
+    },
+    {
+      "surface": 143,
+      "kind": "roof_level_dark_strip",
+      "z": [
+        173.5,
+        177.1
+      ],
+      "depth_m": 0.12
+    }
+  ],
+  "stats": {
+    "triangles": 31850,
+    "primitives": 12,
+    "bytes": 2622392
+  },
+  "inherited_zero_area_wall_triangles": 8,
+  "preserved": "all shell/roof, footing, source rings, off-target triangle attributes and materials;306 pavement samples",
+  "limits": "asset-local studio only; no full-scene/nighttime/FPS certification; no October-specific evidence"
+}

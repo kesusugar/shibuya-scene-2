@@ -1,0 +1,42 @@
+{
+  "blender": "4.2.3 LTS",
+  "engine": "BLENDER_WORKBENCH",
+  "resolution": [
+    1000,
+    1300
+  ],
+  "ortho_scale": 210,
+  "views": {
+    "north143": [
+      [
+        -22,
+        -30,
+        94
+      ],
+      [
+        96.6575,
+        -246.846,
+        94
+      ]
+    ],
+    "east113": [
+      [
+        390,
+        -135,
+        100
+      ],
+      [
+        145,
+        -270,
+        95
+      ]
+    ]
+  },
+  "world_color": [
+    0.2,
+    0.22,
+    0.25
+  ],
+  "studio_rotate_z": 0.5,
+  "purpose": "same-camera actual-main/final asset-local geometry only; no full-scene or FPS validation"
+}

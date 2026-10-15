@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "blender": "4.2.3 LTS",
+  "mesh_count": 12,
+  "triangle_count": 31834,
+  "external_libraries": 0,
+  "external_images": 0,
+  "editable_vs_final_glb": "exact world-space triangles and material assignments at 1e-6m",
+  "blend_sha256": "ac1ccb5a7eca13da849e62c985856e12041f3ce93726ddfcd9f57bc8c3c66967"
+}
