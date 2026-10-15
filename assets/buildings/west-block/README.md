@@ -1,3 +1,9 @@
+# Current bounded successor
+
+Current combined delivery: 8,246 triangles, 37 primitives, 1,093,564 bytes. Reproduce final geometry with python source/awning-support-repair/source/regenerate.py. See source/awning-support-repair/README.md for source dates, editable file, inference and precise scope. Historical generator instructions below are not the final successor pipeline. Existing source geometry, ground datum, sign attribution and sign-era registration are retained. Grille is appended before the exact support-only repair. Original stage README contained a four-byte combined-size overstatement; measured current total above supersedes it. No browser, full-scene, walking or FPS claim.
+
+## Historical predecessor documentation
+
 # センター街入口西側街区 — 写真忠実度の改訂候補
 
 対象は `way/136690966` / PLATEAU `bldg_e6e4de58-1a37-4345-8795-6b759771ade6`。QFRONT・西武は変更しない。

@@ -2,21 +2,21 @@
   "id": "center244",
   "source_id": "way/136691379",
   "level": "B",
-  "status": "photo-derived facade; original upper closed solid retained as provenance, display billboard proxy; hidden rear and lower-left inferred; January layer unregistered",
+  "status": "photo-derived facade; original upper closed solid retained as provenance, display billboard proxy; hidden rear and lower-left inferred; January layer unregistered; bounded successor described in source/cassette/README.ja.md",
   "stats": {
-    "triangles": 8423,
-    "primitives": 17,
-    "bytes": 1050684
+    "triangles": 8471,
+    "primitives": 19,
+    "bytes": 1055044
   },
-  "generator": "assets/buildings/center244/source/blender/build.py",
+  "generator": "assets/buildings/center244/source/cassette/scripts/add_cassette.py",
   "files": {
     "README.md": {
-      "bytes": 4685,
-      "sha256": "5d7bdcef83f01e170ed323de8ed72796575c0a7fb57484b33a6986644571cc41"
+      "bytes": 5449,
+      "sha256": "0099e286f6a6bea0032b7ea30548f66116cca1c2c33c737d9f5f3cdc85b8cadb"
     },
     "source/data/stats.json": {
-      "bytes": 8568,
-      "sha256": "230edd4ae5539b0621b66aeb316deae2cd92ead782f3e74372643fa1411e0614"
+      "bytes": 8692,
+      "sha256": "b4c7cd5424c00c6638d96368a60b56968011ea1e920f319d47d5481da25149f1"
     },
     "source/data/layout.json": {
       "bytes": 884,
@@ -55,8 +55,8 @@
       "sha256": "1c310453d6e477285345956dd1e9ed490a0b7e243ed819e5be62b6aa684ef589"
     },
     "web/center244.glb": {
-      "bytes": 536480,
-      "sha256": "4a425ab97e75957cd3093fad9dec51ab9a72bbbdc9d93766b667772a2e59f597"
+      "bytes": 540840,
+      "sha256": "39356586cd70837e24d0d17dd306a994f84f77826e134bb9ec15c214760115a1"
     },
     "source/blender/center244.blend": {
       "bytes": 2045492,
@@ -93,6 +93,110 @@
     "web/signs-2025-01.glb": {
       "bytes": 514204,
       "sha256": "1a5ba8c1a3079014bf0999692e626559c9d385242bbe20be93bfc57c02a7cd2e"
+    },
+    "source/cassette/README.ja.md": {
+      "bytes": 5904,
+      "sha256": "5aa00d817b15f1f00d10e39ea65cb3777ec1197332ea64c57ecbd21e54ee5595"
+    },
+    "source/cassette/evidence/side-before.png": {
+      "bytes": 722658,
+      "sha256": "0aa75cc32411ceef1fa96551f118bf273813dd0b4571186d53aec94a17a66b66"
+    },
+    "source/cassette/evidence/overview-before.png": {
+      "bytes": 686401,
+      "sha256": "a582ba5b68a378d8458e67c3658c5e6d8c9053d5c6c1b8a45e9feb0e6060c16d"
+    },
+    "source/cassette/evidence/blender.json": {
+      "bytes": 137,
+      "sha256": "de795d016b6fdae6284033b5351519a55211ceef7c83291075e159b856f043e9"
+    },
+    "source/cassette/evidence/front-before.png": {
+      "bytes": 652114,
+      "sha256": "8cbf7411f2c89c2e547ce19a597fef91c76b9b7c08794b399b2928230c87b2a6"
+    },
+    "source/cassette/evidence/overview-after.png": {
+      "bytes": 685871,
+      "sha256": "153afdcce290c0f3aa245d25cd29200e27693265aa6d41b27dd411c76f983269"
+    },
+    "source/cassette/evidence/cameras.json": {
+      "bytes": 766,
+      "sha256": "3000f5bb07cb102a4fb24b3269fd189c215dd1174dc090d0ba5f2a0cd1f15fd9"
+    },
+    "source/cassette/evidence/verification.json": {
+      "bytes": 1724,
+      "sha256": "67437c595e9bdd57b1b4117c55cae6d6d5e547121fb355e65013f90a4ef1e29c"
+    },
+    "source/cassette/evidence/side-after.png": {
+      "bytes": 718817,
+      "sha256": "f0838a60c11465348e70acf5e5cb88228344ff75af680f9c1ef316ae686cfebb"
+    },
+    "source/cassette/evidence/front-after.png": {
+      "bytes": 650601,
+      "sha256": "4dde626cf14d6579814f60716e980c03781a7865e36b7f78da2fce845b6081ae"
+    },
+    "source/cassette/evidence/relocated-regeneration.json": {
+      "bytes": 1392,
+      "sha256": "5c071fb95512c7870f3fb53ece2e4a05cef9106e07bd2c163e21223eb3dd4e45"
+    },
+    "source/cassette/inputs/viewer.json": {
+      "bytes": 165,
+      "sha256": "1c310453d6e477285345956dd1e9ed490a0b7e243ed819e5be62b6aa684ef589"
+    },
+    "source/cassette/inputs/PINS.json": {
+      "bytes": 626,
+      "sha256": "fc9720f6087e1da1515e8eb9c6a499ac9b9b0c1de7e0b3459a6ea5c771abc641"
+    },
+    "source/cassette/inputs/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "source/cassette/inputs/center244.glb": {
+      "bytes": 536480,
+      "sha256": "4a425ab97e75957cd3093fad9dec51ab9a72bbbdc9d93766b667772a2e59f597"
+    },
+    "source/cassette/inputs/PROPOSAL.json": {
+      "bytes": 1304,
+      "sha256": "2a825581b5460b459d98a58efd08d5efc170d3ac2c8dc761c7ac665e04e5a205"
+    },
+    "source/cassette/inputs/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "source/cassette/inputs/BASE_SOURCES.md": {
+      "bytes": 2059,
+      "sha256": "3c17f687073a5eae0dfe2526ab765ff5f6c6cf6da3a917beede2336d40ac5285"
+    },
+    "source/cassette/inputs/signs-2025-01.glb": {
+      "bytes": 514204,
+      "sha256": "1a5ba8c1a3079014bf0999692e626559c9d385242bbe20be93bfc57c02a7cd2e"
+    },
+    "source/cassette/scripts/verify.py": {
+      "bytes": 4457,
+      "sha256": "0e0aed849ce8562fef263c62a57bf00bc90ead5d7cc54af90f8d7df0d7b1f035"
+    },
+    "source/cassette/scripts/add_cassette.py": {
+      "bytes": 4288,
+      "sha256": "4db981a458d9f71143904ce24ea3ceedeb66c9cd9428fb88cf02a78fa536666e"
+    },
+    "source/cassette/scripts/render_blend.py": {
+      "bytes": 2930,
+      "sha256": "0a74ae113bc96c66782c7cca206b32a6eb73c78fe328a0099ea8ce2ed0d47229"
+    },
+    "source/cassette/scripts/check_relocated.py": {
+      "bytes": 2191,
+      "sha256": "ab72348cf6b2f9206cc56b9c52750a770ff887bd93a8ffea9bab3583e02eae08"
+    },
+    "source/cassette/output/center244.glb": {
+      "bytes": 540840,
+      "sha256": "39356586cd70837e24d0d17dd306a994f84f77826e134bb9ec15c214760115a1"
+    },
+    "source/cassette/output/center244-cassette.blend": {
+      "bytes": 2300796,
+      "sha256": "48b70ea3d9542b813f656832f03ff5c98a9906283c28e900f6001011a50a3368"
+    },
+    "source/cassette/output/components.json": {
+      "bytes": 1024,
+      "sha256": "62c90c59f7e56e8fee754f86659c61ccd6b3cb6ff3f72eeb4a1080a56dfcfae3"
     }
   },
   "source_top_tp": 49.843,

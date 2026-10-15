@@ -1,3 +1,9 @@
+# Current bounded successor
+
+Current combined delivery: 23,730 triangles, 27 primitives, 2,088,436 bytes. Reproduce final geometry with python source/door-envelope-repair/source/repair.py. See source/door-envelope-repair/README.md for source dates, editable file, inference and precise scope. Historical generator instructions below are not the final successor pipeline. Existing source geometry, ground datum, sign attribution and sign-era registration are retained. This is model consistency repair, not photo-calibrated door positioning. Original off-center mullion and header/canopy overlap remain. No browser, full-scene, walking or FPS claim.
+
+## Historical predecessor documentation
+
 # 渋谷駅前ビル — B段階・写真に基づく再構成
 
 現行版（2026-10-14）：23,730三角形・27描画単位・2,088,436 bytes。Samsung画面はメーカー公表21.6×16.32mに整合。編集用は `source/blender/ekimae-fidelity.blend`。出典・未達・再生成は下の「写真に基づく外装再構成」と `C1_EKIMAE_FIDELITY_REPORT.md` を参照。
@@ -15,7 +21,7 @@ way/60739635 / PLATEAU bldg_6abf2261-478c-437a-93f4-8ba23d7b1cad。元の屋根�
 ## 共通の再生成・全体試験の手順
 
 ```bash
-source /workspace/setup-tools/core-env.sh
+# Use your installed Blender 4.2.3.
 blender -b --python-exit-code 1 -t 4 -P assets/buildings/ekimae/source/blender/build_ekimae.py -- assets/buildings/ekimae/source/data/plateau.json assets/buildings/ekimae/source/data/facades.json assets/ground/core/web/ground_core.glb assets/buildings/ekimae/web
 npm test
 npm run build

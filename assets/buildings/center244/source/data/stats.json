@@ -6,8 +6,8 @@
   "source_ground_tp": 16.59,
   "source_top_tp": 49.843,
   "roof_translation_m": 0,
-  "triangles": 8423,
-  "primitives": 17,
+  "triangles": 8471,
+  "primitives": 19,
   "by_material": {
     "roof": 25,
     "stone_dark": 696,
@@ -24,6 +24,8 @@
     "steel": 1152,
     "screen_back": 4,
     "lamp": 10,
+    "cassette_pale_metal": 36,
+    "cassette_dark_recess": 12,
     "ad_2025_01": 2,
     "davinci_2025_01": 2
   },
@@ -472,5 +474,5 @@
   "billboard_source_face": 26,
   "upper_original_visible_mesh_preserved": false,
   "upper_original_hidden_provenance_preserved": true,
-  "status": "photo-derived architectural reconstruction; dimensions inferred; upper billboard is documented presentation proxy; rear and lower-left unresolved"
+  "status": "photo-derived architectural reconstruction; dimensions inferred; upper billboard is documented presentation proxy; rear and lower-left unresolved; bounded successor described in source/cassette/README.ja.md"
 }
