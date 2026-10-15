@@ -1,0 +1,19 @@
+{
+  "blender": "4.2.3 LTS",
+  "triangles": 936,
+  "materials": 2,
+  "meshes": 1,
+  "dimensions_m": [
+    0.33087706565856934,
+    0.30582523345947266,
+    0.16679750382900238
+  ],
+  "origin": "AABB bottom centre",
+  "seed": 9513,
+  "leaves": 36,
+  "alpha": "OPAQUE",
+  "placement": "none",
+  "dimensions": "estimated, not surveyed",
+  "photo_date": "2025-07-13",
+  "current_2026_persistence": "unconfirmed"
+}
