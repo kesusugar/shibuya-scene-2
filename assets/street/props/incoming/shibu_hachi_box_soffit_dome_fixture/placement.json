@@ -1,0 +1,14 @@
+{
+  "status": "attachment_hint_only_not_runtime_registered",
+  "parent_asset": "shibu_hachi_box PR64 architectural module",
+  "coordinate_system": "parent local Blender Z-up metres",
+  "fixture_origin": "bottom centre",
+  "translation_m": [-6.0, -1.48, 2.57],
+  "rotation_xyz_rad": [0, 0, 0],
+  "fixture_top_mount_local_z_m": 0.09,
+  "parent_soffit_underside_z_m": 2.66,
+  "contact_gap_m": 0.0,
+  "xy_basis": "estimated near front-left canopy corner from 2024 and August 2026 photographs",
+  "world_placement": null,
+  "duplicate_rule": "Check current parent/accessory geometry before adding. Do not replace pavilion, larger roof-mounted device, or unrelated surveillance equipment."
+}

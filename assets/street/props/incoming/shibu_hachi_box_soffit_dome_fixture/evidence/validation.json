@@ -1,0 +1,21 @@
+{
+  "pass": true,
+  "blender": "4.2.3 LTS",
+  "mesh_count": 3,
+  "materials": 2,
+  "bbox_min": [
+    -0.05999999865889549,
+    -0.05999999865889549,
+    0.0
+  ],
+  "bbox_max": [
+    0.05999999865889549,
+    0.05999999865889549,
+    0.09000000357627869
+  ],
+  "origin_bottom_centre": true,
+  "top_plane": 0.09,
+  "attachment_contact_error_m": 3.576278384542775e-09,
+  "editable_export_byte_exact": true,
+  "glb_sha256": "f726d657ba9d5544d6fde4fa976a6492ff47315294462fbca9206c9e143099d6"
+}
