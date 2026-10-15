@@ -1,0 +1,64 @@
+"""Deterministic GLB overlay surgery. Python3 + numpy; no shell/facade regeneration.
+Run: python build.py [output.glb]. Blender4.2.3 imports this output for editable .blend.
+"""
+import json,struct,hashlib,sys,copy
+from pathlib import Path
+import numpy as np
+A=Path(__file__).resolve().parents[2];R=A/'source/data';B=R/'panel-baseline';src=B/'stream.glb';raw=src.read_bytes();assert hashlib.sha256(raw).hexdigest()=='16b029fbec71fa753b2c8f5bdbcead325105d9576df2bc636b637f05af130aed','Baseline GLB hash mismatch';jl=struct.unpack_from('<I',raw,12)[0];J=json.loads(raw[20:20+jl]);bin0=raw[28+jl:];data=bytearray(bin0)
+a=np.array([255.985,-290.160,0.]);b=np.array([279.103,-264.434,0.]);t=(b-a)/np.linalg.norm(b-a);n=np.array([t[1],-t[0],0.]);W=np.linalg.norm(b-a)
+LOW=-2.58+18*181.58/35;HIGH=-2.58+32*181.58/35;pitch=(HIGH-LOW)/14
+# Explicit manual photo traces, each list is upper-to-lower office interval.
+# Half-bay grid q step .025; visible plate width .050. No pseudorandom pattern.
+rows=[ [.075,.225,.450,.550,.850], [.050,.225,.450,.550,.850], [.025,.250,.450,.600,.800,.900], [.075,.250,.400,.600,.800,.900], [.075,.225,.400,.550,.800,.875], [.100,.225,.375,.550,.775,.875], [.100,.225,.375,.525,.775,.925], [.075,.200,.325,.525,.700,.925], [.075,.200,.325,.550,.700,.900], [.075,.225,.400,.550,.675,.900], [.050,.225,.400,.550,.675,.875], [.050,.250,.400,.600,.875], [.075,.250,.450,.600,.925], [.100,.250,.450,.550,.675,.900] ]
+# Merge only directly consecutive same-q observed plates, preserving their varied lengths.
+rect=[]
+for q in sorted(set(sum(rows,[]))):
+ start=None
+ for r in range(15):
+  on=r<14 and q in rows[r]
+  if on and start is None:start=r
+  if not on and start is not None:rect.append([q,q+.05,start,r]);start=None
+schedule={'face':112,'q_origin':a.tolist(),'q_end':b.tolist(),'source_z_limits':[LOW,HIGH],'photo_crop_native_px':[1300,2670],'photo_alignment':'Approximate affine mapping of source112 office floor field; upper field line crop pixels (568,331)-(1238,365), lower (585,1516)-(1256,1550). q starts at photo-left corner. 14 visible office intervals, estimated 5.188 m; not surveyed and not a camera calibration. Upper/lower boundaries are clipped to baseline whole-row transitions to preserve outside overlays.','normalized_v':'v=0 at HIGH, v=1 at LOW; rectangle row units divided by14','rectangles':[{'q0':q0,'q1':q1,'v0':r0/14,'v1':r1/14,'rows':[r0,r1]} for q0,q1,r0,r1 in rect],'rows':rows,'inference':'December1,2025 CC0 image used as static permanent-facade inference for October; not proof of October state.'}
+(R/'panel-trace.json').write_text(json.dumps(schedule,indent=2)+'\n')
+def arr(ai):
+ ac=J['accessors'][ai];bv=J['bufferViews'][ac['bufferView']];dtype={5126:'<f4',5123:'<u2',5125:'<u4'}[ac['componentType']];sz=3 if ac['type']=='VEC3' else 1
+ return np.frombuffer(bin0,dtype=dtype,count=ac['count']*sz,offset=bv.get('byteOffset',0)+ac.get('byteOffset',0)).reshape((-1,sz)).copy()
+def add(arr,typ,ct,target):
+ global data
+ while len(data)%4:data+=b'\0'
+ ar=np.asarray(arr,dtype={5126:'<f4',5123:'<u2',5125:'<u4'}[ct]);ar=ar.reshape(-1) if typ=='SCALAR' else ar;off=len(data);data+=ar.tobytes();vi=len(J['bufferViews']);J['bufferViews'].append({'buffer':0,'byteOffset':off,'byteLength':ar.nbytes,'target':target});ac={'bufferView':vi,'componentType':ct,'count':len(ar),'type':typ}
+ if typ=='VEC3':ac.update(min=ar.min(axis=0).astype(float).tolist(),max=ar.max(axis=0).astype(float).tolist())
+ ai=len(J['accessors']);J['accessors'].append(ac);return ai
+removed=[];added=[];before=sum(J['accessors'][p['indices']]['count']//3 for m in J['meshes'] for p in m['primitives'])
+for mi in [2,4]:
+ p=J['meshes'][mi]['primitives'][0];pos=arr(p['attributes']['POSITION']);norm=arr(p['attributes']['NORMAL']);idx=arr(p['indices']).reshape(-1,3);xyz=pos[:,[0,2,1]]*np.array([1,-1,1]);tri=xyz[idx];dist=(tri-a)@n;qs=(tri-a)@t/W
+ mask=np.zeros(len(idx),dtype=bool)
+ if mi==2:
+  mask=(np.min(dist,axis=1)>.115)&(np.max(dist,axis=1)<.195)&(np.min(qs,axis=1)>-.001)&(np.max(qs,axis=1)<1.001)&(tri[:,:,2].mean(axis=1)>LOW)&(tri[:,:,2].mean(axis=1)<HIGH)
+  assert np.all(tri[mask,:,2]>=LOW-.011) and np.all(tri[mask,:,2]<=HIGH+.011)
+  removed.extend([{'mesh':mi,'indices':v.tolist()} for v in idx[mask]])
+ keep=idx[~mask].tolist();pp=pos.tolist();nn=norm.tolist()
+ def quad(q0,q1,z0,z1,depth):
+  points=[a+t*(q*W)+n*depth+np.array([0,0,z]) for q,z in [(q0,z0),(q1,z0),(q1,z1),(q0,z1)]];first=len(pp)
+  for pt in points:pp.append([pt[0],pt[2],-pt[1]]);nn.append([n[0],n[2],-n[1]])
+  keep.extend([[first,first+1,first+2],[first,first+2,first+3]]);added.append({'mesh':mi,'q':[q0,q1],'z':[z0,z1],'depth':depth})
+ if mi==2:
+  for q0,q1,r0,r1 in rect:quad(q0,q1,HIGH-r1*pitch,HIGH-r0*pitch,.19)
+ else:
+  # Photo horizontal opaque spandrels approximately 30% of office pitch.
+  for r in range(1,13):quad(.003,.997,HIGH-(r+1)*pitch,HIGH-(r+.70)*pitch,.12)
+ usedv=sorted(set(v for tri0 in keep for v in tri0));vm={old:new for new,old in enumerate(usedv)};pp=[pp[v] for v in usedv];nn=[nn[v] for v in usedv];keep=[[vm[v] for v in tri0] for tri0 in keep]
+ p['attributes']['POSITION']=add(pp,'VEC3',5126,34962);p['attributes']['NORMAL']=add(nn,'VEC3',5126,34962);p['indices']=add(keep,'SCALAR',5123,34963)
+# Compact buffer views while copying untouched accessor payloads byte-for-byte.
+# Keep only accessors actively referenced by primitive geometry; prevents unused baseline payload cost.
+used=sorted(set(ai for m in J['meshes'] for p in m['primitives'] for ai in [p['indices'],*p['attributes'].values()]));mapping={old:new for new,old in enumerate(used)};out=bytearray();acs=[];views=[]
+for ai in used:
+ ac=copy.deepcopy(J['accessors'][ai]);bv=J['bufferViews'][ac['bufferView']];payload=data[bv.get('byteOffset',0):bv.get('byteOffset',0)+bv['byteLength']]
+ while len(out)%4:out+=b'\0'
+ views.append({'buffer':0,'byteOffset':len(out),'byteLength':len(payload),'target':bv['target']});out+=payload;ac['bufferView']=len(views)-1;acs.append(ac)
+for m in J['meshes']:
+ for p in m['primitives']:p['indices']=mapping[p['indices']];p['attributes']={k:mapping[v] for k,v in p['attributes'].items()}
+J['accessors']=acs;J['bufferViews']=views;J['buffers'][0]['byteLength']=len(out)
+js=json.dumps(J,separators=(',',':'),ensure_ascii=False).encode();js+=b' '*((-len(js))%4);out+=b'\0'*((-len(out))%4);result=struct.pack('<III',0x46546c67,2,28+len(js)+len(out))+struct.pack('<II',len(js),0x4e4f534a)+js+struct.pack('<II',len(out),0x004e4942)+out
+args=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else (sys.argv[1:] if 'bpy' not in sys.modules else []);target=Path(args[0]) if args else A/'web/stream.glb';target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(result)
+after=sum(J['accessors'][p['indices']]['count']//3 for m in J['meshes'] for p in m['primitives']);report={'source_sha256':hashlib.sha256(raw).hexdigest(),'output_sha256':hashlib.sha256(result).hexdigest(),'triangles_before':before,'triangles_after':after,'primitive_count':8,'materials_unchanged':True,'source_shell_roof_ground_untouched':True,'removed_triangles':removed,'added_quads':added,'bytes_before':len(raw),'bytes_after':len(result),'target_z_limits':[LOW,HIGH]};(R/'lower-panel-baseline/build-report.json').write_text(json.dumps(report,indent=2)+'\n');print(before,after,len(raw),len(result))
