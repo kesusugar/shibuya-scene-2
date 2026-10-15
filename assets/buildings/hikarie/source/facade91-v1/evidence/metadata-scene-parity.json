@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "only_intended_change": "Scene source91_status text",
+  "signature_before": "3732bc890c508ce8fc67288f1301b28a46f95a17730267b787e22c04d3886bc0",
+  "signature_after": "3732bc890c508ce8fc67288f1301b28a46f95a17730267b787e22c04d3886bc0",
+  "mesh_vertices_edges_loops_polygons_corner_normals_transforms_materials_nodes_links_cameras_lights_equal": true,
+  "excluded_runtime_fields": [
+    "session_uid"
+  ]
+}

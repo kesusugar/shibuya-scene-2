@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "baseline_sha256": "14cb88b7d3870512c23a750e7b9f701e85dc184cc1d473954725b6c138a0749d",
+  "candidate_sha256": "2f4e95126c0d126c8db2d7d8aad4a54d5d0010ba7af0734b357a939077a87721",
+  "removed_only_contract_triangles": 906,
+  "retained_source91_overlay_triangles": 204,
+  "all_original_attribute_bytes_identical": true,
+  "materials_nodes_scenes_identical": true,
+  "source91_shell_and_other_meshes_identical": true,
+  "triangle_count": 30562,
+  "primitives": 15,
+  "bytes": 2349752,
+  "within_B_budget": true
+}

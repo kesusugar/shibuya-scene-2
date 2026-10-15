@@ -1,0 +1,9 @@
+{
+  "baseline_glb_sha256": "8f39f54b18278e169bc89016080fd7632424fa2534d348522f32920a101d2fa6",
+  "material_hashes": {
+    "hikarie_wall": "3722657864d9f82ebe53c4504217440ead221bb88f2f520d846e6bc78e3f3112",
+    "hikarie_roof": "d3b35733e76cb72f6ab02d0468159c01e8ebbbfbe3f242ffe0a246abc977e2dc"
+  },
+  "retained_triangles": 30480,
+  "retained_hash": "6f86d99676752d664de68ee6879725b270e3781b78b911e4cdaed22e379c71d5"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "hikarie",
+  "level": "B",
+  "status": "prototype; see README for evidence and estimates",
+  "stats": {
+    "triangles": 37134,
+    "primitives": 8,
+    "bytes": 2344448
+  },
+  "files": {
+    "README.md": {
+      "bytes": 1402,
+      "sha256": "7b0b0a93554e832ca87e728fccb31e437bc25f07ff1420f7ff76349c4e5a520a"
+    },
+    "source/blender/build.py": {
+      "bytes": 144,
+      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+    },
+    "source/data/layout.json": {
+      "bytes": 603,
+      "sha256": "9c2c9941d174f2db858ccde44e267250fd24d6f57c1ee6f11043c24553cc1205"
+    },
+    "source/data/plateau.json": {
+      "bytes": 33987,
+      "sha256": "49cafd4ce7ded54115267ff5cab3847e0b72d0bfd181fea8f582b8a7c6eb35c2"
+    },
+    "source/data/stats.json": {
+      "bytes": 10387,
+      "sha256": "596d9e72af3e2d850aff08f5c678a20ecb38110cd2498549b3770de34b941570"
+    },
+    "source/refs/SOURCES.md": {
+      "bytes": 594,
+      "sha256": "e2c62cf96aab2ad69cbf9fcc1adbca89ea068c56d4509ef255d98eff0c41317a"
+    },
+    "source/refs/reference.jpg": {
+      "bytes": 4327076,
+      "sha256": "4d77f8b571cce722c55b3403e41825d8f08bac500410582bc268c9c0ba9ebead"
+    },
+    "source/refs/reference.jpg.json": {
+      "bytes": 3642,
+      "sha256": "dbc65dbb25fcd6594c65dafa11d7c97687e5a0a19dbc7fba1998622a0b119418"
+    },
+    "web/emissive_day.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/emissive_night.json": {
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "web/hikarie.glb": {
+      "bytes": 2344448,
+      "sha256": "8f39f54b18278e169bc89016080fd7632424fa2534d348522f32920a101d2fa6"
+    },
+    "web/viewer.json": {
+      "bytes": 194,
+      "sha256": "675caea37343010aa1df27b022d33c0aa8f45c1ed03eabfaef06c14e4aabbd7c"
+    }
+  },
+  "source_id": "way/204091879",
+  "source_aliases": [],
+  "plateau_id": "bldg_9ad5b600-360f-4627-8a89-fca39aad5576",
+  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+}
+

@@ -1,0 +1,37 @@
+{
+ "id": "hikarie",
+ "name": "渋谷ヒカリエ",
+ "style": "hikarie",
+ "floors": 34,
+ "bay_pitch_m": 1.6,
+ "wall_rgb": [
+  0.64,
+  0.66,
+  0.66
+ ],
+ "roof_rgb": [
+  0.64,
+  0.66,
+  0.66
+ ],
+ "frame_rgb": [
+  0.54,
+  0.56,
+  0.55
+ ],
+ "spandrel_rgb": [
+  0.64,
+  0.66,
+  0.66
+ ],
+ "glass_rgb": [
+  0.09,
+  0.18,
+  0.22
+ ],
+ "glass_height_ratio": 0.84,
+ "band_m": 0.16,
+ "podium_floors": 2,
+ "basis": "PLATEAU 2025 shell preserved; divisions/colors/roof housings are photo-type estimates. Reference year is recorded separately; no historical advertising imagery copied.",
+ "probe_solid_normals": true
+}
