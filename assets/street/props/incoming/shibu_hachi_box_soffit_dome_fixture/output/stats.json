@@ -1,0 +1,13 @@
+{
+  "asset": "shibu_hachi_box_soffit_dome_fixture",
+  "metres": true,
+  "diameter": 0.12,
+  "height": 0.09,
+  "dimension_status": "estimated",
+  "origin": "bottom centre",
+  "mount_plane_blender_z": 0.09,
+  "triangles": 948,
+  "objects": 3,
+  "materials": 2,
+  "runtime_registered": false
+}
