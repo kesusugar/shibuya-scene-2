@@ -1,0 +1,1632 @@
+{
+  "roof24_34_correction": [
+    {
+      "source_index": 24,
+      "replaced_triangle_indices": [
+        24,
+        145,
+        146,
+        147
+      ],
+      "source_ring_xyz": [
+        [
+          -236.71,
+          -162.94,
+          44.6
+        ],
+        [
+          -238.684,
+          -157.403,
+          44.6
+        ],
+        [
+          -240.667,
+          -158.133,
+          44.6
+        ],
+        [
+          -239.382,
+          -161.738,
+          44.6
+        ],
+        [
+          -296.144,
+          -181.802,
+          44.6
+        ],
+        [
+          -295.537,
+          -183.779,
+          44.6
+        ]
+      ],
+      "new_ring_triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          5,
+          0,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "boundary_note": "All six ordered source XYZ vertices and boundary edges retained exactly; only connectivity and target outward normals repaired. Source138/roof72 repairs, source194, roof73, all other roofs and east facade overlays unchanged."
+    },
+    {
+      "source_index": 34,
+      "replaced_triangle_indices": [
+        34,
+        177,
+        178,
+        179
+      ],
+      "source_ring_xyz": [
+        [
+          -293.195,
+          -182.949,
+          72.9
+        ],
+        [
+          -291.701,
+          -187.14,
+          72.9
+        ],
+        [
+          -291.33,
+          -187.008,
+          72.9
+        ],
+        [
+          -292.581,
+          -183.498,
+          72.9
+        ],
+        [
+          -236.479,
+          -163.589,
+          72.9
+        ],
+        [
+          -236.71,
+          -162.94,
+          72.9
+        ]
+      ],
+      "new_ring_triangles": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          5,
+          0,
+          3
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "boundary_note": "All six ordered source XYZ vertices and boundary edges retained exactly; only connectivity and target outward normals repaired. Source138/roof72 repairs, source194, roof73, all other roofs and east facade overlays unchanged."
+    }
+  ],
+  "roof72_correction": {
+    "source_index": 72,
+    "replaced_triangle_indices": [
+      72,
+      259,
+      260,
+      261
+    ],
+    "source_ring_xyz": [
+      [
+        -235.229,
+        -167.096,
+        84.9
+      ],
+      [
+        -291.701,
+        -187.14,
+        84.9
+      ],
+      [
+        -289.542,
+        -193.194,
+        84.9
+      ],
+      [
+        -230.33,
+        -172.177,
+        84.9
+      ],
+      [
+        -234.788,
+        -159.671,
+        84.9
+      ],
+      [
+        -237.528,
+        -160.644,
+        84.9
+      ]
+    ],
+    "new_ring_triangles": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        5,
+        0,
+        3
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "boundary_note": "All six ordered source XYZ vertices and boundary edges retained exactly; only connectivity and target outward normals repaired. Source138 repair, source194, other roofs and all east facade overlays unchanged."
+  },
+  "source138_correction": {
+    "source_index": 138,
+    "replaced_triangle_indices": [
+      79,
+      596,
+      597,
+      598
+    ],
+    "source_ring_xyz": [
+      [
+        -62.374,
+        -113.396,
+        0.578
+      ],
+      [
+        -62.374,
+        -113.396,
+        33.5
+      ],
+      [
+        -69.591,
+        -116.489,
+        33.5
+      ],
+      [
+        -69.591,
+        -116.489,
+        16.592
+      ],
+      [
+        -136.249,
+        -145.08,
+        16.591
+      ],
+      [
+        -136.222,
+        -145.051,
+        0.578
+      ]
+    ],
+    "new_ring_triangles": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        5,
+        0,
+        3
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "boundary_note": "All six ordered source XYZ vertices and boundary edges retained exactly; only connectivity and target outward normals repaired. Source194 and all east facade overlays unchanged."
+  },
+  "baseline_sha256": "50046cf85c7c6bbe30fca9c7b5364b93b2c00729f73935ca52eb78401338b025",
+  "removed_triangles": {
+    "185": {
+      "mark-city_glass2": 126,
+      "mark-city_frame": 832,
+      "mark-city_glass0": 130,
+      "mark-city_glass1": 160,
+      "mark-city_spandrel": 26,
+      "mark-city_sign_housing": 0
+    },
+    "111": {
+      "mark-city_glass2": 32,
+      "mark-city_frame": 312,
+      "mark-city_glass0": 68,
+      "mark-city_glass1": 56,
+      "mark-city_spandrel": 28,
+      "mark-city_sign_housing": 0
+    }
+  },
+  "new_quads": {
+    "hotel_wall": 1,
+    "window_frame": 407,
+    "lowest_infill": 8,
+    "window_dark": 51,
+    "window_curtain": 59,
+    "curtain_closed": 122,
+    "curtain_fold": 488,
+    "window_glass": 44,
+    "panel_seam": 27,
+    "curtain_pale": 385,
+    "restaurant_glass": 21,
+    "curtain_shade": 52
+  },
+  "hotel_primary_rows": 17,
+  "hotel_lowest_rows": 1,
+  "hotel_columns": 9,
+  "restaurant_split_source_z_m": 90.3,
+  "triangles": 25122,
+  "primitives": 25,
+  "bytes": 2372936,
+  "sha256": "9e795e55da8983bb34d8b32ce3e8bf4e32acee2bd78ae3182de01de805728292",
+  "visible_roof_correction": [
+    {
+      "source_index": 58,
+      "replaced_triangle_indices": [
+        58,
+        238,
+        239,
+        240
+      ],
+      "boundary_vertex_count": 6,
+      "triangle_count": 4,
+      "source_boundary_xyz": [
+        [
+          -135.596,
+          -136.687,
+          33.5
+        ],
+        [
+          -134.68,
+          -140.479,
+          33.5
+        ],
+        [
+          -114.251,
+          -131.804,
+          33.5
+        ],
+        [
+          -115.553,
+          -128.778,
+          33.5
+        ],
+        [
+          -72.024,
+          -110.114,
+          33.5
+        ],
+        [
+          -71.668,
+          -109.278,
+          33.5
+        ]
+      ],
+      "source_boundary_triangle_indices": [
+        [
+          4,
+          5,
+          3
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          3,
+          5
+        ],
+        [
+          3,
+          0,
+          2
+        ]
+      ],
+      "normals": "Each actual float32 3D triangle geometric normal; no flattened Z."
+    },
+    {
+      "source_index": 22,
+      "replaced_triangle_indices": [
+        22,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143
+      ],
+      "boundary_vertex_count": 13,
+      "triangle_count": 11,
+      "source_boundary_xyz": [
+        [
+          -175.61,
+          -132.864,
+          29.1
+        ],
+        [
+          -180.552,
+          -123.434,
+          29.1
+        ],
+        [
+          -184.844,
+          -125.143,
+          29.1
+        ],
+        [
+          -183.297,
+          -128.796,
+          29.1
+        ],
+        [
+          -202.093,
+          -135.466,
+          29.1
+        ],
+        [
+          -203.131,
+          -132.419,
+          29.1
+        ],
+        [
+          -202.958,
+          -135.674,
+          29.1
+        ],
+        [
+          -204.242,
+          -138.654,
+          29.1
+        ],
+        [
+          -207.142,
+          -141.722,
+          29.1
+        ],
+        [
+          -211.745,
+          -143.466,
+          29.1
+        ],
+        [
+          -216.563,
+          -142.7,
+          29.1
+        ],
+        [
+          -215.099,
+          -146.507,
+          29.1
+        ],
+        [
+          -211.286,
+          -145.4,
+          29.1
+        ]
+      ],
+      "source_boundary_triangle_indices": [
+        [
+          11,
+          12,
+          9
+        ],
+        [
+          9,
+          10,
+          11
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          9,
+          12,
+          8
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          8,
+          12
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          8,
+          0,
+          7
+        ],
+        [
+          7,
+          0,
+          4
+        ]
+      ],
+      "normals": "Each actual float32 3D triangle geometric normal; no flattened Z."
+    },
+    {
+      "source_index": 78,
+      "replaced_triangle_indices": [
+        78,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324
+      ],
+      "boundary_vertex_count": 42,
+      "triangle_count": 40,
+      "source_boundary_xyz": [
+        [
+          -64.725,
+          -74.244,
+          32.897
+        ],
+        [
+          -109.102,
+          -91.335,
+          32.897
+        ],
+        [
+          -118.273,
+          -96.72,
+          32.897
+        ],
+        [
+          -117.505,
+          -98.706,
+          32.897
+        ],
+        [
+          -119.689,
+          -103.226,
+          32.897
+        ],
+        [
+          -134.017,
+          -108.691,
+          32.897
+        ],
+        [
+          -132.533,
+          -112.43,
+          32.897
+        ],
+        [
+          -143.16,
+          -116.465,
+          32.897
+        ],
+        [
+          -135.596,
+          -136.687,
+          32.897
+        ],
+        [
+          -71.668,
+          -109.278,
+          32.897
+        ],
+        [
+          -69.236,
+          -115.652,
+          32.897
+        ],
+        [
+          -63.145,
+          -113.043,
+          32.897
+        ],
+        [
+          -63.392,
+          -112.257,
+          32.897
+        ],
+        [
+          -55.713,
+          -109.271,
+          32.897
+        ],
+        [
+          -56.063,
+          -108.344,
+          32.897
+        ],
+        [
+          -51.945,
+          -105.744,
+          32.897
+        ],
+        [
+          -49.744,
+          -102.354,
+          32.897
+        ],
+        [
+          -49.274,
+          -98.119,
+          32.897
+        ],
+        [
+          -49.268,
+          -97.49,
+          32.897
+        ],
+        [
+          -49.392,
+          -97.489,
+          32.897
+        ],
+        [
+          -63.833,
+          -100.007,
+          32.897
+        ],
+        [
+          -100.224,
+          -114.373,
+          32.897
+        ],
+        [
+          -100.781,
+          -112.98,
+          32.897
+        ],
+        [
+          -104.273,
+          -114.358,
+          32.897
+        ],
+        [
+          -108.852,
+          -102.812,
+          32.897
+        ],
+        [
+          -105.908,
+          -101.65,
+          32.897
+        ],
+        [
+          -107.368,
+          -97.968,
+          32.897
+        ],
+        [
+          -106.21,
+          -97.523,
+          32.897
+        ],
+        [
+          -106.504,
+          -96.778,
+          32.897
+        ],
+        [
+          -69.872,
+          -82.79,
+          32.897
+        ],
+        [
+          -69.609,
+          -83.475,
+          32.897
+        ],
+        [
+          -66.028,
+          -82.1,
+          32.897
+        ],
+        [
+          -66.158,
+          -81.357,
+          32.897
+        ],
+        [
+          -53.882,
+          -79.582,
+          32.897
+        ],
+        [
+          -53.76,
+          -80.418,
+          32.897
+        ],
+        [
+          -51.948,
+          -79.719,
+          32.897
+        ],
+        [
+          -53.04,
+          -76.303,
+          32.897
+        ],
+        [
+          -47.797,
+          -72.916,
+          32.897
+        ],
+        [
+          -48.651,
+          -65.378,
+          32.897
+        ],
+        [
+          -52.476,
+          -66.325,
+          32.897
+        ],
+        [
+          -56.517,
+          -67.812,
+          32.897
+        ],
+        [
+          -62.633,
+          -71.876,
+          32.897
+        ]
+      ],
+      "source_boundary_triangle_indices": [
+        [
+          40,
+          41,
+          36
+        ],
+        [
+          38,
+          39,
+          37
+        ],
+        [
+          36,
+          37,
+          39
+        ],
+        [
+          34,
+          35,
+          33
+        ],
+        [
+          30,
+          31,
+          29
+        ],
+        [
+          26,
+          27,
+          28
+        ],
+        [
+          24,
+          25,
+          26
+        ],
+        [
+          21,
+          22,
+          23
+        ],
+        [
+          19,
+          20,
+          17
+        ],
+        [
+          17,
+          18,
+          19
+        ],
+        [
+          15,
+          16,
+          20
+        ],
+        [
+          12,
+          13,
+          14
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          39,
+          40,
+          36
+        ],
+        [
+          36,
+          33,
+          35
+        ],
+        [
+          32,
+          29,
+          31
+        ],
+        [
+          17,
+          20,
+          16
+        ],
+        [
+          14,
+          15,
+          20
+        ],
+        [
+          9,
+          10,
+          12
+        ],
+        [
+          4,
+          6,
+          23
+        ],
+        [
+          28,
+          1,
+          26
+        ],
+        [
+          36,
+          41,
+          33
+        ],
+        [
+          32,
+          33,
+          0
+        ],
+        [
+          28,
+          29,
+          1
+        ],
+        [
+          12,
+          14,
+          20
+        ],
+        [
+          3,
+          26,
+          1
+        ],
+        [
+          0,
+          33,
+          41
+        ],
+        [
+          1,
+          29,
+          0
+        ],
+        [
+          9,
+          12,
+          20
+        ],
+        [
+          32,
+          0,
+          29
+        ],
+        [
+          21,
+          9,
+          20
+        ],
+        [
+          26,
+          3,
+          24
+        ],
+        [
+          8,
+          9,
+          21
+        ],
+        [
+          4,
+          24,
+          3
+        ],
+        [
+          8,
+          21,
+          23
+        ],
+        [
+          24,
+          4,
+          23
+        ],
+        [
+          8,
+          23,
+          6
+        ]
+      ],
+      "normals": "Each actual float32 3D triangle geometric normal; no flattened Z."
+    },
+    {
+      "source_index": 73,
+      "replaced_triangle_indices": [
+        73,
+        262,
+        263,
+        264,
+        265,
+        266
+      ],
+      "boundary_vertex_count": 8,
+      "triangle_count": 6,
+      "source_boundary_xyz": [
+        [
+          -179.421,
+          -140.02,
+          49.1
+        ],
+        [
+          -178.566,
+          -142.501,
+          49.1
+        ],
+        [
+          -172.824,
+          -140.535,
+          49.1
+        ],
+        [
+          -175.568,
+          -132.849,
+          49.099
+        ],
+        [
+          -211.286,
+          -145.4,
+          49.1
+        ],
+        [
+          -210.661,
+          -147.09,
+          49.1
+        ],
+        [
+          -238.684,
+          -157.403,
+          49.1
+        ],
+        [
+          -237.528,
+          -160.644,
+          49.1
+        ]
+      ],
+      "source_boundary_triangle_indices": [
+        [
+          6,
+          7,
+          5
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          5,
+          7
+        ],
+        [
+          3,
+          0,
+          2
+        ],
+        [
+          5,
+          0,
+          4
+        ]
+      ],
+      "normals": "Each actual float32 3D triangle geometric normal; no flattened Z."
+    },
+    {
+      "source_index": 40,
+      "replaced_triangle_indices": [
+        40,
+        202,
+        203,
+        204,
+        205,
+        206
+      ],
+      "boundary_vertex_count": 8,
+      "triangle_count": 6,
+      "source_boundary_xyz": [
+        [
+          -172.276,
+          -151.573,
+          100.7
+        ],
+        [
+          -168.506,
+          -162.15,
+          100.7
+        ],
+        [
+          -165.386,
+          -161.042,
+          100.7
+        ],
+        [
+          -172.719,
+          -140.498,
+          100.7
+        ],
+        [
+          -178.566,
+          -142.501,
+          100.7
+        ],
+        [
+          -179.421,
+          -140.02,
+          100.7
+        ],
+        [
+          -234.788,
+          -159.671,
+          100.7
+        ],
+        [
+          -230.33,
+          -172.177,
+          100.7
+        ]
+      ],
+      "source_boundary_triangle_indices": [
+        [
+          6,
+          7,
+          4
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          2,
+          3,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          4,
+          7
+        ],
+        [
+          4,
+          0,
+          3
+        ]
+      ],
+      "normals": "Each actual float32 3D triangle geometric normal; no flattened Z."
+    },
+    {
+      "source_index": 52,
+      "replaced_triangle_indices": [
+        52,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231
+      ],
+      "boundary_vertex_count": 10,
+      "triangle_count": 8,
+      "source_boundary_xyz": [
+        [
+          -223.938,
+          -140.697,
+          33.5
+        ],
+        [
+          -225.367,
+          -139.852,
+          33.5
+        ],
+        [
+          -229.706,
+          -140.947,
+          33.5
+        ],
+        [
+          -226.771,
+          -153.019,
+          33.5
+        ],
+        [
+          -210.661,
+          -147.09,
+          33.5
+        ],
+        [
+          -211.286,
+          -145.4,
+          33.5
+        ],
+        [
+          -215.099,
+          -146.507,
+          33.5
+        ],
+        [
+          -216.563,
+          -142.7,
+          33.5
+        ],
+        [
+          -219.434,
+          -141.14,
+          33.5
+        ],
+        [
+          -223.443,
+          -142.618,
+          33.5
+        ]
+      ],
+      "source_boundary_triangle_indices": [
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          4,
+          5,
+          6
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          9,
+          0,
+          1
+        ],
+        [
+          6,
+          7,
+          9
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          9,
+          2
+        ],
+        [
+          3,
+          6,
+          9
+        ]
+      ],
+      "normals": "Each actual float32 3D triangle geometric normal; no flattened Z."
+    }
+  ],
+  "prior_stage_glb_sha256": "18afb011421c3ea029aec91267ecf154d5c0e82edd8ed789da579c96c968ec14",
+  "west_ribbon_correction": {
+    "source_face": 240,
+    "removed_inward_triangles": {
+      "mark-city_glass2": 142,
+      "mark-city_frame": 1016,
+      "mark-city_glass0": 198,
+      "mark-city_glass1": 168,
+      "mark-city_spandrel": 14
+    },
+    "retained_accepted_triangles": 23930,
+    "rows": [
+      {
+        "row_bottom_up": 1,
+        "center_z": 55.5,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          54.775,
+          56.225
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 2,
+        "center_z": 59.025,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          58.3,
+          59.75
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 3,
+        "center_z": 62.55,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          61.824999999999996,
+          63.275
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 4,
+        "center_z": 66.075,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          65.35000000000001,
+          66.8
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 5,
+        "center_z": 69.6,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          68.875,
+          70.32499999999999
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 6,
+        "center_z": 73.125,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          72.4,
+          73.85
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 7,
+        "center_z": 76.65,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          75.92500000000001,
+          77.375
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 8,
+        "center_z": 80.175,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          79.45,
+          80.89999999999999
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 9,
+        "center_z": 83.7,
+        "u_range": [
+          0.18,
+          61.478517862498116
+        ],
+        "z_range": [
+          82.97500000000001,
+          84.425
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 27
+      },
+      {
+        "row_bottom_up": 10,
+        "center_z": 87.225,
+        "u_range": [
+          3.0876328496867886,
+          61.478517862498116
+        ],
+        "z_range": [
+          86.5,
+          87.94999999999999
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 26
+      },
+      {
+        "row_bottom_up": 11,
+        "center_z": 90.75,
+        "u_range": [
+          3.0876328496867886,
+          61.478517862498116
+        ],
+        "z_range": [
+          90.025,
+          91.475
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 26
+      },
+      {
+        "row_bottom_up": 12,
+        "center_z": 94.275,
+        "u_range": [
+          3.0876328496867886,
+          61.478517862498116
+        ],
+        "z_range": [
+          93.55000000000001,
+          95.0
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 26
+      },
+      {
+        "row_bottom_up": 13,
+        "center_z": 97.8,
+        "u_range": [
+          3.0876328496867886,
+          61.478517862498116
+        ],
+        "z_range": [
+          97.075,
+          98.52499999999999
+        ],
+        "glass_depth_m": 0.06,
+        "frame_depth_m": 0.085,
+        "mullion_count": 26
+      }
+    ],
+    "parameters": {
+      "source_face": 240,
+      "rows": 13,
+      "first_center_z": 55.5,
+      "pitch_m": 3.525,
+      "glass_height_m": 1.45,
+      "side_margin_m": 0.18,
+      "glass_outward_m": 0.06,
+      "frame_outward_m": 0.085,
+      "mullion_pitch_m": 2.37,
+      "mullion_width_m": 0.035,
+      "horizontal_frame_height_m": 0.05,
+      "photo_ratio_glass_to_pitch": 0.41134751773049644,
+      "inference": "13 ribbons are observed. Metric elevations, pitch, height, side margin, shallow outward presentation offset, pane cadence and palette are inferred, not a survey or calibrated photograph. No photo texture or exact interior states."
+    },
+    "added_triangles": 772,
+    "preservation": "All accepted attribute/binary payload bytes, material definitions, nodes, source shells, roofs and east facade unchanged. Only selected indices removed. New nodes/material appended; scene root membership extended."
+  },
+  "west_lower_correction": {
+    "source_face": 299,
+    "removed_triangles": 0,
+    "retained_accepted_triangles": 24702,
+    "bands": [
+      {
+        "kind": "glass",
+        "band_bottom_up": 1,
+        "center_z": 52.1,
+        "height_m": 1.45,
+        "u_range": [
+          2.664726118031396,
+          62.22897251197136
+        ],
+        "z_range": [
+          51.375,
+          52.825
+        ],
+        "outward_m": 0.06,
+        "mullion_count": 27
+      },
+      {
+        "kind": "glass",
+        "band_bottom_up": 2,
+        "center_z": 56.0,
+        "height_m": 1.45,
+        "u_range": [
+          2.664726118031396,
+          62.22897251197136
+        ],
+        "z_range": [
+          55.275,
+          56.725
+        ],
+        "outward_m": 0.06,
+        "mullion_count": 27
+      },
+      {
+        "kind": "glass",
+        "band_bottom_up": 3,
+        "center_z": 59.9,
+        "height_m": 1.45,
+        "u_range": [
+          2.664726118031396,
+          62.22897251197136
+        ],
+        "z_range": [
+          59.175,
+          60.625
+        ],
+        "outward_m": 0.06,
+        "mullion_count": 27
+      },
+      {
+        "kind": "glass",
+        "band_bottom_up": 4,
+        "center_z": 63.8,
+        "height_m": 1.45,
+        "u_range": [
+          2.664726118031396,
+          62.22897251197136
+        ],
+        "z_range": [
+          63.074999999999996,
+          64.52499999999999
+        ],
+        "outward_m": 0.06,
+        "mullion_count": 27
+      },
+      {
+        "kind": "glass",
+        "band_bottom_up": 5,
+        "center_z": 67.7,
+        "height_m": 1.45,
+        "u_range": [
+          2.664726118031396,
+          62.22897251197136
+        ],
+        "z_range": [
+          66.97500000000001,
+          68.425
+        ],
+        "outward_m": 0.06,
+        "mullion_count": 27
+      },
+      {
+        "kind": "glass",
+        "band_bottom_up": 6,
+        "center_z": 71.6,
+        "height_m": 1.45,
+        "u_range": [
+          2.664726118031396,
+          62.22897251197136
+        ],
+        "z_range": [
+          70.875,
+          72.32499999999999
+        ],
+        "outward_m": 0.06,
+        "mullion_count": 27
+      },
+      {
+        "kind": "dark_opaque",
+        "band_bottom_up": 1,
+        "center_z": 48.2,
+        "height_m": 1.2,
+        "u_range": [
+          2.664726118031396,
+          62.22897251197136
+        ],
+        "z_range": [
+          47.6,
+          48.800000000000004
+        ],
+        "outward_m": 0.06,
+        "mullion_count": 27
+      }
+    ],
+    "parameters": {
+      "source_face": 299,
+      "glazed_centers_z": [
+        52.1,
+        56.0,
+        59.9,
+        63.8,
+        67.7,
+        71.6
+      ],
+      "glass_height_m": 1.45,
+      "dark_center_z": 48.2,
+      "dark_height_m": 1.2,
+      "u_range": [
+        2.664726118031396,
+        62.22897251197136
+      ],
+      "surface_outward_m": 0.06,
+      "frame_outward_m": 0.085,
+      "mullion_pitch_m": 2.37,
+      "mullion_width_m": 0.035,
+      "horizontal_frame_height_m": 0.05,
+      "lower_strip_semantics": "Opaque dark exterior representation only. Not confirmed glass; no true hole or interior.",
+      "inference": "Six glazed bands and one dark lower strip observed. Metric heights/elevations/side margins, pane cadence, frame dimensions and palette inferred, not survey or calibrated camera."
+    },
+    "added_triangles": 420,
+    "preservation": "Entire accepted binary payload, all meshes, all attributes, materials and nodes unchanged. Three meshes/nodes and one opaque dark material appended; scene root node membership extended. No source240, shell, roof, return or EAST edits."
+  }
+}

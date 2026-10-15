@@ -1,20 +1,20 @@
 {
   "id": "mark-city",
   "level": "B",
-  "status": "prototype; see README for evidence and estimates",
+  "status": "Completed cumulative WEST/EAST/roof revision; bounded estimated geometry, not whole-building fidelity certification",
   "stats": {
-    "triangles": 23908,
-    "primitives": 8,
-    "bytes": 1458728
+    "triangles": 25312,
+    "primitives": 28,
+    "bytes": 2387000
   },
   "files": {
     "README.md": {
-      "bytes": 1445,
-      "sha256": "dd95fedbeec80f7c1501aa7caee0b5aea0042175dbb0dc40071e3efba36c75f5"
+      "bytes": 3397,
+      "sha256": "82a53a7bece189bd87f36fb9e20f7249746503155941c9d189735a3bbd7ea0fb"
     },
     "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+      "bytes": 687,
+      "sha256": "7dfdeaa59422ced0e72dd5444961ef0acbc7ac9c604a83564d1824c8fbc640be"
     },
     "source/data/layout.json": {
       "bytes": 682,
@@ -25,8 +25,8 @@
       "sha256": "ac0b62994521aed4ae7156cee2d609c7beaa2f6a3509743a197a123429e4368b"
     },
     "source/data/stats.json": {
-      "bytes": 30519,
-      "sha256": "97f4a04bb89facfbd01ca1b3573b4699f0f421089cfa55ad9887d7e80cb82c58"
+      "bytes": 36903,
+      "sha256": "6e2e2255f00c52b04d8cdd31b3a425ca76a41fabe8c26ace18349b468500b31d"
     },
     "source/refs/SOURCES.md": {
       "bytes": 574,
@@ -49,12 +49,96 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/mark-city.glb": {
-      "bytes": 1458728,
-      "sha256": "50046cf85c7c6bbe30fca9c7b5364b93b2c00729f73935ca52eb78401338b025"
+      "bytes": 2387000,
+      "sha256": "8dc763dcd1e242de07f7846ba7789a40252c6efb0eed88d531faf6d1c3b4cd5d"
     },
     "web/viewer.json": {
       "bytes": 196,
       "sha256": "3ceba554a4e3403364b18aa06e7a93b93b7feda84a019098cae3a556bc9e2558"
+    },
+    "evidence/west-cap-v1/blend-parity.json": {
+      "bytes": 267,
+      "sha256": "33d96b91692df6337922f54cf180744f78b2317cdd5d847406e93dbca2f6e385"
+    },
+    "evidence/west-cap-v1/main-before-after.jpg": {
+      "bytes": 301086,
+      "sha256": "93a866c3c991c3c8ae6d7c757567c33829e3c4df09b2ccc37d4a64e5b78b94bd"
+    },
+    "evidence/west-cap-v1/render_comparison.py": {
+      "bytes": 1319,
+      "sha256": "54e892efa772563212d559d017fd9aa75dc040bf95baf07e782935488d29f4bf"
+    },
+    "evidence/west-cap-v1/validation.json": {
+      "bytes": 1472,
+      "sha256": "e0d0b7883f31a49cb2a24a34d9ab1338d31311087db50dfd762f6d63824394a0"
+    },
+    "source/main-baseline-v1/README.md": {
+      "bytes": 390,
+      "sha256": "17a2d6d77ed505c25a9a365714d8bebf83b69a35cb02586a32bcb5c86299479f"
+    },
+    "source/main-baseline-v1/mark-city.glb": {
+      "bytes": 1458728,
+      "sha256": "50046cf85c7c6bbe30fca9c7b5364b93b2c00729f73935ca52eb78401338b025"
+    },
+    "source/west-cap-v1/README.md": {
+      "bytes": 653,
+      "sha256": "c08372297ff7417c1b5166e4b82ab0ab50de8b1101b42ad63f0bb3def2350233"
+    },
+    "source/west-cap-v1/SOURCE_AND_LICENSE_JA.md": {
+      "bytes": 1217,
+      "sha256": "73921035275cfc29943e48d48f884086f79e5b09ffb528ad6aa5faefeb657124"
+    },
+    "source/west-cap-v1/source/baseline/before-west-cap.east-stats.json": {
+      "bytes": 28679,
+      "sha256": "cffcafccfff04032c52ec737a3e72bc30889463186d00f76a94073a22bd0b510"
+    },
+    "source/west-cap-v1/source/baseline/mark-city-before-west-cap.glb": {
+      "bytes": 2372936,
+      "sha256": "9e795e55da8983bb34d8b32ce3e8bf4e32acee2bd78ae3182de01de805728292"
+    },
+    "source/west-cap-v1/source/blender/build.py": {
+      "bytes": 1955,
+      "sha256": "3cfc60e7b74afdfdeb4cec4fb3799c441b0bcbf3d8543aa41649761af3c9bd2c"
+    },
+    "source/west-cap-v1/source/blender/build_west_cap.py": {
+      "bytes": 6584,
+      "sha256": "6cbb1afe39c5917eb1036c5ce83ae8e41385dc1fb41f21921194e656f863a62e"
+    },
+    "source/west-cap-v1/source/blender/mark-city.blend": {
+      "bytes": 3573840,
+      "sha256": "fbfc5f7ee071ef48c4f04259b62adad1618403176fbba8c022cfb83381dd8087"
+    },
+    "source/west-cap-v1/source/data/layout.json": {
+      "bytes": 682,
+      "sha256": "a29d7399d8ee7d1a38ff99d92aa05f3ba3d67e6561daf228548c9e57546252b9"
+    },
+    "source/west-cap-v1/source/data/plateau.json": {
+      "bytes": 120263,
+      "sha256": "ac0b62994521aed4ae7156cee2d609c7beaa2f6a3509743a197a123429e4368b"
+    },
+    "source/west-cap-v1/source/data/west-cap-cluster-scope.json": {
+      "bytes": 122709,
+      "sha256": "420aafd348689a0ac0e4d0643382f3bedf32b033a7a7611862b1cd75cb436c67"
+    },
+    "source/west-cap-v1/source/data/west-cap-parameters.json": {
+      "bytes": 882,
+      "sha256": "9c9c011d652d777021d557b000d65b894af8d3cb0c07ab2949fecd2c3546b9e1"
+    },
+    "source/west-cap-v1/source/data/west-cap-photo-camera.json": {
+      "bytes": 1668,
+      "sha256": "85a339c633cb29e2a02d28301492204ac4238b97b59188e97a059605ff297fba"
+    },
+    "source/west-cap-v1/source/refs/JUN12-west.jpg": {
+      "bytes": 2708498,
+      "sha256": "41e8a1b752e41db35b857f2bf3f3c81824b23946309259cd496d7241f1390034"
+    },
+    "source/west-cap-v1/web/mark-city.east-stats.json": {
+      "bytes": 31154,
+      "sha256": "a6b6a23e0ea59c3a126b76f7fe7835293962af9ad8860ce8a9e8083104f56f2a"
+    },
+    "source/west-cap-v1/web/mark-city.glb": {
+      "bytes": 2387000,
+      "sha256": "8dc763dcd1e242de07f7846ba7789a40252c6efb0eed88d531faf6d1c3b4cd5d"
     }
   },
   "source_id": "way/54500467",
@@ -62,5 +146,5 @@
     "way/87250190"
   ],
   "plateau_id": "bldg_884b7aea-8fa7-4447-8d45-d691cfec7237",
-  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+  "generator": "source/blender/build.py -> source/west-cap-v1/source/blender/build.py; Blender4.2.3; pinned predecessor inputs"
 }
