@@ -1,0 +1,32 @@
+{
+  "glb_sha256": "f991d04122d60dbbde417a5f87391bec69505bcaa8ed68746b3e9cf80c2f1da3",
+  "views": {
+    "front": {
+      "location": [
+        -209.90579223632812,
+        809.4949951171875,
+        138.99769592285156
+      ],
+      "target": [
+        156.50079345703125,
+        -120.614013671875,
+        113.63108825683594
+      ],
+      "scale": 256.0547048956156
+    },
+    "side": {
+      "location": [
+        -800.06591796875,
+        -405.907958984375,
+        151.2339630126953
+      ],
+      "target": [
+        158.36669921875,
+        -123.09178924560547,
+        113.52513122558594
+      ],
+      "scale": 257.1355752587319
+    }
+  },
+  "note": "Final GLB geometry-only Workbench studio. Not runtime/browser or photometric fidelity; 109 vertex gradient/emission not certified."
+}
