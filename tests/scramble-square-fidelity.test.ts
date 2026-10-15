@@ -1,11 +1,10 @@
+import {createHash} from 'node:crypto';
 import {it,expect} from 'vitest';
 import {NodeIO} from '@gltf-transform/core';
 import {readFileSync,statSync} from 'node:fs';
-import {createHash} from 'node:crypto';
 import {Matrix4,Vector3} from 'three';
 const base='assets/buildings/scramble-square/';
 const json=(p:string)=>JSON.parse(readFileSync(p,'utf8'));
-const hash=(s:string)=>createHash('sha256').update(s).digest('hex');
 const source=json(base+'source/data/plateau.json'),stats=json(base+'source/data/stats.json');
 async function geometry(path:string){
  const root=(await new NodeIO().read(path)).getRoot();const triangles:{material:string;v:Vector3[]}[]=[];let primitives=0;
@@ -18,14 +17,14 @@ async function geometry(path:string){
  return {root,triangles,primitives};
 }
 const serial=(tris:{material:string;v:Vector3[]}[])=>tris.map(t=>t.material+':'+t.v.map(p=>[p.x,p.y,p.z].map(v=>v.toFixed(5)).join(',')).sort().join(';')).sort().join('\n');
-const repairs=[28,49,35,77].map(i=>({i,ring:source.surfaces[i].ring.map((p:number[])=>new Vector3(p[0],p[2],-p[1]))}));
+const repairs: {i:number;ring:Vector3[]}[]=[28,49,35,77].map(i=>({i,ring:source.surfaces[i].ring.map((p:number[])=>new Vector3(p[0],p[2],-p[1]))}));
 const belongs=(t:{material:string;v:Vector3[]},r:Vector3[])=>t.v.every(v=>r.some(p=>p.distanceTo(v)<.002));
 it('preserves every triangle except exact source faces 28, 49, 35 and 77',async()=>{
  const current=await geometry(base+'web/scramble-square.glb'),before=await geometry(base+'source/cumulative-v1/main.glb');
  const off=(ts:{material:string;v:Vector3[]}[])=>ts.filter(t=>!repairs.some(r=>belongs(t,r.ring)));
  expect(serial(off(current.triangles))).toBe(serial(off(before.triangles)));
  expect(current.triangles.length).toBe(before.triangles.length);
- for(const {i,ring:raw} of repairs){
+ for(const {ring:raw} of repairs){
   const ring=raw[0].distanceTo(raw[raw.length-1])<.002?raw.slice(0,-1):raw;
   const tris=current.triangles.filter(t=>belongs(t,ring));expect(tris.length).toBe(ring.length-2);
   const edges=new Map<string,number>();const N=new Vector3();

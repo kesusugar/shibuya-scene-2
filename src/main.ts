@@ -1,3 +1,4 @@
+import { loadProps, type PropsResult } from './world/props';
 import { loadExterior, replaceProvisionalFill, type ExteriorResult } from './world/exterior';
 import {loadTactileSupplement,type TactileSupplementResult} from './world/tactileSupplement';
 import {loadFacilities, type FacilitiesResult} from './world/facilities';
@@ -78,6 +79,7 @@ let corePlaza: PlazaResult | undefined;
 let coreSurround: SurroundResult | undefined;
 let coreHachiko: HachikoResult | undefined;
 let coreDrainage: DrainageResult | undefined;
+let coreProps: PropsResult | undefined;
 let coreTactile: TactileResult | undefined;
 let coreContext: ContextResult | undefined;
 let projectedStreet: ProjectedStreet | undefined;
@@ -106,6 +108,7 @@ function setTime(t: TimeOfDay) {
   if (coreGround?.ok) applyLook(coreGround.root, t, groundLook);
   projectedStreet?.setTime(t, params.get('lamps') !== 'off');
   for (const supplement of [tactileExtra,tactileLinks,tactileOuter]) if (supplement?.ok) applyLook(supplement.root,t,look,undefined,env);
+  if (coreProps) applyLook(coreProps.root,t,look,undefined,env);
   if (coreFacilities?.ok) applyLook(coreFacilities.root, t, look, undefined, env);
   if (coreTerrain?.ok) applyLook(coreTerrain.root, t, groundLook);
   if (coreExterior?.ok) applyLook(coreExterior.root, t, groundLook);
@@ -178,6 +181,11 @@ async function start() {
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
   else if (coreGround) ground.position.y = 0;   // no Core ground: the disc goes back to y = 0
   controls.setGround([...(coreGround?.ok ? [coreGround.root] : []), ...(coreTerrain?.ok ? [coreTerrain.root] : []), ...(coreExterior?.ok ? [coreExterior.root] : []), ...(coreStreet?.ok ? coreStreet.walkSurfaces : [])]);
+  if (useGround && params.get('street') !== 'off' && params.get('props') !== 'off') {
+    coreProps = await loadProps(io.loadGlb, io.loadJson, (x,z) => controls.groundAt(x,z,5));
+    scene.add(coreProps.root);
+    if (coreProps.stats.placed) $('provisional').textContent += '\n支柱・案内板・コーンは2025年写真に基づく推定配置。位置・寸法・継続設置は未測量';
+  }
   if (loaded.some((b) => b.id === 'west-block')) $('provisional').textContent += '\n西側街区の外観は試作、看板は2025年1月の写真を参照';
   if (loaded.some((b) => b.id === 'ekimae')) $('provisional').textContent += '\n渋谷駅前ビルの外観は試作、看板は2025年11月の写真を参照';
   if (loaded.some(b => ['mark-city', 'shibuya109', 'takagi', 'bic-camera', 'cine-tower', 'east-mixeduse', 'hikarie', 'parco', 'stream', 'sakura-stage'].includes(b.id))) $('provisional').textContent += '\n追加の周辺建物は窓・色・看板筐体のB推定、写真との精密照合は未完了';
@@ -191,6 +199,7 @@ async function start() {
   // QA only: ?datum=off reproduces the scene before the common datum (every model at its own 0 m = Y 0)
   if (params.get('datum') === 'off') for (const b of loaded) { b.hints.groundElevationTP = undefined; b.root.position.y = 0; }
   const problems = [
+    ...(coreProps && !coreProps.ok ? [`小物の一部を配置できず: ${coreProps.errors.join("; ")}（ほかは表示を継続）`] : []),
     ...(projectedStreet && !projectedStreet.ok ? [`写真からの仮配置を読み込めず: ${projectedStreet.error}（通常表示を継続）`] : []),
     ...(coreContext && !coreContext.ok ? [`周辺の建物（C段階）の読み込みに失敗: ${coreContext.error}（他は表示を継続）`] : []),
     ...[tactileExtra,tactileLinks,tactileOuter].flatMap(r => r && !r.ok ? [`点字の補足を読み込めず: ${r.error}（元の面を継続）`] : []),
@@ -212,7 +221,7 @@ async function start() {
   if (!building) { status(problems.join('\n')); return; }
   lighting.placeSun(building.hints);
   for (const b of loaded) lighting.placeFloods(b.hints);
-  controls.setObstacles([...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
+  controls.setObstacles([...(coreProps ? [coreProps.root] : []), ...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
   controls.frameBuilding(building.hints);
   setTime(mode);
   const envNote = envState.day === 'fulfilled' && envState.night === 'fulfilled' ? '' : '（環境マップの一部を読み込めず、反射は簡易表示）';
@@ -229,6 +238,7 @@ async function start() {
     if (coreGround?.ok) applyClassPass(coreGround.root);
     if (coreStreet?.ok) applyClassPass(coreStreet.root);
     for (const supplement of [tactileExtra,tactileLinks,tactileOuter]) if (supplement?.ok) applyClassPass(supplement.root);
+    if (coreProps) applyClassPass(coreProps.root);
     if (coreFacilities?.ok) applyClassPass(coreFacilities.root);
     if (coreTerrain?.ok) applyClassPass(coreTerrain.root);
     if (coreExterior?.ok) applyClassPass(coreExterior.root);
@@ -250,6 +260,7 @@ async function start() {
   }
   (window as unknown as Record<string, unknown>).__viewer = {
     ready: true,
+    props: coreProps ? {ok:coreProps.ok,errors:coreProps.errors,anchors:coreProps.anchors,...coreProps.stats} : 'off',
     stats: Object.fromEntries(loaded.map((b) => [b.id, { ...b.stats, layers: b.layers, layerErrors: b.layerErrors }])),
     failed: results.filter((r) => !r.ok).map((r) => r.id),
     ground: coreGround ? {fillReplaced:coreGround.ok && !coreGround.root.getObjectByName('ground_fill'), ok: coreGround.ok, error: coreGround.error, missing: coreGround.missing, ...coreGround.stats } : 'off',
