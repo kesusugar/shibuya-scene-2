@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "unchanged_shell_roof_ground_geometry": true,
+  "exact_off_target_triangle_multisets_including_normals": true,
+  "materials_nodes_primitives_unchanged": true,
+  "outside_z_band_unchanged_tolerance_m": 0.011,
+  "changed_source_face": 112,
+  "removed_overlay_triangles": 106,
+  "added_overlay_triangles": 106,
+  "triangles": 32532,
+  "glb_bytes": 2021776,
+  "runtime_matches_pinned_output": true,
+  "pavement_samples_retained": 144,
+  "missing_pavement_samples": 0,
+  "datum_tp_m": 15,
+  "baseline_sha256": "16b029fbec71fa753b2c8f5bdbcead325105d9576df2bc636b637f05af130aed",
+  "new_sha256": "75753aec0940ab0cdb1bc82914918adf424bef0098aad95c020a1b983a06b82c"
+}

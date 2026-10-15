@@ -1,0 +1,37 @@
+{
+  "pass": true,
+  "blender": "4.2.3",
+  "triangles": 32538,
+  "mesh_objects": 8,
+  "external_libraries": 0,
+  "all_file_images_packed": true,
+  "images": [
+    {
+      "name": "reference-CC0.jpg",
+      "bytes": 458672,
+      "sha256": "1378cf2216a967714a2ca037fadab98a1a47c725b692d5cacd64e5de99a2ee10",
+      "packed": true,
+      "fake_user": true,
+      "relative_path": "//../refs/reference-CC0.jpg"
+    },
+    {
+      "name": "DEC01-lower112-left-unmarked.jpg",
+      "bytes": 67751,
+      "sha256": "ae92b18979091839e5d92200f94275fdbb589d97d21f0893e9cbe5b32a661ba8",
+      "packed": true,
+      "fake_user": true,
+      "relative_path": "//../refs/DEC01-lower112-left-unmarked.jpg"
+    },
+    {
+      "name": "DEC01-lower112-six-rectangles.jpg",
+      "bytes": 93155,
+      "sha256": "69d281706aeac5079debf36882132d7e88d04d0ebf81d4dc8fdf562ae5811245",
+      "packed": true,
+      "fake_user": true,
+      "relative_path": "//../refs/DEC01-lower112-six-rectangles.jpg"
+    }
+  ],
+  "embedded_source_matches_files": true,
+  "reopened_mesh_geometry_normals_and_transforms_match_runtime": true,
+  "blend_byte_identity_claimed": false
+}

@@ -1,0 +1,79 @@
+{
+  "same_camera_for_before_and_after": true,
+  "photograph_camera_calibrated": false,
+  "renderer": "Blender 4.2.3 Workbench studio material colors; actual main versus final",
+  "views": [
+    {
+      "view": "southeast",
+      "location": [
+        610,
+        -840,
+        155
+      ],
+      "target": [
+        237,
+        -255,
+        95
+      ],
+      "ortho_scale": 215,
+      "resolution": [
+        850,
+        1300
+      ]
+    },
+    {
+      "view": "southwest",
+      "location": [
+        60,
+        -850,
+        155
+      ],
+      "target": [
+        237,
+        -255,
+        95
+      ],
+      "ortho_scale": 215,
+      "resolution": [
+        850,
+        1300
+      ]
+    },
+    {
+      "view": "lower-field",
+      "location": [
+        336.7227478027344,
+        -349.92523193359375,
+        83.02200317382812
+      ],
+      "target": [
+        262.3424377441406,
+        -283.0853576660156,
+        83.02200317382812
+      ],
+      "ortho_scale": 23,
+      "resolution": [
+        1100,
+        1100
+      ]
+    },
+    {
+      "view": "upper-seam",
+      "location": [
+        336.7227478027344,
+        -349.92523193359375,
+        90.80400085449219
+      ],
+      "target": [
+        262.3424377441406,
+        -283.0853576660156,
+        90.80400085449219
+      ],
+      "ortho_scale": 13,
+      "resolution": [
+        1400,
+        850
+      ]
+    }
+  ]
+}

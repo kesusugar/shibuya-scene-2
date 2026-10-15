@@ -1,0 +1,49 @@
+{
+  "pass": true,
+  "baseline_git_blob": "981faa7b5ffab3ceffa36367533167f437841f1e",
+  "target_git_blob": "cc801164bff5b6c848e2b87f73f823c8ab716d53",
+  "baseline_bytes": 2022108,
+  "target_bytes": 2022104,
+  "net_bytes": -4,
+  "net_triangles": 6,
+  "changed_source_face": 112,
+  "meshes": {
+    "stream_roof": {
+      "removed": 0,
+      "added": 0
+    },
+    "stream_wall": {
+      "removed": 0,
+      "added": 0
+    },
+    "stream_spandrel": {
+      "removed": 112,
+      "added": 94
+    },
+    "stream_glass0": {
+      "removed": 0,
+      "added": 0
+    },
+    "stream_frame": {
+      "removed": 0,
+      "added": 24
+    },
+    "stream_glass2": {
+      "removed": 0,
+      "added": 0
+    },
+    "stream_sign_housing": {
+      "removed": 0,
+      "added": 0
+    },
+    "stream_glass1": {
+      "removed": 0,
+      "added": 0
+    }
+  },
+  "all_off_target_positions_normals_winding_exact": true,
+  "scene_nodes_materials_and_transform_exact": true,
+  "ground_samples": 144,
+  "datum_tp_m": 15,
+  "scope": "upper source112 field and lower-left six rectangles; not full scene validation"
+}
