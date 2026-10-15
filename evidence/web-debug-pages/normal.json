@@ -1,0 +1,1719 @@
+{
+  "phase": "街の準備完了",
+  "readyMs": 5668,
+  "firstFrameMs": 7220,
+  "errors": [],
+  "assets": [
+    {
+      "url": "/buildings/qfront/qfront.glb",
+      "startMs": 166,
+      "status": "ok",
+      "durationMs": 1107
+    },
+    {
+      "url": "/buildings/qfront/viewer.json",
+      "startMs": 167,
+      "status": "ok",
+      "durationMs": 573
+    },
+    {
+      "url": "/buildings/qfront/emissive_day.json",
+      "startMs": 167,
+      "status": "ok",
+      "durationMs": 573
+    },
+    {
+      "url": "/buildings/qfront/emissive_night.json",
+      "startMs": 168,
+      "status": "ok",
+      "durationMs": 572
+    },
+    {
+      "url": "/buildings/magnet/magnet.glb",
+      "startMs": 168,
+      "status": "ok",
+      "durationMs": 580
+    },
+    {
+      "url": "/buildings/magnet/viewer.json",
+      "startMs": 168,
+      "status": "ok",
+      "durationMs": 572
+    },
+    {
+      "url": "/buildings/magnet/emissive_day.json",
+      "startMs": 168,
+      "status": "ok",
+      "durationMs": 580
+    },
+    {
+      "url": "/buildings/magnet/emissive_night.json",
+      "startMs": 168,
+      "status": "ok",
+      "durationMs": 580
+    },
+    {
+      "url": "/buildings/eiraku/eiraku.glb",
+      "startMs": 168,
+      "status": "ok",
+      "durationMs": 584
+    },
+    {
+      "url": "/buildings/eiraku/viewer.json",
+      "startMs": 170,
+      "status": "ok",
+      "durationMs": 582
+    },
+    {
+      "url": "/buildings/eiraku/emissive_day.json",
+      "startMs": 170,
+      "status": "ok",
+      "durationMs": 582
+    },
+    {
+      "url": "/buildings/eiraku/emissive_night.json",
+      "startMs": 170,
+      "status": "ok",
+      "durationMs": 582
+    },
+    {
+      "url": "/buildings/west-block/west-block.glb",
+      "startMs": 170,
+      "status": "ok",
+      "durationMs": 1002
+    },
+    {
+      "url": "/buildings/west-block/viewer.json",
+      "startMs": 170,
+      "status": "ok",
+      "durationMs": 604
+    },
+    {
+      "url": "/buildings/west-block/emissive_day.json",
+      "startMs": 171,
+      "status": "ok",
+      "durationMs": 603
+    },
+    {
+      "url": "/buildings/west-block/emissive_night.json",
+      "startMs": 171,
+      "status": "ok",
+      "durationMs": 603
+    },
+    {
+      "url": "/buildings/ekimae/ekimae.glb",
+      "startMs": 171,
+      "status": "ok",
+      "durationMs": 608
+    },
+    {
+      "url": "/buildings/ekimae/viewer.json",
+      "startMs": 171,
+      "status": "ok",
+      "durationMs": 608
+    },
+    {
+      "url": "/buildings/ekimae/emissive_day.json",
+      "startMs": 171,
+      "status": "ok",
+      "durationMs": 608
+    },
+    {
+      "url": "/buildings/ekimae/emissive_night.json",
+      "startMs": 172,
+      "status": "ok",
+      "durationMs": 607
+    },
+    {
+      "url": "/buildings/station-concourse/station-concourse.glb",
+      "startMs": 172,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-concourse/viewer.json",
+      "startMs": 172,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-concourse/emissive_day.json",
+      "startMs": 172,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-concourse/emissive_night.json",
+      "startMs": 172,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-north/station-north.glb",
+      "startMs": 172,
+      "status": "ok",
+      "durationMs": 612
+    },
+    {
+      "url": "/buildings/station-north/viewer.json",
+      "startMs": 173,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-north/emissive_day.json",
+      "startMs": 173,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-north/emissive_night.json",
+      "startMs": 173,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-service/station-service.glb",
+      "startMs": 173,
+      "status": "ok",
+      "durationMs": 612
+    },
+    {
+      "url": "/buildings/station-service/viewer.json",
+      "startMs": 173,
+      "status": "ok",
+      "durationMs": 612
+    },
+    {
+      "url": "/buildings/station-service/emissive_day.json",
+      "startMs": 174,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-service/emissive_night.json",
+      "startMs": 174,
+      "status": "ok",
+      "durationMs": 611
+    },
+    {
+      "url": "/buildings/station-west-viaduct/station-west-viaduct.glb",
+      "startMs": 174,
+      "status": "ok",
+      "durationMs": 612
+    },
+    {
+      "url": "/buildings/station-west-viaduct/viewer.json",
+      "startMs": 174,
+      "status": "ok",
+      "durationMs": 612
+    },
+    {
+      "url": "/buildings/station-west-viaduct/emissive_day.json",
+      "startMs": 174,
+      "status": "ok",
+      "durationMs": 612
+    },
+    {
+      "url": "/buildings/station-west-viaduct/emissive_night.json",
+      "startMs": 174,
+      "status": "ok",
+      "durationMs": 612
+    },
+    {
+      "url": "/buildings/ginza-canopy/ginza-canopy.glb",
+      "startMs": 175,
+      "status": "ok",
+      "durationMs": 614
+    },
+    {
+      "url": "/buildings/ginza-canopy/viewer.json",
+      "startMs": 175,
+      "status": "ok",
+      "durationMs": 614
+    },
+    {
+      "url": "/buildings/ginza-canopy/emissive_day.json",
+      "startMs": 175,
+      "status": "ok",
+      "durationMs": 614
+    },
+    {
+      "url": "/buildings/ginza-canopy/emissive_night.json",
+      "startMs": 175,
+      "status": "ok",
+      "durationMs": 614
+    },
+    {
+      "url": "/buildings/daiichi-kangin/daiichi-kangin.glb",
+      "startMs": 175,
+      "status": "ok",
+      "durationMs": 615
+    },
+    {
+      "url": "/buildings/daiichi-kangin/viewer.json",
+      "startMs": 175,
+      "status": "ok",
+      "durationMs": 615
+    },
+    {
+      "url": "/buildings/daiichi-kangin/emissive_day.json",
+      "startMs": 176,
+      "status": "ok",
+      "durationMs": 614
+    },
+    {
+      "url": "/buildings/daiichi-kangin/emissive_night.json",
+      "startMs": 176,
+      "status": "ok",
+      "durationMs": 614
+    },
+    {
+      "url": "/buildings/center-gai-gate/center-gai-gate.glb",
+      "startMs": 176,
+      "status": "ok",
+      "durationMs": 1008
+    },
+    {
+      "url": "/buildings/center-gai-gate/viewer.json",
+      "startMs": 176,
+      "status": "ok",
+      "durationMs": 618
+    },
+    {
+      "url": "/buildings/center-gai-gate/emissive_day.json",
+      "startMs": 176,
+      "status": "ok",
+      "durationMs": 618
+    },
+    {
+      "url": "/buildings/center-gai-gate/emissive_night.json",
+      "startMs": 177,
+      "status": "ok",
+      "durationMs": 617
+    },
+    {
+      "url": "/buildings/center244/center244.glb",
+      "startMs": 177,
+      "status": "ok",
+      "durationMs": 619
+    },
+    {
+      "url": "/buildings/center244/viewer.json",
+      "startMs": 177,
+      "status": "ok",
+      "durationMs": 619
+    },
+    {
+      "url": "/buildings/center244/emissive_day.json",
+      "startMs": 177,
+      "status": "ok",
+      "durationMs": 619
+    },
+    {
+      "url": "/buildings/center244/emissive_night.json",
+      "startMs": 177,
+      "status": "ok",
+      "durationMs": 619
+    },
+    {
+      "url": "/buildings/quattro/quattro.glb",
+      "startMs": 177,
+      "status": "ok",
+      "durationMs": 620
+    },
+    {
+      "url": "/buildings/quattro/viewer.json",
+      "startMs": 178,
+      "status": "ok",
+      "durationMs": 619
+    },
+    {
+      "url": "/buildings/quattro/emissive_day.json",
+      "startMs": 178,
+      "status": "ok",
+      "durationMs": 619
+    },
+    {
+      "url": "/buildings/quattro/emissive_night.json",
+      "startMs": 178,
+      "status": "ok",
+      "durationMs": 619
+    },
+    {
+      "url": "/buildings/scramble-square/scramble-square.glb",
+      "startMs": 178,
+      "status": "ok",
+      "durationMs": 671
+    },
+    {
+      "url": "/buildings/scramble-square/viewer.json",
+      "startMs": 178,
+      "status": "ok",
+      "durationMs": 626
+    },
+    {
+      "url": "/buildings/scramble-square/emissive_day.json",
+      "startMs": 179,
+      "status": "ok",
+      "durationMs": 625
+    },
+    {
+      "url": "/buildings/scramble-square/emissive_night.json",
+      "startMs": 179,
+      "status": "ok",
+      "durationMs": 625
+    },
+    {
+      "url": "/buildings/fukuras/fukuras.glb",
+      "startMs": 179,
+      "status": "ok",
+      "durationMs": 627
+    },
+    {
+      "url": "/buildings/fukuras/viewer.json",
+      "startMs": 179,
+      "status": "ok",
+      "durationMs": 627
+    },
+    {
+      "url": "/buildings/fukuras/emissive_day.json",
+      "startMs": 179,
+      "status": "ok",
+      "durationMs": 627
+    },
+    {
+      "url": "/buildings/fukuras/emissive_night.json",
+      "startMs": 179,
+      "status": "ok",
+      "durationMs": 627
+    },
+    {
+      "url": "/buildings/station-southeast/station-southeast.glb",
+      "startMs": 180,
+      "status": "ok",
+      "durationMs": 627
+    },
+    {
+      "url": "/buildings/station-southeast/viewer.json",
+      "startMs": 180,
+      "status": "ok",
+      "durationMs": 627
+    },
+    {
+      "url": "/buildings/station-southeast/emissive_day.json",
+      "startMs": 180,
+      "status": "ok",
+      "durationMs": 627
+    },
+    {
+      "url": "/buildings/station-southeast/emissive_night.json",
+      "startMs": 180,
+      "status": "ok",
+      "durationMs": 636
+    },
+    {
+      "url": "/buildings/plaza-kiosk/plaza-kiosk.glb",
+      "startMs": 180,
+      "status": "ok",
+      "durationMs": 637
+    },
+    {
+      "url": "/buildings/plaza-kiosk/viewer.json",
+      "startMs": 180,
+      "status": "ok",
+      "durationMs": 637
+    },
+    {
+      "url": "/buildings/plaza-kiosk/emissive_day.json",
+      "startMs": 181,
+      "status": "ok",
+      "durationMs": 636
+    },
+    {
+      "url": "/buildings/plaza-kiosk/emissive_night.json",
+      "startMs": 181,
+      "status": "ok",
+      "durationMs": 636
+    },
+    {
+      "url": "/buildings/mark-city/mark-city.glb",
+      "startMs": 181,
+      "status": "ok",
+      "durationMs": 642
+    },
+    {
+      "url": "/buildings/mark-city/viewer.json",
+      "startMs": 181,
+      "status": "ok",
+      "durationMs": 637
+    },
+    {
+      "url": "/buildings/mark-city/emissive_day.json",
+      "startMs": 181,
+      "status": "ok",
+      "durationMs": 637
+    },
+    {
+      "url": "/buildings/mark-city/emissive_night.json",
+      "startMs": 182,
+      "status": "ok",
+      "durationMs": 641
+    },
+    {
+      "url": "/buildings/shibuya109/shibuya109.glb",
+      "startMs": 182,
+      "status": "ok",
+      "durationMs": 762
+    },
+    {
+      "url": "/buildings/shibuya109/viewer.json",
+      "startMs": 182,
+      "status": "ok",
+      "durationMs": 676
+    },
+    {
+      "url": "/buildings/shibuya109/emissive_day.json",
+      "startMs": 182,
+      "status": "ok",
+      "durationMs": 676
+    },
+    {
+      "url": "/buildings/shibuya109/emissive_night.json",
+      "startMs": 182,
+      "status": "ok",
+      "durationMs": 713
+    },
+    {
+      "url": "/buildings/takagi/takagi.glb",
+      "startMs": 182,
+      "status": "ok",
+      "durationMs": 740
+    },
+    {
+      "url": "/buildings/takagi/viewer.json",
+      "startMs": 182,
+      "status": "ok",
+      "durationMs": 740
+    },
+    {
+      "url": "/buildings/takagi/emissive_day.json",
+      "startMs": 183,
+      "status": "ok",
+      "durationMs": 747
+    },
+    {
+      "url": "/buildings/takagi/emissive_night.json",
+      "startMs": 183,
+      "status": "ok",
+      "durationMs": 748
+    },
+    {
+      "url": "/buildings/bic-camera/bic-camera.glb",
+      "startMs": 183,
+      "status": "ok",
+      "durationMs": 749
+    },
+    {
+      "url": "/buildings/bic-camera/viewer.json",
+      "startMs": 183,
+      "status": "ok",
+      "durationMs": 749
+    },
+    {
+      "url": "/buildings/bic-camera/emissive_day.json",
+      "startMs": 183,
+      "status": "ok",
+      "durationMs": 764
+    },
+    {
+      "url": "/buildings/bic-camera/emissive_night.json",
+      "startMs": 183,
+      "status": "ok",
+      "durationMs": 764
+    },
+    {
+      "url": "/buildings/cine-tower/cine-tower.glb",
+      "startMs": 183,
+      "status": "ok",
+      "durationMs": 765
+    },
+    {
+      "url": "/buildings/cine-tower/viewer.json",
+      "startMs": 184,
+      "status": "ok",
+      "durationMs": 764
+    },
+    {
+      "url": "/buildings/cine-tower/emissive_day.json",
+      "startMs": 184,
+      "status": "ok",
+      "durationMs": 764
+    },
+    {
+      "url": "/buildings/cine-tower/emissive_night.json",
+      "startMs": 184,
+      "status": "ok",
+      "durationMs": 765
+    },
+    {
+      "url": "/buildings/east-mixeduse/east-mixeduse.glb",
+      "startMs": 184,
+      "status": "ok",
+      "durationMs": 766
+    },
+    {
+      "url": "/buildings/east-mixeduse/viewer.json",
+      "startMs": 184,
+      "status": "ok",
+      "durationMs": 766
+    },
+    {
+      "url": "/buildings/east-mixeduse/emissive_day.json",
+      "startMs": 184,
+      "status": "ok",
+      "durationMs": 766
+    },
+    {
+      "url": "/buildings/east-mixeduse/emissive_night.json",
+      "startMs": 185,
+      "status": "ok",
+      "durationMs": 765
+    },
+    {
+      "url": "/buildings/hikarie/hikarie.glb",
+      "startMs": 185,
+      "status": "ok",
+      "durationMs": 844
+    },
+    {
+      "url": "/buildings/hikarie/viewer.json",
+      "startMs": 185,
+      "status": "ok",
+      "durationMs": 765
+    },
+    {
+      "url": "/buildings/hikarie/emissive_day.json",
+      "startMs": 185,
+      "status": "ok",
+      "durationMs": 765
+    },
+    {
+      "url": "/buildings/hikarie/emissive_night.json",
+      "startMs": 185,
+      "status": "ok",
+      "durationMs": 765
+    },
+    {
+      "url": "/buildings/parco/parco.glb",
+      "startMs": 185,
+      "status": "ok",
+      "durationMs": 771
+    },
+    {
+      "url": "/buildings/parco/viewer.json",
+      "startMs": 185,
+      "status": "ok",
+      "durationMs": 771
+    },
+    {
+      "url": "/buildings/parco/emissive_day.json",
+      "startMs": 186,
+      "status": "ok",
+      "durationMs": 770
+    },
+    {
+      "url": "/buildings/parco/emissive_night.json",
+      "startMs": 186,
+      "status": "ok",
+      "durationMs": 770
+    },
+    {
+      "url": "/buildings/stream/stream.glb",
+      "startMs": 186,
+      "status": "ok",
+      "durationMs": 773
+    },
+    {
+      "url": "/buildings/stream/viewer.json",
+      "startMs": 186,
+      "status": "ok",
+      "durationMs": 774
+    },
+    {
+      "url": "/buildings/stream/emissive_day.json",
+      "startMs": 186,
+      "status": "ok",
+      "durationMs": 774
+    },
+    {
+      "url": "/buildings/stream/emissive_night.json",
+      "startMs": 187,
+      "status": "ok",
+      "durationMs": 773
+    },
+    {
+      "url": "/buildings/sakura-stage/sakura-stage.glb",
+      "startMs": 187,
+      "status": "ok",
+      "durationMs": 859
+    },
+    {
+      "url": "/buildings/sakura-stage/viewer.json",
+      "startMs": 187,
+      "status": "ok",
+      "durationMs": 780
+    },
+    {
+      "url": "/buildings/sakura-stage/emissive_day.json",
+      "startMs": 187,
+      "status": "ok",
+      "durationMs": 780
+    },
+    {
+      "url": "/buildings/sakura-stage/emissive_night.json",
+      "startMs": 187,
+      "status": "ok",
+      "durationMs": 780
+    },
+    {
+      "url": "/ground/core/ground_core.glb",
+      "startMs": 188,
+      "status": "ok",
+      "durationMs": 1097
+    },
+    {
+      "url": "/street/core/street_core.glb",
+      "startMs": 188,
+      "status": "ok",
+      "durationMs": 798
+    },
+    {
+      "url": "/context/core/context_core.glb",
+      "startMs": 189,
+      "status": "ok",
+      "durationMs": 1007
+    },
+    {
+      "url": "/street/tactile/tactile.glb",
+      "startMs": 189,
+      "status": "ok",
+      "durationMs": 820
+    },
+    {
+      "url": "/street/drainage/drainage.glb",
+      "startMs": 190,
+      "status": "ok",
+      "durationMs": 847
+    },
+    {
+      "url": "/street/hachiko/hachiko.glb",
+      "startMs": 190,
+      "status": "ok",
+      "durationMs": 1121
+    },
+    {
+      "url": "/street/hachiko-surround/hachiko-surround.glb",
+      "startMs": 190,
+      "status": "ok",
+      "durationMs": 878
+    },
+    {
+      "url": "/street/plaza-finish/plaza-finish.glb",
+      "startMs": 191,
+      "status": "ok",
+      "durationMs": 1123
+    },
+    {
+      "url": "/ground/extension/extension.glb",
+      "startMs": 191,
+      "status": "ok",
+      "durationMs": 937
+    },
+    {
+      "url": "/street/plaza-facilities/plaza-facilities.glb",
+      "startMs": 192,
+      "status": "ok",
+      "durationMs": 920
+    },
+    {
+      "url": "/street/tactile-extra/tactile-extra.glb",
+      "startMs": 192,
+      "status": "ok",
+      "durationMs": 986
+    },
+    {
+      "url": "/street/tactile-links/tactile-links.glb",
+      "startMs": 192,
+      "status": "ok",
+      "durationMs": 922
+    },
+    {
+      "url": "/ground/exterior-west/exterior-west.glb",
+      "startMs": 193,
+      "status": "ok",
+      "durationMs": 988
+    },
+    {
+      "url": "/ground/exterior-middle/exterior-middle.glb",
+      "startMs": 193,
+      "status": "ok",
+      "durationMs": 931
+    },
+    {
+      "url": "/ground/exterior-east/exterior-east.glb",
+      "startMs": 193,
+      "status": "ok",
+      "durationMs": 994
+    },
+    {
+      "url": "/street/tactile-outer/tactile-outer.glb",
+      "startMs": 195,
+      "status": "ok",
+      "durationMs": 947
+    },
+    {
+      "url": "/buildings/magnet/magnet_signs_2025.glb",
+      "startMs": 751,
+      "status": "ok",
+      "durationMs": 571
+    },
+    {
+      "url": "/buildings/ekimae/signs-2025-11.glb",
+      "startMs": 781,
+      "status": "ok",
+      "durationMs": 566
+    },
+    {
+      "url": "/buildings/station-service/signs-2025-10.glb",
+      "startMs": 785,
+      "status": "ok",
+      "durationMs": 561
+    },
+    {
+      "url": "/buildings/west-block/signs-2025-01.glb",
+      "startMs": 1172,
+      "status": "ok",
+      "durationMs": 184
+    },
+    {
+      "url": "/buildings/center-gai-gate/signs-2025-01.glb",
+      "startMs": 1184,
+      "status": "ok",
+      "durationMs": 171
+    },
+    {
+      "url": "/street/props/layout.json",
+      "startMs": 1357,
+      "status": "ok",
+      "durationMs": 13
+    },
+    {
+      "url": "/street/props/hachiko_white_bollard.glb",
+      "startMs": 1370,
+      "status": "ok",
+      "durationMs": 5
+    },
+    {
+      "url": "/street/props/standing_notice_sign.glb",
+      "startMs": 1661,
+      "status": "ok",
+      "durationMs": 3587
+    },
+    {
+      "url": "/street/props/oct2025_two_band_cone.glb",
+      "startMs": 5395,
+      "status": "ok",
+      "durationMs": 23
+    }
+  ],
+  "marks": [
+    {
+      "phase": "WebGLを初期化中",
+      "at": 80
+    },
+    {
+      "phase": "街の資産を読み込み中",
+      "at": 147
+    },
+    {
+      "phase": "街を配置中",
+      "at": 5661
+    },
+    {
+      "phase": "街の準備完了",
+      "at": 5668
+    }
+  ],
+  "runtime": {
+    "calls": 607,
+    "triangles": 996936,
+    "geometries": 392,
+    "textures": 46,
+    "quality": "medium"
+  },
+  "elapsedMs": 7369,
+  "page": "http://127.0.0.1:5240/shibuya-scene-2/",
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/141.0.7390.37 Safari/537.36",
+  "resources": [
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/assets/index-DWjIrFJf.js",
+      "durationMs": 34,
+      "transferBytes": 187156,
+      "decodedBytes": 717922
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/startup-debug.js",
+      "durationMs": 9,
+      "transferBytes": 2373,
+      "decodedBytes": 4321
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/env/wide_street_01_1k.hdr",
+      "durationMs": 176,
+      "transferBytes": 1076970,
+      "decodedBytes": 1453300
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/env/shanghai_bund_1k.hdr",
+      "durationMs": 196,
+      "transferBytes": 1362646,
+      "decodedBytes": 1641002
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/qfront/qfront.glb",
+      "durationMs": 627,
+      "transferBytes": 5809296,
+      "decodedBytes": 5808996
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/qfront/viewer.json",
+      "durationMs": 44,
+      "transferBytes": 1093,
+      "decodedBytes": 1323
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/qfront/emissive_day.json",
+      "durationMs": 44,
+      "transferBytes": 1272,
+      "decodedBytes": 8845
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/qfront/emissive_night.json",
+      "durationMs": 44,
+      "transferBytes": 1291,
+      "decodedBytes": 8851
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/magnet/magnet.glb",
+      "durationMs": 92,
+      "transferBytes": 604308,
+      "decodedBytes": 604008
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/magnet/viewer.json",
+      "durationMs": 50,
+      "transferBytes": 1224,
+      "decodedBytes": 924
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/magnet/emissive_day.json",
+      "durationMs": 55,
+      "transferBytes": 952,
+      "decodedBytes": 4227
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/magnet/emissive_night.json",
+      "durationMs": 73,
+      "transferBytes": 991,
+      "decodedBytes": 4180
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/eiraku/eiraku.glb",
+      "durationMs": 77,
+      "transferBytes": 33140,
+      "decodedBytes": 32840
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/eiraku/viewer.json",
+      "durationMs": 89,
+      "transferBytes": 924,
+      "decodedBytes": 624
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/eiraku/emissive_day.json",
+      "durationMs": 100,
+      "transferBytes": 952,
+      "decodedBytes": 4227
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/eiraku/emissive_night.json",
+      "durationMs": 106,
+      "transferBytes": 991,
+      "decodedBytes": 4180
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/west-block/west-block.glb",
+      "durationMs": 121,
+      "transferBytes": 577100,
+      "decodedBytes": 576800
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/west-block/viewer.json",
+      "durationMs": 134,
+      "transferBytes": 522,
+      "decodedBytes": 222
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/west-block/emissive_day.json",
+      "durationMs": 135,
+      "transferBytes": 561,
+      "decodedBytes": 2257
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/west-block/emissive_night.json",
+      "durationMs": 138,
+      "transferBytes": 573,
+      "decodedBytes": 2310
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ekimae/ekimae.glb",
+      "durationMs": 157,
+      "transferBytes": 1788020,
+      "decodedBytes": 1787720
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ekimae/viewer.json",
+      "durationMs": 140,
+      "transferBytes": 458,
+      "decodedBytes": 158
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ekimae/emissive_day.json",
+      "durationMs": 145,
+      "transferBytes": 487,
+      "decodedBytes": 1140
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ekimae/emissive_night.json",
+      "durationMs": 146,
+      "transferBytes": 500,
+      "decodedBytes": 1160
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-concourse/station-concourse.glb",
+      "durationMs": 154,
+      "transferBytes": 42684,
+      "decodedBytes": 42384
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-concourse/viewer.json",
+      "durationMs": 153,
+      "transferBytes": 403,
+      "decodedBytes": 103
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-concourse/emissive_day.json",
+      "durationMs": 162,
+      "transferBytes": 756,
+      "decodedBytes": 456
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-concourse/emissive_night.json",
+      "durationMs": 162,
+      "transferBytes": 760,
+      "decodedBytes": 460
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-north/station-north.glb",
+      "durationMs": 172,
+      "transferBytes": 242676,
+      "decodedBytes": 242376
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-north/viewer.json",
+      "durationMs": 169,
+      "transferBytes": 403,
+      "decodedBytes": 103
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-north/emissive_day.json",
+      "durationMs": 169,
+      "transferBytes": 418,
+      "decodedBytes": 118
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-north/emissive_night.json",
+      "durationMs": 172,
+      "transferBytes": 418,
+      "decodedBytes": 118
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-service/station-service.glb",
+      "durationMs": 179,
+      "transferBytes": 184952,
+      "decodedBytes": 184652
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-service/viewer.json",
+      "durationMs": 178,
+      "transferBytes": 453,
+      "decodedBytes": 153
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-service/emissive_day.json",
+      "durationMs": 178,
+      "transferBytes": 369,
+      "decodedBytes": 69
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-service/emissive_night.json",
+      "durationMs": 178,
+      "transferBytes": 371,
+      "decodedBytes": 71
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-west-viaduct/station-west-viaduct.glb",
+      "durationMs": 186,
+      "transferBytes": 79164,
+      "decodedBytes": 78864
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-west-viaduct/viewer.json",
+      "durationMs": 183,
+      "transferBytes": 401,
+      "decodedBytes": 101
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-west-viaduct/emissive_day.json",
+      "durationMs": 184,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-west-viaduct/emissive_night.json",
+      "durationMs": 186,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ginza-canopy/ginza-canopy.glb",
+      "durationMs": 204,
+      "transferBytes": 715844,
+      "decodedBytes": 715544
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ginza-canopy/viewer.json",
+      "durationMs": 191,
+      "transferBytes": 404,
+      "decodedBytes": 104
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ginza-canopy/emissive_day.json",
+      "durationMs": 192,
+      "transferBytes": 526,
+      "decodedBytes": 226
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ginza-canopy/emissive_night.json",
+      "durationMs": 192,
+      "transferBytes": 525,
+      "decodedBytes": 225
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/daiichi-kangin/daiichi-kangin.glb",
+      "durationMs": 202,
+      "transferBytes": 421416,
+      "decodedBytes": 421116
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/daiichi-kangin/viewer.json",
+      "durationMs": 197,
+      "transferBytes": 464,
+      "decodedBytes": 164
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/daiichi-kangin/emissive_day.json",
+      "durationMs": 197,
+      "transferBytes": 418,
+      "decodedBytes": 118
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/daiichi-kangin/emissive_night.json",
+      "durationMs": 197,
+      "transferBytes": 420,
+      "decodedBytes": 120
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center-gai-gate/center-gai-gate.glb",
+      "durationMs": 207,
+      "transferBytes": 172644,
+      "decodedBytes": 172344
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center-gai-gate/viewer.json",
+      "durationMs": 204,
+      "transferBytes": 523,
+      "decodedBytes": 223
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center-gai-gate/emissive_day.json",
+      "durationMs": 205,
+      "transferBytes": 530,
+      "decodedBytes": 230
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center-gai-gate/emissive_night.json",
+      "durationMs": 205,
+      "transferBytes": 535,
+      "decodedBytes": 235
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center244/center244.glb",
+      "durationMs": 213,
+      "transferBytes": 541140,
+      "decodedBytes": 540840
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center244/viewer.json",
+      "durationMs": 209,
+      "transferBytes": 465,
+      "decodedBytes": 165
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center244/emissive_day.json",
+      "durationMs": 209,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center244/emissive_night.json",
+      "durationMs": 209,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/quattro/quattro.glb",
+      "durationMs": 212,
+      "transferBytes": 237316,
+      "decodedBytes": 237016
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/quattro/viewer.json",
+      "durationMs": 214,
+      "transferBytes": 494,
+      "decodedBytes": 194
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/quattro/emissive_day.json",
+      "durationMs": 214,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/quattro/emissive_night.json",
+      "durationMs": 214,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/scramble-square/scramble-square.glb",
+      "durationMs": 311,
+      "transferBytes": 2931176,
+      "decodedBytes": 2930876
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/scramble-square/viewer.json",
+      "durationMs": 214,
+      "transferBytes": 495,
+      "decodedBytes": 195
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/scramble-square/emissive_day.json",
+      "durationMs": 218,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/scramble-square/emissive_night.json",
+      "durationMs": 219,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/fukuras/fukuras.glb",
+      "durationMs": 232,
+      "transferBytes": 1137816,
+      "decodedBytes": 1137516
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/fukuras/viewer.json",
+      "durationMs": 218,
+      "transferBytes": 495,
+      "decodedBytes": 195
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/fukuras/emissive_day.json",
+      "durationMs": 223,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/fukuras/emissive_night.json",
+      "durationMs": 223,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-southeast/station-southeast.glb",
+      "durationMs": 227,
+      "transferBytes": 340764,
+      "decodedBytes": 340464
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-southeast/viewer.json",
+      "durationMs": 228,
+      "transferBytes": 494,
+      "decodedBytes": 194
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-southeast/emissive_day.json",
+      "durationMs": 229,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-southeast/emissive_night.json",
+      "durationMs": 231,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/plaza-kiosk/plaza-kiosk.glb",
+      "durationMs": 236,
+      "transferBytes": 26992,
+      "decodedBytes": 26692
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/plaza-kiosk/viewer.json",
+      "durationMs": 235,
+      "transferBytes": 494,
+      "decodedBytes": 194
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/plaza-kiosk/emissive_day.json",
+      "durationMs": 235,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/plaza-kiosk/emissive_night.json",
+      "durationMs": 235,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/mark-city/mark-city.glb",
+      "durationMs": 581,
+      "transferBytes": 2387300,
+      "decodedBytes": 2387000
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/mark-city/viewer.json",
+      "durationMs": 241,
+      "transferBytes": 496,
+      "decodedBytes": 196
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/mark-city/emissive_day.json",
+      "durationMs": 241,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/mark-city/emissive_night.json",
+      "durationMs": 241,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/shibuya109/shibuya109.glb",
+      "durationMs": 631,
+      "transferBytes": 2763484,
+      "decodedBytes": 2763184
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/shibuya109/viewer.json",
+      "durationMs": 246,
+      "transferBytes": 496,
+      "decodedBytes": 196
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/shibuya109/emissive_day.json",
+      "durationMs": 246,
+      "transferBytes": 568,
+      "decodedBytes": 268
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/shibuya109/emissive_night.json",
+      "durationMs": 254,
+      "transferBytes": 585,
+      "decodedBytes": 285
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/takagi/takagi.glb",
+      "durationMs": 275,
+      "transferBytes": 381508,
+      "decodedBytes": 381208
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/takagi/viewer.json",
+      "durationMs": 270,
+      "transferBytes": 494,
+      "decodedBytes": 194
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/takagi/emissive_day.json",
+      "durationMs": 281,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/takagi/emissive_night.json",
+      "durationMs": 288,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/bic-camera/bic-camera.glb",
+      "durationMs": 290,
+      "transferBytes": 60368,
+      "decodedBytes": 60068
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/bic-camera/viewer.json",
+      "durationMs": 295,
+      "transferBytes": 497,
+      "decodedBytes": 197
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/bic-camera/emissive_day.json",
+      "durationMs": 297,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/bic-camera/emissive_night.json",
+      "durationMs": 304,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/cine-tower/cine-tower.glb",
+      "durationMs": 327,
+      "transferBytes": 233740,
+      "decodedBytes": 233440
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/cine-tower/viewer.json",
+      "durationMs": 328,
+      "transferBytes": 495,
+      "decodedBytes": 195
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/cine-tower/emissive_day.json",
+      "durationMs": 335,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/cine-tower/emissive_night.json",
+      "durationMs": 335,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/east-mixeduse/east-mixeduse.glb",
+      "durationMs": 336,
+      "transferBytes": 128136,
+      "decodedBytes": 127836
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/east-mixeduse/viewer.json",
+      "durationMs": 343,
+      "transferBytes": 490,
+      "decodedBytes": 190
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/east-mixeduse/emissive_day.json",
+      "durationMs": 343,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/east-mixeduse/emissive_night.json",
+      "durationMs": 343,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/hikarie/viewer.json",
+      "durationMs": 345,
+      "transferBytes": 494,
+      "decodedBytes": 194
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/hikarie/hikarie.glb",
+      "durationMs": 685,
+      "transferBytes": 2350052,
+      "decodedBytes": 2349752
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/hikarie/emissive_day.json",
+      "durationMs": 345,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/hikarie/emissive_night.json",
+      "durationMs": 348,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/parco/parco.glb",
+      "durationMs": 358,
+      "transferBytes": 719692,
+      "decodedBytes": 719392
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/parco/viewer.json",
+      "durationMs": 354,
+      "transferBytes": 493,
+      "decodedBytes": 193
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/parco/emissive_day.json",
+      "durationMs": 356,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/parco/emissive_night.json",
+      "durationMs": 359,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/stream/stream.glb",
+      "durationMs": 371,
+      "transferBytes": 2022404,
+      "decodedBytes": 2022104
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/stream/viewer.json",
+      "durationMs": 361,
+      "transferBytes": 495,
+      "decodedBytes": 195
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/stream/emissive_day.json",
+      "durationMs": 363,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/stream/emissive_night.json",
+      "durationMs": 366,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/sakura-stage/sakura-stage.glb",
+      "durationMs": 703,
+      "transferBytes": 2783544,
+      "decodedBytes": 2783244
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/sakura-stage/viewer.json",
+      "durationMs": 373,
+      "transferBytes": 491,
+      "decodedBytes": 191
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/sakura-stage/emissive_day.json",
+      "durationMs": 375,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/sakura-stage/emissive_night.json",
+      "durationMs": 377,
+      "transferBytes": 303,
+      "decodedBytes": 3
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/ground/core/ground_core.glb",
+      "durationMs": 712,
+      "transferBytes": 3700532,
+      "decodedBytes": 3700232
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/core/street_core.glb",
+      "durationMs": 582,
+      "transferBytes": 1776964,
+      "decodedBytes": 1776664
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/context/core/context_core.glb",
+      "durationMs": 618,
+      "transferBytes": 1959380,
+      "decodedBytes": 1959080
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/tactile/tactile.glb",
+      "durationMs": 626,
+      "transferBytes": 1530668,
+      "decodedBytes": 1530368
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/drainage/drainage.glb",
+      "durationMs": 621,
+      "transferBytes": 57312,
+      "decodedBytes": 57012
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/hachiko/hachiko.glb",
+      "durationMs": 648,
+      "transferBytes": 1541200,
+      "decodedBytes": 1540900
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/hachiko-surround/hachiko-surround.glb",
+      "durationMs": 647,
+      "transferBytes": 1134256,
+      "decodedBytes": 1133956
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/plaza-finish/plaza-finish.glb",
+      "durationMs": 632,
+      "transferBytes": 220056,
+      "decodedBytes": 219756
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/ground/extension/extension.glb",
+      "durationMs": 810,
+      "transferBytes": 3017264,
+      "decodedBytes": 3016964
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/plaza-facilities/plaza-facilities.glb",
+      "durationMs": 665,
+      "transferBytes": 37112,
+      "decodedBytes": 36812
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/tactile-extra/tactile-extra.glb",
+      "durationMs": 828,
+      "transferBytes": 2731188,
+      "decodedBytes": 2730888
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/tactile-links/tactile-links.glb",
+      "durationMs": 683,
+      "transferBytes": 1385668,
+      "decodedBytes": 1385368
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/ground/exterior-west/exterior-west.glb",
+      "durationMs": 843,
+      "transferBytes": 2445232,
+      "decodedBytes": 2444932
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/ground/exterior-middle/exterior-middle.glb",
+      "durationMs": 705,
+      "transferBytes": 1815156,
+      "decodedBytes": 1814856
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/ground/exterior-east/exterior-east.glb",
+      "durationMs": 903,
+      "transferBytes": 2537480,
+      "decodedBytes": 2537180
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/tactile-outer/tactile-outer.glb",
+      "durationMs": 743,
+      "transferBytes": 2046240,
+      "decodedBytes": 2045940
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/magnet/magnet_signs_2025.glb",
+      "durationMs": 180,
+      "transferBytes": 1112808,
+      "decodedBytes": 1112508
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/ekimae/signs-2025-11.glb",
+      "durationMs": 156,
+      "transferBytes": 301016,
+      "decodedBytes": 300716
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/station-service/signs-2025-10.glb",
+      "durationMs": 157,
+      "transferBytes": 216544,
+      "decodedBytes": 216244
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/west-block/signs-2025-01.glb",
+      "durationMs": 17,
+      "transferBytes": 517064,
+      "decodedBytes": 516764
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/buildings/center-gai-gate/signs-2025-01.glb",
+      "durationMs": 8,
+      "transferBytes": 100404,
+      "decodedBytes": 100104
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/context/core/facade_ribbon_emit.png",
+      "durationMs": 26,
+      "transferBytes": 593,
+      "decodedBytes": 293
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/context/core/facade_punched_emit.png",
+      "durationMs": 26,
+      "transferBytes": 583,
+      "decodedBytes": 283
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/props/layout.json",
+      "durationMs": 6,
+      "transferBytes": 1475,
+      "decodedBytes": 3171
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/props/hachiko_white_bollard.glb",
+      "durationMs": 3,
+      "transferBytes": 63072,
+      "decodedBytes": 62772
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/props/standing_notice_sign.glb",
+      "durationMs": 8,
+      "transferBytes": 173180,
+      "decodedBytes": 172880
+    },
+    {
+      "url": "http://127.0.0.1:5240/shibuya-scene-2/street/props/oct2025_two_band_cone.glb",
+      "durationMs": 20,
+      "transferBytes": 34980,
+      "decodedBytes": 34680
+    }
+  ],
+  "transferBytes": 62843863
+}
