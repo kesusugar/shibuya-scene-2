@@ -1,0 +1,35 @@
+{
+  "primary_photo": {
+    "author": "Nesnad",
+    "capture_date": "2025-06-15",
+    "source": "https://commons.wikimedia.org/wiki/File:Hikarie_and_Shibuya_scramble_square_buildings_2025_June_15.jpeg",
+    "license": "CC BY4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "included": "source/JUN15-hikarie-crop.jpg and attributed evidence boards",
+    "original_crop": "Original3932x4014 rectangle[500,1200,1660,2850]; detail board additionally[70,70,640,620] within crop; resize only.",
+    "limitations": "Source reports panorama/TouchRetouch. Not survey geometry. June not October."
+  },
+  "independent_photo": {
+    "author": "武石修 / Impress Watch",
+    "publication_date": "2024-12-28",
+    "capture_date": null,
+    "source": "https://www.watch.impress.co.jp/docs/topic/1650501.html",
+    "image": "https://asset.watch.impress.co.jp/img/ipw/docs/1650/501/008_o.jpg",
+    "included": false,
+    "rights": "No reuse license established; private inspection only; not packaged.",
+    "finding": "Same dominant pale strip with narrow dark feature; lower edge occluded."
+  },
+  "manufacturer_scope_checks": [
+    {
+      "source": "https://newsrelease.lixil.co.jp/news/2012/050_office_0514_01.html",
+      "date": "2012-05-14",
+      "finding": "Upper-office unit curtain-wall system, not a material map registering tosource91; no image packaged."
+    },
+    {
+      "source": "https://www.fujisash.co.jp/hp/product/buil_facing/syuto/hikarie/tokyo22_03.htm",
+      "drawing": "https://www.fujisash.co.jp/hp/product/buil_facing/syuto/hikarie/img/hikarie.pdf",
+      "finding": "Typical detail not registered tosource91; dimensions not transferred; drawing not packaged."
+    }
+  ],
+  "textures_from_photos": false
+}

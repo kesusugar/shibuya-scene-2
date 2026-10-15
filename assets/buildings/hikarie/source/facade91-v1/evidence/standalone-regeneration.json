@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "test": "ZIP extract to separate directory; invoke absolute script path from unrelated working directory; write outside package; validate extracted package",
+  "network_used": false,
+  "python_dependencies": "standard library only",
+  "input_bytes_equal": true,
+  "regenerated_output_byte_equal": true,
+  "output_sha256": "2f4e95126c0d126c8db2d7d8aad4a54d5d0010ba7af0734b357a939077a87721",
+  "output_bytes": 2349752,
+  "validation_exit_code": 0
+}

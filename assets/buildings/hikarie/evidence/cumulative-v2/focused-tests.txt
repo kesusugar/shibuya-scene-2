@@ -1,0 +1,5 @@
+Blender 4.2.3 chosen original scene parity passed. Python source91 regeneration and validator passed.
+vitest run tests/hikarie-source91.test.ts tests/hikarie-fidelity.test.ts
+2 files passed, 13 tests passed. Current-main unchanged runtime imports verified by Git blob.
+Initial harness run lacked look.ts; fetched exact unchanged main dependency and reran successfully; no assertions weakened.
+Full repository/build/browser/FPS were not run.

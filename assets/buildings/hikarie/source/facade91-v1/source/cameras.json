@@ -1,0 +1,44 @@
+{
+  "front": {
+    "location": [
+      40,
+      150,
+      105
+    ],
+    "target": [
+      276,
+      -40,
+      93
+    ],
+    "type": "ORTHO",
+    "scale": 215
+  },
+  "photo_jun15_angle": {
+    "location": [
+      170,
+      -10,
+      3
+    ],
+    "target": [
+      242,
+      -42,
+      73
+    ],
+    "type": "PERSP",
+    "lens": 28
+  },
+  "west_side": {
+    "location": [
+      -80,
+      -180,
+      110
+    ],
+    "target": [
+      276,
+      -40,
+      94
+    ],
+    "type": "ORTHO",
+    "scale": 218
+  }
+}
