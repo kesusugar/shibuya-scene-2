@@ -1,0 +1,30 @@
+{
+  "name": "shibu_hachi_box_display_spotlight",
+  "units": "meters",
+  "origin": "bottom centre of full fixture bounds",
+  "dimensions_m": [
+    0.1469999998807907,
+    0.18066473305225372,
+    0.2969922721385956
+  ],
+  "triangles": 652,
+  "materials": 3,
+  "mount_datum_blender_m": [
+    0.023499999195337296,
+    0.028299031779170036,
+    0.2969922721385956
+  ],
+  "forward_blender": [
+    0,
+    -1,
+    0
+  ],
+  "up_blender": [
+    0,
+    0,
+    1
+  ],
+  "runtime_lights": false,
+  "date": "2026-08-08",
+  "geometry_estimated": true
+}

@@ -1,0 +1,16 @@
+{
+  "status": "unplaced",
+  "integration_owner": "Codex",
+  "date_scope": "August 8, 2026 display accessory; no 2025 presence claim",
+  "geographic_coordinates": null,
+  "runtime_lights": false,
+  "replace_existing_objects": false,
+  "observed_count": 2,
+  "fixture_origin": "bounding-box bottom centre",
+  "mount_datum_blender_m": [0.0234999992, 0.0282990318, 0.2969922721],
+  "context_only_pavilion_local_hints": [
+    {"translation_blender_m": [-5.94, 0.05, 2.30], "rotation_z_radians": -1.5707963268},
+    {"translation_blender_m": [-5.94, 1.05, 2.30], "rotation_z_radians": -1.5707963268}
+  ],
+  "hint_limit": "Illustrative local placements in the standalone pavilion, not photo-solved surveyed or approved runtime transforms. Check against glass, fascia and ceiling before use."
+}

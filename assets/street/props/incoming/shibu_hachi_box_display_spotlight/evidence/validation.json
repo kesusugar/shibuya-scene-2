@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "triangles": 652,
+  "materials": 3,
+  "bytes": 29652,
+  "sha256": "1edfebfa00c2cb8e0f935f9cc79c95ed62ee826bb214e2ce012fbd77f2c1ed38",
+  "gltf_bounds_min": [
+    -0.07349999994039536,
+    0,
+    -0.09033236652612686
+  ],
+  "gltf_bounds_max": [
+    0.07349999994039536,
+    0.2969922721385956,
+    0.09033236652612686
+  ],
+  "no_external_images": true,
+  "no_runtime_lights": true
+}
