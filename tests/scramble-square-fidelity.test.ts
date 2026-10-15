@@ -18,13 +18,30 @@ async function geometry(path:string){
  return {root,triangles,primitives};
 }
 const serial=(tris:{material:string;v:Vector3[]}[])=>tris.map(t=>t.material+':'+t.v.map(p=>[p.x,p.y,p.z].map(v=>v.toFixed(5)).join(',')).sort().join(';')).sort().join('\n');
-it('retains the entire baseline source shell, roof, and all non-north overlays',async()=>{
- const {triangles}=await geometry(base+'web/scramble-square.glb');
- const saved=json(base+'source/data/baseline-geometry.json');
- for(const material of ['scramble-square_wall','scramble-square_roof'])expect(hash(serial(triangles.filter(t=>t.material===material)))).toBe(saved.material_hashes[material]);
- const off=triangles.filter(t=>t.v.some(p=>Math.abs((p.x-117.767)*(-22.674/59.171)+( -p.z+104.738)*(54.656/59.171))>.7));
- expect(off.length).toBe(saved.off_north_triangles);expect(hash(serial(off))).toBe(saved.off_north_hash);
- const roof=triangles.filter(t=>t.material==='scramble-square_roof').flatMap(t=>t.v);
+const repairs=[28,49,35,77].map(i=>({i,ring:source.surfaces[i].ring.map((p:number[])=>new Vector3(p[0],p[2],-p[1]))}));
+const belongs=(t:{material:string;v:Vector3[]},r:Vector3[])=>t.v.every(v=>r.some(p=>p.distanceTo(v)<.002));
+it('preserves every triangle except exact source faces 28, 49, 35 and 77',async()=>{
+ const current=await geometry(base+'web/scramble-square.glb'),before=await geometry(base+'source/cumulative-v1/main.glb');
+ const off=(ts:{material:string;v:Vector3[]}[])=>ts.filter(t=>!repairs.some(r=>belongs(t,r.ring)));
+ expect(serial(off(current.triangles))).toBe(serial(off(before.triangles)));
+ expect(current.triangles.length).toBe(before.triangles.length);
+ for(const {i,ring:raw} of repairs){
+  const ring=raw[0].distanceTo(raw[raw.length-1])<.002?raw.slice(0,-1):raw;
+  const tris=current.triangles.filter(t=>belongs(t,ring));expect(tris.length).toBe(ring.length-2);
+  const edges=new Map<string,number>();const N=new Vector3();
+  for(let k=0;k<ring.length;k++)N.add(ring[k].clone().cross(ring[(k+1)%ring.length]));
+  const area=N.length()/2;N.normalize();let sum=0;
+  for(const t of tris){const ids=t.v.map(v=>ring.findIndex(p=>p.distanceTo(v)<.002));
+   const cross=t.v[1].clone().sub(t.v[0]).cross(t.v[2].clone().sub(t.v[0]));
+   expect(Math.abs(cross.clone().normalize().dot(N))).toBeGreaterThan(.999);sum+=cross.length()/2;
+   for(let k=0;k<3;k++){const key=[ids[k],ids[(k+1)%3]].sort((a,b)=>a-b).join(',');edges.set(key,(edges.get(key)??0)+1);}
+  }
+  expect(Math.abs(sum-area)).toBeLessThan(.02);
+  const boundary=ring.map((_,k)=>[k,(k+1)%ring.length].sort((a,b)=>a-b).join(',')).sort();
+  expect([...edges].filter(([,n])=>n===1).map(([e])=>e).sort()).toEqual(boundary);
+  expect([...edges.values()].every(n=>n===1||n===2)).toBe(true);
+ }
+ const roof=current.triangles.filter(t=>t.material==='scramble-square_roof').flatMap(t=>t.v);
  for(const f of source.surfaces.filter((f:{kind:string})=>f.kind!=='WallSurface'))for(const p of f.ring)expect(roof.some(v=>v.distanceTo(new Vector3(p[0],p[2],-p[1]))<.002)).toBe(true);
 });
 it('preserves original datum and all 36 exact ground samples',()=>{
@@ -54,4 +71,10 @@ it('keeps the unlit screen divisions outside the swept fan and within the lower 
  const seams=triangles.filter(t=>t.material==='scramble-square_spandrel'&&t.v.every(p=>{const d=p.clone().sub(A).dot(N);return d>.253&&d<.262;}));expect(seams.length).toBeGreaterThan(50);
  for(const t of [...screen,...seams])for(const p of t.v){expect(p.y).toBeGreaterThanOrEqual(3.999);expect(p.y).toBeLessThanOrEqual(28.001);}
  for(const t of seams)for(const p of t.v){const u=p.clone().sub(A).dot(T),z=p.y,k=Math.min(5,Math.floor((z-4)/4)),z0=4+4*k,z1=z0+4,f=(z-z0)/4;const sw=(h:number)=>6.2+24*((68-h)/64)**2;expect(u).toBeGreaterThan((1-f)*sw(z0)+f*sw(z1)+.199);}
+});
+
+it('pins the exact current-main comparison and accepted cumulative runtime',()=>{
+ const blob=(p:string)=>{const b=readFileSync(base+p);return createHash('sha1').update(Buffer.from('blob '+b.length+'\0')).update(b).digest('hex');};
+ expect(blob('source/cumulative-v1/main.glb')).toBe('d834645cdb7eb500133a700ac7cd7ac56d684b77');
+ expect(blob('web/scramble-square.glb')).toBe('ff02d1bf8234c0bde5af1a82b5729a3d9bbaf77f');
 });
