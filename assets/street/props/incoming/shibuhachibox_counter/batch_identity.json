@@ -1,0 +1,7 @@
+{
+  "world_triangle_positions_float32_exact": true,
+  "normals_exact": true,
+  "uvs_exact": true,
+  "triangle_order_winding_material_exact": true,
+  "triangles": 5076
+}

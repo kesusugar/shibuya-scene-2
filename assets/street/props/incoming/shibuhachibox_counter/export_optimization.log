@@ -1,0 +1,64 @@
+23:35:00 | INFO: Starting glTF 2.0 export
+23:35:00 | INFO: Extracting primitive: Cube.001
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.008
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.003
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.013
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.012
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.014
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.015
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.016
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.017
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.018
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.019
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.011
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.010
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.006
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.007
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.004
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.005
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.002
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.009
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.021
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.020
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.022
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.023
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.024
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.025
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.026
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Extracting primitive: Cube.027
+23:35:00 | INFO: Primitives created: 1
+23:35:00 | INFO: Finished glTF 2.0 export in 0.03726553916931152 s
+Blender 4.2.3 LTS (hash 0e22e4fcea03 built 2024-10-14 23:31:34)
+Info: Total files 1 | Changed 0 | Failed 0
+INFO Draco mesh compression is available, use library at /workspace/scratch/b6331e59d884/tools/blender-4.2.3-linux-x64/4.2/python/lib/python3.11/site-packages/libextern_draco.so
+
+Info: Saved "shibuhachibox_counter.blend"
+VALIDATION {"blender": "4.2.3 LTS", "meshes": 27, "triangles": 5076, "materials": 2, "bounds_blender_m": [[-1.2000000476837158, -0.2840000092983246, 0.0], [1.2000000476837158, 0.2800000011920929, 0.9799999594688416]], "dimensions_m": [2.4000000953674316, 0.5640000104904175, 0.9799999594688416], "root_origin": [0, 0, 0], "front": "-Y", "placement": "unplaced", "tests": {"height_exact": true, "bottom_zero": true, "width_2_4": true, "triangle_budget": true, "finite_geometry": true}}
+
+Blender quit

@@ -1,0 +1,20 @@
+{
+  "shibuhachibox_counter.glb": {
+    "original": "b2d78aba0df1270c94241a2be22b038bfea64b3b870ec16443008eaaad4408b2",
+    "regenerated": "b2d78aba0df1270c94241a2be22b038bfea64b3b870ec16443008eaaad4408b2",
+    "equal": true
+  },
+  "oak_grain.png": {
+    "original": "22eb7bff88021a8f89171f04128a29a335a4e7afd1e27621a0372cae2bc9ef69",
+    "regenerated": "22eb7bff88021a8f89171f04128a29a335a4e7afd1e27621a0372cae2bc9ef69",
+    "equal": true
+  },
+  "validation.json": {
+    "original": "05d3380ab566b73d64582c6dd089133d3e6e33ae4307bcb2eecf19f87a54c9d5",
+    "regenerated": "05d3380ab566b73d64582c6dd089133d3e6e33ae4307bcb2eecf19f87a54c9d5",
+    "equal": true
+  },
+  "editable_blend_export": {
+    "equal": true
+  }
+}
