@@ -66,3 +66,5 @@ node scripts/check-web-debug.mjs http://127.0.0.1:5240/shibuya-scene-2/ /tmp/web
 `npm test` の点字経路検査はPythonのShapelyを使用する。Pages workflowはNode.jsに加えてPython 3.11と `requirements-ci.txt` をインストールし、テスト前に幾何演算を確認する。npmだけの導入では不十分。制作環境の既存Pythonパッケージに依存せず、新しい仮想環境でも全226テストと公開用ビルドを検証した。
 
 mainの実行38730317819ではShapely未導入により子プロセスが終了し、Node側にはEPIPEも出ていた。幾何の不一致ではなくCIの依存導入漏れ。テストの削除・skip・continue-on-errorは行わない。checkout/setup-node/setup-pythonはNode24対応のv7へ更新。アプリのNodeは22.22.2を維持。PRでもテストとbuildを実行し、mainへのマージ/手動実行だけで公開する。
+
+GitHub runnerでは全テストの同時実行中にヒカリエ検査が既定5秒を超えたため、CIの並列数を2に制限する。検査内容やタイムアウト値は緩和せず、CPU/メモリの競合を減らす。
