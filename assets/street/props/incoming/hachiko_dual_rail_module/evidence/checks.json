@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "blender": "4.2.3 LTS",
+  "bounds": [
+    [
+      -1.13100004196167,
+      -0.14500004053115845,
+      0.0
+    ],
+    [
+      1.13100004196167,
+      0.14500004053115845,
+      0.8450000286102295
+    ]
+  ],
+  "triangles": 216,
+  "materials": 1,
+  "no_textures": true,
+  "scope": "standalone GLB; no runtime/full scene test"
+}
