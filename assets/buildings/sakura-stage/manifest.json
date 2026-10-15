@@ -1,20 +1,20 @@
 {
   "id": "sakura-stage",
   "level": "B",
-  "status": "prototype; see README for evidence and estimates",
+  "status": "bounded north143 replacement and upper east113 synthetic X removal; October2025 unverified",
   "stats": {
-    "triangles": 36336,
-    "primitives": 8,
-    "bytes": 2234272
+    "triangles": 31834,
+    "primitives": 12,
+    "bytes": 2783244
   },
   "files": {
     "README.md": {
-      "bytes": 1430,
-      "sha256": "e771f6332510a5b6186f89f1fe5d6b465333e846daae660e294e9f5759718e9b"
+      "bytes": 3908,
+      "sha256": "03f0deb90c796fb2431f8fff71fe34d189768007039e5b17f84ff8d8f67a05c2"
     },
     "source/blender/build.py": {
-      "bytes": 144,
-      "sha256": "1b0f44af924a9da2f5c33d0b4c6ff0b160457410d1379e404d086397924559d5"
+      "bytes": 3212,
+      "sha256": "1848782d5b1cc0da7e9d86244e42f29a38c78ec0470d49d7ea2aa6ca52f15ddf"
     },
     "source/data/layout.json": {
       "bytes": 614,
@@ -49,16 +49,142 @@
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/sakura-stage.glb": {
-      "bytes": 2234272,
-      "sha256": "0781a138445fa96b2f34a5491c0c238dbbd9af7f2d0fe7ae8536c59f3e7de98e"
+      "bytes": 2783244,
+      "sha256": "56c1bd50fb7057e90af6051a040ded78ab75b72ff5e728b8ad5c6c154de08f0f"
     },
     "web/viewer.json": {
       "bytes": 191,
       "sha256": "27b692bb10eeb087b3685b64018a19581696278b567e9465f66787fc81deca3f"
+    },
+    "review/main-vs-final/comparison.jpg": {
+      "bytes": 964734,
+      "sha256": "b2d96dd23a0540876661db7c0c4d9689f25b0cd673ab240dc10b203be9b42158"
+    },
+    "review/main-vs-final/editable-check.json": {
+      "bytes": 325,
+      "sha256": "c31ead36c0f6540e1edbe37e4fa20f75931f12b91c133e74a1687fda01586a48"
+    },
+    "review/main-vs-final/final-east113.jpg": {
+      "bytes": 234770,
+      "sha256": "3ec84fff2220b629cf757cf38f452f4c1bd94e875fba2e0fcf0950ae87f5a96a"
+    },
+    "review/main-vs-final/final-north143.jpg": {
+      "bytes": 197178,
+      "sha256": "417cdade02c919b186ad0d924112af3a15fa899358d552aefa47d4cc34359e41"
+    },
+    "review/main-vs-final/geometry-check.json": {
+      "bytes": 725,
+      "sha256": "202da3928d3b188f7ccba69feb805f282e22f06a481c945dc23fc7a87555f523"
+    },
+    "review/main-vs-final/main-east113.jpg": {
+      "bytes": 238071,
+      "sha256": "c35e56878ed1e3f3a6580f4ef8559422e69a5227b12e23b4fd06afaf546dc1bd"
+    },
+    "review/main-vs-final/main-north143.jpg": {
+      "bytes": 196334,
+      "sha256": "3f12b8f3e4677337f8c373d9ce60c145716ef8e14697927f2d4f0642b77f5404"
+    },
+    "review/main-vs-final/settings.json": {
+      "bytes": 601,
+      "sha256": "41da33404e0d7d7a7993424081e590c54505594e74bc6b62bb47bd26ebf0d4ed"
+    },
+    "review/north143/SOURCES.md": {
+      "bytes": 2245,
+      "sha256": "9e24a06ba1b0a3d65a9c6140f075262b0ca7515d978e81c9bf19c13981c4ad3f"
+    },
+    "review/north143/photo-comparison-board.jpg": {
+      "bytes": 607052,
+      "sha256": "fd18e674f58c0b600462a98fd6e7238d34cd984fd0297479e3d778241ecf10c5"
+    },
+    "review/north143/photo-metadata.json": {
+      "bytes": 2265,
+      "sha256": "d5f06b457bdadf9944d736fba43d447b8877df577f66d0b534ad187ba0664e12"
+    },
+    "review/north143/refs/FEB08-north-crop.jpg": {
+      "bytes": 164539,
+      "sha256": "ecc8cdc3c61a1ad1ab04c0a453a51e75ccad0c4f4f5a7148bba500fc754efd54"
+    },
+    "review/north143/refs/SEP30-north-crop.jpg": {
+      "bytes": 141604,
+      "sha256": "675aeb622cc98e8d32a57364453680f73c28ced2bdd8ccba0743b55b6a5aaeba"
+    },
+    "review/north143-east113/SOURCES.md": {
+      "bytes": 2314,
+      "sha256": "2a37f3030ae375ebf45a0194de968864be077085cd69d15d1ebc9865d7fb1871"
+    },
+    "review/north143-east113/after-east113.png": {
+      "bytes": 1340644,
+      "sha256": "565671f6250226ee61153a5a3b4e2756ab1fa4ea4c5d15f17777a0f3dc272675"
+    },
+    "review/north143-east113/after-north143.png": {
+      "bytes": 1345143,
+      "sha256": "6ef17151c19986b1f7c41dc4a89c24e7079485f2fab3a7ec62c0582b611c173b"
+    },
+    "review/north143-east113/comparison-board.jpg": {
+      "bytes": 315462,
+      "sha256": "8caeafa20097d012d96c3346631065ec6977ecd8a1e18f7bfc0d5394de8c7ee2"
+    },
+    "review/north143-east113/coverage.json": {
+      "bytes": 7251,
+      "sha256": "10d068d24c0c99ac3137fe2592e7cffa88f320ec4498771c2c60714a875064e2"
+    },
+    "review/north143-east113/photo-metadata.json": {
+      "bytes": 431,
+      "sha256": "7dba0ebdd7e3988214f83e0cde09d3ecf54043d3b3af3a87cf67f5a4c81df14c"
+    },
+    "review/north143-east113/refs/DEC01-east-crop.jpg": {
+      "bytes": 290474,
+      "sha256": "70a62bf2e4447998706e42f04016c85984da03d812e61c56d0fa49a66d39fd71"
+    },
+    "review/north143-east113/source113-coverage-board.jpg": {
+      "bytes": 768904,
+      "sha256": "8c551cb4df1fd84038f905a2c21914865e0e6322e780ef86401290f89a53f650"
+    },
+    "source/blender/build_north143.py": {
+      "bytes": 8507,
+      "sha256": "13f7ebfcc85c774298c9017f28584ec537b49ecd398c8bf1a89a607e519ab166"
+    },
+    "source/blender/render_east_upper.py": {
+      "bytes": 1845,
+      "sha256": "2bdd16407ed652e1b9dcea522fec0ba4a77f77b055c00487ca7a7bccf0cc8bcd"
+    },
+    "source/blender/render_main_comparison.py": {
+      "bytes": 1763,
+      "sha256": "b1094933c5c3fe32bd6e860492463adf619e5a024a85e1225cb62f7428309c7a"
+    },
+    "source/blender/sakura-stage.blend": {
+      "bytes": 3911640,
+      "sha256": "ac1ccb5a7eca13da849e62c985856e12041f3ce93726ddfcd9f57bc8c3c66967"
+    },
+    "source/blender/verify_editable.py": {
+      "bytes": 1438,
+      "sha256": "4edaacca711febc59199129c3d0912710202b96e250f090f4c98941b9e9a8f0d"
+    },
+    "source/data/accepted-north143.glb": {
+      "bytes": 2622392,
+      "sha256": "25eecd5e60bd463efcb7cf133815de413633c93abf0dd7547c246f6d06386881"
+    },
+    "source/data/baseline.glb": {
+      "bytes": 2234272,
+      "sha256": "0781a138445fa96b2f34a5491c0c238dbbd9af7f2d0fe7ae8536c59f3e7de98e"
+    },
+    "source/data/east113-source-key.json": {
+      "bytes": 3212,
+      "sha256": "8823a9ddc4783097913861331d958659b3c4fbaf1c487e81cd248c98eacb9a2a"
+    },
+    "web/sakura-stage.east113-upper.json": {
+      "bytes": 5062,
+      "sha256": "4a8794c37e517f6e08230890520d18df5a5f1a5689437d068efd2ddbaf2e829d"
+    },
+    "web/sakura-stage.north143.json": {
+      "bytes": 1957,
+      "sha256": "90f71d5be7e82cbb7ec3db718e29a305e9990ba76304ea6f3c757ab76f337c60"
     }
   },
   "source_id": "way/1200029947",
   "source_aliases": [],
   "plateau_id": "bldg_9442d303-7a48-4f81-aa67-b6ef05dbd43b",
-  "generator": "tools/core/build_facade.py (Blender 4.2.3)"
+  "generator": "source/blender/build_north143.py then source/blender/build.py; Blender 4.2.3 for editable/render checks",
+  "baseline_sha256": "0781a138445fa96b2f34a5491c0c238dbbd9af7f2d0fe7ae8536c59f3e7de98e",
+  "source_stats_note": "source/data/stats.json is unchanged main shell and pavement provenance, not final counts."
 }

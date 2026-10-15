@@ -1,0 +1,66 @@
+[
+  {
+    "key": "SEP30",
+    "source_url": "https://commons.wikimedia.org/wiki/File:渋谷駅全景2025.jpg",
+    "date": "2025-09-30 15:39:38",
+    "author": "かなえゆうじん",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "original_sha256": "7cb9dbd1374c96c4459cdbebbd8b9aa074d9b924870158c13db72baa93259114",
+    "pixels_inspected": true,
+    "crop": "SEP30-north-crop.jpg",
+    "crop_box": [
+      2370,
+      1080,
+      3030,
+      2070
+    ],
+    "changes": "Rectangular crop only",
+    "crop_sha256": "675aeb622cc98e8d32a57364453680f73c28ced2bdd8ccba0743b55b6a5aaeba"
+  },
+  {
+    "key": "FEB08",
+    "source_url": "https://commons.wikimedia.org/wiki/File:渋谷スクランブル交差点_2025年2月8日の渋谷_202502081338_IMG_6118.jpg",
+    "date": "2025-02-08 13:38:37",
+    "author": "ウィ貴公子",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_sha256": "a3a653d5e61dce7fa03129b62a97bc63673b9166a56a0a555890931bc54f9334",
+    "pixels_inspected": true,
+    "crop": "FEB08-north-crop.jpg",
+    "crop_box": [
+      1420,
+      380,
+      2130,
+      1710
+    ],
+    "changes": "Rectangular crop only",
+    "crop_sha256": "ecc8cdc3c61a1ad1ab04c0a453a51e75ccad0c4f4f5a7148bba500fc754efd54"
+  },
+  {
+    "key": "JUN12",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Shibuya_Sakura_Stage_(30875).jpg",
+    "date": "2025-06-12 20:47",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "original_sha256": "cd92d55cbbb062c49a316e0a5ffb00ba12c6d4bbf345bf251943e4c5136dec68",
+    "pixels_inspected": true,
+    "crop": null,
+    "crop_box": null,
+    "changes": "None"
+  },
+  {
+    "key": "NOV20-2023",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Shibuya_Sakura_Stage,_before_opening_9.jpg",
+    "date": "2023-11-20 08:01",
+    "author": "Syced",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "original_sha256": "c97fe752ce5e8a643d7b19dcee376c313863368544e5ae7d3e7834d33f220b9f",
+    "pixels_inspected": true,
+    "crop": null,
+    "crop_box": null,
+    "changes": "None"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "photographer": "Syced",
+  "license": "CC0-1.0",
+  "capture_date": "2025-12-01",
+  "crop_box": [
+    3450,
+    600,
+    4270,
+    3110
+  ],
+  "original_size": [
+    6451,
+    4864
+  ],
+  "later_than_target": true,
+  "target": "2025-10",
+  "october_state_verified": false,
+  "approximate_registration": true,
+  "file": "refs/DEC01-east-crop.jpg",
+  "sha256": "70a62bf2e4447998706e42f04016c85984da03d812e61c56d0fa49a66d39fd71"
+}
