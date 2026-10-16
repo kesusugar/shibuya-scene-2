@@ -47,5 +47,13 @@
     "numpy": "2.5.4",
     "shapely": "2.2.0",
     "playwrightChromium": "141.0.7390.37 / build1194"
-  }
+  },
+  "testsCIMode": {
+    "command": "npm test -- --maxWorkers=2",
+    "filesPassed": 50,
+    "testsPassed": 227,
+    "failed": 0,
+    "durationSeconds": 48.36
+  },
+  "typecheckAfterTestOptimization": true
 }

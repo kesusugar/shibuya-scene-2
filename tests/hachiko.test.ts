@@ -29,9 +29,10 @@ it('preserves the canonical geometry, UVs, normals and material values in the bu
   const a = canonical.listMeshes()[0].listPrimitives()[0], b = web.listMeshes()[0].listPrimitives()[0];
   for (const semantic of a.listSemantics()) {
     const source = a.getAttribute(semantic)!.getArray()!, runtime = b.getAttribute(semantic)!.getArray()!;
-    expect(Buffer.from(runtime.buffer, runtime.byteOffset, runtime.byteLength)).toEqual(Buffer.from(source.buffer, source.byteOffset, source.byteLength));
+    expect(Buffer.from(runtime.buffer, runtime.byteOffset, runtime.byteLength).equals(Buffer.from(source.buffer, source.byteOffset, source.byteLength)), semantic + ' exact bytes').toBe(true);
   }
-  expect(b.getIndices()!.getArray()).toEqual(a.getIndices()!.getArray());
+  const sourceIndices = a.getIndices()!.getArray()!, runtimeIndices = b.getIndices()!.getArray()!;
+  expect(Buffer.from(runtimeIndices.buffer, runtimeIndices.byteOffset, runtimeIndices.byteLength).equals(Buffer.from(sourceIndices.buffer, sourceIndices.byteOffset, sourceIndices.byteLength))).toBe(true);
   expect(b.getIndices()!.getCount() / 3).toBe(85_934);
   expect(web.listMaterials()[0].getMetallicFactor()).toBe(.25);
   expect(web.listMaterials()[0].getRoughnessFactor()).toBe(.2);
