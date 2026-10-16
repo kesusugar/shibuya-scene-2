@@ -1,0 +1,69 @@
+{
+  "id": "shibu-hachi-box",
+  "source_id": "way/1315939856",
+  "level": "B",
+  "status": "BOX-1 exterior/terrace estimate for review; not surveyed or full plaza completion",
+  "stats": {
+    "triangles": 14224,
+    "primitives": 14,
+    "bytes": 882816
+  },
+  "files": {
+    "README.md": {
+      "bytes": 4137,
+      "sha256": "82945d9cc4a1353681b6cd95244c386bd8c0223293739978463897b33aa6003a"
+    },
+    "source/build.py": {
+      "bytes": 9639,
+      "sha256": "54b8c52959dc1901ee6fa778dd28e04b8c30b2ab0fc36aaeda5fa784758f6dde"
+    },
+    "source/placement-and-build.json": {
+      "bytes": 8336,
+      "sha256": "5682facca633c94fc7b496a4d6efb6278ef0d11046dfddc742b9f4237acadddc"
+    },
+    "source/terrace-v001/ASSUMPTIONS.md": {
+      "bytes": 9433,
+      "sha256": "9e9e96eb448caecf31c3fbd438b78d9465798a52b429497f36669f03a8f74012"
+    },
+    "source/terrace-v001/manifest.json": {
+      "bytes": 9102,
+      "sha256": "0bc2fd42fc919a99f273f6d24b9f037122bc12ef049ff1ac61b6cb375f8b36f2"
+    },
+    "source/terrace-v001/placement_reference.json": {
+      "bytes": 5382,
+      "sha256": "7301bc856ae85fc0b8b3637878f85cb714d047a831e803563c3323c9c75991fa"
+    },
+    "source/terrace-v001/PROVENANCE.md": {
+      "bytes": 6480,
+      "sha256": "3e93b9317774aad09a23b604b10fa654d4d12f3f5171da07cc5765d9607b07ce"
+    },
+    "source/terrace-v001/README.md": {
+      "bytes": 8617,
+      "sha256": "f665fa3737c03792b888567a1d2a6edf37cd04c4508f43bd6b6c5f83417858da"
+    },
+    "source/terrace-v001/references/DejaVu_LICENSE.txt": {
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    "source/terrace-v001/shibu_hachi_front_terrace_candidate_v001.glb": {
+      "bytes": 488940,
+      "sha256": "6198b2ee3c7d9ce114c9d738f80d72d42aac32610437c715cedd4b7bcfd554df"
+    },
+    "web/emissive_day.json": {
+      "bytes": 4,
+      "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+    },
+    "web/emissive_night.json": {
+      "bytes": 4,
+      "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+    },
+    "web/shibu-hachi-box.glb": {
+      "bytes": 882816,
+      "sha256": "09d3f24ff5f601914a5d6dcc3cb99eb5419496ed87b2b61fd9d7219421bf3ebc"
+    },
+    "web/viewer.json": {
+      "bytes": 226,
+      "sha256": "71468ba24fd42948b84f472fbe115eb365940754e58ed1f812d07b0cdeb1e9e6"
+    }
+  }
+}
