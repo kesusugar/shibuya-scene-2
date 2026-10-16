@@ -1,0 +1,33 @@
+{
+  "ledger_id": "H-SG-003",
+  "package": "A14 BOX案内表示",
+  "primary_url": "https://note-pr.casio.co.jp/n/n848d1c101d53",
+  "publisher": "CASIO Computer Co., Ltd. official note account",
+  "article_published_date": "2024-12-10",
+  "photograph_capture_date": "unknown; publication date is not capture date",
+  "current_presence": "unverified",
+  "observed_text": [
+    "SHIBUYA",
+    "FUN",
+    "PROJECT"
+  ],
+  "observed_shape": "Small horizontally elongated rounded rectangular luminous sign, dark rim, pale face, outlined FUN region, above front right bay.",
+  "unresolved_details": [
+    "Small mark immediately before FUN",
+    "Fine exact outline form and typeface",
+    "Housing depth and unseen rear",
+    "Exact measured dimensions and present-day existence"
+  ],
+  "photo_inclusion": "No source photograph, crop, or extracted artwork redistributed in this package. Source images inspected locally only.",
+  "photo_sha256": {
+    "casio_front.jpg": "6b3548c068d0fe4e20d887416d72f8855dbbc1dbf7ef863067bdb3e59c8869d1",
+    "box.jpg": "cc01de6327d3a73c6d1ee90871b9523dad02c5451b462869579e2c0bf0baa004"
+  },
+  "duplicate_check": {
+    "pavilion_generator": "shibu_hachi_box_revision/source/generate.py",
+    "pavilion_generator_sha256": "10c83e5edfa822df31ca3a1c872c99bc2a9b83b2f297162e84f4732470d6aed8",
+    "header_generator": "shibu_hachi_box_info_header/source/generate.py",
+    "header_generator_sha256": "78492c8d42de19d786db695414754ade95753d8a9efcdcded491be63afb26b41",
+    "result": "Neither generator contains the small right-bay project lightbox. The roof identifier and central Tourist Information header are different assets."
+  }
+}

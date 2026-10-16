@@ -1,0 +1,131 @@
+{
+  "status": "Estimated attachment from source photo and inherited body geometry; not surveyed",
+  "components": [
+    {
+      "id": "roof-circle",
+      "input": "shibu_hachi_roof_identity_icons_v001/roof_information_circle.glb",
+      "sha256": "11a545525b14dc426e5077860721befdc427ded445c11579caeaf90553664873",
+      "positionGLTF": [
+        -4.27906656,
+        2.807,
+        1.83
+      ],
+      "yawDegrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "output": "exterior-roof-circle.glb",
+      "layer": "roof-circle-observed-2024",
+      "removeUnusedUV": false
+    },
+    {
+      "id": "roof-existing-name",
+      "input": "existing-name.glb",
+      "sha256": "41b7825b9e1d02ce7433ca50274fcef0cf55ba010e011eb1524d5ffd916f4ca1",
+      "positionGLTF": [
+        -1.985133767,
+        2.807,
+        1.83
+      ],
+      "yawDegrees": 0,
+      "scale": [
+        1.201055807,
+        1.201055807,
+        1.201055807
+      ],
+      "output": "exterior-roof-name.glb",
+      "layer": "roof-name-observed-2024",
+      "reuse": "Original authored lettering only; uniform scaling to photo-based 3.9813m span; no old carrier, no nonuniform glyph deformation",
+      "emissiveFactor": [
+        0.36,
+        0.44,
+        0.47
+      ],
+      "material_note": "Illustrative pale emission consistent with source-observed luminous name and adopted icons; not calibrated luminance."
+    },
+    {
+      "id": "roof-dog",
+      "input": "shibu_hachi_roof_identity_icons_v001/roof_seated_dog.glb",
+      "sha256": "2274a6f2a4cd0b72a3a4ba0e47f252e562c57881b9f99ab24e33336aa71d43d7",
+      "positionGLTF": [
+        0.31982714,
+        2.807,
+        1.83
+      ],
+      "yawDegrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "output": "exterior-roof-dog.glb",
+      "layer": "roof-dog-observed-2024",
+      "removeUnusedUV": false
+    },
+    {
+      "id": "fun-project",
+      "input": "shibu_hachi_fun_project_lightbox_v001/shibu_hachi_fun_project_lightbox_v001.glb",
+      "sha256": "5cda0af09feb0b85605989b9387dcdbc207c119ed4cbeb11877c5f44c652e556",
+      "positionGLTF": [
+        3.34,
+        2.452,
+        0.6548
+      ],
+      "yawDegrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "output": "exterior-fun-project.glb",
+      "layer": "fun-project-observed-2024",
+      "removeUnusedUV": false
+    },
+    {
+      "id": "roof-sponsor",
+      "input": "shibu_hachi_roof_sponsor_sign_v001/shibu_hachi_roof_sponsor_sign_v001.glb",
+      "sha256": "854359ae015834da56431f05509f0109660af83d86d5592563fada40329a6234",
+      "positionGLTF": [
+        2.735,
+        2.807,
+        1.84
+      ],
+      "yawDegrees": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "output": "exterior-roof-sponsor.glb",
+      "layer": "roof-sponsor-observed-2024",
+      "removeUnusedUV": false
+    },
+    {
+      "id": "display-clock",
+      "input": "shibu_hachi_gshock_display_clock_v001/shibu_hachi_gshock_display_clock_v001.glb",
+      "sha256": "a981dae438b82e42cd34f55482e2d53e2bcf14364bbc89888a0734016c523e4f",
+      "positionGLTF": [
+        -5.52,
+        0.248,
+        -0.586
+      ],
+      "yawDegrees": -90,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "output": "exterior-display-clock.glb",
+      "layer": "display-clock-static-2026-08-08",
+      "removeUnusedUV": true
+    }
+  ],
+  "held": [],
+  "date_scopes": {
+    "roof_and_fun": "2024-12-10 publication; capture date unknown; persistence unverified",
+    "clock_LCD": "2026-08-08 08:08:08 static snapshot; no live time feature"
+  },
+  "basis": "Existing validated local roof comparison for X order and clock bay; source front photo for FUN right bay; roof/facade clearances resolved against approved BOX-1 unchanged body."
+}

@@ -1,0 +1,41 @@
+{
+  "reference_state": "2024 observation, 2026 persistence unconfirmed",
+  "components": [
+    {
+      "asset": "roof_information_circle",
+      "width_m": 0.46,
+      "height_m": 0.46,
+      "total_depth_m": 0.039,
+      "disk_depth_m": 0.036,
+      "dark_mark_depth_m": 0.004,
+      "editable_objects": 3,
+      "estimate": "Disk diameter from about43px source; stem/dot manually authored as dark shallow solids over pale disk. Physical print/void/lightbox construction unresolved."
+    },
+    {
+      "asset": "roof_seated_dog",
+      "width_m": 0.5,
+      "height_m": 0.52,
+      "depth_m": 0.032,
+      "editable_objects": 1,
+      "estimate": "Low-resolution coarse seated silhouette, approximate observed leg gap and plinth only; no eyes, nose texture, fur, collar or other invented detail."
+    }
+  ],
+  "material_estimate": {
+    "base_color_linear_rgb": [
+      0.72,
+      0.88,
+      0.94
+    ],
+    "emission_strength": 0.5,
+    "interpretation": "Illustrative pale cool-white material, not measured daytime color, luminous output or night spectrum. Same material on front/back/returns is estimated."
+  },
+  "uncertain": [
+    "Metric scale and depth",
+    "Exact dog brand contour",
+    "Occluded back and mounting construction",
+    "Photographic bloom versus physical edge",
+    "Lighting spectrum and intensity",
+    "2026 continuity",
+    "Installed relation to the existing name/carrier/sponsor"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "units": "metres",
+  "not_measured": true,
+  "overall_width": 4.08,
+  "overall_height": 0.44,
+  "overall_depth": 0.088,
+  "SUPPORTED_BY": {
+    "width": 1.78,
+    "letter_height": 0.22,
+    "extrusion": 0.045
+  },
+  "GSHOCK": {
+    "width": 2.18,
+    "letter_height": 0.41,
+    "extrusion": 0.055,
+    "contours": "Original polygon approximations, not exact brand masters."
+  },
+  "gap_between_phrases": 0.12,
+  "plain_base_backing": {
+    "width": 4.08,
+    "height": 0.03,
+    "depth": 0.054,
+    "status": "Estimated low dark bar only; no unobserved supports or fasteners."
+  },
+  "scale_derivation": {
+    "roof_pixels_approx": [
+      35,
+      1192
+    ],
+    "sponsor_pixels_approx": [
+      678,
+      1045
+    ],
+    "sponsor_roof_fraction": 0.317199654278306,
+    "existing_estimated_roof_width": 12.76,
+    "photo_scaled_width": 4.047467588591184,
+    "rounded_model_width": 4.08,
+    "reliability": "No calibrated camera, survey or perspective rectification; estimate only."
+  }
+}

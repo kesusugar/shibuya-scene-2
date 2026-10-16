@@ -1,0 +1,209 @@
+{
+  "asset": "shibu_hachi_roof_sponsor_sign_v001",
+  "status": "validated_unplaced_dated_candidate",
+  "ledger_ids": [
+    "H-SG-004"
+  ],
+  "package": "A15",
+  "blender": "4.2.3 LTS",
+  "units": "metres",
+  "dimensions_m": [
+    4.079999923706055,
+    0.08799999952316284,
+    0.4399999976158142
+  ],
+  "world_coordinates": null,
+  "world_rotation": null,
+  "origin": "bottom_center",
+  "front_axis_blender": "-Y",
+  "triangles": 4018,
+  "material_batches": 4,
+  "materials": 4,
+  "glb_meshes": 4,
+  "editable_meshes": 9,
+  "embedded_images": 0,
+  "copyrighted_photographs_included": false,
+  "independently_authored_geometry": true,
+  "validation_passed": true,
+  "source_zero_area_triangles": 0,
+  "glb_zero_area_triangles": 0,
+  "source_font_nonmanifold_edges": 194,
+  "manual_logo_and_backing_nonmanifold_edges": 0,
+  "source_rebuild_byte_identical": true,
+  "editable_blend_export_byte_identical": true,
+  "main_scene_changes": false,
+  "github_writes": false,
+  "merge_or_deploy": false,
+  "drive_upload_status": "Parent-managed; builder performed no upload.",
+  "date_scope": "2024 observed roof sign. August2026 side photo does not show it;2026 persistence unverified.",
+  "limitations": [
+    "Photo-scaled dimensions and depths, not measured.",
+    "Neutral-font and independently authored block-letter approximations, not exact brand masters.",
+    "194 source-font nonmanifold edges; visual asset, no watertight-all claim.",
+    "Backing construction estimated; no unobserved brackets or cables.",
+    "Parent identity carrier overlap requires separate layout reconciliation.",
+    "World placement and runtime integration not performed."
+  ],
+  "files": [
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 2400,
+      "sha256": "aaff3ca0c09d11d1c86b9a9ef17de9e7fed287b262431ac51597ae97c6a56550"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4593,
+      "sha256": "6b1f26e3745b4521286803a7327900635b943f89e9c4683e623df9f9f6673ec0"
+    },
+    {
+      "path": "component_estimates.json",
+      "bytes": 997,
+      "sha256": "bf48a89b8b196e7502106d21fc23a7450b4f2ded7f4d2842644371410baed05c"
+    },
+    {
+      "path": "evidence/01_front.png",
+      "bytes": 915702,
+      "sha256": "b48d4ade6d31892a6558bf4862d8f9c7d6b185000d1c12840ee0ce3a1c77b416"
+    },
+    {
+      "path": "evidence/02_front_oblique.png",
+      "bytes": 943371,
+      "sha256": "f5f76f76309da3f9ff143792f655f6bb2b9886f3a1e170e9442022c3d97bd536"
+    },
+    {
+      "path": "evidence/03_rear_oblique.png",
+      "bytes": 951570,
+      "sha256": "8e92bef46582de4fa66a2c33a07c6fe34f8ec4609d4314580e5db8b24f36fe72"
+    },
+    {
+      "path": "evidence/export_editable.log",
+      "bytes": 908,
+      "sha256": "0464a22fe06dcc10a24a23de061324ffad9c9edec10adb019db77775caab1678"
+    },
+    {
+      "path": "evidence/font_cleanup.json",
+      "bytes": 687,
+      "sha256": "64bad7aa84e6cf7396fa28b39b50b6a8ab9e8fd5b3b9d0d143c92e10fa651e56"
+    },
+    {
+      "path": "evidence/freeze.json",
+      "bytes": 377,
+      "sha256": "a5a35a3d39f62479862a3bec076c277223fd727580e1a641460abe7ffb71b549"
+    },
+    {
+      "path": "evidence/generate.log",
+      "bytes": 17308,
+      "sha256": "67583d09e8bd24a5653e569f0d10028d3990486450a363f0715b01072f5e8b12"
+    },
+    {
+      "path": "evidence/generation_stats.json",
+      "bytes": 202,
+      "sha256": "04a20bf372a388415808c167545e8857e1772162c26cee03063da959d59f72c4"
+    },
+    {
+      "path": "evidence/generation_timing.json",
+      "bytes": 83,
+      "sha256": "728bb34f84b86830a7097f1dc691f2ad1dfb6c402712409577f4b16c5032046a"
+    },
+    {
+      "path": "evidence/photo_normalized_placement_guide.svg",
+      "bytes": 1250,
+      "sha256": "a09fed0a7a70b2971421f68c57238c1723f773a228cf894c9f8c7f664b9d13c1"
+    },
+    {
+      "path": "evidence/render_framing.json",
+      "bytes": 299,
+      "sha256": "be14935dd5076408b2eb01105a0b5dc43f470ab6cb1fc5919aecedd5bc972415"
+    },
+    {
+      "path": "evidence/reproduce.log",
+      "bytes": 1048,
+      "sha256": "28b4a6fdd456d63e87609fc9c9e4ea6d326f61b9c3a2e89d20ee219b0f8b9156"
+    },
+    {
+      "path": "evidence/reproducibility.json",
+      "bytes": 650,
+      "sha256": "27f8bad7f8eb8582e1cbcddec8b961f29b64827831795786e973249740feb2ed"
+    },
+    {
+      "path": "evidence/scope_and_duplication.json",
+      "bytes": 809,
+      "sha256": "867bf12f9437b0972f57eac4338258a0c1c62ab95aba47ab7fbf6f0de3a773f3"
+    },
+    {
+      "path": "evidence/validate.log",
+      "bytes": 5929,
+      "sha256": "7f1fcd089ac3cce49f68965528a2eb23f41ae7c82bb0da1bba564e80fded5823"
+    },
+    {
+      "path": "evidence/validation.json",
+      "bytes": 5302,
+      "sha256": "bf7e339bf91a1ffd1b008db96535685e03289efa29795d9417fef5f7586eecd1"
+    },
+    {
+      "path": "evidence/visual_review.json",
+      "bytes": 791,
+      "sha256": "8bde21bfd3f94de5a24b8994745ac11fcea3b3ecf8bb9c00a72bb1dd8848e0ce"
+    },
+    {
+      "path": "fonts/DejaVuSans-Bold.ttf",
+      "bytes": 708920,
+      "sha256": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+    },
+    {
+      "path": "fonts/LICENSE.txt",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "ledger_handoff.json",
+      "bytes": 780,
+      "sha256": "e2a9aba7818d1c07b98fd7fbae91013bc47966b625370eb8169f5f44bfb0ddc5"
+    },
+    {
+      "path": "placement_hint.json",
+      "bytes": 1182,
+      "sha256": "4e724bd2b18f06754ed4ef12c9816e029adabf3e58fb24f568d850f01e80a1c8"
+    },
+    {
+      "path": "references/ledger_row_before.json",
+      "bytes": 923,
+      "sha256": "42b3ddf53da6cf7223ece1bdcb6ab02af2daebfe3ee508da943ff8f22e494ca4"
+    },
+    {
+      "path": "references/sources.json",
+      "bytes": 1484,
+      "sha256": "2ea4d79f66a83d978c6d5006cceb6a3c6c3e7d455cfff2b29b8cc55a8fd95bff"
+    },
+    {
+      "path": "shibu_hachi_roof_sponsor_sign_v001.blend",
+      "bytes": 1530668,
+      "sha256": "b30cc74675903369285782aec5026f6706b2395f6d555cd51a019008198dbb9b"
+    },
+    {
+      "path": "shibu_hachi_roof_sponsor_sign_v001.glb",
+      "bytes": 162484,
+      "sha256": "854359ae015834da56431f05509f0109660af83d86d5592563fada40329a6234"
+    },
+    {
+      "path": "source/export_editable.py",
+      "bytes": 1870,
+      "sha256": "6f55731db96a2668e9a034a1ea32a9319681693367d223ce89cb1b2f58796935"
+    },
+    {
+      "path": "source/generate.py",
+      "bytes": 11520,
+      "sha256": "5af03c14dfc37c725ed1aefcef03f1b59210d061364ac902a78f70ea4258740d"
+    },
+    {
+      "path": "source/validate.py",
+      "bytes": 4649,
+      "sha256": "3c8af04850dcd0bb57e1ee2400d5dff73c31e225d785ec8906c41c7933f40ad4"
+    },
+    {
+      "path": "timings.json",
+      "bytes": 753,
+      "sha256": "278e80feaf87e9d6d0a3bda8475e743ca093e7390b13465d2d17b1cd3ed3e077"
+    }
+  ]
+}

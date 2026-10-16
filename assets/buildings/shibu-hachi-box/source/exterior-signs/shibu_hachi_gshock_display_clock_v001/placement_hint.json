@@ -1,0 +1,17 @@
+{
+  "asset": "shibu_hachi_gshock_display_clock_v001",
+  "ledger_id": "H-SG-006",
+  "status": "unplaced_candidate",
+  "origin": "bottom_center",
+  "blender_front": "-Y",
+  "blender_up": "+Z",
+  "gltf_up": "+Y",
+  "units": "metres",
+  "world_coordinates": null,
+  "world_rotation": null,
+  "installation_height": null,
+  "semantic_location": "SHIBU HACHI BOX left exhibition bay",
+  "semantic_orientation": "Face outward through short-end window toward crossing; rear toward gallery.",
+  "manual_next_step": "Calibrate against the approved pavilion bay and dated scene, then assign world transform and check glass clearance.",
+  "runtime_replacement_authorized": false
+}

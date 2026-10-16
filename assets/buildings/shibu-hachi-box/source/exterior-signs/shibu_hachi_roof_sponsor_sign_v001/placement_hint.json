@@ -1,0 +1,27 @@
+{
+  "asset": "shibu_hachi_roof_sponsor_sign_v001",
+  "ledger_id": "H-SG-004",
+  "state": "unplaced_dated_layer",
+  "units": "metres",
+  "origin": "bottom_center",
+  "blender_front": "-Y",
+  "blender_up": "+Z",
+  "gltf_up": "+Y",
+  "world_coordinates": null,
+  "world_rotation": null,
+  "installation_height": null,
+  "semantic_anchor": "Right-hand portion of SHIBU HACHI BOX front roof, after the existing identity/dog graphic and before the right roof end.",
+  "photo_normalized_roof_x_fraction": [
+    0.556,
+    0.873
+  ],
+  "approximate_roof_local_x_span_m": [
+    0.71,
+    4.76
+  ],
+  "approximate_roof_local_center_x_m": 2.735,
+  "apply_numeric_transform_automatically": false,
+  "parent_layout_conflict": "Existing estimated Identifier_carrier_estimated extends to x=+3.40m, overlapping the inferred sponsor span. This asset does not change that carrier or the name. Reconcile identity-carrier approximation and observed roof arrangement in a separate authorized integration step.",
+  "adoption_date": "2024 front reference observed; August2026 side source cannot confirm this roof sign. Do not enable for all times by default.",
+  "runtime_replacement_authorized": false
+}
