@@ -1,0 +1,11 @@
+{
+  "task_started_utc": "2026-10-15T21:04:06Z",
+  "package_completed_utc": "2026-10-15T21:13:07.092752+00:00",
+  "wall_seconds": 541.1,
+  "final_build_including_3_renders_seconds": 36.916,
+  "final_clean_regeneration_seconds": 0.276,
+  "validation_seconds": 0.18,
+  "final_frozen_source_clean_regenerations": 1,
+  "earlier_superseded_clean_regenerations": 1,
+  "visual_corrections": "Simplified logo seam cleanup; graphic plane offsets reduced after final visual review. Font zero-area converted triangles removed; built-in font exclusion corrected in validator."
+}

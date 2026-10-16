@@ -1,0 +1,103 @@
+[
+  {
+    "id": "J01",
+    "page_url": "https://www.shibukei.com/index.php/headline/18928/",
+    "image_url": "https://images.keizai.biz/shibukei/headline/1737961444_photo.jpg",
+    "publication_date": "2025-01-27",
+    "capture_date": null,
+    "capture_inference": "Post-relocation reporting; exact capture date not specified.",
+    "regions": [
+      {
+        "subject": "Complete left entrance-only fascia, frontal",
+        "xyxy": [
+          12,
+          242,
+          491,
+          368
+        ]
+      },
+      {
+        "subject": "Both openings and center pier, contextual only",
+        "xyxy": [
+          0,
+          220,
+          1068,
+          696
+        ]
+      }
+    ],
+    "image_size": [
+      1170,
+      878
+    ],
+    "sha256": "ea77f56afd9d96fbca163df54cf5fab5fa8c0e24e08052a16028a953f2387b3b",
+    "pixels_inspected": true,
+    "source_bytes_in_package": false,
+    "crops_created": false,
+    "redistribution": "Not established; reference link and coordinates only.",
+    "coordinate_system": "Original image pixels; XYXY; right/bottom exclusive. Locator selections only, not distributed crop files.",
+    "modeling_pass_pixels_inspected": true
+  },
+  {
+    "id": "J02",
+    "page_url": "https://shibukichi.net/2025/01/27/hachikoukaisatsu_repo/",
+    "image_url": "https://shibukichi.net/wp-content/uploads/2025/01/hachikou5.jpg",
+    "publication_date": "2025-01-27",
+    "updated_date": "2025-01-28",
+    "capture_date": null,
+    "capture_inference": "Author reports visit after relocation; exact date and EXIF not supplied.",
+    "regions": [
+      {
+        "subject": "Oblique fascia face and visible lower return",
+        "xyxy": [
+          13,
+          150,
+          996,
+          584
+        ]
+      }
+    ],
+    "image_size": [
+      1000,
+      750
+    ],
+    "sha256": "fbec363aaa99d984348ea0ff009d68655df8ae592b668504d55f4005db516874",
+    "pixels_inspected": true,
+    "source_bytes_in_package": false,
+    "crops_created": false,
+    "redistribution": "Not established; reference link and coordinates only.",
+    "coordinate_system": "Original image pixels; XYXY; right/bottom exclusive. Locator selections only, not distributed crop files.",
+    "modeling_pass_pixels_inspected": true
+  },
+  {
+    "id": "J03",
+    "page_url": "https://pixta.jp/photo/123240501",
+    "image_url": "https://t.pimg.jp/123/240/501/1/123240501.jpg",
+    "creator": "Ryuji",
+    "publication_date": null,
+    "capture_date": "2025-02-19",
+    "date_basis": "Photographer supplied capture-date field on sales page, not local EXIF.",
+    "regions": [
+      {
+        "subject": "Tiny entrance header at bottom right; location corroboration only",
+        "xyxy": [
+          367,
+          257,
+          450,
+          305
+        ]
+      }
+    ],
+    "image_size": [
+      450,
+      319
+    ],
+    "sha256": "e7885805817211062372f2cf2035bbb9f9eb573c7ae66bbbe1925bf79ab8a596",
+    "pixels_inspected": true,
+    "source_bytes_in_package": false,
+    "crops_created": false,
+    "redistribution": "Not established; reference link and coordinates only.",
+    "coordinate_system": "Original image pixels; XYXY; right/bottom exclusive. Locator selections only, not distributed crop files.",
+    "modeling_pass_pixels_inspected": false
+  }
+]

@@ -1,0 +1,154 @@
+{
+  "asset_id": "H-CV-002",
+  "name": "jr_hachiko_entrance_fascia_2025_v001",
+  "status": "PARTIAL_EARLY_2025_UNPLACED_CANDIDATE",
+  "source_state": "early 2025 after 2025-01-26 relocation",
+  "presence_2026": "not established",
+  "full_entry_status": "HOLD",
+  "world_transform": null,
+  "blender_version": "4.2.3",
+  "scope": "Fascia face, rim and shallow return only",
+  "mesh_objects": 13,
+  "triangles": 1429,
+  "materials": 4,
+  "textures": 0,
+  "source_photo_bytes_included": false,
+  "exact_metric_dimensions": false,
+  "font_and_logo_exact": false,
+  "text": [
+    "JR logo approximation",
+    "JR東日本",
+    "渋谷駅",
+    "入口専用",
+    "ENTRANCE",
+    "ONLY"
+  ],
+  "protected_assets_modified": false,
+  "github_written": false,
+  "runtime_modified": false,
+  "merged": false,
+  "deployed": false,
+  "clean_regeneration_byte_identical": true,
+  "files": [
+    {
+      "path": "COMPARISON_OBSERVATIONS.md",
+      "bytes": 1921,
+      "sha256": "ada261e52cad81796c537f6e4656706f7ea7a15b41973aa66687107ef33d12f2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3022,
+      "sha256": "c9af6dbbd4463425c875650c7312d68da48acf2be75be14f8503be33bd37565c"
+    },
+    {
+      "path": "SELECTIVE_IMPORT.md",
+      "bytes": 2087,
+      "sha256": "e6f043a82a6e5483c15c8fe6a15446462adee01c04a518430da87543074e04c4"
+    },
+    {
+      "path": "SOURCES_AND_UNCERTAINTIES.md",
+      "bytes": 3994,
+      "sha256": "d3311de90333cbff1743f270c231a956e28297454e48cf52e6094e8a6c3c0eb2"
+    },
+    {
+      "path": "evidence/01_front_graphic_layout.png",
+      "bytes": 834467,
+      "sha256": "182ad32f6fb5aaf309437f5773866b1e63308376247ece4489cd3d2fa3170712"
+    },
+    {
+      "path": "evidence/02_oblique_shallow_return.png",
+      "bytes": 1073632,
+      "sha256": "b90d0d659bfb131c80adf4e1ecac46aa60bba050237549a96b472b20bc040e46"
+    },
+    {
+      "path": "evidence/03_JR_identity_detail.png",
+      "bytes": 983892,
+      "sha256": "fd468fede6dbf2638a98cf2704ce554ed5910c33ce2e99ebb868648d952a61e5"
+    },
+    {
+      "path": "model/jr_hachiko_entrance_fascia_2025_v001.blend",
+      "bytes": 712596,
+      "sha256": "3cc41d11a4fc659ac38c771dde0d9313cf2fd86c388ffadeba80712df3107b50"
+    },
+    {
+      "path": "model/jr_hachiko_entrance_fascia_2025_v001.glb",
+      "bytes": 68500,
+      "sha256": "e19af75f36e4397157cd90280324a1b09ef5f8f7a9d7a6acd649fe620b10f35d"
+    },
+    {
+      "path": "placement.json",
+      "bytes": 414,
+      "sha256": "408bd2247c0f19f1a33f9d557a9f14637239d6bcecb5aa6b30b6abf78197d271"
+    },
+    {
+      "path": "references/reference_locators.json",
+      "bytes": 3268,
+      "sha256": "f2cdad4f9e4bb7812a892a421809d847eff9640ee0b62f738bdcdeaa10502066"
+    },
+    {
+      "path": "source/FONT_LICENSE.txt",
+      "bytes": 14712,
+      "sha256": "849f4ea9c214fa4ac3593b770c699f387534b11ce671264c1b10d85bdcb5997b"
+    },
+    {
+      "path": "source/build_fascia.py",
+      "bytes": 20668,
+      "sha256": "29bea31e36009218a156e72086d3a5ffd60e9dc1f2514d8a8d98cafc1312bee7"
+    },
+    {
+      "path": "source/validate_fascia.py",
+      "bytes": 3455,
+      "sha256": "d628b8b724cc477fc1534e13bd5b46cbf788fb088ea16c10d97eeb3a5cfdcdee"
+    },
+    {
+      "path": "validation/REVIEW.md",
+      "bytes": 2159,
+      "sha256": "2948b6107bfeb31e7ddf87c75aa17698a72402ec92c2af891d5d34bab56096ad"
+    },
+    {
+      "path": "validation/build.log",
+      "bytes": 23445,
+      "sha256": "6375893514d1e0c897ad8e5db88d03f36354ec9971fd5a9b516b42ee332baadb"
+    },
+    {
+      "path": "validation/build_stats.json",
+      "bytes": 2393,
+      "sha256": "4867d872adf6eeb8019c98e753abca2880fc3e16f6be700214baeb16bfa531f3"
+    },
+    {
+      "path": "validation/clean_regeneration.log",
+      "bytes": 3946,
+      "sha256": "bcfe0109265e43e3467c85f7435158f89a16ddc422d80c303bdbfd6aa1a84f0c"
+    },
+    {
+      "path": "validation/clean_regeneration_stats.json",
+      "bytes": 2392,
+      "sha256": "295442dca03f91916f8c3356a9e1ca2e8bb7afe01825f5b1b6c3d678dcb9b6ba"
+    },
+    {
+      "path": "validation/source_freeze.sha256",
+      "bytes": 89,
+      "sha256": "7d263366ee693cbaa07c5ff322fbfd7e3841dfeb4a49b21302f2b2363a9d398f"
+    },
+    {
+      "path": "validation/source_freeze_utc.txt",
+      "bytes": 21,
+      "sha256": "bc969665885f617e8728a7027ccb97d8dd822991d2b717dc8ecfa74a16b44ae2"
+    },
+    {
+      "path": "validation/timings.json",
+      "bytes": 566,
+      "sha256": "6a534f55b823cadf874f5cb24cf4b34a248b80817c1450ff826f80b455c0a9e6"
+    },
+    {
+      "path": "validation/validation.json",
+      "bytes": 1275,
+      "sha256": "4587b478f27f3bb380dddf21fcf095d87fef9ab1f4c5f4d84032081ec2c6a3d6"
+    },
+    {
+      "path": "validation/validation.log",
+      "bytes": 2669,
+      "sha256": "de3cc65b6af1ce2227472f1b6b0229c5167cd0ef0d2c9dadcb5ba828150e98d9"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "st1_whole": {
+    "changedPixelBounds": [
+      480,
+      345,
+      586,
+      416
+    ],
+    "sameViewport": true
+  },
+  "st1_front": {
+    "changedPixelBounds": [
+      3,
+      313,
+      658,
+      465
+    ],
+    "sameViewport": true
+  },
+  "st1_oblique": {
+    "changedPixelBounds": [
+      479,
+      318,
+      596,
+      366
+    ],
+    "sameViewport": true
+  },
+  "st1_detail": {
+    "changedPixelBounds": [
+      342,
+      271,
+      817,
+      556
+    ],
+    "sameViewport": true
+  }
+}

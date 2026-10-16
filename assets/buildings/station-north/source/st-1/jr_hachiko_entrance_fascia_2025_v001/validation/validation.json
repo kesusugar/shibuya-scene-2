@@ -1,0 +1,51 @@
+{
+  "blender_version": "4.2.3 LTS",
+  "world_transform": null,
+  "runtime_integrated": false,
+  "source_photo_images_included": false,
+  "blend": {
+    "opened": true,
+    "root_identity": true,
+    "packed_font_datablocks": 1,
+    "editable_text_objects": 5,
+    "external_images": 0,
+    "dated_parent_present": true
+  },
+  "glb_structure": {
+    "embedded_buffer_only": true,
+    "materials": 4,
+    "images": 0,
+    "textures": 0,
+    "nodes": 15,
+    "identity_root_json": true
+  },
+  "reimport": {
+    "pass": true,
+    "mesh_objects": 13,
+    "triangles": 1429,
+    "degenerate_triangles": 0,
+    "dimensions_m": [
+      4.800000190734863,
+      0.20200000703334808,
+      1.1200000047683716
+    ],
+    "bounds_min_blender_xyz_m": [
+      -2.4000000953674316,
+      -0.10100000351667404,
+      0.0
+    ],
+    "bounds_max_blender_xyz_m": [
+      2.4000000953674316,
+      0.10100000351667404,
+      1.1200000047683716
+    ],
+    "bottom_center_origin": true
+  },
+  "clean_regeneration": {
+    "original_glb_sha256": "e19af75f36e4397157cd90280324a1b09ef5f8f7a9d7a6acd649fe620b10f35d",
+    "regenerated_glb_sha256": "e19af75f36e4397157cd90280324a1b09ef5f8f7a9d7a6acd649fe620b10f35d",
+    "byte_identical_glb": true
+  },
+  "validation_seconds": 0.18,
+  "result": "PASS"
+}

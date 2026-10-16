@@ -13,18 +13,18 @@
   "reference_era": "2025-10-11",
   "absolute_datum_tp_m": 15,
   "stats": {
-    "triangles": 996,
-    "primitives": 9,
-    "bytes": 68400
+    "triangles": 5683,
+    "primitives": 27,
+    "bytes": 319236
   },
   "files": {
     "README.md": {
-      "bytes": 1298,
-      "sha256": "0371f83ca7282688f3d8d481b0ec2fd8e8967c310db0c54f8ee924343c6bb266"
+      "bytes": 2503,
+      "sha256": "ca08db03f274e6f22edfc3d37c5ec67612c310790b65bff936d96348f74667dc"
     },
     "source/blender/build_station_north.py": {
-      "bytes": 6671,
-      "sha256": "6bc395d689d8853ad3ddf416e35ba95bd16c2aeef40565240828bf9c8cb80d35"
+      "bytes": 8790,
+      "sha256": "80b16f11fef9c5392109b0898571a0a195e8779b7a1a52175a2bc59e5ba5d509"
     },
     "source/data/layout.json": {
       "bytes": 835,
@@ -35,8 +35,8 @@
       "sha256": "caf9559efb69521f3b4a0f968578aa6ecbed4487c6c0d05f446b3ef495e076cb"
     },
     "source/data/stats.json": {
-      "bytes": 1269,
-      "sha256": "e64d5d17172a743f549077b36d33fdf5ff4d39968159536510fab7aa6d5489a3"
+      "bytes": 1416,
+      "sha256": "082b7871d90d91bb9379662278de2ad8013796603d8c633b65f035df96cdb81a"
     },
     "source/refs/README.md": {
       "bytes": 369,
@@ -46,21 +46,307 @@
       "bytes": 494,
       "sha256": "c1d3c5ca7a0cab1596053974cf1ce03dbe705ee3dedf23e96a1858ef5c2d19f3"
     },
+    "source/st-1/build-report.json": {
+      "bytes": 4014,
+      "sha256": "8f2be900332cd1f7791f1eca25c6ea85ae940082ad558d699e36f1e414ee5380"
+    },
+    "source/st-1/delivery-verification.json": {
+      "bytes": 3432,
+      "sha256": "e3fc583f9f6b184198269925f3c19b391a81c2b785fcb36c36188a5e51a757d9"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/COMPARISON_OBSERVATIONS.md": {
+      "bytes": 1921,
+      "sha256": "ada261e52cad81796c537f6e4656706f7ea7a15b41973aa66687107ef33d12f2"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/MANIFEST.json": {
+      "bytes": 4810,
+      "sha256": "22f30f6e9d3dd7e702ee9ca0eddc7ed250320c46c93fda2d908e080e66203dcf"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/model/jr_hachiko_entrance_fascia_2025_v001.glb": {
+      "bytes": 68500,
+      "sha256": "e19af75f36e4397157cd90280324a1b09ef5f8f7a9d7a6acd649fe620b10f35d"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/placement.json": {
+      "bytes": 414,
+      "sha256": "408bd2247c0f19f1a33f9d557a9f14637239d6bcecb5aa6b30b6abf78197d271"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/README.md": {
+      "bytes": 3022,
+      "sha256": "c9af6dbbd4463425c875650c7312d68da48acf2be75be14f8503be33bd37565c"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/references/reference_locators.json": {
+      "bytes": 3268,
+      "sha256": "f2cdad4f9e4bb7812a892a421809d847eff9640ee0b62f738bdcdeaa10502066"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/SELECTIVE_IMPORT.md": {
+      "bytes": 2087,
+      "sha256": "e6f043a82a6e5483c15c8fe6a15446462adee01c04a518430da87543074e04c4"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/source/build_fascia.py": {
+      "bytes": 20668,
+      "sha256": "29bea31e36009218a156e72086d3a5ffd60e9dc1f2514d8a8d98cafc1312bee7"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/source/FONT_LICENSE.txt": {
+      "bytes": 14712,
+      "sha256": "849f4ea9c214fa4ac3593b770c699f387534b11ce671264c1b10d85bdcb5997b"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/source/validate_fascia.py": {
+      "bytes": 3455,
+      "sha256": "d628b8b724cc477fc1534e13bd5b46cbf788fb088ea16c10d97eeb3a5cfdcdee"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/SOURCES_AND_UNCERTAINTIES.md": {
+      "bytes": 3994,
+      "sha256": "d3311de90333cbff1743f270c231a956e28297454e48cf52e6094e8a6c3c0eb2"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/validation/build_stats.json": {
+      "bytes": 2393,
+      "sha256": "4867d872adf6eeb8019c98e753abca2880fc3e16f6be700214baeb16bfa531f3"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/validation/clean_regeneration_stats.json": {
+      "bytes": 2392,
+      "sha256": "295442dca03f91916f8c3356a9e1ca2e8bb7afe01825f5b1b6c3d678dcb9b6ba"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/validation/REVIEW.md": {
+      "bytes": 2159,
+      "sha256": "2948b6107bfeb31e7ddf87c75aa17698a72402ec92c2af891d5d34bab56096ad"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/validation/source_freeze_utc.txt": {
+      "bytes": 21,
+      "sha256": "bc969665885f617e8728a7027ccb97d8dd822991d2b717dc8ecfa74a16b44ae2"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/validation/timings.json": {
+      "bytes": 566,
+      "sha256": "6a534f55b823cadf874f5cb24cf4b34a248b80817c1450ff826f80b455c0a9e6"
+    },
+    "source/st-1/jr_hachiko_entrance_fascia_2025_v001/validation/validation.json": {
+      "bytes": 1275,
+      "sha256": "4587b478f27f3bb380dddf21fcf095d87fef9ab1f4c5f4d84032081ec2c6a3d6"
+    },
+    "source/st-1/jr_miyamasuzaka_visible_centre_pier_20250409_v001/MANIFEST.json": {
+      "bytes": 1926,
+      "sha256": "c72b34c0b6a9d28b4b07ecf2d9f12e3caa5c8a471d41d85b8dcc074334d01d01"
+    },
+    "source/st-1/jr_miyamasuzaka_visible_centre_pier_20250409_v001/model/jr_miyamasuzaka_visible_centre_pier_20250409_v001.glb": {
+      "bytes": 6732,
+      "sha256": "249c5e05abfbdeacd5e87b98456057bedde5f7897764db1bc25534a72aeef0d5"
+    },
+    "source/st-1/jr_miyamasuzaka_visible_centre_pier_20250409_v001/README.md": {
+      "bytes": 2303,
+      "sha256": "24d6a3e766fcf94d1806fedd2e5cd2ca414b6c361732276bb3be0fd935711721"
+    },
+    "source/st-1/jr_miyamasuzaka_visible_centre_pier_20250409_v001/source/build_centre_pier.py": {
+      "bytes": 7298,
+      "sha256": "be5a407b878f2141087131d9365dcb285502bcb638f7878708947f7606d12c46"
+    },
+    "source/st-1/jr_miyamasuzaka_visible_centre_pier_20250409_v001/source/check_glb.py": {
+      "bytes": 2993,
+      "sha256": "93413399ed7828b5d2107269bed44a1e288aeb50be48d5d3dd2cb557ba5c556c"
+    },
+    "source/st-1/jr_miyamasuzaka_visible_centre_pier_20250409_v001/SOURCES_AND_ESTIMATES.md": {
+      "bytes": 2375,
+      "sha256": "20554d0429314886df253c7ea0cf1d50875a071ce687120c47843ab6efab09e2"
+    },
+    "source/st-1/jr_miyamasuzaka_visible_centre_pier_20250409_v001/validation/build_stats.json": {
+      "bytes": 577,
+      "sha256": "5d0f6e8a941bb0947f9c071a2bfc85a175638bd0a41c28de6c5f34a486bdb82e"
+    },
+    "source/st-1/jr_miyamasuzaka_visible_centre_pier_20250409_v001/validation/glb_checks.json": {
+      "bytes": 1315,
+      "sha256": "dad1285aa6867ed66bf4c35b13391164de1f7296068f6d800d5dd98f6a66b295"
+    },
+    "source/st-1/placement.json": {
+      "bytes": 1731,
+      "sha256": "d497f181c6b0deafa4ec0f4fd849707c823a9b4101378c5fdf3c7158db9f0319"
+    },
+    "source/st-1/README.md": {
+      "bytes": 1893,
+      "sha256": "5f737ec23edfc4ce2a087b7429576ddc055ea14b74a8751f31c0be9132a25085"
+    },
     "web/emissive_day.json": {
-      "bytes": 118,
-      "sha256": "56f92d25cfed860034a6a96f76a0f626662cafd2757325d22fe904dfc0a41030"
+      "bytes": 583,
+      "sha256": "ca33918bed548baca2aa88c94e61a04e5e6189b0a6dbe89f749b122d627c5052"
     },
     "web/emissive_night.json": {
-      "bytes": 118,
-      "sha256": "fd177664c053624cb3958e8e877378b780965a8d6a80b14dbb112a28d53b1da0"
+      "bytes": 583,
+      "sha256": "898708b14b0ddf008d1572b10f3a0028fe578ff4ae5278fd042926cfadd66002"
+    },
+    "web/signs-jr-entry-early-2025.glb": {
+      "bytes": 70000,
+      "sha256": "8042b6da74206aa8bedc91a59901c0c6ad988052d51872c61a6f6c30814fa1a0"
     },
     "web/station-north.glb": {
-      "bytes": 68400,
-      "sha256": "5eb413ef61b02eb1d715434503e72018c957a3d19d42271de11e6f4c8162b4d2"
+      "bytes": 242376,
+      "sha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09"
     },
     "web/viewer.json": {
-      "bytes": 103,
-      "sha256": "2d46b965f57e85729fb0e38cca6f482a952af521aafb6b964041e125b76644ce"
+      "bytes": 263,
+      "sha256": "181ba5ee43cb4a7074003c610a2c2d87fc5f8c2ecde9cff6b2981a41ac6ce612"
+    },
+    "web/wall-jr-centre-pier-2025-04-09.glb": {
+      "bytes": 6860,
+      "sha256": "bf659fd8932bb1cfb155df4cf5dff7ce3eb5ef3281034ce81c655d195d315c2f"
     }
+  },
+  "st1": {
+    "status": "estimated shallow exterior fit; dated fascia and wall cladding only",
+    "main": "c33be62",
+    "bodySha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09",
+    "bodyUnchanged": true,
+    "anchorWorld": [
+      89.39711175721288,
+      0.034964527163424464,
+      22.989060007429025
+    ],
+    "uniformScale": 1,
+    "yawDegrees": 106.33406705888005,
+    "components": [
+      {
+        "id": "entry-fascia",
+        "layer": "signs_jr-entry-early-2025",
+        "output": "signs-jr-entry-early-2025.glb",
+        "sha256": "8042b6da74206aa8bedc91a59901c0c6ad988052d51872c61a6f6c30814fa1a0",
+        "bytes": 70000,
+        "triangles": 1429,
+        "primitives": 13,
+        "worldMatrix": [
+          -0.2812373425555876,
+          0,
+          -0.9596382428562709,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0.9596382428562709,
+          0,
+          -0.2812373425555876,
+          0,
+          90.2873313670545,
+          3.1149645271634245,
+          26.38579521145265,
+          1
+        ],
+        "bottomFits": []
+      },
+      {
+        "id": "centre-pier-cladding",
+        "layer": "wall_jr-centre-pier-2025-04-09",
+        "output": "wall-jr-centre-pier-2025-04-09.glb",
+        "sha256": "bf659fd8932bb1cfb155df4cf5dff7ce3eb5ef3281034ce81c655d195d315c2f",
+        "bytes": 6860,
+        "triangles": 68,
+        "primitives": 3,
+        "worldMatrix": [
+          -0.2812373425555876,
+          0,
+          -0.9596382428562709,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0.9596382428562709,
+          0,
+          -0.2812373425555876,
+          0,
+          89.30114793292725,
+          0.034964527163424464,
+          23.017183741684583,
+          1
+        ],
+        "bottomFits": [
+          {
+            "worldXZ": [
+              89.65866248923112,
+              23.881523579730146
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": 0.08164891570327881,
+            "groundY": 0.08664891570327882
+          },
+          {
+            "worldXZ": [
+              89.13556102805458,
+              22.096596434289747
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": -0.02044337943303731,
+            "groundY": -0.015443379433037308
+          },
+          {
+            "worldXZ": [
+              89.08775067512649,
+              21.93345791698849
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": -0.02970338177131737,
+            "groundY": -0.024703381771317368
+          },
+          {
+            "worldXZ": [
+              88.89582302369529,
+              21.98970538633776
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": -0.032766221311310344,
+            "groundY": -0.027766221311310343
+          },
+          {
+            "worldXZ": [
+              89.70647284215922,
+              24.044662097031406
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": 0.09137988257286878,
+            "groundY": 0.09637988257286878
+          },
+          {
+            "worldXZ": [
+              89.13556102805458,
+              22.096596434289747
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": -0.02044337943303731,
+            "groundY": -0.015443379433037308
+          },
+          {
+            "worldXZ": [
+              89.70647284215922,
+              24.044662097031406
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": 0.09137988257286878,
+            "groundY": 0.09637988257286878
+          },
+          {
+            "worldXZ": [
+              89.65866248923112,
+              23.881523579730146
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": 0.08164891570327881,
+            "groundY": 0.08664891570327882
+          },
+          {
+            "worldXZ": [
+              89.13556102805458,
+              22.096596434289747
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": -0.02044337943303731,
+            "groundY": -0.015443379433037308
+          },
+          {
+            "worldXZ": [
+              89.08775067512649,
+              21.93345791698849
+            ],
+            "oldY": 0.034964527163424464,
+            "newY": -0.02970338177131737,
+            "groundY": -0.024703381771317368
+          }
+        ]
+      }
+    ]
   }
 }

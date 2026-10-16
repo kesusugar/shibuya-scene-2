@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "main": "c33be62",
+  "target": "Miyamasuzaka-side relocated entrance, east face of existing JR underpass; not the closed western Hachiko gate",
+  "units": "metres",
+  "anchorPlanEndpoints": [
+    [
+      103.905,
+      -72.564
+    ],
+    [
+      87.578,
+      -16.853
+    ]
+  ],
+  "anchorAlongFace": 0.8897581311719385,
+  "frontOffset": 0.02,
+  "groundY": 0.034964527163424464,
+  "soffitY": 5.305,
+  "uniformScale": 1,
+  "placementStatus": "Estimated east station face south of the Old Oyama-kaido public underpass. Reserve 4.8m neighbouring exit bay plus 1.1m half-pier and 0.5m corner margin north of the pier. Not a survey. No placement in the public underpass.",
+  "sourceDates": {
+    "fascia": "early 2025 after 2025-01-26 relocation, exact photo capture date unavailable",
+    "pier": "2025-04-09 caption date"
+  },
+  "components": [
+    {
+      "id": "entry-fascia",
+      "input": "jr_hachiko_entrance_fascia_2025_v001/model/jr_hachiko_entrance_fascia_2025_v001.glb",
+      "sha256": "e19af75f36e4397157cd90280324a1b09ef5f8f7a9d7a6acd649fe620b10f35d",
+      "position": [
+        -3.51,
+        3.08,
+        -0.101
+      ],
+      "layer": "signs_jr-entry-early-2025",
+      "output": "signs-jr-entry-early-2025.glb"
+    },
+    {
+      "id": "centre-pier-cladding",
+      "input": "jr_miyamasuzaka_visible_centre_pier_20250409_v001/model/jr_miyamasuzaka_visible_centre_pier_20250409_v001.glb",
+      "sha256": "249c5e05abfbdeacd5e87b98456057bedde5f7897764db1bc25534a72aeef0d5",
+      "position": [
+        0,
+        0,
+        -0.1
+      ],
+      "layer": "wall_jr-centre-pier-2025-04-09",
+      "output": "wall-jr-centre-pier-2025-04-09.glb"
+    }
+  ],
+  "fitPierBottomToVisibleGround": true
+}
