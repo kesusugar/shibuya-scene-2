@@ -59,5 +59,5 @@ for index, pair in enumerate(groups):
         'bounds_xyz_m': [[round(v, 3) for v in pair] for pair in bounds],
     })
 Path(target).parent.mkdir(parents=True, exist_ok=True)
-Path(target).write_text(json.dumps({'source': source.replace('\\', '/').split('/assets/')[-1], 'planes': planes}, indent=2) + '\n')
+Path(target).write_text(json.dumps({'source': source.replace('\\', '/').split('/assets/')[-1], 'planes': planes}, indent=2) + '\n', newline='\n')
 print('14 station louvre planes inventoried')
