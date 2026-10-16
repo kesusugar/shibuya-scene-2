@@ -38,7 +38,9 @@ CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 元スキャンの写真陰影、葉、ハイライト、細部の軟らかさ、小さい像の開口、1非多様体辺、開いた下面を保持。metallic0.25/roughness0.2は石も含む一材質の継承で物理校正ではない。調査写真・秘密情報は追加していない。FPS測定・マージ・デプロイは未実施。
 
 ## 検証
-- npx vitest run --no-file-parallelism：50 files / 227 tests 全合格。既存の資産別・全体予算を含む。
+- npm test -- --maxWorkers=2（CIと同条件）：50 files / 227 tests 全合格、48.36秒。逐次実行でも全合格。既存の資産別・全体予算を含む。
 - npm run build：型検査・Vite build合格。
 - Windowsでは初回全体テストがpython3未設定・CRLFによる既存ソースハッシュ差・並列資源競合によるタイムアウトで失敗した。未変更ファイルをGit保存時のLFバイトに復元し、Python3.14.4/Pillow12.3.0/NumPy2.5.4/Shapely2.2.0とpython3別名を用意し逐次実行で解決。テスト条件や性能予算は緩めていない。
 - 詳細：evidence/hachiko-scan-placement/handoff-validation.json、surround-clearance.json、before/after/capture_log.json、validation-results.json。
+
+CIで最初のバイト保全テストだけが5秒に達したため、大配列の再帰比較をBuffer.equalsによる全バイト比較へ変更。判定内容も時間上限も維持し、CIと同じ2ワーカーで全227件を確認。表示用バンドル・資産・撮影結果は不変。
