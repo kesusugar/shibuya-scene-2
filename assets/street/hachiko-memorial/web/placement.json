@@ -1,0 +1,14 @@
+{
+    "source":  "hachiko-surround/source/data/layout.json panel.xy_local adjusted for 1.6m width clearance; hachiko/source/data/layout.json; surround ground contact samples",
+    "position":  [
+                     9.0085378895427279,
+                     0.50741195678710938,
+                     52.003978000882555
+                 ],
+    "yaw_deg":  35,
+    "uniform_scale":  1,
+    "coordinate_system":  "web east/up/south, glTF Y-up",
+    "ground_rule":  "minimum of six sidewalk samples over the revised 1.6m x 0.22m footprint",
+    "dated_reference":  "2025-07-13",
+    "uncertainty":  "site transform and memorial dimensions estimated; panel moved 0.35m outward from previous centre to avoid stone border and shrubs"
+}
