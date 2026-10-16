@@ -19,5 +19,6 @@
   "protected_body_sha256": "c1b262ee107e8b46baad917f30aff885420a8ac611f071b67469b542a18f7a5e",
   "source_dates": "2024 public signs / 2026-08-08 static clock; not certified October2025",
   "merge": false,
-  "deploy": false
+  "deploy": false,
+  "whitespace_note": "Original DejaVu notices retain upstream trailing spaces byte-for-byte; code/docs/evidence whitespace checked excluding only the two vendor notices."
 }
