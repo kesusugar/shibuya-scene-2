@@ -1,40 +1,74 @@
 import { expect, it } from 'vitest';
-import { readFileSync } from 'node:fs';
+import { readFileSync, statSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { NodeIO } from '@gltf-transform/core';
-import { Group, Mesh, MeshStandardMaterial, PlaneGeometry, Vector3, Matrix4, BufferAttribute, BufferGeometry, DoubleSide, MeshBasicMaterial, Raycaster } from 'three';
-import { loadHachiko } from '../src/world/hachiko';
+import { Group, Mesh, MeshStandardMaterial, Matrix4, BufferAttribute, BufferGeometry, DoubleSide, MeshBasicMaterial, Raycaster, Vector3 } from 'three';
+import { loadHachiko, HACHIKO_SCAN_PLACEMENT } from '../src/world/hachiko';
 
-it('loads the statue separately and isolates failed or empty supplements', async () => {
-  const scene=new Group(),mesh=new Mesh(new PlaneGeometry(1.1,2.4),new MeshStandardMaterial());mesh.name='street_hachiko';scene.add(mesh);
-  expect((await loadHachiko(async()=>scene)).ok).toBe(true);expect(mesh.castShadow).toBe(true);
-  const missing=await loadHachiko(async()=>{throw new Error('unavailable');});
-  expect(missing.ok).toBe(false);expect(missing.root.children).toHaveLength(0);
-  expect((await loadHachiko(async()=>new Group())).ok).toBe(false);
+it('loads exactly one complete scan with one rigid placement and isolates failure', async () => {
+  const scene = new Group(), geo = new BufferGeometry();
+  const actual = (await new NodeIO().read('assets/street/hachiko/web/hachiko.glb')).getRoot().listMeshes()[0].listPrimitives()[0];
+  geo.setAttribute('position', new BufferAttribute(actual.getAttribute('POSITION')!.getArray()!, 3));
+  geo.setIndex(new BufferAttribute(actual.getIndices()!.getArray()!, 1));
+  const mesh = new Mesh(geo, new MeshStandardMaterial()); mesh.name = 'hachiko_uploaded_scan_candidate_v001'; scene.add(mesh);
+  const loaded = await loadHachiko(async () => scene);
+  expect(loaded.ok).toBe(true); expect(loaded.stats).toEqual({ meshes: 1, triangles: 85_934 });
+  expect(loaded.root.position.toArray()).toEqual([...HACHIKO_SCAN_PLACEMENT.position]);
+  expect(loaded.root.scale.toArray()).toEqual([1, 1, 1]); expect(mesh.castShadow).toBe(true);
+  expect(loaded.root.children).toEqual([scene]);
+  const failed = await loadHachiko(async () => { throw Error('unavailable'); });
+  expect(failed.ok).toBe(false); expect(failed.root.children).toHaveLength(0);
+  expect((await loadHachiko(async () => new Group())).ok).toBe(false);
 });
 
-it('exports the dog, plinth and readable plaque without emissive materials', async () => {
-  const root=(await new NodeIO().read('assets/street/hachiko/web/hachiko.glb')).getRoot();
-  const names=root.listNodes().map(n=>n.getName());
-  for (const name of ['street_hachiko','street_hachiko_dog','street_hachiko_plinth','street_hachiko_plaque_text','street_hachiko_nose','street_hachiko_collar']) expect(names).toContain(name);
-  for (const m of root.listMaterials()) expect(m.getEmissiveFactor()).toEqual([0,0,0]);
-  expect(root.listTextures().length).toBeGreaterThanOrEqual(3);
+it('preserves the canonical geometry, UVs, normals and material values in the budgeted runtime derivative', async () => {
+  const io = new NodeIO();
+  const canonical = (await io.read('assets/street/hachiko/source/scan-candidate/model/hachiko_uploaded_scan_candidate_v001.glb')).getRoot();
+  const web = (await io.read('assets/street/hachiko/web/hachiko.glb')).getRoot();
+  expect(web.listMeshes()).toHaveLength(1);
+  const a = canonical.listMeshes()[0].listPrimitives()[0], b = web.listMeshes()[0].listPrimitives()[0];
+  for (const semantic of a.listSemantics()) {
+    const source = a.getAttribute(semantic)!.getArray()!, runtime = b.getAttribute(semantic)!.getArray()!;
+    expect(Buffer.from(runtime.buffer, runtime.byteOffset, runtime.byteLength).equals(Buffer.from(source.buffer, source.byteOffset, source.byteLength)), semantic + ' exact bytes').toBe(true);
+  }
+  const sourceIndices = a.getIndices()!.getArray()!, runtimeIndices = b.getIndices()!.getArray()!;
+  expect(Buffer.from(runtimeIndices.buffer, runtimeIndices.byteOffset, runtimeIndices.byteLength).equals(Buffer.from(sourceIndices.buffer, sourceIndices.byteOffset, sourceIndices.byteLength))).toBe(true);
+  expect(b.getIndices()!.getCount() / 3).toBe(85_934);
+  expect(web.listMaterials()[0].getMetallicFactor()).toBe(.25);
+  expect(web.listMaterials()[0].getRoughnessFactor()).toBe(.2);
+  expect(statSync('assets/street/hachiko/web/hachiko.glb').size).toBeLessThanOrEqual(3_000_000);
+  expect(web.listNodes().map(n => n.getName())).not.toContain('street_hachiko_dog');
+  expect(web.listNodes()[0].getMatrix()).toEqual(new Matrix4().toArray());
 });
 
-it('anchors the exported plinth on the original sidewalk without floating and clears tactile tiles', async () => {
-  const io=new NodeIO(),g=(await io.read('assets/ground/core/web/ground_core.glb')).getRoot(),surfaces:Mesh[]=[];
-  for (const n of g.listNodes()) if(n.getName().startsWith('ground_sidewalk')) for(const p of n.getMesh()?.listPrimitives()??[]) {
-    const geo=new BufferGeometry().setAttribute('position',new BufferAttribute(p.getAttribute('POSITION')!.getArray()!,3));geo.setIndex(new BufferAttribute(p.getIndices()!.getArray()!,1));geo.applyMatrix4(new Matrix4().fromArray(n.getWorldMatrix()));
-    const m=new Mesh(geo,new MeshBasicMaterial({side:DoubleSide}));m.updateMatrixWorld();surfaces.push(m);
+it('keeps the canonical delivery and old complete asset recoverable outside the served web folder', () => {
+  const sha = (p: string) => createHash('sha256').update(readFileSync(p)).digest('hex');
+  expect(sha('assets/street/hachiko/source/scan-candidate/model/hachiko_uploaded_scan_candidate_v001.glb')).toBe('cd20601d57308a1b50892c05d509a6295ca24ca2045cfd37421995a840bf039e');
+  expect(sha('assets/street/hachiko/source/legacy/hachiko.glb')).toBe('370db19f30af6c4c3ab9d49ae910fa99e14643fc507630f90655cf6d220d0ae5');
+});
+
+it('fits all 371 retained rim points on the actual sidewalk without an open floating edge', async () => {
+  const placement = JSON.parse(readFileSync('assets/street/hachiko/source/data/scan-placement.json', 'utf8'));
+  expect(placement.position).toEqual([...HACHIKO_SCAN_PLACEMENT.position]);
+  const matrix = new Matrix4().makeTranslation(...HACHIKO_SCAN_PLACEMENT.position).multiply(new Matrix4().makeRotationY(HACHIKO_SCAN_PLACEMENT.yawDegrees * Math.PI / 180));
+  expect(matrix.toArray()).toEqual(placement.matrixColumnMajor);
+  const surfaces: Mesh[] = [];
+  for (const n of (await new NodeIO().read('assets/ground/core/web/ground_core.glb')).getRoot().listNodes()) {
+    if (!n.getName().startsWith('ground_sidewalk')) continue;
+    for (const p of n.getMesh()?.listPrimitives() ?? []) {
+      const geo = new BufferGeometry().setAttribute('position', new BufferAttribute(p.getAttribute('POSITION')!.getArray()!, 3));
+      geo.setIndex(new BufferAttribute(p.getIndices()!.getArray()!, 1)); geo.applyMatrix4(new Matrix4().fromArray(n.getWorldMatrix()));
+      const mesh = new Mesh(geo, new MeshBasicMaterial({ side: DoubleSide })); mesh.updateMatrixWorld(); surfaces.push(mesh);
+    }
   }
-  const root=(await io.read('assets/street/hachiko/web/hachiko.glb')).getRoot(),n=root.listNodes().find(n=>n.getName()==='street_hachiko_foot')!;
-  const points=n.getMesh()!.listPrimitives().flatMap(p=>{const a=p.getAttribute('POSITION')!;return Array.from({length:a.getCount()},(_,i)=>new Vector3().fromArray(a.getElement(i,[])).applyMatrix4(new Matrix4().fromArray(n.getWorldMatrix())));});
-  const bottom=Math.min(...points.map(p=>p.y)),ray=new Raycaster();let checked=0;
-  for (const p of points.filter(p=>p.y<bottom+.009)) {
-    ray.set(new Vector3(p.x,50,p.z),new Vector3(0,-1,0));const h=ray.intersectObjects(surfaces,false)[0];expect(h).toBeDefined();
-    expect(p.y-h.point.y).toBeLessThan(.012);expect(p.y-h.point.y).toBeGreaterThan(-.15);checked++;
+  const ray = new Raycaster(); expect(placement.ground.samplesDetail).toHaveLength(371);
+  for (const sample of placement.ground.samplesDetail) {
+    const p = new Vector3().fromArray(sample.local).applyMatrix4(matrix);
+    ray.set(new Vector3(p.x, 50, p.z), new Vector3(0, -1, 0));
+    const hit = ray.intersectObjects(surfaces, false)[0]; expect(hit).toBeDefined();
+    expect(p.y - hit.point.y).toBeLessThanOrEqual(-.0009);
+    expect(p.y - hit.point.y).toBeGreaterThan(-.09);
   }
-  expect(checked).toBeGreaterThan(8);
-  const layout=JSON.parse(readFileSync('assets/street/hachiko/source/data/layout.json','utf8'));
-  const tiles=JSON.parse(readFileSync('assets/street/tactile/source/data/stats.json','utf8')).tiles;
-  for (const t of tiles) expect(Math.hypot(t.centre_xy[0]-layout.xy[0],t.centre_xy[1]-layout.xy[1])).toBeGreaterThan(1.2);
-},30000);
+  const inverse = new Matrix4().fromArray(placement.inverseMatrixColumnMajor);
+  expect(new Vector3(.2, 1, -.3).applyMatrix4(matrix).applyMatrix4(inverse).distanceTo(new Vector3(.2, 1, -.3))).toBeLessThan(1e-10);
+}, 30_000);

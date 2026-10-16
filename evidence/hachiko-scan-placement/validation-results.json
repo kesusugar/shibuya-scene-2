@@ -1,0 +1,59 @@
+{
+  "tests": {
+    "command": "npx vitest run --no-file-parallelism",
+    "filesPassed": 50,
+    "testsPassed": 227,
+    "failed": 0,
+    "durationSeconds": 90.63
+  },
+  "build": {
+    "command": "npm run build",
+    "passed": true,
+    "typecheck": true,
+    "bundle": "index-Bl1Es5-n.js",
+    "sameRuntimeBundleAsCaptured": true
+  },
+  "scene": {
+    "beforeViews": 5,
+    "afterViews": 5,
+    "sameCameras": true,
+    "allLoadsSucceeded": true,
+    "consoleHttpJsErrors": 0,
+    "afterMeshes": 1,
+    "afterTriangles": 85934
+  },
+  "placement": {
+    "lowerRimPoints": 371,
+    "gapRangeMeters": [
+      -0.08624349744107007,
+      -0.001
+    ],
+    "uniformRuntimeScale": [
+      1,
+      1,
+      1
+    ]
+  },
+  "surroundEnvelopeIntersections": 0,
+  "allAssetManifestHashesPassed": true,
+  "budgetLimitsChanged": false,
+  "fpsMeasured": false,
+  "merged": false,
+  "deployed": false,
+  "environment": {
+    "node": "24.19.0",
+    "python": "3.14.4",
+    "pillow": "12.3.0",
+    "numpy": "2.5.4",
+    "shapely": "2.2.0",
+    "playwrightChromium": "141.0.7390.37 / build1194"
+  },
+  "testsCIMode": {
+    "command": "npm test -- --maxWorkers=2",
+    "filesPassed": 50,
+    "testsPassed": 227,
+    "failed": 0,
+    "durationSeconds": 48.36
+  },
+  "typecheckAfterTestOptimization": true
+}

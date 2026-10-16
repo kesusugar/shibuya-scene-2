@@ -1,102 +1,72 @@
 {
- "id": "hachiko",
- "status": "photo-informed sculpture prototype; scale, orientation and October condition unverified",
- "datum_tp_m": 15,
- "coordinates": "Blender east/north/up; web east/up/south",
- "licences": {
-  "model": "CC BY-SA 4.0",
-  "reference_photos": "CC BY-SA 4.0 / CC BY 4.0, see SOURCES.json",
-  "positions": "OSM contributors, ODbL",
-  "terrain": "PLATEAU / MLIT, CC BY 4.0 compatible",
-  "font": "Noto Serif CJK, SIL OFL 1.1"
- },
- "build_stats": {
-  "anchor_tp": 15.439159393310547,
-  "max_burial_m": 0.0261688232421875,
-  "triangles": 50502
- },
- "inputs": {
-  "assets/ground/core/web/ground_core.glb": {
-   "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32",
-   "bytes": 3700232
+  "id": "hachiko",
+  "status": "scan candidate placed for review; physical dimensions/orientation/2025-10 appearance unverified",
+  "datum_tp_m": 15,
+  "source": {
+    "creator": "Maurice Svay",
+    "url": "https://sketchfab.com/3d-models/hachiko-fffee43c3cbc4b7ea20d6556a360b25f",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "changes": "source/scan-candidate/PROVENANCE.md and README.md"
   },
-  "assets/street/tactile/source/data/stats.json": {
-   "sha256": "cc32a5db621f71daffcee09711faccf8e1b9e6409c0001cfc971f963d30ebf96",
-   "bytes": 53691
+  "build_stats": {
+    "triangles": 85934,
+    "primitives": 1,
+    "anchor_tp": 15.379512188897989,
+    "max_burial_m": 0.08624349744107007
+  },
+  "runtime_texture": {
+    "original": [
+      4096,
+      4096
+    ],
+    "runtime": [
+      1536,
+      1536
+    ],
+    "filter": "Lanczos",
+    "jpeg_quality": 80,
+    "subsampling": "4:2:0",
+    "geometry_uv_normals_material_parameters_preserved": true
+  },
+  "placement": "source/data/scan-placement.json",
+  "legacy": "source/legacy; not served or loaded",
+  "files": {
+    "web/hachiko.glb": {
+      "bytes": 2911696,
+      "sha256": "0d68077edad1fc24858cdb9c42001439488728fc2e4779676ee3f0e3e821077e"
+    },
+    "README.md": {
+      "bytes": 3661,
+      "sha256": "7d606eddb0441e5b07a085e3f5bae5b6f7f4f0b2ea2a3a246d86271eb89a51b8"
+    },
+    "source/data/scan-placement.json": {
+      "bytes": 100265,
+      "sha256": "19505717bd04f6920459dd65183870a14ebc0cee4b3ef39d5bde3c9b040e506e"
+    },
+    "source/tools/build_scan_runtime.py": {
+      "bytes": 2290,
+      "sha256": "2d4c94ec956044f31010f929142f7374a858324e677b5f4094022b3b0ebb50ea"
+    },
+    "source/scan-candidate/model/hachiko_uploaded_scan_candidate_v001.glb": {
+      "bytes": 7719592,
+      "sha256": "cd20601d57308a1b50892c05d509a6295ca24ca2045cfd37421995a840bf039e"
+    },
+    "source/scan-candidate/model/transform.json": {
+      "bytes": 3504,
+      "sha256": "d4a9ed1a89b3038b2c7f8eca728585d5159de202a433f77b787fc6220d95fc8b"
+    },
+    "source/scan-candidate/PROVENANCE.md": {
+      "bytes": 2996,
+      "sha256": "0cadc69e0356df0658f101c61587f9d0304a8c5c27ad01e64bc531f0130e63fd"
+    },
+    "source/legacy/hachiko.glb": {
+      "bytes": 1540900,
+      "sha256": "370db19f30af6c4c3ab9d49ae910fa99e14643fc507630f90655cf6d220d0ae5"
+    },
+    "web/PROVENANCE.md": {
+      "bytes": 3706,
+      "sha256": "37639d81a0c6f5f5e85cfe885109441b707d4e143499ccb7d9ba11bfb1759783"
+    }
   }
- },
- "files": {
-  "README.md": {
-   "sha256": "af733c7ba6e5c49878fc5f1efda9c7dd1e573fd9c95bd8b85bc448d5d3d88cbf",
-   "bytes": 1819
-  },
-  "source/blender/build_hachiko.py": {
-   "sha256": "b2773e1d6069b44b006a48cb475c58aefbbcb264b99fce1e59abd9c580e34573",
-   "bytes": 9140
-  },
-  "source/data/bronze.png": {
-   "sha256": "97e8924908aab7be8dc57734888aa87609ae65a96ef82bad8df3e2ed605171b6",
-   "bytes": 80070
-  },
-  "source/data/granite.png": {
-   "sha256": "087315e4d9f76fdcff006041748312e952fbe4a2ffcaa8e0ed9ec765ca2366bb",
-   "bytes": 91860
-  },
-  "source/data/layout.json": {
-   "sha256": "174941855d335f3bf481939f4f299fb909e9d6c4a8f7eb832a2fa1d585da7f8a",
-   "bytes": 363
-  },
-  "source/data/osm_history.xml": {
-   "sha256": "aef57977963d7f71efb75bd59a26fda1b536ebac582741bf36c6995a42bacbf0",
-   "bytes": 51849
-  },
-  "source/data/plaque.png": {
-   "sha256": "90e1d25bdb43bc8141805c97a0c7c33b00e5ca8530ba86408e3cf8d599b03a40",
-   "bytes": 12152
-  },
-  "source/data/position.json": {
-   "sha256": "85916af573dd763dea6856d8fdf8c08ec524cad21a92d52882d6ae69e0ef8638",
-   "bytes": 1893
-  },
-  "source/data/stats.json": {
-   "sha256": "52d77e10f382d8e1deea066f42de3ee0afcf8153499c6c40cbd36d9e0e8b4eb5",
-   "bytes": 1478
-  },
-  "source/refs/SOURCES.json": {
-   "sha256": "a3434334dc79a4758c586ee05d00df9ddb1b0ea981dcd39027005fd60ab10ec3",
-   "bytes": 2219
-  },
-  "source/refs/hachiko.jpg": {
-   "sha256": "19818d853f75af4eac10ebc974e123b2e14b9d50f99318247e7501c1c5536ca4",
-   "bytes": 4286557
-  },
-  "source/refs/july094.jpg": {
-   "sha256": "bcf5b33895fc22aeff13f0396a1a09f55af2ee11d486b4eb40e266fabc329533",
-   "bytes": 9448212
-  },
-  "source/refs/july095.jpg": {
-   "sha256": "9694141740dc56810cb4e6a5dbf5a98c3b2d4a139a468d71b175584709d13186",
-   "bytes": 10065544
-  },
-  "source/refs/july_metadata.json": {
-   "sha256": "3b6ec4612741fb1a1a348ef16b488899142f6f2f2ae9e83d7707ec8dcbfdf20e",
-   "bytes": 5770
-  },
-  "source/refs/metadata.json": {
-   "sha256": "7bec8449dfe239918146805de6ab72825ad1bb4e4d5ec967c99082dcbba86407",
-   "bytes": 4522
-  },
-  "source/tools/generate_surfaces.py": {
-   "sha256": "9f20340f70eeec3362f4fcb305eb0b6d9e33b93522b11e756af478e6270f8c9b",
-   "bytes": 784
-  },
-  "source/tools/write_manifest.py": {
-   "sha256": "d0514eef2266bf9ef97eea4bcb65758ad24aa8af0482211d40bf1934849a58c5",
-   "bytes": 1089
-  },
-  "web/hachiko.glb": {
-   "sha256": "2c9ee9e9903e5a1af8886a4454d5349c15e3c96883bc1010d1cad787b52ec2b0",
-   "bytes": 1540912
-  }
- }
 }

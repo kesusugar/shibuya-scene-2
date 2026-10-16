@@ -181,7 +181,7 @@ async function start() {
   if (coreStreet?.ok) scene.add(coreStreet.root);
   if (corePlaza?.ok) { scene.add(corePlaza.root); $('provisional').textContent += '／像周辺の敷石は写真から推定、寸法・敷設範囲は未測量'; }
   if (coreSurround?.ok) { scene.add(coreSurround.root); $('provisional').textContent += '／像周辺の石縁・レール・低木・石板は写真から試作、位置・寸法・10月状態・銘文は未確認'; }
-  if (coreHachiko?.ok) { scene.add(coreHachiko.root); $('provisional').textContent += '／ハチ公像と台座は写真から試作、寸法・向き・10月状態は未確認'; }
+  if (coreHachiko?.ok) { scene.add(coreHachiko.root); $('provisional').textContent += '／ハチ公スキャン：Maurice Svay／CC BY 4.0、寸法・向きは推定、撮影時点・2025年10月状態は未確認'; }
   if (coreDrainage?.ok) { scene.add(coreDrainage.root); $('provisional').textContent += '／円形路面蓋はM027から推定、用途・位置・寸法は未測量'; }
   if (coreTactile?.ok) { scene.add(coreTactile.root); $('provisional').textContent += '／点字ブロックは横断歩道端を基準にした部分試作、位置・接続先は推定'; }
   if (coreGround?.ok) { scene.add(coreGround.root); controls.setGround([coreGround.root]); }
