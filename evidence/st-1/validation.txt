@@ -1,0 +1,57 @@
+Full tests (existing budgets included):
+
+> shibuya-scene-2@0.1.0 test
+> npm run sync-assets && vitest run --maxWorkers=2
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin, east-mixeduse, eiraku, ekimae, fukuras, ginza-canopy, hikarie, magnet, mark-city, parco, plaza-kiosk, qfront, quattro, sakura-stage, scramble-square, shibu-hachi-box, shibuya109, station-concourse, station-north, station-service, station-southeast, station-west-viaduct, stream, takagi, west-block; ground: core, extension, exterior-east, exterior-middle, exterior-west; street: core, drainage, hachiko, hachiko-surround, plaza-facilities, plaza-finish, props, tactile, tactile-extra, tactile-links, tactile-outer; context: core
+
+ RUN  v5.0.3 C:/Users/keisuke.e.sato/box-1-terrace
+
+
+ Test Files  55 passed (55)
+      Tests  245 passed (245)
+   Start at  17:11:29
+   Duration  43.39s (tests 82%, import 11%, transform 6%, worker 1%)
+
+    Isolate  55 workers spawned · ~709ms startup each (spawn + environment, per file)
+             at least ~18.78s faster with isolate: false — reuses workers across files instead of one per file
+
+
+Production build (tsc included):
+
+> shibuya-scene-2@0.1.0 build
+> npm run sync-assets && tsc --noEmit && vite build
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin, east-mixeduse, eiraku, ekimae, fukuras, ginza-canopy, hikarie, magnet, mark-city, parco, plaza-kiosk, qfront, quattro, sakura-stage, scramble-square, shibu-hachi-box, shibuya109, station-concourse, station-north, station-service, station-southeast, station-west-viaduct, stream, takagi, west-block; ground: core, extension, exterior-east, exterior-middle, exterior-west; street: core, drainage, hachiko, hachiko-surround, plaza-facilities, plaza-finish, props, tactile, tactile-extra, tactile-links, tactile-outer; context: core
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 46 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  3.64 kB │ gzip:   1.75 kB
+dist/assets/index-xp8vCcdN.js  718.84 kB │ gzip: 187.28 kB
+✓ built in 1.99s
+
+Additional actual-ground regression (5 ST-1 tests passed):
+
+ RUN  v5.0.3 C:/Users/keisuke.e.sato/box-1-terrace
+
+
+ Test Files  1 passed (1)
+      Tests  5 passed (5)
+   Start at  17:15:04
+   Duration  1.02s (tests 53%, transform 28%, import 17%, worker 1%)
+
+
+Final typecheck after the additional test:
+
+> shibuya-scene-2@0.1.0 typecheck
+> tsc --noEmit

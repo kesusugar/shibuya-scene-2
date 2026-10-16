@@ -1,0 +1,59 @@
+[
+  {
+    "file": "fascia.zip",
+    "bytes": 3092991,
+    "sha256": "288b196a043f3edb21c0d9105e6e841433dff6500e1b6663e6eea0de8c7a1c9c",
+    "zipCRC": "all entries passed",
+    "safePaths": true,
+    "entries": [
+      "jr_hachiko_entrance_fascia_2025_v001/COMPARISON_OBSERVATIONS.md",
+      "jr_hachiko_entrance_fascia_2025_v001/MANIFEST.json",
+      "jr_hachiko_entrance_fascia_2025_v001/README.md",
+      "jr_hachiko_entrance_fascia_2025_v001/SELECTIVE_IMPORT.md",
+      "jr_hachiko_entrance_fascia_2025_v001/SOURCES_AND_UNCERTAINTIES.md",
+      "jr_hachiko_entrance_fascia_2025_v001/evidence/01_front_graphic_layout.png",
+      "jr_hachiko_entrance_fascia_2025_v001/evidence/02_oblique_shallow_return.png",
+      "jr_hachiko_entrance_fascia_2025_v001/evidence/03_JR_identity_detail.png",
+      "jr_hachiko_entrance_fascia_2025_v001/model/jr_hachiko_entrance_fascia_2025_v001.blend",
+      "jr_hachiko_entrance_fascia_2025_v001/model/jr_hachiko_entrance_fascia_2025_v001.glb",
+      "jr_hachiko_entrance_fascia_2025_v001/placement.json",
+      "jr_hachiko_entrance_fascia_2025_v001/references/reference_locators.json",
+      "jr_hachiko_entrance_fascia_2025_v001/source/FONT_LICENSE.txt",
+      "jr_hachiko_entrance_fascia_2025_v001/source/build_fascia.py",
+      "jr_hachiko_entrance_fascia_2025_v001/source/validate_fascia.py",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/REVIEW.md",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/build.log",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/build_stats.json",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/clean_regeneration.log",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/clean_regeneration_stats.json",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/source_freeze.sha256",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/source_freeze_utc.txt",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/timings.json",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/validation.json",
+      "jr_hachiko_entrance_fascia_2025_v001/validation/validation.log"
+    ],
+    "manifestFilesVerified": 24
+  },
+  {
+    "file": "pier.zip",
+    "bytes": 1188582,
+    "sha256": "c01a76b86bc217de5e5b000f8291423005f76aa0e035a2515f08f751351a5671",
+    "zipCRC": "all entries passed",
+    "safePaths": true,
+    "entries": [
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/MANIFEST.json",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/README.md",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/SOURCES_AND_ESTIMATES.md",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/evidence/front_oblique.png",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/model/jr_miyamasuzaka_visible_centre_pier_20250409_v001.blend",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/model/jr_miyamasuzaka_visible_centre_pier_20250409_v001.glb",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/source/build_centre_pier.py",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/source/check_glb.py",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/validation/build.log",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/validation/build_stats.json",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/validation/glb_checks.json",
+      "jr_miyamasuzaka_visible_centre_pier_20250409_v001/validation/regeneration.log"
+    ],
+    "manifestFilesVerified": 11
+  }
+]

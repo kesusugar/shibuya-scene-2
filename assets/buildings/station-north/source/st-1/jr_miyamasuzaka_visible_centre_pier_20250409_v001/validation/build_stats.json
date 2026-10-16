@@ -1,0 +1,30 @@
+{
+  "blender_version": "4.2.3 LTS",
+  "asset": "jr_miyamasuzaka_visible_centre_pier_20250409_v001",
+  "asset_objects": 1,
+  "triangles": 68,
+  "materials": 3,
+  "textures": 0,
+  "blender_bounds_m": [
+    [
+      -1.1,
+      -0.1,
+      0
+    ],
+    [
+      1.1,
+      0.1,
+      4.2
+    ]
+  ],
+  "nominal_width_height_depth_m": [
+    2.2,
+    4.2,
+    0.2
+  ],
+  "origin": "bottom-centre (0,0,0)",
+  "blender_front": "-Y",
+  "gltf_front": "+Z",
+  "geometry": "Open front + right return surface shell; double-sided materials; intentionally not watertight",
+  "rendered": true
+}

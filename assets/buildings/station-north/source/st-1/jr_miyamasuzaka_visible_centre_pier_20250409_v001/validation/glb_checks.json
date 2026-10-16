@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "glb_sha256": "249c5e05abfbdeacd5e87b98456057bedde5f7897764db1bc25534a72aeef0d5",
+  "glb_bytes": 6732,
+  "triangles": 68,
+  "actual_position_bounds_gltf_m": [
+    [
+      -1.100000023841858,
+      0.0,
+      -0.10000000149011612
+    ],
+    [
+      1.100000023841858,
+      4.199999809265137,
+      0.10000000149011612
+    ]
+  ],
+  "surface_area_m2": 10.079999755024902,
+  "minimum_triangle_area_m2": 0.003769226949948745,
+  "mesh_objects": 1,
+  "materials": 3,
+  "double_sided": true,
+  "image_textures": 0,
+  "external_uris": 0,
+  "unapplied_node_transforms": 0,
+  "checks": [
+    "GLB container and buffers",
+    "actual finite position arrays",
+    "index bounds and nonzero triangle areas",
+    "nominal envelope and ground contact",
+    "front + return total surface area",
+    "single asset node; no studio export",
+    "no image texture/external URI/animation/skin",
+    "double-sided open shell"
+  ],
+  "clean_regeneration": {
+    "passed": true,
+    "runs_after_final_geometry": 1,
+    "blender_version": "4.2.3 LTS",
+    "render_skipped_on_regeneration": true,
+    "regenerated_glb_sha256": "249c5e05abfbdeacd5e87b98456057bedde5f7897764db1bc25534a72aeef0d5",
+    "byte_identical_glb": true
+  },
+  "source_sha256": "be5a407b878f2141087131d9365dcb285502bcb638f7878708947f7606d12c46"
+}

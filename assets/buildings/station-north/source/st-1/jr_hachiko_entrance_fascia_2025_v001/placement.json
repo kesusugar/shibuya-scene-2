@@ -1,0 +1,19 @@
+{
+  "asset_id": "H-CV-002",
+  "status": "UNPLACED_PARTIAL_CANDIDATE",
+  "world_transform": null,
+  "origin": "bottom centre of full fascia envelope",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y",
+    "horizontal": "+X"
+  },
+  "dimensions_estimated_m": [
+    4.8,
+    0.202,
+    1.12
+  ],
+  "state": "early2025_after_2025-01-26_relocation",
+  "presence_2026": "unverified",
+  "full_entry_status": "HOLD"
+}

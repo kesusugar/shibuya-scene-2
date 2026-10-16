@@ -7,5 +7,41 @@
       0.86
     ],
     "estr": 0.8
+  },
+  "pale_face_rim_and_white_graphics": {
+    "kind": "sign",
+    "emit": [
+      0,
+      0,
+      0
+    ],
+    "estr": 1
+  },
+  "DATED_entrance_only_red": {
+    "kind": "sign",
+    "emit": [
+      0,
+      0,
+      0
+    ],
+    "estr": 1
+  },
+  "JR_green_field": {
+    "kind": "sign",
+    "emit": [
+      0,
+      0,
+      0
+    ],
+    "estr": 1
+  },
+  "station_dark_letters": {
+    "kind": "sign",
+    "emit": [
+      0,
+      0,
+      0
+    ],
+    "estr": 1
   }
 }

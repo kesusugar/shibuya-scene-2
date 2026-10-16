@@ -17,3 +17,24 @@ blender -b --python-exit-code 1 -t 4 -P assets/buildings/station-north/source/bl
 通常表示に追加し、`context=nostation`で駅側二資産を除外。推定箇所の注記は通常のHUDで表示する。
 
 検証・前後画像・残る差は[報告](../../../docs/core/C1_STATION_NORTH_REPORT.md)。996三角形、9描画単位、68,400 bytes。
+
+## ST-1：年代付き入口看板と柱の外装表面
+
+PR80後の取り込み。既存構造GLBはそのまま保持し、東側の駅壁面へ看板と中央柱の浅い表面を
+追加する。公共の高架下通行部には置かない。看板はsignsレイヤー、柱はwallレイヤー。
+資料の時点・出典・推定位置・底辺の地面合わせ・比較・残る開口の制約は
+[ST-1報告](../../../docs/core/ST_1_REPORT.md)を参照。
+
+上の996三角形等は初期版の記録。現在の本体＋2表面は5,683三角形／27プリミティブ／319,236 bytes。
+既存のB予算は変更しない。看板下の既存壁は残り、入口全体や内部を再現したとは扱わない。
+
+リポジトリだけでST-1配信GLBと設定・manifestを再生成する：
+
+```sh
+node scripts/build-st-1.mjs
+npx vitest run tests/st-1.test.ts tests/budget.test.ts
+npm run build
+```
+
+既存のBlender本体を再生成した場合も、その後に上記Nodeコマンドを実行してレイヤーと昼夜テーブルを復元する。
+元候補そのものの再生成は `source/st-1/README.md` を参照。原本の写真やスタジオを通常表示へ追加しない。

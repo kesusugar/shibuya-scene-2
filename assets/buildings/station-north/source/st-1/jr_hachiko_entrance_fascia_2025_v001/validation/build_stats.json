@@ -1,0 +1,97 @@
+{
+  "asset_id": "H-CV-002",
+  "blender_version": "4.2.3 LTS",
+  "mesh_objects": 13,
+  "materials": 4,
+  "dimensions_m": [
+    4.800000190734863,
+    0.20200000703334808,
+    1.1200000047683716
+  ],
+  "bounds_min_blender_xyz_m": [
+    -2.4000000953674316,
+    -0.10100000351667404,
+    0.0
+  ],
+  "bounds_max_blender_xyz_m": [
+    2.4000000953674316,
+    0.10100000351667404,
+    1.1200000047683716
+  ],
+  "root_identity": true,
+  "mesh_transforms_identity": true,
+  "world_transform": null,
+  "source_photo_bytes": false,
+  "texture_images": 0,
+  "estimated_dimensions": true,
+  "source_state": "early2025",
+  "2026_presence": "unverified",
+  "vertices": 1463,
+  "triangles": 1429,
+  "degenerate_triangles": 0,
+  "planar_graphics_open_boundary_intentional": true,
+  "text_layout": [
+    {
+      "object": "JR_East_caption",
+      "text": "JR東日本",
+      "bounds_xmin_xmax_zmin_zmax_m": [
+        -1.72,
+        -1.035,
+        0.172,
+        0.315
+      ],
+      "layer": "permanent",
+      "font": "Renamed Noto Sans CJK Bold JP subset; typographic approximation"
+    },
+    {
+      "object": "Shibuya_station_Japanese",
+      "text": "渋谷駅",
+      "bounds_xmin_xmax_zmin_zmax_m": [
+        -0.325,
+        1.83,
+        0.46,
+        0.975
+      ],
+      "layer": "permanent",
+      "font": "Renamed Noto Sans CJK Bold JP subset; typographic approximation"
+    },
+    {
+      "object": "DATED_2025_entry_only_Japanese",
+      "text": "入口専用",
+      "bounds_xmin_xmax_zmin_zmax_m": [
+        -0.215,
+        0.925,
+        0.11,
+        0.355
+      ],
+      "layer": "dated_2025_operating_restriction",
+      "font": "Renamed Noto Sans CJK Bold JP subset; typographic approximation"
+    },
+    {
+      "object": "DATED_2025_ENTRANCE",
+      "text": "ENTRANCE",
+      "bounds_xmin_xmax_zmin_zmax_m": [
+        1.005,
+        1.79,
+        0.235,
+        0.345
+      ],
+      "layer": "dated_2025_operating_restriction",
+      "font": "Renamed Noto Sans CJK Bold JP subset; typographic approximation"
+    },
+    {
+      "object": "DATED_2025_ONLY",
+      "text": "ONLY",
+      "bounds_xmin_xmax_zmin_zmax_m": [
+        1.005,
+        1.36,
+        0.105,
+        0.215
+      ],
+      "layer": "dated_2025_operating_restriction",
+      "font": "Renamed Noto Sans CJK Bold JP subset; typographic approximation"
+    }
+  ],
+  "elapsed_build_seconds": 36.916,
+  "render_count": 3
+}
