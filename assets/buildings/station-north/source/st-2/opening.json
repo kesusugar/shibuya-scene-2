@@ -1,0 +1,27 @@
+{
+  "main": "ecd30e7",
+  "baseline": "station-north-pr82.glb",
+  "baselineSha256": "ecd9095e10082dd166ef2291df775532d4b5019390b4094abaa1b7c551644649",
+  "targetNode": "stn_concrete",
+  "targetPrimitive": 0,
+  "targetTriangles": [
+    0,
+    507
+  ],
+  "wallPlaneZ": -0.04,
+  "planeTolerance": 0.003,
+  "xMin": -2.6,
+  "xMax": 2.6,
+  "bottomY": -0.1,
+  "topY": 6.6,
+  "depth": 0.7,
+  "reference": {
+    "officialIdentity": "https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/shibuya/koban/06.html",
+    "officialMapPoiLatLon": [
+      35.6592949,
+      139.70103
+    ],
+    "basis": "Official POI is near the northwest station corner. April P1/P2 show plaza-facing facade south of the west public underpass. PLATEAU west face north bay selected; POI is not a surveyed facade anchor.",
+    "estimated": "Mount is 3.1m south along west face, width 5.2m and height 6.6m nominal. Depth and opaque closure are estimated, not an interior."
+  }
+}

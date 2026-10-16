@@ -1,0 +1,92 @@
+{
+  "main": "ecd30e7",
+  "baseline": "station-north-pr82.glb",
+  "baselineSha256": "ecd9095e10082dd166ef2291df775532d4b5019390b4094abaa1b7c551644649",
+  "outputSha256": "84f62b1df336d1556bc4233c1f81f816ceffa78f676acd0c622ae2e1e896b995",
+  "targetNode": "stn_concrete",
+  "targetPrimitive": 0,
+  "originalTriangles": 756,
+  "outputTriangles": 762,
+  "originalVertexCount": 1770,
+  "appendedVertices": 18,
+  "cuts": [
+    {
+      "triangle": 0,
+      "originalIndices": [
+        0,
+        2,
+        3
+      ],
+      "removedArea": 3.279967493721955
+    },
+    {
+      "triangle": 507,
+      "originalIndices": [
+        0,
+        1,
+        2
+      ],
+      "removedArea": 29.89603249233057
+    }
+  ],
+  "removedArea": 33.175999986052524,
+  "depth": 0.7,
+  "worldMatrix": [
+    0.10327939355576786,
+    0,
+    0.9946523849399612,
+    0,
+    0,
+    1,
+    0,
+    0,
+    -0.9946523849399612,
+    0,
+    0.10327939355576786,
+    0,
+    48.04438002462529,
+    -0.34,
+    23.175553569056113,
+    1
+  ],
+  "addedTriangles": 8,
+  "addedPrimitives": 2,
+  "noFloorOrWalkSurfaceAdded": true,
+  "collisionCodeUnchanged": true,
+  "walkableEntrance": false,
+  "reference": {
+    "officialIdentity": "https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/shibuya/koban/06.html",
+    "officialMapPoiLatLon": [
+      35.6592949,
+      139.70103
+    ],
+    "basis": "Official POI is near the northwest station corner. April P1/P2 show plaza-facing facade south of the west public underpass. PLATEAU west face north bay selected; POI is not a surveyed facade anchor.",
+    "estimated": "Mount is 3.1m south along west face, width 5.2m and height 6.6m nominal. Depth and opaque closure are estimated, not an interior."
+  },
+  "additionalCuts": [
+    {
+      "targetNode": "stn_hoarding",
+      "targetPrimitive": 0,
+      "cuts": [
+        {
+          "triangle": 0,
+          "originalIndices": [
+            1,
+            3,
+            0
+          ],
+          "removedArea": 1.6080958368391336
+        },
+        {
+          "triangle": 3,
+          "originalIndices": [
+            1,
+            2,
+            3
+          ],
+          "removedArea": 13.99190474430616
+        }
+      ]
+    }
+  ]
+}

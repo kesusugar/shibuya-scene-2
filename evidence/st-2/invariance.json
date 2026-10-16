@@ -1,0 +1,100 @@
+{
+  "main": "ecd30e7",
+  "protected": [
+    {
+      "path": "assets/buildings/qfront/web/qfront.glb",
+      "sha256": "2b4e4dccb8b68c97e3981ca1999d0c459bd3524aaa6b903901f3085b22a6ea04",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/shibu-hachi-box/web/exterior-display-clock.glb",
+      "sha256": "33d040e681bcb5b222ef86e78abbe56ab22d3a8dbd63ca0921f2b4eb0cbb274b",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/shibu-hachi-box/web/exterior-fun-project.glb",
+      "sha256": "bc4d71d7cda387e8d1bbd9f51cf99d80ced25321ed93370c822addf880726983",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/shibu-hachi-box/web/exterior-roof-circle.glb",
+      "sha256": "88156e405b1a61c70a740117cac3d179eb463632a344db150f9c6d44073e9330",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/shibu-hachi-box/web/exterior-roof-dog.glb",
+      "sha256": "3396e47566a223005ba22795a87e219d2dcea234be5e066a78c338143112fedb",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/shibu-hachi-box/web/exterior-roof-name.glb",
+      "sha256": "8dffc800f5a208049cdfb607ca1a4c96e230ef9004490ca7befb6c9a790a56b6",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/shibu-hachi-box/web/exterior-roof-sponsor.glb",
+      "sha256": "69668c1028d9fd7d33e9203c79486139537b169a6a00b08ce235c85cd36dd6ba",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/shibu-hachi-box/web/shibu-hachi-box.glb",
+      "sha256": "c1b262ee107e8b46baad917f30aff885420a8ac611f071b67469b542a18f7a5e",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/street/hachiko/web/hachiko.glb",
+      "sha256": "0d68077edad1fc24858cdb9c42001439488728fc2e4779676ee3f0e3e821077e",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/ground/exterior-west/web/exterior-west.glb",
+      "sha256": "91917a924149b3612be1067b7475dd903d7bbcb898a88fc814ec1870760e50d1",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/ground/exterior-middle/web/exterior-middle.glb",
+      "sha256": "239ca2294bd01cdb6b29e39375c34e7b8ac9c1d32f7aa0a072540b28c566dae7",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/ground/exterior-east/web/exterior-east.glb",
+      "sha256": "8866e25dee5e72034f42c68384d0a4d4e8a977ad13b368e3ead440158a827ff2",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/ground/extension/web/extension.glb",
+      "sha256": "86e58b050106eb2fcf55997971395688b75d313f8f16c167eaaed2f8556e88ad",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/ground/core/web/ground_core.glb",
+      "sha256": "37755dd24d3fe78418b3133210a6dc05ebe2c3c2f615b5a8bd22a4db6279dd32",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/station-north/web/signs-jr-entry-early-2025.glb",
+      "sha256": "8042b6da74206aa8bedc91a59901c0c6ad988052d51872c61a6f6c30814fa1a0",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/station-north/web/wall-jr-centre-pier-2025-04-09.glb",
+      "sha256": "bf659fd8932bb1cfb155df4cf5dff7ce3eb5ef3281034ce81c655d195d315c2f",
+      "identicalToMain": true
+    },
+    {
+      "path": "assets/buildings/plaza-kiosk/web/plaza-kiosk.glb",
+      "sha256": "2549efd51358019454410b77cf31ad00b9c5b5841e030566f38418331f88f41a",
+      "identicalToMain": true
+    }
+  ],
+  "unchangedCodeAndGround": [
+    "src/controls",
+    "src/perf/benchmark.ts",
+    "src/perf/frame-stats.ts",
+    "src/world/look.ts",
+    "assets/ground",
+    "assets/context",
+    "assets/buildings/shibu-hachi-box"
+  ],
+  "budgetChange": "ASSET_LEVEL registration only; existing level and scene caps unchanged"
+}

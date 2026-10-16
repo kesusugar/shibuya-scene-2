@@ -8,19 +8,19 @@
   "source_levels": {
     "north_canopy": "B prototype; positions estimated",
     "southern_facility": "C preserved, October facade unconfirmed",
-    "JR_bridge": "PR81 source preserved; only the entrance wall patch is locally derived"
+    "JR_bridge": "PR81 and PR82 sources preserved; bounded east JR entry and west policebox facade patches only"
   },
   "reference_era": "2025-10-11",
   "absolute_datum_tp_m": 15,
   "stats": {
-    "triangles": 5697,
-    "primitives": 29,
-    "bytes": 321264
+    "triangles": 5715,
+    "primitives": 31,
+    "bytes": 324204
   },
   "files": {
     "README.md": {
-      "bytes": 3560,
-      "sha256": "fba5d35d2d5af08e0bbda367aef76f7b8416d5dfd6e23a3a514d9dad3f865795"
+      "bytes": 4021,
+      "sha256": "9f4f336d8e5f7fb69e7158d58bbb67d80e2d9be0d082f829c69cd5a6205743ec"
     },
     "source/blender/build_station_north.py": {
       "bytes": 8790,
@@ -48,7 +48,7 @@
     },
     "source/st-1/build-report.json": {
       "bytes": 4167,
-      "sha256": "b7e0d06a285fe67b7e68706a34d934d76510709fb7157a19eca99c9f54aca5c9"
+      "sha256": "bdc2ecfda4d737e4fec08ba70ab044bed4b04141bd055044daea43655677c635"
     },
     "source/st-1/delivery-verification.json": {
       "bytes": 3432,
@@ -178,6 +178,22 @@
       "bytes": 242376,
       "sha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09"
     },
+    "source/st-2/build-report.json": {
+      "bytes": 2209,
+      "sha256": "b4d08d481e62298f34152716f111029efe1bbf3aa22ff30b419441bea951280d"
+    },
+    "source/st-2/opening.json": {
+      "bytes": 962,
+      "sha256": "439673637f3251cafa7b821636fc2647e259c518a40fa5c849a614f9d198e104"
+    },
+    "source/st-2/README.md": {
+      "bytes": 1097,
+      "sha256": "cd86c615e8ed8a68969e9d61f4bf254aca24f082cdd8f5d95d6cc0b96ad8b576"
+    },
+    "source/st-2/station-north-pr82.glb": {
+      "bytes": 244404,
+      "sha256": "ecd9095e10082dd166ef2291df775532d4b5019390b4094abaa1b7c551644649"
+    },
     "web/emissive_day.json": {
       "bytes": 583,
       "sha256": "ca33918bed548baca2aa88c94e61a04e5e6189b0a6dbe89f749b122d627c5052"
@@ -191,8 +207,8 @@
       "sha256": "8042b6da74206aa8bedc91a59901c0c6ad988052d51872c61a6f6c30814fa1a0"
     },
     "web/station-north.glb": {
-      "bytes": 244404,
-      "sha256": "ecd9095e10082dd166ef2291df775532d4b5019390b4094abaa1b7c551644649"
+      "bytes": 247344,
+      "sha256": "84f62b1df336d1556bc4233c1f81f816ceffa78f676acd0c622ae2e1e896b995"
     },
     "web/viewer.json": {
       "bytes": 263,
@@ -206,7 +222,7 @@
   "st1": {
     "status": "estimated shallow exterior fit; dated fascia and wall cladding only",
     "main": "c33be62",
-    "bodySha256": "ecd9095e10082dd166ef2291df775532d4b5019390b4094abaa1b7c551644649",
+    "bodySha256": "84f62b1df336d1556bc4233c1f81f816ceffa78f676acd0c622ae2e1e896b995",
     "bodyUnchanged": false,
     "originalBodySha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09",
     "openingReport": "source/st-1-opening/build-report.json",
@@ -450,5 +466,97 @@
       "confirmed": "Opening below left entrance-only fascia and left of the same pale centre pier. Vertical side returns visible.",
       "estimated": "Metric opening width/height inherit nominal fascia and ST-1 placement; exact jamb thickness, geographic mount, depth and hidden back wall unmeasured."
     }
+  },
+  "st2Opening": {
+    "main": "ecd30e7",
+    "baseline": "station-north-pr82.glb",
+    "baselineSha256": "ecd9095e10082dd166ef2291df775532d4b5019390b4094abaa1b7c551644649",
+    "outputSha256": "84f62b1df336d1556bc4233c1f81f816ceffa78f676acd0c622ae2e1e896b995",
+    "targetNode": "stn_concrete",
+    "targetPrimitive": 0,
+    "originalTriangles": 756,
+    "outputTriangles": 762,
+    "originalVertexCount": 1770,
+    "appendedVertices": 18,
+    "cuts": [
+      {
+        "triangle": 0,
+        "originalIndices": [
+          0,
+          2,
+          3
+        ],
+        "removedArea": 3.279967493721955
+      },
+      {
+        "triangle": 507,
+        "originalIndices": [
+          0,
+          1,
+          2
+        ],
+        "removedArea": 29.89603249233057
+      }
+    ],
+    "removedArea": 33.175999986052524,
+    "depth": 0.7,
+    "worldMatrix": [
+      0.10327939355576786,
+      0,
+      0.9946523849399612,
+      0,
+      0,
+      1,
+      0,
+      0,
+      -0.9946523849399612,
+      0,
+      0.10327939355576786,
+      0,
+      48.04438002462529,
+      -0.34,
+      23.175553569056113,
+      1
+    ],
+    "addedTriangles": 8,
+    "addedPrimitives": 2,
+    "noFloorOrWalkSurfaceAdded": true,
+    "collisionCodeUnchanged": true,
+    "walkableEntrance": false,
+    "reference": {
+      "officialIdentity": "https://www.keishicho.metro.tokyo.lg.jp/about_mpd/shokai/ichiran/kankatsu/shibuya/koban/06.html",
+      "officialMapPoiLatLon": [
+        35.6592949,
+        139.70103
+      ],
+      "basis": "Official POI is near the northwest station corner. April P1/P2 show plaza-facing facade south of the west public underpass. PLATEAU west face north bay selected; POI is not a surveyed facade anchor.",
+      "estimated": "Mount is 3.1m south along west face, width 5.2m and height 6.6m nominal. Depth and opaque closure are estimated, not an interior."
+    },
+    "additionalCuts": [
+      {
+        "targetNode": "stn_hoarding",
+        "targetPrimitive": 0,
+        "cuts": [
+          {
+            "triangle": 0,
+            "originalIndices": [
+              1,
+              3,
+              0
+            ],
+            "removedArea": 1.6080958368391336
+          },
+          {
+            "triangle": 3,
+            "originalIndices": [
+              1,
+              2,
+              3
+            ],
+            "removedArea": 13.99190474430616
+          }
+        ]
+      }
+    ]
   }
 }

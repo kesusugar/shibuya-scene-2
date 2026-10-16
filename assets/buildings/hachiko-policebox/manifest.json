@@ -1,0 +1,89 @@
+{
+  "id": "hachiko-policebox",
+  "level": "B",
+  "sourceDate": "2025-04-09",
+  "status": "shallow visible facade; all metric dimensions and placement estimated; no interior",
+  "stats": {
+    "triangles": 12088,
+    "primitives": 11,
+    "bytes": 549056
+  },
+  "files": {
+    "README.md": {
+      "bytes": 2521,
+      "sha256": "33e86b15856dcf67fce936b7031544425ba4b51b1f9ebcce2c50d0c52a00c776"
+    },
+    "source/st-2/build-report.json": {
+      "bytes": 4984,
+      "sha256": "1fc10250ba32a19b0bb02bb4994d3345aaf54a26f396ddcbaa99d0ba6cbd6376"
+    },
+    "source/st-2/delivery-verification.json": {
+      "bytes": 5713,
+      "sha256": "430c55326006c454e3989589b54d99863b8ad78d98560a6e027adfea568b4733"
+    },
+    "source/st-2/estimated_dimensions.json": {
+      "bytes": 7534,
+      "sha256": "9925dc7123136c51e55327a038a43dec29d9b2e1999b4f165954160aef8a12b4"
+    },
+    "source/st-2/generate_policebox.py": {
+      "bytes": 20735,
+      "sha256": "7865fc7120cce23c508a8baa1d3a46756fc885cfa7dd661071b0a68792830392"
+    },
+    "source/st-2/glb_validation.json": {
+      "bytes": 631,
+      "sha256": "3996bac8b6c29caf3201f5d07192cb394f811b9b457dea1b07d9005a4ec82ff0"
+    },
+    "source/st-2/MANIFEST.sha256": {
+      "bytes": 1617,
+      "sha256": "bef488319d1242bbf3c8c93890ce13fdf9f2f6dc2723f2360c46790ba41985a2"
+    },
+    "source/st-2/mesh_audit.json": {
+      "bytes": 24487,
+      "sha256": "38b515b0525bc95e738cea6a6635442bb9b766243a4cc225f295dcb4e32dc615"
+    },
+    "source/st-2/placement.json": {
+      "bytes": 912,
+      "sha256": "d37fc7ec431d26f191505618b163ba3ba4714a61312c5d1bf902c9663581b73b"
+    },
+    "source/st-2/policebox_visible_facade_2025_v001.glb": {
+      "bytes": 522776,
+      "sha256": "f7d20e04dcc39e67f42acb48656424dcb37ef9fcc17cde7ff6b1b90a0810bc24"
+    },
+    "source/st-2/README.md": {
+      "bytes": 5111,
+      "sha256": "810371ae6f072b98054dda7954d778c860cced630ff8d53558ff5f76662cb31e"
+    },
+    "source/st-2/SOURCE_REGISTER.md": {
+      "bytes": 3684,
+      "sha256": "db90c19a820c4afa77c3d3890da3adaf148fab77bc83aba338227037308b9d55"
+    },
+    "source/st-2/validate_glb.py": {
+      "bytes": 3562,
+      "sha256": "eaba1bbca08e5305ba65b71998d5c92ab8be8c58a94ba5e773830460c4226c0c"
+    },
+    "source/st-2/VERIFICATION.md": {
+      "bytes": 4419,
+      "sha256": "539d3b3844bdd7861fee1e0ea37b66b63ef65820e511c1e5a8f8dcbe3ac123c2"
+    },
+    "web/emissive_day.json": {
+      "bytes": 128,
+      "sha256": "39141cd54a74afba2fd1115c41fc033d6f347afa0e36f9eba1c60d8229e2ac17"
+    },
+    "web/emissive_night.json": {
+      "bytes": 128,
+      "sha256": "39141cd54a74afba2fd1115c41fc033d6f347afa0e36f9eba1c60d8229e2ac17"
+    },
+    "web/hachiko-policebox.glb": {
+      "bytes": 499040,
+      "sha256": "47326b69a029728ef295dfd93b135d1c4bd00860839d1f1f74e4b4368acee9e6"
+    },
+    "web/signs-2025-04-09.glb": {
+      "bytes": 50016,
+      "sha256": "78c6e86d7fcdd3afedbea559dc87717cc06b2acb27272d028d21ac75e0836461"
+    },
+    "web/viewer.json": {
+      "bytes": 152,
+      "sha256": "ee6aec7423c0c5cd0a45c45e83a83cbdc5fd19edd6e18aa3a9c1bdcf9ad9d678"
+    }
+  }
+}

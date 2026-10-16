@@ -1,0 +1,866 @@
+{
+  "asset_id": "policebox_visible_facade_2025_v001",
+  "status": "EXTERIOR_ONLY_ESTIMATED_UNPLACED",
+  "blender_version": "4.2.3 LTS",
+  "reference_date": "2025-04-09",
+  "units": "estimated meters",
+  "bounds_blender_xyz": {
+    "min": [
+      -2.6000001430511475,
+      -1.1169999837875366,
+      0.0
+    ],
+    "max": [
+      2.6000001430511475,
+      1.0299999713897705,
+      6.639999866485596
+    ],
+    "size": [
+      5.200000286102295,
+      2.146999955177307,
+      6.639999866485596
+    ]
+  },
+  "export_object_count": 92,
+  "evaluated_vertices": 6822,
+  "evaluated_faces": 6078,
+  "evaluated_triangles": 12196,
+  "zero_area_faces": [],
+  "negative_volume_closed_objects": [],
+  "band_front_interface_gap_m": 0.0,
+  "band_interface_overlap_note": "Top cap of lower band and bottom cap of upper band omitted. One rear thickness transition; no overlapping interface caps. Small front rail intentionally covers seam.",
+  "minimum_broad_front_normal_dot_outward": 0.9999998211860657,
+  "source_visible_object_count": 80,
+  "estimated_closure_object_count": 12,
+  "components": [
+    {
+      "name": "01 | Wide silver canopy",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 3.392792207164976
+    },
+    {
+      "name": "02 | Left upper return",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.18677028817232658
+    },
+    {
+      "name": "02 | Right visible return",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.3562843100874379
+    },
+    {
+      "name": "03 | Canopy panel seam 00",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 8.925000603403908e-06
+    },
+    {
+      "name": "03 | Canopy panel seam 01",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 8.925000603403908e-06
+    },
+    {
+      "name": "03 | Canopy panel seam 02",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 8.925000603403908e-06
+    },
+    {
+      "name": "03 | Canopy panel seam 03",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 8.925000603403908e-06
+    },
+    {
+      "name": "03 | Canopy panel seam 04",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 8.925000603403908e-06
+    },
+    {
+      "name": "03 | Right surround panel seam 3.42",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.227999855071301e-06
+    },
+    {
+      "name": "03 | Right surround panel seam 4.12",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.227999855071301e-06
+    },
+    {
+      "name": "03 | Right surround panel seam 4.85",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.227999855071301e-06
+    },
+    {
+      "name": "03 | Right surround panel seam 5.53",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.227999855071301e-06
+    },
+    {
+      "name": "04 | Canopy visible underside rail",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.005078157282146112
+    },
+    {
+      "name": "04 | Canopy visible underside rail.001",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.005078157282146112
+    },
+    {
+      "name": "10 | Bowed silver lower fascia",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 74,
+      "triangles": 148,
+      "closed_manifold": false,
+      "signed_volume_if_closed": null
+    },
+    {
+      "name": "11 | Bowed pale-green upper band",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 74,
+      "triangles": 148,
+      "closed_manifold": false,
+      "signed_volume_if_closed": null
+    },
+    {
+      "name": "13 | Fine horizontal lining 01",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421692626e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 02",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421696795e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 03",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421693563e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 04",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421699591e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 05",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421701884e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 06",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.44847642170976e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 07",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.4484764217028e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 08",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421695812e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 09",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421696316e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 10",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421696772e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 11",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421693535e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 12",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421682921e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 13",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421692657e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 14",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.44847642168201e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 15",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.44847642167878e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 16",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421686672e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 17",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421687106e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 18",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421700529e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 19",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421686195e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 20",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421690337e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 21",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421690857e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 22",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421687605e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 23",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421684352e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 24",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421692224e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 25",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421685306e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 26",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421678324e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 27",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421682552e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 28",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421679278e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 29",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421690857e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 30",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421683893e-05
+    },
+    {
+      "name": "13 | Fine horizontal lining 31",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 6.448476421688078e-05
+    },
+    {
+      "name": "14 | Upper band perimeter rail",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.006721874643610663
+    },
+    {
+      "name": "14 | Clean shared band rail",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 100,
+      "faces": 98,
+      "triangles": 196,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.0006648660720563832
+    },
+    {
+      "name": "15 | Frontage mullion 00",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00044512966767598926
+    },
+    {
+      "name": "15 | Frontage mullion 01",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00044512966767598926
+    },
+    {
+      "name": "15 | Frontage mullion 02",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00044512966767598926
+    },
+    {
+      "name": "15 | Frontage mullion 03",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00044512966767598926
+    },
+    {
+      "name": "15 | Frontage mullion 04",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00044512966767598926
+    },
+    {
+      "name": "15 | Frontage mullion 05",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00044512966767598926
+    },
+    {
+      "name": "15 | Frontage mullion 06",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00044512966767598926
+    },
+    {
+      "name": "16 | Silver fascia panel joint 00",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 1.6240000805333245e-05
+    },
+    {
+      "name": "16 | Silver fascia panel joint 01",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 1.6240000805333245e-05
+    },
+    {
+      "name": "16 | Silver fascia panel joint 02",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 1.6240000805333245e-05
+    },
+    {
+      "name": "16 | Silver fascia panel joint 03",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 1.6240000805333245e-05
+    },
+    {
+      "name": "16 | Silver fascia panel joint 04",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 1.6240000805333245e-05
+    },
+    {
+      "name": "20 | Observed upper-left support",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.2247440454738124
+    },
+    {
+      "name": "21 | Lower right support visible below red strip",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.23401471693828846
+    },
+    {
+      "name": "21 | Lower right support red strip",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.013765571403614325
+    },
+    {
+      "name": "21 | Lower right support visible above red strip",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.06882785599245665
+    },
+    {
+      "name": "23 | Lower left support visible below red strip",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.0749146867860076
+    },
+    {
+      "name": "23 | Lower left support red strip",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.012485780820913554
+    },
+    {
+      "name": "23 | Lower left support visible above red strip",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.0624289031743046
+    },
+    {
+      "name": "30 | Upper aperture left jamb",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.008653264058057285
+    },
+    {
+      "name": "30 | Upper aperture right jamb",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.008653264058057285
+    },
+    {
+      "name": "30 | Upper aperture horizontal frame",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.021042489412489117
+    },
+    {
+      "name": "30 | Upper aperture horizontal frame.001",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.021042489412489117
+    },
+    {
+      "name": "31 | Upper aperture mullion",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.006333849455095974
+    },
+    {
+      "name": "31 | Upper aperture mullion.001",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.006333849455095974
+    },
+    {
+      "name": "32 | Flat upper aperture pane 0",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.026729999911487057
+    },
+    {
+      "name": "32 | Flat upper aperture pane 1",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.026729999911487057
+    },
+    {
+      "name": "32 | Flat upper aperture pane 2",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 8,
+      "faces": 6,
+      "triangles": 12,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.026729999911487057
+    },
+    {
+      "name": "50 | Separate plain KOBAN sign",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.030684539044840066
+    },
+    {
+      "name": "50 | Plain sign inset",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.0015818697958423274
+    },
+    {
+      "name": "51 | Plain KOBAN lettering, not exact artwork",
+      "scope": "SOURCE_VISIBLE_20250409",
+      "vertices": 936,
+      "faces": 698,
+      "triangles": 932,
+      "closed_manifold": false,
+      "signed_volume_if_closed": null
+    },
+    {
+      "name": "12 | Hidden band thickness transition",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 50,
+      "faces": 24,
+      "triangles": 48,
+      "closed_manifold": false,
+      "signed_volume_if_closed": null
+    },
+    {
+      "name": "22 | Lower right support hidden foot continuation",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.06882785599245665
+    },
+    {
+      "name": "24 | Lower left support crowd-hidden continuation",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 64,
+      "faces": 34,
+      "triangles": 124,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.19977249313461687
+    },
+    {
+      "name": "40 | Estimated removable lower doorway backing",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 1.6160898846974039
+    },
+    {
+      "name": "41 | Estimated lower frame",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.004973208066510881
+    },
+    {
+      "name": "41 | Estimated lower frame.001",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.004973208066510881
+    },
+    {
+      "name": "41 | Estimated lower frame.002",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.004973208066510881
+    },
+    {
+      "name": "41 | Estimated lower frame.003",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.004973208066510881
+    },
+    {
+      "name": "41 | Estimated lower horizontal frame",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00817129576950595
+    },
+    {
+      "name": "41 | Estimated lower horizontal frame.001",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.00817129576950595
+    },
+    {
+      "name": "42 | Estimated shallow lower transom",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.0466775509995722
+    },
+    {
+      "name": "43 | Provisional masked threshold",
+      "scope": "ESTIMATED_CLOSURE",
+      "vertices": 56,
+      "faces": 54,
+      "triangles": 108,
+      "closed_manifold": true,
+      "signed_volume_if_closed": 0.09949334446980247
+    }
+  ],
+  "glb_sha256": "f7d20e04dcc39e67f42acb48656424dcb37ef9fcc17cde7ff6b1b90a0810bc24"
+}

@@ -1,0 +1,27 @@
+{
+  "anchorPlanEndpoints": [
+    [
+      47.764,
+      -20.088
+    ],
+    [
+      51.934,
+      -60.248
+    ]
+  ],
+  "anchorAlongFace": 0.0767784460486524,
+  "frontOffset": 0.04,
+  "groundY": -0.34,
+  "uniformScale": 1,
+  "groundBasis": "Existing core terrain at frontage samples -0.244 to -0.276 m; bottom embedded modestly to avoid floating provisional support feet. No terrain edits.",
+  "sourceSha256": "f7d20e04dcc39e67f42acb48656424dcb37ef9fcc17cde7ff6b1b90a0810bc24",
+  "omitted": [
+    "40 | Estimated removable lower doorway backing"
+  ],
+  "parts": {
+    "wall": "hachiko-policebox.glb",
+    "signs_2025-04-09": "signs-2025-04-09.glb"
+  },
+  "date": "2025-04-09",
+  "notes": "Same single rigid transform for facade and local wall recess. No nonuniform scale. Upper pane proxies classified glass, unidentified green band remains wall. Optional KOBAN is approximate identification, not exact artwork."
+}

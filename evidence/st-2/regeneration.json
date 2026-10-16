@@ -1,0 +1,5 @@
+{
+  "sameBytesOnRegeneration": true,
+  "command": "node scripts/build-st-1.mjs",
+  "files": 71
+}
