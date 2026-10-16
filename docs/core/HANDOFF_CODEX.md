@@ -1,5 +1,7 @@
 # 引き継ぎ（Claude Code → Codex）：Shibuya Scene 2.0 Core v1
 
+> 最新（2026-10-16、PR #76マージ後のレビュー追補）：旧形状チェック2本を保存済みlegacyへ限定し、部分コピーの再生成READMEを修正。HACHIKO_REVIEW_TOOLS_REPORT.md と HACHIKO_ASSET_INTAKE_PLAN.md を参照。追加素材は計画のみで配置していない。
+
 > 最新（2026-10-16）：オーナー指示でMaurice Svay / CC BY 4.0のスキャン候補1体を既存ハチ公の位置・向きへレビュー配置。旧像・台座は非表示、原本と旧GLB保全、全227テストと実シーン前後5視点を確認。マージ・デプロイなし。詳細は HACHIKO_SCAN_PLACEMENT_REPORT.md。
 
 > **最新：オーナーの再開指示によりPR #57までのdots資産を配置検証。** `DOTS_PLACEMENT_57_REPORT.md` を参照。既存28建物を保全し、小物6点を通常表示へ推定配置。南麻布由来の設備盤・部分柵は未配置。次の制作候補90件は `DOTS_NEXT_ASSETS_57.md`。下の「Codex停止」と古い未着手一覧は今回の再開指示より前の記録。
