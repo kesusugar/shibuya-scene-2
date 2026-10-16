@@ -5,6 +5,9 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  box_lightbox: {q:'time=day&pose=20,-50.8,2.25,25,-50.1,3.03,40',w:1100,h:650},
+  box_signs: {q:'time=day&pose=18,-48,4.1,25.1,-46.7,3.45,50',w:1400,h:600},
+  box_clock: {q:'time=day&pose=23,-36,2.1,24.25,-41.15,1.75,48',w:900,h:900},
   box_whole: {q:'time=day&pose=7,-29,10,25.5,-46.6,1.4,58',w:1000,h:750},
   box_front: {q:'time=day&pose=12,-48.7,2.4,25.5,-46.6,1.4,62',w:1000,h:750},
   box_oblique: {q:'time=day&pose=16,-58,4,25.5,-46.6,1.1,62',w:1000,h:750},
@@ -87,6 +90,8 @@ try {
     if (!process.env.FORCE && existsSync(`${out}/${name}.png`)) continue;
     const page = await browser.newPage({ viewport: { width: v.w, height: v.h } }); const errors = [];
     await page.route('**/favicon.ico', (r) => r.fulfill({ status: 204 }));
+    // QA-only equivalent of approved main: same byte-identical BOX-1, without added layers.
+    if(process.env.BOX_BASELINE==='1')await page.route('**/buildings/shibu-hachi-box/viewer.json',async r=>{const response=await r.fetch();const hints=await response.json();delete hints.layers;await r.fulfill({response,body:JSON.stringify(hints),contentType:'application/json'});});
     page.on('pageerror', (e) => errors.push(e.message));
     page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
     page.on('response', (r) => { if (r.status() >= 400) errors.push(`HTTP ${r.status()} ${r.url()}`); });
@@ -99,7 +104,7 @@ try {
     await page.waitForTimeout(500);
     const state = await page.evaluate(() => ({ exterior: window.__viewer.exterior, tactileOuter: window.__viewer.tactileOuter, tactileExtra: window.__viewer.tactileExtra, tactileLinks: window.__viewer.tactileLinks, facilities: window.__viewer.facilities, plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
     await page.screenshot({ path: `${out}/${name}.png`, timeout: 300000 });
-    log[name] = { ...v, extra:process.env.EXTRA??null, state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
+    log[name] = { ...v, extra:process.env.EXTRA??null, boxBaseline:process.env.BOX_BASELINE==='1', state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
     if (process.env.BASELINE === '1') assert.equal(state.plaza, undefined); else if (process.env.EXTRA?.includes('plaza=off')) assert.equal(state.plaza, 'off'); else assert.equal(state.plaza.ok, true); if (process.env.EXTRA?.includes('surround=off')) assert.equal(state.surround, 'off'); else assert.equal(state.surround.ok, true); if (process.env.EXTRA?.includes('hachiko=off')) assert.equal(state.hachiko, 'off'); else assert.equal(state.hachiko.ok, true); if (process.env.EXTRA?.includes('drainage=off')) assert.equal(state.drainage, 'off'); else assert.equal(state.drainage.ok, true); assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); if (process.env.EXTRA?.includes('tactile=off')) assert.equal(state.tactile, 'off'); else assert.equal(state.tactile.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
     if (process.env.SUPPLEMENTS === '1') {assert.equal(state.tactileExtra.ok,true);assert.equal(state.tactileLinks.ok,true);}
     if (process.env.EXTERIOR === '1') {assert.equal(state.exterior.ok,true);assert.equal(state.ground.fillReplaced,true);assert.equal(state.exterior.tiles,3);assert.equal(state.tactileOuter.ok,true);assert.equal(state.tactileOuter.attached,true);}

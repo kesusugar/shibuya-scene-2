@@ -74,7 +74,7 @@ export interface BuildingIO {
 }
 
 /** Problems that would make a building silently vanish or explode: no geometry, NaN positions, absurd scale. */
-export function validateBuilding(root: Object3D): string[] {
+export function validateBuilding(root: Object3D, minimumExtent = 1): string[] {
   const problems: string[] = [];
   let meshes = 0, triangles = 0;
   root.traverse((o) => {
@@ -92,7 +92,7 @@ export function validateBuilding(root: Object3D): string[] {
   if (meshes === 0) problems.push('no meshes');
   if (triangles === 0) problems.push('no triangles');
   const size = new Box3().setFromObject(root).getSize(new Vector3());
-  if (!(size.length() > 1 && size.length() < 5000)) problems.push(`implausible size ${size.toArray().map((v) => v.toFixed(1)).join('x')} m`);
+  if (!(size.length() > minimumExtent && size.length() < 5000)) problems.push(`implausible size ${size.toArray().map((v) => v.toFixed(1)).join('x')} m`);
   return problems;
 }
 
@@ -140,7 +140,9 @@ export async function loadBuilding(id: string, io: BuildingIO, base = '/building
     await Promise.all(Object.entries(hints.layers ?? {}).map(async ([name, file]) => {
       try {
         const layer = await io.loadGlb(`${base}/${id}/${file}`);
-        const bad = validateBuilding(layer);
+        // Small roof symbols are valid signage, while the building itself must exceed 1m.
+        // Keep empty/NaN/material/oversize checks identical; no dummy geometry to enlarge icons.
+        const bad = validateBuilding(layer, .01);
         if (bad.length) throw new Error(bad.slice(0, 2).join('; '));
         layer.name = `${id}:${name}`;
         group.add(layer);

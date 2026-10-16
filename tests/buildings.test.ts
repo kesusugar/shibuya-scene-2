@@ -72,6 +72,15 @@ describe('loadBuilding isolation', () => {
     expect(r.ok).toBe(true);
     if (r.ok) { expect(r.layers).toEqual([]); expect(r.layerErrors[0]).toContain('no meshes'); }
   });
+  it('accepts a real sub-metre sign layer while retaining the building minimum and corrupt-layer rejection', async () => {
+    const small=()=>{const g=new Group();g.add(new Mesh(new BoxGeometry(.46,.46,.039),new MeshStandardMaterial()));return g;};
+    expect(validateBuilding(small()).some(p=>p.includes('implausible size'))).toBe(true);
+    const lio:BuildingIO={loadGlb:async url=>url.endsWith('small.glb')?small():okBuilding(),loadJson:async url=>(url.endsWith('viewer.json')?{...hints,layers:{icon:'small.glb'}}:{}) as never};
+    const r=await loadBuilding('box',lio);expect(r.ok).toBe(true);
+    if(r.ok){expect(r.layers).toEqual(['icon']);expect(r.layerErrors).toEqual([]);}
+    const bad=new Group();bad.add(new Mesh(new BufferGeometry().setAttribute('position',new BufferAttribute(new Float32Array([0,0,0,NaN,.1,0,.1,.1,0]),3)),new MeshStandardMaterial()));
+    expect(validateBuilding(bad,.01).some(p=>p.includes('non-finite'))).toBe(true);
+  });
   it('a building without QFRONT hints (no curved front) still loads', async () => {
     const plain = { planBounds: [25, 9, 52, 71], sun: { azimuth_deg: 207, elevation_deg: 57 } };
     const r = await loadBuilding('z', { loadGlb: async () => okBuilding(), loadJson: async (url) => (url.endsWith('viewer.json') ? plain : {}) as never });
