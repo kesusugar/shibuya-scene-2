@@ -1,0 +1,57 @@
+{
+  "method": "Actual shipped triangles transformed into scan-local AABB. Zero intersections proves separation from entire scan envelope; nonzero needs closer review. Terrain/paving excluded as deliberate supporting surfaces.",
+  "bounds": {
+    "min": [
+      -0.5353164672851562,
+      -2.220446049250313e-16,
+      -0.8322457075119019
+    ],
+    "max": [
+      0.5353164672851562,
+      2.405590057373047,
+      0.8322457075119019
+    ]
+  },
+  "results": {
+    "hachiko-surround/hachiko-surround.glb": {
+      "checkedTriangles": 0,
+      "envelopeIntersections": 0,
+      "nodes": {}
+    },
+    "tactile/tactile.glb": {
+      "checkedTriangles": 0,
+      "envelopeIntersections": 0,
+      "nodes": {}
+    },
+    "props/hachiko_white_bollard.glb": {
+      "checkedTriangles": 0,
+      "envelopeIntersections": 0,
+      "nodes": {}
+    },
+    "props/oct2025_two_band_cone.glb": {
+      "checkedTriangles": 0,
+      "envelopeIntersections": 0,
+      "nodes": {}
+    },
+    "props/standing_notice_sign.glb": {
+      "checkedTriangles": 0,
+      "envelopeIntersections": 0,
+      "nodes": {}
+    },
+    "core/street_core.glb": {
+      "checkedTriangles": 0,
+      "envelopeIntersections": 0,
+      "nodes": {}
+    },
+    "core/street_projected.glb": {
+      "checkedTriangles": 0,
+      "envelopeIntersections": 0,
+      "nodes": {}
+    },
+    "plaza-facilities/plaza-facilities.glb": {
+      "checkedTriangles": 0,
+      "envelopeIntersections": 0,
+      "nodes": {}
+    }
+  }
+}

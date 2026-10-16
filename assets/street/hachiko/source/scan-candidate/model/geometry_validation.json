@@ -1,0 +1,55 @@
+{
+  "result": "PASS",
+  "source_sha256": "053f4137aac044f6e16786c10fe888b6a39ac8e14256df33c9e28d1c342154be",
+  "candidate_sha256": "cd20601d57308a1b50892c05d509a6295ca24ca2045cfd37421995a840bf039e",
+  "source_triangles": 97157,
+  "removed_triangles": 11223,
+  "retained_triangles": 85934,
+  "source_attribute_records": 56273,
+  "retained_attribute_records": 49256,
+  "removed_unreferenced_records": 7017,
+  "mesh_count": 1,
+  "material_count": 1,
+  "source_uv_float32_values_exact": true,
+  "source_material_json_exact": true,
+  "source_embedded_jpeg_bytes_exact": true,
+  "embedded_jpeg_sha256": "0bbc9be6a9e31df57b9af8aeb4ab235016f8a1cc86e4151400dbbba84fdd9e9c",
+  "embedded_jpeg_bytes": 5109884,
+  "original_face_winding_preserved": true,
+  "normal_method": "source normals transformed by inverse transpose of source root, then canonical rigid rotation and normalization; no smoothing/recomputation",
+  "max_output_position_float32_rounding_m": 1.1917933218086318e-07,
+  "max_inverse_transform_error_source_units": 2.406657779729926e-07,
+  "candidate_bounds_gltf_m": {
+    "min": [
+      -0.5353164672851562,
+      -2.220446049250313e-16,
+      -0.8322457075119019
+    ],
+    "max": [
+      0.5353164672851562,
+      2.405590057373047,
+      0.8322457075119019
+    ],
+    "dimensions": [
+      1.0706329345703125,
+      2.405590057373047,
+      1.6644914150238037
+    ]
+  },
+  "base_bottom_center_gltf_m": [
+    0.0,
+    -2.220446049250313e-16,
+    0.0
+  ],
+  "topology_after_exact_position_weld": {
+    "exact_unique_positions": 43152,
+    "connected_components": 1,
+    "boundary_edges": 378,
+    "edges_over_two_faces": 1
+  },
+  "zero_area_triangles": 0,
+  "uv_all_finite": true,
+  "cap_added": false,
+  "source_statue_opening_repaired": false,
+  "runtime_world_placement_modified": false
+}

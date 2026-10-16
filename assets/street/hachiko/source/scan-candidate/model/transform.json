@@ -1,0 +1,168 @@
+{
+  "units": "meters at estimated design scale, not survey units",
+  "scale_basis": "retained assembly total height matched to previous project design estimate 2.40559 m",
+  "uniform_scale": 0.49650680036241385,
+  "retained_source_height": 4.845029309254364,
+  "legacy_design_height_m": 2.40559,
+  "physical_scale_verified": false,
+  "front_basis_source_gltf": [
+    -0.9998547206458797,
+    0.0,
+    0.01704516359998061
+  ],
+  "right_basis_source_gltf": [
+    -0.01704516359998061,
+    0.0,
+    -0.9998547206458797
+  ],
+  "plaque_orientation_source": "uploaded_hachiko_scan_20261016/inspection/orientation_and_fit.json; 650 plaque triangles, RMS 0.003055276 scan units",
+  "lower_course_origin_used_vertex_count": 14093,
+  "origin_in_rotated_source_gltf": [
+    -4.338158171409989,
+    -1.7952887664089767,
+    0.10078348143164806
+  ],
+  "source_mesh_to_source_world_gltf_row_major": [
+    [
+      -0.37099140882492065,
+      0.9175222516059875,
+      0.14324213564395905,
+      4.235661506652832
+    ],
+    [
+      0.065431632101536,
+      0.1796937882900239,
+      -0.9815441370010376,
+      1.5557991266250604
+    ],
+    [
+      -0.9263283014297485,
+      -0.35477188229560846,
+      -0.126699820160866,
+      3.060832023620606
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_world_to_candidate_gltf_row_major": [
+    [
+      -0.008463039640680256,
+      0.0,
+      -0.4964346681751408,
+      2.153925033152834
+    ],
+    [
+      0.0,
+      0.49650680036241385,
+      0.0,
+      0.891373081136306
+    ],
+    [
+      0.4964346681751408,
+      -0.0,
+      -0.008463039640680256,
+      -0.05003968389501232
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "candidate_to_source_world_gltf_row_major": [
+    [
+      -0.03433017148514156,
+      0.0,
+      2.0137785019581975,
+      0.17471345542683564
+    ],
+    [
+      0.0,
+      2.014071104907471,
+      0.0,
+      -1.7952887664089767
+    ],
+    [
+      -2.0137785019581975,
+      -0.0,
+      -0.03433017148514155,
+      4.335810055663597
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_raw_mesh_to_candidate_gltf_row_major": [
+    [
+      0.46300119794075617,
+      0.16835603447874284,
+      0.06168591930723901,
+      0.5985753319315872
+    ],
+    [
+      0.03248725029722425,
+      0.08921918786888075,
+      -0.487343338876872,
+      1.6638379275035526
+    ],
+    [
+      -0.17633344380054353,
+      0.458492303022593,
+      0.07218262767759578,
+      2.0267855879130385
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "candidate_to_source_raw_mesh_gltf_row_major": [
+    [
+      1.878156119630453,
+      0.13178393162662044,
+      -0.7152935166519054,
+      0.1062615642746706
+    ],
+    [
+      0.6829332371538483,
+      0.3619160462499526,
+      1.8598659280304,
+      -4.780506091821802
+    ],
+    [
+      0.2502278517323494,
+      -1.976899589774363,
+      0.29280754808567333,
+      2.546002178431384
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "candidate_gltf_axes": {
+    "up": "+Y",
+    "front": "-Z"
+  },
+  "candidate_blender_axes": {
+    "up": "+Z",
+    "front": "+Y"
+  },
+  "source_root_applied_exactly_once": true,
+  "baked_mesh_coordinates": true,
+  "output_node_transform": "identity",
+  "nonuniform_scale_or_sculpt": false,
+  "topology_recovery": "Restore the unchanged source GLB; removed original face IDs are recorded separately. Matrix inverse alone restores retained geometry, not removed triangles."
+}
