@@ -1,0 +1,11 @@
+{
+  "st2_glass_upper_aperture_proxy": {
+    "kind": "glass",
+    "emit": [
+      0,
+      0,
+      0
+    ],
+    "estr": 0
+  }
+}

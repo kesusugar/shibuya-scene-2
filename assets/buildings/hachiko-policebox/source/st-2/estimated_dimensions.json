@@ -1,0 +1,252 @@
+{
+  "asset_id": "policebox_visible_facade_2025_v001",
+  "status": "EXTERIOR_ONLY_ESTIMATED_UNPLACED",
+  "reference_date": "2025-04-09",
+  "units": "meters",
+  "axes": "Blender: x left/right, y toward station, z up; plaza faces negative y. GLB uses standard Y-up conversion.",
+  "origin": "x=0, y=0, z=0 is the nominal facade bottom-centre anchor at provisional ground, not a geographic point.",
+  "parameters": {
+    "overall_width": {
+      "value": 5.2,
+      "basis": "Nominal first-pass global envelope; P1 upper surround silhouette; no scale calibration.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "overall_height": {
+      "value": 6.6,
+      "basis": "Nominal first-pass global envelope, not surveyed.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "canopy_height": {
+      "value": 0.45,
+      "basis": "P1/P2 visible broad silver upper member; nominal ratio.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "canopy_depth": {
+      "value": 1.45,
+      "basis": "P1/P2 projecting underside visible; unseen depth reduced to a shallow study.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "canopy_front_y": {
+      "value": -0.42,
+      "basis": "Estimated forward edge relative to bowed band and supports.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "frame_face_width": {
+      "value": 0.36,
+      "basis": "P2 silver right upright and P1 left upper return; nominal seed.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "frame_depth": {
+      "value": 0.3,
+      "basis": "Estimated shallow thickness; not building perimeter.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "left_frame_bottom": {
+      "value": 4.42,
+      "basis": "Only upper left return is sufficiently visible in P1; deliberately not mirrored to ground.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "right_frame_bottom": {
+      "value": 2.85,
+      "basis": "P2 right surround continues beside both curved bands; lower continuation omitted.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "front_chord": {
+      "value": 4.3,
+      "basis": "P1/P2 bowed frontage relative to outer surround; nominal seed.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "front_bulge": {
+      "value": 0.8,
+      "basis": "Two-view visible outward bow, no measured radius.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "front_center_x": {
+      "value": 0.15,
+      "basis": "Small asymmetry leaves a wider upper-left canopy return as seen in P1; visual estimate.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "curve_end_y": {
+      "value": -0.3,
+      "basis": "Nominal band chord plane; not a surveyed datum.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "curve_half_angle_deg": {
+      "value": 70.0,
+      "basis": "Adjustable elliptical arc shape control, not a claimed circular plan.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "curve_segments": {
+      "value": 24,
+      "basis": "Review mesh tessellation, not physical units.",
+      "confidence": "design-choice",
+      "estimated": true
+    },
+    "silver_band_bottom": {
+      "value": 2.85,
+      "basis": "P2 underside above doorway; nominal seed.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "band_interface_z": {
+      "value": 3.45,
+      "basis": "P1/P2 upper and lower bands meet at this estimated height.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "green_band_top": {
+      "value": 4.45,
+      "basis": "P1/P2 relative vertical extent; nominal seed.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "silver_shell_thickness": {
+      "value": 0.06,
+      "basis": "Export shell thickness only, not measured construction.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "green_shell_thickness": {
+      "value": 0.04,
+      "basis": "Export shell thickness only; physical material unidentified.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "green_line_count": {
+      "value": 31,
+      "basis": "Subtle geometric proxy for visible fine horizontal lining; no claim to glass block/louver units.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "rear_opening_y": {
+      "value": 0.22,
+      "basis": "P1/P2 visible shallow recessed window/opening plane; no upper room.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "rear_opening_width": {
+      "value": 3.45,
+      "basis": "Visible upper rectangular aperture simplified to a flat frame.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "rear_opening_z": {
+      "value": [
+        4.4,
+        5.85
+      ],
+      "basis": "P1/P2 visible upper opening outline, nominal seed.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "upper_support": {
+      "value": {
+        "diameter": 0.4,
+        "x": -1.75,
+        "y": -0.1,
+        "z": [
+          4.35,
+          6.15
+        ]
+      },
+      "basis": "P1/P2 clearly seen left upper cylindrical support; no mirrored mate added.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "lower_right_support": {
+      "value": {
+        "diameter": 0.42,
+        "x": 1.7,
+        "y": -0.08,
+        "z": [
+          0.05,
+          2.85
+        ],
+        "visible_from_z": 0.55
+      },
+      "basis": "P2 clearly seen viewer-right lower round support; crowd-masked foot is separate estimated continuation.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "support_red_strip": {
+      "value": {
+        "height": 0.1,
+        "center_z": 2.3
+      },
+      "basis": "P2 narrow red stripe visible on right lower support; width/height estimated.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "lower_closure": {
+      "value": {
+        "y": 0.1,
+        "depth": 0.16,
+        "width": 3.9,
+        "z": [
+          0.06,
+          2.65
+        ]
+      },
+      "basis": "Deliberately shallow removable proxy for crowd-hidden lower doorway; not reconstructed interior or rear wall.",
+      "confidence": "very-low",
+      "estimated": true
+    },
+    "threshold": {
+      "value": {
+        "height": 0.06,
+        "depth": 0.42,
+        "width": 3.95
+      },
+      "basis": "P2 partial threshold and masked ground line; wholly provisional.",
+      "confidence": "very-low",
+      "estimated": true
+    },
+    "provisional_lower_edge_z": {
+      "value": 0.0,
+      "basis": "Local bottom-centre anchor for later review; ground not surveyed.",
+      "confidence": "very-low",
+      "estimated": true
+    },
+    "optional_sign": {
+      "value": {
+        "enabled": true,
+        "width": 0.64,
+        "height": 0.48,
+        "depth": 0.1,
+        "x": 0.5
+      },
+      "basis": "P1/P2 small separate sign box on upper surround; plain KOBAN only, no emblem or exact artwork.",
+      "confidence": "low",
+      "estimated": true
+    },
+    "lower_left_support": {
+      "value": {
+        "diameter": 0.4,
+        "x": -1.8,
+        "y": -0.12,
+        "z": [
+          0.05,
+          2.85
+        ],
+        "visible_from_z": 1.65
+      },
+      "basis": "P1 original pixels x240\u2013266, y492\u2013545 show a second lower cylindrical support and red strip. Independent position/visible length estimate; crowd-hidden continuation is a separate estimated object, not symmetry inference.",
+      "confidence": "low",
+      "estimated": true
+    }
+  }
+}

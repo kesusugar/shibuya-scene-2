@@ -1,0 +1,30 @@
+{
+  "glb": "policebox_visible_facade_2025_v001.glb",
+  "sha256": "f7d20e04dcc39e67f42acb48656424dcb37ef9fcc17cde7ff6b1b90a0810bc24",
+  "bytes": 522776,
+  "chunks": [
+    {
+      "type": 1313821514,
+      "bytes": 76660
+    },
+    {
+      "type": 5130562,
+      "bytes": 446088
+    }
+  ],
+  "nodes": 92,
+  "meshes": 92,
+  "primitives": 92,
+  "materials": 11,
+  "triangles": 12196,
+  "zero_area_triangles": 0,
+  "nonfinite_position_rows": 0,
+  "external_buffers": [],
+  "external_images": [],
+  "image_count": 0,
+  "texture_count": 0,
+  "review_nodes": [],
+  "camera_count": 0,
+  "light_extension_present": false,
+  "passed": true
+}

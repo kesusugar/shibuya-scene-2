@@ -1,0 +1,12 @@
+{
+  "groundElevationTP": 15,
+  "planBounds": [
+    44,
+    -27,
+    50,
+    -19
+  ],
+  "layers": {
+    "signs_2025-04-09": "signs-2025-04-09.glb"
+  }
+}

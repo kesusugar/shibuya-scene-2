@@ -1,0 +1,90 @@
+Windows local run: full suite has one pre-existing 5s PARCO timeout; isolated 20s run passes all its geometry assertions. No test source or geometry budget relaxed.
+
+
+> shibuya-scene-2@0.1.0 test
+> npm run sync-assets && vitest run --maxWorkers=2
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin, east-mixeduse, eiraku, ekimae, fukuras, ginza-canopy, hachiko-policebox, hikarie, magnet, mark-city, parco, plaza-kiosk, qfront, quattro, sakura-stage, scramble-square, shibu-hachi-box, shibuya109, station-concourse, station-north, station-service, station-southeast, station-west-viaduct, stream, takagi, west-block; ground: core, extension, exterior-east, exterior-middle, exterior-west; street: core, drainage, hachiko, hachiko-surround, plaza-facilities, plaza-finish, props, tactile, tactile-extra, tactile-links, tactile-outer; context: core
+
+ RUN  v5.0.3 C:/Users/keisuke.e.sato/box-1-terrace
+
+ ❯ tests/parco-terrace.test.ts (16 tests | 1 failed) 11237ms
+   ❯ PARCO current deep terrace: live exported geometry and stage chain (9)
+     × closes both north returns and all 1920 oblique hollow-shell sightlines 6473ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/parco-terrace.test.ts > PARCO current deep terrace: live exported geometry and stage chain > closes both north returns and all 1920 oblique hollow-shell sightlines
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/parco-terrace.test.ts:67:3
+     65|     expect(assertCoreFloorCoverage(liveTriangles).uncoveredArea).toBeL…
+     66|   });
+     67|   it('closes both north returns and all 1920 oblique hollow-shell sigh…
+       |   ^
+     68|     expect(assertReturnsAndObliques(liveTriangles)).toMatchObject({ret…
+     69|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 56 passed (57)
+      Tests  1 failed | 253 passed (254)
+   Start at  18:17:22
+   Duration  77.43s (tests 83%, import 10%, transform 5%, worker 1%)
+
+    Isolate  57 workers spawned · ~1.33s startup each (spawn + environment, per file)
+             at least ~36.49s faster with isolate: false — reuses workers across files instead of one per file
+
+
+
+
+ RUN  v5.0.3 C:/Users/keisuke.e.sato/box-1-terrace
+
+
+ Test Files  1 passed (1)
+      Tests  16 passed (16)
+   Start at  18:20:49
+   Duration  12.63s (tests 93%, import 4%, transform 3%)
+
+
+
+
+> shibuya-scene-2@0.1.0 build
+> npm run sync-assets && tsc --noEmit && vite build
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin, east-mixeduse, eiraku, ekimae, fukuras, ginza-canopy, hachiko-policebox, hikarie, magnet, mark-city, parco, plaza-kiosk, qfront, quattro, sakura-stage, scramble-square, shibu-hachi-box, shibuya109, station-concourse, station-north, station-service, station-southeast, station-west-viaduct, stream, takagi, west-block; ground: core, extension, exterior-east, exterior-middle, exterior-west; street: core, drainage, hachiko, hachiko-surround, plaza-facilities, plaza-finish, props, tactile, tactile-extra, tactile-links, tactile-outer; context: core
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 46 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  3.64 kB │ gzip:   1.75 kB
+dist/assets/index-Cj7bXtAV.js  719.17 kB │ gzip: 187.40 kB
+✓ built in 3.69s
+
+
+Final source-triangle/index preservation regression and typecheck:
+
+ RUN  v5.0.3 C:/Users/keisuke.e.sato/box-1-terrace
+
+
+ Test Files  1 passed (1)
+      Tests  5 passed (5)
+   Start at  18:40:25
+   Duration  3.66s (import 38%, transform 30%, tests 21%, worker 11%)
+
+
+
+
+> shibuya-scene-2@0.1.0 typecheck
+> tsc --noEmit
+

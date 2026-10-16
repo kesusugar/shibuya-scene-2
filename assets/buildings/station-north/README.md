@@ -49,3 +49,9 @@ npm run build
 上の `node scripts/build-st-1.mjs` で、保存原本からの局所加工も含めて再生成できる。
 現在の合計は5,697三角形／29プリミティブ／321,264 bytes。予算は変更しない。
 変更範囲、写真で見えた部分と推定、比較画像は[開口補完報告](../../../docs/core/ST_1_OPENING_REPORT.md)。
+
+## ST-2：交番正面の局所置換
+
+PR82原本を `source/st-2/` へ保存し、西面北端の交番に対応する矩形だけをコンクリート壁と仮囲いから切り欠く。
+東面のJR入口・屋根・庇・構造柱・公共通行部は保持する。`node scripts/build-st-1.mjs` はST-1に続けてST-2も再生成する。
+交番の配信外装は別資産 `hachiko-policebox`。詳細は[ST-2報告](../../../docs/core/ST_2_REPORT.md)。
