@@ -200,7 +200,7 @@ async function start() {
   if (loaded.some(b => b.id === 'station-southeast')) $('provisional').textContent += '\nJR南東側施設は旧年写真による外装推定、10月現況と施設同定は未確認';
   if (loaded.some((b) => b.id === 'station-concourse')) $('provisional').textContent += '\n駅側の連絡通路は試作、開口・窓・内部・工事用の囲いの寸法と配置、光量は推定';
   if (loaded.some((b) => b.id === 'station-north')) $('provisional').textContent += '\nJR北側ホーム上屋は試作、柱・梁・床の帯の配置は推定、南側は外観未確認';
-  if (loaded.some((b) => b.id === 'station-north')) $('provisional').textContent += '\n宮益坂側JR入口の看板は2025年初頭、柱外装は2025-04-09資料由来。東側面の取付位置・寸法は推定、入口の開口と内部・2025年10月状態は未確定';
+  if (loaded.some((b) => b.id === 'station-north')) $('provisional').textContent += '\n宮益坂側JR入口の看板は2025年初頭、柱外装・開口は2025-04-09資料由来。取付位置・寸法・浅い奥行きは推定、通行できる入口や内部は未制作、2025年10月状態は未確定';
   if (loaded.some((b) => b.id === 'station-service')) $('provisional').textContent += '\n駅西側の小施設は試作、設備棟との対応・外装・換気口は推定、正面の同定は未完了';
   if (loaded.some((b) => b.id === 'station-west-viaduct')) $('provisional').textContent += '\n駅西側高架は試作、写真との対応・桁・柱・補強・養生網の寸法と配置は推定';
   if (loaded.some((b) => b.id === 'ginza-canopy')) $('provisional').textContent += '\n銀座線ホームは試作、床・フレーム・ドアの寸法と配置は推定、10月の内部・下部の確認は未達';

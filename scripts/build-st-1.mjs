@@ -1,4 +1,5 @@
-// ST-1: two shallow surfaces in the existing JR asset. No structural rebuild.
+// ST-1 surfaces plus a bounded opening derived from the preserved PR81 shell.
+import {buildST1Opening} from './build-st-1-opening.mjs';
 import {NodeIO} from '@gltf-transform/core';
 import {Matrix4,Vector3,Ray} from 'three';
 import {readFileSync,writeFileSync,readdirSync,statSync} from 'node:fs';
@@ -8,8 +9,9 @@ import assert from 'node:assert/strict';
 const dir='assets/buildings/station-north',source=dir+'/source/st-1';
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const c=JSON.parse(readFileSync(source+'/placement.json'));
+const opening=await buildST1Opening(c);
 const bodyHash=hash(dir+'/web/station-north.glb');
-assert.equal(bodyHash,'eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09','Preserve the approved station structure');
+assert.equal(bodyHash,opening.outputSha256,'Use the derivative of the preserved PR81 structure');
 const [a,b]=c.anchorPlanEndpoints,t=new Vector3(b[0]-a[0],0,-(b[1]-a[1])).normalize();
 const n=new Vector3(-t.z,0,t.x),yaw=Math.atan2(n.x,n.z);
 const anchor=new Vector3(a[0]+(b[0]-a[0])*c.anchorAlongFace,c.groundY,-a[1]-(b[1]-a[1])*c.anchorAlongFace).addScaledVector(n,c.frontOffset);
@@ -76,12 +78,14 @@ for(const mode of ['day','night']){
  for(const [name,row] of signMaterials)table[name]=row;
  writeFileSync(path,JSON.stringify(table,null,2)+'\n');
 }
-const report={main:c.main,bodySha256:bodyHash,bodyUnchanged:true,anchorWorld:anchor.toArray(),uniformScale:c.uniformScale,yawDegrees:yaw*180/Math.PI,components:reports};
+const report={main:c.main,bodySha256:bodyHash,bodyUnchanged:false,originalBodySha256:opening.baselineSha256,openingReport:'source/st-1-opening/build-report.json',anchorWorld:anchor.toArray(),uniformScale:c.uniformScale,yawDegrees:yaw*180/Math.PI,components:reports};
 writeFileSync(source+'/build-report.json',JSON.stringify(report,null,2)+'\n');
 const manifest=JSON.parse(readFileSync(dir+'/manifest.json')),files={};
 function walk(path){for(const ent of readdirSync(path,{withFileTypes:true})){const p=join(path,ent.name);if(ent.isDirectory())walk(p);else if(p.replaceAll('\\','/')!==dir+'/manifest.json')files[relative(dir,p).replaceAll('\\','/')]={bytes:statSync(p).size,sha256:hash(p)};}}
 walk(dir);manifest.files=files;
 manifest.st1={status:'estimated shallow exterior fit; dated fascia and wall cladding only',...report};
+manifest.source_levels.JR_bridge='PR81 source preserved; only the entrance wall patch is locally derived';
+manifest.st1Opening={status:'shallow exterior opening under the existing fascia; estimated dimensions and depth; no enterable interior',...opening};
 const stats={triangles:0,primitives:0,bytes:0};
 for(const name of readdirSync(dir+'/web').filter(f=>f.endsWith('.glb'))){
  stats.bytes+=statSync(dir+'/web/'+name).size;
