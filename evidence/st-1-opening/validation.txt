@@ -1,0 +1,42 @@
+Local Node v24.19.0; Python PATH configured for existing geometry tests.
+
+
+> shibuya-scene-2@0.1.0 test
+> npm run sync-assets && vitest run --maxWorkers=2
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin, east-mixeduse, eiraku, ekimae, fukuras, ginza-canopy, hikarie, magnet, mark-city, parco, plaza-kiosk, qfront, quattro, sakura-stage, scramble-square, shibu-hachi-box, shibuya109, station-concourse, station-north, station-service, station-southeast, station-west-viaduct, stream, takagi, west-block; ground: core, extension, exterior-east, exterior-middle, exterior-west; street: core, drainage, hachiko, hachiko-surround, plaza-facilities, plaza-finish, props, tactile, tactile-extra, tactile-links, tactile-outer; context: core
+
+ RUN  v5.0.3 C:/Users/keisuke.e.sato/box-1-terrace
+
+
+ Test Files  56 passed (56)
+      Tests  249 passed (249)
+   Start at  17:42:04
+   Duration  50.70s (tests 83%, import 11%, transform 6%, worker 1%)
+
+    Isolate  56 workers spawned · ~978ms startup each (spawn + environment, per file)
+             at least ~26.41s faster with isolate: false — reuses workers across files instead of one per file
+
+
+
+
+> shibuya-scene-2@0.1.0 build
+> npm run sync-assets && tsc --noEmit && vite build
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin, east-mixeduse, eiraku, ekimae, fukuras, ginza-canopy, hikarie, magnet, mark-city, parco, plaza-kiosk, qfront, quattro, sakura-stage, scramble-square, shibu-hachi-box, shibuya109, station-concourse, station-north, station-service, station-southeast, station-west-viaduct, stream, takagi, west-block; ground: core, extension, exterior-east, exterior-middle, exterior-west; street: core, drainage, hachiko, hachiko-surround, plaza-facilities, plaza-finish, props, tactile, tactile-extra, tactile-links, tactile-outer; context: core
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 46 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  3.64 kB │ gzip:   1.75 kB
+dist/assets/index-CIQMX5et.js  718.88 kB │ gzip: 187.30 kB
+✓ built in 2.15s

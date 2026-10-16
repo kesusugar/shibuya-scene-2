@@ -1,0 +1,48 @@
+{
+  "before": {
+    "pose": "99,-15,3.3,90,-25,1.8,48",
+    "state": {
+      "failed": [],
+      "station": {
+        "meshes": 27,
+        "triangles": 5683,
+        "materials": 27,
+        "layers": [
+          "signs_jr-entry-early-2025",
+          "wall_jr-centre-pier-2025-04-09"
+        ],
+        "layerErrors": []
+      },
+      "camera": [
+        99,
+        3.3,
+        15
+      ]
+    },
+    "errors": [],
+    "baselineBodyOnly": true
+  },
+  "after": {
+    "pose": "99,-15,3.3,90,-25,1.8,48",
+    "state": {
+      "failed": [],
+      "station": {
+        "meshes": 29,
+        "triangles": 5697,
+        "materials": 29,
+        "layers": [
+          "signs_jr-entry-early-2025",
+          "wall_jr-centre-pier-2025-04-09"
+        ],
+        "layerErrors": []
+      },
+      "camera": [
+        99,
+        3.3,
+        15
+      ]
+    },
+    "errors": [],
+    "baselineBodyOnly": false
+  }
+}

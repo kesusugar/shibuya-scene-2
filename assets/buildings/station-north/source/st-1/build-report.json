@@ -1,7 +1,9 @@
 {
   "main": "c33be62",
-  "bodySha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09",
-  "bodyUnchanged": true,
+  "bodySha256": "ecd9095e10082dd166ef2291df775532d4b5019390b4094abaa1b7c551644649",
+  "bodyUnchanged": false,
+  "originalBodySha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09",
+  "openingReport": "source/st-1-opening/build-report.json",
   "anchorWorld": [
     89.39711175721288,
     0.034964527163424464,

@@ -1,0 +1,83 @@
+{
+  "main": "a906f1b",
+  "baseline": "station-north-pr81.glb",
+  "baselineSha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09",
+  "outputSha256": "ecd9095e10082dd166ef2291df775532d4b5019390b4094abaa1b7c551644649",
+  "targetNode": "stn_concrete",
+  "targetPrimitive": 0,
+  "originalTriangles": 750,
+  "outputTriangles": 756,
+  "originalVertexCount": 1752,
+  "appendedVertices": 18,
+  "cuts": [
+    {
+      "triangle": 94,
+      "originalIndices": [
+        285,
+        286,
+        287
+      ],
+      "removedArea": 6.051885751577847
+    },
+    {
+      "triangle": 95,
+      "originalIndices": [
+        288,
+        289,
+        290
+      ],
+      "removedArea": 10.291124610691297
+    }
+  ],
+  "removedArea": 16.343010362269144,
+  "depth": 0.65,
+  "worldMatrix": [
+    -0.2812373425555876,
+    0,
+    -0.9596382428562709,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0.9596382428562709,
+    0,
+    -0.2812373425555876,
+    0,
+    89.39711175721288,
+    0.034964527163424464,
+    22.989060007429025,
+    1
+  ],
+  "addedTriangles": 8,
+  "addedPrimitives": 2,
+  "noFloorOrWalkSurfaceAdded": true,
+  "collisionCodeUnchanged": true,
+  "walkableEntrance": false,
+  "reference": {
+    "source": "https://biz.shibuyabunka.com/watch/50/",
+    "image": "https://biz.shibuyabunka.com/storage/images/watch/1744250426.jpg",
+    "captionDate": "2025-04-09",
+    "photoSha256": "b55f3c1bb82ac82c038fc5e1e93ef6eee5c530497dd56b891474f02c9bbfd0fd",
+    "openingLocatorPixelsApprox": [
+      [
+        176,
+        452
+      ],
+      [
+        449,
+        450
+      ],
+      [
+        450,
+        677
+      ],
+      [
+        173,
+        680
+      ]
+    ],
+    "confirmed": "Opening below left entrance-only fascia and left of the same pale centre pier. Vertical side returns visible.",
+    "estimated": "Metric opening width/height inherit nominal fascia and ST-1 placement; exact jamb thickness, geographic mount, depth and hidden back wall unmeasured."
+  }
+}
