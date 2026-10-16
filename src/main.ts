@@ -8,6 +8,7 @@ import { loadTerrain, type TerrainResult } from './world/terrain';
 import { loadPlaza, type PlazaResult } from './world/plaza';
 import { loadSurround, type SurroundResult } from './world/surround';
 import { loadMemorial, type MemorialResult } from './world/memorial';
+import { loadRearTree, type RearTreeResult } from './world/rearTree';
 import { loadHachiko, type HachikoResult } from './world/hachiko';
 import { loadDrainage, type DrainageResult } from './world/drainage';
 import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, DefaultLoadingManager, Mesh, MeshStandardMaterial, PCFSoftShadowMap, PerspectiveCamera, Scene, SRGBColorSpace, WebGLRenderer } from 'three';
@@ -84,6 +85,7 @@ let coreStreet: StreetResult | undefined;
 let corePlaza: PlazaResult | undefined;
 let coreSurround: SurroundResult | undefined;
 let coreMemorial: MemorialResult | undefined;
+let coreRearTree: RearTreeResult | undefined;
 let coreHachiko: HachikoResult | undefined;
 let coreDrainage: DrainageResult | undefined;
 let coreProps: PropsResult | undefined;
@@ -122,6 +124,7 @@ function setTime(t: TimeOfDay) {
   if (corePlaza?.ok) applyLook(corePlaza.root, t, groundLook);
   if (coreSurround?.ok) applyLook(coreSurround.root, t, look, undefined, env);
   if (coreMemorial?.ok) applyLook(coreMemorial.root, t, look, undefined, env);
+  if (coreRearTree?.ok) applyLook(coreRearTree.root, t, look, undefined, env);
   if (coreHachiko?.ok) applyLook(coreHachiko.root, t, look, undefined, env);
   if (coreDrainage?.ok) applyLook(coreDrainage.root, t, look, undefined, env);
   if (coreTactile?.ok) applyLook(coreTactile.root, t, look, undefined, env);
@@ -134,7 +137,7 @@ function setTime(t: TimeOfDay) {
 async function start() {
   debug?.mark('街の資産を読み込み中');
   status(`${ids.map((id) => NAMES[id] ?? id).join('・')} を読み込み中…`);
-  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes, memorialRes, plazaRes, terrainRes, facilitiesRes, tactileExtraRes, tactileLinksRes, exteriorRes, tactileOuterRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
+  const [envState, results, groundRes, streetRes, projectedRes, contextRes, tactileRes, drainageRes, hachikoRes, surroundRes, memorialRes, rearTreeRes, plazaRes, terrainRes, facilitiesRes, tactileExtraRes, tactileLinksRes, exteriorRes, tactileOuterRes] = await Promise.all([lighting.loadEnvironments(), Promise.all(ids.map((id) => loadBuilding(id, io))),
     useGround ? loadGround(io.loadGlb, params.get('groundurl') === 'missing' ? '/ground/core/missing.glb' : undefined) : Promise.resolve(undefined),
     params.get('street') !== 'off' ? loadStreet(io.loadGlb, params.get('streeturl') === 'missing' ? '/street/core/missing.glb' : undefined, params.get('street') !== 'entrances') : Promise.resolve(undefined),
     params.get('street') === 'projected' ? loadProjectedStreet(io, params.get('projectedurl') === 'missing' ? '/street/core/missing.glb' : undefined) : Promise.resolve(undefined),
@@ -144,6 +147,7 @@ async function start() {
     useGround && params.get('street') !== 'off' && params.get('hachiko') !== 'off' ? loadHachiko(io.loadGlb, params.get('hachikourl') === 'missing' ? '/street/hachiko/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('surround') !== 'off' ? loadSurround(io.loadGlb, params.get('surroundurl') === 'missing' ? '/street/hachiko-surround/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('surround') !== 'off' && params.get('memorial') !== 'off' ? loadMemorial(io.loadGlb, io.loadJson, params.get('memorialurl') === 'missing' ? '/street/hachiko-memorial/missing.glb' : undefined) : Promise.resolve(undefined),
+    useGround && params.get('street') !== 'off' && params.get('reartree') !== 'off' ? loadRearTree(io.loadGlb, io.loadJson, params.get('reartreeurl') === 'missing' ? '/street/hachiko-rear-tree/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('plaza') !== 'off' ? loadPlaza(io.loadGlb, params.get('plazaurl') === 'missing' ? '/street/plaza-finish/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('terrain') !== 'off' ? loadTerrain(io.loadGlb, params.get('terrainurl') === 'missing' ? '/ground/extension/missing.glb' : undefined) : Promise.resolve(undefined),
     useGround && params.get('street') !== 'off' && params.get('facilities') !== 'off' ? loadFacilities(io.loadGlb, params.get('facilitiesurl') === 'missing' ? '/street/plaza-facilities/missing.glb' : undefined) : Promise.resolve(undefined),
@@ -168,6 +172,7 @@ async function start() {
   coreHachiko = hachikoRes;
   coreSurround = surroundRes;
   coreMemorial = memorialRes;
+  coreRearTree = rearTreeRes;
   corePlaza = plazaRes;
   coreContext = contextRes;
   if (coreContext?.ok) scene.add(coreContext.root);
@@ -187,6 +192,7 @@ async function start() {
   if (corePlaza?.ok) { scene.add(corePlaza.root); $('provisional').textContent += '／像周辺の敷石は写真から推定、寸法・敷設範囲は未測量'; }
   if (coreSurround?.ok) { scene.add(coreSurround.root); $('provisional').textContent += '／像周辺の石縁・レール・低木は写真から試作、位置・寸法・10月状態は未確認'; }
   if (coreMemorial?.ok) { scene.add(coreMemorial.root); $('provisional').textContent += '／日英二面の石碑は2025-07-13写真由来、像との相対位置・寸法・接地は推定'; }
+  if (coreRearTree?.ok) { scene.add(coreRearTree.root); $('provisional').textContent += '／像背後の大木1本は2025年11月の幹写真と2026年8月の葉を合わせた推定。幹位置・石囲いは未測量'; }
   if (coreHachiko?.ok) { scene.add(coreHachiko.root); $('provisional').textContent += '／ハチ公スキャン：Maurice Svay／CC BY 4.0、寸法・向きは推定、撮影時点・2025年10月状態は未確認'; }
   if (coreDrainage?.ok) { scene.add(coreDrainage.root); $('provisional').textContent += '／円形路面蓋はM027から推定、用途・位置・寸法は未測量'; }
   if (coreTactile?.ok) { scene.add(coreTactile.root); $('provisional').textContent += '／点字ブロックは横断歩道端を基準にした部分試作、位置・接続先は推定'; }
@@ -225,6 +231,7 @@ async function start() {
     ...(corePlaza && !corePlaza.ok ? [`敷石の読み込みに失敗: ${corePlaza.error}（ほかの表示は継続）`] : []),
     ...(coreSurround && !coreSurround.ok ? [`像周辺の設備の読み込みに失敗: ${coreSurround.error}（ほかの表示は継続）`] : []),
     ...(coreMemorial && !coreMemorial.ok ? [`石碑の読み込みに失敗: ${coreMemorial.error}（ほかの表示は継続）`] : []),
+    ...(coreRearTree && !coreRearTree.ok ? [`像背後の大木の読み込みに失敗: ${coreRearTree.error}（ほかの表示は継続）`] : []),
     ...(coreHachiko && !coreHachiko.ok ? [`ハチ公像の読み込みに失敗: ${coreHachiko.error}（ほかの表示は継続）`] : []),
     ...(coreDrainage && !coreDrainage.ok ? [`路面蓋の読み込みに失敗: ${coreDrainage.error}（ほかの表示は継続）`] : []),
     ...(coreTactile && !coreTactile.ok ? [`点字ブロックの読み込みに失敗: ${coreTactile.error}（ほかの表示は継続）`] : []),
@@ -239,7 +246,7 @@ async function start() {
   for (const problem of problems) debug?.error('scene', problem);
   lighting.placeSun(building.hints);
   for (const b of loaded) lighting.placeFloods(b.hints);
-  controls.setObstacles([...(coreProps ? [coreProps.root] : []), ...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreMemorial, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
+  controls.setObstacles([...(coreProps ? [coreProps.root] : []), ...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreMemorial, coreRearTree, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
   controls.frameBuilding(building.hints);
   setTime(mode);
   const envNote = envState.day === 'fulfilled' && envState.night === 'fulfilled' ? '' : '（環境マップの一部を読み込めず、反射は簡易表示）';
@@ -263,6 +270,7 @@ async function start() {
     if (corePlaza?.ok) applyClassPass(corePlaza.root);
     if (coreSurround?.ok) applyClassPass(coreSurround.root);
     if (coreMemorial?.ok) applyClassPass(coreMemorial.root);
+    if (coreRearTree?.ok) applyClassPass(coreRearTree.root);
     if (coreHachiko?.ok) applyClassPass(coreHachiko.root);
     if (coreDrainage?.ok) applyClassPass(coreDrainage.root);
     if (coreTactile?.ok) applyClassPass(coreTactile.root);
@@ -293,6 +301,7 @@ async function start() {
     plaza: corePlaza ? { ok: corePlaza.ok, error: corePlaza.error, ...corePlaza.stats } : 'off',
     surround: coreSurround ? { ok: coreSurround.ok, error: coreSurround.error, ...coreSurround.stats } : 'off',
     memorial: coreMemorial ? { ok: coreMemorial.ok, error: coreMemorial.error, ...coreMemorial.stats } : 'off',
+    rearTree: coreRearTree ? { ok: coreRearTree.ok, error: coreRearTree.error, ...coreRearTree.stats } : 'off',
     hachiko: coreHachiko ? { ok: coreHachiko.ok, error: coreHachiko.error, ...coreHachiko.stats } : 'off',
     drainage: coreDrainage ? { ok: coreDrainage.ok, error: coreDrainage.error, ...coreDrainage.stats } : 'off',
     tactile: coreTactile ? { ok: coreTactile.ok, error: coreTactile.error, ...coreTactile.stats } : 'off',
