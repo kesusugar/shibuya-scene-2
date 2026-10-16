@@ -1,0 +1,425 @@
+{
+  "base_commit": "4948a00",
+  "position_source": {
+    "source_url": "https://www.openstreetmap.org/way/1315939856",
+    "way_id": "1315939856",
+    "version": "5",
+    "timestamp": "2026-08-30T17:07:54Z",
+    "tags": {
+      "description": "tourist information center",
+      "information": "office",
+      "name": "Shibu Hachi Box",
+      "name:en": "Shibu Hachi Box",
+      "tourism": "information",
+      "wheelchair": "limited"
+    },
+    "ring_plan_m": [
+      [
+        23.60667561451437,
+        -40.58065800046718
+      ],
+      [
+        25.55128682440997,
+        -52.97600339997042
+      ],
+      [
+        28.644575352144685,
+        -52.48947779978457
+      ],
+      [
+        26.699964142249083,
+        -40.10518980041054
+      ],
+      [
+        23.60667561451437,
+        -40.58065800046718
+      ]
+    ],
+    "license": "ODbL-1.0",
+    "attribution": "© OpenStreetMap contributors"
+  },
+  "origin_plan_xyz": [
+    25.108505249023438,
+    -46.695255279541016,
+    0.4891152083873749
+  ],
+  "yaw_degrees": -81.08397738878742,
+  "scale": [
+    1,
+    1,
+    1
+  ],
+  "world_matrix_rows": [
+    [
+      0.1549866795539856,
+      0.9879165887832642,
+      0.0,
+      25.108505249023438
+    ],
+    [
+      -0.9879165887832642,
+      0.1549866795539856,
+      0.0,
+      -46.695255279541016
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.4891152083873749
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "inverse_matrix_rows": [
+    [
+      0.1549866646528244,
+      -0.9879164695739746,
+      0.0,
+      -50.022491455078125
+    ],
+    [
+      0.9879164695739746,
+      0.1549866646528244,
+      -0.0,
+      -17.567964553833008
+    ],
+    [
+      0.0,
+      -0.0,
+      1.0,
+      -0.4891151785850525
+    ],
+    [
+      -0.0,
+      0.0,
+      -0.0,
+      1.0
+    ]
+  ],
+  "terrace_normalized_to_body_blender": [
+    -0.10478019714355469,
+    -1.3359999656677246,
+    -0.16432876884937286
+  ],
+  "ground_samples": [
+    {
+      "local": [
+        -6.2795,
+        -1.786
+      ],
+      "xy": [
+        22.370847702026367,
+        -40.76844024658203
+      ],
+      "ground_y": 0.2566871643066406
+    },
+    {
+      "local": [
+        -6.2795,
+        -0.68
+      ],
+      "xy": [
+        23.463483810424805,
+        -40.597023010253906
+      ],
+      "ground_y": 0.24608612060546875
+    },
+    {
+      "local": [
+        -6.2795,
+        1.786
+      ],
+      "xy": [
+        25.89968490600586,
+        -40.21482849121094
+      ],
+      "ground_y": 0.22246170043945312
+    },
+    {
+      "local": [
+        -4,
+        -1.786
+      ],
+      "xy": [
+        22.724140167236328,
+        -43.02039337158203
+      ],
+      "ground_y": 0.287078857421875
+    },
+    {
+      "local": [
+        -4,
+        -0.68
+      ],
+      "xy": [
+        23.816776275634766,
+        -42.84897994995117
+      ],
+      "ground_y": 0.2764854431152344
+    },
+    {
+      "local": [
+        -4,
+        1.786
+      ],
+      "xy": [
+        26.25297737121582,
+        -42.46678161621094
+      ],
+      "ground_y": 0.2528495788574219
+    },
+    {
+      "local": [
+        -2,
+        -1.786
+      ],
+      "xy": [
+        23.03411293029785,
+        -44.9962272644043
+      ],
+      "ground_y": 0.3137474060058594
+    },
+    {
+      "local": [
+        -2,
+        -0.68
+      ],
+      "xy": [
+        24.12674903869629,
+        -44.82481384277344
+      ],
+      "ground_y": 0.3031463623046875
+    },
+    {
+      "local": [
+        -2,
+        1.786
+      ],
+      "xy": [
+        26.562950134277344,
+        -44.4426155090332
+      ],
+      "ground_y": 0.27951812744140625
+    },
+    {
+      "local": [
+        0,
+        -1.786
+      ],
+      "xy": [
+        23.344085693359375,
+        -46.97206115722656
+      ],
+      "ground_y": 0.3404083251953125
+    },
+    {
+      "local": [
+        0,
+        -0.68
+      ],
+      "xy": [
+        24.436721801757812,
+        -46.8006477355957
+      ],
+      "ground_y": 0.32981109619140625
+    },
+    {
+      "local": [
+        0,
+        1.786
+      ],
+      "xy": [
+        26.8729248046875,
+        -46.41844940185547
+      ],
+      "ground_y": 0.30617523193359375
+    },
+    {
+      "local": [
+        2,
+        -1.786
+      ],
+      "xy": [
+        23.65406036376953,
+        -48.94789505004883
+      ],
+      "ground_y": 0.36707305908203125
+    },
+    {
+      "local": [
+        2,
+        -0.68
+      ],
+      "xy": [
+        24.746694564819336,
+        -48.7764778137207
+      ],
+      "ground_y": 0.3564720153808594
+    },
+    {
+      "local": [
+        2,
+        1.786
+      ],
+      "xy": [
+        27.182897567749023,
+        -48.394283294677734
+      ],
+      "ground_y": 0.31826019287109375
+    },
+    {
+      "local": [
+        4,
+        -1.786
+      ],
+      "xy": [
+        23.964033126831055,
+        -50.923728942871094
+      ],
+      "ground_y": 0.3937339782714844
+    },
+    {
+      "local": [
+        4,
+        -0.68
+      ],
+      "xy": [
+        25.056669235229492,
+        -50.75231170654297
+      ],
+      "ground_y": 0.379638671875
+    },
+    {
+      "local": [
+        4,
+        1.786
+      ],
+      "xy": [
+        27.492870330810547,
+        -50.3701171875
+      ],
+      "ground_y": 0.3180351257324219
+    },
+    {
+      "local": [
+        6.2795,
+        -1.786
+      ],
+      "xy": [
+        24.317325592041016,
+        -53.175682067871094
+      ],
+      "ground_y": 0.3991432189941406
+    },
+    {
+      "local": [
+        6.2795,
+        -0.68
+      ],
+      "xy": [
+        25.409961700439453,
+        -53.004268646240234
+      ],
+      "ground_y": 0.3794593811035156
+    },
+    {
+      "local": [
+        6.2795,
+        1.786
+      ],
+      "xy": [
+        27.846162796020508,
+        -52.6220703125
+      ],
+      "ground_y": 0.3430595397949219
+    }
+  ],
+  "anchor_tp": 15.489115211265625,
+  "ground_range_m": 0.1766815185546875,
+  "removed_components": [
+    "Base_panel_joint1",
+    "Base_panel_joint2",
+    "Base_panel_joint3",
+    "Base_panel_joint4",
+    "Base_panel_joint5",
+    "Base_panel_joint6",
+    "Base_panel_joint7",
+    "Base_panel_joint8",
+    "Base_panel_joint9",
+    "Base_panel_joint10",
+    "Base_panel_joint11",
+    "Front_dark_base_trim",
+    "Front_rail_post-4.95",
+    "Front_rail_post-2.475",
+    "Front_rail_post0",
+    "Front_rail_post2.475",
+    "Front_rail_post4.95",
+    "Front_rail_top",
+    "Unbranded_front_rail_glass-4.95",
+    "Unbranded_front_rail_glass-2.475",
+    "Unbranded_front_rail_glass0",
+    "Unbranded_front_rail_glass2.475",
+    "Identifier_carrier_estimated",
+    "SHIBU_HACHI_BOX_factual_identifier"
+  ],
+  "selectively_cut": [
+    {
+      "name": "Front_platform_central",
+      "polygons_before": 54,
+      "polygons_after": 34
+    },
+    {
+      "name": "End_approach_low_step_-1",
+      "polygons_before": 54,
+      "polygons_after": 48
+    },
+    {
+      "name": "End_threshold_step_-1",
+      "polygons_before": 54,
+      "polygons_after": 48
+    },
+    {
+      "name": "End_approach_low_step_1",
+      "polygons_before": 54,
+      "polygons_after": 48
+    },
+    {
+      "name": "End_threshold_step_1",
+      "polygons_before": 54,
+      "polygons_after": 48
+    }
+  ],
+  "protected_components": [
+    "Platform_main_inferred_slab",
+    "Rear_closure_INFERRED"
+  ],
+  "protected_vertices_exact": true,
+  "bounds_plan_xyz": [
+    [
+      22.291183471679688,
+      -53.31573486328125,
+      0.221461683511734
+    ],
+    [
+      27.937681198120117,
+      -40.072914123535156,
+      3.2961151599884033
+    ]
+  ],
+  "triangles": 14223,
+  "primitives": 14,
+  "bytes": 882780,
+  "sha256": "c1b262ee107e8b46baad917f30aff885420a8ac611f071b67469b542a18f7a5e",
+  "ground_fit": {
+    "basis": "Visible R3 top 5mm above measured Core pavement; no geometry scaling, no ground/collision edits",
+    "r3_ground_y": 0.402252197265625,
+    "r3_top_gap_m": 0.005,
+    "inferred_visible_skirt_max_depth_m": 0.26765350794792175,
+    "skirt_is_foundation_evidence": false
+  }
+}

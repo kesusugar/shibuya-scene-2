@@ -1,0 +1,31 @@
+{
+  "method": "MCP metadata -> fetch(download_raw_file=true, include_base64=false) -> top-level file_uri download_url consumed privately -> real temporary files -> independent byte/hash/CRC/path/manifest checks",
+  "acquisition_success": true,
+  "local_save_success": true,
+  "drive_writes": false,
+  "index": {
+    "bytes": 367076,
+    "sha256": "2616fa98aea09fbb9e4cc776715f9660c0047232b5fd94ecb5839c8e91a958d8"
+  },
+  "terrace": {
+    "drive_file_id": "14ihhOgW-ANqAwyeNkX9XDUCEb0W8UloU",
+    "bytes": 5299103,
+    "sha256": "6e5c096b78341a855142a253be6363ec196e1605b94cdbe352c5cb42e9e25ea4",
+    "matches_index_size_sha": true,
+    "all_zip_crc_pass": true,
+    "paths_safe": true,
+    "manifest_files_verified": 44,
+    "main_glb_bytes": 488940,
+    "main_glb_sha256": "6198b2ee3c7d9ce114c9d738f80d72d42aac32610437c715cedd4b7bcfd554df"
+  },
+  "comparison_only": {
+    "drive_file_id": "1bqB3Y46b3CGPfVwipYVWPElnNna6YThe",
+    "bytes": 16712311,
+    "sha256": "006feded1ae651dfee4ac4224acd65e60195267fe784316f373a7eed40c624bc",
+    "all_zip_crc_pass": true,
+    "paths_safe": true,
+    "manifest_files_verified": 34,
+    "displayed": false
+  },
+  "no_source_photos_or_credentials_published": true
+}

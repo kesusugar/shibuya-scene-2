@@ -1,0 +1,191 @@
+{
+  "state": "LOCAL_STANDALONE_REVIEW_CANDIDATE",
+  "units": "metres",
+  "origin": "Actual geometry AABB bottom center, NOT ground",
+  "axes_blender": {
+    "X": "right / descending",
+    "Y": "back / pavilion side",
+    "Z": "up"
+  },
+  "axes_gltf": {
+    "X": "right / descending",
+    "Y": "up",
+    "Z": "public/front"
+  },
+  "raw_bounds_blender_m": [
+    [
+      -7.981335639953613,
+      -0.019999999552965164,
+      -0.16432876884937286
+    ],
+    [
+      3.7520205974578857,
+      0.8799999952316284,
+      1.1080000400543213
+    ]
+  ],
+  "raw_to_normalized_blender_translation_m": [
+    2.114657402038574,
+    -0.4300000071525574,
+    0.16432876884937286
+  ],
+  "normalized_to_raw_blender_translation_m": [
+    -2.114657402038574,
+    0.4300000071525574,
+    -0.16432876884937286
+  ],
+  "raw_high_support_datum_m": 0.248,
+  "normalized_high_support_datum_m": 0.41232876884937286,
+  "shared_knee_normalized_blender_xyz_m": [
+    2.114657402038574,
+    -0.4300000071525574,
+    0.4123287796974182
+  ],
+  "shared_knee_normalized_gltf_xyz_m": [
+    2.114657402038574,
+    0.41232876884937286,
+    0.4300000071525574
+  ],
+  "normalized_to_raw_gltf_translation_m": [
+    -2.114657402038574,
+    -0.16432876884937286,
+    -0.4300000071525574
+  ],
+  "shell_floor_datum_m": 0.248,
+  "shared_shell_datum_scope": "Vertical scalar only. No shell XY/yaw/parent transform is established. Original contour is not certified ground.",
+  "world_transform": null,
+  "shell_parent_transform": null,
+  "automatic_replacement": false,
+  "support_clearance_m": 0,
+  "support_clearance_basis": "Unverified local butt-support convention; raw y414 and y418 photo edges differ",
+  "slope_refit": {
+    "original_fall_px": 28.5,
+    "derived_fall_px": 28,
+    "center_run_m": 3.7345205479452055,
+    "maximum_center_run_change_m": 0.005890410958904109,
+    "linear_z_shear_about_raw_knee": 0.0015772870662460567,
+    "new_projected_grade": 0.08832807570977919,
+    "preserved_vertical_frame_height_m": 0.86,
+    "preserved_vertical_bar_section_m": 0.035,
+    "preserved_frame_y_depth_m": 0.04,
+    "preserved_glass_y_depth_m": 0.012
+  },
+  "right_terminal": "Unresolved beyond R3; no extrapolation or hidden toe/return",
+  "new_level_shell": {
+    "x_scope_m": [
+      -7.963835616438356,
+      0
+    ],
+    "y_scope_m": [
+      -0.02,
+      0.88
+    ],
+    "top_z_m": 0.248,
+    "bottom_fascia_z_m": -0.16432876712328764,
+    "gauge_m_technical_only": 0.02,
+    "visible_shell_only": true
+  },
+  "graphics_raw_transforms": [
+    {
+      "id": "01_ABSOLUTE_TOUGHNESS_white",
+      "source": "pavilion_assembly_review_v003/modules/rail_01_ABSOLUTE_TOUGHNESS_white.glb",
+      "translation_terrace_xyz_m": [
+        -7.1332876712328765,
+        -0.0063,
+        0.4600547945205479
+      ],
+      "rotation_xyz_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale_xyz": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "Full original graphic placed against glass front for an explicitly labeled frame-occlusion review; no cropping or rescaling."
+    },
+    {
+      "id": "02_GSHOCK_black",
+      "source": "pavilion_assembly_review_v003/modules/rail_02_GSHOCK_black.glb",
+      "translation_terrace_xyz_m": [
+        -5.566438356164383,
+        -0.0063,
+        0.5660821917808219
+      ],
+      "rotation_xyz_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale_xyz": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "Full original graphic placed against glass front for an explicitly labeled frame-occlusion review; no cropping or rescaling."
+    },
+    {
+      "id": "03_watch_case_cutout_black",
+      "source": "pavilion_assembly_review_v003/modules/rail_03_watch_case_cutout_black.glb",
+      "translation_terrace_xyz_m": [
+        -3.9760273972602738,
+        -0.0063,
+        0.2597808219178082
+      ],
+      "rotation_xyz_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale_xyz": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "Full original graphic placed against glass front for an explicitly labeled frame-occlusion review; no cropping or rescaling."
+    },
+    {
+      "id": "04_GSHOCK_red",
+      "source": "pavilion_assembly_review_v003/modules/rail_04_GSHOCK_red.glb",
+      "translation_terrace_xyz_m": [
+        -2.3915068493150686,
+        -0.0063,
+        0.5660821917808219
+      ],
+      "rotation_xyz_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale_xyz": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "Full original graphic placed against glass front for an explicitly labeled frame-occlusion review; no cropping or rescaling."
+    },
+    {
+      "id": "05_SHOCK_RESIST_shield_white",
+      "source": "pavilion_assembly_review_v003/modules/rail_05_SHOCK_RESIST_shield_white.glb",
+      "translation_terrace_xyz_m": [
+        -0.7834246575342467,
+        -0.0063,
+        0.38936986301369864
+      ],
+      "rotation_xyz_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale_xyz": [
+        1,
+        1,
+        1
+      ],
+      "purpose": "Full original graphic placed against glass front for an explicitly labeled frame-occlusion review; no cropping or rescaling."
+    }
+  ],
+  "intentional_artwork_overlap": "Full original watch extends into opaque bars by approx22/23mm; ink lies behind public frame face. No clipping, scaling or backing-glass invention."
+}

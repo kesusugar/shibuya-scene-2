@@ -1,0 +1,38 @@
+{
+  "source_url": "https://www.openstreetmap.org/way/1315939856",
+  "way_id": "1315939856",
+  "version": "5",
+  "timestamp": "2026-08-30T17:07:54Z",
+  "tags": {
+    "description": "tourist information center",
+    "information": "office",
+    "name": "Shibu Hachi Box",
+    "name:en": "Shibu Hachi Box",
+    "tourism": "information",
+    "wheelchair": "limited"
+  },
+  "ring_plan_m": [
+    [
+      23.60667561451437,
+      -40.58065800046718
+    ],
+    [
+      25.55128682440997,
+      -52.97600339997042
+    ],
+    [
+      28.644575352144685,
+      -52.48947779978457
+    ],
+    [
+      26.699964142249083,
+      -40.10518980041054
+    ],
+    [
+      23.60667561451437,
+      -40.58065800046718
+    ]
+  ],
+  "license": "ODbL-1.0",
+  "attribution": "© OpenStreetMap contributors"
+}

@@ -1,0 +1,259 @@
+{
+  "asset": "shibu_hachi_front_terrace_candidate_v001",
+  "status": "Completed bounded standalone LOCAL candidate; not installed in whole scene",
+  "units": "metres",
+  "main_glb": "shibu_hachi_front_terrace_candidate_v001.glb",
+  "main_blend": "shibu_hachi_front_terrace_candidate_v001.blend",
+  "previews": [
+    "evidence/01_overall_front_terrace.png",
+    "evidence/02_watch_and_shared_knee_detail.png"
+  ],
+  "model_counts": {
+    "meshes": 30,
+    "triangles": 8440,
+    "glass_spans": 8,
+    "posts": 9,
+    "shared_knee_posts": 1,
+    "graphics": 5
+  },
+  "scope": [
+    "Five-span level rail and three-span descending rail",
+    "New visible level deck/fascia and unchanged ramp shell",
+    "Five original-scale graphics with candidate-only shield overlap union",
+    "Reversible bottom-center normalization and vertical shared datum to old shell floor"
+  ],
+  "not_claimed": [
+    "Whole-building XY attachment",
+    "Measured rail/deck support seam",
+    "Site ground or terrain attachment",
+    "Verified right terminal beyond R3",
+    "2026 persistence of 2024 campaign graphics",
+    "Runtime integration, merge or deployment"
+  ],
+  "protected_inputs": "All 14 original paths unchanged, including old shell shared mineral/rear wall; nine input GLBs packaged and hidden baseline retained.",
+  "source_photos_included": false,
+  "source_photo_rights": "No redistribution license established; numeric observations, URLs and original generated renderings only.",
+  "repair": "Only shield border/lower-triangle coplanar union; original outline, text, material, scale and .6mm depth unchanged. Watch retains full original geometry and declared masked overlap.",
+  "files": [
+    {
+      "path": "ASSUMPTIONS.md",
+      "bytes": 9433,
+      "sha256": "9e9e96eb448caecf31c3fbd438b78d9465798a52b429497f36669f03a8f74012"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 6480,
+      "sha256": "3e93b9317774aad09a23b604b10fa654d4d12f3f5171da07cc5765d9607b07ce"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8617,
+      "sha256": "f665fa3737c03792b888567a1d2a6edf37cd04c4508f43bd6b6c5f83417858da"
+    },
+    {
+      "path": "evidence/01_overall_front_terrace.png",
+      "bytes": 2098369,
+      "sha256": "ceeecabd58be94ad7ba708f3fa8d0a1689f03fb92a8e5ce65acc54ce3e3c7468"
+    },
+    {
+      "path": "evidence/02_watch_and_shared_knee_detail.png",
+      "bytes": 2008105,
+      "sha256": "2ae61ba336b7bb7ef2e63e21953a6489b8a587235f71d37e735312b96fface1c"
+    },
+    {
+      "path": "evidence/VALIDATION_LOG.md",
+      "bytes": 4625,
+      "sha256": "97a35b6b16e263d0b3c168973ec0ad9c1f309d5c8e6c57d945ff63c24ed92f9d"
+    },
+    {
+      "path": "evidence/final_regeneration_timing.json",
+      "bytes": 118,
+      "sha256": "34fe2712f3bf492d3ae9cd458dc5996281bad67d1ec34af78f171c6258875757"
+    },
+    {
+      "path": "evidence/generate.log",
+      "bytes": 28105,
+      "sha256": "cfc80a9eafa46614865a6c36ee86ead1d2677a246fb14619b68a73baaaa084a2"
+    },
+    {
+      "path": "evidence/generation_timing.json",
+      "bytes": 121,
+      "sha256": "7eae2dd466b2f3207f182b58f2c1ee330b8d74161d53822607f58a92f1816fbe"
+    },
+    {
+      "path": "evidence/initial_validation_api_fix.log",
+      "bytes": 8081,
+      "sha256": "48896cf1d5bfbedf4df3cedc983da7855bbb8a9be6a45d65db1337d901b0f254"
+    },
+    {
+      "path": "evidence/pre_shield_repair_generate.log",
+      "bytes": 28446,
+      "sha256": "f53863139fa1bdc84b11fd891fe8ebe13996d94294f6268f27f21a45abd70dc0"
+    },
+    {
+      "path": "evidence/pre_shield_repair_reproducibility.json",
+      "bytes": 545,
+      "sha256": "636fc1c2420d9302d7dc0330a5ebcde618f4bfad981e2ac80c8541d28329639e"
+    },
+    {
+      "path": "evidence/pre_shield_repair_validation.json",
+      "bytes": 5816,
+      "sha256": "e11417d9d12b71eaf0f07af2a6d29f006c1fd4ede5b1a2471e73a026668240eb"
+    },
+    {
+      "path": "evidence/protected_originals_verified.json",
+      "bytes": 3402,
+      "sha256": "89fbdc6ded3ca39e7a1dd873c9920dc037efe192d7498a77984f32d4a426cab5"
+    },
+    {
+      "path": "evidence/regeneration.log",
+      "bytes": 10321,
+      "sha256": "cdd547bf0419d65965c9fd127551418d330cacaf4c8a105421f531206332f620"
+    },
+    {
+      "path": "evidence/render_framing.json",
+      "bytes": 1819,
+      "sha256": "447141163dcabbda500a10032dd25200915d5418d9c174222423f10344f1b66c"
+    },
+    {
+      "path": "evidence/reproducibility.json",
+      "bytes": 941,
+      "sha256": "8c8c74c8c8b9249ef19ff5a29919f67433cead4dfd9140a4bab03874b6bf2685"
+    },
+    {
+      "path": "evidence/shield_actual_export_check.json",
+      "bytes": 1002,
+      "sha256": "656d44ad1e38b3a8fb7351ce298a8eef009fb76737401000ac7cafe745cf1be0"
+    },
+    {
+      "path": "evidence/shield_candidate_repair.json",
+      "bytes": 501,
+      "sha256": "f2e6e64f00c0ed25bfcae187928903cd5e3617f25d4856381916c219a4f91309"
+    },
+    {
+      "path": "evidence/shield_source_overlap_diagnosis.json",
+      "bytes": 1778,
+      "sha256": "349ee161d1a79805c1d8cf67dd04b9f62a86f67b035677435e3e52281fb82a9e"
+    },
+    {
+      "path": "evidence/source_protection.json",
+      "bytes": 1018,
+      "sha256": "366ae18142f0cb763f81a78d6415c9cef36c9a56e47745110575d087df80837a"
+    },
+    {
+      "path": "evidence/validation.json",
+      "bytes": 6964,
+      "sha256": "6bfe900801e2022fc0ee8806b6355183359161e331d0a29bbb79888f4bd8e778"
+    },
+    {
+      "path": "evidence/visual_review.json",
+      "bytes": 1432,
+      "sha256": "b37158b7d30254830997a7188f93d52e0b07f30e590c35b984978d99768e9414"
+    },
+    {
+      "path": "inputs/rail_01_ABSOLUTE_TOUGHNESS_white.glb",
+      "bytes": 226148,
+      "sha256": "c3cd61d341b3fe971a579ecb7fd162b0a28c125de7eb24cf261e1bc0e0bbd7a4"
+    },
+    {
+      "path": "inputs/rail_02_GSHOCK_black.glb",
+      "bytes": 18144,
+      "sha256": "1498d52b971c3222b6c5a4069d43699edef861c0cd79eb5dcb78acda4d8adf6c"
+    },
+    {
+      "path": "inputs/rail_03_watch_case_cutout_black.glb",
+      "bytes": 8020,
+      "sha256": "b2f91b963eec187601249ddaa1cf0b64407affcbeab9839b6ac8c034b2f631cf"
+    },
+    {
+      "path": "inputs/rail_04_GSHOCK_red.glb",
+      "bytes": 17844,
+      "sha256": "327aac64b97200440da1b5b0dd6a424c10a2761113e7119c1a3db16ff7587c7b"
+    },
+    {
+      "path": "inputs/rail_05_SHOCK_RESIST_shield_white.glb",
+      "bytes": 175944,
+      "sha256": "5331d2e98916c423c87c64e9853933a4271d00a83eafcf28943b71b1023eb501"
+    },
+    {
+      "path": "inputs/shell.glb",
+      "bytes": 590340,
+      "sha256": "95f08e5d0aba2acd0043aff57ae2995fc15953792ef02f1ce20bde4dc1c3c923"
+    },
+    {
+      "path": "inputs/shibu_hachi_five_span_level_rail_v001.glb",
+      "bytes": 21272,
+      "sha256": "622095218b7e5f4d5a954ab07c77d0f725d290ef864f6272093428147a44cd0e"
+    },
+    {
+      "path": "inputs/shibu_hachi_three_span_sloped_rail_v001.glb",
+      "bytes": 13532,
+      "sha256": "da7b983be0e6681d31349787d3a38f2f98cde3130ef9532170989b6ab7ca847a"
+    },
+    {
+      "path": "inputs/shibu_hachi_visible_ramp_shell_v001.glb",
+      "bytes": 4472,
+      "sha256": "052f99e4cf81eb2cc6d2c67e24edaa4f8d9b3bc532fa524aff4764ed0a115e16"
+    },
+    {
+      "path": "placement_reference.json",
+      "bytes": 5382,
+      "sha256": "7301bc856ae85fc0b8b3637878f85cb714d047a831e803563c3323c9c75991fa"
+    },
+    {
+      "path": "references/DejaVu_LICENSE.txt",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "references/INPUT_SNAPSHOT_AND_RAW_TRANSFORMS.json",
+      "bytes": 7397,
+      "sha256": "3120db5a986ba8f0c6af29b1e21894348a7821c81afa53cf6321d38d032cb9cb"
+    },
+    {
+      "path": "references/LOCAL_ASSEMBLY_PROPOSAL.md",
+      "bytes": 12254,
+      "sha256": "4aef2ed998cd05bfaa6d955ad845b20dac04f5ccfd6b8f98af616e6fcd64a5e1"
+    },
+    {
+      "path": "references/NUMERIC_ALIGNMENT_AND_WATCH.json",
+      "bytes": 2857,
+      "sha256": "eae9d9bbf2e7f2c0decba0f50efba62793353c083d11768a55e068344234087d"
+    },
+    {
+      "path": "shibu_hachi_front_terrace_candidate_v001.blend",
+      "bytes": 3846424,
+      "sha256": "ae6bd121e86af5d53da9dd3c136830bac1b68ee9dd3353a5f3e955d09b935a9f"
+    },
+    {
+      "path": "shibu_hachi_front_terrace_candidate_v001.glb",
+      "bytes": 488940,
+      "sha256": "6198b2ee3c7d9ce114c9d738f80d72d42aac32610437c715cedd4b7bcfd554df"
+    },
+    {
+      "path": "source/check_shield.py",
+      "bytes": 1810,
+      "sha256": "259bbf46cbe0c8841eec9bc0b06e7c1280fba403d412b3c7218b5d1220a7887b"
+    },
+    {
+      "path": "source/generate.py",
+      "bytes": 20698,
+      "sha256": "9243365d547040467b0bde949af7cec0874b1a474a0ff039803ddeedfe960742"
+    },
+    {
+      "path": "source/glb_geometry.py",
+      "bytes": 2210,
+      "sha256": "63c22489e0d5fcd6b226c1e0ebccaca83d4e9a6f8c761890cf3e3076f249de37"
+    },
+    {
+      "path": "source/package.py",
+      "bytes": 2806,
+      "sha256": "c0f0a7711413a4ac91b11dff1bfb629b57d856958e7e83d6cd571e3c765688dd"
+    },
+    {
+      "path": "source/repair_shield.py",
+      "bytes": 3958,
+      "sha256": "ce038d4638f350f9b158846815b34f06ae2a1867834c41fde6f55cc362aef6e4"
+    }
+  ]
+}
