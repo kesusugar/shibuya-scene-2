@@ -67,6 +67,10 @@
     "web/PROVENANCE.md": {
       "bytes": 3706,
       "sha256": "37639d81a0c6f5f5e85cfe885109441b707d4e143499ccb7d9ba11bfb1759783"
+    },
+    "source/scan-candidate/README.md": {
+      "bytes": 5706,
+      "sha256": "56a3346e35e8048b77eb6d433cc388bd42e2739ecc6986d482229176c5f7f2d2"
     }
   }
 }
