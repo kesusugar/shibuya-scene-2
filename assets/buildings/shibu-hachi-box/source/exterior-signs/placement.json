@@ -17,7 +17,7 @@
         1
       ],
       "output": "exterior-roof-circle.glb",
-      "layer": "roof-circle-observed-2024",
+      "layer": "signs_roof-circle-observed-2024",
       "removeUnusedUV": false
     },
     {
@@ -36,7 +36,7 @@
         1.201055807
       ],
       "output": "exterior-roof-name.glb",
-      "layer": "roof-name-observed-2024",
+      "layer": "signs_roof-name-observed-2024",
       "reuse": "Original authored lettering only; uniform scaling to photo-based 3.9813m span; no old carrier, no nonuniform glyph deformation",
       "emissiveFactor": [
         0.36,
@@ -61,7 +61,7 @@
         1
       ],
       "output": "exterior-roof-dog.glb",
-      "layer": "roof-dog-observed-2024",
+      "layer": "signs_roof-dog-observed-2024",
       "removeUnusedUV": false
     },
     {
@@ -80,7 +80,7 @@
         1
       ],
       "output": "exterior-fun-project.glb",
-      "layer": "fun-project-observed-2024",
+      "layer": "signs_fun-project-observed-2024",
       "removeUnusedUV": false
     },
     {
@@ -99,7 +99,7 @@
         1
       ],
       "output": "exterior-roof-sponsor.glb",
-      "layer": "roof-sponsor-observed-2024",
+      "layer": "signs_roof-sponsor-observed-2024",
       "removeUnusedUV": false
     },
     {
@@ -118,7 +118,7 @@
         1
       ],
       "output": "exterior-display-clock.glb",
-      "layer": "display-clock-static-2026-08-08",
+      "layer": "signs_display-clock-static-2026-08-08",
       "removeUnusedUV": true
     }
   ],
