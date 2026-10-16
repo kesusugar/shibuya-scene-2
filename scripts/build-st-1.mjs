@@ -1,3 +1,4 @@
+import {buildST2} from './build-st-2.mjs';
 // ST-1 surfaces plus a bounded opening derived from the preserved PR81 shell.
 import {buildST1Opening} from './build-st-1-opening.mjs';
 import {NodeIO} from '@gltf-transform/core';
@@ -10,8 +11,9 @@ const dir='assets/buildings/station-north',source=dir+'/source/st-1';
 const hash=p=>createHash('sha256').update(readFileSync(p)).digest('hex');
 const c=JSON.parse(readFileSync(source+'/placement.json'));
 const opening=await buildST1Opening(c);
+const st2=await buildST2();
 const bodyHash=hash(dir+'/web/station-north.glb');
-assert.equal(bodyHash,opening.outputSha256,'Use the derivative of the preserved PR81 structure');
+assert.equal(bodyHash,st2.outputSha256,'Use the bounded ST-2 derivative after the unchanged ST-1 opening');
 const [a,b]=c.anchorPlanEndpoints,t=new Vector3(b[0]-a[0],0,-(b[1]-a[1])).normalize();
 const n=new Vector3(-t.z,0,t.x),yaw=Math.atan2(n.x,n.z);
 const anchor=new Vector3(a[0]+(b[0]-a[0])*c.anchorAlongFace,c.groundY,-a[1]-(b[1]-a[1])*c.anchorAlongFace).addScaledVector(n,c.frontOffset);
@@ -84,7 +86,8 @@ const manifest=JSON.parse(readFileSync(dir+'/manifest.json')),files={};
 function walk(path){for(const ent of readdirSync(path,{withFileTypes:true})){const p=join(path,ent.name);if(ent.isDirectory())walk(p);else if(p.replaceAll('\\','/')!==dir+'/manifest.json')files[relative(dir,p).replaceAll('\\','/')]={bytes:statSync(p).size,sha256:hash(p)};}}
 walk(dir);manifest.files=files;
 manifest.st1={status:'estimated shallow exterior fit; dated fascia and wall cladding only',...report};
-manifest.source_levels.JR_bridge='PR81 source preserved; only the entrance wall patch is locally derived';
+manifest.source_levels.JR_bridge='PR81 and PR82 sources preserved; bounded east JR entry and west policebox facade patches only';
+manifest.st2Opening=st2;
 manifest.st1Opening={status:'shallow exterior opening under the existing fascia; estimated dimensions and depth; no enterable interior',...opening};
 const stats={triangles:0,primitives:0,bytes:0};
 for(const name of readdirSync(dir+'/web').filter(f=>f.endsWith('.glb'))){

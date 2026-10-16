@@ -5,6 +5,10 @@ import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 const [base, out] = process.argv.slice(2);
 const views = {
+  st2_whole: {q:'time=day&pose=7,7,12,47,-24,3.2,55',w:1100,h:750},
+  st2_front: {q:'time=day&pose=26,-20,3,48,-23,2.7,48',w:1100,h:750},
+  st2_oblique: {q:'time=day&pose=34,-35,3.4,48,-23,2.5,55',w:1100,h:750},
+  st2_feet: {q:'time=day&pose=39,-22,.8,47,-23,.4,55',w:1200,h:750},
   st1_whole: {q:'time=day&pose=128,-1,14,90,-24,2.6,55',w:1100,h:750},
   st1_front: {q:'time=day&pose=114,-18,3.5,90,-25,2.4,48',w:1100,h:750},
   st1_oblique: {q:'time=day&pose=108,-41,4.8,90,-25,2.4,55',w:1100,h:750},
@@ -94,6 +98,8 @@ try {
     if (!process.env.FORCE && existsSync(`${out}/${name}.png`)) continue;
     const page = await browser.newPage({ viewport: { width: v.w, height: v.h } }); const errors = [];
     await page.route('**/favicon.ico', (r) => r.fulfill({ status: 204 }));
+    // QA baseline: old full building list via EXTRA, and the preserved PR82 shell.
+    if(process.env.ST2_BASELINE==='1')await page.route('**/buildings/station-north/station-north.glb',r=>r.fulfill({body:readFileSync('assets/buildings/station-north/source/st-2/station-north-pr82.glb'),contentType:'model/gltf-binary'}));
     // QA-only equivalent of approved main: same byte-identical BOX-1, without added layers.
     if(process.env.BOX_BASELINE==='1')await page.route('**/buildings/shibu-hachi-box/viewer.json',async r=>{const response=await r.fetch();const hints=await response.json();delete hints.layers;await r.fulfill({response,body:JSON.stringify(hints),contentType:'application/json'});});
     page.on('pageerror', (e) => errors.push(e.message));

@@ -10,14 +10,14 @@ const dir='assets/buildings/station-north',source=dir+'/source/st-1-opening';
 const config=JSON.parse(readFileSync(source+'/opening.json','utf8')),report=JSON.parse(readFileSync(source+'/build-report.json','utf8'));
 const hash=(p:string)=>createHash('sha256').update(readFileSync(p)).digest('hex');
 let old:Document,live:Document;
-beforeAll(async()=>{const io=new NodeIO();old=await io.read(source+'/'+config.baseline);live=await io.read(dir+'/web/station-north.glb');});
+beforeAll(async()=>{const io=new NodeIO();old=await io.read(source+'/'+config.baseline);live=await io.read(dir+'/source/st-2/station-north-pr82.glb');});
 it('preserves the original GLB and unchanged ST-1 placement, sign, pier and day/night settings',()=>{
- expect(hash(source+'/'+config.baseline)).toBe(config.baselineSha256);expect(hash(dir+'/web/station-north.glb')).toBe(report.outputSha256);
+ expect(hash(source+'/'+config.baseline)).toBe(config.baselineSha256);expect(hash(dir+'/source/st-2/station-north-pr82.glb')).toBe(report.outputSha256);
  for(const [path,sha] of Object.entries(config.preservedST1Files))expect(hash(dir+'/'+path),path).toBe(sha);
  const manifest=JSON.parse(readFileSync(dir+'/manifest.json','utf8'));
- for(const path of ['web/station-north.glb','source/st-1-opening/opening.json','source/st-1-opening/'+config.baseline])expect(manifest.files[path]).toEqual({bytes:readFileSync(dir+'/'+path).length,sha256:hash(dir+'/'+path)});
+ for(const path of ['source/st-2/station-north-pr82.glb','source/st-1-opening/opening.json','source/st-1-opening/'+config.baseline])expect(manifest.files[path]).toEqual({bytes:readFileSync(dir+'/'+path).length,sha256:hash(dir+'/'+path)});
 });
-it('keeps all original triangles and attributes outside the two explicitly approved source triangles',()=>{
+it('keeps the PR82 JR derivative original triangles and attributes outside the two explicitly approved source triangles',()=>{
  const a=old.getRoot(),b=live.getRoot();
  expect(b.listNodes()).toHaveLength(a.listNodes().length+1);expect(b.listMeshes()).toHaveLength(a.listMeshes().length+1);
  for(const node of a.listNodes()){
@@ -50,7 +50,7 @@ it('keeps all original triangles and attributes outside the two explicitly appro
  a.listMaterials().forEach((m,i)=>{const n=b.listMaterials()[i];expect(n.getName()).toBe(m.getName());expect(n.getBaseColorFactor()).toEqual(m.getBaseColorFactor());expect(n.getEmissiveFactor()).toEqual(m.getEmissiveFactor());expect(n.getRoughnessFactor()).toBe(m.getRoughnessFactor());expect(n.getMetallicFactor()).toBe(m.getMetallicFactor());});
 });
 it('opens the actual GLB only below the fascia and closes a shallow recess with real side reveals and a back',async()=>{
- const bytes=readFileSync(dir+'/web/station-north.glb'),g=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength) as ArrayBuffer,'');
+ const bytes=readFileSync(dir+'/source/st-2/station-north-pr82.glb'),g=await new GLTFLoader().parseAsync(bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength) as ArrayBuffer,'');
  const baseline=readFileSync(source+'/'+config.baseline),prior=await new GLTFLoader().parseAsync(baseline.buffer.slice(baseline.byteOffset,baseline.byteOffset+baseline.byteLength) as ArrayBuffer,'');prior.scene.updateMatrixWorld(true);
  g.scene.updateMatrixWorld(true);const world=new Matrix4().fromArray(report.worldMatrix),inverse=world.clone().invert();
  const point=(x:number,y:number,z:number)=>new Vector3(x,y,z).applyMatrix4(world);

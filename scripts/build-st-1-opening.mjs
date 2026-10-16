@@ -26,18 +26,49 @@ function subtract(poly,c){
  }
  return {outside,removedArea:inside.length>=3?area(inside):0};
 }
-export async function buildST1Opening(placement){
+export async function buildST1Opening(placement,options={}){
+ const source=options.source??dir+'/source/st-1-opening',prefix=options.prefix??'st1';
  const c=JSON.parse(readFileSync(source+'/opening.json'));
+ if(!options.source){
  const fascia=placement.components.find(c=>c.id==='entry-fascia');
  assert(c.xMin>=fascia.position[0]-2.4-1e-6 && c.xMax<=fascia.position[0]+2.4+1e-6,'Opening must remain under the selected fascia');
  assert(Math.abs(c.topY+c.topClearanceToFascia-fascia.position[1])<1e-8);
  assert(c.depth>0 && c.depth<=1 && c.bottomY>=-1,'Shallow exterior only');
+ }
  const bytes=readFileSync(source+'/'+c.baseline);assert.equal(sha(bytes),c.baselineSha256);
  const [a,b]=placement.anchorPlanEndpoints,t=new Vector3(b[0]-a[0],0,-(b[1]-a[1])).normalize(),n=new Vector3(-t.z,0,t.x);
  const anchor=new Vector3(a[0]+(b[0]-a[0])*placement.anchorAlongFace,placement.groundY,-a[1]-(b[1]-a[1])*placement.anchorAlongFace).addScaledVector(n,placement.frontOffset);
  const world=new Matrix4().makeTranslation(...anchor.toArray()).multiply(new Matrix4().makeRotationY(Math.atan2(n.x,n.z))).multiply(new Matrix4().makeScale(placement.uniformScale,placement.uniformScale,placement.uniformScale));
  const io=new NodeIO(),doc=await io.readBinary(bytes),root=doc.getRoot(),target=root.listNodes().filter(n=>n.getName()===c.targetNode);
  assert.equal(target.length,1);const node=target[0],prim=node.getMesh().listPrimitives()[c.targetPrimitive];
+ const {position,originalIndices,result,cuts,appended}=cutWallPrimitive(prim,node,c,world);
+ const buffer=position.getBuffer(),jambMaterial=doc.createMaterial(prefix+'_entry_recess_wall').setBaseColorFactor([.32,.34,.32,1]).setRoughnessFactor(.9).setDoubleSided(true);
+ const backMaterial=doc.createMaterial(prefix+'_entry_recess_back').setBaseColorFactor([.035,.04,.035,1]).setRoughnessFactor(1).setDoubleSided(true);
+ const mesh=doc.createMesh(prefix.toUpperCase()+'_shallow_entry_recess');
+ const z=c.wallPlaneZ,back=z-c.depth,x0=c.xMin,x1=c.xMax,y0=c.bottomY,y1=c.topY;
+ const quads=[
+  [[x0,y0,z],[x0,y0,back],[x0,y1,back],[x0,y1,z]],
+  [[x1,y0,back],[x1,y0,z],[x1,y1,z],[x1,y1,back]],
+  [[x0,y1,z],[x0,y1,back],[x1,y1,back],[x1,y1,z]],
+  [[x0,y0,back],[x1,y0,back],[x1,y1,back],[x0,y1,back]],
+ ];
+ for(const [name,faces,material] of [['reveals',quads.slice(0,3),jambMaterial],['back',[quads[3]],backMaterial]]){
+  const positions=[],normals=[],idx=[];
+  for(const q of faces){
+   const start=positions.length/3,v=q.map(p=>new Vector3(...p)),normal=v[1].clone().sub(v[0]).cross(v[2].clone().sub(v[0])).normalize();
+   q.forEach(p=>{positions.push(...p);normals.push(...normal.toArray());});idx.push(start,start+1,start+2,start,start+2,start+3);
+  }
+  const p=doc.createPrimitive().setAttribute('POSITION',doc.createAccessor(name+'_position',buffer).setType('VEC3').setArray(new Float32Array(positions))).setAttribute('NORMAL',doc.createAccessor(name+'_normal',buffer).setType('VEC3').setArray(new Float32Array(normals))).setIndices(doc.createAccessor(name+'_indices',buffer).setType('SCALAR').setArray(new Uint16Array(idx))).setMaterial(material);
+  mesh.addPrimitive(p);
+ }
+ const reveal=doc.createNode(prefix.toUpperCase()+'_shallow_entry_recess').setMesh(mesh).setMatrix(world.toArray());root.listScenes()[0].addChild(reveal);
+ const out=dir+'/web/station-north.glb';await io.write(out,doc);
+ const report={main:c.main,baseline:c.baseline,baselineSha256:c.baselineSha256,outputSha256:sha(readFileSync(out)),targetNode:c.targetNode,targetPrimitive:c.targetPrimitive,originalTriangles:originalIndices.length/3,outputTriangles:result.length/3,originalVertexCount:position.getCount()-appended,appendedVertices:appended,cuts,removedArea:cuts.reduce((s,c)=>s+c.removedArea,0),depth:c.depth,worldMatrix:world.toArray(),addedTriangles:8,addedPrimitives:2,noFloorOrWalkSurfaceAdded:true,collisionCodeUnchanged:true,walkableEntrance:false,reference:c.reference};
+ writeFileSync(source+'/build-report.json',JSON.stringify(report,null,2)+'\n');return report;
+}
+
+// Shared bounded clipper: preserves original attributes and all unselected triangles.
+export function cutWallPrimitive(prim,node,c,world){
  const position=prim.getAttribute('POSITION'),indices=prim.getIndices(),originalIndices=Array.from(indices.getArray());
  assert.deepEqual([...prim.listSemantics()].sort(),['NORMAL','POSITION']);
  const toLocal=world.clone().invert().multiply(new Matrix4().fromArray(node.getWorldMatrix()));
@@ -67,27 +98,5 @@ export async function buildST1Opening(placement){
  assert.deepEqual(cuts.map(r=>r.triangle).sort((a,b)=>a-b),c.targetTriangles);
  for(const {accessor,values} of Object.values(attrs))accessor.setArray(new Float32Array(values));
  indices.setArray(new Uint16Array(result));assert(position.getCount()<65536);
- const buffer=position.getBuffer(),jambMaterial=doc.createMaterial('st1_entry_recess_wall').setBaseColorFactor([.32,.34,.32,1]).setRoughnessFactor(.9).setDoubleSided(true);
- const backMaterial=doc.createMaterial('st1_entry_recess_back').setBaseColorFactor([.035,.04,.035,1]).setRoughnessFactor(1).setDoubleSided(true);
- const mesh=doc.createMesh('ST1_shallow_entry_recess');
- const z=c.wallPlaneZ,back=z-c.depth,x0=c.xMin,x1=c.xMax,y0=c.bottomY,y1=c.topY;
- const quads=[
-  [[x0,y0,z],[x0,y0,back],[x0,y1,back],[x0,y1,z]],
-  [[x1,y0,back],[x1,y0,z],[x1,y1,z],[x1,y1,back]],
-  [[x0,y1,z],[x0,y1,back],[x1,y1,back],[x1,y1,z]],
-  [[x0,y0,back],[x1,y0,back],[x1,y1,back],[x0,y1,back]],
- ];
- for(const [name,faces,material] of [['reveals',quads.slice(0,3),jambMaterial],['back',[quads[3]],backMaterial]]){
-  const positions=[],normals=[],idx=[];
-  for(const q of faces){
-   const start=positions.length/3,v=q.map(p=>new Vector3(...p)),normal=v[1].clone().sub(v[0]).cross(v[2].clone().sub(v[0])).normalize();
-   q.forEach(p=>{positions.push(...p);normals.push(...normal.toArray());});idx.push(start,start+1,start+2,start,start+2,start+3);
-  }
-  const p=doc.createPrimitive().setAttribute('POSITION',doc.createAccessor(name+'_position',buffer).setType('VEC3').setArray(new Float32Array(positions))).setAttribute('NORMAL',doc.createAccessor(name+'_normal',buffer).setType('VEC3').setArray(new Float32Array(normals))).setIndices(doc.createAccessor(name+'_indices',buffer).setType('SCALAR').setArray(new Uint16Array(idx))).setMaterial(material);
-  mesh.addPrimitive(p);
- }
- const reveal=doc.createNode('ST1_shallow_entry_recess').setMesh(mesh).setMatrix(world.toArray());root.listScenes()[0].addChild(reveal);
- const out=dir+'/web/station-north.glb';await io.write(out,doc);
- const report={main:c.main,baseline:c.baseline,baselineSha256:c.baselineSha256,outputSha256:sha(readFileSync(out)),targetNode:c.targetNode,targetPrimitive:c.targetPrimitive,originalTriangles:originalIndices.length/3,outputTriangles:result.length/3,originalVertexCount:position.getCount()-appended,appendedVertices:appended,cuts,removedArea:cuts.reduce((s,c)=>s+c.removedArea,0),depth:c.depth,worldMatrix:world.toArray(),addedTriangles:8,addedPrimitives:2,noFloorOrWalkSurfaceAdded:true,collisionCodeUnchanged:true,walkableEntrance:false,reference:c.reference};
- writeFileSync(source+'/build-report.json',JSON.stringify(report,null,2)+'\n');return report;
+ return {position,originalIndices,result,cuts,appended};
 }
