@@ -26,13 +26,14 @@
  "shrubs_per_segment": 3,
  "shrub_height_m": 1.1,
  "panel": {
+  "replaced_by": "street/hachiko-memorial",
   "xy_local": [
-   -3.65,
+   -4.0,
    -1.25
   ],
-  "width_m": 0.95,
-  "height_m": 1.35,
-  "depth_m": 0.2
+  "width_m": 1.6,
+  "height_m": 0.82,
+  "depth_m": 0.22
  },
  "source": "july094/july095, 2025-07-13; no photograph texture",
  "branch_fans": 28,

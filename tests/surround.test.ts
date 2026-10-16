@@ -9,9 +9,11 @@ it('loads the surroundings independently and isolates unavailable assets',async(
  const failed=await loadSurround(async()=>{throw Error('unavailable');});expect(failed.ok).toBe(false);expect(failed.root.children).toHaveLength(0);
  expect((await loadSurround(async()=>new Group())).ok).toBe(false);
 });
-it('exports stone, inclined metal rails, shrubs and the stone panel without photo texture or invented lighting',async()=>{
+it('exports stone, inclined metal rails and shrubs without duplicating the replaced panel',async()=>{
  const root=(await new NodeIO().read('assets/street/hachiko-surround/web/hachiko-surround.glb')).getRoot();
  for(const name of ['street_surround','street_surround_stone','street_surround_silver','street_surround_needle','street_surround_panel'])expect(root.listNodes().map(n=>n.getName())).toContain(name);
+ const stats=JSON.parse(readFileSync('assets/street/hachiko-surround/source/data/stats.json','utf8'));
+ expect(stats.items.find((r:{id:string})=>r.id==='stone-panel')?.replaced_by).toBe('street/hachiko-memorial');
  for(const m of root.listMaterials()){expect(m.getEmissiveFactor()).toEqual([0,0,0]);expect(m.getBaseColorTexture()).toBeNull();if(m.getName().includes('needle'))expect(m.getDoubleSided()).toBe(true);}
 });
 it('keeps exported stone bases on the sidewalk and new footprints clear of the statue and tactile route',async()=>{

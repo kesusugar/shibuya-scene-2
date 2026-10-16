@@ -82,9 +82,10 @@ for seg in D['segments']:
 me=bpy.data.meshes.new('needles');me.from_pydata(leaf_vertices,[],leaf_faces);o=bpy.data.objects.new('needles',me);bpy.context.collection.objects.link(o);finish(o,'needles','needle');me.materials.append(mats['needle_light'])
 for polygon,slot in zip(me.polygons,leaf_materials):polygon.material_index=slot
 P=D['panel'];px,py=P['xy_local'];w=P['width_m'];dep=P['depth_m'];samples=[{'local':[x,y],'xy':world(x,y),'ground_z':height(x,y)} for x in [px-w/2,px,px+w/2] for y in [py-dep/2,py+dep/2]];z=min(p['ground_z'] for p in samples)
-box('stone_panel',(px,py,z+P['height_m']/2),(w,dep,P['height_m']),'stone',.015)
-box('unread_inscription',(px,py+dep/2+.003,z+P['height_m']*.62),(w*.78,.008,P['height_m']*.52),'panel',.003)
-records.append({'id':'stone-panel','contact_samples':samples,'anchor_tp':z+15,'max_burial_m':max(p['ground_z'] for p in samples)-z,'content_status':'inscription unidentified, no invented map or lettering'})
+if not P.get('replaced_by'):
+ box('stone_panel',(px,py,z+P['height_m']/2),(w,dep,P['height_m']),'stone',.015)
+ box('unread_inscription',(px,py+dep/2+.003,z+P['height_m']*.62),(w*.78,.008,P['height_m']*.52),'panel',.003)
+records.append({'id':'stone-panel','contact_samples':samples,'anchor_tp':z+15,'max_burial_m':max(p['ground_z'] for p in samples)-z,'replaced_by':P.get('replaced_by')})
 # Bake transforms then group by material: few draw calls despite thousands of procedural needles.
 for o in objects:
  bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o;bpy.ops.object.transform_apply(location=False,rotation=True,scale=True)

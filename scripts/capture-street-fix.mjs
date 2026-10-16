@@ -3,6 +3,7 @@
 import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 const [base, out] = process.argv.slice(2);
 const views = {
   st2_whole: {q:'time=day&pose=7,7,12,47,-24,3.2,55',w:1100,h:750},
@@ -53,6 +54,9 @@ const views = {
   center244: { q:'time=day&pose=-38,33,4,-68,78,18,50',w:900,h:675 },
 
   paving_close: { q: 'time=day&pose=8.5,-45,2.2,11.568,-48.686,.7,55', w: 900, h: 675 },
+  memorial_front: { q: 'time=day&pose=6.4,-47.7,1.45,9.295,-51.803,.9,48', w: 1000, h: 750 },
+  memorial_oblique: { q: 'time=day&pose=5,-49,1.7,9.009,-52.004,.8,52', w: 1000, h: 750 },
+  memorial_feet: { q: 'time=day&pose=7.5,-49.1,.8,9.295,-51.803,.32,52', w: 1000, h: 750 },
   surround: { q: 'time=day&pose=6.41,-41.32,2.3,12,-49.3,1,52', w: 1000, h: 750 },
   surround_night: { q: 'time=night&pose=6.41,-41.32,2.3,12,-49.3,1,52', w: 1000, h: 750 },
   statue_front: { q: 'time=day&pose=9.274,-45.409,1.9,11.568,-48.686,1.4,44', w: 750, h: 900 },
@@ -102,6 +106,7 @@ try {
     if(process.env.ST2_BASELINE==='1')await page.route('**/buildings/station-north/station-north.glb',r=>r.fulfill({body:readFileSync('assets/buildings/station-north/source/st-2/station-north-pr82.glb'),contentType:'model/gltf-binary'}));
     // QA-only equivalent of approved main: same byte-identical BOX-1, without added layers.
     if(process.env.BOX_BASELINE==='1')await page.route('**/buildings/shibu-hachi-box/viewer.json',async r=>{const response=await r.fetch();const hints=await response.json();delete hints.layers;await r.fulfill({response,body:JSON.stringify(hints),contentType:'application/json'});});
+    if(process.env.SURROUND_BASELINE==='1')await page.route('**/street/hachiko-surround/hachiko-surround.glb',r=>r.fulfill({body:execFileSync('git',['show','586dbf5990168bb383d07be83982973536f03263:assets/street/hachiko-surround/web/hachiko-surround.glb'],{maxBuffer:8_000_000}),contentType:'model/gltf-binary'}));
     page.on('pageerror', (e) => errors.push(e.message));
     page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()); });
     page.on('response', (r) => { if (r.status() >= 400) errors.push(`HTTP ${r.status()} ${r.url()}`); });
