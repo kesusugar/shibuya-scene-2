@@ -1,0 +1,34 @@
+{
+  "model_reference": {
+    "scope": "historical_handcrafted_model_only",
+    "path": "assets/street/hachiko/source/legacy/hachiko.glb",
+    "sha256": "370db19f30af6c4c3ab9d49ae910fa99e14643fc507630f90655cf6d220d0ae5",
+    "placement": "world coordinates baked in legacy GLB; current scan placement is not applied",
+    "current_scan_evaluated": false
+  },
+  "reference": "july095.jpg, 3072x4096; manually read approximate whole stone block bounds, includes perspective side",
+  "photo_bounds_px": [
+    635,
+    1665,
+    2050,
+    3400
+  ],
+  "photo_aspect": 0.8155619596541787,
+  "initial_model_bounds_px": [
+    199.75087667540447,
+    338.61602929188473,
+    550.091022790628,
+    684.9400056397653
+  ],
+  "initial_model_aspect": 1.0115965686513968,
+  "final_model_bounds_px": [
+    253.25047101115342,
+    339.0784193703272,
+    496.59243620213414,
+    677.56502266234
+  ],
+  "final_model_aspect": 0.7189116580222507,
+  "relative_aspect_difference_initial": 0.2403675241061296,
+  "relative_aspect_difference_final": -0.11850761366176332,
+  "caveat": "Model and photograph cameras are not calibrated to each other; perspective and manual edge readings affect this coarse silhouette proxy. Initial bounds reconstructed by scaling final block mesh; no positional, total sculpture or surface accuracy claim."
+}
