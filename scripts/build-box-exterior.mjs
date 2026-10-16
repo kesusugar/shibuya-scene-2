@@ -14,6 +14,8 @@ const basis=new Matrix4().makeRotationX(-Math.PI/2);
 const world=basis.clone().multiply(new Matrix4().set(...approved.world_matrix_rows.flat())).multiply(basis.clone().invert());
 const io=new NodeIO(),reports=[],layers={};
 for(const item of config.components){
+ assert.match(item.layer,/^signs_/,'Layer keys must match the shared :signs ancestor convention');
+ assert(!Object.hasOwn(layers,item.layer),'Duplicate exterior sign layer');
  const source=dir+'/source/exterior-signs/'+item.input;
  assert.equal(hash(source),item.sha256,item.id+' input hash');
  const doc=await io.read(source),root=doc.getRoot();

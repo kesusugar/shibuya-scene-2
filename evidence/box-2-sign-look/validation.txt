@@ -1,0 +1,54 @@
+Full regression including existing asset budgets:
+
+> shibuya-scene-2@0.1.0 test
+> npm run sync-assets && vitest run --maxWorkers=2
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin, east-mixeduse, eiraku, ekimae, fukuras, ginza-canopy, hikarie, magnet, mark-city, parco, plaza-kiosk, qfront, quattro, sakura-stage, scramble-square, shibu-hachi-box, shibuya109, station-concourse, station-north, station-service, station-southeast, station-west-viaduct, stream, takagi, west-block; ground: core, extension, exterior-east, exterior-middle, exterior-west; street: core, drainage, hachiko, hachiko-surround, plaza-facilities, plaza-finish, props, tactile, tactile-extra, tactile-links, tactile-outer; context: core
+
+ RUN  v5.0.3 C:/Users/keisuke.e.sato/box-1-terrace
+
+
+ Test Files  54 passed (54)
+      Tests  241 passed (241)
+   Start at  16:29:45
+   Duration  60.22s (tests 78%, import 15%, transform 6%, worker 1%)
+
+    Isolate  54 workers spawned · ~1.24s startup each (spawn + environment, per file)
+             at least ~32.27s faster with isolate: false — reuses workers across files instead of one per file
+
+
+
+Targeted real-asset test after final type annotation:
+
+ RUN  v5.0.3 C:/Users/keisuke.e.sato/box-1-terrace
+
+
+ Test Files  1 passed (1)
+      Tests  3 passed (3)
+   Start at  16:32:07
+   Duration  3.56s (transform 45%, tests 42%, import 13%, worker 1%)
+
+
+
+Production build (includes tsc --noEmit):
+
+> shibuya-scene-2@0.1.0 build
+> npm run sync-assets && tsc --noEmit && vite build
+
+
+> shibuya-scene-2@0.1.0 sync-assets
+> node scripts/sync-assets.mjs
+
+sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin, east-mixeduse, eiraku, ekimae, fukuras, ginza-canopy, hikarie, magnet, mark-city, parco, plaza-kiosk, qfront, quattro, sakura-stage, scramble-square, shibu-hachi-box, shibuya109, station-concourse, station-north, station-service, station-southeast, station-west-viaduct, stream, takagi, west-block; ground: core, extension, exterior-east, exterior-middle, exterior-west; street: core, drainage, hachiko, hachiko-surround, plaza-facilities, plaza-finish, props, tactile, tactile-extra, tactile-links, tactile-outer; context: core
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 46 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                  3.64 kB │ gzip:   1.75 kB
+dist/assets/index-BpLB6Pit.js  718.58 kB │ gzip: 187.21 kB
+✓ built in 2.47s

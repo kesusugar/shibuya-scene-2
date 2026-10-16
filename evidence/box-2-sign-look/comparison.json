@@ -1,0 +1,53 @@
+{
+  "dayNightDayRestoresExactPNG": true,
+  "comparisons": {
+    "roof-day": {
+      "changedPixelBounds": [
+        0,
+        299,
+        1000,
+        583
+      ]
+    },
+    "roof-night": {
+      "changedPixelBounds": [
+        0,
+        299,
+        1000,
+        581
+      ]
+    },
+    "roof-class": {
+      "changedPixelBounds": [
+        0,
+        299,
+        1000,
+        368
+      ]
+    },
+    "clock-day": {
+      "changedPixelBounds": [
+        301,
+        152,
+        542,
+        466
+      ]
+    },
+    "clock-night": {
+      "changedPixelBounds": [
+        301,
+        152,
+        542,
+        466
+      ]
+    },
+    "clock-class": {
+      "changedPixelBounds": [
+        486,
+        195,
+        496,
+        342
+      ]
+    }
+  }
+}

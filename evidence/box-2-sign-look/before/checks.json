@@ -1,0 +1,86 @@
+{
+  "roof-normal": {
+    "pose": "18,-48,4.1,25.1,-46.7,3.45,50",
+    "state": {
+      "failed": [],
+      "box": {
+        "meshes": 30,
+        "triangles": 54793,
+        "materials": 30,
+        "layers": [
+          "roof-circle-observed-2024",
+          "roof-name-observed-2024",
+          "roof-dog-observed-2024",
+          "fun-project-observed-2024",
+          "roof-sponsor-observed-2024",
+          "display-clock-static-2026-08-08"
+        ],
+        "layerErrors": []
+      }
+    },
+    "errors": []
+  },
+  "roof-class": {
+    "pose": "18,-48,4.1,25.1,-46.7,3.45,50",
+    "state": {
+      "failed": [],
+      "box": {
+        "meshes": 30,
+        "triangles": 54793,
+        "materials": 30,
+        "layers": [
+          "roof-circle-observed-2024",
+          "roof-name-observed-2024",
+          "roof-dog-observed-2024",
+          "fun-project-observed-2024",
+          "roof-sponsor-observed-2024",
+          "display-clock-static-2026-08-08"
+        ],
+        "layerErrors": []
+      }
+    },
+    "errors": []
+  },
+  "clock-normal": {
+    "pose": "23,-36,2.1,24.25,-41.15,1.75,48",
+    "state": {
+      "failed": [],
+      "box": {
+        "meshes": 30,
+        "triangles": 54793,
+        "materials": 30,
+        "layers": [
+          "roof-circle-observed-2024",
+          "roof-name-observed-2024",
+          "roof-dog-observed-2024",
+          "fun-project-observed-2024",
+          "roof-sponsor-observed-2024",
+          "display-clock-static-2026-08-08"
+        ],
+        "layerErrors": []
+      }
+    },
+    "errors": []
+  },
+  "clock-class": {
+    "pose": "23,-36,2.1,24.25,-41.15,1.75,48",
+    "state": {
+      "failed": [],
+      "box": {
+        "meshes": 30,
+        "triangles": 54793,
+        "materials": 30,
+        "layers": [
+          "roof-circle-observed-2024",
+          "roof-dog-observed-2024",
+          "roof-name-observed-2024",
+          "fun-project-observed-2024",
+          "roof-sponsor-observed-2024",
+          "display-clock-static-2026-08-08"
+        ],
+        "layerErrors": []
+      }
+    },
+    "errors": []
+  }
+}
