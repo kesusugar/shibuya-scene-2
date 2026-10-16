@@ -24,6 +24,13 @@ async function triangles(path:string, transform=new Matrix4()):Promise<Tri[]> {
 }
 const same=(a:Tri,b:Tri)=>a.material===b.material && a.points.every(p=>b.points.some(q=>p.distanceTo(q)<.00002));
 describe('BOX-1 shipped geometry',()=>{
+  it('has finite positions and no zero-area triangles at the skirt-ground transition',async()=>{
+    for(const t of await triangles(`${dir}/web/shibu-hachi-box.glb`)) {
+      expect(t.points.every(p=>p.toArray().every(Number.isFinite))).toBe(true);
+      const area=t.points[1].clone().sub(t.points[0]).cross(t.points[2].clone().sub(t.points[0])).length()/2;
+      expect(area).toBeGreaterThan(1e-12);
+    }
+  });
   it('preserves the main slab and inferred rear closure, not just the material batch name',async()=>{
     const source=await triangles('assets/street/props/incoming/shibu_hachi_box_architecture_reference/output/shibu_hachi_box.glb');
     // GLB Y-up: main slab z=-1.786..+.680, rear closure z=-1.766..-1.706.

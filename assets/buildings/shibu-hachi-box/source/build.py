@@ -102,7 +102,13 @@ for i,a in enumerate(outline):
         depths=[max(0,p.z-ground(p.x,p.y)+.001) for p in ends]
         if max(depths)<.0001:continue
         low=[Vector((p.x,p.y,p.z-d)) for p,d in zip(ends,depths)]
-        v=len(verts);verts.extend([ends[0],ends[1],low[1],low[0]]);faces.append((v,v+1,v+2,v+3));skirt_depths.extend(depths)
+        polygon=[]
+        for point in [ends[0],ends[1],low[1],low[0]]:
+            if not polygon or (point-polygon[-1]).length>1e-8:polygon.append(point)
+        if (polygon[0]-polygon[-1]).length<1e-8:polygon.pop()
+        if len(polygon)>=3:
+            v=len(verts);verts.extend(polygon);faces.append(tuple(range(v,v+len(polygon))))
+        skirt_depths.extend(depths)
 me=bpy.data.meshes.new('BOX1_terrain_skirt_INFERRED');me.from_pydata(verts,[],faces);me.materials.append(stone)
 skirt=bpy.data.objects.new(me.name,me);bpy.context.scene.collection.objects.link(skirt);meshes.append(skirt)
 # Batch by material: no new textures or material edits; <=40 B-level draw primitives.
@@ -125,12 +131,12 @@ points=[o.matrix_world@v.co for o in exports for v in o.data.vertices]
 bounds=[[min(p[i] for p in points) for i in range(3)],[max(p[i] for p in points) for i in range(3)]]
 report={'base_commit':'4948a00','position_source':position_source,'origin_plan_xyz':list(origin),'yaw_degrees':math.degrees(yaw),'scale':[1,1,1], 'world_matrix_rows':[list(row) for row in world], 'inverse_matrix_rows':[list(row) for row in world.inverted()], 'terrace_normalized_to_body_blender':list(fit.translation),'ground_samples':samples,'anchor_tp':anchor+15,'ground_range_m':max(p['ground_y'] for p in samples)-min(p['ground_y'] for p in samples),'removed_components':removed,'selectively_cut':cut,'protected_components':list(protected),'protected_vertices_exact':True,'bounds_plan_xyz':bounds,'triangles':count,'primitives':len(exports),'bytes':out.stat().st_size,'sha256':sha(out)}
 report['ground_fit']={'basis':'Visible R3 top 5mm above measured Core pavement; no geometry scaling, no ground/collision edits','r3_ground_y':terminal_ground,'r3_top_gap_m':.005,'inferred_visible_skirt_max_depth_m':max(skirt_depths),'skirt_is_foundation_evidence':False}
-(R/'source/placement-and-build.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(R/'source/placement-and-build.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 hints={'planBounds':[bounds[0][0],bounds[0][1],bounds[1][0],bounds[1][1]],'sun':{'azimuth_deg':145,'elevation_deg':42},'groundElevationTP':15}
-(R/'web/viewer.json').write_text(json.dumps(hints,indent=2)+'\n')
-for t in ['day','night']:(R/f'web/emissive_{t}.json').write_text('{}\n')
+(R/'web/viewer.json').write_text(json.dumps(hints,indent=2)+'\n',newline='\n')
+for t in ['day','night']:(R/f'web/emissive_{t}.json').write_text('{}\n',newline='\n')
 manifest={'id':'shibu-hachi-box','source_id':'way/1315939856','level':'B','status':'BOX-1 exterior/terrace estimate for review; not surveyed or full plaza completion','stats':{k:report[k] for k in ['triangles','primitives','bytes']},'files':{}}
 for p in sorted(R.rglob('*')):
     if p.is_file() and p!=R/'manifest.json':manifest['files'][p.relative_to(R).as_posix()]={'bytes':p.stat().st_size,'sha256':sha(p)}
-(R/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+(R/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
 print('BOX1_RESULT',json.dumps({k:report[k] for k in ['origin_plan_xyz','yaw_degrees','anchor_tp','ground_range_m','triangles','primitives','bytes']}))

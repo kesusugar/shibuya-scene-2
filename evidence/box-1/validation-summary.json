@@ -8,12 +8,12 @@
   },
   "final_asset_checks": {
     "command": "npx vitest run tests/shibu-hachi-box.test.ts tests/budget.test.ts --maxWorkers=2",
-    "tests_passed": 6,
-    "notes": "3 new geometry checks + 3 budget checks, after final placement fix"
+    "tests_passed": 7,
+    "notes": "4 new geometry checks + 3 budget checks, after zero-area skirt cleanup"
   },
   "geometry": "node scripts/check-box-1.mjs passed; see geometry-check.json",
   "typecheck_build": "npm run build passed; see build.log",
-  "screenshots": "4 final views; same cameras; zero browser errors/failures; 14224 triangles loaded in each",
+  "screenshots": "4 views; same cameras; no errors/failures; capture-equivalence.json proves final visible geometry/material equivalence after one zero-area triangle removed",
   "fps_measured": false,
   "no_merge_or_deploy": true
 }

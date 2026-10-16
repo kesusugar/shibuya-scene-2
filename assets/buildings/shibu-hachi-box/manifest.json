@@ -4,9 +4,9 @@
   "level": "B",
   "status": "BOX-1 exterior/terrace estimate for review; not surveyed or full plaza completion",
   "stats": {
-    "triangles": 14224,
+    "triangles": 14223,
     "primitives": 14,
-    "bytes": 882816
+    "bytes": 882780
   },
   "files": {
     "README.md": {
@@ -14,12 +14,12 @@
       "sha256": "82945d9cc4a1353681b6cd95244c386bd8c0223293739978463897b33aa6003a"
     },
     "source/build.py": {
-      "bytes": 9639,
-      "sha256": "54b8c52959dc1901ee6fa778dd28e04b8c30b2ab0fc36aaeda5fa784758f6dde"
+      "bytes": 9941,
+      "sha256": "f8bc251a13597b2eaa5dc62e2ffbcc9da0f3f42a07c2586aa619da972d1289cf"
     },
     "source/placement-and-build.json": {
-      "bytes": 8336,
-      "sha256": "5682facca633c94fc7b496a4d6efb6278ef0d11046dfddc742b9f4237acadddc"
+      "bytes": 7911,
+      "sha256": "709cdec37cc82136eef0a24d2f0edbd4c290899e25bcceec6f11fdcb4bcf1d0d"
     },
     "source/terrace-v001/ASSUMPTIONS.md": {
       "bytes": 9433,
@@ -50,20 +50,20 @@
       "sha256": "6198b2ee3c7d9ce114c9d738f80d72d42aac32610437c715cedd4b7bcfd554df"
     },
     "web/emissive_day.json": {
-      "bytes": 4,
-      "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/emissive_night.json": {
-      "bytes": 4,
-      "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+      "bytes": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
     "web/shibu-hachi-box.glb": {
-      "bytes": 882816,
-      "sha256": "09d3f24ff5f601914a5d6dcc3cb99eb5419496ed87b2b61fd9d7219421bf3ebc"
+      "bytes": 882780,
+      "sha256": "c1b262ee107e8b46baad917f30aff885420a8ac611f071b67469b542a18f7a5e"
     },
     "web/viewer.json": {
-      "bytes": 226,
-      "sha256": "71468ba24fd42948b84f472fbe115eb365940754e58ed1f812d07b0cdeb1e9e6"
+      "bytes": 213,
+      "sha256": "f2fd75699d61b6ff6c53a174569ab4bc912149fd65a0c10ad9ceea58bb1a9836"
     }
   }
 }
