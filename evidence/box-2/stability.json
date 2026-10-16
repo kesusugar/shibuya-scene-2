@@ -1,0 +1,24 @@
+{
+  "method": "Two independent PNG captures one second apart, renderer not frozen, fixed roof-sign camera; no FPS read or benchmark.",
+  "samePixelsAndEncoding": true,
+  "firstPNG": "be0d601cc189fbad50ce153015a1a9e433fa331698a8cb8374d3e5dc687c331f",
+  "secondPNG": "be0d601cc189fbad50ce153015a1a9e433fa331698a8cb8374d3e5dc687c331f",
+  "state": {
+    "box": {
+      "meshes": 30,
+      "triangles": 54793,
+      "materials": 30,
+      "layers": [
+        "roof-circle-observed-2024",
+        "roof-name-observed-2024",
+        "roof-dog-observed-2024",
+        "roof-sponsor-observed-2024",
+        "fun-project-observed-2024",
+        "display-clock-static-2026-08-08"
+      ],
+      "layerErrors": []
+    },
+    "failed": []
+  },
+  "errors": []
+}

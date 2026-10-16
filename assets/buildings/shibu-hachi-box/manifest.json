@@ -2,20 +2,156 @@
   "id": "shibu-hachi-box",
   "source_id": "way/1315939856",
   "level": "B",
-  "status": "BOX-1 exterior/terrace estimate for review; not surveyed or full plaza completion",
+  "status": "BOX-1 body retained; BOX-2 dated exterior displays; estimated installation",
   "stats": {
-    "triangles": 14223,
-    "primitives": 14,
-    "bytes": 882780
+    "triangles": 54793,
+    "primitives": 30,
+    "bytes": 2734704
   },
   "files": {
     "README.md": {
-      "bytes": 4137,
-      "sha256": "82945d9cc4a1353681b6cd95244c386bd8c0223293739978463897b33aa6003a"
+      "bytes": 6421,
+      "sha256": "30e40a76c5c48b4d7f9cd38a0ba5dad6d7e984a6f0fa2383ef4a74e3be967a93"
     },
     "source/build.py": {
       "bytes": 9941,
       "sha256": "f8bc251a13597b2eaa5dc62e2ffbcc9da0f3f42a07c2586aa619da972d1289cf"
+    },
+    "source/exterior-signs/build-report.json": {
+      "bytes": 8683,
+      "sha256": "f25e95f4bdb93ec61296bb098e756b900b65879a201329eca198c064be46f9de"
+    },
+    "source/exterior-signs/existing-name.glb": {
+      "bytes": 104636,
+      "sha256": "41b7825b9e1d02ce7433ca50274fcef0cf55ba010e011eb1524d5ffd916f4ca1"
+    },
+    "source/exterior-signs/placement.json": {
+      "bytes": 3788,
+      "sha256": "4d8f09dfa52d736879ffd6d39ab42764189cde3e12287448d6ea8630e1f591bf"
+    },
+    "source/exterior-signs/shibu_hachi_fun_project_lightbox_v001/manifest.json": {
+      "bytes": 4223,
+      "sha256": "1c99622abbd9dbca67f4f18310280d7b2a3a91902ba737da1e3025752c790ec0"
+    },
+    "source/exterior-signs/shibu_hachi_fun_project_lightbox_v001/placement_hint.json": {
+      "bytes": 1399,
+      "sha256": "0dce6fd5478d33147a9f5a0e88fd815269cc14596f26e6273eeffb11d3412e53"
+    },
+    "source/exterior-signs/shibu_hachi_fun_project_lightbox_v001/PROVENANCE.md": {
+      "bytes": 3038,
+      "sha256": "606325b1a38de60afc6a7d937040cc0b8bc375c162eb996ea2a15962d8da233f"
+    },
+    "source/exterior-signs/shibu_hachi_fun_project_lightbox_v001/README.md": {
+      "bytes": 3020,
+      "sha256": "e509f3d3643e09e68f7b21be51692b4106727246616512c2e487cb3c0359b69e"
+    },
+    "source/exterior-signs/shibu_hachi_fun_project_lightbox_v001/shibu_hachi_fun_project_lightbox_v001.glb": {
+      "bytes": 31880,
+      "sha256": "5cda0af09feb0b85605989b9387dcdbc207c119ed4cbeb11877c5f44c652e556"
+    },
+    "source/exterior-signs/shibu_hachi_fun_project_lightbox_v001/source_reference.json": {
+      "bytes": 1657,
+      "sha256": "334ff3e1c6c03f9793ba3025cbd42d7f7f1662e956cccf036a7f74d19954a78a"
+    },
+    "source/exterior-signs/shibu_hachi_gshock_display_clock_v001/component_estimates.json": {
+      "bytes": 1018,
+      "sha256": "ae7f396dce31dc23a1304f9d22a790ae113c17859242a1ee43ca0c36588b945c"
+    },
+    "source/exterior-signs/shibu_hachi_gshock_display_clock_v001/fonts/LICENSE.txt": {
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    "source/exterior-signs/shibu_hachi_gshock_display_clock_v001/manifest.json": {
+      "bytes": 7622,
+      "sha256": "5aa0e9da98b11539e7d5bfaa4637c9aa788c2e47502101ffd9912a34cc4fabd1"
+    },
+    "source/exterior-signs/shibu_hachi_gshock_display_clock_v001/placement_hint.json": {
+      "bytes": 669,
+      "sha256": "43bf9f1a4e24d0b2f23820c16f8b43050aa29a92e26ce7a9b7bcce94344b2110"
+    },
+    "source/exterior-signs/shibu_hachi_gshock_display_clock_v001/PROVENANCE.md": {
+      "bytes": 3813,
+      "sha256": "960a1874ac8f85b49cd06f2c3ed931f379f9931ff9c457fd19d2551ce413d38e"
+    },
+    "source/exterior-signs/shibu_hachi_gshock_display_clock_v001/README.md": {
+      "bytes": 5969,
+      "sha256": "5837bb725d2378b141d613a90c3e96ab98b6d66becb648f550b12c855a6cb786"
+    },
+    "source/exterior-signs/shibu_hachi_gshock_display_clock_v001/references/sources.json": {
+      "bytes": 1938,
+      "sha256": "2e85d77ac9c49cb0a08226fc619bfa9d297a30b4e22b6ca3c99305b3b5e51753"
+    },
+    "source/exterior-signs/shibu_hachi_gshock_display_clock_v001/shibu_hachi_gshock_display_clock_v001.glb": {
+      "bytes": 1866828,
+      "sha256": "a981dae438b82e42cd34f55482e2d53e2bcf14364bbc89888a0734016c523e4f"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/component_estimates.json": {
+      "bytes": 1421,
+      "sha256": "957c075b37cd98bb3b421583787e54d90e3260db2730d05402a4adf21fcff6ea"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/manifest.json": {
+      "bytes": 4599,
+      "sha256": "d234e40938518f6c4e9b1fdae4ff587e4c443c9897f2ecdbf3757a346dec3ebe"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/placement_hint.json": {
+      "bytes": 1400,
+      "sha256": "9bc537cd272b513b04d8218dcb2c7e247a00c68d3f9dd3243c0285d2f8b2c6b6"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/PROVENANCE.md": {
+      "bytes": 2332,
+      "sha256": "a467486c826935665c1a2a06e1ef698a188f2287fad802cecddc11441411037b"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/README.md": {
+      "bytes": 3524,
+      "sha256": "8109c6b401cdf1dcb717941ef2609913ec40ae9b0f59a4162eda4132ca698f6b"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/references/photo_anchor_observations.json": {
+      "bytes": 2797,
+      "sha256": "b0ebbc3e523fe2b47ded1c9f78c78ad1d65edabd0c2b07f3698533975c5d7337"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/references/sources.json": {
+      "bytes": 779,
+      "sha256": "95db511b665bcf61f598df153df25b7c08f2c009ea60b0db3107d454ece90c91"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/roof_information_circle.glb": {
+      "bytes": 35272,
+      "sha256": "11a545525b14dc426e5077860721befdc427ded445c11579caeaf90553664873"
+    },
+    "source/exterior-signs/shibu_hachi_roof_identity_icons_v001/roof_seated_dog.glb": {
+      "bytes": 10040,
+      "sha256": "2274a6f2a4cd0b72a3a4ba0e47f252e562c57881b9f99ab24e33336aa71d43d7"
+    },
+    "source/exterior-signs/shibu_hachi_roof_sponsor_sign_v001/component_estimates.json": {
+      "bytes": 997,
+      "sha256": "bf48a89b8b196e7502106d21fc23a7450b4f2ded7f4d2842644371410baed05c"
+    },
+    "source/exterior-signs/shibu_hachi_roof_sponsor_sign_v001/fonts/LICENSE.txt": {
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    "source/exterior-signs/shibu_hachi_roof_sponsor_sign_v001/manifest.json": {
+      "bytes": 6794,
+      "sha256": "57d89ccb2542f8ce4e903045a5fa57814d94f6f933127f0a12bd6be17b2ad1b0"
+    },
+    "source/exterior-signs/shibu_hachi_roof_sponsor_sign_v001/placement_hint.json": {
+      "bytes": 1182,
+      "sha256": "4e724bd2b18f06754ed4ef12c9816e029adabf3e58fb24f568d850f01e80a1c8"
+    },
+    "source/exterior-signs/shibu_hachi_roof_sponsor_sign_v001/PROVENANCE.md": {
+      "bytes": 2400,
+      "sha256": "aaff3ca0c09d11d1c86b9a9ef17de9e7fed287b262431ac51597ae97c6a56550"
+    },
+    "source/exterior-signs/shibu_hachi_roof_sponsor_sign_v001/README.md": {
+      "bytes": 4593,
+      "sha256": "6b1f26e3745b4521286803a7327900635b943f89e9c4683e623df9f9f6673ec0"
+    },
+    "source/exterior-signs/shibu_hachi_roof_sponsor_sign_v001/references/sources.json": {
+      "bytes": 1484,
+      "sha256": "2ea4d79f66a83d978c6d5006cceb6a3c6c3e7d455cfff2b29b8cc55a8fd95bff"
+    },
+    "source/exterior-signs/shibu_hachi_roof_sponsor_sign_v001/shibu_hachi_roof_sponsor_sign_v001.glb": {
+      "bytes": 162484,
+      "sha256": "854359ae015834da56431f05509f0109660af83d86d5592563fada40329a6234"
     },
     "source/placement-and-build.json": {
       "bytes": 7911,
@@ -57,13 +193,37 @@
       "bytes": 3,
       "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
     },
+    "web/exterior-display-clock.glb": {
+      "bytes": 1507140,
+      "sha256": "33d040e681bcb5b222ef86e78abbe56ab22d3a8dbd63ca0921f2b4eb0cbb274b"
+    },
+    "web/exterior-fun-project.glb": {
+      "bytes": 31924,
+      "sha256": "bc4d71d7cda387e8d1bbd9f51cf99d80ced25321ed93370c822addf880726983"
+    },
+    "web/exterior-roof-circle.glb": {
+      "bytes": 35320,
+      "sha256": "88156e405b1a61c70a740117cac3d179eb463632a344db150f9c6d44073e9330"
+    },
+    "web/exterior-roof-dog.glb": {
+      "bytes": 10240,
+      "sha256": "3396e47566a223005ba22795a87e219d2dcea234be5e066a78c338143112fedb"
+    },
+    "web/exterior-roof-name.glb": {
+      "bytes": 104884,
+      "sha256": "8dffc800f5a208049cdfb607ca1a4c96e230ef9004490ca7befb6c9a790a56b6"
+    },
+    "web/exterior-roof-sponsor.glb": {
+      "bytes": 162416,
+      "sha256": "69668c1028d9fd7d33e9203c79486139537b169a6a00b08ce235c85cd36dd6ba"
+    },
     "web/shibu-hachi-box.glb": {
       "bytes": 882780,
       "sha256": "c1b262ee107e8b46baad917f30aff885420a8ac611f071b67469b542a18f7a5e"
     },
     "web/viewer.json": {
-      "bytes": 213,
-      "sha256": "f2fd75699d61b6ff6c53a174569ab4bc912149fd65a0c10ad9ceea58bb1a9836"
+      "bytes": 597,
+      "sha256": "f2d7bccd604e59f782fa29622c27e4b6280c97e9a502860157caf53f2deff2ad"
     }
   }
 }

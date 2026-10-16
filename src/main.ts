@@ -195,7 +195,7 @@ async function start() {
   if (loaded.some((b) => b.id === 'west-block')) $('provisional').textContent += '\n西側街区の外観は試作、看板は2025年1月の写真を参照';
   if (loaded.some((b) => b.id === 'ekimae')) $('provisional').textContent += '\n渋谷駅前ビルの外観は試作、看板は2025年11月の写真を参照';
   if (loaded.some(b => ['mark-city', 'shibuya109', 'takagi', 'bic-camera', 'cine-tower', 'east-mixeduse', 'hikarie', 'parco', 'stream', 'sakura-stage'].includes(b.id))) $('provisional').textContent += '\n追加の周辺建物は窓・色・看板筐体のB推定、写真との精密照合は未完了';
-  if (loaded.some(b => b.id === 'shibu-hachi-box')) $('provisional').textContent += '\nBOX外形・前テラスは公式図面とOSM輪郭による推定。テラス広告は2024年由来、接合・端部と2025年10月状態は未確定';
+  if (loaded.some(b => b.id === 'shibu-hachi-box')) $('provisional').textContent += '\nBOX外形・前テラスは公式図面とOSM輪郭による推定。屋根・テラス表示は2024年由来、時計は2026-08-08 08:08:08の静止表示。取付・接合・2025年10月状態は未確定';
   if (loaded.some(b => b.id === 'plaza-kiosk')) $('provisional').textContent += '\n広場の低層施設は売店候補、窓と筐体は推定、用途・10月現況は未確認';
   if (loaded.some(b => b.id === 'station-southeast')) $('provisional').textContent += '\nJR南東側施設は旧年写真による外装推定、10月現況と施設同定は未確認';
   if (loaded.some((b) => b.id === 'station-concourse')) $('provisional').textContent += '\n駅側の連絡通路は試作、開口・窓・内部・工事用の囲いの寸法と配置、光量は推定';

@@ -1,0 +1,33 @@
+{
+  "asset": "shibu_hachi_fun_project_lightbox_v001",
+  "status": "UNPLACED; partial non-executable hint only",
+  "units": "metres",
+  "asset_origin": "bottom footprint centre",
+  "blender_axes": {
+    "up": "+Z",
+    "front": "-Y"
+  },
+  "gltf_axes": {
+    "up": "+Y",
+    "front": "+Z"
+  },
+  "world_transform": null,
+  "parent_asset": "shibu_hachi_box",
+  "parent_local_transform": null,
+  "parent_local_observation_hint": {
+    "semantic_anchor": "Above the right-hand front glazed bay, nearer its left half, separately from the central Tourist Information header.",
+    "approximate_x_m": 3.34,
+    "x_confidence": "Low: photo proportion against existing parent pier centres, not surveyed.",
+    "parent_front_head_surface_y_m": -0.601,
+    "mounting_y_m": null,
+    "mounting_z_m": null,
+    "orientation_hint": "Face same direction as parent facade (Blender -Y).",
+    "reason_no_full_transform": "Parent head/soffit vertical spacing has not been reconciled to this photograph. Do not invent a mounting height or claim a collision-free fit."
+  },
+  "integration_instructions": [
+    "Do not place or replace anything automatically.",
+    "Verify present-day sign and parent vertical fit before positioning.",
+    "Do not replace the separate long Tourist Information header or roof SHIBU HACHI BOX identifier.",
+    "Keep QFRONT, Seibu Shibuya, walking display and FPS work untouched."
+  ]
+}

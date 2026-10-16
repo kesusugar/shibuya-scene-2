@@ -1,0 +1,34 @@
+{
+  "units": "metres",
+  "dimensions_measured": false,
+  "complete_display": [
+    1.74,
+    0.68,
+    2.25
+  ],
+  "nominal_head_width_including_controls": 1.6,
+  "head_height": 1.8,
+  "head_height_width_ratio": 1.125,
+  "head_bottom_z": 0.45,
+  "head_top_z": 2.25,
+  "exposed_support_height": 0.45,
+  "support_head_width_ratio": 0.28125,
+  "body_and_rear_max_depth_approx": 0.5,
+  "stand_base": [
+    1.74,
+    0.68,
+    0.024
+  ],
+  "screwback_outer_diameter": 1.42,
+  "head_width_calibration": "Nominal 1.60m chosen as a plausible left-bay scale, not measured; outer shell envelope narrowed to include controls in that width.",
+  "circular_back": "Kept circular, not stretched to fit the front envelope.",
+  "uncertain": [
+    "Exact bay calibration",
+    "Depth and beveled radii",
+    "Opposite-side controls, their material, and unseen connection",
+    "Lower-lug recess depth",
+    "Hidden fastening and exact support section",
+    "Actual sculpture construction materials",
+    "October2026 persistence"
+  ]
+}

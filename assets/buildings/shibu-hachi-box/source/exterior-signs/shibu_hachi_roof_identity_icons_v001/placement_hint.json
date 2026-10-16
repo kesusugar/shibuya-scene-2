@@ -1,0 +1,43 @@
+{
+  "ledger_id": "H-SG-001",
+  "state": "standalone_unplaced_estimated_icons",
+  "world_translation": null,
+  "world_rotation": null,
+  "world_scale": null,
+  "installation_height": null,
+  "units": "metres",
+  "origin": "Each asset is at its own complete bottom-center local origin.",
+  "blender_front": "-Y",
+  "blender_up": "+Z",
+  "gltf_up": "+Y",
+  "semantic_order_left_to_right": [
+    "roof_information_circle",
+    "EXISTING SHIBU HACHI BOX name, unchanged",
+    "roof_seated_dog",
+    "EXISTING SUPPORTED BY / G-SHOCK sponsor, unchanged"
+  ],
+  "anchors": [
+    {
+      "asset": "roof_information_circle",
+      "semantic_position": "Immediately before the roof name; NOT doorway i or counter placard.",
+      "world_transform": null
+    },
+    {
+      "asset": "roof_seated_dog",
+      "semantic_position": "Immediately after BOX and before SUPPORTED BY; low base shares approximate name baseline.",
+      "world_transform": null
+    }
+  ],
+  "parent_name_range_x_m": [
+    -5.9052000046,
+    -2.590369463
+  ],
+  "parent_carrier_range_x_m": [
+    -6.4,
+    3.4
+  ],
+  "fit_status": "UNRESOLVED. Source roof-wide layout and existing text/carrier differ; do not force either icon against this numeric range.",
+  "apply_photo_coordinates_automatically": false,
+  "assembly_actions_taken": "None; no name/carrier/sponsor/parent model changed.",
+  "runtime_integration_authorized_here": false
+}

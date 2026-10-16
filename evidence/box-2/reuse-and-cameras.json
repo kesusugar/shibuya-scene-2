@@ -1,0 +1,26 @@
+{
+  "base_main": "b4bd0a0",
+  "before_views": {
+    "box_whole": {
+      "source": "evidence/box-1/after/box_whole.png",
+      "sha256": "52426bd2c1f93ba9d9d3f7cfaf7121b15cd277b93fc8e4615e9926390631f942",
+      "basis": "Same unchanged approved body/camera/display settings; prior zero-area-only capture equivalence retained in evidence/box-1/capture-equivalence.json"
+    },
+    "box_front": {
+      "source": "evidence/box-1/after/box_front.png",
+      "sha256": "28049811b18bd8021b4411503b329845b2348c34ad8b16dc906619d889986c14",
+      "basis": "Same unchanged approved body/camera/display settings; prior zero-area-only capture equivalence retained in evidence/box-1/capture-equivalence.json"
+    },
+    "box_oblique": {
+      "source": "evidence/box-1/after/box_oblique.png",
+      "sha256": "14c9eb89e09711c3d86bc62c439a409e418fe31f64deedd4d7da6ce787b39443",
+      "basis": "Same unchanged approved body/camera/display settings; prior zero-area-only capture equivalence retained in evidence/box-1/capture-equivalence.json"
+    }
+  },
+  "new_main_baseline_views": [
+    "box_signs",
+    "box_clock"
+  ],
+  "additional_lightbox_baseline": "QA-only viewer.json route omits new layers on same pinned BOX-1; production has no new hide mode",
+  "comparison_archive_sha256": "006feded1ae651dfee4ac4224acd65e60195267fe784316f373a7eed40c624bc"
+}

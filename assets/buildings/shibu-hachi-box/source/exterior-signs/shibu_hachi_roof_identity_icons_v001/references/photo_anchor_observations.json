@@ -1,0 +1,115 @@
+{
+  "reference": "S06",
+  "image_size_px": [
+    1200,
+    600
+  ],
+  "coordinate_convention": "Top-left image origin, X right and Y down. Bounds are visual estimates, not segmentation ground truth.",
+  "roof_horizontal_span_px_estimate": [
+    32,
+    1189
+  ],
+  "pixel_uncertainty": "Approximately +/- 3 px per sign edge; bloom, trees, perspective and low source resolution.",
+  "observations": [
+    {
+      "feature": "roof_information_circle",
+      "bbox_px_estimate": [
+        201,
+        110,
+        244,
+        154
+      ],
+      "bbox_normalized_full_image": [
+        0.1675,
+        0.18333333333333332,
+        0.20333333333333334,
+        0.25666666666666665
+      ],
+      "center_normalized_full_image": [
+        0.18541666666666667,
+        0.22
+      ],
+      "horizontal_fraction_of_roof_span": [
+        0.14606741573033707,
+        0.18323249783923942
+      ]
+    },
+    {
+      "feature": "existing_roof_name_context_only",
+      "bbox_px_estimate": [
+        250,
+        116,
+        611,
+        155
+      ],
+      "bbox_normalized_full_image": [
+        0.20833333333333334,
+        0.19333333333333333,
+        0.5091666666666667,
+        0.25833333333333336
+      ],
+      "center_normalized_full_image": [
+        0.35875,
+        0.22583333333333333
+      ],
+      "horizontal_fraction_of_roof_span": [
+        0.18841832324978391,
+        0.5004321521175453
+      ]
+    },
+    {
+      "feature": "roof_seated_dog_with_low_plinth",
+      "bbox_px_estimate": [
+        616,
+        109,
+        663,
+        156
+      ],
+      "bbox_normalized_full_image": [
+        0.5133333333333333,
+        0.18166666666666667,
+        0.5525,
+        0.26
+      ],
+      "center_normalized_full_image": [
+        0.5329166666666667,
+        0.22083333333333333
+      ],
+      "horizontal_fraction_of_roof_span": [
+        0.5047536732929991,
+        0.5453759723422644
+      ]
+    },
+    {
+      "feature": "existing_sponsor_start_context_only",
+      "bbox_px_estimate": [
+        677,
+        130,
+        839,
+        155
+      ],
+      "bbox_normalized_full_image": [
+        0.5641666666666667,
+        0.21666666666666667,
+        0.6991666666666667,
+        0.25833333333333336
+      ],
+      "center_normalized_full_image": [
+        0.6316666666666667,
+        0.2375
+      ],
+      "horizontal_fraction_of_roof_span": [
+        0.557476231633535,
+        0.6974935177182369
+      ]
+    }
+  ],
+  "relationships": [
+    "Circle-to-name gap roughly 6 px.",
+    "Name-to-dog gap roughly 5 px.",
+    "Dog-to-sponsor gap roughly 14 px.",
+    "Circle/name/dog base lies near y=154-156px; no exact coplanarity or shared mounting inferred."
+  ],
+  "metre_basis": "Estimated parent roof width 12.76m / 1157px; not a measured scale.",
+  "no_world_transform_derived": true
+}

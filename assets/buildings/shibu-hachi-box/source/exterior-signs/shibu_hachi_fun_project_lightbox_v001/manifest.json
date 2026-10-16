@@ -1,0 +1,135 @@
+{
+  "asset": "shibu_hachi_fun_project_lightbox_v001",
+  "ledger": [
+    "H-SG-003"
+  ],
+  "package": "A14 BOX案内表示",
+  "status": "production_complete_validated_unplaced_candidate",
+  "reference_date_scope": "2024-12-10 publication; photo capture date unknown; current state unverified",
+  "blender": "4.2.3 LTS",
+  "dimensions_estimated_m": [
+    1.149999976158142,
+    0.10559999942779541,
+    0.20499999821186066
+  ],
+  "origin": "bottom footprint centre",
+  "editable_meshes": 6,
+  "glb_meshes": 3,
+  "glb_primitives": 3,
+  "materials": 3,
+  "triangles": 693,
+  "source_reproduction": "byte-identical GLB",
+  "world_transform": null,
+  "full_parent_local_transform": null,
+  "main_scene_changes": false,
+  "github_writes": false,
+  "source_photos_distributed": false,
+  "unresolved_graphic": "omitted, not invented",
+  "files": [
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 3038,
+      "sha256": "606325b1a38de60afc6a7d937040cc0b8bc375c162eb996ea2a15962d8da233f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3020,
+      "sha256": "e509f3d3643e09e68f7b21be51692b4106727246616512c2e487cb3c0359b69e"
+    },
+    {
+      "path": "evidence/01_front.png",
+      "bytes": 943613,
+      "sha256": "2c24c01b83478e63861e2dc44c3b0dd2f6d396143c883fa21de63fb681a6b05b"
+    },
+    {
+      "path": "evidence/02_oblique.png",
+      "bytes": 993702,
+      "sha256": "952933fe15326a2ce01a49e3769d2f1c782b5e2a58cb303707a50736d3c028b0"
+    },
+    {
+      "path": "evidence/03_estimated_back.png",
+      "bytes": 924000,
+      "sha256": "7107039fd337d320a744f9a7313f2b8afb99a41c4b62c73fadd5a0fa4a02db99"
+    },
+    {
+      "path": "evidence/REVIEW.md",
+      "bytes": 1574,
+      "sha256": "339f7ed01fbb123f315600fe3c8f635e3d0ea3c4169a48553f873e6d9b4451c7"
+    },
+    {
+      "path": "evidence/generate.log",
+      "bytes": 17887,
+      "sha256": "17ca8be9eced621a081389b7fda5321775bb21f5f082597cbbc3290c390c44b5"
+    },
+    {
+      "path": "evidence/generation_stats.json",
+      "bytes": 590,
+      "sha256": "0291fe101c89e4176b12202eefd02898bf271d99aca88fba00e7773decb24a70"
+    },
+    {
+      "path": "evidence/generation_timing.json",
+      "bytes": 52,
+      "sha256": "b358d21303f8caf93feb603f6cea802ffafd5d601b07f617f3e4683f6417fb65"
+    },
+    {
+      "path": "evidence/initial_check_degenerate_font.log",
+      "bytes": 1035,
+      "sha256": "6003de3dd765c556a9aa66662446c9bc23022bd4e298fcf3218f0c2519be5e6b"
+    },
+    {
+      "path": "evidence/intermediate_check_degenerate_font.log",
+      "bytes": 1035,
+      "sha256": "6003de3dd765c556a9aa66662446c9bc23022bd4e298fcf3218f0c2519be5e6b"
+    },
+    {
+      "path": "evidence/reproduction.log",
+      "bytes": 1554,
+      "sha256": "c97b660025f5e3df8fd35ce287794e75b0a7846eb6ee558191f82a9027079842"
+    },
+    {
+      "path": "evidence/timings.json",
+      "bytes": 1186,
+      "sha256": "0f6db78fcf721f75e41f994cb5091b05f6c8b9d21754b211daf998381a670244"
+    },
+    {
+      "path": "evidence/validate.log",
+      "bytes": 3153,
+      "sha256": "08d5c9d43cdf92d04d236e380fa96da5eaae72213a5795e13cd46c7535017839"
+    },
+    {
+      "path": "evidence/validation.json",
+      "bytes": 2509,
+      "sha256": "2d96d668ea90722062390785a69a60d6f294d85e9a2a2fa76ee2687a76f6fd28"
+    },
+    {
+      "path": "placement_hint.json",
+      "bytes": 1399,
+      "sha256": "0dce6fd5478d33147a9f5a0e88fd815269cc14596f26e6273eeffb11d3412e53"
+    },
+    {
+      "path": "shibu_hachi_fun_project_lightbox_v001.blend",
+      "bytes": 544744,
+      "sha256": "fb147ba0d94e8c170da30bf4b176a2f00ac848cffc804e17f54bd18c26e0b4e9"
+    },
+    {
+      "path": "shibu_hachi_fun_project_lightbox_v001.glb",
+      "bytes": 31880,
+      "sha256": "5cda0af09feb0b85605989b9387dcdbc207c119ed4cbeb11877c5f44c652e556"
+    },
+    {
+      "path": "source/generate.py",
+      "bytes": 8661,
+      "sha256": "a32aac986e2fa1e92503425aef880261d5ed135e07a8b17467fec24a06be6595"
+    },
+    {
+      "path": "source/validate.py",
+      "bytes": 3859,
+      "sha256": "98f32a084d2e2bc46cf113282234e70ca3f992662d857f1dcb33f6a56196fcc2"
+    },
+    {
+      "path": "source_reference.json",
+      "bytes": 1657,
+      "sha256": "334ff3e1c6c03f9793ba3025cbd42d7f7f1662e956cccf036a7f74d19954a78a"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "index_sha256": "2616fa98aea09fbb9e4cc776715f9660c0047232b5fd94ecb5839c8e91a958d8",
+  "packages": [
+    {
+      "asset": "shibu_hachi_roof_identity_icons_v001",
+      "drive_url": "https://drive.google.com/file/d/1WlG4tScnNoW7YZl1XIr9SfPlamGjiEMW/view",
+      "zip_bytes": 2879578,
+      "zip_sha256": "6ba6533c2d6eaeeb5e55ce934c153aaf9fec6ed80953176709cbec46a556cac9",
+      "local_save_confirmed": true,
+      "size_sha_matches_index": true,
+      "CRC_all_passed": true,
+      "safe_paths": true,
+      "manifest_files_verified": 26
+    },
+    {
+      "asset": "shibu_hachi_fun_project_lightbox_v001",
+      "drive_url": "https://drive.google.com/file/d/1ocaaYIS5JPJRn-exAw3T-CMBnpaZKBxJ/view",
+      "zip_bytes": 2996906,
+      "zip_sha256": "447c1957d19eda41204d60800756cbd7a25f311d5c9f3c9920add12a73d87f9c",
+      "local_save_confirmed": true,
+      "size_sha_matches_index": true,
+      "CRC_all_passed": true,
+      "safe_paths": true,
+      "manifest_files_verified": 21
+    },
+    {
+      "asset": "shibu_hachi_roof_sponsor_sign_v001",
+      "drive_url": "https://drive.google.com/file/d/15F07egROD942VjMdcoHUzeE4cDYk94Co/view",
+      "zip_bytes": 3792295,
+      "zip_sha256": "2f1df46193a4e934ab886ba5ecc0b6290bdb0b7a4c30a775004652e4af62bbd4",
+      "local_save_confirmed": true,
+      "size_sha_matches_index": true,
+      "CRC_all_passed": true,
+      "safe_paths": true,
+      "manifest_files_verified": 32
+    },
+    {
+      "asset": "shibu_hachi_gshock_display_clock_v001",
+      "drive_url": "https://drive.google.com/file/d/1Am-ybH4eSSNw_eWTYV9iVPpDgzD0nbvl/view",
+      "zip_bytes": 11141840,
+      "zip_sha256": "5ee472b53e17b64f031ee0f6b639c9d2f30b8cda0a119a39e0e9a8bd48a62fa7",
+      "local_save_confirmed": true,
+      "size_sha_matches_index": true,
+      "CRC_all_passed": true,
+      "safe_paths": true,
+      "manifest_files_verified": 39
+    }
+  ]
+}

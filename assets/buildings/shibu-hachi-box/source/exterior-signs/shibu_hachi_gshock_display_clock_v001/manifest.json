@@ -1,0 +1,240 @@
+{
+  "asset": "shibu_hachi_gshock_display_clock_v001",
+  "status": "validated_candidate_unplaced",
+  "ledger_ids": [
+    "H-SG-006"
+  ],
+  "blender": "4.2.3 LTS",
+  "units": "metres",
+  "dimensions_m": [
+    1.74,
+    0.68,
+    2.25
+  ],
+  "world_coordinates": null,
+  "front_axis_blender": "-Y",
+  "origin": "bottom_center",
+  "triangles": 32395,
+  "material_batches": 5,
+  "materials": 5,
+  "glb_meshes": 5,
+  "editable_objects": 102,
+  "embedded_images": 1,
+  "copyrighted_photographs_included": false,
+  "original_artwork_only": true,
+  "validation_passed": true,
+  "source_degenerate_triangles": 0,
+  "structural_source_nonmanifold_edges": 0,
+  "decorative_source_boundary_edges": 39,
+  "source_rebuild_canonical_geometry_normals_uv_identical": true,
+  "source_rebuild_raw_byte_identical": false,
+  "editable_blend_export_byte_identical": true,
+  "main_scene_changes": false,
+  "github_writes": false,
+  "merge_or_deploy": false,
+  "drive_upload_status": "Parent-managed, not performed by builder",
+  "limitations": [
+    "Metre dimensions, thickness, construction and hidden details inferred",
+    "Static 2026-08-08 display only; later persistence unconfirmed",
+    "Tiny unresolved dial microtext omitted",
+    "Neutral-font recreations, not proprietary font/logo contours",
+    "Visual model only; no collision, runtime placement or FPS tests"
+  ],
+  "files": [
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 3813,
+      "sha256": "960a1874ac8f85b49cd06f2c3ed931f379f9931ff9c457fd19d2551ce413d38e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5969,
+      "sha256": "5837bb725d2378b141d613a90c3e96ab98b6d66becb648f550b12c855a6cb786"
+    },
+    {
+      "path": "component_estimates.json",
+      "bytes": 1018,
+      "sha256": "ae7f396dce31dc23a1304f9d22a790ae113c17859242a1ee43ca0c36588b945c"
+    },
+    {
+      "path": "evidence/01_front.png",
+      "bytes": 1921844,
+      "sha256": "ce8008d2d6c04371bd1f01b400be71773d16995a9dcb946aec9259d505734682"
+    },
+    {
+      "path": "evidence/02_back.png",
+      "bytes": 1797603,
+      "sha256": "49abb2cfa540e371af47a9f98947e610218299baad6a95e1f3af1134032074f7"
+    },
+    {
+      "path": "evidence/03_oblique.png",
+      "bytes": 1975750,
+      "sha256": "ca9e68b5ecfd971480ae373c06c025180bdf275435d204c6ca3e691763449139"
+    },
+    {
+      "path": "evidence/04_rear_oblique.png",
+      "bytes": 1831233,
+      "sha256": "9d6e5b9d038983f1f430ee7a04654b8710a25a56753fad1e3e01aeda49842de4"
+    },
+    {
+      "path": "evidence/export_editable.log",
+      "bytes": 1010,
+      "sha256": "ccdaa2488622e6d2a29dde643825edec6352951b10832cef2707e5b7d45a6ac1"
+    },
+    {
+      "path": "evidence/font_cleanup.json",
+      "bytes": 3831,
+      "sha256": "3392c34bda6a5e204efad9e5a7817feea31691624e53b4510b1086db8c4cbd6e"
+    },
+    {
+      "path": "evidence/freeze.json",
+      "bytes": 932,
+      "sha256": "5015e4c02a3754790279a827b4b37c9ae5584020097d7e12b6302142e38ddbc5"
+    },
+    {
+      "path": "evidence/generate.log",
+      "bytes": 24717,
+      "sha256": "4b4a825d12bb163aa0dba8a8c7bd10e972e198beb5691aaadecda6f44426892f"
+    },
+    {
+      "path": "evidence/generation_stats.json",
+      "bytes": 363,
+      "sha256": "2f9cf11da08fcfdc5d1e9c3f19952b972d286283305886141861c41e877f78d5"
+    },
+    {
+      "path": "evidence/generation_timing.json",
+      "bytes": 102,
+      "sha256": "b8f6d678b3320f5bf26f5b077366deaf09392279c1b24689c5f63ec5b4fa2659"
+    },
+    {
+      "path": "evidence/render_framing.json",
+      "bytes": 559,
+      "sha256": "763a091b288d8c40c75344830566274fd52513ce979da050e12759ff1f67970c"
+    },
+    {
+      "path": "evidence/reproduce.log",
+      "bytes": 1162,
+      "sha256": "85d622cf5b050e01d8d76f683997e422404779e0975154b9c87cfa19546003fb"
+    },
+    {
+      "path": "evidence/reproduce_validate.log",
+      "bytes": 6460,
+      "sha256": "0650e473ffc16e5e5db5f0cfbd817d4b993835154eaaa8396a4267a04a604693"
+    },
+    {
+      "path": "evidence/reproducibility.json",
+      "bytes": 2784,
+      "sha256": "5c4ff86cf5791950d9271564ef3583fc3c0d45cba24c7f3cb0ed34ef44732a52"
+    },
+    {
+      "path": "evidence/scope_and_duplication.json",
+      "bytes": 585,
+      "sha256": "ccd29d2fdaa2196b1456c64ba5f62f4312bdf6957c47027f2e6ae0aa46be6ed6"
+    },
+    {
+      "path": "evidence/task_start.json",
+      "bytes": 374,
+      "sha256": "9ce2352af575a8789898883780ebd8d8edbfe7ffa61585d6ce8a84a23e3414d3"
+    },
+    {
+      "path": "evidence/validate.log",
+      "bytes": 6497,
+      "sha256": "9f51f6ed4da696a38a6f13ce0788272ef5f026439ebbcc15189b42259e4cc21c"
+    },
+    {
+      "path": "evidence/validation.json",
+      "bytes": 5772,
+      "sha256": "9b7a901dbf9f5edf3e79cb1e128d31334155cfa70e7f5a2a8d516d9a98fd263a"
+    },
+    {
+      "path": "evidence/visual_review.json",
+      "bytes": 950,
+      "sha256": "523a996fa2f0db9f140d82218516c683e3d16e7d59035d262438990b5ca048b6"
+    },
+    {
+      "path": "fonts/DejaVuSans-Bold.ttf",
+      "bytes": 708920,
+      "sha256": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890"
+    },
+    {
+      "path": "fonts/DejaVuSans.ttf",
+      "bytes": 759720,
+      "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e"
+    },
+    {
+      "path": "fonts/DejaVuSerif-Italic.ttf",
+      "bytes": 346544,
+      "sha256": "d843bf414381dd64b89e6c7c954075657b74168521f02b30e11d308558eda1d2"
+    },
+    {
+      "path": "fonts/LICENSE.txt",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "ledger_handoff.json",
+      "bytes": 867,
+      "sha256": "fce0ff980e591fd7a5ff10d8e292e5a5c1082704f9ab6481ae4836ccb3903c3d"
+    },
+    {
+      "path": "placement_hint.json",
+      "bytes": 669,
+      "sha256": "43bf9f1a4e24d0b2f23820c16f8b43050aa29a92e26ce7a9b7bcce94344b2110"
+    },
+    {
+      "path": "references/ledger_row_before.json",
+      "bytes": 1094,
+      "sha256": "a52f96d323304682d4f6ad4d17851e26866f5a259fd7802be01be7135766f16c"
+    },
+    {
+      "path": "references/sources.json",
+      "bytes": 1938,
+      "sha256": "2e85d77ac9c49cb0a08226fc619bfa9d297a30b4e22b6ca3c99305b3b5e51753"
+    },
+    {
+      "path": "shibu_hachi_gshock_display_clock_v001.blend",
+      "bytes": 4629656,
+      "sha256": "ead966aed3981d73924f935e3316e8b136135a654c7d57b87f39a700037e9629"
+    },
+    {
+      "path": "shibu_hachi_gshock_display_clock_v001.glb",
+      "bytes": 1866828,
+      "sha256": "a981dae438b82e42cd34f55482e2d53e2bcf14364bbc89888a0734016c523e4f"
+    },
+    {
+      "path": "source/export_editable.py",
+      "bytes": 1756,
+      "sha256": "6da5a839016490e3fb9b7f30c343f4dfecffd21da96f3477e555c2aa8d1fe599"
+    },
+    {
+      "path": "source/generate.py",
+      "bytes": 19751,
+      "sha256": "93c2d02fc75eeed3b44772c709388ffefe3bd98e079c822daaba2c0e12bb0c95"
+    },
+    {
+      "path": "source/make_artwork.py",
+      "bytes": 5864,
+      "sha256": "23db0e0349fc1ff529ff35b4bfc9d86552edce58bdff7e8110ba241f76e381ff"
+    },
+    {
+      "path": "source/validate.py",
+      "bytes": 4940,
+      "sha256": "0e507e32f8ec0fa3d1dbaa4b5aa64b03bd2ebdf37c0627dce50d5b0b181b0ad3"
+    },
+    {
+      "path": "textures/artwork_metadata.json",
+      "bytes": 742,
+      "sha256": "10b735068fba37bd0bd59faf5a1d0e11860d06cad2dd8cdb0ed08c23bde4018c"
+    },
+    {
+      "path": "textures/authored_face_2026-08-08.png",
+      "bytes": 228771,
+      "sha256": "46776b61b11b3cbb2b67d552c979bdc1347e768f0999f96e63da14d9d70d8ad7"
+    },
+    {
+      "path": "timings.json",
+      "bytes": 730,
+      "sha256": "d91c3129def03f86ce55ba1525517ac954fad09466607780ca0a924b70402aa6"
+    }
+  ]
+}

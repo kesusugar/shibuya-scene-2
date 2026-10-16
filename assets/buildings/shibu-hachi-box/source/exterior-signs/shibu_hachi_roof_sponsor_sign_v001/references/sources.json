@@ -1,0 +1,29 @@
+[
+  {
+    "id": "S06",
+    "url": "https://note-pr.casio.co.jp/n/n848d1c101d53",
+    "publisher": "Casio official public relations",
+    "published": "2024-12-10",
+    "image_capture_date": "unknown",
+    "inspection_file": "casio_front.jpg",
+    "local_reference_sha256": "6b3548c068d0fe4e20d887416d72f8855dbbc1dbf7ef863067bdb3e59c8869d1",
+    "observed": "SUPPORTED BY and angular G-SHOCK rooftop lettering, small cool-white letters and taller warm pale faces with red-orange glow. Narrow dark line at base.",
+    "rights": "Reference inspected only, not redistributed or used as texture."
+  },
+  {
+    "id": "S03",
+    "url": "https://biz.shibuyabunka.com/watch/107/",
+    "image_capture_date": "2026-08-08 (source context)",
+    "inspection_file": "aug8_2026_day.webp",
+    "local_reference_sha256": "061d1e8bfddd351fe52a9ba3ba300cb60f2292f60c7b90604b466f272d259bc0",
+    "observed": "Side view confirms G-SHOCK exhibit only. Rooftop sponsorship lettering is outside frame and cannot be dated from this image.",
+    "rights": "Reference inspected only, not redistributed or used as texture."
+  },
+  {
+    "id": "PAVILION",
+    "local_source": "shibu_hachi_box_revision/source/generate.py",
+    "source_sha256": "10c83e5edfa822df31ca3a1c872c99bc2a9b83b2f297162e84f4732470d6aed8",
+    "observed": "Existing roof width 12.76m estimated; identity carrier spans x=-6.40 to+3.40m. Retained unchanged.",
+    "rights": "Project-owned source inspected. No parent geometry included."
+  }
+]

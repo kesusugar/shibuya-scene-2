@@ -1,0 +1,142 @@
+{
+  "package": "shibu_hachi_roof_identity_icons_v001",
+  "version": "v001",
+  "ledger_id": "H-SG-001",
+  "freeze_count": 1,
+  "total_files_excluding_manifest": 26,
+  "files": [
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 2332,
+      "sha256": "a467486c826935665c1a2a06e1ef698a188f2287fad802cecddc11441411037b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3524,
+      "sha256": "8109c6b401cdf1dcb717941ef2609913ec40ae9b0f59a4162eda4132ca698f6b"
+    },
+    {
+      "path": "component_estimates.json",
+      "bytes": 1421,
+      "sha256": "957c075b37cd98bb3b421583787e54d90e3260db2730d05402a4adf21fcff6ea"
+    },
+    {
+      "path": "evidence/final_checks.json",
+      "bytes": 943,
+      "sha256": "25adcd5780d58b745b8a0ab532acbbe9039ff7eb38620d3f1377b60dfb03d0c3"
+    },
+    {
+      "path": "evidence/generation.json",
+      "bytes": 503,
+      "sha256": "f60e15356753a4f9ee39bbdd801dfdf31feef4b527193b84f1df5b2f801db830"
+    },
+    {
+      "path": "evidence/pair_oblique.png",
+      "bytes": 901108,
+      "sha256": "5ed19bb5cf11c0b947f037fcd62cd0b6cb32c8fd414810451c93082969baafc0"
+    },
+    {
+      "path": "evidence/render_framing.json",
+      "bytes": 348,
+      "sha256": "9b4e3183bf602999792f7905c49f204df3dfe23d8a79765220f7b43061a38d45"
+    },
+    {
+      "path": "evidence/reproduction.json",
+      "bytes": 1156,
+      "sha256": "c6c110d925ab5db3519b283c48c91b0c000aa3eb2fa16ba4044137cabf91db37"
+    },
+    {
+      "path": "evidence/roof_information_circle.png",
+      "bytes": 867000,
+      "sha256": "755749aca974acac2011ab4eac388cc81e0a4969d9e611073daa2e65399eab2b"
+    },
+    {
+      "path": "evidence/roof_seated_dog.png",
+      "bytes": 887234,
+      "sha256": "b8e62383096caa1f09ee2765db87b80ea8298b578f00adb30886ac7a89104b6b"
+    },
+    {
+      "path": "evidence/validation.json",
+      "bytes": 6697,
+      "sha256": "39ee6d95c4fdfd1e8684b5a6f978c5c32df2e089a5d019b83a32edc9c7dc8bf6"
+    },
+    {
+      "path": "evidence/visual_review.json",
+      "bytes": 888,
+      "sha256": "70a0d11819b351a406e689821db76afd7df871429720625435da5e409ef1519b"
+    },
+    {
+      "path": "ledger_handoff.json",
+      "bytes": 748,
+      "sha256": "2fd403af9e75b9c4093f12afb514b7a25e0a9209eb4ac330e8ba2ae1bd5d5ccd"
+    },
+    {
+      "path": "placement_hint.json",
+      "bytes": 1400,
+      "sha256": "9bc537cd272b513b04d8218dcb2c7e247a00c68d3f9dd3243c0285d2f8b2c6b6"
+    },
+    {
+      "path": "references/ledger_row_before.json",
+      "bytes": 891,
+      "sha256": "a82662af9e2bab06046e27824ebd1c9c81fecb1e07fcf81d321cc9696ac50609"
+    },
+    {
+      "path": "references/photo_anchor_observations.json",
+      "bytes": 2797,
+      "sha256": "b0ebbc3e523fe2b47ded1c9f78c78ad1d65edabd0c2b07f3698533975c5d7337"
+    },
+    {
+      "path": "references/read_only_inputs_snapshot.json",
+      "bytes": 1007,
+      "sha256": "e1ec2209c7652ce86df64246a8409b5648232c8d648328bfb0db898644efdb68"
+    },
+    {
+      "path": "references/sources.json",
+      "bytes": 779,
+      "sha256": "95db511b665bcf61f598df153df25b7c08f2c009ea60b0db3107d454ece90c91"
+    },
+    {
+      "path": "roof_information_circle.blend",
+      "bytes": 504388,
+      "sha256": "ccbe25420866620ce324fe411ea41d29b5bc3d4ddb04f70310de7620060d90d5"
+    },
+    {
+      "path": "roof_information_circle.glb",
+      "bytes": 35272,
+      "sha256": "11a545525b14dc426e5077860721befdc427ded445c11579caeaf90553664873"
+    },
+    {
+      "path": "roof_seated_dog.blend",
+      "bytes": 439888,
+      "sha256": "7d68ac351f8ecc238d0ad376e5d0aafc1f849298ec07635a4fde2ba56fe69aef"
+    },
+    {
+      "path": "roof_seated_dog.glb",
+      "bytes": 10040,
+      "sha256": "2274a6f2a4cd0b72a3a4ba0e47f252e562c57881b9f99ab24e33336aa71d43d7"
+    },
+    {
+      "path": "source/export_editable.py",
+      "bytes": 948,
+      "sha256": "d4c94462e8d97231fab4fe55e86eea7e5ddccc880675bc286bf042a98e27d13e"
+    },
+    {
+      "path": "source/generate.py",
+      "bytes": 8165,
+      "sha256": "ea770ac23c13c0945ed5691f162ee7a8745b8bca2267dfb19b76dd70c08080de"
+    },
+    {
+      "path": "source/validate.py",
+      "bytes": 4236,
+      "sha256": "1e4b73cdba47bb51f1f1b4dc463efcde2778e5e163514b3298ad4e46dae5d764"
+    },
+    {
+      "path": "timings.json",
+      "bytes": 926,
+      "sha256": "d9fe8cb3291fd02a9512d2689faa02888dab0a78fba6f7059d4764e9e89d6263"
+    }
+  ],
+  "status": "validated_unplaced_estimates",
+  "drive_upload": "Parent responsibility; no upload from this worker.",
+  "license_note": "Independently authored model/source; no reference photography redistributed; third-party identity/trademark rights are not granted."
+}
