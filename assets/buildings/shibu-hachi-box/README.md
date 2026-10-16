@@ -10,7 +10,7 @@ Blender **4.2.3 LTS**、リポジトリルートから：
 blender -b --python-exit-code 1 -t 4 -P assets/buildings/shibu-hachi-box/source/build.py
 node scripts/build-box-exterior.mjs
 node scripts/check-box-1.mjs
-npx vitest run tests/shibu-hachi-box.test.ts tests/box-exterior.test.ts tests/buildings.test.ts tests/budget.test.ts --maxWorkers=2
+npx vitest run tests/shibu-hachi-box.test.ts tests/box-exterior.test.ts tests/box-sign-look.test.ts tests/buildings.test.ts tests/budget.test.ts --maxWorkers=2
 npm run build
 ```
 
@@ -47,3 +47,11 @@ node scripts/build-box-exterior.mjs
 既存名称の正規化GLB自体を再抽出する場合だけ、Blender4.2.3で `scripts/export-box-name.py` を実行する。元incomingの文字だけを抽出し、旧高キャリアを戻さない。名前の等方1.201倍と淡色発光は今回の配信上の推定。時計は元の静止文字盤・全形状・法線を維持し、テクスチャ未使用の4プリミティブのUVだけを除去する。
 
 丸i・犬・名称・FUN・スポンサーは2024年公開資料由来、時計のLCDは2026-08-08 08:08:08。2025年10月の確定風景ではない。既存窓枠が時計文字盤の一部を遮る。全文字の常時視認や取付金物の実物形状は保証しない。時計のフォント通知は `source/exterior-signs/shibu_hachi_gshock_display_clock_v001/fonts/LICENSE.txt`、スポンサーは同名パッケージの `fonts/LICENSE.txt`。調査写真・PDF・認証情報を含めない。
+
+## BOX-2の表示レイヤー名
+
+`source/exterior-signs/placement.json` の6つの `layer` は `signs_` で始める。
+共通loaderは親名を `shibu-hachi-box:<layer>` にし、通常の `applyLook` と分類表示は
+既存の `/:signs/` 規則で看板を識別する。生成済みviewer.jsonだけを書き換えない。
+`node scripts/build-box-exterior.mjs` でviewer設定とmanifestを更新する。
+この名前修正では本体・6表示GLBの内容、材質、形状、配置、予算を変更していない。
