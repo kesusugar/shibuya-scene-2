@@ -43,14 +43,16 @@ it('merges source components without changing their triangles and applies the sa
  const io=new NodeIO(),raw=await io.read(source+'/policebox_visible_facade_2025_v001.glb');
  const outputs:Document[]=await Promise.all(facade.components.map((c:{file:string})=>io.read(dir+'/web/'+c.file)));
  for(const [di,d] of outputs.entries()){
-  const component=facade.components[di],names=new Set(component.nodes),groups=new Map<string,number[]>();
+  const component=facade.components[di],names=new Set(component.nodes),groups=new Map<string,number[]>(),expectedIndices=new Map<string,number[]>();
   for(const n of raw.getRoot().listNodes())if(names.has(n.getName()))for(const p of n.getMesh()?.listPrimitives()??[]){
-   const key=p.getMaterial()!.getName(),values=groups.get(key)??[];groups.set(key,values);
+   const key=p.getMaterial()!.getName(),values=groups.get(key)??[],offset=values.length/3;groups.set(key,values);
+   const indices=expectedIndices.get(key)??[];expectedIndices.set(key,indices);for(const index of p.getIndices()!.getArray()!)indices.push(index+offset);
    const matrix=new Matrix4().fromArray(n.getWorldMatrix()),pos=p.getAttribute('POSITION')!;
    for(let i=0;i<pos.getCount();i++)values.push(...new Vector3().fromArray(pos.getElement(i,[])).applyMatrix4(matrix).toArray());
   }
   const positions=d.getRoot().listMeshes().flatMap(m=>m.listPrimitives()).map(p=>Array.from(p.getAttribute('POSITION')!.getArray()!));
   expect(positions).toEqual([...groups.values()].map(v=>Array.from(new Float32Array(v))));
+  expect(d.getRoot().listMeshes().flatMap(m=>m.listPrimitives()).map(p=>Array.from(p.getIndices()!.getArray()!))).toEqual([...expectedIndices.values()]);
   d.getRoot().listNodes().find(n=>n.getName()==='ST2_site_transform')!.getMatrix().forEach((v,i)=>expect(v).toBeCloseTo(report.worldMatrix[i],12));expect(d.getRoot().listTextures()).toHaveLength(0);
  }
 
