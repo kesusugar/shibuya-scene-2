@@ -2,7 +2,8 @@
 
 `placement.json` が今回のシーン配置の生成元。元候補のworld_transform=nullは0へ読み替えない。
 リポジトリルートの `node scripts/build-st-1.mjs` で選択GLBから配信2 GLB、viewer、昼夜テーブル、
-build-report、station-northのmanifestを更新できる。既存構造・地面は入力であり上書きしない。
+build-report、station-northのmanifestを更新できる。PR81後は `../st-1-opening/` の保存構造原本から
+看板直下だけを切り欠いた配信構造GLBも生成する。原本・地面・この配置JSONは上書きしない。
 
 各候補ディレクトリはDriveの検証済み完全ZIPから選んだ入力スナップショット。
 原本MANIFESTは完全ZIPの記録なので、そこに載る全ファイルがこのリポジトリにもあるとの主張ではない。

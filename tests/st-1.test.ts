@@ -20,7 +20,8 @@ async function live(){
 }
 function materials(root:import('three').Object3D){const out:MeshStandardMaterial[]=[];root.traverse(o=>{if(o instanceof Mesh)out.push(...(Array.isArray(o.material)?o.material:[o.material]) as MeshStandardMaterial[]);});return out;}
 it('preserves station structure and both source surfaces, and keeps generated settings in the manifest',()=>{
- expect(hash(dir+'/web/station-north.glb')).toBe('eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09');
+ expect(hash(dir+'/source/st-1-opening/station-north-pr81.glb')).toBe('eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09');
+ expect(hash(dir+'/web/station-north.glb')).toBe(report.bodySha256);
  const hints=JSON.parse(readFileSync(dir+'/web/viewer.json','utf8')),manifest=JSON.parse(readFileSync(dir+'/manifest.json','utf8'));
  expect(hints.groundElevationTP).toBe(15);expect(hints.layers).toEqual(Object.fromEntries(config.components.map((c:{layer:string;output:string})=>[c.layer,c.output])));
  for(const path of ['web/viewer.json','source/st-1/placement.json'])expect(manifest.files[path]).toEqual({bytes:readFileSync(dir+'/'+path).length,sha256:hash(dir+'/'+path)});

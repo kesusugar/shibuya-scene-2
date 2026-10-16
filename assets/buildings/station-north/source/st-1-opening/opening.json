@@ -1,0 +1,54 @@
+{
+  "main": "a906f1b",
+  "baseline": "station-north-pr81.glb",
+  "baselineSha256": "eb1b9607fa28c0410ada219fd42cbb6f19592ddb2bb6002050869eb5bf65ed09",
+  "targetNode": "stn_concrete",
+  "targetPrimitive": 0,
+  "targetTriangles": [
+    94,
+    95
+  ],
+  "wallPlaneZ": -0.02,
+  "planeTolerance": 0.002,
+  "xMin": -5.91,
+  "xMax": -1.11,
+  "bottomY": -0.4,
+  "topY": 3.074,
+  "depth": 0.65,
+  "topClearanceToFascia": 0.006,
+  "status": "Shallow exterior representation only; not an enterable or surveyed passage. ST-1 placement unchanged.",
+  "reference": {
+    "source": "https://biz.shibuyabunka.com/watch/50/",
+    "image": "https://biz.shibuyabunka.com/storage/images/watch/1744250426.jpg",
+    "captionDate": "2025-04-09",
+    "photoSha256": "b55f3c1bb82ac82c038fc5e1e93ef6eee5c530497dd56b891474f02c9bbfd0fd",
+    "openingLocatorPixelsApprox": [
+      [
+        176,
+        452
+      ],
+      [
+        449,
+        450
+      ],
+      [
+        450,
+        677
+      ],
+      [
+        173,
+        680
+      ]
+    ],
+    "confirmed": "Opening below left entrance-only fascia and left of the same pale centre pier. Vertical side returns visible.",
+    "estimated": "Metric opening width/height inherit nominal fascia and ST-1 placement; exact jamb thickness, geographic mount, depth and hidden back wall unmeasured."
+  },
+  "preservedST1Files": {
+    "source/st-1/placement.json": "d497f181c6b0deafa4ec0f4fd849707c823a9b4101378c5fdf3c7158db9f0319",
+    "web/signs-jr-entry-early-2025.glb": "8042b6da74206aa8bedc91a59901c0c6ad988052d51872c61a6f6c30814fa1a0",
+    "web/wall-jr-centre-pier-2025-04-09.glb": "bf659fd8932bb1cfb155df4cf5dff7ce3eb5ef3281034ce81c655d195d315c2f",
+    "web/viewer.json": "181ba5ee43cb4a7074003c610a2c2d87fc5f8c2ecde9cff6b2981a41ac6ce612",
+    "web/emissive_day.json": "ca33918bed548baca2aa88c94e61a04e5e6189b0a6dbe89f749b122d627c5052",
+    "web/emissive_night.json": "898708b14b0ddf008d1572b10f3a0028fe578ff4ae5278fd042926cfadd66002"
+  }
+}
