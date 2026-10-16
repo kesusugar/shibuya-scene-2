@@ -87,4 +87,3 @@ Final source-triangle/index preservation regression and typecheck:
 
 > shibuya-scene-2@0.1.0 typecheck
 > tsc --noEmit
-
