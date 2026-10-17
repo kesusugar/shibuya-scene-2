@@ -1,0 +1,20 @@
+{
+  "status": "confirmation preview",
+  "xy_m": [
+    35.25,
+    -47.0
+  ],
+  "yaw_deg": 8.3,
+  "base_tp_m": 15.144105834960937,
+  "uniform_scale": 1,
+  "basis": "official A8/BOX/JR order; southern opening and rounded columns in Aug2025 photos; existing southern roof edge bearing 8.3deg",
+  "replacement": "only local x [-2.95,2.95], y <4.6 patch of plaza-kiosk; northern roof, side remnants, BOX and JR retained",
+  "unresolved": "roof width discrepancy and exact shared boundary; no underground or interior; existing collision retained",
+  "ground_samples_tp_m": [
+    [
+      35.85,
+      -51.42,
+      15.22411
+    ]
+  ]
+}

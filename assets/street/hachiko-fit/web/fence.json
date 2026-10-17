@@ -1,0 +1,32 @@
+{
+  "status": "confirmation single-bay estimate",
+  "endpoints_xy_m": [
+    [
+      2.0715999603271484,
+      -46.222599029541016
+    ],
+    [
+      2.612799882888794,
+      -44.41713333129883
+    ]
+  ],
+  "yaw_deg": 73.31356072824794,
+  "length_m": 1.8848352290924377,
+  "beam_centre_above_ground_m": 0.78,
+  "beam_height_m": 0.28,
+  "basis": "existing rail bay 3-4 of 15 on run (0.448,-51.639) -> (8.566,-24.557); July2025 white beam/joint study informs the broad face only",
+  "unresolved": "white-beam-to-rail-run correspondence, exact section and terminals; whole-bay dimensions and post covers are inferred",
+  "replacement": "one broad top-beam cover only; existing rail collision/posts/lower bars kept; 0.57m source crop is not repeated",
+  "ground_samples_tp_m": [
+    [
+      2.0715999603271484,
+      -46.222599029541016,
+      15.48607
+    ],
+    [
+      2.612799882888794,
+      -44.41713333129883,
+      15.45549
+    ]
+  ]
+}
