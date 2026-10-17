@@ -1,5 +1,5 @@
 {
-  "status": "confirmation preview",
+  "status": "normal estimated shell with canopy joints",
   "xy_m": [
     35.25,
     -47.0
@@ -9,7 +9,13 @@
   "uniform_scale": 1,
   "basis": "official A8/BOX/JR order; southern opening and rounded columns in Aug2025 photos; existing southern roof edge bearing 8.3deg",
   "replacement": "only local x [-2.95,2.95], y <4.6 patch of plaza-kiosk; northern roof, side remnants, BOX and JR retained",
-  "unresolved": "roof width discrepancy and exact shared boundary; no underground or interior; existing collision retained",
+  "adjustment": "complete local roof infill at Web up4.04m plus 0.08m side and 0.16m rear folded closures bridge shell roof to retained canopy at Web up 4.60m; dimensions inferred, no interior or underground; original collision retained",
+  "ground_contact_check": {
+    "successful_samples": 1,
+    "min_tp_m": 15.22411,
+    "max_tp_m": 15.22411,
+    "missing": 0
+  },
   "ground_samples_tp_m": [
     [
       35.85,

@@ -12,38 +12,38 @@
   "normal": [
     "lottery",
     "enclosure",
-    "finish"
-  ],
-  "confirmation_preview": [
+    "finish",
     "a8",
     "louvre",
     "fence",
-    "tactile"
+    "tactile",
+    "kerb"
   ],
+  "confirmation_preview": [],
   "outputs": {
     "web/a8.glb": {
-      "bytes": 367044,
-      "sha256": "81e8b2dfdf94d75dfd2e1faceb12c2f742a96f12fd75b15a6d95b9b5795b1786"
+      "bytes": 371296,
+      "sha256": "1b28964f06586314b802fee667879c7d73018d333315066fb83706d61d14b9e7"
     },
     "web/a8.json": {
-      "bytes": 628,
-      "sha256": "93088b1f08521070247a2de5b32180170459861e36af86a641b5a9565ebe2cdc"
+      "bytes": 894,
+      "sha256": "a33c2bae51c33846ae0ac08e40b099651ece82048f8442987e67e698879a5fe8"
     },
     "web/enclosure.glb": {
-      "bytes": 26300,
-      "sha256": "07a6833073e194ae5618f979ce3f3bf1ac74b35618bea214a01cf52fab6cce8a"
+      "bytes": 66620,
+      "sha256": "44b210330716b80fda64ab959d2b01867227293e792cff768008e33ec9d81c5e"
     },
     "web/enclosure.json": {
-      "bytes": 1660,
-      "sha256": "6ce7dda0f9cfa26e6c8d2a80d5ffdaaa4e3ab90f24eec2819dac323cdb091143"
+      "bytes": 5208,
+      "sha256": "8ade1103deaad621edfb3d2b86459b5115b8373c6b48648ff179eada2b51b69a"
     },
     "web/fence.glb": {
-      "bytes": 36092,
-      "sha256": "0a85a2a7f4de1df4b3a2ae8131be96b93127ae07b4c4340a970170472a3ceaf7"
+      "bytes": 57352,
+      "sha256": "eb39f1f418c0f13db8faaa6ff4429049d42965db9e4844f2140e7fe9ba86771e"
     },
     "web/fence.json": {
-      "bytes": 939,
-      "sha256": "5c274c721265980ea916a7a27a8bcf896eea918f99381f17c146282b32d0d274"
+      "bytes": 2297,
+      "sha256": "5de4d70d8076a7f47b21115c973768605916a8fc56e08349d00afc1bc42dba29"
     },
     "web/finish.glb": {
       "bytes": 703156,
@@ -52,6 +52,14 @@
     "web/finish.json": {
       "bytes": 636,
       "sha256": "153197b0bba4f0b0471387dd3dc14e60889ef8d8ec8a9282bb07867327e2248f"
+    },
+    "web/kerb.glb": {
+      "bytes": 16560,
+      "sha256": "e710fec10e74ff7e9124732875e196101597651dfa4c630a240baef5dbf622fa"
+    },
+    "web/kerb.json": {
+      "bytes": 2234,
+      "sha256": "7d76f8fa900ea239f39412d3e9b361d0c06ae40a41e2bf9c61a75fb3c12bb9ca"
     },
     "web/lottery.glb": {
       "bytes": 1062840,
@@ -62,20 +70,20 @@
       "sha256": "d2b5349c279777999262d9d34779e158f9571806cc98a33c3a5b6e6b272e1fa1"
     },
     "web/louvre.glb": {
-      "bytes": 339624,
-      "sha256": "e166c44e7b553b60643e831f13ccf652624a9811677230fed04a95b7d1e992e4"
+      "bytes": 345060,
+      "sha256": "6e99f1ecb161a00eba1e110e7752a9d4cd54ac377c1b3002fd81d27dcf99bbb2"
     },
     "web/louvre.json": {
-      "bytes": 635,
-      "sha256": "b0d53d2487ca1a21707cdbe67a345602c26bbb517f9c6aa1c85748cd9b8779d5"
+      "bytes": 740,
+      "sha256": "29336e69954467b3c15896f11b977ea5330c90c066939675b3f90e24c5988532"
     },
     "web/tactile.glb": {
-      "bytes": 210520,
-      "sha256": "ae30f8e6aab008483703186e040df6537b72d8e382b7eb8412f0b695bd354d1e"
+      "bytes": 228816,
+      "sha256": "c987e3d3c6314e5d5e370edf03af7b57cd64f517eb0ebec822ad4df55dda0d57"
     },
     "web/tactile.json": {
-      "bytes": 1459,
-      "sha256": "8b7e3775d6fda8bbc60ba07e395d6e2b76b5a42f2b859a1ff5f6fae2eebc2a2f"
+      "bytes": 6257,
+      "sha256": "21ba5d89ba4c0e084d6e94f451594555566270ce9f9edfbfb8f7ecc82ad60809"
     }
   }
 }

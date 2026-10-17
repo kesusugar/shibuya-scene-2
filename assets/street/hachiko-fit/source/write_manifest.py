@@ -10,6 +10,6 @@ record={'asset':'hachiko-fit','datum_tp_m':15,'source_rights':'source/RIGHTS.md'
           'a29_a8_entrance_shell_2025_v001':'14379f1cda3007f001caa6086c89224bedf20bd8d45d76b5bcd1db349b7f504a',
           'station_north_louver_frontage_v001_FRONT_ONLY':'b816e35e149af2a188bdd843e58761c4b5cd0857c14b5d7e051c64a4fcb86ecc',
           'hachiko_white_guardrail_detail_v001_PARTIAL':'4dceec3743ef66109aa0a385530b86768daf89d865f0e7bc6df838eff7b6e2b5'},
-        'normal':['lottery','enclosure','finish'],'confirmation_preview':['a8','louvre','fence','tactile'],
+        'normal':['lottery','enclosure','finish','a8','louvre','fence','tactile','kerb'],'confirmation_preview':[],
         'outputs':outputs}
 (root/'manifest.json').write_text(json.dumps(record,indent=2)+'\n',encoding='utf-8',newline='\n')
