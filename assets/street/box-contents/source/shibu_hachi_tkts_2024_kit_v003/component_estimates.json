@@ -1,0 +1,111 @@
+{
+  "units": "metres",
+  "all_dimensions_estimated": true,
+  "not_surveyed": true,
+  "counter_upper_shell": {
+    "width": 1.4,
+    "depth": 0.96,
+    "height": 0.35,
+    "top_thickness": 0.045,
+    "fascia_thickness": 0.052,
+    "reference_evidence": "Visible upper front/right shell retained; photographed left return and inward fascia added. No lower cabinet.",
+    "installation_bottom_estimate": 0.62,
+    "installation_range": ".55-.70; not a ground-contact asset",
+    "not_modelled": [
+      "lower cabinet",
+      "counter-front cropped landscape display",
+      "internal desktop",
+      "storage",
+      "hidden brackets",
+      "tablet",
+      "closed PC",
+      "wiring"
+    ],
+    "left_return_v003": {
+      "local_top_centre_m": [
+        -0.56,
+        0.1,
+        0.3275
+      ],
+      "top_dimensions_m": [
+        0.28,
+        0.76,
+        0.045
+      ],
+      "local_inner_fascia_centre_m": [
+        -0.446,
+        0.1,
+        0.1525
+      ],
+      "fascia_dimensions_m": [
+        0.052,
+        0.76,
+        0.305
+      ],
+      "top_elevation_m": 0.35,
+      "edge_bevel_m": 0.0015,
+      "all_dimensions_estimated": true,
+      "hidden_plan": "Rectangular closure approximation; rear endpoint unobserved",
+      "top_level": "Co-level with existing front/right inferred, not measured",
+      "device_datum_used": false,
+      "lower_cutoff_m": 0,
+      "local_origin_compensation_m": [
+        0,
+        0,
+        0
+      ],
+      "centre_open_clear_width_m": 0.84
+    }
+  },
+  "red_sign_display": {
+    "board_width": 1.14,
+    "board_height": 1.32,
+    "board_thickness": 0.06,
+    "screen_outer_width": 0.54,
+    "screen_outer_height": 1.01,
+    "reference_evidence": "Red backboard outline, vertical white tkts letters, inset black portrait screen",
+    "estimated": [
+      "absolute scale",
+      "plain back closure",
+      "depth",
+      "small bevel radii",
+      "exact right margin partially occluded",
+      "letter contour differs from proprietary logo"
+    ],
+    "installation_bottom_estimate": 0.95,
+    "wordmark_v002": {
+      "rotated_width": 0.4,
+      "rotated_height": 0.8269662921348315,
+      "technical_depth": 0.003,
+      "authored_aspect_ratio": 2.067415730337079,
+      "scale": "Uniform; no independent axis stretching",
+      "source_centre_before_module_recentering": [
+        -0.345,
+        -0.032,
+        0.67
+      ],
+      "exact_official_vector": false,
+      "TM_omitted": true
+    }
+  },
+  "portrait_monitor": {
+    "width": 0.49,
+    "height": 1.08,
+    "body_depth": 0.055,
+    "reference_evidence": "Separate left black portrait frame and its front display face",
+    "estimated": [
+      "absolute scale",
+      "depth",
+      "plain back",
+      "bezel dimensions"
+    ],
+    "not_modelled": [
+      "wall mount",
+      "connectors",
+      "cables",
+      "stand"
+    ],
+    "installation_bottom_estimate": 1.0
+  },
+  "arrangement": "Illustrative relative positions in blend/renders only; runtime positioning is out of scope."
+}

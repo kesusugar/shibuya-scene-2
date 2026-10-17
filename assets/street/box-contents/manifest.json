@@ -1,0 +1,66 @@
+{
+  "asset": "box-contents",
+  "level": "B",
+  "layout": "web/layout.json",
+  "source_rights": "README.md",
+  "architecture_sha256": "c1b262ee107e8b46baad917f30aff885420a8ac611f071b67469b542a18f7a5e",
+  "outputs": {
+    "web/counter.glb": {
+      "bytes": 912404,
+      "sha256": "b2d78aba0df1270c94241a2be22b038bfea64b3b870ec16443008eaaad4408b2",
+      "triangles": 5076,
+      "primitives": 2
+    },
+    "web/laptop.glb": {
+      "bytes": 258516,
+      "sha256": "e755c008ce1a8012129afd42fb5d0343f3810d52153f87ee7a3a1df8794f72aa",
+      "triangles": 8904,
+      "primitives": 3
+    },
+    "web/layout.json": {
+      "bytes": 1671,
+      "sha256": "40a83afaa3c1600d43e9d355ca70b0f0f70ca8d47fae4f982f95781a357d5617"
+    },
+    "web/portrait-monitor.glb": {
+      "bytes": 17568,
+      "sha256": "dff99081b84335c9cba69fb205b231d48a5ab8dfb7e8c027f63440a578b2eb0d",
+      "triangles": 216,
+      "primitives": 2
+    },
+    "web/red-sign.glb": {
+      "bytes": 59364,
+      "sha256": "0e997268bd3ef1aa97fd741fafd37a1a1b583c50b96aeac01f395c7032c647b3",
+      "triangles": 1332,
+      "primitives": 4
+    },
+    "web/souvenir.glb": {
+      "bytes": 1042128,
+      "sha256": "1417d51abd5bb13a2c6882aa1a47798f985a7a5de885f294a93efaea0ffde50a",
+      "triangles": 13984,
+      "primitives": 7
+    },
+    "web/tkts-support.glb": {
+      "bytes": 3040,
+      "sha256": "930c543e6e55d4519f2ea6cddc2db615f2d446cc48df1748e0a5f1dcf95d883c",
+      "triangles": 36,
+      "primitives": 1
+    },
+    "web/tkts.glb": {
+      "bytes": 127364,
+      "sha256": "ee8b6c526cc6f3ee8c8e4bbdc2410e50bc21f96ebe754b5a591a7448f0353026",
+      "triangles": 3832,
+      "primitives": 19
+    },
+    "web/wall-monitor.glb": {
+      "bytes": 26604,
+      "sha256": "795b516ab533f20dfed380e73dadc9096251da38d0bccd3add7e0034a62d2ea9",
+      "triangles": 520,
+      "primitives": 2
+    }
+  },
+  "total": {
+    "bytes": 2446988,
+    "triangles": 33900,
+    "primitives": 40
+  }
+}

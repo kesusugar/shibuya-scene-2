@@ -1,0 +1,53 @@
+{
+  "retrieved_utc": "2026-10-15T22:45:11Z",
+  "sources": [
+    {
+      "role": "Visible left-hand red worktop edge and inward upper fascia",
+      "page_url": "https://www.andtrip.jp/article/006193.html",
+      "image_url": "https://www.andtrip.jp/images/90e0906fe3600cc3ba2602ce977259971b1e4ede.jpg",
+      "publication_date": "2024-09-19",
+      "capture_date": null,
+      "dimensions_px": [
+        800,
+        600
+      ],
+      "bbox_px": [
+        145,
+        370,
+        356,
+        526
+      ],
+      "redistribution": "Do not include reference pixels or crops in deliverable; cite URLs only.",
+      "sha256": "3c4730ab64ba3771849509886cc9f4d270d3c6d2d96200019401f9dd7f79724a"
+    },
+    {
+      "role": "Official wordmark contour reference",
+      "page_url": "https://tkts.tokyo/location-list/shibuya",
+      "image_url": "https://tkts.tokyo/img/common/logo.png",
+      "publication_date": null,
+      "capture_date": null,
+      "dimensions_px": [
+        188,
+        90
+      ],
+      "redistribution": "Official wordmark reference only; no separate reuse license found. Do not embed or redistribute original raster.",
+      "sha256": "8c9171188cef6c7cd79c469c92a2933265cf0ef2b7f84f4e65e27d0baa01967e"
+    },
+    {
+      "role": "Additional official shop view corroborates location and vertical mark orientation",
+      "page_url": "https://tkts.tokyo/location-list/shibuya",
+      "image_url": "https://tkts.tokyo/img/shop/shibuhachi-t.jpeg",
+      "publication_date": null,
+      "capture_date": null,
+      "dimensions_px": [
+        2028,
+        1521
+      ],
+      "redistribution": "Reference only, not redistributable. No EXIF capture date present.",
+      "sha256": "a761dd15180bae42c2ac07ebf2dcc89dd15d328ecad6eaad87cc2a85b72fb977"
+    }
+  ],
+  "reference_pixels_included": false,
+  "private_crop_inspection": "Native work-surface context and 3x nearest-neighbour laptop support crop inspected. Crops are local-only and excluded.",
+  "inherited_reference_scope": "Additional logo sources inherited from v002; no lettering changes in v003."
+}

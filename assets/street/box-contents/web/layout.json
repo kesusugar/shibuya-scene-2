@@ -23,7 +23,7 @@
       "file": "wall-monitor.glb",
       "position": [
         0.2,
-        1.65,
+        1.55,
         1.268
       ],
       "yaw": 0,
@@ -36,6 +36,61 @@
         0.78,
         0.78,
         1.228
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "tkts",
+      "file": "tkts.glb",
+      "position": [
+        4.15,
+        0.65,
+        0.948
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "portrait-monitor",
+      "file": "portrait-monitor.glb",
+      "position": [
+        3.2,
+        1.66,
+        1.2
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "red-sign",
+      "file": "red-sign.glb",
+      "position": [
+        4.35,
+        1.65,
+        1.24
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "souvenir",
+      "file": "souvenir.glb",
+      "position": [
+        -2.3,
+        1.41,
+        0.248
+      ],
+      "yaw": 0,
+      "scale": 0.92
+    },
+    {
+      "id": "tkts-support",
+      "file": "tkts-support.glb",
+      "position": [
+        4.15,
+        0.65,
+        0.248
       ],
       "yaw": 0,
       "scale": 1

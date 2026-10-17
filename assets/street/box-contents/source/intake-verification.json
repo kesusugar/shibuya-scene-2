@@ -1,0 +1,23 @@
+[
+  {
+    "package": "pavilion_souvenir_wall_fit_v001",
+    "manifest_files_verified": 24,
+    "crc": "all entries passed",
+    "bytes": 5969973,
+    "sha256": "5bcae6789bd79e8d42a35467d17b3dbb960450a8b32f59635d927edc3170e464"
+  },
+  {
+    "package": "shibu_hachi_tkts_2024_kit_v003",
+    "manifest_files_verified": 41,
+    "crc": "all entries passed",
+    "bytes": 5498937,
+    "sha256": "61cc6aaec23e5ce94f5cf58f8b30ddc25f619f2f7251693f7d75316d7c9eeb39"
+  },
+  {
+    "package": "tkts_counter_device_fit_v001",
+    "manifest_files_verified": 26,
+    "crc": "all entries passed",
+    "bytes": 3917054,
+    "sha256": "8cbbee9af71745fffc8f3d356f9179471de8baac6a8869e3212708d3156da098"
+  }
+]
