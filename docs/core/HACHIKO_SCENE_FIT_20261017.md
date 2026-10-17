@@ -1,5 +1,7 @@
 # ハチ公周辺の実配置・比較修正（PR #85 後）
 
+> Current implementation: [completed scene fitting](HACHIKO_COMPLETED_FIT_20261017.md). The earlier hold/preview decisions below are historical and superseded.
+
 基準は最新main `73a5fe1`（PR #85マージ済み）。新ブランチ `codex/hachiko-scene-fit-20261017` で作業した。検証済みローカルZIPを再利用し、Drive取得・全CRC/manifest検証を繰り返していない。QFRONT・西武の資産、歩行表示・FPSの処理、採用済み像・台座・石碑、BOX、JR入口、交番は保持。地面や道路網の高さは変更していない。
 
 ## 実装した表示と切替

@@ -1,5 +1,5 @@
 {
-  "status": "confirmation preview",
+  "status": "normal fitted equipment face",
   "plane_id": "stn_louvre_01",
   "xy_m": [
     51.173,
@@ -15,6 +15,6 @@
   ],
   "basis": "west-facing existing plane 01, tangent/normal from audit; 2x4 bays in Nov2025 photo below the deck",
   "replacement": "only a 10.056m by 2.118m patch, offset 0.20m in front of old plane and bars; other 13 planes and shared steel remain",
-  "unresolved": "exact equipment-to-building correspondence and lower elevation; preview only, no material-wide deletion",
+  "adjustment": "pale apron to 3.025m, opaque backing, side returns and head flashing seat the two banks on plane01; original decorative ribs occluded only within this local skin; height and equipment mapping inferred",
   "ground_samples_tp_m": []
 }

@@ -177,9 +177,12 @@ async function start() {
   coreMemorial = memorialRes;
   coreRearTree = rearTreeRes;
   if (useGround && params.get('street') !== 'off' && params.get('fit') !== 'off') {
-    const previews = params.get('fit') === 'preview'
-      ? (params.get('fitparts') ?? 'a8,louvre,fence,tactile').split(',').filter(n => ['a8','louvre','fence','tactile'].includes(n)) : [];
-    const fitParts = [...(facilitiesRes?.ok ? ['lottery'] : []), ...(rearTreeRes?.ok ? ['enclosure'] : []), ...(plazaRes?.ok ? ['finish'] : []), ...previews];
+    const fitParts = [
+      ...(facilitiesRes?.ok ? ['lottery'] : []), ...(rearTreeRes?.ok ? ['enclosure'] : []),
+      ...(plazaRes?.ok ? ['finish'] : []),
+      ...(loaded.some(b => b.id === 'plaza-kiosk') ? ['a8','kerb', ...(tactileRes?.ok ? ['tactile'] : [])] : []),
+      ...(loaded.some(b => b.id === 'station-north') ? ['louvre'] : []), ...(streetRes?.ok ? ['fence'] : []),
+    ];
     sceneFit = await loadSceneFit(io.loadGlb, fitParts);
     if (sceneFit.ok) {
       scene.add(sceneFit.root);
@@ -206,8 +209,7 @@ async function start() {
   if (coreSurround?.ok) { scene.add(coreSurround.root); $('provisional').textContent += '／像周辺の石縁・レール・低木は写真から試作、位置・寸法・10月状態は未確認'; }
   if (coreMemorial?.ok) { scene.add(coreMemorial.root); $('provisional').textContent += '／日英二面の石碑は2025-07-13写真由来、像との相対位置・寸法・接地は推定'; }
   if (coreRearTree?.ok) { scene.add(coreRearTree.root); $('provisional').textContent += '／像背後の大木1本は2025年11月の幹写真と2026年8月の葉を合わせた推定。幹位置・石囲いは未測量'; }
-  if (sceneFit) $('provisional').textContent += '／宝くじ正面・大木の石囲いの見える側・像周辺の扇形舗石は既存シーンへの推定配置。囲いの背面は未制作';
-  if (params.get('fit') === 'preview') $('provisional').textContent += '／確認用仮配置：A8・駅ルーバー・白柵1区間・A8前の誘導線。施設対応と接合・経路は要確認';
+  if (sceneFit?.ok) $('provisional').textContent += '／ハチ公周辺：宝くじ・A8外観と屋根接合・駅ルーバー・大木の全周石囲い・柵・舗装・縁石・接続誘導線は既存形状への推定配置。非可視部分と経路は復元案、駅設備・幹は2025年11月資料を併用';
   if (coreHachiko?.ok) { scene.add(coreHachiko.root); $('provisional').textContent += '／ハチ公スキャン：Maurice Svay／CC BY 4.0、寸法・向きは推定、撮影時点・2025年10月状態は未確認'; }
   if (coreDrainage?.ok) { scene.add(coreDrainage.root); $('provisional').textContent += '／円形路面蓋はM027から推定、用途・位置・寸法は未測量'; }
   if (coreTactile?.ok) { scene.add(coreTactile.root); $('provisional').textContent += '／点字ブロックは横断歩道端を基準にした部分試作、位置・接続先は推定'; }
@@ -223,7 +225,7 @@ async function start() {
   if (loaded.some((b) => b.id === 'ekimae')) $('provisional').textContent += '\n渋谷駅前ビルの外観は試作、看板は2025年11月の写真を参照';
   if (loaded.some(b => ['mark-city', 'shibuya109', 'takagi', 'bic-camera', 'cine-tower', 'east-mixeduse', 'hikarie', 'parco', 'stream', 'sakura-stage'].includes(b.id))) $('provisional').textContent += '\n追加の周辺建物は窓・色・看板筐体のB推定、写真との精密照合は未完了';
   if (loaded.some(b => b.id === 'shibu-hachi-box')) $('provisional').textContent += '\nBOX外形・前テラスは公式図面とOSM輪郭による推定。屋根・テラス表示は2024年由来、時計は2026-08-08 08:08:08の静止表示。取付・接合・2025年10月状態は未確定';
-  if (loaded.some(b => b.id === 'plaza-kiosk')) $('provisional').textContent += '\n広場の低層施設は売店候補、窓と筐体は推定、用途・10月現況は未確認';
+  if (loaded.some(b => b.id === 'plaza-kiosk')) $('provisional').textContent += '\n広場の低層施設：南側はA8入口として推定復元、北側既存形状を保持';
   if (loaded.some(b => b.id === 'station-southeast')) $('provisional').textContent += '\nJR南東側施設は旧年写真による外装推定、10月現況と施設同定は未確認';
   if (loaded.some((b) => b.id === 'station-concourse')) $('provisional').textContent += '\n駅側の連絡通路は試作、開口・窓・内部・工事用の囲いの寸法と配置、光量は推定';
   if (loaded.some((b) => b.id === 'station-north')) $('provisional').textContent += '\nJR北側ホーム上屋は試作、柱・梁・床の帯の配置は推定、南側は外観未確認';

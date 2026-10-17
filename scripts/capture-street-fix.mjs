@@ -6,6 +6,10 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 const [base, out] = process.argv.slice(2);
 const views = {
+  fit_route_top: {q:'time=day&pose=35,-46,35,35,-46,0,58',w:1000,h:900},
+  fit_tree_back: {q:'time=day&pose=3,-40,3,7.4,-45.5,.7,58',w:1000,h:750},
+  fit_a8_roof: {q:'time=day&pose=42,-56,10,35,-46,3,58',w:1000,h:750},
+  fit_route_join: {q:'time=day&pose=20,-33,2,23.7,-35,.2,50',w:1000,h:750},
   fit_overview: {q:'time=day&pose=-8,-66,20,24,-48,1.5,58',w:1200,h:800},
   fit_whole: {q:'time=day&pose=-4,-37,19,24,-49,1,58',w:1200,h:800},
   fit_whole_night: {q:'time=night&pose=-4,-37,19,24,-49,1,58',w:1200,h:800},

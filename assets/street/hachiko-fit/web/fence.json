@@ -1,6 +1,20 @@
 {
-  "status": "confirmation single-bay estimate",
+  "status": "normal fitted roadside beam",
   "endpoints_xy_m": [
+    [
+      1.5303999185562134,
+      -48.0280647277832
+    ],
+    [
+      3.695199728012085,
+      -40.80619812011719
+    ]
+  ],
+  "post_centres_xy_m": [
+    [
+      1.5303999185562134,
+      -48.0280647277832
+    ],
     [
       2.0715999603271484,
       -46.222599029541016
@@ -8,16 +22,40 @@
     [
       2.612799882888794,
       -44.41713333129883
+    ],
+    [
+      3.1540002822875977,
+      -42.611663818359375
+    ],
+    [
+      3.695199728012085,
+      -40.80619812011719
     ]
   ],
-  "yaw_deg": 73.31356072824794,
-  "length_m": 1.8848352290924377,
+  "yaw_deg": 73.3135674088063,
+  "bays": 4,
+  "length_m": 7.539344458174649,
   "beam_centre_above_ground_m": 0.78,
   "beam_height_m": 0.28,
-  "basis": "existing rail bay 3-4 of 15 on run (0.448,-51.639) -> (8.566,-24.557); July2025 white beam/joint study informs the broad face only",
-  "unresolved": "white-beam-to-rail-run correspondence, exact section and terminals; whole-bay dimensions and post covers are inferred",
-  "replacement": "one broad top-beam cover only; existing rail collision/posts/lower bars kept; 0.57m source crop is not repeated",
+  "basis": "four existing bays 2-6 of the plaza western boundary rail; July2025 local white beam type; dimensions/assignment estimated",
+  "replacement": "top-beam covers, joint plates and closed terminal caps; existing lower rail/posts/collision kept",
+  "ground_contact_check": {
+    "successful_samples": 15,
+    "min_tp_m": 15.39442,
+    "max_tp_m": 15.51665,
+    "missing": 0
+  },
   "ground_samples_tp_m": [
+    [
+      1.5303999185562134,
+      -48.0280647277832,
+      15.51665
+    ],
+    [
+      2.0715999603271484,
+      -46.222599029541016,
+      15.48607
+    ],
     [
       2.0715999603271484,
       -46.222599029541016,
@@ -27,6 +65,61 @@
       2.612799882888794,
       -44.41713333129883,
       15.45549
+    ],
+    [
+      2.612799882888794,
+      -44.41713333129883,
+      15.45549
+    ],
+    [
+      3.1540002822875977,
+      -42.611663818359375,
+      15.4249
+    ],
+    [
+      3.1540002822875977,
+      -42.611663818359375,
+      15.4249
+    ],
+    [
+      3.695199728012085,
+      -40.80619812011719,
+      15.39442
+    ],
+    [
+      1.5303999185562134,
+      -48.0280647277832,
+      15.51665
+    ],
+    [
+      2.0715999603271484,
+      -46.222599029541016,
+      15.48607
+    ],
+    [
+      2.612799882888794,
+      -44.41713333129883,
+      15.45549
+    ],
+    [
+      3.1540002822875977,
+      -42.611663818359375,
+      15.4249
+    ],
+    [
+      3.695199728012085,
+      -40.80619812011719,
+      15.39442
+    ],
+    [
+      1.5303999185562134,
+      -48.0280647277832,
+      15.51665
+    ],
+    [
+      3.695199728012085,
+      -40.80619812011719,
+      15.39442
     ]
   ]
 }
