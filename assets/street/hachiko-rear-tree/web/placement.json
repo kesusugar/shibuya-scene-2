@@ -1,0 +1,16 @@
+{
+  "source_asset": "hachiko_rear_tree_candidate_v001",
+  "position": [7.4, 0.43, 45.5],
+  "yaw_deg": 0,
+  "uniform_scale": 1,
+  "coordinate_system": "web X east, Y up, Z south; metres above T.P. 15m",
+  "ground_tp_m": 15.436,
+  "ground_samples_tp_m": [15.436, 15.439, 15.434, 15.431, 15.441],
+  "ground_rule": "Ray cast against the shipped ground_core.glb island/sidewalk; the visible island top is 0.15m above the raw ground_input elevation.",
+  "source_photo": "https://commons.wikimedia.org/wiki/File:The_Hachiko_statue_at_Shibuya,_Tokyo,_Japan.jpg",
+  "source_photo_date": "2025-11-01",
+  "photo_evidence": "One mature tree appears behind and to the left of the statue, with a separate stone enclosure at its base.",
+  "confirmed": ["single tree identity and position relative to statue in photo", "existing six street/core trees are different individuals", "point lies on the measured Core island"],
+  "estimated": ["trunk centre 4.17m west and 3.19m north of OSM statue point", "yaw from south-facing photographic silhouette", "model dimensions and August 2026 leaf state", "ground is 6mm below sampled centre so the trunk is seated"],
+  "unresolved": ["exact trunk survey point", "stone enclosure complete outline and height", "October 2025 tree state"]
+}
