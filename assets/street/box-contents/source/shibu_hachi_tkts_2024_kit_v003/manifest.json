@@ -1,0 +1,247 @@
+{
+  "asset": "shibu_hachi_tkts_2024_kit_v003",
+  "version": "v003",
+  "predecessor": "shibu_hachi_tkts_2024_kit_v002",
+  "description": "Add visible left-hand red worktop return and inward upper fascia only",
+  "units": "metres",
+  "blender": "4.2.3 LTS",
+  "blender_axes": "Z up / front -Y",
+  "gltf_axes": "standard Y-up export",
+  "world_transform": null,
+  "local_origin_compensation_m": [
+    0,
+    0,
+    0
+  ],
+  "source_period": "2024-09-19 publication; capture date unknown; 2026 continuity unverified",
+  "dimensions_estimated": true,
+  "counter_dimensions_m": [
+    1.4,
+    0.96,
+    0.35
+  ],
+  "added_parts": [
+    "Left_inner_red_fascia_evidence_cutoff",
+    "Left_return_top_visible_estimated_plan"
+  ],
+  "v002_old_mesh_count_preserved": 10,
+  "unchanged_glbs": [
+    "models/red_sign_display.glb",
+    "models/portrait_monitor.glb"
+  ],
+  "counter_triangles": 648,
+  "total_kit_triangles": 2196,
+  "validation_pass": true,
+  "no_render_regeneration_pass": true,
+  "byte_identical_regeneration": true,
+  "reference_pixels_included": false,
+  "runtime_changed": false,
+  "ledger_row_status": "H-IN-018 partial",
+  "files": [
+    {
+      "path": "PHOTO_REFERENCE_ANALYSIS.md",
+      "bytes": 3383,
+      "sha256": "2afec10135681b4d478064cd80595cc8e2b97b7a5d84e79e048413e7a11ce8f1"
+    },
+    {
+      "path": "PRODUCTION_LOG.md",
+      "bytes": 2799,
+      "sha256": "2dcf54da68da8a71533e3392eb429c50e39cd64071dc8011ad1432a978e3814b"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 1662,
+      "sha256": "1f7e3acb668726e7cfd8fc5c04f0f92429ba309d944dbd8a2be27991748d535b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5166,
+      "sha256": "aa21f9163c046328765d15eb83d1033eaabdf54944549f5072441ba16622a68b"
+    },
+    {
+      "path": "component_estimates.json",
+      "bytes": 3010,
+      "sha256": "02c38c8718e488a6451975eaaf46077a1c0eaa3ef68f598eea045139e732d98e"
+    },
+    {
+      "path": "evidence/baseline.log",
+      "bytes": 255,
+      "sha256": "75f5e2c33ecc56292e6247e1b707d943bdca671cec6b5739324aac8c56e08bfa"
+    },
+    {
+      "path": "evidence/build.log",
+      "bytes": 2041,
+      "sha256": "77c9b38df7c5a47230f775ca965a13945356fc5f9f5e8ebe0db798a47b14ee94"
+    },
+    {
+      "path": "evidence/comparison_framing.json",
+      "bytes": 2442,
+      "sha256": "29fe877b13004474d0ed66e3f20e84f035c3dc194d0e998e86e88395b7f9c484"
+    },
+    {
+      "path": "evidence/comparison_inside.png",
+      "bytes": 544396,
+      "sha256": "5e95125ef9c6a62434c6b312a5e3c117acdc3438ac7dfe182bb085ab1320f541"
+    },
+    {
+      "path": "evidence/comparison_oblique.png",
+      "bytes": 733666,
+      "sha256": "7953b30e6675ae26b64f4656f6f058736065edeff793294da560fb5108d4206f"
+    },
+    {
+      "path": "evidence/final_visual_review.md",
+      "bytes": 1244,
+      "sha256": "dfb57e58bfdc1a73745ea8a89bd516849926c483de583b203170e0cd590bcc16"
+    },
+    {
+      "path": "evidence/generation_stats.json",
+      "bytes": 1358,
+      "sha256": "760f638133d725f3826ed6b5fd434d236cfbc6ef6b736e7a47b5c17be71c0599"
+    },
+    {
+      "path": "evidence/generation_timing.json",
+      "bytes": 101,
+      "sha256": "a2736d661ec93808304740ee2c4162ef816119a7c92af6d0467d65225bc1b677"
+    },
+    {
+      "path": "evidence/no_render_regeneration.json",
+      "bytes": 1243,
+      "sha256": "7e78b0cddccd0d6d3ca20ee91a874ccc8294586c569f87fcb9f0b439ea4b6962"
+    },
+    {
+      "path": "evidence/no_render_regeneration.log",
+      "bytes": 2042,
+      "sha256": "070eaa5d6bd86edca6cf8e17e6b22295e6695657c5fc391916d9a35856bf7d9e"
+    },
+    {
+      "path": "evidence/no_render_regeneration_validation.log",
+      "bytes": 8886,
+      "sha256": "dfa31066cd0b64692af764ebb95bf6310624f0f7206cadc3d479724cd613c1f6"
+    },
+    {
+      "path": "evidence/render.log",
+      "bytes": 24622,
+      "sha256": "2bc6b2a2f3e45a677bceef5fedf12999d75cb1d96ef95e4659b154a6902ecabb"
+    },
+    {
+      "path": "evidence/render_inside_framing.log",
+      "bytes": 10844,
+      "sha256": "628a87f8e2525d4b93195e081483f91b92ab9cb2917b8f595b7c04a432df0acc"
+    },
+    {
+      "path": "evidence/v002_inside.png",
+      "bytes": 952770,
+      "sha256": "9fc85a328f53bfabf775013eac7c6a563ba10b020266e5d79db7208e44dcede8"
+    },
+    {
+      "path": "evidence/v002_oblique.png",
+      "bytes": 1043833,
+      "sha256": "bd7c4e455198f14422543cf4889de7aab3fc66a441be0ca357bb123607ff29ae"
+    },
+    {
+      "path": "evidence/v002_preservation.json",
+      "bytes": 3674,
+      "sha256": "11a91afbc25b67d3939607573f132ebc09a223d36789c5448e8bdde0c1599dde"
+    },
+    {
+      "path": "evidence/v003_inside.png",
+      "bytes": 971479,
+      "sha256": "cca7d4b87477d37b35f5fdb2ce73565de8fe5b467407e65d8cfe489c64b0ab75"
+    },
+    {
+      "path": "evidence/v003_oblique.png",
+      "bytes": 1052932,
+      "sha256": "475616a572a1ab2f7e10b8397be0b5255736e2b92179a6980e7ae8c8f950ba17"
+    },
+    {
+      "path": "evidence/validation.json",
+      "bytes": 6584,
+      "sha256": "01ee4e38acc2df89703ee659f70129fe49d7f9ea61c70b3bec701008e2968d7f"
+    },
+    {
+      "path": "evidence/validation.log",
+      "bytes": 8879,
+      "sha256": "95318cab8903eed1b29b569980fa0b407bae901f4883a696159575fcd4f72fce"
+    },
+    {
+      "path": "ledger_handoff.json",
+      "bytes": 819,
+      "sha256": "8752aa05f4348373dac8a7fe932383930375c0e45b08f813dd08b4a016fe82ff"
+    },
+    {
+      "path": "models/counter_upper_shell.glb",
+      "bytes": 46708,
+      "sha256": "9d28014a216d2ae0360f22eca87cc0d2723f8de211051d01db3cbf1e5279ced9"
+    },
+    {
+      "path": "models/portrait_monitor.glb",
+      "bytes": 17568,
+      "sha256": "dff99081b84335c9cba69fb205b231d48a5ab8dfb7e8c027f63440a578b2eb0d"
+    },
+    {
+      "path": "models/red_sign_display.glb",
+      "bytes": 59364,
+      "sha256": "0e997268bd3ef1aa97fd741fafd37a1a1b583c50b96aeac01f395c7032c647b3"
+    },
+    {
+      "path": "shibu_hachi_tkts_2024_kit_v003.blend",
+      "bytes": 611916,
+      "sha256": "27dd7bb9e8608798a3a0cddd0fb95b78dc01ffb0dc66b400c95731a5068b6b33"
+    },
+    {
+      "path": "source/capture_v002_baseline.py",
+      "bytes": 575,
+      "sha256": "08213a64b5813a007b8547e7bc2a64c25ff6bcd4749e9f07b80fbb955c35a871"
+    },
+    {
+      "path": "source/export_editable.py",
+      "bytes": 1966,
+      "sha256": "981bda37b499e6d6abd9fe58cd1a74bcc70234e095b85a363282ee951d2e9e31"
+    },
+    {
+      "path": "source/generate.py",
+      "bytes": 16867,
+      "sha256": "6b3de21f66d490dc1159be2e25a871a21a329a05a582aca560c153509ee8b351"
+    },
+    {
+      "path": "source/make_comparison_sheets.py",
+      "bytes": 1157,
+      "sha256": "e557235c83bba93b1f26e8725591ca964abfae6a8f78048baf4b918504de0e50"
+    },
+    {
+      "path": "source/render_comparison.py",
+      "bytes": 3493,
+      "sha256": "1d925f334ba428961c4d68c8bf5f28dd58fa7419ac2bc5fa8645a2c31f30654c"
+    },
+    {
+      "path": "source/unchanged_modules/portrait_monitor.glb",
+      "bytes": 17568,
+      "sha256": "dff99081b84335c9cba69fb205b231d48a5ab8dfb7e8c027f63440a578b2eb0d"
+    },
+    {
+      "path": "source/unchanged_modules/red_sign_display.glb",
+      "bytes": 59364,
+      "sha256": "0e997268bd3ef1aa97fd741fafd37a1a1b583c50b96aeac01f395c7032c647b3"
+    },
+    {
+      "path": "source/v002_baseline.json",
+      "bytes": 2179,
+      "sha256": "fabf9a9f35954d60d42fe99a9169622c5fa4f5a982c1b9e627caf122f7a6bdd2"
+    },
+    {
+      "path": "source/validate.py",
+      "bytes": 4507,
+      "sha256": "010f859d6fc88ee20be026499d59cd46a81182ac7bdd7c4cab5f79c319f34ae3"
+    },
+    {
+      "path": "source/validation_common.py",
+      "bytes": 2157,
+      "sha256": "66684631b50659df7710a631fa755394ae52d5ab8fce74ff5ec5ef85e059c9af"
+    },
+    {
+      "path": "source_reference.json",
+      "bytes": 2072,
+      "sha256": "c0149bf6f47e094507d88f956b91f751c675e39444ac50668a5e8b0bab57f1ff"
+    }
+  ]
+}

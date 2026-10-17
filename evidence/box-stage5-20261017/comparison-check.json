@@ -1,0 +1,94 @@
+{
+  "baseline": "96d301a + capture cameraState QA only",
+  "before_build": "index-BvS-f3Vw.js",
+  "first_three_assets": "8bb6a4d",
+  "installed_assets": "d4ca12d",
+  "after_build": "index-DaeHft1R.js",
+  "final_build": "index-DUptqPhx.js (only adds visible estimate annotation; capture HUD hidden)",
+  "comparisons": [
+    {
+      "view": "contents_front",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "24df23d87d6496f9c75818ba27d0835d5607c2a613ea4635ccc84d503b88d014",
+      "after_sha256": "025ef204d3242b8a180846308da89dd5feeb98aeef3bcbefa22aeeda92105b6f"
+    },
+    {
+      "view": "contents_oblique",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "705576ac63bd6d783973b483fffd8bc29e9ff13a8f140aeec4ed0b25a7a4e14a",
+      "after_sha256": "fcf009a80203e0d50be48390637109e5b9b1e3ab955e8b30ccf3a8f88372c7f2"
+    },
+    {
+      "view": "contents_night",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "db45fd415a9ed0279abc2175b6338d881a6f6b1df323b06215784dc885f53a41",
+      "after_sha256": "b0899435bd09fbbe9a209b1f8740e5fdca01a6e6cf1fd152fb9027f8c989d349"
+    },
+    {
+      "view": "contents_tkts",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "2b4f22dce989722623e6196076aef94ea672dcf285e420ae2ee2fd5967084e77",
+      "after_sha256": "90addc1771801e7d5d60f08171b1abd8cc37b7c8e8e909dfbd9e8cb7b34048ee"
+    },
+    {
+      "view": "contents_shelves",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "fce053792d9b875df31116273c7cfa5ae68b7ec3cd81a51604f0eb768a562951",
+      "after_sha256": "b6476d482acebfc53a09dc9c9fafc172627025c604b295f0b37445fced7c6a6d"
+    },
+    {
+      "view": "stage5_station",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "0ba9fa82f80238342da3efd5be5ae8fcffbf9be1c166976a5612cfb08766d528",
+      "after_sha256": "0ba9fa82f80238342da3efd5be5ae8fcffbf9be1c166976a5612cfb08766d528"
+    },
+    {
+      "view": "capture_default",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "249f93a6fd887704d44403ed37f18de6157d0c3801ddb78d07fe6a310db9c9f3",
+      "after_sha256": "249f93a6fd887704d44403ed37f18de6157d0c3801ddb78d07fe6a310db9c9f3"
+    },
+    {
+      "view": "fit_route_join",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "73f0bfca978c60fe63706953341139a583ddf405e7367095fe91a95254c3da7a",
+      "after_sha256": "1d01b268cd8f85503afd43c34aa98c0d9433fff2f678001380e9e84dfe9debd7"
+    },
+    {
+      "view": "fit_whole",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "8713d088dfa27bfc43e3a307cb105475bec9a4e118c7b2c7ce69b2595e8c51ec",
+      "after_sha256": "0a8098cb54ff4fd01a518555376d477d2fbc01dc7d82a15a42c3e6d19fd0796e"
+    },
+    {
+      "view": "fit_enclosure",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "5aff432de3989b80ddc56c6aff0167232e88ea9f2b50fad4567d1611406b986f",
+      "after_sha256": "5aff432de3989b80ddc56c6aff0167232e88ea9f2b50fad4567d1611406b986f"
+    },
+    {
+      "view": "fit_a8_oblique",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "cca72c711cbb0dfa8214193d1e5125bc78cb1f059012c93370f33ffe1d6fafc8",
+      "after_sha256": "cca72c711cbb0dfa8214193d1e5125bc78cb1f059012c93370f33ffe1d6fafc8"
+    },
+    {
+      "view": "box_oblique",
+      "camera_identical": true,
+      "time_resolution_quality_identical": true,
+      "before_sha256": "7c7ba9d775dff3bb537f2051d3a199992a04cdd08af24c1b20cb91f966e3cb3e",
+      "after_sha256": "cafae2b98ed5120f2157c13b28898d570f16de9411089d117d2ac9243c28de88"
+    }
+  ]
+}

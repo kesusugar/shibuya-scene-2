@@ -1,5 +1,7 @@
 # ハチ公周辺：追加素材の段階取り込み計画
 
+> 2026-10-17、PR87後の最新：[BOX可視内容物の通常取り込み・ステップ5](BOX_CONTENTS_STAGE5_20261017.md)。指定された案内・TKTS・物販の完成済み内容物は取り込み済み。古い内部除外や未配置一覧は現行状態ではない。旧版の単体重複は統合版へ代替済み。
+
 > Current implementation: [completed scene fitting](HACHIKO_COMPLETED_FIT_20261017.md). The earlier hold/preview decisions below are historical and superseded.
 
 PR #85マージ後の現行状態は [実配置・比較修正の記録](HACHIKO_SCENE_FIT_20261017.md) を優先する。従来の保留一覧から進めた通常配置と、確認用の仮配置を区別している。

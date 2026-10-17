@@ -1,0 +1,137 @@
+{
+  "package": "pavilion_souvenir_wall_fit_v001",
+  "created_utc": "2026-10-16T01:28:44.521091+00:00",
+  "scope": "Completed bounded partial section; floor-supported placement and window relation unresolved",
+  "primary_blend": "pavilion_souvenir_wall_fit_v001.blend",
+  "primary_glb": "models/pavilion_souvenir_wall_PARTIAL_REVIEW.glb",
+  "actual_render_views": [
+    "images/01_front_partial_section.png",
+    "images/02_oblique_depth_and_cut.png"
+  ],
+  "original_source_assets_unchanged": true,
+  "only_new_geometry_occurrence": "one linked instance of existing broad wood panel; no unique new mesh",
+  "original_asset_regeneration": false,
+  "runtime_or_github_actions": false,
+  "files": [
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 2651,
+      "sha256": "315dddcd11847dfeb50d75265c7f08545b22da9855380bca76465b3b702a5140"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5595,
+      "sha256": "a845363de5c0702f115642649720b9b04a5abe12e4c4f6599c34a13a72c628bb"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 5929,
+      "sha256": "606abf68b877a6f336797ac7a9caf41e88dd6326517277f9d7f00fed414c3218"
+    },
+    {
+      "path": "images/01_front_partial_section.png",
+      "bytes": 2226261,
+      "sha256": "36b379cd4c712f992855c66a63732ec651122c0696a9c90478ee530c85e82c76"
+    },
+    {
+      "path": "images/02_oblique_depth_and_cut.png",
+      "bytes": 2374872,
+      "sha256": "4ded1d99eccdedc4b708234c4487d81a7509908504bb24fbf7f0662249f1a3bf"
+    },
+    {
+      "path": "inputs/souvenir_kit_source.blend",
+      "bytes": 2379524,
+      "sha256": "e190485cf4f5087d21f125c18d58643e719d9637883fc7ae531eb420a79696f5"
+    },
+    {
+      "path": "inputs/wall_louver_source.blend",
+      "bytes": 711288,
+      "sha256": "457c920dfb72b91b6a6f099b6413dc67824654572dd5af13f9cb09709f32be98"
+    },
+    {
+      "path": "models/pavilion_souvenir_wall_PARTIAL_REVIEW.glb",
+      "bytes": 1042128,
+      "sha256": "1417d51abd5bb13a2c6882aa1a47798f985a7a5de885f294a93efaea0ffde50a"
+    },
+    {
+      "path": "pavilion_souvenir_wall_fit_v001.blend",
+      "bytes": 3033176,
+      "sha256": "7cfda5b7e1e5a638af97fbbf7a61e71aece959ed76b8ba4ecc02678b3f5b9485"
+    },
+    {
+      "path": "source/assemble_review.py",
+      "bytes": 16381,
+      "sha256": "7b9901ab6abeb7573a5dd321cca3314455fd55e7068696bf0641e89066f8db52"
+    },
+    {
+      "path": "source/export_editable.py",
+      "bytes": 2026,
+      "sha256": "a88b58b23c9ba0744bfaef7dcd66dfbe8d51237221b05c51b126e0c58c209608"
+    },
+    {
+      "path": "source_docs/souvenir_source_PROVENANCE.md",
+      "bytes": 3140,
+      "sha256": "b059be445b6e8915382149357863d687c1490c934f6f8ac0669ea5a6e2fa1d18"
+    },
+    {
+      "path": "source_docs/souvenir_source_README.md",
+      "bytes": 4075,
+      "sha256": "959436efd18c51496997e480c161c3d5e5aa646da36f05af2a168a3a316c5ffb"
+    },
+    {
+      "path": "source_docs/wall_source_PROVENANCE.md",
+      "bytes": 2707,
+      "sha256": "d552a850c747602998323384cd38d45fe0a2f32849354d959d526fea08715d8b"
+    },
+    {
+      "path": "source_docs/wall_source_README.md",
+      "bytes": 4506,
+      "sha256": "2b0fefa47c05f2ad175b4aef9a78bcaab450c112ac3b65ff0f9aec2354dc251b"
+    },
+    {
+      "path": "transforms.json",
+      "bytes": 369214,
+      "sha256": "3333094fc12c532a2532dc314645cda540ac59553ddf4d254119f8ea90770a0a"
+    },
+    {
+      "path": "validation/assembly_checks.json",
+      "bytes": 6929,
+      "sha256": "0aedf9a1f9cf988aeac642b24e44fbb09b4d719f1567b5b141ec719198ae426b"
+    },
+    {
+      "path": "validation/build.log",
+      "bytes": 26276,
+      "sha256": "ef9ef24c91ad2acba2e8fbe2b50d655e3773c6ae852dc646ee9952663679ea43"
+    },
+    {
+      "path": "validation/build_timing.json",
+      "bytes": 131,
+      "sha256": "ca9010369023e3718e1bf1d5b29d1c1397930014d3d81531ed658b8c7ae2a55e"
+    },
+    {
+      "path": "validation/combined_glb_check.json",
+      "bytes": 1531,
+      "sha256": "b4dc744a23bd694bd9d5e12d1c334d6bcdc127c1997d8d60f0c5557fc40dedb2"
+    },
+    {
+      "path": "validation/container_check.json",
+      "bytes": 222,
+      "sha256": "03f1b2319298ff9972a9c9d95226a7e8ac31225f127065194a79ab3c664d267d"
+    },
+    {
+      "path": "validation/source_integrity.json",
+      "bytes": 914,
+      "sha256": "7654bc26839902ef0e8a46d49836a4f9d5e9552e5eec7e38725e252c88cecaac"
+    },
+    {
+      "path": "validation/view_checks.json",
+      "bytes": 934,
+      "sha256": "08b9b1464dac946a6ecb19e4afa77e0706e3c62988a2cfc1263b4e21c8432975"
+    },
+    {
+      "path": "validation/visual_review.json",
+      "bytes": 1833,
+      "sha256": "41514949408c40fd55b9a3af81324453b6292b73c3d7f37ff4ab1e475e63be0f"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "origin": [
+    25.108505249023438,
+    -46.695255279541016,
+    0.4891152083873749
+  ],
+  "yaw": -81.08397738878742,
+  "coordinate_system": "Positions: BOX local Blender metres Z-up; GLBs: Y-up. All placements estimated against existing shell, 2024-09-19 reference.",
+  "parts": [
+    {
+      "id": "counter",
+      "file": "counter.glb",
+      "position": [
+        0,
+        0.8,
+        0.248
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "wall-monitor",
+      "file": "wall-monitor.glb",
+      "position": [
+        0.2,
+        1.55,
+        1.268
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "laptop",
+      "file": "laptop.glb",
+      "position": [
+        0.78,
+        0.78,
+        1.228
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "tkts",
+      "file": "tkts.glb",
+      "position": [
+        4.15,
+        0.65,
+        0.948
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "portrait-monitor",
+      "file": "portrait-monitor.glb",
+      "position": [
+        3.2,
+        1.66,
+        1.2
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "red-sign",
+      "file": "red-sign.glb",
+      "position": [
+        4.35,
+        1.65,
+        1.24
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "souvenir",
+      "file": "souvenir.glb",
+      "position": [
+        -2.3,
+        1.41,
+        0.248
+      ],
+      "yaw": 0,
+      "scale": 0.92
+    },
+    {
+      "id": "tkts-support",
+      "file": "tkts-support.glb",
+      "position": [
+        4.15,
+        0.65,
+        0.248
+      ],
+      "yaw": 0,
+      "scale": 1
+    }
+  ]
+}

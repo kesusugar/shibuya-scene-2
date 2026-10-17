@@ -1,0 +1,172 @@
+{
+  "runtime_commit": "de4fdf7",
+  "asset_commit": "d4ca12d",
+  "normal_capture_states": [
+    {
+      "file": "after/contents_front.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/contents_oblique.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/contents_night.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/contents_tkts.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/contents_shelves.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/stage5_station.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/capture_default.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/fit_route_join.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/fit_whole.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/fit_enclosure.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/fit_a8_oblique.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "after/box_oblique.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "standard/box_stage5_night.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "standard/contents_oblique.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "standard/contents_night.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "standard/fit_overview.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "standard/fit_louvre_front.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "standard/fit_tactile.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "standard/fit_lottery_front.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "standard/memorial_oblique.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "fresh/capture_default.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    },
+    {
+      "file": "fresh/surround.png",
+      "box_contents": 8,
+      "pr87_parts": 8,
+      "errors": 0
+    }
+  ],
+  "pose_to_no_pose_matches_fresh_navigation": true,
+  "full_camera_pairs_checked": 12,
+  "visually_opened_final_images": [
+    "after/contents_front.png",
+    "after/contents_oblique.png",
+    "after/contents_night.png",
+    "after/contents_tkts.png",
+    "after/contents_shelves.png",
+    "after/stage5_station.png",
+    "after/fit_route_join.png",
+    "after/fit_whole.png",
+    "after/fit_enclosure.png",
+    "after/fit_a8_oblique.png",
+    "after/box_oblique.png",
+    "standard/box_stage5_night.png",
+    "standard/contents_oblique.png",
+    "standard/contents_night.png",
+    "standard/fit_overview.png",
+    "standard/fit_louvre_front.png",
+    "standard/fit_tactile.png",
+    "standard/fit_lottery_front.png",
+    "standard/memorial_oblique.png",
+    "fresh/surround.png"
+  ],
+  "source_photographs_inspected_locally": [
+    "andtrip counter 2024-09-19",
+    "andtrip TKTS 2024-09-19",
+    "andtrip souvenir 2024-09-19"
+  ],
+  "source_photos_committed": false,
+  "tests": "62 files / 272 passed; see final-tests.log",
+  "build": "passed index-DUptqPhx.js",
+  "budget_limits_changed": false,
+  "merge_or_deploy": false
+}
