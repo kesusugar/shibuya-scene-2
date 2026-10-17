@@ -1,0 +1,112 @@
+{
+  "base_main": "51732e6a64efa5029c326e2f53133cab7ea63414",
+  "final_states": 22,
+  "normal_parts": [
+    "fit:a8",
+    "fit:enclosure",
+    "fit:fence",
+    "fit:finish",
+    "fit:kerb",
+    "fit:lottery",
+    "fit:louvre",
+    "fit:tactile"
+  ],
+  "camera_pairs": [
+    {
+      "name": "fit_overview",
+      "before": "../hachiko-fit-20261017/normal/fit_overview.png",
+      "after": "normal/fit_overview.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_whole",
+      "before": "../hachiko-fit-20261017/normal/fit_whole.png",
+      "after": "normal/fit_whole.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_whole_night",
+      "before": "../hachiko-fit-20261017/normal/fit_whole_night.png",
+      "after": "normal/fit_whole_night.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_enclosure",
+      "before": "../hachiko-fit-20261017/normal/fit_enclosure.png",
+      "after": "normal/fit_enclosure.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_enclosure_feet",
+      "before": "../hachiko-fit-20261017/normal/fit_enclosure_feet.png",
+      "after": "normal/fit_enclosure_feet.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_paving",
+      "before": "../hachiko-fit-20261017/normal/fit_paving.png",
+      "after": "normal/fit_paving.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_lottery_front",
+      "before": "../hachiko-fit-20261017/normal/fit_lottery_front.png",
+      "after": "normal/fit_lottery_front.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_a8_front",
+      "before": "../hachiko-fit-20261017/preview/fit_a8_front.png",
+      "after": "normal/fit_a8_front.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_a8_oblique",
+      "before": "../hachiko-fit-20261017/preview/fit_a8_oblique.png",
+      "after": "normal/fit_a8_oblique.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_a8_feet",
+      "before": "../hachiko-fit-20261017/preview/fit_a8_feet.png",
+      "after": "normal/fit_a8_feet.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_louvre_front",
+      "before": "../hachiko-fit-20261017/preview/fit_louvre_front.png",
+      "after": "normal/fit_louvre_front.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_louvre_oblique",
+      "before": "../hachiko-fit-20261017/preview/fit_louvre_oblique.png",
+      "after": "normal/fit_louvre_oblique.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_fence",
+      "before": "../hachiko-fit-20261017/preview/fit_fence.png",
+      "after": "normal/fit_fence.png",
+      "same_query_and_camera": true
+    },
+    {
+      "name": "fit_tactile",
+      "before": "../hachiko-fit-20261017/preview/fit_tactile.png",
+      "after": "normal/fit_tactile.png",
+      "same_query_and_camera": true
+    }
+  ],
+  "manifest_outputs_verified": 16,
+  "standard_tests": {
+    "files": 60,
+    "tests": 268,
+    "passed": true
+  },
+  "build": "success",
+  "fit_budget": {
+    "bytes": 2851700,
+    "triangles": 36255,
+    "primitives": 38
+  }
+}
