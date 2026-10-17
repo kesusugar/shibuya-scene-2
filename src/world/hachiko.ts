@@ -1,13 +1,13 @@
 import { Group, Mesh, type Object3D } from 'three';
 import { validateBuilding } from './buildings';
 
-/** Existing OSM anchor/yaw; vertical fit measured at all 371 lower-rim points on the shipped sidewalk.
+/** Existing OSM anchor, photo-estimated station-facing yaw; vertical fit measured at all 371 lower-rim points on the shipped sidewalk.
  * source/data/scan-placement.json records the measurement and inverse matrix.
  * Source normalization/estimated scale is already baked into the delivered GLB; apply neither again.
  */
 export const HACHIKO_SCAN_PLACEMENT = {
-  position: [11.568175521259887, 0.3795121888979883, 48.68573220011713] as const,
-  yawDegrees: 35,
+  position: [11.568175521259887, 0.3852884863052187, 48.68573220011713] as const,
+  yawDegrees: -65,
 } as const;
 
 export interface HachikoResult {

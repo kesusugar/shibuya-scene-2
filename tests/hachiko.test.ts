@@ -47,6 +47,18 @@ it('keeps the canonical delivery and old complete asset recoverable outside the 
   expect(sha('assets/street/hachiko/source/legacy/hachiko.glb')).toBe('370db19f30af6c4c3ab9d49ae910fa99e14643fc507630f90655cf6d220d0ae5');
 });
 
+it('normalizes the documented plaque front to minus Z and rotates only the scan root toward the station',()=>{
+  const transform=JSON.parse(readFileSync('assets/street/hachiko/source/scan-candidate/model/transform.json','utf8'));
+  const matrix=new Matrix4().set(...transform.source_world_to_candidate_gltf_row_major.flat() as Parameters<Matrix4['set']>);
+  const front=new Vector3(...transform.front_basis_source_gltf as [number,number,number]).transformDirection(matrix);
+  expect(front.x).toBeCloseTo(0,10);expect(front.y).toBeCloseTo(0,10);expect(front.z).toBeCloseTo(-1,10);
+  front.applyAxisAngle(new Vector3(0,1,0),HACHIKO_SCAN_PLACEMENT.yawDegrees*Math.PI/180);
+  expect(front.x).toBeCloseTo(.906307787,8);expect(-front.z).toBeCloseTo(.422618262,8);
+  expect(Math.atan2(-front.x,-front.z)*180/Math.PI).toBeCloseTo(HACHIKO_SCAN_PLACEMENT.yawDegrees,8);
+  const equipment=JSON.parse(readFileSync('assets/street/hachiko/source/data/layout.json','utf8'));
+  expect(equipment.yaw_deg).toBe(35);expect(equipment.xy).toEqual([HACHIKO_SCAN_PLACEMENT.position[0],-HACHIKO_SCAN_PLACEMENT.position[2]]);
+});
+
 it('fits all 371 retained rim points on the actual sidewalk without an open floating edge', async () => {
   const placement = JSON.parse(readFileSync('assets/street/hachiko/source/data/scan-placement.json', 'utf8'));
   expect(placement.position).toEqual([...HACHIKO_SCAN_PLACEMENT.position]);
