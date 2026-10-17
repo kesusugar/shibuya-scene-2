@@ -1,0 +1,23 @@
+{
+  "status": "normal estimated frontage",
+  "xy_m": [
+    10.9,
+    -61.55
+  ],
+  "yaw_deg": 187.0,
+  "base_tp_m": 15.62621630859375,
+  "basis": "north long edge of OSM way/858994297; width and low three-window form; official pin used only as a neighbourhood check",
+  "replacement": "north facade strip y > -62.9 only; smoking cabinet and southern structure retained",
+  "ground_samples_tp_m": [
+    [
+      11.492858732769712,
+      -60.51150793311711,
+      15.63422
+    ],
+    [
+      10.073517735922621,
+      -60.685781094186474,
+      15.65453
+    ]
+  ]
+}

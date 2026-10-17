@@ -21,6 +21,13 @@ const INTERIOR = /(interior|shop_light|ceil_light|ceiling|goods|shelf|books|pend
 /** Class of one material. Ground parts are named by the ground generator; buildings use their emissive table kinds. */
 export function classify(material: Material, meshName: string, table?: EmissiveTable, inSignLayer = false): LookClass {
   const n = material.name || '';
+  if (meshName.startsWith('A28_')) {
+    if (/Dark_glazing/i.test(n)) return 'glass';
+    if (/Lottery_red_original_lettering|Authored_Baokuji_wording_atlas/i.test(n)) return 'sign';
+    return 'furniture';
+  }
+  if (meshName.startsWith('A8_') && /Glazed_bay/i.test(n)) return 'glass';
+  if (meshName.startsWith('H_SF_011_')) return 'furniture';
   if (n.startsWith('street_tree_') || n.startsWith('A08_original_')) return 'vegetation';
   if (n.startsWith('street_')) return 'furniture';
   if (meshName.startsWith('ground_') || n.startsWith('ground_')) {

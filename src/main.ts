@@ -9,6 +9,7 @@ import { loadPlaza, type PlazaResult } from './world/plaza';
 import { loadSurround, type SurroundResult } from './world/surround';
 import { loadMemorial, type MemorialResult } from './world/memorial';
 import { loadRearTree, type RearTreeResult } from './world/rearTree';
+import { applySceneFitReplacements, loadSceneFit, type SceneFitResult } from './world/sceneFit';
 import { loadHachiko, type HachikoResult } from './world/hachiko';
 import { loadDrainage, type DrainageResult } from './world/drainage';
 import { ACESFilmicToneMapping, AgXToneMapping, CircleGeometry, DefaultLoadingManager, Mesh, MeshStandardMaterial, PCFSoftShadowMap, PerspectiveCamera, Scene, SRGBColorSpace, WebGLRenderer } from 'three';
@@ -86,6 +87,7 @@ let corePlaza: PlazaResult | undefined;
 let coreSurround: SurroundResult | undefined;
 let coreMemorial: MemorialResult | undefined;
 let coreRearTree: RearTreeResult | undefined;
+let sceneFit: SceneFitResult | undefined;
 let coreHachiko: HachikoResult | undefined;
 let coreDrainage: DrainageResult | undefined;
 let coreProps: PropsResult | undefined;
@@ -125,6 +127,7 @@ function setTime(t: TimeOfDay) {
   if (coreSurround?.ok) applyLook(coreSurround.root, t, look, undefined, env);
   if (coreMemorial?.ok) applyLook(coreMemorial.root, t, look, undefined, env);
   if (coreRearTree?.ok) applyLook(coreRearTree.root, t, look, undefined, env);
+  if (sceneFit?.ok) applyLook(sceneFit.root, t, look, undefined, env);
   if (coreHachiko?.ok) applyLook(coreHachiko.root, t, look, undefined, env);
   if (coreDrainage?.ok) applyLook(coreDrainage.root, t, look, undefined, env);
   if (coreTactile?.ok) applyLook(coreTactile.root, t, look, undefined, env);
@@ -173,6 +176,16 @@ async function start() {
   coreSurround = surroundRes;
   coreMemorial = memorialRes;
   coreRearTree = rearTreeRes;
+  if (useGround && params.get('street') !== 'off' && params.get('fit') !== 'off') {
+    const previews = params.get('fit') === 'preview'
+      ? (params.get('fitparts') ?? 'a8,louvre,fence,tactile').split(',').filter(n => ['a8','louvre','fence','tactile'].includes(n)) : [];
+    const fitParts = [...(facilitiesRes?.ok ? ['lottery'] : []), ...(rearTreeRes?.ok ? ['enclosure'] : []), ...(plazaRes?.ok ? ['finish'] : []), ...previews];
+    sceneFit = await loadSceneFit(io.loadGlb, fitParts);
+    if (sceneFit.ok) {
+      scene.add(sceneFit.root);
+      applySceneFitReplacements(sceneFit, {facilities:facilitiesRes?.root,plaza:plazaRes?.root,kiosk:loaded.find(b => b.id==='plaza-kiosk')?.root});
+    }
+  }
   corePlaza = plazaRes;
   coreContext = contextRes;
   if (coreContext?.ok) scene.add(coreContext.root);
@@ -193,6 +206,8 @@ async function start() {
   if (coreSurround?.ok) { scene.add(coreSurround.root); $('provisional').textContent += '／像周辺の石縁・レール・低木は写真から試作、位置・寸法・10月状態は未確認'; }
   if (coreMemorial?.ok) { scene.add(coreMemorial.root); $('provisional').textContent += '／日英二面の石碑は2025-07-13写真由来、像との相対位置・寸法・接地は推定'; }
   if (coreRearTree?.ok) { scene.add(coreRearTree.root); $('provisional').textContent += '／像背後の大木1本は2025年11月の幹写真と2026年8月の葉を合わせた推定。幹位置・石囲いは未測量'; }
+  if (sceneFit) $('provisional').textContent += '／宝くじ正面・大木の石囲いの見える側・像周辺の扇形舗石は既存シーンへの推定配置。囲いの背面は未制作';
+  if (params.get('fit') === 'preview') $('provisional').textContent += '／確認用仮配置：A8・駅ルーバー・白柵1区間・A8前の誘導線。施設対応と接合・経路は要確認';
   if (coreHachiko?.ok) { scene.add(coreHachiko.root); $('provisional').textContent += '／ハチ公スキャン：Maurice Svay／CC BY 4.0、寸法・向きは推定、撮影時点・2025年10月状態は未確認'; }
   if (coreDrainage?.ok) { scene.add(coreDrainage.root); $('provisional').textContent += '／円形路面蓋はM027から推定、用途・位置・寸法は未測量'; }
   if (coreTactile?.ok) { scene.add(coreTactile.root); $('provisional').textContent += '／点字ブロックは横断歩道端を基準にした部分試作、位置・接続先は推定'; }
@@ -232,6 +247,7 @@ async function start() {
     ...(coreSurround && !coreSurround.ok ? [`像周辺の設備の読み込みに失敗: ${coreSurround.error}（ほかの表示は継続）`] : []),
     ...(coreMemorial && !coreMemorial.ok ? [`石碑の読み込みに失敗: ${coreMemorial.error}（ほかの表示は継続）`] : []),
     ...(coreRearTree && !coreRearTree.ok ? [`像背後の大木の読み込みに失敗: ${coreRearTree.error}（ほかの表示は継続）`] : []),
+    ...(sceneFit && !sceneFit.ok ? [`配置確認案の読み込みに失敗: ${sceneFit.error}`] : []),
     ...(coreHachiko && !coreHachiko.ok ? [`ハチ公像の読み込みに失敗: ${coreHachiko.error}（ほかの表示は継続）`] : []),
     ...(coreDrainage && !coreDrainage.ok ? [`路面蓋の読み込みに失敗: ${coreDrainage.error}（ほかの表示は継続）`] : []),
     ...(coreTactile && !coreTactile.ok ? [`点字ブロックの読み込みに失敗: ${coreTactile.error}（ほかの表示は継続）`] : []),
@@ -246,7 +262,8 @@ async function start() {
   for (const problem of problems) debug?.error('scene', problem);
   lighting.placeSun(building.hints);
   for (const b of loaded) lighting.placeFloods(b.hints);
-  controls.setObstacles([...(coreProps ? [coreProps.root] : []), ...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreMemorial, coreRearTree, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
+  const fittedEnclosure = sceneFit?.ok ? sceneFit.root.getObjectByName('fit_enclosure') : undefined;
+  controls.setObstacles([...(fittedEnclosure ? [fittedEnclosure] : []), ...(coreProps ? [coreProps.root] : []), ...loaded.map((b) => b.root), ...(coreContext?.ok ? [coreContext.root] : []), ...[coreHachiko, coreSurround, coreMemorial, coreRearTree, coreFacilities].filter((r) => r?.ok).map((r) => r!.root), ...(coreStreet?.ok ? [coreStreet.root] : []), ...(projectedStreet?.ok ? [projectedStreet.root] : [])]);
   controls.frameBuilding(building.hints);
   setTime(mode);
   const envNote = envState.day === 'fulfilled' && envState.night === 'fulfilled' ? '' : '（環境マップの一部を読み込めず、反射は簡易表示）';
@@ -271,6 +288,7 @@ async function start() {
     if (coreSurround?.ok) applyClassPass(coreSurround.root);
     if (coreMemorial?.ok) applyClassPass(coreMemorial.root);
     if (coreRearTree?.ok) applyClassPass(coreRearTree.root);
+    if (sceneFit?.ok) applyClassPass(sceneFit.root);
     if (coreHachiko?.ok) applyClassPass(coreHachiko.root);
     if (coreDrainage?.ok) applyClassPass(coreDrainage.root);
     if (coreTactile?.ok) applyClassPass(coreTactile.root);
@@ -302,6 +320,7 @@ async function start() {
     surround: coreSurround ? { ok: coreSurround.ok, error: coreSurround.error, ...coreSurround.stats } : 'off',
     memorial: coreMemorial ? { ok: coreMemorial.ok, error: coreMemorial.error, ...coreMemorial.stats } : 'off',
     rearTree: coreRearTree ? { ok: coreRearTree.ok, error: coreRearTree.error, ...coreRearTree.stats } : 'off',
+    sceneFit: sceneFit ? { ok: sceneFit.ok, error: sceneFit.error, parts: sceneFit.root.children.map(o => o.name), ...sceneFit.stats } : 'off',
     hachiko: coreHachiko ? { ok: coreHachiko.ok, error: coreHachiko.error, ...coreHachiko.stats } : 'off',
     drainage: coreDrainage ? { ok: coreDrainage.ok, error: coreDrainage.error, ...coreDrainage.stats } : 'off',
     tactile: coreTactile ? { ok: coreTactile.ok, error: coreTactile.error, ...coreTactile.stats } : 'off',
@@ -310,6 +329,13 @@ async function start() {
     offsets: Object.fromEntries(loaded.map((b) => [b.id, b.root.position.y])),
     // QA: camera position and the Core ground height under it (walk mode keeps the eye 1.6 m above it)
     cameraPos: () => camera.position.toArray(),
+    // QA still capture only; the interactive render loop and FPS code are unchanged.
+    freezeFrame: params.has('capture') ? () => { renderer.setAnimationLoop(null); renderer.render(scene, camera); } : undefined,
+    capturePose: params.has('capture') ? (v: number[], t: TimeOfDay) => {
+      renderer.setAnimationLoop(null);
+      controls.poseView([v[0], v[1], v[2]], [v[3], v[4], v[5]], v[6] || 55, building!.hints);
+      setTime(t); renderer.render(scene, camera);
+    } : undefined,
     projectPlan: (p: [number, number, number]) => { const v = new Vector3(p[0], p[2], -p[1]).project(camera); return [(v.x * 0.5 + 0.5) * innerWidth, (-v.y * 0.5 + 0.5) * innerHeight]; },
     bench: null as unknown,
     groundUnderCamera: () => controls.groundY(camera.position.x, camera.position.z),

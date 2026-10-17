@@ -6,6 +6,22 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 const [base, out] = process.argv.slice(2);
 const views = {
+  fit_overview: {q:'time=day&pose=-8,-66,20,24,-48,1.5,58',w:1200,h:800},
+  fit_whole: {q:'time=day&pose=-4,-37,19,24,-49,1,58',w:1200,h:800},
+  fit_whole_night: {q:'time=night&pose=-4,-37,19,24,-49,1,58',w:1200,h:800},
+  fit_louvre_front: {q:'time=day&pose=35,-53,5,51.2,-55.1,4,50',w:1100,h:750},
+  fit_louvre_oblique: {q:'time=day&pose=37,-65,6,51.2,-55.1,4,55',w:1100,h:750},
+  fit_enclosure: {q:'time=day&pose=8,-51,2.2,7.95,-46.3,.9,58',w:1000,h:750},
+  fit_enclosure_feet: {q:'time=day&pose=8,-49,1.1,7.95,-46.3,.5,58',w:1000,h:750},
+  fit_paving: {q:'time=day&pose=12,-43,7,11.568,-48.686,.4,55',w:1000,h:750},
+  fit_tactile: {q:'time=day&pose=37,-58,4,35.5,-52,.4,55',w:1000,h:750},
+  fit_fence: {q:'time=day&pose=6,-48,1.8,2.2,-46,.6,52',w:1000,h:750},
+  fit_a8_front: {q:'time=day&pose=33,-56,2.1,35.8,-51,1.8,57',w:1000,h:750},
+  fit_a8_oblique: {q:'time=day&pose=45,-59,4,35,-47,1.8,58',w:1000,h:750},
+  fit_a8_feet: {q:'time=day&pose=33,-54,1,35.8,-51,.4,55',w:1000,h:750},
+  fit_lottery_front: {q:'time=day&pose=9,-54,2.1,10.9,-62.25,1.9,50',w:1000,h:750},
+  fit_lottery_oblique: {q:'time=day&pose=2,-56,3,10.9,-62.25,1.6,52',w:1000,h:750},
+  fit_lottery_feet: {q:'time=day&pose=10,-58,1,10.9,-61.5,.65,50',w:1000,h:750},
   st2_whole: {q:'time=day&pose=7,7,12,47,-24,3.2,55',w:1100,h:750},
   st2_front: {q:'time=day&pose=26,-20,3,48,-23,2.7,48',w:1100,h:750},
   st2_oblique: {q:'time=day&pose=34,-35,3.4,48,-23,2.5,55',w:1100,h:750},
@@ -99,12 +115,18 @@ const views = {
 };
 mkdirSync(out, { recursive: true });
 const logPath = `${out}/capture_log.json`; const log = existsSync(logPath) ? JSON.parse(readFileSync(logPath, 'utf8')) : {};
-const browser = await chromium.launch({ args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
+const browser = await chromium.launch({ args: process.env.CAPTURE_GPU === '1'
+  ? ['--ignore-gpu-blocklist']
+  : ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] });
 try {
+  let reusablePage;
+  let reusableErrors;
   for (const [name, v] of Object.entries(views)) {
     if (process.env.VIEWS && !process.env.VIEWS.split(',').includes(name)) continue;
     if (!process.env.FORCE && existsSync(`${out}/${name}.png`)) continue;
-    const page = await browser.newPage({ viewport: { width: v.w, height: v.h } }); const errors = [];
+    const reused = !!reusablePage;
+    const page = reusablePage ?? await browser.newPage({ viewport: { width: v.w, height: v.h } }); const errors = reusableErrors ?? [];
+    if (!reused) {
     await page.route('**/favicon.ico', (r) => r.fulfill({ status: 204 }));
     // QA baseline: old full building list via EXTRA, and the preserved PR82 shell.
     if(process.env.ST2_BASELINE==='1')await page.route('**/buildings/station-north/station-north.glb',r=>r.fulfill({body:readFileSync('assets/buildings/station-north/source/st-2/station-north-pr82.glb'),contentType:'model/gltf-binary'}));
@@ -117,18 +139,28 @@ try {
     page.on('requestfailed', (r) => errors.push(`${r.url()}: ${r.failure()?.errorText}`));
     await page.goto(`${base}/?capture&${v.q}${process.env.EXTRA ? `&${process.env.EXTRA}` : ""}`);
     await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 300000 });
+    }
+    if (process.env.REUSE_CAPTURE === '1' && v.q.includes('pose=')) {
+      reusablePage = page;
+      reusableErrors = errors;
+      await page.setViewportSize({width:v.w,height:v.h});
+      const query = new URLSearchParams(v.q);
+      await page.evaluate(({pose,time}) => window.__viewer.capturePose(pose, time),
+        {pose:query.get('pose').split(',').map(Number),time:query.get('time')??'day'});
+    }
     await page.waitForTimeout(2500);
     // Freeze the settled QA frame before screenshotting; no application/FPS change.
-    await page.evaluate(() => { window.requestAnimationFrame = () => 0; });
+    await page.evaluate(() => { window.__viewer.freezeFrame(); });
     await page.waitForTimeout(500);
-    const state = await page.evaluate(() => ({ exterior: window.__viewer.exterior, tactileOuter: window.__viewer.tactileOuter, tactileExtra: window.__viewer.tactileExtra, tactileLinks: window.__viewer.tactileLinks, facilities: window.__viewer.facilities, plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
+    const state = await page.evaluate(() => ({ rearTree: window.__viewer.rearTree, sceneFit: window.__viewer.sceneFit, exterior: window.__viewer.exterior, tactileOuter: window.__viewer.tactileOuter, tactileExtra: window.__viewer.tactileExtra, tactileLinks: window.__viewer.tactileLinks, facilities: window.__viewer.facilities, plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
     await page.screenshot({ path: `${out}/${name}.png`, timeout: 300000 });
     log[name] = { ...v, extra:process.env.EXTRA??null, boxBaseline:process.env.BOX_BASELINE==='1', state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
+    if (process.env.EXTRA?.includes('reartree=off')) assert.equal(state.rearTree, 'off'); else assert.equal(state.rearTree.ok, true); if (process.env.EXTRA?.includes('fit=off')) assert.equal(state.sceneFit, 'off'); else assert.equal(state.sceneFit.ok, true);
     if (process.env.BASELINE === '1') assert.equal(state.plaza, undefined); else if (process.env.EXTRA?.includes('plaza=off')) assert.equal(state.plaza, 'off'); else assert.equal(state.plaza.ok, true); if (process.env.EXTRA?.includes('surround=off')) assert.equal(state.surround, 'off'); else assert.equal(state.surround.ok, true); if (process.env.EXTRA?.includes('hachiko=off')) assert.equal(state.hachiko, 'off'); else assert.equal(state.hachiko.ok, true); if (process.env.EXTRA?.includes('drainage=off')) assert.equal(state.drainage, 'off'); else assert.equal(state.drainage.ok, true); assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); if (process.env.EXTRA?.includes('tactile=off')) assert.equal(state.tactile, 'off'); else assert.equal(state.tactile.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
     if (process.env.SUPPLEMENTS === '1') {assert.equal(state.tactileExtra.ok,true);assert.equal(state.tactileLinks.ok,true);}
     if (process.env.EXTERIOR === '1') {assert.equal(state.exterior.ok,true);assert.equal(state.ground.fillReplaced,true);assert.equal(state.exterior.tiles,3);assert.equal(state.tactileOuter.ok,true);assert.equal(state.tactileOuter.attached,true);}
     if (process.env.FACILITIES === '1') assert.equal(state.facilities.ok,true);
     for (const asset of Object.values(state.stats)) assert.deepEqual(asset.layerErrors, []);
-    console.log(name, errors.length ? errors : 'ok'); await page.close();
+    console.log(name, errors.length ? errors : 'ok'); if (!reusablePage) await page.close();
   }
 } finally { await browser.close(); }

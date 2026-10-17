@@ -1,0 +1,81 @@
+{
+  "asset": "hachiko-fit",
+  "datum_tp_m": 15,
+  "source_rights": "source/RIGHTS.md",
+  "input_verification": "unchanged locally verified deliveries reused; no transfer/full ZIP revalidation",
+  "verified_input_zip_sha256": {
+    "a28_lottery_three_window_frontage_candidate_v002": "ff737e17f8afaa82375be08af25e80b04e727442753323e32d87163563e2d2e7",
+    "a29_a8_entrance_shell_2025_v001": "14379f1cda3007f001caa6086c89224bedf20bd8d45d76b5bcd1db349b7f504a",
+    "station_north_louver_frontage_v001_FRONT_ONLY": "b816e35e149af2a188bdd843e58761c4b5cd0857c14b5d7e051c64a4fcb86ecc",
+    "hachiko_white_guardrail_detail_v001_PARTIAL": "4dceec3743ef66109aa0a385530b86768daf89d865f0e7bc6df838eff7b6e2b5"
+  },
+  "normal": [
+    "lottery",
+    "enclosure",
+    "finish"
+  ],
+  "confirmation_preview": [
+    "a8",
+    "louvre",
+    "fence",
+    "tactile"
+  ],
+  "outputs": {
+    "web/a8.glb": {
+      "bytes": 367044,
+      "sha256": "81e8b2dfdf94d75dfd2e1faceb12c2f742a96f12fd75b15a6d95b9b5795b1786"
+    },
+    "web/a8.json": {
+      "bytes": 628,
+      "sha256": "93088b1f08521070247a2de5b32180170459861e36af86a641b5a9565ebe2cdc"
+    },
+    "web/enclosure.glb": {
+      "bytes": 26300,
+      "sha256": "07a6833073e194ae5618f979ce3f3bf1ac74b35618bea214a01cf52fab6cce8a"
+    },
+    "web/enclosure.json": {
+      "bytes": 1660,
+      "sha256": "6ce7dda0f9cfa26e6c8d2a80d5ffdaaa4e3ab90f24eec2819dac323cdb091143"
+    },
+    "web/fence.glb": {
+      "bytes": 36092,
+      "sha256": "0a85a2a7f4de1df4b3a2ae8131be96b93127ae07b4c4340a970170472a3ceaf7"
+    },
+    "web/fence.json": {
+      "bytes": 939,
+      "sha256": "5c274c721265980ea916a7a27a8bcf896eea918f99381f17c146282b32d0d274"
+    },
+    "web/finish.glb": {
+      "bytes": 703156,
+      "sha256": "c289a4447c81f5e15871d196aaa43ccc68834304cfd8bfd391efc17e43a63918"
+    },
+    "web/finish.json": {
+      "bytes": 636,
+      "sha256": "153197b0bba4f0b0471387dd3dc14e60889ef8d8ec8a9282bb07867327e2248f"
+    },
+    "web/lottery.glb": {
+      "bytes": 1062840,
+      "sha256": "3faa18d3accc8b7a2adc5d8d7f5031da52a62f2521248c5cebedf40c25b2c4b4"
+    },
+    "web/lottery.json": {
+      "bytes": 564,
+      "sha256": "d2b5349c279777999262d9d34779e158f9571806cc98a33c3a5b6e6b272e1fa1"
+    },
+    "web/louvre.glb": {
+      "bytes": 339624,
+      "sha256": "e166c44e7b553b60643e831f13ccf652624a9811677230fed04a95b7d1e992e4"
+    },
+    "web/louvre.json": {
+      "bytes": 635,
+      "sha256": "b0d53d2487ca1a21707cdbe67a345602c26bbb517f9c6aa1c85748cd9b8779d5"
+    },
+    "web/tactile.glb": {
+      "bytes": 210520,
+      "sha256": "ae30f8e6aab008483703186e040df6537b72d8e382b7eb8412f0b695bd354d1e"
+    },
+    "web/tactile.json": {
+      "bytes": 1459,
+      "sha256": "8b7e3775d6fda8bbc60ba07e395d6e2b76b5a42f2b859a1ff5f6fae2eebc2a2f"
+    }
+  }
+}

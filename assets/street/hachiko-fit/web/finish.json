@@ -1,0 +1,20 @@
+{
+  "status": "normal local paving material replacement",
+  "centre_xy_m": [
+    11.568175521259887,
+    -48.68573220011713
+  ],
+  "yaw_deg": 35,
+  "bounds_local_m": [
+    -5.2,
+    -4,
+    5.2,
+    3
+  ],
+  "height_change_m": 0,
+  "basis": "July095 and Nov2025 show small grey fan-setts around the statue; preserve the existing plaza-finish clipped triangles and UV-fit one continuous local atlas",
+  "tile_pitch_m": 0.1,
+  "joint_width_m": 0.004,
+  "unresolved": "fan centres and individual stones are inferred; the nonseamless delivered sample is not tiled or repeated; no kerb or road-network change",
+  "ground_samples_tp_m": []
+}

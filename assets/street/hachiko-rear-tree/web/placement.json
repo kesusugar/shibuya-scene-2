@@ -1,5 +1,6 @@
 {
   "source_asset": "hachiko_rear_tree_candidate_v001",
+  "provenance_ledger": "../README.md",
   "position": [7.4, 0.43, 45.5],
   "yaw_deg": 0,
   "uniform_scale": 1,
