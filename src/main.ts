@@ -1,3 +1,4 @@
+import { loadBoxContents, type BoxContentsResult } from './world/boxContents';
 import { debug, measured } from './core/startup-debug';
 import { assetUrl } from './core/asset-url';
 import { loadProps, type PropsResult } from './world/props';
@@ -88,6 +89,7 @@ let coreSurround: SurroundResult | undefined;
 let coreMemorial: MemorialResult | undefined;
 let coreRearTree: RearTreeResult | undefined;
 let sceneFit: SceneFitResult | undefined;
+let boxContents: BoxContentsResult | undefined;
 let coreHachiko: HachikoResult | undefined;
 let coreDrainage: DrainageResult | undefined;
 let coreProps: PropsResult | undefined;
@@ -127,6 +129,7 @@ function setTime(t: TimeOfDay) {
   if (coreSurround?.ok) applyLook(coreSurround.root, t, look, undefined, env);
   if (coreMemorial?.ok) applyLook(coreMemorial.root, t, look, undefined, env);
   if (coreRearTree?.ok) applyLook(coreRearTree.root, t, look, undefined, env);
+  if (boxContents?.ok) applyLook(boxContents.root, t, look, undefined, env);
   if (sceneFit?.ok) applyLook(sceneFit.root, t, look, undefined, env);
   if (coreHachiko?.ok) applyLook(coreHachiko.root, t, look, undefined, env);
   if (coreDrainage?.ok) applyLook(coreDrainage.root, t, look, undefined, env);
@@ -189,6 +192,10 @@ async function start() {
       applySceneFitReplacements(sceneFit, {facilities:facilitiesRes?.root,plaza:plazaRes?.root,kiosk:loaded.find(b => b.id==='plaza-kiosk')?.root});
     }
   }
+  if (loaded.some(b => b.id === 'shibu-hachi-box')) {
+    boxContents = await loadBoxContents(io);
+    if (boxContents.ok) scene.add(boxContents.root);
+  }
   corePlaza = plazaRes;
   coreContext = contextRes;
   if (coreContext?.ok) scene.add(coreContext.root);
@@ -249,6 +256,7 @@ async function start() {
     ...(coreSurround && !coreSurround.ok ? [`像周辺の設備の読み込みに失敗: ${coreSurround.error}（ほかの表示は継続）`] : []),
     ...(coreMemorial && !coreMemorial.ok ? [`石碑の読み込みに失敗: ${coreMemorial.error}（ほかの表示は継続）`] : []),
     ...(coreRearTree && !coreRearTree.ok ? [`像背後の大木の読み込みに失敗: ${coreRearTree.error}（ほかの表示は継続）`] : []),
+    ...(boxContents && !boxContents.ok ? [`BOX contents: ${boxContents.error}`] : []),
     ...(sceneFit && !sceneFit.ok ? [`配置確認案の読み込みに失敗: ${sceneFit.error}`] : []),
     ...(coreHachiko && !coreHachiko.ok ? [`ハチ公像の読み込みに失敗: ${coreHachiko.error}（ほかの表示は継続）`] : []),
     ...(coreDrainage && !coreDrainage.ok ? [`路面蓋の読み込みに失敗: ${coreDrainage.error}（ほかの表示は継続）`] : []),
@@ -290,6 +298,7 @@ async function start() {
     if (coreSurround?.ok) applyClassPass(coreSurround.root);
     if (coreMemorial?.ok) applyClassPass(coreMemorial.root);
     if (coreRearTree?.ok) applyClassPass(coreRearTree.root);
+    if (boxContents?.ok) applyClassPass(boxContents.root);
     if (sceneFit?.ok) applyClassPass(sceneFit.root);
     if (coreHachiko?.ok) applyClassPass(coreHachiko.root);
     if (coreDrainage?.ok) applyClassPass(coreDrainage.root);
@@ -322,6 +331,7 @@ async function start() {
     surround: coreSurround ? { ok: coreSurround.ok, error: coreSurround.error, ...coreSurround.stats } : 'off',
     memorial: coreMemorial ? { ok: coreMemorial.ok, error: coreMemorial.error, ...coreMemorial.stats } : 'off',
     rearTree: coreRearTree ? { ok: coreRearTree.ok, error: coreRearTree.error, ...coreRearTree.stats } : 'off',
+    boxContents: boxContents ? {ok:boxContents.ok,error:boxContents.error,...boxContents.stats} : 'off',
     sceneFit: sceneFit ? { ok: sceneFit.ok, error: sceneFit.error, parts: sceneFit.root.children.map(o => o.name), ...sceneFit.stats } : 'off',
     hachiko: coreHachiko ? { ok: coreHachiko.ok, error: coreHachiko.error, ...coreHachiko.stats } : 'off',
     drainage: coreDrainage ? { ok: coreDrainage.ok, error: coreDrainage.error, ...coreDrainage.stats } : 'off',
@@ -331,6 +341,7 @@ async function start() {
     offsets: Object.fromEntries(loaded.map((b) => [b.id, b.root.position.y])),
     // QA: camera position and the Core ground height under it (walk mode keeps the eye 1.6 m above it)
     cameraPos: () => camera.position.toArray(),
+    cameraState: () => ({position:camera.position.toArray(), quaternion:camera.quaternion.toArray(), fov:camera.fov, aspect:camera.aspect, time:mode}),
     // QA still capture only; the interactive render loop and FPS code are unchanged.
     freezeFrame: params.has('capture') ? () => { renderer.setAnimationLoop(null); renderer.render(scene, camera); } : undefined,
     capturePose: params.has('capture') ? (v: number[], t: TimeOfDay) => {

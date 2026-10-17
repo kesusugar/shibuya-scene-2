@@ -1,11 +1,19 @@
 // C2b fix: identical cameras for the Codex v1 street (before) and the v2 street (after).
 // node scripts/capture-street-fix.mjs <base url> <out dir>   (VIEWS=a,b limits the views; resumable)
 import assert from 'node:assert/strict';
+import { reuseKey } from './capture-reuse.mjs';
 import { chromium } from 'playwright';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 const [base, out] = process.argv.slice(2);
 const views = {
+  contents_front: {q:'time=day&pose=21.15,-47.315,2.289,25.9,-46.57,1.69,52',w:1200,h:900},
+  contents_oblique: {q:'time=day&pose=21.7,-49.3,2.35,25.9,-46.57,1.69,58',w:1200,h:900},
+  contents_night: {q:'time=night&pose=21.15,-47.315,2.289,25.9,-46.57,1.69,52',w:1200,h:900},
+  contents_tkts: {q:'time=day&pose=21.8,-51.5,2.25,26.5,-50.5,1.8,55',w:1100,h:850},
+  contents_shelves: {q:'time=day&pose=20.8,-43.3,2.25,25.8,-43.0,1.9,55',w:1100,h:850},
+  stage5_station: {q:'time=day&pose=36,-28,14,16,-49,1,58',w:1200,h:800},
+  capture_default: {q:'time=day',w:800,h:600},
   fit_route_top: {q:'time=day&pose=35,-46,35,35,-46,0,58',w:1000,h:900},
   fit_tree_back: {q:'time=day&pose=3,-40,3,7.4,-45.5,.7,58',w:1000,h:750},
   fit_a8_roof: {q:'time=day&pose=42,-56,10,35,-46,3,58',w:1000,h:750},
@@ -125,9 +133,14 @@ const browser = await chromium.launch({ args: process.env.CAPTURE_GPU === '1'
 try {
   let reusablePage;
   let reusableErrors;
+  let previousKey;
   for (const [name, v] of Object.entries(views)) {
     if (process.env.VIEWS && !process.env.VIEWS.split(',').includes(name)) continue;
     if (!process.env.FORCE && existsSync(`${out}/${name}.png`)) continue;
+    const key = reuseKey(v.q, process.env.EXTRA);
+    if (reusablePage && (!key || key !== previousKey)) {
+      await reusablePage.close(); reusablePage = undefined; reusableErrors = undefined;
+    }
     const reused = !!reusablePage;
     const page = reusablePage ?? await browser.newPage({ viewport: { width: v.w, height: v.h } }); const errors = reusableErrors ?? [];
     if (!reused) {
@@ -144,8 +157,8 @@ try {
     await page.goto(`${base}/?capture&${v.q}${process.env.EXTRA ? `&${process.env.EXTRA}` : ""}`);
     await page.waitForFunction(() => window.__viewer?.ready, null, { timeout: 300000 });
     }
-    if (process.env.REUSE_CAPTURE === '1' && v.q.includes('pose=')) {
-      reusablePage = page;
+    if (process.env.REUSE_CAPTURE === '1' && key) {
+      reusablePage = page; previousKey = key;
       reusableErrors = errors;
       await page.setViewportSize({width:v.w,height:v.h});
       const query = new URLSearchParams(v.q);
@@ -156,9 +169,9 @@ try {
     // Freeze the settled QA frame before screenshotting; no application/FPS change.
     await page.evaluate(() => { window.__viewer.freezeFrame(); });
     await page.waitForTimeout(500);
-    const state = await page.evaluate(() => ({ rearTree: window.__viewer.rearTree, sceneFit: window.__viewer.sceneFit, exterior: window.__viewer.exterior, tactileOuter: window.__viewer.tactileOuter, tactileExtra: window.__viewer.tactileExtra, tactileLinks: window.__viewer.tactileLinks, facilities: window.__viewer.facilities, plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
+    const state = await page.evaluate(() => ({ boxContents: window.__viewer.boxContents, rearTree: window.__viewer.rearTree, sceneFit: window.__viewer.sceneFit, exterior: window.__viewer.exterior, tactileOuter: window.__viewer.tactileOuter, tactileExtra: window.__viewer.tactileExtra, tactileLinks: window.__viewer.tactileLinks, facilities: window.__viewer.facilities, plaza: window.__viewer.plaza, surround: window.__viewer.surround, hachiko: window.__viewer.hachiko, drainage: window.__viewer.drainage, tactile: window.__viewer.tactile, ground: window.__viewer.ground, street: window.__viewer.street, context: window.__viewer.context, stats: window.__viewer.stats, failed: window.__viewer.failed, status: document.querySelector('#status').textContent }));
     await page.screenshot({ path: `${out}/${name}.png`, timeout: 300000 });
-    log[name] = { ...v, extra:process.env.EXTRA??null, boxBaseline:process.env.BOX_BASELINE==='1', state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
+    log[name] = { ...v, extra:process.env.EXTRA??null, boxBaseline:process.env.BOX_BASELINE==='1', state, errors, capturedAt: new Date().toISOString(), cameraPos: await page.evaluate(() => window.__viewer.cameraPos()), camera: await page.evaluate(() => window.__viewer.cameraState()) }; writeFileSync(logPath, JSON.stringify(log, null, 2));
     if (process.env.EXTRA?.includes('reartree=off')) assert.equal(state.rearTree, 'off'); else assert.equal(state.rearTree.ok, true); if (process.env.EXTRA?.includes('fit=off')) assert.equal(state.sceneFit, 'off'); else assert.equal(state.sceneFit.ok, true);
     if (process.env.BASELINE === '1') assert.equal(state.plaza, undefined); else if (process.env.EXTRA?.includes('plaza=off')) assert.equal(state.plaza, 'off'); else assert.equal(state.plaza.ok, true); if (process.env.EXTRA?.includes('surround=off')) assert.equal(state.surround, 'off'); else assert.equal(state.surround.ok, true); if (process.env.EXTRA?.includes('hachiko=off')) assert.equal(state.hachiko, 'off'); else assert.equal(state.hachiko.ok, true); if (process.env.EXTRA?.includes('drainage=off')) assert.equal(state.drainage, 'off'); else assert.equal(state.drainage.ok, true); assert.deepEqual(errors, []); assert.equal(state.status, ''); assert.deepEqual(state.failed, []); assert.equal(state.context.ok, true); assert.equal(state.street.ok, true); if (process.env.EXTRA?.includes('tactile=off')) assert.equal(state.tactile, 'off'); else assert.equal(state.tactile.ok, true); assert.equal(state.ground.ok, true); assert.deepEqual(state.ground.missing, []);
     if (process.env.SUPPLEMENTS === '1') {assert.equal(state.tactileExtra.ok,true);assert.equal(state.tactileLinks.ok,true);}
