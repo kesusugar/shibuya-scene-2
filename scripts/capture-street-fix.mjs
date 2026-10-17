@@ -7,6 +7,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 const [base, out] = process.argv.slice(2);
 const views = {
+  box_stage5_night: {q:'time=night&pose=16,-58,4,25.5,-46.6,1.1,62',w:1000,h:750},
   contents_front: {q:'time=day&pose=21.15,-47.315,2.289,25.9,-46.57,1.69,52',w:1200,h:900},
   contents_oblique: {q:'time=day&pose=21.7,-49.3,2.35,25.9,-46.57,1.69,58',w:1200,h:900},
   contents_night: {q:'time=night&pose=21.15,-47.315,2.289,25.9,-46.57,1.69,52',w:1200,h:900},

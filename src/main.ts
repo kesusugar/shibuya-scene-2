@@ -215,6 +215,7 @@ async function start() {
   if (corePlaza?.ok) { scene.add(corePlaza.root); $('provisional').textContent += '／像周辺の敷石は写真から推定、寸法・敷設範囲は未測量'; }
   if (coreSurround?.ok) { scene.add(coreSurround.root); $('provisional').textContent += '／像周辺の石縁・レール・低木は写真から試作、位置・寸法・10月状態は未確認'; }
   if (coreMemorial?.ok) { scene.add(coreMemorial.root); $('provisional').textContent += '／日英二面の石碑は2025-07-13写真由来、像との相対位置・寸法・接地は推定'; }
+  if (boxContents?.ok) $('provisional').textContent += '／BOXの案内・TKTS・物販内容物は2024年公開写真参考。現行建築への寸法・配置とTKTS下部幕板は推定（ハチ公周辺のみ時点を併用）';
   if (coreRearTree?.ok) { scene.add(coreRearTree.root); $('provisional').textContent += '／像背後の大木1本は2025年11月の幹写真と2026年8月の葉を合わせた推定。幹位置・石囲いは未測量'; }
   if (sceneFit?.ok) $('provisional').textContent += '／ハチ公周辺：宝くじ・A8外観と屋根接合・駅ルーバー・大木の全周石囲い・柵・舗装・縁石・接続誘導線は既存形状への推定配置。非可視部分と経路は復元案、駅設備・幹は2025年11月資料を併用';
   if (coreHachiko?.ok) { scene.add(coreHachiko.root); $('provisional').textContent += '／ハチ公スキャン：Maurice Svay／CC BY 4.0、寸法・向きは推定、撮影時点・2025年10月状態は未確認'; }
