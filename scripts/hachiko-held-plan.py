@@ -15,8 +15,16 @@ left, right, low, high = 0, 87, -84, -24
 scale = 12
 image = Image.new('RGB', (1120, 840), '#f5f4ed')
 d = ImageDraw.Draw(image)
-font = ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 20)
-small = ImageFont.truetype('C:/Windows/Fonts/arial.ttf', 15)
+def font_at(size):
+    for name in ['/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
+                 '/usr/share/fonts/truetype/liberation2/LiberationSans-Regular.ttf',
+                 'C:/Windows/Fonts/arial.ttf']:
+        if Path(name).is_file():
+            return ImageFont.truetype(name, size)
+    return ImageFont.load_default()
+
+font = font_at(20)
+small = font_at(15)
 
 def xy(p):
     return (int(36 + (p[0] - left) * scale), int(50 + (high - p[1]) * scale))
