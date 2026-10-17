@@ -1,0 +1,44 @@
+{
+  "origin": [
+    25.108505249023438,
+    -46.695255279541016,
+    0.4891152083873749
+  ],
+  "yaw": -81.08397738878742,
+  "coordinate_system": "Positions: BOX local Blender metres Z-up; GLBs: Y-up. All placements estimated against existing shell, 2024-09-19 reference.",
+  "parts": [
+    {
+      "id": "counter",
+      "file": "counter.glb",
+      "position": [
+        0,
+        0.8,
+        0.248
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "wall-monitor",
+      "file": "wall-monitor.glb",
+      "position": [
+        0.2,
+        1.65,
+        1.268
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "laptop",
+      "file": "laptop.glb",
+      "position": [
+        0.78,
+        0.78,
+        1.228
+      ],
+      "yaw": 0,
+      "scale": 1
+    }
+  ]
+}
