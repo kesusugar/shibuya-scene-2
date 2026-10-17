@@ -1,5 +1,7 @@
 # BOX 可視内容物（通常表示）
 
+PR88後の更新：既存8組に軒裏ドーム、展示スポット2個、入口文字、屋根角ドーム断片、青い案内札を追加（layoutは13項目）。[配置・出典・実描画記録](../../../docs/core/HACHIKO_FINAL_FIT_20261017.md)を優先。TKTS同材質メッシュを統合し全体38プリミティブ、予算40を維持。`street=off` または `boxcontents=off` では取得しない。再現はrepo rootで `node scripts/prepare-box-additions.mjs`。各素材の原本・blend・生成コード・権利は既存 `street/props/incoming/` を参照。屋根角・展示灯は2026-08-08参考、内容物・札は2024参考で、ハチ公周辺限定の時点併用。
+
 現行BOX建築は変更せず、内容物を独立したstreet furnitureパックとして読み込む。URLの確認用スイッチは不要。建築が正常に読み込まれた場合にのみ、`src/world/boxContents.ts` が `web/layout.json` を一度適用する。衝突・移動機能は変更しない。
 
 ## 取付基準と推定

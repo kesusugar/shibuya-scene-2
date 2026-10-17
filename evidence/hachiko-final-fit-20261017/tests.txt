@@ -18,4 +18,3 @@ sync-assets: bic-camera, center-gai-gate, center244, cine-tower, daiichi-kangin,
 
     Isolate  63 workers spawned · ~227ms startup each (spawn + environment, per file)
              at least ~6.91s faster with isolate: false — reuses workers across files instead of one per file
-
