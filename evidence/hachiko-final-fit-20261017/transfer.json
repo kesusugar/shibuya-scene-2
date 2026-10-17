@@ -1,0 +1,32 @@
+[
+  {
+    "drive_id": "18xy5I07MAdylCYm8-sH-9_NqzlQFaQh4",
+    "zip": "hachiko_low_shrubs_v002_delivery.zip",
+    "bytes": 13402265,
+    "sha256": "254ea00a3317c0ff72bb4a3ed0467c0ac18f30639e803eef5ed3f4acafc09edc",
+    "entries": 47,
+    "manifest_verified_files": 45,
+    "fetch_success": true,
+    "saved_and_verified": true,
+    "size_sha256": "pass",
+    "all_zip_crc": "pass",
+    "manifest_sizes_sha256": "pass",
+    "saved_directory": "C:/Users/keisu/ShibuyaWork/hachiko-final-intake-20261017",
+    "scripts_executed": false
+  },
+  {
+    "drive_id": "1lrNZVD-FPxoW2TCZFN1kJSjx96OaNqGn",
+    "zip": "hachiko_seating_paving_v002.zip",
+    "bytes": 62887504,
+    "sha256": "1057203f9f156489254c9927a67d0a97801668ed37c037204dfbe0c1f751bcff",
+    "entries": 42,
+    "manifest_verified_files": 41,
+    "fetch_success": true,
+    "saved_and_verified": true,
+    "size_sha256": "pass",
+    "all_zip_crc": "pass",
+    "manifest_sizes_sha256": "pass",
+    "saved_directory": "C:/Users/keisu/ShibuyaWork/hachiko-final-intake-20261017",
+    "scripts_executed": false
+  }
+]

@@ -1,0 +1,3 @@
+assets/street/hachiko-surround/source/deliveries/hachiko_low_shrubs_v002/input/build_surround_original.py:108: new blank line at EOF.
+assets/street/hachiko-surround/source/deliveries/hachiko_low_shrubs_v002/input/layout.json:42: new blank line at EOF.
+assets/street/hachiko-surround/source/deliveries/hachiko_low_shrubs_v002/source/build_before.py:110: new blank line at EOF.
