@@ -1,0 +1,35 @@
+{
+  "coordinate_system": "Blender Z up, scene-local axes rotated +35 degrees to world XY",
+  "views": {
+    "close": [
+      [
+        -1.925,
+        2.2,
+        2.5
+      ],
+      [
+        -1.925,
+        -1.45,
+        1.45
+      ],
+      2.55
+    ],
+    "context": [
+      [
+        3.9,
+        7,
+        4.6
+      ],
+      [
+        0,
+        -1.4,
+        1.3
+      ],
+      7.25
+    ]
+  },
+  "render_engine": "Cycles CPU",
+  "samples": 40,
+  "lighting": "neutral preview, identical both variants",
+  "ground": "preview-only plane, not exported"
+}

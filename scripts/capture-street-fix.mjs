@@ -7,6 +7,11 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 const [base, out] = process.argv.slice(2);
 const views = {
+  statue_station: {q:'time=day&pose=20.5,-46,2.05,11.568,-48.686,1.5,52',w:1000,h:750},
+  statue_station_oblique: {q:'time=day&pose=18,-54,2.0,11.568,-48.686,1.4,55',w:1000,h:750},
+  statue_top: {q:'time=day&pose=11.568,-48.686,16,11.568,-48.685,.3,48',w:1000,h:1000},
+  shrubs_close: {q:'time=day&pose=15,-53,1.6,12.5,-50,1.2,52',w:1000,h:750},
+  box_accessories: {q:'time=day&pose=21.5,-38,2.8,24.3,-41.1,2.8,48',w:1000,h:750},
   box_stage5_night: {q:'time=night&pose=16,-58,4,25.5,-46.6,1.1,62',w:1000,h:750},
   contents_front: {q:'time=day&pose=21.15,-47.315,2.289,25.9,-46.57,1.69,52',w:1200,h:900},
   contents_oblique: {q:'time=day&pose=21.7,-49.3,2.35,25.9,-46.57,1.69,58',w:1200,h:900},

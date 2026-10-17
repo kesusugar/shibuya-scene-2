@@ -1,0 +1,110 @@
+{
+  "surround_before.glb": {
+    "mesh_names": [
+      "street_surround_branch",
+      "street_surround_needle",
+      "street_surround_panel",
+      "street_surround_rock",
+      "street_surround_silver",
+      "street_surround_soil",
+      "street_surround_stone"
+    ],
+    "vertices": 31758,
+    "triangles": 15528,
+    "world_bbox_blender_z_up_m": {
+      "min": [
+        9.554434776306152,
+        -51.917816162109375,
+        0.4155540466308594
+      ],
+      "max": [
+        15.125643730163574,
+        -47.62850570678711,
+        2.2316219806671143
+      ],
+      "extent": [
+        5.571208953857422,
+        4.289310455322266,
+        1.8160679340362549
+      ]
+    },
+    "images": []
+  },
+  "hachiko_surround_v002.glb": {
+    "mesh_names": [
+      "street_surround_branch",
+      "street_surround_needle",
+      "street_surround_panel",
+      "street_surround_rock",
+      "street_surround_silver",
+      "street_surround_soil",
+      "street_surround_stone"
+    ],
+    "vertices": 21642,
+    "triangles": 13488,
+    "world_bbox_blender_z_up_m": {
+      "min": [
+        9.554434776306152,
+        -51.917816162109375,
+        0.4155540466308594
+      ],
+      "max": [
+        15.125643730163574,
+        -47.62850570678711,
+        2.0815343856811523
+      ],
+      "extent": [
+        5.571208953857422,
+        4.289310455322266,
+        1.665980339050293
+      ]
+    },
+    "images": [
+      {
+        "name": "needle_spray_atlas",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_mode": "CHANNEL_PACKED",
+        "packed": true
+      }
+    ]
+  },
+  "hachiko_low_shrubs_only_v002.glb": {
+    "mesh_names": [
+      "street_surround_branch",
+      "street_surround_needle"
+    ],
+    "vertices": 10080,
+    "triangles": 7224,
+    "world_bbox_blender_z_up_m": {
+      "min": [
+        9.840320587158203,
+        -51.7754020690918,
+        0.9051861763000488
+      ],
+      "max": [
+        14.955597877502441,
+        -47.9680290222168,
+        2.0815343856811523
+      ],
+      "extent": [
+        5.115277290344238,
+        3.807373046875,
+        1.1763482093811035
+      ]
+    },
+    "images": [
+      {
+        "name": "needle_spray_atlas",
+        "size": [
+          1024,
+          1024
+        ],
+        "alpha_mode": "CHANNEL_PACKED",
+        "packed": true
+      }
+    ]
+  }
+}

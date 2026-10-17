@@ -1,0 +1,20 @@
+{
+  "status": "passed_after_documentation_fixes",
+  "review": "Independent read-only source/contract/GLB review",
+  "fixed": [
+    "Replaced ambiguous GLB Z=0 wording with Blender source Z=0 / glTF Y=0",
+    "Explicitly distinguished world-baked shrub GLB from statue-local seating GLB; no shared transformed parent"
+  ],
+  "checked": [
+    "Selective old stone/silver/panel replacement",
+    "Preserve soil/rock/new shrubs/large tree enclosure",
+    "Root names and local Y anchors",
+    "Pair vs separate alternatives",
+    "Candidate default OFF",
+    "Unknown dimensions and live-scene limits"
+  ],
+  "not_checked": [
+    "Live scene collisions/contact",
+    "Rendered appearance"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "model_front": [
+    0,
+    0,
+    -1
+  ],
+  "axis_proof": "tests/hachiko.test.ts: documented plaque normal and delivered geometry agreement",
+  "yaw_degrees": -65,
+  "estimated_not_surveyed": true,
+  "world_front": [
+    0.9063077870366499,
+    0,
+    -0.42261826174069944
+  ],
+  "east": 0.9063077870366499,
+  "north": 0.42261826174069944,
+  "bearing_clockwise_from_north_degrees": 65,
+  "equipment_yaw_degrees": 35,
+  "top_png": "after/statue_top.png",
+  "top_image_axes": {
+    "north": "up",
+    "east": "right"
+  },
+  "camera": {
+    "position": [
+      11.568,
+      16,
+      48.686
+    ],
+    "quaternion": [
+      -0.7070842615037521,
+      0,
+      0,
+      0.7071293001521669
+    ],
+    "fov": 48,
+    "aspect": 1,
+    "time": "day"
+  },
+  "ground": {
+    "samples": 371,
+    "lowerBoundaryEdges": 371,
+    "maxGapM": -0.0010000000000000009,
+    "maxBurialM": 0.07229273208674647
+  },
+  "position": [
+    11.568175521259887,
+    0.3852884863052187,
+    48.68573220011713
+  ],
+  "source_reference": "Existing July094/095 and owner Drive 1hV3iANEbXWjmRhexK5i8iv88QCwlriZl; fixed station concourse / ekimae backgrounds, plaque and plinth edges"
+}

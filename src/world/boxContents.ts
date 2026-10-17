@@ -9,6 +9,9 @@ export interface BoxContentsResult {
   ok: boolean; root: Group; error?: string;
   stats: { meshes: number; triangles: number; parts: string[] };
 }
+export function shouldLoadBoxContents(params: URLSearchParams, boxPresent: boolean) {
+  return boxPresent && params.get('street') !== 'off' && params.get('boxcontents') !== 'off';
+}
 /** A single architecture parent; source GLBs are already Y-up. Positions are
  * recorded in the architecture's Blender local metres, not a second world fit. */
 export async function loadBoxContents(io: BuildingIO): Promise<BoxContentsResult> {
@@ -22,7 +25,12 @@ export async function loadBoxContents(io: BuildingIO): Promise<BoxContentsResult
     if (new Set(layout.parts.map(p => p.id)).size !== layout.parts.length) throw Error('Duplicate BOX part');
     for (const p of layout.parts) {
       if (![...p.position, p.yaw, p.scale].every(v => typeof v === 'number' && Number.isFinite(v)) || p.scale <= 0) throw Error(`Invalid transform: ${p.id}`);
-      const model: Object3D = await io.loadGlb(`/street/box-contents/${p.file}`);
+    }
+    // Fetch independent files together, then attach in layout order. No partially
+    // loaded root is published if any fetch or validation fails.
+    const models = await Promise.all(layout.parts.map(p => io.loadGlb(`/street/box-contents/${p.file}`)));
+    for (const [index, p] of layout.parts.entries()) {
+      const model: Object3D = models[index];
       const errors = validateBuilding(model, 0.01); if (errors.length) throw Error(`${p.id}: ${errors.join(', ')}`);
       const mount = new Group(); mount.name = `contents:${p.id}`;
       mount.position.set(p.position[0], p.position[2], -p.position[1]);

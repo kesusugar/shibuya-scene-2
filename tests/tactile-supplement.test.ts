@@ -23,7 +23,10 @@ it('drapes both exported supplements to the original sidewalk and connects six m
  }finally{for(const m of [...ground,...existing,...extra,...links])m.geometry.dispose();}
 });
 it('closes the rear of both modeled stone planting segments',async()=>{
- const stone=await meshes('assets/street/hachiko-surround/web/hachiko-surround.glb',n=>n==='street_surround_stone'),h=json('assets/street/hachiko/source/data/layout.json'),d=json('assets/street/hachiko-surround/source/data/layout.json'),s=json('assets/street/hachiko-surround/source/data/stats.json');const angle=h.yaw_deg*Math.PI/180;
+ const left=await meshes('assets/street/hachiko-surround/web/seating.glb',n=>n==='current_left__stone'),right=await meshes('assets/street/hachiko-surround/web/seating.glb',n=>n==='current_right__stone'),stone=[...left,...right],h=json('assets/street/hachiko/source/data/layout.json'),d=json('assets/street/hachiko-surround/source/data/layout.json'),s=json('assets/street/hachiko-surround/source/data/stats.json');const angle=h.yaw_deg*Math.PI/180;
+ const parent=new Matrix4().makeTranslation(h.xy[0],0,-h.xy[1]).multiply(new Matrix4().makeRotationY(angle));
+ for(const [list,height] of [[left,.4710693359375],[right,.4155540466308594]] as const)for(const m of list){m.geometry.applyMatrix4(new Matrix4().makeTranslation(0,height,0));m.geometry.applyMatrix4(parent);m.updateMatrixWorld();}
+ expect(left.length).toBeGreaterThan(0);expect(right.length).toBeGreaterThan(0);
  try{for(const seg of d.segments){const x=(seg.x0+seg.x1)/2,y=d.front_y_m-d.depth_m-.5,z=s.items.find((i:{id:string})=>i.id===seg.id).anchor_tp-15+.26;const origin=new Vector3(h.xy[0]+x*Math.cos(angle)-y*Math.sin(angle),z,-h.xy[1]-x*Math.sin(angle)-y*Math.cos(angle));const dir=new Vector3(-Math.sin(angle),0,-Math.cos(angle));expect(new Raycaster(origin,dir,0,.8).intersectObjects(stone,false).length).toBeGreaterThan(0);}}
  finally{for(const m of stone)m.geometry.dispose();}
 });

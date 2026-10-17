@@ -1,0 +1,35 @@
+{
+  "status": "accepted_component_candidate",
+  "reviewed_render_files": ["evidence/before_close.png", "evidence/after_close.png", "evidence/before_context.png", "evidence/after_context.png", "evidence/comparison_close.png"],
+  "review_method": "Actual PNG pixels opened and personally inspected, not inferred from code or filenames.",
+  "findings": [
+    "Old exposed sphere cores and wide radial triangular spikes are absent.",
+    "Final close view shows layered thin tapered foliage, varied interior spray bearings and curved/sideways tips; lower woody stems remain intentionally visible.",
+    "Dense foliage no longer displays the black wedges seen in rejected draft renders; sufficient transparent ray depth was used for masked leaves.",
+    "Oblique whole-surround view shows six shrubs and no obvious flat opaque card crosses or disappearing lobes in this static camera.",
+    "Existing stone, rail, soil, rocks and small panel housings stay in their original positions and match the separate geometry/material/transform hash checks.",
+    "The final whole-surround preview excludes statue, large trees and other scene models. It is not a full-application screenshot."
+  ],
+  "render_controls": {
+    "resolution": [1400, 1000],
+    "camera_and_lighting": "Same for each before/after matched view.",
+    "engine": "Cycles CPU, Blender 4.2.3 LTS",
+    "before_samples": 40,
+    "after_samples": 24,
+    "after_transparent_max_bounces": 64,
+    "denoising": true,
+    "preview_floor": "Neutral staging plane, not exported in either GLB.",
+    "comparison_assembly": "Unmodified render pixels placed beside each other with labels; no visual retouching."
+  },
+  "rejected_versions": [
+    "High triangle all-geometry exploratory draft was not selected.",
+    "Sparse masked foliage draft was rejected for exposed scaffold-like branches.",
+    "Over-coherent dense spray draft and insufficient transparent-ray-depth images were rejected."
+  ],
+  "limitations": [
+    "Not a botanical identification or site survey.",
+    "No full Three.js app integration, moving-camera mip/shimmer test, FPS measurement or walking test was performed.",
+    "One frontal close view and one oblique mid-distance view were accepted; no claim of exhaustive every-angle coverage.",
+    "Original baseline was regenerated from pinned source and recorded terrain contacts, not fetched as the original GLB binary."
+  ]
+}

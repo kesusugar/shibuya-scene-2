@@ -1,0 +1,35 @@
+{
+  "basis": "5e5cc6341ddf00e0f39b3e72d4289f184786df2a",
+  "removed": [
+    {
+      "name": "street_surround_branch",
+      "triangles": 984,
+      "primitives": 1
+    },
+    {
+      "name": "street_surround_needle",
+      "triangles": 8280,
+      "primitives": 2
+    },
+    {
+      "name": "street_surround_stone",
+      "triangles": 3888,
+      "primitives": 1
+    },
+    {
+      "name": "street_surround_silver",
+      "triangles": 1008,
+      "primitives": 1
+    },
+    {
+      "name": "street_surround_panel",
+      "triangles": 864,
+      "primitives": 1
+    }
+  ],
+  "preserved": [
+    "street_surround_rock",
+    "street_surround_soil"
+  ],
+  "note": "Only nodes belonging to the old surround export. Memorial was already absent; separate memorial GLB untouched."
+}

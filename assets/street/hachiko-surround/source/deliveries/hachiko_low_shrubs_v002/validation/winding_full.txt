@@ -1,0 +1,1 @@
+{"file": "hachiko_low_shrubs_v002/models/hachiko_surround_v002.glb", "status": "pass_with_open_surfaces", "counts": {"outward": 114, "open": 1008}, "negative_closed_components": 0, "topology_review_components": 0, "error_components": 0}

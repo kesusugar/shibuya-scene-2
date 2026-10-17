@@ -1,4 +1,14 @@
 # ハチ公像周辺の石縁・レール・植栽（部分試作）
+
+## 現行：PR88後のv002統合
+
+通常配信は `web/hachiko-surround.glb`（旧soil/rockだけ）、`web/shrubs.glb`（dot低木6株・world配置）、`web/seating.glb`（dot current_pair・local配置）の3点。像rootのyaw−65°と設備の35°は別。全surround比較版、左右別座面、曲線・舗装候補を重ねて読み込まない。
+
+[統合・取付・検証記録](../../../docs/core/HACHIKO_FINAL_FIT_20261017.md)を優先。原本・blend・Python・出典・ライセンス・候補資料は `source/deliveries/` に保全。配信用座面だけテクスチャを512pxへ縮小、低木は配布GLBと同一バイト。旧PR88は `source/legacy/hachiko-surround-pr88.glb`。再現はrepo rootでPillow環境の`PYTHON`を指定し `node scripts/prepare-surround-runtime.mjs`。旧 `source/blender/build_surround.py` は履歴再現用で、現行webへ直接上書きしない。
+
+以下は旧制作記録。旧針葉・球状コア、旧石縁・レールは現行では置換済み。低木根元の自然石は保持対象。
+
+## 旧制作記録
 2026-10-17 の一括取り込みでは、旧 `stone_panel` と `unread_inscription` の生成だけを停止し、`street/hachiko-memorial` に置換した。左右の石縁、レール、植栽は維持する。配置と寸法は現地実測ではなく、採用済み像に対する従来の相対配置から推定した。
 2025-07-13の正面写真094/095（RuinDig/Yuki Uchida、CC BY 4.0）で確認できる、像の両側の石縁、傾斜した銀色レールと支持金具、低木・自然石、右側の石製掲示板を自作。標準の板座面ベンチへ置換しない。レールの用途・正確な呼称は未確認。
 

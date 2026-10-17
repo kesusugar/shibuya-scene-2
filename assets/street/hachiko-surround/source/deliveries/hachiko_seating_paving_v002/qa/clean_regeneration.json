@@ -1,0 +1,36 @@
+{
+  "independent_clean_directory_build": true,
+  "blender": "4.2.3 LTS",
+  "results": [
+    {
+      "file": "candidate_curve_left.glb",
+      "clean_regeneration_byte_equal": true,
+      "sha256": "45faae2f295b068fbbed896a290566c0890983bcf3a90b558dad0d4658a60564"
+    },
+    {
+      "file": "candidate_curve_right.glb",
+      "clean_regeneration_byte_equal": true,
+      "sha256": "05f088fa17813d2f69eeac151505d81f0a0b725cfb31a05b3667be9c220d322c"
+    },
+    {
+      "file": "candidate_paving_PREVIEW_ONLY.glb",
+      "clean_regeneration_byte_equal": true,
+      "sha256": "e15809a022fc1689bbe4a36b0291eba53e0f992bbf2cace90f39eda511c1d3b3"
+    },
+    {
+      "file": "current_left.glb",
+      "clean_regeneration_byte_equal": true,
+      "sha256": "38e7b106c4b093641403a3644aacd6ff0e9aa093a88b4f54a2c68a9c8c0a0146"
+    },
+    {
+      "file": "current_pair.glb",
+      "clean_regeneration_byte_equal": true,
+      "sha256": "e7ec6ce254a0724f4586907d53e49e6123adb37898666e24f2c2a7050238ce51"
+    },
+    {
+      "file": "current_right.glb",
+      "clean_regeneration_byte_equal": true,
+      "sha256": "bfcbf96d989f87f2496325054ce8474b836fba06adaa6ec688ee4ec6a1008f01"
+    }
+  ]
+}

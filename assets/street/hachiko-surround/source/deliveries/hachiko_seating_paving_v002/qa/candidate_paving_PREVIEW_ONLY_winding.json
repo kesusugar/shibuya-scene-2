@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "method": "exact-position seam reconciliation; edge-connected components; centered float64 math.fsum",
+  "scope": "mesh-local bind geometry, across material primitives within each mesh; no node/skin/morph simulation",
+  "abs_volume_epsilon": 1e-12,
+  "relative_volume_epsilon": 1e-12,
+  "counts": {
+    "open": 1
+  },
+  "error_components": 0,
+  "negative_closed_components": 0,
+  "topology_review_components": 0,
+  "indeterminate_closed_components": 0,
+  "status": "pass_with_open_surfaces",
+  "meshes": [
+    {
+      "mesh": 0,
+      "name": "paving_flat_PREVIEW_only",
+      "triangles": 2,
+      "materials": [
+        {
+          "primitive": 0,
+          "material": 0,
+          "name": "paving_ring_LAYOUT_CANDIDATE",
+          "doubleSided": true,
+          "alphaMode": "OPAQUE",
+          "transmission": false
+        }
+      ],
+      "components": [
+        {
+          "component": 0,
+          "triangles": 2,
+          "vertices": 4,
+          "closed": false,
+          "consistent": true,
+          "boundary_edges": 4,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "open",
+          "signed_volume": 0.0,
+          "volume_epsilon": 1.1248638762207076e-09,
+          "extent": [
+            10.399999618530273,
+            0.0,
+            7.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.5
+          ],
+          "volume_interpretable": false
+        }
+      ]
+    }
+  ],
+  "file": "/workspace/scratch/b6331e59d884/hachiko_seating_paving_v002/web/candidate_paving_PREVIEW_ONLY.glb"
+}

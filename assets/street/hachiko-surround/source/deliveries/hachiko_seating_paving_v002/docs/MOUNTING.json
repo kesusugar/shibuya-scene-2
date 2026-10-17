@@ -1,0 +1,69 @@
+{
+  "asset": "web/current_pair.glb",
+  "alternative_files": [
+    "web/current_left.glb",
+    "web/current_right.glb"
+  ],
+  "do_not_load_pair_and_alternatives_together": true,
+  "baseline_sha": "5e5cc6341ddf00e0f39b3e72d4289f184786df2a",
+  "frame": {
+    "source_xy_m": [
+      11.568175521259887,
+      -48.68573220011713
+    ],
+    "source_yaw_deg": 35,
+    "blender_axes": "X/Y horizontal, Z up",
+    "gltf_axes": "X/Z horizontal, Y up, gltf Z = -source Y",
+    "threejs_parent_translation_m": [
+      11.568175521259887,
+      0,
+      48.68573220011713
+    ],
+    "threejs_parent_rotation_y_degrees": 35,
+    "scale": [
+      1,
+      1,
+      1
+    ],
+    "datum_tp_m": 15,
+    "note": "All heights below are local ground Z above TP=15m; do not add 15m again to a scene already using this datum. Do not follow subsequent Hachiko statue-only yaw correction."
+  },
+  "child_anchors": [
+    {
+      "node": "current_left_statue_local_origin",
+      "threejs_local_position_y_m": 0.4710693359375,
+      "source_ground_min_z_m": 0.4710693359375,
+      "tp_m": 15.4710693359375,
+      "inherited_max_burial_m": 0.039661407470703125
+    },
+    {
+      "node": "current_right_statue_local_origin",
+      "threejs_local_position_y_m": 0.4155540466308594,
+      "source_ground_min_z_m": 0.4155540466308594,
+      "tp_m": 15.41555404663086,
+      "inherited_max_burial_m": 0.039745330810546875
+    }
+  ],
+  "ground_source": "https://github.com/kesusugar/shibuya-scene-2/blob/5e5cc6341ddf00e0f39b3e72d4289f184786df2a/assets/street/hachiko-surround/source/data/stats.json",
+  "anchor_validity": "Exact reuse only while baseline ground triangles and equipment layout are unchanged; otherwise re-sample same 9 footprint points per side. Live scene contact not tested here.",
+  "remove_old_roles": [
+    "street_surround_stone",
+    "street_surround_silver",
+    "street_surround_panel"
+  ],
+  "preserve_old_roles": [
+    "street_surround_soil",
+    "street_surround_rock"
+  ],
+  "low_shrubs_separate_replacement": [
+    "street_surround_branch",
+    "street_surround_needle"
+  ],
+  "candidate_enabled": false,
+  "paving_preview_is_not_installable_ground": true,
+  "low_shrub_frame_warning": {
+    "file": "models/hachiko_low_shrubs_only_v002.glb",
+    "placement": "WORLD_BAKED from sibling shrub delivery",
+    "action": "Do not place this shrub GLB under the seating transformed parent and do not add origin/yaw/anchor again."
+  }
+}

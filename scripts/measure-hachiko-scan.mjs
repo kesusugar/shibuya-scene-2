@@ -1,9 +1,11 @@
 import {NodeIO} from '@gltf-transform/core';
 import {BufferGeometry,BufferAttribute,Matrix4,Mesh,MeshBasicMaterial,DoubleSide,Raycaster,Vector3} from 'three';
 import {readFileSync,writeFileSync} from 'node:fs';
-const [file,out]=process.argv.slice(2),io=new NodeIO();
+const [file,out,yawArg]=process.argv.slice(2),io=new NodeIO();
 const layout=JSON.parse(readFileSync('assets/street/hachiko/source/data/layout.json'));
-const rotation=new Matrix4().makeRotationY(layout.yaw_deg*Math.PI/180),surfaces=[];
+const yaw = yawArg === undefined ? layout.yaw_deg : Number(yawArg);
+if (!Number.isFinite(yaw)) throw Error('Invalid yaw');
+const rotation=new Matrix4().makeRotationY(yaw*Math.PI/180),surfaces=[];
 for(const n of (await io.read('assets/ground/core/web/ground_core.glb')).getRoot().listNodes()){
  if(!n.getName().startsWith('ground_sidewalk'))continue;
  for(const p of n.getMesh()?.listPrimitives()??[]){
@@ -37,5 +39,5 @@ for(const id of new Set(rim.flatMap(([key])=>key.split(',').map(Number)))){
 const anchor=Math.min(...samples.map(s=>s.groundY-s.local[1]))-.001;
 const matrix=new Matrix4().makeTranslation(layout.xy[0],anchor,-layout.xy[1]).multiply(rotation);
 const gaps=samples.map(s=>s.local[1]+anchor-s.groundY);
-const result={basisCommit:'e1124dd1b5412d1cd4140d4272ebaf86ea7ca79e',position:[layout.xy[0],anchor,-layout.xy[1]],yawDegrees:layout.yaw_deg,scale:[1,1,1],datumTP:15,anchorTP:anchor+15,matrixColumnMajor:matrix.toArray(),inverseMatrixColumnMajor:matrix.clone().invert().toArray(),ground:{samples:samples.length,lowerBoundaryEdges:rim.length,maxGapM:Math.max(...gaps),maxBurialM:-Math.min(...gaps),samplesDetail:samples},note:'Rigid translation/yaw only. Lowest upper rim discrepancy is buried 1mm; real dimensions and ground fit remain estimates.'};
+const result={basisCommit:'5e5cc6341ddf00e0f39b3e72d4289f184786df2a',position:[layout.xy[0],anchor,-layout.xy[1]],yawDegrees:yaw,scale:[1,1,1],datumTP:15,anchorTP:anchor+15,matrixColumnMajor:matrix.toArray(),inverseMatrixColumnMajor:matrix.clone().invert().toArray(),ground:{samples:samples.length,lowerBoundaryEdges:rim.length,maxGapM:Math.max(...gaps),maxBurialM:-Math.min(...gaps),samplesDetail:samples},note:'Rigid translation/yaw only. Lowest upper rim discrepancy is buried 1mm; real dimensions and ground fit remain estimates.'};
 writeFileSync(out,JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({...result,ground:{...result.ground,samplesDetail:undefined}},null,2));

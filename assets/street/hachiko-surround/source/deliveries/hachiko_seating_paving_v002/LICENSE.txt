@@ -1,0 +1,5 @@
+The procedural model, textures, source scripts and rendered previews in this package are original project deliverables for kesusugar/shibuya-scene-2 and may be used, modified and redistributed with that project under the project's chosen license.
+
+No external photographic pixels, downloaded sculpture mesh, original scene geometry, copyrighted reference images, advertisements or third-party fonts are redistributed in this package. Links to external photographs are supplied as provenance only; their owners retain their respective rights. Refer to the linked source pages for any separate use of those photographs.
+
+The inherited dimensional layout was read from the user's existing project and is an estimate, not a survey. This statement does not grant rights in any external reference photo or in protected neighboring artwork.

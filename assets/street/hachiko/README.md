@@ -1,4 +1,6 @@
 # ハチ公スキャン候補のレビュー配置
+
+PR88後：GLBと平面アンカーを維持し、像rootだけyaw−65°へ推定調整、371点の接地を再測定。現行値は `source/data/scan-placement.json` と `src/world/hachiko.ts`。設備用 `source/data/layout.json` の35°は周辺設備・履歴生成用であり、像へ再適用しない。[実描画・推定根拠](../../../docs/core/HACHIKO_FINAL_FIT_20261017.md)。下記の旧配置記録より現行JSONを優先。
 通常表示は Maurice Svay の Hachikō スキャン由来の候補1体です。像・青銅座・石台座・下段タイルが一体で、旧像・旧台座を追加表示しません。マージ・デプロイは未実施です。
 
 ## 出典と加工

@@ -5,7 +5,7 @@
     0.4891152083873749
   ],
   "yaw": -81.08397738878742,
-  "coordinate_system": "Positions: BOX local Blender metres Z-up; GLBs: Y-up. All placements estimated against existing shell, 2024-09-19 reference.",
+  "coordinate_system": "Positions: BOX local Blender metres Z-up; GLBs: Y-up. Estimated fit using 2024 contents and 2026-08-08 accessory references; see HACHIKO_FINAL_FIT_20261017.md.",
   "parts": [
     {
       "id": "counter",
@@ -91,6 +91,61 @@
         4.15,
         0.65,
         0.248
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "soffit-dome",
+      "file": "soffit-dome.glb",
+      "position": [
+        -6,
+        -1.48,
+        2.57
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "information-header",
+      "file": "information-header.glb",
+      "position": [
+        0,
+        -0.686,
+        2.315
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "corner-dome",
+      "file": "corner-dome.glb",
+      "position": [
+        -6.47,
+        1.55,
+        2.68
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "info-placard",
+      "file": "info-placard.glb",
+      "position": [
+        0.79,
+        0.517,
+        0.678
+      ],
+      "yaw": 0,
+      "scale": 1
+    },
+    {
+      "id": "display-spotlights",
+      "file": "display-spotlights.glb",
+      "position": [
+        0,
+        0,
+        0
       ],
       "yaw": 0,
       "scale": 1

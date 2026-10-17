@@ -1,6 +1,6 @@
 {
   "id": "hachiko",
-  "status": "scan candidate placed for review; physical dimensions/orientation/2025-10 appearance unverified",
+  "status": "Complete original scan; station-facing yaw estimated from fixed landmarks/plaque, ground remeasured at 371 rim points",
   "datum_tp_m": 15,
   "source": {
     "creator": "Maurice Svay",
@@ -12,8 +12,8 @@
   "build_stats": {
     "triangles": 85934,
     "primitives": 1,
-    "anchor_tp": 15.379512188897989,
-    "max_burial_m": 0.08624349744107007
+    "anchor_tp": 15.38528848630522,
+    "max_burial_m": 0.07229273208674647
   },
   "runtime_texture": {
     "original": [
@@ -37,12 +37,12 @@
       "sha256": "0d68077edad1fc24858cdb9c42001439488728fc2e4779676ee3f0e3e821077e"
     },
     "README.md": {
-      "bytes": 3661,
-      "sha256": "7d606eddb0441e5b07a085e3f5bae5b6f7f4f0b2ea2a3a246d86271eb89a51b8"
+      "bytes": 4105,
+      "sha256": "87bd1bc22d1a1977ea7eb7665b91ce1c974d256985fb9dd35469c034a08938cf"
     },
     "source/data/scan-placement.json": {
-      "bytes": 100265,
-      "sha256": "19505717bd04f6920459dd65183870a14ebc0cee4b3ef39d5bde3c9b040e506e"
+      "bytes": 100319,
+      "sha256": "508a5ec5894ce34016319a709305b2719e8284c3aad92202d63ebe0468db20cc"
     },
     "source/tools/build_scan_runtime.py": {
       "bytes": 2290,

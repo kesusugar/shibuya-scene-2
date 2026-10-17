@@ -1,0 +1,78 @@
+{
+  "baseline_commit": "5e5cc6341ddf00e0f39b3e72d4289f184786df2a",
+  "implementation_commit": "fa4b0df",
+  "baseline_bundle": "index-DUptqPhx.js",
+  "after_bundle": "index-DXXz5YWs.js",
+  "checks": {
+    "statue_station": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "statue_station_oblique": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "statue_top": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "shrubs_close": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "box_accessories": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "contents_front": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "contents_oblique": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "contents_night": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "fit_overview": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    },
+    "box_oblique": {
+      "q": true,
+      "w": true,
+      "h": true,
+      "extra": true,
+      "camera": true
+    }
+  }
+}
