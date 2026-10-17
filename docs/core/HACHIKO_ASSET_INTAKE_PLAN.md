@@ -1,5 +1,7 @@
 # ハチ公周辺：追加素材の段階取り込み計画
 
+> Current implementation: [completed scene fitting](HACHIKO_COMPLETED_FIT_20261017.md). The earlier hold/preview decisions below are historical and superseded.
+
 PR #85マージ後の現行状態は [実配置・比較修正の記録](HACHIKO_SCENE_FIT_20261017.md) を優先する。従来の保留一覧から進めた通常配置と、確認用の仮配置を区別している。
 
 2026-10-17 更新：PR #83 までを基準とする第3段階残り・第4段階は、今回の一括レビュー指示を優先する。対象別PR・順番待ちの旧記述については [一括レビュー記録](HACHIKO_STAGE3_STAGE4_BATCH_20261017.md) の採用・保留判断を参照する。

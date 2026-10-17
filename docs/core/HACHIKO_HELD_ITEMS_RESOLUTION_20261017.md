@@ -1,5 +1,7 @@
 # PR #84 後のハチ公広場・第3/4段階の保留項目照合（2026-10-17）
 
+> Current implementation: [completed scene fitting](HACHIKO_COMPLETED_FIT_20261017.md). The earlier hold/preview decisions below are historical and superseded.
+
 このページはPR #85時点の記録。PR #85マージ後の実配置・比較修正は [配置記録](HACHIKO_SCENE_FIT_20261017.md) を参照する。宝くじ正面・囲いの見える側・局所舗装の通常配置と、A8等の確認用仮配置で以下の保留状態を更新した。
 
 基準は `origin/main` の `e2a1f2b`（PR #84 マージ後）。[前回の一括記録](HACHIKO_STAGE3_STAGE4_BATCH_20261017.md)と同じ検証済みZIPをリポジトリ外から再利用し、転送とZIP全検証は繰り返していない。ZIP・未許諾の参照写真・署名付きURLは追加していない。座標は計画平面 X 東/Y 北、Web は X 東/Y 上/Z 南、標高は T.P.15m を0とする。平面比較は [候補と既存物の上面図](../../evidence/hachiko-held-20261017/plan.png)。
