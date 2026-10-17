@@ -1,0 +1,9 @@
+{
+  "file": "previews/04_candidate_layout_contact_sheet.png",
+  "type": "technical plan diagram plus authored atlas preview",
+  "not_photoreal_render": true,
+  "not_scene_validation": true,
+  "no_external_image_pixels": true,
+  "geometry_parameters_match": "source/build_assets.py",
+  "texture": "textures/paving_ring_candidate_basecolor.png"
+}

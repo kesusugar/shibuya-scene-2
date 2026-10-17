@@ -1,0 +1,37 @@
+[
+  {
+    "texture": "granite_basecolor.png",
+    "sha256": "d0215b84055cfc371edb3eb2ac552f3798f72690e935bbed7877cb208dd082ff",
+    "clean_regeneration_byte_equal": true
+  },
+  {
+    "texture": "granite_normal.png",
+    "sha256": "c40b85b044331fde04fc9170b6b9a419d56b464acaaca8f3d73ed47a94b2c515",
+    "clean_regeneration_byte_equal": true
+  },
+  {
+    "texture": "granite_roughness.png",
+    "sha256": "19079d7838e88afb5e7bd7f7d5aff4e204c2f6ed658597630449600488e64960",
+    "clean_regeneration_byte_equal": true
+  },
+  {
+    "texture": "paving_ring_candidate_basecolor.png",
+    "sha256": "b54a63cb3be1ac26d14b19d742f79e22b4dbf36c2dc178d575a98d120761acfa",
+    "clean_regeneration_byte_equal": true
+  },
+  {
+    "texture": "paving_ring_candidate_normal.png",
+    "sha256": "136a87b6fc3a307c3bf1dc4cd6b4219c94fbe036aa7f2b8becba7cc686e00070",
+    "clean_regeneration_byte_equal": true
+  },
+  {
+    "texture": "paving_ring_candidate_roughness.png",
+    "sha256": "7332ac7acf7c65d2e5092e70634f67e3d84b0ba8499aeef30a93934bbb8128d8",
+    "clean_regeneration_byte_equal": true
+  },
+  {
+    "texture": "steel_roughness.png",
+    "sha256": "990cf53155bab5084b9c0facf004ca1e14d1c11413b85725c53faf93b7e173fe",
+    "clean_regeneration_byte_equal": true
+  }
+]

@@ -1,0 +1,188 @@
+{
+  "package": "hachiko_low_shrubs_v002",
+  "created_utc": "2026-10-17T04:03:56.264326+00:00",
+  "blender": "4.2.3 LTS",
+  "integration_primary": "models/hachiko_low_shrubs_only_v002.glb",
+  "files": {
+    "MOUNTING.md": {
+      "sha256": "9bc803fff23629c745b950eb3d0d0bdd30beb8f463e9e6ce2d312a6336f8b196",
+      "bytes": 4251
+    },
+    "PROVENANCE.md": {
+      "sha256": "827dd4341502bcb76310b83e09d91c46b9eb54b5c425ad0c6d93c7b6b333157d",
+      "bytes": 3483
+    },
+    "README.md": {
+      "sha256": "a0d45ad28673b46f15331e12e3bf37bc4604ceb68f2c272c2d0e52b93ca7f582",
+      "bytes": 6470
+    },
+    "evidence/after_camera.json": {
+      "sha256": "ddb0142d1b3133addb5f3573618f070f844c30d21a5ddfbcbede0c4f3f622959",
+      "bytes": 558
+    },
+    "evidence/after_close.png": {
+      "sha256": "f6121250cf5eac48ba6ed4a6cead2fd384ba11c7a88abd369956919865e783c0",
+      "bytes": 1635209
+    },
+    "evidence/after_context.png": {
+      "sha256": "caee450493e2b54a4d5ef471c96cfb9e1cf538a14b44c40d98b7cd473a97e5a7",
+      "bytes": 1506213
+    },
+    "evidence/before_camera.json": {
+      "sha256": "2783cbc89ae3bef864f6dcfb02596926e53e47af2ab678a1198fe5aac483a685",
+      "bytes": 558
+    },
+    "evidence/before_close.png": {
+      "sha256": "6250cd11c07d0b654cb5becef99247fd1679257e47e6f20fd6e8d7fd33ac63a1",
+      "bytes": 1684258
+    },
+    "evidence/before_context.png": {
+      "sha256": "53af27a2f256e61414a798d21a1ed9ada28200168f1a6c692689a1e0cba3df84",
+      "bytes": 1550488
+    },
+    "evidence/comparison_close.png": {
+      "sha256": "fc1e44da2476f93ae60d90beb786d98cf0f510f1fb0d31894aed14f5271d758e",
+      "bytes": 2329671
+    },
+    "evidence/comparison_context.png": {
+      "sha256": "b2a09b6fef5185e0e99cfdb74d759a0c9c821b5294d3e705e0b8a8d36e91d6cc",
+      "bytes": 2084585
+    },
+    "input/build_surround_original.py": {
+      "sha256": "a4d6e5ce037019aa405b61963da442eb0b8d71f6672a6fd61f2aedee5062a450",
+      "bytes": 8787
+    },
+    "input/layout.json": {
+      "sha256": "4bee6458479dbbc37edcf40c7d969443ed3ed631087dc1c4e9cd55c23238d826",
+      "bytes": 913
+    },
+    "input/original_stats.json": {
+      "sha256": "e68fdecbda7e71d497353d63462d55720e01dc17eec08132aeaa779f1a872154",
+      "bytes": 5636
+    },
+    "models/after_stats.json": {
+      "sha256": "8e9ca020f9d1990adb3551bc15461640d2db5d1f4fcc651c09844c06e53dee86",
+      "bytes": 5636
+    },
+    "models/before_stats.json": {
+      "sha256": "e68fdecbda7e71d497353d63462d55720e01dc17eec08132aeaa779f1a872154",
+      "bytes": 5636
+    },
+    "models/hachiko_low_shrubs_only_v002.glb": {
+      "sha256": "118896a2744c289fd271735071aea03385c6553317c981a46140995e480fdfc6",
+      "bytes": 422228
+    },
+    "models/hachiko_surround_v002.blend": {
+      "sha256": "c1cdb79006f9bb9ac0bd579c2617c7dc3a93c5bcc149ff157f40c01a3c4344b5",
+      "bytes": 1566608
+    },
+    "models/hachiko_surround_v002.glb": {
+      "sha256": "099a454adb74622d6ddc00006da7975fe149e766d33b9cdcf7cf92d9827bb03b",
+      "bytes": 835648
+    },
+    "models/shrub_roots.json": {
+      "sha256": "ec344ef97cf733ee9fdd7d00fe0e9c7a6c88dd0a51126144576568e1e65ae790",
+      "bytes": 1328
+    },
+    "models/surround_before.blend": {
+      "sha256": "b12d668dd0a45bd24d5ef082e01f86eb09cbef279bc7ec23d16c34c4b7f60b69",
+      "bytes": 1864960
+    },
+    "models/surround_before.glb": {
+      "sha256": "88739f6d2eba71c9c294db1f89a27384a89612899e8d9a5762577baebff17f25",
+      "bytes": 1118840
+    },
+    "source/build_after.py": {
+      "sha256": "82e1fd5c23c9af6b81ed4f15a9f0809e5ad20ec9565d052da30d05cefaccd698",
+      "bytes": 11175
+    },
+    "source/build_before.py": {
+      "sha256": "5c4f179fbeb9f7b2232b7911d210eb4ce71a62889407c475a9c876dcd29ca468",
+      "bytes": 8815
+    },
+    "source/check_glb_winding.py": {
+      "sha256": "1dab803183a02056989895d53b227c620bb7eee32dad22a1a7df438d402e857a",
+      "bytes": 15267
+    },
+    "source/create_needle_atlas.py": {
+      "sha256": "fef7d0a7f634bb6c979856c954ba1070c98dacc426edece84ab01da367257967",
+      "bytes": 1441
+    },
+    "source/inspect_roundtrip.py": {
+      "sha256": "fd503906c97ef7aa77f1ea4233620e59a20d3e7e22dd833e61450b069add5850",
+      "bytes": 1112
+    },
+    "source/make_comparisons.py": {
+      "sha256": "163eb6d512dba154073f11bd561af457c0a838d6fc5f47923790e33a4f62cadd",
+      "bytes": 1080
+    },
+    "source/package_delivery.py": {
+      "sha256": "b0a30b0fa7d14917cded33f77a8108c2d04e38026bfaad1eb03b323cf157b404",
+      "bytes": 1955
+    },
+    "source/render_after_final.py": {
+      "sha256": "0951db860685b4850277b62e9dda51771a9cdeb41337d486a4cf52d5afe97bd0",
+      "bytes": 2609
+    },
+    "source/render_close.py": {
+      "sha256": "25cf4246658a3e25e355605f35e1fcd2ddf0e97c2884f849fbb7faf7e3a9c1b5",
+      "bytes": 2605
+    },
+    "source/render_comparisons.py": {
+      "sha256": "0c6432025e9909c142a3b6f65975638ac373fcaa41ceead30055ef1844cf843f",
+      "bytes": 2608
+    },
+    "source/validate_assets.py": {
+      "sha256": "b72cffdb68cb5f1cbc24cf4562f6f098854dd12c7372067bcc0d97c55a0b35c6",
+      "bytes": 3529
+    },
+    "textures/needle_spray_atlas.png": {
+      "sha256": "f323c402a7add33f4190d2a81b5fe1b301252ec2fc5ebc4bef82ac648eecb5b0",
+      "bytes": 53573
+    },
+    "validation/asset_validation.json": {
+      "sha256": "4d0971d16b1b21eca6f311007390a26436faf5ed46719ad99797c38962c9f879",
+      "bytes": 10309
+    },
+    "validation/regeneration.json": {
+      "sha256": "467ac882d957e287629b595187087a470687810965c576b4f21cc788f2252d67",
+      "bytes": 303
+    },
+    "validation/roundtrip.json": {
+      "sha256": "07f78b1d7328df91c7c1330c69bc6c18b58e713d37668966f7c32a22947f42ab",
+      "bytes": 2333
+    },
+    "validation/texture_validation.json": {
+      "sha256": "9475f74b7d7c31d92ec0781ad9e99e6963c33650afb4a4feb6cd504b98319416",
+      "bytes": 342
+    },
+    "validation/visual_review.json": {
+      "sha256": "3effd5def63ca4f7a2c3beb696080b905ca346444f49ce86010284c52aa0d4b0",
+      "bytes": 2401
+    },
+    "validation/winding_before.json": {
+      "sha256": "2ad051e3981786fcbd48b7db9da3bdaac89a063eda9467344f13b25b1f6ec823",
+      "bytes": 3959202
+    },
+    "validation/winding_before.txt": {
+      "sha256": "809aeebcb83c741df884d883cc95946aaaf7e34f3f19c9618835b810b6503f45",
+      "bytes": 231
+    },
+    "validation/winding_full.json": {
+      "sha256": "ba3044ee183260d3cf3f9a1b994135805f1107cb92b25f49d9cfc67c8673c429",
+      "bytes": 797627
+    },
+    "validation/winding_full.txt": {
+      "sha256": "f32250d7881c7dbc23360d5852bc17777f59d0b3a27c96cec78266d299ab3c06",
+      "bytes": 237
+    },
+    "validation/winding_shrubs.json": {
+      "sha256": "6f0171a4328b1a71da368d6ffeb6c7827a1e2f446af47547dcaba647895a4ea3",
+      "bytes": 745401
+    },
+    "validation/winding_shrubs.txt": {
+      "sha256": "e1663ff0f5e1f25b0502ab9b6507af3ae22597db01e30ce61e7ddd78cb9d1308",
+      "bytes": 243
+    }
+  }
+}

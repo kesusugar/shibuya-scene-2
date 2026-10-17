@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-10-17",
+  "package": "hachiko_seating_paving_v002",
+  "basis_commit": "5e5cc6341ddf00e0f39b3e72d4289f184786df2a",
+  "target": "Original isolated surface/material improvements for existing local surround, with separate unverified curve/paving layout candidates",
+  "sources": [
+    {
+      "id": "july095",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_095.jpg",
+      "author": "RuinDig/Yuki Uchida",
+      "capture_date": "2025-07-13",
+      "source_license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "pixels_inspected": true,
+      "redistributed": false,
+      "used_for": "Visible stone surface, narrow vertical joints, two sloped silver rails, low rectangular luminaires and curving paving rows"
+    },
+    {
+      "id": "july094",
+      "url": "https://commons.wikimedia.org/wiki/File:Tokyo-Shibuya-and-Shinbashi---2025-07-13_094.jpg",
+      "verified_repository_copy": "https://github.com/kesusugar/shibuya-scene-2/blob/5e5cc6341ddf00e0f39b3e72d4289f184786df2a/assets/street/hachiko/source/refs/july094.jpg",
+      "author": "RuinDig/Yuki Uchida",
+      "capture_date": "2025-07-13",
+      "source_license": "CC BY 4.0 per existing project provenance",
+      "pixels_inspected": true,
+      "redistributed": false,
+      "used_for": "Second visible frontal view; not a full layout survey"
+    },
+    {
+      "id": "undated_user_reference",
+      "filename": "838967CA-20CB-4857-AA0C-727E3DD0F51E.png",
+      "capture_date": null,
+      "pixels_inspected": true,
+      "redistributed": false,
+      "used_for": "Wide arc and concentric circle composition only; exact dimensions and date unknown"
+    },
+    {
+      "id": "construction_chronology",
+      "url": "https://biz.shibuyabunka.com/watch/62/",
+      "author": "編集部・フジイ タカシ / SHIBUYA BUNKA PROJECT",
+      "publication_date": "2025-08-31",
+      "photo_date": "2025-08-27",
+      "pixels_inspected": true,
+      "redistributed": false,
+      "used_for": "Chronology separation: rear garden removed during March-July 2025; not used as a survey of seating footprint"
+    },
+    {
+      "id": "baseline_geometry",
+      "url": "https://github.com/kesusugar/shibuya-scene-2/blob/5e5cc6341ddf00e0f39b3e72d4289f184786df2a/assets/street/hachiko-surround/source/data/layout.json",
+      "used_for": "Inherited footprints, heights, origin and support pitch; estimates retained, not remeasured"
+    }
+  ],
+  "measured_real_world_dimensions": false,
+  "reference_photo_textures_used": false,
+  "protect": [
+    "large tree",
+    "four-sided large-tree enclosure",
+    "other trees",
+    "Hachiko statue mesh/UV/normals",
+    "low shrubs",
+    "rocks/soil",
+    "QFRONT",
+    "Seibu Shibuya",
+    "walking UI",
+    "FPS",
+    "terrain/road network"
+  ],
+  "unknowns": [
+    "Precise current seating outline behind visible front edge",
+    "Exact dimensions, joint count, rail support count/pitch",
+    "Exact paving center, outer diameter and divider angles",
+    "Current-world/October 2025 equivalence",
+    "Ground sample heights and scene overlap after integration"
+  ],
+  "candidate_default_enabled": false
+}

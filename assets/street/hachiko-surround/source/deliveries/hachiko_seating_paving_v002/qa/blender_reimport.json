@@ -1,0 +1,119 @@
+{
+  "blender": "4.2.3 LTS",
+  "results": [
+    {
+      "file": "candidate_curve_left.glb",
+      "status": "pass",
+      "mesh_objects": 3,
+      "triangles": 6544,
+      "bounds_blender_zup": [
+        [
+          -3.9882688522338867,
+          -1.751794695854187,
+          0.0
+        ],
+        [
+          -0.8283929228782654,
+          1.041670799255371,
+          0.8450000286102295
+        ]
+      ],
+      "positive_transforms": true
+    },
+    {
+      "file": "candidate_curve_right.glb",
+      "status": "pass",
+      "mesh_objects": 3,
+      "triangles": 6544,
+      "bounds_blender_zup": [
+        [
+          0.8283929228782654,
+          -1.751794695854187,
+          0.0
+        ],
+        [
+          3.9882688522338867,
+          1.041670799255371,
+          0.8450000286102295
+        ]
+      ],
+      "positive_transforms": true
+    },
+    {
+      "file": "candidate_paving_PREVIEW_ONLY.glb",
+      "status": "pass",
+      "mesh_objects": 1,
+      "triangles": 2,
+      "bounds_blender_zup": [
+        [
+          -5.199999809265137,
+          -4.0,
+          0.0
+        ],
+        [
+          5.199999809265137,
+          3.0,
+          0.0
+        ]
+      ],
+      "positive_transforms": true
+    },
+    {
+      "file": "current_left.glb",
+      "status": "pass",
+      "mesh_objects": 4,
+      "triangles": 9412,
+      "bounds_blender_zup": [
+        [
+          -3.0999999046325684,
+          -1.774999976158142,
+          0.0
+        ],
+        [
+          -0.75,
+          -0.8442999720573425,
+          0.8457000255584717
+        ]
+      ],
+      "positive_transforms": true
+    },
+    {
+      "file": "current_pair.glb",
+      "status": "pass",
+      "mesh_objects": 8,
+      "triangles": 18824,
+      "bounds_blender_zup": [
+        [
+          -3.0999999046325684,
+          -1.774999976158142,
+          0.0
+        ],
+        [
+          3.0999999046325684,
+          -0.8442999720573425,
+          0.8457000255584717
+        ]
+      ],
+      "positive_transforms": true
+    },
+    {
+      "file": "current_right.glb",
+      "status": "pass",
+      "mesh_objects": 4,
+      "triangles": 9412,
+      "bounds_blender_zup": [
+        [
+          0.75,
+          -1.774999976158142,
+          0.0
+        ],
+        [
+          3.0999999046325684,
+          -0.8442999720573425,
+          0.8457000255584717
+        ]
+      ],
+      "positive_transforms": true
+    }
+  ]
+}

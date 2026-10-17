@@ -1,0 +1,394 @@
+{
+  "before": {
+    "file": "surround_before.glb",
+    "bytes": 1118840,
+    "triangles": 15528,
+    "primitives": 8,
+    "mesh_count": 7,
+    "meshes": {
+      "street_surround_branch": {
+        "node_transform": {
+          "translation": [
+            10.245491027832031,
+            1.3460693359375,
+            51.38200759887695
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 984,
+        "geometry_material_hash": "6028ff4684ad71fb6914a8c73ee3dfbdbc5a74ed085e2f8bb434018523a1f18b"
+      },
+      "street_surround_needle": {
+        "node_transform": {
+          "translation": [
+            10.386271476745605,
+            1.3837157487869263,
+            51.45454406738281
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 8280,
+        "geometry_material_hash": "857141d232f783e56b40eac7095ac5855175f582d903553f1860d600b3a6fd65"
+      },
+      "street_surround_panel": {
+        "node_transform": {
+          "translation": [
+            9.663897514343262,
+            0.5710693597793579,
+            51.23134994506836
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 864,
+        "geometry_material_hash": "9f829ea55052d616e24a48a98c45583de1d5ea610b0e538239954df03503d057"
+      },
+      "street_surround_rock": {
+        "node_transform": {
+          "translation": [
+            10.095571517944336,
+            1.0510693788528442,
+            51.377113342285156
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 480,
+        "geometry_material_hash": "bc0925c847cec7d05f28d404983564129bec3879fe2dff9c90457febb84366ef"
+      },
+      "street_surround_silver": {
+        "node_transform": {
+          "translation": [
+            10.496055603027344,
+            1.121069312095642,
+            50.510719299316406
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 1008,
+        "geometry_material_hash": "afdb6b27ae07a57872b250a20bb83b168e2cdfb51fb3bcf008ec574ec24582db"
+      },
+      "street_surround_soil": {
+        "node_transform": {
+          "translation": [
+            10.779975891113281,
+            0.9510693550109863,
+            50.916202545166016
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 24,
+        "geometry_material_hash": "251d9513bde70daa05254c6a7b66ffd3c11713b29d9af5ef706ea09b90b862d8"
+      },
+      "street_surround_stone": {
+        "node_transform": {
+          "translation": [
+            9.802974700927734,
+            0.7310693264007568,
+            51.276798248291016
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 3888,
+        "geometry_material_hash": "d0f21c3fee690c9a5e59d6af70c73cb13577b177dd91ed8343a7b3b32d3a900a"
+      }
+    },
+    "materials": [
+      {
+        "name": "street_surround_branch",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_needle",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_needle_light",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_panel",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_rock",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_silver",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_soil",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_stone",
+        "doubleSided": true
+      }
+    ],
+    "texture_images": 0
+  },
+  "after": {
+    "file": "hachiko_surround_v002.glb",
+    "bytes": 835648,
+    "triangles": 13488,
+    "primitives": 7,
+    "mesh_count": 7,
+    "meshes": {
+      "street_surround_branch": {
+        "node_transform": {
+          "translation": [
+            10.251429557800293,
+            1.2910692691802979,
+            51.37479782104492
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 1176,
+        "geometry_material_hash": "93dd974bd6480049a7589872752779b02b12ca3847d641b1c0feebecb52757e7"
+      },
+      "street_surround_needle": {
+        "node_transform": {
+          "translation": [
+            11.568175315856934,
+            0,
+            48.685733795166016
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 6048,
+        "geometry_material_hash": "11ebae35bea82466f9644f551a9b191349ffe624a952f9d362792068796d7b8e"
+      },
+      "street_surround_panel": {
+        "node_transform": {
+          "translation": [
+            9.663897514343262,
+            0.5710693597793579,
+            51.23134994506836
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 864,
+        "geometry_material_hash": "9f829ea55052d616e24a48a98c45583de1d5ea610b0e538239954df03503d057"
+      },
+      "street_surround_rock": {
+        "node_transform": {
+          "translation": [
+            10.095571517944336,
+            1.0510693788528442,
+            51.377113342285156
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 480,
+        "geometry_material_hash": "bc0925c847cec7d05f28d404983564129bec3879fe2dff9c90457febb84366ef"
+      },
+      "street_surround_silver": {
+        "node_transform": {
+          "translation": [
+            10.496055603027344,
+            1.121069312095642,
+            50.510719299316406
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 1008,
+        "geometry_material_hash": "afdb6b27ae07a57872b250a20bb83b168e2cdfb51fb3bcf008ec574ec24582db"
+      },
+      "street_surround_soil": {
+        "node_transform": {
+          "translation": [
+            10.779975891113281,
+            0.9510693550109863,
+            50.916202545166016
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 24,
+        "geometry_material_hash": "251d9513bde70daa05254c6a7b66ffd3c11713b29d9af5ef706ea09b90b862d8"
+      },
+      "street_surround_stone": {
+        "node_transform": {
+          "translation": [
+            9.802974700927734,
+            0.7310693264007568,
+            51.276798248291016
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 3888,
+        "geometry_material_hash": "d0f21c3fee690c9a5e59d6af70c73cb13577b177dd91ed8343a7b3b32d3a900a"
+      }
+    },
+    "materials": [
+      {
+        "name": "street_surround_branch",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_needle",
+        "alphaMode": "MASK",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_panel",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_rock",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_silver",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_soil",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_stone",
+        "doubleSided": true
+      }
+    ],
+    "texture_images": 1
+  },
+  "shrubs_only": {
+    "file": "hachiko_low_shrubs_only_v002.glb",
+    "bytes": 422228,
+    "triangles": 7224,
+    "primitives": 2,
+    "mesh_count": 2,
+    "meshes": {
+      "street_surround_branch": {
+        "node_transform": {
+          "translation": [
+            10.251429557800293,
+            1.2910692691802979,
+            51.37479782104492
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 1176,
+        "geometry_material_hash": "93dd974bd6480049a7589872752779b02b12ca3847d641b1c0feebecb52757e7"
+      },
+      "street_surround_needle": {
+        "node_transform": {
+          "translation": [
+            11.568175315856934,
+            0,
+            48.685733795166016
+          ],
+          "rotation": [
+            0,
+            0.30070579051971436,
+            0,
+            0.9537169933319092
+          ]
+        },
+        "triangles": 6048,
+        "geometry_material_hash": "11ebae35bea82466f9644f551a9b191349ffe624a952f9d362792068796d7b8e"
+      }
+    },
+    "materials": [
+      {
+        "name": "street_surround_branch",
+        "doubleSided": true
+      },
+      {
+        "name": "street_surround_needle",
+        "alphaMode": "MASK",
+        "doubleSided": true
+      }
+    ],
+    "texture_images": 1
+  },
+  "before_shrub_triangles": 9264,
+  "new_shrub_triangles": 7224,
+  "unchanged_nonvegetation_meshes": {
+    "street_surround_panel": true,
+    "street_surround_rock": true,
+    "street_surround_silver": true,
+    "street_surround_soil": true,
+    "street_surround_stone": true
+  },
+  "root_positions_verified": 6,
+  "root_tolerance_m": 1e-12,
+  "full_surround_triangle_reduction_pct": 13.14,
+  "large_trees_and_generic_trees": "Not included, not read, not modified. No scene application code changed.",
+  "scope": "Component validation only, not full Three.js scene or FPS validation."
+}

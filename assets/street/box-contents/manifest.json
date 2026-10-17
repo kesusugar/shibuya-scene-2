@@ -5,11 +5,35 @@
   "source_rights": "README.md",
   "architecture_sha256": "c1b262ee107e8b46baad917f30aff885420a8ac611f071b67469b542a18f7a5e",
   "outputs": {
+    "web/corner-dome.glb": {
+      "bytes": 28200,
+      "sha256": "1cc7346e9557f52ee884457b10b9e76cbc6d779a55b0cc698781801b02ac02bd",
+      "triangles": 896,
+      "primitives": 2
+    },
     "web/counter.glb": {
       "bytes": 912404,
       "sha256": "b2d78aba0df1270c94241a2be22b038bfea64b3b870ec16443008eaaad4408b2",
       "triangles": 5076,
       "primitives": 2
+    },
+    "web/display-spotlights.glb": {
+      "bytes": 55556,
+      "sha256": "27a714e45499ede2fed733c9c3a6ae41250c270b7ea8029e91bd92d04fc7bc10",
+      "triangles": 1304,
+      "primitives": 3
+    },
+    "web/info-placard.glb": {
+      "bytes": 30428,
+      "sha256": "9627bde04468414fd353342f665159b3be5ce879853a936574fb2dfe23198b61",
+      "triangles": 14,
+      "primitives": 2
+    },
+    "web/information-header.glb": {
+      "bytes": 39284,
+      "sha256": "f09734da431ef61b2f89c8bd4605fb66c2bfb7a87edeaef477894305b8580f05",
+      "triangles": 832,
+      "primitives": 3
     },
     "web/laptop.glb": {
       "bytes": 258516,
@@ -18,8 +42,8 @@
       "primitives": 3
     },
     "web/layout.json": {
-      "bytes": 1671,
-      "sha256": "40a83afaa3c1600d43e9d355ca70b0f0f70ca8d47fae4f982f95781a357d5617"
+      "bytes": 2609,
+      "sha256": "5ca4c0552098ba392b0f251205a17bcc3235eb80449e198a95c80af464a67219"
     },
     "web/portrait-monitor.glb": {
       "bytes": 17568,
@@ -32,6 +56,12 @@
       "sha256": "0e997268bd3ef1aa97fd741fafd37a1a1b583c50b96aeac01f395c7032c647b3",
       "triangles": 1332,
       "primitives": 4
+    },
+    "web/soffit-dome.glb": {
+      "bytes": 29280,
+      "sha256": "8f727f0a76e8df09c38d0561bbc2cd050b8f5b9f60c1e42bea5ac6c49341bb33",
+      "triangles": 948,
+      "primitives": 2
     },
     "web/souvenir.glb": {
       "bytes": 1042128,
@@ -46,10 +76,10 @@
       "primitives": 1
     },
     "web/tkts.glb": {
-      "bytes": 127364,
-      "sha256": "ee8b6c526cc6f3ee8c8e4bbdc2410e50bc21f96ebe754b5a591a7448f0353026",
+      "bytes": 128332,
+      "sha256": "41d5ec6ef0772daf4204870a8ccf741c463372a56c3f731761ada31a28f565d8",
       "triangles": 3832,
-      "primitives": 19
+      "primitives": 5
     },
     "web/wall-monitor.glb": {
       "bytes": 26604,
@@ -59,8 +89,8 @@
     }
   },
   "total": {
-    "bytes": 2446988,
-    "triangles": 33900,
-    "primitives": 40
+    "bytes": 2630704,
+    "triangles": 37894,
+    "primitives": 38
   }
 }

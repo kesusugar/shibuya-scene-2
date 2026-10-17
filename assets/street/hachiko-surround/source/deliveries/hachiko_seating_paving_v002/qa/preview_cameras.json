@@ -1,0 +1,25 @@
+[
+  {
+    "file": "01_current_components_oblique.png",
+    "location_blender_zup": [
+      5.4,
+      6.6,
+      3.5
+    ],
+    "target_blender_zup": [
+      0,
+      -1.25,
+      0.38
+    ],
+    "type": "PERSP",
+    "lens_mm": 52,
+    "resolution": [
+      1440,
+      900
+    ],
+    "current_footprint_visible": true,
+    "candidate_visible": false,
+    "source": "build_assets.py render function",
+    "image_completed_and_visually_inspected": true
+  }
+]

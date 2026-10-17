@@ -1,0 +1,221 @@
+{
+  "package": "hachiko_seating_paving_v002",
+  "created_utc": "2026-10-17T04:03:00Z",
+  "status": "Material/component delivery complete; current footprint assets plus default-OFF unverified layout candidates; integration not performed",
+  "recommended_runtime_asset": "web/current_pair.glb",
+  "preview_only": [
+    "web/candidate_curve_left.glb",
+    "web/candidate_curve_right.glb",
+    "web/candidate_paving_PREVIEW_ONLY.glb"
+  ],
+  "blender_version": "4.2.3 LTS",
+  "frames": "Current seating is local; sibling low shrubs are world-baked. See docs/MOUNTING.json.",
+  "photos_included": false,
+  "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 834,
+      "sha256": "b9c0021848c4b1f887392898a32311a5f75d3152e92d682dc5e086d5178ffdb6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3808,
+      "sha256": "bb855d6454da33ecfda4abc07594630a9926592c28dd2ece7d7e4cad82674fc1"
+    },
+    {
+      "path": "docs/INTEGRATION_CONTRACT.md",
+      "bytes": 5906,
+      "sha256": "a6fb277c4aa7b9b38bd3c653f5145a81c230fc9ac5db9516f49c89df4f1f72dc"
+    },
+    {
+      "path": "docs/MOUNTING.json",
+      "bytes": 2426,
+      "sha256": "a8e7745b96c2d9502cf746f2e7aaa1cc8daa123992cc7726e267d1e15200116d"
+    },
+    {
+      "path": "docs/PROVENANCE.json",
+      "bytes": 3206,
+      "sha256": "7110a78682b99b5727739dbeee578dec162bb6016f780b6af1aef8d51c834d8b"
+    },
+    {
+      "path": "hachiko_seating_paving_v002.blend",
+      "bytes": 14719840,
+      "sha256": "5b7534610e1837791c64627ead6f465e6381260f7b9b8f676fd788401cf3a05a"
+    },
+    {
+      "path": "previews/01_current_components_oblique.png",
+      "bytes": 1348331,
+      "sha256": "a60ec7f9f43e2b6e54d7b1d320c1c320c8deb8eb8e6eb80f316c90b2a67acf63"
+    },
+    {
+      "path": "previews/04_candidate_layout_contact_sheet.png",
+      "bytes": 386789,
+      "sha256": "f9c8e92b0b8bc619dc4de132efb23ad9410cba53487869b9a622acfb4ed1c726"
+    },
+    {
+      "path": "qa/VISUAL_REVIEW.md",
+      "bytes": 1728,
+      "sha256": "59e97389e1247a21aadd6c76c71578e33e2a6d08de56b6268286f5b27d4120f7"
+    },
+    {
+      "path": "qa/blender_reimport.json",
+      "bytes": 2401,
+      "sha256": "1a322bc663f9e62b18a47ad86d4c42d48bf8e0939863c776eb6d255d81bbdd3c"
+    },
+    {
+      "path": "qa/build_stats.json",
+      "bytes": 2278,
+      "sha256": "5a1764e20b6b55b91b5ef47c431829e59154e3610f2e282c72c490ecd578f695"
+    },
+    {
+      "path": "qa/candidate_curve_left_winding.json",
+      "bytes": 50072,
+      "sha256": "920a6acf24229cfbeeb3dc9093bb971ceb3482def81e4608d0e90e0916dc642f"
+    },
+    {
+      "path": "qa/candidate_curve_right_winding.json",
+      "bytes": 50031,
+      "sha256": "0574a0e8a7a3689b837c111b205ab783b757bdac2bdae61432936bfd80723fd6"
+    },
+    {
+      "path": "qa/candidate_paving_PREVIEW_ONLY_winding.json",
+      "bytes": 1647,
+      "sha256": "c6a84e18db2d0f5626cae10946c5e681ec8daf26c273d07a4e3acb0850dce8b2"
+    },
+    {
+      "path": "qa/candidate_sheet.json",
+      "bytes": 344,
+      "sha256": "daa840d13524bbbdc480ec74bf1f8a46ef720ad56dd0d07b675a129184ae35f3"
+    },
+    {
+      "path": "qa/clean_regeneration.json",
+      "bytes": 1177,
+      "sha256": "d2f12f01a29b92cc61df785bc09a3681cab4185293df5c6b1931d2977445d40e"
+    },
+    {
+      "path": "qa/current_left_winding.json",
+      "bytes": 71819,
+      "sha256": "46a9e5b9d67d8a7a448711113f794e8ee8ab540e2b7c5307585a67b02d80cd20"
+    },
+    {
+      "path": "qa/current_pair_winding.json",
+      "bytes": 143047,
+      "sha256": "b7de72b882c4ef66fcd747f78d836802aae1064e3b75c54db3df983cc0bbf16a"
+    },
+    {
+      "path": "qa/current_right_winding.json",
+      "bytes": 71845,
+      "sha256": "7728dffed007e0e0e4c4123c3e4f511785dfa8c3369b3911e4704cf6e47dbef0"
+    },
+    {
+      "path": "qa/integration_review.json",
+      "bytes": 690,
+      "sha256": "1413b3febf5d590ed1d01c84d3ed3e679f62ece3f7ff1d1a834cb44a2033935a"
+    },
+    {
+      "path": "qa/preview_cameras.json",
+      "bytes": 457,
+      "sha256": "6cee939bf160ed84d3b9a626fce2aae1397f72c828286f222f1ad323ea8ea23f"
+    },
+    {
+      "path": "qa/structure_validation.json",
+      "bytes": 1971,
+      "sha256": "836a8c8207c2d73f205050ab9eb0b4f560761d08dae3d3fa26ef2f5decc0382d"
+    },
+    {
+      "path": "qa/texture_regeneration.json",
+      "bytes": 1247,
+      "sha256": "8ed7703b023f0b16d528e2e39b0d8868aafcd79e1ff1e1dea0109e1e506a698c"
+    },
+    {
+      "path": "source/build_assets.py",
+      "bytes": 15473,
+      "sha256": "445ed4b25f84404380eccf8fd4578fdc5194beed0944930db63d1f435e6adf0b"
+    },
+    {
+      "path": "source/make_candidate_sheet.py",
+      "bytes": 3498,
+      "sha256": "544cb92ff182899faf41c100bc45c8b87c8a99b92c0c6e98e396ae3c7f70ba14"
+    },
+    {
+      "path": "source/make_textures.py",
+      "bytes": 4075,
+      "sha256": "6a10cbb01e8f8098e45017a0c804e3bd4a372311c198633752752861d2a1bb6a"
+    },
+    {
+      "path": "source/reimport_check.py",
+      "bytes": 982,
+      "sha256": "02b3e3398308ed2c8c1f48832c8974d458f448fdba161e718eee7905a14561ba"
+    },
+    {
+      "path": "source/validate_delivery.py",
+      "bytes": 2080,
+      "sha256": "67309b915c3d244b0c813b5c2e0de3c38f6f6ec5633188faa4577bcdf9acffa0"
+    },
+    {
+      "path": "textures/granite_basecolor.png",
+      "bytes": 2049888,
+      "sha256": "d0215b84055cfc371edb3eb2ac552f3798f72690e935bbed7877cb208dd082ff"
+    },
+    {
+      "path": "textures/granite_normal.png",
+      "bytes": 1475704,
+      "sha256": "c40b85b044331fde04fc9170b6b9a419d56b464acaaca8f3d73ed47a94b2c515"
+    },
+    {
+      "path": "textures/granite_roughness.png",
+      "bytes": 337738,
+      "sha256": "19079d7838e88afb5e7bd7f7d5aff4e204c2f6ed658597630449600488e64960"
+    },
+    {
+      "path": "textures/paving_ring_candidate_basecolor.png",
+      "bytes": 5093172,
+      "sha256": "b54a63cb3be1ac26d14b19d742f79e22b4dbf36c2dc178d575a98d120761acfa"
+    },
+    {
+      "path": "textures/paving_ring_candidate_normal.png",
+      "bytes": 83269,
+      "sha256": "136a87b6fc3a307c3bf1dc4cd6b4219c94fbe036aa7f2b8becba7cc686e00070"
+    },
+    {
+      "path": "textures/paving_ring_candidate_roughness.png",
+      "bytes": 2897392,
+      "sha256": "7332ac7acf7c65d2e5092e70634f67e3d84b0ba8499aeef30a93934bbb8128d8"
+    },
+    {
+      "path": "textures/steel_roughness.png",
+      "bytes": 479794,
+      "sha256": "990cf53155bab5084b9c0facf004ca1e14d1c11413b85725c53faf93b7e173fe"
+    },
+    {
+      "path": "web/candidate_curve_left.glb",
+      "bytes": 5265088,
+      "sha256": "45faae2f295b068fbbed896a290566c0890983bcf3a90b558dad0d4658a60564"
+    },
+    {
+      "path": "web/candidate_curve_right.glb",
+      "bytes": 5265088,
+      "sha256": "05f088fa17813d2f69eeac151505d81f0a0b725cfb31a05b3667be9c220d322c"
+    },
+    {
+      "path": "web/candidate_paving_PREVIEW_ONLY.glb",
+      "bytes": 10259840,
+      "sha256": "e15809a022fc1689bbe4a36b0291eba53e0f992bbf2cace90f39eda511c1d3b3"
+    },
+    {
+      "path": "web/current_left.glb",
+      "bytes": 5667648,
+      "sha256": "38e7b106c4b093641403a3644aacd6ff0e9aa093a88b4f54a2c68a9c8c0a0146"
+    },
+    {
+      "path": "web/current_pair.glb",
+      "bytes": 6285992,
+      "sha256": "e7ec6ce254a0724f4586907d53e49e6123adb37898666e24f2c2a7050238ce51"
+    },
+    {
+      "path": "web/current_right.glb",
+      "bytes": 5667656,
+      "sha256": "bfcbf96d989f87f2496325054ce8474b836fba06adaa6ec688ee4ec6a1008f01"
+    }
+  ]
+}

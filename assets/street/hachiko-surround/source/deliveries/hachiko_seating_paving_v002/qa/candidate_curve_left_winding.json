@@ -1,0 +1,1777 @@
+{
+  "schema_version": 1,
+  "method": "exact-position seam reconciliation; edge-connected components; centered float64 math.fsum",
+  "scope": "mesh-local bind geometry, across material primitives within each mesh; no node/skin/morph simulation",
+  "abs_volume_epsilon": 1e-12,
+  "relative_volume_epsilon": 1e-12,
+  "counts": {
+    "outward": 68
+  },
+  "error_components": 0,
+  "negative_closed_components": 0,
+  "topology_review_components": 0,
+  "indeterminate_closed_components": 0,
+  "status": "pass",
+  "meshes": [
+    {
+      "mesh": 0,
+      "name": "Cylinder.044",
+      "triangles": 912,
+      "materials": [
+        {
+          "primitive": 0,
+          "material": 0,
+          "name": "brushed_stainless",
+          "doubleSided": true,
+          "alphaMode": "OPAQUE",
+          "transmission": false
+        },
+        {
+          "primitive": 1,
+          "material": 1,
+          "name": "support_dark_metal",
+          "doubleSided": true,
+          "alphaMode": "OPAQUE",
+          "transmission": false
+        }
+      ],
+      "components": [
+        {
+          "component": 0,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.00016476100567333596,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.22354988753795624,
+            0.18264463543891907,
+            0.10603611916303635
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 1,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.00016476096138489795,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.20626682043075562,
+            0.18264459073543549,
+            0.1427476406097412
+          ],
+          "center": [
+            0.34827446974813936,
+            0.0,
+            0.6919630169868469
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 2,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.00016476122185017674,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.1823720932006836,
+            0.18264462053775787,
+            0.1743462085723877
+          ],
+          "center": [
+            0.8236961364746094,
+            0.0,
+            1.3035855293273926
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 3,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.00016476090025797387,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.15218210220336914,
+            0.18264460563659668,
+            0.20028233528137207
+          ],
+          "center": [
+            1.408344030380249,
+            0.0,
+            1.8118122816085815
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 4,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.00016476143048461077,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.11685562133789062,
+            0.18264466524124146,
+            0.21944236755371094
+          ],
+          "center": [
+            2.0801801681518555,
+            0.0,
+            2.19748592376709
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 5,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.00016476074784963138,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.077301025390625,
+            0.18264463543891907,
+            0.23145484924316406
+          ],
+          "center": [
+            2.8138794898986816,
+            0.0,
+            2.446068286895752
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 6,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.000640777560619618,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.035999998450279236,
+            0.6399999856948853,
+            0.035999998450279236
+          ],
+          "center": [
+            0.009326696442440153,
+            -0.40000003576278687,
+            -0.0036074519623070954
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 7,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.000640777256616964,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.03600001335144043,
+            0.6399999856948853,
+            0.03600001335144043
+          ],
+          "center": [
+            0.35672807693481445,
+            -0.40000003576278687,
+            0.6866213083267212
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 8,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0006407774724468731,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.03600001335144043,
+            0.6399999856948853,
+            0.03600001335144043
+          ],
+          "center": [
+            0.830958366394043,
+            -0.40000003576278687,
+            1.2967109680175781
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 9,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0006407780918855109,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.03600001335144043,
+            0.6399999856948853,
+            0.03600001335144043
+          ],
+          "center": [
+            1.4141411781311035,
+            -0.40000003576278687,
+            1.803663969039917
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 10,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0006407739166864665,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.03599977493286133,
+            0.6399999856948853,
+            0.03599977493286133
+          ],
+          "center": [
+            2.0842933654785156,
+            -0.40000003576278687,
+            2.188370943069458
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 11,
+          "triangles": 76,
+          "vertices": 40,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0006407739166864665,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.03599977493286133,
+            0.6399999856948853,
+            0.03599977493286133
+          ],
+          "center": [
+            2.8161540031433105,
+            -0.40000003576278687,
+            2.4363303184509277
+          ],
+          "volume_interpretable": true
+        }
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "candidate_left_front_rail",
+      "triangles": 4552,
+      "materials": [
+        {
+          "primitive": 0,
+          "material": 0,
+          "name": "brushed_stainless",
+          "doubleSided": true,
+          "alphaMode": "OPAQUE",
+          "transmission": false
+        }
+      ],
+      "components": [
+        {
+          "component": 0,
+          "triangles": 2276,
+          "vertices": 1140,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.014514853017339043,
+          "volume_epsilon": 2.2379767757719428e-11,
+          "extent": [
+            2.8180705308914185,
+            0.0700000524520874,
+            2.4610754251480103
+          ],
+          "center": [
+            -2.4395636689244653,
+            0.6499999761581421,
+            0.4063969689274305
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 1,
+          "triangles": 2276,
+          "vertices": 1140,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.015337860484068254,
+          "volume_epsilon": 2.6345630297959167e-11,
+          "extent": [
+            2.9755656123161316,
+            0.0700000524520874,
+            2.5979838371276855
+          ],
+          "center": [
+            -2.5778894278041102,
+            0.8100000023841858,
+            0.5655225729626979
+          ],
+          "volume_interpretable": true
+        }
+      ]
+    },
+    {
+      "mesh": 2,
+      "name": "candidate_left_face_0",
+      "triangles": 1080,
+      "materials": [
+        {
+          "primitive": 0,
+          "material": 2,
+          "name": "speckled_granite",
+          "doubleSided": true,
+          "alphaMode": "OPAQUE",
+          "transmission": false
+        }
+      ],
+      "components": [
+        {
+          "component": 0,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157126681327448,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.25917863845825195,
+            0.5199999809265137,
+            0.21903729438781738
+          ],
+          "center": [
+            -3.8346825440724692,
+            0.25999999046325684,
+            -0.9223123292128245
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 1,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.002834524957547105,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.30582666397094727,
+            0.06999999284744263,
+            0.23701298236846924
+          ],
+          "center": [
+            -3.834682583808899,
+            0.554999977350235,
+            -0.922312319278717
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 2,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157116618642058,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2612771987915039,
+            0.5199999809265137,
+            0.22455549240112305
+          ],
+          "center": [
+            -3.776598890622457,
+            0.25999999046325684,
+            -0.7796135445435842
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 3,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345246667504857,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.3072187900543213,
+            0.06999999284744263,
+            0.24426710605621338
+          ],
+          "center": [
+            -3.776598850886027,
+            0.554999977350235,
+            -0.7796135644117991
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 4,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.01715712623517029,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.26300907135009766,
+            0.5199999809265137,
+            0.22975808382034302
+          ],
+          "center": [
+            -3.7132071256637573,
+            0.25999999046325684,
+            -0.6391922235488892
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 5,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345242365984736,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.3081791400909424,
+            0.06999999284744263,
+            0.25117790699005127
+          ],
+          "center": [
+            -3.7132071256637573,
+            0.554999977350235,
+            -0.6391922235488892
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 6,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157114145734582,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2643706798553467,
+            0.5199999809265137,
+            0.2346377670764923
+          ],
+          "center": [
+            -3.6445964574813843,
+            0.25999999046325684,
+            -0.5012457271416982
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 7,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.00283452479426973,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.30870652198791504,
+            0.06999999284744263,
+            0.2577356994152069
+          ],
+          "center": [
+            -3.644596497217814,
+            0.554999977350235,
+            -0.5012457370758057
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 8,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157124399189178,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.26536107063293457,
+            0.5199999809265137,
+            0.23918767273426056
+          ],
+          "center": [
+            -3.5708633263905845,
+            0.25999999046325684,
+            -0.3659679467479388
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 9,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345264593594923,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.30879998207092285,
+            0.06999999284744263,
+            0.2639312297105789
+          ],
+          "center": [
+            -3.5708632866541543,
+            0.554999977350235,
+            -0.3659679467479388
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 10,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157121106920265,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2659783363342285,
+            0.5199999809265137,
+            0.243401400744915
+          ],
+          "center": [
+            -3.492111245791117,
+            0.25999999046325684,
+            -0.23354900255799294
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 11,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345241532126155,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.3084590435028076,
+            0.06999999284744263,
+            0.2697558030486107
+          ],
+          "center": [
+            -3.4921112060546875,
+            0.554999977350235,
+            -0.2335489975909392
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 12,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157117439306497,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2662217617034912,
+            0.5199999809265137,
+            0.24727303348481655
+          ],
+          "center": [
+            -3.4084510803222656,
+            0.25999999046325684,
+            -0.10417501411090295
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 13,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.002834524619677896,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.30768489837646484,
+            0.06999999284744263,
+            0.2752012349665165
+          ],
+          "center": [
+            -3.4084510803222656,
+            0.554999977350235,
+            -0.10417501504222552
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 14,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.01715711348069039,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.26609110832214355,
+            0.5199999809265137,
+            0.2507971152663231
+          ],
+          "center": [
+            -3.3200002908706665,
+            0.25999999046325684,
+            0.021972179412841797
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 15,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345237528378878,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.30647826194763184,
+            0.06999999284744263,
+            0.2802598625421524
+          ],
+          "center": [
+            -3.3200002908706665,
+            0.554999977350235,
+            0.02197217964567244
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 16,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157125182430844,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.26558661460876465,
+            0.5199999809265137,
+            0.25396869890391827
+          ],
+          "center": [
+            -3.2268831729888916,
+            0.25999999046325684,
+            0.14471527965118489
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 17,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.002834523712870128,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.3048408031463623,
+            0.06999999284744263,
+            0.28492460353299975
+          ],
+          "center": [
+            -3.2268832127253213,
+            0.554999977350235,
+            0.14471528438540796
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 18,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157121230735137,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2647085189819336,
+            0.5199999809265137,
+            0.2567833513021469
+          ],
+          "center": [
+            -3.1292307376861572,
+            0.25999999046325684,
+            0.26388177275657654
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 19,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.002834526079680221,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.30277514457702637,
+            0.06999999284744263,
+            0.28918884694576263
+          ],
+          "center": [
+            -3.1292307376861572,
+            0.554999977350235,
+            0.2638817752401034
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 20,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.01715713087646355,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2634587287902832,
+            0.5199999809265137,
+            0.25923702120780945
+          ],
+          "center": [
+            -3.0271801153818765,
+            0.25999999046325684,
+            0.379304160674413
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 21,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345231200481978,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.30028343200683594,
+            0.06999999284744263,
+            0.29304666817188263
+          ],
+          "center": [
+            -3.0271801551183066,
+            0.554999977350235,
+            0.3793041681249936
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 22,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.01715711691889993,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2618381977081299,
+            0.5199999809265137,
+            0.2613264322280884
+          ],
+          "center": [
+            -2.920874754587809,
+            0.25999999046325684,
+            0.490820234020551
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 23,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.002834523233235814,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.29736995697021484,
+            0.06999999284744263,
+            0.2964926064014435
+          ],
+          "center": [
+            -2.920874754587809,
+            0.554999977350235,
+            0.490820234020551
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 24,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157121018643112,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.25984978675842285,
+            0.5199999809265137,
+            0.2630484700202942
+          ],
+          "center": [
+            -2.8104641834894815,
+            0.25999999046325684,
+            0.598273237546285
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 25,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345239824507924,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2940385341644287,
+            0.06999999284744263,
+            0.299521803855896
+          ],
+          "center": [
+            -2.8104641437530518,
+            0.554999977350235,
+            0.598273237546285
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 26,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.01715711826102373,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.25749635696411133,
+            0.5199999809265137,
+            0.264400839805603
+          ],
+          "center": [
+            -2.6961033741633096,
+            0.25999999046325684,
+            0.7015121579170227
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 27,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345244160173175,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.29029393196105957,
+            0.06999999284744263,
+            0.3021300435066223
+          ],
+          "center": [
+            -2.6961033741633096,
+            0.554999977350235,
+            0.7015121579170227
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 28,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157124398998896,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.25478100776672363,
+            0.5199999809265137,
+            0.2653815746307373
+          ],
+          "center": [
+            -2.577953298886617,
+            0.25999999046325684,
+            0.8003918826580048
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 29,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.002834526167120223,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.28614139556884766,
+            0.06999999284744263,
+            0.304313600063324
+          ],
+          "center": [
+            -2.577953259150187,
+            0.554999977350235,
+            0.8003918727238973
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 30,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157123538412016,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2517075538635254,
+            0.5199999809265137,
+            0.2659892439842224
+          ],
+          "center": [
+            -2.4561797777811685,
+            0.25999999046325684,
+            0.8947734534740448
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 31,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345257180314672,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2815864086151123,
+            0.06999999284744263,
+            0.306069552898407
+          ],
+          "center": [
+            -2.4561797777811685,
+            0.554999977350235,
+            0.8947734534740448
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 32,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157137523487288,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.24828028678894043,
+            0.5199999809265137,
+            0.26622313261032104
+          ],
+          "center": [
+            -2.330954154332479,
+            0.25999999046325684,
+            0.9845241904258728
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 33,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345233252956045,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.27663564682006836,
+            0.06999999284744263,
+            0.3073951005935669
+          ],
+          "center": [
+            -2.330954114596049,
+            0.554999977350235,
+            0.9845242003599802
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 34,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157117348580022,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.24450373649597168,
+            0.5199999809265137,
+            0.26608288288116455
+          ],
+          "center": [
+            -2.2024522622426352,
+            0.25999999046325684,
+            1.0695179502169292
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 35,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345218491134506,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.27129602432250977,
+            0.06999999284744263,
+            0.3082887530326843
+          ],
+          "center": [
+            -2.202452301979065,
+            0.554999977350235,
+            1.0695179601510365
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 36,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.01715712534137066,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.24038398265838623,
+            0.5199999809265137,
+            0.2655686140060425
+          ],
+          "center": [
+            -2.070854961872101,
+            0.25999999046325684,
+            1.1496353149414062
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 37,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345255011509667,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2655755281448364,
+            0.06999999284744263,
+            0.30874907970428467
+          ],
+          "center": [
+            -2.0708550016085305,
+            0.554999977350235,
+            1.149635334809621
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 38,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157128046689833,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.23592615127563477,
+            0.5199999809265137,
+            0.26468122005462646
+          ],
+          "center": [
+            -1.936346968015035,
+            0.25999999046325684,
+            1.2247636318206787
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 39,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345248164275056,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2594813108444214,
+            0.06999999284744263,
+            0.30877554416656494
+          ],
+          "center": [
+            -1.93634698788325,
+            0.554999977350235,
+            1.2247636715571086
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 40,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157122839074567,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.23113679885864258,
+            0.5199999809265137,
+            0.26342153549194336
+          ],
+          "center": [
+            -1.7991174856821697,
+            0.25999999046325684,
+            1.2947973608970642
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 41,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345239056324616,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.25302255153656006,
+            0.06999999284744263,
+            0.3083679676055908
+          ],
+          "center": [
+            -1.7991175055503845,
+            0.554999977350235,
+            1.2947973410288494
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 42,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157111611581732,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.22602248191833496,
+            0.5199999809265137,
+            0.2617917060852051
+          ],
+          "center": [
+            -1.6593592762947083,
+            0.25999999046325684,
+            1.359638015429179
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 43,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345238294870865,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.24620819091796875,
+            0.06999999284744263,
+            0.3075268268585205
+          ],
+          "center": [
+            -1.659359296162923,
+            0.554999977350235,
+            1.3596379955609639
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 44,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157115624535393,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.22059059143066406,
+            0.5199999809265137,
+            0.2597939968109131
+          ],
+          "center": [
+            -1.5172688961029053,
+            0.25999999046325684,
+            1.4191944599151611
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 45,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.002834524455897732,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.23904788494110107,
+            0.06999999284744263,
+            0.30625367164611816
+          ],
+          "center": [
+            -1.5172688563664753,
+            0.554999977350235,
+            1.419194479783376
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 46,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157124345109912,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.21484863758087158,
+            0.5199999809265137,
+            0.25743114948272705
+          ],
+          "center": [
+            -1.3730459411938984,
+            0.25999999046325684,
+            1.4733830293019612
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 47,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345243760344425,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.23155152797698975,
+            0.06999999284744263,
+            0.3045499324798584
+          ],
+          "center": [
+            -1.3730459411938984,
+            0.554999977350235,
+            1.4733830094337463
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 48,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.017157123130806633,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.20880472660064697,
+            0.5199999809265137,
+            0.2547065019607544
+          ],
+          "center": [
+            -1.226893166700999,
+            0.25999999046325684,
+            1.5221275091171265
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 49,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345245506888835,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.22372961044311523,
+            0.06999999284744263,
+            0.30241823196411133
+          ],
+          "center": [
+            -1.2268931865692139,
+            0.554999977350235,
+            1.5221275488535564
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 50,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.01715712028047862,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.20246726274490356,
+            0.5199999809265137,
+            0.2516237497329712
+          ],
+          "center": [
+            -1.07901598016421,
+            0.25999999046325684,
+            1.5653594930966694
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 51,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.0028345248742280196,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.2155933380126953,
+            0.06999999284744263,
+            0.29986143112182617
+          ],
+          "center": [
+            -1.0790159900983174,
+            0.554999977350235,
+            1.5653594334920247
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 52,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.01715712822669233,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.19584530591964722,
+            0.5199999809265137,
+            0.24818754196166992
+          ],
+          "center": [
+            -0.9296222627162933,
+            0.25999999046325684,
+            1.60301806529363
+          ],
+          "volume_interpretable": true
+        },
+        {
+          "component": 53,
+          "triangles": 20,
+          "vertices": 12,
+          "closed": true,
+          "consistent": true,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "inconsistent_edges": 0,
+          "degenerate_triangles": 0,
+          "state": "outward",
+          "signed_volume": 0.002834524620491423,
+          "volume_epsilon": 1e-12,
+          "extent": [
+            0.20715397596359253,
+            0.06999999284744263,
+            0.296883225440979
+          ],
+          "center": [
+            -0.9296222627162933,
+            0.554999977350235,
+            1.60301806529363
+          ],
+          "volume_interpretable": true
+        }
+      ]
+    }
+  ],
+  "file": "/workspace/scratch/b6331e59d884/hachiko_seating_paving_v002/web/candidate_curve_left.glb"
+}

@@ -1,0 +1,14 @@
+{
+  "embedded_atlas_pixel_identical": true,
+  "alpha_values": [
+    0,
+    255
+  ],
+  "mask_coverage_pct": 14.43,
+  "transparent_rgb_nonzero": true,
+  "color_encoding": "sRGB; independent alpha, not premultiplied",
+  "alpha_mode": "MASK",
+  "cutoff": 0.5,
+  "cutoff_encoding": "glTF default when alphaCutoff omitted",
+  "double_sided": true
+}

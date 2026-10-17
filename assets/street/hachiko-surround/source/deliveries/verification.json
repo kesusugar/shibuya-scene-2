@@ -1,0 +1,14 @@
+[
+  {
+    "package": "hachiko_low_shrubs_v002_delivery/hachiko_low_shrubs_v002",
+    "manifest_files": 45,
+    "sizes_sha256": "pass",
+    "all_crc": "pass"
+  },
+  {
+    "package": "hachiko_seating_paving_v002/hachiko_seating_paving_v002",
+    "manifest_files": 41,
+    "sizes_sha256": "pass",
+    "all_crc": "pass"
+  }
+]
